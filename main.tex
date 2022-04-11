@@ -1,0 +1,235 @@
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath,amsthm,amssymb}
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma} 
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conj}[theorem]{Conjecture}
+\newtheorem{defn}[theorem]{Definition}
+\newtheorem{fact}[theorem]{Fact} 
+\newtheorem{example}[theorem]{Example} 
+\newtheorem{examples}[theorem]{Examples}
+\newtheorem{example*}[theorem]{Example*}
+\newtheorem{examples*}[theorem]{Examples*}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{remark*}[theorem]{Remark*}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{convention}[theorem]{Convention}
+\newtheorem{justification}[theorem]{Justification} 
+\newtheorem{construction}[theorem]{Construction}
+\newtheorem{rem}[theorem]{Reminder}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title{The Category of Topological Relations}
+\author[me]{Vincent Wang-Ma\'{s}cianica}
+\date{\today}
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+\begin{document}
+
+\maketitle% this prints the handout title, author, and date
+
+\begin{abstract}
+Abstract here.
+\end{abstract}
+
+\section{Topological Relations}
+
+\marginnote{
+\begin{rem}[Topological Space]
+A \emph{topological space} is a pair $(X,\tau)$, where $X$ is a set, and $\tau \subset \mathcal{P}(X)$ are the \emph{open sets} of $X$, such that:
+\begin{description}
+    \item["nothing" and "everything" are open]  \[\varnothing,X \in \tau\]
+    \item[Arbitrary unions of opens are open] \[\{ U_i : i \in I \} \subseteq \tau \Rightarrow \bigcup\limits_{i \in I} U_i \in \tau \]
+    \item[Finite intersections of opens are open] $n \in \mathbb{N}$: \[U_1,\cdots, U_n \in \tau \Rightarrow \bigcap\limits_{1\cdots, i , \cdots n} U_i \in \tau\]
+\end{description}
+\end{rem}
+}
+
+\marginnote{
+\begin{rem}[Relational Converse]
+Recall that a relation $R: S \rightarrow T$ is a subset $R \subseteq S \times T$. \[R^\dag : T \rightarrow S := \{ (t,s) : (s,t) \in R \}\]
+\end{rem}
+}
+\begin{defn}[Topological Relation]\label{defn:toprelation}
+A topological relation $R: (X,\tau) \rightarrow (Y,\sigma)$ is a relation $R: X \rightarrow Y$ such that \[U \in \sigma \Rightarrow R^{\dag}(U) \in \tau\] where $\dag$ denotes the relational converse.
+\end{defn}
+
+\marginnote{
+\begin{example}[A nontopological relation]
+Consider the Sierpi\'{n}ski space \[\mathcal{S} := \big( \{0,1\} \ , \ \{ \varnothing, \{ 1 \} , \{ 0,1\} \} \big)\]
+The relation $\{(0,0)\} \subset \mathcal{S} \times \mathcal{S}$ is not a topological relation: the preimage of the open set $\{0,1\}$ under this relation is the non-open set $\{0\}$.
+\end{example}
+}
+
+\begin{proposition}
+Topological relations form a category $\mathbf{TopRel}$.
+\begin{proof}
+\begin{description}
+\item[Identities:]
+\item[Associative composition:]
+\end{description}
+\end{proof}
+\end{proposition}
+
+For shorthand, we denote the topology $(X,\tau)$ as $X^{\tau}$. As special cases, we denote the discrete topology on $X$ as $X^{\bullet}$, and the indiscrete topology $X^{\circ}$.
+
+\section{Biproducts}
+
+\begin{proposition}
+The forgetful functor $\mathbf{TopRel} \rightarrow \mathbf{Rel}$ is a left adjoint.
+\begin{proof}
+
+\end{proof}
+\end{proposition}
+
+\begin{corollary}
+$\mathbf{TopRel}$ has a zero object and biproducts.
+\begin{proof}
+
+\end{proof}
+\end{corollary}
+
+\section{Symmetric Monoidal Closed structure}
+
+\marginnote{
+\begin{rem}[Topological Basis]
+$\mathfrak{b} \subseteq \tau$ is a basis of the topology $\tau$ if every $U \in \tau$ is expressible as a union of elements of $\mathfrak{b}$. Every topology has a basis (itself). Minimal bases are not necessarily unique.
+\end{rem}
+
+\begin{rem}[Product Topology]
+We denote the product topology of $X^\tau$ and $Y^\sigma$ as $(X \times Y)^{(\tau \times \sigma)}$. $\tau \times \sigma$ is the topology on $X \times Y$ generated by the basis $\{t \times s : t \in \mathfrak{b}_\tau, s \in \mathfrak{b}_\sigma\}$, where $\mathfrak{b}_\tau$ and $\mathfrak{b}_\sigma$ are bases for $\tau$ and $\sigma$ respectively.
+\end{rem}
+}
+
+\begin{proposition}
+$(\mathbf{TopRel},\{\star\}^{\bullet},X^\tau \otimes Y^\sigma := (X \times Y)^{(\tau \times \sigma)})$ is a symmetric monoidal closed category.
+\begin{proof}
+
+\end{proof}
+\end{proposition}
+
+\section{Spiders, States, Effects}
+
+\marginnote{
+\begin{rem}[Copy-Compare spiders in $\mathbf{Rel}$]
+
+\end{rem}
+}
+
+\begin{proposition}
+The copy-compare spiders of $\mathbf{Rel}$ are spiders in $\mathbf{TopRel}$
+\begin{proof}
+
+\end{proof}
+\end{proposition}
+
+\marginnote{
+\begin{rem}[Preimages]
+
+\end{rem}
+}
+
+\begin{proposition}\label{prop:states}
+States $R: \{\star\}^{\bullet} \rightarrow X^{\tau}$ correspond with subsets of $X$.
+\begin{proof}
+The preimage $R^\dag(U)$ of a (non-$\varnothing$) open $U \in \tau$ is $\star$ if $R(\star) \cap U$ is nonempty, and $\varnothing$ otherwise. Both $\star$ and $\varnothing$ are open in $\{\star\}^{\bullet}$. $R(\star)$ is free to specify any non-$\varnothing$ subset of $X$. The empty relation handles $\varnothing$ as an open of $X^{\tau}$.
+\end{proof}
+\end{proposition}
+
+\begin{proposition}
+Effects $R: X^\tau \rightarrow \{\star\}^{\bullet}$ correspond with open sets $U \in \tau$.
+\begin{proof}
+The preimage $R^\dag(\star)$ of $\star$ must be an open set of $X^\tau$ by definition \ref{defn:toprelation}. $R^\dag(\star)$ is free to specify any open set of $X^{\tau}$.
+\end{proof}
+\end{proposition}
+
+\section{Enrichment structure}
+
+\marginnote{
+\begin{rem}[Union, intersection, and ordering of relations]
+
+\end{rem}
+}
+
+\begin{proposition}
+If $R,S: X^\tau \rightarrow Y^\sigma$ are topological relations, so are $R \cap S$ and $R \cup S$.
+\begin{proof}
+Replace $\square$ with either $\cup$ or $\cap$. For any non-$\varnothing$ open $U \in \sigma$: \[(R \square S)^\dag (U) = R^\dag(U) \square S^\dag(U)\] As $R,S$ are topological relations, $R^\dag(U),S^\dag(U) \in \tau$, so $R^\dag(U) \square S^\dag(U) = (R \square S)^\dag (U) \in \tau$. Thus $R\square S$ is also a topological relation.
+\end{proof}
+\end{proposition}
+
+\begin{corollary}
+Topological relations $X^\tau \rightarrow Y^\sigma$ are closed under arbitrary union and finite intersection. Hence, topological relations $X^\tau \rightarrow Y^\sigma$ form a topological space where each relation is an open set on the base space $X \times Y$. The total relation $X \rightarrow Y$ is "everything", and the empty relation is "nothing".
+\end{corollary}
+
+Denote by $(X \times Y)^{(\tau \multimap \sigma)}$ the topological space of topological relations of type $X^\tau \rightarrow Y^\sigma$ as given above. We show that this topology is finer than the product topology.
+
+\begin{proposition}
+For any $X^\tau$ and $Y^\sigma$, $\tau \times \sigma \subseteq \tau \multimap \sigma$
+\begin{proof}
+Let $\mathfrak{b}_\tau, \mathfrak{b}_\sigma$ be bases for $\tau$ and $\sigma$ respectively, then $\tau \times \sigma$ has basis $\mathfrak{b}_\tau \times \mathfrak{b}_\sigma$. An arbitrarily element $(t \in \tau, s \in \sigma)$ of this product basis can be viewed as a topological relation $t \times s \subseteq X \times Y$. Every open of $\tau \times \sigma$ is a union of such basis elements, and topological relations are closed under arbitrary union, so we have the (evidently injective) correspondence:
+\[ \tau \times \sigma \ni \bigcup\limits_{i \in I}(t_i \times s_i) \mapsto \bigcup\limits_{i \in I}(t_i \times s_i) \in \tau \multimap \sigma \]
+\end{proof}
+\end{proposition}
+
+\marginnote{
+\begin{example}[$\tau \multimap \sigma \nsubseteq \tau \times \sigma$]
+Recalling Proposition \ref{prop:states}, let $\tau = \{\varnothing,\{\star\}\}$ on the singleton, and $\sigma$ be an arbitrary nondiscrete topology on base space Y. $(\{\star\} \times Y)^{(\tau \times \sigma)}$ is isomorphic to $Y^\sigma$, but $(\{\star\} \times Y)^{\tau \multimap \sigma)}$ is the isomorphic to the discrete topology $Y^\bullet$. For a more concrete example, consider the Sierpi\'{n}ski space $\mathcal{S}$ again, along with the topological relation $\{(0,0),(1,0),(1,1)\} \subset \mathcal{S} \times \mathcal{S}$; due to the presence of $(0,0)$, this topological relation cannot be formed by a union of basis elements of the product topology, which are:
+\begin{description}
+\item[$\{1\} \times \{1\}$ =] $\{(1,1)\}$
+\item[$\{1\} \times \{0,1\}$ =] $\{ (1,0),(1,1) \}$
+\item[$\{0,1\} \times \{1\}$ =] $\{ (1,1),(0,1) \}$
+\item[$\{0,1\} \times \{0,1\}$ =] $\{ (0,0), (0,1), (1,0), (0,1) \}$
+\end{description}
+
+\end{example}
+}
+
+\begin{proposition}
+$\tau \multimap \sigma = \tau \times \sigma \iff $
+\begin{proof}
+
+\end{proof}
+\end{proposition}
+
+\end{document}
