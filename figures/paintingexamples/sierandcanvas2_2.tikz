@@ -1,0 +1,60 @@
+\begin{tikzpicture}[{every node/.style}={scale=2}]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (7) at (1, 2) {};
+		\node [style=none] (8) at (1, -2) {};
+		\node [style=none] (9) at (5, -2) {};
+		\node [style=none] (10) at (5, 2) {};
+		\node [style=none] (12) at (3, 0.75) {};
+		\node [style=none] (13) at (4.5, 1) {};
+		\node [style=none] (14) at (3.75, -0.5) {};
+		\node [style=none] (16) at (2.75, -0.975) {};
+		\node [style=none] (17) at (2, -0.475) {};
+		\node [style=none] (18) at (1.25, -1.225) {};
+		\node [style=dotC] (21) at (-2, -1) {};
+		\node [style=none] (22) at (-2, 1.25) {};
+		\node [style=none] (23) at (-2, -0.25) {};
+		\node [style=none] (24) at (-2, -1.75) {};
+		\node [style=none] (25) at (-2, 1.75) {};
+		\node [style=dotY] (26) at (-2, 0.5) {};
+		\node [style=none] (27) at (-1.5, 0.5) {};
+		\node [style=none] (28) at (-1.5, -1) {};
+		\node [style=none] (31) at (2, -1) {};
+		\node [style=none] (32) at (3.75, 0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=gF] (8.center)
+			 to (7.center)
+			 to (10.center)
+			 to (9.center)
+			 to cycle;
+		\draw (7.center) to (8.center);
+		\draw (8.center) to (9.center);
+		\draw (9.center) to (10.center);
+		\draw (10.center) to (7.center);
+		\draw [style=Fy] (14.center)
+			 to [in=-105, out=180] (12.center)
+			 to [in=60, out=75, looseness=1.50] (13.center)
+			 to [in=-15, out=-120] cycle;
+		\draw [style=KD] (14.center)
+			 to [in=-90, out=-180] (12.center)
+			 to [in=60, out=75, looseness=1.50] (13.center)
+			 to [in=0, out=-120] cycle;
+		\draw [style=Fg] (18.center)
+			 to [in=-105, out=-75] (16.center)
+			 to [in=60, out=75, looseness=1.50] (17.center)
+			 to [in=60, out=-120, looseness=1.25] cycle;
+		\draw [style=KD] (18.center)
+			 to [in=-90, out=-90] (16.center)
+			 to [in=60, out=75, looseness=1.50] (17.center)
+			 to [in=60, out=-120, looseness=1.25] cycle;
+		\draw [style=KD] (23.center)
+			 to [bend right=90, looseness=1.50] (22.center)
+			 to [bend right=90, looseness=1.50] cycle;
+		\draw [style=KD] (24.center)
+			 to [bend right=270, looseness=1.25] (25.center)
+			 to [bend left=90, looseness=1.25] cycle;
+		\draw (27.center) to (32.center);
+		\draw (27.center) to (31.center);
+		\draw (28.center) to (31.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

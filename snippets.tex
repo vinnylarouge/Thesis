@@ -1,0 +1,33 @@
+
+\marginnote{
+    \begin{rem}[\textbf{Top}]
+    The category of topological spaces and continuous functions.
+    \end{rem}
+}
+
+\begin{defn}[Powerset monad on \textbf{Top}]
+Overloading the powerset symbol $\mathcal{P}$, we define the functor $\mathcal{P}: \mathbf{Top} \rightarrow \mathbf{Top}$ to send:
+\begin{description}
+\item[objects:] $X^\tau \mapsto \mathcal{P}X^{\mathcal{P}\tau}$, where $\mathcal{P}X$ is the powerset of $X$, and we define the new topology \[\mathcal{P}\tau := \{ S \subseteq \tau : \bigcup S \in \tau \}\]
+\item[morphisms:] $f: X^\tau \rightarrow Y^\sigma$ to $\mathcal{P}f: \mathcal{P}X^{\mathcal{P}\tau} \rightarrow \mathcal{P}Y^{\mathcal{P}\sigma}$, where $\mathcal{P}f$ is the direct image map.
+\[\mathcal{P}f(J \subseteq X) := f(J) \subseteq Y\]
+\end{description}
+This endofunctor $\mathcal{P}$ on \textbf{Top} is a monad, with unit and multiplication inherited from the powerset monad on \textbf{Set}. We present these explicitly, and verify their continuity:
+\begin{description}
+\item[unit:] $X^\tau \overset{\eta_{X^{\tau}}}{\longrightarrow} \mathcal{P}X^{\mathcal{P}\tau} := x \in X \mapsto \{x\} \in \mathcal{P}X$.
+For continuity, if $S \subseteq \mathcal{P}X$ is open, by definition of $\mathcal{P}\tau$, $\bigcup S \subseteq X$ is open
+\item[multiplication:] $\mathcal{P}\mathcal{P}X^{\mathcal{P}\mathcal{P}\tau} \overset{\mu_{X^{\tau}}}{\longrightarrow} \mathcal{P}X^{\mathcal{P}\tau}: S \subseteq \mathcal{P}\tau \mapsto \bigcup S \in \mathcal{P}\tau$
+\end{description}
+\end{defn}
+
+
+
+
+\begin{figure}\label{space:line}
+\tikzfig{testspaces/unitinterval}
+\caption{The \textbf{unit interval} has the unit interval $[0,1]$ as the underlying set. Open sets are unions of open intervals $(x,y)$. Closed intervals and points are closed. We denote this space $\sim$.}
+\end{figure}
+
+\begin{defn}[Partial Functions]
+A \textbf{continuous partial function} $X^\tau \rightarrow Y^\sigma$ is the intersection of a continuous function and a bowtie. 
+\end{defn}

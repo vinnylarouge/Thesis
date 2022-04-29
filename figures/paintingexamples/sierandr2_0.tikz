@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dotC] (0) at (-2.5, -0.75) {};
+		\node [style=none] (2) at (-2.5, 1.5) {};
+		\node [style=none] (3) at (-2.5, 0) {};
+		\node [style=none] (4) at (-2.5, -1.5) {};
+		\node [style=none] (5) at (-2.5, 2) {};
+		\node [style=dotY] (6) at (-2.5, 0.75) {};
+		\node [style=none] (7) at (3, 1) {};
+		\node [style=none] (8) at (1, -1) {};
+		\node [style=none] (9) at (4.75, -1) {};
+		\node [style=none] (10) at (6.75, 1) {};
+		\node [style=none] (11) at (4, 0) {};
+		\node [style=none] (12) at (1.5, 0) {};
+		\node [style=none] (13) at (6.25, 0) {};
+		\node [style=none] (14) at (5.25, 1.25) {};
+		\node [style=none] (15) at (2.75, -1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K, bend left=90, looseness=1.50] (2.center) to (3.center);
+		\draw [style=K, bend right=90, looseness=1.50] (2.center) to (3.center);
+		\draw [style=K, bend left=90] (5.center) to (4.center);
+		\draw [style=K, bend right=90] (5.center) to (4.center);
+		\draw [style=dgF] (9.center)
+			 to (8.center)
+			 to [in=225, out=45] (7.center)
+			 to (10.center)
+			 to cycle;
+		\draw [style=v] (12.center) to (13.center);
+		\draw [style=v] (15.center) to (14.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
