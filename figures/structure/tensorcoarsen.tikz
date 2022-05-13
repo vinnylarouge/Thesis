@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (1) at (-2.5, 0) {};
+		\node [style=none] (2) at (0, 1) {};
+		\node [style=none] (4) at (-3.5, 0) {$Y^\sigma$};
+		\node [style=none] (6) at (0.5, 0) {$(\tau \times \sigma) \geq \rho$};
+		\node [style=none] (7) at (-2.5, 2) {};
+		\node [style=none] (8) at (0, 1) {};
+		\node [style=none] (10) at (-3.5, 2) {$X^\tau$};
+		\node [style=none] (11) at (4, 1) {$(X \times Y)^{\rho}$};
+		\node [style=dotb] (12) at (0, 1) {};
+		\node [style=none] (13) at (2.5, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K, in=-180, out=0] (1.center) to (2.center);
+		\draw [style=K, in=-180, out=0] (7.center) to (8.center);
+		\draw [style=K] (12) to (13.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

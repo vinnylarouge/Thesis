@@ -1,0 +1,41 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (4) at (0.5, 1) {};
+		\node [style=none] (6) at (0.5, 1) {};
+		\node [style=none] (7) at (4, 1) {};
+		\node [style=none] (8) at (-4, 0) {};
+		\node [style=none] (9) at (-4, -2) {};
+		\node [style=none] (15) at (-4, 2) {};
+		\node [style=none] (16) at (-8, 0) {};
+		\node [style=none] (17) at (-6.5, 0) {};
+		\node [style=none] (18) at (0.5, -1) {};
+		\node [style=none] (19) at (4.5, -1) {};
+		\node [style=dotb] (21) at (0.5, 1) {};
+		\node [style=none] (22) at (-6.5, 2.75) {};
+		\node [style=none] (23) at (3, 2.75) {};
+		\node [style=none] (24) at (3, -2.75) {};
+		\node [style=none] (25) at (-6.5, -2.75) {};
+		\node [style=none] (26) at (-8.75, 0) {$X^\tau$};
+		\node [style=none] (27) at (-5.75, -1) {$Y^\star$};
+		\node [style=dotb] (29) at (-4, -2) {};
+		\node [style=none] (31) at (-3.25, -1.5) {$Y^\sigma$};
+		\node [style=none] (32) at (0.5, 0.25) {$(X \times Y)^{(\tau \rightarrow \sigma)}$};
+		\node [style=none] (33) at (5.25, -1) {$Y^\sigma$};
+		\node [style=none] (34) at (6.25, 1) {$(X \times Y)^{(\tau \rightarrow \sigma)}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K, bend right=90, looseness=1.75] (8.center) to (9.center);
+		\draw [style=K, in=-180, out=0, looseness=1.25] (8.center) to (6.center);
+		\draw [style=K, in=0, out=180, looseness=1.25] (4.center) to (15.center);
+		\draw [style=K, in=-180, out=0] (17.center) to (15.center);
+		\draw [style=K] (16.center) to (17.center);
+		\draw [style=K, in=180, out=0] (9.center) to (18.center);
+		\draw [style=K, in=-180, out=0] (18.center) to (19.center);
+		\draw [style=KH] (24.center)
+			 to (25.center)
+			 to (22.center)
+			 to (23.center)
+			 to cycle;
+		\draw [style=K] (21) to (7.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

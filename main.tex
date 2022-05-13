@@ -127,7 +127,7 @@ The \textbf{Sierpi\'{n}ski space} consists of two points, one of which (in yello
 \[\big( \{0,1\} \ , \ \{ \varnothing, \{ 1 \} , \{ 0,1\} \} \big)\]
 \ctikzfig{testspaces/sierpinski}
 
-\textbf{unit square} has $[0,1] \times [0,1]$ as its underlying set.  Open sets are "blobs" painted with open balls. Points, lines, and bounded shapes are closed. We denote this space $\blacksquare$.
+The \textbf{unit square} has $[0,1] \times [0,1]$ as its underlying set.  Open sets are "blobs" painted with open balls. Points, lines, and bounded shapes are closed. We denote this space $\blacksquare$.
 \ctikzfig{testspaces/unitsquare}
 \end{fullwidth}
 
@@ -380,76 +380,42 @@ Topological relations form a category $\mathbf{TopRel}$.
 \end{proof}
 \end{proposition}
 
-\subsection{How \textbf{TopRel} relates to other well-known categories}
-
-\[\begin{tikzcd}
-    &&& {\mathbf{Loc}} \\
-    \\
-    \\
-    {\mathbf{Top}} &&& {\mathbf{TopRel}} &&& {\mathbf{Rel}} \\
-    \\
-    \\
-    &&& {\mathbf{Set}}
-    \arrow[""{name=0, anchor=center, inner sep=0}, "{(-)_U}", curve={height=-12pt}, shorten <=8pt, shorten >=8pt, from=4-4, to=4-7]
-    \arrow[""{name=1, anchor=center, inner sep=0}, "{(-)_D}", curve={height=-12pt}, shorten <=8pt, shorten >=8pt, from=4-7, to=4-4]
-    \arrow[""{name=2, anchor=center, inner sep=0}, "{(-)_U}", curve={height=-12pt}, shorten <=10pt, shorten >=10pt, from=4-1, to=7-4]
-    \arrow[""{name=3, anchor=center, inner sep=0}, "{(-)_D}", curve={height=-12pt}, shorten <=10pt, shorten >=10pt, from=7-4, to=4-1]
-    \arrow[""{name=4, anchor=center, inner sep=0}, "{(-)_L}", curve={height=-12pt}, shorten <=10pt, shorten >=10pt, from=4-1, to=1-4]
-    \arrow[""{name=5, anchor=center, inner sep=0}, "{(-)_P}", curve={height=-12pt}, shorten <=10pt, shorten >=10pt, from=1-4, to=4-1]
-    \arrow[shorten <=5pt, shorten >=5pt, from=4-4, to=1-4]
-    \arrow["i"{description}, shorten <=10pt, shorten >=10pt, hook, from=7-4, to=4-7]
-    \arrow["i"{description}, shorten <=8pt, shorten >=8pt, hook, from=4-1, to=4-4]
-    \arrow["\dashv"{anchor=center, rotate=45}, draw=none, from=3, to=2]
-    \arrow["\dashv"{anchor=center, rotate=90}, draw=none, from=1, to=0]
-    \arrow["\dashv"{anchor=center, rotate=-44}, draw=none, from=4, to=5]
-\end{tikzcd}\]
-
-Here are two ways to think about \textbf{TopRel} in relation to other categories. First, we can think of the analogy
-\[\mathbf{TopRel}:\mathbf{Rel}::\mathbf{Top}:\mathbf{Set}\]
-This analogy holds up to the free-forgetful adjunction between \textbf{Top} and \textbf{Set} embedding into a free-forgetful adjunction between \textbf{TopRel} and \textbf{Rel}.\marginnote{
-    \begin{remark}[\textbf{TopRel} is not Kleisli in the obvious way]
-    However, while \textbf{Rel} is the Kleisli category of \textbf{Set} with respect to the powerset monad, \textbf{TopRel} doesn't seem to be the Kleisli category of \textbf{Top} in an analogous way. The obvious notion of a powerset topology $\mathcal{P}\tau := \{S \subset \tau : \bigcup S \in \tau\}$ agrees with our na\"{i}ve definition of continuous relation, but the underlying unit and multiplication maps from the powerset monad on \textbf{Set} fail to be continuous with respect to this topology.
-    \end{remark}
-}
-
-
-
-\begin{proposition}[\textbf{Rel} and \textbf{TopRel} free-forgetful adjunction]
-
-\begin{proof}
-
-\end{proof}
-\end{proposition}
-
-
-\begin{proposition}[(Outer square)]
-
-\begin{proof}
-
-\end{proof}
-\end{proposition}
-
-\begin{rem}[Locales, and the \textbf{Top}-\textbf{Loc} adjunction]
-
-\end{rem}
-
-\begin{proposition}[(Inner square)]
-
-\begin{proof}
-
-\end{proof}
-\end{proposition}
-
-
-
-
-
-
 \section{Biproducts}
 
-\begin{proposition}
-The forgetful functor $\mathbf{TopRel} \rightarrow \mathbf{Rel}$ is a left adjoint.
+We exhibit a free-forgetful adjunction between \textbf{Rel} and \textbf{TopRel}.
+
+\begin{defn}[F: $\mathbf{Rel} \rightarrow \mathbf{TopRel}$] We define the action of the functor $F$:
+\begin{description}
+\item[On objects] $F(X) := X^\star$, ($X$ with the discrete topology)
+\item[On morphisms] $F(X \overset{R}{\rightarrow} Y) := X^\star \overset{R}{\rightarrow} Y^\star$. Recall that any relation between sets is continuous with respect to the discrete topology.
+\end{description}
+Evidently identities and associativity of composition are preserved.
+\end{defn}
+
+\begin{defn}[U: $\mathbf{TopRel} \rightarrow \mathbf{Rel}$]
+\begin{description} We define the action of the functor $U$:
+\item[On objects] $U(X^\tau) := X$
+\item[On morphisms] $U(X^\tau \overset{R}{\rightarrow} Y^\sigma) := X \overset{R}{\rightarrow} Y$
+\end{description}
+Evidently identities and associativity of composition are preserved.
+\end{defn}
+
+\begin{proposition}[$F \dashv U \dashv F$]
 \begin{proof}
+
+By triangular identities.
+
+The composite $FU$ is precisely equal to the identity functor on $\mathbf{Rel}$. The unit natural transformation $1_\mathbf{Rel} \Rightarrow FU$ we take to be the identity morphisms.
+
+\[\eta_{X} := \text{id}_{X}\]
+
+The counit natural transformation $UF \Rightarrow 1_{\mathbf{TopRel}}$ we define:
+
+\[\epsilon_{X^\tau} : X^\star \rightarrow X^\tau := \{(x,x) : x \in X\}\]
+
+Now we verify the triangle identities
+
+\[\]
 
 \end{proof}
 \end{proposition}
@@ -473,7 +439,7 @@ We denote the product topology of $X^\tau$ and $Y^\sigma$ as $(X \times Y)^{(\ta
 $(\mathbf{TopRel},\{\star\}^{\bullet},X^\tau \otimes Y^\sigma := (X \times Y)^{(\tau \times \sigma)})$ is a symmetric monoidal closed category.
 \begin{proof}
 
-\newthought{Tensor Unit:} The one-point space $\{\star\}$ with topology $\{\varnothing,\{\star\}\}$.
+\newthought{Tensor Unit:} The one-point space $\bullet$. Explicitly, $\{\star\}$ with topology $\{\varnothing,\{\star\}\}$.
 
 \marginnote{
     \begin{rem}[Product of relations]
@@ -481,12 +447,7 @@ $(\mathbf{TopRel},\{\star\}^{\bullet},X^\tau \otimes Y^\sigma := (X \times Y)^{(
     \end{rem}
 }
 
-\newthought{Tensor Product:} For objects, the topological product. For morphisms, the product of relations. 
-
-\begin{proposition}
-The tensor of topological relations is again a topological relation.
-\begin{proof}
-Take topological relations $R: X^\tau \rightarrow Y^\sigma, S: A^\alpha \rightarrow B^\beta$, and let $U$ be open in the product topology $(\sigma \times \beta)$. We need to prove that $(R \times S)^\dag(U) \in (\tau \times \alpha)$. We may express $U$ as $\bigcup\limits_{i \in I} y_i \times b_i$, where the $y_i$ and $b_i$ are in the bases $\mathfrak{b}_\sigma$ and $\mathfrak{b}_\beta$ respectively. Since for any relations we have that $R(A \cup B) = R(A) \cup R(B)$ and $(R \times S)^\dag = R^\dag \times S^\dag$:
+\newthought{Tensor Product:} For objects, $X^\tau \otimes Y^\sigma$ has base set $X \times Y$ equipped with the product topology $\tau \times \sigma$. For morphisms, $R \otimes S$ the product of relations. We show that the tensor of continuous relations is again a continuous relation. Take continuous relations $R: X^\tau \rightarrow Y^\sigma$, $S: A^\alpha \rightarrow B^\beta$, and let $U$ be open in the product topology $(\sigma \times \beta)$. We need to prove that $(R \times S)^\dag(U) \in (\tau \times \alpha)$. We may express $U$ as $\bigcup\limits_{i \in I} y_i \times b_i$, where the $y_i$ and $b_i$ are in the bases $\mathfrak{b}_\sigma$ and $\mathfrak{b}_\beta$ respectively. Since for any relations we have that $R(A \cup B) = R(A) \cup R(B)$ and $(R \times S)^\dag = R^\dag \times S^\dag$:
 
 \begin{align*}
 &(R \times S)^\dag(\bigcup\limits_{i \in I} y_i \times b_i)\\
@@ -494,13 +455,20 @@ Take topological relations $R: X^\tau \rightarrow Y^\sigma, S: A^\alpha \rightar
  &= \bigcup\limits_{i \in I}(R^\dag \times S^\dag)(y_i \times b_i)
  \end{align*}
 
-Now since each $y_i$ is open and $R$ is topological, $R^\dag(y_i) \in \tau$. Symmetrically, $S^\dag(b_i) \in \alpha$. So each $(R^\dag \times S^\dag)(y_i \times b_i) \in (\tau \times \alpha)$. Topologies are closed under arbitrary union, so we are done.
-\end{proof}
-\end{proposition}
+Since each $y_i$ is open and $R$ is continuous, $R^\dag(y_i) \in \tau$. Symmetrically, $S^\dag(b_i) \in \alpha$. So each $(R^\dag \times S^\dag)(y_i \times b_i) \in (\tau \times \alpha)$. Topologies are closed under arbitrary union, so we are done.
 
-\newthought{Unitors:}
+\newthought{Unitors:} The left unitors $\lambda_{X^{\tau}}: \bullet \times X^\tau \rightarrow X^\tau$ maps $(\star,x) \mapsto x$, and we reverse the direction of the mapping to obtain the inverse $\lambda^{-1}_{X^{\tau}}$. The construction is symmetric for the right unitors $\rho_{X^{\tau}}$. 
 
 \newthought{Associators:}
+
+The associators $\alpha_{X^{\tau},Y^{\sigma},Z^{\rho}}$
+
+\newthought{Braids:}
+
+
+\newthought{Coherences:}
+
+
 
 \end{proof}
 \end{proposition}
@@ -690,5 +658,68 @@ $\tau \multimap \sigma = \tau \times \sigma \iff $
 
 \end{proof}
 \end{proposition}
+
+\clearpage
+
+\subsection{How \textbf{TopRel} relates to other well-known categories}
+
+\[\begin{tikzcd}
+    &&& {\mathbf{Loc}} \\
+    \\
+    \\
+    {\mathbf{Top}} &&& {\mathbf{TopRel}} &&& {\mathbf{Rel}} \\
+    \\
+    \\
+    &&& {\mathbf{Set}}
+    \arrow[""{name=0, anchor=center, inner sep=0}, "{(-)_U}", curve={height=-12pt}, shorten <=8pt, shorten >=8pt, from=4-4, to=4-7]
+    \arrow[""{name=1, anchor=center, inner sep=0}, "{(-)_D}", curve={height=-12pt}, shorten <=8pt, shorten >=8pt, from=4-7, to=4-4]
+    \arrow[""{name=2, anchor=center, inner sep=0}, "{(-)_U}", curve={height=-12pt}, shorten <=10pt, shorten >=10pt, from=4-1, to=7-4]
+    \arrow[""{name=3, anchor=center, inner sep=0}, "{(-)_D}", curve={height=-12pt}, shorten <=10pt, shorten >=10pt, from=7-4, to=4-1]
+    \arrow[""{name=4, anchor=center, inner sep=0}, "{(-)_L}", curve={height=-12pt}, shorten <=10pt, shorten >=10pt, from=4-1, to=1-4]
+    \arrow[""{name=5, anchor=center, inner sep=0}, "{(-)_P}", curve={height=-12pt}, shorten <=10pt, shorten >=10pt, from=1-4, to=4-1]
+    \arrow[shorten <=5pt, shorten >=5pt, from=4-4, to=1-4]
+    \arrow["i"{description}, shorten <=10pt, shorten >=10pt, hook, from=7-4, to=4-7]
+    \arrow["i"{description}, shorten <=8pt, shorten >=8pt, hook, from=4-1, to=4-4]
+    \arrow["\dashv"{anchor=center, rotate=45}, draw=none, from=3, to=2]
+    \arrow["\dashv"{anchor=center, rotate=90}, draw=none, from=1, to=0]
+    \arrow["\dashv"{anchor=center, rotate=-44}, draw=none, from=4, to=5]
+\end{tikzcd}\]
+
+Here are two ways to think about \textbf{TopRel} in relation to other categories. First, we can think of the analogy
+\[\mathbf{TopRel}:\mathbf{Rel}::\mathbf{Top}:\mathbf{Set}\]
+This analogy holds up to the free-forgetful adjunction between \textbf{Top} and \textbf{Set} embedding into a free-forgetful adjunction between \textbf{TopRel} and \textbf{Rel}.\marginnote{
+    \begin{remark}[\textbf{TopRel} is not Kleisli in the obvious way]
+    However, while \textbf{Rel} is the Kleisli category of \textbf{Set} with respect to the powerset monad, \textbf{TopRel} doesn't seem to be the Kleisli category of \textbf{Top} in an analogous way. The obvious notion of a powerset topology $\mathcal{P}\tau := \{S \subset \tau : \bigcup S \in \tau\}$ agrees with our na\"{i}ve definition of continuous relation, but the underlying unit and multiplication maps from the powerset monad on \textbf{Set} fail to be continuous with respect to this topology.
+    \end{remark}
+}
+
+
+
+\begin{proposition}[\textbf{Rel} and \textbf{TopRel} free-forgetful adjunction]
+
+\begin{proof}
+
+\end{proof}
+\end{proposition}
+
+
+\begin{proposition}[(Outer square)]
+
+\begin{proof}
+
+\end{proof}
+\end{proposition}
+
+\begin{rem}[Locales, and the \textbf{Top}-\textbf{Loc} adjunction]
+
+\end{rem}
+
+\begin{proposition}[(Inner square)]
+
+\begin{proof}
+
+\end{proof}
+\end{proposition}
+
 
 \end{document}
