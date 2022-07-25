@@ -1,0 +1,49 @@
+\begin{tikzpicture}[{every node/.style}={scale=1.4}]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-5, 0) {};
+		\node [style=none] (1) at (-4, 0) {};
+		\node [style=none] (2) at (-5, -1) {};
+		\node [style=none] (3) at (-4, -1) {};
+		\node [style=none] (4) at (-5, -0.5) {};
+		\node [style=none] (5) at (-4, -0.5) {};
+		\node [style=none] (12) at (-4.5, -0.5) {$f$};
+		\node [style=none] (14) at (-6.25, -0.5) {};
+		\node [style=none] (15) at (-2.75, -0.5) {};
+		\node [style=none] (16) at (2.5, 0) {};
+		\node [style=none] (17) at (6, 0) {};
+		\node [style=none] (18) at (2.75, 0.5) {$X^\tau$};
+		\node [style=none] (19) at (-3, 0) {$Y^\sigma$};
+		\node [style=none] (20) at (-6, 0) {$X^\tau$};
+		\node [style=none] (21) at (5.75, 0.5) {$Y^\sigma$};
+		\node [style=dotb] (22) at (-4.5, 1) {};
+		\node [style=none] (23) at (-4.25, 1.25) {};
+		\node [style=none] (24) at (-4.75, 0.75) {};
+		\node [style=dotb] (25) at (3.75, 0) {};
+		\node [style=dotb] (26) at (4.75, 0) {};
+		\node [style=none] (27) at (4, 0.25) {};
+		\node [style=none] (28) at (3.5, -0.25) {};
+		\node [style=none] (29) at (5, 0.25) {};
+		\node [style=none] (30) at (4.5, -0.25) {};
+		\node [style=none] (31) at (-6.5, 1.5) {};
+		\node [style=none] (32) at (-6.5, -1.5) {};
+		\node [style=none] (33) at (-2.5, -1.5) {};
+		\node [style=none] (34) at (-2.5, 1.5) {};
+		\node [style=none] (35) at (0, 0) {$=$};
+		\node [style=none] (36) at (0, 1) {\footnotesize{$\forall X^\tau \forall Y^\sigma \forall f$}};
+		\node [style=none] (37) at (0, -2) {zero};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (0.center)
+			 to (1.center)
+			 to (3.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=K] (14.center) to (4.center);
+		\draw [style=K] (5.center) to (15.center);
+		\draw (23.center) to (24.center);
+		\draw (27.center) to (28.center);
+		\draw (29.center) to (30.center);
+		\draw [style=K] (16.center) to (25);
+		\draw [style=K] (26) to (17.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

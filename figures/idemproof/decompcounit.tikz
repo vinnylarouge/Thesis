@@ -1,0 +1,87 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (3.5, 0.75) {\Huge$\bigcup$};
+		\node [style=none] (1) at (4.5, 0) {};
+		\node [style=none] (2) at (4, -0.5) {};
+		\node [style=none] (3) at (4.5, -1) {};
+		\node [style=dotC] (4) at (4.5, -0.5) {};
+		\node [style=dotC] (5) at (5.25, 0) {};
+		\node [style=none] (6) at (4.5, 0.75) {};
+		\node [style=none] (7) at (3.5, 0) {};
+		\node [style=dotC] (8) at (5.75, 0) {};
+		\node [style=none] (9) at (3, 0) {};
+		\node [style=none] (10) at (-8, 1) {};
+		\node [style=none] (11) at (-8, -1) {};
+		\node [style=none] (12) at (-10, 1) {};
+		\node [style=none] (13) at (-10, -1) {};
+		\node [style=none] (14) at (-3, 0) {$=$};
+		\node [style=dotC] (15) at (-8, 0) {};
+		\node [style=none] (16) at (-10, 0) {};
+		\node [style=none] (17) at (3, 1.25) {};
+		\node [style=none] (18) at (6, 1.25) {};
+		\node [style=none] (19) at (3, -1.25) {};
+		\node [style=none] (20) at (6, -1.25) {};
+		\node [style=none] (21) at (-7, 0) {=};
+		\node [style=none] (22) at (-4, 1) {};
+		\node [style=none] (23) at (-4, -1) {};
+		\node [style=none] (24) at (-6, 1) {};
+		\node [style=none] (25) at (-6, -1) {};
+		\node [style=dotC] (26) at (-5, 0) {};
+		\node [style=none] (27) at (-6, 0) {};
+		\node [style=dotb] (28) at (-4, 0) {};
+		\node [style=none] (29) at (-1.5, 1.25) {\Huge$\bigcup$};
+		\node [style=none] (30) at (-0.5, 0.5) {};
+		\node [style=none] (31) at (-1, 0) {};
+		\node [style=none] (32) at (-0.5, -0.5) {};
+		\node [style=dotC] (33) at (-0.5, 0) {};
+		\node [style=dotC] (34) at (0.25, 0.5) {};
+		\node [style=none] (35) at (-0.5, 1.25) {};
+		\node [style=none] (36) at (-1.5, 0.5) {};
+		\node [style=dotC] (37) at (0.75, 0.5) {};
+		\node [style=none] (38) at (-2, 0.5) {};
+		\node [style=none] (39) at (-2, 1.5) {};
+		\node [style=none] (40) at (1, 1.5) {};
+		\node [style=none] (41) at (-2, -1.5) {};
+		\node [style=none] (42) at (1, -1.5) {};
+		\node [style=none] (43) at (0, -0.5) {};
+		\node [style=none] (44) at (-0.5, -1) {};
+		\node [style=none] (45) at (0, -1.5) {};
+		\node [style=dotC] (46) at (0, -1) {};
+		\node [style=dotb] (47) at (0.75, -1) {};
+		\node [style=none] (48) at (2, 0) {=};
+		\node [style=none] (49) at (-3, 2) {(Prop. \ref{prop:decompidem})};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (3.center)
+			 to (4.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=K, in=-120, out=0, looseness=1.25] (4) to (5);
+		\draw [style=K] (9.center)
+			 to (7.center)
+			 to [in=180, out=0] (6.center)
+			 to [bend left=45] (5);
+		\draw [style=K] (5) to (8);
+		\draw [style=K] (15) to (16.center);
+		\draw [style=K] (26) to (27.center);
+		\draw [style=K] (26) to (28);
+		\draw [style=K] (31.center)
+			 to (32.center)
+			 to (33.center)
+			 to (30.center)
+			 to cycle;
+		\draw [style=K, in=-120, out=0, looseness=1.25] (33) to (34);
+		\draw [style=K] (38.center)
+			 to (36.center)
+			 to [in=180, out=0] (35.center)
+			 to [bend left=45] (34);
+		\draw [style=K] (34) to (37);
+		\draw [style=K] (44.center)
+			 to (45.center)
+			 to (46.center)
+			 to (43.center)
+			 to cycle;
+		\draw [style=K] (46) to (47);
+	\end{pgfonlayer}
+\end{tikzpicture}

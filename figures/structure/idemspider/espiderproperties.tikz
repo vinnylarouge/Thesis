@@ -1,0 +1,28 @@
+\begin{tikzpicture}[{every node/.style}={scale=1}]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (8) at (-3.5, 0) {};
+		\node [style=circC] (9) at (-5, 0) {};
+		\node [style=none] (11) at (-6, -1) {};
+		\node [style=circC] (15) at (-6, 1) {};
+		\node [style=circC] (16) at (0, 0) {};
+		\node [style=none] (17) at (-1.5, 0) {};
+		\node [style=none] (18) at (1.5, 0) {};
+		\node [style=none] (21) at (-2.5, 0) {$=$};
+		\node [style=none] (22) at (3.5, 0) {};
+		\node [style=circC] (23) at (5, 0) {};
+		\node [style=none] (24) at (6, -1) {};
+		\node [style=circC] (28) at (6, 1) {};
+		\node [style=none] (29) at (2.5, 0) {$=$};
+		\node [style=none] (30) at (0, -1.75) {e-(co)unitality};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (8.center) to (9);
+		\draw [style=K, bend left=45] (9) to (11.center);
+		\draw [style=K, bend left=45] (15) to (9);
+		\draw [style=K] (17.center) to (16);
+		\draw [style=K] (16) to (18.center);
+		\draw [style=K] (22.center) to (23);
+		\draw [style=K, bend right=45] (23) to (24.center);
+		\draw [style=K, bend right=45] (28) to (23);
+	\end{pgfonlayer}
+\end{tikzpicture}

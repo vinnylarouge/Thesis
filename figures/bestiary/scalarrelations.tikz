@@ -1,0 +1,121 @@
+\begin{tikzpicture}[{every node/.style}={scale=1.4}]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (10) at (-5, 3) {};
+		\node [style=none] (11) at (-3, 3) {};
+		\node [style=none] (12) at (-3, 1) {};
+		\node [style=none] (13) at (-5, 1) {};
+		\node [style=none] (14) at (-2, 2) {$=$};
+		\node [style=none] (15) at (3, 3) {};
+		\node [style=none] (16) at (5, 3) {};
+		\node [style=none] (17) at (5, 1) {};
+		\node [style=none] (18) at (3, 1) {};
+		\node [style=none] (19) at (0, 0.5) {(b)one};
+		\node [style=dotb] (20) at (-4.5, 2) {};
+		\node [style=dotb] (21) at (-3.5, 2) {};
+		\node [style=none] (22) at (3.25, 2.75) {};
+		\node [style=none] (23) at (4.75, 2.75) {};
+		\node [style=none] (24) at (4.75, 1.25) {};
+		\node [style=none] (25) at (3.25, 1.25) {};
+		\node [style=none] (26) at (3.25, 2) {};
+		\node [style=none] (27) at (4.75, 2) {};
+		\node [style=none] (28) at (-9, -1) {};
+		\node [style=none] (29) at (-7, -1) {};
+		\node [style=none] (30) at (-7, -3) {};
+		\node [style=none] (31) at (-9, -3) {};
+		\node [style=none] (32) at (-6, -2) {$=$};
+		\node [style=none] (33) at (7, -1) {};
+		\node [style=none] (34) at (9, -1) {};
+		\node [style=none] (35) at (9, -3) {};
+		\node [style=none] (36) at (7, -3) {};
+		\node [style=none] (37) at (0, -3.5) {zero};
+		\node [style=dotb] (38) at (-8.5, -2) {};
+		\node [style=dotb] (39) at (-7.5, -2) {};
+		\node [style=none] (40) at (7.25, -1.25) {};
+		\node [style=none] (41) at (8.75, -1.25) {};
+		\node [style=none] (42) at (8.75, -2.75) {};
+		\node [style=none] (43) at (7.25, -2.75) {};
+		\node [style=none] (44) at (7.25, -2) {};
+		\node [style=none] (45) at (8.75, -2) {};
+		\node [style=none] (46) at (-5, -1) {};
+		\node [style=none] (47) at (-3, -1) {};
+		\node [style=none] (48) at (-3, -3) {};
+		\node [style=none] (49) at (-5, -3) {};
+		\node [style=none] (50) at (-2, -2) {$=$};
+		\node [style=dotb] (51) at (-4.5, -2) {};
+		\node [style=dotb] (52) at (-3.5, -2) {};
+		\node [style=none] (53) at (-1, -1) {};
+		\node [style=none] (54) at (1, -1) {};
+		\node [style=none] (55) at (1, -3) {};
+		\node [style=none] (56) at (-1, -3) {};
+		\node [style=dotb] (58) at (-0.5, -2) {};
+		\node [style=dotb] (59) at (0.5, -2) {};
+		\node [style=none] (60) at (-8.25, -1.75) {};
+		\node [style=none] (61) at (-8.75, -2.25) {};
+		\node [style=none] (62) at (-3.25, -1.75) {};
+		\node [style=none] (63) at (-3.75, -2.25) {};
+		\node [style=none] (64) at (-0.25, -1.75) {};
+		\node [style=none] (65) at (-0.75, -2.25) {};
+		\node [style=none] (66) at (0.75, -1.75) {};
+		\node [style=none] (67) at (0.25, -2.25) {};
+		\node [style=dotb] (68) at (8, -1.75) {};
+		\node [style=dotb] (69) at (8, -2.25) {};
+		\node [style=none] (70) at (-1, 3) {};
+		\node [style=none] (71) at (1, 3) {};
+		\node [style=none] (72) at (1, 1) {};
+		\node [style=none] (73) at (-1, 1) {};
+		\node [style=none] (74) at (2, 2.75) {$(\oplus)$};
+		\node [style=none] (75) at (-0.5, 2.5) {};
+		\node [style=none] (76) at (0.5, 2.5) {};
+		\node [style=none] (77) at (-0.5, 1.5) {};
+		\node [style=none] (78) at (0.5, 1.5) {};
+		\node [style=none] (79) at (2, -2) {$=$};
+		\node [style=none] (80) at (3, -1) {};
+		\node [style=none] (81) at (5, -1) {};
+		\node [style=none] (82) at (5, -3) {};
+		\node [style=none] (83) at (3, -3) {};
+		\node [style=dotb] (84) at (4, -2) {};
+		\node [style=none] (85) at (4.25, -1.75) {};
+		\node [style=none] (86) at (3.75, -2.25) {};
+		\node [style=none] (87) at (2, 2) {$=$};
+		\node [style=none] (88) at (6, -1.25) {$(\oplus)$};
+		\node [style=none] (89) at (6, -2) {$=$};
+		\node [style=none] (90) at (3.5, -1.5) {};
+		\node [style=none] (91) at (4.5, -1.5) {};
+		\node [style=none] (92) at (3.5, -2.5) {};
+		\node [style=none] (93) at (4.5, -2.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (20) to (21);
+		\draw [style=ggF] (24.center)
+			 to (25.center)
+			 to (22.center)
+			 to (23.center)
+			 to cycle;
+		\draw [style=KD] (26.center) to (27.center);
+		\draw [style=K] (38) to (39);
+		\draw [style=ggF] (42.center)
+			 to (43.center)
+			 to (40.center)
+			 to (41.center)
+			 to cycle;
+		\draw [style=K] (51) to (52);
+		\draw [style=K] (58) to (59);
+		\draw (60.center) to (61.center);
+		\draw (62.center) to (63.center);
+		\draw (66.center) to (67.center);
+		\draw (64.center) to (65.center);
+		\draw [style=KD, in=-180, out=0] (44.center) to (68);
+		\draw [style=KD, in=180, out=0] (69) to (45.center);
+		\draw [style=H] (78.center)
+			 to (77.center)
+			 to (75.center)
+			 to (76.center)
+			 to cycle;
+		\draw (85.center) to (86.center);
+		\draw [style=H] (93.center)
+			 to (92.center)
+			 to (90.center)
+			 to (91.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}

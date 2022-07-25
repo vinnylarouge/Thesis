@@ -1,0 +1,23 @@
+\begin{tikzpicture}[{every node/.style}={scale=1}]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (23) at (-3, 1) {};
+		\node [style=none] (24) at (-3, -1) {};
+		\node [style=none] (25) at (-1, 1) {};
+		\node [style=none] (26) at (-1, -1) {};
+		\node [style=none] (27) at (0, 0) {$=$};
+		\node [style=none] (28) at (1, 1) {};
+		\node [style=none] (29) at (1, -1) {};
+		\node [style=none] (30) at (3, -1) {};
+		\node [style=none] (31) at (3, 1) {};
+		\node [style=dotC] (36) at (-2.5, 0) {};
+		\node [style=none] (37) at (-1, 0) {};
+		\node [style=dotb] (38) at (1, 0) {};
+		\node [style=dotC] (39) at (2, 0) {};
+		\node [style=none] (40) at (3, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (36) to (37.center);
+		\draw [style=K] (38) to (39);
+		\draw [style=K] (39) to (40.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

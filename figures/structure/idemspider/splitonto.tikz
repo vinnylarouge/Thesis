@@ -1,0 +1,46 @@
+\begin{tikzpicture}[{every node/.style}={scale=1}]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1, -1.5) {};
+		\node [style=none] (1) at (-2, -0.75) {};
+		\node [style=none] (2) at (-2, -2.25) {};
+		\node [style=none] (3) at (-1.5, -1.5) {$s$};
+		\node [style=none] (4) at (-2, -1.5) {};
+		\node [style=none] (5) at (-2.5, 0.75) {};
+		\node [style=none] (6) at (-1.5, 1.5) {};
+		\node [style=none] (7) at (-1.5, 0) {};
+		\node [style=none] (8) at (-2, 0.75) {$r$};
+		\node [style=none] (9) at (-1.5, 0.75) {};
+		\node [style=dotb] (10) at (-3.5, 0.75) {};
+		\node [style=none] (11) at (0, 0.75) {};
+		\node [style=dotb] (12) at (0, -1.5) {};
+		\node [style=none] (13) at (-3.5, -1.5) {};
+		\node [style=none] (14) at (1, 0.75) {$=$};
+		\node [style=none] (15) at (-3.25, 1.5) {$Y^\sigma$};
+		\node [style=none] (16) at (-0.25, 1.5) {$X^\star$};
+		\node [style=none] (17) at (2.75, 1.5) {$X^\star$};
+		\node [style=dotb] (18) at (2, 0.75) {};
+		\node [style=none] (19) at (3.5, 0.75) {};
+		\node [style=none] (20) at (1, -1.5) {$=$};
+		\node [style=none] (21) at (2.75, -0.75) {$X^\star$};
+		\node [style=dotb] (22) at (3.5, -1.5) {};
+		\node [style=none] (23) at (2, -1.5) {};
+		\node [style=none] (24) at (-0.25, -0.75) {$Y^\sigma$};
+		\node [style=none] (25) at (-3.25, -0.75) {$X^\star$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K(CF)] (1.center)
+			 to (2.center)
+			 to [in=-90, out=0] (0.center)
+			 to [in=0, out=90] cycle;
+		\draw [style=K(CF)] (7.center)
+			 to [in=-90, out=-180] (5.center)
+			 to [in=180, out=90] (6.center)
+			 to cycle;
+		\draw [style=K] (10) to (5.center);
+		\draw [style=K] (9.center) to (11.center);
+		\draw [style=K] (13.center) to (4.center);
+		\draw [style=K] (0.center) to (12);
+		\draw [style=K] (18) to (19.center);
+		\draw [style=K] (22) to (23.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

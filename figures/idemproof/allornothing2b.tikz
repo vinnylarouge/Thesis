@@ -1,0 +1,625 @@
+\begin{tikzpicture}[{every node/.style}={scale=1.3}]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (160) at (-17, 7) {So we have the following \textcolor{red}{equality}:};
+		\node [style=none] (163) at (-16.25, 3) {};
+		\node [style=none] (165) at (-13.25, 3) {};
+		\node [style=dotC] (168) at (-15, 4.5) {};
+		\node [style=none] (185) at (-15.75, 5.75) {};
+		\node [style=none] (186) at (-15.75, 4.75) {};
+		\node [style=none] (187) at (-16.25, 5.25) {};
+		\node [style=dotb] (191) at (-15.75, 5.25) {};
+		\node [style=dotC] (193) at (-14, 4.5) {};
+		\node [style=none] (194) at (-13.25, 5.25) {};
+		\node [style=none] (195) at (-13.25, 3.75) {};
+		\node [style=none] (196) at (-13.25, 6) {};
+		\node [style=none] (197) at (-12.25, 6) {$\rotatebox[origin=c]{45}{=}$};
+		\node [style=none] (198) at (-12.25, 3) {$\rotatebox[origin=c]{-45}{=}$};
+		\node [style=none] (250) at (-11.25, 1) {};
+		\node [style=none] (251) at (-8.25, 1) {};
+		\node [style=dotC] (252) at (-9.75, 3.25) {};
+		\node [style=none] (255) at (-10.5, 2.25) {};
+		\node [style=none] (256) at (-10.5, 1.25) {};
+		\node [style=none] (257) at (-11, 1.75) {};
+		\node [style=dotb] (261) at (-10.5, 3.25) {};
+		\node [style=none] (262) at (-11.25, 4) {};
+		\node [style=none] (264) at (-8.25, 3.25) {};
+		\node [style=none] (266) at (-8.25, 4) {};
+		\node [style=dotC] (268) at (-9, 1.75) {};
+		\node [style=none] (269) at (-10.5, 3.75) {};
+		\node [style=none] (270) at (-10.5, 2.75) {};
+		\node [style=none] (271) at (-11, 3.25) {};
+		\node [style=none] (273) at (-11.25, 5) {};
+		\node [style=none] (274) at (-8.25, 5) {};
+		\node [style=dotC] (275) at (-9, 7.25) {};
+		\node [style=none] (277) at (-10.5, 6.25) {};
+		\node [style=none] (278) at (-10.5, 5.25) {};
+		\node [style=none] (279) at (-11, 5.75) {};
+		\node [style=dotb] (280) at (-10.5, 7.25) {};
+		\node [style=none] (281) at (-11.25, 8) {};
+		\node [style=none] (282) at (-8.25, 7.25) {};
+		\node [style=none] (283) at (-8.25, 5.75) {};
+		\node [style=none] (284) at (-8.25, 8) {};
+		\node [style=dotC] (285) at (-9.75, 5.75) {};
+		\node [style=none] (286) at (-10.5, 7.75) {};
+		\node [style=none] (287) at (-10.5, 6.75) {};
+		\node [style=none] (288) at (-11, 7.25) {};
+		\node [style=none] (290) at (-8.25, 1.75) {};
+		\node [style=none] (501) at (-0.5, -9.5) {};
+		\node [style=none] (502) at (-0.5, -8.5) {};
+		\node [style=none] (503) at (-1, -9) {};
+		\node [style=dotb] (504) at (-0.5, -9) {};
+		\node [style=dotC] (505) at (0.25, -9) {};
+		\node [style=none] (531) at (-15.75, 3.25) {};
+		\node [style=none] (532) at (-15.75, 4.25) {};
+		\node [style=none] (533) at (-16.25, 3.75) {};
+		\node [style=dotb] (534) at (-15.75, 3.75) {};
+		\node [style=none] (535) at (-16.25, 6) {};
+		\node [style=dotb] (536) at (-10.5, 5.75) {};
+		\node [style=dotb] (537) at (-10.5, 1.75) {};
+		\node [style=none] (538) at (-6.25, 1) {};
+		\node [style=none] (539) at (-3.25, 1) {};
+		\node [style=none] (541) at (-5.5, 2.25) {};
+		\node [style=none] (542) at (-5.5, 1.25) {};
+		\node [style=none] (543) at (-6, 1.75) {};
+		\node [style=dotb] (544) at (-5.5, 3.25) {};
+		\node [style=none] (545) at (-6.25, 4) {};
+		\node [style=none] (546) at (-3.25, 3.25) {};
+		\node [style=none] (547) at (-3.25, 4) {};
+		\node [style=dotC] (548) at (-4, 1.75) {};
+		\node [style=none] (549) at (-5.5, 3.75) {};
+		\node [style=none] (550) at (-5.5, 2.75) {};
+		\node [style=none] (551) at (-6, 3.25) {};
+		\node [style=none] (552) at (-6.25, 5) {};
+		\node [style=none] (553) at (-3.25, 5) {};
+		\node [style=dotC] (554) at (-4, 7.25) {};
+		\node [style=none] (555) at (-5.5, 6.25) {};
+		\node [style=none] (556) at (-5.5, 5.25) {};
+		\node [style=none] (557) at (-6, 5.75) {};
+		\node [style=dotb] (558) at (-5.5, 7.25) {};
+		\node [style=none] (559) at (-6.25, 8) {};
+		\node [style=none] (560) at (-3.25, 7.25) {};
+		\node [style=none] (561) at (-3.25, 5.75) {};
+		\node [style=none] (562) at (-3.25, 8) {};
+		\node [style=none] (564) at (-5.5, 7.75) {};
+		\node [style=none] (565) at (-5.5, 6.75) {};
+		\node [style=none] (566) at (-6, 7.25) {};
+		\node [style=none] (567) at (-3.25, 1.75) {};
+		\node [style=dotb] (568) at (-5.5, 5.75) {};
+		\node [style=dotb] (569) at (-5.5, 1.75) {};
+		\node [style=none] (570) at (-7.25, 6.5) {=};
+		\node [style=none] (571) at (-7.25, 2.5) {=};
+		\node [style=dotb] (572) at (-5, 5.75) {};
+		\node [style=dotb] (573) at (-5, 3.25) {};
+		\node [style=dotC] (574) at (-4.5, 6.5) {};
+		\node [style=dotC] (575) at (-4.5, 2.5) {};
+		\node [style=dotC] (576) at (-4, 5.75) {};
+		\node [style=dotC] (577) at (-4, 3.25) {};
+		\node [style=none] (578) at (-1, 1) {};
+		\node [style=none] (579) at (2, 1) {};
+		\node [style=none] (580) at (-0.25, 2.25) {};
+		\node [style=none] (581) at (-0.25, 1.25) {};
+		\node [style=none] (582) at (-0.75, 1.75) {};
+		\node [style=dotb] (583) at (-0.25, 3.25) {};
+		\node [style=none] (584) at (-1, 4) {};
+		\node [style=none] (585) at (2, 3.25) {};
+		\node [style=none] (586) at (2, 4) {};
+		\node [style=dotC] (587) at (1.25, 1.75) {};
+		\node [style=none] (591) at (-1, 5) {};
+		\node [style=none] (592) at (2, 5) {};
+		\node [style=dotC] (593) at (1.25, 7.25) {};
+		\node [style=none] (594) at (-0.25, 6.25) {};
+		\node [style=none] (595) at (-0.25, 5.25) {};
+		\node [style=none] (596) at (-0.75, 5.75) {};
+		\node [style=dotb] (597) at (-0.25, 7.25) {};
+		\node [style=none] (598) at (-1, 8) {};
+		\node [style=none] (599) at (2, 7.25) {};
+		\node [style=none] (600) at (2, 5.75) {};
+		\node [style=none] (601) at (2, 8) {};
+		\node [style=none] (605) at (2, 1.75) {};
+		\node [style=dotb] (606) at (-0.25, 5.75) {};
+		\node [style=dotb] (607) at (-0.25, 1.75) {};
+		\node [style=none] (608) at (-2, 6.5) {=};
+		\node [style=none] (609) at (-2, 2.5) {=};
+		\node [style=dotb] (610) at (0.5, 5.75) {};
+		\node [style=dotb] (611) at (0.5, 3.25) {};
+		\node [style=dotC] (614) at (1.25, 5.75) {};
+		\node [style=dotC] (615) at (1.25, 3.25) {};
+		\node [style=none] (616) at (-0.25, 6.75) {};
+		\node [style=none] (617) at (-0.75, 7.25) {};
+		\node [style=none] (618) at (-0.25, 7.75) {};
+		\node [style=none] (619) at (-0.25, 3.75) {};
+		\node [style=none] (620) at (-0.75, 3.25) {};
+		\node [style=none] (621) at (-0.25, 2.75) {};
+		\node [style=none] (622) at (3, 6.5) {=};
+		\node [style=none] (623) at (3, 2.5) {=};
+		\node [style=none] (624) at (4, 8) {};
+		\node [style=none] (625) at (4, 5) {};
+		\node [style=none] (626) at (7, 8) {};
+		\node [style=none] (627) at (5.25, 5.25) {};
+		\node [style=none] (632) at (4.5, 8) {};
+		\node [style=none] (633) at (4.5, 7) {};
+		\node [style=none] (634) at (4, 7.5) {};
+		\node [style=dotb] (638) at (4.5, 7.5) {};
+		\node [style=none] (639) at (5, 7) {};
+		\node [style=none] (640) at (5, 6) {};
+		\node [style=none] (641) at (4.5, 6.5) {};
+		\node [style=dotb] (642) at (5, 6.5) {};
+		\node [style=dotC] (643) at (5.5, 7.5) {};
+		\node [style=none] (644) at (7, 7.5) {};
+		\node [style=none] (645) at (5.5, 6) {};
+		\node [style=none] (646) at (5.5, 5) {};
+		\node [style=none] (647) at (5, 5.5) {};
+		\node [style=dotb] (648) at (5.5, 5.5) {};
+		\node [style=none] (650) at (7, 5) {};
+		\node [style=none] (651) at (4, 1) {};
+		\node [style=none] (652) at (4, 4) {};
+		\node [style=none] (653) at (7, 1) {};
+		\node [style=none] (655) at (4.5, 1) {};
+		\node [style=none] (656) at (4.5, 2) {};
+		\node [style=none] (657) at (4, 1.5) {};
+		\node [style=dotb] (658) at (4.5, 1.5) {};
+		\node [style=dotb] (662) at (5, 2.5) {};
+		\node [style=dotC] (663) at (5.5, 1.5) {};
+		\node [style=none] (664) at (7, 1.5) {};
+		\node [style=dotb] (668) at (5.5, 3.5) {};
+		\node [style=none] (669) at (7, 3.5) {};
+		\node [style=none] (670) at (7, 4) {};
+		\node [style=none] (671) at (5.5, 3) {};
+		\node [style=none] (672) at (5, 3.5) {};
+		\node [style=none] (673) at (5.5, 4) {};
+		\node [style=none] (674) at (5, 2) {};
+		\node [style=none] (675) at (4.5, 2.5) {};
+		\node [style=none] (676) at (5, 3) {};
+		\node [style=none] (677) at (-12.25, 4.5) {(frob.)};
+		\node [style=none] (678) at (-7.25, 4.5) {(comult/copy)};
+		\node [style=none] (679) at (-2, 4.5) {(e-spider)};
+		\node [style=none] (680) at (3, 4.5) {(e-copy)};
+		\node [style=dotC] (681) at (6.25, 5.5) {};
+		\node [style=dotC] (682) at (6.25, 3.5) {};
+		\node [style=none] (683) at (7, 5.5) {};
+		\node [style=none] (684) at (1, -9) {};
+		\node [style=none] (686) at (6.25, 4.5) {$\rotatebox[origin=c]{90}{\textcolor{red}{=}}$};
+		\node [style=dotb] (687) at (-4.5, -9) {};
+		\node [style=none] (688) at (-3, -9) {};
+		\node [style=none] (690) at (-4.5, -9.5) {};
+		\node [style=none] (691) at (-5, -9) {};
+		\node [style=none] (692) at (-4.5, -8.5) {};
+		\node [style=dotC] (694) at (-3.75, -9) {};
+		\node [style=none] (695) at (-2, -9) {=};
+		\node [style=none] (696) at (-17, -1.5) {Which implies:};
+		\node [style=none] (716) at (-1, -3) {};
+		\node [style=none] (717) at (-1, 0) {};
+		\node [style=none] (718) at (2, -3) {};
+		\node [style=none] (719) at (-0.5, -3) {};
+		\node [style=none] (720) at (-0.5, -2) {};
+		\node [style=none] (721) at (-1, -2.5) {};
+		\node [style=dotb] (722) at (-0.5, -2.5) {};
+		\node [style=dotb] (723) at (0, -1.5) {};
+		\node [style=dotC] (724) at (0.5, -2.5) {};
+		\node [style=none] (725) at (2, -2.5) {};
+		\node [style=dotb] (726) at (0.5, -0.5) {};
+		\node [style=none] (728) at (2, 0) {};
+		\node [style=none] (729) at (0.5, -1) {};
+		\node [style=none] (730) at (0, -0.5) {};
+		\node [style=none] (731) at (0.5, 0) {};
+		\node [style=none] (732) at (0, -2) {};
+		\node [style=none] (733) at (-0.5, -1.5) {};
+		\node [style=none] (734) at (0, -1) {};
+		\node [style=dotC] (736) at (1.25, -0.5) {};
+		\node [style=none] (738) at (-6, -3) {};
+		\node [style=none] (739) at (-3, 0) {};
+		\node [style=none] (740) at (-4.75, -2.75) {};
+		\node [style=none] (745) at (-5, -1) {};
+		\node [style=none] (746) at (-5, -2) {};
+		\node [style=none] (747) at (-5.5, -1.5) {};
+		\node [style=dotb] (748) at (-5, -1.5) {};
+		\node [style=dotC] (749) at (-4.5, -0.5) {};
+		\node [style=none] (751) at (-4.5, -2) {};
+		\node [style=none] (752) at (-4.5, -3) {};
+		\node [style=none] (753) at (-5, -2.5) {};
+		\node [style=dotb] (754) at (-4.5, -2.5) {};
+		\node [style=none] (755) at (-3, -3) {};
+		\node [style=dotC] (756) at (-3.75, -2.5) {};
+		\node [style=none] (757) at (-3, -2.5) {};
+		\node [style=dotb] (758) at (-3.5, -0.5) {};
+		\node [style=dotb] (759) at (2, -0.5) {};
+		\node [style=none] (760) at (-2, -1.5) {\textcolor{red}{=}};
+		\node [style=none] (761) at (-7, -1.5) {=};
+		\node [style=none] (764) at (-9.5, -1) {};
+		\node [style=none] (765) at (-9.5, -2) {};
+		\node [style=none] (766) at (-10, -1.5) {};
+		\node [style=dotb] (767) at (-9.5, -1.5) {};
+		\node [style=dotC] (769) at (-8.75, -1.5) {};
+		\node [style=none] (770) at (-8, -1.5) {};
+		\node [style=none] (771) at (4, -3) {};
+		\node [style=dotC] (772) at (5.25, -1.5) {};
+		\node [style=none] (773) at (4.5, -0.25) {};
+		\node [style=none] (774) at (4.5, -1.25) {};
+		\node [style=none] (775) at (4, -0.75) {};
+		\node [style=dotb] (776) at (4.5, -0.75) {};
+		\node [style=none] (777) at (4.5, -2.75) {};
+		\node [style=none] (778) at (4.5, -1.75) {};
+		\node [style=none] (779) at (4, -2.25) {};
+		\node [style=dotb] (780) at (4.5, -2.25) {};
+		\node [style=none] (781) at (4, 0) {};
+		\node [style=none] (782) at (3, -1.5) {=};
+		\node [style=none] (783) at (6, -1.5) {};
+		\node [style=none] (786) at (-5.5, 0) {};
+		\node [style=none] (787) at (-5.5, -1) {};
+		\node [style=none] (788) at (-6, -0.5) {};
+		\node [style=dotb] (789) at (-5.5, -0.5) {};
+		\node [style=none] (790) at (-17, -5.5) {and symmetrically,};
+		\node [style=none] (791) at (-5, -7) {};
+		\node [style=dotC] (792) at (-3.75, -5.5) {};
+		\node [style=none] (793) at (-4.5, -4.25) {};
+		\node [style=none] (794) at (-4.5, -5.25) {};
+		\node [style=none] (795) at (-5, -4.75) {};
+		\node [style=dotb] (796) at (-4.5, -4.75) {};
+		\node [style=none] (797) at (-4.5, -6.75) {};
+		\node [style=none] (798) at (-4.5, -5.75) {};
+		\node [style=none] (799) at (-5, -6.25) {};
+		\node [style=dotb] (800) at (-4.5, -6.25) {};
+		\node [style=none] (801) at (-5, -4) {};
+		\node [style=none] (802) at (-3, -5.5) {};
+		\node [style=none] (803) at (-3, -4) {};
+		\node [style=none] (804) at (-3, -7) {};
+		\node [style=none] (805) at (-2, -5.5) {=};
+		\node [style=dotC] (807) at (0.25, -5.5) {};
+		\node [style=none] (808) at (-0.5, -5) {};
+		\node [style=none] (809) at (-0.5, -6) {};
+		\node [style=none] (810) at (-1, -5.5) {};
+		\node [style=dotb] (811) at (-0.5, -5.5) {};
+		\node [style=none] (817) at (1, -5.5) {};
+		\node [style=none] (818) at (-17, -9) {So we have the claim:};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=ggF] (185.center)
+			 to (187.center)
+			 to (186.center)
+			 to cycle;
+		\draw [style=K] (186.center)
+			 to (191.center)
+			 to (185.center)
+			 to (187.center)
+			 to cycle;
+		\draw [style=K] (168) to (193);
+		\draw [style=K, bend left=45] (193) to (194.center);
+		\draw [style=K, bend right=45] (193) to (195.center);
+		\draw [style=K] (257.center)
+			 to (256.center)
+			 to (255.center)
+			 to cycle
+			 to (256.center)
+			 to (537.center)
+			 to (255.center)
+			 to cycle;
+		\draw [style=K, in=90, out=-90] (252) to (268);
+		\draw [style=ggF] (270.center)
+			 to (269.center)
+			 to (271.center)
+			 to cycle;
+		\draw [style=K] (269.center)
+			 to (271.center)
+			 to (270.center)
+			 to (261.center)
+			 to cycle;
+		\draw [style=K, in=-180, out=0, looseness=0.75] (252) to (264.center);
+		\draw [style=K] (536.center)
+			 to (277.center)
+			 to (279.center)
+			 to (278.center)
+			 to (277.center)
+			 to (279.center)
+			 to (278.center)
+			 to cycle;
+		\draw [style=K, in=90, out=-90] (275) to (285);
+		\draw [style=K] (285) to (283.center);
+		\draw [style=ggF] (287.center)
+			 to (286.center)
+			 to (288.center)
+			 to cycle;
+		\draw [style=K] (286.center)
+			 to (288.center)
+			 to (287.center)
+			 to (280.center)
+			 to cycle;
+		\draw [style=K] (275) to (282.center);
+		\draw [style=K] (502.center)
+			 to (503.center)
+			 to (501.center)
+			 to (504.center)
+			 to cycle;
+		\draw [style=K] (504) to (505);
+		\draw [style=K] (534.center)
+			 to (532.center)
+			 to (533.center)
+			 to (531.center)
+			 to cycle;
+		\draw [style=K, bend right=45] (534) to (168);
+		\draw [style=K, bend left=45] (191) to (168);
+		\draw [style=K] (536) to (285);
+		\draw [style=K] (280) to (275);
+		\draw [style=K] (261) to (252);
+		\draw [style=K] (537) to (268);
+		\draw [style=K] (268) to (290.center);
+		\draw [style=K] (543.center)
+			 to (542.center)
+			 to (541.center)
+			 to cycle
+			 to (542.center)
+			 to (569.center)
+			 to (541.center)
+			 to cycle;
+		\draw [style=ggF] (550.center)
+			 to (549.center)
+			 to (551.center)
+			 to cycle;
+		\draw [style=K] (549.center)
+			 to (551.center)
+			 to (550.center)
+			 to (544.center)
+			 to cycle;
+		\draw [style=K] (568.center)
+			 to (555.center)
+			 to (557.center)
+			 to (556.center)
+			 to (555.center)
+			 to (557.center)
+			 to (556.center)
+			 to cycle;
+		\draw [style=ggF] (565.center)
+			 to (564.center)
+			 to (566.center)
+			 to cycle;
+		\draw [style=K] (564.center)
+			 to (566.center)
+			 to (565.center)
+			 to (558.center)
+			 to cycle;
+		\draw [style=K] (554) to (560.center);
+		\draw [style=K] (558) to (554);
+		\draw [style=K] (569) to (548);
+		\draw [style=K] (548) to (567.center);
+		\draw [style=K] (568) to (572);
+		\draw [style=K] (544) to (573);
+		\draw [style=K] (572) to (576);
+		\draw [style=K] (576) to (561.center);
+		\draw [style=K, in=-135, out=90] (572) to (574);
+		\draw [style=K, in=-90, out=60] (574) to (554);
+		\draw [style=K, in=120, out=-90] (573) to (575);
+		\draw [style=K, in=90, out=-60] (575) to (548);
+		\draw [style=K] (573) to (577);
+		\draw [style=K] (577) to (546.center);
+		\draw [style=K] (582.center) to (581.center);
+		\draw [style=K] (581.center) to (580.center);
+		\draw [style=K] (580.center) to (582.center);
+		\draw [style=K] (582.center) to (581.center);
+		\draw [style=K] (581.center) to (607);
+		\draw [style=K] (607) to (580.center);
+		\draw [style=K] (580.center) to (582.center);
+		\draw [style=K] (606) to (594.center);
+		\draw [style=K] (594.center) to (596.center);
+		\draw [style=K] (596.center) to (595.center);
+		\draw [style=K] (595.center) to (594.center);
+		\draw [style=K] (594.center) to (596.center);
+		\draw [style=K] (596.center) to (595.center);
+		\draw [style=K] (595.center) to (606);
+		\draw [style=K] (593) to (599.center);
+		\draw [style=K] (597) to (593);
+		\draw [style=K] (607) to (587);
+		\draw [style=K] (587) to (605.center);
+		\draw [style=K] (606) to (610);
+		\draw [style=K] (583) to (611);
+		\draw [style=K] (610) to (614);
+		\draw [style=K] (614) to (600.center);
+		\draw [style=K] (611) to (615);
+		\draw [style=K] (615) to (585.center);
+		\draw [style=K, in=90, out=-90] (611) to (587);
+		\draw [style=K, in=-90, out=90] (610) to (593);
+		\draw [style=ggF] (618.center)
+			 to (617.center)
+			 to (616.center)
+			 to (597.center)
+			 to cycle;
+		\draw [style=ggF] (620.center)
+			 to (621.center)
+			 to (583.center)
+			 to (619.center)
+			 to cycle;
+		\draw [style=K] (597) to (618.center);
+		\draw [style=K] (618.center) to (617.center);
+		\draw [style=K] (617.center) to (616.center);
+		\draw [style=K] (616.center) to (597);
+		\draw [style=K] (583) to (619.center);
+		\draw [style=K] (619.center) to (620.center);
+		\draw [style=K] (620.center) to (621.center);
+		\draw [style=K] (621.center) to (583);
+		\draw [style=ggF] (632.center)
+			 to (634.center)
+			 to (633.center)
+			 to cycle;
+		\draw [style=K] (633.center)
+			 to (638.center)
+			 to (632.center)
+			 to (634.center)
+			 to cycle;
+		\draw [style=K] (641.center) to (640.center);
+		\draw [style=K] (640.center) to (639.center);
+		\draw [style=K] (639.center) to (641.center);
+		\draw [style=K] (641.center) to (640.center);
+		\draw [style=K] (640.center) to (642);
+		\draw [style=K] (642) to (639.center);
+		\draw [style=K] (639.center) to (641.center);
+		\draw [style=K, in=-90, out=0] (642) to (643);
+		\draw [style=K] (638) to (643);
+		\draw [style=K] (643) to (644.center);
+		\draw [style=K] (647.center) to (646.center);
+		\draw [style=K] (646.center) to (645.center);
+		\draw [style=K] (645.center) to (647.center);
+		\draw [style=K] (647.center) to (646.center);
+		\draw [style=K] (646.center) to (648);
+		\draw [style=K] (648) to (645.center);
+		\draw [style=K] (645.center) to (647.center);
+		\draw [style=ggF] (655.center) to (657.center);
+		\draw [style=ggF] (657.center) to (656.center);
+		\draw [style=ggF] (656.center) to (655.center);
+		\draw [style=K] (656.center) to (658);
+		\draw [style=K] (658) to (655.center);
+		\draw [style=K] (655.center) to (657.center);
+		\draw [style=K] (657.center) to (656.center);
+		\draw [style=K, in=90, out=0] (662) to (663);
+		\draw [style=K] (658) to (663);
+		\draw [style=K] (663) to (664.center);
+		\draw [style=ggF] (671.center)
+			 to (668.center)
+			 to (673.center)
+			 to (672.center)
+			 to cycle;
+		\draw [style=ggF] (674.center)
+			 to (662.center)
+			 to (676.center)
+			 to (675.center)
+			 to cycle;
+		\draw [style=K] (673.center)
+			 to (672.center)
+			 to (671.center)
+			 to (668.center)
+			 to cycle;
+		\draw [style=K] (676.center)
+			 to (675.center)
+			 to (674.center)
+			 to (662.center)
+			 to cycle;
+		\draw [style=K] (648) to (681);
+		\draw [style=K] (681) to (683.center);
+		\draw [style=K] (668) to (682);
+		\draw [style=K] (682) to (669.center);
+		\draw [style=K] (505) to (684.center);
+		\draw [style=ggF] (690.center)
+			 to (687.center)
+			 to (692.center)
+			 to (691.center)
+			 to cycle;
+		\draw [style=K] (692.center)
+			 to (691.center)
+			 to (690.center)
+			 to (687.center)
+			 to cycle;
+		\draw [style=K] (687) to (694);
+		\draw [style=K] (694) to (688.center);
+		\draw [style=ggF] (719.center) to (721.center);
+		\draw [style=ggF] (721.center) to (720.center);
+		\draw [style=ggF] (720.center) to (719.center);
+		\draw [style=K] (720.center) to (722);
+		\draw [style=K] (722) to (719.center);
+		\draw [style=K] (719.center) to (721.center);
+		\draw [style=K] (721.center) to (720.center);
+		\draw [style=K, in=90, out=0] (723) to (724);
+		\draw [style=K] (722) to (724);
+		\draw [style=K] (724) to (725.center);
+		\draw [style=ggF] (729.center)
+			 to (726.center)
+			 to (731.center)
+			 to (730.center)
+			 to cycle;
+		\draw [style=ggF] (732.center)
+			 to (723.center)
+			 to (734.center)
+			 to (733.center)
+			 to cycle;
+		\draw [style=K] (731.center)
+			 to (730.center)
+			 to (729.center)
+			 to (726.center)
+			 to cycle;
+		\draw [style=K] (734.center)
+			 to (733.center)
+			 to (732.center)
+			 to (723.center)
+			 to cycle;
+		\draw [style=K] (726) to (736);
+		\draw [style=K] (747.center) to (746.center);
+		\draw [style=K] (746.center) to (745.center);
+		\draw [style=K] (745.center) to (747.center);
+		\draw [style=K] (747.center) to (746.center);
+		\draw [style=K] (746.center) to (748);
+		\draw [style=K] (748) to (745.center);
+		\draw [style=K] (745.center) to (747.center);
+		\draw [style=K, in=-90, out=0] (748) to (749);
+		\draw [style=K] (753.center) to (752.center);
+		\draw [style=K] (752.center) to (751.center);
+		\draw [style=K] (751.center) to (753.center);
+		\draw [style=K] (753.center) to (752.center);
+		\draw [style=K] (752.center) to (754);
+		\draw [style=K] (754) to (751.center);
+		\draw [style=K] (751.center) to (753.center);
+		\draw [style=K] (754) to (756);
+		\draw [style=K] (756) to (757.center);
+		\draw [style=K] (736) to (759);
+		\draw [style=K] (749) to (758);
+		\draw [style=K] (766.center) to (765.center);
+		\draw [style=K] (765.center) to (764.center);
+		\draw [style=K] (764.center) to (766.center);
+		\draw [style=K] (766.center) to (765.center);
+		\draw [style=K] (765.center) to (767);
+		\draw [style=K] (767) to (764.center);
+		\draw [style=K] (764.center) to (766.center);
+		\draw [style=K] (767) to (769);
+		\draw [style=K] (769) to (770.center);
+		\draw [style=ggF] (773.center)
+			 to (775.center)
+			 to (774.center)
+			 to cycle;
+		\draw [style=K] (774.center)
+			 to (776.center)
+			 to (773.center)
+			 to (775.center)
+			 to cycle;
+		\draw [style=K] (780.center)
+			 to (778.center)
+			 to (779.center)
+			 to (777.center)
+			 to cycle;
+		\draw [style=K, bend right=45] (780) to (772);
+		\draw [style=K, bend left=45] (776) to (772);
+		\draw [style=K] (772) to (783.center);
+		\draw [style=ggF] (786.center)
+			 to (788.center)
+			 to (787.center)
+			 to cycle;
+		\draw [style=K] (787.center)
+			 to (789.center)
+			 to (786.center)
+			 to (788.center)
+			 to cycle;
+		\draw [style=K] (789) to (749);
+		\draw [style=ggF] (793.center)
+			 to (795.center)
+			 to (794.center)
+			 to cycle;
+		\draw [style=K] (794.center)
+			 to (796.center)
+			 to (793.center)
+			 to (795.center)
+			 to cycle;
+		\draw [style=K] (800.center)
+			 to (798.center)
+			 to (799.center)
+			 to (797.center)
+			 to cycle;
+		\draw [style=K, bend right=45] (800) to (792);
+		\draw [style=K, bend left=45] (796) to (792);
+		\draw [style=K] (792) to (802.center);
+		\draw [style=ggF] (808.center)
+			 to (810.center)
+			 to (809.center)
+			 to cycle;
+		\draw [style=K] (809.center)
+			 to (811.center)
+			 to (808.center)
+			 to (810.center)
+			 to cycle;
+		\draw [style=K] (811) to (807);
+		\draw [style=K] (807) to (817.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

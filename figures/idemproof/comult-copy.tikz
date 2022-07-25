@@ -1,0 +1,33 @@
+\begin{tikzpicture}[{every node/.style}={scale=1}]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1, 0.5) {};
+		\node [style=none] (1) at (-1, -0.5) {};
+		\node [style=none] (2) at (-3, 0) {};
+		\node [style=none] (3) at (-3, 1) {};
+		\node [style=none] (4) at (-1, 1) {};
+		\node [style=none] (5) at (-3, -1) {};
+		\node [style=none] (6) at (-1, -1) {};
+		\node [style=none] (7) at (0, 0) {$=$};
+		\node [style=none] (8) at (1, 1) {};
+		\node [style=none] (9) at (1, -1) {};
+		\node [style=none] (10) at (3, -1) {};
+		\node [style=none] (11) at (3, 1) {};
+		\node [style=dotb] (12) at (1.75, 0) {};
+		\node [style=none] (13) at (1, 0) {};
+		\node [style=dotC] (14) at (-2, 0) {};
+		\node [style=dotC] (15) at (2.5, 0.5) {};
+		\node [style=dotC] (16) at (2.5, -0.5) {};
+		\node [style=none] (17) at (3, 0.5) {};
+		\node [style=none] (18) at (3, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (2.center) to (14);
+		\draw [style=K, in=180, out=60] (14) to (0.center);
+		\draw [style=K, in=-60, out=-180] (1.center) to (14);
+		\draw [style=K] (13.center) to (12);
+		\draw [style=K, in=-180, out=60] (12) to (15);
+		\draw [style=K, in=-180, out=-75] (12) to (16);
+		\draw [style=K] (15) to (17.center);
+		\draw [style=K] (16) to (18.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

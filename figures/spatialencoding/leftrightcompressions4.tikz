@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dotw] (0) at (-5, 1) {$\squareleftblack$};
+		\node [style=none] (1) at (-6, 1) {};
+		\node [style=dotw] (2) at (-5, -1) {$\squarerightblack$};
+		\node [style=none] (3) at (-6, -1) {};
+		\node [style=dotwD] (4) at (-2, -1) {$\squarerightblack$};
+		\node [style=none] (5) at (-1, -1) {};
+		\node [style=dotwD] (6) at (-2, 1) {$\squareleftblack$};
+		\node [style=none] (7) at (-1, 1) {};
+		\node [style=none] (8) at (0, 0) {$=$};
+		\node [style=none] (9) at (1, 0.75) {};
+		\node [style=none] (10) at (1, -0.75) {};
+		\node [style=none] (11) at (5, 0.75) {};
+		\node [style=none] (12) at (5, -0.75) {};
+		\node [style=circ] (13) at (-4, 0) {};
+		\node [style=circ] (14) at (-3, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (1.center) to (0);
+		\draw [style=K] (3.center) to (2);
+		\draw [style=K] (4) to (5.center);
+		\draw [style=K] (6) to (7.center);
+		\draw [style=K] (9.center) to (11.center);
+		\draw [style=K] (10.center) to (12.center);
+		\draw [style=K, bend left=45, looseness=1.25] (0) to (13);
+		\draw [style=K, bend right=45] (2) to (13);
+		\draw [style=K] (13) to (14);
+		\draw [style=K, bend left=45] (14) to (6);
+		\draw [style=K, bend right=45] (14) to (4);
+	\end{pgfonlayer}
+\end{tikzpicture}

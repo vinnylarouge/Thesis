@@ -1,0 +1,38 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 0) {:=};
+		\node [style=dotC] (5) at (-1.75, 0) {};
+		\node [style=none] (9) at (-3, 0) {};
+		\node [style=dotC] (14) at (2.5, -0.5) {};
+		\node [style=dotC] (15) at (3.25, 0) {};
+		\node [style=none] (16) at (2.5, 0.75) {};
+		\node [style=none] (17) at (1.5, 0) {};
+		\node [style=dotC] (18) at (3.75, 0) {};
+		\node [style=none] (19) at (1, 0) {};
+		\node [style=none] (20) at (-1.75, 0.5) {};
+		\node [style=none] (21) at (-1.25, 0) {};
+		\node [style=none] (22) at (-1.75, -0.5) {};
+		\node [style=none] (23) at (2.5, 0) {};
+		\node [style=none] (24) at (2, -0.5) {};
+		\node [style=none] (25) at (2.5, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (9.center) to (5);
+		\draw [style=K, in=-120, out=0, looseness=1.25] (14) to (15);
+		\draw [style=K] (19.center)
+			 to (17.center)
+			 to [in=180, out=0] (16.center)
+			 to [bend left=45] (15);
+		\draw [style=K] (15) to (18);
+		\draw [style=KO] (21.center)
+			 to (22.center)
+			 to (5.center)
+			 to (20.center)
+			 to cycle;
+		\draw [style=KO] (23.center)
+			 to (24.center)
+			 to (25.center)
+			 to (14.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,27 @@
+\begin{tikzpicture}[{every node/.style}={scale=1}]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (8) at (-1, 0) {};
+		\node [style=dotC] (9) at (-2.5, 0) {};
+		\node [style=dotC] (16) at (3.5, 0) {};
+		\node [style=none] (17) at (1, 0) {};
+		\node [style=none] (18) at (6, 0) {};
+		\node [style=none] (21) at (0, 0) {$=$};
+		\node [style=none] (22) at (-6, 0) {};
+		\node [style=dotC] (23) at (-4.5, 0) {};
+		\node [style=none] (24) at (-3.5, -1) {};
+		\node [style=none] (30) at (-3.5, 1) {};
+		\node [style=none] (31) at (0, -1.75) {e-special};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (8.center) to (9);
+		\draw [style=K] (17.center) to (16);
+		\draw [style=K] (16) to (18.center);
+		\draw [style=K] (22.center) to (23);
+		\draw [style=K] (23)
+			 to [bend right] (24.center)
+			 to [bend right] (9);
+		\draw [style=K] (23)
+			 to [bend left] (30.center)
+			 to [bend left] (9);
+	\end{pgfonlayer}
+\end{tikzpicture}

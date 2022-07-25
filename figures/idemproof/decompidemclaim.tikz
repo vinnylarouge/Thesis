@@ -1,0 +1,54 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1, -0.75) {};
+		\node [style=none] (1) at (-1, 1) {};
+		\node [style=none] (2) at (-1, -1) {};
+		\node [style=none] (3) at (-3, 1) {};
+		\node [style=none] (4) at (-3, -1) {};
+		\node [style=none] (5) at (0, 0) {$=$};
+		\node [style=dotC] (6) at (-2, 0) {};
+		\node [style=none] (7) at (-1, 0) {};
+		\node [style=none] (8) at (1.75, 1) {\Huge$\bigcup$};
+		\node [style=none] (9) at (3.5, -0.5) {};
+		\node [style=none] (10) at (3, -1) {};
+		\node [style=none] (11) at (3.5, -1.5) {};
+		\node [style=dotC] (12) at (3.5, -1) {};
+		\node [style=none] (13) at (4.5, 0) {};
+		\node [style=none] (14) at (-3, 0) {};
+		\node [style=none] (15) at (2.5, 0) {};
+		\node [style=none] (16) at (2, -0.5) {};
+		\node [style=none] (17) at (2.5, -1) {};
+		\node [style=dotC] (18) at (2.5, -0.5) {};
+		\node [style=dotC] (19) at (3.25, 0) {};
+		\node [style=none] (20) at (2.5, 0.75) {};
+		\node [style=none] (21) at (1.5, 0) {};
+		\node [style=dotC] (22) at (3.75, 0) {};
+		\node [style=none] (23) at (1, 1.5) {};
+		\node [style=none] (24) at (5, 1.5) {};
+		\node [style=none] (25) at (5, -1.75) {};
+		\node [style=none] (26) at (1, -1.75) {};
+		\node [style=none] (27) at (5, 0) {};
+		\node [style=none] (28) at (1, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (6) to (7.center);
+		\draw [style=K] (11.center)
+			 to (12.center)
+			 to (9.center)
+			 to (10.center)
+			 to cycle;
+		\draw [style=K, in=180, out=0] (12) to (13.center);
+		\draw [style=K] (14.center) to (6);
+		\draw [style=K] (17.center)
+			 to (18.center)
+			 to (15.center)
+			 to (16.center)
+			 to cycle;
+		\draw [style=K, in=-120, out=0, looseness=1.25] (18) to (19);
+		\draw [style=K, bend left=45] (20.center) to (19);
+		\draw [style=K, in=180, out=0] (21.center) to (20.center);
+		\draw [style=K] (19) to (22);
+		\draw [style=K] (28.center) to (21.center);
+		\draw [style=K] (13.center) to (27.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

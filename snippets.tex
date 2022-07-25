@@ -31,3 +31,228 @@ For continuity, if $S \subseteq \mathcal{P}X$ is open, by definition of $\mathca
 \begin{defn}[Partial Functions]
 A \textbf{continuous partial function} $X^\tau \rightarrow Y^\sigma$ is the intersection of a continuous function and a bowtie. 
 \end{defn}
+
+\marginnote{
+\begin{intuition}\label{intuit:screen}
+View the space as a screen display, with points as pixels. Then states are "shapes" of lit up pixels, and effects are "tests", which check for lit pixels in an open set. In a discrete topology, all shapes are distinguishable by testing. In an indiscrete topology, the only distinction is between "no shape" and "some shape".
+\end{intuition}
+}
+
+
+
+
+
+\subsection{ Compact Hausdorff spaces are arachnid }
+
+\marginnote{
+
+\begin{rem}[Compactness]
+An \textbf{open cover} of a space $X^\tau$ is a set of opens $\{U_i: i \in I\} \subset \tau$ such that:
+\[ \bigcup\limits_{i \in I} U_i = X \]
+A \textbf{subcover} of an open cover is a subset of the open cover that is still an open cover.
+$X^\tau$ is \textbf{compact} when every open cover has a finite subcover.
+\end{rem}
+
+\begin{rem}[Hausdorff]
+$X^\tau$ is \textbf{Hausdorff} when for any two distinct points $a,b \in X$ there are disjoint opens $U,V \in \tau$ such that $a \in U$ and $b \in V$. The mnemonic is that the points are "housed-off".
+\end{rem}
+
+}
+
+\begin{defn}[Non-unital Spider]
+A \textbf{non-unital spider} on $X^\tau$ is a tuple [[[placeholder]]] that satisfies the following relations:
+
+\end{defn}
+
+\begin{defn}[Arachnidity]
+Call $X^\tau$ \textbf{arachnid} if it admits a family of non-unital spiders such that for any finite family $\mathbb{K}:=\{K_i \subset X : i \in I, \ |I| \in \mathbb{N}\}$ of subsets of $X$, there exists a non-unital spider on $X^\tau$ such that:
+
+[[placeholder]]
+
+\end{defn}
+
+\begin{theorem}[Compact Hausdorff is Arachnidity]
+$X^\tau$ is compact and Hausdorff iff $X^\tau$ is arachnid.
+\end{theorem}
+
+We prove this by first relating arachnidity to some conditions that are phrased in the "distinguishing shapes" setting of Intuition \ref{intuit:screen}, and then bridge to compact Hausdorff.
+
+\subsection{Arachnidity, Distinguishing, Encoding, Recognition}
+
+\newthought{When is the topology of a space "good"?} There are several possible criteria for "goodness", such as the ability to distinguish different shapes, encode those shapes in the results of testing, and reconstruct those shapes from an encoding.
+
+\marginnote{
+    \begin{remark}
+        Where $\tau$ of all opens represents all possible tests, a test battery is a specific set of tests.
+    \end{remark}
+}
+\begin{defn}[Test battery]
+A \textbf{test battery} of $X^\tau$ is a subset of $\tau$.
+\end{defn}
+\marginnote{
+    \begin{remark}
+    A curriculum is a range of possible shapes.
+    \end{remark}
+}
+\begin{defn}[Curriculum]
+A \textbf{curriculum} of $X^\tau$ is a set of subsets of $X$.
+\end{defn}
+
+\marginnote{
+\begin{remark}
+If $X^\tau$ is not distinguishing, then there are two distinct shapes $J \neq K$ that no test can tell apart.
+\end{remark}    
+}
+\begin{defn}[Distinguishing]\label{def:distinguish}
+$X^\tau$ is \textbf{distinguishing} when
+\[\forall J,K_{(\subseteq X)} (J \neq K \iff \exists U_{(\in \tau)}: placeholder)\]
+\end{defn}
+
+\marginnote{
+    \begin{remark}
+    An encoding is a binary spectrum; for each test in the battery, a bit indicating whether that test has failed or succeeded.
+    \end{remark}
+}
+\begin{defn}[Encoding]
+An \textbf{encoding} of $K \subset X$ with respect to a test battery $\mathbb{T}: \{U_i : i \in I, U_i \in \tau\}$ is a direct sum:
+\[placeholder\]
+\end{defn}
+
+\marginnote{
+    \begin{remark}
+    A recogniser can take any finite curriculum and provide a finite test battery such that shapes can be distinguished via their finite encodings. Finiteness is a weak but necessary condition computability -- i.e. practical feasibility.
+    \end{remark}
+}
+\begin{defn}[Recognition: computable distinguishing encodings]
+$X^\tau$ is a \textbf{recogniser} if for any finite $\mathbb{K} := \{ K_i \subseteq X : i \in I, \ |I|\in \mathbb{N} \}$, there exists a finite test battery $\mathbb{U} := \{ U_j \in \tau: j \in J, \ |J|\in \mathbb{N} \} \subseteq \tau$ such that:
+\[K_a \neq K_b \iff placeholder\]
+\end{defn}
+
+\marginnote{
+    \begin{remark}
+    Instead of providing a different test battery for each curriculum, it would be more convenient to extend the test battery whenever an unseen shape enters the curriculum; this is what a learner does.
+    \end{remark}
+}
+
+\begin{defn}[Learning: extendable recognisers]
+A recogniser is a \textbf{learner} when, for arbitrary finite curricula $\mathbb{K}' \supset \mathbb{K}$ and a finite test battery $\mathbb{U}$:
+\[placeholder \iff \exists \mathbb{U}'_{(\mathbb{U} \subseteq \mathbb{U}' \subseteq \tau)}:( |\mathbb{U}'| \in \mathbb{N} \wedge placeholder)\]
+
+\end{defn}
+
+\marginnote{
+    \begin{remark}
+    Recall 
+    \end{remark}
+}
+\begin{defn}[Recall: reconstruction from encodings]
+
+\end{defn}
+
+\marginnote{
+    \begin{remark}
+
+    \end{remark}
+}
+
+\begin{defn}
+
+\end{defn}
+
+
+
+\section{Enrichment structure}
+
+
+
+Denote by $(X \times Y)^{(\tau \multimap \sigma)}$ the topological space of topological relations of type $X^\tau \rightarrow Y^\sigma$ as given above. We show that this topology is finer than the product topology.
+
+\begin{proposition}
+For any $X^\tau$ and $Y^\sigma$, $\tau \times \sigma \subseteq \tau \multimap \sigma$
+\begin{proof}
+Let $\mathfrak{b}_\tau, \mathfrak{b}_\sigma$ be bases for $\tau$ and $\sigma$ respectively, then $\tau \times \sigma$ has basis $\mathfrak{b}_\tau \times \mathfrak{b}_\sigma$. An arbitrarily element $(t \in \tau, s \in \sigma)$ of this product basis can be viewed as a topological relation $t \times s \subseteq X \times Y$. Every open of $\tau \times \sigma$ is a union of such basis elements, and topological relations are closed under arbitrary union, so we have the (evidently injective) correspondence:
+\[ \tau \times \sigma \ni \bigcup\limits_{i \in I}(t_i \times s_i) \mapsto \bigcup\limits_{i \in I}(t_i \times s_i) \in \tau \multimap \sigma \]
+\end{proof}
+\end{proposition}
+
+\marginnote{
+\begin{example}[$\tau \multimap \sigma \nsubseteq \tau \times \sigma$]
+Recalling Proposition \ref{prop:states}, let $\tau = \{\varnothing,\{\star\}\}$ on the singleton, and $\sigma$ be an arbitrary nondiscrete topology on base space Y. $(\{\star\} \times Y)^{(\tau \times \sigma)}$ is isomorphic to $Y^\sigma$, but $(\{\star\} \times Y)^{\tau \multimap \sigma)}$ is the isomorphic to the discrete topology $Y^\bullet$. For a more concrete example, consider the Sierpi\'{n}ski space $\mathcal{S}$ again, along with the topological relation $\{(0,0),(1,0),(1,1)\} \subset \mathcal{S} \times \mathcal{S}$; due to the presence of $(0,0)$, this topological relation cannot be formed by a union of basis elements of the product topology, which are:
+\begin{description}
+\item[$\{1\} \times \{1\}$ =] $\{(1,1)\}$
+\item[$\{1\} \times \{0,1\}$ =] $\{ (1,0),(1,1) \}$
+\item[$\{0,1\} \times \{1\}$ =] $\{ (1,1),(0,1) \}$
+\item[$\{0,1\} \times \{0,1\}$ =] $\{ (0,0), (0,1), (1,0), (0,1) \}$
+\end{description}
+
+\end{example}
+}
+
+\begin{proposition}
+$\tau \multimap \sigma = \tau \times \sigma \iff $
+\begin{proof}
+
+\end{proof}
+\end{proposition}
+
+\clearpage
+
+\subsection{How \textbf{TopRel} relates to other well-known categories}
+
+\[\begin{tikzcd}
+    &&& {\mathbf{Loc}} \\
+    \\
+    \\
+    {\mathbf{Top}} &&& {\mathbf{TopRel}} &&& {\mathbf{Rel}} \\
+    \\
+    \\
+    &&& {\mathbf{Set}}
+    \arrow[""{name=0, anchor=center, inner sep=0}, "{(-)_U}", curve={height=-12pt}, shorten <=8pt, shorten >=8pt, from=4-4, to=4-7]
+    \arrow[""{name=1, anchor=center, inner sep=0}, "{(-)_D}", curve={height=-12pt}, shorten <=8pt, shorten >=8pt, from=4-7, to=4-4]
+    \arrow[""{name=2, anchor=center, inner sep=0}, "{(-)_U}", curve={height=-12pt}, shorten <=10pt, shorten >=10pt, from=4-1, to=7-4]
+    \arrow[""{name=3, anchor=center, inner sep=0}, "{(-)_D}", curve={height=-12pt}, shorten <=10pt, shorten >=10pt, from=7-4, to=4-1]
+    \arrow[""{name=4, anchor=center, inner sep=0}, "{(-)_L}", curve={height=-12pt}, shorten <=10pt, shorten >=10pt, from=4-1, to=1-4]
+    \arrow[""{name=5, anchor=center, inner sep=0}, "{(-)_P}", curve={height=-12pt}, shorten <=10pt, shorten >=10pt, from=1-4, to=4-1]
+    \arrow[shorten <=5pt, shorten >=5pt, from=4-4, to=1-4]
+    \arrow["i"{description}, shorten <=10pt, shorten >=10pt, hook, from=7-4, to=4-7]
+    \arrow["i"{description}, shorten <=8pt, shorten >=8pt, hook, from=4-1, to=4-4]
+    \arrow["\dashv"{anchor=center, rotate=45}, draw=none, from=3, to=2]
+    \arrow["\dashv"{anchor=center, rotate=90}, draw=none, from=1, to=0]
+    \arrow["\dashv"{anchor=center, rotate=-44}, draw=none, from=4, to=5]
+\end{tikzcd}\]
+
+Here are two ways to think about \textbf{TopRel} in relation to other categories. First, we can think of the analogy
+\[\mathbf{TopRel}:\mathbf{Rel}::\mathbf{Top}:\mathbf{Set}\]
+This analogy holds up to the free-forgetful adjunction between \textbf{Top} and \textbf{Set} embedding into a free-forgetful adjunction between \textbf{TopRel} and \textbf{Rel}.\marginnote{
+    \begin{remark}[\textbf{TopRel} is not Kleisli in the obvious way]
+    However, while \textbf{Rel} is the Kleisli category of \textbf{Set} with respect to the powerset monad, \textbf{TopRel} doesn't seem to be the Kleisli category of \textbf{Top} in an analogous way. The obvious notion of a powerset topology $\mathcal{P}\tau := \{S \subset \tau : \bigcup S \in \tau\}$ agrees with our na\"{i}ve definition of continuous relation, but the underlying unit and multiplication maps from the powerset monad on \textbf{Set} fail to be continuous with respect to this topology.
+    \end{remark}
+}
+
+
+
+\begin{proposition}[\textbf{Rel} and \textbf{TopRel} free-forgetful adjunction]
+
+\begin{proof}
+
+\end{proof}
+\end{proposition}
+
+
+\begin{proposition}[(Outer square)]
+
+\begin{proof}
+
+\end{proof}
+\end{proposition}
+
+\begin{rem}[Locales, and the \textbf{Top}-\textbf{Loc} adjunction]
+
+\end{rem}
+
+\begin{proposition}[(Inner square)]
+
+\begin{proof}
+
+\end{proof}
+\end{proposition}

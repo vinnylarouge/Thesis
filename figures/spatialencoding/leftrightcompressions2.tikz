@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dotw] (0) at (-5.25, 0) {$\squareleftblack$};
+		\node [style=none] (1) at (-6.25, 0) {};
+		\node [style=dotwD] (2) at (-4, 0) {$\squareleftblack$};
+		\node [style=none] (3) at (-3, 0) {};
+		\node [style=none] (4) at (-2, 0) {$=$};
+		\node [style=dotw] (5) at (4, 0) {$\squarerightblack$};
+		\node [style=none] (6) at (3, 0) {};
+		\node [style=dotwD] (7) at (5, 0) {$\squarerightblack$};
+		\node [style=none] (8) at (6, 0) {};
+		\node [style=none] (9) at (-1, 0) {};
+		\node [style=none] (10) at (1, 0) {};
+		\node [style=none] (11) at (2, 0) {$=$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (1.center) to (0);
+		\draw [style=K] (2) to (3.center);
+		\draw [style=K] (0) to (2);
+		\draw [style=K] (6.center) to (5);
+		\draw [style=K] (7) to (8.center);
+		\draw [style=K] (5) to (7);
+		\draw [style=K] (9.center) to (10.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

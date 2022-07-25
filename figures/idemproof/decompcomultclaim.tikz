@@ -1,0 +1,52 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (2, 0.5) {};
+		\node [style=none] (1) at (2, -0.5) {};
+		\node [style=none] (2) at (2.5, 0) {};
+		\node [style=dotC] (3) at (2, 0) {};
+		\node [style=none] (4) at (3, -0.25) {};
+		\node [style=none] (5) at (3, -1.25) {};
+		\node [style=none] (6) at (2.5, -0.75) {};
+		\node [style=dotC] (7) at (3, -0.75) {};
+		\node [style=none] (8) at (3, 1.25) {};
+		\node [style=none] (9) at (3, 0.25) {};
+		\node [style=none] (10) at (2.5, 0.75) {};
+		\node [style=dotC] (11) at (3, 0.75) {};
+		\node [style=none] (12) at (1, 0) {};
+		\node [style=none] (13) at (4, 0.75) {};
+		\node [style=none] (14) at (4, -0.75) {};
+		\node [style=none] (15) at (1, -1.5) {};
+		\node [style=none] (16) at (4, -1.5) {};
+		\node [style=none] (17) at (1, 1.5) {};
+		\node [style=none] (18) at (4, 1.5) {};
+		\node [style=none] (19) at (1.5, 1) {\Huge$\bigcup$};
+		\node [style=none] (20) at (0, 0) {=};
+		\node [style=none] (21) at (-1, 0.5) {};
+		\node [style=none] (22) at (-1, -0.5) {};
+		\node [style=none] (23) at (-3, 0) {};
+		\node [style=dotC] (24) at (-2, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (0.center)
+			 to (2.center)
+			 to (1.center)
+			 to (3.center)
+			 to cycle;
+		\draw [style=K] (4.center)
+			 to (6.center)
+			 to (5.center)
+			 to (7.center)
+			 to cycle;
+		\draw [style=K] (8.center)
+			 to (10.center)
+			 to (9.center)
+			 to (11.center)
+			 to cycle;
+		\draw [style=K] (12.center) to (3);
+		\draw [style=K] (11) to (13.center);
+		\draw [style=K] (7) to (14.center);
+		\draw [style=K] (23.center) to (24);
+		\draw [style=K, in=180, out=60] (24) to (21.center);
+		\draw [style=K, in=-60, out=180] (22.center) to (24);
+	\end{pgfonlayer}
+\end{tikzpicture}

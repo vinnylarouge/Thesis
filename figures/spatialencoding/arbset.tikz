@@ -1,0 +1,271 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (146) at (-6.75, -12.75) {};
+		\node [style=none] (147) at (-6.75, -11.25) {};
+		\node [style=none] (148) at (-5.75, -12) {};
+		\node [style=none] (0) at (-5.75, 0) {};
+		\node [style=none] (1) at (-2.75, 0) {};
+		\node [style=dotM] (2) at (-3.25, 0) {};
+		\node [style=dotC] (3) at (-5.25, 0) {};
+		\node [style=none] (4) at (-4.75, 0.5) {};
+		\node [style=none] (5) at (-4.75, -0.5) {};
+		\node [style=none] (6) at (-3.75, 0.5) {};
+		\node [style=none] (7) at (-3.75, -0.5) {};
+		\node [style=none] (8) at (-3.75, 0) {};
+		\node [style=none] (9) at (-4.75, 0) {};
+		\node [style=dotM] (19) at (5.5, 0) {};
+		\node [style=dotC] (20) at (3.5, 0) {};
+		\node [style=none] (21) at (4, 0.5) {};
+		\node [style=none] (22) at (4, -0.5) {};
+		\node [style=none] (23) at (5, 0.5) {};
+		\node [style=none] (24) at (5, -0.5) {};
+		\node [style=none] (25) at (5, 0) {};
+		\node [style=none] (26) at (4, 0) {};
+		\node [style=none] (34) at (3.5, 0.5) {};
+		\node [style=none] (35) at (3.5, -0.5) {};
+		\node [style=none] (36) at (3, 0) {};
+		\node [style=none] (37) at (5.5, 0.5) {};
+		\node [style=none] (38) at (5.5, -0.5) {};
+		\node [style=none] (39) at (6, 0) {};
+		\node [style=dotC] (40) at (2.25, 0) {};
+		\node [style=none] (41) at (2.25, -0.5) {};
+		\node [style=none] (42) at (2.25, 0.5) {};
+		\node [style=none] (43) at (2.75, 0) {};
+		\node [style=dotM] (44) at (6.75, 0) {};
+		\node [style=none] (45) at (6.75, 0.5) {};
+		\node [style=none] (46) at (6.75, -0.5) {};
+		\node [style=none] (47) at (6.25, 0) {};
+		\node [style=none] (48) at (1.5, 0) {};
+		\node [style=none] (49) at (7.5, 0) {};
+		\node [style=none] (50) at (-1.75, 0) {$=$};
+		\node [style=none] (51) at (0, 0.5) {\Huge$\bigcup$};
+		\node [style=dotC] (52) at (-0.5, -0.5) {};
+		\node [style=dotM] (53) at (0.5, -0.5) {};
+		\node [style=none] (54) at (-0.5, -0.25) {};
+		\node [style=none] (55) at (-0.75, -0.5) {};
+		\node [style=none] (56) at (-0.25, -0.5) {};
+		\node [style=none] (57) at (-0.5, -0.75) {};
+		\node [style=none] (58) at (0.5, -0.25) {};
+		\node [style=none] (59) at (0.25, -0.5) {};
+		\node [style=none] (60) at (0.75, -0.5) {};
+		\node [style=none] (61) at (0.5, -0.75) {};
+		\node [style=dotC] (76) at (2.75, -3.5) {};
+		\node [style=none] (77) at (2.75, -4) {};
+		\node [style=none] (78) at (2.75, -3) {};
+		\node [style=none] (79) at (3.25, -3.5) {};
+		\node [style=dotM] (80) at (4, -3.5) {};
+		\node [style=none] (81) at (4, -3) {};
+		\node [style=none] (82) at (4, -4) {};
+		\node [style=none] (83) at (3.5, -3.5) {};
+		\node [style=none] (84) at (2, -3.5) {};
+		\node [style=none] (85) at (4.75, -3.5) {};
+		\node [style=none] (86) at (0, -3) {\Huge$\bigcup$};
+		\node [style=none] (87) at (0.25, -4) {$=$};
+		\node [style=none] (88) at (0.75, -3.75) {};
+		\node [style=none] (89) at (0.75, -4.25) {};
+		\node [style=none] (90) at (1.25, -4.25) {};
+		\node [style=none] (91) at (1.25, -3.75) {};
+		\node [style=none] (92) at (-1.75, -3.5) {$=$};
+		\node [style=dotC] (105) at (2.75, -8) {};
+		\node [style=none] (106) at (2.75, -8.75) {};
+		\node [style=none] (107) at (2.75, -7.25) {};
+		\node [style=none] (108) at (3.75, -8) {};
+		\node [style=dotM] (109) at (5.25, -8) {};
+		\node [style=none] (110) at (5.25, -7.25) {};
+		\node [style=none] (111) at (5.25, -8.75) {};
+		\node [style=none] (112) at (4.25, -8) {};
+		\node [style=none] (113) at (2, -8) {};
+		\node [style=none] (114) at (6, -8) {};
+		\node [style=none] (115) at (0, -7.75) {\Huge$\bigcup$};
+		\node [style=none] (121) at (-1.75, -8) {$=$};
+		\node [style=none] (122) at (3.25, -8) {$\textcolor{blue}{a}$};
+		\node [style=none] (124) at (0, -8.5) {$(a,b) \in R \subseteq A \times B$};
+		\node [style=none] (125) at (4.75, -8) {$\textcolor{orange}{b}$};
+		\node [style=none] (126) at (-4.25, 0) {$R'$};
+		\node [style=none] (127) at (0, 2) {$(\Leftarrow):$ Every morphism of sticky spiders corresponds to a relation between sets.};
+		\node [style=none] (128) at (0, -10) {$(\Rightarrow):$ By idempotence of (co)copiables,  every relation $R \subseteq A \times B$ corresponds to a morphism of sticky spiders.};
+		\node [style=none] (129) at (0, -6) {Since (co)copiables are distinct, we may uniquely reindex as:};
+		\node [style=dotC] (130) at (3.25, -12) {};
+		\node [style=none] (131) at (3.25, -12.75) {};
+		\node [style=none] (132) at (3.25, -11.25) {};
+		\node [style=none] (133) at (4.25, -12) {};
+		\node [style=dotM] (134) at (5.75, -12) {};
+		\node [style=none] (135) at (5.75, -11.25) {};
+		\node [style=none] (136) at (5.75, -12.75) {};
+		\node [style=none] (137) at (4.75, -12) {};
+		\node [style=none] (138) at (1, -12) {};
+		\node [style=none] (139) at (8, -12) {};
+		\node [style=none] (140) at (0, -11.75) {\Huge$\bigcup$};
+		\node [style=none] (141) at (-1.75, -12) {$=$};
+		\node [style=none] (142) at (3.75, -12) {$\textcolor{blue}{a}$};
+		\node [style=none] (143) at (0, -12.5) {$(a,b) \in R$};
+		\node [style=none] (144) at (5.25, -12) {$\textcolor{orange}{b}$};
+		\node [style=dotC] (145) at (-6.75, -12) {};
+		\node [style=dotM] (149) at (-4.25, -12) {};
+		\node [style=none] (150) at (-4.25, -11.25) {};
+		\node [style=none] (151) at (-4.25, -12.75) {};
+		\node [style=none] (152) at (-5.25, -12) {};
+		\node [style=none] (153) at (-8, -12) {};
+		\node [style=none] (154) at (-3, -12) {};
+		\node [style=none] (155) at (-9, -11.75) {\Huge$\bigcup$};
+		\node [style=none] (156) at (-6.25, -12) {$\textcolor{blue}{a}$};
+		\node [style=none] (157) at (-9, -12.5) {$(a,b) \in R$};
+		\node [style=none] (158) at (-4.75, -12) {$\textcolor{orange}{b}$};
+		\node [style=none] (159) at (-7.5, -10.75) {};
+		\node [style=none] (160) at (-7.5, -13.25) {};
+		\node [style=none] (161) at (-3.5, -10.75) {};
+		\node [style=none] (162) at (-3.5, -13.25) {};
+		\node [style=none] (163) at (2.5, -10.75) {};
+		\node [style=none] (164) at (2.5, -13.25) {};
+		\node [style=none] (165) at (6.5, -10.75) {};
+		\node [style=none] (166) at (6.5, -13.25) {};
+		\node [style=dotC] (167) at (1.75, -12) {};
+		\node [style=dotM] (168) at (7.25, -12) {};
+		\node [style=dotM] (169) at (-0.25, -4) {};
+		\node [style=dotC] (170) at (-1.25, -4) {};
+		\node [style=none] (171) at (-1, -3.75) {};
+		\node [style=none] (172) at (-1, -4.25) {};
+		\node [style=none] (173) at (-0.5, -3.75) {};
+		\node [style=none] (174) at (-0.5, -4.25) {};
+		\node [style=none] (175) at (-0.5, -4) {};
+		\node [style=none] (176) at (-1, -4) {};
+		\node [style=none] (177) at (-1.25, -3.75) {};
+		\node [style=none] (178) at (-1.25, -4.25) {};
+		\node [style=none] (179) at (-1.5, -4) {};
+		\node [style=none] (180) at (-0.25, -3.75) {};
+		\node [style=none] (181) at (-0.25, -4.25) {};
+		\node [style=none] (182) at (0, -4) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (2) to (1.center);
+		\draw [style=K] (0.center) to (3);
+		\draw [style=K] (7.center)
+			 to (5.center)
+			 to (4.center)
+			 to (6.center)
+			 to cycle;
+		\draw [style=K] (3) to (9.center);
+		\draw [style=K] (8.center) to (2);
+		\draw [style=K] (24.center)
+			 to (22.center)
+			 to (21.center)
+			 to (23.center)
+			 to cycle;
+		\draw [style=K] (20) to (26.center);
+		\draw [style=K] (25.center) to (19);
+		\draw [style=KB] (34.center)
+			 to (36.center)
+			 to (35.center)
+			 to (20.center)
+			 to cycle;
+		\draw [style=KO] (38.center)
+			 to (39.center)
+			 to (37.center)
+			 to (19.center)
+			 to cycle;
+		\draw [style=KB] (41.center)
+			 to (43.center)
+			 to (42.center)
+			 to (40.center)
+			 to cycle;
+		\draw [style=KO] (46.center)
+			 to (47.center)
+			 to (45.center)
+			 to (44.center)
+			 to cycle;
+		\draw [style=K] (44) to (49.center);
+		\draw [style=K] (40) to (48.center);
+		\draw [style=KB] (56.center)
+			 to (54.center)
+			 to (55.center)
+			 to (57.center)
+			 to cycle;
+		\draw [style=KO] (61.center)
+			 to (59.center)
+			 to (58.center)
+			 to (60.center)
+			 to cycle;
+		\draw [style=KB] (76.center)
+			 to (77.center)
+			 to (79.center)
+			 to (78.center)
+			 to cycle;
+		\draw [style=KO] (80.center)
+			 to (82.center)
+			 to (83.center)
+			 to (81.center)
+			 to cycle;
+		\draw [style=K] (80) to (85.center);
+		\draw [style=K] (76) to (84.center);
+		\draw [style=H] (90.center)
+			 to (89.center)
+			 to (88.center)
+			 to (91.center)
+			 to cycle;
+		\draw [style=KB] (105.center)
+			 to (106.center)
+			 to (108.center)
+			 to (107.center)
+			 to cycle;
+		\draw [style=KO] (109.center)
+			 to (111.center)
+			 to (112.center)
+			 to (110.center)
+			 to cycle;
+		\draw [style=K] (109) to (114.center);
+		\draw [style=K] (105) to (113.center);
+		\draw [style=KB] (130.center)
+			 to (131.center)
+			 to (133.center)
+			 to (132.center)
+			 to cycle;
+		\draw [style=KO] (134.center)
+			 to (136.center)
+			 to (137.center)
+			 to (135.center)
+			 to cycle;
+		\draw [style=KB] (146.center)
+			 to (148.center)
+			 to (147.center)
+			 to [in=90, out=-90] (145.center)
+			 to cycle;
+		\draw [style=KO] (150.center)
+			 to (149.center)
+			 to (151.center)
+			 to (152.center)
+			 to cycle;
+		\draw [style=K] (149) to (154.center);
+		\draw [style=K] (145) to (153.center);
+		\draw [style=KH] (162.center)
+			 to (160.center)
+			 to (159.center)
+			 to (161.center)
+			 to cycle;
+		\draw [style=KH] (166.center)
+			 to (164.center)
+			 to (163.center)
+			 to (165.center)
+			 to cycle;
+		\draw [style=K] (130) to (167);
+		\draw [style=K] (167) to (138.center);
+		\draw [style=K] (134) to (168);
+		\draw [style=K] (168) to (139.center);
+		\draw [style=K] (174.center)
+			 to (172.center)
+			 to (171.center)
+			 to (173.center)
+			 to cycle;
+		\draw [style=K] (170) to (176.center);
+		\draw [style=K] (175.center) to (169);
+		\draw [style=KB] (177.center)
+			 to (179.center)
+			 to (178.center)
+			 to (170.center)
+			 to cycle;
+		\draw [style=KO] (181.center)
+			 to (182.center)
+			 to (180.center)
+			 to (169.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}
