@@ -1,6 +1,12 @@
 \section{An everyday miracle of language}
 
-\newthought{Speakers and listeners understand one another.} Even if we cautiously hedge this mundane statement to exclude pragmatics and context and only encompass small and boring fragments of factual language, as far as formal theories of syntax and semantics go, this is still a miracle. In this section I will first explain why this simple fact represents a gap in our understanding of language. Hopefully the urgency of filling the gap will be impressed, and then I will provide a mathematical structure that bridges this gap.
+\newthought{Speakers and listeners understand one another.} As far as formal theories of syntax and semantics go, this is a miracle. It remains so even if we cautiously hedge this mundane statement to exclude pragmatics and context and only encompass small and boring fragments of factual language.\\
+
+In short: there is a distinction between \emph{grammars of the speaker} -- which produce sentences -- and \emph{grammars of the listener} -- which deduce sentences. Viewed as mathematical processes, the two kinds of grammars go in opposite directions; speaking grammars [e.g. string-rewrite systems] start with some structure, and require informational input [e.g. which rule comes next] to produce sentences; listening grammars [e.g. typelogical grammars] start with a sentence, and require informational input [e.g. grammatical typing and which proof rule to try next] to deduce a grammatical structure. Since we can understand each other, these two types of grammar must enjoy a systematic correspondence.\\
+
+In this section I will elaborate on the above argument, and provide the first steps of a formal mathematical framework to present and organise the nature of this correspondence. This framework comes from the idea that speakers and listeners may use language as a vehicle to communicate thought; from this formal framework, we detect that the intermediate structure -- that which is being communicated -- leads us to the idea of text circuits.\\
+
+The empirical observation that speakers and listeners can communicate is a trivial one; any account of language that does not take this interactive and procedural aspect into account is arguably lacking. Text circuit theory aims to provide the beginnings of an theory of language that accounts for not just this...
 
 \subsection{Speaking grammars, listening grammars}
 
@@ -12,15 +18,13 @@ Preube and Fondo cooperate to achieve a minor miracle; Preube encodes his though
 
 \[placeholder\]\\
 
-
-
 We assume Preube and Fondo speak the same language, so both know how words in their language correspond to putative building blocks of thoughts, and how the order of words in sentences and special grammatical words affect the (de/re)construction procedures.
 
 \[placeholder\]\\
 
 The nature of the problem can be summarised as an asymmetry of information. The speaker knows the structure of a thought and has to make choices to turn that thought into text. The listener knows only the text, and must make choices to deduce the thought behind it. By this perspective, language is a shared and cooperative strategy to solve this (de/en)coding interaction. I will now outline the constraints imposed by this interaction, and then explain how context-free grammars and typelogical grammars partially model these constraints.
 
-\newthought{Speakers choose.} The speaker Preube must supply decisions about phrasing a thought in the process of speaking it. At some point at the beginning of an utterance, Preube has a thought but has not yet decided how to say it, and finding a particular phrasing requires choices to be made, because there are many ways to express even simple relational thoughts. For example, the relational content of our running example might be expressed as:
+\newthought{Speakers choose.} The speaker Preube must supply decisions about phrasing a thought in the process of speaking it. At some point at the beginning of an utterance, Preube has a thought but has not yet decided how to say it. Finding a particular phrasing requires choices to be made, because there are many ways to express even simple relational thoughts. For example, the relational content of our running example might be expressed as 
 
 \[\texttt{\underline{ALICE LIKES THE FLOWERS BOB GIVES CLAIRE.}}\]
 \[\texttt{\underline{BOB GIVES CLAIRE FLOWERS. ALICE LIKES THE FLOWERS.}}\]
@@ -32,5 +36,126 @@ Whether those decisions are made by committee or coinflips, those decisions repr
 
 For this reason, we consider context-free-grammars (and more generally, other string-rewrite systems) to be \emph{Grammars of the speaker}. The start symbol $S$ is incrementally expanded and determined by rule-applications that are selected by the speaker. The important aspect here is that the speaker has an initial state of information $S$ that requires more information as input in order to arrive at the final sentence.
 
-\newthought{Listeners deduce.} The listener Fondo has a text, and must supply decisions about how syntactic...
+\newthought{Listeners deduce.} The listener Fondo must supply decisions about which words are grammatically related, and how. Like right-of-way in driving, sometimes these decisions are settled by convention, for example, subject-verb-object order in English. Sometimes sophisticated decisions need to be made that override or are orthogonal to conventions, and we give two examples.
+
+\marginnote[-15cm]{
+It is worth noting that in practice, neither grammar nor meaning strictly determines the other. Clearly there are cases where grammar supercedes: when Fondo hears \texttt{man bites dog}, despite his prior prejudices and associations about which animal is more likely to be biting, he knows that the \texttt{man} is doing the biting and the \texttt{dog} is getting bitten. Going the other way, there are many cases in which the meaning of a subphrase affects grammatical acceptability and structure.
+
+\begin{example}[Exclamations: how meaning affects grammar]
+The following examples from [Lakofflecture] illustrate how whether a phrase is an \emph{exclamation} affects what kinds of grammatical constructions are acceptable. By this argument, to know whether something is an exclamation in context is an aspect of meaning, so we have cases where meaning determines grammar. Observe first that the following three phrases are all grammatically acceptable and mean the same thing.
+\[\texttt{\textcolor{blue}{nobody knows} how many beers Bob drinks}\]
+\[\texttt{\textcolor{blue}{who knows} how many beers Bob drinks}\]
+\[\texttt{\textcolor{blue}{God knows} how many beers Bob drinks}\]
+The latter two are distinguished when \texttt{God knows} and \texttt{who knows} are exclamations. First, the modularity of grammar and meaning may not match when an exclamation is involved. For example, negating the blue text, we obtain:
+\[\texttt{\textcolor{blue}{somebody knows} how many beers Bob drinks}\]
+\[\texttt{\textcolor{blue}{who doesn't know} how many beers Bob drinks}\]
+\[\texttt{\textcolor{purple}{God doesn't} know how many beers Bob drinks}\]
+The first two are acceptable, but mean different things; the latter means to say that everyone knows how many beers Bob drinks, which is stronger than the former. The last sentence is awkward: unlike in the first two cases, the quantified variable in the (gloss) $\cdots \neg \exists x_{Person} \cdots$ of \texttt{God knows} is lost, and what is left is a literal reading $\cdots \neg \texttt{knows}(\texttt{God},\cdots) \cdots$.
+Second, whether a sentence is grammatically acceptable may depend on whether an exclamation is involved. \texttt{\textcolor{blue}{God knows}} and \texttt{\textcolor{blue}{who knows}} can be shuffled into the sentence to behave as an intensifier as in:
+\[\texttt{Bob drinks \textcolor{blue}{God knows} how many beers}\]
+\[\texttt{Bob drinks \textcolor{blue}{who knows} how many beers}\]
+But it is awkward to have:
+\[\texttt{Bob drank \textcolor{purple}{nobody knows} how many beers}\]
+And it is not acceptable to have:
+\[\texttt{Bob drank \textcolor{red}{Alice knows} how many beers}\]
+\end{example}
+}
+
+\begin{example}[Garden path sentences]
+So-called "garden path" sentences illustrate that listeners have to make choices to resolve lexical ambiguities. One such garden-path sentence is \texttt{The old man the boat}, where typically readers take \texttt{The old man} as a noun-phrase and \texttt{the boat} as another noun-phrase. We can sketch how the readers might think with a (failed) pregroup grammar derivation:
+
+\[
+\AxiomC{$\texttt{the} : n \cdot n^{-1}$}
+\AxiomC{$\texttt{old} : n \cdot n^{-1}$}
+\BinaryInfC{$\texttt{the\textvisiblespace old}: n \cdot n^{-1}$}
+\AxiomC{$\texttt{man} : n$}
+\BinaryInfC{$\texttt{the\textvisiblespace old\textvisiblespace man}: n$}
+\AxiomC{$\texttt{the} : n \cdot n^{-1}$}
+\AxiomC{$\texttt{boat} : n$}
+\BinaryInfC{$\texttt{the\textvisiblespace boat}: n$}
+\BinaryInfC{\textcolor{red}{Not a sentence!}}
+\DisplayProof
+\]
+
+So the reader has to backtrack, taking \texttt{The old} as a noun-phrase and \texttt{man} as the transitive verb. This yields a sentence as follows:
+
+\[
+\AxiomC{$\texttt{the} : n \cdot n^{-1}$}
+\AxiomC{$\texttt{old} : n$}
+\BinaryInfC{$\texttt{the\textvisiblespace old}: n$}
+\AxiomC{$\texttt{man} : ^{-1}n \cdot s \cdot n^{-1}$}
+\BinaryInfC{$\texttt{the\textvisiblespace old\textvisiblespace man}: s \cdot n^{-1}$}
+\AxiomC{$\texttt{the} : n \cdot n^{-1}$}
+\AxiomC{$\texttt{boat} : n$}
+\BinaryInfC{$\texttt{the\textvisiblespace old}: n$}
+\BinaryInfC{$\texttt{the\textvisiblespace old\textvisiblespace man\textvisiblespace the\textvisiblespace boat\textvisiblespace}: s$}
+\DisplayProof
+\]
+
+Garden-path sentences illustrate that listeners must make choices about what grammatical roles to assign words. We make these kinds of contextual decisions all the time with lexically ambiguous words or languages with many homophones; garden-path sentences are special in that they trick the default choices badly enough that the mental effort for correction is noticeable.
+\end{example}
+
+\begin{example}[Ambiguous scoping]
+Consider the following sentence:
+\[\texttt{Everyone loves someone}\]
+The sentence is secretly (at least) two, corresponding to two possible parses. The usual reading is (glossed) $\forall x \exists y : \texttt{loves}(x,y)$. The odd reading is $\exists y \forall x : \texttt{loves}(x,y)$: a Raymond situation where there is a single person loved by everyone. We can sketch this difference formally using a simple combinatory categorial grammar.
+
+\[
+\begin{bprooftree}
+\AxiomC{$\texttt{everyone} : (n \multimap s) \multimap s$}
+\AxiomC{$\texttt{loves} : n \multimap s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
+\BinaryInfC{$\texttt{everyone\textvisiblespace loves} : s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
+\AxiomC{$\texttt{someone} : (s \ \rotatebox[origin=c]{180}{$\multimap$} \ n) \multimap s$}
+\BinaryInfC{$\texttt{everyone\textvisiblespace loves\textvisiblespace someone} : s$}
+\DisplayProof
+\end{bprooftree}
+\]
+
+\[
+\begin{bprooftree}
+\AxiomC{$\texttt{everyone} : (n \multimap s) \multimap s$}
+\AxiomC{$\texttt{loves} : n \multimap s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
+\AxiomC{$\texttt{someone} : (s \ \rotatebox[origin=c]{180}{$\multimap$} \ n) \multimap s$}
+\BinaryInfC{$\texttt{loves\textvisiblespace someone} : n \multimap s$}
+\BinaryInfC{$\texttt{everyone\textvisiblespace loves\textvisiblespace someone} : s$}
+\DisplayProof
+\end{bprooftree}
+\]
+
+CCGs have functorial semantics in any cartesian closed category, such as one where morphisms are terms in the lambda calculus and composition is substitution []. So we might specify a semantics as follows:
+
+\begin{align}
+\llbracket \texttt{everyone} \rrbracket = \lambda (\lambda x . V(x)) . \forall x : V(x) \\
+\llbracket \texttt{loves} \rrbracket = \lambda x \lambda y . \texttt{loves}(x,y) \\
+\llbracket \texttt{someone} \rrbracket = \lambda (\lambda y . V(y)) . \exists y : V(y)
+\end{align}
+
+Now we can plug-in these interpretations to obtain the two different meanings. We decorate with corners just to visually distinguish which bits are partial first-order logic.
+
+\[
+\begin{bprooftree}
+\AxiomC{$\lambda (\lambda x . V(x)) . \ulcorner \forall x : V(x) \urcorner : (n \multimap s) \multimap s$}
+\AxiomC{$\lambda x \lambda y . \ulcorner \texttt{loves}(x,y) \urcorner : n \multimap s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
+\BinaryInfC{$ \lambda y . \ulcorner \forall x : \texttt{loves}(x,y) \urcorner : s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
+\AxiomC{$\lambda (\lambda y . V(y)) . \ulcorner \exists y : V(y) \urcorner : (s \ \rotatebox[origin=c]{180}{$\multimap$} \ n) \multimap s$}
+\BinaryInfC{$ \ulcorner \exists y \forall x : \texttt{loves}(x,y) \urcorner : s$}
+\DisplayProof
+\end{bprooftree}
+\]
+
+\[
+\begin{bprooftree}
+\AxiomC{$\lambda (\lambda x . V(x)) . \ulcorner \forall x : V(x) \urcorner : (n \multimap s) \multimap s$}
+\AxiomC{$\lambda x \lambda y . \ulcorner \texttt{loves}(x,y) \urcorner : n \multimap s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
+\AxiomC{$\lambda (\lambda y . V(y)) . \ulcorner \exists y : V(y) \urcorner : (s \ \rotatebox[origin=c]{180}{$\multimap$} \ n) \multimap s$}
+\BinaryInfC{$\lambda x . \ulcorner \exists y : \texttt{loves}(x,y) \urcorner : n \multimap s$}
+\BinaryInfC{$ \ulcorner \forall x \exists y : \texttt{loves}(x,y) \urcorner : s$}
+\DisplayProof
+\end{bprooftree}
+\]
+
+\end{example}
+
+
+
 
