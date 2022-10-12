@@ -1,0 +1,40 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (30) at (-2, 0) {};
+		\node [style=none] (33) at (-1, 0) {};
+		\node [style=none] (34) at (-3, 1) {};
+		\node [style=none] (35) at (-3, -1) {};
+		\node [style=none] (36) at (-2, -1) {};
+		\node [style=none] (37) at (-2, 1) {};
+		\node [style=none] (48) at (0, 0) {$=$};
+		\node [style=none] (49) at (-3, 0.5) {};
+		\node [style=none] (50) at (-3, -0.5) {};
+		\node [style=none] (51) at (-5, 0) {};
+		\node [style=none] (52) at (-4, 0.5) {};
+		\node [style=none] (53) at (-4, -0.5) {};
+		\node [style=none] (54) at (-6, 0) {};
+		\node [style=none] (55) at (-4, 1) {};
+		\node [style=none] (56) at (-4, -1) {};
+		\node [style=none] (57) at (-5, -1) {};
+		\node [style=none] (58) at (-5, 1) {};
+		\node [style=none] (59) at (1, 0) {};
+		\node [style=none] (60) at (5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KM, in=180, out=0] (30.center) to (33.center);
+		\draw [style=KB] (35.center)
+			 to (34.center)
+			 to (37.center)
+			 to (36.center)
+			 to cycle;
+		\draw [style=KO] (50.center) to (53.center);
+		\draw [style=KM] (49.center) to (52.center);
+		\draw [style=KM, in=0, out=180] (51.center) to (54.center);
+		\draw [style=KB] (56.center)
+			 to (55.center)
+			 to (58.center)
+			 to (57.center)
+			 to cycle;
+		\draw [style=KM] (59.center) to (60.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

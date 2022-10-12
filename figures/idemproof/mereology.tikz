@@ -14,6 +14,7 @@
 		\node [style=none] (11) at (4, -1.25) {};
 		\node [style=none] (12) at (0, 0) {$=$};
 		\node [style=none] (13) at (0.75, 1.25) {};
+		\node [style=none] (14) at (0.5, 1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K, in=-90, out=180] (2.center) to (0);

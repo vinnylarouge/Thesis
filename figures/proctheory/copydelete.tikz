@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-3, 0) {};
+		\node [style=dotb] (1) at (-2, 0) {};
+		\node [style=none] (2) at (-1, 0.5) {};
+		\node [style=none] (3) at (-1, -0.5) {};
+		\node [style=none] (4) at (1, 0) {};
+		\node [style=dotb] (5) at (2.5, 0) {};
+		\node [style=none] (6) at (-1, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (0.center) to (1);
+		\draw [style=K, in=180, out=90] (1) to (2.center);
+		\draw [style=K, in=-180, out=-90] (1) to (6.center);
+		\draw [style=K] (4.center) to (5);
+	\end{pgfonlayer}
+\end{tikzpicture}

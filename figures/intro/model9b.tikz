@@ -1,0 +1,270 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-15.25, -4.75) {\footnotesize{\texttt{Alice}}};
+		\node [style=none] (3) at (6.5, -5.725) {\footnotesize{\texttt{Bob}}};
+		\node [style=none] (47) at (-12, 1) {};
+		\node [style=none] (48) at (-9, 1) {};
+		\node [style=none] (49) at (-12, -9.25) {};
+		\node [style=none] (50) at (-9, -9.25) {};
+		\node [style=none] (63) at (3.125, 1) {};
+		\node [style=none] (64) at (4.875, 1) {};
+		\node [style=none] (65) at (1.5, 1) {};
+		\node [style=none] (67) at (-1.5, 1) {};
+		\node [style=none] (68) at (-2.75, 1) {};
+		\node [style=none] (69) at (-4.5, 1) {};
+		\node [style=none] (71) at (2.875, 1) {};
+		\node [style=none] (72) at (5.125, 1) {};
+		\node [style=none] (73) at (-2.5, 1) {};
+		\node [style=none] (74) at (-4.75, 1) {};
+		\node [style=none] (76) at (4.125, 1) {};
+		\node [style=none] (77) at (-3.75, 1) {};
+		\node [style=none] (79) at (-9.25, 1) {};
+		\node [style=none] (81) at (-11, 1) {};
+		\node [style=none] (84) at (-13, 1) {};
+		\node [style=none] (89) at (-10.25, 1) {};
+		\node [style=none] (91) at (-15.125, -6.75) {};
+		\node [style=none] (93) at (-13, -6.75) {};
+		\node [style=none] (94) at (6.375, -7.75) {};
+		\node [style=none] (103) at (-15.125, -6) {};
+		\node [style=none] (106) at (6.375, -7) {};
+		\node [style=none] (113) at (-11, -10.5) {};
+		\node [style=none] (114) at (-10.25, -10.5) {};
+		\node [style=none] (115) at (-9.25, -10.5) {};
+		\node [style=circb] (116) at (-1, 1) {};
+		\node [style=circb] (117) at (-13.75, 1) {};
+		\node [style=circb] (118) at (1, 1) {};
+		\node [style=circb] (119) at (7, 1) {};
+		\node [style=circb] (120) at (4, -4.75) {};
+		\node [style=circb] (121) at (-13.75, -4.75) {};
+		\node [style=circb] (122) at (-13.75, -6.75) {};
+		\node [style=circb] (123) at (-16.75, -6.75) {};
+		\node [style=circb] (124) at (-16.75, -7.75) {};
+		\node [style=circb] (125) at (-7, -7.75) {};
+		\node [style=circb] (126) at (-13.75, -9.25) {};
+		\node [style=circb] (127) at (8, -9.25) {};
+		\node [style=circb] (128) at (5, -7.75) {};
+		\node [style=circb] (129) at (8, -7.75) {};
+		\node [style=none] (134) at (5.75, 2.25) {};
+		\node [style=none] (135) at (3, 3.75) {};
+		\node [style=none] (136) at (5, 3.75) {};
+		\node [style=none] (137) at (3, 3) {};
+		\node [style=none] (138) at (5, 3) {};
+		\node [style=none] (139) at (3.75, 3) {};
+		\node [style=none] (140) at (4.25, 3) {};
+		\node [style=none] (141) at (4.25, 3.25) {};
+		\node [style=none] (142) at (4.75, 3) {};
+		\node [style=none] (143) at (3.25, 3) {};
+		\node [style=none] (144) at (3.25, 3.75) {};
+		\node [style=none] (145) at (4.75, 3.75) {};
+		\node [style=none] (146) at (4.75, 4.5) {};
+		\node [style=none] (147) at (5.25, 4.5) {};
+		\node [style=none] (148) at (4.5, 2.25) {};
+		\node [style=none] (149) at (4.75, 2.25) {};
+		\node [style=none] (150) at (5.5, 2.25) {};
+		\node [style=none] (151) at (6.5, 1) {};
+		\node [style=none] (152) at (4.625, 1) {};
+		\node [style=none] (153) at (3.25, 4.5) {};
+		\node [style=none] (154) at (2.75, 4.5) {};
+		\node [style=none] (155) at (4, 4.875) {};
+		\node [style=none] (156) at (4.25, 5) {};
+		\node [style=none] (157) at (3.75, 5) {};
+		\node [style=none] (158) at (4, 5.5) {};
+		\node [style=none] (159) at (4.25, 4.75) {};
+		\node [style=none] (160) at (4, 5.25) {\footnotesize{\texttt{L}}};
+		\node [style=none] (161) at (3.5, 2.25) {};
+		\node [style=none] (162) at (3.25, 2.25) {};
+		\node [style=none] (163) at (2.5, 2.25) {};
+		\node [style=none] (164) at (2.25, 2.25) {};
+		\node [style=none] (165) at (4, 3.15) {};
+		\node [style=none] (166) at (3.375, 1) {};
+		\node [style=none] (167) at (1.75, 1) {};
+		\node [style=none] (168) at (3.875, 1) {};
+		\node [style=none] (169) at (2, 3.5) {};
+		\node [style=none] (170) at (2, 2.75) {};
+		\node [style=none] (171) at (-1.75, 1) {};
+		\node [style=none] (172) at (6.25, 1) {};
+		\node [style=none] (173) at (-3, 1) {};
+		\node [style=none] (174) at (-3.5, 1) {};
+		\node [style=none] (175) at (-4.25, 1.125) {};
+		\node [style=none] (176) at (-7.75, 5.5) {};
+		\node [style=none] (177) at (-7.75, 4.75) {};
+		\node [style=none] (178) at (-6.5, 5.5) {};
+		\node [style=none] (179) at (-6.5, 5) {};
+		\node [style=none] (180) at (-7, 4.75) {};
+		\node [style=none] (181) at (-7.75, 7.25) {};
+		\node [style=none] (182) at (-7.5, 6.75) {};
+		\node [style=none] (183) at (-8, 6.75) {};
+		\node [style=none] (184) at (-7.5, 6.5) {};
+		\node [style=none] (185) at (-7.75, 7) {\footnotesize{\texttt{S}}};
+		\node [style=none] (186) at (-7.75, 6.625) {};
+		\node [style=none] (187) at (-6.75, 4.875) {};
+		\node [style=none] (188) at (-5.5, 1.1) {};
+		\node [style=none] (189) at (-5.75, 1) {};
+		\node [style=none] (190) at (-12.75, 1) {};
+		\node [style=none] (191) at (-9.5, 1.125) {};
+		\node [style=none] (192) at (-11.75, 1) {};
+		\node [style=none] (193) at (-11.5, 1) {};
+		\node [style=none] (194) at (-10.75, 1) {};
+		\node [style=none] (195) at (-10, 1) {};
+		\node [style=none] (198) at (-7.5, 4.75) {};
+		\node [style=none] (199) at (-7.5, 5.5) {};
+		\node [style=none] (200) at (-8.75, 5.25) {};
+		\node [style=none] (201) at (-8.75, 4.25) {};
+		\node [style=none] (202) at (-5.75, 5.5) {};
+		\node [style=none] (203) at (-7, 3.75) {};
+		\node [style=none] (204) at (-6.5, 3.75) {};
+		\node [style=none] (205) at (-7.75, 3.75) {};
+		\node [style=none] (206) at (-5.75, 3.75) {};
+		\node [style=none] (207) at (-12.75, 6.75) {};
+		\node [style=none] (208) at (-13, 7) {};
+		\node [style=none] (209) at (-1.75, 6.75) {};
+		\node [style=none] (210) at (-1.5, 7) {};
+		\node [style=none] (211) at (-2.75, 6.5) {};
+		\node [style=none] (212) at (-3, 6.25) {};
+		\node [style=none] (213) at (-11.75, 6.75) {};
+		\node [style=none] (214) at (-11.5, 6.5) {};
+		\node [style=none] (215) at (-8.25, 1.125) {};
+		\node [style=none] (216) at (-8, 1) {};
+		\node [style=none] (217) at (-8.25, -8) {};
+		\node [style=none] (218) at (-8, -7.75) {};
+		\node [style=none] (219) at (-11.75, -10.5) {};
+		\node [style=none] (220) at (-11.5, -10.5) {};
+		\node [style=none] (221) at (-10.75, -10.5) {};
+		\node [style=none] (222) at (-10, -10.5) {};
+		\node [style=none] (223) at (-9.5, -10.5) {};
+		\node [style=none] (224) at (-12.75, -6.75) {};
+		\node [style=none] (225) at (-15.375, -6) {};
+		\node [style=none] (226) at (-15.375, -6.75) {};
+		\node [style=none] (227) at (6.625, -7) {};
+		\node [style=none] (228) at (6.625, -8) {};
+		\node [style=none] (229) at (6.5, -6.25) {$\vdots$};
+		\node [style=none] (230) at (-15.25, -5.25) {$\vdots$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=ggF] (50.center)
+			 to (48.center)
+			 to [bend right=90, looseness=0.75] (47.center)
+			 to (49.center)
+			 to [bend right=90, looseness=0.75] cycle;
+		\draw [style=K, bend left=90, looseness=1.25] (65.center) to (67.center);
+		\draw [style=ggF] (72.center)
+			 to [bend left=90, looseness=1.25] (74.center)
+			 to [in=90, out=90] (73.center)
+			 to [bend right=90, looseness=1.25] (71.center)
+			 to [in=90, out=90] cycle;
+		\draw [style=K, bend right=90, looseness=1.25] (68.center) to (63.center);
+		\draw [style=K, bend left=90, looseness=1.25] (64.center) to (69.center);
+		\draw [style=KG, bend left=90, looseness=1.25] (76.center) to (77.center);
+		\draw [style=K, bend right=90, looseness=1.25] (91.center) to (93.center);
+		\draw [style=K] (84.center) to (93.center);
+		\draw [style=K] (103.center) to (91.center);
+		\draw [style=K] (106.center) to (94.center);
+		\draw [style=KG] (81.center) to (113.center);
+		\draw [style=K] (79.center) to (115.center);
+		\draw [style=KO] (89.center) to (114.center);
+		\draw [style=KD] (117) to (116);
+		\draw [style=KD] (118) to (119);
+		\draw [style=KD] (120) to (121);
+		\draw [style=KD] (122) to (123);
+		\draw [style=KD] (124) to (125);
+		\draw [style=KD] (128) to (129);
+		\draw [style=KD] (126) to (127);
+		\draw [style=KG] (140.center)
+			 to (141.center)
+			 to (139.center)
+			 to (137.center)
+			 to (135.center)
+			 to (136.center)
+			 to (138.center)
+			 to cycle;
+		\draw [style=K, bend left=90, looseness=1.75] (146.center) to (147.center);
+		\draw [style=K] (145.center) to (146.center);
+		\draw [style=K, in=90, out=-90] (147.center) to (134.center);
+		\draw [style=K, bend left=90, looseness=1.75] (149.center) to (150.center);
+		\draw [style=K, in=90, out=-90] (142.center) to (148.center);
+		\draw [style=K, in=90, out=-90] (134.center) to (151.center);
+		\draw [style=K, in=90, out=-90] (149.center) to (64.center);
+		\draw [style=K, in=90, out=-90] (148.center) to (152.center);
+		\draw [style=K] (144.center) to (153.center);
+		\draw [style=K, bend left=270, looseness=1.75] (153.center) to (154.center);
+		\draw [style=KG] (157.center)
+			 to (158.center)
+			 to (156.center)
+			 to (159.center)
+			 to cycle;
+		\draw [style=K, bend left=90, looseness=1.75] (163.center) to (162.center);
+		\draw [style=K, in=90, out=-90] (143.center) to (161.center);
+		\draw [style=K, in=90, out=-90] (154.center) to (164.center);
+		\draw [style=K, in=90, out=-90] (161.center) to (166.center);
+		\draw [style=K, in=90, out=-90] (162.center) to (63.center);
+		\draw [style=K, in=90, out=-90] (164.center) to (65.center);
+		\draw [style=K, in=90, out=-90] (163.center) to (167.center);
+		\draw [style=KG, in=90, out=-90, looseness=0.75] (155.center) to (169.center);
+		\draw [style=KG] (169.center) to (170.center);
+		\draw [style=KG, in=90, out=-90] (170.center) to (168.center);
+		\draw [style=KG, in=90, out=-90] (165.center) to (76.center);
+		\draw [style=K, bend left=90, looseness=1.25] (167.center) to (171.center);
+		\draw [style=K, in=90, out=-90] (150.center) to (172.center);
+		\draw [style=K, bend right=90, looseness=1.25] (173.center) to (166.center);
+		\draw [style=KG, bend right=90, looseness=1.25] (174.center) to (168.center);
+		\draw [style=K, bend left=90, looseness=1.25] (152.center) to (175.center);
+		\draw [style=KO] (177.center)
+			 to (176.center)
+			 to (178.center)
+			 to (179.center)
+			 to (180.center)
+			 to cycle;
+		\draw [style=KO] (181.center)
+			 to (183.center)
+			 to (184.center)
+			 to (182.center)
+			 to cycle;
+		\draw [style=K, bend left=90, looseness=1.25] (172.center) to (188.center);
+		\draw [style=K, bend left=90, looseness=1.25] (151.center) to (189.center);
+		\draw [style=KO, in=90, out=-90] (201.center) to (89.center);
+		\draw [style=KO] (201.center) to (200.center);
+		\draw [style=KO, in=-90, out=90, looseness=0.75] (200.center) to (186.center);
+		\draw [style=KO, in=-90, out=90] (195.center) to (187.center);
+		\draw [style=KG, bend left=90, looseness=0.75] (199.center) to (202.center);
+		\draw [style=KG, in=-90, out=90, looseness=0.75] (81.center) to (205.center);
+		\draw [style=KG, in=-90, out=90, looseness=0.50] (194.center) to (203.center);
+		\draw [style=KG, in=90, out=-90] (206.center) to (174.center);
+		\draw [style=KG, in=-90, out=90, looseness=0.75] (77.center) to (204.center);
+		\draw [style=KG, bend left=90, looseness=1.50] (203.center) to (204.center);
+		\draw [style=KG, in=90, out=-90] (198.center) to (205.center);
+		\draw [style=KG, in=90, out=-90] (202.center) to (206.center);
+		\draw [style=K] (213.center) to (192.center);
+		\draw [style=K] (214.center) to (193.center);
+		\draw [style=K] (208.center) to (84.center);
+		\draw [style=K] (207.center) to (190.center);
+		\draw [style=K] (210.center) to (67.center);
+		\draw [style=K] (209.center) to (171.center);
+		\draw [style=K] (211.center) to (68.center);
+		\draw [style=K] (212.center) to (173.center);
+		\draw [style=K, bend left=90, looseness=0.50] (214.center) to (212.center);
+		\draw [style=K, bend left=90, looseness=0.50] (213.center) to (211.center);
+		\draw [style=K, bend left=90, looseness=0.50] (207.center) to (209.center);
+		\draw [style=K, bend left=90, looseness=0.50] (208.center) to (210.center);
+		\draw [style=K, bend left=270, looseness=0.75] (189.center) to (216.center);
+		\draw [style=K, bend left=270, looseness=0.75] (188.center) to (215.center);
+		\draw [style=K] (216.center) to (218.center);
+		\draw [style=K] (215.center) to (217.center);
+		\draw [style=K, bend left=270, looseness=0.75] (69.center) to (79.center);
+		\draw [style=K, bend left=90, looseness=0.75] (191.center) to (175.center);
+		\draw [style=KO] (195.center) to (222.center);
+		\draw [style=KG] (194.center) to (221.center);
+		\draw [style=K] (192.center) to (219.center);
+		\draw [style=K] (193.center) to (220.center);
+		\draw [style=K] (191.center) to (223.center);
+		\draw [style=K, bend left=90, looseness=2.00] (220.center) to (219.center);
+		\draw [style=K, bend right=90, looseness=2.00] (223.center) to (115.center);
+		\draw [style=KO, bend left=90, looseness=2.00] (222.center) to (114.center);
+		\draw [style=KG, bend right=90, looseness=1.75] (113.center) to (221.center);
+		\draw [style=K] (190.center) to (224.center);
+		\draw [style=K] (225.center) to (226.center);
+		\draw [style=K, bend right=90, looseness=1.25] (226.center) to (224.center);
+		\draw [style=K] (227.center) to (228.center);
+		\draw [style=K, bend right=90, looseness=0.25] (218.center) to (94.center);
+		\draw [style=K, bend left=90, looseness=0.25] (228.center) to (217.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

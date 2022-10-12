@@ -1,0 +1,180 @@
+\section{Process Theories}
+
+A \emph{process} is something that transforms some number of input system types to some number of output system types. We depict systems as wires, labelled with their type, and processes as boxes. We read processes from left to right.
+\[\tikzfig{proctheory/process}\]
+Processes may compose in parallel, which we depict as vertically stacking boxes.
+\[\tikzfig{proctheory/processpar}\]
+Processes may compose sequentially, which we depict as connecting wires of the same type from left to right.
+\[\tikzfig{proctheory/processseq}\]
+In these diagrams only input-output connectivity matters: so we may twist wires and slide boxes along wires to obtain different diagrams that still refer to the same process. So the diagram below is equal to the diagram above.
+\[\tikzfig{proctheory/processeq}\]
+Some processes have no inputs; we call these \emph{states}. 
+\[\tikzfig{proctheory/state}\]
+Some processes have no outputs; we call these \emph{tests}.
+\[\tikzfig{proctheory/test}\]
+A process with no inputs and no outputs is a \emph{number}; the number tells us the outcome of applying tests to a composite of states modified by processes.
+\[\tikzfig{proctheory/number}\]
+
+A process theory is given by the following data\footnote{Formally, process theories are symmetric monoidal categories []; see section \ref{}.}:
+\begin{itemize}
+    \item A collection of systems
+    \item A collection of processes along with their input and output systems
+    \item A methodology to compose systems and processes sequentially and in parallel, and a specification of the unit of parallel composition.
+    \item A collection of equations between composite processes
+\end{itemize}
+
+\begin{example}[Linear maps with direct sum]
+Systems are finite-dimensional vector spaces over $\mathbb{R}$. Processes are linear maps, expressed as matrices with entries in $\mathbb{R}$.\\
+Sequential composition is matrix multiplication. Parallel composition of systems is the direct sum of vector spaces $\oplus$. The parallel composition of matrices $\mathbf{A}, \mathbf{B}$ is the block-diagonal matrix
+$$\begin{bmatrix}
+\mathbf{A} & \mathbf{0} \\
+\mathbf{0} & \mathbf{B}
+\end{bmatrix}$$
+The unit of parallel composition is the singleton 0-dimensional vector space.
+States are row vectors. Tests are column vectors. The numbers are $\mathbb{R}$.\footnote{Usually the monoidal product is written with the symbol $\otimes$, which denotes hadamard product for linear maps. The process theory we have just described takes the direct sum $\oplus$ to be the monoidal product. To avoid confusion we will use the linear algebraic notation when linear algebra is concerned.}
+\end{example}
+
+\begin{example}[Sets and functions with cartesian product]
+Systems are sets $A,B$. Processes are functions between sets $f: A \rightarrow B$. Sequential composition is function composition. Parallel composition of systems is the cartesian product of sets: the set of ordered pairs of two sets.
+\[A \otimes B = A \times B := \{(a,b) \ | \ a \in A, b \in B\}\]
+The parallel composition $f \otimes g : A \times C \rightarrow B \times D$ of functions $f: A \rightarrow B$ and $g: C \rightarrow D$ is defined:
+\[f \otimes g := (a,c) \mapsto (f(a),g(c))\]
+The unit of parallel composition is the\footnote{There are many singletons, but this presents no problem for the later formal definition because they are all equivalent up to unique isomorphism.} singleton set $\{\star\}$. States of a set $A$ correspond to elements $a \in A$\footnote{We forgo the usual categorical definition of points from the terminal object in favour of generalised points from the monoidal perspective.}. Every system $A$ has only one test $a \mapsto \star$\footnote{This is since the singleton is terminal in \textbf{Set}.}. There is only one number.
+\end{example}
+
+\begin{example}[Sets and relations with cartesian product]
+Systems are sets $A,B$. Processes are relations between sets $\Phi \subseteq A \times B$, which we may write in either direction $\Phi^*: A \nrightarrow B$ or $\Phi_*: B \nrightarrow A$.\footnote{Relations between sets are equivalently matrices with entries from the boolean semiring. Relation composition is matrix multiplication with the boolean semiring. $\Phi^*,\Phi_*$ are the transposes of one another.}
+Sequential composition is relation composition:
+\[A \overset{\Phi}{\nrightarrow} B \overset{\Psi}{\nrightarrow} C := \{(a,c) \ | \  a \in A, \ c \in C, \ \exists b_{\in B}: (a,b) \in \Phi \wedge (b,c) \in \Psi  \}\]
+Parallel composition of systems is the cartesian product of sets. The parallel composition of relations $A \otimes C \overset{\Phi \otimes \Psi}{\nrightarrow} B \otimes D$ of relations $A \overset{\Phi}{\nrightarrow} B$ and $C \overset{\Psi}{\nrightarrow} D$ is defined:
+\[\Phi \otimes \Psi := \{\big( (a,c) , (b,d) \big) \ | \ (a,b) \in \Phi \wedge (c,d) \in \Psi\}\]
+The unit of parallel composition is the singleton. States of a set $A$ are subsets of $A$. Tests of a set $A$ are also subsets of $A$.
+\end{example}
+
+\subsection{What does it mean to copy and delete?}
+
+Now we discuss how we might define the properties and behaviour of processes by positing equations between diagrams. Let's begin simply with two intuitive processes \emph{copy} and \emph{delete}:
+\[\tikzfig{proctheory/copydelete}\]
+
+\begin{example}[Linear maps]
+Consider a vector space $\mathbf{V}$, which we assume includes a choice of basis. The copy map is the rectangular matrix made of two identity matrices:
+\[\Delta_\mathbf{V}: \mathbf{V} \rightarrow \mathbf{V} \oplus \mathbf{V} := \begin{bmatrix} \mathbf{1}_\mathbf{V} & \mathbf{1}_\mathbf{V} \end{bmatrix}\]
+The delete map is the column vector of 1s:
+\[\epsilon_\mathbf{V}: \mathbf{V} \rightarrow \mathbf{0} := \begin{bmatrix} 1 \\ \vdots \\ 1 \end{bmatrix}\]
+\end{example}
+
+\begin{example}[Sets and functions]
+Consider a set $A$. The copy function is defined:
+\[\Delta_A : A \rightarrow A \times A := a \mapsto (a,a)\]
+The delete funtion is defined:
+\[\epsilon_A : A \rightarrow \{\star\} := a \mapsto \star\]
+\end{example}
+
+\begin{example}[Sets and relations]\label{relcopy}
+Consider a set $A$. The copy relation is defined:
+\[\Delta_A : A \nrightarrow A \times A := \{\big(a , (a,a) \big) \ | \ a \in A\}\]
+The delete relation is defined:
+\[\epsilon_A : A \nrightarrow \{\star\} := \{(a,\star) \ | \ a \in A\}\]
+\end{example}
+
+We may verify that, no matter the concrete interpretation of the diagram in terms of linear maps, functions or relations copy and delete satisfy the equations in the margin:\marginnote[-10cm]{
+Formally, the following equations characterise a cocommutative comonoid internal to a monoidal category.
+\begin{equation}\label{cocom}
+\scalebox{0.75}{\tikzfig{bestiary/basicrelations}}
+\end{equation}
+}
+
+It is worth pausing here to think about how one might characterise the process of copying in words; it is challenging to do so for such an intuitive process. The diagrammatic equations in the margin, when translated into prose, provide an answer.
+\begin{description}
+\item[\textbf{Coassociativity}:] says there is no difference between copying copies.
+\item[\textbf{Cocommutativity}:] says there is no difference between the outputs of a copy process.
+\item[\textbf{Counitality}:] says that if a copy is made and one of the copies is deleted, the remaining copy is the same as the original.
+\end{description}
+
+Insofar as we think this is an acceptable characterisation of copying, rather than specify concretely what a copy and delete does for each system $X$ we encounter, we can instead posit that so long as we have processes $\Delta_X: X \otimes X \rightarrow X$ and $\epsilon_X: X \rightarrow I$ that obey all the equational constraints above, $\Delta_X$ and $\epsilon_X$ are as good as a copy and delete.
+
+\marginnote{
+\begin{example}[Not all states are copyable]\label{ex:copyablestate}
+Call a state \emph{copyable} when it satisfies the following diagrammatic equation:
+\[\tikzfig{proctheory/copyable}\]
+In the process theory of sets and functions, all states are copyable. Not all states are copyable in the process theories of sets and relations and of linear maps. For example, consider the two element set $\mathbb{B} := \{0,1\}$, and let $\top : \{\star\} \nrightarrow \mathbb{B} := \{(\star,0),(\star,1)\} \simeq \{0,1\}$. Consider the composite of $\top$ with the copy relation:
+\[\top;\Delta_{\mathbb{B}} := \{\big(\star,(0,0)\big),\big(\star,(1,1)\big)\} \simeq \{(0,0),(1,1)\}\]
+This is a perfectly correlated bipartite state, and it is not equal to $\{0,1\} \times \{0,1\}$, so $\top$ is not copyable.
+\end{example}
+}
+\marginnote{
+\begin{remark}\label{ft:determinism}
+The copyability of states is a special case of a more general form of interaction with the copy relation:
+\[\scalebox{0.75}{\tikzfig{proctheory/copyablefunc}}\]
+A cyan map that satisfies this equation is said to be a homomorphism with respect to the commutative comonoid. In the process theory of relations, those relations that satisfy this equation are precisely the functions; in other words, this diagrammatic equation expresses \emph{determinism}.
+\end{remark}}
+
+Here is an unexpected consequence. Suppose we insist that \emph{to copy} in principle also implies the ability to copy \emph{anything} -- arbitrary states. From Example \ref{ex:copyablestate} and Remark \ref{ft:determinism}, we know that this demand is incompatible with certain process theories. In particular, this demand would constrain a process theory of sets and relations to a subtheory of sets and functions. The moral here is that process theories are flexible enough to meet ontological needs. A classical computer scientist who works with perfectly copyable data and processes might demand universal copying along with Equations \ref{cocom}, whereas a quantum physicist who wishes to distinguish between copyable classical data and non-copyable quantum data might taxonomise copy and delete as a special case of a more generic quasi-copy and quasi-delete that only satisfies equations \ref{cocom}.\footnote{Quantum physicists \emph{do} do this; see Dodo: []}
+
+\subsection{What is an update?}\label{ss:update}
+
+In the previous section we have seen how we can start with concrete examples of copying in distinct process theories, and obtain a generic characterisation of copying by finding diagrammatic equations copying satisfies in each concrete case. In this section, we show how to go in the opposite direction: we start by positing diagrammatic equations that characterise the operational behaviour of a particular process -- such as \emph{updating} -- and it will turn out that any concrete process that satisfies the equational constraints we set out will \emph{by our own definition} be an update.\\
+
+Perhaps the most familiar setting for an update is a database. In a database, an \bM entry\e often takes the form of pairs of \bB fields\e and \bO values\e. For example, where a database contains information about employees, a typical entry might look like:
+\[\texttt{\bM < \bB\textbf{NAME}\e:\bO Jono Doe\e, \bB\textbf{AGE}\e:\bO 69\e, \bB\textbf{JOB}\e:\bO CONTENT CREATOR\e, \bB\textbf{SALARY}\e:\bO\$420\e, ... >\e}\]
+There are all kinds of reasons one might wish to update the value of a field: Jono might legally change their name, a year might pass and Jono's age must be incremented, Jono might be promoted or demoted or get a raise and so on. It was the concern of database theorists to formalise and axiomatise the notion of updating the value of a field -- \emph{independently of the specific programming language implementation of a database} -- so that they had reasoning tools to ensure program correctness []. The problem is reducible to axiomatising a \emph{rewrite}: we can think of updating a value as first calculating the new value, then \emph{putting} the new value in place of the old. Since often the new value depends in some way on the old value, we also need a procedure to \emph{get} the current value.\\
+
+That was a flash-prehistory of \emph{bidirectional transformations} []. Following the monoidal generalisation of lenses in [], a rewrite as we have described above is specified by system diagrammatic equations in the margin, each of which we introduce in prose.
+
+\marginnote[-5cm]{
+\begin{description}
+\item[\textbf{PutPut}:] Putting in one value and then a second is the same as deleting the first value and just putting in the second.
+\[\scalebox{0.5}{\tikzfig{proctheory/putputs}}\]
+\item[\textbf{GetPut}:] Getting a value from a field and putting it back in is the same as not doing anything.
+\[\scalebox{0.5}{\tikzfig{proctheory/getput}}\]
+\item[\textbf{PutGet}:] Putting in a value and getting a value from the field is the same as first copying the value, putting in one copy and keeping the second.
+\[\scalebox{0.5}{\tikzfig{proctheory/putget}}\]
+\item[\textbf{GetGet}:] Getting a value from a field twice is the same as getting the value once and copying it.
+\[\scalebox{0.5}{\tikzfig{proctheory/getget}}\]
+\end{description}
+}
+
+These diagrammatic equations do two things. First, they completely specify what it means to get and put values in a field in an implementation independent manner; it doesn't matter whether database entries are encoded as bitstrings, qubits, slips or paper or anything else, what matters is the interaction of get and put. Second, the diagrammatic equations give us the right to call our processes \emph{get} and \emph{put} in the first place: we define what it means to get and put by outlining the mutual interactions of get, put, copy, and delete. These two points are worth condensing and rephrasing:
+\[
+\textbf{A \emph{kind of process} is determined by patterns of interaction with other kinds of processes.}
+\]
+
+Now we can diagrammatically depict the process of updating Jono's age, by \bB getting\e Jono's \bO age value\e from their \bM entry\e, incrementing it by 1, and \bB putting\e it back in.
+
+\[\tikzfig{proctheory/incrementage}\]
+
+\subsection{Spatial predicates}
+
+The following simple inference is what we will try to capture process-theoretically:
+
+\begin{itemize}
+\item \texttt{Oxford is north of London}
+\item \texttt{Vincent is in Oxford}
+\item \texttt{Rocco is in London}
+\end{itemize}
+
+How might it follow that \texttt{Rocco is south of Vincent}?\\
+
+One way we might approach such a problem computationally is to assign a global coordinate system, for instance interpreting `north' and `south' and `is in' using longitude and latitude. Another coordinate system we might use is a locally flat map of England. The fact that either coordinate system would work is a sign that there is a degree of implementation-independence.\\
+
+This coordinate/implementation-independence is true of most spatial language: we specify locations only by relative positions to other landmarks or things in space, rather than by means of a coordinate system. This is necessarily so for the communication of spatial information between agents who may have very different reference frames.\\
+
+So the process-theoretic modelling aim is to specify how relations between entities can be \emph{updated} and \emph{classified} without requiring individual spatial entities to intrinsically possess meaningful or determinate spatial location.\\
+
+So far we have established how to update properties of individual entities. We can build on what we have so far by observing that a relation between two entities can be considered a property of the pair.
+
+\[placeholder\]
+
+Spatial relations obey certain compositional constraints, such as transitivity in the case of `north of':
+
+\[placeholder\]
+
+Or the equivalence between 'north of' and 'south of' up to swapping the order of arguments:
+
+\[\]
+
+There are other general constraints on spatial relations, such as order-independence: the order in which spatial relations are updated does not (at least for perfect reasoners) affect the resultant presentation. This is depicted diagrammatically as commuting gates:
+
+\[placeholder\]
+
+\subsection{Some basic properties of linguistic spatial relations}

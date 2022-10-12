@@ -1,0 +1,131 @@
+\section{A no-go theorem for interpretations of text circuits}
+
+\begin{theorem}[NO-GO]
+A representation of language meanings is at most 2-of-3:\\
+\begin{enumerate}
+\item{Grammatically compositional}
+\item{Distributed (The meaning of the whole cannot be recovered from a single part)}
+\item{Deterministic (Interpretable in terms of sets and functions)}
+\end{enumerate}
+\end{theorem}
+
+1 is a demand from observing language. By grammatically compositional, we mean that the representation is expressible as a process theory, which we have argued in Section \ref{} subsumes a broad notion of "amenable to grammatical description".
+
+2 is a constraint from armchair introspection about how humans experience the representation of meanings; see the margin for a report. We go on to formalise what we mean by representations and whether they are distributed.
+
+Armchair introspection would suggest that the nature of the representations -- however they are implemented -- in my mind's eye ought to be at least capable of being distributed. The argument is from a consideration of \texttt{the cup is on the table}
+
+Spatial language ought to be coordinate-independent. If that is all I am given as text, the only answer I can give to the question \texttt{where is the cup?} is \texttt{on the table!}; I can only speak of the position of the cup relative to other landmarks in space. Most spatial language is like this, because numerical "absolute" coordinate systems are a recent invention. If a coordinate system 
+
+I can add in additional instructions to consider a featureless white void with nothing but the cup and table in it (IMJ), and this is the best I can think of to remove the influence of context as much as possible.
+
+First, by considering examples of spatial language, it seems that representations can be provisional or indeterminate. For example, when I consider a spatial relation such as \texttt{the cup is on the table}, there is indeterminacy about the table's location. Even if I envision a concrete representation (IMJ), it is provisional rather than a commitment, because upon learning new information such as \texttt{the table is under the window} (IMJ), or \texttt{the table is underwater} (IMJ), I am capable of redrawing the image of my mind's eye to integrate all of the available information. Alternatively, if my mental visualisation were not reflexive but willed -- as is the case for some aphantasics -- I could wait to hear about the table's positioning before even constructing a concrete image corresponding to the text, hence the possibility that my representation is indeterminate.\\
+
+2 is a demand from armchair introspection.\\
+
+3 is only a choice.\\
+
+If text circuits are interpreted as sets and functions, every noun-wire encodes all of the relations it participates in.
+
+[This makes sets and functions inappropriate for linguistic spatial relations, because one of the important considerations is that a spatial relation is really schrodinger composition: full knowledge of a spatial ensemble says nothing about individual positions, and deleting any individual position destroys the spatial ensemble.]
+
+\subsection{Grammatically compositional representations}
+
+\begin{defn}[Representations of a relation $\Phi$ via assertion and measurement]
+We restrict our consideration to the free coloured PROP on the following generators:
+\[\tikzfig{nogo/repgenerators}\]
+In the same manner as an update is defined out of the constrained interaction of get and put processes in Section \ref{}, we define a \textbf{representation} of a relation $\Phi$ out of the interaction of assertion and measurment processes. We depict the case for a bipartite space on two wires, but the definitions evidently generalise to the multipartite case. Consider unlabelled wires to be arbitrary but fixed types. An \emph{assertion of} $\Phi$ is a gate on two wires. The assertion is partnered with a \emph{measurement}, which takes two wires into a \bM measurement space\e. We require that the \bM measurement space\e have at least two unequal states. We denote these states \faThumbsOUp \ and \faThumbsODown, indicating that the measurement has confirmed the presence of the relation $\Phi$, or the non-presence, respectively.
+\[\tikzfig{nogo/assertiontest3}\]
+We would like it to be such that if an assertion of $\Phi$ is made on two wires, no matter what happens afterwards, measuring those two wires will return \faThumbsOUp. Diagrammatically, we ask for the existence of deletes, and for the following equation to hold for all $\textcolor{blue}{X,Y,\Gamma}$.\footnote{For now, we only consider the simple case where assertions, once made, "stick". It is not problematic to consider assertions to be updates as in Section \ref{ss:update} to accommodate cases where assertions can be later disavowed.}
+\[\tikzfig{nogo/assertiontest1}\]
+Undesirably, the equation above is satisfied by the trivial measurement which always returns with \faThumbsOUp. To rule out this case and ask the measurement to actually cooperate with the assertion, we ask that each noun wire has some \emph{tabula rasa} initial state $\textcolor{cyan}{\blackcircle}$ on the noun wires that witnesses the absence of the relation $\textcolor{cyan}{\blackcircle}$ with every other wire. Diagrammatically, we ask that the following equations hold.\footnote{These equations rule out "false negatives", but admit "false positives": a measurement can return \faThumbsOUp \ in a case where no assertion of $\Phi$ has been made. This is intentional. Consider the case where $\Phi$ is transitive -- such as \texttt{to the left of} -- and suppose it is only asserted that $X\Phi Y$ and $Y \Phi Z$. Although $X \Phi Z$ is not explicitly asserted, we would like the measurement $\Phi_?$ to pick it up anyway, so we have to leave room for false positives.}
+\[\tikzfig{nogo/assertiontest2}\]
+\end{defn}
+
+\begin{defn}[Distributed representations]
+We will introduce the concept of distributed representations in three steps. First we introduce a simple notion of double-entry representation. Weakening this notion gives us independent representations. Finally, distributed representations are those that are not independent. We restrict our consideration to binary relations $\Phi$, but the definitions generalise in an evident way.\\
+Call a representation \textbf{double-entry} when either wire of a $\Phi$-asserted pair carries sufficient information to reconstruct the presence or absence of the relation $\Phi$. So, no information is lost by deleting the other wire. Diagrammatically, we express this as an equation that says the measurement $\Phi_{?}$ applied to a labelled noun-wire $X$ is replaceable by a measurement that does not take $X$ as input.
+\[\tikzfig{nogo/dist1}\]
+Whereas for a double-entry representation the single-input measurement $\Phi_{X?}$ is the same for all preceding circuits, in the weaker notion of an \textbf{independent} representation, the single-input measurement $\Phi^\Gamma_{X?}$ is allowed to vary with the preceding circuit $\Gamma$. The diagram equation asks that, \textcolor{blue}{for all preceding circuits $\Gamma$ and non-participating collections of wires $\alpha$}, there exists a measurement $\Phi^{\Gamma,\alpha}_{X?}$ that the data of $X$ can be separately encapsulated in.
+\[\tikzfig{nogo/dist2}\]
+Finally, if a representation is not independent, then we call it \textbf{distributed}.
+\end{defn}
+
+Distributed representations are one way to formalise the idea that "the whole is more than the sum of its individually considered parts". What follows are examples of double-entry, independent, and distributed representations.
+
+\begin{example}[Friendship: double-entry]\label{ex:friendsCENT}
+Suppose we wish to represent a symmetric relation \texttt{friends} over a set of three individuals: $\{\texttt{Alice},\texttt{Bob},\texttt{Claire}\}$.\\
+
+Suppose we work in the process theory of sets and functions. Here is a double-entry representation strategy. Denote the set of unicode strings $\mathcal{U}$ Each person is assigned a wire representing the set $\mathcal{U} \times \{A,B,C\}$; the latter set of indices will serve as noun-labels for each wire. Take each person $X$'s initial \emph{tabula rasa} state $\xi$ to be $(\epsilon,X)$; the product of the empty string and the index corresponding to their own name. Take the assertion $\Phi$ to be defined:
+\[ \Phi : \big( \mathcal{U} \times \{A,B,C\} \big) \times \big( \mathcal{U} \times \{A,B,C\} \big) := \bigg( (\sigma,X) \ , \ (\tau,Y) \bigg) \mapsto \bigg( (\sigma\frown\text{``}\Phi[ X Y ]\Phi\text{"} ,X) \ , \ (\tau\frown\text{``}\Phi[ X Y ]\Phi\text{"},Y) \bigg) \]
+Each person's string serves as a record. $\Phi$ checks the names of the two people, and appends a certificate string to both people's memory that witnesses their friendship. Now the job of the measurement $\Phi_?$ is to check the names of two people and search their records for a certificate of their friendship. Let $\mathcal{M}$ denote the set $\{$ \faThumbsOUp, \faThumbsODown $\}$.
+\[\Phi_? : \big( \mathcal{U} \times \{A,B,C\} \big) \rightarrow \mathcal{M} := \bigg( (\sigma,X) \ , \ (\tau,Y) \bigg) \mapsto \begin{cases} \text{\faThumbsOUp} & 
+\text{if ``}\Phi[X Y]\Phi \text{" occurs as a substring in }\sigma\text{ and }\tau \\
+\text{\faThumbsODown} & \text{otherwise}
+\end{cases} \]
+Since the assertion of $\Phi$ writes certificates in the records of both people, only one person's record is required. So if we know the noun-labels $X,Y$ of two wires to be measured, we can instead use the single-wire measurement:
+\[\Gamma_{XY} : \big( \mathcal{U} \times \{A,B,C\} \big)|_{(\mathcal{U} \times X)} := (\sigma,X) \mapsto \begin{cases} \text{\faThumbsOUp} & 
+\text{if ``}\Phi[X Y]\Phi \text{" occurs as a substring in }\sigma\text{ and }\tau \\
+\text{\faThumbsODown} & \text{otherwise}
+\end{cases}\]
+\end{example}
+
+\begin{example}[Friendship: independent]\label{ex:friendsINDEP}
+Here is a strategy for an independent representation of the friendship relation among Alice, Bob, and Claire, again in sets and functions. Suppose we want to represent the situation where just Alice and Bob are friends.\marginnote{Note that we are deliberately asking to represent a \emph{particular} situation. We ask for a measurement, but not for an assertion, for reasons that will be explored in Example \ref{ex:friendsINDEP2}} Lets assign each noun-wire the set $\mathbb{N} \times \mathbb{N} \times \{\texttt{A},\texttt{B},\texttt{C}\}$; a pair of positive integers and a name-label. Let $\mathcal{M}$ denote the set $\{$ \faThumbsOUp, \faThumbsODown $\}$. Let's define the measurement $\Phi_?$ to be:
+\[\Phi_? : \big( \mathbb{N} \times \mathbb{N} \times \{\texttt{A},\texttt{B},\texttt{C} \} \big) \times \big( \mathbb{N} \times \mathbb{N} \times \{\texttt{A},\texttt{B},\texttt{C} \} \big) \rightarrow \mathcal{M} := \bigg((p,q,X),(r,s,Y)\bigg) \mapsto
+\begin{cases}
+\text{\faThumbsOUp} & 
+\text{if }pr \ \text{mod} \ qs = 0 \\
+\text{\faThumbsODown} & \text{otherwise}
+\end{cases}
+\]
+We can represent the situation where just Alice and Bob are friends by the assignment:
+\[\text{Alice} \mapsto (3,2,\texttt{A}) \quad \text{Bob} \mapsto (2,3,\texttt{B}) \quad \text{Claire} \mapsto (7,5,\texttt{C})\]
+\begin{lemma}
+This representation and measurement scheme suffices to encode any finite undirected graph without self-loops.
+\begin{proof}
+Assign each vertex $v$ a distinct prime $p_v$. Let $\Phi$ denote the set of undirected edges that constitute the graph to encode, and let $\Phi(v)$ denote the neighbourhood $\{w \ | \ (v,w) \in \Phi\}$, and let $\hat{\Phi}(v) := \prod\limits{v^i \in \Phi(v)} p_{v^i}$. If $v \in \Phi$, assign it the integer pair $(\hat{\Phi}(v),p_v)$, or else assign it the pair $(q,p_v)$ for $q$ a prime not among $p_v$. By construction, $\hat{\Phi}(v) \bar{\Phi(w)} \ \text{mod} \ p_v p_w = 0$ iff $(v,w) \in \Phi$
+\end{proof}
+\end{lemma}
+\end{example}
+
+\begin{theorem}[Fox's Theorem]
+
+\end{theorem}
+
+\begin{lemma}[Internal structure of assertions in cartesian monoidal categories]
+
+\end{lemma}
+
+\begin{lemma}[]
+
+\end{lemma}
+
+cartesian = deterministic\\
+
+deterministic => non-distributed representations. (theorem above)\\
+
+distributed representations ?=> nondeterministic (contrapositive)\\
+
+HOWEVER:
+
+\begin{example}[Friendship: Distributed (Continued)]\label{ex:friendsINDEP2}
+Although the representation and measurement scheme of Example \ref{ex:friendsINDEP} is in a sense "sufficient", a problem arises when we consider compositionality. Continuing with our example, suppose it is now the case that Alice and Claire are friends, or if a newcomer Dennis arrives who happens to be friends with Bob. These are situations that naturally arise in textual descriptions. There is no function that can behave as an assertion, because the encoding scheme assigns primes $p_v$ in a manner dependent on the previous state of the whole system. Concretely, let's consider again the previous assignment representing the situation where only Alice and Bob were friends:
+\[\text{Alice} \mapsto (3,2,\texttt{A}) \quad \text{Bob} \mapsto (2,3,\texttt{B}) \quad \text{Claire} \mapsto (7,5,\texttt{C})\]
+Suppose we want to now assert in addition that Alice is friends with Claire. One of Claire or Alice's integer-pair must be modified.
+
+
+sets and relations can be construed as sets and functions, but composition then becomes kliesli-composition rather than process-theoretic composition.
+\end{example}
+
+Compositionality => (Distributed representations -> nondeterminism)
+Compositionality => (cartesian -> double-entry representations)
+
+\subsection{Consequences}
+
+Formal semantics with sets and functions is 1 and 3, and cannot satisfy 2.\\
+The majority of NNs are 2 and 3. They will fail to satisfy 1.\\
+Insofar as one agrees with everything said so far, these two approaches are nonstarters.
+
+But 3 is an easy choice to flip. On pen-and-paper just use Rel. In silico, markov categories work -- this is the equivalent of introducing a source of randomness. Alternatively, quantum computers.
+

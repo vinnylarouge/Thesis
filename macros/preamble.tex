@@ -1,0 +1,99 @@
+\documentclass{tufte-book}
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+%\usepackage{scrextend} 
+%\changefontsizes[20pt]{12pt}
+
+\geometry{a4paper,landscape,left=24.8mm,top=27.4mm,headsep=2\baselineskip,textwidth=164mm,marginparsep=8.2mm,marginparwidth=82mm,textheight=34\baselineskip,headheight=\baselineskip}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath,amsthm,amssymb}
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem*{theorem*}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma} 
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conj}[theorem]{Conjecture}
+\newtheorem{defn}[theorem]{Definition}
+\newtheorem{fact}[theorem]{Fact} 
+\newtheorem{example}[theorem]{Example} 
+\newtheorem{examples}[theorem]{Examples}
+\newtheorem{example*}[theorem]{Example*}
+\newtheorem{examples*}[theorem]{Examples*}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{remark*}[theorem]{Remark*}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{assumption}[theorem]{Assumption}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{convention}[theorem]{Convention}
+\newtheorem{justification}[theorem]{Justification} 
+\newtheorem{construction}[theorem]{Construction}
+\newtheorem{rem}[theorem]{Reminder}
+\newtheorem{intuition}[theorem]{Intuition}
+\newtheorem{term}[theorem]{Terminology}
+
+\usepackage{tikz-cd}
+\usepackage{macros/tikzfig}
+\usepackage{macros/quiver}
+\input{macros/thesis.tikzstyles}
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title{My Thesis}
+\author[V.W.]{Vincent Wang-Ma\'{s}cianica}
+\date{\today}
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Squares
+\usepackage{stix}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+\usepackage{bussproofs}
+
+\usepackage{xcolor}
+\usepackage{xspace}
+\def\bB{\begin{color}{blue}}
+\def\bO{\begin{color}{orange}}
+\def\bG{\begin{color}{green}}
+\def\bM{\begin{color}{magenta}}
+\def\e{\end{color}\xspace}
+
+\usepackage{fontawesome}
+
+%\usepackage{tocloft}
+%\cftsetindents{section}{0em}{2em}
+%\cftsetindents{subsection}{0em}{2em}
+%\renewcommand\cfttoctitlefont{\hfill\Large\bfseries}
+%\renewcommand\cftaftertoctitle{\hfill\mbox{}}

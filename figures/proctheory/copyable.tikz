@@ -1,0 +1,41 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dotb] (0) at (-1.75, 0) {};
+		\node [style=none] (1) at (-1, 0.5) {};
+		\node [style=none] (2) at (-1, -0.5) {};
+		\node [style=none] (3) at (-2.5, 0) {};
+		\node [style=none] (4) at (-2.5, -0.5) {};
+		\node [style=none] (5) at (-3, 0) {};
+		\node [style=none] (6) at (-2.5, 0.5) {};
+		\node [style=none] (7) at (1.5, 0.65) {};
+		\node [style=none] (8) at (1.5, 0.15) {};
+		\node [style=none] (9) at (1, 0.65) {};
+		\node [style=none] (10) at (1.5, 1.15) {};
+		\node [style=none] (11) at (1.5, -0.625) {};
+		\node [style=none] (12) at (1.5, -1.125) {};
+		\node [style=none] (13) at (1, -0.625) {};
+		\node [style=none] (14) at (1.5, -0.125) {};
+		\node [style=none] (15) at (3, 0.65) {};
+		\node [style=none] (16) at (3, -0.625) {};
+		\node [style=none] (17) at (0, 0) {$=$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K, in=-180, out=90] (0) to (1.center);
+		\draw [style=K, in=-180, out=-90] (0) to (2.center);
+		\draw [style=K] (3.center) to (0);
+		\draw [style={K(CF)}] (4.center)
+			 to (6.center)
+			 to (5.center)
+			 to cycle;
+		\draw [style={K(CF)}] (8.center)
+			 to (10.center)
+			 to (9.center)
+			 to cycle;
+		\draw [style={K(CF)}] (12.center)
+			 to (14.center)
+			 to (13.center)
+			 to cycle;
+		\draw [style=K] (7.center) to (15.center);
+		\draw [style=K] (11.center) to (16.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

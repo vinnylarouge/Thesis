@@ -1,0 +1,110 @@
+\begin{fullwidth}
+\begin{centering}
+
+\newthought{This thesis is about a new way to see language using formal diagrams.}
+
+\newthought{The formal diagrams are compositional blueprints.}\\
+We know how grammar composes meanings in language.\\
+We can quotient out grammar using these formal diagrams.\\
+This turns big black boxes into composites of small black boxes.\\
+\[\]
+This leaves smaller pieces for machines to learn representations for.\\
+The compositional blueprints may be instantiated by classical or quantum computers.\\
+We introduce the history, theory, and use of these diagrams in Chapter \ref{}.
+
+\newthought{The diagrams look like circuits.}\\
+Let's say that \textbf\emph{{the meaning of text is how it updates a model.}}\\
+So we start with some model of the way things are.
+\[\tikzfig{intro/model}\]
+Text updates that model.
+\[\tikzfig{intro/model2}\]
+Text is made of sentences.
+\[\tikzfig{intro/model3}\]
+Let's say that \textbf{\emph{The meaning of a sentence is how it updates the meanings of its parts.}}\\
+Let's say that the \emph{parts} of a sentence are the nouns it contains or refers to.\\
+Noun data is carried by wires.\\
+Collections of nouns are related by gates.\\
+\[\tikzfig{intro/model4}\]
+Gates can be related by higher order gates.
+\[\tikzfig{intro/model5}\]
+Higher order gates are gates that modify the parameters of other gates.
+\[\tikzfig{intro/model6}\]
+
+\subsection{Relation to conventional grammars}
+
+\newthought{Discourse Representation Theory}\\
+Text is composed of sentences as circuits are composed from gates.\\
+Text circuits are composed by connecting noun wires.\\
+This can happen when two sentences refer to the same noun.\\
+\texttt{Alice likes Bob. Bob hates Claire.}\\
+\[placeholder\]
+Or when a pronoun is used to refer to another noun.
+\texttt{Alice likes the flowers that Bob gives Claire.}
+\[placeholder\]
+So if you know how to resolve pronoun references, and you know how to represent sentences as gates acting on noun wires, you may represent text as circuits.\\
+There are several ways to obtain gates from grammars for sentences.\\
+
+\newthought{Context-free grammar}\\
+In a context-free grammar, a sentence symbol $\texttt{S}$ is expanded by replacing individual symbols with strings of symbols to obtain a well-formed sentence.\\
+The shape of these expansions is a tree.\\
+That tree gives the shape of gates in a sentence.\\
+\[\tikzfig{intro/model7}\]
+In Chapter \ref{}, we characterise the generative grammar of text circuits in terms of a context-free grammar with additional structure.
+
+\newthought{Typelogical grammar}\\
+A typelogical grammar is like the inverse of a context-free grammar.\\
+The latter is the grammar of the speaker: a full sentence is produced from $\texttt{S}$.\\
+The former is the grammar of the listener: the sentence type $s$ must be derived from the words of the sentence.\\
+In a typelogical grammar such as a pregroup grammar, words are assigned types, and a logical proof witnesses the sentence type $s$:\\
+\AxiomC{$\texttt{Alice} : n$}
+\AxiomC{$\texttt{secretly} : (^{-1}n \cdot s \cdot n^{-1}) \cdot (^{-1}n \cdot s \cdot n^{-1})^{-1}$}
+\AxiomC{$\texttt{likes} : ^{-1}n \cdot s \cdot n^{-1}$}
+\BinaryInfC{$\texttt{secretly\textvisiblespace likes} : ^{-1}n \cdot s \cdot n^{-1}$}
+\RightLabel{$[x^{-1} \cdot x \rightarrow 1]$}
+\BinaryInfC{$\texttt{Alice\textvisiblespace secretly\textvisiblespace likes} : s \cdot n^{-1}$}
+\RightLabel{$[x \cdot ^{-1}x \rightarrow 1]$}
+\AxiomC{$\texttt{Bob} : n$}
+\BinaryInfC{$\texttt{Alice\textvisiblespace secretly\textvisiblespace likes\textvisiblespace Bob} : s$}
+\RightLabel{$[x^{-1} \cdot x \rightarrow 1]$}
+\DisplayProof\\
+Such proofs of syntactic correctness can be re-expressed as diagrams:
+\[\tikzfig{intro/pregroup0}\]
+To obtain a circuit, we make the sentence type $s$ dependent on the words that occur in the sentence, and we refine the structure on each word by introducing "internal wirings", which make use of multiwires called spiders.
+\[\tikzfig{intro/model9}\]
+A certain choice of spider make these internal wiring diagrams topologically equivalent to the circuits we want.
+\[\tikzfig{intro/model9b}\]
+\[\tikzfig{intro/model9c}\]
+In Chapter \ref{}, we show how certain pregroup and dependency grammars may be equipped with internal wirings to obtain text circuits.
+
+
+\section{What this thesis is not about}
+
+\newthought{Although this thesis is about language, it is not really linguistics.}\\
+Linguistics, conventionally, is about understanding human language.\\
+Formal linguistic theories rely on empirical observation of human language use.\\
+Now there are not-human entities that use human language.\\
+Now there are un-natural languages that humans use.\\
+So I am interested in sketching a form of language that humans and computers can use.\\
+This sketch is informed by, but not bound to, human language.
+
+\newthought{Although this thesis is mathematical, it is not really mathematics.}\\
+This thesis does not introduce significantly new mathematical constructions or relations.\\
+So there are no new "know that"s.\\
+This thesis does use relatively modern mathematics to approach an old problem.\\
+The math is symmetric monoidal categories, and some weak n-categories.\\
+The problem is depicting language.\\
+So there is new "know how".\\
+
+\newthought{This thesis is computer science, a little.}\\
+The mathematics used is, to a degree, implementation agnostic.\\
+This thesis is only concerned with the "in principle", rather than the "in practice".\\
+There will be no code demonstration nor machine learning experiments.\\
+Computer Science : Programming :: Physics : Engineering\\
+I will point out where experiments have been done.\\
+Hypothetical procedures will be spelled out if needed.\\
+
+The subject matter of this thesis touches on enough fields that I feel it necessary to get everyone on the same page.\\
+The rest of this introduction will introduce the technical concepts and philosophical motivations that are the foundation for the rest of this work.
+
+\end{centering}
+\end{fullwidth}

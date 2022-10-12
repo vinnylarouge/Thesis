@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (1, 1) {};
+		\node [style=none] (1) at (1, -1) {};
+		\node [style=none] (2) at (-1, 0) {};
+		\node [style=none] (3) at (0.25, 0) {$\alpha$};
+		\node [style=none] (4) at (2.5, 0) {};
+		\node [style=none] (5) at (1, 0) {};
+		\node [style=none] (6) at (3.5, 0) {$X$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (2.center)
+			 to (1.center)
+			 to (0.center)
+			 to cycle;
+		\draw [style=K] (5.center) to (4.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

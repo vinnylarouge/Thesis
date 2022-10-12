@@ -1,0 +1,46 @@
+Why consider topological relations instead of just sets and relations?
+
+TL;DR, bc:
+1. G argues space mediates sense-data(?) and symbolic(?) concepts.
+This is backed by physical evidence. even if G is wrong, he is interestingly so.
+2a. topology is a mathematical framework for space
+2b. we can also view topology as a framework for expressing and testing for concepts.
+3a. By examples, we demonstrate how the opens of a topology can be used to model conceptual spaces.
+- colour as locales, cones, discrete hexcodes
+- the tic-tac-toe trick, and what makes a chessboard (using sticky-spiders)
+- the range of poses of a mannequin (using sticky-spiders)
+3b. If we accept the previous, a logical consequence is that properties of the topology afford or constrain the kinds of concepts that can be modelled.
+-- In particular:
+- negation requires the topology to be locally indiscrete.
+- universal quantification requires the topology to be compact.
+- as a consequence, the kinds of conceptual spaces that suit first-order logic are locally indiscrete and compact; this includes all finite sets with the discrete topology.
+- infinite sets with the discrete topology are not compact; this means that certain universally quantified concepts cannot be formed.
+- euclidean space is not compact, but locally compact; this means that only certain bounded universal quantifiers are permitted for concept formation.
+4. So unless we disagree with G, or topology*, or find the examples not compelling, we are forced to consider topological relations.
+*appendix or extended remark: topology sucks and we might reasonably ask for tame topologies like o-minimal structures instead. Language circuits where the diagrammatic signature contains (tests that constitute a topological basis) + (leq) are precisely o-minimal structures. This is just to say that diagrams, o-minimal structures, and language are finitely combinatoric.
+
+Let's say that our purpose is to perform formal conceptual modelling that adheres to how we intuitively think about language;
+depending on who you ask...
+1. maybe this activity is essential for explainable AI.
+2. or maybe text models are so good that they can analyse their own language and concept usage;
+... in which case there's no pressure for practicality, this is something closer to pure maths.
+
+Let's say that Gardenfors is right -- or at least wrong in an interesting way -- and space is the mediator between raw sense data and 'symbolic'. There's neurophysical evidence [grid cells for bird pics] that we reuse the mechanisms for representing space for other concepts.
+
+Why not go all the way with convex relations then, as Gardenfors does?
+Convexity [cite interactingconcspace] is useful computationally but restricts what kinds of concepts are allowed.
+Killer example is equidistance; arguably basic even by Gardenfors, but not really convex in any obvious sense.
+Topological relations subsume convex ones, and their structure is 'orthogonal';
+the structure of inclusion of open sets can model hyponymy/hypernymy of concepts in a direct way.
+
+\newthought{Open sets are like verification tests, for which a certificate or proof can be provided.}
+
+For example:
+o some raven is black
+o this raven is black
+x all ravens are black
+
+This view provides an intuition as to why open sets in a topology are closed under arbitrary union but only finite intersection. Take set intersection and union as their usual boolean algebra counterparts, and say $\mathbf{A}, \mathbf{B}, \mathbf{C}, \cdots$ are tests for which a passing certificate can be provided. $\mathbf{A} \vee \mathbf{B} \vee \mathbf{C} \cdots$ is verifiable...
+
+The tests of our process theory are a vocabulary of concepts. The states are, in this analogy, instances of sense data or whatever currency a concept-machine uses. There are two numbers...
+

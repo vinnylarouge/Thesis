@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-2, 0) {};
+		\node [style=none] (1) at (-1, 0) {};
+		\node [style=none] (2) at (-2, 0.75) {};
+		\node [style=none] (3) at (-3, 0) {};
+		\node [style=none] (4) at (-2, -0.75) {};
+		\node [style=none] (5) at (-2.35, 0) {\faThumbsOUp};
+		\node [style=none] (6) at (2, 0) {};
+		\node [style=none] (7) at (3, 0) {};
+		\node [style=none] (8) at (2, 0.75) {};
+		\node [style=none] (9) at (1, 0) {};
+		\node [style=none] (10) at (2, -0.75) {};
+		\node [style=none] (11) at (1.65, 0) {\faThumbsODown};
+		\node [style=none] (12) at (0, 0) {$\neq$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KM] (0.center) to (1.center);
+		\draw [style={K(Fm)}] (3.center)
+			 to (2.center)
+			 to (4.center)
+			 to cycle;
+		\draw [style=KM] (6.center) to (7.center);
+		\draw [style={K(Fm)}] (9.center)
+			 to (8.center)
+			 to (10.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}
