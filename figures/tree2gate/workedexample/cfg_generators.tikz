@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, -1) {};
+		\node [style=dotC] (1) at (0, 0) {};
+		\node [style=none] (2) at (-1, 1) {};
+		\node [style=none] (3) at (0, 1) {};
+		\node [style=none] (4) at (1, 1) {};
+		\node [style=none] (5) at (-1, 1.5) {\texttt{NP}};
+		\node [style=none] (6) at (0, 1.5) {\textcolor{green}{\texttt{SCV}}};
+		\node [style=none] (7) at (1, 1.5) {\textcolor{cyan}{\texttt{S}}};
+		\node [style=none] (9) at (0, -1.5) {\textcolor{cyan}{\texttt{S}}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KC] (0.center) to (1);
+		\draw [style=KC, bend right=45] (1) to (4.center);
+		\draw [style=KG] (1) to (3.center);
+		\draw [style=K, bend left=45] (1) to (2.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

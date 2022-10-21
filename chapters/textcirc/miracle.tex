@@ -1,8 +1,10 @@
-\section{An everyday miracle of language}
+\section{How do we communicate?}
 
 \newthought{Speakers and listeners understand one another.} As far as formal theories of syntax and semantics go, this is a miracle. It remains so even if we cautiously hedge this mundane statement to exclude pragmatics and context and only encompass small and boring fragments of factual language.\\
 
-In short: there is a distinction between \emph{grammars of the speaker} -- which produce sentences -- and \emph{grammars of the listener} -- which deduce sentences. Viewed as mathematical processes, the two kinds of grammars go in opposite directions; speaking grammars [e.g. string-rewrite systems] start with some structure, and require informational input [e.g. which rule comes next] to produce sentences; listening grammars [e.g. typelogical grammars] start with a sentence, and require informational input [e.g. grammatical typing and which proof rule to try next] to deduce a grammatical structure. Since we can understand each other, these two types of grammar must enjoy a systematic correspondence.\\
+In short: there is a distinction between \emph{grammars of the speaker} -- which produce sentences -- and \emph{grammars of the listener} -- which deduce sentences. Viewed as mathematical processes, the two kinds of grammars go in opposite directions; speaking grammars [e.g. string-rewrite systems] start with some structure, and require informational input [e.g. which rule comes next] to produce sentences; listening grammars [e.g. typelogical grammars] start with a sentence, and require informational input [e.g. grammatical typing and which proof rule to try next] to deduce a grammatical structure. Since we can understand each other, these two types of grammar must enjoy a systematic correspondence. The correspondence looks something like this:\\
+
+\[placeholder\]
 
 In this section I will elaborate on the above argument, and provide the first steps of a formal mathematical framework to present and organise the nature of this correspondence. This framework comes from the idea that speakers and listeners may use language as a vehicle to communicate thought; from this formal framework, we detect that the intermediate structure -- that which is being communicated -- leads us to the idea of text circuits.\\
 
@@ -101,25 +103,21 @@ Consider the following sentence:
 The sentence is secretly (at least) two, corresponding to two possible parses. The usual reading is (glossed) $\forall x \exists y : \texttt{loves}(x,y)$. The odd reading is $\exists y \forall x : \texttt{loves}(x,y)$: a Raymond situation where there is a single person loved by everyone. We can sketch this difference formally using a simple combinatory categorial grammar.
 
 \[
-\begin{bprooftree}
 \AxiomC{$\texttt{everyone} : (n \multimap s) \multimap s$}
 \AxiomC{$\texttt{loves} : n \multimap s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
 \BinaryInfC{$\texttt{everyone\textvisiblespace loves} : s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
 \AxiomC{$\texttt{someone} : (s \ \rotatebox[origin=c]{180}{$\multimap$} \ n) \multimap s$}
 \BinaryInfC{$\texttt{everyone\textvisiblespace loves\textvisiblespace someone} : s$}
 \DisplayProof
-\end{bprooftree}
 \]
 
 \[
-\begin{bprooftree}
 \AxiomC{$\texttt{everyone} : (n \multimap s) \multimap s$}
 \AxiomC{$\texttt{loves} : n \multimap s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
 \AxiomC{$\texttt{someone} : (s \ \rotatebox[origin=c]{180}{$\multimap$} \ n) \multimap s$}
 \BinaryInfC{$\texttt{loves\textvisiblespace someone} : n \multimap s$}
 \BinaryInfC{$\texttt{everyone\textvisiblespace loves\textvisiblespace someone} : s$}
 \DisplayProof
-\end{bprooftree}
 \]
 
 CCGs have functorial semantics in any cartesian closed category, such as one where morphisms are terms in the lambda calculus and composition is substitution []. So we might specify a semantics as follows:
@@ -133,29 +131,198 @@ CCGs have functorial semantics in any cartesian closed category, such as one whe
 Now we can plug-in these interpretations to obtain the two different meanings. We decorate with corners just to visually distinguish which bits are partial first-order logic.
 
 \[
-\begin{bprooftree}
 \AxiomC{$\lambda (\lambda x . V(x)) . \ulcorner \forall x : V(x) \urcorner : (n \multimap s) \multimap s$}
 \AxiomC{$\lambda x \lambda y . \ulcorner \texttt{loves}(x,y) \urcorner : n \multimap s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
 \BinaryInfC{$ \lambda y . \ulcorner \forall x : \texttt{loves}(x,y) \urcorner : s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
 \AxiomC{$\lambda (\lambda y . V(y)) . \ulcorner \exists y : V(y) \urcorner : (s \ \rotatebox[origin=c]{180}{$\multimap$} \ n) \multimap s$}
 \BinaryInfC{$ \ulcorner \exists y \forall x : \texttt{loves}(x,y) \urcorner : s$}
 \DisplayProof
-\end{bprooftree}
 \]
 
 \[
-\begin{bprooftree}
 \AxiomC{$\lambda (\lambda x . V(x)) . \ulcorner \forall x : V(x) \urcorner : (n \multimap s) \multimap s$}
 \AxiomC{$\lambda x \lambda y . \ulcorner \texttt{loves}(x,y) \urcorner : n \multimap s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
 \AxiomC{$\lambda (\lambda y . V(y)) . \ulcorner \exists y : V(y) \urcorner : (s \ \rotatebox[origin=c]{180}{$\multimap$} \ n) \multimap s$}
 \BinaryInfC{$\lambda x . \ulcorner \exists y : \texttt{loves}(x,y) \urcorner : n \multimap s$}
 \BinaryInfC{$ \ulcorner \forall x \exists y : \texttt{loves}(x,y) \urcorner : s$}
 \DisplayProof
-\end{bprooftree}
 \]
 
 \end{example}
 
 
 
+\subsection{Discrete Monoidal Fibrations}
 
+We introduce the concept of a discrete monoidal fibration: a mathematical bookkeeping tool that relates kinds of choices speakers and listerns make when generating and parsing text respectively. We proceed diagrammatically. The first concept is that of a \emph{monoidal functor box}.
+
+\marginnote{
+\begin{scholium}
+Functor boxes are from [meillies].
+Expressing the coherence conditions of monoidal functors using equations involving functor boxes as below is not new [meillies]
+The idea of a functor being simultaneously monoidal and a fibration is not new [monoidalfibration].
+What is new is minor: the express requirement that the lifts of the fibration satisfy interchange, which is in general not guaranteed by just having a functor be monoidal and a (even discrete) fibration [fosco].
+\end{scholium}
+}
+
+Suppose we have a functor between monoidal categories $\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$. Then we have the following diagrammatic representation of a morphism $\mathbf{F}A \overset{\mathbf{F}f}{\rightarrow} \mathbf{F}B$ in $\mathcal{D}$:
+
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-notation}\]
+
+The use of a functor box is like a window from the target category $\mathcal{D}$ into the source category $\mathcal{C}$; when we know that a morphism in $\mathcal{D}$ is the image under $\mathbf{F}$ of some morphism in $\mathcal{C}$, the functor box notation is just a way of presenting all of that data at once. Since $\mathbf{F}$ is a functor, we must have that $\mathbf{F}f ; \mathbf{F}g = \mathbf{F}(f;g)$. Diagrammatically this equation is represented by freely splitting and merging functor boxes vertically.
+
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-seq}\]
+
+Assume that $\mathbf{F}$ is strict monoidal; without loss of generality by the strictification theorem [], this lets us gloss over the associators and unitors. For $\mathbf{F}$ to be strict monoidal, it has to preserve monoidal units and tensor products on the nose: i.e. $\mathbf{F}I_\mathcal{C} = I_\mathcal{D}$ and $\mathbf{F}A \otimes_\mathcal{D} \mathbf{F}B = \mathbf{F}(A \otimes_\mathcal{C} B)$. Diagrammatically these structural constraints amount to the following equations:
+
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+structural}\]
+
+What remains is the monoidality of $\mathbf{F}$, which is the requirement $\mathbf{F}f \otimes \mathbf{F}g = \mathbf{F}(f \otimes g)$. Diagrammatically, this equation is represented by freely splitting and merging functor boxes horizontally; analogously to how splitting vertically is the functor-boxes' way of respecting sequential composition, splitting horizontally is how they respect parallel composition.
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-tensor}\]
+
+And for when we want $\mathbf{F}$ to be a (strict) symmetric monoidal functor, we are just asking that boxes and twists do not get stuck on one another.
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-twist}\]
+
+\begin{remark}
+To motivate fibrations, first observe that by the diagrammatic equations of monoidal categories and functor boxes we have so far, we can always "slide out" the contents of a functor box out of the bottom:
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-prefibex}\]
+When can we do the reverse? That is, take a morphism in $\mathcal{D}$ and \emph{slide it into} a functor box? We know that in general this is not possible, because not all morphisms in $\mathcal{D}$ may be in the image of $\mathbf{F}$. So instead we ask "under what circumstances" can we do this for a functor $\mathbf{F}$? The answer is when $\mathbf{F}$ is a discrete fibration.
+\end{remark}
+
+\begin{defn}[Discrete opfibration]
+$\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$ is a \emph{discrete fibration} when:\\
+for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$...\\
+there exists a unique object $\Phi^A_f$ and a unique morphism $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$...\\
+such that $f = \mathbf{F}\phi_f$.\\
+
+Diagrammatically, we can present all of the above as an equation reminiscent of sliding a morphism \emph{into} a functor box from below.
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-fibration}\]
+\end{defn}
+
+\begin{defn}[Monoidal discrete opfibration]
+We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opfibration} when it is a (strict, symmetric) monoidal functor, a discrete opfibration, and the following equations relating lifts to interchange hold:
+\[\scalebox{0.75}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+interchange}}\]
+\end{defn}
+\marginnote{
+\begin{remark}
+The diagrammatic motivation for the additional coherence equations is that -- if we view the lifts of opfibrations as sliding morphisms into functor boxes -- we do not want the order in which sliding occurs to affect the final result. In this way, lifts behave as `graphical primitives' in the same manner as interchange isotopies and symmetry twists.
+\end{remark}
+}
+
+\begin{fullwidth}
+\subsection{A context free grammar to generate \texttt{Alice sees Bob quickly run to school}}
+
+\[\tikzfig{tree2gate/workedexample/bigcfg}\]
+
+\[\tikzfig{tree2gate/workedexample/biginter}\]
+\subsection{Relating the generative grammar to a pregroup grammar via a discrete monoidal fibration}
+We merge the monoidal functor-boxes and we slide the bottom edge down using the fibration.
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_0}}
+\quad = \quad
+\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_1}}
+\quad = \quad
+\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_2}}\]
+\texttt{quickly} could find itself modifying an intransitive (single noun) or transitive (two noun) verb. Suppose that it is the job of some process $\textcolor{orange}{\texttt{q'}}$ to handle intransitive verbs, and similarly $\textcolor{orange}{\texttt{q''}}$ to handle transitive ones. We use the functor for bookkeeping, by asking it to send both $\textcolor{orange}{\texttt{q'}}$ and $\textcolor{orange}{\texttt{q''}}$ to the dependent label $\textcolor{orange}{\bar{\texttt{q}}}$. Diagrammatically, this assignment is expressed by the following equations:
+\[\tikzfig{tree2gate/workedexample/gather_quickly}\]
+Since the functor is a monoidal discrete fibration, it introduces the appropriate choice of \texttt{quickly} when we pull the functor-box down, while leaving everything else in parallel alone.
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_2}}
+\quad = \quad
+\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_3}}\]
+Adpositions can apply for verbs of any noun-arity. We again use the fiber of the functor for bookkeeping by asking it to send all of the following partial pregroup diagrams to the adposition generator. We consider the pregroup typing of a verb of noun-arity $k \geq 1$ to be $^{-1} n \cdot s \cdot \underbrace{n^{-1} \cdots n^{-1}}_{(k-1)}$.
+\[\tikzfig{tree2gate/workedexample/gather_adp}\]
+When we pull down the functor-box, the discrete fibration introduces the appropriate choice of diagram from above, corresponding to the intransitive verb case.
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_3}}
+\quad = \quad
+\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_4}}\]
+Similarly to \texttt{quickly}, we suppose we have a family of processes for the word \texttt{to}, one for each noun-arity of verb.
+\[\tikzfig{tree2gate/workedexample/gather_to}\]
+Again the discrete fibration introduces the appropriate choice of \texttt{to} when we pull the functor box down.
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_4}}
+\quad = \quad
+\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_5}}\]
+Now we visually simplify the inside of the functor-box by applying yanking equations.
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_5}}
+\quad = \quad
+\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_6}}\]
+Similarly as before, we can pull the functor-box past the intransitive verb node. There is only one pregroup type $^{-1}n \cdot s$ that corresponds to the grammatical category $\textcolor{green}{\texttt{(I)VP}}$.
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_6to7}}\]
+Proceeding similarly, we can pull the functor-box past the sentential-complement-verb node. There are multiple possible pregroup types for $\textcolor{ForestGreen}{\texttt{SCV}}$, depending on how many noun-phrases are taken as arguments in addition to the sentence. For example, in $\texttt{Alice \textcolor{ForestGreen}{sees} \textcolor{cyan}{[sentence]}}$, $\textcolor{ForestGreen}{\texttt{sees}}$ returns a sentence after taking a noun to the left and a sentence to the right, so it has pregroup typing $^{-1}n \cdot s \cdot s^{-1}$. On the other hand, for something like $\texttt{Alice \textcolor{ForestGreen}{\texttt{tells}} Bob \textcolor{cyan}{[sentence]}}$, $\textcolor{ForestGreen}{\texttt{tells}}$ returns a sentence after taking a noun (the teller) to the left, a noun (the tellee) to the left, and a sentence (the story) to the left, so it has a pregroup typing $^{-1}n \cdot s \cdot n^{-1} \cdot s^{-1}$. These two instances of sentential-complement-verbs are introduced by different nodes. We can record both of these pregroup typings in the functor by asking for the following:
+\[\tikzfig{tree2gate/workedexample/gather_scv}\]
+Pulling down the functor box:
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_7}}
+\quad = \quad
+\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_8}}\]
+As before, we can ask the functor to send an appropriate partial pregroup diagram to the dependent label $\textcolor{ForestGreen}{\bar{\texttt{see}}}$.
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_8to9}}\]
+Now again we can visually simplify using the yanking equation and isotopies, which obtains a pregroup diagram.
+\[\tikzfig{tree2gate/workedexample/bigex_a0}\]
+The pregroup diagram corresponds to a particular pregroup proof of the syntactic correctness of the sentence \texttt{Alice sees Bob run quickly to school}.
+\[
+\AxiomC{$\texttt{A} : n$}
+\AxiomC{$\textcolor{green}{\texttt{s}} : ^{-1}n \cdot s \cdot s^{-1}$}
+\BinaryInfC{$\texttt{A\textvisiblespace \textcolor{green}{s}} : s \cdot s^{-1}$}
+\AxiomC{$\texttt{B} : n$}
+\AxiomC{$\textcolor{orange}{\texttt{q}} :  (^{-1}n \cdot s) \cdot ( ^{-1}n \cdot s)^{-1} $}
+\AxiomC{$\textcolor{green}{\texttt{r}} : ^{-1}n \cdot s$}
+\BinaryInfC{$\texttt{\textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}} : ^{-1}n \cdot s$}
+\AxiomC{$\textcolor{blue}{\texttt{t}} : ^{-1}( ^{-1}n \cdot s) \cdot ( ^{-1}n \cdot s) \cdot n^{-1}$}
+\BinaryInfC{$\texttt{\textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}\textvisiblespace \textcolor{blue}{t}} : (^{-1}n \cdot s) \cdot n^{-1}$}
+\AxiomC{$\texttt{S} : n$}
+\BinaryInfC{$\texttt{\textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}\textvisiblespace \textcolor{blue}{t}\textvisiblespace S} : ^{-1}n \cdot s$}
+\BinaryInfC{$\texttt{B\textvisiblespace \textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}\textvisiblespace \textcolor{blue}{t}\textvisiblespace S} : s$}
+\BinaryInfC{$\texttt{A\textvisiblespace \textcolor{green}{s}\textvisiblespace B\textvisiblespace \textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}\textvisiblespace \textcolor{blue}{t}\textvisiblespace S} : s$}
+\DisplayProof
+\]
+
+\begin{remark}
+Technical addendums.\\
+The above construction only requires the source category of the functor to be rigid autonomous. Since no braidings are required, the free autonomous completion [Antonificaton] of any monoidal category may be used.\\
+To enforce the well-definedness of the functor $\mathbf{F}: \mathcal{P}\mathcal{G} \rightarrow \mathcal{G}$ on objects, we may consider the strictified "category of..." [ghicadiagrams]...
+\end{remark}
+
+\end{fullwidth}
+
+\subsection{Discrete monoidal fibrations for grammatical functions}
+
+\subsection{Extended analysis: Tree Adjoining Grammars}
+
+\begin{defn}[Tree Adjoining Grammar: Classic Computer Science style]
+A \textbf{TAG} is a tuple $(\mathcal{N}, \mathcal{N}^\downarrow, \mathcal{N}^\star, \Sigma, \mathcal{I}, \mathcal{A}, \mathbf{s} \in \mathcal{N})$. These denote, respectively:
+\begin{itemize}
+	\item{ The \emph{non-terminals}:
+		\begin{itemize}
+			\item{A set of \emph{non-terminal symbols} $\mathcal{N}$ -- these stand in for grammatical types such as $\texttt{NP}$ and $\texttt{VP}$.}
+			\item{A bijection $\downarrow: \mathcal{N} \rightarrow \mathcal{N}^\downarrow$ which acts as $\texttt{X} \mapsto \texttt{X}^\downarrow$. Nonterminals in $\mathcal{N}$ are sent to marked counterparts in $\mathcal{N}^\downarrow$, and the inverse sends marked nonterminals to their unmarked counterparts. These markings are \emph{substitution markers}, which are used to indicate when certain leaf nodes are valid targets for a substitution operation -- discussed later.}
+			\item{A bijection $\star: \mathcal{N} \rightarrow \mathcal{N}^\star$ -- the same idea as above. This time to mark \emph{foot nodes} on auxiliary trees, which is structural information used by the adjoining operation -- discussed later.}
+	\end{itemize}
+	}
+	\item{A set of \emph{terminal symbols} $\Sigma$ -- these stand in for the words of the natural language being modelled.}
+	\item{The \emph{elementary trees}:
+		\begin{itemize}
+			\item{A set of \emph{initial trees} $\mathcal{I}$, which satisfy the following constraints:
+			\begin{itemize}
+				\item{The interior nodes of an initial tree must be labelled with nonterminals from $\mathcal{N}$}
+				\item{The leaf nodes of an initial tree must be labelled from $\Sigma \cup \mathcal{N}^{\downarrow}$}
+			\end{itemize}
+			}
+	\item{A set of \emph{auxiliary trees} $\mathcal{A}$, which satisfy the following constraints:
+		\begin{itemize}
+			\item{The interior nodes of an auxiliary tree must be labelled with nonterminals from $\mathcal{N}$}
+			\item{Exactly one leaf node of an auxiliary tree must be labelled with a foot node $\texttt{X}^{\star} \in \mathcal{N}^{\star}$; moreover, this labelled foot node must be the marked counterpart of the root node label of the tree.}
+			\item{All other leaf nodes of an auxiliary tree are labelled from $\Sigma \cup \mathcal{N}^{\downarrow}$}
+		\end{itemize}
+		}
+	\end{itemize}
+	}
+\end{itemize}
+There are two operations to build what are called \emph{derived trees} from elementary and derived trees. These operations are called \emph{substitution} and \emph{adjoining}.
+\begin{itemize}
+	\item{\emph{Substitution} replaces a substitution marked leaf node $\texttt{X}^\downarrow$ in a tree $\alpha$ with another tree $\alpha'$ that has $\texttt{X}$ as a root node.}
+	\item{\emph{Adjoining} takes auxiliary tree $\beta$ with root and foot nodes $\texttt{X},\texttt{X}^\star$, and a derived tree $\gamma$ at an interior node $\texttt{X}$ of $\gamma$. Removing the $\texttt{X}$ node from $\gamma$ separates it into a parent tree with an $\texttt{X}$-shaped hole for one of its leaves, and possibly multiple child trees with \texttt{X}-shaped holes for roots. The result of adjoining is obtained by identifying the root of $\beta$ with the $\texttt{X}$-context of the parent, and making all the child trees children of $\beta$s foot node $\texttt{X}^\star$.}
+\end{itemize}
+\end{defn}
+}
+
+\begin{example}[]
+
+\end{example}

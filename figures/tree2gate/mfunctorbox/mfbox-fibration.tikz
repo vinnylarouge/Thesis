@@ -51,8 +51,8 @@
 		\node [style=none] (142) at (3.25, 0.75) {};
 		\node [style=none] (143) at (3.25, 0) {$\varphi_f$};
 		\node [style=none] (144) at (3.25, -0.75) {};
-		\node [style=none] (145) at (0, 4.25) {$\forall f: \mathbf{F}A \rightarrow B \in \mathcal{C}$};
-		\node [style=none] (146) at (0, 3.5) {$\exists ! \textcolor{magenta}{\varphi}_f : A \rightarrow \textcolor{magenta}{\Phi}^A_f \in \mathcal{D}$};
+		\node [style=none] (145) at (0, 4.25) {$\forall f: \mathbf{F}A \rightarrow B \in \mathcal{D}$};
+		\node [style=none] (146) at (0, 3.5) {$\exists ! \textcolor{magenta}{\varphi}_f : A \rightarrow \textcolor{magenta}{\Phi}^A_f \in \mathcal{C}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style={K(CF)}] (78.center)

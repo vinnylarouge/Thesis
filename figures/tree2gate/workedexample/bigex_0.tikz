@@ -1,0 +1,147 @@
+\begin{tikzpicture}[{every node/.style}={scale=2}]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (58) at (-0.25, 0) {};
+		\node [style=none] (59) at (0.25, 0) {};
+		\node [style=none] (60) at (0, 0) {};
+		\node [style=none] (61) at (0, -0.5) {\textcolor{orange}{\texttt{q}}};
+		\node [style=dotO] (62) at (1, 1) {};
+		\node [style=none] (68) at (3, 0) {};
+		\node [style=none] (74) at (4, 1) {};
+		\node [style=dotB] (75) at (3, 0) {};
+		\node [style=none] (76) at (3.75, -1) {};
+		\node [style=none] (77) at (4.25, -1) {};
+		\node [style=none] (78) at (4, -1) {};
+		\node [style=none] (80) at (4, -1.5) {\textcolor{blue}{\texttt{t}}};
+		\node [style=dotG] (82) at (-1, -2) {};
+		\node [style=none] (87) at (-2, -1) {};
+		\node [style=none] (89) at (-4, -2) {};
+		\node [style=circC] (90) at (-2.5, -3.5) {};
+		\node [style=none] (92) at (-1.5, -4.5) {};
+		\node [style=none] (93) at (-1.75, -4.5) {};
+		\node [style=none] (94) at (-1.25, -4.5) {};
+		\node [style=none] (95) at (-1.5, -5) {\textcolor{green}{\texttt{s}}};
+		\node [style=none] (96) at (-4, -5) {};
+		\node [style=none] (155) at (-4.75, 3.5) {};
+		\node [style=none] (156) at (-3.25, 3.5) {};
+		\node [style=none] (157) at (-4.75, 2) {};
+		\node [style=none] (158) at (-3.25, 2) {};
+		\node [style=none] (163) at (-4, 2) {};
+		\node [style=none] (180) at (-4.5, 2.5) {};
+		\node [style=none] (181) at (-3.5, 2.5) {};
+		\node [style=none] (182) at (-4, 3.25) {};
+		\node [style=none] (183) at (-4, 2.75) {\footnotesize{\texttt{A}}};
+		\node [style=none] (184) at (-2.75, 3.5) {};
+		\node [style=none] (185) at (-1.25, 3.5) {};
+		\node [style=none] (186) at (-2.75, 2) {};
+		\node [style=none] (187) at (-1.25, 2) {};
+		\node [style=none] (188) at (-2.5, 2.5) {};
+		\node [style=none] (189) at (-1.5, 2.5) {};
+		\node [style=none] (190) at (-2, 3.25) {};
+		\node [style=none] (191) at (-2, 2.75) {\footnotesize{\texttt{B}}};
+		\node [style=none] (192) at (-0.75, 4.25) {};
+		\node [style=none] (193) at (2.75, 4.25) {};
+		\node [style=none] (194) at (-0.75, 2) {};
+		\node [style=none] (195) at (2.75, 2) {};
+		\node [style=none] (196) at (-0.25, 2.5) {};
+		\node [style=none] (197) at (2.25, 2.5) {};
+		\node [style=none] (198) at (1, 3.75) {};
+		\node [style=none] (199) at (1, 3) {\footnotesize{\textcolor{green}{\texttt{r}}}};
+		\node [style=none] (200) at (3.25, 3.5) {};
+		\node [style=none] (201) at (4.75, 3.5) {};
+		\node [style=none] (202) at (3.25, 2) {};
+		\node [style=none] (203) at (4.75, 2) {};
+		\node [style=none] (204) at (3.5, 2.5) {};
+		\node [style=none] (205) at (4.5, 2.5) {};
+		\node [style=none] (206) at (4, 3.25) {};
+		\node [style=none] (207) at (4, 2.75) {\footnotesize{\texttt{S}}};
+		\node [style=none] (208) at (1, 2) {};
+		\node [style=none] (209) at (0.5, 2.5) {};
+		\node [style=none] (214) at (1.5, 2) {};
+		\node [style=none] (215) at (0.5, 2) {};
+		\node [style=none] (217) at (1.5, 2.5) {};
+		\node [style=none] (218) at (-4, 2.5) {};
+		\node [style=none] (219) at (-4, 2) {};
+		\node [style=none] (220) at (-2, 2.5) {};
+		\node [style=none] (221) at (-2, 2) {};
+		\node [style=none] (222) at (4, 2.5) {};
+		\node [style=none] (223) at (4, 2) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KO] (58.center) to (59.center);
+		\draw [style=KO, bend left=45] (60.center) to (62);
+		\draw [style=K, bend left=45] (74.center) to (68.center);
+		\draw [style=KG, in=180, out=0] (62) to (68.center);
+		\draw [style=KB] (76.center) to (77.center);
+		\draw [style=KB, bend right=45] (78.center) to (68.center);
+		\draw [style=KG, in=-180, out=0] (82) to (75);
+		\draw [style=K] (221.center)
+			 to (87.center)
+			 to [bend right=45] (82);
+		\draw [style=KC, bend left=45] (82) to (90);
+		\draw [style=K] (163.center)
+			 to (89.center)
+			 to [bend right=45] (90);
+		\draw [style=KG] (93.center) to (94.center);
+		\draw [style=KG, bend left=45] (90) to (92.center);
+		\draw [style=KC, bend left=45] (96.center) to (90);
+		\draw [style={K(CF)}] (158.center)
+			 to (157.center)
+			 to (155.center)
+			 to (156.center)
+			 to cycle;
+		\draw [style={K(CF)}] (155.center) to (156.center);
+		\draw [style={K(CF)}] (158.center) to (157.center);
+		\draw [style={K(CF)}] (156.center) to (158.center);
+		\draw [style={K(CF)}] (157.center) to (155.center);
+		\draw [style={K(Fw)}] (180.center)
+			 to (181.center)
+			 to (182.center)
+			 to cycle;
+		\draw [style={K(CF)}] (187.center)
+			 to (186.center)
+			 to (184.center)
+			 to (185.center)
+			 to cycle;
+		\draw [style={K(CF)}] (184.center) to (185.center);
+		\draw [style={K(CF)}] (187.center) to (186.center);
+		\draw [style={K(CF)}] (185.center) to (187.center);
+		\draw [style={K(CF)}] (186.center) to (184.center);
+		\draw [style={K(Fw)}] (188.center)
+			 to (189.center)
+			 to (190.center)
+			 to cycle;
+		\draw [style={K(CF)}] (195.center)
+			 to (194.center)
+			 to (192.center)
+			 to (193.center)
+			 to cycle;
+		\draw [style={K(CF)}] (192.center) to (193.center);
+		\draw [style={K(CF)}] (195.center) to (194.center);
+		\draw [style={K(CF)}] (193.center) to (195.center);
+		\draw [style={K(CF)}] (194.center) to (192.center);
+		\draw [style={K(Fw)}] (196.center)
+			 to (197.center)
+			 to (198.center)
+			 to cycle;
+		\draw [style={K(CF)}] (203.center)
+			 to (202.center)
+			 to (200.center)
+			 to (201.center)
+			 to cycle;
+		\draw [style={K(CF)}] (200.center) to (201.center);
+		\draw [style={K(CF)}] (203.center) to (202.center);
+		\draw [style={K(CF)}] (201.center) to (203.center);
+		\draw [style={K(CF)}] (202.center) to (200.center);
+		\draw [style={K(Fw)}] (204.center)
+			 to (205.center)
+			 to (206.center)
+			 to cycle;
+		\draw [style=Kv, in=-90, out=90] (215.center) to (209.center);
+		\draw [style=KYv, in=90, out=-90] (217.center) to (214.center);
+		\draw [style=Kv] (218.center) to (219.center);
+		\draw [style=Kv] (220.center) to (221.center);
+		\draw [style=Kv] (222.center) to (223.center);
+		\draw [style=K] (223.center) to (74.center);
+		\draw [style=KG] (208.center) to (62);
+	\end{pgfonlayer}
+\end{tikzpicture}

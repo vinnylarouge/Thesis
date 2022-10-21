@@ -1,0 +1,119 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-9, 1.25) {};
+		\node [style=none] (1) at (-7, 1.25) {};
+		\node [style=none] (2) at (-9, -1.25) {};
+		\node [style=none] (3) at (-7, -1.25) {};
+		\node [style=dotC] (4) at (-8, 0) {};
+		\node [style=none] (6) at (-9, -1.75) {\textcolor{cyan}{\texttt{S}}};
+		\node [style=none] (7) at (-7, 1.75) {\textcolor{cyan}{\texttt{S}}};
+		\node [style=none] (8) at (-9, 1.75) {\texttt{N}};
+		\node [style=none] (9) at (-7, -1.75) {\textcolor{green}{\texttt{SCV}}};
+		\node [style=none] (10) at (1, 1.25) {};
+		\node [style=none] (11) at (2, 1.25) {};
+		\node [style=none] (12) at (1, -1.25) {};
+		\node [style=none] (13) at (3, -1.25) {};
+		\node [style=dotC] (14) at (2, 0) {};
+		\node [style=none] (15) at (1, -1.75) {\textcolor{cyan}{\texttt{S}}};
+		\node [style=none] (16) at (2, 1.75) {\textcolor{cyan}{\texttt{S}}};
+		\node [style=none] (17) at (1, 1.75) {\texttt{N}};
+		\node [style=none] (18) at (3, -1.75) {\textcolor{green}{\texttt{SCV}}};
+		\node [style=none] (19) at (-6, 0) {$=$};
+		\node [style=none] (20) at (4, 0) {$=$};
+		\node [style=none] (21) at (-4.5, 0.75) {};
+		\node [style=none] (22) at (-4.5, -0.75) {};
+		\node [style=none] (23) at (-1.5, -0.75) {};
+		\node [style=none] (24) at (-1.5, 0.75) {};
+		\node [style=none] (25) at (5.5, 0.75) {};
+		\node [style=none] (26) at (5.5, -0.75) {};
+		\node [style=none] (27) at (9.5, -0.75) {};
+		\node [style=none] (28) at (9.5, 0.75) {};
+		\node [style=none] (29) at (3, 1.25) {};
+		\node [style=none] (30) at (3, 1.75) {\texttt{N}};
+		\node [style=none] (31) at (-3, -0.85) {};
+		\node [style=none] (32) at (-1.5, -0.85) {};
+		\node [style=none] (33) at (-2.25, -0.85) {};
+		\node [style=none] (34) at (-2.25, -1.25) {};
+		\node [style=none] (35) at (-4, 0.75) {};
+		\node [style=none] (36) at (-2, 0.75) {};
+		\node [style=none] (37) at (-2, 1.25) {};
+		\node [style=none] (38) at (-4, 1.25) {};
+		\node [style=none] (39) at (-4, -0.75) {};
+		\node [style=none] (40) at (-4, -1.25) {};
+		\node [style=none] (41) at (-4, -1.75) {\textcolor{cyan}{\texttt{S}}};
+		\node [style=none] (42) at (-2.25, -1.75) {\textcolor{green}{\texttt{SCV}}};
+		\node [style=none] (43) at (-2, 1.75) {\textcolor{cyan}{\texttt{S}}};
+		\node [style=none] (44) at (-4, 1.75) {\texttt{N}};
+		\node [style=none] (45) at (-2, -0.75) {};
+		\node [style=none] (46) at (-2.5, -0.75) {};
+		\node [style=none] (47) at (-3, -0.75) {};
+		\node [style=none] (48) at (7.5, -0.85) {};
+		\node [style=none] (49) at (9, -0.85) {};
+		\node [style=none] (50) at (8.25, -0.85) {};
+		\node [style=none] (51) at (8.25, -1.25) {};
+		\node [style=none] (52) at (8.25, -1.75) {\textcolor{green}{\texttt{SCV}}};
+		\node [style=none] (53) at (6, 0.75) {};
+		\node [style=none] (54) at (7.5, 0.75) {};
+		\node [style=none] (55) at (9, 0.75) {};
+		\node [style=none] (56) at (6, 1.25) {};
+		\node [style=none] (57) at (7.5, 1.25) {};
+		\node [style=none] (58) at (7.5, 1.75) {\textcolor{cyan}{\texttt{S}}};
+		\node [style=none] (59) at (6, 1.75) {\texttt{N}};
+		\node [style=none] (60) at (9, 1.25) {};
+		\node [style=none] (61) at (9, 1.75) {\texttt{N}};
+		\node [style=none] (62) at (6, -1.25) {};
+		\node [style=none] (63) at (6, -1.75) {\textcolor{cyan}{\texttt{S}}};
+		\node [style=none] (64) at (6, -0.75) {};
+		\node [style=none] (65) at (9, -0.75) {};
+		\node [style=none] (66) at (8.5, -0.75) {};
+		\node [style=none] (67) at (8, -0.75) {};
+		\node [style=none] (68) at (7.5, -0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KC, in=0, out=-90] (1.center) to (4);
+		\draw [style=KC, in=90, out=-180] (4) to (2.center);
+		\draw [style=K, in=180, out=-90] (0.center) to (4);
+		\draw [style=KG, in=90, out=0] (4) to (3.center);
+		\draw [style=KC] (11.center) to (14);
+		\draw [style=KC, in=90, out=-180] (14) to (12.center);
+		\draw [style=K, in=180, out=-90] (10.center) to (14);
+		\draw [style=KG, in=90, out=0] (14) to (13.center);
+		\draw [style={K(CF)}] (23.center)
+			 to (22.center)
+			 to (21.center)
+			 to (24.center)
+			 to cycle;
+		\draw [style={K(CF)}] (21.center) to (24.center);
+		\draw [style={K(CF)}] (24.center) to (23.center);
+		\draw [style={K(CF)}] (23.center) to (22.center);
+		\draw [style={K(CF)}] (22.center) to (21.center);
+		\draw [style={K(CF)}] (27.center)
+			 to (26.center)
+			 to (25.center)
+			 to (28.center)
+			 to cycle;
+		\draw [style={K(CF)}] (25.center) to (28.center);
+		\draw [style={K(CF)}] (28.center) to (27.center);
+		\draw [style={K(CF)}] (27.center) to (26.center);
+		\draw [style={K(CF)}] (26.center) to (25.center);
+		\draw [style=K, in=-90, out=0] (14) to (29.center);
+		\draw [style=KG] (31.center) to (32.center);
+		\draw [style=KG] (33.center) to (34.center);
+		\draw [style=KC] (37.center) to (36.center);
+		\draw [style=K] (38.center) to (35.center);
+		\draw [style=KC] (39.center) to (40.center);
+		\draw [style=KYv] (36.center) to (45.center);
+		\draw [style=KYv, bend left=270, looseness=1.50] (47.center) to (39.center);
+		\draw [style=Kv, in=90, out=-90, looseness=0.75] (35.center) to (46.center);
+		\draw [style=KG] (48.center) to (49.center);
+		\draw [style=KG] (50.center) to (51.center);
+		\draw [style=K] (56.center) to (53.center);
+		\draw [style=K] (60.center) to (55.center);
+		\draw [style=KC] (57.center) to (54.center);
+		\draw [style=KC] (64.center) to (62.center);
+		\draw [style=Kv] (55.center) to (65.center);
+		\draw [style=KYv, in=90, out=-90] (54.center) to (66.center);
+		\draw [style=Kv, in=90, out=-90] (53.center) to (67.center);
+		\draw [style=KYv, bend left=270, looseness=1.25] (68.center) to (64.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
