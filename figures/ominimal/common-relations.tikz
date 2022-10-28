@@ -1,0 +1,58 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-3.25, 0.75) {};
+		\node [style=none] (1) at (-3.25, -0.75) {};
+		\node [style=none] (2) at (-1.75, -0.75) {};
+		\node [style=none] (3) at (-1.75, 0.75) {};
+		\node [style=dotb] (4) at (-7.5, 0) {};
+		\node [style=dotb] (5) at (-6, 0) {};
+		\node [style=none] (6) at (-4.5, 0) {$=$};
+		\node [style=none] (7) at (-4.5, -2) {(bone)};
+		\node [style=dotb] (8) at (2.25, 0) {};
+		\node [style=none] (9) at (1.25, 0.5) {};
+		\node [style=none] (10) at (1.25, -0.5) {};
+		\node [style=dotb] (11) at (3.25, 0) {};
+		\node [style=none] (12) at (4.25, 0.5) {};
+		\node [style=none] (13) at (4.25, -0.5) {};
+		\node [style=dotb] (14) at (9.25, 0.75) {};
+		\node [style=none] (15) at (8.25, 1.25) {};
+		\node [style=none] (16) at (10.25, 0.75) {};
+		\node [style=dotb] (17) at (9.25, -0.75) {};
+		\node [style=none] (18) at (8.25, -1.25) {};
+		\node [style=none] (19) at (10.25, -0.75) {};
+		\node [style=dotb] (20) at (7.25, 0.75) {};
+		\node [style=none] (21) at (8.25, 1.25) {};
+		\node [style=none] (22) at (6.25, 0.75) {};
+		\node [style=dotb] (23) at (7.25, -0.75) {};
+		\node [style=none] (24) at (8.25, -1.25) {};
+		\node [style=none] (25) at (6.25, -0.75) {};
+		\node [style=none] (26) at (8.25, 0) {};
+		\node [style=none] (27) at (5.25, 0) {$=$};
+		\node [style=none] (28) at (5.25, -2) {(bialgebra)};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (4) to (5);
+		\draw [style=H] (3.center)
+			 to (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [in=90, out=0] (9.center) to (8);
+		\draw [in=-90, out=0] (10.center) to (8);
+		\draw [in=90, out=180] (12.center) to (11);
+		\draw [in=-90, out=180] (13.center) to (11);
+		\draw (8) to (11);
+		\draw [in=90, out=0] (15.center) to (14);
+		\draw (14) to (16.center);
+		\draw [in=-90, out=0] (18.center) to (17);
+		\draw (17) to (19.center);
+		\draw [in=90, out=180] (21.center) to (20);
+		\draw (20) to (22.center);
+		\draw [in=-90, out=180] (24.center) to (23);
+		\draw (23) to (25.center);
+		\draw [in=90, out=-90, looseness=0.75] (20) to (26.center);
+		\draw [in=90, out=-90] (26.center) to (17);
+		\draw [in=-90, out=90] (23) to (26.center);
+		\draw [in=-90, out=90] (26.center) to (14);
+	\end{pgfonlayer}
+\end{tikzpicture}

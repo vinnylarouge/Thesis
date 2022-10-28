@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-2.25, 0) {};
+		\node [style=dotb] (1) at (-1.25, 0) {};
+		\node [style=none] (2) at (-6.25, 0) {};
+		\node [style=dotb] (3) at (-5.25, 0) {};
+		\node [style=none] (4) at (-4.25, 0.5) {};
+		\node [style=none] (5) at (-4.25, -0.5) {};
+		\node [style=none] (6) at (2.25, 0) {};
+		\node [style=dotb] (7) at (1.25, 0) {};
+		\node [style=none] (8) at (-1.75, -1) {(delete)};
+		\node [style=none] (9) at (-5.25, -1) {(copy)};
+		\node [style=none] (10) at (1.75, -1) {(uniform)};
+		\node [style=dotb] (11) at (5, 0) {};
+		\node [style=none] (12) at (4, 0.5) {};
+		\node [style=none] (13) at (4, -0.5) {};
+		\node [style=none] (14) at (6, 0) {};
+		\node [style=none] (15) at (5, -1) {(join)};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (1) to (0.center);
+		\draw (2.center) to (3);
+		\draw [in=180, out=90] (3) to (4.center);
+		\draw [in=-180, out=-90] (3) to (5.center);
+		\draw (6.center) to (7);
+		\draw [in=90, out=0] (12.center) to (11);
+		\draw [in=-90, out=0] (13.center) to (11);
+		\draw (11) to (14.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

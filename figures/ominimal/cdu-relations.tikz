@@ -1,0 +1,80 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (56) at (5.25, -1.25) {};
+		\node [style=none] (57) at (5.25, -2.75) {};
+		\node [style=none] (58) at (6.75, -2.75) {};
+		\node [style=none] (59) at (6.75, -1.25) {};
+		\node [style=dotb] (3) at (-7, -2.5) {};
+		\node [style=none] (4) at (-6, -2) {};
+		\node [style=none] (5) at (-6, -3) {};
+		\node [style=none] (8) at (-9, -1.75) {};
+		\node [style=dotb] (9) at (-8, -1.75) {};
+		\node [style=none] (10) at (-7, -1) {};
+		\node [style=none] (12) at (-8.5, 2) {};
+		\node [style=dotb] (13) at (-7.5, 2) {};
+		\node [style=none] (14) at (-7, 2.5) {};
+		\node [style=none] (15) at (-7, 1.5) {};
+		\node [style=none] (16) at (-4, 2) {};
+		\node [style=dotb] (17) at (-3, 2) {};
+		\node [style=none] (18) at (-2, 2.5) {};
+		\node [style=none] (19) at (-2, 1.5) {};
+		\node [style=none] (20) at (-6, 2.5) {};
+		\node [style=none] (21) at (-6, 1.5) {};
+		\node [style=none] (22) at (-5, 2) {$=$};
+		\node [style=none] (23) at (-5, 1) {(cocommutativity)};
+		\node [style=none] (24) at (-6, -1) {};
+		\node [style=dotb] (25) at (-2, -1.25) {};
+		\node [style=none] (26) at (-1, -1.75) {};
+		\node [style=none] (27) at (-1, -0.75) {};
+		\node [style=none] (28) at (-4, -2) {};
+		\node [style=dotb] (29) at (-3, -2) {};
+		\node [style=none] (30) at (-2, -2.75) {};
+		\node [style=none] (31) at (-1, -2.75) {};
+		\node [style=none] (32) at (-5, -2) {$=$};
+		\node [style=none] (33) at (-5, -3.5) {(coassociativity)};
+		\node [style=none] (34) at (1, 2) {};
+		\node [style=dotb] (35) at (2, 2) {};
+		\node [style=none] (36) at (3, 2.5) {};
+		\node [style=dotb] (45) at (2.5, 1.5) {};
+		\node [style=none] (46) at (4, 2) {$=$};
+		\node [style=none] (47) at (5, 2) {};
+		\node [style=none] (48) at (7, 2) {};
+		\node [style=none] (49) at (4, 1) {(counitality)};
+		\node [style=dotb] (50) at (1, -2) {};
+		\node [style=dotb] (51) at (2.5, -2) {};
+		\node [style=none] (52) at (4, -2) {$=$};
+		\node [style=none] (55) at (4, -3) {(bone)};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [in=-180, out=90] (3) to (4.center);
+		\draw [in=-180, out=-90] (3) to (5.center);
+		\draw (8.center) to (9);
+		\draw [in=180, out=90] (9) to (10.center);
+		\draw (12.center) to (13);
+		\draw [in=180, out=90] (13) to (14.center);
+		\draw [in=-180, out=-90] (13) to (15.center);
+		\draw (16.center) to (17);
+		\draw [in=180, out=90] (17) to (18.center);
+		\draw [in=-180, out=-90] (17) to (19.center);
+		\draw [in=180, out=0] (14.center) to (21.center);
+		\draw [in=-180, out=0] (15.center) to (20.center);
+		\draw [in=180, out=-90] (9) to (3);
+		\draw (10.center) to (24.center);
+		\draw [in=180, out=-90] (25) to (26.center);
+		\draw [in=180, out=90] (25) to (27.center);
+		\draw (28.center) to (29);
+		\draw [in=-180, out=-90] (29) to (30.center);
+		\draw [in=-180, out=90] (29) to (25);
+		\draw (30.center) to (31.center);
+		\draw (34.center) to (35);
+		\draw [in=180, out=90] (35) to (36.center);
+		\draw [bend right=45, looseness=1.25] (35) to (45);
+		\draw (47.center) to (48.center);
+		\draw (50) to (51);
+		\draw [style=H] (59.center)
+			 to (56.center)
+			 to (57.center)
+			 to (58.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}

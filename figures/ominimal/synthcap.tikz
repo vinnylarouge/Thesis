@@ -1,0 +1,69 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dotb] (0) at (2, 0) {};
+		\node [style=none] (1) at (1, 0) {};
+		\node [style=none] (2) at (3, 1) {};
+		\node [style=none] (3) at (3, -1) {};
+		\node [style=none] (4) at (3, 1.5) {};
+		\node [style=none] (5) at (3, 0.5) {};
+		\node [style=none] (6) at (4, 1) {};
+		\node [style=none] (7) at (3, -0.5) {};
+		\node [style=none] (8) at (3, -1.5) {};
+		\node [style=none] (9) at (4, -1) {};
+		\node [style=none] (10) at (5, 0) {$=$};
+		\node [style=none] (11) at (6, 0) {};
+		\node [style=none] (12) at (7, 0) {};
+		\node [style=none] (13) at (7, 0.5) {};
+		\node [style=none] (14) at (7, -0.5) {};
+		\node [style=none] (15) at (8, 0) {};
+		\node [style=none] (20) at (-7, 0) {};
+		\node [style=none] (21) at (-6, 0) {};
+		\node [style=none] (22) at (-6, 0.5) {};
+		\node [style=none] (23) at (-6, -0.5) {};
+		\node [style=none] (24) at (-5, 0) {};
+		\node [style=none] (25) at (-4, 0) {};
+		\node [style=none] (26) at (-4.5, 0) {$\subseteq$};
+		\node [style=none] (27) at (0, 0) {:=};
+		\node [style=none] (28) at (-7.5, 0) {$ll$};
+		\node [style=none] (29) at (-1.5, 0) {rr};
+		\node [style=none] (30) at (-3, 0) {};
+		\node [style=none] (31) at (-3, 0.5) {};
+		\node [style=none] (32) at (-3, -0.5) {};
+		\node [style=none] (33) at (-2, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=gF] (5.center)
+			 to (6.center)
+			 to (4.center)
+			 to cycle;
+		\draw (5.center)
+			 to (6.center)
+			 to (4.center)
+			 to cycle;
+		\draw (9.center)
+			 to (7.center)
+			 to (8.center)
+			 to cycle;
+		\draw [bend left=45] (0) to (2.center);
+		\draw [bend right=45] (0) to (3.center);
+		\draw (1.center) to (0);
+		\draw (15.center)
+			 to (13.center)
+			 to (14.center)
+			 to cycle;
+		\draw (11.center) to (12.center);
+		\draw (22.center)
+			 to (23.center)
+			 to (24.center)
+			 to cycle;
+		\draw (20.center) to (21.center);
+		\draw [style=gF] (33.center)
+			 to (31.center)
+			 to (32.center)
+			 to cycle;
+		\draw (32.center) to (33.center);
+		\draw (33.center) to (31.center);
+		\draw (31.center) to (32.center);
+		\draw (25.center) to (30.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

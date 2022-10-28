@@ -150,69 +150,21 @@ Now we can plug-in these interpretations to obtain the two different meanings. W
 
 \end{example}
 
-
-
-\subsection{Discrete Monoidal Fibrations}
-
-We introduce the concept of a discrete monoidal fibration: a mathematical bookkeeping tool that relates kinds of choices speakers and listerns make when generating and parsing text respectively. We proceed diagrammatically. The first concept is that of a \emph{monoidal functor box}.
-
-\marginnote{
-\begin{scholium}
-Functor boxes are from [meillies].
-Expressing the coherence conditions of monoidal functors using equations involving functor boxes as below is not new [meillies]
-The idea of a functor being simultaneously monoidal and a fibration is not new [monoidalfibration].
-What is new is minor: the express requirement that the lifts of the fibration satisfy interchange, which is in general not guaranteed by just having a functor be monoidal and a (even discrete) fibration [fosco].
-\end{scholium}
-}
-
-Suppose we have a functor between monoidal categories $\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$. Then we have the following diagrammatic representation of a morphism $\mathbf{F}A \overset{\mathbf{F}f}{\rightarrow} \mathbf{F}B$ in $\mathcal{D}$:
-
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-notation}\]
-
-The use of a functor box is like a window from the target category $\mathcal{D}$ into the source category $\mathcal{C}$; when we know that a morphism in $\mathcal{D}$ is the image under $\mathbf{F}$ of some morphism in $\mathcal{C}$, the functor box notation is just a way of presenting all of that data at once. Since $\mathbf{F}$ is a functor, we must have that $\mathbf{F}f ; \mathbf{F}g = \mathbf{F}(f;g)$. Diagrammatically this equation is represented by freely splitting and merging functor boxes vertically.
-
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-seq}\]
-
-Assume that $\mathbf{F}$ is strict monoidal; without loss of generality by the strictification theorem [], this lets us gloss over the associators and unitors. For $\mathbf{F}$ to be strict monoidal, it has to preserve monoidal units and tensor products on the nose: i.e. $\mathbf{F}I_\mathcal{C} = I_\mathcal{D}$ and $\mathbf{F}A \otimes_\mathcal{D} \mathbf{F}B = \mathbf{F}(A \otimes_\mathcal{C} B)$. Diagrammatically these structural constraints amount to the following equations:
-
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+structural}\]
-
-What remains is the monoidality of $\mathbf{F}$, which is the requirement $\mathbf{F}f \otimes \mathbf{F}g = \mathbf{F}(f \otimes g)$. Diagrammatically, this equation is represented by freely splitting and merging functor boxes horizontally; analogously to how splitting vertically is the functor-boxes' way of respecting sequential composition, splitting horizontally is how they respect parallel composition.
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-tensor}\]
-
-And for when we want $\mathbf{F}$ to be a (strict) symmetric monoidal functor, we are just asking that boxes and twists do not get stuck on one another.
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-twist}\]
-
-\begin{remark}
-To motivate fibrations, first observe that by the diagrammatic equations of monoidal categories and functor boxes we have so far, we can always "slide out" the contents of a functor box out of the bottom:
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-prefibex}\]
-When can we do the reverse? That is, take a morphism in $\mathcal{D}$ and \emph{slide it into} a functor box? We know that in general this is not possible, because not all morphisms in $\mathcal{D}$ may be in the image of $\mathbf{F}$. So instead we ask "under what circumstances" can we do this for a functor $\mathbf{F}$? The answer is when $\mathbf{F}$ is a discrete fibration.
-\end{remark}
-
-\begin{defn}[Discrete opfibration]
-$\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$ is a \emph{discrete fibration} when:\\
-for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$...\\
-there exists a unique object $\Phi^A_f$ and a unique morphism $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$...\\
-such that $f = \mathbf{F}\phi_f$.\\
-
-Diagrammatically, we can present all of the above as an equation reminiscent of sliding a morphism \emph{into} a functor box from below.
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-fibration}\]
-\end{defn}
-
-\begin{defn}[Monoidal discrete opfibration]
-We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opfibration} when it is a (strict, symmetric) monoidal functor, a discrete opfibration, and the following equations relating lifts to interchange hold:
-\[\scalebox{0.75}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+interchange}}\]
-\end{defn}
-\marginnote{
-\begin{remark}
-The diagrammatic motivation for the additional coherence equations is that -- if we view the lifts of opfibrations as sliding morphisms into functor boxes -- we do not want the order in which sliding occurs to affect the final result. In this way, lifts behave as `graphical primitives' in the same manner as interchange isotopies and symmetry twists.
-\end{remark}
-}
+\newthought{The speaker's choices and the listener's deductions must be related.} 
 
 \begin{fullwidth}
+
 \subsection{A context free grammar to generate \texttt{Alice sees Bob quickly run to school}}
 
-\[\tikzfig{tree2gate/workedexample/bigcfg}\]
+We can describe a context-free grammar with the same combinatorial rewriting data that specifies string diagrams. For this example, we take the following n-categorical signature. The generators subscripted $L$ (for \emph{label} or \emph{leaf}) correspond to terminals of the CFG, and represent a family of generators indexed by a lexicon for the language. The generators subscripted $i$ (for \emph{introducing a type}) correspond to rewrites of the CFG.
+
+\[\scalebox{0.5}{\tikzfig{tree2gate/cfg/cfgsignature}}\]
+
+Consider the sentence \texttt{Alice sees Bob quickly run to school}, which we take to be generated by the following context-free grammar derivation, read from left-to-right. We additionally depict the breakdown of the derivation in terms of rewrites of lower dimension from our signature.
+
+\[\scalebox{0.5}{\tikzfig{tree2gate/cfg/bigcfgbreakdown}}\]
+
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigcfg}}\]
 
 \[\tikzfig{tree2gate/workedexample/biginter}\]
 \subsection{Relating the generative grammar to a pregroup grammar via a discrete monoidal fibration}
@@ -280,11 +232,68 @@ The above construction only requires the source category of the functor to be ri
 To enforce the well-definedness of the functor $\mathbf{F}: \mathcal{P}\mathcal{G} \rightarrow \mathcal{G}$ on objects, we may consider the strictified "category of..." [ghicadiagrams]...
 \end{remark}
 
-\end{fullwidth}
+\subsection{Discrete Monoidal Fibrations}
+
+We introduce the concept of a discrete monoidal fibration: a mathematical bookkeeping tool that relates kinds of choices speakers and listerns make when generating and parsing text respectively. We proceed diagrammatically. The first concept is that of a \emph{monoidal functor box}.
+
+\marginnote{
+\begin{scholium}
+Functor boxes are from [meillies].
+Expressing the coherence conditions of monoidal functors using equations involving functor boxes as below is not new [meillies]
+The idea of a functor being simultaneously monoidal and a fibration is not new [monoidalfibration].
+What is new is minor: the express requirement that the lifts of the fibration satisfy interchange, which is in general not guaranteed by just having a functor be monoidal and a (even discrete) fibration [fosco].
+\end{scholium}
+}
+
+Suppose we have a functor between monoidal categories $\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$. Then we have the following diagrammatic representation of a morphism $\mathbf{F}A \overset{\mathbf{F}f}{\rightarrow} \mathbf{F}B$ in $\mathcal{D}$:
+
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-notation}\]
+
+The use of a functor box is like a window from the target category $\mathcal{D}$ into the source category $\mathcal{C}$; when we know that a morphism in $\mathcal{D}$ is the image under $\mathbf{F}$ of some morphism in $\mathcal{C}$, the functor box notation is just a way of presenting all of that data at once. Since $\mathbf{F}$ is a functor, we must have that $\mathbf{F}f ; \mathbf{F}g = \mathbf{F}(f;g)$. Diagrammatically this equation is represented by freely splitting and merging functor boxes vertically.
+
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-seq}\]
+
+Assume that $\mathbf{F}$ is strict monoidal; without loss of generality by the strictification theorem [], this lets us gloss over the associators and unitors. For $\mathbf{F}$ to be strict monoidal, it has to preserve monoidal units and tensor products on the nose: i.e. $\mathbf{F}I_\mathcal{C} = I_\mathcal{D}$ and $\mathbf{F}A \otimes_\mathcal{D} \mathbf{F}B = \mathbf{F}(A \otimes_\mathcal{C} B)$. Diagrammatically these structural constraints amount to the following equations:
+
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+structural}\]
+
+What remains is the monoidality of $\mathbf{F}$, which is the requirement $\mathbf{F}f \otimes \mathbf{F}g = \mathbf{F}(f \otimes g)$. Diagrammatically, this equation is represented by freely splitting and merging functor boxes horizontally; analogously to how splitting vertically is the functor-boxes' way of respecting sequential composition, splitting horizontally is how they respect parallel composition.
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-tensor}\]
+
+And for when we want $\mathbf{F}$ to be a (strict) symmetric monoidal functor, we are just asking that boxes and twists do not get stuck on one another.
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-twist}\]
+
+\begin{remark}
+To motivate fibrations, first observe that by the diagrammatic equations of monoidal categories and functor boxes we have so far, we can always "slide out" the contents of a functor box out of the bottom:
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-prefibex}\]
+When can we do the reverse? That is, take a morphism in $\mathcal{D}$ and \emph{slide it into} a functor box? We know that in general this is not possible, because not all morphisms in $\mathcal{D}$ may be in the image of $\mathbf{F}$. So instead we ask "under what circumstances" can we do this for a functor $\mathbf{F}$? The answer is when $\mathbf{F}$ is a discrete fibration.
+\end{remark}
+
+\begin{defn}[Discrete opfibration]
+$\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$ is a \emph{discrete fibration} when:\\
+for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$...\\
+there exists a unique object $\Phi^A_f$ and a unique morphism $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$...\\
+such that $f = \mathbf{F}\phi_f$.\\
+
+Diagrammatically, we can present all of the above as an equation reminiscent of sliding a morphism \emph{into} a functor box from below.
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-fibration}\]
+\end{defn}
+
+\begin{defn}[Monoidal discrete opfibration]
+We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opfibration} when it is a (strict, symmetric) monoidal functor, a discrete opfibration, and the following equations relating lifts to interchange hold:
+\[\scalebox{0.75}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+interchange}}\]
+\end{defn}
+\marginnote{
+\begin{remark}
+The diagrammatic motivation for the additional coherence equations is that -- if we view the lifts of opfibrations as sliding morphisms into functor boxes -- we do not want the order in which sliding occurs to affect the final result. In this way, lifts behave as `graphical primitives' in the same manner as interchange isotopies and symmetry twists.
+\end{remark}
+}
 
 \subsection{Discrete monoidal fibrations for grammatical functions}
 
 \subsection{Extended analysis: Tree Adjoining Grammars}
+
+Here is a formal but unenlightening defintion of tree adjoining grammars, which we will convert to diagrams.
 
 \begin{defn}[Tree Adjoining Grammar: Classic Computer Science style]
 A \textbf{TAG} is a tuple $(\mathcal{N}, \mathcal{N}^\downarrow, \mathcal{N}^\star, \Sigma, \mathcal{I}, \mathcal{A}, \mathbf{s} \in \mathcal{N})$. These denote, respectively:
@@ -321,8 +330,48 @@ There are two operations to build what are called \emph{derived trees} from elem
 	\item{\emph{Adjoining} takes auxiliary tree $\beta$ with root and foot nodes $\texttt{X},\texttt{X}^\star$, and a derived tree $\gamma$ at an interior node $\texttt{X}$ of $\gamma$. Removing the $\texttt{X}$ node from $\gamma$ separates it into a parent tree with an $\texttt{X}$-shaped hole for one of its leaves, and possibly multiple child trees with \texttt{X}-shaped holes for roots. The result of adjoining is obtained by identifying the root of $\beta$ with the $\texttt{X}$-context of the parent, and making all the child trees children of $\beta$s foot node $\texttt{X}^\star$.}
 \end{itemize}
 \end{defn}
-}
 
-\begin{example}[]
+The essence of a tree-\emph{adjoining} grammar is as follows: whereas for a CFG one grows the tree by appending branches and leaves at the top of the tree (substitution), in a TAG one can also sprout subtrees from the middle of a branch (adjoining). Now we show that this gloss is more formal than it sounds, by the following steps. First we show that the 2-categorical data of a CFG can be transformed into 3-categorical data -- which we call \emph{Leaf-Ansatz} -- which presents a rewrite system that obtains the same sentences as the CFG, by a bijective correspondence between composition of 2-cells in the CFG and constructed 3-cells in the leaf-ansatz. These 3-cells in the leaf ansatz correspond precisely to the permitted \emph{substitutions} in a TAG. Then we show how to model \emph{adjoining} as 3-cells. Throughout we work with a running example, the CFG grammar introduced earlier.
 
+\begin{construction}[Leaf-Ansatz of a CFG]
+Given a signature $\mathfrak{G}$ for a CFG, we construct a new signature $\mathfrak{G}'$ which has the same 0- and 1-cells as $\mathfrak{G}$. See the dashed magenta arrows in the schematic below. For each 1-cell wire type $\texttt{X}$ of $\mathfrak{G}$, we introduce a \emph{leaf-ansatz} 2-cell $\texttt{X}^\downarrow$. For each leaf 2-cell $\texttt{X}_L$ in $\mathfrak{G}$, we introduce a renamed copy $\texttt{X}'_L$ in $\mathfrak{G}'$. Now see the solid magenta arrows in the schematic below. We construct a 3-cell in $\mathfrak{G}'$ for each 2-cell in $\mathfrak{G}$, which has the effect of systematically replacing open output wires in $\mathfrak{G}$ with leaf-ansatzes in $\mathfrak{G}'$.
+\[\scalebox{0.5}{\tikzfig{tree2gate/tag/CFGtoTAGpattern}}\]
+\end{construction}
+
+\begin{example}
+The leaf-ansatz construction just makes formal the following observation: there are multiple equivalent ways of modelling terminal symbols in a rewrite system considered string-diagrammatically. One way (which we have already done) is to treat non-terminals as wires and terminals as effects, so that the presence of an open wire available for composition visually indicates non-terminality. Another (which is the leaf-ansatz construction) treats all symbols in a rewrite system as leaves, where bookkeeping the distinction between (non-)terminals occurs in the signature. So for a sentence like \texttt{Bob drinks}, we have the following derivations that match step for step in the two ways we have considered.
+\[\scalebox{0.5}{\tikzfig{tree2gate/tag/leafansatzintuition}}\]
 \end{example}
+
+\begin{proposition}[Leaf-ansatzes of CFGs are precisely TAGs with only initial trees and substitution]\label{prop:cfgastag1}
+\begin{proof}
+By construction. Consider a CFG given by 2-categorical signature $\mathfrak{G}$, with leaf-ansatz signature $\mathfrak{G}'$. The types $\texttt{X}$ of $\mathfrak{G}$ become substitution marked symbols $\texttt{X}^{\downarrow}$ in $\mathfrak{G}'$. The trees $\texttt{X}_i$ in $\mathfrak{G}$ become initial trees $\texttt{X}^0$ in $\mathfrak{G}'$. The 3-cells $\texttt{X}_s$ of $\mathfrak{G}'$ are precisely substitution operations corresponding to appending the 2-cells $\texttt{X}_i$ of $\mathfrak{G}$.
+\end{proof}
+\end{proposition}
+
+\begin{example}[Leaf-ansatz signature of \texttt{Alice sees Bob quickly run to school} CFG]
+\[\scalebox{0.5}{\tikzfig{tree2gate/tag/CFGasTAGsign}}\]
+\end{example}
+
+\begin{example}[Adjoining is sprouting subtrees in the middle of branches]
+One way we might obtain the sentence \texttt{Bob runs to school} is to start from the simpler sentence \texttt{Bob runs}, and then refine the verb \texttt{runs} into \texttt{runs to school}. This refinement on part of an already completed sentence is not permitted in CFGs, since terminals can no longer be modified. The adjoining operation of TAGs gets around this constraint by permitting rewrites in the middle of trees, as follows:
+\[\scalebox{0.5}{\tikzfig{tree2gate/tag/3compareintuition}}\]
+\end{example}
+
+\begin{example}[TAG signature of \texttt{Alice sees Bob quickly run to school}]
+The highlighted 2-cells are auxiliary trees that replace CFG 2-cells for verbs with sentential complement, adverbs, and adpositions. The highlighted 3-cells are the tree adjoining operations of the auxiliary trees.
+\[\scalebox{0.5}{\tikzfig{tree2gate/tag/tagsignature}}\]
+\end{example}
+
+The construction yields as a corollary an alternate proof of Theorem [Joshi 6.1.1...]...
+
+\begin{corollary}
+For every context-free grammar $\mathfrak{G}$ there exists a tree-adjoining grammar $\mathfrak{G}'$ such that $\mathfrak{G}$ and $\mathfrak{G}'$ are strongly equivalent -- both formalisms generate the same set of strings (weak equivalence) and the same abstract syntactic structures (in this case, trees) behind the strings (strong equivalence).
+\begin{proof}
+Proposition \ref{prop:cfgastag1} provides one direction of both equivalences. For the other direction, we have to show that each auxiliary tree (a 2-cell) and its adjoining operation (a 3-cell) in $\mathfrak{G}'$ corresponds to a single 2-cell tree of some CFG signature $\mathfrak{G}$, which we demonstrate by construction. See the example above; the highlighted 3-cells of $\mathfrak{G}'$ are obtained systematically from the auxiliary 2-cells as follows: the root and foot nodes $\texttt{X},\texttt{X}^\star$ indicate which wire-type to take as the identity in the left of the 3-cell, and the right of the 3-cell is obtained by replacing all non-$\texttt{X}$ open wires $\texttt{Y}$ with their leaf-ansatzes $\texttt{Y}^\downarrow$. This establishes a correspondence between any 2-cells of $\mathfrak{G}$ considered as auxiliary trees in $\mathfrak{G}'$.
+\end{proof}
+\end{corollary}
+
+\[\scalebox{0.1}{\tikzfig{tree2gate/workedexample/bigexaltogether}}\]
+
+\end{fullwidth}
