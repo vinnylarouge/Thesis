@@ -1,36 +1,39 @@
 \begin{fullwidth}
 \begin{centering}
 
-\newthought{This thesis is about a new way to see language using formal diagrams.}
+\section{What is this thesis about?}
+\newthought{This thesis is about a new way to see language using formal diagrams}
 
 \newthought{The formal diagrams are compositional blueprints.}\\
+These compositional blueprints may be instantiated by classical or quantum computers.\\
 We know how grammar composes meanings in language.\\
 We can quotient out grammar using these formal diagrams.\\
-This turns big black boxes into composites of small black boxes.\\
-\[\]
-This leaves smaller pieces for machines to learn representations for.\\
-The compositional blueprints may be instantiated by classical or quantum computers.\\
-We introduce the history, theory, and use of these diagrams in Chapter \ref{}.
+It turns big black boxes into composites of small black boxes,\\
+which leaves smaller pieces for machines to learn representations for.\\
+We introduce the history, theory, and use of these diagrams in Chapter \ref{chapter:stringdiagrams}.
 
 \newthought{The diagrams look like circuits.}\\
 Let's say that \textbf\emph{{the meaning of text is how it updates a model.}}\\
 So we start with some model of the way things are.
 \[\tikzfig{intro/model}\]
-Text updates that model.
+Text updates that model;
+like a gate updates the data on a wire.
 \[\tikzfig{intro/model2}\]
-Text is made of sentences.
+Text is made of sentences;
+like a circuit is made of gates and wires.
 \[\tikzfig{intro/model3}\]
 Let's say that \textbf{\emph{The meaning of a sentence is how it updates the meanings of its parts.}}\\
 Let's say that the \emph{parts} of a sentence are the nouns it contains or refers to.\\
 Noun data is carried by wires.\\
-Collections of nouns are related by gates.\\
+Collections of nouns are related by gates.
 \[\tikzfig{intro/model4}\]
 Gates can be related by higher order gates.
 \[\tikzfig{intro/model5}\]
-Higher order gates are gates that modify the parameters of other gates.
+Higher order gates are implemented as gates that modify the parameters of other gates.
 \[\tikzfig{intro/model6}\]
 
-\subsection{Relation to conventional grammars}
+\section{Whose shoulders, and how high?}
+\newthought{These diagrams make different ways of thinking about language look the same}
 
 \newthought{Discourse Representation Theory}\\
 Text is composed of sentences as circuits are composed from gates.\\
@@ -76,56 +79,62 @@ A certain choice of spider make these internal wiring diagrams topologically equ
 \[\tikzfig{intro/model9c}\]
 In Chapter \ref{}, we show how certain pregroup and dependency grammars may be equipped with internal wirings to obtain text circuits.
 
-\subsection{What this thesis is not about}
+\section{How do I work with this?}
 
-\newthought{Although this thesis is about language, it is not really linguistics.}\\
-Linguistics, conventionally, is about understanding human language.\\
-Formal linguistic theories rely on empirical observation of human language use.\\
-Now there are not-human entities that use human language.\\
-Now there are un-natural languages that humans use.\\
-So I am interested in sketching a form of language that humans and computers can use.\\
-This sketch is informed by, but not bound to, human language.
-
-\newthought{Although this thesis is mathematical, it is not really mathematics.}\\
-This thesis does not introduce significantly new mathematical constructions or relations.\\
-So there are no new "know that"s.\\
-This thesis does use relatively modern mathematics to approach an old problem.\\
-The math is symmetric monoidal categories, the problem is depicting language.
-So there is new "know how".\\
-
-\newthought{This thesis is computer science, a little.}\\
-The mathematics used is, to a degree, implementation agnostic.\\
-This thesis is only concerned with the "in principle", rather than the "in practice".\\
-There will be no code demonstration nor machine learning experiments.\\
-Computer Science : Programming :: Physics : Engineering\\
-I will point out where experiments have been done.\\
-Hypothetical procedures will be spelled out if needed.
-
-\subsection{Why read this thesis?}
-
-\newthought{What would linguistics look like if it began today?}\\
-Large language models (LLMs) such as GPT and PaLM would appear to us as oracles;\\
-wise, superhumanly capable at language, but inscrutable.\\
-Similar to how most people effortlessly use language without a formal understanding which they can express.\\
-So the fundamental mystery would remain: we would still seek to understand language.
-
-\newthought{Understanding LLMs would not be essential to linguists.}
-Suppose you knew the insides of a mechanical calculator by heart.\\
-Does that mean you \emph{understand} arithmetic?\\
-At best, obliquely.\\
-Implementing ideal arithmetic means compromises;\\
-the calculator is full of inessentialities and tricks against the constraints of physics.\\
-You would not know where the tricks begin and the essence ends.\\
-Suppose you knew every line of code and every piece of date used to train an LLM.\\
-How could one delineate what is essential to language, and what is accidental?\\
-So we can meditate on language whether LLMs exist or not.
-
-\newthought{}
-...
-
-
-The subject matter of this thesis touches on enough fields that I feel it necessary to get everyone on the same page.\\
-The rest of this introduction will introduce the technical concepts and philosophical motivations that are the foundation for the rest of this work.
+\section{What new things can we do?}
 
 \end{centering}
 \end{fullwidth}
+
+\section{Other questions, such as:}
+\subsection{Why is this thesis landscape?} Why should it be otherwise? Screens are landscape. My diagrams are needy of space, unlike text. Fat margins for formal and informal asides.
+
+\subsection{What is this thesis not about?} Although this thesis is about language, it is not really linguistics.
+Linguistics, conventionally, is about understanding human language.
+Formal linguistic theories rely on empirical observation of human language use.
+Now there are not-human entities that use human language.
+Now there are un-natural languages that humans use.
+So I am interested in sketching a form of language that humans and computers can use.
+This sketch is informed by, but not bound to, human language.\\
+
+Although this thesis is mathematical, it is not really mathematics.
+This thesis does not introduce significantly new mathematical constructions or relations.
+So there are no new "know that"s.
+This thesis does use relatively modern mathematics to approach an old problem.
+The math is symmetric monoidal categories, the problem is depicting language.
+So there is new "know how".\\
+
+This thesis is computer science, a little.
+The mathematics used is, to a degree, implementation agnostic.
+This thesis is only concerned with the "in principle", rather than the "in practice".
+There will be no code demonstration nor machine learning experiments, because
+Computer Science is to Programming as Physics is to Engineering.
+I will point out where experiments have been done.
+Hypothetical procedures will be spelled out if needed.
+
+\subsection{Why should I read this?}
+If you are a linguist or a computer scientist: what would linguistics look like if it began today?
+Large language models (LLMs) such as GPT and PaLM would appear to us as oracles;
+wise, superhumanly capable at language, but inscrutable.
+Similar to how most people effortlessly use language without a formal understanding which they can express.
+So the fundamental mystery would remain: we would still seek to understand language, because understanding LLMs is completely different from understanding language\footnote{
+Suppose you knew the insides of a mechanical calculator by heart.
+Does that mean you \emph{understand} arithmetic?
+At best, obliquely.
+Implementing ideal arithmetic means compromises;
+the calculator is full of inessentialities and tricks against the constraints of physics.
+You would not know where the tricks begin and the essence ends.
+Suppose you knew every line of code and every piece of data used to train an LLM.
+How could one delineate what is essential to language, and what is accidental?}.\\
+
+The presence of LLMs should not totally discourage our endeavour to understand language, but their sheer ability presents strong constraints about the acceptability of theories of language. Theories are idealised, partial, and frictionless. In constast, the nature of LLMs is that they are trained on empirical data about language that captures the friction of the real world. So, in terms of raw predictive power, we should naturally expect the LLMs to have an advantage over principled theories\footnote{Just as the Ptolemaic geocentric model of the solar system was more empirically precise than the heliocentric Copernican, though the latter was closer to "correct understanding". Ptolemaic epicycles can approximate any observed trajectory of planets in a geocentric sky by fourier transform, and this overfitting is good if you are, say, a navigator. It took until Einstein's relativity to explain the perihelion of mercury, which at last aligned theoretical understanding with empirical observation.}. So new standards of quality or acceptability are needed, for instance:
+
+\begin{itemize}
+\item{\textbf{If you can't beat them, make room for them.} There is value in synthesis. If your theory of language can neither empirically outperform nor work in tandem with neural methods in principle, you don't have a theory of language, you have a practical nonstarter.}
+\item{\textbf{If you can't beat them, be simpler.} There is value in a theory that provides understanding even if it is simplified, practically yet unrealised, or momentarily empirically embarrassed. But if your theory of language requires a comparable investment of formal education to understand as it takes to follow a machine learning tutorial online, you don't have a theory of language, you have a sociological dead-end.}
+\item{\textbf{If you can't beat them, play a different game.} There is value in breaking new ground and extending our reach. If your theory of language can't make room and isn't simple and also has no force of originality beyond the reach of an LLM, you don't have a theory of language, you have a bore.}
+\item{\textbf{If you can't beat them, smile and look pretty.} There is value in beautiful things, and in art. But if your theory of language is practically inferior, complicated, does nothing new, and on top of that it's \emph{ugly}? You don't have a linguistic theory, you have a conspiracy theory.}
+\item{\textbf{You can't just ignore them.}}
+\end{itemize}
+
+I claim to meet these standards. I present \emph{ab initio} theory of language that is explicitly compatible with neural methods -- Chapter \ref{}, that consists of simple and formal diagrams -- Chapter \ref{} -- far prettier than their predecessors -- Chapter \ref{}. My diagrams unify the coalgebraic and algebraic views of syntax -- Chapter \ref{} -- and they can sing stories of space -- Chapter \ref{} -- and make merry metaphor -- \ref{}.

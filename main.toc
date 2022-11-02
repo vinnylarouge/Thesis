@@ -1,47 +1,56 @@
-\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}%
-\contentsline {subsection}{\numberline {1.0.1}Relation to conventional grammars}{8}{subsection.1.0.1}%
-\contentsline {subsection}{\numberline {1.0.2}What this thesis is not about}{13}{subsection.1.0.2}%
-\contentsline {subsection}{\numberline {1.0.3}Why read this thesis?}{14}{subsection.1.0.3}%
-\contentsline {chapter}{\numberline {2}String diagrams}{15}{chapter.2}%
-\contentsline {section}{\numberline {2.1}A Partial History of String Diagrams}{15}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Pre-formal Diagrams}{15}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Convergent Evolution}{16}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Process Theories}{16}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}What does it mean to copy and delete?}{20}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}What is an update?}{21}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Spatial predicates}{22}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Some basic properties of linguistic spatial relations}{23}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Defining String Diagrams}{23}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Symmetric Monoidal Categories}{23}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}1-object 4-categories}{23}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}PROPs}{23}{subsection.2.3.3}%
-\contentsline {chapter}{\numberline {3}Text circuits}{25}{chapter.3}%
-\contentsline {section}{\numberline {3.1}How do we communicate?}{25}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Speaking grammars, listening grammars}{26}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}A context free grammar to generate \texttt {Alice sees Bob quickly run to school}}{28}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Relating the generative grammar to a pregroup grammar via a discrete monoidal fibration}{32}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Discrete Monoidal Fibrations}{38}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}Discrete monoidal fibrations for grammatical functions}{43}{subsection.3.1.5}%
-\contentsline {subsection}{\numberline {3.1.6}Extended analysis: Tree Adjoining Grammars}{43}{subsection.3.1.6}%
-\contentsline {chapter}{\numberline {4}Continuous relations}{51}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Continuous Relations}{51}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Continuous Relations by examples}{51}{section.4.2}%
-\contentsline {section}{\numberline {4.3}The category \textbf {TopRel}}{57}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Biproducts}{57}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Symmetric Monoidal Closed structure}{58}{section.4.5}%
-\contentsline {section}{\numberline {4.6}\textbf {TopRel} diagrammatically}{59}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Relations that are always continuous}{59}{subsection.4.6.1}%
-\contentsline {section}{\numberline {4.7}Populating space with shapes using sticky spiders}{62}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}When does an object have a spider (or something close to one)?}{62}{subsection.4.7.1}%
-\contentsline {section}{\numberline {4.8}Sticky spiders are collections of shapes in space}{82}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Displacing shapes with symmetries}{82}{section.4.9}%
-\contentsline {section}{\numberline {4.10}Moving shapes continuously}{82}{section.4.10}%
-\contentsline {section}{\numberline {4.11}Configuration space of a sticky spider}{82}{section.4.11}%
-\contentsline {section}{\numberline {4.12}Topological models for a selection of concepts}{82}{section.4.12}%
-\contentsline {section}{\numberline {4.13}Modelling Lassos}{82}{section.4.13}%
-\contentsline {chapter}{\numberline {5}Metaphor, narrative, other pictures}{93}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Modelling metaphor}{93}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Orders, Temperature, Colour, Mood}{94}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Complex conceptual structure}{94}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}}{95}{subsection.5.1.3}%
+\contentsline {chapter}{\numberline {0}Introduction and overview}{5}{chapter.0}%
+\contentsline {section}{\numberline {0.1}What is this thesis about?}{6}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Whose shoulders, and how high?}{8}{section.0.2}%
+\contentsline {section}{\numberline {0.3}How do I work with this?}{13}{section.0.3}%
+\contentsline {section}{\numberline {0.4}What new things can we do?}{13}{section.0.4}%
+\contentsline {section}{\numberline {0.5}Other questions, such as:}{13}{section.0.5}%
+\contentsline {subsection}{\numberline {0.5.1}Why is this thesis landscape?}{13}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {0.5.2}What is this thesis not about?}{13}{subsection.0.5.2}%
+\contentsline {subsection}{\numberline {0.5.3}Why should I read this?}{14}{subsection.0.5.3}%
+\contentsline {chapter}{\numberline {1}String diagrams}{17}{chapter.1}%
+\contentsline {section}{\numberline {1.1}A Partial History of String Diagrams}{17}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Pre-formal Diagrams}{17}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Convergent Evolution}{18}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Process Theories}{19}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}What does it mean to copy and delete?}{22}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}What is an update?}{24}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Spatial predicates}{25}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Some basic properties of linguistic spatial relations}{26}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}Defining String Diagrams}{27}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Symmetric Monoidal Categories}{27}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}PROPs}{27}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}1-object 4-categories}{27}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}What did Montague think "grammar" was?}{28}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Historical Context and Scope of Analysis}{28}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}On "Background Notions"}{29}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}On Syntax}{30}{subsection.1.4.3}%
+\contentsline {chapter}{\numberline {2}Text circuits}{33}{chapter.2}%
+\contentsline {section}{\numberline {2.1}How do we communicate?}{34}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Speaking grammars, listening grammars}{34}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}A context free grammar to generate \texttt {Alice sees Bob quickly run to school}}{37}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Relating the generative grammar to a pregroup grammar via a discrete monoidal fibration}{41}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Discrete Monoidal Fibrations}{47}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Discrete monoidal fibrations for grammatical functions}{52}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Extended analysis: Tree Adjoining Grammars}{52}{subsection.2.1.6}%
+\contentsline {chapter}{\numberline {3}Continuous relations}{59}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Continuous Relations}{60}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Continuous Relations by examples}{61}{section.3.2}%
+\contentsline {section}{\numberline {3.3}The category \textbf {TopRel}}{67}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Biproducts}{67}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Symmetric Monoidal Closed structure}{68}{section.3.5}%
+\contentsline {section}{\numberline {3.6}\textbf {TopRel} diagrammatically}{69}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Relations that are always continuous}{69}{subsection.3.6.1}%
+\contentsline {section}{\numberline {3.7}Populating space with shapes using sticky spiders}{73}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}When does an object have a spider (or something close to one)?}{73}{subsection.3.7.1}%
+\contentsline {section}{\numberline {3.8}Sticky spiders are collections of shapes in space}{93}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Displacing shapes with symmetries}{93}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Moving shapes continuously}{93}{section.3.10}%
+\contentsline {section}{\numberline {3.11}Configuration space of a sticky spider}{93}{section.3.11}%
+\contentsline {section}{\numberline {3.12}Topological models for a selection of concepts}{93}{section.3.12}%
+\contentsline {section}{\numberline {3.13}Modelling Lassos}{94}{section.3.13}%
+\contentsline {chapter}{\numberline {4}Metaphor, narrative, other pictures}{105}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Modelling metaphor}{106}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Orders, Temperature, Colour, Mood}{106}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Complex conceptual structure}{106}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}}{107}{subsection.4.1.3}%
 \contentsfinish 
