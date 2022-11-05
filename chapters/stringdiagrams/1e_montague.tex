@@ -1,32 +1,51 @@
-\section{String diagrams for Montague}\label{sec:monty}
+\section{\textcolor{red}{A brief history of formal linguistics from the categorial perspective}}\label{sec:linghist}
 
-\newthought{What is this?} The aim is to help the modern mathematician, familiar with some notions of Category Theory, in digesting Richard Merritt Montague's seminal 1970 paper \emph{Universal Grammar}.
+\newthought{Summary:} Logical Type Theory in mathematics had a twin sister Categorial Grammar in linguistics, born in the 30s to Ajdukiewicz, raised into the 50s by Bar-Hillel and Lambek. Montague brought formal semantics to the picture via the Lambda-Calculus in the 70s, around the time Category Theory was getting started. The Curry-Howard correspondence between types and logic became Curry-Howard-Lambek to include categories, thus relating the typed lambda-calculus, intuitionistic logic, and cartesian closed categories. Lambek and Moortgat evolved categorial grammar into typelogical grammar; the use of different proof systems as models of grammar, which in turn suggested semantic categories beyond the cartesian closed setting. Alternative semantics in the form of quantum computers were realised by Coecke and Lambek, who together added string diagrams to the correspondence via a \emph{literally} observed correspondence between quantum bell states and reductions in Pregroup Grammar. Sazradeh and Clark enter the collaboration, bringing in Firth's distributional semantics -- which had by the time become computationally practical as the basis of neural methods for word encoding -- to create DisCoCat; a \underline{Dis}tributional, \underline{Co}mpositional and \underline{Cat}egorial framework for language. Mirroring the developmental circumstances of Discourse Representation Theory (itself independently conceived by Kamp and Heim), Coecke suggested promoting DisCoCat as framework for sentences towards a circuit-shaped framework for text -- DisCoCirc. But there remained unanswered questions and ugly spots, and some poor sap had to work out the formal details and clean things up. That poor sap is me.
 
-\newthought{Why might I care?} Montague's introduction of formal methods to semantics revolutionised formal semantics, mirroring the closely preceding Chomskyian revolution in syntax of the 1960s [].
+\subsection{Curry-Howard-Lambek}
 
-\newthought{What are your motives?} One might find it surprising that despite the breadth of Montague's influence today, it is quite hard to find a formal definition of what Montague semantics \emph{is}. The answers naturally depend on what one considers important, but one answer is the literalist ``what Montague himself said." He was, after all, a logician.
+\begin{table}[]
+\begin{tabular}{ccc}
+(Typed) Lambda-Calculus & Intuitionistic Logic & Cartesian Closed Categories  \\
+ Types & Propositions & Categories  \\
+ Curry & Howard & Lambek 
+\end{tabular}
+\end{table}
 
-\newthought{So why not just read \emph{Universal Grammar}?}
+This correspondence means that you can use the lambda-calculus on any family of data organised as a cartesian closed category; this could be strings, or sets and functions, topological shapes with holes, neural nets and finite vectors. So one small benefit of the category-theoretic viewpoint is a formal underpinning for these mild extensions.\\
 
-Montague himself considered part of his work a formal reification of the Fregean programme of compositionality, as evidenced by a culminating definition of ``Fregean interpretations" in \emph{Universal Grammar}. Therein lies the problem: he was a logician writing about structure preservation and compositionality in 1970, before the field of Category Theory had become the only game in town for formal accounts of these things. Reading the definitions feels like debugging punchcards.
+Describing the bigger benefit requires a bigger picture. 
 
-\newthought{It's been 50 years, what else is there to be said?}
 
-There has been \emph{a lot} of pollination from mathematics to linguistics since Chomsky and Montague, and formal semantics has largely matured past the kind of compositionality that Montague envisioned [formsem]. So keeping in mind that this is a historical exercise, I'll begin saying what can be said.
+and Lambek and Coecke fully integrated the picture with syntax and categories. So the linguist's trinity may look something like this:
 
-\subsection{Historical Context and Scope of Analysis}
+\begin{table}[]
+\begin{tabular}{ccc}
+Computation & Syntax & Semantics \\
+(Typed) Lambda-calculus & Combinatory Categorial Grammar & Cartesian Closed Categories \\
+Montague & Ajdukiewicz & Lambek
+\end{tabular}
+\end{table}
 
-Montague semantics/grammar as Montague envisioned it is largely contained in two papers -- \emph{Universal Grammar} \cite{montague1970universal}, and \emph{The Proper Treatment of Quantifiers in English} \cite{montague1973proper} -- both written shortly before his murder in 1971.
+Or this:
 
-The methods were not \emph{mathematically} novel -- the lambda calculus had been around since [DATE], and Tarski and Carnap had been developing intensional higher-order logics since [] -- but for linguists who, by-and-large, only knew first order predicate logic, these methods were a tour-de-force that solved longstanding problems in formal semantics.
+\begin{table}[]
+\begin{tabular}{ccc}
+Computation & Syntax & Semantics \\
+(Typed) Lambda-calculus & Pregroup Grammar & Rigid Autonomous Monoidal Categories \\
+Montague & Ajdukiewicz & Lambek
+\end{tabular}
+\end{table}
 
-Thus, Montague semantics has largely been in the care of linguists rather than mathematicians. This meant sparse opportunity for the ideas to `update' according to mainstream developments in mathematics.
+So here is the story today as far as a linguist may be concerned. We know that Curry-Howard-Lambek- correspondence generalises: if you poke Howard for a grammar that is expressively distinct from a CCG, the type-theory changes, so Lambek gives a different family of semantic categories with different internal logics, and Curry gives you a syntactic composition gadget that differs from the lambda-calculus.
 
-\newthought{How much of it is worth translating?}
+\subsection{What did Montague consider grammar to be?}\label{sec:monty}
 
-There is a natural division of Montague's approach into two structural components: the notion of a structure-preserving map from Syntax to Semantics, and the use of a powerful logic. The first may appeal more to philosophically-minded Fregeans and modern category theorists. The second
+\newthought{Summary:} Montague considered grammars to be coloured operads; Montague's "algebras" are (multi-sorted) clones, which are in bijection with (multi-sorted) Lawvere Theories, which are equivalently coloured operads.
 
-According to Partee [], a formal semanticist, advocate, and torch-bearer for Montague, the chief interest of Montague's approach (as far as his contemporary \emph{linguists} were concerned) lay in the following ideas:
+\newthought{Montague semantics/grammar as Montague envisioned it is largely contained in two papers} -- \emph{Universal Grammar} \cite{montague1970universal}, and \emph{The Proper Treatment of Quantifiers in English} \cite{montague1973proper} -- both written shortly before his murder in 1971. The methods employed were not \emph{mathematically} novel -- the lambda calculus had been around since [DATE], and Tarski and Carnap had been developing intensional higher-order logics since [] -- but for linguists who, by-and-large, only knew first order predicate logic, these methods were a tour-de-force that solved longstanding problems in formal semantics. Thus, Montague semantics has largely been in the care of linguists rather than mathematicians. This meant sparse opportunity for the ideas to `update' according to mainstream developments in mathematics.\\
+
+\newthought{There is a natural division of Montague's approach into two structural components.} First, the notion of a structure-preserving map from syntax to semantics. Second, the use of a powerful and expressive logic for semantics. We acknowledge the importance of the latter for formal semantic engineering, but here we will focus on just the former. According to Partee [], a formal semanticist, advocate, and torch-bearer for Montague, the chief interest of Montague's approach (as far as his contemporary \emph{linguists} were concerned) lay in the following ideas:
 
 \begin{enumerate}
 \item{Take truth conditions to be the essential data of semantics.}
@@ -39,18 +58,13 @@ According to Partee [], a formal semanticist, advocate, and torch-bearer for Mon
 
 I have split the second point to highlight the role of lambdas. This element was the crux of the Montagovian revolution: according to Janssen in a personal communication with Partee from 1994, lambdas were ``...the feature that made compositionality possible at all."
 
-\subsection{On "Background Notions"}
-
-\boxed{\text{Montague's \emph{algebras} are clones, which are in bijection with Lawvere Theories}}
-
-In Section 1, Montague's first paragraph establishes common notions of relation and function -- the latter he calls \emph{operation}, to distinguish the $n$-ary case from the unary case which he calls \emph{function}. This is all done with ordinals indexing lists of elements of an arbitrary but fixed set $A$, which leads later on to nested indices and redundancy by repeated mention of $A$. We will try to avoid these issues going forward by eliding some data where there is no confusion, following common modern practice.
+In Section 1 of \emph{Universal Grammar}, Montague's first paragraph establishes common notions of relation and function -- the latter he calls \emph{operation}, to distinguish the $n$-ary case from the unary case which he calls \emph{function}. This is all done with ordinals indexing lists of elements of an arbitrary but fixed set $A$, which leads later on to nested indices and redundancy by repeated mention of $A$. We will try to avoid these issues going forward by eliding some data where there is no confusion, following common modern practice.\\
 
 Next, Montague introduces his notion of \emph{algebra} and \emph{homomorphism}. He separates the data of the carrier set and the generators from the \emph{polynomial operations} that generate the term algebra.
 
-\begin{defn}[Generating data of an Algebra]}\label{algdata} 
-
+\marginnote{
+\begin{defn}[Generating data of an Algebra]\label{algdata} 
 Let $A$ be the carrier set, and $F_\gamma$ be a set of functions $A^k \rightarrow A$ for some $k \in \mathbb{N}$, indexed by $\gamma \in \Gamma$. Denoted $\langle A, F_\gamma \rangle_{\gamma \in \Gamma}$
-
 \end{defn}
 
 The following three data are taken to be common among Montague's algebras:
@@ -66,12 +80,8 @@ where $a_n$ is the $n^{\text{th}}$ entry of the $m$-tuple $a$.
 
 \begin{defn}[Constants]\label{constants}
 For all elements of the carrier $x \in A$, and all $m \in \mathbb{N}$, a constant operation $C_{x,m}$ defined on all $m$-tuples $a$ as:
-
 $$C_{x,m}(a) = x$$
-
 \end{defn}
-
-[[[maybe montague didn't want to entertain a nullary operation: why?]]]
 
 \begin{defn}[Composition]\label{comp}
 Given an $n$-ary operation $G$, and $n$ instances of $m$-ary operations $H_{1 \leq i \leq n}$, define the composite $G(H_i)_{1 \leq i \leq n}$ to act on $m$-tuples $a$ by:
@@ -84,21 +94,17 @@ $$G\bigg( \ \big( \ H_1(a) \ , \ H_2(a) \ , \ \ldots \ , \ H_n(a) \ \big) \  \bi
 \end{defn}
 
 \begin{defn}[Polynomial Operations]\label{polyop}
-
 The polynomial operations over an algebra $\langle A, F_\gamma \rangle_{\gamma \in \Gamma}$ are defined to be smallest class $K$ containing all $F_{\gamma \in \Gamma}$, identities, constants, closed under composition.
-
 \end{defn}
 
 \begin{defn}[Homomorphism of Algebras]\label{homo}
-
 $h$ is a homomorphism from $\langle A, F_\gamma \rangle_{\gamma \in \Gamma}$ \emph{into} $\langle B, G_\gamma \rangle_{\gamma \in \Delta}$ iff
-
 \begin{enumerate}
     \item{$\Gamma = \Delta$ and $\forall \gamma : $}
     \item{}
 \end{enumerate}
-
 \end{defn}
+}
 
 Definition \ref{ids} is equivalent to asking for all projections. Definitions \ref{ids} and \ref{comp} together characterise Montagovian algebras as (concrete) clones []. 
 

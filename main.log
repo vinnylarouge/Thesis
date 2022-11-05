@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  4 NOV 2022 13:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  5 NOV 2022 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1485,18 +1485,18 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ] (./main.toc
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 29
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 31
 .
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 29.
+(Font)              scaled to size 8.50006pt on input line 31.
 LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10.95> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 29.
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 9.30756pt on input line 29.
+(Font)              scaled to size 9.30756pt on input line 31.
  [3])
 \tf@toc=\write6
 \openout6 = `main.toc'.
@@ -1625,19 +1625,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 3460) has occurred while \output is active []
 
  [11]
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
 |[]\T1/stix/m/it/12 What new things can we do?|
  []
 
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 108.
+(Font)              scaled to size 8.33606pt on input line 112.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 108.
+(Font)              scaled to size 5.21004pt on input line 112.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 108.
+(Font)              scaled to size 8.33606pt on input line 112.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 108.
-[12]
+(Font)              scaled to size 5.21004pt on input line 112.
+
+Underfull \vbox (badness 2698) has occurred while \output is active []
+
+ [12]
 
 LaTeX Warning: Marginpar on page 13 moved.
 
@@ -1650,32 +1653,43 @@ LaTeX Warning: Marginpar on page 13 moved.
 
 LaTeX Warning: Marginpar on page 13 moved.
 
+
+LaTeX Warning: Marginpar on page 13 moved.
+
+
+LaTeX Warning: Marginpar on page 13 moved.
+
+[13]
 LaTeX Font Info:    Trying to load font information for TS1+stix on input line 
-134.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ts1stix.fd
+141.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ts1stix.fd
 File: ts1stix.fd 2015/04/17 v1.1.2-latex STIX TS1 font definitions
-) [13]) [14]
+)
+
+LaTeX Warning: Marginpar on page 14 moved.
+
+[14]) [15] [16
+
+]
 Chapter 1.
-[15
+[17] (./chapters/stringdiagrams/1_diagrams.tex [18
 
-] (./chapters/stringdiagrams/1_diagrams.tex [16
-
-]) [17]
+]) [19]
 (./chapters/stringdiagrams/1b_proctheory.tex (./figures/proctheory/process.tikz
 ) (./figures/proctheory/processpar.tikz) (./figures/proctheory/processseq.tikz)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18
+ [20
 
 ]
 (./figures/proctheory/processeq.tikz) (./figures/proctheory/state.tikz)
-(./figures/proctheory/test.tikz) (./figures/proctheory/number.tikz) [19]
+(./figures/proctheory/test.tikz) (./figures/proctheory/number.tikz) [21]
 
-LaTeX Warning: Reference `' on page 20 undefined on input line 18.
+LaTeX Warning: Reference `' on page 22 undefined on input line 18.
 
 
-LaTeX Warning: Marginpar on page 20 moved.
+LaTeX Warning: Marginpar on page 22 moved.
 
 
 ! LaTeX Error: Too many math alphabets used in version normal.
@@ -1719,34 +1733,34 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Marginpar on page 20 moved.
+LaTeX Warning: Marginpar on page 22 moved.
 
-[20]
+[22]
 
-LaTeX Warning: Marginpar on page 21 moved.
-
-
-LaTeX Warning: Marginpar on page 21 moved.
+LaTeX Warning: Marginpar on page 23 moved.
 
 
-LaTeX Warning: Marginpar on page 21 moved.
+LaTeX Warning: Marginpar on page 23 moved.
 
 
-LaTeX Warning: Marginpar on page 21 moved.
+LaTeX Warning: Marginpar on page 23 moved.
 
 
-LaTeX Warning: Marginpar on page 21 moved.
+LaTeX Warning: Marginpar on page 23 moved.
 
 
-LaTeX Warning: Marginpar on page 21 moved.
+LaTeX Warning: Marginpar on page 23 moved.
 
 
-LaTeX Warning: Marginpar on page 21 moved.
+LaTeX Warning: Marginpar on page 23 moved.
 
-(./figures/proctheory/copydelete.tikz) [21]
+
+LaTeX Warning: Marginpar on page 23 moved.
+
+(./figures/proctheory/copydelete.tikz) [23]
 (./figures/bestiary/basicrelations.tikz)
 
-LaTeX Warning: Marginpar on page 22 moved.
+LaTeX Warning: Marginpar on page 24 moved.
 
 (./figures/proctheory/copyable.tikz)
 
@@ -1789,28 +1803,28 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Marginpar on page 22 moved.
+LaTeX Warning: Marginpar on page 24 moved.
 
 (./figures/proctheory/copyablefunc.tikz)
 
-LaTeX Warning: Marginpar on page 22 moved.
+LaTeX Warning: Marginpar on page 24 moved.
 
 
-LaTeX Warning: Marginpar on page 22 moved.
+LaTeX Warning: Marginpar on page 24 moved.
 
 
-LaTeX Warning: Marginpar on page 22 moved.
+LaTeX Warning: Marginpar on page 24 moved.
 
 
-LaTeX Warning: Marginpar on page 22 moved.
+LaTeX Warning: Marginpar on page 24 moved.
 
-[22]
+[24]
 LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
 (Font)              scaled to size 8.50006pt on input line 119.
  (./figures/proctheory/putputs.tikz) (./figures/proctheory/getput.tikz)
 (./figures/proctheory/putget.tikz) (./figures/proctheory/getget.tikz)
 
-LaTeX Warning: Marginpar on page 23 moved.
+LaTeX Warning: Marginpar on page 25 moved.
 
 (./figures/proctheory/incrementage.tikz
 
@@ -1824,45 +1838,47 @@ LaTeX Font Warning: Command \tiny invalid in math mode on input line 27.
 )
 Underfull \vbox (badness 5217) has occurred while \output is active []
 
- [23]
-[24]) [25] (./chapters/stringdiagrams/1a_diagdefs.tex) [26
+ [25]
+[26]) [27] (./chapters/stringdiagrams/1a_diagdefs.tex) [28
 
 ]
 (./chapters/stringdiagrams/1e_montague.tex
 
-LaTeX Font Warning: Font shape `T1/stix/m/scit' undefined
-(Font)              using `T1/stix/m/it' instead on input line 9.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 7.
 
 
-Package natbib Warning: Citation `montague1970universal' undefined on input lin
-e 19.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 22.
 
 
-Package natbib Warning: Citation `montague1973proper' undefined on input line 1
-9.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 32.
 
-
-LaTeX Warning: Marginpar on page 27 moved.
-
-
-LaTeX Warning: Marginpar on page 27 moved.
-
-[27
+[29
 
 ]
-Overfull \hbox (18.17474pt too wide) in paragraph at lines 27--28
-\T1/stix/m/n/10 preserving map from Syn-tax to Se-man-tics, and the use of a po
-w-er-ful logic. The first may ap-peal more to philosophically- 
- []
 
-! Extra }, or forgotten \endgroup.
-l.50 \begin{defn}[Generating data of an Algebra]}
-                                                 \label{algdata}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+Package natbib Warning: Citation `montague1970universal' undefined on input lin
+e 46.
+
+
+Package natbib Warning: Citation `montague1973proper' undefined on input line 4
+6.
+
+
+LaTeX Warning: Marginpar on page 30 moved.
+
+
+LaTeX Warning: Marginpar on page 30 moved.
+
+
+LaTeX Warning: Marginpar on page 30 moved.
+
+[30]
+
+LaTeX Font Warning: Font shape `T1/stix/m/scit' undefined
+(Font)              using `T1/stix/m/it' instead on input line 61.
 
 
 ! LaTeX Error: Too many math alphabets used in version normal.
@@ -1871,9 +1887,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 ... \rightarrow A$ for some $k \in \mathbb{N}
-                                                  $, indexed by $\gamma \in ...
-
+l.109 }
+       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1885,9 +1900,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 ...ns populated, for all $n, m \in \mathbb{N}
-                                                  $, $n \leq m$, by an $m$-a...
-
+l.109 }
+       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1899,29 +1913,31 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.68 ...rrier $x \in A$, and all $m \in \mathbb{N}
-                                                  $, a constant operation $C...
-
+l.109 }
+       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[28] [29]) [30]
+
+LaTeX Warning: Marginpar on page 31 moved.
+
+[31]) [32]
 Chapter 2.
-[31
+[33
 
 
 ] (./chapters/textcirc/miracle.tex
 
-LaTeX Warning: Marginpar on page 32 moved.
-
-[32
-
-] [33]
-
 LaTeX Warning: Marginpar on page 34 moved.
 
-[34]
+[34
+
+] [35]
+
+LaTeX Warning: Marginpar on page 36 moved.
+
+[36]
 Overfull \hbox (33.04257pt too wide) detected at line 140
 []
  []
@@ -1934,81 +1950,81 @@ Overfull \hbox (33.04257pt too wide) detected at line 149
 (./figures/tree2gate/cfg/cfgsignature.tikz)
 Underfull \vbox (badness 1789) has occurred while \output is active []
 
- [35]
+ [37]
 (./figures/tree2gate/cfg/bigcfgbreakdown.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
+ [38]
 (./figures/tree2gate/workedexample/bigcfg.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
+ [39]
 (./figures/tree2gate/workedexample/biginter.tikz)
 (./figures/tree2gate/workedexample/bigex_0.tikz)
 (./figures/tree2gate/workedexample/bigex_1.tikz)
 (./figures/tree2gate/workedexample/bigex_2.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
+ [40]
 (./figures/tree2gate/workedexample/gather_quickly.tikz)
 (./figures/tree2gate/workedexample/bigex_2.tikz)
 (./figures/tree2gate/workedexample/bigex_3.tikz)
 Underfull \vbox (badness 1565) has occurred while \output is active []
 
- [39]
+ [41]
 (./figures/tree2gate/workedexample/gather_adp.tikz)
 (./figures/tree2gate/workedexample/bigex_3.tikz)
 (./figures/tree2gate/workedexample/bigex_4.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]
+ [42]
 (./figures/tree2gate/workedexample/gather_to.tikz)
 (./figures/tree2gate/workedexample/bigex_4.tikz)
 (./figures/tree2gate/workedexample/bigex_5.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41]
+ [43]
 (./figures/tree2gate/workedexample/bigex_5.tikz)
 (./figures/tree2gate/workedexample/bigex_6.tikz)
-(./figures/tree2gate/workedexample/bigex_6to7.tikz) [42]
+(./figures/tree2gate/workedexample/bigex_6to7.tikz) [44]
 (./figures/tree2gate/workedexample/gather_scv.tikz)
 (./figures/tree2gate/workedexample/bigex_7.tikz)
 (./figures/tree2gate/workedexample/bigex_8.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43]
+ [45]
 (./figures/tree2gate/workedexample/bigex_8to9.tikz)
 (./figures/tree2gate/workedexample/bigex_a0.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44]
+ [46]
 \myBox4=\box151
 \myScoreStart4=\dimen347
 \myCenter4=\dimen348
 \myScoreEnd4=\dimen349
 
 
-LaTeX Warning: Marginpar on page 45 moved.
+LaTeX Warning: Marginpar on page 47 moved.
 
-(./figures/tree2gate/mfunctorbox/mfbox-notation.tikz) [45]
-(./figures/tree2gate/mfunctorbox/mfbox-seq.tikz) [46]
+(./figures/tree2gate/mfunctorbox/mfbox-notation.tikz) [47]
+(./figures/tree2gate/mfunctorbox/mfbox-seq.tikz) [48]
 (./figures/tree2gate/mfunctorbox/mfbox-fibration+structural.tikz)
 (./figures/tree2gate/mfunctorbox/mfbox-tensor.tikz)
 (./figures/tree2gate/mfunctorbox/mfbox-twist.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47]
+ [49]
 (./figures/tree2gate/mfunctorbox/mfbox-prefibex.tikz)
-(./figures/tree2gate/mfunctorbox/mfbox-fibration.tikz) [48]
+(./figures/tree2gate/mfunctorbox/mfbox-fibration.tikz) [50]
 (./figures/tree2gate/mfunctorbox/mfbox-fibration+interchange.tikz)
 
-LaTeX Warning: Marginpar on page 49 moved.
+LaTeX Warning: Marginpar on page 51 moved.
 
 
 Underfull \vbox (badness 3701) has occurred while \output is active []
 
- [49]
-[50] (./figures/tree2gate/tag/CFGtoTAGpattern.tikz) [51]
+ [51]
+[52] (./figures/tree2gate/tag/CFGtoTAGpattern.tikz) [53]
 (./figures/tree2gate/tag/leafansatzintuition.tikz
 
 LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 73
@@ -2025,18 +2041,18 @@ LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 87
 ) (./figures/tree2gate/tag/CFGasTAGsign.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52]
+ [54]
 (./figures/tree2gate/tag/3compareintuition.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53]
+ [55]
 (./figures/tree2gate/tag/tagsignature.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
-[55] (./figures/tree2gate/workedexample/bigexaltogether.tikz)) [56]
+ [56]
+[57] (./figures/tree2gate/workedexample/bigexaltogether.tikz)) [58]
 Chapter 3.
-[57
+[59
 
 
 ] (./chapters/toprel/0_contrel.tex
@@ -2054,150 +2070,150 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Marginpar on page 58 moved.
+LaTeX Warning: Marginpar on page 60 moved.
 
 
-LaTeX Warning: Marginpar on page 58 moved.
+LaTeX Warning: Marginpar on page 60 moved.
 
 
-LaTeX Warning: Marginpar on page 58 moved.
+LaTeX Warning: Marginpar on page 60 moved.
 
 
-LaTeX Warning: Marginpar on page 58 moved.
+LaTeX Warning: Marginpar on page 60 moved.
 
 
-LaTeX Warning: Marginpar on page 58 moved.
+LaTeX Warning: Marginpar on page 60 moved.
 
-) [58
+) [60
 
 ] (./chapters/toprel/1_examples.tex (./figures/testspaces/singleton.tikz)
 (./figures/testspaces/sierpinski.tikz) (./figures/testspaces/unitsquare.tikz)
-[59
+[61
 
 ]
 
-LaTeX Warning: Marginpar on page 60 moved.
+LaTeX Warning: Marginpar on page 62 moved.
 
 
-LaTeX Warning: Marginpar on page 60 moved.
+LaTeX Warning: Marginpar on page 62 moved.
 
 
-LaTeX Warning: Marginpar on page 60 moved.
+LaTeX Warning: Marginpar on page 62 moved.
 
 
-LaTeX Warning: Marginpar on page 60 moved.
+LaTeX Warning: Marginpar on page 62 moved.
 
-[60]
+[62]
 
-LaTeX Warning: Marginpar on page 61 moved.
-
-
-LaTeX Warning: Marginpar on page 61 moved.
+LaTeX Warning: Marginpar on page 63 moved.
 
 
-LaTeX Warning: Marginpar on page 61 moved.
+LaTeX Warning: Marginpar on page 63 moved.
+
+
+LaTeX Warning: Marginpar on page 63 moved.
 
 (./figures/paintingexamples/sierandcanvas2_2.tikz)
 (./figures/paintingexamples/s2sqzoom.tikz)
 
-LaTeX Warning: Marginpar on page 61 moved.
+LaTeX Warning: Marginpar on page 63 moved.
 
 (./figures/paintingexamples/s2sqpainting.tikz)
 
-LaTeX Warning: Marginpar on page 61 moved.
+LaTeX Warning: Marginpar on page 63 moved.
 
 (./figures/paintingexamples/sq2spainting.tikz)
 
-LaTeX Warning: Marginpar on page 61 moved.
+LaTeX Warning: Marginpar on page 63 moved.
 
-[61] (./figures/testspaces/sierpinskienum.tikz) [62] [63]
+[63] (./figures/testspaces/sierpinskienum.tikz) [64] [65]
 (./figures/paintingexamples/contline.tikz)
 
-LaTeX Warning: Marginpar on page 64 moved.
+LaTeX Warning: Marginpar on page 66 moved.
 
 (./figures/paintingexamples/contlines.tikz)
 
-LaTeX Warning: Marginpar on page 64 moved.
+LaTeX Warning: Marginpar on page 66 moved.
 
 (./figures/paintingexamples/thickbrush.tikz)
 
-LaTeX Warning: Marginpar on page 64 moved.
+LaTeX Warning: Marginpar on page 66 moved.
 
-<figures/paintingexamples/spectrum.png, id=653, 1194.4625pt x 34.1275pt>
+<figures/paintingexamples/spectrum.png, id=670, 1194.4625pt x 34.1275pt>
 File: figures/paintingexamples/spectrum.png Graphic file (type png)
 <use figures/paintingexamples/spectrum.png>
 Package pdftex.def Info: figures/paintingexamples/spectrum.png  used on input l
 ine 244.
 (pdftex.def)             Requested size: 233.31111pt x 6.66602pt.
 
-LaTeX Warning: Marginpar on page 64 moved.
+LaTeX Warning: Marginpar on page 66 moved.
 
-<figures/paintingexamples/starrynight.jpg, id=655, 2569.6pt x 2034.60126pt>
+<figures/paintingexamples/starrynight.jpg, id=672, 2569.6pt x 2034.60126pt>
 File: figures/paintingexamples/starrynight.jpg Graphic file (type jpg)
 <use figures/paintingexamples/starrynight.jpg>
 Package pdftex.def Info: figures/paintingexamples/starrynight.jpg  used on inpu
 t line 250.
 (pdftex.def)             Requested size: 233.29288pt x 184.72058pt.
 
-LaTeX Warning: Marginpar on page 64 moved.
+LaTeX Warning: Marginpar on page 66 moved.
 
-) [64
+) [66
 
  <./figures/paintingexamples/spectrum.png> <./figures/paintingexamples/starryni
-ght.jpg>] (./chapters/toprel/2_toprel.tex [65
+ght.jpg>] (./chapters/toprel/2_toprel.tex [67
 
 ]
 
-LaTeX Warning: Marginpar on page 66 moved.
+LaTeX Warning: Marginpar on page 68 moved.
 
 
-LaTeX Warning: Marginpar on page 66 moved.
+LaTeX Warning: Marginpar on page 68 moved.
 
 
-LaTeX Warning: Marginpar on page 66 moved.
+LaTeX Warning: Marginpar on page 68 moved.
 
-[66] (./figures/bestiary/generators.tikz)
-(./figures/bestiary/basicrelations.tikz) [67]
+[68] (./figures/bestiary/generators.tikz)
+(./figures/bestiary/basicrelations.tikz) [69]
 (./figures/structure/determinism.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68]
+ [70]
 (./figures/bestiary/scalarrelations.tikz)
-(./figures/bestiary/zerorelations.tikz) [69]) [70]
+(./figures/bestiary/zerorelations.tikz) [71]) [72]
 (./chapters/toprel/3_sticky.tex (./figures/bestiary/spiderbicat.tikz)
 
 LaTeX Warning: Float too large for page by 79.47964pt on input line 6.
 
 
-LaTeX Warning: Marginpar on page 71 moved.
+LaTeX Warning: Marginpar on page 73 moved.
 
 (./figures/structure/copyspiderproof/openpoint.tikz)
 (./figures/structure/copyspiderproof/openpointproof.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71
+ [73
 
 ]
-[72] (./figures/structure/copyspiderproof/openpointcases.tikz)
+[74] (./figures/structure/copyspiderproof/openpointcases.tikz)
 
-LaTeX Warning: Marginpar on page 73 moved.
+LaTeX Warning: Marginpar on page 75 moved.
 
-(./figures/structure/idemspider/splitidem.tikz) [73]
+(./figures/structure/idemspider/splitidem.tikz) [75]
 (./figures/structure/idemspider/espiderproperties.tikz)
 (./figures/structure/idemspider/espiderproperties2.tikz)
 Underfull \vbox (badness 5217) has occurred while \output is active []
 
- [74]
+ [76]
 (./figures/structure/idemspider/idemspiderv2.tikz)
 (./figures/structure/idemspider/espiderstatement.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75]
+ [77]
 (./figures/structure/idemspider/espiderproofv2.tikz)
-(./figures/structure/idemspider/splitonto.tikz) [76]
+(./figures/structure/idemspider/splitonto.tikz) [78]
 (./figures/structure/idemspider/espiderproof2.tikz)
 (./figures/idemproof/unit-everything.tikz)
-(./figures/idemproof/comult-copy.tikz) [77] (./figures/idemproof/claimmap2.tikz
+(./figures/idemproof/comult-copy.tikz) [79] (./figures/idemproof/claimmap2.tikz
 LaTeX Font Info:    Calculating math sizes for size <24> on input line 78.
 
 LaTeX Font Warning: Font shape `U/stmry/m/n' in size <24> not available
@@ -2219,57 +2235,57 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 19.00607pt on input line 78.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 15.00505pt on input line 78.
-) (./figures/idemproof/ecopy2delclaim.tikz) [78]
-(./figures/idemproof/ecopy2del.tikz) [79]
+) (./figures/idemproof/ecopy2delclaim.tikz) [80]
+(./figures/idemproof/ecopy2del.tikz) [81]
 (./figures/idemproof/allornothingclaim.tikz)
 (./figures/idemproof/allornothing2a.tikz)
 (./figures/idemproof/allornothing2b.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80]
+ [82]
 (./figures/idemproof/pointidemcopiable.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81]
+ [83]
 (./figures/idemproof/pointidemcopiableproof.tikz)
 (./figures/idemproof/copiablebasisclaim.tikz)
 (./figures/idemproof/copiablebasis.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [82]
+ [84]
 (./figures/idemproof/decompidemclaim.tikz)
 Underfull \vbox (badness 3635) has occurred while \output is active []
 
- [83]
+ [85]
 (./figures/idemproof/decompidem.tikz)
 (./figures/idemproof/decompcounitclaim.tikz)
 (./figures/idemproof/decompcounit.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [84]
+ [86]
 (./figures/idemproof/matchclaim.tikz) (./figures/idemproof/match.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [85]
+ [87]
 (./figures/idemproof/openshorthand.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [86]
+ [88]
 (./figures/idemproof/shorthandjustification.tikz)
 (./figures/idemproof/comatchclaim.tikz) (./figures/idemproof/comatch.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87]
+ [89]
 (./figures/idemproof/dotcopyableclaim.tikz)
 (./figures/idemproof/dotcopyable.tikz)
 (./figures/idemproof/copynormalclaim.tikz) (./figures/idemproof/copynormal.tikz
-) [88] (./figures/idemproof/decompmultclaim.tikz)
+) [90] (./figures/idemproof/decompmultclaim.tikz)
 (./figures/idemproof/decompmult.tikz)
 (./figures/idemproof/decompcomultclaim.tikz)
 Underfull \vbox (badness 1107) has occurred while \output is active []
 
- [89]
-(./figures/idemproof/decompcomult.tikz) [90]) [91]
+ [91]
+(./figures/idemproof/decompcomult.tikz) [92]) [93]
 (./chapters/toprel/4_lassos.tex
 (./figures/spatialencoding/circencodingconstruct.tikz)
 (./figures/spatialencoding/stickymorphismdefn.tikz)
@@ -2287,23 +2303,23 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 76.
 )
-(./figures/spatialencoding/arbset.tikz) [92
+(./figures/spatialencoding/arbset.tikz) [94
 
 ]
-(./figures/spatialencoding/directsumconstruct.tikz) [93]
+(./figures/spatialencoding/directsumconstruct.tikz) [95]
 (./figures/spatialencoding/leftrightcompressions.tikz)
 (./figures/spatialencoding/leftrightcompressions2.tikz)
 (./figures/spatialencoding/leftrightcompressions3.tikz)
-(./figures/spatialencoding/leftrightcompressions4.tikz) [94]
+(./figures/spatialencoding/leftrightcompressions4.tikz) [96]
 (./figures/spatialencoding/tensorconstruct.tikz)
 (./figures/spatialencoding/boxcompression.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [95]
+ [97]
 (./figures/spatialencoding/obtainboxposition.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [96]
+ [98]
 (./figures/spatialencoding/tensordetensor.tikz)
 (./figures/spatialencoding/tensordetensor2.tikz
 
@@ -2336,7 +2352,7 @@ Package pgf Warning: Returning node center instead of a point on node border. D
 id you specify a point identical to the center of node ``51''? on input line 77
 .
 
-) [97] (./figures/spatialencoding/tensordetensor3.tikz)
+) [99] (./figures/spatialencoding/tensordetensor3.tikz)
 (./figures/spatialencoding/relcomp1.tikz
 
 Package pgf Warning: Returning node center instead of a point on node border. D
@@ -2351,24 +2367,24 @@ id you specify a point identical to the center of node ``81''? on input line 15
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [98]
+ [100]
 (./figures/spatialencoding/relcomp2.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [99]
+ [101]
 (./figures/spatialencoding/relcomp3.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [100])
-[101] [102
+ [102])
+[103] [104
 
 
 ]
 Chapter 4.
-[103] (./chapters/beyond/metaphor.tex [104
+[105] (./chapters/beyond/metaphor.tex [106
 
 ]
-(./figures/metaphor/timeISmoney.tikz)) [105]
+(./figures/metaphor/timeISmoney.tikz)) [107]
 
 Package natbib Warning: There were undefined citations.
 
@@ -2389,16 +2405,16 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AFAEB57D9493B729D39C16EEBF864228;5495.
+(rerunfilecheck)             Checksum: C1F19C316A92F9DEE95C0D5A8AD0311C;5801.
  ) 
 Here is how much of TeX's memory you used:
- 53532 strings out of 478268
- 1184340 string characters out of 5846348
- 1954244 words of memory out of 5000000
- 70078 multiletter control sequences out of 15000+600000
- 693496 words of font info for 338 fonts, out of 8000000 for 9000
+ 53539 strings out of 478268
+ 1184403 string characters out of 5846348
+ 1958553 words of memory out of 5000000
+ 70081 multiletter control sequences out of 15000+600000
+ 687966 words of font info for 336 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,13n,121p,1375b,1327s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,13n,121p,1799b,1327s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{theorem.2.1.13} has been referenced but does not ex
 ist, replaced by a fixed one
@@ -2424,10 +2440,10 @@ blic/stix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publi
 c/stix/stix-mathtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/s
 tmaryrd/stmary10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvet
 ic/uhvr8a.pfb>
-Output written on main.pdf (105 pages, 3496212 bytes).
+Output written on main.pdf (107 pages, 3502409 bytes).
 PDF statistics:
- 1046 PDF objects out of 1200 (max. 8388607)
- 820 compressed objects within 9 object streams
- 270 named destinations out of 1000 (max. 500000)
+ 1064 PDF objects out of 1200 (max. 8388607)
+ 834 compressed objects within 9 object streams
+ 274 named destinations out of 1000 (max. 500000)
  27991 words of extra memory for PDF output out of 29859 (max. 10000000)
 
