@@ -18,10 +18,10 @@
 		\draw [style=K] (16) to (18.center);
 		\draw [style=K] (22.center) to (23);
 		\draw [style=K] (23)
-			 to [bend right] (24.center)
-			 to [bend right] (9);
+			 to [bend right=45] (24.center)
+			 to [bend right=45] (9);
 		\draw [style=K] (23)
-			 to [bend left] (30.center)
-			 to [bend left] (9);
+			 to [bend left=45] (30.center)
+			 to [bend left=45] (9);
 	\end{pgfonlayer}
 \end{tikzpicture}

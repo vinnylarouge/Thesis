@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-2.75, 0.75) {};
+		\node [style=none] (1) at (-2.75, -0.75) {};
+		\node [style=none] (2) at (-1.25, 0.75) {};
+		\node [style=none] (3) at (-1.25, -0.75) {};
+		\node [style=smalldotb] (4) at (-1.25, 0) {};
+		\node [style=none] (5) at (-4.75, -0.5) {};
+		\node [style=none] (6) at (-2.75, -0.5) {};
+		\node [style=none] (7) at (-4.75, 0.5) {};
+		\node [style=none] (8) at (-2.75, 0.5) {};
+		\node [style=none] (9) at (1, 0) {};
+		\node [style=none] (10) at (-3.75, 1.25) {$\mathbf{Iso}(\mathbb{R}^2)$};
+		\node [style=none] (11) at (-3.75, -1) {$\mathbb{R}^2$};
+		\node [style=none] (13) at (0, -0.5) {$\mathbb{R}^2$};
+		\node [style=none] (14) at (4, 0) {$\big( (\mathbf{a},\theta) ,  \mathbf{b} \big) \mapsto \begin{bmatrix} \cos{\theta} & -\sin{\theta} \\ \sin{\theta} & \cos{\theta} \end{bmatrix}\mathbf{b} + \mathbf{a}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (2.center)
+			 to (3.center)
+			 to (1.center)
+			 to (0.center)
+			 to cycle;
+		\draw [style=K] (4) to (9.center);
+		\draw [style=K] (5.center) to (6.center);
+		\draw [style=K] (7.center) to (8.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

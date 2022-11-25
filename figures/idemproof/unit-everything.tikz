@@ -11,9 +11,10 @@
 		\node [style=none] (31) at (3, 1) {};
 		\node [style=dotC] (36) at (-2.5, 0) {};
 		\node [style=none] (37) at (-1, 0) {};
-		\node [style=dotb] (38) at (1, 0) {};
+		\node [style=smalldotb] (38) at (1, 0) {};
 		\node [style=dotC] (39) at (2, 0) {};
 		\node [style=none] (40) at (3, 0) {};
+		\node [style=none] (41) at (0, 2) {Unit/everything};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K] (36) to (37.center);

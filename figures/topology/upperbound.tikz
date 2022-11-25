@@ -1,0 +1,51 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=smalldotb] (0) at (-3.75, -0.25) {};
+		\node [style=none] (1) at (-5.5, -0.25) {};
+		\node [style=none] (2) at (-4.5, 0.25) {};
+		\node [style=none] (3) at (-5.25, -0.25) {};
+		\node [style=none] (4) at (-4.5, -0.75) {};
+		\node [style=none] (5) at (-4.5, -0.25) {};
+		\node [style=none] (6) at (-2.5, 0.25) {};
+		\node [style=none] (7) at (-2.5, -1.75) {};
+		\node [style=none] (8) at (-1, -0.75) {};
+		\node [style=none] (9) at (-2, -0.75) {$\leq$};
+		\node [style=none] (10) at (-2.5, -0.25) {};
+		\node [style=none] (11) at (-2.5, -1.25) {};
+		\node [style=smalldotb] (12) at (-3.25, 0.5) {};
+		\node [style=none] (13) at (-2.5, 1.25) {};
+		\node [style=none] (14) at (-1, 1.25) {};
+		\node [style=none] (15) at (0, 0) {$=$};
+		\node [style=none] (16) at (1.75, 0.5) {};
+		\node [style=none] (17) at (1, 0) {};
+		\node [style=none] (18) at (1.75, -0.5) {};
+		\node [style=none] (19) at (1.75, 0) {};
+		\node [style=none] (20) at (3.5, 0) {};
+		\node [style=none] (21) at (0, 2.5) {Upper Bound};
+		\node [style=none] (22) at (0, 0.5) {$\textcolor{cyan}{\forall}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=ggF] (1.center)
+			 to [bend right=90, looseness=1.50] (0.center)
+			 to [bend right=90, looseness=1.50] cycle;
+		\draw [style={K(CF)}] (4.center)
+			 to (2.center)
+			 to (3.center)
+			 to cycle;
+		\draw [style=K] (8.center)
+			 to (7.center)
+			 to (6.center)
+			 to cycle;
+		\draw [style=K, in=180, out=0, looseness=0.75] (0) to (11.center);
+		\draw [style=K] (12)
+			 to [bend left=45] (13.center)
+			 to (14.center);
+		\draw [style=K, bend right=45] (12) to (10.center);
+		\draw [style=K, in=-180, out=0, looseness=0.50] (5.center) to (12);
+		\draw [style={K(CF)}] (18.center)
+			 to (16.center)
+			 to (17.center)
+			 to cycle;
+		\draw [style=K] (19.center) to (20.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

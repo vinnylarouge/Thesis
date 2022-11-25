@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dotw] (0) at (-1, 0) {$\gamma$};
+		\node [style=none] (1) at (-2, 0) {};
+		\node [style=none] (3) at (-5, 0) {$\forall \gamma_{\in G} \exists \gamma^{-}_{\in G}$};
+		\node [style=none] (4) at (-2.8, 1) {};
+		\node [style=none] (5) at (-2.8, -1) {};
+		\node [style=none] (6) at (-3.05, 0) {};
+		\node [style=dotw] (7) at (1, 0) {$\gamma^{-}$};
+		\node [style=none] (8) at (2.25, 0) {};
+		\node [style=none] (9) at (3.5, 0) {$=$};
+		\node [style=none] (10) at (4.75, 0) {};
+		\node [style=none] (11) at (7, 0) {};
+		\node [style=none] (12) at (0, 2) {A topological group $G$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (1.center) to (0);
+		\draw [style=K] (4.center)
+			 to [in=0, out=-180, looseness=0.25] (6.center)
+			 to [in=-180, out=0, looseness=0.25] (5.center);
+		\draw [style=K] (0) to (7);
+		\draw [style=K] (7) to (8.center);
+		\draw [style=K] (10.center) to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

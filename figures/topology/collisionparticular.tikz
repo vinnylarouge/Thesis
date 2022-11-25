@@ -1,0 +1,190 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 4) {A particular collision trajectory};
+		\node [style=none] (1) at (-11, 1) {};
+		\node [style=none] (2) at (-10.5, 1) {};
+		\node [style=none] (3) at (-11.5, 0) {};
+		\node [style=none] (4) at (-10, 0) {};
+		\node [style=none] (5) at (-11, -1) {};
+		\node [style=none] (6) at (-10.5, -1) {};
+		\node [style=none] (9) at (-11.25, -0.5) {};
+		\node [style=none] (11) at (-10.25, 0.5) {};
+		\node [style=none] (12) at (-10.25, -0.5) {};
+		\node [style=none] (15) at (-10.75, 1) {};
+		\node [style=none] (21) at (5.7, -1) {};
+		\node [style=none] (22) at (5.7, 1) {};
+		\node [style=dotb] (23) at (6.3, -0.225) {};
+		\node [style=dotb] (24) at (6.3, 0.175) {};
+		\node [style=none] (25) at (-8, -1) {};
+		\node [style=none] (26) at (-8, 1) {};
+		\node [style=dotb] (27) at (-7.45, -0.45) {};
+		\node [style=dotb] (28) at (-7.45, 0.45) {};
+		\node [style=none] (29) at (2.7, 1) {};
+		\node [style=none] (30) at (3.2, 1) {};
+		\node [style=none] (31) at (2.2, 0) {};
+		\node [style=none] (32) at (3.7, 0) {};
+		\node [style=none] (33) at (2.7, -1) {};
+		\node [style=none] (34) at (3.2, -1) {};
+		\node [style=none] (35) at (2.45, -0.5) {};
+		\node [style=none] (36) at (3.45, 0.5) {};
+		\node [style=none] (37) at (3.45, -0.5) {};
+		\node [style=none] (38) at (4.45, -1.25) {};
+		\node [style=none] (39) at (4.45, 1.25) {};
+		\node [style=none] (40) at (2.95, 1) {};
+		\node [style=smalldotb] (42) at (-10.8, 1.75) {};
+		\node [style=none] (43) at (-10.8, 3.25) {};
+		\node [style=smalldotb] (44) at (-10.8, 2.75) {};
+		\node [style=none] (45) at (-11.05, 2.5) {};
+		\node [style=none] (46) at (-10.55, 3) {};
+		\node [style=none] (47) at (-11.3, 2) {};
+		\node [style=smalldotb] (48) at (2.95, 1.75) {};
+		\node [style=none] (49) at (2.95, 3.25) {};
+		\node [style=smalldotb] (50) at (2.95, 2.75) {};
+		\node [style=none] (51) at (2.45, 2) {};
+		\node [style=none] (52) at (-3.8, 0.25) {};
+		\node [style=none] (53) at (-3.3, 0.25) {};
+		\node [style=none] (54) at (-4.3, -0.75) {};
+		\node [style=none] (55) at (-2.8, -0.75) {};
+		\node [style=none] (56) at (-3.8, -1.75) {};
+		\node [style=none] (57) at (-3.3, -1.75) {};
+		\node [style=none] (58) at (-4.05, -1.25) {};
+		\node [style=none] (59) at (-3.05, -0.25) {};
+		\node [style=none] (60) at (-3.05, -1.25) {};
+		\node [style=none] (61) at (-2.05, -1.25) {};
+		\node [style=none] (62) at (-2.05, -0.25) {};
+		\node [style=none] (63) at (-3.55, 0.25) {};
+		\node [style=smalldotb] (64) at (-3.6, 1) {};
+		\node [style=none] (65) at (-3.6, 2.5) {};
+		\node [style=smalldotb] (66) at (-3.6, 2) {};
+		\node [style=none] (67) at (-3.85, 1.75) {};
+		\node [style=none] (68) at (-3.35, 2.25) {};
+		\node [style=none] (69) at (-4.1, 1.25) {};
+		\node [style=none] (70) at (9.95, 0.25) {};
+		\node [style=none] (71) at (10.45, 0.25) {};
+		\node [style=none] (72) at (9.45, -0.75) {};
+		\node [style=none] (73) at (10.95, -0.75) {};
+		\node [style=none] (74) at (9.95, -1.75) {};
+		\node [style=none] (75) at (10.45, -1.75) {};
+		\node [style=none] (76) at (9.7, -1.25) {};
+		\node [style=none] (77) at (10.7, -0.25) {};
+		\node [style=none] (78) at (10.7, -1.25) {};
+		\node [style=none] (79) at (11.7, -1.25) {};
+		\node [style=none] (80) at (11.7, -0.25) {};
+		\node [style=none] (81) at (10.2, 0.25) {};
+		\node [style=smalldotb] (82) at (10.2, 1) {};
+		\node [style=none] (83) at (10.2, 2.5) {};
+		\node [style=smalldotb] (84) at (10.2, 2) {};
+		\node [style=none] (85) at (9.7, 1.25) {};
+		\node [style=smalldotb] (86) at (-9.25, 1.25) {};
+		\node [style=smalldotb] (87) at (-9.25, -1.25) {};
+		\node [style=none] (88) at (-8, 0.5) {};
+		\node [style=none] (89) at (-8, -0.5) {};
+		\node [style=none] (90) at (-8, 2) {};
+		\node [style=none] (91) at (-8, -2) {};
+		\node [style=none] (92) at (-6.5, 2) {};
+		\node [style=none] (93) at (-6.5, -2) {};
+		\node [style=none] (94) at (-5.5, 0) {$=$};
+		\node [style=smalldotb] (95) at (-10.25, 0.5) {};
+		\node [style=smalldotb] (96) at (-10.25, -0.5) {};
+		\node [style=smalldotb] (97) at (-3, -0.25) {};
+		\node [style=smalldotb] (98) at (-3, -1.25) {};
+		\node [style=smalldotb] (100) at (4.45, 1.25) {};
+		\node [style=smalldotb] (101) at (4.45, -1.25) {};
+		\node [style=none] (102) at (5.7, 2) {};
+		\node [style=none] (103) at (5.7, -0.5) {};
+		\node [style=none] (104) at (5.7, 0.5) {};
+		\node [style=none] (105) at (5.7, -2) {};
+		\node [style=none] (106) at (7.25, 2) {};
+		\node [style=none] (107) at (7.25, -2) {};
+		\node [style=none] (108) at (8.25, 0) {$=$};
+		\node [style=smalldotb] (109) at (3.5, 0.5) {};
+		\node [style=smalldotb] (110) at (3.5, -0.5) {};
+		\node [style=smalldotb] (111) at (10.75, -0.25) {};
+		\node [style=smalldotb] (112) at (10.75, -1.25) {};
+		\node [style=none] (113) at (-6.5, -3) {At $t=0$,  the shapes do not touch};
+		\node [style=none] (114) at (7.2, -3) {At $t=1$,  the shapes touch};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style={K(Fy)}] (5.center)
+			 to (3.center)
+			 to (1.center)
+			 to (2.center)
+			 to (4.center)
+			 to (6.center)
+			 to cycle;
+		\draw [style=K] (22.center)
+			 to (21.center)
+			 to [bend right=90, looseness=2.00] cycle;
+		\draw [style=K] (26.center)
+			 to (25.center)
+			 to [bend right=90, looseness=2.00] cycle;
+		\draw [style={K(Fy)}] (30.center)
+			 to (32.center)
+			 to (34.center)
+			 to (33.center)
+			 to (31.center)
+			 to (29.center)
+			 to cycle;
+		\draw [style=K, in=180, out=0] (36.center) to (39.center);
+		\draw [style=K, in=180, out=0] (37.center) to (38.center);
+		\draw [style=ggF] (43.center)
+			 to [bend right=90, looseness=1.75] (42.center)
+			 to [bend right=90, looseness=1.75] cycle;
+		\draw (45.center) to (46.center);
+		\draw [style=K, in=60, out=-90, looseness=1.25] (44) to (47.center);
+		\draw [style=ggF] (48.center)
+			 to [bend right=90, looseness=1.75] (49.center)
+			 to [bend right=90, looseness=1.75] cycle;
+		\draw [style=K, in=60, out=-90, looseness=1.25] (50) to (51.center);
+		\draw [style=KD] (42) to (15.center);
+		\draw [style=KD] (48) to (40.center);
+		\draw [style={K(Fy)}] (57.center)
+			 to (56.center)
+			 to (54.center)
+			 to (52.center)
+			 to (53.center)
+			 to (55.center)
+			 to cycle;
+		\draw [style=K] (59.center) to (62.center);
+		\draw [style=K] (60.center) to (61.center);
+		\draw [style=ggF] (65.center)
+			 to [bend right=90, looseness=1.75] (64.center)
+			 to [bend right=90, looseness=1.75] cycle;
+		\draw (67.center) to (68.center);
+		\draw [style=K, in=60, out=-90, looseness=1.25] (66) to (69.center);
+		\draw [style=KD] (64) to (63.center);
+		\draw [style={K(Fy)}] (71.center)
+			 to (73.center)
+			 to (75.center)
+			 to (74.center)
+			 to (72.center)
+			 to (70.center)
+			 to cycle;
+		\draw [style=K] (77.center) to (80.center);
+		\draw [style=K] (78.center) to (79.center);
+		\draw [style=ggF] (83.center)
+			 to [bend right=90, looseness=1.75] (82.center)
+			 to [bend right=90, looseness=1.75] cycle;
+		\draw [style=KD] (82) to (81.center);
+		\draw [style=K, in=-180, out=0] (11.center) to (86);
+		\draw [style=K, in=-180, out=-75] (86) to (88.center);
+		\draw [style=K, in=-180, out=0, looseness=1.25] (12.center) to (87);
+		\draw [style=K, in=-180, out=75] (87) to (89.center);
+		\draw [style=K] (86)
+			 to [in=180, out=75] (90.center)
+			 to (92.center);
+		\draw [style=K] (87)
+			 to [in=180, out=-75] (91.center)
+			 to (93.center);
+		\draw [style=K] (100)
+			 to [in=180, out=75] (102.center)
+			 to (106.center);
+		\draw [style=K, in=-180, out=75] (101) to (103.center);
+		\draw [style=K, in=-180, out=-75] (100) to (104.center);
+		\draw [style=K] (101)
+			 to [in=180, out=-75] (105.center)
+			 to (107.center);
+		\draw [style=K, in=60, out=-90, looseness=1.25] (84) to (85.center);
+		\draw [style=K] (24) to (23);
+	\end{pgfonlayer}
+\end{tikzpicture}

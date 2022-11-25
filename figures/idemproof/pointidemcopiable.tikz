@@ -1,6 +1,6 @@
 \begin{tikzpicture}[{every node/.style}={scale=1.4}]
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=dotb] (0) at (-0.75, 0) {};
+		\node [style=smalldotb] (0) at (-0.75, 0) {};
 		\node [style=none] (1) at (-0.75, 0.5) {};
 		\node [style=none] (2) at (-1.25, 0) {};
 		\node [style=none] (3) at (-0.75, -0.5) {};

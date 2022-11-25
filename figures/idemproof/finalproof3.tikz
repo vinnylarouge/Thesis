@@ -1,0 +1,55 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dotC] (0) at (-6, -0.25) {};
+		\node [style=none] (1) at (-5, -0.25) {};
+		\node [style=none] (2) at (1, 1.25) {(Prop.  \ref{prop:splitmeanssticky})};
+		\node [style=none] (3) at (-4, -0.25) {$=$};
+		\node [style=none] (4) at (-2.1, -0.25) {};
+		\node [style=none] (5) at (-1.85, 0) {};
+		\node [style=none] (6) at (-1.85, -0.5) {};
+		\node [style=none] (7) at (-1.85, -0.25) {};
+		\node [style=none] (8) at (-1, -0.25) {};
+		\node [style=smalldotb] (9) at (-3, -0.25) {};
+		\node [style=smalldotb] (10) at (-7, -0.25) {};
+		\node [style=none] (11) at (-0.75, -0.25) {};
+		\node [style=none] (12) at (-1, 0) {};
+		\node [style=none] (13) at (-1, -0.5) {};
+		\node [style=none] (14) at (-1, -0.25) {};
+		\node [style=none] (15) at (0, -0.25) {};
+		\node [style=none] (16) at (-4, 1.25) {(split)};
+		\node [style=none] (17) at (1, -0.25) {$=$};
+		\node [style=dotB] (18) at (2, -0.25) {};
+		\node [style=none] (19) at (3, -0.25) {};
+		\node [style=none] (20) at (3.25, -0.25) {};
+		\node [style=none] (21) at (3, 0) {};
+		\node [style=none] (22) at (3, -0.5) {};
+		\node [style=none] (23) at (3, -0.25) {};
+		\node [style=none] (24) at (4, -0.25) {};
+		\node [style=none] (25) at (5, -0.25) {$=$};
+		\node [style=dotC] (26) at (6, -0.25) {};
+		\node [style=none] (27) at (7.5, -0.25) {};
+		\node [style=none] (28) at (5, 1.25) {(split)};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (0) to (1.center);
+		\draw [style={K(CF)}] (5.center)
+			 to (6.center)
+			 to [in=-90, out=180] (4.center)
+			 to [in=180, out=90] cycle;
+		\draw [style=K] (9) to (4.center);
+		\draw [style=K] (10) to (0);
+		\draw [style=KB] (7.center) to (8.center);
+		\draw [style={K(CF)}] (13.center)
+			 to [in=-90, out=0] (11.center)
+			 to [in=0, out=90] (12.center)
+			 to cycle;
+		\draw [style=K] (11.center) to (15.center);
+		\draw [style={K(CF)}] (20.center)
+			 to [in=0, out=90] (21.center)
+			 to (22.center)
+			 to [in=-90, out=0] cycle;
+		\draw [style=K] (20.center) to (24.center);
+		\draw [style=KB] (18) to (23.center);
+		\draw [style=K] (26) to (27.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

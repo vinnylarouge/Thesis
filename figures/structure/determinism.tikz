@@ -4,7 +4,7 @@
 		\node [style=none] (5) at (-1.25, 0.75) {};
 		\node [style=none] (6) at (-1.25, -0.75) {};
 		\node [style=none] (7) at (-2.75, 0) {};
-		\node [style=dotb] (9) at (0, 0) {};
+		\node [style=smalldotb] (9) at (0, 0) {};
 		\node [style=none] (10) at (1, 1) {};
 		\node [style=none] (11) at (1, -1) {};
 		\node [style=none] (12) at (2, 0) {$=$};
@@ -26,12 +26,12 @@
 		\node [style=none] (30) at (-1.75, -6) {$f$};
 		\node [style=none] (32) at (-2.25, -6) {};
 		\node [style=none] (33) at (-2.75, -6) {};
-		\node [style=dotb] (34) at (0, -6) {};
+		\node [style=smalldotb] (34) at (0, -6) {};
 		\node [style=none] (35) at (1, -5) {};
 		\node [style=none] (36) at (1, -7) {};
 		\node [style=none] (37) at (2, -6) {$=$};
 		\node [style=none] (38) at (2, -8.25) {function};
-		\node [style=dotb] (39) at (4, -6) {};
+		\node [style=smalldotb] (39) at (4, -6) {};
 		\node [style=none] (40) at (5, -5) {};
 		\node [style=none] (41) at (5, -7) {};
 		\node [style=none] (42) at (3, -6) {};
@@ -49,12 +49,12 @@
 		\node [style=none] (56) at (5, -7) {};
 		\node [style=none] (57) at (6.75, -5) {};
 		\node [style=none] (58) at (6.75, -7) {};
-		\node [style=circb] (59) at (-1.25, 0) {};
-		\node [style=circb] (60) at (-1.25, -6) {};
-		\node [style=circb] (61) at (4.5, 1) {};
-		\node [style=circb] (62) at (4.5, -1) {};
-		\node [style=circb] (63) at (6, -7) {};
-		\node [style=circb] (64) at (6, -5) {};
+		\node [style=smalldotb] (59) at (-1.25, 0) {};
+		\node [style=smalldotb] (60) at (-1.25, -6) {};
+		\node [style=smalldotb] (61) at (4.5, 1) {};
+		\node [style=smalldotb] (62) at (4.5, -1) {};
+		\node [style=smalldotb] (63) at (6, -7) {};
+		\node [style=smalldotb] (64) at (6, -5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K] (5.center)

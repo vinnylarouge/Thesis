@@ -1,0 +1,73 @@
+\section{Continuous Relations: A model setting for text circuits}
+
+\begin{fullwidth}
+
+In this section, we introduce \emph{continuous relations}, which are a na\"{i}ve (and to the best of my knowledge, unstudied) extension of the category \textbf{Top} of topological spaces and continuous functions towards continuous relations. We choose this category (as opposed to plain \textbf{Rel}, the category of sets and relations) because it satisfies several requirements, which we list below along with the justifications by which we obtained them. The justifications involve basic reflections upon language use, and the consequent mathematical constraints those affordances impose on any interpretation of text circuits in a symmetric monoidal category. A priori it could well be that there is no non-trivial process theory that satisfies these constraints, so the onus is on us to show that there exists such a process theory. We demonstrate at the end of this chapter that the category \textbf{TopRel} meets these requirements.
+
+\subsection{Justification 1: bookwork demonstration}
+
+First, and simplest, is so that we have an excuse to build up a symmetric monoidal category from scratch, just to see what formal work is involved in doing so.\\
+
+\subsection{Justification 2: anything can be a noun-wire}
+
+Second, by linguistic introspection, we realise we must accommodate \emph{Entification} and \emph{Processising} -- the process of turning non-nouns into noun-entities and back again. If we think about English, we find that just about any word can be turned into a noun and back again (e.g. \texttt{run} by gerund to \texttt{running}, \texttt{quick} by a suffix to \texttt{quickness}, and even entire sentences \texttt{Bob drinks Duvel} can become a noun \texttt{the fact that Bob drinks Duvel}).\\
+
+This consideration carries some linguistic interest as well. In the usual treatment of anaphora resolution, pronouns refer to nouns, for instance: \texttt{Bob drinks a beer. \underline{It} is cold.}, where \texttt{it} refers to the beer. But there are situations where pronouns can point to textual data that are not nouns. For instance: \texttt{Jono was paid minimum wage. He didn't mind \underline{it}.}, where \texttt{it} would like to refer to something like \texttt{the fact that Jono was paid minimum wage}. While there are extensions of discourse reference theory to accommodate event structures [], the issue at hand is that pronouns in the appropriate context seem to be able to refer to \emph{any meaningful part of text}. For example, \texttt{The tiles were grey. \underline{It} was a particularly depressing shade.}, where \texttt{it} seems to refer just to the entified adjective \texttt{the greyness (of the tiles)}. Or, \texttt{Alice's cake was tastier than Bob's, but \underline{it} wasn't enough so for the judges to decide unanimously.}, where \emph{it} seems to refer the entified tastiness differential of \texttt{tastier}: \texttt{the difference in tastiness between Alice and Bob's cakes}.\\
+
+Since we have so far built up a theory around noun-wires as first-class citizens, these observations present nontrivial mathematical constraints for interpretations of text circuits. Now we try to interpret these constraints in mathematical terms, staying within the graphical confines of our putative process theory as much as possible. Let us denote the noun-wire type by $\Xi$. First we observe that any finite collection of noun wires $\bigotimes^n \Xi$ has to be \emph{encodable} in a single noun wire $\Xi$, because we can always interpose with \texttt{and}. We take this to mean that there will exist morphisms such that:
+
+\[placeholder\]
+
+Second, for any word-gate $w$ of grammatical type $\mathfrak{g}$, we ought to have noun-states and an evaluator process that witness entification and processising:
+
+\[placeholder\]
+
+Second-and-a-half, any morphism (or "meaningful part of text") $T \in \[\bigotimes^n \Xi,\bigotimes^m \Xi\]$ for any $n,m \in N$ -- has to be encodable as a state of $\Xi$. This is expressed as the following graphical condition:
+
+\[placeholder\]
+
+Condition two-and-a-half follows if the former conditions are met, provided that all text circuits are made up of a fixed stock of grammatical-gate-types:
+
+\[placeholder\]
+
+So in summary, we are asking for the following:
+
+\begin{requirement}
+
+\end{requirement}
+
+\subsection{Justification 3: we need both discrete symbolic and spatial conceptual behaviours}\label{just:rel}
+
+Third, we have a cognitive consideration: how do we move between concepts -- however they are represented -- and symbolic representation and manipulation? Here we sidestep the debate around what concepts are, aligning ourselves close to G\"{a}rdenfors: we assume that there are \emph{conceptual spaces} that organise concepts of similar domain, and that regions of these spaces correspond to concepts. G\"{a}rdenfors' stance is backed by empirical data [], but even if he is wrong, he is at least interestingly so for our purposes.\\
+
+The classic example of colour space is also one of the best studied and implemented: there are many different embeddings of the space of visible colours in Euclidean space []. In this setting we can mathematically model the action of categorising a particular point in colour space as \texttt{blue} by checking to see whether that point falls within the region in colourspace that the symbol \texttt{blue} is associated with. So we find that this view is conducive to modelling concepts as spatial entities -- a very permissive and expressive framework, which will allow us to calculate interesting things -- whilst also having the ability to handle them using symbolic labels.\\
+
+But once we have a stock of symbols referring to entities in space, we can start talking about pairs of entities (e.g. \texttt{red or blue}), subsets of sets of entities (e.g. \texttt{autumnal colours}), arbitrary relations between the set of entities in one space and entities of another (e.g. how the colour of a banana relates to its probable textures and tastes). Given enough time and patience, we can linguistically construct -- at least -- any finite relation between finite sets. So we are asking for the following:
+
+\begin{requirement}
+
+\end{requirement}
+
+\subsection{Justification 4: topology is a good setting to model concepts spatially}
+
+Where we differ from G\"{a}rdenfors' is that we only ask for topological spaces, rather than the stronger notion of metric spaces. There are several reasons for this choice. First, topology is a basic mathematical framework for space. Second, we can view topology as a framework for conceptual spaces, where we consider the open sets of a topology to be the concepts. On this latter point, \'{E}scardo provides a the following correspondence [], which we extend with "Point" and "Subset", and an additional column for interpretation as conceptual space:
+
+\begin{table}[]
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Topology} & \textbf{Type Theory} & \textbf{Conceptual Spaces}  \\ \hline
+Space & Type & Conceptual space \\  \hline
+Point & Element of set & Copyable instance \\  \hline
+Subset & Subset & Instance \\  \hline
+Open set & Semi-decidable set & Concept \\ \hline
+Closed set & Set with semi-decidable complement & - \\ \hline
+Clopen set & Decidable set & A concept the negation of which is also a concept \\ \hline
+Discrete topology & Type with decidable equality & A conceptual space where any collection of instances forms a concept \\ \hline
+Haussdorf topology & Type with semi-decidable inequality & A conceptual space where any pair of distinct instances can be described as belonging to two disjoint concepts \\ \hline
+Compact set & Exhaustively searchable set, in a finite number of steps & A conceptual space $\mathfrak{C}$ such that for any joint concept $R$ on $\mathfrak{C}$ and another conceptual space $\mathfrak{D}$, $\forall c_{ \in \mathfrak{C}}R(c,-)$ is a concept in $\mathfrak{D}$ \\ \hline
+\end{tabular}
+\end{table}
+
+In \textbf{TopRel}, open sets are precisely tests. Modelling concepts as open sets or tests aligns them with semi-decidability. Given any state-instance, we can test whether it overlaps with a concept graphically: success returns a unit scalar, failure returns the zero scalar.
+
+\end{fullwidth}

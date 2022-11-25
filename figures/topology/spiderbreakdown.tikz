@@ -1,0 +1,51 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (23) at (3.5, 1.5) {$\bigcup\limits_{T_j \in \mathcal{J}_i \subseteq \tau : \cup\mathcal{J}_i = T_i }$};
+		\node [style=none] (31) at (-1.75, 0.75) {};
+		\node [style=none] (32) at (-1.75, -0.75) {};
+		\node [style=none] (33) at (-3, 0) {};
+		\node [style=dotC] (34) at (-1.75, 0) {};
+		\node [style=none] (35) at (-2.25, 0) {$S_i$};
+		\node [style=none] (36) at (-4.75, 0.75) {};
+		\node [style=none] (37) at (-4.75, -0.75) {};
+		\node [style=none] (38) at (-3.5, 0) {};
+		\node [style=dotC] (39) at (-4.75, 0) {};
+		\node [style=none] (40) at (-4.25, 0) {$T_i$};
+		\node [style=none] (41) at (-5.5, 0) {};
+		\node [style=none] (42) at (-1, 0) {};
+		\node [style=none] (43) at (0, 0) {$=$};
+		\node [style=none] (44) at (3.5, -1.25) {$\bigcup\limits_{x \in S_i}$};
+		\node [style=none] (45) at (1.25, 0) {};
+		\node [style=none] (46) at (2.25, 0.75) {};
+		\node [style=none] (47) at (2.25, -0.75) {};
+		\node [style=none] (48) at (2.75, 0) {$T_j$};
+		\node [style=none] (49) at (2.25, 0) {};
+		\node [style=none] (50) at (4.75, 0.75) {};
+		\node [style=none] (51) at (3.5, 0) {};
+		\node [style=none] (52) at (4.75, -0.75) {};
+		\node [style=none] (53) at (4.25, 0) {$x$};
+		\node [style=smalldotb] (54) at (4.75, 0) {};
+		\node [style=none] (55) at (5.75, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (32.center)
+			 to (31.center)
+			 to (33.center)
+			 to cycle;
+		\draw [style=K] (36.center)
+			 to (38.center)
+			 to (37.center)
+			 to cycle;
+		\draw [style=K] (41.center) to (39);
+		\draw [style=K] (34) to (42.center);
+		\draw [style=K] (47.center)
+			 to (46.center)
+			 to [bend left=90, looseness=2.25] cycle;
+		\draw [style=K] (45.center) to (49.center);
+		\draw [style=K] (50.center)
+			 to (52.center)
+			 to (51.center)
+			 to cycle;
+		\draw [style=K] (54) to (55.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

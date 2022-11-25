@@ -1,0 +1,189 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-14, 2) {};
+		\node [style=none] (1) at (-14, -2) {};
+		\node [style=none] (2) at (-10, -2) {};
+		\node [style=none] (3) at (-10, 2) {};
+		\node [style=none] (4) at (6, 2) {};
+		\node [style=none] (5) at (6, -2) {};
+		\node [style=none] (6) at (10, -2) {};
+		\node [style=none] (7) at (10, 2) {};
+		\node [style=none] (8) at (-13, 1) {};
+		\node [style=none] (9) at (-13, -1) {};
+		\node [style=none] (10) at (-11, -1) {};
+		\node [style=none] (11) at (-11, 1) {};
+		\node [style=none] (12) at (-12.75, 0.75) {};
+		\node [style=none] (13) at (-11.25, 0.75) {};
+		\node [style=none] (14) at (-12.75, -0.75) {};
+		\node [style=none] (15) at (-11.25, -0.75) {};
+		\node [style=none] (16) at (-12.5, -0.5) {};
+		\node [style=none] (17) at (-12, 0.5) {};
+		\node [style=none] (18) at (-11.5, -0.5) {};
+		\node [style=none] (19) at (-12, 0) {};
+		\node [style=none] (20) at (7.75, 0.25) {};
+		\node [style=none] (21) at (7.75, -1.75) {};
+		\node [style=none] (22) at (9.75, -1.75) {};
+		\node [style=none] (23) at (9.75, 0.25) {};
+		\node [style=none] (24) at (8, 0) {};
+		\node [style=none] (25) at (9.5, 0) {};
+		\node [style=none] (26) at (8, -1.5) {};
+		\node [style=none] (27) at (9.5, -1.5) {};
+		\node [style=none] (28) at (6.5, 1.5) {};
+		\node [style=none] (29) at (7.5, 1) {};
+		\node [style=none] (30) at (6.5, 0.5) {};
+		\node [style=none] (31) at (7, 1) {};
+		\node [style=none] (32) at (-12, -3) {Enclosed};
+		\node [style=none] (34) at (-9, 2) {};
+		\node [style=none] (35) at (-9, -2) {};
+		\node [style=none] (36) at (-5, -2) {};
+		\node [style=none] (37) at (-5, 2) {};
+		\node [style=none] (38) at (-8, 1) {};
+		\node [style=none] (39) at (-8, -1) {};
+		\node [style=none] (40) at (-6, -1) {};
+		\node [style=none] (41) at (-6, 1) {};
+		\node [style=none] (42) at (-7.75, 0.75) {};
+		\node [style=none] (43) at (-5.75, 1.25) {};
+		\node [style=none] (44) at (-7.75, -0.75) {};
+		\node [style=none] (45) at (-6.25, -0.75) {};
+		\node [style=none] (46) at (-7.5, -0.5) {};
+		\node [style=none] (47) at (-7, 0.5) {};
+		\node [style=none] (48) at (-6.5, -0.5) {};
+		\node [style=none] (49) at (-7, 0) {};
+		\node [style=none] (50) at (-7, 2.75) {\textcolor{cyan}{Open}};
+		\node [style=none] (51) at (-4, 2) {};
+		\node [style=none] (52) at (-4, -2) {};
+		\node [style=none] (53) at (0, -2) {};
+		\node [style=none] (54) at (0, 2) {};
+		\node [style=none] (55) at (-3, 1) {};
+		\node [style=none] (56) at (-3, -1) {};
+		\node [style=none] (57) at (-1, -1) {};
+		\node [style=none] (58) at (-1, 1) {};
+		\node [style=none] (59) at (-2.75, 0.75) {};
+		\node [style=none] (60) at (-0.75, 1.25) {};
+		\node [style=none] (61) at (-2.75, -0.75) {};
+		\node [style=none] (62) at (-1.25, -0.75) {};
+		\node [style=none] (63) at (-1.5, 0.75) {};
+		\node [style=none] (64) at (-1, 1) {};
+		\node [style=none] (65) at (-1.25, 0.5) {};
+		\node [style=none] (66) at (-1.25, 0.75) {};
+		\node [style=none] (67) at (-2, 2.75) {\textcolor{magenta}{Squeeze}};
+		\node [style=none] (68) at (1, 2) {};
+		\node [style=none] (69) at (1, -2) {};
+		\node [style=none] (70) at (5, -2) {};
+		\node [style=none] (71) at (5, 2) {};
+		\node [style=none] (72) at (2.75, 0.25) {};
+		\node [style=none] (73) at (2.75, -1.75) {};
+		\node [style=none] (74) at (4.75, -1.75) {};
+		\node [style=none] (75) at (4.75, 0.25) {};
+		\node [style=none] (76) at (3, 0) {};
+		\node [style=none] (77) at (5, 0.5) {};
+		\node [style=none] (78) at (3, -1.5) {};
+		\node [style=none] (79) at (4.5, -1.5) {};
+		\node [style=none] (80) at (1.5, 0.75) {};
+		\node [style=none] (81) at (2, 1.75) {};
+		\node [style=none] (82) at (2.5, 0.75) {};
+		\node [style=none] (83) at (2, 1.25) {};
+		\node [style=none] (84) at (3, 3.25) {\textcolor{magenta}{Leave then stretch}};
+		\node [style=none] (85) at (3, 2.5) {\textcolor{cyan}{Move}};
+		\node [style=none] (86) at (8, 3.25) {\textcolor{cyan}{Shut}};
+		\node [style=none] (87) at (8, 2.5) {\textcolor{magenta}{Rotate}};
+		\node [style=none] (88) at (8, -3) {Not enclosed};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (0.center) to (3.center);
+		\draw (3.center) to (2.center);
+		\draw (2.center) to (1.center);
+		\draw (1.center) to (0.center);
+		\draw (4.center) to (7.center);
+		\draw (7.center) to (6.center);
+		\draw (6.center) to (5.center);
+		\draw (5.center) to (4.center);
+		\draw [style=Fc] (11.center)
+			 to (10.center)
+			 to (9.center)
+			 to (8.center)
+			 to cycle;
+		\draw [style=Fw] (12.center)
+			 to (13.center)
+			 to (15.center)
+			 to (14.center)
+			 to cycle;
+		\draw [style=Fm] (17.center)
+			 to [in=120, out=-165, looseness=0.50] (16.center)
+			 to [in=-180, out=-45] (19.center)
+			 to [in=-120, out=0, looseness=0.75] (18.center)
+			 to [in=15, out=60, looseness=0.50] cycle;
+		\draw [style=Fc] (23.center)
+			 to (22.center)
+			 to (21.center)
+			 to (20.center)
+			 to cycle;
+		\draw [style=Fw] (24.center)
+			 to (25.center)
+			 to (27.center)
+			 to (26.center)
+			 to cycle;
+		\draw [style=Fm] (29.center)
+			 to [in=30, out=105, looseness=0.50] (28.center)
+			 to [in=90, out=-135] (31.center)
+			 to [in=150, out=-90, looseness=0.75] (30.center)
+			 to [in=-75, out=-30, looseness=0.50] cycle;
+		\draw (34.center) to (37.center);
+		\draw (37.center) to (36.center);
+		\draw (36.center) to (35.center);
+		\draw (35.center) to (34.center);
+		\draw [style=Fc] (38.center)
+			 to (41.center)
+			 to (40.center)
+			 to (39.center)
+			 to cycle;
+		\draw [style=Fw] (43.center)
+			 to [in=90, out=-120] (45.center)
+			 to (44.center)
+			 to (42.center)
+			 to [in=-150, out=0] cycle;
+		\draw [style=Fm] (49.center)
+			 to [in=-120, out=0, looseness=0.75] (48.center)
+			 to [in=15, out=60, looseness=0.50] (47.center)
+			 to [in=120, out=-165, looseness=0.50] (46.center)
+			 to [in=-180, out=-45] cycle;
+		\draw (51.center) to (54.center);
+		\draw (54.center) to (53.center);
+		\draw (53.center) to (52.center);
+		\draw (52.center) to (51.center);
+		\draw [style=Fc] (55.center)
+			 to (58.center)
+			 to (57.center)
+			 to (56.center)
+			 to cycle;
+		\draw [style=Fw] (60.center)
+			 to [in=90, out=-120] (62.center)
+			 to (61.center)
+			 to (59.center)
+			 to [in=-150, out=0] cycle;
+		\draw [style=Fm] (66.center)
+			 to [in=-120, out=0, looseness=0.75] (65.center)
+			 to [in=15, out=60, looseness=0.50] (64.center)
+			 to [in=120, out=-165, looseness=0.50] (63.center)
+			 to [in=-180, out=-45] cycle;
+		\draw (68.center) to (71.center);
+		\draw (71.center) to (70.center);
+		\draw (70.center) to (69.center);
+		\draw (69.center) to (68.center);
+		\draw [style=Fc] (72.center)
+			 to (75.center)
+			 to (74.center)
+			 to (73.center)
+			 to cycle;
+		\draw [style=Fw] (77.center)
+			 to [in=90, out=-120] (79.center)
+			 to (78.center)
+			 to (76.center)
+			 to [in=-150, out=0] cycle;
+		\draw [style=Fm] (83.center)
+			 to [in=-120, out=0, looseness=0.75] (82.center)
+			 to [in=15, out=60, looseness=0.50] (81.center)
+			 to [in=120, out=-165, looseness=0.50] (80.center)
+			 to [in=-180, out=-45] cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}

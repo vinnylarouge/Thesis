@@ -129,7 +129,7 @@ Replace $\square$ with either $\cup$ or $\cap$. For any non-$\varnothing$ open $
 \end{proposition}
 
 \begin{corollary}\label{cor:homspace}
-Continuous relations $X^\tau \rightarrow Y^\sigma$ are closed under arbitrary union and finite intersection. Hence, continuous relations $X^\tau \rightarrow Y^\sigma$ form a topological space where each relation is an open set on the base space $X \times Y$, where the full relation $X \rightarrow Y$ is "everything", and the empty relation is "nothing".
+Continuous relations $X^\tau \rightarrow Y^\sigma$ are closed under arbitrary union and finite intersection. Hence, continuous relations $X^\tau \rightarrow Y^\sigma$ form a topological space where each continuous relation is an open set on the base space $X \times Y$, where the full relation $X \rightarrow Y$ is "everything", and the empty relation is "nothing".
 \end{corollary}
 
 \newthought{A topological basis for spaces of continuous relations}
@@ -186,7 +186,7 @@ Let $\mathcal{N}(x)$ denote some open neighbourhood of $x$ with respect to the t
 \end{marginfigure}
 
 \begin{proposition}\label{prop:hombasis}
-Continuous partial functions form a topological basis for the space $(X \times Y)^{(\tau \multimap \sigma)}$ of continuous relations $X^\tau \rightarrow Y^\sigma$.
+Continuous partial functions form a topological basis for the space $(X \times Y)^{(\tau \multimap \sigma)}$, where the opens are continuous relations $X^\tau \rightarrow Y^\sigma$.
 \begin{proof}
 We will show that every continuous relation $R: X^\tau \rightarrow Y^\sigma$ arises as a union of partial functions. Denote the set of continuous partial functions $\mathfrak{f}$. We claim that:
 \[ R = \bigcup\limits_{F \in \mathfrak{f}} (R \cap F) \]

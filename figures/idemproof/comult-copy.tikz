@@ -19,6 +19,7 @@
 		\node [style=dotC] (16) at (2.5, -0.5) {};
 		\node [style=none] (17) at (3, 0.5) {};
 		\node [style=none] (18) at (3, -0.5) {};
+		\node [style=none] (19) at (0, 2) {Comult/copy};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K] (2.center) to (14);

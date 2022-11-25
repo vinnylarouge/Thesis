@@ -1,9 +1,21 @@
+\begin{fullwidth}
+
 \section{Populating space with shapes using sticky spiders}
+
+We have defined a stage to perform calculations in \textbf{TopRel}, and now our aim is to introduce some actors. We seek to make formal the kinds of informal schemata we might doodle on paper to animate various processes occurring in space. One good reason for doing this is to establish formal foundations for the semantics of metaphor, some of the most commonly used of which involve spatial processes in a way that is fundamentally topological []. For example, in the \emph{conduit metaphor} [], \texttt{words} are considered \emph{containers} for \texttt{ideas}, and \texttt{communication} is considered a \emph{conduit} along which those containers are sent.
+
+\[\scalebox{0.75}{\tikzfig{topology/conduitmetaphor}}\]
+
+If you are already happy to treat such doodles as formal, then I think you're alright, please skip the rest of this chapter. If you are a category theorist or just curious, hello, how are you, please do write me to share your thoughts if you care to, and please skip the rest of this paragraph. If you are still reading, I assume you are some kind of smelly epistemic-paranoiac Bourbaki-thrall sets-and-lambdas math-phallus-worshipping truth-condition-blinded symbol-pusher who takes things too seriously. I want you to know that I feel pity and disdain for you with what mild strength I can muster to care about you, and I promise you my feelings towards you are warmer than the oblivion of irrelevance that awaits us all. I hope you choke on the mathematics in this chapter. I will begin the intimidation immediately.\\
+
+We provide a generalisation (Definition \ref{defn:stickyspider}) of special commutative frobenius algebras in \textbf{TopRel} that cohere with idempotents in the category. The relation of ($\dagger$)-special commutative algebras in \textbf{FdHilb} to model observables in quantum mechanics is well-studied [], as is the role of idempotents in generalisations of quantum logic to arbitrary categories [], therefore this generalisation may be viewed as a unification of these ideas to define doodles in \textbf{TopRel}. N.B. we are not quite taking the Karoubi envelope of \textbf{TopRel}, as we are restricting the idempotents we wish to consider to only those that also behave appropriately as observables. The reason for this restriction lies in Theorem \ref{thm:stickygraphical} which provides a diagrammatic characterisation result that allows us to precisely identify when any idempotent in the category splits though a discrete topology. The discrete topology thus acts as a set of labels, where the (pre)images of each element under section and retract behave as the kind of shapes we wish to consider. As an interlude, we demonstrate how we may construct families of such idempotent-coherent special commutative frobenius algebras on $\mathbb{R}^2$ to provide a monoidal generalisation (c.f. the monoidal computer framework in []) of \textbf{FinRel} equipped with a Turing object [], thus satisfying Justification \ref{just:3}. Then we proceed to define configuration spaces of collections of shapes up to rigid displacement, and we develop a relational analogue of homotopy to model motions as paths in configuration space, along with appropriate extensions to accommodate nonrigid phenomena. If you are still reading and not already a category theorist nor just curious, I will drop the jargon now, because you are probably either questioning or deeply committed to your false ideals, both of which I respect, but just to spite the latter, I will proceed to do everything diagrammatically as much as possible.
 
 \begin{figure}\label{fig:spiderbicate}
 \scalebox{0.7}{\tikzfig{bestiary/spiderbicat}}
 \caption{The generators (in dashed boxes) and relations that make a spider. When the spider satisfies in addition the three inequalities b1-3, we call it a \textbf{relation-spider}.}
 \end{figure}
+
+\end{fullwidth}
 
 \subsection{When does an object have a spider (or something close to one)?}
 
@@ -45,27 +57,21 @@ The following case analysis shows that our open set only contains the point $p$.
     \end{rem}
 }
 
+It will be more aesthetic going forward to colour processes and treat the colours as variables instead of labelling them.
+
 \begin{fullwidth}
 
 \newthought{We can use split idempotents to transform copy-spiders from discrete topologies to almost-spiders on other spaces.} We can graphically express the behaviour of a split idempotent $e$ as follows, where the semicircles for the section and retract $r,s$ form a visual pun.
 
 \[\scalebox{1}{\tikzfig{structure/idemspider/splitidem}}\]
 
-\newthought{An idempotent on $Y^\sigma$ that splits through a discrete topology $X^\star$ does these things:}
-\begin{description}
-\item[The section:]{picks a subset of $s(x) \subseteq Y$ for each point $x \in X$. In order to be a split idempotent, $s(x)$ must be distinct for distinct points $x$.}
-\item[The retract:]{(reading backwards) picks an open set $r(x) \in \sigma$ for each point $x \in X$. In order to be a split idempotent, $r(x)$ only overlaps $s(x)$ out of all other selected shapes: \[r(x) \cap s(x') = 1 \iff x = x'\]}
-\end{description}
-The combined effect is that the shapes $s(x)$ become copiable elements of the sticky spider, just as the points are the copiable elements of a regular spider.
-
-\begin{defn}[Sticky spiders]
+\begin{defn}[Sticky spiders]\label{defn:stickyspider}
 A \textbf{sticky spider} (or just an $e$-spider, if we know that $e$ is a split idempotent), is a spider \emph{except} every identity wire on any side of an equation in Figure \ref{fig:spiderbicate} is replaced by the idempotent $e$.
 \[\scalebox{1}{\tikzfig{structure/idemspider/espiderproperties}}\]
 \[\scalebox{1}{\tikzfig{structure/idemspider/espiderproperties2}}\]
 
-The desired graphical behaviour of a sticky spider is that one can still coalesce all connected spider-bodies together, but the 1-1 spider "sticks around" rather than disappearing as the identity. This is achieved by the following rules that cohere the idempotent $e$ with the (co)unit and (co)multiplications.
-
-\[placeholder\]
+The desired graphical behaviour of a sticky spider is that one can still coalesce all connected spider-bodies together, but the 1-1 spider "sticks around" rather than disappearing as the identity. This is achieved by the following rules that cohere the idempotent $e$ with the (co)unit and (co)multiplications; they are the same as the usual rules for a special commutative frobenius algebra with two exceptions. First, where an identity wire appears in an equation, we replace it with an idempotent. Second, the monoid and comonoid components freely emit and absorb idempotents. By these rules, the usual proof [] for the normal form of spiders follows, except the idempotent becomes an explicit 1-1 spider, rather than the identity.
+\[\scalebox{0.7}{\tikzfig{structure/idemspider/stickyrelations}}\]
 \end{defn}
 
 \begin{construction}[Sticky spiders from split idempotents]
@@ -91,11 +97,14 @@ The proofs of e-counitality, and e-speciality follow similarly.
 
 \begin{theorem}\label{thm:stickygraphical}
 A sticky spider has an idempotent that splits through a discrete topology if and only if in addition to the sticky spider equalities, the following relations are also satisfied.
-\[\scalebox{1}{\tikzfig{idemproof/unit-everything}} \quad\quad\quad\quad \scalebox{1}{\tikzfig{idemproof/comult-copy}}\]
+\[\scalebox{1}{\tikzfig{idemproof/unit-everything}} \quad\quad\quad\quad\quad\quad\quad\quad \scalebox{1}{\tikzfig{idemproof/comult-copy}}\]
 \end{theorem}
+
+The proof is rather involved, so we provide a map below of the various lemmas and propositions that will yield the claim.
 
 \[\scalebox{0.75}{\tikzfig{idemproof/claimmap2}}\]
 
+\newpage
 \begin{proposition}[comult/copy implies counit/delete]\label{prop:counitdelete}
 \[\scalebox{1}{\tikzfig{idemproof/ecopy2delclaim}}\]
 \begin{proof}
@@ -112,50 +121,65 @@ Consider the set $e(\{x\})$ obtained by applying the idempotent $e$ to a singlet
 \end{proof}
 \end{lemma}
 
+\newpage
+\vspace*{\fill}
 \begin{proposition}[$e$ of any point is $e$-copiable]\label{prop:epointcopy}
 \[\scalebox{0.75}{\tikzfig{idemproof/pointidemcopiable}}\]
 \begin{proof}
 \[\scalebox{0.75}{\tikzfig{idemproof/pointidemcopiableproof}}\]
 \end{proof}
 \end{proposition}
+\vspace*{\fill}
 
+\newpage
 \begin{proposition}[The unit is the union of all $e$-copiables]\label{prop:copiablebasis}
-\[\scalebox{1}{\tikzfig{idemproof/copiablebasisclaim}}\]
+\[\scalebox{0.8}{\tikzfig{idemproof/copiablebasisclaim}}\]
 \begin{proof}
-\[\scalebox{1}{\tikzfig{idemproof/copiablebasis}}\]
+\[\scalebox{0.8}{\tikzfig{idemproof/copiablebasis}}\]
 \end{proof}
 \end{proposition}
 
+\newpage
+\vspace*{\fill}
 \begin{proposition}[$e$-copiable decomposition of $e$]\label{prop:decompidem}
 \[\scalebox{1}{\tikzfig{idemproof/decompidemclaim}}\]
 \begin{proof}
 \[\scalebox{1}{\tikzfig{idemproof/decompidem}}\]
 \end{proof}
 \end{proposition}
+\vspace*{\fill}
 
+\newpage
+\vspace*{\fill}
 \begin{proposition}[$e$-copiable decomposition of counit]\label{prop:decompcounit}
 \[\scalebox{1}{\tikzfig{idemproof/decompcounitclaim}}\]
 \begin{proof}
 \[\scalebox{1}{\tikzfig{idemproof/decompcounit}}\]
 \end{proof}
 \end{proposition}
+\vspace*{\fill}
 
+\newpage
 \newthought{The $e$-copiable states really do behave like an orthonormal basis, as the following Lemmas show.}
-
 \begin{lemma}[$e$-copiables are orthogonal under multiplication]\label{lem:match}
-\[\scalebox{1}{\tikzfig{idemproof/matchclaim}}\]
+\[\scalebox{0.75}{\tikzfig{idemproof/matchclaim}}\]
 \begin{proof}
-\[\scalebox{0.9}{\tikzfig{idemproof/match}}\]
+\[\scalebox{0.75}{\tikzfig{idemproof/match}}\]
 \end{proof}
 \end{lemma}
 
+\newpage
+\vspace*{\fill}
 \begin{convention}[Shorthand for the open set associated with an $e$-copiable]
 We introduce the following diagrammatic shorthand.
 \[\scalebox{1}{\tikzfig{idemproof/openshorthand}}\]
 Including the coloured dot is justified, because these open sets are co-copiable with respect to the multiplication of the sticky spider.
 \[\scalebox{1}{\tikzfig{idemproof/shorthandjustification}}\]
 \end{convention}
+\vspace*{\fill}
 
+\newpage
+\vspace*{\fill}
 \begin{lemma}[Co-match]\label{lem:comatch}
 \[\scalebox{1}{\tikzfig{idemproof/comatchclaim}}\]
 \begin{proof}
@@ -163,7 +187,10 @@ Including the coloured dot is justified, because these open sets are co-copiable
 The claim then follows by applying Lemma \ref{lem:match} to the final diagram.
 \end{proof}
 \end{lemma}
+\vspace*{\fill}
 
+\newpage
+\vspace*{\fill}
 \begin{lemma}[e-copiables are e-fixpoints]\label{lem:ecopyfixpoint}
 \[\scalebox{1}{\tikzfig{idemproof/dotcopyableclaim}}\]
 \begin{proof}
@@ -171,83 +198,51 @@ The claim then follows by applying Lemma \ref{lem:match} to the final diagram.
 Observe that the final equation of the proof also holds when the initial e-copiable is the empty set.
 \end{proof}
 \end{lemma}
+\vspace*{\fill}
 
+\newpage
+\vspace*{\fill}
 \begin{lemma}[$e$-copiables are normal]\label{lem:ecopynormal}
 \[\scalebox{1}{\tikzfig{idemproof/copynormalclaim}}\]
 \begin{proof}
 \[\scalebox{1}{\tikzfig{idemproof/copynormal}}\]
 \end{proof}
 \end{lemma}
-{}
+\vspace*{\fill}
+
+\newpage
+\vspace*{\fill}
 \begin{proposition}[$e$-copiable decomposition of multiplication]\label{prop:decompmult}
 \[\scalebox{1}{\tikzfig{idemproof/decompmultclaim}}\]
 \begin{proof}
 \[\scalebox{1}{\tikzfig{idemproof/decompmult}}\]
 \end{proof}
 \end{proposition}
+\vspace*{\fill}
 
+\newpage
+\vspace*{\fill}
 \begin{proposition}[$e$-copiable decomposition of comultiplication]\label{prop:decompcomult}
 \[\scalebox{1}{\tikzfig{idemproof/decompcomultclaim}}\]
 \begin{proof}
 \[\scalebox{1}{\tikzfig{idemproof/decompcomult}}\]
 \end{proof}
 \end{proposition}
+\vspace*{\fill}
 
+\newpage
 \newthought{Now we can prove Theorem \ref{thm:stickygraphical}.}
 \begin{proof}
-The key observation is that the $e$-copiable decomposition of the idempotent given by Proposition \ref{prop:decompidem} is equivalent to a split idempotent though the set of $e$-copiables equipped with discrete topology.
-\[placeholder\]
-
+First a reminder of the claim; we want to show that when given a sticky spider, the following relations hold if and only if the idempotent splits through a discrete topology.
+\[\scalebox{0.8}{\tikzfig{idemproof/unit-everything}} \quad\quad\quad\quad\quad\quad\quad\quad \scalebox{0.8}{\tikzfig{idemproof/comult-copy}}\]
+The crucial observation is that the $e$-copiable decomposition of the idempotent given by Proposition \ref{prop:decompidem} is equivalent to a split idempotent though the set of $e$-copiables equipped with discrete topology.
+\[\scalebox{0.8}{\tikzfig{idemproof/finalproof}}\]
+By copiable basis Proposition \ref{prop:copiablebasis} and the decompositions Propositions \ref{prop:decompcounit}, \ref{prop:decompmult}, \ref{prop:decompcomult}, we obtain the only-if direction.
+\[\scalebox{0.8}{\tikzfig{idemproof/finalproof2}}\]
+The if direction is an easy check. For the unit/everything relation, we have:
+\[\scalebox{0.8}{\tikzfig{idemproof/finalproof3}}\]
+For the counit/delete relation, we observe that for any split idempotent, the retract must be a partial function. To see this, suppose the split idempotent $e = r;s$ is on $(X,\tau)$ and the discrete topology is $Y^\star$. Seeking contradiction, if the retract is not a partial function, then there is some point $x \in X$ such that $x \in e(x)$, and the image $I := r(x) \subseteq Y$ contains more than one point, which we denote and discriminate $a,b \in r(x) \subseteq Y$ and $a \neq b$. Because the composite $s;r = 1_Y$ of the section and retract must recover the identity on $Y^\star$, the section $s$ must be total -- i.e. the image $s(X) = Y$. So $x \in s(a) \cap s(b)$. Now we have that $(a,x),(b,x) \in s$, and $(x,a),(x,b) \in r$, therefore $(a,b),(b,a) \in s;r$, which by $a \neq b$ contradicts that $s;r$ is the identity relation $1_Y$.
+\[\scalebox{0.8}{\tikzfig{idemproof/finalproof4}}\]
 \end{proof}
 
 \end{fullwidth}
-
-\section{Sticky spiders are collections of shapes in space}
-
-...
-
-\section{Displacing shapes with symmetries}
-
-\begin{defn}[Topological Group]
-
-\end{defn}
-
-\begin{defn}[Sticky spiders equivalent up to symmetric displacement]
-
-\end{defn}
-
-\section{Moving shapes continuously}
-
-\section{Configuration space of a sticky spider}
-
-\begin{defn}[The configuration space of a sticky spider]
-
-\end{defn}
-
-\begin{defn}[The "interaction" relation]
-
-\end{defn}
-
-\begin{defn}[Movement equivalence classes]
-
-\end{defn}
-
-\section{Topological models for a selection of concepts}
-
-\begin{construction}[Putting-in and getting-out things from containers]
-
-\end{construction}
-
-\begin{construction}[Filling holes, fullness, and fitting]
-
-\end{construction}
-
-\begin{construction}[Sending by throwing and conduits]
-
-\end{construction}
-
-\begin{construction}[Conduit Metaphor]
-
-\end{construction}
-
-\begin{fullwidth}
