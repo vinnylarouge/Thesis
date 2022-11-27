@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  25 NOV 2022 17:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  27 NOV 2022 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1336,13 +1336,74 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-ge
 neric.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-pd
-ftex.tex)))
+ftex.tex)) (/usr/local/texlive/2022/texmf-dist/tex/latex/skak/skak.sty
+Package: skak 2018/01/08 v1.5.3 Chess typesetting
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/chessfss/chessfss.sty
+Package: chessfss 2006/06/14 v1.2a chess font selection scheme
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/chessfss/lsbenc.def
+File: lsbenc.def 2006/06/09 v1.2 Standard LaTeX file
+Now handling font encoding LSB ...
+... no UTF-8 mapping file for font encoding LSB
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/chessfss/lsfenc.def
+File: lsfenc.def 2006/06/09 v1.2 Standard LaTeX file
+Now handling font encoding LSF ...
+... no UTF-8 mapping file for font encoding LSF
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/chessfss/lsienc.def
+File: lsienc.def 2006/06/09 v1.2 Standard LaTeX file
+Now handling font encoding LSI ...
+... no UTF-8 mapping file for font encoding LSI
+)
+\len@cfss@squarewidth=\skip101
+\len@cfss@squaretotalheight=\skip102
+\len@cfss@squaredepth=\skip103
+)
+(/usr/local/texlive/2022/texmf-dist/tex/plain/lambda-lists/lambda.sty)
+\c@fileFrom=\count345
+\c@rankFrom=\count346
+\c@fileTo=\count347
+\c@rankTo=\count348
+\c@ps@inverse=\count349
+\c@ps@knightangle=\count350
+\c@halfmove=\count351
+\c@move=\count352
+\c@helpgobble=\count353
+\c@helpnumber=\count354
+\c@helpnumberMove=\count355
+\squarelength=\skip104
+\square@multiplier=\count356
+\ranklift=\skip105
+LaTeX Font Info:    Trying to load font information for LSB+skaknew on input li
+ne 1774.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/chessfss/lsbskaknew.fd
+File: lsbskaknew.fd 2006/03/31 v1.0 Chess font definitions
+)
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 17
+74.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+
+LaTeX Font Warning: Font shape `T1/phv/m/up' undefined
+(Font)              using `T1/phv/m/n' instead on input line 1774.
+
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 1774.
+\store@toks=\toks48
+)
+LaTeX Font Info:    Font shape `T1/phv/m/up' will be
+(Font)              scaled to size 8.99994pt on input line 102.
+)
 LaTeX Font Info:    Trying to load font information for T1+stix on input line 3
 .
  (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/t1stix.fd
 File: t1stix.fd 2015/04/17 v1.1.2-latex STIX T1 font definitions
-)
-(./main.aux
+) (./main.aux
 
 LaTeX Warning: Label `fig:contline' multiply defined.
 
@@ -1382,6 +1443,24 @@ LaTeX Font Info:    Trying to load font information for LS2+stix on input line
 File: ls2stix.fd 2015/04/17 v1.1.2-latex STIX LS2 font definitions
 )
 LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for LSB/skaknew/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for LSF/skaknew/m/n on input line 3.
+LaTeX Font Info:    Trying to load font information for LSF+skaknew on input li
+ne 3.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/chessfss/lsfskaknew.fd
+File: lsfskaknew.fd 2006/03/31 v1.0 Chess font definitions
+)
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for LSI/skaknew/m/n on input line 3.
+LaTeX Font Info:    Trying to load font information for LSI+skaknew on input li
+ne 3.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/chessfss/lsiskaknew.fd
+File: lsiskaknew.fd 2006/03/31 v1.0 Chess font definitions
+)
+LaTeX Font Info:    ... okay on input line 3.
 Package hyperref Info: Link coloring OFF on input line 3.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1394,7 +1473,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count345
+\c@section@level=\count357
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -1440,17 +1519,17 @@ LaTeX Info: Redefining \nameref on input line 3.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count346
+\scratchcounter=\count358
 \scratchdimen=\dimen336
 \scratchbox=\box147
-\nofMPsegments=\count347
-\nofMParguments=\count348
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count349
+\nofMPsegments=\count359
+\nofMParguments=\count360
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count361
 \MPscratchDim=\dimen337
-\MPnumerator=\count350
-\makeMPintoPDFobject=\count351
-\everyMPtoPDFconversion=\toks49
+\MPnumerator=\count362
+\makeMPintoPDFobject=\count363
+\everyMPtoPDFconversion=\toks50
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1466,29 +1545,22 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 3.
 
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 5.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
-)
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 5.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 16.19989pt on input line 5.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 32.39978pt on input line 5.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 12.59991pt on input line 5.
- [1
+[1
 
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2
 
 ] (./main.toc
 LaTeX Font Info:    Trying to load font information for T1+fvm on input line 31
 .
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/bera/t1fvm.fd
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
@@ -1497,7 +1569,8 @@ LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10.95> not available
 (Font)              Font shape `T1/fvm/m/sl' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
 (Font)              scaled to size 9.30756pt on input line 31.
- [3])
+
+[3])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -2051,7 +2124,8 @@ Chapter 3.
 [59
 
 
-] (./chapters/toprel/0_contrel.tex
+] (./chapters/toprel/AA_whycontrel.tex
+(./figures/topology/conduitmetaphor.tikz)
 
 ! LaTeX Error: Too many math alphabets used in version normal.
 
@@ -2059,132 +2133,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12 }
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-LaTeX Warning: Marginpar on page 60 moved.
-
-
-LaTeX Warning: Marginpar on page 60 moved.
-
-
-LaTeX Warning: Marginpar on page 60 moved.
-
-
-LaTeX Warning: Marginpar on page 60 moved.
-
-
-LaTeX Warning: Marginpar on page 60 moved.
-
-) [60
-
-] (./chapters/toprel/1_examples.tex (./figures/testspaces/singleton.tikz)
-(./figures/testspaces/sierpinski.tikz) (./figures/testspaces/unitsquare.tikz)
-[61
-
-]
-
-LaTeX Warning: Marginpar on page 62 moved.
-
-
-LaTeX Warning: Marginpar on page 62 moved.
-
-
-LaTeX Warning: Marginpar on page 62 moved.
-
-
-LaTeX Warning: Marginpar on page 62 moved.
-
-[62]
-
-LaTeX Warning: Marginpar on page 63 moved.
-
-
-LaTeX Warning: Marginpar on page 63 moved.
-
-
-LaTeX Warning: Marginpar on page 63 moved.
-
-(./figures/paintingexamples/sierandcanvas2_2.tikz)
-(./figures/paintingexamples/s2sqzoom.tikz)
-
-LaTeX Warning: Marginpar on page 63 moved.
-
-(./figures/paintingexamples/s2sqpainting.tikz)
-
-LaTeX Warning: Marginpar on page 63 moved.
-
-(./figures/paintingexamples/sq2spainting.tikz)
-
-LaTeX Warning: Marginpar on page 63 moved.
-
-[63] (./figures/testspaces/sierpinskienum.tikz) [64] [65]
-(./figures/paintingexamples/contline.tikz)
-
-LaTeX Warning: Marginpar on page 66 moved.
-
-(./figures/paintingexamples/contlines.tikz)
-
-LaTeX Warning: Marginpar on page 66 moved.
-
-(./figures/paintingexamples/thickbrush.tikz)
-
-LaTeX Warning: Marginpar on page 66 moved.
-
-<figures/paintingexamples/spectrum.png, id=685, 1194.4625pt x 34.1275pt>
-File: figures/paintingexamples/spectrum.png Graphic file (type png)
-<use figures/paintingexamples/spectrum.png>
-Package pdftex.def Info: figures/paintingexamples/spectrum.png  used on input l
-ine 244.
-(pdftex.def)             Requested size: 233.31111pt x 6.66602pt.
-
-LaTeX Warning: Marginpar on page 66 moved.
-
-<figures/paintingexamples/starrynight.jpg, id=687, 2569.6pt x 2034.60126pt>
-File: figures/paintingexamples/starrynight.jpg Graphic file (type jpg)
-<use figures/paintingexamples/starrynight.jpg>
-Package pdftex.def Info: figures/paintingexamples/starrynight.jpg  used on inpu
-t line 250.
-(pdftex.def)             Requested size: 233.29288pt x 184.72058pt.
-
-LaTeX Warning: Marginpar on page 66 moved.
-
-) [66
-
- <./figures/paintingexamples/spectrum.png> <./figures/paintingexamples/starryni
-ght.jpg>] (./chapters/toprel/2_toprel.tex [67
-
-]
-
-LaTeX Warning: Marginpar on page 68 moved.
-
-
-LaTeX Warning: Marginpar on page 68 moved.
-
-
-LaTeX Warning: Marginpar on page 68 moved.
-
-[68] (./figures/bestiary/generators.tikz)
-(./figures/bestiary/basicrelations.tikz) [69]
-(./figures/structure/determinism.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [70]
-(./figures/bestiary/scalarrelations.tikz)
-(./figures/bestiary/zerorelations.tikz) [71]) [72]
-(./chapters/toprel/3_sticky.tex (./figures/topology/conduitmetaphor.tikz)
-
-! LaTeX Error: Too many math alphabets used in version normal.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ...mutative frobenius algebras on $\mathbb{R}
+l.15 ...mutative frobenius algebras on $\mathbb{R}
                                                   ^2$ to provide a monoidal ...
 
 Your command was ignored.
@@ -2192,24 +2141,152 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Reference `just:3' on page 73 undefined on input line 11.
+LaTeX Warning: Reference `just:3' on page 60 undefined on input line 15.
 
+[60
+
+]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 39.
+
+
+Overfull \hbox (368.01633pt too wide) in paragraph at lines 40--53
+[][] 
+ []
+
+[61]) [62] (./chapters/toprel/0_contrel.tex
+
+! LaTeX Error: Too many math alphabets used in version normal.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 }
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Marginpar on page 63 moved.
+
+
+LaTeX Warning: Marginpar on page 63 moved.
+
+
+LaTeX Warning: Marginpar on page 63 moved.
+
+
+LaTeX Warning: Marginpar on page 63 moved.
+
+
+LaTeX Warning: Marginpar on page 63 moved.
+
+[63
+
+] (./figures/bestiary/generators.tikz)
+(./figures/bestiary/basicrelations.tikz)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64]
+(./figures/structure/determinism.tikz)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65]
+(./figures/bestiary/scalarrelations.tikz)
+(./figures/bestiary/zerorelations.tikz) [66]) [67]
+(./chapters/toprel/1_examples.tex (./figures/testspaces/singleton.tikz)
+(./figures/testspaces/sierpinski.tikz) (./figures/testspaces/unitsquare.tikz)
+[68
+
+]
+
+LaTeX Warning: Marginpar on page 69 moved.
+
+
+LaTeX Warning: Marginpar on page 69 moved.
+
+
+LaTeX Warning: Marginpar on page 69 moved.
+
+
+LaTeX Warning: Marginpar on page 69 moved.
+
+[69]
+
+LaTeX Warning: Marginpar on page 70 moved.
+
+
+LaTeX Warning: Marginpar on page 70 moved.
+
+
+LaTeX Warning: Marginpar on page 70 moved.
+
+(./figures/paintingexamples/sierandcanvas2_2.tikz)
+(./figures/paintingexamples/s2sqzoom.tikz)
+
+LaTeX Warning: Marginpar on page 70 moved.
+
+(./figures/paintingexamples/s2sqpainting.tikz)
+
+LaTeX Warning: Marginpar on page 70 moved.
+
+(./figures/paintingexamples/sq2spainting.tikz)
+
+LaTeX Warning: Marginpar on page 70 moved.
+
+[70] (./figures/testspaces/sierpinskienum.tikz) [71] [72]
+(./figures/paintingexamples/contline.tikz)
+
+LaTeX Warning: Marginpar on page 73 moved.
+
+(./figures/paintingexamples/contlines.tikz)
+
+LaTeX Warning: Marginpar on page 73 moved.
+
+(./figures/paintingexamples/thickbrush.tikz)
+
+LaTeX Warning: Marginpar on page 73 moved.
+
+<figures/paintingexamples/spectrum.png, id=723, 1194.4625pt x 34.1275pt>
+File: figures/paintingexamples/spectrum.png Graphic file (type png)
+<use figures/paintingexamples/spectrum.png>
+Package pdftex.def Info: figures/paintingexamples/spectrum.png  used on input l
+ine 244.
+(pdftex.def)             Requested size: 233.31111pt x 6.66602pt.
+
+LaTeX Warning: Marginpar on page 73 moved.
+
+<figures/paintingexamples/starrynight.jpg, id=725, 2569.6pt x 2034.60126pt>
+File: figures/paintingexamples/starrynight.jpg Graphic file (type jpg)
+<use figures/paintingexamples/starrynight.jpg>
+Package pdftex.def Info: figures/paintingexamples/starrynight.jpg  used on inpu
+t line 250.
+(pdftex.def)             Requested size: 233.29288pt x 184.72058pt.
+
+LaTeX Warning: Marginpar on page 73 moved.
+
+) [73
+
+ <./figures/paintingexamples/spectrum.png> <./figures/paintingexamples/starryni
+ght.jpg>] (./chapters/toprel/3_sticky.tex
 (./figures/bestiary/spiderbicat.tikz)
 
-LaTeX Warning: Float too large for page by 79.47964pt on input line 16.
+LaTeX Warning: Float too large for page by 79.47964pt on input line 8.
 
-[73
 
-] [74]
-
-LaTeX Warning: Marginpar on page 75 moved.
+LaTeX Warning: Marginpar on page 74 moved.
 
 (./figures/structure/copyspiderproof/openpoint.tikz)
 (./figures/structure/copyspiderproof/openpointproof.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75]
-(./figures/structure/copyspiderproof/openpointcases.tikz)
+ [74
+
+]
+[75] (./figures/structure/copyspiderproof/openpointcases.tikz)
 
 LaTeX Warning: Marginpar on page 76 moved.
 
@@ -2285,208 +2362,19 @@ LaTeX Font Warning: Command \Huge invalid in math mode on input line 21.
 
 ) (./figures/idemproof/finalproof2.tikz) (./figures/idemproof/finalproof3.tikz)
 [97] (./figures/idemproof/finalproof4.tikz)) [98]
-(./chapters/toprel/4_lassos.tex
-(./figures/spatialencoding/circencodingconstruct.tikz)
-Overfull \hbox (78.47694pt too wide) detected at line 9
-[]
- []
+(./chapters/toprel/5_topologicalconcepts.tex
+(./figures/topology/halooverlap.tikz) [99
 
-(./figures/spatialencoding/stickymorphismdefn.tikz)
-(./figures/spatialencoding/arbsetclaim.tikz
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 76.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 76.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 76.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 76.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 76.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 76.
-)
-Overfull \hbox (246.88742pt too wide) detected at line 20
-[]
- []
-
-[99
-
-] (./figures/spatialencoding/arbset.tikz)
-Overfull \hbox (40.74747pt too wide) detected at line 22
+] (./figures/topology/fisheye.tikz)
+Overfull \hbox (187.36536pt too wide) detected at line 39
 []
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Marginpar on page 100 moved.
 
- [100]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [101]
-(./figures/spatialencoding/directsumconstruct.tikz)
-(./figures/spatialencoding/leftrightcompressions.tikz)
-Overfull \hbox (11.91093pt too wide) detected at line 30
-[]
- []
-
-(./figures/spatialencoding/leftrightcompressions2.tikz)
-(./figures/spatialencoding/leftrightcompressions3.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [102]
-(./figures/spatialencoding/leftrightcompressions4.tikz)
-(./figures/spatialencoding/tensorconstruct.tikz)
-Overfull \hbox (54.0193pt too wide) detected at line 40
-[]
- []
-
-[103] (./figures/spatialencoding/boxcompression.tikz)
-Overfull \hbox (23.54282pt too wide) detected at line 42
-[]
- []
-
-(./figures/spatialencoding/obtainboxposition.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [104]
-(./figures/spatialencoding/tensordetensor.tikz)
-Overfull \hbox (114.04286pt too wide) detected at line 46
-[]
- []
-
-(./figures/spatialencoding/tensordetensor2.tikz
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``16''? on input line 53
-.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``20''? on input line 55
-.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``25''? on input line 60
-.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``28''? on input line 62
-.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``48''? on input line 76
-.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``51''? on input line 77
-.
-
-) [105] (./figures/spatialencoding/tensordetensor3.tikz)
-(./figures/spatialencoding/relcomp1.tikz
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``78''? on input line 15
-1.
-
-
-Package pgf Warning: Returning node center instead of a point on node border. D
-id you specify a point identical to the center of node ``81''? on input line 15
-3.
-
-)
-Overfull \hbox (50.0242pt too wide) detected at line 55
-[]
- []
-
-
-Underfull \vbox (badness 5504) has occurred while \output is active []
-
- [106]
-(./figures/spatialencoding/relcomp2.tikz)
-Overfull \hbox (224.20856pt too wide) detected at line 57
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [107]
-(./figures/spatialencoding/relcomp3.tikz)
-Overfull \hbox (174.41624pt too wide) detected at line 59
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [108]
-
-! LaTeX Error: \begin{document} ended by \end{list}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.62 \end{fullwidth}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.62 \end{fullwidth}
-                    
-Things are pretty mixed up, but I think the worst is over.
-
-
-! LaTeX Error: \begin{document} ended by \end{adjustwidth}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.62 \end{fullwidth}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.62 \end{fullwidth}
-                    
-Things are pretty mixed up, but I think the worst is over.
-
-
-! LaTeX Error: \begin{document} ended by \end{fullwidth}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.62 \end{fullwidth}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.62 \end{fullwidth}
-                    
-Things are pretty mixed up, but I think the worst is over.
-
-) [109] (./chapters/toprel/5_topologicalconcepts.tex
-(./figures/topology/fisheye.tikz)
+[100] (./figures/topology/chessboard.tikz) (./figures/topology/chessboard2.tikz
+) [101]
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -2494,7 +2382,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \newthought{The reals}
+l.54 \newthought{The reals}
                             There are many spaces homeomorphic to the real l...
 
 Try typing  <return>  to proceed.
@@ -2507,7 +2395,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.30 ...$, then $X$ is homeomorphic to $\mathbb{R}
+l.56 ...$, then $X$ is homeomorphic to $\mathbb{R}
                                                   $.
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2520,7 +2408,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 \newthought{Less than}
+l.59 \newthought{Less than}
                             We define $<$ as an open set on $X \times X$ tha...
 
 Try typing  <return>  to proceed.
@@ -2529,13 +2417,11 @@ If that doesn't work, type  X <return>  to quit.
 (./figures/topology/leq.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [110
-
-]
+ [102]
 Overfull \vbox (293.517pt too high) has occurred while \output is active []
 
 
-[111]
+[103]
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -2543,57 +2429,57 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35 \newthought{Endpoints}
+l.61 \newthought{Endpoints}
                             We can introduce endpoints for open intervals di...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-(./figures/topology/upperbound.tikz) (./figures/topology/sup.tikz) [112]
+(./figures/topology/upperbound.tikz) (./figures/topology/sup.tikz) [104]
 (./figures/topology/endpoints.tikz) (./figures/topology/simplyconnected.tikz)
 (./figures/topology/simpconnotation.tikz)
 Underfull \vbox (badness 8000) has occurred while \output is active []
 
- [113]
+ [105]
 (./figures/topology/addition.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [114]
+ [106]
 Overfull \vbox (41.23344pt too high) has occurred while \output is active []
 
 
-[115] (./figures/topology/metric.tikz)
+[107] (./figures/topology/metric.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [116]
+ [108]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [117]
+ [109]
 (./figures/topology/openball.tikz) (./figures/topology/topologicalgroup.tikz)
 (./figures/topology/isometry.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [118]
+ [110]
 (./figures/topology/planeisometries.tikz)
 (./figures/topology/displacerigid.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [119]
+ [111]
 (./figures/topology/homotopyctrex1.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [120]
+ [112]
 (./figures/topology/homotopy.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [121]
+ [113]
 (./figures/topology/homotopyctrex1.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [122]
-(./figures/topology/homotopyctrex.tikz) [123]
+ [114]
+(./figures/topology/homotopyctrex.tikz) [115]
 (./figures/topology/contractible.tikz)
-Overfull \hbox (53.58928pt too wide) detected at line 153
+Overfull \hbox (53.58928pt too wide) detected at line 179
 []
  []
 
@@ -2601,42 +2487,42 @@ Overfull \hbox (53.58928pt too wide) detected at line 153
 )
 Underfull \vbox (badness 3601) has occurred while \output is active []
 
- [124]
+ [116]
 (./figures/topology/configurations.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [125]
+ [117]
 (./figures/topology/rigidmotion2.tikz) (./figures/topology/encloseexample.tikz)
 
 Underfull \vbox (badness 5607) has occurred while \output is active []
 
- [126]
-[127] (./figures/topology/parthood.tikz) (./figures/topology/touching.tikz)
+ [118]
+[119] (./figures/topology/parthood.tikz) (./figures/topology/touching.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [128]
+ [120]
 (./figures/topology/within.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [129]
-(./figures/topology/enclose.tikz) [130] (./figures/topology/trapped.tikz)
-Overfull \hbox (39.34187pt too wide) detected at line 213
+ [121]
+(./figures/topology/enclose.tikz) [122] (./figures/topology/trapped.tikz)
+Overfull \hbox (39.34187pt too wide) detected at line 239
 []
  []
 
 (./figures/topology/interlock.tikz)
-Overfull \hbox (321.70724pt too wide) detected at line 219
+Overfull \hbox (321.70724pt too wide) detected at line 245
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [131]
+ [123]
 (./figures/topology/constrained.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [132]
+ [124]
 (./figures/topology/labelledwires.tikz
 
 ! LaTeX Error: Too many math alphabets used in version normal.
@@ -2719,32 +2605,32 @@ or  <return>  to continue without it.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [133]
-[134] (./figures/topology/test2gate.tikz)
-Overfull \hbox (35.5223pt too wide) detected at line 237
+ [125]
+[126] (./figures/topology/test2gate.tikz)
+Overfull \hbox (35.5223pt too wide) detected at line 263
 []
  []
 
-(./figures/topology/copygatecommute.tikz) [135]
+(./figures/topology/copygatecommute.tikz) [127]
 (./figures/topology/collisionparticular.tikz)
 (./figures/topology/collideinterior.tikz)
-Overfull \hbox (231.18442pt too wide) detected at line 250
+Overfull \hbox (231.18442pt too wide) detected at line 276
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [136]
+ [128]
 (./figures/topology/collidegate.tikz) (./figures/topology/seqparhom.tikz)
 Underfull \vbox (badness 2837) has occurred while \output is active []
 
- [137]
+ [129]
 (./figures/topology/inopenout.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [138]
-(./figures/topology/breaklock.tikz) [139] (./figures/topology/groupaction.tikz
+ [130]
+(./figures/topology/breaklock.tikz) [131] (./figures/topology/groupaction.tikz
 
 ! LaTeX Error: Too many math alphabets used in version normal.
 
@@ -2784,12 +2670,54 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) (./figures/topology/spiderbreakdown.tikz) [140]
+) (./figures/topology/spiderbreakdown.tikz) [132]
 
-LaTeX Warning: Reference `prop:exclusion' on page 141 undefined on input line 2
-92.
+LaTeX Warning: Reference `prop:exclusion' on page 133 undefined on input line 3
+18.
 
-) [141] (./chapters/toprel/AA_whycontrel.tex
+) [133] (./chapters/toprel/topmathendnotes.tex
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \newthought{Composition:}
+                              The normal composition of relations. We verify...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \newthought{Associativity of composition:}
+                                                Inherited from \textbf{Rel}.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Marginpar on page 134 moved.
+
+
+LaTeX Warning: Marginpar on page 134 moved.
+
+
+LaTeX Warning: Marginpar on page 134 moved.
+
+[134
+
+] [135] [136] [137] (./figures/topology/spanctrex.tikz)) [138]
+Chapter 4.
+[139
+
+
+] (./chapters/toprel/4_lassos.tex
 
 ! LaTeX Error: Bad math environment delimiter.
 
@@ -2797,7 +2725,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 ...m (or "meaningful part of text") $T \in \[
+l.15 ...m (or "meaningful part of text") $T \in \[
                                                   \bigotimes^n \Xi,\bigotime...
 
 Your command was ignored.
@@ -2807,7 +2735,7 @@ or  <return>  to continue without it.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.25 ... \in \[\bigotimes^n \Xi,\bigotimes^m \Xi\]
+l.15 ... \in \[\bigotimes^n \Xi,\bigotimes^m \Xi\]
                                                   $ for any $n,m \in N$ -- h...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2816,13 +2744,13 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-! LaTeX Error: \begin{list} on input line 3 ended by \end{equation*}.
+! LaTeX Error: \begin{document} ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 ... \in \[\bigotimes^n \Xi,\bigotimes^m \Xi\]
+l.15 ... \in \[\bigotimes^n \Xi,\bigotimes^m \Xi\]
                                                   $ for any $n,m \in N$ -- h...
 
 Your command was ignored.
@@ -2832,7 +2760,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.25 ... \in \[\bigotimes^n \Xi,\bigotimes^m \Xi\]
+l.15 ... \in \[\bigotimes^n \Xi,\bigotimes^m \Xi\]
                                                   $ for any $n,m \in N$ -- h...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2840,67 +2768,168 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.15 ... \in \[\bigotimes^n \Xi,\bigotimes^m \Xi\]
+                                                  $ for any $n,m \in N$ -- h...
+Things are pretty mixed up, but I think the worst is over.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.25 ...n \Xi,\bigotimes^m \Xi\]$ for any $n,m \in
+l.15 ...n \Xi,\bigotimes^m \Xi\]$ for any $n,m \in
                                                    N$ -- has to be encodable...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[142
+[140
 
-] [143]
+] (./figures/spatialencoding/circencodingconstruct.tikz)
+Overfull \hbox (78.47694pt too wide) detected at line 33
+[]
+ []
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 55.
+(./figures/spatialencoding/stickymorphismdefn.tikz) [141]
+(./figures/spatialencoding/arbsetclaim.tikz
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 21.61124pt on input line 76.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 76.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 76.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 21.61124pt on input line 76.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 76.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 76.
+)
+Overfull \hbox (246.88742pt too wide) detected at line 44
+[]
+ []
 
-
-Overfull \hbox (368.01633pt too wide) in paragraph at lines 56--69
-[][] 
+(./figures/spatialencoding/arbset.tikz)
+Overfull \hbox (40.74747pt too wide) detected at line 46
+[]
  []
 
 
-Overfull \hbox (11.31474pt too wide) in paragraph at lines 71--72
-[]\T1/stix/m/n/10 In \T1/stix/b/n/10 TopRel\T1/stix/m/n/10 , open sets are pre-
-cisely tests. Mod-elling con-cepts as open sets or tests aligns them with semi-
-decidability. 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [142]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [143]
+(./figures/spatialencoding/directsumconstruct.tikz)
+(./figures/spatialencoding/leftrightcompressions.tikz)
+Overfull \hbox (11.91093pt too wide) detected at line 54
+[]
+ []
+
+(./figures/spatialencoding/leftrightcompressions2.tikz)
+(./figures/spatialencoding/leftrightcompressions3.tikz)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [144]
+(./figures/spatialencoding/leftrightcompressions4.tikz)
+(./figures/spatialencoding/tensorconstruct.tikz)
+Overfull \hbox (54.0193pt too wide) detected at line 64
+[]
+ []
+
+[145] (./figures/spatialencoding/boxcompression.tikz)
+Overfull \hbox (23.54282pt too wide) detected at line 66
+[]
+ []
+
+(./figures/spatialencoding/obtainboxposition.tikz)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [146]
+(./figures/spatialencoding/tensordetensor.tikz)
+Overfull \hbox (114.04286pt too wide) detected at line 70
+[]
+ []
+
+(./figures/spatialencoding/tensordetensor2.tikz
+
+Package pgf Warning: Returning node center instead of a point on node border. D
+id you specify a point identical to the center of node ``16''? on input line 53
+.
+
+
+Package pgf Warning: Returning node center instead of a point on node border. D
+id you specify a point identical to the center of node ``20''? on input line 55
+.
+
+
+Package pgf Warning: Returning node center instead of a point on node border. D
+id you specify a point identical to the center of node ``25''? on input line 60
+.
+
+
+Package pgf Warning: Returning node center instead of a point on node border. D
+id you specify a point identical to the center of node ``28''? on input line 62
+.
+
+
+Package pgf Warning: Returning node center instead of a point on node border. D
+id you specify a point identical to the center of node ``48''? on input line 76
+.
+
+
+Package pgf Warning: Returning node center instead of a point on node border. D
+id you specify a point identical to the center of node ``51''? on input line 77
+.
+
+) [147] (./figures/spatialencoding/tensordetensor3.tikz)
+(./figures/spatialencoding/relcomp1.tikz
+
+Package pgf Warning: Returning node center instead of a point on node border. D
+id you specify a point identical to the center of node ``78''? on input line 15
+1.
+
+
+Package pgf Warning: Returning node center instead of a point on node border. D
+id you specify a point identical to the center of node ``81''? on input line 15
+3.
+
+)
+Overfull \hbox (50.0242pt too wide) detected at line 79
+[]
  []
 
 
-! LaTeX Error: \begin{adjustwidth} on input line 3 ended by \end{list}.
+Underfull \vbox (badness 5504) has occurred while \output is active []
+
+ [148]
+(./figures/spatialencoding/relcomp2.tikz)
+Overfull \hbox (224.20856pt too wide) detected at line 81
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [149]
+(./figures/spatialencoding/relcomp3.tikz)
+Overfull \hbox (174.41624pt too wide) detected at line 83
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [150]
+
+! LaTeX Error: \begin{document} ended by \end{list}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 \end{fullwidth}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{fullwidth} on input line 3 ended by \end{adjustwidth}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 \end{fullwidth}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{fullwidth}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 \end{fullwidth}
+l.86 \end{fullwidth}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2909,19 +2938,54 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.73 \end{fullwidth}
+l.86 \end{fullwidth}
                     
 Things are pretty mixed up, but I think the worst is over.
 
-) [144]
-Chapter 4.
-[145
+
+! LaTeX Error: \begin{document} ended by \end{adjustwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 \end{fullwidth}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.86 \end{fullwidth}
+                    
+Things are pretty mixed up, but I think the worst is over.
 
 
-] (./chapters/beyond/metaphor.tex [146
+! LaTeX Error: \begin{document} ended by \end{fullwidth}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 \end{fullwidth}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.86 \end{fullwidth}
+                    
+Things are pretty mixed up, but I think the worst is over.
+
+) [151] (./chapters/beyond/metaphor.tex [152
 
 ]
-(./figures/metaphor/timeISmoney.tikz)) [147]
+(./figures/metaphor/timeISmoney.tikz)) [153]
 
 Package natbib Warning: There were undefined citations.
 
@@ -2936,22 +3000,29 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.95987pt have occurred.
 
 
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CAC55D558F6365F16952E895AE5BB066;5130.
+(rerunfilecheck)             Checksum: 9B83BA5B43CA690C318E4870440222C6;4888.
  ) 
 Here is how much of TeX's memory you used:
- 54422 strings out of 478268
- 1210319 string characters out of 5846348
- 1959373 words of memory out of 5000000
- 70761 multiletter control sequences out of 15000+600000
- 689065 words of font info for 337 fonts, out of 8000000 for 9000
+ 56492 strings out of 478268
+ 1240405 string characters out of 5846348
+ 1981708 words of memory out of 5000000
+ 72770 multiletter control sequences out of 15000+600000
+ 692126 words of font info for 340 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,13n,121p,2090b,1327s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,13n,121p,2095b,1327s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{theorem.3.7.8} has been referenced but does not exi
+st, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{theorem.2.1.13} has been referenced but does not ex
 ist, replaced by a fixed one
@@ -2963,24 +3034,25 @@ t/fonts/type1/public/stix/STIXGeneral-Bold.pfb></usr/local/texlive/2022/texmf-d
 ist/fonts/type1/public/stix/STIXGeneral-BoldItalic.pfb></usr/local/texlive/2022
 /texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/local/texlive/
 2022/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/local/tex
-live/2022/texmf-dist/fonts/type1/public/bera/fvmb8a.pfb></usr/local/texlive/202
-2/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2022/texmf-
-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/local/texlive/2022/texmf-dist/fo
-nts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-dist/font
-s/type1/public/stix/stix-mathex.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
-ype1/public/stix/stix-mathfrak.pfb></usr/local/texlive/2022/texmf-dist/fonts/ty
-pe1/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
-/public/stix/stix-mathrm-bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
-e1/public/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
-public/stix/stix-mathscr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pu
-blic/stix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publi
-c/stix/stix-mathtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/s
-tmaryrd/stmary10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvet
-ic/uhvr8a.pfb>
-Output written on main.pdf (147 pages, 3675676 bytes).
+live/2022/texmf-dist/fonts/type1/public/skaknew/SkakNew-Figurine.pfb></usr/loca
+l/texlive/2022/texmf-dist/fonts/type1/public/bera/fvmb8a.pfb></usr/local/texliv
+e/2022/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2022/t
+exmf-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/local/texlive/2022/texmf-di
+st/fonts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-dist
+/fonts/type1/public/stix/stix-mathex.pfb></usr/local/texlive/2022/texmf-dist/fo
+nts/type1/public/stix/stix-mathfrak.pfb></usr/local/texlive/2022/texmf-dist/fon
+ts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/fonts/
+type1/public/stix/stix-mathrm-bold.pfb></usr/local/texlive/2022/texmf-dist/font
+s/type1/public/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
+ype1/public/stix/stix-mathscr.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
+e1/public/stix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
+public/stix/stix-mathtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pub
+lic/stmaryrd/stmary10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/h
+elvetic/uhvr8a.pfb>
+Output written on main.pdf (153 pages, 3707884 bytes).
 PDF statistics:
- 1275 PDF objects out of 1440 (max. 8388607)
- 996 compressed objects within 10 object streams
- 324 named destinations out of 1000 (max. 500000)
- 27967 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1328 PDF objects out of 1440 (max. 8388607)
+ 1037 compressed objects within 11 object streams
+ 342 named destinations out of 1000 (max. 500000)
+ 27951 words of extra memory for PDF output out of 29859 (max. 10000000)
 

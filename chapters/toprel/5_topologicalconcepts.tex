@@ -1,27 +1,53 @@
-\begin{fullwidth}
 \section{Topological concepts in flatland via \textbf{TopRel}}
 
 \subsection{Shapes and places}
 
-\begin{defn}[Shapes, cores, halos]
-
+\begin{defn}[Labels, shapes, cores, halos]
+By Proposition \ref{prop:decompidem}, we can express the idempotent of a sticky spider as follows, for some indexing set of \emph{labels} $\mathcal{L}$.
+\[placeholder\]
+A \emph{shape} is a component of this union corresponding to some arbitary $l \in L$. So we refer to a sticky spider as a labelled collection of shapes.
+\[placeholder\]
+The state of a shape is the \emph{halo} of the shape. The halos are precisely the copiables of the sticky spider. The test of a shape is the \emph{core}. The cores are precisely the cocopiables of the sticky spider.
 \end{defn}
 
-\begin{proposition}[Core exclusion: Cores cannot overlap]
-
+\begin{proposition}[Core exclusion: Distinct cores cannot overlap]
+\begin{proof}
+A direct consequence of Lemma \ref{lem:comatch}.
+\end{proof}
 \end{proposition}
 
 \begin{proposition}[Core-halo exclusion: Each core only overlaps with its corresponding halo]
-
+\begin{proof}
+Seeking contradiction, if a core overlapped with multiple halos, Lemma \ref{lem:ecopyfixpoint} would be violated.
+\end{proof}
 \end{proposition}
 
-\begin{proposition}[Halo non-exclusion: Cores cannot overlap]
-
+\begin{proposition}[Halo non-exclusion: halos may overlap]
+\begin{proof}
+By example:
+\[\tikzfig{topology/halooverlap}\]
+We have two shapes, coloured cyan and magenta, the halos of which overlap at a yellow region. The cores of the halos are outlined in dotted blue and orange respectively. Observe that cores and halos do not have to be simply connected; in this example the core of the magenta shape has two connected components. Viewing these sticky spiders as a process, any shape that overlaps with the magenta core will be deleted and replaced by the magenta triangle, and similarly with the cyan cores and triangle. Any shape that overlaps with both the magenta and cyan cores will be deleted and replaced by the union of the triangles. Any shape that overlaps with neither core will be deleted and not replaced.
+\end{proof}
 \end{proposition}
 
+\marginnote{
+\begin{remark}
 When we draw on a finite canvas representing all of euclidean space, properly there should be a fishbowl effect that relatively magnifies shapes close to the origin and shrinks those at the periphery, but that is only an artefact of representing all of euclidean space on a finite canvas. Since all the usual metrics are still really there, going forward we will ignore this fishbowl effect and just doodle shapes as we see fit.
 
 \[\tikzfig{topology/fisheye}\]
+\end{remark}
+}
+
+\begin{fullwidth}
+
+\newpage
+\begin{example}[Where is a piece on a chessboard?]
+How is it that we quotient away the continuous structure of positions on a chessboard to locate pieces among a discrete set of squares? Evidently shifting a piece a little off the centre of a square doesn't change the state of the game, and this resistance to small perturbations suggests that a topological model is appropriate. We construct two spiders, one for pieces, and one for places on the chessboard. We consider the pieces spider to consist of open balls of some radius $r$, and we consider the places spider to consist of square halos (which tile the chessboard), containing a core inset by the same radius $r$; in this way, any piece can only overlap at most one square. As a technical aside, to keep the core of the tiles open, we can choose an arbitrarily sharp curvature $\epsilon$ at the corners.
+\[\scalebox{0.75}{\tikzfig{topology/chessboard}}\]
+Now we observe that the calculation of positions corresponds to composing sticky spiders. As input, we provide the spatial extents of the white pieces on the board. We can first abstract away the spatial extents of the individual chesspieces by composing with the pieces spider. We can then obtain the set of positions of each piece by composing with the places spider. The composite pieces;places will send the king to a2, the bishop to b4, and the knight to d1.
+\[\scalebox{0.5}{\tikzfig{topology/chessboard2}}\]
+\end{example}
+\newpage
 
 \subsection{The unit interval}
 To begin modelling more complex concepts, we first need to extend our topological tools. If we have the unit interval, we can begin to define what it would mean for spaces to be connected (by drawing lines between points in those spaces), and we can also move towards defining motion as movement along a line.

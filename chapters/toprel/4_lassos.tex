@@ -1,4 +1,28 @@
-\section{Modelling Lassos}
+\section{Lassos for generalised anaphora}
+
+\newthought{A problem arises when anything can be a noun wire.} By linguistic introspection, we realise we must account for \emph{Entification} and \emph{Processising} -- the process of turning non-nouns into noun-entities and back again. If we think about English, we find that just about any word can be turned into a noun and back again (e.g. \texttt{run} by gerund to \texttt{running}, \texttt{quick} by a suffix to \texttt{quickness}, and even entire sentences \texttt{Bob drinks Duvel} can become a noun \texttt{the fact that Bob drinks Duvel}).\\
+
+This consideration carries some linguistic interest as well. In the usual treatment of anaphora resolution, pronouns refer to nouns, for instance: \texttt{Bob drinks a beer. \underline{It} is cold.}, where \texttt{it} refers to the beer. But there are situations where pronouns can point to textual data that are not nouns. For instance: \texttt{Jono was paid minimum wage. He didn't mind \underline{it}.}, where \texttt{it} would like to refer to something like \texttt{the fact that Jono was paid minimum wage}. While there are extensions of discourse reference theory to accommodate event structures [], the issue at hand is that pronouns in the appropriate context seem to be able to refer to \emph{any meaningful part of text}. For example, \texttt{The tiles were grey. \underline{It} was a particularly depressing shade.}, where \texttt{it} seems to refer just to the entified adjective \texttt{the greyness (of the tiles)}. Or, \texttt{Alice's cake was tastier than Bob's, but \underline{it} wasn't enough so for the judges to decide unanimously.}, where \emph{it} seems to refer the entified tastiness differential of \texttt{tastier}: \texttt{the difference in tastiness between Alice and Bob's cakes}.\\
+
+Since we have so far built up a theory around noun-wires as first-class citizens, these observations present nontrivial mathematical constraints for interpretations of text circuits. Now we try to interpret these constraints in mathematical terms, staying within the graphical confines we have established in \textbf{TopRel} as much as possible. Let us denote the noun-wire type by $\Xi$. First we observe that any finite collection of noun wires $\bigotimes^n \Xi$ has to be \emph{encodable} in a single noun wire $\Xi$, because we can always interpose with \texttt{and}. We take this to mean that there will exist morphisms such that:
+
+\[placeholder\]
+
+Second, for any word-gate $w$ of grammatical type $\mathfrak{g}$, we ought to have noun-states and an evaluator process that witness entification and processising:
+
+\[placeholder\]
+
+Second-and-a-half, any morphism (or "meaningful part of text") $T \in \[\bigotimes^n \Xi,\bigotimes^m \Xi\]$ for any $n,m \in N$ -- has to be encodable as a state of $\Xi$. This is expressed as the following graphical condition:
+
+\[placeholder\]
+
+Condition two-and-a-half follows if the former conditions are met, provided that all text circuits are made up of a fixed stock of grammatical-gate-types:
+
+\[placeholder\]
+
+If we have all the above, then we can grab any part of a circuit and turn it into a noun. We can notate this using a \emph{lasso}.
+
+\[\]
 
 Recall that Lassos -- a graphical gadget that can encode arbitrary morphisms into a single wire -- can be interpreted in a monoidal computer. Recall that monoidal computers require a universal object $\Xi$. Here we show how in \textbf{TopRel}, by taking $\Xi := \squarehvfill$ the open unit square, we have a monoidal computer in \textbf{Rel} restricted to countable sets and the relations between them. We will make use of sticky spiders. We have to show that; $\squarehvfill$ has a sticky-spider corresponding to every countable set; how there is a suitable notion of sticky-spider morphism to establish a correspondence with relations; what the continuous relations are on $\squarehvfill$ that mimick various compositions of relations.
 

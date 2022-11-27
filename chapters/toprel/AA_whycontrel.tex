@@ -2,39 +2,23 @@
 
 \begin{fullwidth}
 
-In this section, we introduce \emph{continuous relations}, which are a na\"{i}ve (and to the best of my knowledge, unstudied) extension of the category \textbf{Top} of topological spaces and continuous functions towards continuous relations. We choose this category (as opposed to plain \textbf{Rel}, the category of sets and relations) because it satisfies several requirements, which we list below along with the justifications by which we obtained them. The justifications involve basic reflections upon language use, and the consequent mathematical constraints those affordances impose on any interpretation of text circuits in a symmetric monoidal category. A priori it could well be that there is no non-trivial process theory that satisfies these constraints, so the onus is on us to show that there exists such a process theory. We demonstrate at the end of this chapter that the category \textbf{TopRel} meets these requirements.
+In this chapter, we introduce \emph{continuous relations}, which are a na\"{i}ve extension of the category \textbf{Top} of topological spaces and continuous functions towards continuous relations. We choose this category (as opposed to plain \textbf{Rel}, the category of sets and relations) because it satisfies several requirements arrived at by introspection of some of the demands of modelling language. These justifications involve basic reflections upon language use, and the consequent mathematical constraints those affordances impose on any interpretation of text circuits in a symmetric monoidal category; A priori it could well be that there is no non-trivial process theory that satisfies these constraints, so the onus is on us to show that there exists such a process theory. I outline these justifications after this subsection.\\
+
+Second, we introduce \textbf{TopRel}, demonstrate that it is a symmetric monoidal category, and we relate it to the well studied categories \textbf{Rel} and \textbf{Loc}. To the best of my knowledge, the study of this category is a novel contribution, reasons I list prefacing the bookwork. After the bookwork calculations, which may be skipped if too soporific, we introduce the diagrammatic calculus of \textbf{TopRel} along with worked examples as a more grounded alternative to familiarise the reader with the category.\\
+
+Third, once we have defined a stage to perform calculations in \textbf{TopRel}, our aim is to introduce some actors. We seek to make formal the kinds of informal schemata we might doodle on paper to animate various processes occurring in space. One good reason for doing this is to establish formal foundations for the semantics of metaphor, some of the most commonly used of which involve spatial processes in a way that is fundamentally topological []. For example, in the \emph{conduit metaphor} [], \texttt{words} are considered \emph{containers} for \texttt{ideas}, and \texttt{communication} is considered a \emph{conduit} along which those containers are sent.
+
+\[\scalebox{0.75}{\tikzfig{topology/conduitmetaphor}}\]
+
+If you are already happy to treat such doodles as formal, then I think you're alright, you can skip the rest of this chapter. If you are a category theorist or just curious, hello, how are you, please do write me to share your thoughts if you care to, and please skip the rest of this paragraph. If you are still reading, I assume you are some kind of smelly epistemic-paranoiac Bourbaki-thrall sets-and-lambdas math-phallus-worshipping truth-condition-blinded symbol-pusher who takes things too seriously. I want you to know that I feel pity and disdain for you with the same flaccid energy anyone could muster to care about you, and I promise you that my feelings towards you are still warmer than the oblivion of irrelevance that awaits us all. I hope you are alienated enough to stop reading because you would have choked on the mathematics in this chapter anyway. I will begin the intimidation immediately.\\
+
+We provide a generalisation (Definition \ref{defn:stickyspider}) of special commutative frobenius algebras in \textbf{TopRel} that cohere with idempotents in the category. The relation of ($\dagger$)-special commutative algebras in \textbf{FdHilb} to model observables in quantum mechanics is well-studied [], as is the role of idempotents in generalisations of quantum logic to arbitrary categories [], therefore this generalisation may be viewed as a unification of these ideas to define doodles in \textbf{TopRel}. N.B. we are not quite taking the Karoubi envelope of \textbf{TopRel}, as we are restricting the idempotents we wish to consider to only those that also behave appropriately as observables. The reason for this restriction lies in Theorem \ref{thm:stickygraphical} which provides a diagrammatic characterisation result that allows us to precisely identify when any idempotent in the category splits though a discrete topology. The discrete topology thus acts as a set of labels, where the (pre)images of each element under section and retract behave as the kind of shapes we wish to consider. As an interlude, we demonstrate how we may construct families of such idempotent-coherent special commutative frobenius algebras on $\mathbb{R}^2$ to provide a monoidal generalisation (c.f. the monoidal computer framework in []) of \textbf{FinRel} equipped with a Turing object [], thus satisfying Justification \ref{just:3}. Then we proceed to define configuration spaces of collections of shapes up to rigid displacement, and we develop a relational analogue of homotopy to model motions as paths in configuration space, along with appropriate extensions to accommodate nonrigid phenomena. If you are still reading and not already a category theorist nor just curious, I will drop the jargon now, because you are probably either questioning or deeply committed to your false ideals, both of which I respect, but just to spite the latter, I will proceed to do everything diagrammatically as much as possible.
 
 \subsection{Justification 1: bookwork demonstration}
 
 First, and simplest, is so that we have an excuse to build up a symmetric monoidal category from scratch, just to see what formal work is involved in doing so.\\
 
-\subsection{Justification 2: anything can be a noun-wire}
 
-Second, by linguistic introspection, we realise we must accommodate \emph{Entification} and \emph{Processising} -- the process of turning non-nouns into noun-entities and back again. If we think about English, we find that just about any word can be turned into a noun and back again (e.g. \texttt{run} by gerund to \texttt{running}, \texttt{quick} by a suffix to \texttt{quickness}, and even entire sentences \texttt{Bob drinks Duvel} can become a noun \texttt{the fact that Bob drinks Duvel}).\\
-
-This consideration carries some linguistic interest as well. In the usual treatment of anaphora resolution, pronouns refer to nouns, for instance: \texttt{Bob drinks a beer. \underline{It} is cold.}, where \texttt{it} refers to the beer. But there are situations where pronouns can point to textual data that are not nouns. For instance: \texttt{Jono was paid minimum wage. He didn't mind \underline{it}.}, where \texttt{it} would like to refer to something like \texttt{the fact that Jono was paid minimum wage}. While there are extensions of discourse reference theory to accommodate event structures [], the issue at hand is that pronouns in the appropriate context seem to be able to refer to \emph{any meaningful part of text}. For example, \texttt{The tiles were grey. \underline{It} was a particularly depressing shade.}, where \texttt{it} seems to refer just to the entified adjective \texttt{the greyness (of the tiles)}. Or, \texttt{Alice's cake was tastier than Bob's, but \underline{it} wasn't enough so for the judges to decide unanimously.}, where \emph{it} seems to refer the entified tastiness differential of \texttt{tastier}: \texttt{the difference in tastiness between Alice and Bob's cakes}.\\
-
-Since we have so far built up a theory around noun-wires as first-class citizens, these observations present nontrivial mathematical constraints for interpretations of text circuits. Now we try to interpret these constraints in mathematical terms, staying within the graphical confines of our putative process theory as much as possible. Let us denote the noun-wire type by $\Xi$. First we observe that any finite collection of noun wires $\bigotimes^n \Xi$ has to be \emph{encodable} in a single noun wire $\Xi$, because we can always interpose with \texttt{and}. We take this to mean that there will exist morphisms such that:
-
-\[placeholder\]
-
-Second, for any word-gate $w$ of grammatical type $\mathfrak{g}$, we ought to have noun-states and an evaluator process that witness entification and processising:
-
-\[placeholder\]
-
-Second-and-a-half, any morphism (or "meaningful part of text") $T \in \[\bigotimes^n \Xi,\bigotimes^m \Xi\]$ for any $n,m \in N$ -- has to be encodable as a state of $\Xi$. This is expressed as the following graphical condition:
-
-\[placeholder\]
-
-Condition two-and-a-half follows if the former conditions are met, provided that all text circuits are made up of a fixed stock of grammatical-gate-types:
-
-\[placeholder\]
-
-So in summary, we are asking for the following:
-
-\begin{requirement}
-
-\end{requirement}
 
 \subsection{Justification 3: we need both discrete symbolic and spatial conceptual behaviours}\label{just:rel}
 
