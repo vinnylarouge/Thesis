@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  27 NOV 2022 16:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  28 NOV 2022 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2363,18 +2363,56 @@ LaTeX Font Warning: Command \Huge invalid in math mode on input line 21.
 ) (./figures/idemproof/finalproof2.tikz) (./figures/idemproof/finalproof3.tikz)
 [97] (./figures/idemproof/finalproof4.tikz)) [98]
 (./chapters/toprel/5_topologicalconcepts.tex
-(./figures/topology/halooverlap.tikz) [99
 
-] (./figures/topology/fisheye.tikz)
-Overfull \hbox (187.36536pt too wide) detected at line 39
-[]
+! LaTeX Error: Too many math alphabets used in version normal.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...t we consider sticky spiders on $\mathbb{R}
+                                                  ^2$. In Section \ref{sec:s...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Too many math alphabets used in version normal.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...gical subgroup of isometries of $\mathbb{R}
+                                                  ^2$ by building up in Sect...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(./figures/topology/shape1.tikz
+
+LaTeX Font Warning: Command \Huge invalid in math mode on input line 11.
+
+) (./figures/topology/shape2.tikz)
+Overfull \hbox (10.17537pt too wide) in paragraph at lines 34--34
+[] 
  []
 
 
-LaTeX Warning: Marginpar on page 100 moved.
+Overfull \hbox (99.58337pt too wide) in paragraph at lines 34--34
+[] 
+ []
 
-[100] (./figures/topology/chessboard.tikz) (./figures/topology/chessboard2.tikz
-) [101]
+(./figures/topology/halooverlap.tikz)
+
+LaTeX Warning: Marginpar on page 99 moved.
+
+(./figures/topology/fisheye.tikz) [99
+
+] (./figures/topology/chessboard.tikz)
+(./figures/topology/chessboard2.tikz) [100]
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -2382,7 +2420,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54 \newthought{The reals}
+l.57 \newthought{The reals}
                             There are many spaces homeomorphic to the real l...
 
 Try typing  <return>  to proceed.
@@ -2395,7 +2433,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56 ...$, then $X$ is homeomorphic to $\mathbb{R}
+l.59 ...$, then $X$ is homeomorphic to $\mathbb{R}
                                                   $.
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2408,20 +2446,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 \newthought{Less than}
-                            We define $<$ as an open set on $X \times X$ tha...
+l.62 \newthought{Less than}
+                            We define a total order $<$ as an open set -- i....
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-(./figures/topology/leq.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [102]
-Overfull \vbox (293.517pt too high) has occurred while \output is active []
-
-
-[103]
+(./figures/topology/lessthan.tikz) (./figures/topology/lessthantotal.tikz)
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -2429,101 +2460,67 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61 \newthought{Endpoints}
+l.65 \newthought{Endpoints}
                             We can introduce endpoints for open intervals di...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-(./figures/topology/upperbound.tikz) (./figures/topology/sup.tikz) [104]
-(./figures/topology/endpoints.tikz) (./figures/topology/simplyconnected.tikz)
-(./figures/topology/simpconnotation.tikz)
-Underfull \vbox (badness 8000) has occurred while \output is active []
-
- [105]
-(./figures/topology/addition.tikz)
+[101] (./figures/topology/negbubble.tikz) (./figures/topology/upperbound.tikz)
+(./figures/topology/sup.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [106]
-Overfull \vbox (41.23344pt too high) has occurred while \output is active []
+ [102]
+(./figures/topology/endpoints.tikz) (./figures/topology/simplyconnected.tikz)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [103]
+(./figures/topology/simpconnotation.tikz) (./figures/topology/addition.tikz)
+Underfull \vbox (badness 3646) has occurred while \output is active []
 
-[107] (./figures/topology/metric.tikz)
+ [104]
+(./figures/topology/metric.tikz) (./figures/topology/openball.tikz) [105]
+(./figures/topology/topologicalgroup.tikz) (./figures/topology/isometry.tikz)
+[106] (./figures/topology/planeisometries.tikz)
+(./figures/topology/displacerigid.tikz) [107]
+(./figures/topology/homotopyctrex1.tikz) (./figures/topology/homotopy.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [108]
+(./figures/topology/homotopyctrex1.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [109]
-(./figures/topology/openball.tikz) (./figures/topology/topologicalgroup.tikz)
-(./figures/topology/isometry.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [110]
-(./figures/topology/planeisometries.tikz)
-(./figures/topology/displacerigid.tikz)
+(./figures/topology/homotopyctrex.tikz) [110]
+(./figures/topology/contractible.tikz)
+(./figures/topology/contractnotation.tikz) (./figures/topology/rigidmotion.tikz
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [111]
-(./figures/topology/homotopyctrex1.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [112]
-(./figures/topology/homotopy.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [113]
-(./figures/topology/homotopyctrex1.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [114]
-(./figures/topology/homotopyctrex.tikz) [115]
-(./figures/topology/contractible.tikz)
-Overfull \hbox (53.58928pt too wide) detected at line 179
-[]
- []
-
-(./figures/topology/contractnotation.tikz) (./figures/topology/rigidmotion.tikz
-)
-Underfull \vbox (badness 3601) has occurred while \output is active []
-
- [116]
 (./figures/topology/configurations.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [117]
+ [112]
 (./figures/topology/rigidmotion2.tikz) (./figures/topology/encloseexample.tikz)
 
 Underfull \vbox (badness 5607) has occurred while \output is active []
 
- [118]
-[119] (./figures/topology/parthood.tikz) (./figures/topology/touching.tikz)
+ [113]
+[114] (./figures/topology/parthood.tikz) (./figures/topology/touching.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [120]
+ [115]
 (./figures/topology/within.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [121]
-(./figures/topology/enclose.tikz) [122] (./figures/topology/trapped.tikz)
-Overfull \hbox (39.34187pt too wide) detected at line 239
-[]
- []
-
+ [116]
+(./figures/topology/enclose.tikz) (./figures/topology/trapped.tikz) [117]
 (./figures/topology/interlock.tikz)
-Overfull \hbox (321.70724pt too wide) detected at line 245
-[]
- []
+Underfull \vbox (badness 1577) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [123]
-(./figures/topology/constrained.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [124]
-(./figures/topology/labelledwires.tikz
+ [118]
+(./figures/topology/constrained.tikz) (./figures/topology/labelledwires.tikz
 
 ! LaTeX Error: Too many math alphabets used in version normal.
 
@@ -2605,32 +2602,25 @@ or  <return>  to continue without it.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [125]
-[126] (./figures/topology/test2gate.tikz)
-Overfull \hbox (35.5223pt too wide) detected at line 263
-[]
- []
+ [119]
+(./figures/topology/test2gate.tikz)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(./figures/topology/copygatecommute.tikz) [127]
+ [120]
+(./figures/topology/copygatecommute.tikz)
 (./figures/topology/collisionparticular.tikz)
-(./figures/topology/collideinterior.tikz)
-Overfull \hbox (231.18442pt too wide) detected at line 276
-[]
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [121]
+(./figures/topology/collideinterior.tikz) (./figures/topology/collidegate.tikz)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [128]
-(./figures/topology/collidegate.tikz) (./figures/topology/seqparhom.tikz)
-Underfull \vbox (badness 2837) has occurred while \output is active []
-
- [129]
-(./figures/topology/inopenout.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [130]
-(./figures/topology/breaklock.tikz) [131] (./figures/topology/groupaction.tikz
+ [122]
+(./figures/topology/seqparhom.tikz) [123] (./figures/topology/inopenout.tikz)
+(./figures/topology/breaklock.tikz) [124]
+(./figures/topology/slideconstruction.tikz)
+(./figures/topology/groupaction.tikz
 
 ! LaTeX Error: Too many math alphabets used in version normal.
 
@@ -2670,12 +2660,15 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) (./figures/topology/spiderbreakdown.tikz) [132]
+) (./figures/topology/spiderbreakdown.tikz)
+Underfull \vbox (badness 3492) has occurred while \output is active []
 
-LaTeX Warning: Reference `prop:exclusion' on page 133 undefined on input line 3
-18.
+ [125]
 
-) [133] (./chapters/toprel/topmathendnotes.tex
+LaTeX Warning: Reference `prop:exclusion' on page 126 undefined on input line 2
+87.
+
+) [126] (./chapters/toprel/topmathendnotes.tex
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -2702,95 +2695,30 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Marginpar on page 134 moved.
+LaTeX Warning: Marginpar on page 127 moved.
 
 
-LaTeX Warning: Marginpar on page 134 moved.
+LaTeX Warning: Marginpar on page 127 moved.
 
 
-LaTeX Warning: Marginpar on page 134 moved.
+LaTeX Warning: Marginpar on page 127 moved.
 
-[134
+[127
 
-] [135] [136] [137] (./figures/topology/spanctrex.tikz)) [138]
+] [128] [129] [130] (./figures/topology/spanctrex.tikz)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [131])
+[132]
 Chapter 4.
-[139
+[133
 
 
-] (./chapters/toprel/4_lassos.tex
+] (./chapters/toprel/4_lassos.tex [134
 
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 ...m (or "meaningful part of text") $T \in \[
-                                                  \bigotimes^n \Xi,\bigotime...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.15 ... \in \[\bigotimes^n \Xi,\bigotimes^m \Xi\]
-                                                  $ for any $n,m \in N$ -- h...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! LaTeX Error: \begin{document} ended by \end{equation*}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 ... \in \[\bigotimes^n \Xi,\bigotimes^m \Xi\]
-                                                  $ for any $n,m \in N$ -- h...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.15 ... \in \[\bigotimes^n \Xi,\bigotimes^m \Xi\]
-                                                  $ for any $n,m \in N$ -- h...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.15 ... \in \[\bigotimes^n \Xi,\bigotimes^m \Xi\]
-                                                  $ for any $n,m \in N$ -- h...
-Things are pretty mixed up, but I think the worst is over.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.15 ...n \Xi,\bigotimes^m \Xi\]$ for any $n,m \in
-                                                   N$ -- has to be encodable...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-[140
-
-] (./figures/spatialencoding/circencodingconstruct.tikz)
-Overfull \hbox (78.47694pt too wide) detected at line 33
-[]
- []
-
-(./figures/spatialencoding/stickymorphismdefn.tikz) [141]
+]
+(./figures/spatialencoding/circencodingconstruct.tikz)
+(./figures/spatialencoding/stickymorphismdefn.tikz)
 (./figures/spatialencoding/arbsetclaim.tikz
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 21.61124pt on input line 76.
@@ -2805,53 +2733,22 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 76.
 )
-Overfull \hbox (246.88742pt too wide) detected at line 44
-[]
- []
-
-(./figures/spatialencoding/arbset.tikz)
-Overfull \hbox (40.74747pt too wide) detected at line 46
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [142]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [143]
-(./figures/spatialencoding/directsumconstruct.tikz)
+(./figures/spatialencoding/arbset.tikz) [135]
+(./figures/spatialencoding/directsumconstruct.tikz) [136]
 (./figures/spatialencoding/leftrightcompressions.tikz)
-Overfull \hbox (11.91093pt too wide) detected at line 54
-[]
- []
-
 (./figures/spatialencoding/leftrightcompressions2.tikz)
 (./figures/spatialencoding/leftrightcompressions3.tikz)
+(./figures/spatialencoding/leftrightcompressions4.tikz) [137]
+(./figures/spatialencoding/tensorconstruct.tikz)
+(./figures/spatialencoding/boxcompression.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [144]
-(./figures/spatialencoding/leftrightcompressions4.tikz)
-(./figures/spatialencoding/tensorconstruct.tikz)
-Overfull \hbox (54.0193pt too wide) detected at line 64
-[]
- []
-
-[145] (./figures/spatialencoding/boxcompression.tikz)
-Overfull \hbox (23.54282pt too wide) detected at line 66
-[]
- []
-
+ [138]
 (./figures/spatialencoding/obtainboxposition.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [146]
+ [139]
 (./figures/spatialencoding/tensordetensor.tikz)
-Overfull \hbox (114.04286pt too wide) detected at line 70
-[]
- []
-
 (./figures/spatialencoding/tensordetensor2.tikz
 
 Package pgf Warning: Returning node center instead of a point on node border. D
@@ -2883,7 +2780,7 @@ Package pgf Warning: Returning node center instead of a point on node border. D
 id you specify a point identical to the center of node ``51''? on input line 77
 .
 
-) [147] (./figures/spatialencoding/tensordetensor3.tikz)
+) [140] (./figures/spatialencoding/tensordetensor3.tikz)
 (./figures/spatialencoding/relcomp1.tikz
 
 Package pgf Warning: Returning node center instead of a point on node border. D
@@ -2896,96 +2793,21 @@ id you specify a point identical to the center of node ``81''? on input line 15
 3.
 
 )
-Overfull \hbox (50.0242pt too wide) detected at line 79
-[]
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 5504) has occurred while \output is active []
-
- [148]
+ [141]
 (./figures/spatialencoding/relcomp2.tikz)
-Overfull \hbox (224.20856pt too wide) detected at line 81
-[]
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [149]
+ [142]
 (./figures/spatialencoding/relcomp3.tikz)
-Overfull \hbox (174.41624pt too wide) detected at line 83
-[]
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [150]
-
-! LaTeX Error: \begin{document} ended by \end{list}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.86 \end{fullwidth}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.86 \end{fullwidth}
-                    
-Things are pretty mixed up, but I think the worst is over.
-
-
-! LaTeX Error: \begin{document} ended by \end{adjustwidth}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.86 \end{fullwidth}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.86 \end{fullwidth}
-                    
-Things are pretty mixed up, but I think the worst is over.
-
-
-! LaTeX Error: \begin{document} ended by \end{fullwidth}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.86 \end{fullwidth}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.86 \end{fullwidth}
-                    
-Things are pretty mixed up, but I think the worst is over.
-
-) [151] (./chapters/beyond/metaphor.tex [152
+ [143])
+[144] (./chapters/beyond/metaphor.tex [145
 
 ]
-(./figures/metaphor/timeISmoney.tikz)) [153]
+(./figures/metaphor/timeISmoney.tikz)) [146]
 
 Package natbib Warning: There were undefined citations.
 
@@ -3012,10 +2834,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 9B83BA5B43CA690C318E4870440222C6;4888.
  ) 
 Here is how much of TeX's memory you used:
- 56492 strings out of 478268
- 1240405 string characters out of 5846348
- 1981708 words of memory out of 5000000
- 72770 multiletter control sequences out of 15000+600000
+ 56562 strings out of 478268
+ 1242557 string characters out of 5846348
+ 1982173 words of memory out of 5000000
+ 72831 multiletter control sequences out of 15000+600000
  692126 words of font info for 340 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  119i,13n,121p,2095b,1327s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3049,10 +2871,10 @@ e1/public/stix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
 public/stix/stix-mathtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pub
 lic/stmaryrd/stmary10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/h
 elvetic/uhvr8a.pfb>
-Output written on main.pdf (153 pages, 3707884 bytes).
+Output written on main.pdf (146 pages, 3711861 bytes).
 PDF statistics:
- 1328 PDF objects out of 1440 (max. 8388607)
- 1037 compressed objects within 11 object streams
- 342 named destinations out of 1000 (max. 500000)
+ 1305 PDF objects out of 1440 (max. 8388607)
+ 1021 compressed objects within 11 object streams
+ 335 named destinations out of 1000 (max. 500000)
  27951 words of extra memory for PDF output out of 29859 (max. 10000000)
 

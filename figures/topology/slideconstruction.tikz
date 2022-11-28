@@ -1,0 +1,100 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (3) at (-6, 1) {};
+		\node [style=none] (4) at (-8, -0.5) {};
+		\node [style=none] (5) at (-5.5, -2) {};
+		\node [style=none] (6) at (-6.75, -0.5) {};
+		\node [style=none] (7) at (-4.75, -0.25) {};
+		\node [style=none] (8) at (-7.75, -2) {$m$};
+		\node [style=none] (9) at (-6.25, -0.25) {};
+		\node [style=none] (10) at (-6.25, -1) {};
+		\node [style=none] (11) at (-5.75, 0.25) {};
+		\node [style=none] (12) at (-5.75, -1) {};
+		\node [style=none] (13) at (-5.35, 0.125) {};
+		\node [style=none] (14) at (-5.35, -0.875) {};
+		\node [style=none] (21) at (-6.75, 2.25) {};
+		\node [style=none] (22) at (-6.75, 1.5) {};
+		\node [style=none] (23) at (-5.25, 3) {};
+		\node [style=none] (24) at (-5.25, 1.75) {};
+		\node [style=none] (25) at (-4, 2) {};
+		\node [style=none] (26) at (-4, 1) {};
+		\node [style=smalldotb] (27) at (-6.125, -0.55) {};
+		\node [style=none] (28) at (-4, 1.5) {};
+		\node [style=none] (29) at (-4.75, 0.5) {};
+		\node [style=none] (30) at (-5.25, 0.75) {};
+		\node [style=none] (31) at (-5.75, 0.75) {};
+		\node [style=none] (32) at (-5.25, 2.4) {};
+		\node [style=none] (33) at (-6.75, 1.9) {};
+		\node [style=none] (34) at (-7.25, -1.75) {};
+		\node [style=none] (36) at (5.5, 0.4) {};
+		\node [style=none] (37) at (5.5, -0.35) {};
+		\node [style=none] (38) at (5.5, 0.65) {};
+		\node [style=none] (39) at (5.5, -0.6) {};
+		\node [style=none] (40) at (5.5, 0.5) {};
+		\node [style=none] (41) at (5.5, -0.5) {};
+		\node [style=none] (42) at (-1, 0) {};
+		\node [style=none] (43) at (1, 0.25) {};
+		\node [style=none] (44) at (-0.5, 0.25) {};
+		\node [style=none] (45) at (-0.5, -0.5) {};
+		\node [style=none] (46) at (0, 0.75) {};
+		\node [style=none] (47) at (0, -0.5) {};
+		\node [style=none] (48) at (0.4, 0.625) {};
+		\node [style=none] (49) at (0.4, -0.375) {};
+		\node [style=dotC] (50) at (-0.35, -0.1) {};
+		\node [style=none] (51) at (-5.75, 3.75) {Open balls cover core};
+		\node [style=none] (52) at (-5.75, -2.75) {rendezvous $m$ in overlap};
+		\node [style=none] (53) at (0, 2) {collapse halo to $m$};
+		\node [style=dotC] (54) at (5.5, 0) {};
+		\node [style=none] (55) at (5.5, -2) {centre ball cover};
+		\node [style=none] (56) at (-4, 0) {};
+		\node [style=none] (57) at (-2, 0) {};
+		\node [style=none] (58) at (2, 0) {};
+		\node [style=none] (59) at (4, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=Fc] (4.center)
+			 to (3.center)
+			 to (5.center);
+		\draw [style=KDB] (7.center)
+			 to [in=75, out=105, looseness=1.25] (6.center)
+			 to [in=-75, out=-105, looseness=1.25] cycle;
+		\draw [style=H] (10.center)
+			 to [bend right=90, looseness=1.75] (9.center)
+			 to [bend right=90, looseness=1.75] cycle;
+		\draw [style=H] (12.center)
+			 to [bend right=90, looseness=1.75] (11.center)
+			 to [bend right=90, looseness=1.75] cycle;
+		\draw [style=H] (14.center)
+			 to [bend right=90, looseness=1.75] (13.center)
+			 to [bend right=90, looseness=1.75] cycle;
+		\draw [style=H] (22.center)
+			 to [bend right=90, looseness=1.75] (21.center)
+			 to [bend right=90, looseness=1.75] cycle;
+		\draw [style=H, bend right=90, looseness=1.75] (24.center) to (23.center);
+		\draw [style=H, bend right=90, looseness=1.75] (23.center) to (24.center);
+		\draw [style=H, bend right=90, looseness=1.75] (26.center) to (25.center);
+		\draw [style=H, bend right=90, looseness=1.75] (25.center) to (26.center);
+		\draw [style=v] (33.center) to (31.center);
+		\draw [style=v] (32.center) to (30.center);
+		\draw [style=v] (28.center) to (29.center);
+		\draw [style=v] (34.center) to (27);
+		\draw [style=H, bend right=90, looseness=1.75] (37.center) to (36.center);
+		\draw [style=H, bend right=90, looseness=1.75] (36.center) to (37.center);
+		\draw [style=H, bend right=90, looseness=1.75] (39.center) to (38.center);
+		\draw [style=H, bend right=90, looseness=1.75] (38.center) to (39.center);
+		\draw [style=H, bend right=90, looseness=1.75] (41.center) to (40.center);
+		\draw [style=H, bend right=90, looseness=1.75] (40.center) to (41.center);
+		\draw [style=KDB] (43.center)
+			 to [in=75, out=105, looseness=1.25] (42.center)
+			 to [in=-75, out=-105, looseness=1.25] cycle;
+		\draw [style=H] (45.center)
+			 to [bend right=90, looseness=1.75] (44.center)
+			 to [bend right=90, looseness=1.75] cycle;
+		\draw [style=H, bend right=90, looseness=1.75] (47.center) to (46.center);
+		\draw [style=H, bend right=90, looseness=1.75] (46.center) to (47.center);
+		\draw [style=H, bend right=90, looseness=1.75] (49.center) to (48.center);
+		\draw [style=H, bend right=90, looseness=1.75] (48.center) to (49.center);
+		\draw [style=vM] (56.center) to (57.center);
+		\draw [style=vM] (58.center) to (59.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

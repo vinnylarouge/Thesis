@@ -21,7 +21,7 @@ We denote the product topology of $X^\tau$ and $Y^\sigma$ as $(X \times Y)^{(\ta
 }
 
 \begin{proposition}
-$(\mathbf{TopRel},\{\star\}^{\bullet},X^\tau \otimes Y^\sigma := (X \times Y)^{(\tau \times \sigma)})$ is a symmetric monoidal closed category.
+$(\mathbf{TopRel},\bullet,X^\tau \otimes Y^\sigma := (X \times Y)^{(\tau \times \sigma)})$ is a symmetric monoidal closed category.
 \begin{proof}
 
 \newthought{Tensor Unit:} The one-point space $\bullet$. Explicitly, $\{\star\}$ with topology $\{\varnothing,\{\star\}\}$.
@@ -33,29 +33,24 @@ $(\mathbf{TopRel},\{\star\}^{\bullet},X^\tau \otimes Y^\sigma := (X \times Y)^{(
 }
 
 \newthought{Tensor Product:} For objects, $X^\tau \otimes Y^\sigma$ has base set $X \times Y$ equipped with the product topology $\tau \times \sigma$. For morphisms, $R \otimes S$ the product of relations. We show that the tensor of continuous relations is again a continuous relation. Take continuous relations $R: X^\tau \rightarrow Y^\sigma$, $S: A^\alpha \rightarrow B^\beta$, and let $U$ be open in the product topology $(\sigma \times \beta)$. We need to prove that $(R \times S)^\dag(U) \in (\tau \times \alpha)$. We may express $U$ as $\bigcup\limits_{i \in I} y_i \times b_i$, where the $y_i$ and $b_i$ are in the bases $\mathfrak{b}_\sigma$ and $\mathfrak{b}_\beta$ respectively. Since for any relations we have that $R(A \cup B) = R(A) \cup R(B)$ and $(R \times S)^\dag = R^\dag \times S^\dag$:
-
 \begin{align*}
 &(R \times S)^\dag(\bigcup\limits_{i \in I} y_i \times b_i)\\
  &= \bigcup\limits_{i \in I}(R \times S)^\dag(y_i \times b_i)\\
  &= \bigcup\limits_{i \in I}(R^\dag \times S^\dag)(y_i \times b_i)
  \end{align*}
-
 Since each $y_i$ is open and $R$ is continuous, $R^\dag(y_i) \in \tau$. Symmetrically, $S^\dag(b_i) \in \alpha$. So each $(R^\dag \times S^\dag)(y_i \times b_i) \in (\tau \times \alpha)$. Topologies are closed under arbitrary union, so we are done.
-
-\newthought{Unitors:} The left unitors $\lambda_{X^{\tau}}: \bullet \times X^\tau \rightarrow X^\tau$ maps $(\star,x) \mapsto x$, and we reverse the direction of the mapping to obtain the inverse $\lambda^{-1}_{X^{\tau}}$. The construction is symmetric for the right unitors $\rho_{X^{\tau}}$. 
-
+\newthought{The natural isomorphisms are inherited from \textbf{Rel}}. We will be explicit with the unitor, but for the rest, we will only check that the usual isomorphisms from \textbf{Rel} are continuous in \textbf{TopRel}. To avoid bracket-glut, we will vertically stack some tensored expressions.
+\newthought{Unitors:} The left unitors are defined as the relations $\lambda_{X^{\tau}}: \bullet \times X^\tau \rightarrow X^\tau := \{(\begin{pmatrix}\star \\x \end{pmatrix}, x) \ | \ x \in X\}$, and we reverse the pairs to obtain the inverse $\lambda^{-1}_{X^{\tau}}$. These relations are continuous since the product topology of $\tau$ with the singleton is homeomorphic to $\tau$: $U \in \tau \iff (\bullet,U) \in (\bullet \times \tau)$. These relations are evidently inverses that compose to the identity. The construction is symmetric for the right unitors $\rho_{X^{\tau}}$.
 \newthought{Associators:}
-
-The associators $\alpha_{X^{\tau},Y^{\sigma},Z^{\rho}}$
-
+The associators $\alpha_{X^{\tau}Y^{\sigma}Z^{\rho}} : ((X \times Y) \times Z)^{((\tau \times \sigma) \times \rho)} \rightarrow (X \times (Y \times Z))^{(\tau \times (\sigma \times \rho))}$ are inherited from \textbf{Rel}. They are:
+\[\alpha_{X^{\tau}Y^{\sigma}Z^{\rho}} := \{\big( \ (\begin{pmatrix} x \\ y \end{pmatrix} , z) \ , \ (x, \begin{pmatrix} y \\ z \end{pmatrix}) \big) \quad | \quad x \in X \ , \ y \in Y \ ,\ z \in Z \}\]
+To check the continuity of the associator, observe that product topologies are isomorphic in \textbf{Top} up to bracketing, and these isomorphisms are inherited by \textbf{TopRel}. The inverse of the associator has the pairs of the relation reversed and is evidently an inverse that composes to the identity.
 \newthought{Braids:}
-
-...
-
+The braidings $\theta_{X^{\tau}Y^{\sigma}} : (X \times Y)^{\tau \times \sigma} \rightarrow (Y \times X)^{\sigma \times \tau}$ are defined:
+\[\{(\begin{pmatrix} x \\ y \end{pmatrix} \ , \ \begin{pmatrix} y \\ x \end{pmatrix}) \quad | \quad x \in X \ , \ y \in Y  \}\]
+The braidings inherit continuity from the isomorphisms between $X^\tau \times Y^\sigma$ and $Y^\sigma \times X^\tau$ in \textbf{Top}. They inherit everything else from \textbf{Rel}
 \newthought{Coherences:}
-
-...
-
+Since we have verified all of the natural isomorphisms are continuous, it suffices to say that the coherences [] are inherited from the symmetric monoidal structure of \textbf{Rel} up to marking objects with topologies.
 \end{proof}
 \end{proposition}
 
@@ -66,13 +61,21 @@ A \emph{biproduct} is simultaneously a categorical product and coproduct. A \emp
 \end{defn}
 
 \begin{proposition}
-$\mathbf{TopRel}$ has a zero object and biproducts.
+$\mathbf{TopRel}$ has a zero object.
 \begin{proof}
+As in \textbf{Rel}, there is a unique relation from every object to and from the empty set with the empty topology.
+\end{proof}
+\end{proposition}
+
+\begin{proposition}
+$\mathbf{TopRel}$ has coproducts.
+\begin{proof}
+As in \textbf{Rel}, there is a unique relation from every object to and from the empty set with the empty topology.
 \end{proof}
 \end{proposition}
 
 \begin{notation}[Notations for rig structure]
-\textbf{FdHilb} also has a monoidal product notated $\otimes$ that distributes over the monoidal structure given by biproducts $\oplus$. In contrast, we will use $\times$ -- the cartesian product notation -- for the monoidal product of \textbf{TopRel}, and $\bigcup$ for the biproduct structure, since that is closer to what is familiar with sets.
+\textbf{FdHilb} also has a monoidal product notated $\otimes$ that distributes over the monoidal structure given by biproducts $\oplus$. In contrast, we have used $\times$ -- the cartesian product notation -- for the monoidal product of \textbf{TopRel}, and $\bigcup$ for the coproduct structure, since that is closer to what is familiar with sets.
 \end{notation}
 
 \subsection{Relation to \textbf{Rel} and \textbf{Loc}}

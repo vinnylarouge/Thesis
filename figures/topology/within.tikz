@@ -2,7 +2,6 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (-5.5, 0.75) {};
 		\node [style=none] (3) at (-5.5, 0.75) {};
-		\node [style=none] (4) at (0, 3.5) {$U$ \emph{surrounds} $V$};
 		\node [style=none] (5) at (-9, 0) {$\forall$};
 		\node [style=none] (6) at (-5.5, -0.75) {};
 		\node [style=none] (7) at (-5.5, -0.25) {};
@@ -36,7 +35,7 @@
 		\node [style=none] (37) at (5, 0) {$=$};
 		\node [style=dotb] (38) at (4.25, 0.75) {----};
 		\node [style=dotb] (39) at (-4.8, 0.75) {----};
-		\node [style=none] (40) at (-0.05, 2.75) {$V$ is \emph{within} $U$};
+		\node [style=none] (40) at (-0.05, 2.75) {$V$ is \emph{within} $U$, or $U$ \emph{surrounds} $V$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K] (7.center)
