@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  29 NOV 2022 16:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  2 DEC 2022 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1660,7 +1660,7 @@ Chapter 0.
 
 ] (./chapters/intro/0_intro.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
-[][]\T1/stix/m/it/12 What is this the-sis about?|
+[][]\T1/stix/m/it/12 "What is this the-sis about?"|
  []
 
 (./figures/intro/model.tikz) (./figures/intro/model2.tikz)
@@ -1672,7 +1672,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 (./figures/intro/model5.tikz) (./figures/intro/model6.tikz) [7]
 Underfull \hbox (badness 10000) in paragraph at lines 39--39
-|[]\T1/stix/m/it/12 What is the shape of lan-guage?|
+|[]\T1/stix/m/it/12 "What is the shape of lan-guage?"|
  []
 
 (./figures/intro/multiplex.tikz)
@@ -2168,17 +2168,216 @@ LaTeX Warning: Reference `just:3' on page 64 undefined on input line 15.
 
 [64
 
-]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 39.
-
-
-Overfull \hbox (368.01633pt too wide) in paragraph at lines 40--53
+] [65]
+Overfull \hbox (308.96474pt too wide) in paragraph at lines 38--51
 [][] 
  []
 
-[65]) [66] (./chapters/toprel/0_contrel.tex
+
+Overfull \hbox (0.77086pt too wide) in paragraph at lines 53--53
+[]\T1/stix/b/n/10 TopRel \T1/stix/m/n/10 re-flects the above cor-re-spon-dences
+ di-a-gram-mat-i-cally. Open sets are pre-cisely tests, and it is al-ways pos-s
+i-ble to con-struct fi-nite in-ter-sec-tions of opens us-ing copy-relations. 
+ []
+
+! Misplaced \crcr.
+\endtabular ->\crcr 
+                    \egroup \egroup $\egroup 
+l.55 ...t off with regular logic -- $\exists, \and
+                                                  , \top$ -- for free []. In...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Extra }, or forgotten $.
+\endtabular ->\crcr \egroup 
+                            \egroup $\egroup 
+l.55 ...t off with regular logic -- $\exists, \and
+                                                  , \top$ -- for free []. In...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\endtabular ->\crcr \egroup \egroup 
+                                    $\egroup 
+l.55 ...t off with regular logic -- $\exists, \and
+                                                  , \top$ -- for free []. In...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+\endtabular ->\crcr \egroup \egroup $\egroup 
+                                             
+l.55 ...t off with regular logic -- $\exists, \and
+                                                  , \top$ -- for free []. In...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{list} on input line 3 ended by \end{tabular}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 ...t off with regular logic -- $\exists, \and
+                                                  , \top$ -- for free []. In...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.55 ...with regular logic -- $\exists, \and, \top
+                                                  $ -- for free []. In order...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \newthought{Summary of justifications.}
+                                             We want a symmetric monoidal ca...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \end{fullwidth}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \end{fullwidth}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{tabular} on input line 55 ended by \end{list}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \end{fullwidth}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.60 \end{fullwidth}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.60 \end{fullwidth}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.60 \end{fullwidth}
+                    
+I'm guessing that you meant to end an alignment here.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.60 \end{fullwidth}
+                    
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.60 \end{fullwidth}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.60 \end{fullwidth}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.60 \end{fullwidth}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+)
+Overfull \hbox (5095.64389pt too wide) in paragraph at lines 55--38
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--38
+ 
+ []
+
+[66] [67] (./chapters/toprel/0_contrel.tex
 
 ! LaTeX Error: Too many math alphabets used in version normal.
 
@@ -2193,51 +2392,53 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Marginpar on page 67 moved.
+LaTeX Warning: Marginpar on page 68 moved.
 
 
-LaTeX Warning: Marginpar on page 67 moved.
+LaTeX Warning: Marginpar on page 68 moved.
 
 
-LaTeX Warning: Marginpar on page 67 moved.
+LaTeX Warning: Marginpar on page 68 moved.
 
 
-LaTeX Warning: Marginpar on page 67 moved.
+LaTeX Warning: Marginpar on page 68 moved.
 
 
-LaTeX Warning: Marginpar on page 67 moved.
+LaTeX Warning: Marginpar on page 68 moved.
 
-[67
+
+LaTeX Warning: Marginpar on page 68 moved.
+
+
+LaTeX Warning: Marginpar on page 68 moved.
+
+
+LaTeX Warning: Marginpar on page 68 moved.
+
+
+LaTeX Warning: Marginpar on page 68 moved.
+
+[68
 
 ] (./figures/bestiary/generators.tikz)
 (./figures/bestiary/basicrelations.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68]
+ [69]
 (./figures/structure/determinism.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69]
+ [70]
 (./figures/bestiary/scalarrelations.tikz)
-(./figures/bestiary/zerorelations.tikz) [70]) [71]
+(./figures/bestiary/zerorelations.tikz) [71]) [72]
 (./chapters/toprel/1_examples.tex (./figures/testspaces/singleton.tikz)
 (./figures/testspaces/sierpinski.tikz) (./figures/testspaces/unitsquare.tikz)
-[72
+[73
 
 ]
 
-LaTeX Warning: Marginpar on page 73 moved.
+LaTeX Warning: Marginpar on page 74 moved.
 
-
-LaTeX Warning: Marginpar on page 73 moved.
-
-
-LaTeX Warning: Marginpar on page 73 moved.
-
-
-LaTeX Warning: Marginpar on page 73 moved.
-
-[73]
 
 LaTeX Warning: Marginpar on page 74 moved.
 
@@ -2246,52 +2447,62 @@ LaTeX Warning: Marginpar on page 74 moved.
 
 
 LaTeX Warning: Marginpar on page 74 moved.
+
+[74]
+
+LaTeX Warning: Marginpar on page 75 moved.
+
+
+LaTeX Warning: Marginpar on page 75 moved.
+
+
+LaTeX Warning: Marginpar on page 75 moved.
 
 (./figures/paintingexamples/sierandcanvas2_2.tikz)
 (./figures/paintingexamples/s2sqzoom.tikz)
 
-LaTeX Warning: Marginpar on page 74 moved.
+LaTeX Warning: Marginpar on page 75 moved.
 
 (./figures/paintingexamples/s2sqpainting.tikz)
 
-LaTeX Warning: Marginpar on page 74 moved.
+LaTeX Warning: Marginpar on page 75 moved.
 
 (./figures/paintingexamples/sq2spainting.tikz)
 
-LaTeX Warning: Marginpar on page 74 moved.
+LaTeX Warning: Marginpar on page 75 moved.
 
-[74] (./figures/testspaces/sierpinskienum.tikz) [75] [76]
+[75] (./figures/testspaces/sierpinskienum.tikz) [76] [77]
 (./figures/paintingexamples/contline.tikz)
 
-LaTeX Warning: Marginpar on page 77 moved.
+LaTeX Warning: Marginpar on page 78 moved.
 
 (./figures/paintingexamples/contlines.tikz)
 
-LaTeX Warning: Marginpar on page 77 moved.
+LaTeX Warning: Marginpar on page 78 moved.
 
 (./figures/paintingexamples/thickbrush.tikz)
 
-LaTeX Warning: Marginpar on page 77 moved.
+LaTeX Warning: Marginpar on page 78 moved.
 
-<figures/paintingexamples/spectrum.png, id=747, 1194.4625pt x 34.1275pt>
+<figures/paintingexamples/spectrum.png, id=758, 1194.4625pt x 34.1275pt>
 File: figures/paintingexamples/spectrum.png Graphic file (type png)
 <use figures/paintingexamples/spectrum.png>
 Package pdftex.def Info: figures/paintingexamples/spectrum.png  used on input l
 ine 244.
 (pdftex.def)             Requested size: 233.31111pt x 6.66602pt.
 
-LaTeX Warning: Marginpar on page 77 moved.
+LaTeX Warning: Marginpar on page 78 moved.
 
-<figures/paintingexamples/starrynight.jpg, id=749, 2569.6pt x 2034.60126pt>
+<figures/paintingexamples/starrynight.jpg, id=760, 2569.6pt x 2034.60126pt>
 File: figures/paintingexamples/starrynight.jpg Graphic file (type jpg)
 <use figures/paintingexamples/starrynight.jpg>
 Package pdftex.def Info: figures/paintingexamples/starrynight.jpg  used on inpu
 t line 250.
 (pdftex.def)             Requested size: 233.29288pt x 184.72058pt.
 
-LaTeX Warning: Marginpar on page 77 moved.
+LaTeX Warning: Marginpar on page 78 moved.
 
-) [77
+) [78
 
  <./figures/paintingexamples/spectrum.png> <./figures/paintingexamples/starryni
 ght.jpg>] (./chapters/toprel/3_sticky.tex
@@ -2300,33 +2511,33 @@ ght.jpg>] (./chapters/toprel/3_sticky.tex
 LaTeX Warning: Float too large for page by 79.47964pt on input line 8.
 
 
-LaTeX Warning: Marginpar on page 78 moved.
+LaTeX Warning: Marginpar on page 79 moved.
 
 (./figures/structure/copyspiderproof/openpoint.tikz)
 (./figures/structure/copyspiderproof/openpointproof.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78
+ [79
 
 ]
-[79] (./figures/structure/copyspiderproof/openpointcases.tikz)
+[80] (./figures/structure/copyspiderproof/openpointcases.tikz)
 
-LaTeX Warning: Marginpar on page 80 moved.
+LaTeX Warning: Marginpar on page 81 moved.
 
-(./figures/structure/idemspider/splitidem.tikz) [80]
+(./figures/structure/idemspider/splitidem.tikz) [81]
 (./figures/structure/idemspider/espiderproperties.tikz)
 (./figures/structure/idemspider/espiderproperties2.tikz)
-(./figures/structure/idemspider/stickyrelations.tikz) [81]
+(./figures/structure/idemspider/stickyrelations.tikz) [82]
 (./figures/structure/idemspider/idemspiderv2.tikz)
 (./figures/structure/idemspider/espiderstatement.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [82]
+ [83]
 (./figures/structure/idemspider/espiderproofv2.tikz)
-(./figures/structure/idemspider/splitonto.tikz) [83]
+(./figures/structure/idemspider/splitonto.tikz) [84]
 (./figures/structure/idemspider/espiderproof2.tikz)
 (./figures/idemproof/unit-everything.tikz)
-(./figures/idemproof/comult-copy.tikz) [84] (./figures/idemproof/claimmap2.tikz
+(./figures/idemproof/comult-copy.tikz) [85] (./figures/idemproof/claimmap2.tikz
 LaTeX Font Info:    Calculating math sizes for size <24> on input line 78.
 
 LaTeX Font Warning: Font shape `U/stmry/m/n' in size <24> not available
@@ -2351,40 +2562,40 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [85]
-[86] (./figures/idemproof/ecopy2delclaim.tikz)
-(./figures/idemproof/ecopy2del.tikz) [87]
+ [86]
+[87] (./figures/idemproof/ecopy2delclaim.tikz)
+(./figures/idemproof/ecopy2del.tikz) [88]
 (./figures/idemproof/allornothingclaim.tikz)
 (./figures/idemproof/allornothing2a.tikz)
 (./figures/idemproof/allornothing2b.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [88]
-[89] (./figures/idemproof/pointidemcopiable.tikz)
-(./figures/idemproof/pointidemcopiableproof.tikz) [90]
+ [89]
+[90] (./figures/idemproof/pointidemcopiable.tikz)
+(./figures/idemproof/pointidemcopiableproof.tikz) [91]
 (./figures/idemproof/copiablebasisclaim.tikz)
-(./figures/idemproof/copiablebasis.tikz) [91]
+(./figures/idemproof/copiablebasis.tikz) [92]
 (./figures/idemproof/decompidemclaim.tikz) (./figures/idemproof/decompidem.tikz
-) [92] (./figures/idemproof/decompcounitclaim.tikz)
-(./figures/idemproof/decompcounit.tikz) [93]
-(./figures/idemproof/matchclaim.tikz) (./figures/idemproof/match.tikz) [94]
+) [93] (./figures/idemproof/decompcounitclaim.tikz)
+(./figures/idemproof/decompcounit.tikz) [94]
+(./figures/idemproof/matchclaim.tikz) (./figures/idemproof/match.tikz) [95]
 (./figures/idemproof/openshorthand.tikz)
-(./figures/idemproof/shorthandjustification.tikz) [95]
+(./figures/idemproof/shorthandjustification.tikz) [96]
 (./figures/idemproof/comatchclaim.tikz) (./figures/idemproof/comatch.tikz)
-[96] (./figures/idemproof/dotcopyableclaim.tikz)
-(./figures/idemproof/dotcopyable.tikz) [97]
+[97] (./figures/idemproof/dotcopyableclaim.tikz)
+(./figures/idemproof/dotcopyable.tikz) [98]
 (./figures/idemproof/copynormalclaim.tikz) (./figures/idemproof/copynormal.tikz
-) [98] (./figures/idemproof/decompmultclaim.tikz)
-(./figures/idemproof/decompmult.tikz) [99]
+) [99] (./figures/idemproof/decompmultclaim.tikz)
+(./figures/idemproof/decompmult.tikz) [100]
 (./figures/idemproof/decompcomultclaim.tikz)
-(./figures/idemproof/decompcomult.tikz) [100]
+(./figures/idemproof/decompcomult.tikz) [101]
 (./figures/idemproof/unit-everything.tikz)
 (./figures/idemproof/comult-copy.tikz) (./figures/idemproof/finalproof.tikz
 
 LaTeX Font Warning: Command \Huge invalid in math mode on input line 21.
 
 ) (./figures/idemproof/finalproof2.tikz) (./figures/idemproof/finalproof3.tikz)
-[101] (./figures/idemproof/finalproof4.tikz)) [102]
+[102] (./figures/idemproof/finalproof4.tikz)) [103]
 (./chapters/toprel/5_topologicalconcepts.tex
 
 ! LaTeX Error: Too many math alphabets used in version normal.
@@ -2430,12 +2641,12 @@ Overfull \hbox (99.58337pt too wide) in paragraph at lines 34--34
 
 (./figures/topology/halooverlap.tikz)
 
-LaTeX Warning: Marginpar on page 103 moved.
+LaTeX Warning: Marginpar on page 104 moved.
 
-(./figures/topology/fisheye.tikz) [103
+(./figures/topology/fisheye.tikz) [104
 
 ] (./figures/topology/chessboard.tikz)
-(./figures/topology/chessboard2.tikz) [104]
+(./figures/topology/chessboard2.tikz) [105]
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -2489,60 +2700,60 @@ l.65 \newthought{Endpoints}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[105] (./figures/topology/negbubble.tikz) (./figures/topology/upperbound.tikz)
+[106] (./figures/topology/negbubble.tikz) (./figures/topology/upperbound.tikz)
 (./figures/topology/sup.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [106]
+ [107]
 (./figures/topology/endpoints.tikz) (./figures/topology/simplyconnected.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [107]
+ [108]
 (./figures/topology/simpconnotation.tikz) (./figures/topology/addition.tikz)
 Underfull \vbox (badness 3646) has occurred while \output is active []
 
- [108]
-(./figures/topology/metric.tikz) (./figures/topology/openball.tikz) [109]
+ [109]
+(./figures/topology/metric.tikz) (./figures/topology/openball.tikz) [110]
 (./figures/topology/topologicalgroup.tikz) (./figures/topology/isometry.tikz)
-[110] (./figures/topology/planeisometries.tikz)
-(./figures/topology/displacerigid.tikz) [111]
+[111] (./figures/topology/planeisometries.tikz)
+(./figures/topology/displacerigid.tikz) [112]
 (./figures/topology/homotopyctrex1.tikz) (./figures/topology/homotopy.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [112]
+ [113]
 (./figures/topology/homotopyctrex1.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [113]
-(./figures/topology/homotopyctrex.tikz) [114]
+ [114]
+(./figures/topology/homotopyctrex.tikz) [115]
 (./figures/topology/contractible.tikz)
 (./figures/topology/contractnotation.tikz) (./figures/topology/rigidmotion.tikz
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [115]
+ [116]
 (./figures/topology/configurations.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [116]
+ [117]
 (./figures/topology/rigidmotion2.tikz) (./figures/topology/encloseexample.tikz)
 
 Underfull \vbox (badness 5607) has occurred while \output is active []
 
- [117]
-[118] (./figures/topology/parthood.tikz) (./figures/topology/touching.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [119]
-(./figures/topology/within.tikz)
+ [118]
+[119] (./figures/topology/parthood.tikz) (./figures/topology/touching.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [120]
-(./figures/topology/enclose.tikz) (./figures/topology/trapped.tikz) [121]
+(./figures/topology/within.tikz)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [121]
+(./figures/topology/enclose.tikz) (./figures/topology/trapped.tikz) [122]
 (./figures/topology/interlock.tikz)
 Underfull \vbox (badness 1577) has occurred while \output is active []
 
- [122]
+ [123]
 (./figures/topology/constrained.tikz) (./figures/topology/labelledwires.tikz
 
 ! LaTeX Error: Too many math alphabets used in version normal.
@@ -2625,23 +2836,23 @@ or  <return>  to continue without it.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [123]
+ [124]
 (./figures/topology/test2gate.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [124]
+ [125]
 (./figures/topology/copygatecommute.tikz)
 (./figures/topology/collisionparticular.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [125]
+ [126]
 (./figures/topology/collideinterior.tikz) (./figures/topology/collidegate.tikz)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [126]
-(./figures/topology/seqparhom.tikz) [127] (./figures/topology/inopenout.tikz)
-(./figures/topology/breaklock.tikz) [128]
+ [127]
+(./figures/topology/seqparhom.tikz) [128] (./figures/topology/inopenout.tikz)
+(./figures/topology/breaklock.tikz) [129]
 (./figures/topology/slideconstruction.tikz)
 (./figures/topology/groupaction.tikz
 
@@ -2686,12 +2897,12 @@ or  <return>  to continue without it.
 ) (./figures/topology/spiderbreakdown.tikz)
 Underfull \vbox (badness 3492) has occurred while \output is active []
 
- [129]
+ [130]
 
-LaTeX Warning: Reference `prop:exclusion' on page 130 undefined on input line 2
+LaTeX Warning: Reference `prop:exclusion' on page 131 undefined on input line 2
 87.
 
-) [130] (./chapters/toprel/topmathendnotes.tex
+) [131] (./chapters/toprel/topmathendnotes.tex
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -2699,104 +2910,73 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 \newthought{Composition:}
-                              The normal composition of relations. We verify...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 \newthought{Associativity of composition:}
+l.15 \newthought{Associativity of composition:}
                                                 Inherited from \textbf{Rel}.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Marginpar on page 131 moved.
+Underfull \vbox (badness 2635) has occurred while \output is active []
 
-
-LaTeX Warning: Marginpar on page 131 moved.
-
-
-LaTeX Warning: Marginpar on page 131 moved.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.42 ...morphisms are inherited from \textbf{Rel}}
-                                                  . We will be explicit with...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.43 \newthought{Unitors:}
-                           The left unitors are defined as the relations $\l...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 \newthought{Associators:}
-                              
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[131
+ [132
 
 ]
+[133]
+Overfull \hbox (0.40378pt too wide) in paragraph at lines 74--75
+[]\T1/stix/m/n/10 The biprod-uct of topolo-gies $\LS1/stix/m/it/10 X[]$ \T1/sti
+x/m/n/10 and $\LS1/stix/m/it/10 Y[]$ \T1/stix/m/n/10 is their di-rect sum topol
+-ogy $\LS1/stix/m/n/10 .\LS1/stix/m/it/10 X á Y\LS1/stix/m/n/10 /[]$ \T1/stix/m
+/n/10 -- the coars-est topol-ogy that con-tains the dis-joint union $\LS1/stix/
+m/it/10 ^^\ á ^^[$\T1/stix/m/n/10 . As in \T1/stix/b/n/10 Rel\T1/stix/m/n/10 , 
+the (in/pro)jections 
+ []
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+[134] [135] (./figures/topology/spanctrex.tikz)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [136]
+
+! LaTeX Error: Too many math alphabets used in version normal.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.48 \newthought{Braids:}
-                         
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+l.200 ...}ski space $X^\tau \rightarrow \mathbb{S}
+                                                  $, and $\mathbb{S} \neq \t...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+! LaTeX Error: Too many math alphabets used in version normal.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 \newthought{Coherences:}
-                             
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+l.200 ... \rightarrow \mathbb{S}$, and $\mathbb{S}
+                                                   \neq \textbf{2}$.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-[132] [133] [134] [135] (./figures/topology/spanctrex.tikz)) [136]
+[137] (./figures/topology/pointingfinger.tikz)
+! You can't use `macro parameter character #' in horizontal mode.
+l.215 ... concepts: "red", "burgundy", "hex code #
+                                                  800021"... but never the p...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[138]) [139] [140
+
+
+]
 Chapter 4.
-[137
-
-
-] (./chapters/toprel/4_lassos.tex [138
+[141] (./chapters/toprel/4_lassos.tex [142
 
 ]
 (./figures/spatialencoding/circencodingconstruct.tikz)
@@ -2815,21 +2995,21 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 76.
 )
-(./figures/spatialencoding/arbset.tikz) [139]
-(./figures/spatialencoding/directsumconstruct.tikz) [140]
+(./figures/spatialencoding/arbset.tikz) [143]
+(./figures/spatialencoding/directsumconstruct.tikz) [144]
 (./figures/spatialencoding/leftrightcompressions.tikz)
 (./figures/spatialencoding/leftrightcompressions2.tikz)
 (./figures/spatialencoding/leftrightcompressions3.tikz)
-(./figures/spatialencoding/leftrightcompressions4.tikz) [141]
+(./figures/spatialencoding/leftrightcompressions4.tikz) [145]
 (./figures/spatialencoding/tensorconstruct.tikz)
 (./figures/spatialencoding/boxcompression.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [142]
+ [146]
 (./figures/spatialencoding/obtainboxposition.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [143]
+ [147]
 (./figures/spatialencoding/tensordetensor.tikz)
 (./figures/spatialencoding/tensordetensor2.tikz
 
@@ -2862,7 +3042,7 @@ Package pgf Warning: Returning node center instead of a point on node border. D
 id you specify a point identical to the center of node ``51''? on input line 77
 .
 
-) [144] (./figures/spatialencoding/tensordetensor3.tikz)
+) [148] (./figures/spatialencoding/tensordetensor3.tikz)
 (./figures/spatialencoding/relcomp1.tikz
 
 Package pgf Warning: Returning node center instead of a point on node border. D
@@ -2877,19 +3057,19 @@ id you specify a point identical to the center of node ``81''? on input line 15
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [145]
+ [149]
 (./figures/spatialencoding/relcomp2.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [146]
+ [150]
 (./figures/spatialencoding/relcomp3.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [147])
-[148] (./chapters/beyond/metaphor.tex [149
+ [151])
+[152] (./chapters/beyond/metaphor.tex [153
 
 ]
-(./figures/metaphor/timeISmoney.tikz)) [150]
+(./figures/metaphor/timeISmoney.tikz)) [154]
 
 Package natbib Warning: There were undefined citations.
 
@@ -2913,18 +3093,18 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8CDF9B4F62D2B3D31825F738B2905222;6306.
+(rerunfilecheck)             Checksum: 63D2C365F070D0CC6BABE5EC8C4EBA10;6396.
  ) 
 Here is how much of TeX's memory you used:
- 56587 strings out of 478268
- 1242952 string characters out of 5846348
- 1981303 words of memory out of 5000000
- 72852 multiletter control sequences out of 15000+600000
+ 56708 strings out of 478268
+ 1245932 string characters out of 5846348
+ 1982391 words of memory out of 5000000
+ 72965 multiletter control sequences out of 15000+600000
  699603 words of font info for 356 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,13n,121p,2632b,1327s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,17n,121p,2632b,1327s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{theorem.3.7.9} has been referenced but does not exi
+pdfTeX warning (dest): name{theorem.3.7.7} has been referenced but does not exi
 st, replaced by a fixed one
 
 
@@ -2953,10 +3133,10 @@ e1/public/stix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
 public/stix/stix-mathtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pub
 lic/stmaryrd/stmary10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/h
 elvetic/uhvr8a.pfb>
-Output written on main.pdf (150 pages, 3725088 bytes).
+Output written on main.pdf (154 pages, 3743968 bytes).
 PDF statistics:
- 1330 PDF objects out of 1440 (max. 8388607)
- 1043 compressed objects within 11 object streams
- 339 named destinations out of 1000 (max. 500000)
+ 1352 PDF objects out of 1440 (max. 8388607)
+ 1061 compressed objects within 11 object streams
+ 344 named destinations out of 1000 (max. 500000)
  27975 words of extra memory for PDF output out of 29859 (max. 10000000)
 
