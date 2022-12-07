@@ -1,0 +1,67 @@
+Chapter outline.
+
+0: Synopsis
+Making a grounded case, in the light of LLMs, that studying the structure of language via string diagrams is worthwhile. Aims to hook formal linguists, ML experts, and philosophers of cognition.
+
+1: Background
+Prerequisite knowledge to get everyone on the same page.
+
+1.1: A partial history of string diagrams.
+A historical study of the convergent evolution of string diagrams in different domains for reasoning and representation of interconnected processes.
+
+1.2: Process theories
+A gentle introduction to process theories via examples. An important takeaway is the understanding is that something normally viewed as a static structural property -- such as an entry field in a database -- can be equivalently implemented with getter and putter processes that satisfy operational equations, with the added benefit of abstraction and generalisation to different domains.
+
+1.3: Defining string diagrams
+Three views of what string diagrams are formally. First, the formal semantics of string diagrams for process theories in terms of symmetric monoidal categories, along with statements of strictification and graphical soundness and completeness. Second, the use of PROPs as combinatorial signatures for process theories. Third, the use of 1-object-4-categories in homotopy.io as an alternative combinatorial gadget, which additionally permits coloured regions and rewrites between string diagrams (which will be necessary to formalise some of the arguments in Chapter 2.)
+
+1.4: A brief history of linguistics from the categorial perspective.
+An outline of Curry-Howard-Lambek. A modern mathematical perspective on Montagovian syntax. A recounting of the evolution of CCGs through Pregroup Grammar to DisCoCat and finally DisCoCirc.
+
+2: String Diagrams for Text
+Introducing text circuit theory.
+
+2.1: How do we communicate?
+A demonstration that pregroup grammars and context-free grammars may be related by a monoidal discrete fibration. An additional demonstration that certain tree-adjoining grammars may be related to their context-free counterparts by constructing an equivalence argument betweenm their n-categorical signatures, which provides an alternative proof that TAGs are conservative generalisations of CFGs. This sets the groundwork to introduce text circuits via their n-categorical signature.
+
+2.2: Text circuits [Not present yet, will be mostly adapted from "Distilling text" paper]
+An n-categorical signature is provided for text circuits along with a proof of normal form, and identification with grammars that correspond to a fragment of English.
+
+3: Continuous Relations: a palette for toy models
+We introduce TopRel, a category of continuous relations, obtained by naively replacing "preiamge" in the usual condition of continuity of functions by "relational converse". This will be the framework for several of the sketches in chapter 4.
+
+3.1: Concept compliance
+Listing some considerations from Gardenfors about what properties a conceptually compliant category for modelling text circuits ought to have. We conclude that we want to use split-idempotents to model the connection between symbols and spaces, topologies so that we can use open sets to model concepts, and we want relations because we want native support for correlations in diagrams.
+
+3.2-4: Continuous relations in diagrams and by example
+An introduction to the diagrammatic calculus of TopRel along with examples. An important tool result shown here is that continuous partial functions form a topological basis for continuous relations.
+
+3.5: Sticky spiders
+I show that special frobenius algebras with a distinguished idempotent 1-1 spider (instead of the usual identity) that satisfy two additional relations precisely correspond to idempotents that split through discrete topologies. This gives us a diagrammatic handle on labelled shapes in space.
+
+3.6: Concepts in Flatland
+I provide diagrammatic formulations of topological concepts such as "inside" and "touching" via sticky spiders. To accommodate potential and actual motion, I introduce a conservative generalisation of homotopy to the relational case. A graphical study using sticky spiders to model spatial language reveals explanations for some idiosyncrasies of text circuits, such as why noun-wires are labelled with their noun, and why adjectives are commuting gates but verbs aren't.
+
+3.7: Mathematicians' endnotes.
+Formal demonstration that TopRel is symmetric monoidal closed with rig structure. I show that while TopRel enjoys a free-forgetful adjunction with Rel, it does not enjoy such an adjunction with Loc, and that TopRel does not arise from either a span construction on Top nor as a Kliesli construction on Top with any monad that conservatively generalises how Rel arises as the Kliesli category of the powerset monad on Set. I sketch how TopRel can be viewed as a display category of a functor from Rel to preorders that "encodes topology".
+
+4: Sketches of the shape of language
+This is essentially a collection of minipapers. The breadth is the point; I want to show how fruitful text circuits can be as a unifying framework for language.
+
+4.1: Generalised anaphora
+Any euclidean space in TopRel behaves as a turing object for FinRel; all morphisms and objects in FinRel can be encoded as sticky spiders on euclidean space. This property has linguistic significance in modelling "entification", which is the linguistic phenomenon that any word can be related to a noun counterpart with the same meaning. This forms a basis for generalised anaphora, where anaphoric reference may refer to non-noun entities, e.g. "Jono was paid minimum wage, but he didn't mind it."
+
+4.2 A recipe for machine learning
+A brief argument that viewing language as text circuits naturally provides training conditions for learning individual word-gates using neural nets. The important takeaway is that the universal approximation theorem is turned from curse to strength; while normally overfitting is a problem for generalisation, when we ask for ensembles of neural nets to obey operational equations that axiomatise what correct behaviour means, overfitting becomes desirable.
+
+4.3 Modelling metaphor
+Having explicit access to the symmetric monoidal structure of text means that "functors are analogies" can be made formal and their meanings computed. Specifically, the symmetric monoidal version of delta lenses (a cooperating pair of a functor and a discrete monoidal fibration viewed as a cofunctor) allows for a formal model of textual metaphor, e.g. "A waste of time" does not have literal sense, but via the metaphor "time is money" that picks out analogs of buyer, seller, good and exchange, sense can be made. The reason text circuits are required is to provide a structural foothold for functors; most metaphors involve interacting agent-roles and potential actions, and this space of potential interactions has no evident inherent geometric structure (unlike "red is a hot colour" and "blue is a cold colour", where two simple geometric domains are related).
+
+4.4 The container metaphor and modal language
+A demonstration that intensional modal language such as "sees" or "wants" can be interpreted spatially using containers. Possible world semantics become diagrammatically simplified in the TopRel setting as different parameterising time-wires for circuits.
+
+4.5 Linguistic characterisation of o-minimality, and a study of tensed language.
+O-minimal structures are candidate "tame topologies"; a controlled fragment of topology without counterintuitive pathologies sought after by Grothendieck. TopRel provides a string-diagrammatic treatment of o-minimality, and I demonstrate that o-minimal structures have a normal form in terms of text circuits with a fixed vocabulary of operations. This vocabulary is in fact the same as the algebra of events occurring in time when we used tensed language, e.g. "A occurred before B, and during C." O-minimal structures are intimately related to PAC-learnability, so we remark upon the association between language, tame topology, and learnability, and some potential consequences and avenues of further exploration.
+
+4.6 Becker's criterion
+Becker's criterion is harsh but simple: any putative theory of language should at least apply to the language that is used to introduce it. We go some way towards partial compliance, showing that in TopRel, text circuits can be used to model text circuit theory. The basis of this construction is that TopRel supports homotopies, which are a natural setting to interpret the n-categorical signatures that text circuits live in.

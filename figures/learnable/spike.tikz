@@ -1,0 +1,46 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (2) at (1, -0.5) {};
+		\node [style=none] (3) at (0, -0.5) {};
+		\node [style=none] (4) at (3, -0.5) {};
+		\node [style=none] (5) at (1, 1.5) {};
+		\node [style=none] (6) at (1, -1.5) {};
+		\node [style=none] (8) at (2, 1) {};
+		\node [style=none] (9) at (1.75, 0) {};
+		\node [style=none] (10) at (2.25, 0) {};
+		\node [style=none] (11) at (1.5, -0.5) {};
+		\node [style=none] (12) at (2.5, -0.5) {};
+		\node [style=none] (13) at (3, -0.5) {};
+		\node [style=none] (14) at (2, 1) {};
+		\node [style=none] (15) at (2, -1.5) {};
+		\node [style=none] (16) at (2, -2) {$x$};
+		\node [style=none] (17) at (1, 1) {};
+		\node [style=none] (18) at (3, 1) {};
+		\node [style=none] (19) at (4, 1) {$(1-h)$};
+		\node [style=none] (20) at (1.5, 2) {};
+		\node [style=none] (21) at (2.5, 2) {};
+		\node [style=none] (22) at (2, 2.5) {};
+		\node [style=none] (23) at (2, 3.25) {$w$};
+		\node [style=none] (24) at (-3, 0) {$\mathbf{S}(x,w,h)$};
+		\node [style=none] (25) at (-1, 0) {:=};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KR] (4.center)
+			 to (12.center)
+			 to [in=-75, out=165, looseness=0.75] (10.center)
+			 to [in=0, out=105, looseness=0.50] (8.center)
+			 to [in=75, out=-180, looseness=0.50] (9.center)
+			 to [in=15, out=-105, looseness=0.75] (11.center)
+			 to (2.center);
+		\draw [style=KR] (3.center) to (2.center);
+		\draw (5.center) to (6.center);
+		\draw (3.center) to (13.center);
+		\draw [style=D] (14.center) to (15.center);
+		\draw [style=D] (17.center) to (18.center);
+		\draw [style=D] (12.center)
+			 to (21.center)
+			 to (22.center)
+			 to (20.center)
+			 to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

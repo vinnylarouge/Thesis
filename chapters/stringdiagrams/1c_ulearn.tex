@@ -1,9 +1,98 @@
-\section{A recipe for unsupervised learning of gates from data}
+\begin{fullwidth}
 
-\subsection{Neural Nets}
+\section{Text Circuits are compatible with Machine Learning}
 
-\subsection{Monoidal Computer}
+So far, we have been working process-theoretically, using equations between processes to specify their behaviour. It is natural to ask whether it is possible to realise each process in a process theory as a neural net, using the equations as training criteria so that the neural nets jointly model a process theory. This approach is worth pursuing to combine the benefits and ease of data-driven learning with the modularity and explainability benefits of process theories. Moreover, the onus is on us to demonstrate that text circuits can be learnt in this way, or else we would be no better off in terms of a practical theory of language for the age of big data.\\
 
-\subsection{Universal Learners}
+In this sketch, we briefly introduce neural nets diagrammatically, along with the \emph{Universal Approximation Theorem}, which, along with variants for different architectures, states that for any dimension $m$ and any $\epsilon > 0$, there exists a neural net that approximates any continuous function $\mathbb{R}^m \rightarrow \mathbb{R}$ on a compact subset of the domain $\mathbb{R}^m$ within a discrepancy of $\epsilon$. Then we introduce the notion of approximability for PROPs, and we observe that not all PROPs are approximable in terms of smooth functions of the form given by the universal approximation theorem. So we restrict our attention to PROPs for basic text circuits, which we demonstrate are suitable for certain learning tasks. We prove that basic text circuit PROPs of bounded depth and width -- a notion we will define -- are approximable; in other words, that text circuits work in principle alongside data-driven techniques. We close with a discussion of limitations and extensions. We give a corollary that finitely generated subcategories of \textbf{FinSet} are realisable as ensembles of deterministic neural nets, and we show how introducing probabilistic states extends the situation to \textbf{FinRel}. We formalise an observed tension between the space-resource demands of deterministic representations and unbounded compositionality by a no-go conjecture.
 
-\subsection{The recipe}
+\subsection{A brief summary of Neural Nets}
+
+Neural nets arise from a toy model of biological neurons. At a glance, biological neurons have many receptors and one output, and the neuron fires a signal out if its combined inputs exceed an activation threshold. As a simplification, McCulloch-Pitts neurons are a sum of $n$ inputs passed through an activation function $\sigma: \mathbf{R}^n \rightarrow \mathbf{R}$ that is permitted to be nonlinear, but traditionally monotone increasing and sigmoidal, which bounds the range of the function $\exists a_{\mathbb{R}} b_{\mathbb{R}} \forall x_{\mathbb{R}} : a \leq \sigma(x) \leq b$, and asks that $\sigma$ approaches the lower and upper bounds in the limit as $x$ goes to $-\infty$ and $\infty$ respectively. Using the diagrammatic calculus for linear algebra [] equipped with a nonlinear activation function -- all of which is interpretable in \textbf{TopRel}, we can immediately grasp a visual resemblance between the designs of nature and man:
+
+\[placeholder\]
+
+The first use of neural nets was in application to the problem of machine vision. These first, single-layer neural nets were called \emph{perceptrons}. Mimicking the neuronal organisation of the visual cortex, it was a sensible idea to stack these layers on top of one another [] -- these layers are the original reason for the word "deep" in "deep learning", but words change in meaning over time.
+
+\[placeholder\]
+
+The modern ubiquity of neural nets is due to several factors. First is Hinton's backpropagation algorithm [] (which may be obsolete when you are reading this by Hinton's forward-forward second salvo [].) Observe that even after one has decided on the shape of the neural net in terms of neuronal connectivity, there are still many degrees of freedom in the parameters of the activation functions, in particular their horizontal shift (bias) and vertical stretching (weights). Borrowing diagrammatic notation for parameters as orthogonal wires from [], we can depict the degrees of freedom for a single neuron like this:
+
+\[placeholder\]
+
+There is a massive space of parameters to set for even a moderately sized neural net, so how do we set the parameters in such a way that the neural net computes something useful? Backpropagation solves this problem by leveraging the shape of a neural net. There are many easily searchable resources that cover backpropagation for the interested reader, including category-theoretic ones []. The simple explanation goes like this. Let's just focus on the weight parameter of each neuron. By analogy each neuron is a shitty person, and their weight is how strongly they hold a binary opinion. A neural net by analogy is a shitty rigid hierachical society with voters in the back and decision makers in the front. As a simple example, Alice and Bob each make a recommendation to Claire based on what they receive as input.
+
+\[placeholder\]
+
+Suppose that Claire's decision is wrong. She revises her own opinion then meets with her confidantes. Alice's recommendation was faulty, so Claire blames her; as a narcissistic defense, the viciousness of the blame is proportional to how wrong Claire was. Alice revises her own opinion proportional how mean Claire is being, and then Alice goes to seek out her confidantes to perpetuate a vicious cycle of psychological violence. Bob on the other hand was right, Claire tells him this with sheepishness proportional to her error, and he starts gloating "I told you so!" with glee proportional to how much cleverer he feels than Claire. So Bob becomes slightly more entrenched in his opinion, and then he goes to seek out his confidantes to either congratulate or belittle them, again proportional to how right he was. When all of the blame and kudos has backpropagated throughout society, all the shitty people have adjusted their opinions, and their shitty society will be less prone to making the same mistake again. This process is repeated for the human equivalent of billions of years, and then you have a neural net that can recognise handwritten digits.
+
+\[placeholder\]
+
+All this process needs to get started is a lot of labelled pairs of data, input along with the desired output for that input. The formal terminology for the scenario above that converts data into performance is "training", which is a computationally intensive process when lots of data is involved for big neural nets. So the second factor of the ubiquity of neural nets is Moore's law and analogues, which have overseen exponential growth in computational power and digital data storage capacity. Neural nets convert data and compute power as fuel into practical applications, and we live in an era of increasingly plentiful data and compute. Hence, the bitter lesson []; clever theories are no match for stupid methods with lots of data and a big computer. But why the hell should any of this work in the first place? Surely there are limits to what neural nets can do. Now the third factor; Moore's law and the bitter lesson might be cheated, but the third factor is a law backed by mathematics.
+
+\begin{theorem}[Universal Approximation Theorem]
+
+\end{theorem}
+
+That is, any problem that can be encoded as a continuous transformation of lists of real numbers into other lists of real numbers is potential prey for a big enough neural net. The litigious can easily spot problems in neural nets outside of this law. For example, to the best of my knowledge there is no known bound for how much data is required -- as a function of desired accuracy within a desired confidence -- for a neural net to learn its target accurately, so for all we know, any big neural net could suddenly fail on an easy input instance for no reason. The universal approximation theorem is a double-edged sword, and the side that cuts the holder is that for complex problems, the input data cannot span the whole problem domain, so there will be many neural nets that agree perfectly on the training data but will perform differently out-of-distribution. Now we will try to blunt the painful edge by using the universal approximation theorem to our advantage.
+
+\subsection{Approximating Text Circuits}
+
+There is a lot to be gained from a process-theoretic view of interacting ensembles of neural nets. For a simple example, consider that an autoencoder is precisely a pair of neural nets trained cooperatively encode a large input space into a small latent space and decode the original input from the latent space. Diagrammatically, this amounts to asking for the equations of a split idempotent to be treated as training conditions for a pair of processes.
+
+\[autoencoder\]
+
+If that's what we can do with a pair of equations, what can we do with an arbitrary PROP? We first need to decide what qualifies as a valid interpretation the generators of a PROP in terms of neural nets. Not just any functor will do, because we want to rule out trivial solutions that map all processes to constant functions. We also need to put in some work to interpret what equality of processes should mean in the setting of neural nets.
+
+\begin{defn}[Approximating a (coloured) PROP]
+An $(\epsilon^{=},\epsilon^{\neq})$-approximation of a finitely presented coloured PROP $\mathfrak{P}$ is a strict symmetric monoidal functor $\mathcal{T}$ that interprets $\mathfrak{P}$ in the (cartesian) symmetric monoidal subcategory of \textbf{Top} generated by Euclidean spaces with the usual metric as wires equipped with cartesian copy and delete, along with neural nets as processes. As a nontriviality condition, $\mathcal{T}$ must send each wire colour in $\mathfrak{P}$ to a Euclidean space of finite positive dimension. Equality relations presented in $\mathfrak{P}$ are interpreted as $\epsilon^{=}$-closeness by $\mathcal{T}$, i.e. if $\mathfrak{P}$ stipulates that $f = g$ for $f,g: A \rightarrow B$, then we have the following inequality in the metric of $\mathcal{T}B$:
+\[\forall \mathbf{x}_{\in\mathcal{T}A} : d_{\mathcal{T}B}\big(\mathcal{T}f(\mathbf{x}),\mathcal{T}g(\mathbf{x})\big) \leq \epsilon^{=}\]
+Any PROP that equates generators directly is redundant, and we can without loss of generality restrict consideration to PROPs where each generator is implicitly assumed to be distinct. We interpret inequality as $\epsilon^{\neq}$ farness, i.e., for all pairs of generators $f,g$ of the same type $A \rightarrow B$, we ask that $\mathcal{T}$ satisfies:
+\[\exists \mathbf{y}_{\in\mathcal{T}A} : d_{\mathcal{T}B}\big(\mathcal{T}f(\mathbf{y}),\mathcal{T}g(\mathbf{y})\big) \geq \epsilon^{\neq} \]
+\end{defn}
+
+Since the category is cartesian monoidal, states are points in euclidean space, and the above definition specialise to treating points as "equal" if they are $\epsilon^{=}$-close and "inequal" if they are $\epsilon^{\neq}$-far. We choose to treat the determination of equality and inequality as separate semidecidable procedures because "equality" as we have defined it is not necessarily transitive, but we can recover a form of bounded transitivity by making $\epsilon^{=}$ very small compared to $\epsilon^{\neq}$, so that equality is testable within a tolerance of $\epsilon^{\neq}$, granting $\frac{\epsilon^{\neq}}{\epsilon^{=}}$-fold transitivity. We can always recover decidable "equality" at the expense of transitivity by setting $\epsilon^{=} = \epsilon^{\neq}$. Also, since the target category is cartesian monoidal, we can immediately see that not all PROPs are approximable.
+
+\begin{example}[Not all PROPs are approximable]
+We take the snake equations as an example. The PROP generating the snake equation is as follows:
+\[snakeprop\]
+Since we are dealing with a cartesian monoidal category, the cup can only be interpreted as a pair of points, and the cap can only be a pair of deletes []. The only Euclidean space in which the identity is equal to a constant map is the singleton zero-dimensional space.
+\[triviality proof\]
+\end{example}
+
+So nondeterminism is a necessary but possibly insufficient condition for the realisation of general PROPs. Not all is lost; if we restrict our consideration to well-behaved PROPs, such as those of simple text circuits, then we can get somewhere.
+
+\begin{defn}[Basic Text Circuit PROP]
+A \emph{basic text circuit PROP} has two colours of wires, $N$ for "noun" and $A$ for "answer". The generators fall under four main families. \emph{Nouns} have type $1 \rightarrow N$. \emph{Gates} have type $\bigotimes^k N \rightarrow \bigotimes^k N$ for some positive $k$. \emph{Queries} have type $\bigotimes^k N \rightarrow A$ for some positive $k$. \emph{Answers} have type $1 \rightarrow A$.
+\[states, gates, queries, answers\]
+The relations of a text circuit fall under three families. \emph{Axioms} are equations between pairs of nonempty composites of gates; the only kind we disallow is an equality between two generators.
+\[axiom\]
+\emph{Instances} are equations between a composite of nouns and gates and a single query on the left -- a \emph{datum} -- and an answer on the right -- a \emph{label}.
+\[instance\]
+In addition, we ask for a special generator with a non-finite family of rules to enforce a coherence condition; we decide that distinct nouns should maintain their identity no matter what relations they participate in. The generator is \emph{Name}, of type $N \rightarrow N$, and its relations are such that applying \emph{Name} to any noun-wire that traces back to a noun will return that noun.
+\[name\]
+\end{defn}
+
+\begin{example}[How basic text circuits PROPs may be used in practice]
+
+\end{example}
+
+\begin{defn}[Bounded width and depth]
+We say that a basic text circuit PROP $\mathfrak{T}$ is \emph{terminating} if all of its axiom relations can be equipped with directions so that applying directed equality rewrites to any diagram (necessarily finite) yields a finite set of equal diagrams. As an easy example, a basic text circuit PROP with a single idempotent gate is terminating when we equip the idempotence relation with a direction that reduces the number of gates; we don't want to deal with cases where equalities explode to infinity.
+\[idempotentreduce\]
+Observe that if $\mathfrak{T}$ is terminating, then applying axioms to the datum of any instance relation will also yield a finite set of equal diagrams, and each instance diagram may be rewritten by isotopies so that parallel gates are displaced so that each gate occupies a distinct level, sandwiched by a layer of nouns and query, which we also count as layers. We say that $\mathfrak{T}$ has \emph{bounded depth} $d \in \mathbb{N}$ if the maximum depth in layers obtained in this way from any datum in $\mathfrak{T}$ is bounded above by $d$. The case of width is simpler, because axioms cannot change the number of wires in a datum, which is the same as the number of nouns; we say that $\mathfrak{T}$ has \emph{bounded width} $w \in \mathbb{N}$ if the maximum number of nouns that occur in any datum is bounded above by $w$.
+\end{defn}
+
+\begin{theorem}[Basic Text Circuit PROPs of bounded depth and width are approximable]
+\begin{proof}
+
+\end{proof}
+\end{theorem}
+
+\subsection{Discussion}
+
+\begin{example}[]
+
+\end{example}
+
+\end{fullwidth}
