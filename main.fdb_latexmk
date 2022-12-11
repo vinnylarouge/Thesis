@@ -1,10 +1,10 @@
 # Fdb version 3
-["bibtex main"] 1670416255 "main.aux" "main.bbl" "main" 1670416296
-  "main.aux" 1670416295 20803 5360b647d5330abb81c4847a8638c5c7 "pdflatex"
+["bibtex main"] 1670768517 "main.aux" "main.bbl" "main" 1670768556
+  "main.aux" 1670768556 21173 0374a29103a22b092bf14ad1009f3eff "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1670416255 "main.tex" "main.pdf" "main" 1670416296
+["pdflatex"] 1670768517 "main.tex" "main.pdf" "main" 1670768556
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc" 1388795362 7013 c55cc8669071ac14036c4a0c96c16202 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-ts1.enc" 1388795362 2836 154e6b0061f9b8cb549144b55b268339 ""
@@ -280,6 +280,7 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1644269979 29921 d0acc05a38bd4aa3af2017f0b7c137ce ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty" 1645736062 6107 e082261f9677386795d8bf6b6254fa9d ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty" 1642022539 4674 ac560df2ef76ab2c406a4948a48f79f8 ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1642022539 6758 7d9d899cbbfc962fbc4bb93f4c69eec2 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty" 1575499565 5766 13a9e8766c47f30327caf893ece86ac8 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex" 1632168149 95525 6fd0552101a6b1f9b7a84b402ec435ba ""
@@ -299,6 +300,7 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty" 1601326656 274 5ae372b7df79135d240456a1c6f2cf9a ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty" 1601326656 325 f9f16d12354225b7dd52a3321f085955 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/pgfplots/pgfplots.sty" 1496704190 4904 ee78b44e85d6fccf08cd99370557481e ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/physics/physics.sty" 1356048875 29610 a9597219b282d9c78b02393dcd7d4322 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty" 1137110565 4087 636308456f60d2b31cbf97867db5708d ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/helvet.sty" 1586716065 1499 de0ad166b701b820e03588a29bb30798 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/mathpazo.sty" 1586716065 8976 3f18c815295e2a2949e87fa743bcb489 ""
@@ -349,7 +351,7 @@
   "chapters/stringdiagrams/1_diagrams.tex" 1670240369 2819 958e200fefe984100246a090bdc33fd5 ""
   "chapters/stringdiagrams/1a_diagdefs.tex" 1670410679 1874 6523cb007b7dbcb593dd9f5c7970dac9 ""
   "chapters/stringdiagrams/1b_proctheory.tex" 1662493688 16027 c218433469d30cc455fc6180594eed74 ""
-  "chapters/stringdiagrams/1c_ulearn.tex" 1670416209 15267 ba3741496280b81503f096cb1000be86 ""
+  "chapters/stringdiagrams/1c_ulearn.tex" 1670768442 25813 626b7eaaecbdcae6ca6b571d39591a83 ""
   "chapters/stringdiagrams/1e_montague.tex" 1670240688 12345 4e0f8f96de44d25a3d425f942264561e ""
   "chapters/textcirc/miracle.tex" 1667389459 35859 01d7b176c965da9db284a7f519493e6e ""
   "chapters/toprel/0_contrel.tex" 1669900897 5605 1f945051b9a9bd2f122e6f98a9d83cea ""
@@ -556,15 +558,15 @@
   "figures/tree2gate/workedexample/gather_quickly.tikz" 1666358606 5492 2df3c398edb053c968bb901c7f66ba71 ""
   "figures/tree2gate/workedexample/gather_scv.tikz" 1666358606 5647 aa94f437da6bee26b316253a91a50ecc ""
   "figures/tree2gate/workedexample/gather_to.tikz" 1666358606 6685 48e2a13777e21c0347bae86ee9262d13 ""
-  "macros/preamble.tex" 1669564465 3578 27609a7454b82cec743338ab7179fc29 ""
+  "macros/preamble.tex" 1670762018 3613 35340fcbf8468c459acb4edfb66c09c5 ""
   "macros/quiver.sty" 1650809652 1606 0a56787eafe2108d7ab3bda12c3165bc ""
   "macros/thesis.tikzstyles" 1669105996 4021 7b28d69b25a56c07a137302e057883f2 ""
   "macros/tikzfig.sty" 1666358606 1531 6f1ac964da7ab1a89e3e27423ea86025 ""
-  "main.aux" 1670416295 20803 5360b647d5330abb81c4847a8638c5c7 "pdflatex"
+  "main.aux" 1670768556 21173 0374a29103a22b092bf14ad1009f3eff "pdflatex"
   "main.bbl" 0 -1 0 "bibtex main"
-  "main.out" 1670416295 6671 e2686bb46310f9970b334e269d533c73 "pdflatex"
+  "main.out" 1670768556 6729 43de808ff22922a92074968f56769493 "pdflatex"
   "main.tex" 1670409815 1367 2da7e21d6dde427cf858fbd79152f5a6 ""
-  "main.toc" 1670416295 7270 e50a7a462d4e4e5357f45300bf384b3d "pdflatex"
+  "main.toc" 1670768556 7557 644271bcf3537f986365b6109c6e86b0 "pdflatex"
   "tufte-book.cls" 1649717696 2113 c4934cdbc7b5bdacf3f1fe458038b8f9 ""
   "tufte-common.def" 1649717696 66821 b7511c5946078b0c502b75317c740631 ""
   (generated)

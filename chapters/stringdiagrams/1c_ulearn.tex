@@ -1,6 +1,6 @@
 \begin{fullwidth}
 
-\section{Text Circuits are compatible with Machine Learning}
+\section{(Im)possibility results for learning text circuits from data}
 
 So far, we have been working process-theoretically, using equations between processes to specify their behaviour. It is natural to ask whether it is possible to realise each process in a process theory as a neural net, using the equations as training criteria so that the neural nets jointly model a process theory. This approach is worth pursuing to combine the benefits and ease of data-driven learning with the modularity and explainability benefits of process theories. Moreover, the onus is on us to demonstrate that text circuits can be learnt in this way, or else we would be no better off in terms of a practical theory of language for the age of big data.\\
 
@@ -36,7 +36,7 @@ All this process needs to get started is a lot of labelled pairs of data, input 
 
 That is, any problem that can be encoded as a continuous transformation of lists of real numbers into other lists of real numbers is potential prey for a big enough neural net. The litigious can easily spot problems in neural nets outside of this law. For example, to the best of my knowledge there is no known bound for how much data is required -- as a function of desired accuracy within a desired confidence -- for a neural net to learn its target accurately, so for all we know, any big neural net could suddenly fail on an easy input instance for no reason. The universal approximation theorem is a double-edged sword, and the side that cuts the holder is that for complex problems, the input data cannot span the whole problem domain, so there will be many neural nets that agree perfectly on the training data but will perform differently out-of-distribution. Now we will try to blunt the painful edge by using the universal approximation theorem to our advantage.
 
-\subsection{Approximating Text Circuits}
+\subsection{Approximating Text Circuits with deterministic neural nets}
 
 There is a lot to be gained from a process-theoretic view of interacting ensembles of neural nets. For a simple example, consider that an autoencoder is precisely a pair of neural nets trained cooperatively encode a large input space into a small latent space and decode the original input from the latent space. Diagrammatically, this amounts to asking for the equations of a split idempotent to be treated as training conditions for a pair of processes.
 
@@ -51,7 +51,7 @@ Any PROP that equates generators directly is redundant, and we can without loss 
 \[\exists \mathbf{y}_{\in\mathcal{T}A} : d_{\mathcal{T}B}\big(\mathcal{T}f(\mathbf{y}),\mathcal{T}g(\mathbf{y})\big) \geq \epsilon^{\neq} \]
 \end{defn}
 
-Since the category is cartesian monoidal, states are points in euclidean space, and the above definition specialise to treating points as "equal" if they are $\epsilon^{=}$-close and "inequal" if they are $\epsilon^{\neq}$-far. We choose to treat the determination of equality and inequality as separate semidecidable procedures because "equality" as we have defined it is not necessarily transitive, but we can recover a form of bounded transitivity by making $\epsilon^{=}$ very small compared to $\epsilon^{\neq}$, so that equality is testable within a tolerance of $\epsilon^{\neq}$, granting $\frac{\epsilon^{\neq}}{\epsilon^{=}}$-fold transitivity. We can always recover decidable "equality" at the expense of transitivity by setting $\epsilon^{=} = \epsilon^{\neq}$. Also, since the target category is cartesian monoidal, we can immediately see that not all PROPs are approximable.
+Since the category is cartesian monoidal, states are points in euclidean space, and the above definition specialise to treating points as "equal" if they are $\epsilon^{=}$-close and "inequal" if they are $\epsilon^{\neq}$-far. We choose to treat the determination of equality and inequality as separate semidecidable procedures because "equality" as we have defined it is not necessarily transitive, but we can recover a form of bounded transitivity by making $\epsilon^{=}$ very small compared to $\epsilon^{\neq}$, so that equality is testable within a tolerance of $\epsilon^{\neq}$, granting $\frac{\epsilon^{\neq}}{\epsilon^{=}}$-fold transitivity. We can always recover decidable "equality" at the expense of transitivity by setting $\epsilon^{=} = \epsilon^{\neq}$. With that out of the way, we observe that since the target category of deterministic neural nets is cartesian monoidal, not all PROPs are approximable.
 
 \begin{example}[Not all PROPs are approximable]
 We take the snake equations as an example. The PROP generating the snake equation is as follows:
@@ -60,7 +60,7 @@ Since we are dealing with a cartesian monoidal category, the cup can only be int
 \[triviality proof\]
 \end{example}
 
-So nondeterminism is a necessary but possibly insufficient condition for the realisation of general PROPs. Not all is lost; if we restrict our consideration to well-behaved PROPs, such as those of simple text circuits, then we can get somewhere.
+So nondeterminism is a necessary but possibly insufficient condition for the realisation of general PROPs. Not all is lost; if we restrict our consideration to well-behaved PROPs, such as those of simple text circuits, then we can get somewhere eventually.
 
 \begin{defn}[Basic Text Circuit PROP]
 A \emph{basic text circuit PROP} has two colours of wires, $N$ for "noun" and $A$ for "answer". The generators fall under four main families. \emph{Nouns} have type $1 \rightarrow N$. \emph{Gates} have type $\bigotimes^k N \rightarrow \bigotimes^k N$ for some positive $k$. \emph{Queries} have type $\bigotimes^k N \rightarrow A$ for some positive $k$. \emph{Answers} have type $1 \rightarrow A$.
@@ -77,15 +77,72 @@ In addition, we ask for a special generator with a non-finite family of rules to
 
 \end{example}
 
+A limitation that arises from the interaction of the definition of approximability and the universal approximation theorem is that any compact subset of euclidean space can be covered by finitely many $\epsilon$-balls. This means that the universal approximation theorem is unable to provide us guarantees if we want potentially unboundedly large text circuits, but we might reasonably expect compositional behaviour up to some notion of text circuits with bounded width and depth, which we state as follows.
+
 \begin{defn}[Bounded width and depth]
 We say that a basic text circuit PROP $\mathfrak{T}$ is \emph{terminating} if all of its axiom relations can be equipped with directions so that applying directed equality rewrites to any diagram (necessarily finite) yields a finite set of equal diagrams. As an easy example, a basic text circuit PROP with a single idempotent gate is terminating when we equip the idempotence relation with a direction that reduces the number of gates; we don't want to deal with cases where equalities explode to infinity.
 \[idempotentreduce\]
 Observe that if $\mathfrak{T}$ is terminating, then applying axioms to the datum of any instance relation will also yield a finite set of equal diagrams, and each instance diagram may be rewritten by isotopies so that parallel gates are displaced so that each gate occupies a distinct level, sandwiched by a layer of nouns and query, which we also count as layers. We say that $\mathfrak{T}$ has \emph{bounded depth} $d \in \mathbb{N}$ if the maximum depth in layers obtained in this way from any datum in $\mathfrak{T}$ is bounded above by $d$. The case of width is simpler, because axioms cannot change the number of wires in a datum, which is the same as the number of nouns; we say that $\mathfrak{T}$ has \emph{bounded width} $w \in \mathbb{N}$ if the maximum number of nouns that occur in any datum is bounded above by $w$.
 \end{defn}
 
-\begin{theorem}[Basic Text Circuit PROPs of bounded depth and width are approximable]
+Even this is not enough. Another issue arises from the interaction of approximability with the nature of cartesian monoidal categories.
+
+\begin{theorem}[Fox's Theorem]
+
+\end{theorem}
+
+A consequence of Fox's theorem is that in any cartesian monoidal category, we can equip every wire with canonical cocommutative comonoids (copy and delete), and every morphism in a cartesian monoidal category is a cohomomorphism with respect to copy and delete; recall from Section \ref{sec:proctheory} that this is the diagrammatic definition of deterministic maps. This consequence means that for some text circuit PROPs, approximable-equalities may hold in \emph{any} of their interpretations as deterministic neural nets that are not equalities licensed by the original PROP.
+
+\begin{example}
+
+\end{example}
+
+The deeper essence of this issue is that in a cartesian monoidal category, every wire can at most carry data about its diagrammatic causal past, since equalities of the following sort always hold.
+
+\[placeholder\]
+
+This conflicts with the nature of updating representations with text, where later information may force revisions of earlier representations. For a crude example, consider this transcription of a meme about a morning routine:
+
+\[\texttt{Wake up. Take a shit. Eat. Get out of bed. Have breakfast.}\]
+
+Now I will kill the joke by overthinking it. What happens in our mind's eye if we are constructing a little vignette of events? In this example, the first three clauses take a pedestrian interpretation -- \texttt{Taking a shit} normally happens in toilets, and the inferred object of \texttt{Eat} is breakfast. Clauses four and five require belief revisions. The internal representation of the sequence of events up to those points must be retroactively changed in a manner that is not representable as gates updating entities locally:
+
+\[cartoon\]
+
+So in the deterministic setting, after every local update, we require a \emph{global} coordination gate that gives all representations access to each other's data and a chance for them to revise themselves. To summarise our restrictions so far, we are only dealing with text circuit PROPs, of bounded depth to remain within the guarantees of the universal approximation theorem, and of fixed width as a diagrammatic consequence of having a single global coordinator gate.
+
+\begin{theorem}[Basic Text Circuit PROPs of bounded depth and fixed width are approximable using a global coordinator]
 \begin{proof}
 
+\end{proof}
+\end{theorem}
+
+\subsection{Text circuits of unbounded width in noncartesian settings}
+
+\subsection{Text circuits with unbounded depth and width}
+
+\begin{defn}[Faithful models and expressive completeness]
+Given a coloured prop $\mathfrak{P}$, a symmetric monoidal category $\mathcal{M}$, and a symmetric monoidal functor $T: \mathfrak{P} \rightarrow \mathcal{M}$, we say that $T$ is a \emph{faithful model of} $\mathfrak{P}$ \emph{in} $\mathcal{M}$ if, for all diagrams $f,g \in \mathfrak{P}$, $f =_\mathfrak{P} g \iff T(f) =_\mathcal{M} T(g)$. Given a collection of props $\{\mathfrak{P}\}$, we say that $\mathcal{M}$ is \emph{expressively complete for} $\{\mathfrak{P}_i\}$ when each $\mathfrak{P}_i$ has a faithful model in $\mathcal{M}$.
+\end{defn}
+
+\begin{theorem}[$\textbf{Rel}^\times$ is expressively complete for all finitely presented coloured PROPs]
+\begin{proof}
+Our strategy has two main ideas. First is to take the Lindenbaum-Tarski algebra of diagrams for an arbitrary $\mathfrak{P}$, quotiented by the equivalence relation $=_\mathfrak{P}$; this will give faithfulness. Second is to treat the sought functor $T$ as a category of elements construction, adapted to the symmetric monoidal setting.\\
+
+Let $\mathfrak{P}^\star$ denote the finitely presented coloured PROP $\mathfrak{P}$ augmented with new generators that do not obey any relations: a state $\rotatebox[origin=c]{180}{\multimap}$ and effect $\multimap$ for each colour $C$ in $\mathfrak{P}$. Let $\mathfrak{P}^\star_{\mathbf{LT}}$ denote the set of diagrams of $\mathfrak{P}^\star$ quotiented by the equivalence relation obtained by equality in $\mathfrak{P}$, $=_\mathfrak{P}$. For each colour $C \in \mathfrak{P}$, let $T(C)$ be the subset of $\mathfrak{P}^\star_{\mathbf{LT}}$ that selects all states on $C$. Let $T(0)$ be the singleton. For each nonempty list of colours $[C_i]$, let $T([C_i])$ be the subset of $\mathfrak{P}^\star_{\mathbf{LT}}$ that selects all states on $C_1 \otimes_\mathfrak{P} C_2 \otimes_\mathfrak{P} \cdots C_i$. For $f: C \rightarrow D$ in $\mathfrak{P}$, let $T(f) := \{(\ulcorner \bra{c} \urcorner, \ulcorner \bra{c};f \urcorner) \ | \ c_{\in T(C)}\}$, where corner notation denotes an equivalence class of states under $=_\mathfrak{P}$ -- note that applying $f$ after any state $\ulcorner \bra{c} \urcorner \in T(C)$ yields a state $\ulcorner \bra{c} ; f \urcorner \in T(D)$, and that these states include actual states native to $\mathfrak{P}$ and formal states from $\mathfrak{P}^\star$ where diagrams from $\mathfrak{P}$ with an output wire typed $C$ have their other wires "capped off" by $\rotatebox[origin=c]{180}{\multimap}$ and $\multimap$.\\
+
+$T$ is a functor; $T(1_C) = 1_{T(C)}$ since $\{(\ulcorner \bra{c} \urcorner, \ulcorner \bra{c};1_C \urcorner) \ | \ \ulcorner \bra{c} \urcorner_{\in T(C)}\}$ is the identity relation on $T(C)$; $T(f) \ ;_\textbf{Rel} \ T(g) = T(f \ ;_{\mathfrak{P} \ g}$ since the relational composite is
+$$T(f) \ ;_\textbf{Rel} \ T(g) := \{(\ulcorner \bra{c} \urcorner, \ulcorner \bra{e} \urcorner) \ | \ c_{\in T(C)} \ , \ \exists \ulcorner \bra{d} \urcorner_{\in T(D)} : \ulcorner \bra{c};f \urcorner = \ulcorner \bra{d} \urcorner \& \ulcorner \bra{d};g \urcorner = \ulcorner \bra{e} \urcorner\}$$ We observe that $\ulcorner \bra{d} \urcorner_{\in T(D)} : (\ulcorner \bra{c};f \urcorner = \ulcorner \bra{d} \urcorner \ \& \ \ulcorner \bra{d};g \urcorner = \ulcorner \bra{e} \urcorner)$ implies that $\ulcorner \bra{c};f;g \urcorner = \ulcorner \bra{e} \urcorner$, so we have $T(f \ ;_{\mathfrak{P}} \ g \subseteq T(f) \ ;_\textbf{Rel} \ T(g)$. For the other inclusion, we observe that $\ulcorner (\bra{c};f);g \urcorner$ yields the state $\ulcorner \bra{c};f \urcorner \in T(D)$ in the bracketed expression, thus satisfying the existential quantifier.\\
+
+The unitors, associators, braidings, and coherences are tedious to write but conceptually trivial, so I will skip them. The tricky part of showing that $T$ is monoidal is providing isomorphisms $T(C) \times T(D) \simeq T(C \otimes_\mathfrak{P} D)$. We present them first and comment later.
+
+\[T(C) \times T(D) \rightarrow T(C \otimes_\mathfrak{P} D) := \{ \big( \begin{pmatrix} \ulcorner \bra{c} \urcorner \\ \ulcorner \bra{d} \urcorner \end{pmatrix} \ , \ \begin{cases}\centering \ulcorner \bra{x} \urcorner & \text{if } \exists \bra{x}_{\in T(C \otimes_\mathfrak{P} D)} : \ulcorner \bra{c};\multimap_C \urcorner = \ulcorner \bra{x};(\multimap_C \otimes_\mathfrak{P} \multimap_{D}) \urcorner = \ulcorner \bra{d};\multimap_D \urcorner \\ \ulcorner \bra{c} \otimes_\mathfrak{P} \bra{d} \urcorner & \text{otherwise} \end{cases} \big) \ | \ \ulcorner \bra{c} \urcorner_{\in T(C)}, \ulcorner \bra{d} \urcorner_{\in T(D)} \}\]
+
+\[T(C \otimes_\mathfrak{P} D) \rightarrow T(C) \times T(D) := \{ \ulcorner \bra{x} \urcorner \ , \ \begin{cases} \begin{pmatrix} \ulcorner \bra{c} \urcorner \\ \ulcorner \bra{d} \urcorner \end{pmatrix} & \text{if }\exists \ulcorner \bra{c} \urcorner_{\in T(C)} \ulcorner \bra{d} \urcorner_{\in T(D)}: \ulcorner \bra{x} \urcorner = \ulcorner \bra{c} \ \otimes_\mathfrak{P} \ \bra{d} \urcorner \\ \begin{pmatrix} \ulcorner \bra{x};(1_C \ \otimes_\mathfrak{P} \ \multimap_D) \urcorner \\ \ulcorner \bra{x};(\multimap_C \ \otimes_\mathfrak{P} \ 1_D) \urcorner \end{pmatrix} & \text{otherwise} \end{cases} \big) \ | \ \ulcorner \bra{x} \urcorner_{\in T(C \otimes_\mathfrak{P} D)} \}\]
+
+We walk through the construction case-by-case. For the first case top-to-bottom, if two states $\bra{c},\bra{d}$ are obtainable by formally deleting the $C$ and $D$ outputs (using $\multimap$) of some state $\bra{x}$ on $C \otimes_\mathfrak{P} D$, then we send the pair $(\bra{c},\bra{d})$ to $\bra{x}$, quotienting by $=_\mathfrak{P}$. Note that in the first case, even if $\bra{x}$ is tensor separable as $\bra{c} \otimes_\mathfrak{P} \bra{d}$, formal deletion creates new formal scalars which must also agree by the case guard. The total effect of the first case is to identify when $(\bra{c},\bra{d})$ arise as partial diagrams (where ends are truncated with $\multimap$) of some state $\bra{x}$. The second case is where $(\bra{c},\bra{d})$ are not partial diagrams in this way, in which case we send the pair to their tensor product. The third case is the inverse of the second, and the fourth case is the inverse of the first. The effect of taking equivalence classes makes the first relation as a whole an injective function, and likewise for the second relation.\\
+
+All that remains is to show that $T$ is a faithful model, i.e., for all lists of colours $[C],[D]$ and for all $f,g : [C] \rightarrow [D]$, $f =_\mathfrak{P} g \iff T(f) =_\textbf{Rel} T(g)$. For the forward direction $\Rightarrow$, if $f =_\mathfrak{P} g$, then for any state $\bra{x} : 0 \rightarrow [C]$, we have that $\bra{x};f = \bra{x};g$. So, setting $T(\bra{x}) = \ulcorner \bra{x} \urcorner \in T([C])$, we have $\ulcorner \bra{x};f = \bra{x};g \urcorner \in T([D])$, thus $T(f) =_\textbf{Rel} T(g)$. For the converse direction $\Leftarrow$, if $f \neq_\mathfrak{P} g$, then by the Lindenbaum-Tarski construction and the relational-freeness of the generator $\rotatebox[origin=c]{180}{\multimap}$, $\ulcorner \rotatebox[origin=c]{180}{\multimap};f \urcorner \neq \ulcorner \rotatebox[origin=c]{180}{\multimap}$;g \urcorner$, so $T(f)$ as a relation contains the pair $(\ulcorner \rotatebox[origin=c]{180}{\multimap}_{[C]} \urcorner, \ulcorner \rotatebox[origin=c]{180}{\multimap}_{[C]};f \urcorner)$ that is not present in $T(g)$, and symmetrically for $(\ulcorner \rotatebox[origin=c]{180}{\multimap}_{[C]} \urcorner, \ulcorner \rotatebox[origin=c]{180}{\multimap}_{[C]};g \urcorner)$, thus $T(f) \neq T(g)$.
 \end{proof}
 \end{theorem}
 

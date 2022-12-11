@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  7 DEC 2022 12:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  11 DEC 2022 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1398,10 +1398,16 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 )
 LaTeX Font Info:    Font shape `T1/phv/m/up' will be
 (Font)              scaled to size 8.99994pt on input line 102.
-)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)))
 LaTeX Font Info:    Trying to load font information for T1+stix on input line 3
 .
- (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/t1stix.fd
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/stix/t1stix.fd
 File: t1stix.fd 2015/04/17 v1.1.2-latex STIX T1 font definitions
 ) (./main.aux
 
@@ -2530,7 +2536,7 @@ LaTeX Warning: Marginpar on page 80 moved.
 
 LaTeX Warning: Marginpar on page 80 moved.
 
-<figures/paintingexamples/spectrum.png, id=796, 1194.4625pt x 34.1275pt>
+<figures/paintingexamples/spectrum.png, id=802, 1194.4625pt x 34.1275pt>
 File: figures/paintingexamples/spectrum.png Graphic file (type png)
 <use figures/paintingexamples/spectrum.png>
 Package pdftex.def Info: figures/paintingexamples/spectrum.png  used on input l
@@ -2539,7 +2545,7 @@ ine 244.
 
 LaTeX Warning: Marginpar on page 80 moved.
 
-<figures/paintingexamples/starrynight.jpg, id=798, 2569.6pt x 2034.60126pt>
+<figures/paintingexamples/starrynight.jpg, id=804, 2569.6pt x 2034.60126pt>
 File: figures/paintingexamples/starrynight.jpg Graphic file (type jpg)
 <use figures/paintingexamples/starrynight.jpg>
 Package pdftex.def Info: figures/paintingexamples/starrynight.jpg  used on inpu
@@ -3207,7 +3213,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.83 ...has \emph{bounded depth} $d \in \mathbb{N}
+l.85 ...has \emph{bounded depth} $d \in \mathbb{N}
                                                   $ if the maximum depth in ...
 
 Your command was ignored.
@@ -3221,17 +3227,171 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.83 ...has \emph{bounded width} $w \in \mathbb{N}
+l.85 ...has \emph{bounded width} $w \in \mathbb{N}
                                                   $ if the maximum number of...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [158] (./chapters/beyond/metaphor.tex [159
+[158]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.132 ...ate $\rotatebox[origin=c]{180}{\multimap}
+                                                  $ and effect $\multimap$ f...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.132 ...ate $\rotatebox[origin=c]{180}{\multimap}
+                                                  $ and effect $\multimap$ f...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.132 ... by $\rotatebox[origin=c]{180}{\multimap}
+                                                  $ and $\multimap$.\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.132 ... by $\rotatebox[origin=c]{180}{\multimap}
+                                                  $ and $\multimap$.\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[159]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...tor $\rotatebox[origin=c]{180}{\multimap}
+                                                  $, $\ulcorner \rotatebox[o...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...tor $\rotatebox[origin=c]{180}{\multimap}
+                                                  $, $\ulcorner \rotatebox[o...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...rner \rotatebox[origin=c]{180}{\multimap}
+                                                  ;f \urcorner \neq \ulcorne...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...rner \rotatebox[origin=c]{180}{\multimap}
+                                                  ;f \urcorner \neq \ulcorne...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...rner \rotatebox[origin=c]{180}{\multimap}
+                                                  $;g \urcorner$, so $T(f)$ ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...rner \rotatebox[origin=c]{180}{\multimap}
+                                                  $;g \urcorner$, so $T(f)$ ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...ox[origin=c]{180}{\multimap}$;g \urcorner
+                                                  $, so $T(f)$ as a relation...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...rner \rotatebox[origin=c]{180}{\multimap}
+                                                  _{[C]} \urcorner, \ulcorne...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...rner \rotatebox[origin=c]{180}{\multimap}
+                                                  _{[C]} \urcorner, \ulcorne...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...rner \rotatebox[origin=c]{180}{\multimap}
+                                                  _{[C]};f \urcorner)$ that ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...rner \rotatebox[origin=c]{180}{\multimap}
+                                                  _{[C]};f \urcorner)$ that ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...rner \rotatebox[origin=c]{180}{\multimap}
+                                                  _{[C]} \urcorner, \ulcorne...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...rner \rotatebox[origin=c]{180}{\multimap}
+                                                  _{[C]} \urcorner, \ulcorne...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...rner \rotatebox[origin=c]{180}{\multimap}
+                                                  _{[C]};g \urcorner)$, thus...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.145 ...rner \rotatebox[origin=c]{180}{\multimap}
+                                                  _{[C]};g \urcorner)$, thus...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+) [160] (./chapters/beyond/metaphor.tex [161
 
 ]
-(./figures/metaphor/timeISmoney.tikz)) [160]
+(./figures/metaphor/timeISmoney.tikz)) [162]
 
 Package natbib Warning: There were undefined citations.
 
@@ -3255,13 +3415,13 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E2686BB46310F9970B334E269D533C73;6671.
+(rerunfilecheck)             Checksum: 43DE808FF22922A92074968F56769493;6729.
  ) 
 Here is how much of TeX's memory you used:
- 56748 strings out of 478268
- 1246597 string characters out of 5846348
- 1982455 words of memory out of 5000000
- 72972 multiletter control sequences out of 15000+600000
+ 57388 strings out of 478268
+ 1253801 string characters out of 5846348
+ 1992407 words of memory out of 5000000
+ 73597 multiletter control sequences out of 15000+600000
  702368 words of font info for 357 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  119i,17n,121p,2632b,1327s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3295,10 +3455,10 @@ e1/public/stix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
 public/stix/stix-mathtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pub
 lic/stmaryrd/stmary10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/h
 elvetic/uhvr8a.pfb>
-Output written on main.pdf (160 pages, 3762152 bytes).
+Output written on main.pdf (162 pages, 3772192 bytes).
 PDF statistics:
- 1420 PDF objects out of 1440 (max. 8388607)
- 1117 compressed objects within 12 object streams
- 373 named destinations out of 1000 (max. 500000)
+ 1439 PDF objects out of 1440 (max. 8388607)
+ 1132 compressed objects within 12 object streams
+ 380 named destinations out of 1000 (max. 500000)
  28495 words of extra memory for PDF output out of 29859 (max. 10000000)
 
