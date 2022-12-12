@@ -123,9 +123,9 @@ The sentence is secretly (at least) two, corresponding to two possible parses. T
 CCGs have functorial semantics in any cartesian closed category, such as one where morphisms are terms in the lambda calculus and composition is substitution []. So we might specify a semantics as follows:
 
 \begin{align}
-\llbracket \texttt{everyone} \rrbracket = \lambda (\lambda x . V(x)) . \forall x : V(x) \\
-\llbracket \texttt{loves} \rrbracket = \lambda x \lambda y . \texttt{loves}(x,y) \\
-\llbracket \texttt{someone} \rrbracket = \lambda (\lambda y . V(y)) . \exists y : V(y)
+[\![ \texttt{everyone} ]\!] = \lambda (\lambda x . V(x)) . \forall x : V(x) \\
+[\![ \texttt{loves} ]\!] = \lambda x \lambda y . \texttt{loves}(x,y) \\
+[\![ \texttt{someone} ]\!] = \lambda (\lambda y . V(y)) . \exists y : V(y)
 \end{align}
 
 Now we can plug-in these interpretations to obtain the two different meanings. We decorate with corners just to visually distinguish which bits are partial first-order logic.

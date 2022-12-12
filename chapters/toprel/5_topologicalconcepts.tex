@@ -54,14 +54,17 @@ Now we observe that the calculation of positions corresponds to composing sticky
 
 \subsection{The unit interval}\label{sec:interval}
 To begin modelling more complex concepts, we first need to extend our topological tools. If we have the unit interval, we can begin to define what it would mean for spaces to be connected (by drawing lines between points in those spaces), and we can also move towards defining motion as movement along a line.
+
 \newthought{The reals} There are many spaces homeomorphic to the real line. How do we know when we have one of them? The following theorem provides an answer:
 \begin{theorem}[Friedman]\label{thm:Friedman}
 Let $\big((X,\tau), < \big)$ be a topological space with a total order. If there exists a continuous map $f: X \times X \rightarrow X$ such that $\forall a,b_{\in X} : a < f(a,b) < b$, then $X$ is homeomorphic to $\mathbb{R}$.
 \end{theorem}
 We can define all of these pieces using diagrammatic equations.
+
 \newthought{Less than} We define a total order $<$ as an open set -- i.e. a test -- on $X \times X$ that obeys the usual axiomatic rules:
 \[\scalebox{0.75}{\tikzfig{topology/lessthan}}\]
 \[\tikzfig{topology/lessthantotal}\]
+
 \newthought{Endpoints} We can introduce endpoints for open intervals directly by asking for the space $X$ to have points that are less than or greater than all other points. Another method, which we will use here for primarily aesthetic reasons, is to use endocombinators to define suprema. Endocombinators are like functional expressions applied to diagrams. For a motivating example, consider the case when we have a locally indiscrete topology:
 
 \begin{defn}[Locally indiscrete topology]

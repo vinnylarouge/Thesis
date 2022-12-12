@@ -1,15 +1,15 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (0) at (-2, -3) {};
-		\node [style=none] (1) at (-6, -4) {};
-		\node [style=dotw] (2) at (-3.75, -3.75) {};
-		\node [style=dotC] (3) at (-3.25, -3.25) {};
-		\node [style=dotO] (4) at (-4.5, -4) {};
-		\node [style=dotC] (5) at (-5.5, -3.5) {};
-		\node [style=dotO] (6) at (-2.75, -3.75) {};
-		\node [style=dotM] (7) at (-4, -3) {};
-		\node [style=dotM] (8) at (-4.75, -3.25) {};
-		\node [style=dotM] (9) at (-2.5, -3.25) {};
+		\node [style=none] (0) at (-4, -3) {};
+		\node [style=none] (1) at (-8, -4) {};
+		\node [style=dotw] (2) at (-5.75, -3.75) {};
+		\node [style=dotC] (3) at (-5.25, -3.25) {};
+		\node [style=dotO] (4) at (-6.5, -4) {};
+		\node [style=dotC] (5) at (-7.5, -3.5) {};
+		\node [style=dotO] (6) at (-4.75, -3.75) {};
+		\node [style=dotM] (7) at (-6, -3) {};
+		\node [style=dotM] (8) at (-6.75, -3.25) {};
+		\node [style=dotM] (9) at (-4.5, -3.25) {};
 		\node [style=none] (11) at (16, -0.75) {};
 		\node [style=none] (12) at (16, -1.75) {};
 		\node [style=none] (13) at (15.25, -1.25) {};
@@ -44,15 +44,15 @@
 		\node [style=none] (42) at (18.5, -0.75) {$g$};
 		\node [style=none] (43) at (21.25, -0.25) {};
 		\node [style=none] (44) at (21.25, -2.25) {};
-		\node [style=none] (49) at (4, -3) {};
-		\node [style=none] (50) at (0, -4) {};
-		\node [style=dotC] (52) at (2.75, -3.25) {};
-		\node [style=dotO] (53) at (1.5, -4) {};
-		\node [style=dotC] (54) at (0.5, -3.5) {};
-		\node [style=dotO] (55) at (3.25, -3.75) {};
-		\node [style=dotM] (56) at (2, -3) {};
-		\node [style=dotM] (57) at (1.25, -3.25) {};
-		\node [style=dotM] (58) at (3.5, -3.25) {};
+		\node [style=none] (49) at (3, -3) {};
+		\node [style=none] (50) at (-1, -4) {};
+		\node [style=dotC] (52) at (1.75, -3.25) {};
+		\node [style=dotO] (53) at (0.5, -4) {};
+		\node [style=dotC] (54) at (-0.5, -3.5) {};
+		\node [style=dotO] (55) at (2.25, -3.75) {};
+		\node [style=dotM] (56) at (1, -3) {};
+		\node [style=dotM] (57) at (0.25, -3.25) {};
+		\node [style=dotM] (58) at (2.5, -3.25) {};
 		\node [style=none] (59) at (10, -3) {};
 		\node [style=none] (60) at (6, -4) {};
 		\node [style=dotC] (62) at (8.75, -3.25) {};
@@ -62,11 +62,11 @@
 		\node [style=dotM] (66) at (8, -3) {};
 		\node [style=dotM] (67) at (7.25, -3.25) {};
 		\node [style=dotM] (68) at (9.5, -3.25) {};
-		\node [style=dotg] (69) at (2.25, -3.75) {};
+		\node [style=dotg] (69) at (1.25, -3.75) {};
 		\node [style=dotb] (70) at (8.25, -3.75) {};
-		\node [style=none] (71) at (-6, -2) {};
-		\node [style=none] (72) at (-8, -5) {};
-		\node [style=none] (73) at (12, -2) {};
+		\node [style=none] (71) at (-8, -2) {};
+		\node [style=none] (72) at (-10, -5) {};
+		\node [style=none] (73) at (-3, -2) {};
 		\node [style=none] (74) at (10, -5) {};
 		\node [style=none] (79) at (15.5, -1.75) {};
 		\node [style=none] (80) at (15.5, -2.75) {};
@@ -86,8 +86,8 @@
 		\node [style=none] (94) at (25, -1.25) {};
 		\node [style=none] (95) at (24.5, -0.25) {};
 		\node [style=none] (96) at (24.5, -2.25) {};
-		\node [style=none] (98) at (2, 0) {};
-		\node [style=none] (99) at (2, 0) {};
+		\node [style=none] (98) at (1, 0) {};
+		\node [style=none] (99) at (1, 0) {};
 		\node [style=none] (100) at (25.5, -0.75) {};
 		\node [style=none] (101) at (25.5, -1.75) {};
 		\node [style=none] (102) at (26.5, -0.75) {};
@@ -113,9 +113,8 @@
 		\node [style=none] (123) at (28.75, -2.25) {};
 		\node [style=none] (124) at (30.25, -0.25) {};
 		\node [style=none] (125) at (22.25, -1.25) {$\textcolor{blue}{=}$};
-		\node [style=none] (126) at (-6, 0.75) {};
-		\node [style=none] (128) at (-7, 0) {};
-		\node [style=none] (129) at (-7, -3.5) {};
+		\node [style=none] (126) at (-8, 0.75) {};
+		\node [style=none] (129) at (-9, -3.5) {};
 		\node [style=none] (131) at (21.25, 0.75) {};
 		\node [style=none] (132) at (21.25, -3.25) {};
 		\node [style=none] (133) at (14.25, 0.75) {};
@@ -130,12 +129,22 @@
 		\node [style=none] (142) at (14, -3.5) {};
 		\node [style=none] (143) at (30.5, -3.5) {};
 		\node [style=none] (144) at (30.5, 1) {};
-		\node [style=none] (146) at (-6, 1.5) {$\mathcal{T}$};
-		\node [style=none] (147) at (-3.5, 0) {};
+		\node [style=none] (146) at (-8.75, 0.25) {$\mathcal{T}$};
+		\node [style=none] (147) at (-5.5, 0) {};
 		\node [style=none] (148) at (8, 0) {};
 		\node [style=dotB] (149) at (8, 0) {};
-		\node [style=dotB] (150) at (2, 0) {};
-		\node [style=dotB] (151) at (-3.5, 0) {};
+		\node [style=dotB] (150) at (1, 0) {};
+		\node [style=dotB] (151) at (-5.5, 0) {};
+		\node [style=none] (152) at (-1, -2) {};
+		\node [style=none] (153) at (4, -2) {};
+		\node [style=none] (154) at (-1, 0.75) {};
+		\node [style=none] (155) at (-1.75, 0.25) {$\mathcal{T}$};
+		\node [style=none] (156) at (-3, -5) {};
+		\node [style=none] (157) at (6, -2) {};
+		\node [style=none] (158) at (11, -2) {};
+		\node [style=none] (159) at (6, 0.75) {};
+		\node [style=none] (160) at (5.25, 0.25) {$\mathcal{T}$};
+		\node [style=none] (161) at (4, -5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=KH] (0.center)
@@ -262,7 +271,6 @@
 		\draw [style=K] (113.center) to (124.center);
 		\draw [style=KDR, in=-90, out=105] (52) to (99.center);
 		\draw [style=H] (71.center) to (126.center);
-		\draw [style=D] (128.center) to (129.center);
 		\draw [style=KG] (133.center)
 			 to (134.center)
 			 to (132.center)
@@ -282,9 +290,14 @@
 		\draw [style=KDR] (7) to (147.center);
 		\draw [style=KDG] (63) to (148.center);
 		\draw [style=KDR] (65) to (148.center);
-		\draw [style=D] (128.center) to (148.center);
 		\draw [style=KDB, bend left=15] (149) to (141.center);
 		\draw [style=KDB, bend left=15] (150) to (141.center);
 		\draw [style=KDB, bend left=15] (151) to (141.center);
+		\draw [style=H] (152.center) to (153.center);
+		\draw [style=H] (152.center) to (154.center);
+		\draw [style=H] (156.center) to (152.center);
+		\draw [style=H] (157.center) to (158.center);
+		\draw [style=H] (157.center) to (159.center);
+		\draw [style=H] (161.center) to (157.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
