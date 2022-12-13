@@ -1,0 +1,39 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (1) at (0.25, 4.75) {\texttt{\underline{IS}}};
+		\node [style=none] (2) at (1.5, 4) {\texttt{\underline{SOBER}}};
+		\node [style=none] (9) at (0.25, 5.25) {};
+		\node [style=none] (10) at (1.5, 4.5) {};
+		\node [style=bigunit] (18) at (0, 6) {};
+		\node [style=none] (21) at (0.75, 0) {\texttt{\underline{GIVES}}};
+		\node [style=none] (23) at (3, 0) {\texttt{\underline{BEER}}};
+		\node [style=none] (24) at (4.75, 0) {\texttt{\underline{TO}}};
+		\node [style=none] (25) at (6.25, 0) {\texttt{\underline{BOB}}};
+		\node [style=none] (27) at (0.75, 0.5) {};
+		\node [style=none] (28) at (3, 0.5) {};
+		\node [style=none] (29) at (4.75, 0.5) {};
+		\node [style=none] (30) at (6.25, 0.5) {};
+		\node [style=bigunit] (31) at (-0.25, 2.75) {};
+		\node [style=bigunit] (32) at (3.5, 1.5) {};
+		\node [style=none] (36) at (-1.75, 0) {\texttt{\underline{ALICE}}};
+		\node [style=none] (44) at (5.75, 7) {};
+		\node [style=none] (45) at (-1.75, 0.5) {};
+		\node [style=none] (46) at (-1.75, 7) {};
+		\node [style=none] (47) at (3.75, 7) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K, in=90, out=0, looseness=0.50] (31) to (32);
+		\draw [style=KL, in=150, out=-75, looseness=0.75] (31) to (32);
+		\draw [style=KL, in=210, out=90] (27.center) to (32);
+		\draw [style=K, in=240, out=90] (28.center) to (32);
+		\draw [style=KB] (29.center) to (32);
+		\draw [style=K, in=90, out=-30, looseness=0.75] (32) to (30.center);
+		\draw [style=KHO, in=90, out=-45] (18) to (10.center);
+		\draw [style=KB, in=90, out=-105] (18) to (9.center);
+		\draw [style=K, in=-90, out=45, looseness=0.75] (32) to (44.center);
+		\draw [style=K, in=90, out=-120, looseness=0.50] (31) to (45.center);
+		\draw [style=K, in=-165, out=90, looseness=0.50] (31) to (18);
+		\draw [style=K, in=165, out=-90, looseness=0.25] (46.center) to (18);
+		\draw [style=K, in=-90, out=0, looseness=1.25] (31) to (47.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,42 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-5, 0) {\texttt{\underline{ALICE}}};
+		\node [style=none] (1) at (-3.25, 0) {\texttt{\underline{IS}}};
+		\node [style=none] (2) at (-1.5, 0) {\texttt{\underline{SOBER}}};
+		\node [style=none] (8) at (-5, 0.5) {};
+		\node [style=none] (9) at (-3.25, 0.5) {};
+		\node [style=none] (10) at (-1.5, 0.5) {};
+		\node [style=none] (17) at (-5, -0.5) {};
+		\node [style=bigunit] (18) at (-3.25, 1.75) {};
+		\node [style=none] (21) at (3.75, 0) {\texttt{\underline{GIVES}}};
+		\node [style=none] (22) at (1.5, 0) {\texttt{\underline{SHE}}};
+		\node [style=none] (23) at (6, 0) {\texttt{\underline{BEER}}};
+		\node [style=none] (24) at (7.75, 0) {\texttt{\underline{TO}}};
+		\node [style=none] (25) at (9.25, 0) {\texttt{\underline{BOB}}};
+		\node [style=none] (26) at (1.5, 0.5) {};
+		\node [style=none] (27) at (3.75, 0.5) {};
+		\node [style=none] (28) at (6, 0.5) {};
+		\node [style=none] (29) at (7.75, 0.5) {};
+		\node [style=none] (30) at (9.25, 0.5) {};
+		\node [style=bigunit] (31) at (4.75, 2.25) {};
+		\node [style=bigunit] (32) at (6.75, 1.25) {};
+		\node [style=none] (33) at (1.5, -0.5) {};
+		\node [style=none] (34) at (4.75, 3) {};
+		\node [style=none] (35) at (-3.25, 3) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (31) to (26.center);
+		\draw [style=K, bend left=45, looseness=0.75] (31) to (32);
+		\draw [style=KL, bend right=45, looseness=0.75] (31) to (32);
+		\draw [style=KL] (27.center) to (32);
+		\draw [style=K] (28.center) to (32);
+		\draw [style=KB] (29.center) to (32);
+		\draw [style=K] (32) to (30.center);
+		\draw [style=K] (18) to (8.center);
+		\draw [style=KHO] (18) to (10.center);
+		\draw [style=KB] (18) to (9.center);
+		\draw [style=Kv<>, bend left=90, looseness=0.50] (33.center) to (17.center);
+		\draw [style=KH] (34.center) to (31);
+		\draw [style=KH] (35.center) to (18);
+	\end{pgfonlayer}
+\end{tikzpicture}

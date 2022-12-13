@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bigunit] (0) at (0, 0) {};
+		\node [style=none] (1) at (0, 1) {};
+		\node [style=none] (2) at (-1, -1) {};
+		\node [style=none] (3) at (1, -1) {};
+		\node [style=none] (4) at (1, -1.5) {\texttt{\underline{[ING]}}};
+		\node [style=none] (5) at (-1, -1.5) {\texttt{IVP}};
+		\node [style=none] (6) at (0, 1.5) {\texttt{ADJ}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KL, in=90, out=-135, looseness=0.75] (0) to (2.center);
+		\draw [style=KHO] (1.center) to (0);
+		\draw [style=KB, in=90, out=-45, looseness=0.50] (0) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

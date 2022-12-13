@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bigunit] (0) at (-1, 0) {};
+		\node [style=none] (1) at (-3, 0) {};
+		\node [style=bigunit] (2) at (1, 0) {};
+		\node [style=none] (3) at (3, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=Kvp] (1.center) to (0);
+		\draw [style=Kvp] (2) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

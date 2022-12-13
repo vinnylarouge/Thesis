@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (7) at (0, 1) {};
+		\node [style=bigunit] (9) at (0, 0) {};
+		\node [style=none] (11) at (-1.5, -1) {};
+		\node [style=none] (12) at (0, -1) {};
+		\node [style=none] (15) at (-2, 2) {};
+		\node [style=none] (16) at (2, 2) {};
+		\node [style=none] (17) at (-2, -2) {};
+		\node [style=none] (18) at (2, -2) {};
+		\node [style=none] (20) at (-1.5, -1.5) {\texttt{NP}};
+		\node [style=none] (21) at (0, -1.5) {\texttt{SCV}};
+		\node [style=none] (22) at (1.25, -1.5) {\texttt{S}};
+		\node [style=none] (23) at (1.25, -1) {};
+		\node [style=none] (24) at (0, 1.5) {\texttt{S}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (9) to (11.center);
+		\draw [style=KL] (9) to (12.center);
+		\draw [style=KH] (9) to (23.center);
+		\draw [style=KH] (7.center) to (9);
+	\end{pgfonlayer}
+\end{tikzpicture}

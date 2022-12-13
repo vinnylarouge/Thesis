@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 1.25) {};
+		\node [style=none] (1) at (-2.75, -0.75) {};
+		\node [style=none] (2) at (2.5, -0.75) {};
+		\node [style=none] (3) at (0, 0) {$\texttt{S}$};
+		\node [style=none] (4) at (0.75, -1.25) {$\texttt{\underline{RP}}$};
+		\node [style=none] (5) at (2, -1.25) {$\cdots$};
+		\node [style=none] (6) at (-0.75, -1.25) {$\cdots$};
+		\node [style=none] (7) at (-2, -1.25) {$\texttt{\underline{N}}$};
+		\node [style=none] (8) at (0.75, -1.75) {};
+		\node [style=none] (9) at (-2, -1.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=K] (0.center) to (2.center);
+		\draw [style=K] (0.center) to (1.center);
+		\draw [style=K] (1.center) to (2.center);
+		\draw [style=Kv, bend left=90] (8.center) to (9.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

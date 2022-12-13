@@ -1,0 +1,17 @@
+\begin{tikzpicture}[scale=0.80]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (4.25, 0) {};
+		\node [style=none] (1) at (-1.75, 0) {};
+		\node [style=none] (2) at (1.25, 0.75) {distil};
+		\node [style=none] (3) at (-7, 0) {\hybrid grammar \e};
+		\node [style=none] (4) at (7, 0) {text circuit};
+		\node [style=none] (5) at (-18.25, 0) {};
+		\node [style=none] (6) at (-12.25, 0) {};
+		\node [style=none] (7) at (-15.25, 0.75) {parse};
+		\node [style=none] (8) at (-19.25, 0) {text};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=diredge] (1.center) to (0.center);
+		\draw [style=diredge] (5.center) to (6.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

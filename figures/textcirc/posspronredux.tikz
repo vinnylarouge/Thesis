@@ -1,0 +1,35 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1, 1.5) {};
+		\node [style=none] (1) at (-3, -1) {};
+		\node [style=none] (2) at (-1, -1.5) {};
+		\node [style=bigunit] (3) at (-3, 0.5) {};
+		\node [style=none] (4) at (-3, -1.5) {\texttt{\underline{ps.pn.}}};
+		\node [style=none] (6) at (-5, 1.5) {};
+		\node [style=none] (7) at (0, 0) {$\Rightarrow$};
+		\node [style=none] (8) at (1, 1.5) {};
+		\node [style=none] (9) at (5, 1.5) {};
+		\node [style=bigunit] (10) at (3, 0.25) {};
+		\node [style=none] (11) at (1, -1) {};
+		\node [style=none] (12) at (5, -1) {};
+		\node [style=bigunit] (13) at (-5, -0.25) {};
+		\node [style=none] (14) at (-5, -1) {};
+		\node [style=none] (15) at (-5, -1.5) {\texttt{\underline{NP}}};
+		\node [style=none] (16) at (1, -1.5) {\texttt{\underline{NP}}};
+		\node [style=none] (17) at (3, -1.5) {\texttt{\underline{OWNS}}};
+		\node [style=none] (18) at (3, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K, in=30, out=-90, looseness=0.50] (0.center) to (3);
+		\draw [style=K, in=90, out=-60, looseness=0.50] (3) to (2.center);
+		\draw [style=KB] (3) to (1.center);
+		\draw [style=K] (6.center) to (13);
+		\draw [style=K] (13) to (14.center);
+		\draw [style=KTB, in=180, out=0] (13) to (3);
+		\draw [style=KL] (10) to (18.center);
+		\draw [style=K, in=150, out=-90, looseness=0.50] (8.center) to (10);
+		\draw [style=K, in=-90, out=30, looseness=0.50] (10) to (9.center);
+		\draw [style=K, in=90, out=-30, looseness=0.50] (10) to (12.center);
+		\draw [style=K, in=90, out=-150, looseness=0.50] (10) to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

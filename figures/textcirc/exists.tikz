@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 2) {};
+		\node [style=none] (1) at (0, -2) {};
+		\node [style=none] (2) at (0, 3) {};
+		\node [style=none] (3) at (0, 3) {$\texttt{EXISTS}$};
+		\node [style=none] (4) at (-1, 1) {};
+		\node [style=none] (5) at (1, 1) {};
+		\node [style=none] (6) at (-1, -1) {};
+		\node [style=none] (7) at (1, -1) {};
+		\node [style=none] (8) at (1, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (0.center) to (1.center);
+		\draw [style=H] (5.center) to (8.center);
+		\draw [style=H] (4.center) to (5.center);
+		\draw [style=H] (4.center) to (6.center);
+		\draw [style=H] (6.center) to (8.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

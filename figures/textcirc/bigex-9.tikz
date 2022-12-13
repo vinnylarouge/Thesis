@@ -1,0 +1,34 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (147) at (-2, 5) {};
+		\node [style=none] (148) at (3.75, 0.5) {};
+		\node [style=none] (149) at (-1.5, 0.5) {};
+		\node [style=none] (155) at (-4, 0) {\texttt{SCV}};
+		\node [style=none] (157) at (2.25, 0) {\texttt{IVP}};
+		\node [style=none] (163) at (-6, 0) {\texttt{NP}};
+		\node [style=none] (164) at (0, 0) {\texttt{NP}};
+		\node [style=none] (166) at (-1.5, 0.5) {};
+		\node [style=none] (167) at (3.75, 0.5) {};
+		\node [style=none] (168) at (-2, 5) {};
+		\node [style=bigunit] (169) at (-2, 5) {};
+		\node [style=bigunit] (171) at (0, 2.25) {};
+		\node [style=none] (177) at (-4, 0.5) {};
+		\node [style=none] (193) at (-2, 6) {};
+		\node [style=none] (200) at (11.5, -2.5) {};
+		\node [style=none] (201) at (2.25, 0.5) {};
+		\node [style=none] (202) at (0, 0.5) {};
+		\node [style=none] (203) at (-6, 0.5) {};
+		\node [style=none] (204) at (-1.5, 0) {\texttt{\textcolor{blue}{(}}};
+		\node [style=none] (205) at (3.75, 0) {\texttt{\textcolor{blue}{)}}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KB] (168.center) to (167.center);
+		\draw [style=KB] (166.center) to (168.center);
+		\draw [style=KL] (169) to (177.center);
+		\draw [style=KH] (193.center) to (169);
+		\draw [style=KH] (169) to (171);
+		\draw [style=KL] (171) to (201.center);
+		\draw [style=K] (171) to (202.center);
+		\draw [style=K] (169) to (203.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

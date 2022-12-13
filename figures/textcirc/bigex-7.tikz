@@ -1,0 +1,47 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (147) at (-2, 5) {};
+		\node [style=none] (151) at (-9.75, -2.5) {\texttt{ADJ}};
+		\node [style=none] (155) at (-5.5, -2.5) {\texttt{SCV}};
+		\node [style=none] (156) at (1, -2.5) {\texttt{ADV}};
+		\node [style=none] (157) at (4, -2.5) {\texttt{IVP}};
+		\node [style=none] (162) at (-3.5, -2.5) {\texttt{ADJ}};
+		\node [style=none] (163) at (-7.5, -2.5) {\texttt{NP}};
+		\node [style=none] (164) at (-1.5, -2.5) {\texttt{NP}};
+		\node [style=none] (166) at (-0.25, -2) {};
+		\node [style=none] (167) at (5, -2) {};
+		\node [style=none] (168) at (-2, 5) {};
+		\node [style=bigunit] (169) at (-2, 5) {};
+		\node [style=none] (170) at (-7.5, -2) {};
+		\node [style=bigunit] (171) at (0, 2) {};
+		\node [style=bigunit] (172) at (2, 0.25) {};
+		\node [style=bigunit] (173) at (-2.5, 0.5) {};
+		\node [style=none] (174) at (-1.5, -2) {};
+		\node [style=none] (175) at (-9.75, -2) {};
+		\node [style=none] (176) at (-3.5, -2) {};
+		\node [style=none] (177) at (-5.5, -2) {};
+		\node [style=none] (178) at (4, -2) {};
+		\node [style=none] (180) at (1, -2) {};
+		\node [style=bigunit] (192) at (-6, 1) {};
+		\node [style=none] (193) at (-2, 6) {};
+		\node [style=none] (200) at (11.5, -2.5) {};
+		\node [style=none] (201) at (-0.25, -2.5) {\texttt{\textcolor{blue}{(}}};
+		\node [style=none] (202) at (5, -2.5) {\texttt{\textcolor{blue}{)}}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KB] (168.center) to (167.center);
+		\draw [style=KB] (166.center) to (168.center);
+		\draw [style=K] (173) to (171);
+		\draw [style=K] (174.center) to (173);
+		\draw [style=KHO] (173) to (176.center);
+		\draw [style=KL] (169) to (177.center);
+		\draw [style=KL] (172) to (178.center);
+		\draw [style=KO] (172) to (180.center);
+		\draw [style=KL] (171) to (172);
+		\draw [style=K] (169) to (192);
+		\draw [style=KHO] (192) to (175.center);
+		\draw [style=K] (192) to (170.center);
+		\draw [style=KH] (193.center) to (169);
+		\draw [style=KH] (169) to (171);
+	\end{pgfonlayer}
+\end{tikzpicture}

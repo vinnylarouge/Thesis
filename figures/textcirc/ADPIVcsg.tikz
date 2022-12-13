@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 1) {};
+		\node [style=none] (2) at (1.5, -1) {};
+		\node [style=none] (3) at (0, -1) {};
+		\node [style=none] (4) at (-1.5, -1) {};
+		\node [style=bigunit] (5) at (0, 0) {};
+		\node [style=none] (6) at (-1.5, -1.5) {$\texttt{IVP}$};
+		\node [style=none] (7) at (0, -1.5) {$\texttt{ADP}$};
+		\node [style=none] (9) at (0, 1.5) {$\texttt{IVP}$};
+		\node [style=none] (10) at (-2, 2) {};
+		\node [style=none] (11) at (2, 2) {};
+		\node [style=none] (12) at (-2, -2) {};
+		\node [style=none] (13) at (2, -2) {};
+		\node [style=none] (15) at (1.5, -1.5) {$\texttt{NP}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KL] (0.center) to (5); 
+		\draw [style=KL] (5) to (4.center);
+		\draw [style=K] (5) to (2.center);
+		\draw [style=KB] (5) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

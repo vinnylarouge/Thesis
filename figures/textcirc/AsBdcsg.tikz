@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (1) at (-0.75, 0) {\texttt{\underline{SEES}}};
+		\node [style=none] (2) at (-3, 0) {\texttt{\underline{ALICE}}};
+		\node [style=none] (4) at (1, 0) {\texttt{\underline{BOB}}};
+		\node [style=none] (5) at (3, 0) {\texttt{\underline{DANCE}}};
+		\node [style=none] (6) at (-3, 0.5) {};
+		\node [style=none] (7) at (-0.75, 0.5) {};
+		\node [style=none] (9) at (4.25, 0) {};
+		\node [style=bigunit] (10) at (0, 3.5) {};
+		\node [style=none] (14) at (1, 0.5) {};
+		\node [style=none] (15) at (3, 0.5) {};
+		\node [style=bigunit] (16) at (1.75, 1.75) {};
+		\node [style=none] (17) at (0, 4.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (10) to (6.center);
+		\draw [style=KL] (10) to (7.center);
+		\draw [style=K] (16) to (14.center);
+		\draw [style=KL] (16) to (15.center);
+		\draw [style=KH] (10) to (16);
+		\draw [style=KH] (17.center) to (10);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-3, 0) {\texttt{\underline{DANCES}}};
+		\node [style=none] (1) at (-5.5, 0) {\texttt{\underline{ALICE}}};
+		\node [style=none] (2) at (-0.5, 0) {\texttt{\underline{UNTIL}}};
+		\node [style=none] (3) at (1.5, 0) {\texttt{\underline{BOB}}};
+		\node [style=none] (4) at (3.25, 0) {\texttt{\underline{GOES}}};
+		\node [style=none] (5) at (5.25, 0) {\texttt{\underline{HOME}}};
+		\node [style=none] (6) at (-5.5, 0.5) {};
+		\node [style=none] (7) at (-3, 0.5) {};
+		\node [style=none] (8) at (-0.5, 0.5) {};
+		\node [style=none] (9) at (1.5, 0.5) {};
+		\node [style=none] (10) at (3.25, 0.5) {};
+		\node [style=none] (11) at (5.25, 0.5) {};
+		\node [style=bigunit] (18) at (0, 4) {};
+		\node [style=bigunit] (19) at (-2.5, 2.25) {};
+		\node [style=bigunit] (20) at (1.75, 2.25) {};
+		\node [style=none] (21) at (0, 5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (19) to (6.center);
+		\draw [style=KL] (19) to (7.center);
+		\draw [style=K] (20) to (9.center);
+		\draw [style=KL] (20) to (10.center);
+		\draw [style=K] (20) to (11.center);
+		\draw [style=KH] (21.center) to (18);
+		\draw [style=KH] (18) to (20);
+		\draw [style=KH] (18) to (19);
+		\draw [style=KB] (18) to (8.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

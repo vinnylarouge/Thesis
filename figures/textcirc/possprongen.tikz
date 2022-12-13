@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (8, 1.5) {};
+		\node [style=none] (2) at (6, -1) {};
+		\node [style=none] (3) at (8, -1.5) {};
+		\node [style=bigunit] (4) at (6, 0) {};
+		\node [style=none] (5) at (6, -1.5) {\texttt{\underline{ps.pn.}}};
+		\node [style=none] (6) at (4, -1) {};
+		\node [style=bigunit] (7) at (-6, -0.25) {};
+		\node [style=none] (8) at (-6, 2) {};
+		\node [style=none] (9) at (-6, -1.5) {\texttt{\underline{NP}}};
+		\node [style=none] (10) at (-6, -1) {};
+		\node [style=none] (11) at (-4, 0.5) {};
+		\node [style=none] (12) at (-4, 1) {\texttt{poss.}};
+		\node [style=none] (13) at (3.75, -0.5) {\texttt{poss.}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K, in=30, out=-90, looseness=0.50] (0.center) to (4);
+		\draw [style=K, in=90, out=-60, looseness=0.50] (4) to (3.center);
+		\draw [style=KB] (4) to (2.center);
+		\draw [style=K] (7) to (10.center);
+		\draw [style=K] (8.center) to (7);
+		\draw [style=KTB, in=-180, out=0] (6.center) to (4);
+		\draw [style=KTB, in=180, out=0] (7) to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

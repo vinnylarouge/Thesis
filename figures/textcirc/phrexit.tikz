@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (5) at (0.5, -1) {};
+		\node [style=none] (6) at (-0.5, 1) {};
+		\node [style=none] (7) at (0.5, 1) {};
+		\node [style=none] (8) at (0.5, -1) {};
+		\node [style=none] (9) at (-0.5, -1) {};
+		\node [style=none] (10) at (0.5, 1) {};
+		\node [style=none] (11) at (-0.5, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=gF] (5.center)
+			 to [in=-30, out=30, looseness=0.75] (7.center)
+			 to [in=30, out=135] (6.center)
+			 to cycle;
+		\draw [style=K] (10.center) to (9.center);
+		\draw [style=KB] (11.center) to (8.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

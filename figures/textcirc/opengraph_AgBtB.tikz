@@ -1,0 +1,51 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (5) at (-5, -1.75) {};
+		\node [style=none] (6) at (-4, -1.75) {};
+		\node [style=none] (7) at (-3, -1.75) {};
+		\node [style=none] (8) at (-2, -1.75) {};
+		\node [style=none] (9) at (-1, -1.75) {};
+		\node [style=bigunit] (10) at (-4, 0.75) {};
+		\node [style=bigunit] (11) at (-2.5, -0.5) {};
+		\node [style=none] (12) at (-5, 1.75) {};
+		\node [style=none] (13) at (-2.75, 1.75) {};
+		\node [style=none] (14) at (-1, 1.75) {};
+		\node [style=none] (15) at (0, 0) {$:=$};
+		\node [style=bigunit] (21) at (2, 0.75) {};
+		\node [style=bigunit] (22) at (3.5, -0.5) {};
+		\node [style=bigunit] (26) at (3, -1.75) {};
+		\node [style=bigunit] (27) at (1, -1.75) {};
+		\node [style=bigunit] (28) at (5, -1.75) {};
+		\node [style=bigunit] (29) at (5, 1.75) {};
+		\node [style=bigunit] (30) at (3, 1.75) {};
+		\node [style=bigunit] (31) at (3, 0.25) {};
+		\node [style=bigunit] (32) at (1, 1.75) {};
+		\node [style=bigunit] (33) at (2.25, -0.25) {};
+		\node [style=bigunit] (34) at (2, -1.75) {};
+		\node [style=bigunit] (35) at (4, -1.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K, in=90, out=-135, looseness=0.75] (10) to (5.center);
+		\draw [style=K, in=105, out=-15] (10) to (11);
+		\draw [style=KL, bend right] (10) to (11);
+		\draw [style=KL, in=195, out=90, looseness=0.50] (6.center) to (11);
+		\draw [style=K, in=240, out=90] (7.center) to (11);
+		\draw [style=KB, in=315, out=90, looseness=0.75] (8.center) to (11);
+		\draw [style=K, in=90, out=-15, looseness=0.50] (11) to (9.center);
+		\draw [style=K, in=150, out=-90, looseness=0.75] (12.center) to (10);
+		\draw [style=K, in=30, out=-90, looseness=0.75] (13.center) to (10);
+		\draw [style=K, in=45, out=-90, looseness=0.75] (14.center) to (11);
+		\draw [style=Kvp] (21) to (27);
+		\draw [style=Kvp] (22) to (26);
+		\draw [style=Kvp] (22) to (28);
+		\draw [style=Kvp] (29) to (22);
+		\draw [style=Kvp] (30) to (21);
+		\draw [style=Kvp] (21) to (31);
+		\draw [style=Kvp] (31) to (22);
+		\draw [style=Kvp] (32) to (21);
+		\draw [style=KLv] (21) to (33);
+		\draw [style=KLv] (33) to (22);
+		\draw [style=KLv] (22) to (34);
+		\draw [style=KBv] (22) to (35);
+	\end{pgfonlayer}
+\end{tikzpicture}

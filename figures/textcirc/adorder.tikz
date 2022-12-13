@@ -1,0 +1,37 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-4.5, 2) {};
+		\node [style=none] (1) at (-0.5, 2) {};
+		\node [style=none] (2) at (-4.5, -2) {};
+		\node [style=none] (3) at (-0.5, -2) {};
+		\node [style=none] (4) at (-2.5, 1.5) {};
+		\node [style=none] (6) at (-2.5, -1.5) {};
+		\node [style=bigunit] (8) at (-2.5, 0.5) {};
+		\node [style=smallbluedot] (9) at (-2.5, -0.5) {};
+		\node [style=none] (10) at (-4, -1.5) {};
+		\node [style=none] (11) at (-1, -1.5) {};
+		\node [style=none] (12) at (0.5, 2) {};
+		\node [style=none] (13) at (4.5, 2) {};
+		\node [style=none] (14) at (0.5, -2) {};
+		\node [style=none] (15) at (4.5, -2) {};
+		\node [style=none] (16) at (2.5, 1.5) {};
+		\node [style=none] (17) at (2.5, -1.5) {};
+		\node [style=bigunit] (18) at (2.5, -0.5) {};
+		\node [style=smallbluedot] (19) at (2.5, 0.5) {};
+		\node [style=none] (20) at (1, -1.5) {};
+		\node [style=none] (21) at (4, -1.5) {};
+		\node [style=none] (22) at (0, 0) {$\Rightarrow$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KL] (4.center) to (8);
+		\draw [style=KL] (8) to (9);
+		\draw [style=KL] (9) to (6.center);
+		\draw [style=KO, in=90, out=-120, looseness=0.50] (8) to (10.center);
+		\draw [style=KHB, in=90, out=-45, looseness=0.50] (9) to (11.center);
+		\draw [style=KO, in=90, out=-120, looseness=0.50] (18) to (20.center);
+		\draw [style=KHB, in=90, out=-45, looseness=0.50] (19) to (21.center);
+		\draw [style=KL] (16.center) to (19);
+		\draw [style=KL] (19) to (18);
+		\draw [style=KL] (18) to (17.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

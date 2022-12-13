@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (3) at (-1, 0.25) {};
+		\node [style=none] (4) at (1, 0.25) {};
+		\node [style=none] (5) at (-1, 0.25) {};
+		\node [style=none] (6) at (1, 0.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=gF] (4.center)
+			 to [in=270, out=-90, looseness=1.50] (3.center)
+			 to [in=150, out=30] cycle;
+		\draw [style=KB, bend left=90, looseness=1.50] (6.center) to (5.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

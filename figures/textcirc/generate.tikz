@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (1) at (1, 0) {};
+		\node [style=none] (2) at (7.75, 0) {};
+		\node [style=none] (3) at (1, 0) {};
+		\node [style=none] (6) at (-1.5, -0.75) {};
+		\node [style=none] (7) at (7.75, -1.75) {};
+		\node [style=none] (8) at (-1.5, -0.75) {};
+		\node [style=none] (10) at (7.75, 1.75) {};
+		\node [style=none] (11) at (-1.5, 0.5) {};
+		\node [style=none] (13) at (-1.5, 0.5) {};
+		\node [style=none] (18) at (10.25, -1.75) {$\left(\raisebox{-0.7mm}{\epsfig{figure=flaghk,width=15pt}}\,, \raisebox{-0.8mm}{\epsfig{figure=texter,width=13pt}}\,\right)$};
+		\node [style=none] (19) at (10.25, 0) {$\left(\raisebox{-0.7mm}{\epsfig{figure=flaguk,width=15pt}}\,, \raisebox{-0.8mm}{\epsfig{figure=speaker,width=13pt}}\,\right)$};
+		\node [style=none] (20) at (10.25, 1.75) {$\left(\raisebox{-0.7mm}{\epsfig{figure=flagbel,width=15pt}}\,, \raisebox{-1.3mm}{\epsfig{figure=book,width=13pt}}\,\right)$};
+		\node [style=none] (25) at (3.5, 2.25) {{\footnotesize textualise with trained NNs}};
+		\node [style=none] (26) at (-9.75, 0) {$*$};
+		\node [style=none] (27) at (-1.5, 0) {text circuits};
+		\node [style=none] (28) at (-4, 0) {};
+		\node [style=none] (29) at (-9, 0) {};
+		\node [style=none] (30) at (-6.5, 0.5) {{\footnotesize generate}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=v] (3.center) to (2.center);
+		\draw [style=v, in=-180, out=-90, looseness=0.25] (8.center) to (7.center);
+		\draw [style=v, in=180, out=90, looseness=0.25] (11.center) to (10.center);
+		\draw [style=v] (29.center) to (28.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

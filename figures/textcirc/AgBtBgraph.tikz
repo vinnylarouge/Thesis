@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1.75, 0.25) {\texttt{\underline{GIVES}}};
+		\node [style=none] (1) at (-4, 0.25) {\texttt{\underline{ALICE}}};
+		\node [style=none] (2) at (0.5, 0.25) {\texttt{\underline{BEER}}};
+		\node [style=none] (3) at (2.25, 0.25) {\texttt{\underline{TO}}};
+		\node [style=none] (4) at (3.75, 0.25) {\texttt{\underline{BOB}}};
+		\node [style=none] (5) at (-4, 0.75) {};
+		\node [style=none] (6) at (-1.75, 0.75) {};
+		\node [style=none] (7) at (0.5, 0.75) {};
+		\node [style=none] (8) at (2.25, 0.75) {};
+		\node [style=none] (9) at (3.75, 0.75) {};
+		\node [style=bigunit] (10) at (-1.5, 3) {};
+		\node [style=bigunit] (11) at (1.25, 1.75) {};
+		\node [style=none] (12) at (-4, 4.25) {};
+		\node [style=none] (13) at (0.75, 4.25) {};
+		\node [style=none] (14) at (3.75, 4.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K, in=90, out=-135, looseness=0.75] (10) to (5.center);
+		\draw [style=K, in=135, out=-15, looseness=0.75] (10) to (11);
+		\draw [style=KL, bend right=15, looseness=0.75] (10) to (11);
+		\draw [style=KL, in=195, out=90, looseness=0.50] (6.center) to (11);
+		\draw [style=K, in=240, out=90] (7.center) to (11);
+		\draw [style=KB, in=315, out=90, looseness=0.75] (8.center) to (11);
+		\draw [style=K, in=90, out=-15, looseness=0.50] (11) to (9.center);
+		\draw [style=K, in=150, out=-90, looseness=0.75] (12.center) to (10);
+		\draw [style=K, in=30, out=-90, looseness=0.75] (13.center) to (10);
+		\draw [style=K, in=45, out=-90, looseness=0.75] (14.center) to (11);
+	\end{pgfonlayer}
+\end{tikzpicture}

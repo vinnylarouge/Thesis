@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (155) at (-2.75, 2.5) {\texttt{SCV}};
+		\node [style=none] (163) at (-4.75, 2.5) {\texttt{NP}};
+		\node [style=none] (166) at (-1.25, 3) {};
+		\node [style=none] (167) at (1.75, 3) {};
+		\node [style=none] (168) at (-2, 5) {};
+		\node [style=bigunit] (169) at (-2, 5) {};
+		\node [style=none] (177) at (-2.75, 3) {};
+		\node [style=none] (193) at (-2, 6) {};
+		\node [style=none] (200) at (11.5, -2.5) {};
+		\node [style=none] (203) at (-4.75, 3) {};
+		\node [style=none] (204) at (0.25, 3) {};
+		\node [style=none] (205) at (0.25, 2.5) {\texttt{S}};
+		\node [style=none] (206) at (-1.25, 2.5) {\texttt{\textcolor{blue}{(}}};
+		\node [style=none] (208) at (1.75, 2.5) {\texttt{\textcolor{blue}{)}}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KB] (168.center) to (167.center);
+		\draw [style=KB] (166.center) to (168.center);
+		\draw [style=KL] (169) to (177.center);
+		\draw [style=KH] (193.center) to (169);
+		\draw [style=K] (169) to (203.center);
+		\draw [style=KH] (169) to (204.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-9.5, 0) {text};
+		\node [style=none] (2) at (0, 0) {text diagrams};
+		\node [style=none] (3) at (10.5, 0) {text circuits};
+		\node [style=none] (6) at (-8, 0) {};
+		\node [style=none] (7) at (-3, 0) {};
+		\node [style=none] (8) at (8, 0) {};
+		\node [style=none] (9) at (3, 0) {};
+		\node [style=none] (16) at (-5.5, 0.5) {{\footnotesize induces}};
+		\node [style=none] (20) at (5.5, 0.5) {{\footnotesize rewrites to}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=v] (6.center) to (7.center);  
+		\draw [style=v] (9.center) to (8.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,40 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bigunit] (0) at (-3, 0.25) {};
+		\node [style=none] (1) at (-5, 1.25) {};
+		\node [style=none] (3) at (-1, 1.25) {};
+		\node [style=none] (4) at (-5, -1.25) {};
+		\node [style=none] (5) at (-1, -1.25) {};
+		\node [style=none] (7) at (0, 0) {$\Rightarrow$};
+		\node [style=none] (8) at (1.75, 0.5) {};
+		\node [style=none] (9) at (1.75, -0.5) {};
+		\node [style=none] (10) at (4.25, 0.5) {};
+		\node [style=none] (11) at (4.25, -0.5) {};
+		\node [style=none] (12) at (2.5, 0.5) {};
+		\node [style=none] (13) at (3.5, 0.5) {};
+		\node [style=none] (14) at (2.5, -0.5) {};
+		\node [style=none] (15) at (3.5, -0.5) {};
+		\node [style=none] (16) at (2.5, -1.25) {};
+		\node [style=none] (17) at (3.5, -1.25) {};
+		\node [style=none] (18) at (2.5, 1.25) {};
+		\node [style=none] (19) at (3.5, 1.25) {};
+		\node [style=none] (20) at (3, 0) {$\texttt{TV}$};
+		\node [style=none] (21) at (-3, -1.25) {$\texttt{\underline{TV}}$};
+		\node [style=none] (22) at (-3, -0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K, in=150, out=-90, looseness=0.75] (1.center) to (0);
+		\draw [style=K, in=30, out=-90, looseness=0.75] (3.center) to (0);
+		\draw [style=K, in=90, out=-150] (0) to (4.center);
+		\draw [style=K, in=90, out=-30] (0) to (5.center);
+		\draw (8.center) to (10.center);
+		\draw (10.center) to (11.center);
+		\draw (11.center) to (9.center);
+		\draw (9.center) to (8.center);
+		\draw (18.center) to (12.center);
+		\draw (19.center) to (13.center);
+		\draw (14.center) to (16.center);
+		\draw (15.center) to (17.center);
+		\draw [style=KL] (0) to (22.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

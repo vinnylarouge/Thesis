@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (2) at (-3.25, 0) {$*$};
+		\node [style=none] (3) at (5, 0) {text circuits};
+		\node [style=none] (8) at (2.5, 0) {};
+		\node [style=none] (9) at (-2.5, 0) {};
+		\node [style=none] (20) at (0, 0.5) {{\footnotesize generate}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=v] (9.center) to (8.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

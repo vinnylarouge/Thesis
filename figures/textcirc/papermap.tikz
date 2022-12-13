@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 5) {A hybrid grammar for text};
+		\node [style=none] (1) at (-5, 0) {\bR Language fragment ???\e};
+		\node [style=none] (2) at (5, 0) {Text diagrams};
+		\node [style=none] (3) at (0, -5) {Text circuits};
+		\node [style=none] (4) at (-5, 0.5) {};
+		\node [style=none] (5) at (-1, 4.5) {};
+		\node [style=none] (6) at (0.5, 4.5) {};
+		\node [style=none] (7) at (4.5, 0.5) {};
+		\node [style=none] (8) at (0.5, -4.5) {};
+		\node [style=none] (9) at (4.5, -0.5) {};
+		\node [style=none] (11) at (-4.5, -0.5) {};
+		\node [style=none] (14) at (-0.75, -4.5) {};
+		\node [style=none] (15) at (-4.75, 2.75) {generates};
+		\node [style=none] (16) at (4.75, 3) {corresponds to}; 
+		\node [style=none] (20) at (4.25, -3) {rewrite to};
+		\node [style=none] (21) at (-4, -3) {distils as};
+		\node [style=none] (22) at (-0.5, 4.5) {};
+		\node [style=none] (23) at (-4.5, 0.5) {};
+		\node [style=none] (24) at (-1, 2) {parses by};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=vv] (11.center) to (14.center);
+		\draw [style=<>] (6.center) to (7.center);
+		\draw [style=vv] (9.center) to (8.center);
+		\draw [style=vv] (5.center) to (4.center);
+		\draw [style=Hvv] (23.center) to (22.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

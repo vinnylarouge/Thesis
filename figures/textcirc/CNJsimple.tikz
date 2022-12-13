@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (6) at (0, 0) {};
+		\node [style=none] (9) at (0, 0) {};
+		\node [style=bigunit] (12) at (0, 0) {};
+		\node [style=none] (13) at (0, -1) {};
+		\node [style=none] (18) at (-2, 2) {};
+		\node [style=none] (19) at (2, 2) {};
+		\node [style=none] (20) at (-2, -2) {};
+		\node [style=none] (21) at (2, -2) {};
+		\node [style=none] (23) at (0, -1.5) {\texttt{CNJ}};
+		\node [style=none] (25) at (-1.5, -1) {};
+		\node [style=none] (26) at (1.5, -1) {};
+		\node [style=none] (27) at (0, 1) {};
+		\node [style=none] (28) at (0, 1.5) {\texttt{S}};
+		\node [style=none] (33) at (1.5, -1.5) {\texttt{S}};
+		\node [style=none] (36) at (-1.5, -1.5) {\texttt{S}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KB] (12) to (13.center);
+		\draw [style=KH] (12) to (25.center);
+		\draw [style=KH] (12) to (26.center);
+		\draw [style=KH] (27.center) to (12);
+	\end{pgfonlayer}
+\end{tikzpicture}

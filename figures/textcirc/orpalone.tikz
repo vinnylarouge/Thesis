@@ -1,0 +1,47 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-2, 0) {};
+		\node [style=none] (1) at (-3.25, -1.25) {};
+		\node [style=none] (2) at (-0.75, -1.25) {};
+		\node [style=none] (3) at (-2, -0.75) {$\texttt{S}_1$};
+		\node [style=none] (4) at (2, 0) {};
+		\node [style=none] (5) at (1.25, -1.25) {};
+		\node [style=none] (6) at (3.25, -1.25) {};
+		\node [style=none] (7) at (2.25, -0.75) {$\texttt{S}_2$};
+		\node [style=none] (8) at (0.25, -1.75) {$\texttt{\underline{ORP}}$};
+		\node [style=none] (9) at (-2.75, -1.75) {$\cdots$};
+		\node [style=none] (10) at (-1.75, -1.75) {$\texttt{\underline{N}}$};
+		\node [style=none] (11) at (0, -2.25) {};
+		\node [style=none] (12) at (-1.75, -2.25) {};
+		\node [style=none] (13) at (0.25, -0.75) {$\texttt{NP}$};
+		\node [style=none] (14) at (1.75, -1.75) {$\cdots$};
+		\node [style=none] (15) at (0.25, 0.25) {};
+		\node [style=none] (16) at (-0.75, -1.25) {};
+		\node [style=none] (17) at (1.25, -1.25) {};
+		\node [style=none] (18) at (3, -1.75) {\textvisiblespace};
+		\node [style=none] (19) at (0.5, -2.25) {};
+		\node [style=none] (20) at (3, -2.25) {};
+		\node [style=none] (21) at (0, 2) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (0.center) to (1.center);
+		\draw [style=K] (1.center) to (2.center);
+		\draw [style=K] (2.center) to (0.center);
+		\draw [style=K] (0.center) to (2.center);
+		\draw [style=K] (0.center) to (1.center);
+		\draw [style=K] (4.center) to (5.center);
+		\draw [style=K] (5.center) to (6.center);
+		\draw [style=K] (6.center) to (4.center);
+		\draw [style=K] (4.center) to (6.center);
+		\draw [style=K] (4.center) to (5.center);
+		\draw [style=Kv, bend left=90] (11.center) to (12.center);
+		\draw [style=K] (15.center) to (16.center);
+		\draw [style=K] (17.center) to (15.center);
+		\draw [style=K] (15.center) to (17.center);
+		\draw [style=K] (15.center) to (16.center);
+		\draw [style=K] (1.center) to (6.center);
+		\draw [style=Kv, bend left=90, looseness=0.75] (20.center) to (19.center);
+		\draw [style=K] (21.center) to (4.center);
+		\draw [style=K] (0.center) to (21.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

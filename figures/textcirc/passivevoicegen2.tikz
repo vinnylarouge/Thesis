@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (37) at (0, 0.5) {};
+		\node [style=none] (38) at (0, -0.5) {};
+		\node [style=none] (40) at (0, -1) {\texttt{\underline{TV}}};
+		\node [style=none] (43) at (0, 1) {\texttt{TVP}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KL] (37.center) to (38.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

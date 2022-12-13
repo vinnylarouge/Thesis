@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (193) at (-2, 6) {};
+		\node [style=none] (200) at (11.5, -2.5) {};
+		\node [style=none] (201) at (-2, 4.5) {};
+		\node [style=none] (202) at (-2, 4) {\texttt{S}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KH] (193.center) to (201.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

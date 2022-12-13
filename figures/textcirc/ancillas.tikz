@@ -1,0 +1,59 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=smallorangedot] (0) at (-6, 0) {};
+		\node [style=none] (1) at (-6, 1) {};
+		\node [style=none] (2) at (-6.75, -1) {};
+		\node [style=none] (3) at (-5.25, -1) {};
+		\node [style=none] (4) at (-6, 1.5) {\texttt{ADV}};
+		\node [style=none] (7) at (-5.25, -1.5) {\texttt{ADV}};
+		\node [style=none] (8) at (-6.75, -1.5) {\texttt{ADV}};
+		\node [style=none] (9) at (0, 1.5) {\texttt{IV}};
+		\node [style=smallbluedot] (10) at (0, 0) {};
+		\node [style=none] (11) at (0, 1) {};
+		\node [style=none] (12) at (-0.75, -1) {};
+		\node [style=none] (13) at (0.75, -1) {};
+		\node [style=none] (14) at (-0.75, -1.5) {\texttt{IV}};
+		\node [style=none] (15) at (0.75, -1.5) {\texttt{adp}};
+		\node [style=none] (16) at (3, 1.5) {\texttt{TV}};
+		\node [style=smallbluedot] (17) at (3, 0) {};
+		\node [style=none] (18) at (3, 1) {};
+		\node [style=none] (19) at (2.25, -1) {};
+		\node [style=none] (20) at (3.75, -1) {};
+		\node [style=none] (21) at (2.25, -1.5) {\texttt{TV}};
+		\node [style=none] (22) at (3.75, -1.5) {\texttt{adp}};
+		\node [style=smallbluedot] (23) at (6, 0) {};
+		\node [style=none] (24) at (5.25, 1) {};
+		\node [style=none] (25) at (6.75, 1) {};
+		\node [style=none] (26) at (5.25, -1) {};
+		\node [style=none] (27) at (6.75, -1) {};
+		\node [style=none] (28) at (5.25, 1.5) {\texttt{adp}};
+		\node [style=none] (29) at (6.75, 1.5) {\texttt{NP}};
+		\node [style=none] (30) at (6.75, -1.5) {\texttt{NP}};
+		\node [style=none] (31) at (5.25, -1.5) {\texttt{ADP}};
+		\node [style=smallbluedot] (32) at (-3, 0) {};
+		\node [style=none] (33) at (-3, 1) {};
+		\node [style=none] (34) at (-3.75, -1) {};
+		\node [style=none] (35) at (-2.25, -1) {};
+		\node [style=none] (36) at (-3, 1.5) {\texttt{adp}};
+		\node [style=none] (37) at (-3.75, -1.5) {\texttt{adp}};
+		\node [style=none] (38) at (-2.25, -1.5) {\texttt{adp}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KO] (1.center) to (0);
+		\draw [style=KO, in=90, out=-120, looseness=0.75] (0) to (2.center);
+		\draw [style=KO, in=90, out=-60, looseness=0.75] (0) to (3.center);
+		\draw [style=KL] (11.center) to (10);
+		\draw [style=KL, in=240, out=90, looseness=0.75] (12.center) to (10);
+		\draw [style=KHB, in=90, out=-60, looseness=0.75] (10) to (13.center);
+		\draw [style=KL] (18.center) to (17);
+		\draw [style=KL, in=240, out=90, looseness=0.75] (19.center) to (17);
+		\draw [style=KHB, in=90, out=-60, looseness=0.75] (17) to (20.center);
+		\draw [style=K, in=60, out=-90, looseness=0.75] (25.center) to (23);
+		\draw [style=K, in=90, out=-60, looseness=0.75] (23) to (27.center);
+		\draw [style=KB, in=240, out=90, looseness=0.75] (26.center) to (23);
+		\draw [style=KHB, in=120, out=-90, looseness=0.75] (24.center) to (23);
+		\draw [style=KHB] (33.center) to (32);
+		\draw [style=KHB, in=90, out=-120, looseness=0.75] (32) to (34.center);
+		\draw [style=KHB, in=90, out=-60, looseness=0.75] (32) to (35.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

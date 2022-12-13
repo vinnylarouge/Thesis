@@ -1,0 +1,49 @@
+\begin{tikzpicture}[{every node/.style}={scale=0.8}]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1, 1) {};
+		\node [style=none] (1) at (1.5, 1) {};
+		\node [style=none] (2) at (-1, -1) {};
+		\node [style=none] (3) at (1.5, -1) {};
+		\node [style=none] (5) at (1.25, 1) {};
+		\node [style=none] (6) at (1.25, -1) {};
+		\node [style=none] (7) at (-0.75, 1) {};
+		\node [style=none] (8) at (0.25, 1) {};
+		\node [style=none] (9) at (0.25, -1) {};
+		\node [style=none] (10) at (-0.75, -1) {};
+		\node [style=none] (11) at (1.25, -2) {};
+		\node [style=none] (12) at (1.25, 2) {};
+		\node [style=none] (13) at (0.25, 2) {};
+		\node [style=none] (14) at (-0.75, 2) {};
+		\node [style=none] (15) at (-0.75, -2) {};
+		\node [style=none] (16) at (0.25, -2) {};
+		\node [style=none] (17) at (-0.25, 1.75) {$\cdots$};
+		\node [style=none] (18) at (-0.25, -1.75) {$\cdots$};
+		\node [style=none] (19) at (2.5, 0) {$\cdots$};
+		\node [style=none] (20) at (-2, 0) {$\cdots$};
+		\node [style=none] (23) at (0.75, 1.75) {$\cdots$};
+		\node [style=none] (24) at (0.75, -1.75) {$\cdots$};
+		\node [style=none] (27) at (0.25, -2.25) {};
+		\node [style=none] (28) at (-0.75, -2.25) {};
+		\node [style=none] (29) at (-0.75, -2.75) {};
+		\node [style=none] (30) at (0.25, -2.75) {};
+		\node [style=none] (31) at (-0.75, -3.25) {\texttt{\underline{N}}};
+		\node [style=none] (32) at (0.5, -3.25) {\texttt{\underline{RP}}};
+		\node [style=none] (33) at (0.25, 0) {$\mathcal{G}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (2.center)
+			 to (0.center)
+			 to (1.center)
+			 to (3.center)
+			 to cycle;
+		\draw [style=K] (12.center) to (5.center);
+		\draw [style=K] (13.center) to (8.center);
+		\draw [style=K] (14.center) to (7.center);
+		\draw [style=K] (9.center) to (16.center);
+		\draw [style=K] (10.center) to (15.center);
+		\draw [style=K] (6.center) to (11.center);
+		\draw [style=KTG] (14.center) to (16.center);
+		\draw [style=Kvp] (29.center) to (28.center);
+		\draw [style=Kvp] (30.center) to (27.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

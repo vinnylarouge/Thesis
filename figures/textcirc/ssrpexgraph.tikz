@@ -1,0 +1,65 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-3, -0.75) {\texttt{\underline{WHO}}};
+		\node [style=none] (1) at (-2.5, 1.25) {\texttt{\underline{IS}}};
+		\node [style=none] (2) at (-1, 1.75) {\texttt{\underline{SOBER}}};
+		\node [style=none] (8) at (-3, 0.5) {};
+		\node [style=none] (9) at (-2.5, 1.75) {};
+		\node [style=none] (10) at (-1, 2.25) {};
+		\node [style=bigunit] (18) at (-3.25, 3) {};
+		\node [style=none] (21) at (2.25, 1.25) {\texttt{\underline{GIVES}}};
+		\node [style=none] (22) at (0.75, -0.75) {\textvisiblespace};
+		\node [style=none] (23) at (3.5, -0.75) {\texttt{\underline{BEER}}};
+		\node [style=none] (24) at (4.5, 1) {\texttt{\underline{TO}}};
+		\node [style=none] (25) at (5.75, -0.75) {\texttt{\underline{BOB}}};
+		\node [style=none] (26) at (0.75, 0.5) {};
+		\node [style=none] (27) at (2.25, 1.75) {};
+		\node [style=none] (28) at (3.5, 0.5) {};
+		\node [style=none] (29) at (4.5, 1.5) {};
+		\node [style=none] (30) at (5.75, 0.5) {};
+		\node [style=bigunit] (31) at (2.25, 3.25) {};
+		\node [style=bigunit] (32) at (4, 2.25) {};
+		\node [style=none] (35) at (-6.5, 0.5) {};
+		\node [style=none] (36) at (-6.5, -0.75) {\texttt{\underline{ALICE}}};
+		\node [style=none] (39) at (-6.5, 4.5) {};
+		\node [style=none] (40) at (-3, 4.5) {};
+		\node [style=none] (41) at (0.75, 4.5) {};
+		\node [style=none] (42) at (3.5, 4.5) {};
+		\node [style=none] (43) at (5.75, 4.5) {};
+		\node [style=none] (44) at (5.75, 4.5) {};
+		\node [style=none] (45) at (-6.5, 0.25) {};
+		\node [style=none] (46) at (-3, 0.25) {};
+		\node [style=none] (47) at (0.75, 0.25) {};
+		\node [style=none] (48) at (3.5, 0.25) {};
+		\node [style=none] (49) at (5.75, 0.25) {};
+		\node [style=none] (50) at (3.5, -0.25) {};
+		\node [style=none] (51) at (5.75, -0.25) {};
+		\node [style=none] (52) at (0.75, -0.25) {};
+		\node [style=none] (53) at (-3, -0.25) {};
+		\node [style=none] (54) at (-6.5, -0.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K, in=90, out=-135, looseness=0.75] (31) to (26.center);
+		\draw [style=K, in=90, out=-30, looseness=0.75] (31) to (32);
+		\draw [style=KL, in=150, out=-90, looseness=0.75] (31) to (32);
+		\draw [style=KL, in=195, out=90, looseness=0.50] (27.center) to (32);
+		\draw [style=K, in=240, out=90] (28.center) to (32);
+		\draw [style=KB, in=315, out=90] (29.center) to (32);
+		\draw [style=K, in=90, out=-15, looseness=0.50] (32) to (30.center);
+		\draw [style=K, in=90, out=-135] (18) to (8.center);
+		\draw [style=KHO, in=90, out=-30] (18) to (10.center);
+		\draw [style=KB, in=90, out=-105] (18) to (9.center);
+		\draw [style=K, in=120, out=-90] (40.center) to (18);
+		\draw [style=K, in=135, out=-90] (41.center) to (31);
+		\draw [style=K, in=45, out=-90] (42.center) to (31);
+		\draw [style=K, in=45, out=-90] (44.center) to (32);
+		\draw [style=K] (39.center) to (35.center);
+		\draw [style=Kvp] (50.center) to (48.center);
+		\draw [style=Kvp] (51.center) to (49.center);
+		\draw [style=Kvp] (52.center) to (47.center);
+		\draw [style=Kvp] (53.center) to (46.center);
+		\draw [style=Kvp] (54.center) to (45.center);
+		\draw [style=KTG, in=0, out=-180, looseness=0.50] (8.center) to (39.center);
+		\draw [style=KTG, in=0, out=180, looseness=0.75] (26.center) to (40.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

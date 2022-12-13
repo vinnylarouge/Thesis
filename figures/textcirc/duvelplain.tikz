@@ -1,0 +1,34 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (1, -1.75) {\texttt{\underline{BOB}}};
+		\node [style=none] (1) at (3, -0.25) {\texttt{\underline{DRINKS}}};
+		\node [style=none] (2) at (5, -1.75) {\texttt{\underline{DUVEL}}};
+		\node [style=none] (5) at (-5, -1.75) {\texttt{\underline{BOB}}};
+		\node [style=none] (6) at (-3.25, -0.25) {\texttt{\underline{LIKES}}};
+		\node [style=none] (7) at (-1.25, -1.75) {\texttt{\underline{DUVEL}}};
+		\node [style=none] (8) at (-5, -1.25) {};
+		\node [style=none] (9) at (-3.25, 0.25) {};
+		\node [style=none] (10) at (-1.25, -1.25) {};
+		\node [style=none] (12) at (1, -1.25) {};
+		\node [style=none] (13) at (3, 0.25) {};
+		\node [style=none] (14) at (5, -1.25) {};
+		\node [style=bigunit] (23) at (-3.25, 1.25) {};
+		\node [style=bigunit] (24) at (3, 1.5) {};
+		\node [style=none] (25) at (-5.25, 3.5) {};
+		\node [style=none] (26) at (-1.25, 3.5) {};
+		\node [style=none] (27) at (1, 3.5) {};
+		\node [style=none] (28) at (5, 3.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KL] (24) to (13.center);
+		\draw [style=KL] (23) to (9.center);
+		\draw [style=K, in=135, out=-90, looseness=0.75] (27.center) to (24);
+		\draw [style=K, in=30, out=-90, looseness=0.75] (28.center) to (24);
+		\draw [style=K, in=90, out=-15, looseness=0.75] (24) to (14.center);
+		\draw [style=K, in=90, out=-150] (24) to (12.center);
+		\draw [style=K, in=45, out=-90, looseness=0.75] (26.center) to (23);
+		\draw [style=K, in=135, out=-90, looseness=0.75] (25.center) to (23);
+		\draw [style=K, in=90, out=-150] (23) to (8.center);
+		\draw [style=K, in=90, out=-30, looseness=0.75] (23) to (10.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

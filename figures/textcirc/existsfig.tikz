@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (3, 2) {};
+		\node [style=none] (1) at (3, -2) {};
+		\node [style=none] (3) at (-2, -1.5) {$\texttt{\underline{EXISTS}}$};
+		\node [style=none] (4) at (2, 1) {};
+		\node [style=none] (5) at (4, 1) {};
+		\node [style=none] (6) at (2, -1) {};
+		\node [style=none] (7) at (4, -1) {};
+		\node [style=none] (8) at (4, -1) {};
+		\node [style=none] (9) at (0, 0) {$\Rightarrow$};
+		\node [style=bigunit] (10) at (-3, 0) {};
+		\node [style=none] (11) at (-2, -1) {};
+		\node [style=none] (12) at (-4, -1) {};
+		\node [style=none] (13) at (-3, 1.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (0.center) to (1.center);
+		\draw [style=H] (5.center) to (8.center);
+		\draw [style=H] (4.center) to (5.center);
+		\draw [style=H] (4.center) to (6.center);
+		\draw [style=H] (6.center) to (8.center);
+		\draw [style=K] (13.center) to (10);
+		\draw [style=K] (10) to (12.center);
+		\draw [style=KL] (10) to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

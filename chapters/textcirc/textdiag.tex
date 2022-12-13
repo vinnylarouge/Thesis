@@ -1,0 +1,242 @@
+\section{Text diagrams}\label{sec:congraphas}
+
+We now introduce \emph{text diagrams}, which incorporate the grammatical phenomena of text with hybrid grammar (cf.~pronominal links and phrase boundaries) into a single mathematical structure. We will do so by means of a systematic passage from text with hybrid grammar to text diagrams. Artefacts required to handle the behaviour of relative pronouns in hybrid grammar vanish in the setting of text diagrams.
+
+%\paragraph{Background: Open Graphs}
+\subsection{Preliminaries}
+
+%\TODOb{Nothing of the high-level stuff here is of any use to the reader.  Just explicitly put what is needed.}
+%\bR WIP GLOSS: The formal mathematical setting for text diagrams is string diagrams: a formal graphical syntax that simplifies algebraic manipulation by exploiting a correspondence between algebra and topology [Penrose, Joyal-Street, Selinger]. String diagrams are a natural setting to express the interaction of systems and processes [bobook], and of higher-order processes that operate upon lower-order processes [operator algebras]. \e
+String diagrams \cite{Penrose, JS, SelingerSurvey, CKbook} are a graphical mathematical framework for composing input-output boxes.  For us the `boxes' will have the following shape:
+\[
+\tikzfig{textcirc/stringscopy}
+\]
+For composition one typically one distinguishes between parallel composition:
+\[
+\tikzfig{textcirc/parallelstrings}
+\]
+or sequential composition by plugging together matching outputs and inputs. 
+\[
+\tikzfig{textcirc/opengraph_compex} 
+\]
+Despite the 1-dimensionality connoted by `string', string diagrams in general also accommodate higher-dimensional structures such as planes and volumes \cite{reutter_high-level_2019}.
+
+%Recall that a (directed) graph is a pair of sets $(V,E)$, where $V$ is a set of vertices, and $E \subset V \times V$ is a set of directed edges between pairs of vertices. Graphs can be further decorated with labels for vertices and edges.  An \emph{open graph} is a directed graph where \emph{half edges} are permitted; edges with either no source vertex or no target vertex, depicted respectively as below:
+%\[\tikzfig{textcirc/opengraph_openedge}  \]
+%We call these \emph{inputs} and \emph{outputs} respectively. Open graphs \emph{plug} together precisely according to intuition, which yields multigraphs with boundaries that consist of  directed inputs and outputs, and all other edges undirected.:  
+%\[\tikzfig{textcirc/opengraph_compex}\]
+%We refer the interested reader to \cite{dixon_open_2010} for the full explicit account.  We read these open graphs from top-to-bottom, and the remaining half edges are treated as \emph{inputs} and \emph{outputs} of open graph as a whole. 
+
+%\begin{remark} 
+%Evidently, the connective structure of any planar circuit -- where no wires twist past one another -- can be obtained by \bB plugging together planar open graphs \e, by the following correspondence:
+%\[\tikzfig{textcirc/1gate}\]
+%\[\tikzfig{textcirc/2gate}\]
+%And so on.
+%\end{remark}
+
+%\subsection{Simple Sentences: Phrase structure as (Planar) Open Graphs}\label{gramtograph}
+\subsection{Simple sentences as text diagrams}\label{gramtograph}
+
+The initial symbol for our phrase structure rules in the previous section was \texttt{S}.  In the passage from hybrid grammar to text diagrams, systematically: 
+\begin{itemize}
+\item We will replace the sentence type \texttt{S} with a \underline{sentence-dependent} number of \texttt{NP} wires. 
+\end{itemize}
+In this way, tree-shaped texts with hybrid grammar become string diagrams with one input \texttt{NP} wire for every pronominally distinct \texttt{NP} label in the text. This geometric change of perspective is what enables a passage to text circuits. To achieve this, we alter the rules of Section \ref{sec:grammar} as follows:
+\begin{itemize}
+    \item We remove \texttt{S} types.
+    \item Every rule must preserve the number of input and output noun wires, so phrase structure rules that introduce \texttt{NP} types must be altered to also take the same number of \texttt{NP} types as input.
+\end{itemize}
+In the table below where we depict just those rules that are altered in this way. As can be seen, besides removing sentence-inputs and adding  noun-inputs, subscripting \texttt{NP} where there are multiple, we also vertically align matching input-output pairs:
+\[
+\begin{tabular}{|c|c|c|}
+\hline
+\text{Grammar} & \text{Rule} & \text{Diagram}  \\ \hline
+\tikzfig{textcirc/IVcsgcopy} & \text{Intrans.Verb} & \tikzfig{textcirc/IVgraphcopy} \\ \hline
+\tikzfig{textcirc/TVcsgcopy} & \text{Trans.Verb} & \tikzfig{textcirc/TVgraphcopy} \\ \hline
+\tikzfig{textcirc/ADJiscsgcopy} & \text{Adjective} & \tikzfig{textcirc/ADJisgraphcopy} \\ \hline
+\tikzfig{textcirc/ADPIVcsgcopy} & \text{Adposition(IV)} & \tikzfig{textcirc/ADPIVgraphcopy} \\ \hline
+\tikzfig{textcirc/ADPTVcsgcopy} & \text{Adposition(TV)} & \tikzfig{textcirc/ADPTVgraphcopy} \\ \hline
+\end{tabular}
+\]
+%\[
+%\bB\begin{tabular}{|c|c|c|}
+%\hline
+%\text{Grammar} & \text{Rule} & \text{Graph}  \\ \hline
+%\tikzfig{textcirc/IVcsg} & \text{Intrans.Verb} & \tikzfig{textcirc/IVgraph} \\ \hline
+%\tikzfig{textcirc/TVcsg} & \text{Trans.Verb} & \tikzfig{textcirc/TVgraph} \\ \hline
+%\tikzfig{textcirc/ADJiscsg} & \text{Adjective} & \tikzfig{textcirc/ADJisgraph} \\ \hline
+%\tikzfig{textcirc/ADPIVcsg} & \text{Adposition(IV)} & \tikzfig{textcirc/ADPIVgraph} \\ \hline
+%\tikzfig{textcirc/ADPTVcsg} & \text{Adposition(TV)} & \tikzfig{textcirc/ADPTVgraph} \\ \hline
+%\end{tabular}\e
+%\]
+%\bR Instead of labels for the \texttt{NP} wire type, we keep track of which \texttt{NP} wires belong to which labels separately. \e \TODOb{How is this not ambiguous without any further rule? (eg wire ordering)}
+%We keep all other labels as they are.
+Similarly, when we draw text diagrams, as a visual convention  we consistently arrange the diagram so that matching input and output \texttt{NP} wires align, and bend those a bit always pointing either upward or downward, to better reflect the notion that wires should be considered as inputs and outputs in the string diagram sense: 
+\[
+\tikzfig{textcirc/diagramconvention}
+\]
+We can now also drop one of the doubly-appearing labels:
+\[
+\tikzfig{textcirc/diagramconvention2}
+\]
+
+\begin{example} 
+For the simple sentence \texttt{\underline{ALICE GIVES BEER TO BOB}}, the grammar is:
+%we have the hybrid grammar structure:
+\[
+\tikzfig{textcirc/AgBtB2}
+\]
+from which we obtain the following text diagram:
+\[
+\tikzfig{textcirc/AgBtBgraph}
+\]
+\end{example}
+
+\begin{example}
+We allow the new input \texttt{NP} wires obtained from grammar to diagram translation to cross other wires to reach the top of the diagram. For eample, in the sentence \texttt{\underline{ALICE GIVES BEER TO BOB FOR CLAIRE}} the grammar is:
+\[\tikzfig{textcirc/AgBtBfC}\]
+from which we obtain the following text diagram, where noun wires are vertically aligned:
+\[\tikzfig{textcirc/AgBtBfCdiagram}\]
+\end{example}
+
+
+\subsection{Rewriting text diagrams}
+
+When dealing with relative pronouns we have seen something analogous to Chomskian phrase-structure transformations: operations that fuse and more generally transform text  diagrams. We formalise these as \underline{diagram rewrites}, each of which replaces a diagram with another that has the same input and output wires as the first. We illustrate examples of such rewrites in the sections to follow.
+
+\subsection{Pronominal links in text diagrams}\label{sec:prondiag}  
+
+Pronominal links take a different shape in text diagrams than in grammar. % text with hybrid grammar. 
+The pronominal link arrows of \ref{sec:pronom-links} become wires that link output and input noun wires in a chain\footnote{We could have also had the pronominal links in the chain go from northwest to southeast. We choose this direction such that the gates of the resulting text circuit, read top-to-bottom and left-to-right, reflect the order in which words appear in text.}:
+\[
+\tikzfig{textcirc/link2diagram}
+\]
+where the following pieces relate pronominal link wires to noun wires:
+\[
+\tikzfig{textcirc/plinkgens}
+\]
+These pieces can vanish by the following link-elimination rewrites:
+\[
+\tikzfig{textcirc/prontransforms}  
+\]
+In particular, this means that where $\mathcal{D}_1$ and $\mathcal{D}_2$ are text diagrams, we have:
+\[
+\tikzfig{textcirc/pronlinkrule}  
+\]  
+\[
+\tikzfig{textcirc/pronlinkrule2}
+\]
+As we have seen now, wires may cross one another: this is an important quality of text diagrams.
+\begin{convention}[In text diagrams, only connectivity matters]\label{conv:onlyconnect}
+While hybrid grammar diagrams are planar, in text diagrams wires and labels may be freely induced to cross over one another, so long as input-output connectivity is preserved.
+\end{convention}
+Link-elimination rewrites may induce twists in noun wires; a consequence of an overarching principle that only output-to-input connectivity matters. So we also have the following link-elimination rewrites:
+\[
+\tikzfig{textcirc/prontransforms2}  
+\]
+We demonstrate by means of examples how these rewrites interpret pronominal links as composition of text diagrams.  
+
+\begin{example}[Subject relative pronouns revisited]
+We start with the following text:
+\[
+\tikzfig{textcirc/srpex1}
+\]
+For which we can replace each tree with a text diagram:
+\[
+\tikzfig{textcirc/srpexA2}
+\]
+Now we can replace the pronominal link by its text diagram counterpart. Now \texttt{BOB} (which is a proper noun, rather than the pronoun \texttt{WHO}) labels the only available output wire:
+\[
+\tikzfig{textcirc/srpexA3}
+\]
+The pronominal link can now be rewritten away:
+\[
+\tikzfig{textcirc/srpexA4}
+\]
+%And finally we obtain a circuit.
+%\[\tikzfig{textcirc/srpexA5}\]
+\end{example}
+
+\begin{example}[Subject relative pronouns revisited]
+Pronominal links in the setting of text diagrams `explain' the artefacts that were necessary in hybrid grammar to accommodate relative pronouns. Recall that for the special rule for subject relative pronouns, we obtain a structure with \texttt{!} and \textvisiblespace \ artefacts:
+\[
+\tikzfig{textcirc/ssrpex}
+\]
+When we move to text diagrams, the \texttt{!} artefact disappears:
+\[
+\tikzfig{textcirc/ssrpexA2}
+\]
+Now we replace the pronominal links with their text diagram counterparts, obtaining:
+\[
+\tikzfig{textcirc/ssrpexA3}
+\]
+Rewriting away pronominal links, we have the following text diagram:
+\[
+\tikzfig{textcirc/ssrpexAF}
+\]
+%In fact, we can express the internal structure of the relative pronoun \texttt{WHO} entirely in terms of pronominal links, by starting with the following connectedness graph, which reduces to the same one above by graph rewrites eliminating pronominal links:
+%\[\tikzfig{textcirc/ssrpexA4}\]
+%The \textvisiblespace \ artefact disappears: the label was blank in the phrase-tree form, because in the setting of connectedness graphs, there was never anything to label.  We account for the other special pronouns in Figure \ref{tab:pron} \bR in the appendix\e.\TODOb{In case we decide not to have the tables in an appendix.}
+
+%Returning to the previous connectedness graph without pronominal links, we can further simplify by eliminating the copula \texttt{\underline{IS}}.
+%\[\tikzfig{textcirc/ssrpexAF2}\]
+%And so we obtain a language circuit.
+%\[\tikzfig{textcirc/ssrpexCIRC}\]
+\end{example}
+
+%\TODOb{Don't understand a word of this.}
+%\bR\begin{example}[Object Relative Pronouns revisited]
+%The doubly-labelled wire and the empty label for the object relative pronoun rule are artefacts of a more natural representation (rightmost graph). Both are reduced to the same connectedness graph.
+%\[\tikzfig{textcirc/obrelpronexplainer}\]
+%The core issue is that connectedness graphs obtained directly from connectedness grammars are planar, whereas the `natural' represention in terms of connectedness graphs -- where only input-output connectivity matters -- `wants' a twist.
+%\end{example}
+%\e
+
+%We will deal with reflexive pronouns separately, in Section \ref{sec:asscon}.
+
+\subsection{Phrase scope as phrase bubbles.}  
+
+We will have to deal with compound sentences differently, because in the passage from text with grammar to text diagrams, we have replaced the sentence type \texttt{S} by a sentence-dependent collection of noun wires. This requires the use of string diagrams with regions.\footnote{We forgo exposition here, but everything we present here can be expressed in the setting of associative $n$-categories \cite{dorn_associative_2018}, and in fact prototyped and implemented in a proof assistant \cite{reutter_high-level_2019}.} We will introduce  generators of text diagrams with regions that identify the boundaries that delineate a sentential subphrase. For verbs with a sentential complement that take a phrase to the right, we have diagram pieces that allow a noun-wire to enter a bounded phrase from the right, and exit on the left:
+\[
+\tikzfig{textcirc/phrenter} \quad\quad\quad\quad \tikzfig{textcirc/phrexit}
+\]
+For conjunctions, which also take a phrase to the left, we have rewrites that allow a noun-wire to enter a bounded phrase from the left, and exit on the right:
+\[
+\tikzfig{textcirc/phrenterR} \quad\quad\quad\quad \tikzfig{textcirc/phrexitR}
+\]
+In both cases, we have one more rewrite to `cap off' phrase regions. Formally we must distinguish between phrases-to-the-left and -to-the-right, which have differing caps, but in the graphical presentation we elide this distinction as it is visually evident:
+\[
+\tikzfig{textcirc/phrcap}
+\]
+
+\begin{convention}[Rules for phrase scope]\label{conv:phrscope}
+We state graphical conventions for phrase scope and phrase regions here. First, phrase scoped regions behave as planar obstacles in a text diagram, except for \texttt{NP} wires and pronominal links. This has two consequences: that nodes and wires occurring within a phrase scope are `trapped inside', and also that multiple phrase scope constructions may nest iteratively, but no two overlap. Second, \texttt{\underline{NP}} labels may only occur outside phrase scope.
+\end{convention}
+
+For phrase scope constructions in grammar -- verbs with sentential complements and conjunctions -- in order to ensure that the resulting text diagram has an equal number of input and output noun wires, our correspondence must take into account the number of labelled noun wires (drawn with a `foot') in the subsentence within the phrase scope. We subscript the noun labels with indices $i$ and $o$, for `inside scope' and `outside scope'. We have diagram counterparts for verbs with sentential complements and conjunctions as follows: 
+\[
+\begin{tabular}{|c|c|c|}
+\hline
+\text{Grammar} & \text{Rule} & \text{Diagram}  \\ \hline
+\tikzfig{textcirc/SCVhybrid} &  \text{Sent.Comp.Verb} &\tikzfig{textcirc/SCVtranslate} \\ \hline
+\tikzfig{textcirc/CNJhybrid} & \text{Conjunction} &  \tikzfig{textcirc/CNJtranslate}   \\ \hline
+\end{tabular}
+\]
+
+\begin{example}  
+For \texttt{\underline{ALICE SEES BOB DANCE}} we now obtain:
+\[
+\tikzfig{textcirc/AsBdgraph}
+\]
+In this example, the sentential subphrase \texttt{BOB DANCE(S)} is `contained' in a grey `phrase bubble'. Recalling Convention \ref{conv:phrscope}, although text diagrams in general are not restricted by planarity, we impose the condition that -- apart from noun wires which have specific diagrams that allow them to -- no wires penetrate the boundary of the `bubble'; in this way, the phrase regions capture the behaviour of phrase scope viewed as subtrees, or more generally as in dependency grammars.
+\end{example}
+
+%\bB
+%\begin{example}
+%The reason we allow \texttt{NP} wires to leave phrase scope is to make distinctions in meaning that are grammatically ambiguous within a single sentence. Consider \texttt{\underline{ALICE SEES DRUNK BOB DANCE}}, which has two parses in hybrid grammar. In the first case, \texttt{DRUNK} appears within the scope of \texttt{SEES}:
+%\[\tikzfig{textcirc/AsdBdcsg1}\]
+%In the second, \texttt{DRUNK} appears outside the scope of \texttt{SEES}:
+%\[\tikzfig{textcirc/AsdBdcsg2}\]
+%There is a grammatical ambiguity in whether Alice sees both that Bob is drunk and that Bob dances, or just that Bob dances while his drunkenness is a separate fact. We resolve this ambiguity in the setting of text circuits, which distinguishes the latter case by equivalence to the text: \texttt{ALICE SEES BOB DANCE. BOB IS DRUNK.}
+%\end{example}
+%\e

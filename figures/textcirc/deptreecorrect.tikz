@@ -1,0 +1,46 @@
+\begin{tikzpicture}[{every node/.style}={scale=0.8}]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (2) at (-5, 2.25) {\texttt{SOBER}};
+		\node [style=none] (3) at (-2, 2.25) {\texttt{SEES}};
+		\node [style=none] (4) at (-0.25, -1.75) {\texttt{CLUMSILY}};
+		\node [style=none] (5) at (-0.25, 0.25) {\texttt{DANCE}};
+		\node [style=none] (6) at (2.75, 2.25) {\texttt{LAUGHS}};
+		\node [style=none] (7) at (1.75, 0.25) {\texttt{AT}};
+		\node [style=none] (8) at (-3.25, -1.75) {\texttt{DRUNK}};
+		\node [style=none] (9) at (-2.25, 4.25) {\texttt{ALICE}};
+		\node [style=none] (10) at (-3.25, 0.25) {\texttt{BOB}};
+		\node [style=none] (11) at (3.75, 0.25) {\texttt{HIM}};
+		\node [style=none] (14) at (-5, 0.25) {\texttt{WHO}};
+		\node [style=none] (26) at (2.75, 1.75) {};
+		\node [style=none] (27) at (1.75, 0.75) {};
+		\node [style=none] (28) at (3.75, 0.75) {};
+		\node [style=none] (30) at (2.75, 1.75) {};
+		\node [style=none] (32) at (-0.25, -0.25) {};
+		\node [style=none] (34) at (-2, 1.75) {};
+		\node [style=none] (35) at (-0.25, 0.75) {};
+		\node [style=none] (36) at (-0.25, -1.25) {};
+		\node [style=none] (39) at (-2, 1.75) {};
+		\node [style=none] (40) at (-2, 2.75) {};
+		\node [style=none] (41) at (-2, 1.75) {};
+		\node [style=none] (44) at (-5, 0.75) {};
+		\node [style=none] (46) at (-2.25, 3.75) {};
+		\node [style=none] (47) at (-2.25, 3.75) {};
+		\node [style=none] (48) at (-5, 2.75) {};
+		\node [style=none] (51) at (-3.25, 0.75) {};
+		\node [style=none] (53) at (-3.25, -0.25) {};
+		\node [style=none] (54) at (-3.25, -1.25) {};
+		\node [style=none] (55) at (2.75, 2.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=Kvp] (26.center) to (28.center);
+		\draw [style=Kvp] (30.center) to (27.center);
+		\draw [style=Kvp] (34.center) to (35.center);
+		\draw [style=Kvp] (32.center) to (36.center);
+		\draw [style=Kvp] (39.center) to (44.center);
+		\draw [style=Kvp] (47.center) to (48.center);
+		\draw [style=Kvp] (46.center) to (40.center);
+		\draw [style=Kvp] (41.center) to (51.center);
+		\draw [style=Kvp] (53.center) to (54.center);
+		\draw [style=Kvp] (47.center) to (55.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

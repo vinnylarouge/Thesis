@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bigunit] (0) at (-1, 0.75) {$V$};
+		\node [style=bigunit] (1) at (0.5, -0.5) {$V$};
+		\node [style=bigunit] (2) at (0, -1.75) {$\varepsilon$};
+		\node [style=bigunit] (3) at (-2, -1.75) {$\varepsilon$};
+		\node [style=bigunit] (4) at (2, -1.75) {$\varepsilon$};
+		\node [style=bigunit] (5) at (2, 1.75) {$\varepsilon$};
+		\node [style=bigunit] (6) at (0, 1.75) {$\varepsilon$};
+		\node [style=bigunit] (7) at (0, 0.25) {$\varepsilon$};
+		\node [style=bigunit] (8) at (-2, 1.75) {$\varepsilon$};
+		\node [style=bigunit] (9) at (-0.75, -0.25) {$\varepsilon$};
+		\node [style=bigunit] (10) at (-1, -1.75) {$\varepsilon$};
+		\node [style=bigunit] (11) at (1, -1.75) {$\varepsilon$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=Kvp] (0) to (3);
+		\draw [style=Kvp] (1) to (2);
+		\draw [style=Kvp] (1) to (4);
+		\draw [style=Kvp] (5) to (1);
+		\draw [style=Kvp] (6) to (0);
+		\draw [style=Kvp] (0) to (7);
+		\draw [style=Kvp] (7) to (1);
+		\draw [style=Kvp] (8) to (0);
+		\draw [style=KLv] (0) to (9);
+		\draw [style=KLv] (9) to (1);
+		\draw [style=KLv] (1) to (10);
+		\draw [style=KBv] (1) to (11);
+	\end{pgfonlayer}
+\end{tikzpicture}

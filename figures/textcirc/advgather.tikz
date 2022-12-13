@@ -1,0 +1,45 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-4.5, 2) {};
+		\node [style=none] (1) at (-4.5, -2) {};
+		\node [style=none] (2) at (-0.5, 2) {};
+		\node [style=none] (3) at (-0.5, -2) {};
+		\node [style=none] (4) at (-4, 1) {};
+		\node [style=none] (5) at (-4, 1.5) {\texttt{V}};
+		\node [style=none] (6) at (-1, -1) {};
+		\node [style=none] (8) at (-2.5, -1.5) {\texttt{ADV}};
+		\node [style=none] (9) at (-4, -1.5) {\texttt{ADV}};
+		\node [style=bigunit] (10) at (-2, -0.25) {};
+		\node [style=bigunit] (11) at (-3, 0.5) {};
+		\node [style=none] (12) at (-2.5, -1) {};
+		\node [style=none] (13) at (-4, -1) {};
+		\node [style=none] (14) at (-1, -1.5) {\texttt{V}};
+		\node [style=none] (15) at (0.5, 2) {};
+		\node [style=none] (16) at (0.5, -2) {};
+		\node [style=none] (17) at (4.5, 2) {};
+		\node [style=none] (18) at (4.5, -2) {};
+		\node [style=none] (19) at (1, 1) {};
+		\node [style=none] (20) at (1, 1.5) {\texttt{V}};
+		\node [style=none] (21) at (4, -1) {};
+		\node [style=none] (22) at (2.5, -1.5) {\texttt{ADV}};
+		\node [style=none] (23) at (1, -1.5) {\texttt{ADV}};
+		\node [style=none] (26) at (2.5, -1) {};
+		\node [style=none] (27) at (1, -1) {};
+		\node [style=none] (28) at (4, -1.5) {\texttt{V}};
+		\node [style=none] (29) at (0, 0) {$\Rightarrow$};
+		\node [style=bigunit] (31) at (2.5, 0.5) {};
+		\node [style=smallorangedot] (32) at (1.75, -0.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KL, in=150, out=-90, looseness=0.50] (4.center) to (11);
+		\draw [style=KL] (11) to (10);
+		\draw [style=KL, in=90, out=-30, looseness=0.50] (10) to (6.center);
+		\draw [style=KO, in=90, out=-120, looseness=0.50] (11) to (13.center);
+		\draw [style=KO, in=90, out=-120, looseness=0.75] (10) to (12.center);
+		\draw [style=KL, in=150, out=-90, looseness=0.50] (19.center) to (31);
+		\draw [style=KL, in=315, out=90, looseness=0.50] (21.center) to (31);
+		\draw [style=KO, in=90, out=-135] (31) to (32);
+		\draw [style=KO, in=90, out=-180] (32) to (27.center);
+		\draw [style=KO, in=90, out=0] (32) to (26.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

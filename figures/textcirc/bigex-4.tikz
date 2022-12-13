@@ -1,0 +1,63 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (152) at (12.75, -2) {};
+		\node [style=none] (158) at (9.75, -2.5) {\texttt{IVP}};
+		\node [style=bigunit] (159) at (10.25, 3) {};
+		\node [style=bigunit] (160) at (11.5, 0.5) {};
+		\node [style=none] (161) at (11.5, -2.5) {\texttt{ADP}};
+		\node [style=none] (165) at (12.75, -2.5) {\texttt{NP}};
+		\node [style=none] (179) at (9.75, -2) {};
+		\node [style=none] (181) at (11.5, -2) {};
+		\node [style=none] (191) at (7.5, -2.5) {\texttt{NP}};
+		\node [style=none] (194) at (10.25, 6) {};
+		\node [style=none] (195) at (7.5, -2) {};
+		\node [style=none] (196) at (-1, 5) {};
+		\node [style=none] (197) at (-8.75, -2.5) {\texttt{ADJ}};
+		\node [style=none] (198) at (-4.5, -2.5) {\texttt{SCV}};
+		\node [style=none] (199) at (2, -2.5) {\texttt{ADV}};
+		\node [style=none] (200) at (5, -2.5) {\texttt{IVP}};
+		\node [style=none] (201) at (-2.5, -2.5) {\texttt{ADJ}};
+		\node [style=none] (202) at (-6.5, -2.5) {\texttt{NP}};
+		\node [style=none] (203) at (-0.5, -2.5) {\texttt{NP}};
+		\node [style=none] (204) at (0.75, -2) {};
+		\node [style=none] (205) at (6, -2) {};
+		\node [style=none] (206) at (-1, 5) {};
+		\node [style=bigunit] (207) at (-1, 5) {};
+		\node [style=none] (208) at (-6.5, -2) {};
+		\node [style=bigunit] (209) at (1, 2) {};
+		\node [style=bigunit] (210) at (3, 0.25) {};
+		\node [style=bigunit] (211) at (-1.5, 0.5) {};
+		\node [style=none] (212) at (-0.5, -2) {};
+		\node [style=none] (213) at (-8.75, -2) {};
+		\node [style=none] (214) at (-2.5, -2) {};
+		\node [style=none] (215) at (-4.5, -2) {};
+		\node [style=none] (216) at (5, -2) {};
+		\node [style=none] (217) at (2, -2) {};
+		\node [style=bigunit] (218) at (-5, 1) {};
+		\node [style=none] (219) at (-1, 6) {};
+		\node [style=none] (220) at (0.75, -2.5) {\texttt{\textcolor{blue}{(}}};
+		\node [style=none] (221) at (6, -2.5) {\texttt{\textcolor{blue}{)}}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KL] (159) to (160);
+		\draw [style=K] (160) to (152.center);
+		\draw [style=KL] (160) to (179.center);
+		\draw [style=KB] (160) to (181.center);
+		\draw [style=KH] (194.center) to (159);
+		\draw [style=K] (159) to (195.center);
+		\draw [style=KB] (206.center) to (205.center);
+		\draw [style=KB] (204.center) to (206.center);
+		\draw [style=K] (211) to (209);
+		\draw [style=K] (212.center) to (211);
+		\draw [style=KHO] (211) to (214.center);
+		\draw [style=KL] (207) to (215.center);
+		\draw [style=KL] (210) to (216.center);
+		\draw [style=KO] (210) to (217.center);
+		\draw [style=KL] (209) to (210);
+		\draw [style=K] (207) to (218);
+		\draw [style=KHO] (218) to (213.center);
+		\draw [style=K] (218) to (208.center);
+		\draw [style=KH] (219.center) to (207);
+		\draw [style=KH] (207) to (209);
+	\end{pgfonlayer}
+\end{tikzpicture}

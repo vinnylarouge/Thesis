@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=bigunit] (4) at (0, 0) {};
+		\node [style=none] (5) at (-1.5, -1) {};
+		\node [style=none] (6) at (1.5, -1) {};
+		\node [style=none] (8) at (1.5, -1.5) {$\texttt{ADJ}$};
+		\node [style=none] (9) at (-2, 2) {};
+		\node [style=none] (10) at (2, 2) {};
+		\node [style=none] (11) at (-2, -2) {};
+		\node [style=none] (12) at (2, -2) {};
+		\node [style=none] (16) at (-1.25, -1.5) {$\texttt{NP}$};
+		\node [style=none] (17) at (0, -1) {};
+		\node [style=none] (18) at (0, -1.5) {$\texttt{\underline{IS}}$};
+		\node [style=none] (19) at (-1.5, 1) {};
+		\node [style=none] (20) at (-1.5, 1.5) {$\texttt{NP}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (4) to (5.center);
+		\draw [style=KHO] (4) to (6.center);
+		\draw [style=KB] (4) to (17.center);
+		\draw [style=K] (19.center) to (4);
+	\end{pgfonlayer}
+\end{tikzpicture}

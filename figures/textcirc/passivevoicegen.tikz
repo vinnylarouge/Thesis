@@ -1,0 +1,57 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (11) at (-4, 0) {};
+		\node [style=none] (12) at (-6, -1) {};
+		\node [style=none] (13) at (-2.25, -1) {};
+		\node [style=none] (14) at (-4, 1) {};
+		\node [style=bigunit] (15) at (-4, 0) {};
+		\node [style=none] (16) at (-6, -1) {};
+		\node [style=none] (17) at (-2.25, -1) {};
+		\node [style=none] (18) at (-4, -1) {};
+		\node [style=none] (20) at (-4, 1.5) {\texttt{TVP}};
+		\node [style=none] (21) at (-4, -1.5) {$\texttt{TVP}_{psv.}$};
+		\node [style=none] (22) at (-6, -1.5) {\texttt{(IS)}};
+		\node [style=none] (23) at (-2.25, -1.5) {\texttt{(BY)}};
+		\node [style=none] (24) at (1, 0) {};
+		\node [style=none] (25) at (3, 0) {};
+		\node [style=none] (26) at (1, -1) {};
+		\node [style=bigunit] (27) at (1, 0) {};
+		\node [style=bigunit] (28) at (3, 0) {};
+		\node [style=none] (29) at (3, -1) {};
+		\node [style=none] (30) at (1, 1) {};
+		\node [style=none] (31) at (3, 1) {};
+		\node [style=none] (33) at (1, 1.5) {\texttt{(IS)}};
+		\node [style=none] (34) at (3, 1.5) {\texttt{(BY)}};
+		\node [style=none] (35) at (1, -1.5) {\texttt{\underline{IS}}};
+		\node [style=none] (36) at (3, -1.5) {\texttt{\underline{BY}}};
+		\node [style=none] (37) at (6.25, 1) {};
+		\node [style=none] (38) at (6.25, 0) {};
+		\node [style=none] (40) at (6.25, -0.5) {\texttt{\underline{TVP}}};
+		\node [style=none] (42) at (7.75, 0.5) {$\hookrightarrow$};
+		\node [style=none] (43) at (6.25, 1.5) {\texttt{TVP}};
+		\node [style=none] (44) at (9.25, 1) {};
+		\node [style=none] (45) at (9.25, 0) {};
+		\node [style=none] (46) at (9.25, -0.5) {$\underline{\texttt{TVP}_{psv.}}$};
+		\node [style=none] (47) at (9.25, 1.5) {$\texttt{TVP}_{psv.}$};
+		\node [style=none] (48) at (7.75, -1.5) {$(\texttt{\underline{LIKES}} \mapsto \texttt{\underline{LIKED}})$};
+	\end{pgfonlayer}  
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=gF] (11.center)
+			 to (12.center)
+			 to (13.center);
+		\draw [style=KL] (14.center) to (15);
+		\draw [style=KL] (15) to (18.center);
+		\draw [style=KB] (16.center) to (15);
+		\draw [style=KB] (15) to (17.center);
+		\draw [style=gF] (25.center)
+			 to [bend right=90, looseness=1.25] (24.center)
+			 to [bend right=90, looseness=1.25] cycle;
+		\draw [style=KB, bend right=90, looseness=1.25] (24.center) to (25.center);
+		\draw [style=KB] (27) to (26.center);
+		\draw [style=KB] (28) to (29.center);
+		\draw [style=KB] (30.center) to (27);
+		\draw [style=KB] (31.center) to (28);
+		\draw [style=KL] (37.center) to (38.center);
+		\draw [style=KL] (44.center) to (45.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

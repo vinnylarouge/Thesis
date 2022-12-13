@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (44) at (0, 0.5) {};
+		\node [style=none] (45) at (0, -0.5) {};
+		\node [style=none] (46) at (0, -1) {$\underline{\texttt{TV}_{psv.}}$};
+		\node [style=none] (47) at (0, 1) {$\texttt{TVP}_{psv.}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KL] (44.center) to (45.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
