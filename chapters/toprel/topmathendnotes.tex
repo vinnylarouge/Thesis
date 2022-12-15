@@ -153,8 +153,7 @@ A \emph{frame} is a poset with all joins and finite meets satisfying the infinit
 \[x \wedge (\bigvee\limits_{i}y_i) = \bigvee\limits_{i}(x \wedge y_i)\]
 A \emph{frame homomorphism} $\phi: A \rightarrow B$ is a function between frames that preserves finite meets and arbitrary joins, i.e.:
 \[\phi(x \wedge_A y) = \phi(x) \wedge_B \phi(y) \quad \quad \quad \phi(x \vee_A y) = \phi(x) \vee_B \phi(y)\]
-The category \textbf{Frm} has frames as objects and frame homomorphisms as morphisms.\\
-The category \textbf{Loc} is defined to be $\textbf{Frm}^\text{op}$.
+The category \textbf{Frm} has frames as objects and frame homomorphisms as morphisms. The category \textbf{Loc} is defined to be $\textbf{Frm}^\text{op}$.
 \end{rem}
 
 \begin{remark}
@@ -163,8 +162,7 @@ Here are informal intuitions to ease the definition. The lattice of open sets of
 
 \begin{defn}[$U: \textbf{TopRel} \rightarrow \textbf{Loc}$]
 On objects, U sends a topology $X^\tau$ to the frame of opens in $\tau$, which we denote $\hat{\tau}$.\\
-On morphisms $R: X^\tau \rightarrow Y^\sigma$, the corresponding partial frame morphism $\hat{\tau} \leftarrow \hat{\sigma}$ (notice the direction reversal for \textbf{Loc}), we define to be $\{(U_{\in \sigma},R^\dagger(U)_{\in \tau}) \ | \ U \in \sigma\}$. We ascertain that this is (1) a function that is (2) a frame homomorphism. For (1), since the relational converse picks out precisely one subset given any subset as input, these pairs do define a function. For (2), we observe that the relational converse (as all relations) preserve arbitrary unions and intersections, i.e. $R^\dagger(\bigcap\limits_i U_i) = \bigcap\limits_i R^\dagger(U_i)$ and $R^\dagger(\bigcup\limits_i U_i) = \bigcup\limits_i R^\dagger(U_i)$, so we do have a frame homomorphism.\\
-Associativity follows easily.
+On morphisms $R: X^\tau \rightarrow Y^\sigma$, the corresponding partial frame morphism $\hat{\tau} \leftarrow \hat{\sigma}$ (notice the direction reversal for \textbf{Loc}), we define to be $\{(U_{\in \sigma},R^\dagger(U)_{\in \tau}) \ | \ U \in \sigma\}$. We ascertain that this is (1) a function that is (2) a frame homomorphism. For (1), since the relational converse picks out precisely one subset given any subset as input, these pairs do define a function. For (2), we observe that the relational converse (as all relations) preserve arbitrary unions and intersections, i.e. $R^\dagger(\bigcap\limits_i U_i) = \bigcap\limits_i R^\dagger(U_i)$ and $R^\dagger(\bigcup\limits_i U_i) = \bigcup\limits_i R^\dagger(U_i)$, so we do have a frame homomorphism. Associativity follows easily.
 \end{defn}
 
 \begin{proposition}[$U$ has no left adjoint]
