@@ -1,0 +1,116 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dotG] (0) at (6, 5) {};
+		\node [style=none] (1) at (7.5, 5) {};
+		\node [style=none] (2) at (5.5, 6) {};
+		\node [style=none] (3) at (5.5, 4) {};
+		\node [style=none] (4) at (7.5, 4) {};
+		\node [style=none] (5) at (7.5, 6) {};
+		\node [style=none] (8) at (0, 1) {};
+		\node [style=none] (9) at (0, -1) {};
+		\node [style=none] (10) at (2, -1) {};
+		\node [style=none] (11) at (2, 1) {};
+		\node [style=none] (12) at (6.5, 3.5) {Ent.  init.};
+		\node [style=none] (13) at (1, -1.5) {$\emptyset \in [A]$};
+		\node [style=dotO] (14) at (0.5, 0) {};
+		\node [style=none] (15) at (2, 0) {};
+		\node [style=none] (18) at (3, 1) {};
+		\node [style=none] (19) at (3, -1) {};
+		\node [style=none] (20) at (5, -1) {};
+		\node [style=none] (21) at (5, 1) {};
+		\node [style=none] (22) at (4, -1.5) {cons};
+		\node [style=none] (23) at (6, 1) {};
+		\node [style=none] (24) at (6, -1) {};
+		\node [style=none] (25) at (8, -1) {};
+		\node [style=none] (26) at (8, 1) {};
+		\node [style=none] (27) at (7, -1.5) {read};
+		\node [style=none] (28) at (-3.5, 6) {};
+		\node [style=none] (29) at (-3.5, 4) {};
+		\node [style=none] (30) at (-1.5, 4) {};
+		\node [style=none] (31) at (-1.5, 6) {};
+		\node [style=none] (32) at (-2.5, 3.5) {copy};
+		\node [style=none] (33) at (-0.5, 6) {};
+		\node [style=none] (34) at (-0.5, 4) {};
+		\node [style=none] (35) at (1.5, 4) {};
+		\node [style=none] (36) at (1.5, 6) {};
+		\node [style=none] (37) at (0.5, 3.5) {delete};
+		\node [style=smallblackdot] (38) at (-2.5, 5) {};
+		\node [style=smallblackdot] (39) at (1, 5) {};
+		\node [style=none] (40) at (-3.5, 5) {};
+		\node [style=none] (41) at (-1.5, 5.5) {};
+		\node [style=none] (42) at (-1.5, 4.5) {};
+		\node [style=none] (43) at (-0.5, 5) {};
+		\node [style=dotO] (44) at (4, 0) {};
+		\node [style=dotO] (45) at (7, 0) {};
+		\node [style=none] (46) at (3, 0.5) {};
+		\node [style=none] (47) at (3, -0.5) {};
+		\node [style=none] (48) at (5, 0) {};
+		\node [style=none] (49) at (6, 0) {};
+		\node [style=none] (50) at (8, 0.5) {};
+		\node [style=none] (51) at (8, -0.5) {};
+		\node [style=none] (52) at (9, 1) {};
+		\node [style=none] (53) at (9, -1) {};
+		\node [style=none] (54) at (11, -1) {};
+		\node [style=none] (55) at (11, 1) {};
+		\node [style=none] (56) at (10, -1.5) {concat.};
+		\node [style=dotO] (57) at (10, 0) {};
+		\node [style=none] (58) at (9, 0.5) {};
+		\node [style=none] (59) at (9, -0.5) {};
+		\node [style=none] (60) at (11, 0) {};
+		\node [style=none] (61) at (8.5, 6) {};
+		\node [style=none] (62) at (8.5, 4) {};
+		\node [style=none] (63) at (10.5, 4) {};
+		\node [style=none] (64) at (10.5, 6) {};
+		\node [style=none] (65) at (9.5, 3.5) {\emph{has}};
+		\node [style=none] (70) at (8.5, 5.5) {};
+		\node [style=none] (71) at (8.5, 4.5) {};
+		\node [style=none] (72) at (10.5, 5.5) {};
+		\node [style=none] (73) at (10.5, 4.5) {};
+		\node [style=none] (74) at (9.25, 5.5) {};
+		\node [style=none] (75) at (9.75, 5.5) {};
+		\node [style=none] (76) at (9.25, 4.5) {};
+		\node [style=none] (77) at (9.75, 4.5) {};
+		\node [style=none] (78) at (9.25, 5.75) {};
+		\node [style=none] (79) at (9.75, 5.75) {};
+		\node [style=none] (80) at (9.25, 4.25) {};
+		\node [style=none] (81) at (9.75, 4.25) {};
+		\node [style=none] (82) at (-1, 6.75) {\underline{For all wires:}};
+		\node [style=none] (83) at (5.5, 1.75) {\underline{Attribute lists:}};
+		\node [style=none] (84) at (-2, 1) {};
+		\node [style=none] (85) at (-2, -1) {};
+		\node [style=none] (86) at (-4, -1) {};
+		\node [style=none] (87) at (-4, 1) {};
+		\node [style=none] (88) at (-4, 0) {};
+		\node [style=none] (89) at (-2, 0) {};
+		\node [style=none] (90) at (-3, -1.5) {$A \in \mathcal{A}$};
+		\node [style=none] (92) at (-3, 1.75) {\underline{Attributes:}};
+		\node [style=none] (93) at (8, 6.75) {\underline{Entities \emph{have} attributes:}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KG] (0) to (1.center);
+		\draw [style=KO] (14) to (15.center);
+		\draw [style=K] (40.center) to (38);
+		\draw [style=K, in=180, out=60] (38) to (41.center);
+		\draw [style=K, in=180, out=-60] (38) to (42.center);
+		\draw [style=K] (43.center) to (39);
+		\draw [style=KO, in=120, out=0] (46.center) to (44);
+		\draw [style=KO] (44) to (48.center);
+		\draw [style=KO] (49.center) to (45);
+		\draw [style=KO, in=180, out=60] (45) to (50.center);
+		\draw [style=KDO, in=-120, out=0] (47.center) to (44);
+		\draw [style=KDO, in=180, out=-60] (45) to (51.center);
+		\draw [style=KO, in=120, out=0] (58.center) to (57);
+		\draw [style=KO] (57) to (60.center);
+		\draw [style=KO, in=-120, out=0] (59.center) to (57);
+		\draw [style=KG] (70.center) to (74.center);
+		\draw [style=KG] (75.center) to (72.center);
+		\draw [style=KO] (71.center) to (76.center);
+		\draw [style=KO] (77.center) to (73.center);
+		\draw [style={K(Fm)}] (80.center)
+			 to (81.center)
+			 to (79.center)
+			 to (78.center)
+			 to cycle;
+		\draw [style=KDO] (88.center) to (89.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
