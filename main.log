@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  16 JAN 2023 15:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  19 JAN 2023 13:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -45,6 +45,7 @@ Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 ))
+Class tufte-book Info: Passing nobib to the `book' class..
 Class tufte-book Info: Loading the base class `book'.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/book.cls
@@ -446,6 +447,21 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \colbreak@box=\box98
 \mc@col@check@num=\count289
 )))
+(/usr/local/texlive/2022/texmf-dist/tex/latex/marginfix/marginfix.sty
+Package: marginfix 2020/05/06 v1.2 Fix Margin Paragraphs
+\Mfx@inject@insert=\insert252
+\Mfx@marginbox=\box99
+\Mfx@marginpos@min=\dimen169
+\Mfx@marginpos@max=\dimen170
+\Mfx@marginspace=\dimen171
+\Mfx@marginheight=\dimen172
+\Mfx@piece@content=\box100
+\Mfx@piece@count=\count290
+\Mfx@mparshift=\dimen173
+\marginheightadjustment=\dimen174
+\marginposadjustment=\dimen175
+\Mfx@strutheight=\dimen176
+)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip92
@@ -457,46 +473,46 @@ Package: amstext 2021/08/26 v2.01 AMS text
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks21
-\ex@=\dimen169
+\ex@=\dimen177
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen170
+\pmbraise@=\dimen178
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count290
+\inf@bad=\count291
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count291
-\leftroot@=\count292
+\uproot@=\count292
+\leftroot@=\count293
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count293
-\DOTSCASE@=\count294
+\classnum@=\count294
+\DOTSCASE@=\count295
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box99
-\strutbox@=\box100
-\big@size=\dimen171
+\Mathstrutbox@=\box101
+\strutbox@=\box102
+\big@size=\dimen179
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count295
-\c@MaxMatrixCols=\count296
+\macc@depth=\count296
+\c@MaxMatrixCols=\count297
 \dotsspace@=\muskip17
-\c@parentequation=\count297
-\dspbrk@lvl=\count298
+\c@parentequation=\count298
+\dspbrk@lvl=\count299
 \tag@help=\toks22
-\row@=\count299
-\column@=\count300
-\maxfields@=\count301
+\row@=\count300
+\column@=\count301
+\maxfields@=\count302
 \andhelp@=\toks23
-\eqnshift@=\dimen172
-\alignsep@=\dimen173
-\tagshift@=\dimen174
-\tagwidth@=\dimen175
-\totwidth@=\dimen176
-\lineht@=\dimen177
+\eqnshift@=\dimen180
+\alignsep@=\dimen181
+\tagshift@=\dimen182
+\tagwidth@=\dimen183
+\totwidth@=\dimen184
+\lineht@=\dimen185
 \@envbody=\toks24
 \multlinegap=\skip93
 \multlinetaggap=\skip94
@@ -527,7 +543,7 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-\c@theorem=\count302
+\c@theorem=\count303
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
 Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
@@ -538,13 +554,13 @@ Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
 \pgfutil@everybye=\toks32
-\pgfutil@tempdima=\dimen178
-\pgfutil@tempdimb=\dimen179
+\pgfutil@tempdima=\dimen186
+\pgfutil@tempdimb=\dimen187
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box101
+\pgfutil@abb=\box103
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
@@ -566,8 +582,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 )
-\Gin@req@height=\dimen180
-\Gin@req@width=\dimen181
+\Gin@req@height=\dimen188
+\Gin@req@width=\dimen189
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
@@ -580,26 +596,26 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 ode.tex
 \pgfkeys@tmptoks=\toks35
 ))
-\pgf@x=\dimen182
-\pgf@y=\dimen183
-\pgf@xa=\dimen184
-\pgf@ya=\dimen185
-\pgf@xb=\dimen186
-\pgf@yb=\dimen187
-\pgf@xc=\dimen188
-\pgf@yc=\dimen189
-\pgf@xd=\dimen190
-\pgf@yd=\dimen191
+\pgf@x=\dimen190
+\pgf@y=\dimen191
+\pgf@xa=\dimen192
+\pgf@ya=\dimen193
+\pgf@xb=\dimen194
+\pgf@yb=\dimen195
+\pgf@xc=\dimen196
+\pgf@yc=\dimen197
+\pgf@xd=\dimen198
+\pgf@yd=\dimen199
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count303
-\c@pgf@countb=\count304
-\c@pgf@countc=\count305
-\c@pgf@countd=\count306
+\c@pgf@counta=\count304
+\c@pgf@countb=\count305
+\c@pgf@countc=\count306
+\c@pgf@countd=\count307
 \t@pgf@toka=\toks36
 \t@pgf@tokb=\toks37
 \t@pgf@tokc=\toks38
-\pgf@sys@id@count=\count307
+\pgf@sys@id@count=\count308
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
@@ -617,8 +633,8 @@ File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count308
-\pgfsyssoftpath@bigbuffer@items=\count309
+\pgfsyssoftpath@smallbuffer@items=\count309
+\pgfsyssoftpath@bigbuffer@items=\count310
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -630,9 +646,9 @@ Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen192
-\pgfmath@count=\count310
-\pgfmath@box=\box102
+\pgfmath@dimen=\dimen256
+\pgfmath@count=\count311
+\pgfmath@box=\box104
 \pgfmath@toks=\toks39
 \pgfmath@stack@operand=\toks40
 \pgfmath@stack@operation=\toks41
@@ -656,57 +672,57 @@ code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count311
+\c@pgfmathroundto@lastzeros=\count312
 )) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen193
-\pgf@picmaxx=\dimen194
-\pgf@picminy=\dimen195
-\pgf@picmaxy=\dimen196
-\pgf@pathminx=\dimen197
-\pgf@pathmaxx=\dimen198
-\pgf@pathminy=\dimen199
-\pgf@pathmaxy=\dimen256
-\pgf@xx=\dimen257
-\pgf@xy=\dimen258
-\pgf@yx=\dimen259
-\pgf@yy=\dimen260
-\pgf@zx=\dimen261
-\pgf@zy=\dimen262
+\pgf@picminx=\dimen257
+\pgf@picmaxx=\dimen258
+\pgf@picminy=\dimen259
+\pgf@picmaxy=\dimen260
+\pgf@pathminx=\dimen261
+\pgf@pathmaxx=\dimen262
+\pgf@pathminy=\dimen263
+\pgf@pathmaxy=\dimen264
+\pgf@xx=\dimen265
+\pgf@xy=\dimen266
+\pgf@yx=\dimen267
+\pgf@yy=\dimen268
+\pgf@zx=\dimen269
+\pgf@zy=\dimen270
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen263
-\pgf@path@lasty=\dimen264
+\pgf@path@lastx=\dimen271
+\pgf@path@lasty=\dimen272
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen265
-\pgf@shorten@start@additional=\dimen266
+\pgf@shorten@end@additional=\dimen273
+\pgf@shorten@start@additional=\dimen274
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box103
-\pgf@hbox=\box104
-\pgf@layerbox@main=\box105
-\pgf@picture@serial@count=\count312
+\pgfpic=\box105
+\pgf@hbox=\box106
+\pgf@layerbox@main=\box107
+\pgf@picture@serial@count=\count313
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen267
+\pgflinewidth=\dimen275
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen268
-\pgf@pt@y=\dimen269
-\pgf@pt@temp=\dimen270
+\pgf@pt@x=\dimen276
+\pgf@pt@y=\dimen277
+\pgf@pt@temp=\dimen278
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -723,14 +739,14 @@ File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen271
+\pgfarrowsep=\dimen279
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen272
-\pgf@sys@shading@range@num=\count313
-\pgf@shadingcount=\count314
+\pgf@max=\dimen280
+\pgf@sys@shading@range@num=\count314
+\pgf@shadingcount=\count315
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -739,7 +755,7 @@ File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box106
+\pgfexternal@startupbox=\box108
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
@@ -760,7 +776,7 @@ File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box107
+\pgfnodeparttextbox=\box109
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -769,8 +785,8 @@ File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen273
-\pgf@nodesepend=\dimen274
+\pgf@nodesepstart=\dimen281
+\pgf@nodesepend=\dimen282
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -785,8 +801,8 @@ Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen275
-\pgffor@skip=\dimen276
+\pgffor@iter=\dimen283
+\pgffor@skip=\dimen284
 \pgffor@stack=\toks42
 \pgffor@toks=\toks43
 ))
@@ -797,34 +813,34 @@ Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count315
-\pgfplotmarksize=\dimen277
+\pgf@plot@mark@count=\count316
+\pgfplotmarksize=\dimen285
 )
-\tikz@lastx=\dimen278
-\tikz@lasty=\dimen279
-\tikz@lastxsaved=\dimen280
-\tikz@lastysaved=\dimen281
-\tikz@lastmovetox=\dimen282
-\tikz@lastmovetoy=\dimen283
-\tikzleveldistance=\dimen284
-\tikzsiblingdistance=\dimen285
-\tikz@figbox=\box108
-\tikz@figbox@bg=\box109
-\tikz@tempbox=\box110
-\tikz@tempbox@bg=\box111
-\tikztreelevel=\count316
-\tikznumberofchildren=\count317
-\tikznumberofcurrentchild=\count318
-\tikz@fig@count=\count319
+\tikz@lastx=\dimen286
+\tikz@lasty=\dimen287
+\tikz@lastxsaved=\dimen288
+\tikz@lastysaved=\dimen289
+\tikz@lastmovetox=\dimen290
+\tikz@lastmovetoy=\dimen291
+\tikzleveldistance=\dimen292
+\tikzsiblingdistance=\dimen293
+\tikz@figbox=\box110
+\tikz@figbox@bg=\box111
+\tikz@tempbox=\box112
+\tikz@tempbox@bg=\box113
+\tikztreelevel=\count317
+\tikznumberofchildren=\count318
+\tikznumberofcurrentchild=\count319
+\tikz@fig@count=\count320
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count320
-\pgfmatrixcurrentcolumn=\count321
-\pgf@matrix@numberofcolumns=\count322
+\pgfmatrixcurrentrow=\count321
+\pgfmatrixcurrentcolumn=\count322
+\pgf@matrix@numberofcolumns=\count323
 )
-\tikz@expandcount=\count323
+\tikz@expandcount=\count324
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -842,10 +858,10 @@ File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowinset=\dimen286
-\pgfarrowlength=\dimen287
-\pgfarrowwidth=\dimen288
-\pgfarrowlinewidth=\dimen289
+\pgfarrowinset=\dimen294
+\pgfarrowlength=\dimen295
+\pgfarrowwidth=\dimen296
+\pgfarrowlinewidth=\dimen297
 ))) (./macros/tikzfig.sty
 (/usr/local/texlive/2022/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
@@ -855,9 +871,9 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 \t@pgfplots@toka=\toks44
 \t@pgfplots@tokb=\toks45
 \t@pgfplots@tokc=\toks46
-\pgfplots@tmpa=\dimen290
-\c@pgfplots@coordindex=\count324
-\c@pgfplots@scanlineindex=\count325
+\pgfplots@tmpa=\dimen298
+\c@pgfplots@coordindex=\count325
+\c@pgfplots@scanlineindex=\count326
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -875,13 +891,13 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count326
+\c@pgfplotsarray@tmp=\count327
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count327
+\c@pgfplotstable@counta=\count328
 \t@pgfplotstable@a=\toks47
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
@@ -894,7 +910,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count328
+\c@pgfplotslibrarysurf@no=\count329
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -926,16 +942,16 @@ x)
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen291
-\pgfdecoratedremainingdistance=\dimen292
-\pgfdecoratedinputsegmentcompleteddistance=\dimen293
-\pgfdecoratedinputsegmentremainingdistance=\dimen294
-\pgf@decorate@distancetomove=\dimen295
-\pgf@decorate@repeatstate=\count329
-\pgfdecorationsegmentamplitude=\dimen296
-\pgfdecorationsegmentlength=\dimen297
+\pgfdecoratedcompleteddistance=\dimen299
+\pgfdecoratedremainingdistance=\dimen300
+\pgfdecoratedinputsegmentcompleteddistance=\dimen301
+\pgfdecoratedinputsegmentremainingdistance=\dimen302
+\pgf@decorate@distancetomove=\dimen303
+\pgf@decorate@repeatstate=\count330
+\pgfdecorationsegmentamplitude=\dimen304
+\pgfdecorationsegmentlength=\dimen305
 )
-\tikz@lib@dec@box=\box112
+\tikz@lib@dec@box=\box114
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.pathmorphing.code.tex
@@ -947,13 +963,13 @@ s/tikzlibrarydecorations.pathreplacing.code.tex
 brarydecorations.pathreplacing.code.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.contourlua.code.tex)
-\pgfplots@numplots=\count330
-\pgfplots@xmin@reg=\dimen298
-\pgfplots@xmax@reg=\dimen299
-\pgfplots@ymin@reg=\dimen300
-\pgfplots@ymax@reg=\dimen301
-\pgfplots@zmin@reg=\dimen302
-\pgfplots@zmax@reg=\dimen303
+\pgfplots@numplots=\count331
+\pgfplots@xmin@reg=\dimen306
+\pgfplots@xmax@reg=\dimen307
+\pgfplots@ymin@reg=\dimen308
+\pgfplots@ymax@reg=\dimen309
+\pgfplots@zmin@reg=\dimen310
+\pgfplots@zmax@reg=\dimen311
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryplotmarks.code.tex
@@ -982,13 +998,13 @@ brarydecorations.markings.code.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@layerbox@background=\box113
-\pgf@layerboxsaved@background=\box114
+\pgf@layerbox@background=\box115
+\pgf@layerboxsaved@background=\box116
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryfolding.code.tex
 File: tikzlibraryfolding.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\tikz@lib@fold@length=\dimen304
+\tikz@lib@fold@length=\dimen312
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarychains.code.tex
@@ -1013,7 +1029,7 @@ File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen305
+\arrowsize=\dimen313
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshadows.code.tex
@@ -1070,26 +1086,26 @@ File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
 shapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodepartlowerbox=\box115
-\pgfnodeparttwobox=\box116
-\pgfnodepartthreebox=\box117
-\pgfnodepartfourbox=\box118
-\pgfnodeparttwentybox=\box119
-\pgfnodepartnineteenbox=\box120
-\pgfnodeparteighteenbox=\box121
-\pgfnodepartseventeenbox=\box122
-\pgfnodepartsixteenbox=\box123
-\pgfnodepartfifteenbox=\box124
-\pgfnodepartfourteenbox=\box125
-\pgfnodepartthirteenbox=\box126
-\pgfnodeparttwelvebox=\box127
-\pgfnodepartelevenbox=\box128
-\pgfnodeparttenbox=\box129
-\pgfnodepartninebox=\box130
-\pgfnodeparteightbox=\box131
-\pgfnodepartsevenbox=\box132
-\pgfnodepartsixbox=\box133
-\pgfnodepartfivebox=\box134
+\pgfnodepartlowerbox=\box117
+\pgfnodeparttwobox=\box118
+\pgfnodepartthreebox=\box119
+\pgfnodepartfourbox=\box120
+\pgfnodeparttwentybox=\box121
+\pgfnodepartnineteenbox=\box122
+\pgfnodeparteighteenbox=\box123
+\pgfnodepartseventeenbox=\box124
+\pgfnodepartsixteenbox=\box125
+\pgfnodepartfifteenbox=\box126
+\pgfnodepartfourteenbox=\box127
+\pgfnodepartthirteenbox=\box128
+\pgfnodeparttwelvebox=\box129
+\pgfnodepartelevenbox=\box130
+\pgfnodeparttenbox=\box131
+\pgfnodepartninebox=\box132
+\pgfnodeparteightbox=\box133
+\pgfnodepartsevenbox=\box134
+\pgfnodepartsixbox=\box135
+\pgfnodepartfivebox=\box136
 )))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/circuits/tikzlibrarycircuits.ee.IEC.code.tex
@@ -1097,17 +1113,17 @@ s/circuits/tikzlibrarycircuits.ee.IEC.code.tex
 s/circuits/tikzlibrarycircuits.ee.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/circuits/tikzlibrarycircuits.code.tex
-\tikz@lib@circ@count=\count331
-\tikzcircuitssizeunit=\dimen306
+\tikz@lib@circ@count=\count332
+\tikzcircuitssizeunit=\dimen314
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/p
 gflibraryshapes.gates.ee.code.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/p
 gflibraryshapes.gates.ee.IEC.code.tex))
-\pgf@layerbox@edgelayer=\box135
-\pgf@layerboxsaved@edgelayer=\box136
-\pgf@layerbox@nodelayer=\box137
-\pgf@layerboxsaved@nodelayer=\box138
+\pgf@layerbox@edgelayer=\box137
+\pgf@layerboxsaved@edgelayer=\box138
+\pgf@layerbox@nodelayer=\box139
+\pgf@layerboxsaved@nodelayer=\box140
 ) (./macros/quiver.sty
 
 LaTeX Warning: You have requested package `macros/quiver',
@@ -1117,23 +1133,23 @@ Package: quiver 2021/01/11 quiver
 ) (./macros/thesis.tikzstyles)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen307
-\lightrulewidth=\dimen308
-\cmidrulewidth=\dimen309
-\belowrulesep=\dimen310
-\belowbottomsep=\dimen311
-\aboverulesep=\dimen312
-\abovetopsep=\dimen313
-\cmidrulesep=\dimen314
-\cmidrulekern=\dimen315
-\defaultaddspace=\dimen316
-\@cmidla=\count332
-\@cmidlb=\count333
-\@aboverulesep=\dimen317
-\@belowrulesep=\dimen318
-\@thisruleclass=\count334
-\@lastruleclass=\count335
-\@thisrulewidth=\dimen319
+\heavyrulewidth=\dimen315
+\lightrulewidth=\dimen316
+\cmidrulewidth=\dimen317
+\belowrulesep=\dimen318
+\belowbottomsep=\dimen319
+\aboverulesep=\dimen320
+\abovetopsep=\dimen321
+\cmidrulesep=\dimen322
+\cmidrulekern=\dimen323
+\defaultaddspace=\dimen324
+\@cmidla=\count333
+\@cmidlb=\count334
+\@aboverulesep=\dimen325
+\@belowrulesep=\dimen326
+\@thisruleclass=\count335
+\@lastruleclass=\count336
+\@thisrulewidth=\dimen327
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/units/units.sty
 Package: units 1998/08/04 v0.9b Typesetting units
@@ -1146,11 +1162,11 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
-\FV@CodeLineNo=\count336
+\FV@CodeLineNo=\count337
 \FV@InFile=\read3
-\FV@TabBox=\box139
-\c@FancyVerbLine=\count337
-\FV@StepNumber=\count338
+\FV@TabBox=\box141
+\c@FancyVerbLine=\count338
+\FV@StepNumber=\count339
 \FV@OutFile=\write4
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/stix.sty
@@ -1280,42 +1296,42 @@ Package: expl3 2022-02-24 L3 programming layer (loader)
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count339
-\l__pdf_internal_box=\box140
+\l__color_backend_stack_int=\count340
+\l__pdf_internal_box=\box142
 ))
 Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count340
-\l__lipsum_a_int=\count341
-\l__lipsum_b_int=\count342
+\g__lipsum_par_int=\count341
+\l__lipsum_a_int=\count342
+\l__lipsum_b_int=\count343
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/bussproofs/bussproofs.sty
 Proof Tree (bussproofs) style macros. Version 1.1.
-\theLevel=\count343
-\myMaxLevel=\count344
-\myBoxA=\box141
-\myBoxB=\box142
-\myBoxC=\box143
-\myBoxD=\box144
-\myBoxLL=\box145
-\myBoxRL=\box146
-\thisAboveSkip=\dimen320
-\thisBelowSkip=\dimen321
-\newScoreStart=\dimen322
-\newScoreEnd=\dimen323
-\newCenter=\dimen324
-\displace=\dimen325
-\leftLowerAmt=\dimen326
-\rightLowerAmt=\dimen327
-\scoreHeight=\dimen328
-\scoreDepth=\dimen329
-\htLbox=\dimen330
-\htRbox=\dimen331
-\htRRbox=\dimen332
-\htRRRbox=\dimen333
-\htAbox=\dimen334
-\htCbox=\dimen335
+\theLevel=\count344
+\myMaxLevel=\count345
+\myBoxA=\box143
+\myBoxB=\box144
+\myBoxC=\box145
+\myBoxD=\box146
+\myBoxLL=\box147
+\myBoxRL=\box148
+\thisAboveSkip=\dimen328
+\thisBelowSkip=\dimen329
+\newScoreStart=\dimen330
+\newScoreEnd=\dimen331
+\newCenter=\dimen332
+\displace=\dimen333
+\leftLowerAmt=\dimen334
+\rightLowerAmt=\dimen335
+\scoreHeight=\dimen336
+\scoreDepth=\dimen337
+\htLbox=\dimen338
+\htRbox=\dimen339
+\htRRbox=\dimen340
+\htRRRbox=\dimen341
+\htAbox=\dimen342
+\htCbox=\dimen343
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
@@ -1345,19 +1361,19 @@ Now handling font encoding LSI ...
 \len@cfss@squaredepth=\skip103
 )
 (/usr/local/texlive/2022/texmf-dist/tex/plain/lambda-lists/lambda.sty)
-\c@fileFrom=\count345
-\c@rankFrom=\count346
-\c@fileTo=\count347
-\c@rankTo=\count348
-\c@ps@inverse=\count349
-\c@ps@knightangle=\count350
-\c@halfmove=\count351
-\c@move=\count352
-\c@helpgobble=\count353
-\c@helpnumber=\count354
-\c@helpnumberMove=\count355
+\c@fileFrom=\count346
+\c@rankFrom=\count347
+\c@fileTo=\count348
+\c@rankTo=\count349
+\c@ps@inverse=\count350
+\c@ps@knightangle=\count351
+\c@halfmove=\count352
+\c@move=\count353
+\c@helpgobble=\count354
+\c@helpnumber=\count355
+\c@helpnumberMove=\count356
 \squarelength=\skip104
-\square@multiplier=\count356
+\square@multiplier=\count357
 \ranklift=\skip105
 LaTeX Font Info:    Trying to load font information for LSB+skaknew on input li
 ne 1774.
@@ -1380,7 +1396,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 \store@toks=\toks48
 )
 LaTeX Font Info:    Font shape `T1/phv/m/up' will be
-(Font)              scaled to size 8.99994pt on input line 103.
+(Font)              scaled to size 8.99994pt on input line 106.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
 
@@ -1392,7 +1408,12 @@ LaTeX Font Info:    Trying to load font information for T1+stix on input line 3
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/t1stix.fd
 File: t1stix.fd 2015/04/17 v1.1.2-latex STIX T1 font definitions
-) (./main.aux
+)
+
+LaTeX Warning: Unused global option(s):
+    [nobib].
+
+(./main.aux
 
 LaTeX Warning: Label `fig:contline' multiply defined.
 
@@ -1462,7 +1483,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count357
+\c@section@level=\count358
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -1479,7 +1500,7 @@ LaTeX Info: Redefining \nameref on input line 3.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: landscape twoside asymmetric 
+* modes: landscape twoside asymmetric showframe 
 * h-part:(L,W,R)=(70.56284pt, 466.62518pt, 307.85883pt)
 * v-part:(T,H,B)=(77.96053pt, 476.0pt, 43.54735pt)
 * \paperwidth=845.04684pt
@@ -1508,16 +1529,16 @@ LaTeX Info: Redefining \nameref on input line 3.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
-\scratchdimen=\dimen336
-\scratchbox=\box147
-\nofMPsegments=\count359
-\nofMParguments=\count360
+\scratchcounter=\count359
+\scratchdimen=\dimen344
+\scratchbox=\box149
+\nofMPsegments=\count360
+\nofMParguments=\count361
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count361
-\MPscratchDim=\dimen337
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
+\MPscratchCnt=\count362
+\MPscratchDim=\dimen345
+\MPnumerator=\count363
+\makeMPintoPDFobject=\count364
 \everyMPtoPDFconversion=\toks50
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1546,168 +1567,343 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2
 
-] (./main.toc
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 26
+
+] (./main.toc [3]
+LaTeX Font Info:    Trying to load font information for T1+fvm on input line 28
 .
  (/usr/local/texlive/2022/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 26.
+(Font)              scaled to size 8.50006pt on input line 28.
 LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10.95> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 26.
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 28.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 9.30756pt on input line 26.
-
-Overfull \hbox (15.0pt too wide) detected at line 44
-\T1/stix/m/it/10 2.5.3.0.1 
+(Font)              scaled to size 9.30756pt on input line 28.
+ [4]
+Overfull \hbox (15.0pt too wide) detected at line 46
+\T1/stix/m/it/10 3.5.3.0.1 
  []
 
-[3]
-Overfull \hbox (15.0pt too wide) detected at line 45
-\T1/stix/m/it/10 2.5.3.0.2 
+
+Overfull \hbox (15.0pt too wide) detected at line 47
+\T1/stix/m/it/10 3.5.3.0.2 
  []
 
-)
+[5])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [4]
+ [6]
 Chapter 0.
-[5
+[7
 
 ] (./chapters/intro/intro_draft2.tex
 LaTeX Font Info:    Trying to load font information for LS1+stixscr on input li
-ne 23.
+ne 5.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls1stixscr.fd
 File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixex on input lin
-e 23.
+e 5.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls2stixex.fd
 File: ls2stixex.fd 2015/04/17 v1.1.2-latex STIX extentions LS2 font definitions
 
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-23.
+5.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 23.
+(Font)              scaled to size 8.33606pt on input line 5.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 23.
+(Font)              scaled to size 6.25204pt on input line 5.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 23.
+(Font)              scaled to size 5.21004pt on input line 5.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 23.
+(Font)              scaled to size 8.33606pt on input line 5.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 23.
+(Font)              scaled to size 6.25204pt on input line 5.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 23.
+(Font)              scaled to size 5.21004pt on input line 5.
 LaTeX Font Info:    Trying to load font information for LS1+stixfrak on input l
-ine 23.
+ine 5.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls1stixfrak.fd
 File: ls1stixfrak.fd 2015/04/17 v1.1.2-latex STIX fraktur LS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixbb on input lin
-e 23.
+e 5.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls1stixbb.fd
 File: ls1stixbb.fd 2015/04/17 v1.1.2-latex STIX blackboard LS1 font definitions
 
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixcal on input li
-ne 23.
+ne 5.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls2stixcal.fd
 File: ls2stixcal.fd 2015/04/17 v1.1.2-latex STIX calligraphic LS2 font definiti
 ons
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixsf on input lin
-e 23.
+e 5.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls1stixsf.fd
 File: ls1stixsf.fd 2015/04/17 v1.1.2-latex STIX sans-serif LS1 font definitions
 
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixtt on input lin
-e 23.
+e 5.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/stix/ls2stixtt.fd
 File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
 
 )
-(./figures/intro/model.tikz) (./figures/intro/model2.tikz)
+(./figures/intro/model.tikz)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 7.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.81505pt on input line 7.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 7.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.81505pt on input line 7.
+ (./figures/intro/model2.tikz)
 (./figures/intro/model3.tikz) (./figures/intro/model4.tikz)
 (./figures/intro/model5.tikz) (./figures/intro/model6.tikz)
-Overfull \hbox (56.52142pt too wide) detected at line 23
-[]
+
+LaTeX Warning: Reference `' on page 8 undefined on input line 55.
+
+[8
+
+]
+Overfull \hbox (13.7347pt too wide) in paragraph at lines 61--61
+|[]\T1/stix/b/it/12 Question: \T1/stix/m/it/12 What is the prac-ti-cal value of
+ study-ing lan-guage when Large Lan-guage Mod-els can
  []
 
+[9] [10] [11]
 
-LaTeX Warning: Marginpar on page 6 moved.
-
-
-LaTeX Warning: Reference `' on page 6 undefined on input line 31.
-
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 35.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.81505pt on input line 35.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 35.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.81505pt on input line 35.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-
-LaTeX Warning: Marginpar on page 8 moved.
-
-[8] [9]
-
-LaTeX Warning: Reference `' on page 10 undefined on input line 73.
+LaTeX Warning: Reference `' on page 12 undefined on input line 107.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+! LaTeX Error: Not in outer par mode.
 
- [10]
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 }
+        is settled. The lion's share of AI research today is connectionist \...
 
-LaTeX Warning: Marginpar on page 11 moved.
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-) [11] [12
 
-]
+! LaTeX Error: File `intro/stackmoar' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 }
+        is settled. The lion's share of AI research today is connectionist \...
+
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 }
+        is settled. The lion's share of AI research today is connectionist \...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[12]
+
+LaTeX Warning: Reference `' on page 13 undefined on input line 111.
+
+[13
+pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
+een already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.115 ...est minute's thought before reading on.\\
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
+een already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.115 ...est minute's thought before reading on.\\
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
+een already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.115 ...est minute's thought before reading on.\\
+                                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
+een already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.115 ...est minute's thought before reading on.\\
+                                                  ]
+
+LaTeX Warning: Reference `' on page 14 undefined on input line 121.
+
+
+Overfull \hbox (13.91466pt too wide) in paragraph at lines 123--123
+|[]\T1/stix/b/it/12 Question: \T1/stix/m/it/12 Let's say I agree there is value
+ in un-der-stand-ing lan-guage. How do string di-a-grams
+ []
+
+[14] [15] [16]
+
+LaTeX Warning: Reference `' on page 17 undefined on input line 144.
+
+[17]
+
+LaTeX Warning: Reference `' on page 18 undefined on input line 152.
+
+
+LaTeX Warning: Reference `' on page 18 undefined on input line 152.
+
+
+LaTeX Warning: Reference `' on page 18 undefined on input line 152.
+
+
+LaTeX Warning: Reference `' on page 18 undefined on input line 152.
+
+
+LaTeX Warning: Reference `' on page 18 undefined on input line 152.
+
+
+LaTeX Warning: Reference `' on page 18 undefined on input line 154.
+
+
+LaTeX Warning: Reference `' on page 18 undefined on input line 154.
+
+
+LaTeX Warning: Reference `' on page 18 undefined on input line 154.
+
+
+LaTeX Warning: Reference `' on page 18 undefined on input line 154.
+
+
+LaTeX Warning: Reference `' on page 18 undefined on input line 154.
+
+
+LaTeX Warning: Reference `' on page 18 undefined on input line 154.
+
+
+LaTeX Warning: Reference `' on page 18 undefined on input line 154.
+
+
+LaTeX Warning: Reference `' on page 18 undefined on input line 154.
+
+) (./main.bbl [18]
 Chapter 1.
-[13] (./chapters/stringdiagrams/1_diagrams.tex [14
 
-]) [15]
+pdfTeX warning (ext4): destination with the same identifier (name{cite.anderson
+_end_2008}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 \bibitem{anderson_end_2008}
+                               
+pdfTeX warning (ext4): destination with the same identifier (name{cite.bastian_
+google_2022}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.10 \bibitem{bastian_google_2022}
+                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.bender_c
+limbing_2020}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14 \bibitem{bender_climbing_2020}
+                                   
+pdfTeX warning (ext4): destination with the same identifier (name{cite.church_p
+endulum_2011}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.22 \bibitem{church_pendulum_2011}
+                                   
+pdfTeX warning (ext4): destination with the same identifier (name{cite.deleted_
+user_stack_2018}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 \bibitem{deleted_user_stack_2018}
+                                      
+pdfTeX warning (ext4): destination with the same identifier (name{cite.desai_ep
+istemological_2022}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.31 \bibitem{desai_epistemological_2022}
+                                         
+pdfTeX warning (ext4): destination with the same identifier (name{cite.mcshane_
+linguistics_2021}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.59 \bibitem{mcshane_linguistics_2021}
+                                        [19
+
+]
+pdfTeX warning (ext4): destination with the same identifier (name{cite.openai_c
+hatgpt_2022}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.64 \bibitem{openai_chatgpt_2022}
+                                  
+pdfTeX warning (ext4): destination with the same identifier (name{cite.pietsch_
+epistemology_2022}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.69 \bibitem{pietsch_epistemology_2022}
+                                        
+pdfTeX warning (ext4): destination with the same identifier (name{cite.searle_m
+inds_1980}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.76 \bibitem{searle_minds_1980}
+                                
+pdfTeX warning (ext4): destination with the same identifier (name{cite.vaswani_
+attention_2017}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.88 \bibitem{vaswani_attention_2017}
+                                     ) [20]
+Chapter 2.
+[21
+
+] (./chapters/stringdiagrams/1_diagrams.tex [22
+
+]) [23]
 (./chapters/stringdiagrams/1b_proctheory.tex (./figures/proctheory/process.tikz
 ) (./figures/proctheory/processpar.tikz) (./figures/proctheory/processseq.tikz)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16
+ [24
 
 ]
 (./figures/proctheory/processeq.tikz) (./figures/proctheory/state.tikz)
-(./figures/proctheory/test.tikz) (./figures/proctheory/number.tikz) [17]
+(./figures/proctheory/test.tikz) (./figures/proctheory/number.tikz) [25]
 
-LaTeX Warning: Reference `' on page 18 undefined on input line 18.
-
-
-LaTeX Warning: Marginpar on page 18 moved.
+LaTeX Warning: Reference `' on page 26 undefined on input line 18.
 
 LaTeX Font Info:    Trying to load font information for TS1+stix on input line 
 20.
@@ -1752,10 +1948,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 34.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 34.
-
-
-LaTeX Warning: Marginpar on page 18 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 38.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -1792,22 +1984,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 42.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 42.
-[18]
-
-LaTeX Warning: Marginpar on page 19 moved.
-
-
-LaTeX Warning: Marginpar on page 19 moved.
-
-
-LaTeX Warning: Marginpar on page 19 moved.
-
-
-LaTeX Warning: Marginpar on page 19 moved.
-
-
-LaTeX Warning: Marginpar on page 19 moved.
-
+ [26]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 46.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -1822,12 +1999,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 46.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 46.
-
-LaTeX Warning: Marginpar on page 19 moved.
-
-
-LaTeX Warning: Marginpar on page 19 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 48.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -1870,6 +2041,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 51.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 51.
+
 (./figures/proctheory/copydelete.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 57.
@@ -1895,7 +2067,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 63.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 67.
- [19]
+ [27]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 68.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -1931,10 +2103,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 85.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 85.
-
-
-LaTeX Warning: Marginpar on page 20 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 94.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -1945,7 +2113,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 94.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 94.
-(./figures/proctheory/copyable.tikz
+ (./figures/proctheory/copyable.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 20.
 )
@@ -1972,40 +2140,25 @@ ine 104.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 104.
 
-
-LaTeX Warning: Marginpar on page 20 moved.
-
 (./figures/proctheory/copyablefunc.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 31.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 110.
-
-
-LaTeX Warning: Marginpar on page 20 moved.
-
-
-LaTeX Warning: Marginpar on page 20 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 112.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 112.
-
-LaTeX Warning: Marginpar on page 20 moved.
-
-
-LaTeX Warning: Marginpar on page 20 moved.
-
-[20]
+ [28]
 LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
 (Font)              scaled to size 8.50006pt on input line 119.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 119.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 119.
- (./figures/proctheory/putputs.tikz
+
+(./figures/proctheory/putputs.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 21.
 )
@@ -2030,14 +2183,11 @@ ine 3.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 135.
-
-
-LaTeX Warning: Marginpar on page 21 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 139.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 140.
+
 (./figures/proctheory/incrementage.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 9.
@@ -2065,7 +2215,7 @@ ine 27.
 )
 Underfull \vbox (badness 5217) has occurred while \output is active []
 
- [21]
+ [29]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 144.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2075,10 +2225,10 @@ ine 170.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 174.
 
-[22]
+[30]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 178.
-) [23] (./chapters/stringdiagrams/1a_diagdefs.tex
+) [31] (./chapters/stringdiagrams/1a_diagdefs.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 6.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2135,9 +2285,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 17.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 36.
- [24
+ [32
 
-]) [25]
+]) [33]
 (./chapters/stringdiagrams/1f_neuralnets.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 5.
@@ -2157,7 +2307,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 11.
- [26
+ [34
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2166,7 +2316,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 19.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 23.
- [27]) [28]
+ [35]) [36]
 (./chapters/stringdiagrams/1e_montague.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
@@ -2193,7 +2343,7 @@ LaTeX Warning: No positions in optional float specifier.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 37.
-[29
+[37
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2213,16 +2363,7 @@ ine 46.
 Package natbib Warning: Citation `montague1973proper' undefined on input line 4
 6.
 
-
-LaTeX Warning: Marginpar on page 30 moved.
-
-
-LaTeX Warning: Marginpar on page 30 moved.
-
-
-LaTeX Warning: Marginpar on page 30 moved.
-
-[30]
+[38]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 61.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2325,10 +2466,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 107.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 107.
-
-
-LaTeX Warning: Marginpar on page 31 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 116.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2389,7 +2526,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 126.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 126.
-[31]
+ [39]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 128.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2412,19 +2549,15 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 128.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 130.
-) [32]
-Chapter 2.
-[33
+) [40]
+Chapter 3.
+[41
 
 
 ] (./chapters/textcirc/miracle.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
-
-
-LaTeX Warning: Marginpar on page 34 moved.
-
-[34
+ [42
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2503,22 +2636,19 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 64.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 64.
- [35]
-
-LaTeX Warning: Marginpar on page 36 moved.
-
-\myBox1=\box148
-\myScoreStart1=\dimen338
-\myCenter1=\dimen339
-\myScoreEnd1=\dimen340
+ [43]
+\myBox1=\box150
+\myScoreStart1=\dimen346
+\myCenter1=\dimen347
+\myScoreEnd1=\dimen348
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 70.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 70.
-\myBox2=\box149
-\myScoreStart2=\dimen341
-\myCenter2=\dimen342
-\myScoreEnd2=\dimen343
+\myBox2=\box151
+\myScoreStart2=\dimen349
+\myCenter2=\dimen350
+\myScoreEnd2=\dimen351
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 71.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2539,10 +2669,10 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 75.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 75.
-\myBox3=\box150
-\myScoreStart3=\dimen344
-\myCenter3=\dimen345
-\myScoreEnd3=\dimen346
+\myBox3=\box152
+\myScoreStart3=\dimen352
+\myCenter3=\dimen353
+\myScoreEnd3=\dimen354
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 76.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2655,7 +2785,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 119.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 119.
-[36]
+ [44]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 121.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2796,7 +2926,7 @@ ine 113.
 )
 Underfull \vbox (badness 1789) has occurred while \output is active []
 
- [37]
+ [45]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 161.
 
@@ -2826,14 +2956,14 @@ ine 232.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
+ [46]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 165.
 
 (./figures/tree2gate/workedexample/bigcfg.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
+ [47]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 167.
 
@@ -2846,7 +2976,7 @@ ine 169.
 (./figures/tree2gate/workedexample/bigex_2.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]
+ [48]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 176.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2897,7 +3027,7 @@ ine 178.
 (./figures/tree2gate/workedexample/bigex_3.tikz)
 Underfull \vbox (badness 1565) has occurred while \output is active []
 
- [41]
+ [49]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 182.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2932,7 +3062,7 @@ ine 184.
 (./figures/tree2gate/workedexample/bigex_4.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42]
+ [50]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 188.
 
@@ -2965,7 +3095,7 @@ ine 190.
 (./figures/tree2gate/workedexample/bigex_5.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43]
+ [51]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 194.
 
@@ -2993,7 +3123,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 140.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 140.
-) [44]
+) [52]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 200.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3034,7 +3164,7 @@ ine 202.
 (./figures/tree2gate/workedexample/bigex_8.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45]
+ [53]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 206.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3056,7 +3186,7 @@ ine 208.
 (./figures/tree2gate/workedexample/bigex_a0.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46]
+ [54]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 210.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3079,10 +3209,10 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 217.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 217.
-\myBox4=\box151
-\myScoreStart4=\dimen347
-\myCenter4=\dimen348
-\myScoreEnd4=\dimen349
+\myBox4=\box153
+\myScoreStart4=\dimen355
+\myCenter4=\dimen356
+\myScoreEnd4=\dimen357
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 218.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3119,20 +3249,17 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 227.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 232.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 248.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 248.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 248.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 248.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 248.
 
-
-LaTeX Warning: Marginpar on page 47 moved.
-
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 248.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 248.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 248.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 248.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 248.
 (./figures/tree2gate/mfunctorbox/mfbox-notation.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 12.
@@ -3154,7 +3281,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 36.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 39.
-) [47]
+) [55]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 250.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3222,7 +3349,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 256.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 256.
- [48]
+ [56]
 (./figures/tree2gate/mfunctorbox/mfbox-fibration+structural.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 12.
@@ -3369,7 +3496,7 @@ ine 78.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
+ [57]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 264.
 
@@ -3481,7 +3608,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 54.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 55.
-) [50]
+) [58]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 279.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3586,13 +3713,9 @@ ine 166.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 284.
 
-
-LaTeX Warning: Marginpar on page 51 moved.
-
-
 Underfull \vbox (badness 3701) has occurred while \output is active []
 
- [51]
+ [59]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 299.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3724,7 +3847,7 @@ ine 337.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 337.
 
-[52] (./figures/tree2gate/tag/CFGtoTAGpattern.tikz
+[60] (./figures/tree2gate/tag/CFGtoTAGpattern.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 18.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3788,7 +3911,7 @@ ine 181.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 338.
- [53]
+ [61]
 (./figures/tree2gate/tag/leafansatzintuition.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 14.
@@ -3976,7 +4099,7 @@ ine 333.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
+ [62]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 353.
 
@@ -4022,7 +4145,7 @@ ine 283.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55]
+ [63]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 358.
 
@@ -4132,7 +4255,7 @@ ine 312.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56]
+ [64]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 363.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4172,10 +4295,10 @@ ine 371.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 371.
 
-[57] (./figures/tree2gate/workedexample/bigexaltogether.tikz)
+[65] (./figures/tree2gate/workedexample/bigexaltogether.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 375.
-) [58]
+) [66]
 (./chapters/textcirc/hybridgrammar.tex (./figures/textcirc/ex.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 10.
@@ -4184,9 +4307,6 @@ ine 11.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 8.
-
-
-LaTeX Warning: Marginpar on page 59 moved.
 
 (./figures/textcirc/AgBtBcopy.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4202,11 +4322,7 @@ ine 7.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 14.
-
-
-LaTeX Warning: Marginpar on page 59 moved.
-
-(./figures/textcirc/IVcsg.tikz)
+ (./figures/textcirc/IVcsg.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 19.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4221,10 +4337,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 20.
 
 
-LaTeX Warning: Marginpar on page 59 moved.
-
-
-LaTeX Warning: Reference `sec:discussion' on page 59 undefined on input line 24
+LaTeX Warning: Reference `sec:discussion' on page 67 undefined on input line 24
 .
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4235,9 +4348,6 @@ ine 26.
 Package natbib Warning: Citation `hopcroft_introduction_1979' undefined on inpu
 t line 26.
 
-
-LaTeX Warning: Marginpar on page 59 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 29.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4246,7 +4356,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 30.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 30.
-[59
+[67
 
 ] (./figures/textcirc/TVcsgcopy.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4272,11 +4382,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 35.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 36.
-
-
-LaTeX Warning: Marginpar on page 60 moved.
-
-(./figures/textcirc/IVcsgL.tikz
+ (./figures/textcirc/IVcsgL.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 4.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4298,9 +4404,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 41.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 42.
-
-
-LaTeX Warning: Marginpar on page 60 moved.
 
 (./figures/textcirc/TVcsgL.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4324,10 +4427,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 47.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 48.
-
-
-LaTeX Warning: Marginpar on page 60 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 50.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4498,7 +4597,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 61.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 61.
-(./figures/textcirc/ADJcsg.tikz
+ (./figures/textcirc/ADJcsg.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4524,9 +4623,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 66.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 67.
-
-
-LaTeX Warning: Marginpar on page 60 moved.
 
 (./figures/textcirc/ADJiscsg.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4562,11 +4658,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 72.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 73.
-
-
-LaTeX Warning: Marginpar on page 60 moved.
-
-(./figures/textcirc/ADVIVcsg.tikz
+ (./figures/textcirc/ADVIVcsg.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4592,15 +4684,12 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 78.
 
 Underfull \hbox (badness 1675) in paragraph at lines 78--78
-\T1/stix/m/n/8 Figure 2.9: \T1/stix/b/n/8 Ad-verbs \T1/stix/m/n/8 can ap-pear b
+\T1/stix/m/n/8 Figure 3.9: \T1/stix/b/n/8 Ad-verbs \T1/stix/m/n/8 can ap-pear b
 e-fore a verb (e.g. 
  []
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 79.
-
-LaTeX Warning: Marginpar on page 60 moved.
-
 (./figures/textcirc/ADVTVcsg.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
@@ -4625,11 +4714,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 84.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 85.
-
-
-LaTeX Warning: Marginpar on page 60 moved.
-
-(./figures/textcirc/ADPIVcsg.tikz
+ (./figures/textcirc/ADPIVcsg.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 8.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4663,9 +4748,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 90.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 91.
-
-
-LaTeX Warning: Marginpar on page 60 moved.
 
 (./figures/textcirc/ADPTVcsgcopy.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4713,10 +4795,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 96.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 97.
-
-
-LaTeX Warning: Marginpar on page 60 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 99.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4737,7 +4815,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 99.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 99.
-(./figures/textcirc/AgBtB.tikz
+ (./figures/textcirc/AgBtB.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4756,7 +4834,7 @@ ine 102.
 LaTeX Font Warning: Font shape `T1/stix/m/scit' undefined
 (Font)              using `T1/stix/m/it' instead on input line 107.
 
-[60] (./figures/textcirc/srprule.tikz
+[68] (./figures/textcirc/srprule.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 6.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4822,9 +4900,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 112.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 113.
-
-LaTeX Warning: Marginpar on page 61 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 116.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4853,7 +4928,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 117.
 
 
-LaTeX Warning: Reference `conv:pronpoint' on page 61 undefined on input line 11
+LaTeX Warning: Reference `conv:pronpoint' on page 69 undefined on input line 11
 8.
 
 (./figures/textcirc/AiSAgBtB2.tikz
@@ -4876,9 +4951,9 @@ ine 15.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 119.
- [61]
+ [69]
 
-LaTeX Warning: Reference `transgram' on page 62 undefined on input line 125.
+LaTeX Warning: Reference `transgram' on page 70 undefined on input line 125.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 130.
@@ -5041,7 +5116,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 14.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 25.
-) [62]
+) [70]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 152.
 
@@ -5171,7 +5246,7 @@ ine 26.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
+ [71]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 165.
 
@@ -5254,7 +5329,7 @@ ine 8.
 )
 Underfull \vbox (badness 2057) has occurred while \output is active []
 
- [64]
+ [72]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 194.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -5301,11 +5376,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 217.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 218.
-
-
-LaTeX Warning: Marginpar on page 65 moved.
-
-(./figures/textcirc/scopeexitcsg.tikz)
+ (./figures/textcirc/scopeexitcsg.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 223.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -5314,9 +5385,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 223.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 224.
-
-
-LaTeX Warning: Marginpar on page 65 moved.
 
 (./figures/textcirc/scopeexitRcsg.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -5327,15 +5395,11 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 229.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 230.
-
-
-LaTeX Warning: Marginpar on page 65 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 234.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 234.
-[65]
+ [73]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 234.
  (./figures/textcirc/AsdBdcsg1.tikz
@@ -5477,7 +5541,7 @@ LaTeX Warning: Float too large for page by 371.40785pt on input line 250.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [66] [67] (./chapters/textcirc/textdiag.tex
+) [74] [75] (./chapters/textcirc/textdiag.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 10.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -5494,9 +5558,6 @@ Package natbib Warning: Citation `SelingerSurvey' undefined on input line 10.
 
 
 Package natbib Warning: Citation `CKbook' undefined on input line 10.
-
-
-LaTeX Warning: Marginpar on page 68 moved.
 
 (./figures/textcirc/stringscopy.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -5519,10 +5580,7 @@ ine 22.
 Package natbib Warning: Citation `reutter_high-level_2019' undefined on input l
 ine 22.
 
-
-LaTeX Warning: Marginpar on page 68 moved.
-
-[68
+[76
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -5688,14 +5746,14 @@ ine 59.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69]
-Overfull \vbox (149.01503pt too high) has occurred while \output is active []
+ [77]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-[70]
+ [78]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 60.
- (./figures/textcirc/diagramconvention.tikz
+
+(./figures/textcirc/diagramconvention.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 18.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -5764,7 +5822,7 @@ ine 7.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71]
+ [79]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 88.
 
@@ -5802,7 +5860,7 @@ ine 20.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72]
+ [80]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 97.
 
@@ -5828,18 +5886,14 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 105.
 
 
-LaTeX Warning: Reference `sec:pronom-links' on page 73 undefined on input line 
+LaTeX Warning: Reference `sec:pronom-links' on page 81 undefined on input line 
 110.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 110.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 110.
-[73]
-
-LaTeX Warning: Marginpar on page 74 moved.
-
-(./figures/textcirc/link2diagram.tikz
+[81] (./figures/textcirc/link2diagram.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 19.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -5931,7 +5985,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 76.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 77.
-) [74]
+) [82]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 125.
  (./figures/textcirc/pronlinkrule2.tikz
@@ -5964,7 +6018,7 @@ ine 77.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75]
+ [83]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 128.
 
@@ -5992,7 +6046,7 @@ ine 8.
 )
 Underfull \vbox (badness 1838) has occurred while \output is active []
 
- [76]
+ [84]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 143.
 
@@ -6038,7 +6092,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 6.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
-) [77]
+) [85]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 155.
  (./figures/textcirc/ssrpex.tikz
@@ -6082,7 +6136,7 @@ ine 25.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78]
+ [86]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 168.
 
@@ -6122,7 +6176,7 @@ ine 18.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [79]
+ [87]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 176.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -6147,9 +6201,6 @@ high-level_2019}) has been already used, duplicate ignored
                    \relax 
 l.199 ...ssistant \cite{reutter_high-level_2019}.}
                                                    We will introduce  genera...
-
-LaTeX Warning: Marginpar on page 80 moved.
-
 (./figures/textcirc/phrenter.tikz) (./figures/textcirc/phrexit.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 202.
@@ -6157,7 +6208,7 @@ ine 202.
 (./figures/textcirc/phrenterR.tikz) (./figures/textcirc/phrexitR.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80]
+ [88]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 206.
 
@@ -6337,7 +6388,7 @@ Overfull \hbox (157.63509pt too wide) detected at line 224
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81]
+ [89]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 224.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -6355,11 +6406,11 @@ ine 6.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [82]
+ [90]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 230.
 )
-[83] (./chapters/textcirc/textcirc.tex (./figures/textcirc/nounwiresABN.tikz
+[91] (./chapters/textcirc/textcirc.tex (./figures/textcirc/nounwiresABN.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 9.
 )
@@ -6397,7 +6448,7 @@ ine 44.
 )
 Underfull \vbox (badness 2781) has occurred while \output is active []
 
- [84
+ [92
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -6432,9 +6483,6 @@ Package natbib Warning: Citation `quick_-logic_2015' undefined on input line 32
 Package natbib Warning: Citation `zamdzhiev_rewriting_2017' undefined on input 
 line 32.
 
-
-LaTeX Warning: Marginpar on page 85 moved.
-
 (./figures/textcirc/SCVbox.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 23.
@@ -6451,7 +6499,7 @@ ine 39.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [85]
+ [93]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 35.
 
@@ -6533,7 +6581,7 @@ ine 53.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [86]
+ [94]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 44.
 
@@ -6587,7 +6635,7 @@ ine 44.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87]
+ [95]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 54.
 
@@ -6698,7 +6746,7 @@ Overfull \hbox (67.86374pt too wide) detected at line 64
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [88]
+ [96]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 64.
 
@@ -6759,7 +6807,7 @@ ine 67.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [89]
+ [97]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 77.
 
@@ -6783,7 +6831,7 @@ LaTeX Warning: Float too large for page by 313.22408pt on input line 87.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [90] [91] (./chapters/textcirc/mathresults.tex
+) [98] [99] (./chapters/textcirc/mathresults.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 5.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -6801,7 +6849,7 @@ ine 37.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [92
+ [100
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -6817,7 +6865,7 @@ ine 28.
 (./figures/textcirc/invalidboxex.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [93]
+ [101]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 32.
 
@@ -6833,7 +6881,7 @@ ine 11.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [94]
+ [102]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 39.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -6903,7 +6951,7 @@ ine 108.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [95]
+ [103]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 58.
 
@@ -6939,7 +6987,7 @@ ine 84.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 62.
- [96]
+ [104]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 68.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -6997,7 +7045,7 @@ ine 47.
 )
 Underfull \vbox (badness 1490) has occurred while \output is active []
 
- [97]
+ [105]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 99.
 
@@ -7055,7 +7103,7 @@ ine 99.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [98]
+ [106]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 106.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -7102,18 +7150,18 @@ Overfull \hbox (12.55688pt too wide) detected at line 112
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [99]
+ [107]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 112.
 
 
-LaTeX Warning: Reference `sec:pronom-links' on page 100 undefined on input line
+LaTeX Warning: Reference `sec:pronom-links' on page 108 undefined on input line
  113.
 
 
 Underfull \vbox (badness 1424) has occurred while \output is active []
 
- [100]
+ [108]
 (./figures/textcirc/syntacticsugar1.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 15.
@@ -7151,7 +7199,7 @@ ine 38.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [101]
+ [109]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 118.
 
@@ -7198,13 +7246,13 @@ Overfull \hbox (19.07144pt too wide) detected at line 122
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [102]
+ [110]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 122.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 128.
 
-[103]
+[111]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 152.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -7234,11 +7282,11 @@ Overfull \hbox (452.97578pt too wide) detected at line 153
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [104]
+ [112]
 Overfull \vbox (101.16805pt too high) has occurred while \output is active []
 
 
-[105]
+[113]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 153.
  (./figures/textcirc/ADJistransform.tikz
@@ -7444,7 +7492,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 186.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 187.
-[106] (./figures/textcirc/adjnormalex.tikz
+[114] (./figures/textcirc/adjnormalex.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 11.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -7475,7 +7523,7 @@ ine 24.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 196.
- [107]
+ [115]
 (./figures/textcirc/adpgatherex.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 40.
@@ -7703,7 +7751,7 @@ Overfull \hbox (203.33513pt too wide) detected at line 203
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [108]
+ [116]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 203.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -7745,7 +7793,7 @@ ine 57.
 )
 Underfull \vbox (badness 1762) has occurred while \output is active []
 
- [109]
+ [117]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 215.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -7880,7 +7928,7 @@ Overfull \hbox (310.11206pt too wide) detected at line 223
 
 Underfull \vbox (badness 5667) has occurred while \output is active []
 
- [110]
+ [118]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 223.
 
@@ -8008,7 +8056,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 5.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 10.
-) [111]
+) [119]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 272.
 
@@ -8030,11 +8078,11 @@ ine 37.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [112]
+ [120]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 287.
 
-[113] (./figures/textcirc/circ2textex2.tikz
+[121] (./figures/textcirc/circ2textex2.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 37.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -8153,7 +8201,7 @@ Overfull \hbox (198.3278pt too wide) detected at line 295
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [114]
+ [122]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 295.
 
@@ -8212,7 +8260,7 @@ Overfull \hbox (365.74144pt too wide) detected at line 299
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [115]
+ [123]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 299.
 
@@ -8298,7 +8346,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 329.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 330.
-[116]
+[124]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 331.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -8340,7 +8388,7 @@ ine 344.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 344.
 
-LaTeX Warning: Reference `sec:discussion' on page 117 undefined on input line 3
+LaTeX Warning: Reference `sec:discussion' on page 125 undefined on input line 3
 44.
 
 
@@ -8370,15 +8418,6 @@ Package natbib Warning: Citation `CoeckeMeich' undefined on input line 344.
 
 
 Package natbib Warning: Citation `IntWire' undefined on input line 344.
-
-
-LaTeX Warning: Marginpar on page 117 moved.
-
-
-LaTeX Warning: Marginpar on page 117 moved.
-
-
-LaTeX Warning: Marginpar on page 117 moved.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 350.
@@ -8416,7 +8455,7 @@ ine 26.
 )
 Underfull \vbox (badness 1609) has occurred while \output is active []
 
- [117
+ [125
 pdfTeX warning (ext4): destination with the same identifier (name{cite.GramEqs}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -8485,7 +8524,7 @@ ine 30.
 )
 Underfull \vbox (badness 1092) has occurred while \output is active []
 
- [118]
+ [126]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 381.
 
@@ -8543,7 +8582,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 399.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 399.
-[119]
+[127]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 400.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -8621,7 +8660,7 @@ Overfull \hbox (395.13266pt too wide) detected at line 412
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [120]
+ [128]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 412.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -8643,7 +8682,7 @@ ine 7.
 )
 Underfull \vbox (badness 2426) has occurred while \output is active []
 
- [121]
+ [129]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 427.
 
@@ -8716,13 +8755,13 @@ Overfull \hbox (173.25249pt too wide) detected at line 444
 
 Underfull \vbox (badness 6559) has occurred while \output is active []
 
- [122]
+ [130]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 444.
 )
-[123] [124] [125] [126]
-Chapter 3.
-[127
+[131] [132] [133] [134]
+Chapter 4.
+[135
 
 
 ] (./chapters/toprel/AA_whycontrel.tex
@@ -8735,9 +8774,9 @@ LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
 ne 15.
 
 
-LaTeX Warning: Reference `just:3' on page 128 undefined on input line 15.
+LaTeX Warning: Reference `just:3' on page 136 undefined on input line 15.
 
-[128
+[136
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -8756,7 +8795,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 23.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 23.
- [129]
+ [137]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 26.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -8815,7 +8854,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 55.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 55.
-[130]) [131] (./chapters/toprel/0_contrel.tex
+[138]) [139] (./chapters/toprel/0_contrel.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 20.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -8832,22 +8871,12 @@ LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
 ne 20.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 20.
-
-
-LaTeX Warning: Marginpar on page 132 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 26.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 26.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 26.
-
-LaTeX Warning: Marginpar on page 132 moved.
-
-
-LaTeX Warning: Marginpar on page 132 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 32.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -8856,12 +8885,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 32.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 32.
-
-LaTeX Warning: Marginpar on page 132 moved.
-
-
-LaTeX Warning: Marginpar on page 132 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 37.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -8900,33 +8923,21 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 50.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 50.
-
-LaTeX Warning: Marginpar on page 132 moved.
-
-
-LaTeX Warning: Marginpar on page 132 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 56.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 56.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 56.
-
-LaTeX Warning: Marginpar on page 132 moved.
-
-
-LaTeX Warning: Marginpar on page 132 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 64.
-[132
+ [140
 
-] (./figures/bestiary/generators.tikz)
+]
+(./figures/bestiary/generators.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 66.
-
-(./figures/bestiary/basicrelations.tikz
+ (./figures/bestiary/basicrelations.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 21.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -8936,7 +8947,7 @@ ine 52.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [133]
+ [141]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 70.
 
@@ -8960,7 +8971,7 @@ ine 48.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [134]
+ [142]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 74.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9002,10 +9013,10 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 31.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 32.
-) [135]
+) [143]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 82.
-) [136]
+) [144]
 (./chapters/toprel/1_examples.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
@@ -9046,12 +9057,9 @@ ine 29.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 29.
 
-[137
+[145
 
 ]
-
-LaTeX Warning: Marginpar on page 138 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 51.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9106,9 +9114,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 51.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 51.
-
-LaTeX Warning: Marginpar on page 138 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 53.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9121,18 +9126,12 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 67.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 67.
-
-LaTeX Warning: Marginpar on page 138 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 71.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 80.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 80.
-
-LaTeX Warning: Marginpar on page 138 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 84.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9159,24 +9158,17 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 92.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 98.
-[138]
+ [146]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 110.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 110.
-
-
-LaTeX Warning: Marginpar on page 139 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 118.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 122.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 122.
-
-LaTeX Warning: Marginpar on page 139 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 125.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9219,9 +9211,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 140.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 140.
-
-LaTeX Warning: Marginpar on page 139 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 143.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9244,7 +9233,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 149.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 149.
-(./figures/paintingexamples/sierandcanvas2_2.tikz)
+ (./figures/paintingexamples/sierandcanvas2_2.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 156.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9270,28 +9259,18 @@ ine 163.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 172.
 
-
-LaTeX Warning: Marginpar on page 139 moved.
-
 (./figures/paintingexamples/s2sqpainting.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 177.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 179.
 
-
-LaTeX Warning: Marginpar on page 139 moved.
-
 (./figures/paintingexamples/sq2spainting.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 184.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 186.
-
-
-LaTeX Warning: Marginpar on page 139 moved.
-
-[139]
+ [147]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 189.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9320,7 +9299,8 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 203.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 203.
- (./figures/testspaces/sierpinskienum.tikz) [140] [141]
+
+(./figures/testspaces/sierpinskienum.tikz) [148] [149]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 213.
 
@@ -9329,22 +9309,16 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 219.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 221.
-
-
-LaTeX Warning: Marginpar on page 142 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 222.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 222.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 222.
+
 (./figures/paintingexamples/contlines.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 231.
-
-
-LaTeX Warning: Marginpar on page 142 moved.
 
 (./figures/paintingexamples/thickbrush.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9358,15 +9332,11 @@ ine 13.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 238.
-
-
-LaTeX Warning: Marginpar on page 142 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 240.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 240.
-<figures/paintingexamples/spectrum.png, id=1204, 1194.4625pt x 34.1275pt>
+<figures/paintingexamples/spectrum.png, id=1271, 1194.4625pt x 34.1275pt>
 File: figures/paintingexamples/spectrum.png Graphic file (type png)
 <use figures/paintingexamples/spectrum.png>
 Package pdftex.def Info: figures/paintingexamples/spectrum.png  used on input l
@@ -9376,10 +9346,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 245.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 246.
-
-LaTeX Warning: Marginpar on page 142 moved.
-
-<figures/paintingexamples/starrynight.jpg, id=1206, 2569.6pt x 2034.60126pt>
+<figures/paintingexamples/starrynight.jpg, id=1273, 2569.6pt x 2034.60126pt>
 File: figures/paintingexamples/starrynight.jpg Graphic file (type jpg)
 <use figures/paintingexamples/starrynight.jpg>
 Package pdftex.def Info: figures/paintingexamples/starrynight.jpg  used on inpu
@@ -9389,13 +9356,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 251.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 252.
+) [150
 
-LaTeX Warning: Marginpar on page 142 moved.
-
-) [142
-
- <./figures/paintingexamples/spectrum.png> <./figures/paintingexamples/starryni
-ght.jpg>] (./chapters/toprel/3_sticky.tex
+ <./figures/paintingexamples/spectrum.png>] (./chapters/toprel/3_sticky.tex
 (./figures/bestiary/spiderbicat.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 53.
@@ -9441,9 +9404,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 25.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 25.
-
-LaTeX Warning: Marginpar on page 143 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 27.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9474,15 +9434,15 @@ ine 88.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [143
+ [151
 
-]
-[144]
+ <./figures/paintingexamples/starrynight.jpg>] [152]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 37.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 38.
- (./figures/structure/copyspiderproof/openpointcases.tikz
+
+(./figures/structure/copyspiderproof/openpointcases.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 21.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9552,14 +9512,11 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 50.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 50.
-
-
-LaTeX Warning: Marginpar on page 145 moved.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 56.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 56.
+
 (./figures/structure/idemspider/splitidem.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 15.
@@ -9605,7 +9562,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 47.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 50.
-) [145]
+) [153]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 58.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9664,7 +9621,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 149.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 155.
-) [146]
+) [154]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 66.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9705,7 +9662,7 @@ ine 25.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [147]
+ [155]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 75.
 
@@ -9767,7 +9724,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 27.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 28.
-) [148]
+) [156]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 81.
 
@@ -9843,7 +9800,7 @@ ine 7.
 (./figures/idemproof/comult-copy.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 10.
-) [149]
+) [157]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 92.
 
@@ -9890,11 +9847,11 @@ ine 173.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [150]
+ [158]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 97.
 
-[151] (./figures/idemproof/ecopy2delclaim.tikz
+[159] (./figures/idemproof/ecopy2delclaim.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 6.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9917,7 +9874,7 @@ ine 20.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 103.
- [152]
+ [160]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 109.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9965,11 +9922,11 @@ ine 181.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [153]
+ [161]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 112.
 
-[154]
+[162]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 118.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10002,7 +9959,7 @@ ine 118.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 121.
- [155]
+ [163]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 127.
 
@@ -10043,7 +10000,7 @@ ine 75.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 130.
- [156]
+ [164]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 136.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10069,7 +10026,7 @@ ine 58.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 139.
- [157]
+ [165]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 146.
  (./figures/idemproof/decompcounitclaim.tikz
@@ -10091,7 +10048,7 @@ ine 32.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 149.
- [158]
+ [166]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 155.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10119,7 +10076,7 @@ ine 159.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 159.
- [159]
+ [167]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 165.
 
@@ -10130,7 +10087,7 @@ ine 167.
 (./figures/idemproof/shorthandjustification.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 169.
- [160]
+ [168]
 (./figures/idemproof/comatchclaim.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 26.
@@ -10141,14 +10098,14 @@ ine 176.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 178.
 
-[161] (./figures/idemproof/dotcopyableclaim.tikz)
+[169] (./figures/idemproof/dotcopyableclaim.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 187.
 
 (./figures/idemproof/dotcopyable.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 189.
- [162]
+ [170]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 197.
 
@@ -10163,7 +10120,7 @@ ine 198.
  (./figures/idemproof/copynormal.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 200.
- [163]
+ [171]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 207.
  (./figures/idemproof/decompmultclaim.tikz
@@ -10181,7 +10138,7 @@ ine 68.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 210.
- [164]
+ [172]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 217.
 
@@ -10200,7 +10157,7 @@ ine 60.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 220.
- [165]
+ [173]
 (./figures/idemproof/unit-everything.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
@@ -10262,7 +10219,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 20.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 28.
-) [166]
+) [174]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 235.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10313,7 +10270,7 @@ ine 57.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 237.
-) [167]
+) [175]
 (./chapters/toprel/5_topologicalconcepts.tex
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
 ne 3.
@@ -10362,11 +10319,7 @@ Overfull \hbox (99.58337pt too wide) in paragraph at lines 34--34
 (./figures/topology/halooverlap.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 34.
-
-
-LaTeX Warning: Marginpar on page 168 moved.
-
-(./figures/topology/fisheye.tikz
+ (./figures/topology/fisheye.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10376,7 +10329,8 @@ ine 19.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 41.
- [168
+
+[176
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10395,8 +10349,7 @@ ine 70.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 49.
-
-(./figures/topology/chessboard2.tikz
+ (./figures/topology/chessboard2.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 212.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10444,7 +10397,7 @@ ine 302.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 51.
- [169]
+ [177]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 60.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10512,7 +10465,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 66.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 68.
- [170]
+ [178]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 71.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10571,7 +10524,7 @@ ine 57.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [171]
+ [179]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 90.
 
@@ -10611,7 +10564,7 @@ ine 81.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [172]
+ [180]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 102.
 
@@ -10652,7 +10605,7 @@ ine 80.
 )
 Underfull \vbox (badness 3646) has occurred while \output is active []
 
- [173]
+ [181]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 116.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10711,7 +10664,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 53.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 53.
-) [174]
+) [182]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 128.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10744,7 +10697,7 @@ ine 28.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 140.
 
-[175] (./figures/topology/planeisometries.tikz
+[183] (./figures/topology/planeisometries.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10779,7 +10732,7 @@ ine 22.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 150.
- [176]
+ [184]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 163.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10851,7 +10804,7 @@ ine 145.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [177]
+ [185]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 172.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10865,7 +10818,7 @@ ine 12.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [178]
+ [186]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 176.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10893,7 +10846,7 @@ ine 71.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 180.
- [179]
+ [187]
 (./figures/topology/contractible.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
@@ -10948,7 +10901,7 @@ ine 60.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [180]
+ [188]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 196.
 
@@ -10978,7 +10931,7 @@ ine 50.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [181]
+ [189]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 202.
 
@@ -11001,7 +10954,7 @@ ine 206.
  (./figures/topology/encloseexample.tikz)
 Underfull \vbox (badness 5607) has occurred while \output is active []
 
- [182]
+ [190]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 210.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11023,7 +10976,7 @@ ine 220.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 220.
 
-[183] (./figures/topology/parthood.tikz
+[191] (./figures/topology/parthood.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11115,7 +11068,7 @@ ine 98.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [184]
+ [192]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 228.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11167,7 +11120,7 @@ ine 38.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [185]
+ [193]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 234.
 
@@ -11240,7 +11193,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 58.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 59.
-) [186]
+) [194]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 246.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11313,7 +11266,7 @@ ine 252.
 
 Underfull \vbox (badness 1577) has occurred while \output is active []
 
- [187]
+ [195]
 (./figures/topology/constrained.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 258.
@@ -11351,7 +11304,7 @@ ine 117.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [188]
+ [196]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 265.
 
@@ -11387,7 +11340,7 @@ ine 51.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [189]
+ [197]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 267.
 
@@ -11412,7 +11365,7 @@ ine 105.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [190]
+ [198]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 271.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11458,7 +11411,7 @@ ine 38.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [191]
+ [199]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 275.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11492,14 +11445,14 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 277.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 278.
- [192] (./figures/topology/inopenout.tikz)
+ [200] (./figures/topology/inopenout.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 279.
 
 (./figures/topology/breaklock.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 281.
- [193]
+ [201]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 284.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11604,7 +11557,7 @@ ine 26.
 )
 Underfull \vbox (badness 3492) has occurred while \output is active []
 
- [194]
+ [202]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 289.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11625,12 +11578,12 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 290.
 
 
-LaTeX Warning: Reference `prop:exclusion' on page 195 undefined on input line 2
+LaTeX Warning: Reference `prop:exclusion' on page 203 undefined on input line 2
 90.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 290.
-) [195] (./chapters/toprel/topmathendnotes.tex
+) [203] (./chapters/toprel/topmathendnotes.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 10.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11720,9 +11673,9 @@ ine 34.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 34.
 
-Underfull \vbox (badness 2158) has occurred while \output is active []
+Underfull \vbox (badness 2707) has occurred while \output is active []
 
- [196
+ [204
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11796,7 +11749,7 @@ ine 49.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 49.
 
-[197]
+[205]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 57.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11875,7 +11828,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 104.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 105.
-[198]
+[206]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 106.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12036,7 +11989,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 156.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 156.
- [199]
+ [207]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 163.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12098,7 +12051,7 @@ ine 174.
  (./figures/topology/spanctrex.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [200]
+ [208]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 180.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12386,18 +12339,18 @@ ine 204.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 204.
 
-[201] (./figures/topology/pointingfinger.tikz
+[209] (./figures/topology/pointingfinger.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 56.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 211.
- [202]) [203] [204
+ [210]) [211] [212
 
 
 ]
-Chapter 4.
-[205] (./chapters/toprel/4_lassos.tex
+Chapter 5.
+[213] (./chapters/toprel/4_lassos.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12440,7 +12393,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 29.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 29.
- [206
+ [214
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12555,7 +12508,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 112.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 113.
-) [207]
+) [215]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 48.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12586,7 +12539,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 91.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 92.
-) [208]
+) [216]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 54.
 
@@ -12656,7 +12609,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 9.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 11.
-) [209]
+) [217]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 62.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12713,7 +12666,7 @@ ine 38.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [210]
+ [218]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 68.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12737,7 +12690,7 @@ ine 34.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [211]
+ [219]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 70.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12838,7 +12791,7 @@ Package pgf Warning: Returning node center instead of a point on node border. D
 id you specify a point identical to the center of node ``51''? on input line 77
 .
 
-) [212]
+) [220]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 74.
  (./figures/spatialencoding/tensordetensor3.tikz
@@ -12931,7 +12884,7 @@ id you specify a point identical to the center of node ``81''? on input line 15
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [213]
+ [221]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 81.
 
@@ -12991,7 +12944,7 @@ ine 136.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [214]
+ [222]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 83.
 
@@ -13065,11 +13018,11 @@ ine 150.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [215]
+ [223]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 85.
 )
-[216] (./chapters/stringdiagrams/1c_ulearn.tex
+[224] (./chapters/stringdiagrams/1c_ulearn.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -13142,7 +13095,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 24.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 24.
- [217
+ [225
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -13179,7 +13132,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 50.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 53.
- [218]
+ [226]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 54.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -13224,7 +13177,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 87.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 87.
- [219]
+ [227]
 (./figures/learnable/freetree.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 4.
@@ -13287,7 +13240,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 95.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 95.
- [220]
+ [228]
 (./figures/learnable/shift.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 13.
@@ -13372,7 +13325,7 @@ ine 50.
 )
 Underfull \vbox (badness 8170) has occurred while \output is active []
 
- [221]
+ [229]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 109.
 
@@ -13430,7 +13383,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 128.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 128.
- [222]
+ [230]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 131.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -13731,7 +13684,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 146.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 146.
- [223]
+ [231]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 158.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -13768,7 +13721,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 172.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 172.
- [224]
+ [232]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 174.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -13777,21 +13730,32 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 184.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 184.
-) [225]
-(./chapters/beyond/metaphor.tex [226
+) [233]
+(./chapters/beyond/metaphor.tex [234
 
 ] (./figures/metaphor/timeISmoney.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 28.
 )
-[227]
+[235]
 
 Package natbib Warning: There were undefined citations.
 
+[236
 
-Package bibentry Warning: You have used \nobibliography* 
-(bibentry)                without a following \bibliography.
-(bibentry)                You may not be able to run BibTeX.
+]
+
+! Package marginfix Error: lost some margin notes.
+
+See the marginfix package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 (./main.aux)
 
@@ -13804,22 +13768,22 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0ABED49BCA3772E19B72987F57492D24;6146.
+(rerunfilecheck)             Checksum: 2010A4AED50AF02B72C7288024B9BD63;7005.
  ) 
 Here is how much of TeX's memory you used:
- 58317 strings out of 478268
- 1293404 string characters out of 5846348
- 2144043 words of memory out of 5000000
- 73935 multiletter control sequences out of 15000+600000
+ 58563 strings out of 478268
+ 1298581 string characters out of 5846348
+ 2148522 words of memory out of 5000000
+ 74135 multiletter control sequences out of 15000+600000
  692824 words of font info for 333 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,18n,121p,2443b,1425s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,18n,121p,3007b,1417s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{theorem.3.7.7} has been referenced but does not exi
+pdfTeX warning (dest): name{theorem.4.7.7} has been referenced but does not exi
 st, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{theorem.2.1.13} has been referenced but does not ex
+pdfTeX warning (dest): name{theorem.3.1.13} has been referenced but does not ex
 ist, replaced by a fixed one
 
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/tex
@@ -13844,10 +13808,10 @@ pe1/public/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
 ublic/stix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publ
 ic/stix/stix-mathtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/hel
 vetic/uhvr8a.pfb>
-Output written on main.pdf (227 pages, 4065534 bytes).
+Output written on main.pdf (236 pages, 4108824 bytes).
 PDF statistics:
- 1885 PDF objects out of 2073 (max. 8388607)
- 1496 compressed objects within 15 object streams
- 519 named destinations out of 1000 (max. 500000)
- 26959 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1962 PDF objects out of 2073 (max. 8388607)
+ 1558 compressed objects within 16 object streams
+ 546 named destinations out of 1000 (max. 500000)
+ 26975 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -1,47 +1,74 @@
 This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-I found no \bibdata command---while reading file main.aux
-I found no \bibstyle command---while reading file main.aux
-You've used 22 entries,
-            0 wiz_defined-function locations,
-            118 strings with 904 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+The style file: plain.bst
+Database file #1: thesis_intro.bib
+Warning--I didn't find a database entry for "montague1970universal"
+Warning--I didn't find a database entry for "montague1973proper"
+Warning--I didn't find a database entry for "hopcroft_introduction_1979"
+Warning--I didn't find a database entry for "Penrose"
+Warning--I didn't find a database entry for "JS"
+Warning--I didn't find a database entry for "SelingerSurvey"
+Warning--I didn't find a database entry for "CKbook"
+Warning--I didn't find a database entry for "reutter_high-level_2019"
+Warning--I didn't find a database entry for "dorn_associative_2018"
+Warning--I didn't find a database entry for "wilson_string_2022"
+Warning--I didn't find a database entry for "merry_reasoning_2014"
+Warning--I didn't find a database entry for "quick_-logic_2015"
+Warning--I didn't find a database entry for "zamdzhiev_rewriting_2017"
+Warning--I didn't find a database entry for "GramEqs"
+Warning--I didn't find a database entry for "FrobMeanI"
+Warning--I didn't find a database entry for "FrobMeanII"
+Warning--I didn't find a database entry for "GrefSadr"
+Warning--I didn't find a database entry for "KartsaklisSadrzadeh2014"
+Warning--I didn't find a database entry for "CLM"
+Warning--I didn't find a database entry for "CoeckeText"
+Warning--I didn't find a database entry for "CoeckeMeich"
+Warning--I didn't find a database entry for "IntWire"
+Warning--empty journal in joyal_geometry_nodate
+Warning--empty year in joyal_geometry_nodate
+Warning--empty publisher in mcshane_linguistics_2021
+Warning--empty booktitle in selinger_survey_2010
+Warning--empty publisher in selinger_survey_2010
+You've used 16 entries,
+            2118 wiz_defined-function locations,
+            625 strings with 6846 characters,
+and the built_in function-call counts, 4537 in all, are:
+= -- 437
+> -- 187
+< -- 4
++ -- 81
+- -- 60
+* -- 281
+:= -- 761
+add.period$ -- 50
+call.type$ -- 16
+change.case$ -- 76
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 21
+duplicate$ -- 185
+empty$ -- 376
+format.name$ -- 60
+if$ -- 947
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+int.to.str$ -- 16
+missing$ -- 15
+newline$ -- 83
+num.names$ -- 32
+pop$ -- 105
+preamble$ -- 1
+purify$ -- 62
 quote$ -- 0
-skip$ -- 0
+skip$ -- 141
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 204
+swap$ -- 37
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 2 error messages)
+type$ -- 58
+warning$ -- 5
+while$ -- 42
+width$ -- 18
+write$ -- 172
+(There were 27 warnings)

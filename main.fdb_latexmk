@@ -1,10 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1673883884 "main.aux" "main.bbl" "main" 1673884818
-  "main.aux" 1673884817 35041 eec108fc7b1f05a6ee585c3b55740a5d "pdflatex"
+["bibtex main"] 1674135889 "main.aux" "main.bbl" "main" 1674135945
+  "/usr/local/texlive/2022/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
+  "main.aux" 1674135944 38706 da9d6352cdc7c8ed82c38221f2b58f4e "pdflatex"
+  "thesis_intro.bib" 1674129652 22568 2a304546965a5004086586fa2124d67d ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1673884762 "main.tex" "main.pdf" "main" 1673884818
+["pdflatex"] 1674135889 "main.tex" "main.pdf" "main" 1674135945
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc" 1388795362 7013 c55cc8669071ac14036c4a0c96c16202 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix/stix-ts1.enc" 1388795362 2836 154e6b0061f9b8cb549144b55b268339 ""
@@ -278,6 +280,7 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty" 1575499565 5766 13a9e8766c47f30327caf893ece86ac8 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex" 1632168149 95525 6fd0552101a6b1f9b7a84b402ec435ba ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.sty" 1632168149 14690 c2c754218a7108db7823a4839c1bc3cd ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/marginfix/marginfix.sty" 1588886756 13634 1adff3b3f20a436e0dc24761eed9d07b ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/microtype/letterspace.sty" 1647374306 16456 5043664385159f211bf2342d1568c693 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/natbib/bibentry.sty" 1193854157 3400 e000bb2fc43fc077e107f62f8c25613e ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty" 1291685959 45456 1c8843383c0bd05870c45fa0ebea6cc2 ""
@@ -339,7 +342,7 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1649085690 2826444 c25653caebac138858957cfaff6f02ae ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "chapters/beyond/metaphor.tex" 1666899833 2491 f6206b0f720223a43b1741ca3cbf345b ""
-  "chapters/intro/intro_draft2.tex" 1673884757 25770 cb168a5bcf85b7b4ec65cbb73088c822 ""
+  "chapters/intro/intro_draft2.tex" 1674135828 46566 ea0f82c6db7bbb95d2f24555c9b6e170 ""
   "chapters/stringdiagrams/1_diagrams.tex" 1670240369 2819 958e200fefe984100246a090bdc33fd5 ""
   "chapters/stringdiagrams/1a_diagdefs.tex" 1670846658 1826 64f826877982d5f2be00bbd278d05520 ""
   "chapters/stringdiagrams/1b_proctheory.tex" 1662493688 16027 c218433469d30cc455fc6180594eed74 ""
@@ -703,15 +706,16 @@
   "figures/tree2gate/workedexample/gather_quickly.tikz" 1666358606 5492 2df3c398edb053c968bb901c7f66ba71 ""
   "figures/tree2gate/workedexample/gather_scv.tikz" 1666358606 5647 aa94f437da6bee26b316253a91a50ecc ""
   "figures/tree2gate/workedexample/gather_to.tikz" 1666358606 6685 48e2a13777e21c0347bae86ee9262d13 ""
-  "macros/preamble.tex" 1670935989 3855 e3ef264fe6a8ffe0173c876952fbdd65 ""
+  "intro/stackmoar" 0 -1 0 ""
+  "macros/preamble.tex" 1674117299 3901 e1c614fffb5d5a01b09208d32abce166 ""
   "macros/quiver.sty" 1650809652 1606 0a56787eafe2108d7ab3bda12c3165bc ""
   "macros/thesis.tikzstyles" 1670932707 5626 61b9dcba94bb5ef21ba0f820288db71a ""
   "macros/tikzfig.sty" 1666358606 1531 6f1ac964da7ab1a89e3e27423ea86025 ""
-  "main.aux" 1673884817 35041 eec108fc7b1f05a6ee585c3b55740a5d "pdflatex"
-  "main.bbl" 0 -1 0 "bibtex main"
-  "main.out" 1673884817 6146 0abed49bca3772e19b72987f57492d24 "pdflatex"
-  "main.tex" 1673856963 1623 1b10dbe638604a1c0ed1a482304eff42 ""
-  "main.toc" 1673884817 8535 90feb0878ec415fc71cf6cc581f03b1b "pdflatex"
+  "main.aux" 1674135944 38706 da9d6352cdc7c8ed82c38221f2b58f4e "pdflatex"
+  "main.bbl" 1674135889 3270 f9a227e3dfbd61ca89140040605c61f9 "bibtex main"
+  "main.out" 1674135944 7005 2010a4aed50af02b72c7288024b9bd63 "pdflatex"
+  "main.tex" 1674111536 1680 b6abd222d16702d88077c7fde8223240 ""
+  "main.toc" 1674135944 8806 3579776a23b97ab14008908356526e7b "pdflatex"
   "tufte-book.cls" 1670843842 2114 201832e12d1cfe77fcbd2d458596ae22 ""
   "tufte-common.def" 1649717696 66821 b7511c5946078b0c502b75317c740631 ""
   (generated)
