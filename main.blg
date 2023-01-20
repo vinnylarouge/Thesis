@@ -3,6 +3,8 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: thesis_intro.bib
+Warning--I didn't find a database entry for "joyal_geometry_nodate"
+Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "montague1970universal"
 Warning--I didn't find a database entry for "montague1973proper"
 Warning--I didn't find a database entry for "hopcroft_introduction_1979"
@@ -25,50 +27,48 @@ Warning--I didn't find a database entry for "CLM"
 Warning--I didn't find a database entry for "CoeckeText"
 Warning--I didn't find a database entry for "CoeckeMeich"
 Warning--I didn't find a database entry for "IntWire"
-Warning--empty journal in joyal_geometry_nodate
-Warning--empty year in joyal_geometry_nodate
 Warning--empty publisher in mcshane_linguistics_2021
 Warning--empty booktitle in selinger_survey_2010
 Warning--empty publisher in selinger_survey_2010
-You've used 16 entries,
+You've used 27 entries,
             2118 wiz_defined-function locations,
-            625 strings with 6846 characters,
-and the built_in function-call counts, 4537 in all, are:
-= -- 437
-> -- 187
+            679 strings with 10053 characters,
+and the built_in function-call counts, 9343 in all, are:
+= -- 817
+> -- 643
 < -- 4
-+ -- 81
-- -- 60
-* -- 281
-:= -- 761
-add.period$ -- 50
-call.type$ -- 16
-change.case$ -- 76
++ -- 267
+- -- 232
+* -- 698
+:= -- 1613
+add.period$ -- 78
+call.type$ -- 27
+change.case$ -- 193
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 185
-empty$ -- 376
-format.name$ -- 60
-if$ -- 947
+cite$ -- 30
+duplicate$ -- 277
+empty$ -- 636
+format.name$ -- 232
+if$ -- 1860
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 15
-newline$ -- 83
-num.names$ -- 32
-pop$ -- 105
+int.to.str$ -- 27
+missing$ -- 20
+newline$ -- 133
+num.names$ -- 54
+pop$ -- 262
 preamble$ -- 1
-purify$ -- 62
+purify$ -- 170
 quote$ -- 0
-skip$ -- 141
+skip$ -- 225
 stack$ -- 0
-substring$ -- 204
-swap$ -- 37
+substring$ -- 317
+swap$ -- 49
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 58
-warning$ -- 5
-while$ -- 42
-width$ -- 18
-write$ -- 172
+type$ -- 98
+warning$ -- 3
+while$ -- 67
+width$ -- 29
+write$ -- 277
 (There were 27 warnings)
