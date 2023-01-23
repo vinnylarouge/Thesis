@@ -1,10 +1,11 @@
-\section{Topological concepts in flatland via \textbf{TopRel}}
-\vspace*{\fill}
+\section{Topological concepts in flatland via \textbf{ContRel}}
+
+\begin{fullwidth}
+
 The goal of this section is to demonstrate the use of sticky spiders as formal semantics for the kinds of schematic doodles or cartoons we would like to draw. Throughout we consider sticky spiders on $\mathbb{R}^2$. In Section \ref{sec:shapes}, we introduce how sticky spiders may be viewed as labelled collections of shapes. In service of defining \emph{configuration spaces} of shapes up to rigid displacement, we diagrammatically characterise the topological subgroup of isometries of $\mathbb{R}^2$ by building up in Sections \ref{sec:interval} and \ref{sec:displace} the diagrammatic presentations of the unit interval, metrics, and topological groups. To further isolate rigid displacements that arise from continuous sliding motion of shapes in the plane (thus excluding displacements that result in mirror-images), in Sections \ref{sec:moving} and \ref{sec:rigidmotion} we diagrammatically characterise an analogue of homotopy in the relational setting. Finally, in Sections \ref{sec:topconcept} and \ref{sec:statesactions} we build up a stock of topological concepts and study by examples how implementing these concepts within text circuits explains some idiosyncrasies of the theory: namely why noun wires are labelled by their noun, why adjective gates ought to commute, and why verb gates do not.
 
 \subsection{Shapes and places}\label{sec:shapes}
 
-\marginnote[-5cm]{
 \begin{defn}[Labels, shapes, cores, halos]
 Recall by Proposition \ref{prop:decompidem} that we can express the idempotent as a union of continuous relations formed of a state and test, for some indexing set of \emph{labels} $\mathcal{L}$.
 \[\tikzfig{topology/shape1}\]
@@ -28,27 +29,24 @@ Seeking contradiction, if a core overlapped with multiple halos, Lemma \ref{lem:
 \begin{proof}
 By example:
 \[\tikzfig{topology/halooverlap}\]
-We have two shapes, coloured cyan and magenta, the halos of which overlap at a yellow region. The cores of the halos are outlined in dotted blue and orange respectively. Observe that cores and halos do not have to be simply connected; in this example the core of the magenta shape has two connected components. Viewing these sticky spiders as a process, any shape that overlaps with the magenta core will be deleted and replaced by the magenta triangle, and similarly with the cyan cores and triangle. Any shape that overlaps with both the magenta and cyan cores will be deleted and replaced by the union of the triangles. Any shape that overlaps with neither core will be deleted and not replaced.
+The two shapes are colour coded cyan and magenta. The halos are two triangles which overlap at a yellow region, and partially overlap with their blobby cores. The cores are outlined in dotted blue and orange respectively. Observe that cores and halos do not have to be simply connected; in this example the core of the magenta shape has two connected components. Viewing these sticky spiders as a process, any shape that overlaps with the magenta core will be deleted and replaced by the magenta triangle, and similarly with the cyan cores and triangle. Any shape that overlaps with both the magenta and cyan cores will be deleted and replaced by the union of the triangles. Any shape that overlaps with neither core will be deleted and not replaced.
 \end{proof}
 \end{proposition}
-}
 
 \begin{remark}
 When we draw on a finite canvas representing all of euclidean space, properly there should be a fishbowl effect that relatively magnifies shapes close to the origin and shrinks those at the periphery, but that is only an artefact of representing all of euclidean space on a finite canvas. Since all the usual metrics are still really there, going forward we will ignore this fishbowl effect and just doodle shapes as we see fit.
 
-\vspace*{\fill}
-
 \[\tikzfig{topology/fisheye}\]
 \end{remark}
 
-\begin{fullwidth}
-
 \newpage
+
 \begin{example}[Where is a piece on a chessboard?]
-How is it that we quotient away the continuous structure of positions on a chessboard to locate pieces among a discrete set of squares? Evidently shifting a piece a little off the centre of a square doesn't change the state of the game, and this resistance to small perturbations suggests that a topological model is appropriate. We construct two spiders, one for pieces, and one for places on the chessboard. We consider the pieces spider to consist of open balls of some radius $r$, and we consider the places spider to consist of square halos (which tile the chessboard), containing a core inset by the same radius $r$; in this way, any piece can only overlap at most one square. As a technical aside, to keep the core of the tiles open, we can choose an arbitrarily sharp curvature $\epsilon$ at the corners.
+How is it that we quotient away the continuous structure of positions on a chessboard to locate pieces among a discrete set of squares? Evidently shifting a piece a little off the centre of a square doesn't change the state of the game, and this resistance to small perturbations suggests that a topological model is appropriate. We construct two spiders, one for pieces, and one for places on the chessboard. For the spider that represents the position of pieces, we open balls of some radius $r$, and we consider the places spider to consist of square halos (which tile the chessboard), containing a core inset by the same radius $r$; in this way, any piece can only overlap at most one square. As a technical aside, to keep the core of the tiles open, we can choose an arbitrarily sharp curvature $\epsilon$ at the corners.
 \[\scalebox{0.75}{\tikzfig{topology/chessboard}}\]
-Now we observe that the calculation of positions corresponds to composing sticky spiders. As input, we provide the spatial extents of the white pieces on the board. We can first abstract away the spatial extents of the individual chesspieces by composing with the pieces spider. We can then obtain the set of positions of each piece by composing with the places spider. The composite pieces;places will send the king to a2, the bishop to b4, and the knight to d1.
-\[\scalebox{0.5}{\tikzfig{topology/chessboard2}}\]
+Now we observe that the calculation of positions corresponds to composing sticky spiders. We take the initial state to be the sticky spider that assigns a ball of radius $r$ on the board for each piece. We can then obtain the set of positions of each piece by composing with the places spider. The composite (pieces;places)
+will send the king to a2, the bishop to b4, and the knight to d1, i.e. $\bra{K} \mapsto \bra{a2}$, $\bra{B} \mapsto \bra{b4}$ and $\bra{N} \mapsto \bra{d1}$. In other words, we have obtained a process that models how we pass from continuous states-of-affairs on a physical chessboard to an abstract and discrete game-state.
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/chessboard2a}}\]
 \end{example}
 \newpage
 
@@ -155,7 +153,7 @@ Chirality leaves us with a wrinkle: in flatland, we do not expect shapes to sudd
 
 If we want continuous transformations in the plane from the configuration of shapes in one spider to end at the configuration of shapes in another, we ought to define an analogue of \emph{homotopy}: the continuous deformation of one map to another. However, we will have to massage the definition a little to work in our setting of continuous relations.
 
-\newthought{Homotopy in \textbf{Toprel}}
+\newthought{Homotopy in \textbf{ContRel}}
 
 Usually, when we are restricted to speaking of topological spaces and continuous functions, a homotopy is defined:
 
@@ -167,7 +165,7 @@ In other words, a homotopy is like a short film where at the beginning there is 
 
 \[\tikzfig{topology/homotopyctrex1}\]
 
-What is happening in the above film is that we have our starting open set, which stays constant for a while. Then suddenly the ending open set appears, the starting open disappears, and we are left with our ending; while \emph{technically} there was no discontinuous jump, this isn't the notion of sliding we want. The exemplified issue is that we can patch together (by union of continuous relations) vignettes of continuous relations that are not individually total on $[0,1]$. We can patch this problem by asking for homotopies in \textbf{TopRel} to satisfy the additional condition that they are expressible as a union of continuous partial maps that are total on the unit interval.
+What is happening in the above film is that we have our starting open set, which stays constant for a while. Then suddenly the ending open set appears, the starting open disappears, and we are left with our ending; while \emph{technically} there was no discontinuous jump, this isn't the notion of sliding we want. The exemplified issue is that we can patch together (by union of continuous relations) vignettes of continuous relations that are not individually total on $[0,1]$. We can patch this problem by asking for homotopies in \textbf{ContRel} to satisfy the additional condition that they are expressible as a union of continuous partial maps that are total on the unit interval.
 
 \[\tikzfig{topology/homotopy}\]
 
@@ -175,7 +173,7 @@ Observe that the second condition asking for decomposition in terms of partial c
 
 \[\tikzfig{topology/homotopyctrex1}\]
 
-This definition is "natural" in light of Proposition \ref{prop:hombasis}, that the partial continuous functions $A \rightarrow B$ form a basis for $\mathbf{TopRel}(A,B)$: we are just asking that homotopies between partial continuous functions -- which can be viewed as regular homotopies with domain restricted to the subspace topology induced by an open set -- form a basis for homotopies between continuous relations.
+This definition is "natural" in light of Proposition \ref{prop:hombasis}, that the partial continuous functions $A \rightarrow B$ form a basis for $\mathbf{ContRel}(A,B)$: we are just asking that homotopies between partial continuous functions -- which can be viewed as regular homotopies with domain restricted to the subspace topology induced by an open set -- form a basis for homotopies between continuous relations.
 
 \[\tikzfig{topology/homotopyctrex}\]
 
