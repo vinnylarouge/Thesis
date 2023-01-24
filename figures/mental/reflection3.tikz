@@ -1,0 +1,100 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (3) at (6, 4) {};
+		\node [style=none] (4) at (6, 2) {};
+		\node [style=dotB] (0) at (0, 0) {};
+		\node [style=none] (1) at (0, 2) {};
+		\node [style=none] (2) at (0, -2) {};
+		\node [style=none] (5) at (-5, 1) {};
+		\node [style=none] (6) at (-7, -1) {};
+		\node [style=none] (7) at (-7, 1) {};
+		\node [style=none] (8) at (-5, -1) {};
+		\node [style=none] (10) at (-1.25, 0.25) {};
+		\node [style=none] (11) at (-1.25, -0.25) {};
+		\node [style=none] (12) at (-0.75, -0.25) {};
+		\node [style=none] (13) at (-0.75, 0.25) {};
+		\node [style=none] (18) at (0.75, 1) {};
+		\node [style=none] (19) at (0.75, 0.5) {};
+		\node [style=none] (20) at (3.75, -1.25) {};
+		\node [style=none] (21) at (5.75, -1) {};
+		\node [style=none] (22) at (5, -2) {};
+		\node [style=none] (23) at (0.25, -0.5) {};
+		\node [style=none] (24) at (0.75, -0.25) {};
+		\node [style=none] (25) at (0.5, -0.75) {};
+		\node [style=none] (35) at (0.75, 0.75) {};
+		\node [style=none] (37) at (-1, 0) {};
+		\node [style=none] (40) at (0.5, -0.5) {};
+		\node [style=none] (41) at (-1, -1.75) {};
+		\node [style=none] (42) at (-5, -2) {};
+		\node [style=none] (43) at (-3, -1.925) {};
+		\node [style=none] (44) at (-3.25, -0.75) {};
+		\node [style=none] (45) at (-0.5, -2.5) {};
+		\node [style=none] (46) at (-7.5, -1.5) {};
+		\node [style=none] (47) at (-5.5, -3.75) {};
+		\node [style=none] (48) at (-0.5, -0.75) {};
+		\node [style=none] (49) at (-0.325, -0.5) {};
+		\node [style=none] (50) at (-0.5, -0.25) {};
+		\node [style=none] (51) at (0, -0.5) {};
+		\node [style=none] (52) at (-0.75, -0.75) {};
+		\node [style=none] (53) at (-0.5, -1) {};
+		\node [style=none] (54) at (2, 1) {};
+		\node [style=none] (55) at (6, 3) {};
+		\node [style=none] (56) at (0.25, 0.5) {};
+		\node [style=none] (57) at (3.75, 2.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KB] (2.center)
+			 to [bend right=270, looseness=1.75] (1.center)
+			 to [bend left=90, looseness=1.75] cycle;
+		\draw [style=Fm] (4.center)
+			 to [in=-180, out=180, looseness=1.75] (3.center)
+			 to [bend left=90, looseness=1.75] cycle;
+		\draw [style=Fg] (6.center)
+			 to (8.center)
+			 to (5.center)
+			 to (7.center)
+			 to cycle;
+		\draw [style=Fg] (10.center)
+			 to (13.center)
+			 to (12.center)
+			 to (11.center)
+			 to cycle;
+		\draw [style=KB] (11.center)
+			 to (10.center)
+			 to (13.center)
+			 to (12.center)
+			 to [in=360, out=180] cycle;
+		\draw [style=Fm] (19.center)
+			 to [bend right=90, looseness=1.75] (18.center)
+			 to [bend left=270, looseness=1.75] cycle;
+		\draw [style=KB] (19.center)
+			 to [bend right=270, looseness=1.75] (18.center)
+			 to [bend left=90, looseness=1.75] cycle;
+		\draw [style=Fc] (20.center)
+			 to (21.center)
+			 to (22.center)
+			 to cycle;
+		\draw [style=Fc] (24.center)
+			 to (25.center)
+			 to (23.center)
+			 to cycle
+			 to (23.center);
+		\draw [style=KB] (24.center)
+			 to (25.center)
+			 to (23.center)
+			 to cycle;
+		\draw [style=KB] (41.center) to (42.center);
+		\draw [style=KB, in=-165, out=-15] (43.center) to (45.center);
+		\draw [style=KB, bend left] (43.center) to (44.center);
+		\draw [style=KB, in=-75, out=45] (47.center) to (42.center);
+		\draw [style=KB, in=165, out=-30] (46.center) to (42.center);
+		\draw [style=KB] (0) to (48.center);
+		\draw [style=KB] (50.center) to (49.center);
+		\draw [style=KB] (49.center) to (51.center);
+		\draw [style=KB] (52.center) to (48.center);
+		\draw [style=KB] (48.center) to (53.center);
+		\draw [style=v] (0) to (35.center);
+		\draw [style=v] (54.center) to (55.center);
+		\draw [style=KBv, bend left=90] (56.center) to (57.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

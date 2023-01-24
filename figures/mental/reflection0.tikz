@@ -1,0 +1,34 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (3) at (6, 4) {};
+		\node [style=none] (4) at (6, 2) {};
+		\node [style=dotB] (0) at (0, 0) {};
+		\node [style=none] (1) at (0, 2) {};
+		\node [style=none] (2) at (0, -2) {};
+		\node [style=none] (5) at (-5, 1) {};
+		\node [style=none] (6) at (-7, -1) {};
+		\node [style=none] (7) at (-7, 1) {};
+		\node [style=none] (8) at (-5, -1) {};
+		\node [style=none] (14) at (-4.75, 0) {};
+		\node [style=none] (20) at (3.75, -1.25) {};
+		\node [style=none] (21) at (5.75, -1) {};
+		\node [style=none] (22) at (5, -2) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KB] (2.center)
+			 to [bend right=270, looseness=1.75] (1.center)
+			 to [bend left=90, looseness=1.75] cycle;
+		\draw [style=Fm] (4.center)
+			 to [in=-180, out=180, looseness=1.75] (3.center)
+			 to [bend left=90, looseness=1.75] cycle;
+		\draw [style=Fg] (6.center)
+			 to (8.center)
+			 to (5.center)
+			 to (7.center)
+			 to cycle;
+		\draw [style=Fc] (20.center)
+			 to (21.center)
+			 to (22.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}
