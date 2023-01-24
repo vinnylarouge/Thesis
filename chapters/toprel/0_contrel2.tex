@@ -55,58 +55,9 @@ We denote the product topology of $X^\tau$ and $Y^\sigma$ as $(X \times Y)^{(\ta
     \end{rem}
 }
 
-\subsection{The category \textbf{ContRel}}
+\begin{fullwidth}
 
-\begin{proposition}[\textbf{ContRel} is a category]
-continuous relations form a category $\mathbf{ContRel}$.
-\begin{proof}
-\newthought{Identities:} Identity relations, which are always continuous since the preimage of an open $U$ is itself.
-
-\newthought{Composition:} The normal composition of relations. We verify that the composite $X^\tau \overset{R}{\rightarrow} Y^\sigma \overset{S}{\rightarrow} Z^\theta$ of continuous relations is again continuous as follows:
-\[U \in \theta \implies S^\dag(U) \in \sigma \implies R^\dag \circ S^\dag(U) = (S \circ R)^\dag \in \tau\]
-
-\newthought{Associativity of composition:} Inherited from \textbf{Rel}.
-\end{proof}
-\end{proposition}
-
-\subsection{Symmetric Monoidal structure}
-
-\begin{proposition}
-$(\mathbf{ContRel},\bullet,X^\tau \otimes Y^\sigma := (X \times Y)^{(\tau \times \sigma)})$ is a symmetric monoidal closed category.
-\begin{proof}
-
-\newthought{Tensor Unit:} The one-point space $\bullet$. Explicitly, $\{\star\}$ with topology $\{\varnothing,\{\star\}\}$.
-
-\newthought{Tensor Product:} For objects, $X^\tau \otimes Y^\sigma$ has base set $X \times Y$ equipped with the product topology $\tau \times \sigma$. For morphisms, $R \otimes S$ the product of relations. We show that the tensor of continuous relations is again a continuous relation. Take continuous relations $R: X^\tau \rightarrow Y^\sigma$, $S: A^\alpha \rightarrow B^\beta$, and let $U$ be open in the product topology $(\sigma \times \beta)$. We need to prove that $(R \times S)^\dag(U) \in (\tau \times \alpha)$. We may express $U$ as $\bigcup\limits_{i \in I} y_i \times b_i$, where the $y_i$ and $b_i$ are in the bases $\mathfrak{b}_\sigma$ and $\mathfrak{b}_\beta$ respectively. Since for any relations we have that $R(A \cup B) = R(A) \cup R(B)$ and $(R \times S)^\dag = R^\dag \times S^\dag$:
-\begin{align*}
-&(R \times S)^\dag(\bigcup\limits_{i \in I} y_i \times b_i)\\
- &= \bigcup\limits_{i \in I}(R \times S)^\dag(y_i \times b_i)\\
- &= \bigcup\limits_{i \in I}(R^\dag \times S^\dag)(y_i \times b_i)
- \end{align*}
-Since each $y_i$ is open and $R$ is continuous, $R^\dag(y_i) \in \tau$. Symmetrically, $S^\dag(b_i) \in \alpha$. So each $(R^\dag \times S^\dag)(y_i \times b_i) \in (\tau \times \alpha)$. Topologies are closed under arbitrary union, so we are done.
-
-\newthought{The natural isomorphisms are inherited from \textbf{Rel}}. We will be explicit with the unitor, but for the rest, we will only check that the usual isomorphisms from \textbf{Rel} are continuous in \textbf{ContRel}. To avoid bracket-glut, we will vertically stack some tensored expressions.
-
-\newthought{Unitors:} The left unitors are defined as the relations $\lambda_{X^{\tau}}: \bullet \times X^\tau \rightarrow X^\tau := \{(\begin{pmatrix}\star \\x \end{pmatrix}, x) \ | \ x \in X\}$, and we reverse the pairs to obtain the inverse $\lambda^{-1}_{X^{\tau}}$. These relations are continuous since the product topology of $\tau$ with the singleton is homeomorphic to $\tau$: $U \in \tau \iff (\bullet,U) \in (\bullet \times \tau)$. These relations are evidently inverses that compose to the identity. The construction is symmetric for the right unitors $\rho_{X^{\tau}}$.
-
-\newthought{Associators:}
-The associators $\alpha_{X^{\tau}Y^{\sigma}Z^{\rho}} : ((X \times Y) \times Z)^{((\tau \times \sigma) \times \rho)} \rightarrow (X \times (Y \times Z))^{(\tau \times (\sigma \times \rho))}$ are inherited from \textbf{Rel}. They are:
-\[\alpha_{X^{\tau}Y^{\sigma}Z^{\rho}} := \{\big( \ (\begin{pmatrix} x \\ y \end{pmatrix} , z) \ , \ (x, \begin{pmatrix} y \\ z \end{pmatrix}) \big) \quad | \quad x \in X \ , \ y \in Y \ ,\ z \in Z \}\]
-To check the continuity of the associator, observe that product topologies are isomorphic in \textbf{Top} up to bracketing, and these isomorphisms are inherited by \textbf{ContRel}. The inverse of the associator has the pairs of the relation reversed and is evidently an inverse that composes to the identity.
-
-\newthought{Braids:}
-The braidings $\theta_{X^{\tau}Y^{\sigma}} : (X \times Y)^{\tau \times \sigma} \rightarrow (Y \times X)^{\sigma \times \tau}$ are defined:
-\[\{(\begin{pmatrix} x \\ y \end{pmatrix} \ , \ \begin{pmatrix} y \\ x \end{pmatrix}) \quad | \quad x \in X \ , \ y \in Y  \}\]
-The braidings inherit continuity from the isomorphisms between $X^\tau \times Y^\sigma$ and $Y^\sigma \times X^\tau$ in \textbf{Top}. They inherit everything else from \textbf{Rel}
-
-\newthought{Coherences:}
-Since we have verified all of the natural isomorphisms are continuous, it suffices to say that the coherences [] are inherited from the symmetric monoidal structure of \textbf{Rel} up to marking objects with topologies.
-\end{proof}
-
-\newthought{Monoidal Closure:}
-Here is the evaluator.
-\[placeholder\]
-\end{proposition}
+\section{\textbf{ContRel} diagrammatically}
 
 \subsection{Relations that are always continuous}
 
@@ -130,26 +81,4 @@ Here is the evaluator.
 
 \[\scalebox{0.75}{\tikzfig{bestiary/zerorelations}}\]
 
-\marginnote{
-\begin{defn}[Biproducts and zero objects]
-A \emph{biproduct} is simultaneously a categorical product and coproduct. A \emph{zero object} is both an initial and a terminal object. \textbf{Rel} has biproducts (the coproduct of sets equipped with reversible injections) and a zero object (the empty set).
-\end{defn}
-
-\begin{proposition}
-$\mathbf{ContRel}$ has a zero object.
-\begin{proof}
-As in \textbf{Rel}, there is a unique relation from every object to and from the empty set with the empty topology.
-\end{proof}
-\end{proposition}
-
-\begin{proposition}
-$\mathbf{ContRel}$ has biproducts.
-\begin{proof}
-The biproduct of topologies $X^\tau$ and $Y^\sigma$ is their direct sum topology $(X \sqcup Y)^{(\tau + \sigma)}$ -- the coarsest topology that contains the disjoint union $\tau \sqcup \sigma$. As in \textbf{Rel}, the (in/pro)jections are partial identities, which are continuous by construction. To verify that it is a coproduct, given continuous relations $R: X^\tau \rightarrow Z^\rho$ and $S: Y^\sigma \rightarrow Z^\rho$, where the disjoint union $X \sqcup Y$ of sets is $\{x_1 \ | \ x \in X\} \cup \{y_2 \ | \ y \in Y\}$, we observe that $R + S := \{ (x_1,z) \ | \ (x,z) \in R \} \cup \{ (y_2,z) \ | \ y \in S \}$ is continuous and commutes with the injections as required. The argument that it is a product is symmetric.
-\end{proof}
-\end{proposition}
-
-\begin{remark}
-Biproducts yield another symmetric monoidal structure which the $\times$ monoidal product distributes over appropriately to yield a rig category. Throughout the chapter we have been using $\cup$, but we could have also "diagrammatised" $\cup$ by treating it as a monoid internal to \textbf{ContRel} viewed as a symmetric monoidal category with respect to the biproduct. There are two diagrammatic formalisms for rig categories that we could have used, [] and []. Neither case is perfectly suitable due to the fact that we sometimes took unions over arbitrary indexing sets, which is alright in topology but not depictable as a finite diagram in the $\oplus$-structure. A neat fact that follows is that a topological space is compact precisely when any arbitrarily indexed $\cup$ of tests in the $\times$-structure is \emph{depictable} in the $\oplus$-structure of either diagrammatic calculus for rig categories. \textbf{FdHilb} also has a monoidal product notated $\otimes$ that distributes over the monoidal structure given by biproducts $\oplus$. In contrast, we have used $\times$ -- the cartesian product notation -- for the monoidal product of \textbf{ContRel} since that is closer to what is familiar for sets.
-\end{remark}
-}
+\end{fullwidth}
