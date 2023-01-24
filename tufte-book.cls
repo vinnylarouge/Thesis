@@ -15,7 +15,6 @@
 %%
 % Set up any book-specific stuff now
 
-
 %%
 % The front matter in Tufte's /Beautiful Evidence/ contains everything up
 % to the opening page of Chapter 1.  The running heads, when they appear,
