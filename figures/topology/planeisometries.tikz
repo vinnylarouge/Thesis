@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 2.5) {Isometries of $\mathbf{R}^2$};
+		\node [style=dotw] (1) at (-4.75, 0) {$\gamma$};
+		\node [style=none] (2) at (-5.75, 0) {};
+		\node [style=none] (3) at (-3.75, 0) {};
+		\node [style=none] (4) at (-2.75, 0) {$=$};
+		\node [style=dotw] (5) at (0, 0) {$(\mathbf{x}, \theta,c)$};
+		\node [style=none] (6) at (-1.75, 0) {};
+		\node [style=none] (7) at (1.75, 0) {};
+		\node [style=none] (8) at (4.75, 1) {$\mathbf{x} \in \mathbf{R}^2$};
+		\node [style=none] (9) at (4.75, 0) {$\theta \in S^1 \simeq [0,2\pi)$};
+		\node [style=none] (10) at (4.75, -1) {$c \in \{-1, 1\}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (6.center) to (5);
+		\draw [style=K] (5) to (7.center);
+		\draw [style=K] (2.center) to (1);
+		\draw [style=K] (1) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

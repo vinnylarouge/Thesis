@@ -1,0 +1,40 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (3) at (0, 2.5) {Rigid displacement};
+		\node [style=none] (6) at (-5.75, -0.25) {};
+		\node [style=none] (7) at (-3.75, -0.25) {};
+		\node [style=dotG] (8) at (-4.75, -0.25) {};
+		\node [style=none] (9) at (-2.75, -0.25) {$=$};
+		\node [style=none] (10) at (1.5, 0.75) {$\bigcup\limits_{\textcolor{cyan}{i}}$};
+		\node [style=dotC] (17) at (3.25, 0) {};
+		\node [style=none] (18) at (3.25, 0.75) {};
+		\node [style=none] (19) at (3.25, -0.75) {};
+		\node [style=none] (20) at (2.25, 0) {};
+		\node [style=dotw] (21) at (5, 0) {$(\mathbf{x}, \theta,c)_i$};
+		\node [style=none] (22) at (7, 0) {};
+		\node [style=none] (24) at (2.75, 0) {$i$};
+		\node [style=dotC] (25) at (2.25, -1.25) {};
+		\node [style=none] (26) at (2.25, -0.5) {};
+		\node [style=none] (27) at (2.25, -2) {};
+		\node [style=none] (28) at (3.25, -1.25) {};
+		\node [style=dotw] (29) at (0.25, -1.25) {$(\mathbf{x}, \theta,c)^-_i$};
+		\node [style=none] (30) at (-1.75, -1.25) {};
+		\node [style=none] (31) at (2.75, -1.25) {$i$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (6.center) to (8);
+		\draw [style=K] (8) to (7.center);
+		\draw [style=K] (18.center)
+			 to (19.center)
+			 to (20.center)
+			 to cycle;
+		\draw [style=K] (17) to (21);
+		\draw [style=K] (21) to (22.center);
+		\draw [style=K] (26.center)
+			 to (27.center)
+			 to (28.center)
+			 to cycle;
+		\draw [style=K] (25) to (29);
+		\draw [style=K] (29) to (30.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

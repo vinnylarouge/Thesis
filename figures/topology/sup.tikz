@@ -1,0 +1,111 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (33) at (0, 1.75) {Supremum};
+		\node [style=smalldotb] (34) at (4.5, 0.25) {};
+		\node [style=none] (35) at (2.75, 0.25) {};
+		\node [style=none] (36) at (3.75, 0.75) {};
+		\node [style=none] (37) at (3, 0.25) {};
+		\node [style=none] (38) at (3.75, -0.25) {};
+		\node [style=none] (39) at (3.75, 0.25) {};
+		\node [style=none] (40) at (-8.5, 1.25) {};
+		\node [style=none] (41) at (-9.25, 0.75) {};
+		\node [style=none] (42) at (-8.5, 0.25) {};
+		\node [style=none] (43) at (-8.5, 0.75) {};
+		\node [style=none] (44) at (-7.75, 1.25) {};
+		\node [style=none] (45) at (-7.75, -0.75) {};
+		\node [style=none] (46) at (-6.25, 0.25) {};
+		\node [style=none] (47) at (-7.25, 0.25) {$<$};
+		\node [style=none] (48) at (-7.75, 0.75) {};
+		\node [style=none] (49) at (-7.75, -0.25) {};
+		\node [style=none] (51) at (-7.75, -1.75) {};
+		\node [style=smalldotb] (52) at (-8.5, -1) {};
+		\node [style=none] (53) at (-7.75, -0.25) {};
+		\node [style=none] (54) at (-9.25, -1) {};
+		\node [style=none] (58) at (-6.25, -1.75) {};
+		\node [style=none] (59) at (-5.25, -0.25) {$=$};
+		\node [style=none] (70) at (5.25, 1.25) {};
+		\node [style=none] (71) at (5.25, -0.75) {};
+		\node [style=none] (72) at (6.75, 0.25) {};
+		\node [style=none] (73) at (5.75, 0.25) {$<$};
+		\node [style=none] (74) at (5.25, 0.75) {};
+		\node [style=none] (75) at (5.25, -0.25) {};
+		\node [style=none] (76) at (5.25, -1.75) {};
+		\node [style=smalldotb] (77) at (4.5, -1) {};
+		\node [style=none] (78) at (5.25, -0.25) {};
+		\node [style=none] (79) at (2.75, -1) {};
+		\node [style=none] (80) at (6.75, -1.75) {};
+		\node [style=none] (81) at (4.25, 0.75) {};
+		\node [style=none] (82) at (-9.25, -0.5) {};
+		\node [style=none] (83) at (-9.25, -1.5) {};
+		\node [style=none] (84) at (-10, -1) {};
+		\node [style=none] (85) at (2.75, -0.5) {};
+		\node [style=none] (86) at (2.75, -1.5) {};
+		\node [style=none] (87) at (2, -1) {};
+		\node [style=none] (88) at (-3.5, 0.25) {};
+		\node [style=none] (89) at (-3.5, -0.75) {};
+		\node [style=none] (90) at (-4.25, -0.25) {};
+		\node [style=none] (91) at (-2, -0.25) {};
+		\node [style=none] (92) at (-3.5, -0.25) {};
+		\node [style=none] (93) at (0, -0.25) {$\Rightarrow$};
+		\node [style=none] (94) at (7.75, -0.25) {$=$};
+		\node [style=none] (95) at (9.5, 0.25) {};
+		\node [style=none] (96) at (9.5, -0.75) {};
+		\node [style=none] (97) at (8.75, -0.25) {};
+		\node [style=none] (98) at (11, -0.25) {};
+		\node [style=none] (99) at (9.5, -0.25) {};
+		\node [style=none] (100) at (-0.5, -0.25) {$\textcolor{cyan}{\forall}$};
+		\node [style=none] (101) at (0.5, -0.25) {$\textcolor{magenta}{\forall}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=ggF] (35.center)
+			 to [bend right=90, looseness=1.50] (34.center)
+			 to [bend right=90, looseness=1.50] cycle;
+		\draw [style={K(CF)}] (38.center)
+			 to (36.center)
+			 to (37.center)
+			 to cycle;
+		\draw [style={K(CF)}] (42.center)
+			 to (40.center)
+			 to (41.center)
+			 to cycle;
+		\draw [style=K] (46.center)
+			 to (45.center)
+			 to (44.center)
+			 to cycle;
+		\draw [style=K] (43.center) to (48.center);
+		\draw [style=K, bend left=45] (52) to (53.center);
+		\draw [style=K] (52)
+			 to [bend right=45] (51.center)
+			 to (58.center);
+		\draw [style=K] (54.center) to (52);
+		\draw [style=K] (72.center)
+			 to (71.center)
+			 to (70.center)
+			 to cycle;
+		\draw [style=K, bend left=45] (77) to (78.center);
+		\draw [style=K] (77)
+			 to [bend right=45] (76.center)
+			 to (80.center);
+		\draw [style=K] (79.center) to (77);
+		\draw [style=K, in=-165, out=15, looseness=1.25] (39.center) to (81.center);
+		\draw [style=K, in=-180, out=0] (34) to (74.center);
+		\draw [style={K(Fm)}] (82.center)
+			 to (83.center)
+			 to (84.center)
+			 to cycle;
+		\draw [style={K(Fm)}] (85.center)
+			 to (86.center)
+			 to (87.center)
+			 to cycle;
+		\draw [style={K(Fm)}] (88.center)
+			 to (89.center)
+			 to (90.center)
+			 to cycle;
+		\draw [style=K] (92.center) to (91.center);
+		\draw [style={K(Fm)}] (95.center)
+			 to (96.center)
+			 to (97.center)
+			 to cycle;
+		\draw [style=K] (99.center) to (98.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

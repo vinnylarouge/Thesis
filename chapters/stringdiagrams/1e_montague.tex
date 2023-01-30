@@ -1,0 +1,130 @@
+\section{A brief history of formal linguistics from the categorial perspective}\label{sec:linghist}
+
+\newthought{Summary:} Logical Type Theory in mathematics had a twin sister Categorial Grammar in linguistics, born in the 30s to Ajdukiewicz, raised into the 50s by Bar-Hillel and Lambek. Montague brought formal semantics to the picture via the Lambda-Calculus in the 70s, around the time Category Theory was getting started. The Curry-Howard correspondence between types and logic became Curry-Howard-Lambek to include categories, thus relating the typed lambda-calculus, intuitionistic logic, and cartesian closed categories. Lambek and Moortgat evolved categorial grammar into typelogical grammar; the use of different proof systems as models of grammar, which in turn suggested semantic categories beyond the cartesian closed setting. Alternative semantics in the form of quantum computers were realised by Coecke and Lambek, who together added string diagrams to the correspondence via a \emph{literally} observed correspondence between quantum bell states and reductions in Pregroup Grammar. Sazradeh and Clark enter the collaboration, bringing in Firth's distributional semantics -- which had by the time become computationally practical as the basis of neural methods for word encoding -- to create DisCoCat; a \underline{Dis}tributional, \underline{Co}mpositional and \underline{Cat}egorial framework for language. Mirroring the developmental circumstances of Discourse Representation Theory (itself independently conceived by Kamp and Heim), Coecke suggested promoting DisCoCat as framework for sentences towards a circuit-shaped framework for text -- DisCoCirc. But there remained unanswered questions and ugly spots, and some poor sap had to work out the formal details and clean things up. That poor sap is me.
+
+\subsection{Curry-Howard-Lambek}
+
+\begin{table}[]
+\begin{tabular}{ccc}
+(Typed) Lambda-Calculus & Intuitionistic Logic & Cartesian Closed Categories  \\
+ Types & Propositions & Categories  \\
+ Curry & Howard & Lambek 
+\end{tabular}
+\end{table}
+
+This correspondence means that you can use the lambda-calculus on any family of data organised as a cartesian closed category; this could be strings, or sets and functions, topological shapes with holes, neural nets and finite vectors. So one small benefit of the category-theoretic viewpoint is a formal underpinning for these mild extensions.\\
+
+Describing the bigger benefit requires a bigger picture. 
+
+
+and Lambek and Coecke fully integrated the picture with syntax and categories. So the linguist's trinity may look something like this:
+
+\begin{table}[]
+\begin{tabular}{ccc}
+Computation & Syntax & Semantics \\
+(Typed) Lambda-calculus & Combinatory Categorial Grammar & Cartesian Closed Categories \\
+Montague & Ajdukiewicz & Lambek
+\end{tabular}
+\end{table}
+
+Or this:
+
+\begin{table}[]
+\begin{tabular}{ccc}
+Computation & Syntax & Semantics \\
+(Typed) Lambda-calculus & Pregroup Grammar & Rigid Autonomous Monoidal Categories \\
+Montague & Ajdukiewicz & Lambek
+\end{tabular}
+\end{table}
+
+So here is the story today as far as a linguist may be concerned. We know that Curry-Howard-Lambek- correspondence generalises: if you poke Howard for a grammar that is expressively distinct from a CCG, the type-theory changes, so Lambek gives a different family of semantic categories with different internal logics, and Curry gives you a syntactic composition gadget that differs from the lambda-calculus.
+
+\subsection{What did Montague consider grammar to be?}\label{sec:monty}
+
+\newthought{Summary:} Montague considered grammars to be coloured operads; Montague's "algebras" are (multi-sorted) clones, which are in bijection with (multi-sorted) Lawvere Theories, which are equivalently coloured operads.
+
+\newthought{Montague semantics/grammar as Montague envisioned it is largely contained in two papers} -- \emph{Universal Grammar} \cite{montague1970universal}, and \emph{The Proper Treatment of Quantifiers in English} \cite{montague1973proper} -- both written shortly before his murder in 1971. The methods employed were not \emph{mathematically} novel -- the lambda calculus had been around since [DATE], and Tarski and Carnap had been developing intensional higher-order logics since [] -- but for linguists who, by-and-large, only knew first order predicate logic, these methods were a tour-de-force that solved longstanding problems in formal semantics. Thus, Montague semantics has largely been in the care of linguists rather than mathematicians. This meant sparse opportunity for the ideas to `update' according to mainstream developments in mathematics.\\
+
+\newthought{There is a natural division of Montague's approach into two structural components.} First, the notion of a structure-preserving map from syntax to semantics. Second, the use of a powerful and expressive logic for semantics. We acknowledge the importance of the latter for formal semantic engineering, but here we will focus on just the former. According to Partee [], a formal semanticist, advocate, and torch-bearer for Montague, the chief interest of Montague's approach (as far as his contemporary \emph{linguists} were concerned) lay in the following ideas:
+
+\begin{enumerate}
+\item{Take truth conditions to be the essential data of semantics.}
+\item{
+\begin{enumerate}
+\item{Use lambdas to emulate the structure of syntax...}
+\item{...in a typed system of intensional predicate logic, such that composition is function application.}
+\end{enumerate}}
+\end{enumerate}
+
+I have split the second point to highlight the role of lambdas. This element was the crux of the Montagovian revolution: according to Janssen in a personal communication with Partee from 1994, lambdas were ``...the feature that made compositionality possible at all."
+
+In Section 1 of \emph{Universal Grammar}, Montague's first paragraph establishes common notions of relation and function -- the latter he calls \emph{operation}, to distinguish the $n$-ary case from the unary case which he calls \emph{function}. This is all done with ordinals indexing lists of elements of an arbitrary but fixed set $A$, which leads later on to nested indices and redundancy by repeated mention of $A$. We will try to avoid these issues going forward by eliding some data where there is no confusion, following common modern practice.\\
+
+Next, Montague introduces his notion of \emph{algebra} and \emph{homomorphism}. He separates the data of the carrier set and the generators from the \emph{polynomial operations} that generate the term algebra.
+
+\marginnote{
+\begin{defn}[Generating data of an Algebra]\label{algdata} 
+Let $A$ be the carrier set, and $F_\gamma$ be a set of functions $A^k \rightarrow A$ for some $k \in \mathbb{N}$, indexed by $\gamma \in \Gamma$. Denoted $\langle A, F_\gamma \rangle_{\gamma \in \Gamma}$
+\end{defn}
+
+The following three data are taken to be common among Montague's algebras:
+
+\begin{defn}[Identities]\label{ids} 
+A family of operations populated, for all $n, m \in \mathbb{N}$, $n \leq m$, by an $m$-ary operation $I_{n,m}$, defined on all $m$-tuples as
+
+$$I_{n,m}(a) = a_n$$
+
+where $a_n$ is the $n^{\text{th}}$ entry of the $m$-tuple $a$.
+\end{defn}
+
+
+\begin{defn}[Constants]\label{constants}
+For all elements of the carrier $x \in A$, and all $m \in \mathbb{N}$, a constant operation $C_{x,m}$ defined on all $m$-tuples $a$ as:
+$$C_{x,m}(a) = x$$
+\end{defn}
+
+\begin{defn}[Composition]\label{comp}
+Given an $n$-ary operation $G$, and $n$ instances of $m$-ary operations $H_{1 \leq i \leq n}$, define the composite $G(H_i)_{1 \leq i \leq n}$ to act on $m$-tuples $a$ by:
+
+$$G(H_i)_{1 \leq i \leq n}(a) = G(H_i(a))_{1 \leq i \leq n}$$
+
+\emph{N.B.} the $m$-tuple $a$ is copied $n$ times by the composition. Writing out the right hand side more explicitly:
+
+$$G\bigg( \ \big( \ H_1(a) \ , \ H_2(a) \ , \ \ldots \ , \ H_n(a) \ \big) \  \bigg)$$
+\end{defn}
+
+\begin{defn}[Polynomial Operations]\label{polyop}
+The polynomial operations over an algebra $\langle A, F_\gamma \rangle_{\gamma \in \Gamma}$ are defined to be smallest class $K$ containing all $F_{\gamma \in \Gamma}$, identities, constants, closed under composition.
+\end{defn}
+
+\begin{defn}[Homomorphism of Algebras]\label{homo}
+$h$ is a homomorphism from $\langle A, F_\gamma \rangle_{\gamma \in \Gamma}$ \emph{into} $\langle B, G_\gamma \rangle_{\gamma \in \Delta}$ iff
+\begin{enumerate}
+    \item{$\Gamma = \Delta$ and $\forall \gamma : $}
+    \item{}
+\end{enumerate}
+\end{defn}
+}
+
+Definition \ref{ids} is equivalent to asking for all projections. Definitions \ref{ids} and \ref{comp} together characterise Montagovian algebras as (concrete) clones []. 
+
+
+These are (concrete) clones [] and their homomorphisms. In modern terms, (abstract) clones known to be in bijection with Lawvere theories [] ------- . 
+
+\subsection{On Syntax}
+
+In Section 2, Montague seeks to define a broad conception of `syntax', which he terms a \emph{disambiguated language}. This is a free clone with carrier set $A$, generating operations $F_\gamma$ indexed by $\gamma \in \Gamma$, along with extra decorating information:
+
+\begin{enumerate}
+\item{$(\delta \in) \Delta$ is an (indexing) set of syntactic categories (e.g.~\texttt{NP}, \texttt{V}, etc.). Montague calls this the \emph{set of category indices}. $X_\delta \subseteq A$ form the \emph{basic expressions} of type $\delta$ in the language.}
+\item{a set $S$ assigns types among $\delta \in \Delta$ to the inputs and output of -- not necessarily all -- $F_\gamma$.}
+\item{a special $\delta_0 \in \Delta$ is taken to be the type of declarative sentences.}
+\end{enumerate}
+
+This definition is already considerably progressive. Because there is no condition of disjointness upon the $X_\delta$ -- a view that permits consideration of the same word playing different syntactic roles -- (1) permits the same basic expression $x \in A$ to participate in multiple types $X_\delta \subseteq A$ ($\star$). (2) misses being a normal typing system on several counts. There is no condition requiring all $F_\gamma$ to be typed by $S$, and no condition restricting each $F_\gamma$ to appear at most once: this raises the possibilities that ($\dag$) some operations $F$ go untyped, or that ($\ddag$) some are typed multiply.
+
+Taking a disambiguated language $\mathfrak{U}$ on a carrier set $A$, Montague defines a \emph{language} to be a pair $L := <\mathfrak{U}, R>$, where $R$ is a relation from a subset of the carrier $A$ to a set $\texttt{PE}_L$, the set of \emph{proper expressions} of the language $L$. An admirable purpose of $R$ appears to be to permit the modelling of \emph{syntactic ambiguity}, where multiple elements of the term algebra $\mathfrak{U}$ (corresponding to syntactic derivations) are related to the same `proper language expression'.
+
+However, we see aspects where Montague would have benefited from a more modern mathematical perspective: it appears that his intent was to impose a system of types to constrain composition of operations, but the tools were not available for him. Montague addresses ($\dag$) obliquely, by defining $\texttt{ME}_L$ to be the image in $\texttt{PE}_L$ of $R$ of just those expressions among $A$ that are typed. Nothing appears to guard against ($\ddag$), which causes problems as Montague expresses structural constraints (in the modern view) in terms of constraints on the codomain of an interpreting functor (cf. Montague's notion of \emph{generating} syntactic categories). One consquence, in conjunction with $(\star)$, is that every multiply typed operation $F$ induces a boolean algebra where the typings are the generators and the operations are elementwise in the inputs and output. Worse problems occur, as Montague's clone definition include all projectors, and when defined separately from the typing structure, these projectors may be typed in a way that permits operations that arbitrarily change types, which appears to defeat the purpose. We doubt these artefacts are intentional, so we will interpret Montague assuming his intent was a type-system as we would recognise one today.
+
+By an evident extension of [Prop 3.51] to the typed case, a \emph{disambiguated language} is a multi-sorted Lawvere theory without relations, where the sorts are generated from products of a pointed set $(\Delta, \delta_0 : 1 \rightarrow \Delta)$.

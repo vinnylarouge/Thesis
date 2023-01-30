@@ -1,0 +1,57 @@
+\section{Grounding verbs of cognition}
+
+In this section, we will give \emph{a} spatial semantics for some verbs of cognition, such as to \texttt{see} \texttt{think} and \texttt{want}, in much the same way as a programmer for a video game would encode behaviours of entities, except using process-theoretic means in \textbf{ContRel}. These words are \emph{semantic primes} \citep{}, which are words that occur in every natural language as far as we can tell, and that resist explanation in terms of other words. So we have reason to believe that these words have meanings that are only learnable by being human, and a purely mathematical and canonical definition is out of reach. Nevertheless we can judge for ourselves whether the definitions we provide are good approximations. The running example we will aim for is the sentence \texttt{The cheetah hunts the ostrich}, which we will approximate in stages.\\
+
+\subsection{Capabilities of spatial agents}
+
+If the cheetah \texttt{hunts} the ostrich, it is perhaps entailed that the cheetah \texttt{can catch} the ostrich, as opposed to the cheetah merely \texttt{chasing}. To evaluate \texttt{can catch}, let's first consider just the plausible trajectories of the chasing cheetah and escaping ostrich from the perspective of an outside observer. As an approximation relevant physical factors we should take into consideration are top speeds of the cheetah and ostrich, and their stamina -- how long they can maintain such speeds. We might say that the cheetah \texttt{can catch} the ostrich so long as at some future time, the potential locations of cheetah contains the potential locations of the ostrich as a subset.
+
+\[placeholder\]
+
+\subsection{In which directions do the animals run?}
+
+There are some trajectories licensed by \texttt{can catch} that disagree with intuitions about \texttt{hunting} or \texttt{chasing}. It is pragmatically entailed that the ostrich wishes to run away from the cheetah and the cheetah towards the ostrich -- if the ostrich has a death wish and strolls towards the cheetah, it is not much of a hunt. As an outside observer, we can additionally take into account the momentum of the cheetah and ostrich at each point in time, and restrict the trajectories that constitute a hunt to be just those where the ostrich runs in some range away from the cheetah, and the cheetah heads towards the ostrich.
+
+\[placeholder\]
+
+\subsection{How do the animals run in the directions they run?}
+
+Chase and escape trajectories are notoriously difficult to provide closed form solutions for \citep{}, and is not as if the cheetah and ostrich are solving complex differential equations as they ponder lunch and life. The trajectories are complex to describe from the internal observer, but they are easily obtained by simple local calculations on the parts of the cheetah and ostrich; run towards and run away respectively, which requires some visual data and locally modelling of space for both the cheetah and ostrich. Let's say that the cheetah is constantly \texttt{seeing} the ostrich while chasing it.
+
+\[placeholder\]
+
+So we should find some spatial model we can express on our canvas that part of the mental state of the cheetah expresses the relative positions of itself and the ostrich, obtained from vision. A visual shorthand we are all familiar with for this purpose is the thought bubble, which we may as well draw -- following Lehar's model of vision and locomotion \citep{} -- as a scene in a little hollow in the cheetah's head, with a dot in the centre to represent how the cheetah represents itself in a spatial model of the world.
+
+\[placeholder\]
+(caption) For simplicity, we depict the cheetah as a ball with a hollow. cheetah's representation of the world around lives in a little hollow in its head, the way we depict it. At the centre of the cheetah's representation is a dot that represents the cheetah to itself; the dot is part of the shape that is the rest of the physical cheetah. In $\mathbf{R}^2$, the outside of the ball -- which is the plane minus a dot -- is homeomorphic to the inside of the hollow, which we take to be an open ball minus a dot representing the cheetah in the centre.
+
+\[placeholder\]
+(caption) The homeomorphism preserves topological invariants like touching and containment. Trajectories may be distorted, but that is the natural fishbowl effect of finitely presenting what is in principle infinite space in a finite region.
+
+\[placeholder\]
+The homeomorphism is a partial function with an inverse that, when composed, obtains a partial identity map, restricted to the region of space that is outside the cheetah. The entirety of the cheetah's physical body is invariant under the homeomorphism. The homeomorphism turns maps the whole physical world represented by a sticky-spider a new sticky-spider, where everything apart from the cheetah is inside the cheetah's head.
+
+\[placeholder\]
+(caption) Starting from a sticky-spider that represents the cheetah and the ostrich, we can obtain another sticky spider with extra shapes by hollowing out a cavity in the heads of the cheetah and ostrich, and placing their representations of the world in those hollows.
+
+\[placeholder\]
+(caption) To \texttt{see} is to update a mental representation of the world according to the homeomorphism that maps outside to inside. In the configuration space of a sticky-spider that has shapes for both physical entities and mental representations, this amounts to copying the physical data, passing it through the mental-representation homeomorphisms, and taking the result.
+
+\[placeholder\]
+(caption) As we have drawn it, we may consider the hollow in the cheetah's head a container, and \texttt{seeing the ostrich} as an update. It is really an update in the sense we have discussed in Section \ref{}, as we can verify the get-put equations.
+
+\[placeholder\]
+(caption) So without loss of generality, we can consider just the guitar strings of a configuration space that assigns wires to physical objects, each of which has get and put methods that allows us process-theoretic access to mental data. 
+
+\[placeholder\]
+(caption) So the direction that the cheetah runs can be calculated more explicitly from the relative positions that it represents in its mind.
+
+\[placeholder\]
+(caption) The ostrich may have been in the middle of eating and started running away from the sound of danger without turning to have a good look. The ostrich may merely \texttt{think} that there is rapidly approaching danger of unknown from from some direction. In the head of the ostrich, there may just be an update that introduces a new danger-shape, informed by senses but not obtained by the same faithful mental-representation homeomorphism of \texttt{seeing}.
+
+\[placeholder\]
+(caption) The ostrich's (justified) assumption of danger is an example of configuration spaces changing in the middle of a circuit. The sticky-spider of the mental space of the ostrich has obtained a new shape. To accommodate the new wire corresponding to this shape, we may choose a different retract for the updated configuration space of shapes, or we may simply project away mental representations at the end of the sentence and only keep the physical shapes.
+
+\subsection{Why do the animals run the way they do?}
+
+The aspect of hunting that would be perhaps most difficult to explain to an intelligent nonhuman is the nature of intentions of hunters and hunted. We humans will happily ascribe intentions and narrative to moving shapes \citep{}.

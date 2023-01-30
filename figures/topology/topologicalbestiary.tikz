@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-5, 2) {$U$ is \emph{a part of} $V$};
+		\node [style=none] (4) at (-6.25, 0.5) {};
+		\node [style=none] (5) at (-6.25, -1) {};
+		\node [style=none] (6) at (-6.25, -0.25) {};
+		\node [style=dotw] (7) at (-5.85, -0.25) {$U$};
+		\node [style=smalldotb] (8) at (-7, -1) {};
+		\node [style=none] (9) at (-6.25, -1.75) {};
+		\node [style=none] (10) at (-8, -1) {};
+		\node [style=none] (11) at (-6.25, -1.25) {};
+		\node [style=none] (12) at (-6.25, -2.25) {};
+		\node [style=none] (13) at (-6, -1.75) {$V$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=kF] (5.center)
+			 to (4.center)
+			 to [bend left=90, looseness=1.75] cycle;
+		\draw [style=K, in=-180, out=75] (8) to (6.center);
+		\draw [style=K, in=180, out=-75] (8) to (9.center);
+		\draw [style=K] (10.center) to (8);
+		\draw [style=K, bend left=90, looseness=2.00] (11.center) to (12.center);
+		\draw [style=K] (11.center) to (12.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

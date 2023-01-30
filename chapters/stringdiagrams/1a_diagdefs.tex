@@ -1,0 +1,65 @@
+\section{Defining String Diagrams}
+
+\subsection{Symmetric Monoidal Categories}
+
+\begin{defn}[Category]
+A \emph{category} $\mathcal{C}$ consists of the following data
+\begin{itemize}
+\item{A collection $\text{Ob}(\mathcal{C})$ of \emph{objects}}
+\item{For every pair of objects $a,b \in \text{Ob}(\mathcal{C})$, a set $\mathcal{C}(a,b)$ of \emph{morphisms} from $a$ to $b$.}
+\item{Every object $a \in \text{Ob}(\mathcal{C})$ has a specified morphism $1_a$ in $\mathcal{C}(a,a)$ called \emph{the identity morphism} on $a$.}
+\item{Every triple of objects $a,b,c \in \text{Ob}(\mathcal{C})$, and every pair of morphisms $f \in \mathcal{C}(a,b)$ and $g \in \mathcal{C}(b,c)$ has a specified morphism $(f;g) \in \mathcal{C}(a,c)$ called \emph{the composite} of $f$ and $g$.}
+\end{itemize}
+This data has to satisfy two coherence conditions, which are:
+
+\newthought{Unitality:} For any morphism $f: a \rightarrow b$, $1_a;f = f = f;1_b$
+
+\newthought{Associativity:} For any four objects $a,b,c,d$ and three morphisms $f: a \rightarrow b$, $g: b \rightarrow c$, $h: c \rightarrow d$, $(f;g);h = f;(g;h)$
+\end{defn}
+
+\begin{defn}[Categorical Product]
+
+\end{defn}
+
+\begin{example}[Cartesian product of sets]
+
+\end{example}
+
+\begin{defn}[Functor]
+
+\end{defn}
+
+\begin{defn}[Natural Transformation]
+
+\end{defn}
+
+\begin{defn}[$(1-)\mathbf{Cat}$]
+
+\end{defn}
+
+\begin{example}[Monoids in \textbf{Set}]
+
+\end{example}
+
+\begin{defn}[Monoidal Category]
+
+\end{defn}
+
+\begin{defn}[Symmetric Monoidal Category]
+
+\end{defn}
+
+\begin{theorem}[Strictification]
+
+\end{theorem}
+
+\begin{theorem}[Graphical?]
+
+\end{theorem}
+
+\subsection{PROPs}
+
+PROP stands for "\textbf{PRO}duct and \textbf{P}ermutations category", but it may as well be an acryonym for "\textbf{P}icture \textbf{R}ules \textbf{Of} \textbf{P}rocesses".
+
+\subsection{1-object 4-categories}
+

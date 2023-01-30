@@ -1,0 +1,88 @@
+\section{Text circuits}\label{sec:circs}  
+
+%\bR A \emph{text circuit} is made up of \emph{gates}\e\TODOb{Not exactly true, because of holes.} -- which represent non-noun words -- which in turn are boxes with input and output wires that represent nouns. \bR The mathematical structure at play is a \textbf{Symmetric Monoidal Category, where all generating morphisms are endomorphisms}\e.\TODOb{That's not at all true, because of the holes.} 
+
+
+\subsection{Definition}
+
+Our \emph{text circuits} are made up of three ingredients:
+\begin{itemize}
+\item wires
+\item boxes, or gates
+\item boxes with holes that fit a box, or 2nd order gates
+\end{itemize}
+Firstly, nouns are represented by wires, each `distinct' noun having its own wire:
+\[
+\tikzfig{textcirc/nounwiresABN} 
+\]
+We represent adjectives, intransitive verbs, and transitive verbs by gates acting on noun-wires: 
+\[
+\tikzfig{textcirc/ADJgate} \quad\quad\quad \tikzfig{textcirc/IVgate} \quad\quad\quad \tikzfig{textcirc/TVgate}
+\]
+Since a transitive verb has both a subject and an object  noun, that will then be two noun-wires, while adjectives and intransitive verbs only have one. 
+
+Adverbs, which modify verbs, we represent as boxes with holes in them, with a number of dangling wires in the hole indicating the shape of gate expected, and these should match the input- and output-wires  of the box with the whole:
+\[
+\tikzfig{textcirc/ADVbox}
+\]
+Similarly, adpositions also modify verbs, by moreover adding another noun-wire to the right:
+\[
+\tikzfig{textcirc/ADPIVbox}
+\]
+For verbs that take sentential complements and conjunctions, we have families of boxes to accommodate input circuits of all sizes. They add another noun-wire to the left of a circuit:\footnote{The `dot dot dot' notation within boxes is graphically formal \cite{wilson_string_2022}. Interpretations of such boxes were earlier formalised in \cite{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}.}
+\[
+\tikzfig{textcirc/SCVbox}
+\]
+while conjunctions are boxes that take two circuits which might share labels on some wires:
+%\TODOj{This bit about CNJ boxes needs rejigging to be consistent with our current treatment}
+\[
+\tikzfig{textcirc/CNJbox2}
+\]
+As special cases, when the noun-wires of two circuits are disjoint (left), or coincide (right), conjunctions are depicted as follows:
+\[
+\tikzfig{textcirc/CNJbox} \qquad\qquad\qquad\qquad \tikzfig{textcirc/CNJbox3}
+\]
+
+Of course filled up boxes are just gates
+%\COMMv{the business with empty wire being "exists" is actually necessary in order for this claim to be true.}\TODOb{Don't understand.}
+\[
+\tikzfig{textcirc/ADPIVgate}
+\]
+and we will now discuss how those compose. Gates compose sequentially by matching labels on some of their noun-wires and in parallel when they share no noun-wires,  to give \underline{text circuits}, which by convention we read from top-to-bottom:  
+\[
+\tikzfig{textcirc/gatecompex1}  
+\]
+
+\begin{convention}\label{conv:sliding}
+Sometimes we allow wires to twist past each other, and we consider two circuits the same if their gate-connectivity is the same:
+\[
+\tikzfig{textcirc/gatecompex1} \quad\quad = \quad\quad \tikzfig{textcirc/gatecompex2}
+\]
+Since only gate-connectivity matters, we consider circuits the same if all that differs is the horizontal positioning of gates composed in parallel:
+\[
+\tikzfig{textcirc/gateeqslide} 
+\]
+We do care about output-to-input connectivity, so in particular, we {\bR\bf do not\e}
+consider circuits to be equal up to sequentially composed gates commuting past each other:  
+\[
+\tikzfig{textcirc/gateneqcommute}  
+\]
+\end{convention}
+
+\begin{example}  
+The sentence \texttt{\underline{ALICE SEES BOB LIKES FLOWERS THAT CLAIRE PICKS}} can intuitively be given the following text circuit:
+%\TODOb{This should probably be done in two  or even three steps: (1) BOB LIKES FLOWERS (2) ... THAT CLARE PICKS (3) ALICE SEES ...}
+\[
+\tikzfig{textcirc/multigateholeex}
+\]
+\end{example}
+
+\begin{example}
+Figure \ref{fig:circuitgen} illustrates how to directly generate text circuits, by providing an example analogous to the text generated in Figure \ref{fig:comic1} where we used our hybrid grammar.
+\begin{figure}[h!]
+    \centering
+    \scalebox{1}{\tikzfig{textcirc/circuitgen}}
+    \caption{Generating text circuits directly.}
+    \label{fig:circuitgen}
+\end{figure}
+\end{example}

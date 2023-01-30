@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (0, 2) {};
+		\node [style=none] (1) at (-2.5, -0.5) {};
+		\node [style=none] (2) at (2.5, -0.5) {};
+		\node [style=none] (3) at (0.75, -1) {$\texttt{\underline{SRP}}$};
+		\node [style=none] (4) at (2, -1) {$\cdots$};
+		\node [style=none] (5) at (-1.75, -1) {$\cdots$};
+		\node [style=none] (6) at (-0.75, -1) {$\texttt{\underline{N}}$};
+		\node [style=none] (7) at (0.75, -1.5) {};
+		\node [style=none] (8) at (-0.75, -1.5) {};
+		\node [style=none] (9) at (-1, 0) {$\texttt{S}_1$};
+		\node [style=none] (10) at (1, 0) {$\texttt{S}_2$};
+		\node [style=none] (11) at (1, 1) {};
+		\node [style=none] (12) at (-1, 1) {};
+		\node [style=none] (13) at (0, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=K] (0.center) to (2.center);
+		\draw [style=K] (0.center) to (1.center);
+		\draw [style=K] (1.center) to (2.center);
+		\draw [style=Kv, bend left=90] (7.center) to (8.center);
+		\draw [style=K] (12.center) to (13.center);
+		\draw [style=K] (13.center) to (11.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
