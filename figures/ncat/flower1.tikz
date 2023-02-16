@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (1) at (-0.25, 0.75) {};
+		\node [style=none] (2) at (-0.75, 0.25) {};
+		\node [style=none] (3) at (0.25, -0.75) {};
+		\node [style=none] (4) at (0.75, -0.25) {};
+		\node [style=none] (5) at (0.25, 0.75) {};
+		\node [style=none] (6) at (0.75, 0.25) {};
+		\node [style=none] (7) at (-0.25, -0.75) {};
+		\node [style=none] (8) at (-0.75, -0.25) {};
+		\node [style=none] (9) at (-1.5, 1.5) {$\varepsilon$};
+		\node [style=none] (10) at (1.5, 1.5) {$\textcolor{green}{\alpha}$};
+		\node [style=none] (11) at (1.5, -1.5) {$\textcolor{orange}{\beta}$};
+		\node [style=none] (12) at (-1.5, -1.5) {$\textcolor{cyan}{\gamma}$};
+		\node [style=dotb] (13) at (0, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=v, bend left=120, looseness=5.75] (2.center) to (1.center);
+		\draw [style=Gv, bend left=120, looseness=5.75] (5.center) to (6.center);
+		\draw [style=Bv, bend left=120, looseness=5.75] (7.center) to (8.center);
+		\draw [style=Ov, bend left=120, looseness=5.50] (4.center) to (3.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

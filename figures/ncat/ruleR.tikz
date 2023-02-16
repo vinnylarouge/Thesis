@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1, 1) {};
+		\node [style=none] (1) at (-1, -1) {};
+		\node [style=none] (2) at (1, -1) {};
+		\node [style=none] (3) at (1, 1) {};
+		\node [style=none] (5) at (0, 1.5) {(2-cell)};
+		\node [style=none] (6) at (0, -1.5) {$\textcolor{magenta}{R}$};
+		\node [style=none] (7) at (-1, 0) {};
+		\node [style=none] (8) at (1, 0.5) {};
+		\node [style=none] (9) at (1, -0.5) {};
+		\node [style=dotM] (10) at (0, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=H] (1.center)
+			 to (0.center)
+			 to (3.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=KG] (7.center) to (10);
+		\draw [style=KO, in=-180, out=60] (10) to (8.center);
+		\draw [style=KB, in=180, out=-60] (10) to (9.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

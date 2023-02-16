@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dotG] (0) at (-2, 0) {};
+		\node [style=dotB] (1) at (-1, 0) {};
+		\node [style=dotB] (2) at (0, 0) {};
+		\node [style=dotO] (3) at (1, 0) {};
+		\node [style=none] (4) at (-3, 0) {};
+		\node [style=none] (5) at (2, 0) {};
+		\node [style=none] (6) at (-2, 0.75) {$\textcolor{green}{\alpha}$};
+		\node [style=none] (7) at (1, 0.75) {$\textcolor{orange}{\beta}$};
+		\node [style=none] (8) at (-1, 0.75) {$\textcolor{cyan}{\gamma}$};
+		\node [style=none] (9) at (0, 0.75) {$\textcolor{cyan}{\gamma}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (4.center) to (0);
+		\draw [style=K] (0) to (1);
+		\draw [style=K] (1) to (2);
+		\draw [style=K] (2) to (3);
+		\draw [style=K] (3) to (5.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
