@@ -1,30 +1,40 @@
+\begin{fullwidth}
+
 \section{How do we communicate?}
 
-\newthought{Speakers and listeners understand one another.} As far as formal theories of syntax and semantics go, this is a miracle. It remains so even if we cautiously hedge this mundane statement to exclude pragmatics and context and only encompass small and boring fragments of factual language.\\
+\newthought{Speakers and listeners understand one another.} This basic fact is an everyday miracle that any formal theory that encompasses syntax and semantics must account for. The miracle remains so even if we cautiously hedge to exclude pragmatics and context and only encompass small and boring fragments of factual language. Here is a diagram that demonstrates mathematically how the miracle works.
 
-In short: there is a distinction between \emph{grammars of the speaker} -- which produce sentences -- and \emph{grammars of the listener} -- which deduce sentences. Viewed as mathematical processes, the two kinds of grammars go in opposite directions; speaking grammars [e.g. string-rewrite systems] start with some structure, and require informational input [e.g. which rule comes next] to produce sentences; listening grammars [e.g. typelogical grammars] start with a sentence, and require informational input [e.g. grammatical typing and which proof rule to try next] to deduce a grammatical structure. Since we can understand each other, these two types of grammar must enjoy a systematic correspondence. The correspondence looks something like this:\\
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/bigexaltogether}}\]
 
-\[placeholder\]
+I will briefly go on the offense. In my view, that picture is the only honest standard of what counts as a combined theory of syntax and semantics, if one accepts the following three commitments.
 
-In this section I will elaborate on the above argument, and provide the first steps of a formal mathematical framework to present and organise the nature of this correspondence. This framework comes from the idea that speakers and listeners may use language as a vehicle to communicate thought; from this formal framework, we detect that the intermediate structure -- that which is being communicated -- leads us to the idea of text circuits.\\
+\begin{enumerate}
+\item{At some level, semantics is compositional, and syntax directs this composition.}
+\item{Speakers produce sentences, and listeners parse sentences.}
+\item{Speakers and listeners understand each other, insofar as the compositional structure of their semantic representations are isomorphic.}
+\end{enumerate}
 
-The empirical observation that speakers and listeners can communicate is a trivial one; any account of language that does not take this interactive and procedural aspect into account is arguably lacking. Text circuit theory aims to provide the beginnings of an theory of language that accounts for not just this...
+If that is unobjectionable, then to the best of my knowledge, that picture is \emph{only} account of both syntax and semantics worth anything.\\
 
-\subsection{Speaking grammars, listening grammars}
+Generative and typelogical grammars or Montague semantics alone are simply insufficient to account for the interaction of syntax and semantics; for every generative grammar one must also provide a corresponding parsing grammar and an underlying semantic "deep structure" that both grammars agree on. In other disappointing news, a theory of grammar or semantics alone is a 'theory' of language at best on par with an LLM.\\
+
+So we must investigate how these theories cohere. It is not enough to talk of "weak equivalence" between grammar formalisms in terms of sets of sentences. That talk is mathematically interesting but pointless when it comes to explaining syntax and semantics together, because merely stating that, e.g. pregroup grammars and context-free grammars can generate the same sentences [] only admits the possibility that a speaker using a context-free grammar and a listener using a pregroup grammar can understand each other, without providing any explanation how. For the same reason, it is also pointless to speak of "strong equivalence" between theories of syntax that seeks equivalence at a structural level, unless there is also some notion of how that structure directs the composition of semantics.\\
+
+But it is not enough to just talk of homomorphisms between a single theory of syntax and some semantics, unless one thinks that language is a solipsistic exercise where meaningful utterances are drawn from the void or produced for nobody. All of that may be mathematically interesting and well-studied, but none of it can account for the stupidly simple empirical fact that speakers and listeners understand one another. So we may keep all of it around, but not under the pretense that it has anything to do with how language qua communication works.\\
+
+To make sense of language as communication, we need a coherent story involving two theories of syntax -- one for the speaker and one for the listener -- such that their structures yield isomorphic semantics. In this section I will provide the first steps of a formal mathematical framework to present and organise the nature of this correspondence.
+
+\subsection{Grammars of speakers and listeners}
+
+There is a distinction between \emph{grammars of the speaker} -- which produce sentences -- and \emph{grammars of the listener} -- which deduce sentences. Viewed as mathematical processes, the two kinds of grammars go in opposite directions; speaking grammars (e.g. string-rewrite systems) start with some grammatical structure, and require informational input (e.g. which rule comes next) to produce sentences; listening grammars (e.g. typelogical grammars) start with a sentence, and require informational input (e.g. grammatical typing and which proof rule to try next) to deduce or parse a grammatical structure. Since we can understand each other, these two types of grammar must enjoy a systematic correspondence, and if one believes that semantics is compositional according to syntax, then the correspondence must further explain how both speaking and listening grammars manipulate the same underlying semantic expression.\\
 
 Here are some na\"{i}ve observations on the nature of speaking and listening. Let's suppose that a speaker, Preube, wants to communicate a thought to Fondo. Just as a running example that does not affect the point, let's say we can gloss the thought as carrying the relations:\\
 
 (alice, bob, flowers, like, give)\\
 
-Preube and Fondo cooperate to achieve a minor miracle; Preube encodes his thoughts -- a structure that doesn't look like a one-dimensional string of symbols -- into a one-dimensional string of symbols, and Fondo does the reverse, turning a one-dimensional string of symbols into \emph{a thought-structure like that of Preube's.}\marginnote{What I mean by this is just that both Preube and Fondo agree on the structure of entities and relations up to the words for those entities and relations. For example, Preube could ask Fondo comprehension questions such as \texttt{WHO GAVE WHAT? TO WHO?}, and if Fondo can always correctly answer -- e.g. \texttt{BOB GAVE FLOWERS. TO CLAIRE.} -- then both Preube and Fondo agree on the relational structure of the communicated thought to the extent permitted by language. It may still be that Preube and Fondo have radically different internal conceptions of what \texttt{FLOWERS} or \texttt{GIVING} or \texttt{BEETLES IN BOXES} are, but that is alright: we only care that the \emph{interacting structure} of the thought-relations are the same, not their specific representations.} The two can do this for infinitely many thoughts, and new thoughts neither have encountered before.\\
+Preube and Fondo cooperate to achieve the miracle; Preube encodes his thoughts -- a structure that doesn't look like a one-dimensional string of symbols -- into a one-dimensional string of symbols, and Fondo does the reverse, turning a one-dimensional string of symbols into \emph{a thought-structure like that of Preube's.} What I mean by "like that of Fondo's" is that both Preube and Fondo agree on the structure of entities and relations up to the words for those entities and relations. For example, Preube could ask Fondo comprehension questions such as \texttt{WHO GAVE WHAT? TO WHO?}, and if Fondo can always correctly answer -- e.g. \texttt{BOB GAVE FLOWERS. TO CLAIRE.} -- then both Preube and Fondo agree on the relational structure of the communicated thought to the extent permitted by language. It may still be that Preube and Fondo have radically different internal conceptions of what \texttt{FLOWERS} or \texttt{GIVING} or \texttt{BEETLES IN BOXES} are, but that is alright: we only care that the \emph{interacting structure} of the thought-relations are the same, not their specific representations. The two can do this for infinitely many thoughts, and new thoughts neither have encountered before. We assume Preube and Fondo speak the same language, so both know how words in their language correspond to putative building blocks of thoughts, and how the order of words in sentences and special grammatical words affect the (de/re)construction procedures.\\
 
-\[placeholder\]\\
-
-We assume Preube and Fondo speak the same language, so both know how words in their language correspond to putative building blocks of thoughts, and how the order of words in sentences and special grammatical words affect the (de/re)construction procedures.
-
-\[placeholder\]\\
-
-The nature of the problem can be summarised as an asymmetry of information. The speaker knows the structure of a thought and has to make choices to turn that thought into text. The listener knows only the text, and must make choices to deduce the thought behind it. By this perspective, language is a shared and cooperative strategy to solve this (de/en)coding interaction. I will now outline the constraints imposed by this interaction, and then explain how context-free grammars and typelogical grammars partially model these constraints.
+Now the nature of their challenge can be summarised as an asymmetry of information. The speaker knows the structure of a thought and has to supply information or computation in the form of choices to turn that thought into text. The listener knows only the text, and must supply information or computation to deduce the thought behind it. By this perspective, language is a shared and cooperative strategy to solve this (de/en)coding interaction. I will now outline the constraints imposed by this interaction, and then explain how context-free grammars and typelogical grammars partially model these constraints.
 
 \newthought{Speakers choose.} The speaker Preube must supply decisions about phrasing a thought in the process of speaking it. At some point at the beginning of an utterance, Preube has a thought but has not yet decided how to say it. Finding a particular phrasing requires choices to be made, because there are many ways to express even simple relational thoughts. For example, the relational content of our running example might be expressed as 
 
@@ -36,32 +46,11 @@ Whether those decisions are made by committee or coinflips, those decisions repr
 
 \[placeholder\]\\
 
-For this reason, we consider context-free-grammars (and more generally, other string-rewrite systems) to be \emph{Grammars of the speaker}. The start symbol $S$ is incrementally expanded and determined by rule-applications that are selected by the speaker. The important aspect here is that the speaker has an initial state of information $S$ that requires more information as input in order to arrive at the final sentence.
+For this reason, we consider context-free-grammars (and more generally, other string-rewrite systems) to be \emph{grammars of the speaker}. The start symbol $S$ is incrementally expanded and determined by rule-applications that are selected by the speaker. The important aspect here is that the speaker has an initial state of information $S$ that requires more information as input in order to arrive at the final sentence. I note here that the concept of grammars of the speaker are not exhausted by string-rewrite systems, merely that string-rewrite systems are a prototype that illustrate the concept well.
 
 \newthought{Listeners deduce.} The listener Fondo must supply decisions about which words are grammatically related, and how. Like right-of-way in driving, sometimes these decisions are settled by convention, for example, subject-verb-object order in English. Sometimes sophisticated decisions need to be made that override or are orthogonal to conventions, and we give two examples.
 
-\marginnote[-15cm]{
-It is worth noting that in practice, neither grammar nor meaning strictly determines the other. Clearly there are cases where grammar supercedes: when Fondo hears \texttt{man bites dog}, despite his prior prejudices and associations about which animal is more likely to be biting, he knows that the \texttt{man} is doing the biting and the \texttt{dog} is getting bitten. Going the other way, there are many cases in which the meaning of a subphrase affects grammatical acceptability and structure.
 
-\begin{example}[Exclamations: how meaning affects grammar]
-The following examples from [Lakofflecture] illustrate how whether a phrase is an \emph{exclamation} affects what kinds of grammatical constructions are acceptable. By this argument, to know whether something is an exclamation in context is an aspect of meaning, so we have cases where meaning determines grammar. Observe first that the following three phrases are all grammatically acceptable and mean the same thing.
-\[\texttt{\textcolor{blue}{nobody knows} how many beers Bob drinks}\]
-\[\texttt{\textcolor{blue}{who knows} how many beers Bob drinks}\]
-\[\texttt{\textcolor{blue}{God knows} how many beers Bob drinks}\]
-The latter two are distinguished when \texttt{God knows} and \texttt{who knows} are exclamations. First, the modularity of grammar and meaning may not match when an exclamation is involved. For example, negating the blue text, we obtain:
-\[\texttt{\textcolor{blue}{somebody knows} how many beers Bob drinks}\]
-\[\texttt{\textcolor{blue}{who doesn't know} how many beers Bob drinks}\]
-\[\texttt{\textcolor{purple}{God doesn't} know how many beers Bob drinks}\]
-The first two are acceptable, but mean different things; the latter means to say that everyone knows how many beers Bob drinks, which is stronger than the former. The last sentence is awkward: unlike in the first two cases, the quantified variable in the (gloss) $\cdots \neg \exists x_{Person} \cdots$ of \texttt{God knows} is lost, and what is left is a literal reading $\cdots \neg \texttt{knows}(\texttt{God},\cdots) \cdots$.
-Second, whether a sentence is grammatically acceptable may depend on whether an exclamation is involved. \texttt{\textcolor{blue}{God knows}} and \texttt{\textcolor{blue}{who knows}} can be shuffled into the sentence to behave as an intensifier as in:
-\[\texttt{Bob drinks \textcolor{blue}{God knows} how many beers}\]
-\[\texttt{Bob drinks \textcolor{blue}{who knows} how many beers}\]
-But it is awkward to have:
-\[\texttt{Bob drank \textcolor{purple}{nobody knows} how many beers}\]
-And it is not acceptable to have:
-\[\texttt{Bob drank \textcolor{red}{Alice knows} how many beers}\]
-\end{example}
-}
 
 \begin{example}[Garden path sentences]
 So-called "garden path" sentences illustrate that listeners have to make choices to resolve lexical ambiguities. One such garden-path sentence is \texttt{The old man the boat}, where typically readers take \texttt{The old man} as a noun-phrase and \texttt{the boat} as another noun-phrase. We can sketch how the readers might think with a (failed) pregroup grammar derivation:
@@ -94,13 +83,13 @@ So the reader has to backtrack, taking \texttt{The old} as a noun-phrase and \te
 \DisplayProof
 \]
 
-Garden-path sentences illustrate that listeners must make choices about what grammatical roles to assign words. We make these kinds of contextual decisions all the time with lexically ambiguous words or languages with many homophones; garden-path sentences are special in that they trick the default choices badly enough that the mental effort for correction is noticeable.
+Garden-path sentences illustrate that listeners must make choices about what grammatical roles to assign words. We make these kinds of contextual decisions all the time with lexically ambiguous words or highly homophonic languages like Mandarin; garden-path sentences are special in that they trick the default choices badly enough that the mental effort for correction is noticeable.
 \end{example}
 
 \begin{example}[Ambiguous scoping]
 Consider the following sentence:
 \[\texttt{Everyone loves someone}\]
-The sentence is secretly (at least) two, corresponding to two possible parses. The usual reading is (glossed) $\forall x \exists y : \texttt{loves}(x,y)$. The odd reading is $\exists y \forall x : \texttt{loves}(x,y)$: a Raymond situation where there is a single person loved by everyone. We can sketch this difference formally using a simple combinatory categorial grammar.
+The sentence is secretly (at least) two, corresponding to two possible parses. The usual reading is (glossed) $\forall x \exists y : \texttt{loves}(x,y)$. The odd reading is $\exists y \forall x : \texttt{loves}(x,y)$: a situation where there is a single person loved by everyone. We can sketch this difference formally using a simple combinatory categorial grammar.
 
 \[
 \AxiomC{$\texttt{everyone} : (n \multimap s) \multimap s$}
@@ -120,7 +109,7 @@ The sentence is secretly (at least) two, corresponding to two possible parses. T
 \DisplayProof
 \]
 
-CCGs have functorial semantics in any cartesian closed category, such as one where morphisms are terms in the lambda calculus and composition is substitution []. So we might specify a semantics as follows:
+CCGs have functorial semantics in any cartesian closed category, such as one where morphisms are terms in the lambda calculus and composition is substitution. So we might specify a semantics as follows:
 
 \begin{align}
 [\![ \texttt{everyone} ]\!] = \lambda (\lambda x . V(x)) . \forall x : V(x) \\
@@ -150,9 +139,7 @@ Now we can plug-in these interpretations to obtain the two different meanings. W
 
 \end{example}
 
-\newthought{The speaker's choices and the listener's deductions must be related.} Even if the pair are cooperating, so that the speaker tries to avoid ambiguity, 
-
-\begin{fullwidth}
+\newthought{The speaker's choices and the listener's deductions must be related.} The way the speaker decomposes the thought into words in text in the speaker's grammar must allow the listener to reconstruct the thought in the listener's grammar.
 
 \subsection{Relating the generative grammar to a pregroup grammar via a discrete monoidal fibration}
 We merge the monoidal functor-boxes and we slide the bottom edge down using the fibration.
@@ -278,6 +265,29 @@ The diagrammatic motivation for the additional coherence equations is that -- if
 
 \subsection{Discrete monoidal fibrations for grammatical functions}
 
-\[\scalebox{0.1}{\tikzfig{tree2gate/workedexample/bigexaltogether}}\]
+\subsection{Discussion}
+
+\newthought{It is worth noting that in practice, neither grammar nor meaning strictly determines the other.} Clearly there are cases where grammar supercedes: when Fondo hears \texttt{man bites dog}, despite his prior prejudices and associations about which animal is more likely to be biting, he knows that the \texttt{man} is doing the biting and the \texttt{dog} is getting bitten. Going the other way, there are many cases in which the meaning of a subphrase affects grammatical acceptability and structure.
+
+\begin{example}[Exclamations: how meaning affects grammar]
+The following examples from [Lakofflecture] illustrate how whether a phrase is an \emph{exclamation} affects what kinds of grammatical constructions are acceptable. By this argument, to know whether something is an exclamation in context is an aspect of meaning, so we have cases where meaning determines grammar. Observe first that the following three phrases are all grammatically acceptable and mean the same thing.
+\[\texttt{\textcolor{blue}{nobody knows} how many beers Bob drinks}\]
+\[\texttt{\textcolor{blue}{who knows} how many beers Bob drinks}\]
+\[\texttt{\textcolor{blue}{God knows} how many beers Bob drinks}\]
+The latter two are distinguished when \texttt{God knows} and \texttt{who knows} are exclamations. First, the modularity of grammar and meaning may not match when an exclamation is involved. For example, negating the blue text, we obtain:
+\[\texttt{\textcolor{blue}{somebody knows} how many beers Bob drinks}\]
+\[\texttt{\textcolor{blue}{who doesn't know} how many beers Bob drinks}\]
+\[\texttt{\textcolor{purple}{God doesn't} know how many beers Bob drinks}\]
+The first two are acceptable, but mean different things; the latter means to say that everyone knows how many beers Bob drinks, which is stronger than the former. The last sentence is awkward: unlike in the first two cases, the quantified variable in the (gloss) $\cdots \neg \exists x_{Person} \cdots$ of \texttt{God knows} is lost, and what is left is a literal reading $\cdots \neg \texttt{knows}(\texttt{God},\cdots) \cdots$.
+Second, whether a sentence is grammatically acceptable may depend on whether an exclamation is involved. \texttt{\textcolor{blue}{God knows}} and \texttt{\textcolor{blue}{who knows}} can be shuffled into the sentence to behave as an intensifier as in:
+\[\texttt{Bob drinks \textcolor{blue}{God knows} how many beers}\]
+\[\texttt{Bob drinks \textcolor{blue}{who knows} how many beers}\]
+But it is awkward to have:
+\[\texttt{Bob drank \textcolor{purple}{nobody knows} how many beers}\]
+And it is not acceptable to have:
+\[\texttt{Bob drank \textcolor{red}{Alice knows} how many beers}\]
+\end{example}
+
+
 
 \end{fullwidth}
