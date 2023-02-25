@@ -1,0 +1,43 @@
+\begin{tikzpicture}
+\definecolor{generator-13-5-0-pos}{RGB}{192, 57, 43}
+\definecolor{generator-9-4-0-pos}{RGB}{142, 68, 173}
+\definecolor{generator-1-4-0-pos}{RGB}{192, 57, 43}
+\definecolor{generator-5-5-0-pos}{RGB}{241, 196, 15}
+\definecolor{generator-6-5-0-pos}{RGB}{243, 156, 18}
+\definecolor{generator-12-5-0-pos}{RGB}{142, 68, 173}
+\definecolor{generator-8-5-0-pos}{RGB}{192, 57, 43}
+\definecolor{generator-4-5-0-pos}{RGB}{39, 174, 96}
+\definecolor{generator-11-5-0-pos}{RGB}{142, 68, 173}
+\definecolor{generator-0-0-0-pos}{RGB}{246, 245, 244}
+\definecolor{generator-3-5-0-pos}{RGB}{255, 0, 0}
+\definecolor{generator-2-4-0-pos}{RGB}{41, 128, 185}
+\begin{scope}
+% Background surfaces
+\fill[generator-0-0-0-pos] (0,-0) -- (0,-17) -- (32,-17) -- (32,-0) -- (0,-0);
+% Wire layers
+\draw[color=generator-9-4-0-pos, line width=5pt](15,-10) .. controls (15.8,-10) and (16,-9.6) .. (16,-9) .. controls (16,-7.8) and (16.2,-7) .. (17,-7)(23,-12) .. controls (23.8,-12) and (24,-11.6) .. (24,-11) .. controls (24,-10.4) and (24.2,-10) .. (25,-10);
+\draw[color=generator-2-4-0-pos, line width=5pt](7,-4.25) .. controls (7.8,-4.25) and (8,-4.65) .. (8,-5.25) .. controls (8,-6) and (8.2,-6.5) .. (9,-6.5);
+\draw[color=generator-1-4-0-pos, line width=5pt](0,-9.13) -- (2,-9.13)(4,-5.75) .. controls (4,-4.18) and (4.2,-3.13) .. (5,-3.13) -- (6,-3.13)(12,-6.5) .. controls (12,-7.4) and (12.2,-8) .. (13,-8) -- (15,-8) .. controls (15.8,-8) and (16,-8.4) .. (16,-9) .. controls (16,-10.2) and (16.2,-11) .. (17,-11) -- (18,-11)(22,-9) .. controls (22,-9.6) and (22.2,-10) .. (23,-10) .. controls (23.8,-10) and (24,-10.4) .. (24,-11) .. controls (24,-11.6) and (24.2,-12) .. (25,-12) -- (30,-12);
+\draw[color=generator-9-4-0-pos, line width=5pt](6,-8.38) .. controls (6,-7.1) and (6.2,-6.25) .. (7,-6.25) .. controls (7.8,-6.25) and (8,-5.85) .. (8,-5.25) .. controls (8,-4.5) and (8.2,-4) .. (9,-4) .. controls (9.8,-4) and (10,-3.6) .. (10,-3)(14,-12.5) .. controls (14,-11) and (14.2,-10) .. (15,-10)(17,-7) .. controls (17.8,-7) and (18,-6.6) .. (18,-6)(22,-13) .. controls (22,-12.4) and (22.2,-12) .. (23,-12)(25,-10) .. controls (25.8,-10) and (26,-9.6) .. (26,-9);
+\draw[color=generator-2-4-0-pos, line width=5pt](2,-9.13) .. controls (2,-7.1) and (2.2,-5.75) .. (3,-5.75) -- (4,-5.75) .. controls (4,-7.33) and (4.2,-8.38) .. (5,-8.38) -- (6,-8.38) .. controls (6,-9.65) and (6.2,-10.5) .. (7,-10.5) -- (8,-10.5)(2,-9.13) .. controls (2,-11.15) and (2.2,-12.5) .. (3,-12.5) -- (14,-12.5) .. controls (14,-14) and (14.2,-15) .. (15,-15) -- (20,-15)(6,-3.13) .. controls (6,-2.45) and (6.2,-2) .. (7,-2) -- (9,-2) .. controls (9.8,-2) and (10,-2.4) .. (10,-3) -- (14,-3)(6,-3.13) .. controls (6,-3.8) and (6.2,-4.25) .. (7,-4.25)(9,-6.5) -- (12,-6.5) .. controls (12,-5.6) and (12.2,-5) .. (13,-5) -- (17,-5) .. controls (17.8,-5) and (18,-5.4) .. (18,-6) -- (20,-6)(18,-11) .. controls (18,-9.8) and (18.2,-9) .. (19,-9) -- (22,-9) .. controls (22,-8.4) and (22.2,-8) .. (23,-8) -- (25,-8) .. controls (25.8,-8) and (26,-8.4) .. (26,-9) -- (28,-9)(18,-11) .. controls (18,-12.2) and (18.2,-13) .. (19,-13) -- (22,-13) .. controls (22,-13.6) and (22.2,-14) .. (23,-14) -- (28,-14);
+\end{scope}
+\fill[generator-4-5-0-pos] (2,-9.13) circle (0.14);
+\fill[generator-8-5-0-pos] (4,-5.75) circle (0.14);
+\fill[generator-4-5-0-pos] (6,-3.13) circle (0.14);
+\fill[generator-12-5-0-pos] (6,-8.38) circle (0.14);
+\fill[generator-5-5-0-pos] (8,-10.5) circle (0.14);
+\fill[generator-11-5-0-pos] (10,-3) circle (0.14);
+\fill[generator-13-5-0-pos] (12,-6.5) circle (0.14);
+\fill[generator-6-5-0-pos] (14,-3) circle (0.14);
+\fill[generator-12-5-0-pos] (14,-12.5) circle (0.14);
+\fill[generator-11-5-0-pos] (18,-6) circle (0.14);
+\fill[generator-4-5-0-pos] (18,-11) circle (0.14);
+\fill[generator-6-5-0-pos] (20,-6) circle (0.14);
+\fill[generator-5-5-0-pos] (20,-15) circle (0.14);
+\fill[generator-13-5-0-pos] (22,-9) circle (0.14);
+\fill[generator-12-5-0-pos] (22,-13) circle (0.14);
+\fill[generator-11-5-0-pos] (26,-9) circle (0.14);
+\fill[generator-6-5-0-pos] (28,-9) circle (0.14);
+\fill[generator-5-5-0-pos] (28,-14) circle (0.14);
+\fill[generator-3-5-0-pos] (30,-12) circle (0.14);
+\end{tikzpicture}

@@ -1,8 +1,8 @@
 \begin{fullwidth}
 
-\section{How do we communicate?}
+\section{How do we communicate using language?}
 
-\newthought{Speakers and listeners understand one another.} This basic fact is an everyday miracle that any formal theory that encompasses syntax and semantics must account for. The miracle remains so even if we cautiously hedge to exclude pragmatics and context and only encompass small and boring fragments of factual language. Here is a diagram that demonstrates mathematically how the miracle works.
+\newthought{Speakers and listeners understand one another.} By any sensible standard, axiom zero of linguistics ought to be that language involves communication between a speaker and a listener. This basic fact is an everyday miracle that any formal understanding of language that claims to encompass syntax and semantics must account for. The miracle remains so even if we cautiously hedge to exclude pragmatics and context and only encompass small and boring fragments of factual language. At minimum, we should be able to model a single conversational turn, where a speaker produces a sentence from a thought and a listener parses it to recover the thought. Here is a sequence of diagram equations that demonstrates mathematically how the miracle works for two toy grammars, on the sentence \texttt{Alice sees Bob run quickly to school}. On the left we have a grammatical structure obtained from a context-free grammar, and we have equations from a discrete monoidal fibration all the way to the right, where we obtain a pregroup representation of the same sentence. Going from right to left recovers the correspondence in the other direction.
 
 \[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/bigexaltogether}}\]
 
@@ -14,15 +14,19 @@ I will briefly go on the offense. In my view, that picture is the only honest st
 \item{Speakers and listeners understand each other, insofar as the compositional structure of their semantic representations are isomorphic.}
 \end{enumerate}
 
-If that is unobjectionable, then to the best of my knowledge, that picture is \emph{only} account of both syntax and semantics worth anything.\\
+If that is unobjectionable, then to the best of my knowledge, that picture is \emph{only} account of both syntax and semantics worth anything. I will cover some of the objections in the discussion section. Now here is why those diagrams are the only game in town at the moment for an account of syntax and semantics in natural language.\\
 
-Generative and typelogical grammars or Montague semantics alone are simply insufficient to account for the interaction of syntax and semantics; for every generative grammar one must also provide a corresponding parsing grammar and an underlying semantic "deep structure" that both grammars agree on. In other disappointing news, a theory of grammar or semantics alone is a 'theory' of language at best on par with an LLM.\\
+Theories of grammar by themselves are insufficient to account for communication; for every grammar that produces sentences, one must also provide a corresponding parsing grammar. A theory of grammar that only produces correct sentences or correct parses is a 'theory' of language outperformed in every respect by an LLM. So we must distinguish between grammars of the speaker and listener, and then investigate how they cohere.\\
 
-So we must investigate how these theories cohere. It is not enough to talk of "weak equivalence" between grammar formalisms in terms of sets of sentences. That talk is mathematically interesting but pointless when it comes to explaining syntax and semantics together, because merely stating that, e.g. pregroup grammars and context-free grammars can generate the same sentences [] only admits the possibility that a speaker using a context-free grammar and a listener using a pregroup grammar can understand each other, without providing any explanation how. For the same reason, it is also pointless to speak of "strong equivalence" between theories of syntax that seeks equivalence at a structural level, unless there is also some notion of how that structure directs the composition of semantics.\\
+The investigation of coherence of theories of grammar must obey certain constraints. Firstly, "weak equivalence" between grammar formalisms in terms of possible sets of generated sentences is insufficient. Weak equivalence proofs are mathematical busywork that have nothing to do with a unified account of syntax and semantics. For example, merely demonstrating that, e.g. pregroup grammars and context-free grammars can generate the same sentences [] only admits the possibility that a speaker using a context-free grammar and a listener using a pregroup grammar \emph{could} understand each other, without providing any explanation \emph{how}. But we already know that users of language \emph{do} understand one another!\\
 
-But it is not enough to just talk of homomorphisms between a single theory of syntax and some semantics, unless one thinks that language is a solipsistic exercise where meaningful utterances are drawn from the void or produced for nobody. All of that may be mathematically interesting and well-studied, but none of it can account for the stupidly simple empirical fact that speakers and listeners understand one another. So we may keep all of it around, but not under the pretense that it has anything to do with how language qua communication works.\\
+Secondly, "strong equivalence" that seeks equivalence at a structural level between theories of syntax is sufficient but unnecessary. I will explain by analogy. Theories of syntax are like file formats, e.g. \texttt{.png} or \texttt{.jpeg} for images. A model for a particular language is a particular file or photograph. The task here is to show that two photographs in different file formats that both purport to model the same language are really photographs of the same thing from different perspectives. It is overkill to demonstrate that all \texttt{.pngs} and \texttt{.jpegs} are structurally bijectable, just as it is overkill to show that context-free grammars are strongly equivalent to pregroup grammars, because there are context-free and pregroup grammars that generate sets of strings that have nothing to do with natural language.\\
 
-To make sense of language as communication, we need a coherent story involving two theories of syntax -- one for the speaker and one for the listener -- such that their structures yield isomorphic semantics. In this section I will provide the first steps of a formal mathematical framework to present and organise the nature of this correspondence.
+To summarise these constraints, it is necessary to seek a targeted form of strong equivalence: if you purport to have a specific context-free grammar that models natural language, then you must supply a specific partnered parsing grammar such that the two are strongly equivalent. Once that structural correspondence has been obtained, that structure is the appropriate domain to begin a Montagovian account of semantics, broadly construed as a homomorphism between syntax and semantics.\\
+
+It is not enough to just talk of homomorphisms between a single theory of syntax and some semantics, unless one holds that language is a solipsistic exercise where meaningful utterances are either drawn from the void or produced for nobody. The Montagovian programme may mathematically interesting and well-studied, but unless one additionally has agreement between grammars of producing and parsing speech, none of it can account for the obvious fact that communication happens. Montagovian semantics by itself is insufficient to explain communication, but it plays a central role in the mathematics.\\
+
+To make sense of language as communication, we need a coherent story involving two theories of syntax -- one for the speaker and one for the listener -- such that their structures yield isomorphic semantics. In this section I will outline a formal framework to organise and present the nature of this correspondence.
 
 \subsection{Grammars of speakers and listeners}
 
@@ -49,8 +53,6 @@ Whether those decisions are made by committee or coinflips, those decisions repr
 For this reason, we consider context-free-grammars (and more generally, other string-rewrite systems) to be \emph{grammars of the speaker}. The start symbol $S$ is incrementally expanded and determined by rule-applications that are selected by the speaker. The important aspect here is that the speaker has an initial state of information $S$ that requires more information as input in order to arrive at the final sentence. I note here that the concept of grammars of the speaker are not exhausted by string-rewrite systems, merely that string-rewrite systems are a prototype that illustrate the concept well.
 
 \newthought{Listeners deduce.} The listener Fondo must supply decisions about which words are grammatically related, and how. Like right-of-way in driving, sometimes these decisions are settled by convention, for example, subject-verb-object order in English. Sometimes sophisticated decisions need to be made that override or are orthogonal to conventions, and we give two examples.
-
-
 
 \begin{example}[Garden path sentences]
 So-called "garden path" sentences illustrate that listeners have to make choices to resolve lexical ambiguities. One such garden-path sentence is \texttt{The old man the boat}, where typically readers take \texttt{The old man} as a noun-phrase and \texttt{the boat} as another noun-phrase. We can sketch how the readers might think with a (failed) pregroup grammar derivation:
@@ -83,7 +85,7 @@ So the reader has to backtrack, taking \texttt{The old} as a noun-phrase and \te
 \DisplayProof
 \]
 
-Garden-path sentences illustrate that listeners must make choices about what grammatical roles to assign words. We make these kinds of contextual decisions all the time with lexically ambiguous words or highly homophonic languages like Mandarin; garden-path sentences are special in that they trick the default choices badly enough that the mental effort for correction is noticeable.
+Garden-path sentences illustrate that listeners must make choices about what grammatical roles to assign words. We make these kinds of contextual decisions all the time with lexically ambiguous words or highly homophonic languages like Mandarin; garden-path sentences are special in that they trick the default strategy badly enough that the mental effort for correction is noticeable.
 \end{example}
 
 \begin{example}[Ambiguous scoping]
@@ -139,7 +141,69 @@ Now we can plug-in these interpretations to obtain the two different meanings. W
 
 \end{example}
 
-\newthought{The speaker's choices and the listener's deductions must be related.} The way the speaker decomposes the thought into words in text in the speaker's grammar must allow the listener to reconstruct the thought in the listener's grammar.
+\newthought{The speaker's choices and the listener's deductions must be related.} The way the speaker decomposes the thought into words in text in the speaker's grammar must allow the listener to reconstruct the thought in the listener's grammar. Even in simple cases where both parties are aiming for unambiguous communication, the listener still must make choices. This is best illustrated by introducing two toy grammars -- we pick a context-free grammar for the speaker and a pregroup grammar for the listener, because they are simple, planar, and known to be weakly equivalent.
+
+\begin{example}
+(grammar pieces -- as simple as it gets)
+Now consider the following sentences that use the word "to":
+\texttt{Bob runs to school.}
+\texttt{Bob runs from home.}
+\texttt{Bob runs from home to school.}
+In the first case, \texttt{to} modifies an intransitive verb. In the second case, \texttt{to} modifies a transitive verb. As we have modelled the situation,
+\end{example}
+
+\subsection{Discrete Monoidal Fibrations}
+
+We introduce the concept of a discrete monoidal fibration: a mathematical bookkeeping tool that relates kinds of choices speakers and listeners make when generating and parsing text respectively. We proceed diagrammatically. The first concept is that of a \emph{monoidal functor box}.
+
+\begin{scholium}
+Functor boxes are from [meillies]. Expressing the coherence conditions of monoidal functors using equations involving functor boxes as below is not new [meillies].
+The idea of a functor being simultaneously monoidal and a fibration is not new [monoidalfibration]. What is new is minor: the express requirement that the lifts of the fibration satisfy interchange, which is in general not guaranteed by just having a functor be monoidal and a (even discrete) fibration [fosco].
+\end{scholium}
+
+Suppose we have a functor between monoidal categories $\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$. Then we have the following diagrammatic representation of a morphism $\mathbf{F}A \overset{\mathbf{F}f}{\rightarrow} \mathbf{F}B$ in $\mathcal{D}$:
+
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-notation}\]
+
+The use of a functor box is like a window from the target category $\mathcal{D}$ into the source category $\mathcal{C}$; when we know that a morphism in $\mathcal{D}$ is the image under $\mathbf{F}$ of some morphism in $\mathcal{C}$, the functor box notation is just a way of presenting all of that data at once. Since $\mathbf{F}$ is a functor, we must have that $\mathbf{F}f ; \mathbf{F}g = \mathbf{F}(f;g)$. Diagrammatically this equation is represented by freely splitting and merging functor boxes vertically.
+
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-seq}\]
+
+Assume that $\mathbf{F}$ is strict monoidal; without loss of generality by the strictification theorem [], this lets us gloss over the associators and unitors. For $\mathbf{F}$ to be strict monoidal, it has to preserve monoidal units and tensor products on the nose: i.e. $\mathbf{F}I_\mathcal{C} = I_\mathcal{D}$ and $\mathbf{F}A \otimes_\mathcal{D} \mathbf{F}B = \mathbf{F}(A \otimes_\mathcal{C} B)$. Diagrammatically these structural constraints amount to the following equations:
+
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+structural}\]
+
+What remains is the monoidality of $\mathbf{F}$, which is the requirement $\mathbf{F}f \otimes \mathbf{F}g = \mathbf{F}(f \otimes g)$. Diagrammatically, this equation is represented by freely splitting and merging functor boxes horizontally; analogously to how splitting vertically is the functor-boxes' way of respecting sequential composition, splitting horizontally is how they respect parallel composition.
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-tensor}\]
+
+And for when we want $\mathbf{F}$ to be a (strict) symmetric monoidal functor, we are just asking that boxes and twists do not get stuck on one another.
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-twist}\]
+
+\begin{remark}
+To motivate fibrations, first observe that by the diagrammatic equations of monoidal categories and functor boxes we have so far, we can always "slide out" the contents of a functor box out of the bottom:
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-prefibex}\]
+When can we do the reverse? That is, take a morphism in $\mathcal{D}$ and \emph{slide it into} a functor box? We know that in general this is not possible, because not all morphisms in $\mathcal{D}$ may be in the image of $\mathbf{F}$. So instead we ask "under what circumstances" can we do this for a functor $\mathbf{F}$? The answer is when $\mathbf{F}$ is a discrete fibration.
+\end{remark}
+
+\begin{defn}[Discrete opfibration]
+$\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$ is a \emph{discrete fibration} when:\\
+for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$...\\
+there exists a unique object $\Phi^A_f$ and a unique morphism $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$...\\
+such that $f = \mathbf{F}\phi_f$.\\
+
+Diagrammatically, we can present all of the above as an equation reminiscent of sliding a morphism \emph{into} a functor box from below.
+\[\tikzfig{tree2gate/mfunctorbox/mfbox-fibration}\]
+\end{defn}
+
+\begin{defn}[Monoidal discrete opfibration]
+We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opfibration} when it is a (strict, symmetric) monoidal functor, a discrete opfibration, and the following equations relating lifts to interchange hold:
+\[\scalebox{0.75}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+interchange}}\]
+\end{defn}
+\marginnote{
+\begin{remark}
+The diagrammatic motivation for the additional coherence equations is that -- if we view the lifts of opfibrations as sliding morphisms into functor boxes -- we do not want the order in which sliding occurs to affect the final result. In this way, lifts behave as 'graphical primitives' in the same manner as interchange isotopies and symmetry twists.
+\end{remark}
+}
 
 \subsection{Relating the generative grammar to a pregroup grammar via a discrete monoidal fibration}
 We merge the monoidal functor-boxes and we slide the bottom edge down using the fibration.
@@ -205,63 +269,6 @@ Technical addendums.\\
 The above construction only requires the source category of the functor to be rigid autonomous. Since no braidings are required, the free autonomous completion [Antonificaton] of any monoidal category may be used.\\
 To enforce the well-definedness of the functor $\mathbf{F}: \mathcal{P}\mathcal{G} \rightarrow \mathcal{G}$ on objects, we may consider the strictified "category of..." [ghicadiagrams]...
 \end{remark}
-
-\subsection{Discrete Monoidal Fibrations}
-
-We introduce the concept of a discrete monoidal fibration: a mathematical bookkeeping tool that relates kinds of choices speakers and listerns make when generating and parsing text respectively. We proceed diagrammatically. The first concept is that of a \emph{monoidal functor box}.
-
-\marginnote{
-\begin{scholium}
-Functor boxes are from [meillies].
-Expressing the coherence conditions of monoidal functors using equations involving functor boxes as below is not new [meillies]
-The idea of a functor being simultaneously monoidal and a fibration is not new [monoidalfibration].
-What is new is minor: the express requirement that the lifts of the fibration satisfy interchange, which is in general not guaranteed by just having a functor be monoidal and a (even discrete) fibration [fosco].
-\end{scholium}
-}
-
-Suppose we have a functor between monoidal categories $\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$. Then we have the following diagrammatic representation of a morphism $\mathbf{F}A \overset{\mathbf{F}f}{\rightarrow} \mathbf{F}B$ in $\mathcal{D}$:
-
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-notation}\]
-
-The use of a functor box is like a window from the target category $\mathcal{D}$ into the source category $\mathcal{C}$; when we know that a morphism in $\mathcal{D}$ is the image under $\mathbf{F}$ of some morphism in $\mathcal{C}$, the functor box notation is just a way of presenting all of that data at once. Since $\mathbf{F}$ is a functor, we must have that $\mathbf{F}f ; \mathbf{F}g = \mathbf{F}(f;g)$. Diagrammatically this equation is represented by freely splitting and merging functor boxes vertically.
-
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-seq}\]
-
-Assume that $\mathbf{F}$ is strict monoidal; without loss of generality by the strictification theorem [], this lets us gloss over the associators and unitors. For $\mathbf{F}$ to be strict monoidal, it has to preserve monoidal units and tensor products on the nose: i.e. $\mathbf{F}I_\mathcal{C} = I_\mathcal{D}$ and $\mathbf{F}A \otimes_\mathcal{D} \mathbf{F}B = \mathbf{F}(A \otimes_\mathcal{C} B)$. Diagrammatically these structural constraints amount to the following equations:
-
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+structural}\]
-
-What remains is the monoidality of $\mathbf{F}$, which is the requirement $\mathbf{F}f \otimes \mathbf{F}g = \mathbf{F}(f \otimes g)$. Diagrammatically, this equation is represented by freely splitting and merging functor boxes horizontally; analogously to how splitting vertically is the functor-boxes' way of respecting sequential composition, splitting horizontally is how they respect parallel composition.
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-tensor}\]
-
-And for when we want $\mathbf{F}$ to be a (strict) symmetric monoidal functor, we are just asking that boxes and twists do not get stuck on one another.
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-twist}\]
-
-\begin{remark}
-To motivate fibrations, first observe that by the diagrammatic equations of monoidal categories and functor boxes we have so far, we can always "slide out" the contents of a functor box out of the bottom:
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-prefibex}\]
-When can we do the reverse? That is, take a morphism in $\mathcal{D}$ and \emph{slide it into} a functor box? We know that in general this is not possible, because not all morphisms in $\mathcal{D}$ may be in the image of $\mathbf{F}$. So instead we ask "under what circumstances" can we do this for a functor $\mathbf{F}$? The answer is when $\mathbf{F}$ is a discrete fibration.
-\end{remark}
-
-\begin{defn}[Discrete opfibration]
-$\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$ is a \emph{discrete fibration} when:\\
-for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$...\\
-there exists a unique object $\Phi^A_f$ and a unique morphism $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$...\\
-such that $f = \mathbf{F}\phi_f$.\\
-
-Diagrammatically, we can present all of the above as an equation reminiscent of sliding a morphism \emph{into} a functor box from below.
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-fibration}\]
-\end{defn}
-
-\begin{defn}[Monoidal discrete opfibration]
-We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opfibration} when it is a (strict, symmetric) monoidal functor, a discrete opfibration, and the following equations relating lifts to interchange hold:
-\[\scalebox{0.75}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+interchange}}\]
-\end{defn}
-\marginnote{
-\begin{remark}
-The diagrammatic motivation for the additional coherence equations is that -- if we view the lifts of opfibrations as sliding morphisms into functor boxes -- we do not want the order in which sliding occurs to affect the final result. In this way, lifts behave as `graphical primitives' in the same manner as interchange isotopies and symmetry twists.
-\end{remark}
-}
 
 \subsection{Discrete monoidal fibrations for grammatical functions}
 

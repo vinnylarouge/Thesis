@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+\definecolor{generator-13-5-0-pos}{RGB}{192, 57, 43}
+\definecolor{generator-9-4-0-pos}{RGB}{142, 68, 173}
+\definecolor{generator-1-4-0-pos}{RGB}{192, 57, 43}
+\definecolor{generator-6-5-0-pos}{RGB}{243, 156, 18}
+\definecolor{generator-5-5-0-pos}{RGB}{241, 196, 15}
+\definecolor{generator-12-5-0-pos}{RGB}{142, 68, 173}
+\definecolor{generator-4-5-0-pos}{RGB}{39, 174, 96}
+\definecolor{generator-11-5-0-pos}{RGB}{142, 68, 173}
+\definecolor{generator-0-0-0-pos}{RGB}{246, 245, 244}
+\definecolor{generator-3-5-0-pos}{RGB}{255, 0, 0}
+\definecolor{generator-2-4-0-pos}{RGB}{41, 128, 185}
+\begin{scope}
+% Background surfaces
+\fill[generator-0-0-0-pos] (0,-0) -- (0,-10) -- (14,-10) -- (14,-0) -- (0,-0);
+% Wire layers
+\draw[color=generator-9-4-0-pos, line width=5pt](5,-6) .. controls (5.8,-6) and (6,-5.6) .. (6,-5) .. controls (6,-4.4) and (6.2,-4) .. (7,-4);
+\draw[color=generator-1-4-0-pos, line width=5pt](0,-5) -- (2,-5)(4,-3) .. controls (4,-3.6) and (4.2,-4) .. (5,-4) .. controls (5.8,-4) and (6,-4.4) .. (6,-5) .. controls (6,-5.6) and (6.2,-6) .. (7,-6) -- (12,-6);
+\draw[color=generator-9-4-0-pos, line width=5pt](4,-7) .. controls (4,-6.4) and (4.2,-6) .. (5,-6)(7,-4) .. controls (7.8,-4) and (8,-3.6) .. (8,-3);
+\draw[color=generator-2-4-0-pos, line width=5pt](2,-5) .. controls (2,-3.8) and (2.2,-3) .. (3,-3) -- (4,-3) .. controls (4,-2.4) and (4.2,-2) .. (5,-2) -- (7,-2) .. controls (7.8,-2) and (8,-2.4) .. (8,-3) -- (10,-3)(2,-5) .. controls (2,-6.2) and (2.2,-7) .. (3,-7) -- (4,-7) .. controls (4,-7.6) and (4.2,-8) .. (5,-8) -- (10,-8);
+\end{scope}
+\fill[generator-4-5-0-pos] (2,-5) circle (0.14);
+\fill[generator-13-5-0-pos] (4,-3) circle (0.14);
+\fill[generator-12-5-0-pos] (4,-7) circle (0.14);
+\fill[generator-11-5-0-pos] (8,-3) circle (0.14);
+\fill[generator-6-5-0-pos] (10,-3) circle (0.14);
+\fill[generator-5-5-0-pos] (10,-8) circle (0.14);
+\fill[generator-3-5-0-pos] (12,-6) circle (0.14);
+\end{tikzpicture}

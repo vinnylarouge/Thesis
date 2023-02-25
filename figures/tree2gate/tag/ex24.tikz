@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+\definecolor{generator-0-0-0-pos}{RGB}{246, 245, 244}
+\definecolor{generator-3-5-0-pos}{RGB}{255, 0, 0}
+\definecolor{generator-1-4-0-pos}{RGB}{192, 57, 43}
+\begin{scope}
+% Background surfaces
+\fill[generator-0-0-0-pos] (0,-0) -- (0,-4) -- (4,-4) -- (4,-0) -- (0,-0);
+% Wire layers
+\draw[color=generator-1-4-0-pos, line width=5pt](0,-2) -- (2,-2);
+\end{scope}
+\fill[generator-3-5-0-pos] (2,-2) circle (0.14) node[anchor=south]{e};
+\end{tikzpicture}
