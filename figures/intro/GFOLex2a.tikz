@@ -1,0 +1,55 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-2.5, 1) {\textcolor{cyan}{\texttt{S}}};
+		\node [style=none] (1) at (-2, 1) {};
+		\node [style=none] (4) at (-1, 1) {};
+		\node [style=none] (5) at (0, 0) {};
+		\node [style=none] (6) at (3, 1) {\textcolor{gray}{\texttt{Alice}}};
+		\node [style=none] (7) at (-0.5, 1) {\textcolor{gray}{\texttt{NP}}};
+		\node [style=none] (8) at (0.5, 0) {\textcolor{green}{\texttt{VP}}};
+		\node [style=none] (9) at (0, 1) {};
+		\node [style=none] (10) at (2, 1) {};
+		\node [style=none] (11) at (1, 0) {};
+		\node [style=none] (12) at (2, 0) {};
+		\node [style=none] (13) at (5, 0) {\textcolor{green}{\texttt{likes}}};
+		\node [style=none] (14) at (3, -1) {};
+		\node [style=none] (15) at (2.5, 0) {\textcolor{green}{\texttt{TV}}};
+		\node [style=none] (16) at (3.5, -1) {\textcolor{gray}{\texttt{NP}}};
+		\node [style=none] (17) at (3, 0) {};
+		\node [style=none] (18) at (4, 0) {};
+		\node [style=none] (19) at (4, -1) {};
+		\node [style=none] (20) at (5, -1) {};
+		\node [style=none] (21) at (7.75, -2) {};
+		\node [style=none] (22) at (5, -3) {};
+		\node [style=none] (23) at (6.5, -1) {\textcolor{gray}{\texttt{flowers}}};
+		\node [style=none] (24) at (8.75, -2) {\textcolor{gray}{\texttt{that}}};
+		\node [style=none] (25) at (5.75, -3) {$\textcolor{green}{\texttt{VP}^{-1}}$};
+		\node [style=none] (26) at (6.5, -3) {};
+		\node [style=none] (27) at (7.5, -3) {};
+		\node [style=none] (28) at (9, -3) {};
+		\node [style=none] (29) at (8.25, -3) {$\textcolor{green}{\texttt{DV}^{-1}}$};
+		\node [style=none] (30) at (10, -3) {};
+		\node [style=none] (31) at (11, -4) {};
+		\node [style=none] (32) at (12, -5) {};
+		\node [style=none] (33) at (12, -4) {$\textcolor{green}{\texttt{gives}}$};
+		\node [style=none] (34) at (10.75, -3) {\textcolor{gray}{\texttt{Bob}}};
+		\node [style=none] (35) at (13.25, -5) {\textcolor{gray}{\texttt{Claire}}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (4.center)
+			 to (1.center)
+			 to (5.center);
+		\draw (9.center) to (10.center);
+		\draw (14.center)
+			 to (11.center)
+			 to (12.center);
+		\draw (17.center) to (18.center);
+		\draw (21.center)
+			 to (19.center)
+			 to (22.center);
+		\draw (26.center) to (27.center);
+		\draw (30.center)
+			 to (28.center)
+			 to (32.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

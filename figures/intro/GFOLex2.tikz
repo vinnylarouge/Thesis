@@ -1,0 +1,152 @@
+\begin{tikzpicture}
+	\begin{pFconlayer}{nodelayer}
+		\node [style=none] (0) at (-8.25, 0.5) {};
+		\node [style=none] (1) at (-7.25, 0.5) {};
+		\node [style=none] (2) at (-7.75, 1.5) {};
+		\node [style=none] (3) at (-7.75, 0.85) {$A$};
+		\node [style=none] (4) at (2.25, 0.5) {};
+		\node [style=none] (5) at (3.25, 0.5) {};
+		\node [style=none] (6) at (2.75, 1.5) {};
+		\node [style=none] (7) at (2.75, 0.85) {$B$};
+		\node [style=none] (8) at (-3.25, 0.5) {};
+		\node [style=none] (9) at (-2.25, 0.5) {};
+		\node [style=none] (10) at (-2.75, 1.5) {};
+		\node [style=none] (11) at (-2.75, 0.85) {$F$};
+		\node [style=none] (12) at (-6, 1.25) {};
+		\node [style=none] (13) at (-4.5, 1.25) {};
+		\node [style=none] (14) at (-5.25, 2.25) {};
+		\node [style=none] (15) at (-5.25, 1.65) {$L$};
+		\node [style=none] (16) at (4.75, 1.5) {};
+		\node [style=none] (17) at (6.75, 1.5) {};
+		\node [style=none] (18) at (5.75, 2.5) {};
+		\node [style=none] (19) at (5.75, 1.9) {$G$};
+		\node [style=none] (20) at (8.25, 0.5) {};
+		\node [style=none] (21) at (9.25, 0.5) {};
+		\node [style=none] (22) at (8.75, 1.5) {};
+		\node [style=none] (23) at (8.75, 0.85) {$C$};
+		\node [style=none] (24) at (-7.75, 0.5) {};
+		\node [style=none] (25) at (2.75, 0.5) {};
+		\node [style=none] (26) at (8.75, 0.5) {};
+		\node [style=none] (27) at (-2.75, 0.5) {};
+		\node [style=none] (28) at (-6, 0.5) {};
+		\node [style=none] (29) at (-4.5, 0.5) {};
+		\node [style=none] (30) at (4.5, 0.5) {};
+		\node [style=none] (31) at (6.25, 1.5) {};
+		\node [style=none] (82) at (-6.75, 0.5) {};
+		\node [style=none] (83) at (-3.75, 0.5) {};
+		\node [style=none] (84) at (-5.25, 2.5) {};
+		\node [style=smalldotb] (85) at (-5.5, 1) {};
+		\node [style=smalldotb] (86) at (-5, 1) {};
+		\node [style=none] (87) at (-5.5, 1.25) {};
+		\node [style=none] (88) at (-5, 1.25) {};
+		\node [style=none] (89) at (-5.45, 0.5) {};
+		\node [style=none] (90) at (-5.05, 0.5) {};
+		\node [style=none] (91) at (-1.75, 0.5) {};
+		\node [style=none] (92) at (1.75, 0.5) {};
+		\node [style=none] (93) at (0, 2.25) {};
+		\node [style=none] (94) at (-5.05, -2.6) {};
+		\node [style=none] (95) at (-5.45, -2.6) {};
+		\node [style=smalldotb] (96) at (-5.05, -3) {};
+		\node [style=smalldotb] (97) at (-5.45, -3) {};
+		\node [style=smalldotb] (98) at (-0.75, 1) {};
+		\node [style=none] (99) at (-1.25, 0.5) {};
+		\node [style=none] (100) at (-0.75, 0.5) {};
+		\node [style=none] (101) at (-0.25, 0.5) {};
+		\node [style=none] (102) at (5.25, 1.5) {};
+		\node [style=none] (103) at (5.75, 1.5) {};
+		\node [style=none] (104) at (4.5, 0.5) {};
+		\node [style=none] (105) at (6.5, 0.5) {};
+		\node [style=none] (106) at (7, 0.5) {};
+		\node [style=smalldotb] (107) at (5, 1) {};
+		\node [style=smalldotb] (108) at (5.75, 1) {};
+		\node [style=smalldotb] (109) at (6.5, 1) {};
+		\node [style=none] (110) at (5.25, 0.5) {};
+		\node [style=none] (111) at (5.5, 0.5) {};
+		\node [style=none] (112) at (5.75, 0.5) {};
+		\node [style=none] (113) at (3.75, 0.5) {};
+		\node [style=none] (114) at (7.75, 0.5) {};
+		\node [style=none] (115) at (5.75, 3) {};
+		\node [style=smalldotb] (116) at (0.45, 0.9) {};
+		\node [style=smalldotb] (117) at (0.75, 0.9) {};
+		\node [style=smalldotb] (118) at (1.05, 0.9) {};
+		\node [style=none] (119) at (1, 0.5) {};
+		\node [style=none] (120) at (0.75, 0.5) {};
+		\node [style=none] (121) at (0.5, 0.5) {};
+	\end{pFconlayer}
+	\begin{pFconlayer}{edgelayer}
+		\draw (2.center) to (0.center);
+		\draw (0.center) to (1.center);
+		\draw (1.center) to (2.center);
+		\draw (6.center) to (4.center);
+		\draw (4.center) to (5.center);
+		\draw (5.center) to (6.center);
+		\draw (10.center) to (8.center);
+		\draw (8.center) to (9.center);
+		\draw (9.center) to (10.center);
+		\draw (12.center) to (13.center);
+		\draw (13.center) to (14.center);
+		\draw (14.center) to (12.center);
+		\draw (16.center) to (17.center);
+		\draw (17.center) to (18.center);
+		\draw (18.center) to (16.center);
+		\draw (22.center) to (20.center);
+		\draw (20.center) to (21.center);
+		\draw (21.center) to (22.center);
+		\draw [style=H] (83.center)
+			 to (82.center)
+			 to (84.center)
+			 to cycle;
+		\draw (87.center) to (85);
+		\draw (88.center) to (86);
+		\draw [in=-165, out=90] (28.center) to (85);
+		\draw [in=90, out=-15] (86) to (29.center);
+		\draw (86) to (90.center);
+		\draw (85) to (89.center);
+		\draw [style=H] (91.center)
+			 to (92.center)
+			 to (93.center)
+			 to cycle;
+		\draw [style=Fc] (94.center)
+			 to (95.center)
+			 to (89.center)
+			 to (90.center)
+			 to cycle;
+		\draw (89.center) to (95.center);
+		\draw (90.center) to (94.center);
+		\draw (96) to (94.center);
+		\draw (97) to (95.center);
+		\draw [bend right=90, looseness=1.25] (27.center) to (99.center);
+		\draw [bend right=90] (29.center) to (100.center);
+		\draw [in=-180, out=90] (99.center) to (98);
+		\draw (100.center) to (98);
+		\draw [in=90, out=0] (98) to (101.center);
+		\draw [in=45, out=-90] (102.center) to (107);
+		\draw (103.center) to (108);
+		\draw [in=105, out=-105, looseness=1.25] (31.center) to (109);
+		\draw [in=90, out=-165] (107) to (104.center);
+		\draw [in=90, out=-60, looseness=0.75] (107) to (110.center);
+		\draw [in=90, out=-135] (109) to (111.center);
+		\draw [in=90, out=-15] (109) to (105.center);
+		\draw [in=90, out=-60, looseness=0.75] (108) to (106.center);
+		\draw [in=90, out=-120] (108) to (112.center);
+		\draw [style=H] (113.center)
+			 to (115.center)
+			 to (114.center)
+			 to cycle;
+		\draw [bend left=90, looseness=1.25] (28.center) to (24.center);
+		\draw [bend right=90, looseness=1.25] (25.center) to (104.center);
+		\draw (118) to (119.center);
+		\draw (117) to (120.center);
+		\draw (116) to (121.center);
+		\draw [style=Fc] (121.center)
+			 to (119.center)
+			 to [bend right=90] (110.center)
+			 to (112.center)
+			 to [bend left=90] cycle;
+		\draw [bend right=90] (119.center) to (110.center);
+		\draw [bend right=90] (120.center) to (111.center);
+		\draw [bend right=90] (121.center) to (112.center);
+		\draw [bend right=90] (101.center) to (105.center);
+		\draw [bend right=90, looseness=1.25] (106.center) to (26.center);
+	\end{pFconlayer}
+\end{tikzpicture}

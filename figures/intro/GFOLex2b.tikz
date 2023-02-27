@@ -1,0 +1,143 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-4, 0) {};
+		\node [style=none] (1) at (-1.75, 1) {};
+		\node [style=none] (2) at (-1.75, -1) {};
+		\node [style=none] (3) at (0.25, -1) {};
+		\node [style=none] (4) at (0.25, 1) {};
+		\node [style=none] (6) at (-1.25, 0) {};
+		\node [style=none] (7) at (-0.75, 0.5) {};
+		\node [style=none] (8) at (-0.75, -0.5) {};
+		\node [style=none] (9) at (-1.5, 0) {\textcolor{cyan}{\texttt{S}}};
+		\node [style=none] (10) at (-0.25, 0.5) {\textcolor{gray}{\texttt{NP}}};
+		\node [style=none] (11) at (-0.25, -0.5) {\textcolor{green}{\texttt{VP}}};
+		\node [style=none] (12) at (-1.775, 0) {};
+		\node [style=none] (13) at (0.275, 0.5) {};
+		\node [style=none] (14) at (0.275, -0.5) {};
+		\node [style=none] (15) at (3, 2) {};
+		\node [style=none] (16) at (1.25, -0.5) {};
+		\node [style=none] (17) at (1.275, 0.5) {};
+		\node [style=none] (18) at (1.275, -1.5) {};
+		\node [style=none] (19) at (3.775, -1.5) {};
+		\node [style=none] (20) at (3.775, 0.5) {};
+		\node [style=none] (21) at (2.275, -0.5) {};
+		\node [style=none] (22) at (2.775, 0) {};
+		\node [style=none] (23) at (2.775, -1) {};
+		\node [style=none] (25) at (3.275, -1) {\textcolor{gray}{\texttt{NP}}};
+		\node [style=none] (26) at (1.775, -0.5) {\textcolor{green}{\texttt{VP}}};
+		\node [style=none] (28) at (3.8, 0) {};
+		\node [style=none] (29) at (3.8, -1) {};
+		\node [style=none] (30) at (3.3, 0) {\textcolor{green}{\texttt{TV}}};
+		\node [style=none] (31) at (3, 2.25) {};
+		\node [style=none] (32) at (3, 1.75) {};
+		\node [style=none] (33) at (4.3, 2) {\textcolor{gray}{\texttt{Alice}}};
+		\node [style=none] (34) at (6.5, 0.5) {};
+		\node [style=none] (35) at (6.5, 0.75) {};
+		\node [style=none] (36) at (6.5, 0.25) {};
+		\node [style=none] (37) at (7.75, 0.5) {\textcolor{green}{\texttt{likes}}};
+		\node [style=none] (38) at (5.25, -2) {\textcolor{gray}{\texttt{NP}}};
+		\node [style=none] (39) at (7, -1.25) {\textcolor{gray}{\texttt{N}}};
+		\node [style=none] (40) at (7.175, -2.075) {\textcolor{gray}{\texttt{rp}}};
+		\node [style=none] (41) at (7.5, -2.75) {$\textcolor{green}{\texttt{VP}^{-1}}$};
+		\node [style=none] (42) at (5.75, -2) {};
+		\node [style=none] (43) at (6.5, -1.25) {};
+		\node [style=none] (44) at (6.5, -2) {};
+		\node [style=none] (45) at (6.5, -2.75) {};
+		\node [style=none] (46) at (4.75, -0.5) {};
+		\node [style=none] (47) at (8.25, -0.5) {};
+		\node [style=none] (48) at (8.25, -3.5) {};
+		\node [style=none] (49) at (4.75, -3.5) {};
+		\node [style=none] (50) at (4.75, -2) {};
+		\node [style=none] (51) at (8.25, -1.25) {};
+		\node [style=none] (52) at (8.25, -2) {};
+		\node [style=none] (53) at (8.25, -2.75) {};
+		\node [style=none] (54) at (12.25, -1.5) {};
+		\node [style=none] (55) at (12.25, -1.25) {};
+		\node [style=none] (56) at (12.25, -1.75) {};
+		\node [style=none] (57) at (13.3, -1.5) {\textcolor{gray}{\texttt{that}}};
+		\node [style=none] (58) at (9.3, -0.75) {};
+		\node [style=none] (59) at (9.3, -0.5) {};
+		\node [style=none] (60) at (9.3, -1) {};
+		\node [style=none] (61) at (10.85, -0.75) {\textcolor{gray}{\texttt{flowers}}};
+		\node [style=none] (62) at (9.25, -3.75) {};
+		\node [style=none] (64) at (12.05, -4.5) {\textcolor{gray}{\texttt{N}}};
+		\node [style=none] (66) at (10.05, -3.75) {$\textcolor{green}{\texttt{VP}^{-1}}$};
+		\node [style=none] (67) at (10.8, -3.75) {};
+		\node [style=none] (68) at (11.55, -3) {};
+		\node [style=none] (69) at (11.55, -3.75) {};
+		\node [style=none] (70) at (11.55, -4.5) {};
+		\node [style=none] (71) at (9.3, -2.25) {};
+		\node [style=none] (72) at (13.3, -2.25) {};
+		\node [style=none] (73) at (13.3, -5.25) {};
+		\node [style=none] (74) at (9.3, -5.25) {};
+		\node [style=none] (76) at (13.3, -3) {};
+		\node [style=none] (77) at (13.3, -3.75) {};
+		\node [style=none] (78) at (13.3, -4.5) {};
+		\node [style=none] (79) at (12.55, -3.75) {$\textcolor{green}{\texttt{DV}^{-1}}$};
+		\node [style=none] (80) at (12.05, -3) {\textcolor{gray}{\texttt{N}}};
+		\node [style=none] (81) at (14.55, -2.75) {};
+		\node [style=none] (82) at (14.55, -2.5) {};
+		\node [style=none] (83) at (14.55, -3) {};
+		\node [style=none] (84) at (15.35, -3) {\textcolor{gray}{\texttt{Bob}}};
+		\node [style=none] (85) at (15.6, -3.75) {};
+		\node [style=none] (86) at (15.6, -3.5) {};
+		\node [style=none] (87) at (15.6, -4) {};
+		\node [style=none] (88) at (16.85, -3.75) {\textcolor{green}{\texttt{gives}}};
+		\node [style=none] (89) at (16.6, -4.75) {};
+		\node [style=none] (90) at (16.6, -4.5) {};
+		\node [style=none] (91) at (16.6, -5) {};
+		\node [style=none] (92) at (18.15, -4.75) {\textcolor{gray}{\texttt{Claire}}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (2.center)
+			 to (3.center)
+			 to (4.center)
+			 to (1.center)
+			 to cycle;
+		\draw (8.center)
+			 to (6.center)
+			 to (7.center);
+		\draw [style=KC] (0.center) to (12.center);
+		\draw [style=Kg, in=-180, out=0] (13.center) to (15.center);
+		\draw [style=KG] (14.center) to (16.center);
+		\draw (18.center)
+			 to (19.center)
+			 to (20.center)
+			 to (17.center)
+			 to cycle;
+		\draw (23.center)
+			 to (21.center)
+			 to (22.center);
+		\draw [style=Kg] (31.center) to (32.center);
+		\draw [style=KG, in=180, out=0] (28.center) to (34.center);
+		\draw [style=KG] (35.center) to (36.center);
+		\draw (42.center) to (43.center);
+		\draw (42.center) to (44.center);
+		\draw (42.center) to (45.center);
+		\draw (48.center)
+			 to (49.center)
+			 to (46.center)
+			 to (47.center)
+			 to cycle;
+		\draw [style=Kg, in=180, out=0] (29.center) to (50.center);
+		\draw [style=Kg] (55.center) to (56.center);
+		\draw [style=Kg] (59.center) to (60.center);
+		\draw [style=Kg, in=180, out=0] (51.center) to (58.center);
+		\draw [style=Kg, in=-180, out=0] (52.center) to (54.center);
+		\draw [style=KG, in=-180, out=0] (53.center) to (62.center);
+		\draw (67.center) to (68.center);
+		\draw (67.center) to (69.center);
+		\draw (67.center) to (70.center);
+		\draw (73.center)
+			 to (74.center)
+			 to (71.center)
+			 to (72.center)
+			 to cycle;
+		\draw [style=Kg] (82.center) to (83.center);
+		\draw [style=Kg, in=180, out=0] (76.center) to (81.center);
+		\draw [style=KG] (86.center) to (87.center);
+		\draw [style=KG] (77.center) to (85.center);
+		\draw [style=Kg] (90.center) to (91.center);
+		\draw [style=Kg, in=180, out=0] (78.center) to (89.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,117 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (41) at (-4, 2.5) {};
+		\node [style=none] (42) at (-4, 1.5) {};
+		\node [style=none] (43) at (-5, 2) {};
+		\node [style=none] (44) at (-4.35, 2) {$A$};
+		\node [style=none] (45) at (2.25, 1.5) {};
+		\node [style=none] (46) at (2.25, 0.5) {};
+		\node [style=none] (47) at (1.25, 1) {};
+		\node [style=none] (48) at (1.9, 1) {$B$};
+		\node [style=none] (49) at (-4, 1) {};
+		\node [style=none] (50) at (-4, 0) {};
+		\node [style=none] (51) at (-5, 0.5) {};
+		\node [style=none] (52) at (-4.35, 0.5) {$F$};
+		\node [style=none] (53) at (-2.25, 1.75) {};
+		\node [style=none] (54) at (-2.25, 0.75) {};
+		\node [style=none] (55) at (-1.25, 1.25) {};
+		\node [style=none] (56) at (-1.85, 1.25) {$L$};
+		\node [style=none] (57) at (4.75, 0) {};
+		\node [style=none] (58) at (4.75, -1.5) {};
+		\node [style=none] (59) at (5.75, -0.75) {};
+		\node [style=none] (60) at (5.15, -0.75) {$G$};
+		\node [style=none] (61) at (2.25, 0) {};
+		\node [style=none] (62) at (2.25, -1) {};
+		\node [style=none] (63) at (1.25, -0.5) {};
+		\node [style=none] (64) at (1.9, -0.5) {$C$};
+		\node [style=none] (66) at (2.25, 1) {};
+		\node [style=none] (67) at (2.25, -0.5) {};
+		\node [style=none] (69) at (-2.25, 1.5) {};
+		\node [style=none] (70) at (-2.25, 1) {};
+		\node [style=none] (71) at (4.75, -0.25) {};
+		\node [style=none] (72) at (4.75, -1.25) {};
+		\node [style=none] (73) at (4.75, -0.75) {};
+		\node [style=smalldotb] (74) at (-2.5, 2) {};
+		\node [style=smalldotb] (75) at (-2.5, 0.5) {};
+		\node [style=none] (76) at (-4, 0.5) {};
+		\node [style=none] (77) at (-4, 2) {};
+		\node [style=none] (79) at (-1, 0.5) {};
+		\node [style=smalldotb] (80) at (4.25, 0.25) {};
+		\node [style=smalldotb] (81) at (4, -0.75) {};
+		\node [style=smalldotb] (82) at (3.75, -1.75) {};
+		\node [style=none] (83) at (3.25, 1) {};
+		\node [style=none] (84) at (3.25, -0.5) {};
+		\node [style=none] (85) at (3.25, -2) {};
+		\node [style=none] (86) at (6, 1) {};
+		\node [style=none] (87) at (6, -0.5) {};
+		\node [style=none] (88) at (6, -2) {};
+		\node [style=none] (89) at (5.25, 0.5) {};
+		\node [style=none] (90) at (-3, 2.5) {};
+		\node [style=none] (91) at (-3, 0) {};
+		\node [style=none] (92) at (-1, 0) {};
+		\node [style=none] (93) at (-1, 2.5) {};
+		\node [style=none] (94) at (3.25, 1.5) {};
+		\node [style=none] (95) at (3.25, -2.5) {};
+		\node [style=none] (96) at (6, -2.5) {};
+		\node [style=none] (97) at (6, 1.5) {};
+		\node [style=smalldotb] (98) at (7, 2) {};
+		\node [style=smalldotb] (99) at (7, 1) {};
+		\node [style=smalldotb] (100) at (7, -0.5) {};
+		\node [style=smalldotb] (101) at (7, -2) {};
+		\node [style=none] (102) at (0, 3) {};
+		\node [style=none] (103) at (0, -2.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (43.center) to (41.center);
+		\draw (41.center) to (42.center);
+		\draw (42.center) to (43.center);
+		\draw (47.center) to (45.center);
+		\draw (45.center) to (46.center);
+		\draw (46.center) to (47.center);
+		\draw (51.center) to (49.center);
+		\draw (49.center) to (50.center);
+		\draw (50.center) to (51.center);
+		\draw (53.center) to (54.center);
+		\draw (54.center) to (55.center);
+		\draw (55.center) to (53.center);
+		\draw (57.center) to (58.center);
+		\draw (58.center) to (59.center);
+		\draw (59.center) to (57.center);
+		\draw (63.center) to (61.center);
+		\draw (61.center) to (62.center);
+		\draw (62.center) to (63.center);
+		\draw [in=180, out=-90] (74) to (69.center);
+		\draw [in=180, out=90, looseness=1.25] (75) to (70.center);
+		\draw [in=0, out=-180] (75) to (76.center);
+		\draw [in=-180, out=0] (75) to (79.center);
+		\draw [in=-180, out=0] (77.center) to (74);
+		\draw [in=-180, out=-90, looseness=1.25] (80) to (71.center);
+		\draw (81) to (73.center);
+		\draw [in=-180, out=45] (82) to (72.center);
+		\draw [in=-180, out=75] (80) to (86.center);
+		\draw [in=0, out=-180] (80) to (83.center);
+		\draw [in=180, out=-30, looseness=0.75] (82) to (88.center);
+		\draw [in=180, out=0] (85.center) to (82);
+		\draw [in=-180, out=0] (84.center) to (81);
+		\draw [in=180, out=45, looseness=0.75] (81) to (89.center);
+		\draw [in=-180, out=0] (89.center) to (87.center);
+		\draw [style=H] (90.center)
+			 to (91.center)
+			 to (92.center)
+			 to (93.center)
+			 to cycle;
+		\draw [style=H] (94.center)
+			 to (95.center)
+			 to (96.center)
+			 to (97.center)
+			 to cycle;
+		\draw (74) to (98);
+		\draw (66.center) to (83.center);
+		\draw (67.center) to (84.center);
+		\draw [in=-180, out=0, looseness=1.25] (79.center) to (85.center);
+		\draw (86.center) to (99);
+		\draw (87.center) to (100);
+		\draw (88.center) to (101);
+		\draw [style=KDB] (102.center) to (103.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
