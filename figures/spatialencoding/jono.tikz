@@ -1,0 +1,68 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1, 0.25) {};
+		\node [style=none] (1) at (-2, -0.25) {};
+		\node [style=none] (2) at (-1, -0.75) {};
+		\node [style=none] (3) at (-1.25, -0.25) {$\texttt{J}$};
+		\node [style=none] (4) at (-1, -0.25) {};
+		\node [style=none] (5) at (0, -0.25) {};
+		\node [style=none] (6) at (0, 0.25) {};
+		\node [style=none] (7) at (0, -2.25) {};
+		\node [style=none] (8) at (1, 0.25) {};
+		\node [style=none] (9) at (1, -2.25) {};
+		\node [style=none] (10) at (0, -1.75) {};
+		\node [style=none] (11) at (-1, -1.25) {};
+		\node [style=none] (12) at (-2, -1.75) {};
+		\node [style=none] (13) at (-1, -2.25) {};
+		\node [style=none] (14) at (-1.25, -1.75) {$\texttt{W}$};
+		\node [style=none] (15) at (-1, -1.75) {};
+		\node [style=none] (16) at (0.5, -1) {$\texttt{P}$};
+		\node [style=none] (17) at (1, -0.25) {};
+		\node [style=none] (18) at (1, -1.75) {};
+		\node [style=none] (19) at (2, -0.5) {};
+		\node [style=none] (20) at (4, -2) {};
+		\node [style=dotC] (21) at (1.25, 0.75) {};
+		\node [style=none] (22) at (-2.75, -1) {};
+		\node [style=none] (23) at (0.25, -3) {};
+		\node [style=none] (24) at (2, 1) {};
+		\node [style=none] (25) at (2, 1.5) {};
+		\node [style=none] (26) at (2, -1) {};
+		\node [style=none] (27) at (3, -1) {};
+		\node [style=none] (28) at (3, 1.5) {};
+		\node [style=none] (29) at (2.5, 0.25) {$\texttt{M}$};
+		\node [style=none] (30) at (4, 1) {};
+		\node [style=none] (31) at (4, -0.5) {};
+		\node [style=none] (32) at (3, 1) {};
+		\node [style=none] (33) at (3, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (1.center)
+			 to (2.center)
+			 to (0.center)
+			 to cycle;
+		\draw (9.center)
+			 to (7.center)
+			 to (6.center)
+			 to (8.center)
+			 to cycle;
+		\draw (4.center) to (5.center);
+		\draw (12.center)
+			 to (13.center)
+			 to (11.center)
+			 to cycle;
+		\draw (15.center) to (10.center);
+		\draw [in=180, out=0] (17.center) to (19.center);
+		\draw [in=180, out=0] (18.center) to (20.center);
+		\draw [style=KC, in=90, out=135, looseness=0.75] (21) to (22.center);
+		\draw [style=KC, in=-180, out=-90] (22.center) to (23.center);
+		\draw [style=KC, in=-75, out=0] (23.center) to (21);
+		\draw [in=180, out=0] (21) to (24.center);
+		\draw (28.center)
+			 to (27.center)
+			 to (26.center)
+			 to (25.center)
+			 to cycle;
+		\draw (33.center) to (31.center);
+		\draw (32.center) to (30.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

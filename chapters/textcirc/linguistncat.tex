@@ -58,8 +58,6 @@ Let's say Bob is a different sort of formal linguist who wants to model the two 
 
 In fact, Bob gets to express a new kind of rewrite in the middle: the kind where two non-conflicting rewrites happen \emph{concurrently}. The important aspect of Bob's view over Alice's is that equalities have been replaced by isomorphisms between syntactically inequal rewrites. This demotion of equalities to isomorphisms means that Bob is dealing with a \emph{weak} 1-object-2-category; Bob does have 3-cells that relate different 2-cells with the same source and target, but all of Bob's $n$-cells for $n \geq 3$ are isomorphisms, rather than equalities.
 
-\begin{fullwidth}
-
 \subsection{A context free grammar to generate \texttt{Alice sees Bob quickly run to school}}
 
 We can describe a context-free grammar with the same combinatorial rewriting data that specifies planar string diagrams as we have been illustrating so far. One aspect of rewrite systems we adapt for now is the distinction between terminal and nonterminal symbols; terminal symbols are those after which no further rewrites are possible. We capture this string-diagrammatically by modelling terminal rewrites as 2-cells with target equal to the 1-cell identity of the 0-cell $\star$, which amounts to graphically terminating a wire. The generators subscripted $L$ (for \emph{label} or \emph{leaf}) correspond to terminals of the CFG, and represent a family of generators indexed by a lexicon for the language. The generators subscripted $i$ (for \emph{introducing a type}) correspond to rewrites of the CFG.
@@ -322,5 +320,3 @@ We spell out how this data becomes an $n$-categorical signature by enumerating c
 \end{enumerate}
 
 \end{defn}
-
-\end{fullwidth}

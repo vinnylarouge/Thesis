@@ -1,0 +1,98 @@
+\section{Previously, on DisCoCat}
+
+DisCoCat is a research programme in applied mathematical linguistics that is \textbf{Dis}tributional, \textbf{Co}mpositional and \textbf{Cat}egorical. Now that the formal background is out of the way, in this section I will recount a selective development of DisCoCat as relevant for this thesis. As a break or treat for the reader after the formal stuff, this section will make use of hand-drawn cartoons.
+
+\newthought{Lambek's Linguistics}\\
+
+It's hard for me to do justice to Jim Lambek's life. I feel as if have been in intimate conversation with Jim throughout my research, despite our separation by time. Anyone can look up the Curry-Howard-Lambek correspondence and follow the rabbit hole to see Jim's broad reach and lasting impact on category theory. I know that he was a jovial man who always carried a wad of twenties, a good sense of humour, and responsibility for his many friends.\\
+
+I also can't do better than Moortgat's history and exposition of typelogical grammar in \citep{}, so I will borrow Moortgat's phrasing and summarise Lambek's role in the story. Typelogical grammar originated in two seminal papers by Lambek in 1958 and 1961 \citep{}, where Lambek sought “to obtain an effective rule (or algorithm) for distinguishing sentences from non-sentences, which works not only for the formal languages of interest to the mathematical logician, but also for natural languages […]”.\\
+
+The method is to assign grammatical categories -- parts of speech such as nouns and verbs -- logical formulae. Whether a sentence is grammatical or not is obtained from deduction using these logical formulae in a Gentzen-style sequent proof. For a simple example, in English, we may consider a noun to have type $n$, and an transitive english verb $(n/s)\setminus n$, to yield a well-formedness proof of \texttt{Bob drinks beer} as:
+
+\[placeholder\]
+
+The type formation rules for such a grammar are intuitive. Apart from a stock of basic types $\mathbb{B}$ that contains special final types to indicate sentences, we have two type formation operators $(-/=)$ and $(- \setminus =)$, which along with their elimination rules establish a requirement that grammatical categories require other grammatical categories to their left or right. This is the essence of Lambek's calculi \textbf{NL} and \textbf{L}. CCGs keep the same minimal type-formations, but include extra sequent rules such as type-raising and cross-composition.\\
+
+We can notice an arbitrary asymmetry in the above formulation when we examine the transitive verb type $(n/s)\setminus n$ again; it asks first for a noun to the right, and then a noun to the left. We could just as well have asked for the nouns in the other order with the typing $(n/s)\setminus n$ and obtained all of the same proofs. To eliminate this asymmetry, Lambek devised pregroup grammars.
+
+Whereas a group is a monoid with inverses up to left- and right-multiplication, a pregroup weakens the requirement for inverses so that all elements have distinct left- and right- inverses, denoted $x^{-1}$ and $^{-1}x$ respectively. Eliminating or introducing inverses is a non-identity relation on elements of the pregroup, so we have axioms of the form e.g. $x \cdot ^{-1}x \rightarrow 1 \rightarrow ^{1}x \cdot x$. In this formulation, denoting the multiplication with a dot, both $(n/s)\setminus n$ and $(n/s)\setminus n$ become $^{-1}n \cdot s \cdot n^{-1}$, which just wants a noun to the left and a noun to the right in whatever order to eliminate the flanking inverses to reveal the embedded sentence type. Now we can obtain the same proof of correctness as a series of algebraic reductions.
+
+\begin{align}
+& &n \cdot (^{-1}n \cdot s \cdot n^{-1}) \cdot n\\
+&\rightarrow &(n \cdot ^{-1}n) \cdot s \cdot (n^{-1} \cdot n)\\
+&\rightarrow & 1 \cdot s \cdot 1\\
+&\rightarrow & s
+\end{align}
+
+\newthought{Coecke's Composition}\\
+
+Meanwhile, an underground grunge vagabond moonlighting as a quantum physicist moonlighting as a computer scientist was causing a shortage of cigars and whiskey in a small English town. He noticed a funny thing about the composition of multiple non-destructive measurements of a quantum system, which was that information could be carried, or flow, between them. So he wrote a paper \citep{}, which contained informal diagrams that looked like this:
+
+\[placeholder\]
+
+There were two impressive things about these diagrams. First, the effects such as transparencies for text boxes and curved serifs for angled arrows give a modern feel, but they were done manually in macdraw, the diagrammatic equivalent of sticks and stones. Second, though the diagrams were informal, they provided a way to visualise and reason about entanglement that was impossible by staring at the equivalent matrix formulation of the same composite operator. The most important diagram was this one, which will play a recurring role in our story.
+
+\[placeholder\]
+
+\newthought{Categorical quantum mechanics}\\
+
+Category theorists and physicists such as Abramsky and Baez were excited about these diagrams, which looked like string diagrams waiting to be made formal. So, with the help of a series of (now distinguished) degenerate dphil students, categorical quantum mechanics was formalised. The graphical cups and caps in the important diagram were determined to correspond to a special form of symmetric monoidal closed category called strong compact closed, the governing equations for which are:
+
+\[placeholder\]
+
+Diagrammatically, reasoning in a strongly compact closed category amounts to ignoring the usual requiremen of processiveness and forgetting the distinction between inputs and outputs, so that "future" outputs could curl back and be "past" inputs. This formulation also gave insight into the structure of quantum mechanics. For example, the process-state duality of strong compact closure manifested as the Choi–Jamiołkowski isomorphism:
+
+\[placeholder\]
+
+However, dealing with superpositions necessitated using summation operators within diagrams, which is cumbersome to write especially when dealing with maximally mixed states or bell states, which had to be written as the following weighted sum of basis states:
+
+\[placeholder\]
+
+An elegant diagrammatic simplification arose with the observation that special-$\dagger$-frobenius algebras, or spiders, correspond to choices of orthonormal bases \citep{} in \textbf{FdHilb}, the ambient setting of finite-dimensional hilbert spaces. Not only did this remove the need for summation operators, it also revealed that strong compact closure was a derived, rather than fundamental structure, since spiders induce compact closed structure as follows:
+
+\[placeholder\]
+
+And it turns out that interacting frobenius algebras are kind of useful for describing quantum mechanics.
+
+\[placeholder\]
+
+\newthought{Bob and Jim meet}\\
+
+\[placeholder\]
+
+\[placeholder\]
+
+\newthought{Development in Oxford}\\
+
+Bob and Jim's meeting brought together the adjectives 'compositional' and 'categorical', but one more actor Steve was required to introduce 'distributional', which refers to Firth's maxim \citep{} "you shall know a word by the company it keeps". In its modern incarnation, this refers generally to vector-based semantics for words, where proximity of vectors models semantic closeness.
+
+\[placeholder\]
+
+In ----, Steve Clark was a professor in the computer science department at Oxford, and he was wondering how to compose vector-based semantic representations.
+
+\[steve and bob and mehrnoosh\]
+
+It was realised that spiders could play the role of relative pronouns.
+
+\[frobpron\]
+
+Insights from quantum theory could be applied now in the linguistic setting.
+
+\[density lexical\]
+
+Keeping the structure of the diagrams but seeking relational rather than vector-based semantics, a bridge was made between linguistics and cognitive science.
+
+\[bolt\]
+
+Seeking dynamic epistemic logic, Bob envisioned a modification: DisCoCirc.
+
+\[discocirc\]
+
+Cross-pollination goes both ways: natural language processing was done on a quantum computer.
+
+\[qnlp\]
+
+\newthought{Where I come in}
+
+    

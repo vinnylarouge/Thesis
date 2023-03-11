@@ -1,5 +1,151 @@
 \begin{fullwidth}
 
+\section{How communication could work}
+
+\subsection{Grammars of speakers and listeners}
+
+There is a distinction between \emph{grammars of the speaker} -- which produce sentences -- and \emph{grammars of the listener} -- which deduce sentences. Viewed as mathematical processes, the two kinds of grammars go in opposite directions; speaking grammars (e.g. string-rewrite systems) start with some grammatical structure, and require informational input (e.g. which rule comes next) to produce lists of words -- sentences. Conversely, listening grammars (e.g. typelogical grammars) start with a sentence, and require informational input (e.g. grammatical typing and which proof rule to try next) to deduce or parse a grammatical structure. Since we can understand each other, these two types of grammar must enjoy a systematic correspondence, and if one believes that semantics is compositional according to syntax, then the correspondence must further explain how both speaking and listening grammars manipulate the same underlying semantic expression, whatever that may be.\\
+
+Here are some na\"{i}ve observations on the nature of speaking and listening. Let's suppose that a speaker, Preube, wants to communicate a thought to Fondo. Just as a running example that does not affect the point, let's say we can gloss the thought in first order logic as $\exists a \exists b \exists c \exists f : A(a) \wedge B(b) \wedge C(c) \wedge F(f) \wedge L(a,f) \wedge G(b,c,f)$. In diagrammatic first order logic [], this is equivalently presented as the following diagrams (and any other diagram that agrees up to connectivity)
+
+\[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex}}\]
+
+Preube and Fondo cooperate to achieve the miracle; Preube encodes his thoughts -- a structure that isn't a one-dimensional string of symbols -- into a one-dimensional string of symbols. And then Fondo does the reverse, turning a one-dimensional string of symbols into a thought-structure like that of Preube's. What I mean by "like that of Preube's" is that both Preube and Fondo agree on the structure of entities and relations up to the words for those entities and relations. For example, Preube could ask Fondo comprehension questions such as \texttt{WHO GAVE WHAT? TO WHO?}, and if Fondo can always correctly answer -- e.g. \texttt{BOB GAVE FLOWERS. TO CLAIRE.} -- then both Preube and Fondo agree on the relational structure of the communicated thought to the extent permitted by language. It may still be that Preube and Fondo have radically different internal conceptions of what \texttt{FLOWERS} or \texttt{GIVING} or \texttt{BEETLES IN BOXES} are, but that is alright: we only care that the \emph{interacting structure} of the thought-relations in each person's head are the same, not their specific representations.\\
+
+We assume Preube and Fondo speak the same language, so both know how words in their language correspond to putative building blocks of thoughts, and how the order of words in sentences and special grammatical words affect the (de-/re-)construction procedures. Now we have to explain how it is that the two can do this for infinitely many thoughts, and new thoughts never encountered before. Using string diagrams, this is surprisingly easy, because string diagrams are algebraic expressions that are invariant under certain topological manipulations that make it easy to convert between different shapes of language. Here is a sketch example that we will soon have the mathematics to express formally:\\
+
+\begin{example}[\texttt{Alice likes flowers that Bob gives Claire.}]
+Let's say Preube is using a context-free grammar to produce sentences, and Fondo a pregroup grammar. The rule of the game is that Preube and Fondo can agree on a string-diagrammatic encoding strategy before having to communicate with each other. Here is one such strategy: Preube might generate the example sentence like so:
+\[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex2a}}\]
+Mathematically, it makes no difference if we take the Poincar\'{e} dual of the tree, so that zero-dimensional nodes become one-dimensional wires, and branchings become zero-dimensional points linking wires -- but we can just as well depict those points as boxes to label them more clearly.
+\[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex2b}}\]
+Now that Preube can express their grammatical structure string-diagrammatically, they can try to deform their first-order-logic diagram -- representing what they mean to communicate -- subject to the constraint that every one of their branchings (the structure of the CFG) is something recoverable by Fondo using just pregroup reductions. To do so, Preube introduces a formal blue wire to mimic Fondo's sentence-type, and stuffs some complexity inside the labels in the form of internal wirings: a multiwire configuration for \texttt{that}, and a twist for \texttt{gives}. Those internal wirings are the content of Preube and Fondo's shared strategy.
+\[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex2c}}\]
+So, when Fondo receives the sentence, Fondo's pregroup derivation yields a pregroup diagram that is connectively equivalent to what Preube stuffed inside the context-free grammar structure. So now the two have strong equivalence between their grammars in the sense that every one of Preube's branches is resolved by one of Fondo's reductions.
+\[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex2d}}\]
+Now to fully recover Preube's intended FOL-diagram, Fondo refers to the internal wirings that form their shared strategy, and fills those in.
+\[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex2}}\]
+\end{example}
+
+\begin{example}[\texttt{Bob gives Claire flowers. Alice likes flowers.}]
+\[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex3a}}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex3b}}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex3}}\]
+\end{example}
+
+The nature of their challenge can be summarised as an asymmetry of information. The speaker knows the structure of a thought and has to supply information or computation in the form of choices to turn that thought into text. The listener knows only the text, and must supply information or computation to deduce the thought behind it. By this perspective, language is a shared and cooperative strategy to solve this (de/en)coding interaction. I will now outline the constraints imposed by this interaction, illustrating them simply using string-rewrite grammars for the speaker and pregroup grammars for the listener.
+
+\newthought{Speakers choose.} The speaker Preube must supply decisions about phrasing a thought in the process of speaking it. At some point at the beginning of an utterance, Preube has a thought but has not yet decided how to say it. Finding a particular phrasing requires choices to be made, because there are many ways to express even simple relational thoughts. For example, the relational content of our running example might be expressed in at least two ways (glossing over determiners):
+
+\[\texttt{Alice likes flowers that Bob gives Claire.}\]
+\[\texttt{Bob gives Claire flowers. Alice likes (those) flowers.}\]
+
+Whether those decisions are made by committee or coinflips, those decisions represent information that must be supplied to Preube in the process of speaking a thought. For this reason, we consider context-free-grammars (and more generally, other string-rewrite systems) to be \emph{grammars of the speaker}. The start symbol $S$ is incrementally expanded and determined by rule-applications that are selected by the speaker. The important aspect here is that the speaker has an initial state of information $S$ that requires more information as input in order to arrive at the final sentence. Note that the concept of grammars of the speaker are not exhausted by string-rewrite systems, merely that string-rewrite systems are a prototype that illustrate the concept well.
+
+\newthought{Listeners deduce.} The listener Fondo must supply decisions about which words are grammatically related, and how. Like right-of-way in driving, sometimes these decisions are settled by convention, for example, subject-verb-object order in English. Sometimes sophisticated decisions need to be made that override or are orthogonal to conventions.
+
+\begin{example}[Garden path sentences]
+So-called "garden path" sentences illustrate that listeners have to make choices to resolve lexical ambiguities. One such garden-path sentence is \texttt{The old man the boat}, where typically readers take \texttt{The old man} as a noun-phrase and \texttt{the boat} as another noun-phrase. We can sketch how the readers might think with a (failed) pregroup grammar derivation:
+
+\[
+\AxiomC{$\texttt{the} : n \cdot n^{-1}$}
+\AxiomC{$\texttt{old} : n \cdot n^{-1}$}
+\BinaryInfC{$\texttt{the\textvisiblespace old}: n \cdot n^{-1}$}
+\AxiomC{$\texttt{man} : n$}
+\BinaryInfC{$\texttt{the\textvisiblespace old\textvisiblespace man}: n$}
+\AxiomC{$\texttt{the} : n \cdot n^{-1}$}
+\AxiomC{$\texttt{boat} : n$}
+\BinaryInfC{$\texttt{the\textvisiblespace boat}: n$}
+\BinaryInfC{\textcolor{red}{Not a sentence!}}
+\DisplayProof
+\]
+
+So the reader has to backtrack, taking \texttt{The old} as a noun-phrase and \texttt{man} as the transitive verb. This yields a sentence as follows:
+
+\[
+\AxiomC{$\texttt{the} : n \cdot n^{-1}$}
+\AxiomC{$\texttt{old} : n$}
+\BinaryInfC{$\texttt{the\textvisiblespace old}: n$}
+\AxiomC{$\texttt{man} : ^{-1}n \cdot s \cdot n^{-1}$}
+\BinaryInfC{$\texttt{the\textvisiblespace old\textvisiblespace man}: s \cdot n^{-1}$}
+\AxiomC{$\texttt{the} : n \cdot n^{-1}$}
+\AxiomC{$\texttt{boat} : n$}
+\BinaryInfC{$\texttt{the\textvisiblespace old}: n$}
+\BinaryInfC{$\texttt{the\textvisiblespace old\textvisiblespace man\textvisiblespace the\textvisiblespace boat\textvisiblespace}: s$}
+\DisplayProof
+\]
+
+Garden-path sentences illustrate that listeners must make choices about what grammatical roles to assign words. We make these kinds of contextual decisions all the time with lexically ambiguous words or highly homophonic languages like Mandarin; garden-path sentences are special in that they trick the default strategy badly enough that the mental effort for correction is noticeable.
+\end{example}
+
+\begin{example}[Ambiguous scoping]
+Consider the following sentence:
+\[\texttt{Everyone loves someone}\]
+The sentence is secretly (at least) two, corresponding to two possible parses. The usual reading is (glossed) $\forall x \exists y : \texttt{loves}(x,y)$. The odd reading is $\exists y \forall x : \texttt{loves}(x,y)$: a situation where there is a single person loved by everyone. We can sketch this difference formally using a simple combinatory categorial grammar.
+
+\[
+\AxiomC{$\texttt{everyone} : (n \multimap s) \multimap s$}
+\AxiomC{$\texttt{loves} : n \multimap s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
+\BinaryInfC{$\texttt{everyone\textvisiblespace loves} : s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
+\AxiomC{$\texttt{someone} : (s \ \rotatebox[origin=c]{180}{$\multimap$} \ n) \multimap s$}
+\BinaryInfC{$\texttt{everyone\textvisiblespace loves\textvisiblespace someone} : s$}
+\DisplayProof
+\]
+
+\[
+\AxiomC{$\texttt{everyone} : (n \multimap s) \multimap s$}
+\AxiomC{$\texttt{loves} : n \multimap s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
+\AxiomC{$\texttt{someone} : (s \ \rotatebox[origin=c]{180}{$\multimap$} \ n) \multimap s$}
+\BinaryInfC{$\texttt{loves\textvisiblespace someone} : n \multimap s$}
+\BinaryInfC{$\texttt{everyone\textvisiblespace loves\textvisiblespace someone} : s$}
+\DisplayProof
+\]
+
+CCGs have functorial semantics in any cartesian closed category, such as one where morphisms are terms in the lambda calculus and composition is substitution. So we might specify a semantics as follows:
+
+\begin{align}
+[\![ \texttt{everyone} ]\!] = \lambda (\lambda x . V(x)) . \forall x : V(x) \\
+[\![ \texttt{loves} ]\!] = \lambda x \lambda y . \texttt{loves}(x,y) \\
+[\![ \texttt{someone} ]\!] = \lambda (\lambda y . V(y)) . \exists y : V(y)
+\end{align}
+
+Now we can plug-in these interpretations to obtain the two different meanings. We decorate with corners just to visually distinguish which bits are partial first-order logic.
+
+\[
+\AxiomC{$\lambda (\lambda x . V(x)) . \ulcorner \forall x : V(x) \urcorner : (n \multimap s) \multimap s$}
+\AxiomC{$\lambda x \lambda y . \ulcorner \texttt{loves}(x,y) \urcorner : n \multimap s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
+\BinaryInfC{$ \lambda y . \ulcorner \forall x : \texttt{loves}(x,y) \urcorner : s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
+\AxiomC{$\lambda (\lambda y . V(y)) . \ulcorner \exists y : V(y) \urcorner : (s \ \rotatebox[origin=c]{180}{$\multimap$} \ n) \multimap s$}
+\BinaryInfC{$ \ulcorner \exists y \forall x : \texttt{loves}(x,y) \urcorner : s$}
+\DisplayProof
+\]
+
+\[
+\AxiomC{$\lambda (\lambda x . V(x)) . \ulcorner \forall x : V(x) \urcorner : (n \multimap s) \multimap s$}
+\AxiomC{$\lambda x \lambda y . \ulcorner \texttt{loves}(x,y) \urcorner : n \multimap s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
+\AxiomC{$\lambda (\lambda y . V(y)) . \ulcorner \exists y : V(y) \urcorner : (s \ \rotatebox[origin=c]{180}{$\multimap$} \ n) \multimap s$}
+\BinaryInfC{$\lambda x . \ulcorner \exists y : \texttt{loves}(x,y) \urcorner : n \multimap s$}
+\BinaryInfC{$ \ulcorner \forall x \exists y : \texttt{loves}(x,y) \urcorner : s$}
+\DisplayProof
+\]
+
+\end{example}
+
+As is convention for parsing, let's grant that there's a daemon in Fondo's head that makes all these lexical disambiguation choices for them, automatically settling on which sense of \texttt{the old man} or \texttt{somebody} is appropriate. As mathematicians looking for a toy model to get started, we are looking for the simplest kind of choice that Fondo can be trusted to make with only grammatical information available to them.
+
+%\newthought{The speaker's choices and the listener's deductions must be related.} The way the speaker decomposes the thought into words in text in the speaker's grammar must allow the listener to reconstruct the thought in the listener's grammar. Even in simple cases where both parties are aiming for unambiguous communication, the listener still must make choices. This is best illustrated by introducing two toy grammars -- we pick a context-free grammar for the speaker and a pregroup grammar for the listener, because they are simple, planar, and known to be weakly equivalent.
+
+\begin{example}
+(grammar pieces -- as simple as it gets)
+\texttt{Bob runs.}
+\texttt{Bob quickly runs.}
+\texttt{Bob drinks beer.}
+\texttt{Bob quickly drinks beer.}
+
+\end{example}
+
+\end{fullwidth}
+
 \subsection{Discrete Monoidal Fibrations}
 
 We introduce the concept of a discrete monoidal fibration: a mathematical bookkeeping tool that relates kinds of choices speakers and listeners make when generating and parsing text respectively. We proceed diagrammatically. The first concept is that of a \emph{monoidal functor box}.
