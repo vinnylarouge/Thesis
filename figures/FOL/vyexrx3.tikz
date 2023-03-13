@@ -1,0 +1,71 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (1, 1.75) {};
+		\node [style=none] (1) at (1, 0.25) {};
+		\node [style=none] (2) at (2, 1) {};
+		\node [style=none] (3) at (1, 0.5) {};
+		\node [style=none] (4) at (-2.25, -1.25) {};
+		\node [style=none] (5) at (-1, 1.5) {};
+		\node [style=none] (6) at (-1, 0) {};
+		\node [style=none] (7) at (0, 0.75) {};
+		\node [style=none] (8) at (-1, 1.25) {};
+		\node [style=none] (9) at (-1, 0.25) {};
+		\node [style=none] (10) at (-1.75, 0.25) {};
+		\node [style=none] (11) at (-1, 1.25) {};
+		\node [style=none] (12) at (-2, 1.25) {};
+		\node [style=none] (13) at (-2, 2) {};
+		\node [style=none] (14) at (1, 1.5) {};
+		\node [style=smallorangedot] (15) at (-1.75, 0.25) {};
+		\node [style=none] (16) at (3, 0) {$=$};
+		\node [style=none] (17) at (4, 0) {};
+		\node [style=smallorangedot] (18) at (5.5, 0) {};
+		\node [style=none] (19) at (-3, 0) {$\supseteq$};
+		\node [style=none] (20) at (-5, 0.75) {};
+		\node [style=none] (21) at (-5, -0.75) {};
+		\node [style=none] (22) at (-4, 0) {};
+		\node [style=none] (23) at (-5, 0.5) {};
+		\node [style=none] (24) at (-5, -0.5) {};
+		\node [style=none] (25) at (-6.25, -0.5) {};
+		\node [style=none] (26) at (-5, 0.5) {};
+		\node [style=none] (27) at (-5.75, 0.5) {};
+		\node [style=smallbluedot] (28) at (-5.75, 0.5) {};
+		\node [style=none] (29) at (7, 0) {$\supseteq$};
+		\node [style=none] (30) at (9.25, 0.75) {};
+		\node [style=none] (31) at (9.25, -0.75) {};
+		\node [style=none] (32) at (10.25, 0) {};
+		\node [style=none] (33) at (9.25, 0.5) {};
+		\node [style=none] (34) at (9.25, -0.5) {};
+		\node [style=none] (35) at (8, -0.5) {};
+		\node [style=none] (36) at (9.25, 0.5) {};
+		\node [style=none] (37) at (8.5, 0.5) {};
+		\node [style=smallbluedot] (38) at (8.5, 0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KM] (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=KO, in=-180, out=0] (4.center) to (3.center);
+		\draw [style=KM] (5.center)
+			 to (6.center)
+			 to (7.center)
+			 to cycle;
+		\draw [style=KO] (10.center) to (9.center);
+		\draw [style=KB] (11.center)
+			 to (12.center)
+			 to [bend left=90, looseness=1.25] (13.center)
+			 to [in=180, out=0] (14.center);
+		\draw [style=KO] (17.center) to (18);
+		\draw [style=KM] (21.center)
+			 to (22.center)
+			 to (20.center)
+			 to cycle;
+		\draw [style=KO] (25.center) to (24.center);
+		\draw [style=KB] (27.center) to (26.center);
+		\draw [style=KM] (31.center) to (32.center);
+		\draw [style=KM] (32.center) to (30.center);
+		\draw [style=KM] (30.center) to (31.center);
+		\draw [style=KO] (35.center) to (34.center);
+		\draw [style=KB] (37.center) to (36.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

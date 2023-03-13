@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-5.5, 0.75) {};
+		\node [style=none] (1) at (-5.5, -0.75) {};
+		\node [style=none] (2) at (-4.5, 0) {};
+		\node [style=none] (3) at (-5.5, 0.5) {};
+		\node [style=none] (4) at (-3.5, 0) {$=$};
+		\node [style=none] (5) at (-5.1, 0) {$\textcolor{magenta}{R}$};
+		\node [style=none] (6) at (-5.5, -0.5) {};
+		\node [style=smallbluedot] (7) at (-6.25, 0.5) {};
+		\node [style=none] (8) at (-7, -0.5) {};
+		\node [style=none] (9) at (-5.5, 0.5) {};
+		\node [style=none] (10) at (-2.5, 0) {};
+		\node [style=smallorangedot] (11) at (-1, 0) {};
+		\node [style=none] (12) at (-6, 1) {$\textcolor{blue}{A}$};
+		\node [style=none] (13) at (-6.25, -1) {$\textcolor{orange}{B}$};
+		\node [style=none] (14) at (-1.75, -0.5) {$\textcolor{orange}{B}$};
+		\node [style=none] (15) at (1, 0) {$\Leftrightarrow$};
+		\node [style=none] (16) at (5, 0) {$\forall \textcolor{orange}{y_B} \exists \textcolor{blue}{x_A} : \textcolor{magenta}{R}\textcolor{blue}{x}\textcolor{orange}{y}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KM] (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=KB] (7) to (9.center);
+		\draw [style=KO] (8.center) to (6.center);
+		\draw [style=KO] (10.center) to (11);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,90 @@
+\begin{fullwidth}
+
+\section{Towards learning gates that satisfy First-Order Logic specifications over boundedly finite models}
+
+Formal semanticists love logic, so here I will throw them a bone. I will sketch a bridge between FOL over boundedly finite models and machine learning. We have seen so far how equational constraints between interacting processes can shape their behaviour in desired ways. Moreover, it is evident that when the wires are equipped with a metric, we may use equational constraints as a loss function to train gate-representations. In the worst case, we must perform raw stochastic gradient descent across a massive ensemble of gates such that they all satisfy the equations we want of them, but this is good enough for learning finite models for first-order logic using gradient descent \emph{in principle}, and I will leave it to engineers to work out cleverer ways to achieve the same thing.\\
+
+The setup is this: suppose we have already learnt gates for predicates such as \texttt{Professor} and \texttt{Student} and \texttt{Likes}. How do we interpret statements like \texttt{Every professor likes some student}? It is already known how first-order logical theories are interpreted diagrammatically [] as equations between a scalar corresponding to a closed first order logic sentence and the empty scalar, which, when applied as a constraint to a functor into \textbf{Rel}, yields a set-theoretic model. My contribution here is providing an alternative formulation that breaks up large scalars into more piecemeal equational constraints, limited to boundedly finite and typed set-theoretic models.\\
+
+The first obstacle we encounter is that there are no symmetric monoidal functors from \textbf{FinRel}$ˆ{\times}$ to \textbf{FinVect}$ˆ{\otimes}_\mathbb{R}$, where the latter is closer to where machine learning tends to happen, once nonlinear activation functions are introduced. The reason for this is that while \textbf{FinRel} can be viewed as \textbf{FinVect} over the boolean semiring, the boolean semiring has idempotent addition and multiplication ($a \wedge a = a$), while $\mathbb{R}$ doesn't. Moreover, \textbf{Rel} is discrete, and we would like some kind of continuous semiring so that gradient descent can do something. So we just observe that all we need in order to define matrix multiplication is a semiring, and that the boolean semiring embeds into the $(max,\times,[0,1])$ semiring, which is isomorphic by natural log to signed restrictions of the min-plus and max-times tropical semirings [] $(min,+,\mathbb{R}ˆ{\geq 0} \cup \{\infty\})$ and $(max,+,\mathbb{R}ˆ{\leq 0} \cup \{- \infty\})$). So denoting these restricted tropical semiring $\mathbb{T}$, we have an evidently faithful symmetric monoidal functor from \textbf{FinRel}$ˆ{\times}$ into \textbf{(SemiRing)FinVect}$ˆ{\otimes}_\mathbb{T}$. So what we have achieved so far is to describe a setting in which gradient descent can take place to learn equational constraints presented in \textbf{FinRel} with the $\times$ monoidal product.\\
+
+Before we get started with diagrams, just a reminder that in \textbf{Rel} or \textbf{ContRel} restricted to interpret \textbf{FinRel} with sticky-spiders, we don't have to care about the direction on the page in which wires go, because we can always use spiders to turn inputs into outputs and vice-versa.
+
+\[\tikzfig{FOL/directionindepedence}\]
+
+So without loss of generality we present equational constraints taking predicates to be effects. We additionally assume that we may have different wire-types, corresponding to a type-guarded FOL. A modelling assumption we take is that the non-zero copyable states or points of a wire correspond to the individuals in the FOL-model. Now we can present some equational constraints and their corresponding interpretation in first-order logic. Let's start with some simple quantifiers.
+
+\begin{proposition}
+\[\tikzfig{FOL/exrx}\]
+\begin{proof}
+If there exists some point $x_A$ such that $Rx$, then the equation on the left holds. If there does not exist any $x_A$ such that $Rx$, then the equation on the left does not hold; the RHS must equal the zero scalar.
+\end{proof}
+\end{proposition}
+
+\begin{proposition}
+\[\tikzfig{FOL/vxrx}\]
+\begin{proof}
+This is just how $R$ is interpreted as a subset of $A$ if it is the case that all $x_A$ satisfy $Rx$.
+\end{proof}
+\end{proposition}
+
+\begin{proposition}\label{prop:allthenex}
+\[\tikzfig{FOL/vyexrx}\]
+\begin{proof}
+Suppose the equation holds. Then plugging in any individual state $y_B$ yields the unit scalar, which means there is some $x_A$ such that $Rxy$. Suppose the FOL holds. Then we can diagrammatically construct the set of all $x_A$ such that $Rxy$ for some $y$. We know from the FOL this set cannot be empty, and we know that it is at most all of $A$:
+\[\tikzfig{FOL/vyexrx2}\]
+So starting with the LHS of the equation, we first have an inequality from above, followed by a definitional equality: since $\forall y_B \exists x_A : Rxy$, the image under $R$ of our set of $A$s must be all of $B$. Finally, we have that "all of B" is the maximal subset of B, which altogether yields our equality.
+\[\tikzfig{FOL/vyexrx3}\]
+\end{proof}
+\end{proposition}
+
+To get at $\exists x \forall y$, we need some extra help and trickiness. Observe that since $\exists x \forall y : Rxy$ entails $\forall y \exists x : Rxy$, so we are looking for an extra diagrammatic equation that will force $R$ to assign at least one $x$ for which all $y$ $Rxy$s. Recall that we're essentially dealing with one-hot encodings of subsets, so that each unit basis vector corresponds to an individual, and that bases may be permuted. Let's suppose we are granted a "cycle" function for every finite collection of wires, the job of which is to permute all of the copiable individuals or basis vectors, such that if there are $N$ copiables, or equivalently that states on the wire represent subsets of a set of size $N$, then we want the following diagrammatic equations to hold:
+
+\[\tikzfig{FOL/cyclegenerator}\]
+
+\begin{proposition}\label{prop:promotion}
+\[\tikzfig{FOL/exvyrx}\]
+\begin{proof}
+Note that we only need to prove one direction this time! Suppose the two equations hold. Then we have the following:
+\[\tikzfig{FOL/exvyrx2}\]
+We can keep on going beyond 3 copies of $R$ to eventually get $N$ copies of $R$, where each copy-branch of the $B$ wire has a distinct number of cyclers, from 0 up to $N-1$. We'll keep it at 3 for diagrammatic simplicity. If we plug in an individual $y_B$ into this $N$-fold copy expression, by design of the cycler, we get:
+\[\tikzfig{FOL/exvyrx3}\]
+From left to right, the first equality holds because deleting a non-zero copiable gives the unit scalar. The second equation follows from our assumption. The third equation follows by copying and cycling. The final diagram states that for all 3 distinct elements of the set $B$, there is some common $x_A$ such that $Rx(y_{1,2,3})$, which is precisely the FOL.
+\end{proof}
+\end{proposition}
+
+\begin{proposition}
+We can obtain diagrammatic equational constraints for any quantifier ordering $\mathbf{Q}_1 x_A, \cdots \mathbf{Q}_k x_Z : \Phi(x_A,\cdots,x_Z)$ for any (FOL-terminology) matrix $\Phi(x_A,\cdots,x_Z)$ that only contains $\wedge$ and postive atoms.
+\begin{proof}
+Proposition \ref{prop:allthenex} applies for any quantifier prefix that has all $\forall$s followed by $\exists$s, by duplicating wires and counits. Proposition \ref{prop:promotion} promotes existentially-quantified variables past a universally quantified one in the quantifier order; in the case of nonparticipating wires, we cap them off with a counit. So we start with the equation of Proposition \ref{prop:allthenex} then apply additional equations using Proposition \ref{prop:promotion} as appropriate to obtain the desired quantification order.
+\end{proof}
+\end{proposition}
+
+All that's left to deal with is negation. Unfortunately negation -- or complementation in the language of sets -- is not linear by any account. We opt to deal with negation by learning a new relation for whatever it is we want to negate.
+
+\begin{proposition}
+\[\tikzfig{FOL/negation}\]
+\begin{proof}
+We just have to explain notation. For the first equation, set union in \textbf{FinRel}$ˆ{\times}$ maps to the direct sum in \textbf{(SemiRing)FinVect}$ˆ{\otimes}_\mathbb{T}$, so we are just asking that the union of the original (possibly composite) predicate $P$ along with a new predicate $Q$ gives the whole set, which is one half of complementation. For the second equation Composing two effects by copy map gives their intersection, so we are asking that the intersection of the original relation $P$ and the new predicate $Q$ is empty, and together the two equations characterise what complementation is.
+\end{proof}
+\end{proposition}
+
+\begin{corollary}[Learning FOL]
+Provided cycling functions and the described one-hot encoding of type-guarded FOL over boundedly finite models in \textbf{(SemiRing)FinVect}$ˆ{\otimes}_\mathbb{T}$, equational constraints between diagrams suffice to capture FOL-conditions on learnt predicates.
+\end{corollary}
+
+\subsection{Discussion}
+
+I named this section \emph{towards} learning gates, and now it's time to unpack this qualifier and explain some technical choices. First, the Kronecker product of two finite dimensional vector spaces yields a vector space with dimension equal to the product of the input dimensions, rather than the sum of dimensions in the case of direct sums. Rather misleadingly for category theorists and physicists, the "tensor" in TensorFlow doesn't refer to this kind of generic tensor with possibly exponential dimension blowup, so to the best of my knowledge there are no out-of-the-box methods to put what I've written into practice.
+
+Second, because the Kronecker product is so thicc and training is hard enough as-is, it seemed necessary to me to split up the single-scalar representations of FOL from [] into smaller pieces, where there is at most one box to have weights to be adjusted for each equation. For linguistically useful but logically-redundant things such as conditionals, two boxes have to be learnt at once, which is possibly technically hard, but graphically easy, since $x \Rightarrow y \iff x \wedge y = x$, and we know already how to express intersection by composing effects with copy. While I'm on the topic of logical presentations, I'll also remark for logicians that I'm dealing with non-empty finite models.
+
+Third, the Kronecker product requires certain concessions and opens certain possibilities. Computer scientists may have been confused at the roundabout and costly way of defining negation, when it is surely perfectly reasonable to sandwich a function $x \mapsto 1-x$ around the relation to be negated. The reason we couldn't just do this is because introducing such a nonlinearity breaks the categorical definition of tensor product, and the diagrammatic syntax would no longer be safe: it is not clear how to unambiguously define the Kronecker product outside of a fundamentally linear setting. So on the one hand we've reduced the problem of learning finite models of FOL to linear regression -- the older cousin of ML -- but on the other hand we still have to deal with potentially very high-dimensional vector spaces. Here is purportedly where quantum computers have a potential advantage over classical computers, since qubits compose in parallel by the kronecker product. However, even if there were some way to translate this story wholesale to the realm of ZX-calculus, it is still extremely difficult in complexity-theoretic terms just to test that quantum circuits are equal []; intuitively the reason is that the input space is exponentially large in the number of qubits, and in order to check whether two circuits are equal requires sampling to cover the whole input space and comparing the outputs. This seems like a roadblock, but I don't know enough about quantum computing or machine learning to make an informed assessment of feasibility.
+
+Fourth, it is unclear how vector representations in $\mathbb{R}$ will behave when compressed into $\mathbb{T}$. Optimistically, Tropical mathematics has been applied in the machine learning context [], and rather nicely, tropical polynomial curves are precisely piecewise-linear approximations to convex regions in Euclidean space, so there may be a latent connection to some ongoing work that seeks to bring together G\"{a}rdenfor's work on concepts with machine learning []. Nevertheless, there is further work to be done in order to import vector-representations for words into the tropical and kronecker settings.
+
+Fifth, the initial constraint of seeking a functor from $\textbf{Rel}$ to some variant of $\textbf{Vect}$ may be misguided; I obeyed this constraint for mostly aesthetic reasons, so that string diagrams could remain central. It could very well be that there are far better ways to learn FOL-representations in practice using the power of deep non-linear neural nets, and it could be that there are fine string diagrams somewhere that allow for nonlinear operators to behave as if they had a kronecker product. The real problem here is that I am terminally diagram-brained and I don't really know of (or care about) any alternative routes.
+
+That is all the dirty laundry I could think of for this sketch, so there you have it: a highly impractical bridge between FOL and machine learning. 
+
+\end{fullwidth}
