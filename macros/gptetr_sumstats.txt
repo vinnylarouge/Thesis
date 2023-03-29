@@ -1,0 +1,138 @@
++++Summary statistics:
+All tests are Wilcoxson signed-rank as implemented in Mathematica version 13.0.1.0. by SignedRankTest method.
+
+Total questions = 61
+
+[How often do GPTs produce human-like answers?]
+GPT-3 Production is ETR compliant 	= 30 (49.18%)
+GPT-3.5 Production is ETR compliant = 37 (60.66%)
+GPT-4 Production is ETR compliant 	= 44 (72.13%)
+(N.B. this means either directly or after a followup.)
+statistical significance of observation:
+3 vs 3.5 	= 0.1134
+3.5 vs 4 	= 0.1316
+3 vs 4 		= 0.0030 ***
+{strong evidence for increased ETR-compliance in production from 3 to 4}
+
+[How good are GPTs as reasoners?]
+GPT-3 Production is correct 	= 34 (55.74%)
+GPT-3.5 Production is correct 	= 29 (47.54%)
+GPT-4 Production is correct 	= 38 (62.29%)
+statistical significance of observation:
+3 vs 3.5 	= 0.3248
+3.5 vs 4 	= 0.0519 *
+3 vs 4 		= 0.4862
+{borderline evidence for a rise in correct production from 3.5 to 4}
+
+
+[How often do GPTs actively commit human-like errors in reasoning?]
+GPT-3 Production is fallacious 		= 11 (18.03%)
+GPT-3.5 Production is fallacious 	= 20 (32.79%)
+GPT-4 Production is fallacious 		= 21 (34.43%)
+(N.B. fallacious := production of an ETR-compliant and incorrect answer)
+statistical significance of cross-gen changes:
+3 vs 3.5 	= 0.0140 **
+3.5 vs 4 	= 0.8121
+3 vs 4 		= 0.0135 **
+{fair evidence for a rise in fallacious production between 3 (no RLHF) vs 3.5 and 4 (RLHF)}
+
+[How often do GPTs passively verify human-like errors in reasoning?]
+GPT-3 Query is fallacious 	= 11 (18.03%)
+GPT-3.5 Query is fallacious = 15 (24.59%)
+GPT-4 Query is fallacious 	= 13 (21.31%)
+(N.B. fallacious := verification of an ETR-compliant and incorrect answer)
+statistical significance of cross-gen changes:
+3 vs 3.5 	= 0.3014
+3.5 vs 4 	= 0.5941
+3 vs 4 		= 0.6379
+{cross-gen observation: No evidence to support difference in rate or mechanism of fallacious endorsement.}
+
+[How often do GPTs produce or endorse human-like errors in reasoning?]
+GPT-3 is fallacious 	= 16 (26.23%)
+GPT-3.5 is fallacious 	= 27 (44.26%)
+GPT-4 is fallacious 	= 22 (36.07%)
+(N.B. fallacious := verification of an ETR-compliant and incorrect answer)
+statistical significance of cross-gen changes:
+3 vs 3.5 	= 0.0083 ***
+3.5 vs 4 	= 0.1450
+3 vs 4 		= 0.1647
+{strong evidence to support a rise in fallaciousness from 3 to 3.5 (same backend but 3.5 has RLHF)}
+
+[How often do GPTs endorse conclusions in a human-like way?]
+GPT-3 Query is ETR compliant 	= 22 (36.07%)
+GPT-3.5 Query is ETR compliant 	= 30 (49.18%)
+GPT-4 Query is ETR compliant 	= 33 (54.10%)
+statistical significance of cross-gen changes:
+3 vs 3.5 	= 0.1060
+3.5 vs 4 	= 0.5255
+3 vs 4 		= 0.0354 **
+{fair evidence of improvement in correct endorsements from 3 to 4}
+
+
+[How often do GPTs endorse correct conclusions?]
+GPT-3 Query is correct 		= 29 (47.54%)
+GPT-3.5 Query is correct 	= 31 (50.82%)
+GPT-4 Query is correct 		= 43 (70.49%)
+statistical significance of cross-gen changes:
+3 vs 3.5 	= 0.6701
+3.5 vs 4 	= 0.0150 **
+3 vs 4 		= 0.0045 ***
+{Fair evidence for bigger-model from 3.5 to 4 increasing correct endorsement. Strong evidence for bigger-model + RLHF from 3 to 4 increasing correct endorsement.}
+
+[To what extent do GPTs produce-OR-endorse conclusions similarly to humans?]
+GPT-3 endorses an ETR prediction 	= 34 (59.01%)
+GPT-3.5 endorses an ETR prediction 	= 47 (77.05%)
+GPT-4 endorses an ETR prediction 	= 46 (75.41%)
+(N.B. endorse := either produces or affirms ETR-prediction when queried)
+statistical significance of cross-gen changes:
+3 vs 3.5 	= 0.0083 ***
+3.5 vs 4 	= 0.8213
+3 vs 4 		= 0.0268 **
+{see test below}
+
+[To what extent do GPTs produce-AND-endorse conclusions similarly to humans?]
+GPT-3 endorses an ETR prediction 	= 16 (26.23%)
+GPT-3.5 endorses an ETR prediction 	= 20 (32.79%)
+GPT-4 endorses an ETR prediction 	= 31 (50.82%)
+(N.B. endorse := either produces or affirms ETR-prediction when queried)
+statistical significance of cross-gen changes:
+3 vs 3.5 	= 0.3586
+3.5 vs 4 	= 0.0228 **
+3 vs 4 		= 0.0028 ***
+{Both the above tests taken together indicate at least fair evidence of increasing common-sense from 3 to 4}
+
+
+[How often do GPTs produce-AND-endorse correct conclusions?]
+GPT-3 is correct-and-consistent 	= 18 (29.51%)
+GPT-3.5 is correct-and-consistent 	= 18 (29.51%)
+GPT-4 is correct-and-consistent 	= 35 (57.38%)
+statistical significance of cross-gen changes:
+3 vs 3.5 	= 1
+3.5 vs 4 	= 0.0007 ***
+3 vs 4 		= 0.0017 ***
+{strong evidence of improvement in correctness and consistency between 3-backend and 4-backend.}
+
++++Intra-generational comparisons
+
+[We know humans produce answers other than the ones they endorse.
+Are the GPTs similar in this aspect?]
+GPT-3 Production- vs. Query-ETR 	= 0.6552
+GPT-3.5 Production- vs. Query-ETR 	= 0.3248
+GPT-4 Production- vs. Query-ETR 	= 0.1169
+{no evidence to support this similarity with humans.}
+
+
+[We asked GPTs to either produce or check answers to questions.
+Do GPTs differ in performance when asked to produce vs. verify answers?]
+GPT-3 Prod-correct vs. Quer-correct 	= 0.3429
+GPT-3.5 Prod-correct vs. Quer-correct 	= 0.6951
+GPT-4 Prod-correct vs. Quer-correct 	= 0.1450
+(N.B. we counted correct answers with bad explanations as correct, only a serious problem for GPT-3)
+{No evidence to support difference in correctness rates in production vs endorsement}
+
+[Is there a difference between the rates at which GPTs produce vs. endorse fallacies?]
+GPT-3 Prod-fall vs. Quer-fall 		= 1
+GPT-3.5 Prod-fall vs. Quer-fall 	= 0.2610
+GPT-4 Prod-fall vs. Quer-fall 		= 0.0134 **
+{Fair evidence GPT-4 produces more fallacies than it endorses}
+

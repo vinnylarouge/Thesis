@@ -3,51 +3,51 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: thesis_intro.bib
-Warning--I didn't find a database entry for "joyal_geometry_nodate"
 Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "joyal_geometry_nodate"
 Warning--I didn't find a database entry for "hopcroft_introduction_1979"
 Warning--empty publisher in mcshane_linguistics_2021
 Warning--empty booktitle in selinger_survey_2010
 Warning--empty publisher in selinger_survey_2010
-You've used 27 entries,
+You've used 23 entries,
             2118 wiz_defined-function locations,
-            645 strings with 9657 characters,
-and the built_in function-call counts, 9343 in all, are:
-= -- 817
-> -- 643
-< -- 4
-+ -- 267
-- -- 232
-* -- 698
-:= -- 1613
-add.period$ -- 78
-call.type$ -- 27
-change.case$ -- 193
+            622 strings with 9004 characters,
+and the built_in function-call counts, 8357 in all, are:
+= -- 728
+> -- 594
+< -- 3
++ -- 245
+- -- 216
+* -- 641
+:= -- 1437
+add.period$ -- 66
+call.type$ -- 23
+change.case$ -- 174
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 277
-empty$ -- 636
-format.name$ -- 232
-if$ -- 1860
+cite$ -- 26
+duplicate$ -- 237
+empty$ -- 557
+format.name$ -- 216
+if$ -- 1661
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 20
-newline$ -- 133
-num.names$ -- 54
-pop$ -- 262
+int.to.str$ -- 23
+missing$ -- 16
+newline$ -- 113
+num.names$ -- 46
+pop$ -- 236
 preamble$ -- 1
-purify$ -- 170
+purify$ -- 154
 quote$ -- 0
-skip$ -- 225
+skip$ -- 197
 stack$ -- 0
-substring$ -- 317
-swap$ -- 49
-text.length$ -- 4
+substring$ -- 295
+swap$ -- 43
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 98
+type$ -- 84
 warning$ -- 3
-while$ -- 67
-width$ -- 29
-write$ -- 277
+while$ -- 59
+width$ -- 25
+write$ -- 235
 (There were 6 warnings)

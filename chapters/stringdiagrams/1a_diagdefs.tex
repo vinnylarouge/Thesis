@@ -1,53 +1,102 @@
-\section{Semantics and Syntax of String Diagrams}
+\section{Semantics, Syntax, and Signatures of String Diagrams}
 
 \subsection{Symmetric Monoidal Categories}
+
+There are a lot of definitions to get started, but as with programming languages, preloading the work makes it easier to scale. This is the mathematical source code of string diagrams that generalises the examples we have seen so far, and it's only necessary if we need to show that something new is a symmetric monoidal category or if we are tinkering deeply, so it can be skipped for now. The important takeaway is that string diagrams are syntax, with morphisms in symmetric monoidal categories as semantics.
 
 \begin{defn}[Category]
 A \emph{category} $\mathcal{C}$ consists of the following data
 \begin{itemize}
 \item{A collection $\text{Ob}(\mathcal{C})$ of \emph{objects}}
-\item{For every pair of objects $a,b \in \text{Ob}(\mathcal{C})$, a set $\mathcal{C}(a,b)$ of \emph{morphisms} from $a$ to $b$.}
+\item{For every pair of objects $A,B \in \text{Ob}(\mathcal{C})$, a set $\mathcal{C}(A,B)$ of \emph{morphisms} from $a$ to $b$.}
 \item{Every object $a \in \text{Ob}(\mathcal{C})$ has a specified morphism $1_a$ in $\mathcal{C}(a,a)$ called \emph{the identity morphism} on $a$.}
-\item{Every triple of objects $a,b,c \in \text{Ob}(\mathcal{C})$, and every pair of morphisms $f \in \mathcal{C}(a,b)$ and $g \in \mathcal{C}(b,c)$ has a specified morphism $(f;g) \in \mathcal{C}(a,c)$ called \emph{the composite} of $f$ and $g$.}
+\item{Every triple of objects $A,B,C \in \text{Ob}(\mathcal{C})$, and every pair of morphisms $f \in \mathcal{C}(A,B)$ and $g \in \mathcal{C}(b,c)$ has a specified morphism $(f;g) \in \mathcal{C}(a,c)$ called \emph{the composite} of $f$ and $g$.}
 \end{itemize}
 This data has to satisfy two coherence conditions, which are:
 
 \newthought{Unitality:} For any morphism $f: a \rightarrow b$, $1_a;f = f = f;1_b$
 
-\newthought{Associativity:} For any four objects $a,b,c,d$ and three morphisms $f: a \rightarrow b$, $g: b \rightarrow c$, $h: c \rightarrow d$, $(f;g);h = f;(g;h)$
+\newthought{Associativity:} For any four objects $A,B,C,D$ and three morphisms $f: A \rightarrow B$, $g: B \rightarrow C$, $h: C \rightarrow D$, $(f;g);h = f;(g;h)$
 \end{defn}
 
 \begin{defn}[Categorical Product]
+In a category $\mathcal{C}$, given two objects $a,b \in \text{Ob}(\mathcal{C})$, the \emph{product} $A \times B$, if it exists, is an object with projection morphisms $\pi_0: A \times B \rightarrow A$ and $\pi_1: A \times B \rightarrow B$ such that for any object $x \in \text{Ob}(\mathcal{C})$ and any pair of morphisms $f: X \rightarrow A$ and $g: x \rightarrow b$, there exists a unique morphism $f \times g: X \rightarrow A \times B$ such that $f = (f \times g) ; \pi_0$ and $g = (f \times g); \pi_1$. This is a mouthful which is easier expressed as a commuting diagram as below. The dashed arrow indicates uniqueness. $A \times B$ is a product when every path through the diagram following the arrows between two objects is an equality.
+% https://q.uiver.app/?q=WzAsNCxbMiwyLCJhIFxcdGltZXMgYiJdLFswLDIsImEiXSxbNCwyLCJiIl0sWzIsMCwieCJdLFszLDAsIlxcbGFuZ2xlIGYsZyBcXHJhbmdsZSIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFszLDEsImYiLDFdLFszLDIsImciLDFdLFswLDIsIlxccGlfMSIsMV0sWzAsMSwiXFxwaV8wIiwxXV0=
+\[\begin{tikzcd}
+	&& X \\
+	\\
+	A && {A \times B} && B
+	\arrow["{f \times g}"{description}, dashed, from=1-3, to=3-3]
+	\arrow["f"{description}, from=1-3, to=3-1]
+	\arrow["g"{description}, from=1-3, to=3-5]
+	\arrow["{\pi_1}"{description}, from=3-3, to=3-5]
+	\arrow["{\pi_0}"{description}, from=3-3, to=3-1]
+\end{tikzcd}\]
 
 \end{defn}
 
-\begin{example}[Cartesian product of sets]
-
-\end{example}
+Instead of explicitly constructing the cartesian product of sets from within, let's do it Gump-style: a product is as product does. For objects, the cartesian product of sets $A \times B$ is a set of pairs, and we may destruct those pairs by extracting or projecting out the first and second elements, hence the projection maps $\pi_0,\pi_1$. Another thing we would like to do with pairs is construct them; whenever we have some $A$-data and $B$-data, we can pair them in such a way that construction followed by destruction is lossless and doesn't add anything. In category-theoretic terms, we select `arbitrary' $A$- and $B$-data by arrows $f: X \rightarrow A$ and $g: X \rightarrow B$, and we declare that $f \times g: X \rightarrow A \times B$ is the unique way to select corresponding tuples in $A \times B$. This design-pattern of "for all such-and-such there exists a unique such-and-such" is an instance of a so-called \emph{universal property}, the purpose of which is to establish isomorphism between operationally equivalent implementations. For example, let's revisit Kuratowski's and Wiener's definitions of cartesian product, which are, respectively:
+\[A \overset{K}{\times} B := \bigg\{ \{\{a\},\{a,b\}\} \ | \ a \in A \ , \ b \in B \bigg\}\]
+\[A \overset{W}{\times} B := \bigg\{ \{\{a,\varnothing\},b\} \ | \ a \in A \ , \ b \in B \bigg\}\]
+Keeping overset-labels and using maplet notation, the associated projections are:
+\[\overset{K}{\pi_0} := \{\{a\},\{a,b\}\} \mapsto a\]
+\[\overset{K}{\pi_1} := \{\{a\},\{a,b\}\} \mapsto b\]
+\[\overset{W}{\pi_0} := \{\{a,\varnothing\},b\} \mapsto a\]
+\[\overset{W}{\pi_1} := \{\{a,\varnothing\},b\} \mapsto b\]
+And maps $f,g$ into $A$ and $B$ are tupled by the following:
+\[f \overset{K}{\times} g := x \mapsto \{\{f(x)\},\{f(x),g(x)\}\}\]
+\[f \overset{W}{\times} g := x \mapsto \{\{f(x),\varnothing\},g(x)\}\]
+Both satisfy the commutative diagram defining the product. Something neat happens when we pick $A \overset{K}{\times} B$ to be the arbitrary $X$ for the product definition of $A \overset{W}{\times} B$ and vice versa. We get to mash the commuting diagrams together:
+\[\begin{tikzcd}
+	&& {A \overset{K}{\times} B} \\
+	A &&&& B \\
+	&& {A \overset{W}{\times} B}
+	\arrow["{\overset{K}{\pi_0}}"{description}, from=1-3, to=2-1]
+	\arrow["{\overset{K}{\pi_1}}"{description}, from=1-3, to=2-5]
+	\arrow["{\overset{W}{\pi_0}}"{description}, from=3-3, to=2-1]
+	\arrow["{\overset{W}{\pi_1}}"{description}, from=3-3, to=2-5]
+	\arrow[curve={height=12pt}, dashed, from=1-3, to=3-3]
+	\arrow[curve={height=12pt}, dashed, from=3-3, to=1-3]
+\end{tikzcd}\]
+The two unique arrows are format-conversions. For example, by maplet notation, the conversion from $A \overset{K}{\times} B \rightarrow A \overset{W}{\times} B$ is $\{\{a\},\{a,b\}\} \mapsto \{\{a,\varnothing\},b\}$, and similarly for the other direction. Because these conversions are uniquely determined arrows, their composite is also uniquely determined. But their composite $A \overset{K}{\times} B \rightarrow A \overset{K}{\times} B \rightarrow A \overset{K}{\times} B$ describes the trivial path on $A \overset{K}{\times} B$, which is the implicitly-present identity morphism of $A \overset{K}{\times} B$. Since all paths in a commuting diagram commute, these conversions witness an \emph{isomorphism} between $A \overset{K}{\times} B$ and $A \overset{W}{\times} W$; a pair of maps $X \rightarrow Y$ and $Y \rightarrow X$ such that their loop-composites equal identities. This in a nutshell is the category-theoretic approach to overcoming the bureaucracy of syntax: use universal properties (or whatever else) encode your intents and purposes, establish isomorphisms, and then treat isomorphic things as "the same for all intents and purposes". The idea of treating isomorphic objects as the same is ingrained in category theory, so isomorphism notation $\simeq$ is often just written as equality $=$.
 
 \begin{defn}[Functor]
-
+A functor $F: \mathcal{C} \rightarrow \mathcal{D}$ (read: with domain a category $\mathcal{C}$ and codomain a category $\mathcal{D}$) consists of two suitably related functions. An object function $F_0 : \text{Ob}(\mathcal{C}) \rightarrow \text{Ob}(\mathcal{D})$ and a morphism function (equivalently viewed as a family of functions indexed by pairs of objects of $\mathcal{C}$) $F_1(X,Y) : \mathcal{C}(X,Y) \rightarrow \mathcal{D}(F_0 X,F_0 Y )$. $F_1$ must map identities to identities -- i.e., be such that for all $X \in \mathcal{C}$, $F_1(1_X) = 1_{F_0 X}$ -- and $F_1$ must map composites to composites -- i.e., for all $X,Y,Z \in \text{Ob}(\mathcal{C})$ and all $f: X \rightarrow Y$ and $g: Y \rightarrow Z$, $F_1 (f;g) = F_1 f ; F_1 g$.
 \end{defn}
+
+Functors in short map categories to categories, preserving the structure of identities and composition. They are the essence of "structure preserving transformation". Insofar as semantics is the science of finding structure-preserving transformations that tell us when syntactic things are equal, functors are just that. They are incredibly useful and mysterious and worth internalising in a way I am not adept enough to impress by example. For us, for now, they are just stepping stones to define transformations \emph{between functors}.
 
 \begin{defn}[Natural Transformation]
-
+A natural transformation $\theta: F \rightarrow G$ for (co)domain-aligned functors $F,G: \mathcal{C} \rightarrow \mathcal{D}$ is a family of morphisms in $\mathcal{D}$ indexed by objects $X \in \mathcal{C}$ such that for all $f: X \rightarrow Y$ in $\mathcal{C}$, the following commuting diagram holds in $\mathcal{D}$:
+% https://q.uiver.app/?q=WzAsNCxbMCwwLCJGWCJdLFsyLDAsIkZZIl0sWzAsMiwiR1giXSxbMiwyLCJHWSJdLFswLDIsIlxcdGhldGFfWCIsMV0sWzAsMSwiRmYiLDFdLFsxLDMsIlxcdGhldGFfWSIsMV0sWzIsMywiR2YiLDFdXQ==
+\[\begin{tikzcd}
+	FX && FY \\
+	\\
+	GX && GY
+	\arrow["{\theta_X}"{description}, from=1-1, to=3-1]
+	\arrow["Ff"{description}, from=1-1, to=1-3]
+	\arrow["{\theta_Y}"{description}, from=1-3, to=3-3]
+	\arrow["Gf"{description}, from=3-1, to=3-3]
+\end{tikzcd}\]
 \end{defn}
 
-\begin{defn}[$(1-)\mathbf{Cat}$]
-
+\begin{defn}[$\mathbf{Cat}$]
+$\mathbf{Cat}$ is a (2-)category where the objects are (1-)categories as defined above, the morphisms are functors, and the (2-)morphisms are natural transformations. (2-)morphisms are morphisms between morphisms that we discuss in more detail in Section \ref{ncat}. There's no "set of all sets" paradox here by construction; $\mathbf{Cat}$ is slightly more than a category as we have seen so far because of the (2-)morphisms. We're introducing this just to state that the definition of product also works here so that we can consider product categories $\mathcal{C} \times \mathcal{D}$, whose objects are pairs of objects and morphisms pairs of morphisms.
 \end{defn}
-
-\begin{example}[Monoids in \textbf{Set}]
-
-\end{example}
 
 \begin{defn}[Monoidal Category]
-
+A monoidal category consists of the data:
+\[\big(\mathcal{C},\otimes: \mathcal{C} \times \mathcal{C} \rightarrow C, I \in \text{Ob}(\mathcal{C}), \alpha: ((- \otimes =) \otimes \equiv) \mapsto (- \otimes (= \otimes \equiv)), \rho - \otimes I \mapsto -, \lambda I \otimes - \mapsto -\big)\]
+Where $\mathcal{C}$ is a category, $\otimes$ is a functor $\mathcal{C} \times \mathcal{C} \rightarrow \mathcal{C}$, $I$ is a special unit object in $\mathcal{C}$, and $\alpha,\lambda,\rho$ are natural isomorphisms. For those familiar with monoids, a monoidal category is like a monoid in $\mathbf{Cat}$, except equalities have been replaced by natural isomorphisms. The natural isomorphisms must obey the following \emph{coherence laws}, expressed as commuting diagrams.
+\[placeholder\]
 \end{defn}
 
 \begin{defn}[Symmetric Monoidal Category]
-
+A symmetric monoidal category is a monoidal category with an additional natural isomorphism $\theta: - \otimes = \mapsto = \otimes -$. The coherence laws are:
+\[placeholder\]
 \end{defn}
+
+Here are two theorems that make it so that it's not really necessary to know the source code by heart.
 
 \begin{theorem}[Strictification]
 
@@ -59,7 +108,9 @@ This data has to satisfy two coherence conditions, which are:
 
 \subsection{PROPs}
 
-PROP stands for "\textbf{PRO}duct and \textbf{P}ermutations category", but it may as well be an acryonym for "\textbf{P}icture \textbf{R}ules \textbf{Of} \textbf{P}rocesses".
+PROP stands for "\textbf{PRO}duct and \textbf{P}ermutations category", but it may as well be an acryonym for "\textbf{P}icture \textbf{R}ules \textbf{Of} \textbf{P}rocesses". Often we are not interested in \emph{all} the morphisms of a symmetric monoidal category, just as we are not interested in \emph{all} sets when we are building up mathematical structures. We just want to pick out a handful and declare what equality relations hold between them, as we have done in the process theory examples. By analogy, string diagrams and equations between them are a programming language to be interpreted within symmetric monoidal categories as computers, but we need something to express specific programs, and that's the role of a PROP.
 
-\subsection{1-object 4-categories}
+\begin{defn}[(coloured) PROP]
+
+\end{defn}
 
