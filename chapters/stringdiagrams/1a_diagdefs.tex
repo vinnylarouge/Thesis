@@ -1,6 +1,6 @@
-\section{Semantics, Syntax, and Signatures of String Diagrams}
+%\section{Semantics, Syntax, and Signatures of String Diagrams}
 
-\subsection{Symmetric Monoidal Categories}
+%\subsection{Symmetric Monoidal Categories}
 
 There are a lot of definitions to get started, but as with programming languages, preloading the work makes it easier to scale. This is the mathematical source code of string diagrams that generalises the examples we have seen so far, and it's only necessary if we need to show that something new is a symmetric monoidal category or if we are tinkering deeply, so it can be skipped for now. The important takeaway is that string diagrams are syntax, with morphisms in symmetric monoidal categories as semantics.
 
@@ -35,7 +35,7 @@ In a category $\mathcal{C}$, given two objects $a,b \in \text{Ob}(\mathcal{C})$,
 
 \end{defn}
 
-Instead of explicitly constructing the cartesian product of sets from within, let's do it Gump-style: a product is as product does. For objects, the cartesian product of sets $A \times B$ is a set of pairs, and we may destruct those pairs by extracting or projecting out the first and second elements, hence the projection maps $\pi_0,\pi_1$. Another thing we would like to do with pairs is construct them; whenever we have some $A$-data and $B$-data, we can pair them in such a way that construction followed by destruction is lossless and doesn't add anything. In category-theoretic terms, we select `arbitrary' $A$- and $B$-data by arrows $f: X \rightarrow A$ and $g: X \rightarrow B$, and we declare that $f \times g: X \rightarrow A \times B$ is the unique way to select corresponding tuples in $A \times B$. This design-pattern of "for all such-and-such there exists a unique such-and-such" is an instance of a so-called \emph{universal property}, the purpose of which is to establish isomorphism between operationally equivalent implementations. For example, let's revisit Kuratowski's and Wiener's definitions of cartesian product, which are, respectively:
+The idea behind the definition is simple: onstead of explicitly constructing the cartesian product of sets from within, let's do it Gump-style: a product is as product does. For objects, the cartesian product of sets $A \times B$ is a set of pairs, and we may destruct those pairs by extracting or projecting out the first and second elements, hence the projection maps $\pi_0,\pi_1$. Another thing we would like to do with pairs is construct them; whenever we have some $A$-data and $B$-data, we can pair them in such a way that construction followed by destruction is lossless and doesn't add anything. In category-theoretic terms, we select `arbitrary' $A$- and $B$-data by arrows $f: X \rightarrow A$ and $g: X \rightarrow B$, and we declare that $f \times g: X \rightarrow A \times B$ is the unique way to select corresponding tuples in $A \times B$. This design-pattern of "for all such-and-such there exists a unique such-and-such" is an instance of a so-called \emph{universal property}, the purpose of which is to establish isomorphism between operationally equivalent implementations. For example, let's revisit Kuratowski's and Wiener's definitions of cartesian product, which are, respectively:
 \[A \overset{K}{\times} B := \bigg\{ \{\{a\},\{a,b\}\} \ | \ a \in A \ , \ b \in B \bigg\}\]
 \[A \overset{W}{\times} B := \bigg\{ \{\{a,\varnothing\},b\} \ | \ a \in A \ , \ b \in B \bigg\}\]
 Keeping overset-labels and using maplet notation, the associated projections are:
@@ -106,11 +106,11 @@ Here are two theorems that make it so that it's not really necessary to know the
 
 \end{theorem}
 
-\subsection{PROPs}
+%\subsection{PROPs}
 
-PROP stands for "\textbf{PRO}duct and \textbf{P}ermutations category", but it may as well be an acryonym for "\textbf{P}icture \textbf{R}ules \textbf{Of} \textbf{P}rocesses". Often we are not interested in \emph{all} the morphisms of a symmetric monoidal category, just as we are not interested in \emph{all} sets when we are building up mathematical structures. We just want to pick out a handful and declare what equality relations hold between them, as we have done in the process theory examples. By analogy, string diagrams and equations between them are a programming language to be interpreted within symmetric monoidal categories as computers, but we need something to express specific programs, and that's the role of a PROP.
+%PROP stands for "\textbf{PRO}duct and \textbf{P}ermutations category", but it may as well be an acryonym for "\textbf{P}icture \textbf{R}ules \textbf{Of} \textbf{P}rocesses". Often we are not interested in \emph{all} the morphisms of a symmetric monoidal category, just as we are not interested in \emph{all} sets when we are building up mathematical structures. We just want to pick out a handful and declare what equality relations hold between them, as we have done in the process theory examples. By analogy, string diagrams and equations between them are a programming language to be interpreted within symmetric monoidal categories as computers, but we need something to express specific programs, and that's the role of a PROP.
 
-\begin{defn}[(coloured) PROP]
+%\begin{defn}[(coloured) PROP]
 
-\end{defn}
+%\end{defn}
 

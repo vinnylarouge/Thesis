@@ -1,0 +1,59 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (250) at (-6, 1) {};
+		\node [style=none] (251) at (-6, -1) {};
+		\node [style=none] (252) at (-4, -1) {};
+		\node [style=none] (253) at (-4, 1) {};
+		\node [style=none] (254) at (-6, 0) {};
+		\node [style=none] (255) at (-4, 0) {};
+		\node [style=none] (256) at (-5, -1) {};
+		\node [style=dotG] (257) at (-5, 0) {\footnotesize{\texttt{i}}};
+		\node [style=none] (258) at (-3.5, 0) {$\rightarrow$};
+		\node [style=none] (259) at (-3, 1) {};
+		\node [style=none] (260) at (-3, -1) {};
+		\node [style=none] (261) at (-1, -1) {};
+		\node [style=none] (262) at (-1, 1) {};
+		\node [style=dotG] (263) at (-1.5, 0.5) {\footnotesize{\texttt{i}}};
+		\node [style=none] (264) at (-3, 0.5) {};
+		\node [style=none] (265) at (-1, 0.5) {};
+		\node [style=dotO] (266) at (-2.5, 0.5) {};
+		\node [style=smallorangedot] (267) at (-2, -0.25) {};
+		\node [style=none] (268) at (-2, -1) {};
+		\node [style=none] (269) at (-3.5, 1.5) {$\textcolor{orange}{\texttt{ADV}}$-intro};
+		\node [style=none] (270) at (1, 1) {};
+		\node [style=none] (271) at (1, -1) {};
+		\node [style=none] (272) at (3, -1) {};
+		\node [style=none] (273) at (3, 1) {};
+		\node [style=none] (274) at (1, 0) {};
+		\node [style=none] (275) at (3, 0) {};
+		\node [style=dotO] (276) at (2, 0) {};
+		\node [style=none] (277) at (3.5, 0) {$\rightarrow$};
+		\node [style=none] (278) at (4, 1) {};
+		\node [style=none] (279) at (4, -1) {};
+		\node [style=none] (280) at (6, -1) {};
+		\node [style=none] (281) at (6, 1) {};
+		\node [style=none] (282) at (4, -0.25) {};
+		\node [style=none] (283) at (6, -0.25) {};
+		\node [style=none] (284) at (4.75, 0.5) {};
+		\node [style=none] (285) at (5.25, 0.5) {};
+		\node [style=none] (286) at (5, 0.5) {};
+		\node [style=smallorangedot] (287) at (5, -0.25) {};
+		\node [style=none] (288) at (3.5, 1.5) {$\textcolor{orange}{\texttt{ADV}}$-label};
+		\node [style=none] (325) at (2, -1) {};
+		\node [style=none] (326) at (5, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KM] (254.center) to (255.center);
+		\draw [style=KG] (257) to (256.center);
+		\draw [style=KM] (264.center) to (265.center);
+		\draw [style=KG, in=270, out=30, looseness=0.75] (267) to (263);
+		\draw [style=KG] (267) to (268.center);
+		\draw [style=KM] (274.center) to (275.center);
+		\draw [style=KM] (282.center) to (283.center);
+		\draw [style=KO] (284.center) to (285.center);
+		\draw [style=KO] (286.center) to (287);
+		\draw [style=KHO, in=150, out=-90] (266) to (267);
+		\draw [style=KHO] (276) to (325.center);
+		\draw [style=KHO] (287) to (326.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

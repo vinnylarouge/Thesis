@@ -1,0 +1,205 @@
+\begin{fullwidth}
+
+\section{A generative grammar for text circuits}
+
+\subsection{Text Circuits}
+
+Our \emph{text circuits} are made up of three ingredients:
+\begin{itemize}
+\item wires
+\item boxes, or gates
+\item boxes with holes that fit a box, or 2nd order gates
+\end{itemize}
+Firstly, nouns are represented by wires, each `distinct' noun having its own wire:
+\[
+\tikzfig{textcirc/nounwiresABN} 
+\]
+We represent adjectives, intransitive verbs, and transitive verbs by gates acting on noun-wires: 
+\[
+\tikzfig{textcirc/ADJgate} \quad\quad\quad \tikzfig{textcirc/IVgate} \quad\quad\quad \tikzfig{textcirc/TVgate}
+\]
+Since a transitive verb has both a subject and an object  noun, that will then be two noun-wires, while adjectives and intransitive verbs only have one. 
+
+Adverbs, which modify verbs, we represent as boxes with holes in them, with a number of dangling wires in the hole indicating the shape of gate expected, and these should match the input- and output-wires  of the box with the whole:
+\[
+\tikzfig{textcirc/ADVbox}
+\]
+Similarly, adpositions also modify verbs, by moreover adding another noun-wire to the right:
+\[
+\tikzfig{textcirc/ADPIVbox}
+\]
+For verbs that take sentential complements and conjunctions, we have families of boxes to accommodate input circuits of all sizes. They add another noun-wire to the left of a circuit:\footnote{The `dot dot dot' notation within boxes is graphically formal \cite{wilson_string_2022}. Interpretations of such boxes were earlier formalised in \cite{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}.}
+\[
+\tikzfig{textcirc/SCVbox}
+\]
+while conjunctions are boxes that take two circuits which might share labels on some wires:
+%\TODOj{This bit about CNJ boxes needs rejigging to be consistent with our current treatment}
+\[
+\tikzfig{textcirc/CNJbox2}
+\]
+As special cases, when the noun-wires of two circuits are disjoint (left), or coincide (right), conjunctions are depicted as follows:
+\[
+\tikzfig{textcirc/CNJbox} \qquad\qquad\qquad\qquad \tikzfig{textcirc/CNJbox3}
+\]
+
+Of course filled up boxes are just gates
+%\COMMv{the business with empty wire being "exists" is actually necessary in order for this claim to be true.}\TODOb{Don't understand.}
+\[
+\tikzfig{textcirc/ADPIVgate}
+\]
+and we will now discuss how those compose. Gates compose sequentially by matching labels on some of their noun-wires and in parallel when they share no noun-wires,  to give \underline{text circuits}, which by convention we read from top-to-bottom:  
+\[
+\tikzfig{textcirc/gatecompex1}  
+\]
+
+\begin{convention}\label{conv:sliding}
+Sometimes we allow wires to twist past each other, and we consider two circuits the same if their gate-connectivity is the same:
+\[
+\tikzfig{textcirc/gatecompex1} \quad\quad = \quad\quad \tikzfig{textcirc/gatecompex2}
+\]
+Since only gate-connectivity matters, we consider circuits the same if all that differs is the horizontal positioning of gates composed in parallel:
+\[
+\tikzfig{textcirc/gateeqslide} 
+\]
+We do care about output-to-input connectivity, so in particular, we {\bR\bf do not\e}
+consider circuits to be equal up to sequentially composed gates commuting past each other:  
+\[
+\tikzfig{textcirc/gateneqcommute}  
+\]
+\end{convention}
+
+\begin{example}  
+The sentence \texttt{\underline{ALICE SEES BOB LIKES FLOWERS THAT CLAIRE PICKS}} can intuitively be given the following text circuit:
+%\TODOb{This should probably be done in two  or even three steps: (1) BOB LIKES FLOWERS (2) ... THAT CLARE PICKS (3) ALICE SEES ...}
+\[
+\tikzfig{textcirc/multigateholeex}
+\]
+\end{example}
+
+\begin{example}
+Figure \ref{fig:circuitgen} illustrates how to directly generate text circuits, by providing an example analogous to the text generated in Figure \ref{fig:comic1} where we used our hybrid grammar.
+\begin{figure}[h!]
+    \centering
+    \scalebox{1}{\tikzfig{textcirc/circuitgen}}
+    \caption{Generating text circuits directly.}
+    \label{fig:circuitgen}
+\end{figure}
+\end{example}
+
+\subsection{A circuit-growing grammar}
+
+There are many different ways to write an $n$-categorical signature that generates circuits. Mostly as an illustration of expressive capacity, I will provide a signature where the terms "surface" and "deep" structure are taken literally as metaphors; the generative grammar will grow a line of words in (roughly) syntactic order, and like mushrooms on soil, the circuits will appear as the mycelium underneath words.\\
+
+\newthought{Simplifications}: Propositions only, no determiners, only one tense, no morphological agreement between nouns and their verbs and referring pronouns, and we assume that adverbs, adverbial adjunctions, and adjectives stack indefinitely and without further order requirements; e.g. \texttt{Yesterday yesterday yesterday Alice happily secretly finds red big toy shiny car that he gives to Bob.} we consider grammatical enough. For now, we consider only the case where adjectives and adverbs appear before their respective noun or verb. Note that all of these limitations can principle be overcome by the techniques we developed in Section \ref{sec:ncat} for restricted tree-adjoining and links.
+
+\newthought{How to read the following diagrams}: We work in a dimension where wires behave symmetric monoidally by homotopy, and the signature still works if interpreted in a compact closed setting. We start each derivation with a pink sentence bubble, which we depict for aesthetic purposes as horizontal, which amounts to picking slightly different axes by which to read diagrams. The insides of the sentence bubble will fill up with a circuit, and labelled words will appear on the top surface bubble like stylised mushrooms, to be read off left-to-right. We will only express the rewrite rules; the generators of lower dimension are implicit.
+
+\[
+\tikzfig{mushroom/howtoread}
+\]
+
+\newthought{The Lexicon}:
+
+\subsection{Sentences}
+
+Before the contents of a sentence are even decided, we may decide to (top row, left to right) get another sentence ready, introduce an adverbial adjunction (such as \texttt{yesterday}), or introduce a conjunction of two sentences (such as \texttt{because}). Introducing new words yields dots that carry information of the grammatical category of the word, and there are separate rewrites that allow dots to be labelled according to the lexicon. In the bottom, we have a rewrite that allows a sentence with one unlabelled noun to be the subject of a "sentential complement verb", abbreviated \texttt{SCV}: these are verbs that take sentences as objects rather than other nouns, and they are typically verbs of cognition, perception, and causation, such as \texttt{Alice \underline{suspects} Bob drinks}. The blue-dotted lines are just syntactic guardrails that correspond to the holes in boxes of circuits later.
+
+\[
+\tikzfig{mushroom/bestiary2}
+\]
+
+\subsection{Simple sentences}
+Within each sentence bubble, each derivation starts life as a "simple sentence", which only involves nouns and a single verb, which is either an intransitive verb that takes a single noun argument, or a transitive verb that takes two. You just can't have a (propositional) sentence without at least a noun and a verb. Within each sentence, we may start introducing nouns. From left-to-right; we may introduce a new noun (which comes with tendrils that extrude outside the sentence bubble for later use to resolve pronominal reference); split a noun so that the same noun-label is used multiply; and label a noun \emph{if it is saturated -- depicted by a solid black circle} which includes a copy of the label for bookkeeping purposes when resolving references.
+\[
+\tikzfig{mushroom/nounbestiary}
+\]
+Nouns require verbs in order to be saturated. From left-to-right; if there is precisely one unlabelled noun, we may introduce an unlabelled intransitive verb and saturate the noun so that it is now ready to grow a label; or if there are two unlabelled nouns, we may introduce an unlabelled transitive verb on the surface and saturate the two nouns that will be subject and object; and verbs may be labelled.
+\[
+\tikzfig{mushroom/simpbestiary}
+\]
+
+\subsection{Modifiers}
+
+Modifiers are optional parts of sentences that modify (and hence depend on there being) nouns and verbs. We consider adjectives, adverbs, and adpositions. From left to right; we allow adjectives to sprout immediately before a saturated noun, and we allow adverbs to sprout immediately before any verb.
+
+\[
+\tikzfig{mushroom/adjadv}
+\]
+
+Adpositions modify verbs by tying in an additional noun argument; e.g. while \texttt{runs} is intransitive, \texttt{runs towards} behaves as a transitive verb. Some more advanced technology is required to place adpositions and their thematic nouns in the correct linear order on the surface. In the left column; an adposition tendril can sprout from a verb via an unsaturated adposition, seeking an unsaturated noun to the right; an unsaturated noun can sprout an tendril seeking a verb to connect to on the left. Both of these rewrites are bidirectional, as tendrils might attempt connection but fail, and so be retracted. In the centre, when an unsaturated adposition and its tendril find an unsaturated noun, they may connect, saturating the adposition so that it is ready to label. In the right column; an unsaturated adposition may move past a saturated noun in the same sentence, which allows multiple adpositions for the same verb; finally, a saturated adposition can be labelled.
+
+\[
+\tikzfig{mushroom/adpbestiary}
+\]
+
+\subsection{Rewriting to circuit-form}
+
+\newthought{Resolving references}
+
+\newthought{Connecting circuits}
+
+\begin{example}
+
+\end{example}
+
+\subsection{Extensions I: relative and reflexive pronouns}
+
+\newthought{Subject relative pronouns}
+
+\begin{example}
+
+\end{example}
+
+\newthought{Object relative pronouns}
+
+\begin{example}
+
+\end{example}
+
+\newthought{Reflexive pronouns}
+
+\begin{example}
+
+\end{example}
+
+\subsection{Extensions II: grammar equations}
+
+\newthought{Attributive vs. predicative modifiers}
+
+\begin{example}
+
+\end{example}
+
+\newthought{Copulas}
+
+\begin{example}
+
+\end{example}
+
+\newthought{Possessive pronouns}
+
+\begin{example}
+
+\end{example}
+
+\subsection{Extensions III: higher-order modifiers}
+
+\newthought{Intensifiers}
+
+\begin{example}
+
+\end{example}
+
+\newthought{Comparatives}
+
+\begin{example}
+
+\end{example}
+
+\subsection{Equivalence to internal wirings}
+
+\subsection{Text circuit theorem}
+
+\subsection{Related work}
+
+\end{fullwidth}

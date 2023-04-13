@@ -32,13 +32,13 @@
 \citation{}
 \citation{}
 \citation{}
-\citation{joyal_geometry_1991,joyal_geometry_nodate,maclane_natural_1963,lane_categories_2010,selinger_survey_2010}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Let's say that \textbf  \emph  {{the meaning of text is how it updates a model.}} So we start with some model of the way things are, modelled as data on a wire.}}{8}{section.0.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Text updates that model; like a gate updates the data on a wire.}}{8}{section.0.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Text is made of sentences; like a circuit is made of gates and wires.}}{8}{section.0.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Let's say that \textbf  {\emph  {The meaning of a sentence is how it updates the meanings of its parts.}} As a first approximation, let's say that the \emph  {parts} of a sentence are the nouns it contains or refers to. Noun data is carried by wires. Collections of nouns are related by gates, which play the roles of verbs and adjectives.}}{8}{section.0.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Gates can be related by higher order gates, which play the roles of adverbs, adpositions, and conjunctions; anything that modifies the data of first order gates like verbs.}}{8}{section.0.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {0.1}What this thesis is about}{8}{section.0.1}\protected@file@percent }
+\citation{joyal_geometry_1991,joyal_geometry_nodate,maclane_natural_1963,lane_categories_2010,selinger_survey_2010}
 \citation{vaswani_attention_2017}
 \citation{openai_chatgpt_2022}
 \citation{bastian_google_2022}
@@ -46,14 +46,13 @@
 \citation{thompson_gpt-35_2022}
 \citation{mcshane_linguistics_2021}
 \citation{church_pendulum_2011}
-\citation{hendrycks_measuring_2021}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces In practice, higher order gates may be implemented as gates that modify parameters of other gates. Grammar, and \emph  {function words} -- words that operate on meanings -- are in principle absorbed by the geometry of the diagram. These diagrams are natural vehicles for \emph  {dynamic semantics}, broadly construed, where states are prior contexts and sentences-as-processes update prior contexts.}}{9}{section.0.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {0.2}\textbf  {Question:} What is the practical value of studying language when Large Language Models exist?}{9}{section.0.2}\protected@file@percent }
+\citation{hendrycks_measuring_2021}
 \citation{}
 \citation{}
 \citation{floridi_fourth_2014}
 \citation{sutton_bitter_2019}
-\@writefile{toc}{\contentsline {section}{\numberline {0.3}\textbf  {First Reply:} I don't know. Maybe explainability, maybe something else.}{10}{section.0.3}\protected@file@percent }
 \citation{chomsky_new_2000}
 \citation{mollica_humans_2019}
 \citation{herculano-houzel_remarkable_2012}
@@ -61,14 +60,7 @@
 \citation{khan_what_2023}
 \citation{tom_goldstein_tomgoldsteincs_training_2022}
 \citation{}
-\citation{}
-\citation{}
-\citation{}
-\citation{}
-\citation{}
-\citation{}
-\citation{}
-\citation{}
+\@writefile{toc}{\contentsline {section}{\numberline {0.3}\textbf  {First Reply:} I don't know. Maybe explainability, maybe something else.}{11}{section.0.3}\protected@file@percent }
 \citation{}
 \citation{}
 \citation{}
@@ -76,13 +68,16 @@
 \citation{}
 \@writefile{toc}{\contentsline {subsection}{\numberline {0.3.1}\textbf  {Objection:} You're forgetting the bitter lesson.}{12}{subsection.0.3.1}\protected@file@percent }
 \citation{}
+\citation{}
+\citation{}
+\citation{}
+\citation{}
+\citation{}
+\citation{}
+\citation{}
+\citation{}
 \citation{bender_climbing_2020}
 \citation{searle_minds_1980}
-\citation{}
-\citation{}
-\citation{}
-\citation{}
-\citation{}
 \citation{}
 \citation{}
 \citation{}
@@ -93,10 +88,12 @@
 \citation{}
 \citation{}
 \citation{}
+\citation{}
+\citation{}
+\citation{}
+\citation{}
+\citation{}
 \@writefile{toc}{\contentsline {subsection}{\numberline {0.3.3}\textbf  {Objection:} Aren't string diagrams just graphs?}{14}{subsection.0.3.3}\protected@file@percent }
-\citation{}
-\citation{}
-\citation{}
 \citation{}
 \citation{}
 \citation{}
@@ -109,7 +106,10 @@
 \citation{}
 \citation{}
 \citation{}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.4.2}\textbf  {Objection:} What's wrong with $\lambda $-calculus and sequent calculi and graphs?}{16}{subsection.0.4.2}\protected@file@percent }
+\citation{}
+\citation{}
+\citation{}
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.4.2}\textbf  {Objection:} What's wrong with $\lambda $-calculus and sequent calculi and graphs?}{17}{subsection.0.4.2}\protected@file@percent }
 \citation{}
 \citation{}
 \citation{}
@@ -153,215 +153,172 @@
 \citation{}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Process Theories}{24}{section.2.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}What does it mean to copy and delete?}{27}{subsection.2.1.1}\protected@file@percent }
-\newlabel{relcopy}{{2.1.6}{27}{Sets and relations}{theorem.2.1.6}{}}
+\newlabel{relcopy}{{2.1.8}{28}{Sets and relations}{theorem.2.1.8}{}}
 \newlabel{cocom}{{2.1}{28}{What does it mean to copy and delete?}{equation.2.1.1}{}}
-\newlabel{ex:copyablestate}{{2.1.7}{28}{Not all states are copyable}{theorem.2.1.7}{}}
-\newlabel{ft:determinism}{{2.1.8}{28}{}{theorem.2.1.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}What is an update?}{28}{subsection.2.1.2}\protected@file@percent }
-\newlabel{ss:update}{{2.1.2}{28}{What is an update?}{subsection.2.1.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Spatial predicates}{29}{subsection.2.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}Deterministic Neural Nets and Closed Monoidal Categories}{30}{subsection.2.1.4}\protected@file@percent }
+\newlabel{ex:copyablestate}{{2.1.9}{29}{Not all states are copyable}{theorem.2.1.9}{}}
+\newlabel{ft:determinism}{{2.1.10}{29}{}{theorem.2.1.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}What is an update?}{30}{subsection.2.1.2}\protected@file@percent }
+\newlabel{ss:update}{{2.1.2}{30}{What is an update?}{subsection.2.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Spatial predicates}{31}{subsection.2.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}Deterministic Neural Nets and Closed Monoidal Categories}{32}{subsection.2.1.4}\protected@file@percent }
 \citation{}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.5}Pregroup diagrams and correlations}{33}{subsection.2.1.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.6}Equational Constraints and Frobenius Algebras}{33}{subsection.2.1.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.7}Processes, Sets, and Computers}{33}{subsection.2.1.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.5}Pregroup diagrams and correlations}{35}{subsection.2.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.6}Equational Constraints and Frobenius Algebras}{35}{subsection.2.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.7}Processes, Sets, and Computers}{35}{subsection.2.1.7}\protected@file@percent }
 \citation{}
-\newlabel{sec:proctheory}{{2.1.7}{34}{Processes, Sets, and Computers}{subsection.2.1.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Semantics, Syntax, and Signatures of String Diagrams}{35}{section.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Symmetric Monoidal Categories}{35}{subsection.2.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}PROPs}{38}{subsection.2.2.2}\protected@file@percent }
-\newlabel{sec:diagdefs}{{2.2.2}{38}{PROPs}{theorem.2.2.10}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}An introduction to weak n-categories for formal linguists}{39}{section.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}String-rewrite systems as 1-object-2-categories}{39}{subsection.2.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces The category in question can be visualised as a commutative diagram.}}{40}{subsection.2.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces When there are too many generating morphisms, we can instead present the same data as a table of $n$-cells; there is a single 0-cell $\star $, and three non-identity 1-cells corresponding to $\leavevmode {\color  {green}\alpha }, \leavevmode {\color  {orange}\beta }, \leavevmode {\color  {cyan}\gamma }$, each with source and target 0-cells $\star $. Typically identity morphisms can be omitted from tables as they come for free. Observe that composition of identities enforces the behaviour of the empty string, so that for any string $x$, we have $\epsilon \cdot x = x = \epsilon \cdot x$.}}{40}{subsection.2.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces For a concrete example, we can depict the string $\leavevmode {\color  {green}\alpha } \cdot \leavevmode {\color  {cyan}\gamma } \cdot \leavevmode {\color  {cyan}\gamma } \cdot \leavevmode {\color  {orange}\beta }$ as a morphism in a commuting diagram.}}{40}{subsection.2.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces The string-diagrammatic view, where $\star $ is treated as a wire and morphisms are treated as boxes or dots is an expression of the same data under the Poincar\'{e} dual.}}{41}{subsection.2.3.1}\protected@file@percent }
-\newlabel{fig:ruleR}{{2.3.1}{41}{String-rewrite systems as 1-object-2-categories}{subsection.2.3.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces We can visualise the rule as a commutative diagram where $\leavevmode {\color  {magenta}R}$ is a 2-cell between the source and target 1-cells. Just as 1-cells are arrows between 0-cell points in a commuting diagram, a 2-cell can also be conceptualised as a directed surface from a 1-cell to another. Taking the Poincar\'{e} dual of this view gives us a string diagram for the 2-cell $\leavevmode {\color  {magenta}R}$.}}{41}{subsection.2.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}A context free grammar to generate \texttt  {Alice sees Bob quickly run to school}}{41}{subsection.2.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Tree Adjoining Grammars}{44}{subsection.2.3.3}\protected@file@percent }
-\newlabel{prop:cfgastag1}{{2.3.4}{47}{Leaf-ansatzes of CFGs are precisely TAGs with only initial trees and substitution}{theorem.2.3.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}Tree adjoining grammars with local constraints}{51}{subsection.2.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.5}Braiding, symmetries, and suspension}{53}{subsection.2.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.6}TAGs with links}{57}{subsection.2.3.6}\protected@file@percent }
-\newlabel{sec:ncat}{{2.3.6}{63}{TAGs with links}{Item.26}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}String Diagrams for Text}{65}{chapter.3}\protected@file@percent }
+\newlabel{sec:proctheory}{{2.1.7}{36}{Processes, Sets, and Computers}{subsection.2.1.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}An introduction to weak n-categories for formal linguists}{37}{section.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}String-rewrite systems as 1-object-2-categories}{37}{subsection.2.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}A context free grammar to generate \texttt  {Alice sees Bob quickly run to school}}{39}{subsection.2.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Tree Adjoining Grammars}{41}{subsection.2.2.3}\protected@file@percent }
+\newlabel{prop:cfgastag1}{{2.2.4}{43}{Leaf-ansatzes of CFGs are precisely TAGs with only initial trees and substitution}{theorem.2.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Tree adjoining grammars with local constraints}{47}{subsection.2.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.5}Braiding, symmetries, and suspension}{48}{subsection.2.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.6}TAGs with links}{52}{subsection.2.2.6}\protected@file@percent }
+\newlabel{sec:ncat}{{2.2.1}{57}{String-rewrite systems as 1-object-2-categories}{Item.26}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}String Diagrams for Text}{59}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:textcircuits}{{3}{65}{String Diagrams for Text}{chapter.3}{}}
+\newlabel{chapter:textcircuits}{{3}{59}{String Diagrams for Text}{chapter.3}{}}
 \citation{}
 \citation{}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Previously, on DisCoCat}{66}{section.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Previously, on DisCoCat}{60}{section.3.1}\protected@file@percent }
 \citation{}
 \citation{}
 \citation{}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}How do we communicate using language?}{70}{section.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Grammars of speakers and listeners}{71}{subsection.3.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Discrete Monoidal Fibrations}{78}{subsection.3.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Relating the generative grammar to a pregroup grammar via a discrete monoidal fibration}{83}{subsection.3.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Discrete monoidal fibrations for grammatical functions}{89}{subsection.3.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.5}Discussion}{89}{subsection.3.2.5}\protected@file@percent }
-\citation{hopcroft_introduction_1979}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces We will depict derivations of strings as planar "trees". The diagrams are read from top to bottom.}}{91}{section.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces These "trees" may have multiple edges from a parent node to a child node. We drop symbolic labels for intermediate symbols, and replace them by coloured edges. For example, \texttt  {NP} becomes a black edge and \texttt  {IVP} becomes a green edge. As we introduce the rules, we will also keep to a coloring convention for typed wires, such that later on we may omit typings such as \texttt  {IVP} from diagrams without confusion.}}{91}{section.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces We now introduce a phrase structure grammar by giving the tree-fragments for the grammatical types, initially for what we call \emph  {simple} sentences, which have a single verb that does not take a sentential complement. A simple sentence may contain a single \textbf  {intransitive} or \textbf  {transitive} verb. In the former case, the sentence consists of a noun-phrase followed by a intransitive-verb-phrase (e.g. \texttt  {\underline  {ALICE RUNS.}}). $\texttt  {S} \mapsto \texttt  {NP} \cdot \texttt  {IVP}$}}{91}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}A hybrid grammar for text}{91}{section.3.3}\protected@file@percent }
-\newlabel{sec:grammar}{{3.3}{91}{A hybrid grammar for text}{section.3.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces In the latter case, a sentence consists of a noun-phrase, transitive-verb-phrase, and another noun-phrase (e.g.\nobreakspace  {}\texttt  {\underline  {ALICE LIKES BOB.}}). $\texttt  {S} \mapsto \texttt  {NP}_1 \cdot \texttt  {TVP} \cdot \texttt  {NP}_2$}}{92}{section.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces There also are the terminal rules for verbs, where the terminal symbols of the grammar are verbs of the appropriate type e.g.\nobreakspace  {}intransitive: $\texttt  {IVP} \mapsto \texttt  {\underline  {IV}}$}}{92}{section.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Or transitive: $\texttt  {TVP} \mapsto \texttt  {\underline  {TV}}$. Going forward, we omit the terminal rules in favour of giving examples of finished derivations, from which terminals can be inferred.}}{92}{section.3.3}\protected@file@percent }
-\newlabel{rule1}{{3.8}{92}{A hybrid grammar for text}{equation.3.3.8}{}}
-\newlabel{rule2}{{3.9}{92}{A hybrid grammar for text}{equation.3.3.9}{}}
-\newlabel{rule3}{{3.10}{92}{A hybrid grammar for text}{equation.3.3.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces \textbf  {Adjectives} can appear before a noun-phrase (e.g.\nobreakspace  {}\texttt  {\underline  {DRUNK HAPPY BOB.}}) $\texttt  {NP} \mapsto \texttt  {ADJ} \cdot \texttt  {NP}$.}}{93}{equation.3.3.10}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Or, using the copular \texttt  {\underline  {IS}} considered as a verb, a single adjective can appear after a noun-phrase (e.g.\nobreakspace  {}\texttt  {\underline  {BOB IS DRUNK.}}) $\texttt  {S} \mapsto \texttt  {NP} \cdot \texttt  {\underline  {IS}} \cdot \texttt  {ADJ}$}}{93}{equation.3.3.10}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces \textbf  {Adverbs} can appear before a verb (e.g. \texttt  {\underline  {ALICE QUICKLY HAPPILY RUNS.}}) $\texttt  {IVP} \mapsto \texttt  {ADV} \cdot \texttt  {IVP}$}}{93}{equation.3.3.10}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces $\texttt  {TVP} \mapsto \texttt  {ADV} \cdot \texttt  {TVP}$}}{93}{equation.3.3.10}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces \textbf  {Adpositions} can appear to the right of an intransitive-verb-phrase, followed by a noun-phrase (e.g.\nobreakspace  {}from \texttt  {\underline  {ALICE RUNS.}} to \texttt  {\underline  {ALICE RUNS TOWARDS BOB.}}). $\texttt  {IVP} \mapsto \texttt  {IVP} \cdot \texttt  {ADP} \cdot \texttt  {NP}$.}}{94}{equation.3.3.10}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces In the presence of a transitive-verb-phrase flanked by a noun-phrase to the right, we may add to the right an adposition followed by a noun-phrase (e.g.\nobreakspace  {}from \texttt  {\underline  {ALICE THROWS BEER.}} to \texttt  {\underline  {ALICE THROWS BEER TOWARDS BOB.}}) $\texttt  {TVP} \cdot \texttt  {NP}_1 \mapsto \texttt  {TVP} \cdot \texttt  {NP}_1 \cdot \texttt  {ADP} \cdot \texttt  {NP}_2$}}{94}{equation.3.3.10}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces \textbf  {Subject relative pronouns} replace the subject noun of a parse tree $\texttt  {S}_2$, and points to a noun in another, previous parse tree $\texttt  {S}_1$, usually the object noun.}}{94}{theorem.3.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces In English there is another special use of the subject relative pronoun to coordinate a single noun across two subsequent phrases. Given parse trees corresponding to sentences $\texttt  {S}_1$ and $\texttt  {S}_2$ in that order, this special case arises when the subject noun of $\texttt  {S}_2$ points towards a subject noun in $\texttt  {S}_1$. The result of the tree-transformation is that we have, in order: the noun-phrase (along with any adjectives) of $\texttt  {S}_1$, followed by $\texttt  {S}_1$ with the later noun replaced by the relative pronoun, followed by $\texttt  {S}_2$ with its pointing noun removed. We use a multiarrow to point out more than two pronominally identified nouns.}}{95}{theorem.3.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces For \textbf  {object relative pronouns}, we take consecutive sentences $\texttt  {S}_1$ and $\texttt  {S}_2$. If the object noun of $\texttt  {S}_2$ points to the object noun of $\texttt  {S}_1$, the object relative pronoun comes after the first occurrence, and the second occurrence of the noun is replaced by a blank.}}{95}{theorem.3.3.4}\protected@file@percent }
-\newlabel{sec:phrscope}{{3.3}{95}{A hybrid grammar for text}{theorem.3.3.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces \textbf  {Verbs with Sentential Complement} require phrase scope. We treat verbs with a sentential complement -- such as to \texttt  {\underline  {SEE}} or \texttt  {\underline  {THINK}} -- as their own grammatical class of verb.$\texttt  {S} \mapsto \texttt  {NP} \cdot \texttt  {SCV} \cdot \texttt  {S}$}}{96}{theorem.3.3.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces \textbf  {Conjunctions} we treat similarly to verbs with a sentential complement}}{96}{theorem.3.3.6}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces We re-express the rules for verbs with sentential complement and conjunctions to additionally express phrase boundaries. $\texttt  {S} \mapsto \texttt  {NP} \cdot \texttt  {SCV} \cdot \begin  {color}{blue}( \end  {color}\xspace  \ \cdot \ \texttt  {S} \ \cdot \ \begin  {color}{blue}) \end  {color}\xspace  $}}{97}{theorem.3.3.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces $\texttt  {S} \mapsto \begin  {color}{blue}( \end  {color}\xspace  \ \cdot \ \texttt  {S} \ \cdot \ \begin  {color}{blue}) \end  {color}\xspace  \cdot \texttt  {CNJ} \cdot \begin  {color}{blue}( \end  {color}\xspace  \ \cdot \ \texttt  {S} \ \cdot \ \begin  {color}{blue}) \end  {color}\xspace  $}}{97}{theorem.3.3.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces To model the permission of nouns to partially live outside the scope of a phrase as in the example above, we include the following rules that allow a \texttt  {NP} to `cross the border' of a phrase boundary. $\begin  {color}{blue}( \end  {color}\xspace  \ \cdot \ \texttt  {NP} \mapsto \texttt  {NP} \cdot \begin  {color}{blue}( \end  {color}\xspace  $}}{97}{theorem.3.3.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces $\texttt  {NP} \ \cdot \ \begin  {color}{blue}) \end  {color}\xspace  \mapsto \ \begin  {color}{blue}) \end  {color}\xspace  \ \cdot \texttt  {NP}$}}{97}{theorem.3.3.7}\protected@file@percent }
-\newpmemlabel{^_1}{98}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.22}{\ignorespaces Generating text with hybrid grammar, illustrated}}{99}{theorem.3.3.8}\protected@file@percent }
-\newlabel{fig:comic1}{{3.22}{99}{A hybrid grammar for text}{theorem.3.3.8}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Continuous relations: a palette for toy models}{101}{chapter.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}How do we communicate using language?}{64}{section.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Grammars of speakers and listeners}{65}{subsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Discrete Monoidal Fibrations}{72}{subsection.3.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Relating the generative grammar to a pregroup grammar via a discrete monoidal fibration}{77}{subsection.3.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Discrete monoidal fibrations for grammatical functions}{83}{subsection.3.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.5}Discussion}{83}{subsection.3.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}A generative grammar for text circuits}{85}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Text Circuits}{85}{subsection.3.3.1}\protected@file@percent }
+\citation{wilson_string_2022}
+\citation{merry_reasoning_2014}
+\citation{quick_-logic_2015}
+\citation{zamdzhiev_rewriting_2017}
+\newlabel{conv:sliding}{{3.3.1}{88}{}{theorem.3.3.1}{}}
+\newpmemlabel{^_1}{90}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}A circuit-growing grammar}{90}{subsection.3.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Sentences}{91}{subsection.3.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Simple sentences}{92}{subsection.3.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.5}Modifiers}{92}{subsection.3.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.6}Rewriting to circuit-form}{93}{subsection.3.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.7}Extensions I: relative and reflexive pronouns}{93}{subsection.3.3.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.8}Extensions II: grammar equations}{94}{subsection.3.3.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.9}Extensions III: higher-order modifiers}{94}{subsection.3.3.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.10}Equivalence to internal wirings}{94}{subsection.3.3.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.11}Text circuit theorem}{94}{subsection.3.3.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.12}Related work}{94}{subsection.3.3.12}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Generating text circuits directly.}}{95}{theorem.3.3.3}\protected@file@percent }
+\newlabel{fig:circuitgen}{{3.1}{95}{}{theorem.3.3.3}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Continuous relations: a palette for toy models}{97}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:contrel}{{4}{101}{Continuous relations: a palette for toy models}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Continuous Relations: A concept-compliant setting for text circuits}{102}{section.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Why not use something already out there?}{103}{subsection.4.1.1}\protected@file@percent }
-\newlabel{just:rel}{{4.1.1}{103}{Why not use something already out there?}{subsection.4.1.1}{}}
-\newpmemlabel{^_2}{104}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Continuous Relations}{106}{section.4.2}\protected@file@percent }
-\newlabel{defn:Contrelation}{{4.2.4}{106}{Continuous Relation}{theorem.4.2.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}\textbf  {ContRel} diagrammatically}{107}{section.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Relations that are always continuous}{107}{subsection.4.3.1}\protected@file@percent }
-\newlabel{ex:nontop}{{4.4.1}{111}{A noncontinuous relation}{theorem.4.4.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Continuous Relations by examples}{111}{section.4.4}\protected@file@percent }
-\newlabel{prop:states}{{4.4.3}{112}{}{theorem.4.4.3}{}}
-\newlabel{prop:tests}{{4.4.4}{112}{}{theorem.4.4.4}{}}
-\newlabel{prop:emptyrel}{{4.4.6}{112}{}{theorem.4.4.6}{}}
-\newlabel{prop:fullrel}{{4.4.8}{112}{}{theorem.4.4.8}{}}
-\newlabel{prop:bowtie}{{4.4.9}{112}{}{theorem.4.4.9}{}}
-\newlabel{prop:func}{{4.4.10}{112}{}{theorem.4.4.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Regions of $\blacksquare $ in the image of the yellow point alone will be coloured yellow, and regions in the image of both yellow and cyan will be coloured green:}}{113}{theorem.4.4.18}\protected@file@percent }
-\newlabel{fig:yellowgreen}{{4.1}{113}{Continuous Relations}{theorem.4.4.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Regions in the image of the cyan point alone cannot be open sets by continuity, so they are either points or lines. Points and lines in cyan must be surrounded by an open region in either yellow or green, or else we violate continuity (open sets in red).}}{113}{theorem.4.4.19}\protected@file@percent }
-\newlabel{fig:cyan}{{4.2}{113}{Continuous Relations}{theorem.4.4.19}{}}
-\newlabel{prop:idrel}{{4.4.12}{113}{}{theorem.4.4.12}{}}
-\newlabel{prop:framehom}{{4.4.14}{113}{}{theorem.4.4.14}{}}
-\newlabel{cor:homspace}{{4.4.15}{113}{}{theorem.4.4.15}{}}
-\newlabel{lem:capideal}{{4.4.18}{113}{Partial functions are a $\cap $-ideal}{theorem.4.4.18}{}}
-\newlabel{lem:edgecomplete}{{4.4.19}{113}{Any single edge can be extended to a continuous partial function}{theorem.4.4.19}{}}
-\newlabel{prop:hombasis}{{4.4.20}{113}{}{theorem.4.4.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces A continuous relation $\mathcal  {S} \rightarrow \blacksquare $: "Flower and critter in a sunny field".}}{114}{theorem.4.4.19}\protected@file@percent }
-\newlabel{fig:flower}{{4.3}{114}{Continuous Relations}{theorem.4.4.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces A continuous relation $\blacksquare \rightarrow \mathcal  {S}$: "still math?". Black lines and dots indicate gaps.}}{114}{theorem.4.4.19}\protected@file@percent }
-\newlabel{fig:shitpost}{{4.4}{114}{Continuous Relations}{theorem.4.4.19}{}}
-\newpmemlabel{^_3}{114}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Hasse diagram of all continuous relations from the Sierpi\'{n}ski space to itself. Each relation is depicted left to right, and inclusion order is bottom-to-top. Relations that form the topological basis are boxed.}}{115}{theorem.4.4.20}\protected@file@percent }
-\newlabel{fig:hassesierpinski}{{4.5}{115}{Continuous Relations}{theorem.4.4.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces  continuous functions $[0,1] \rightarrow \blacksquare $ follow the na\"{i}ve notion of continuity: a line one can draw on paper without lifting the pen off the page. }}{116}{theorem.4.4.20}\protected@file@percent }
-\newlabel{fig:contline}{{4.6}{116}{Continuous Relations}{theorem.4.4.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces  So a continuous partial function is \texttt  {"(countably) many (open-ended) lines, each of which one can draw on paper without lifting the pen off the page."} }}{116}{theorem.4.4.20}\protected@file@percent }
-\newlabel{fig:contline}{{4.7}{116}{Continuous Relations}{theorem.4.4.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces We can control the thickness of the brushstroke, by taking the union of (uncountably) many lines.}}{116}{theorem.4.4.20}\protected@file@percent }
-\newlabel{fig:thickbrush}{{4.8}{116}{Continuous Relations}{theorem.4.4.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Assign the visible spectrum of light to $[0,1]$. Colour open sets according to perceptual addition of light, computing brightness by normalising the measure of the open set.}}{116}{theorem.4.4.20}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Like it or not, a continuous relation $[0,1] \rightarrow \blacksquare $: "The Starry Night", by Vincent van Gogh.}}{117}{theorem.4.4.20}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Populating space with shapes using sticky spiders}{117}{section.4.5}\protected@file@percent }
-\newlabel{sec:stickyspider}{{4.5}{117}{Populating space with shapes using sticky spiders}{section.4.5}{}}
-\newpmemlabel{^_4}{117}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}When does an object have a spider (or something close to one)?}{117}{subsection.4.5.1}\protected@file@percent }
-\newlabel{ex:compnotspider}{{4.5.2}{117}{The copy-compare spiders of $\mathbf {Rel}$ are not always continuous}{theorem.4.5.2}{}}
-\newlabel{prop:copydiscrete}{{4.5.3}{117}{}{theorem.4.5.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces The generators (in dashed boxes) and relations that make a spider. When the spider satisfies in addition the three inequalities b1-3, we call it a \textbf  {relation-spider}.}}{118}{section.4.5}\protected@file@percent }
-\newlabel{fig:spiderbicate}{{4.11}{118}{Populating space with shapes using sticky spiders}{section.4.5}{}}
-\newlabel{defn:stickyspider}{{4.5.5}{119}{Sticky spiders}{theorem.4.5.5}{}}
-\newlabel{prop:splitmeanssticky}{{4.5.7}{121}{Every idempotent that splits through a discrete topology gives a sticky spider}{theorem.4.5.7}{}}
-\newlabel{thm:stickygraphical}{{4.5.8}{123}{}{theorem.4.5.8}{}}
-\newlabel{prop:counitdelete}{{4.5.9}{125}{comult/copy implies counit/delete}{theorem.4.5.9}{}}
-\newlabel{lem:allornothing}{{4.5.10}{126}{All-or-Nothing}{theorem.4.5.10}{}}
-\newlabel{prop:epointcopy}{{4.5.11}{128}{$e$ of any point is $e$-copiable}{theorem.4.5.11}{}}
-\newlabel{prop:copiablebasis}{{4.5.12}{129}{The unit is the union of all $e$-copiables}{theorem.4.5.12}{}}
-\newlabel{prop:decompidem}{{4.5.13}{130}{$e$-copiable decomposition of $e$}{theorem.4.5.13}{}}
-\newlabel{prop:decompcounit}{{4.5.14}{131}{$e$-copiable decomposition of counit}{theorem.4.5.14}{}}
-\newlabel{lem:match}{{4.5.15}{132}{$e$-copiables are orthogonal under multiplication}{theorem.4.5.15}{}}
-\newlabel{lem:comatch}{{4.5.17}{134}{Co-match}{theorem.4.5.17}{}}
-\newlabel{lem:ecopyfixpoint}{{4.5.18}{135}{e-copiables are e-fixpoints}{theorem.4.5.18}{}}
-\newlabel{lem:ecopynormal}{{4.5.19}{136}{$e$-copiables are normal}{theorem.4.5.19}{}}
-\newlabel{prop:decompmult}{{4.5.20}{137}{$e$-copiable decomposition of multiplication}{theorem.4.5.20}{}}
-\newlabel{prop:decompcomult}{{4.5.21}{138}{$e$-copiable decomposition of comultiplication}{theorem.4.5.21}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Mathematician's endnotes}{141}{section.4.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.1}The category \textbf  {ContRel}}{141}{subsection.4.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.2}Symmetric Monoidal structure}{141}{subsection.4.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.3}Rig category structure}{142}{subsection.4.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.4}\textbf  {ContRel} and \textbf  {Rel} are related by a free-forgetful adjunction}{143}{subsection.4.6.4}\protected@file@percent }
-\newlabel{lem:disccont}{{4.6.7}{143}{Any relation $R$ between discrete topologies is continuous}{theorem.4.6.7}{}}
-\newlabel{lem:idadj}{{4.6.10}{143}{$RL = 1_{\textbf {Rel}}$}{theorem.4.6.10}{}}
-\newlabel{lem:coarse}{{4.6.12}{143}{Coarsening is a continuous relation}{theorem.4.6.12}{}}
-\newlabel{prop:reladj}{{4.6.13}{144}{$L \dashv R$}{theorem.4.6.13}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.5}Why not Span(\textbf  {Top})?}{145}{subsection.4.6.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.6}Why not a Kleisli construction on \textbf  {Top}?}{145}{subsection.4.6.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.7}Where is the topology coming from?}{146}{subsection.4.6.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.8}Why are continuous relations worth the trouble?}{146}{subsection.4.6.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Sketches of the shape of language}{149}{chapter.5}\protected@file@percent }
+\newlabel{chapter:contrel}{{4}{97}{Continuous relations: a palette for toy models}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Continuous Relations: A concept-compliant setting for text circuits}{98}{section.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Why not use something already out there?}{99}{subsection.4.1.1}\protected@file@percent }
+\newlabel{just:rel}{{4.1.1}{99}{Why not use something already out there?}{subsection.4.1.1}{}}
+\newpmemlabel{^_2}{100}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Continuous Relations}{102}{section.4.2}\protected@file@percent }
+\newlabel{defn:Contrelation}{{4.2.4}{102}{Continuous Relation}{theorem.4.2.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}\textbf  {ContRel} diagrammatically}{103}{section.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Relations that are always continuous}{103}{subsection.4.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Continuous Relations by examples}{107}{section.4.4}\protected@file@percent }
+\newlabel{prop:emptyrel}{{4.4.6}{108}{}{theorem.4.4.6}{}}
+\newlabel{prop:fullrel}{{4.4.8}{108}{}{theorem.4.4.8}{}}
+\newlabel{prop:bowtie}{{4.4.9}{108}{}{theorem.4.4.9}{}}
+\newlabel{prop:func}{{4.4.10}{108}{}{theorem.4.4.10}{}}
+\newlabel{prop:idrel}{{4.4.12}{109}{}{theorem.4.4.12}{}}
+\newlabel{prop:framehom}{{4.4.14}{109}{}{theorem.4.4.14}{}}
+\newlabel{cor:homspace}{{4.4.15}{109}{}{theorem.4.4.15}{}}
+\newlabel{lem:capideal}{{4.4.18}{109}{Partial functions are a $\cap $-ideal}{theorem.4.4.18}{}}
+\newlabel{lem:edgecomplete}{{4.4.19}{109}{Any single edge can be extended to a continuous partial function}{theorem.4.4.19}{}}
+\newlabel{prop:hombasis}{{4.4.20}{109}{}{theorem.4.4.20}{}}
+\newpmemlabel{^_3}{110}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Populating space with shapes using sticky spiders}{112}{section.4.5}\protected@file@percent }
+\newlabel{sec:stickyspider}{{4.5}{112}{Populating space with shapes using sticky spiders}{section.4.5}{}}
+\newpmemlabel{^_4}{112}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}When does an object have a spider (or something close to one)?}{112}{subsection.4.5.1}\protected@file@percent }
+\newlabel{ex:compnotspider}{{4.5.2}{112}{The copy-compare spiders of $\mathbf {Rel}$ are not always continuous}{theorem.4.5.2}{}}
+\newlabel{prop:copydiscrete}{{4.5.3}{112}{}{theorem.4.5.3}{}}
+\newlabel{defn:stickyspider}{{4.5.5}{113}{Sticky spiders}{theorem.4.5.5}{}}
+\newlabel{prop:splitmeanssticky}{{4.5.7}{115}{Every idempotent that splits through a discrete topology gives a sticky spider}{theorem.4.5.7}{}}
+\newlabel{thm:stickygraphical}{{4.5.8}{117}{}{theorem.4.5.8}{}}
+\newlabel{prop:counitdelete}{{4.5.9}{119}{comult/copy implies counit/delete}{theorem.4.5.9}{}}
+\newlabel{lem:allornothing}{{4.5.10}{120}{All-or-Nothing}{theorem.4.5.10}{}}
+\newlabel{prop:epointcopy}{{4.5.11}{122}{$e$ of any point is $e$-copiable}{theorem.4.5.11}{}}
+\newlabel{prop:copiablebasis}{{4.5.12}{123}{The unit is the union of all $e$-copiables}{theorem.4.5.12}{}}
+\newlabel{prop:decompidem}{{4.5.13}{124}{$e$-copiable decomposition of $e$}{theorem.4.5.13}{}}
+\newlabel{prop:decompcounit}{{4.5.14}{125}{$e$-copiable decomposition of counit}{theorem.4.5.14}{}}
+\newlabel{lem:match}{{4.5.15}{126}{$e$-copiables are orthogonal under multiplication}{theorem.4.5.15}{}}
+\newlabel{lem:comatch}{{4.5.17}{128}{Co-match}{theorem.4.5.17}{}}
+\newlabel{lem:ecopyfixpoint}{{4.5.18}{129}{e-copiables are e-fixpoints}{theorem.4.5.18}{}}
+\newlabel{lem:ecopynormal}{{4.5.19}{130}{$e$-copiables are normal}{theorem.4.5.19}{}}
+\newlabel{prop:decompmult}{{4.5.20}{131}{$e$-copiable decomposition of multiplication}{theorem.4.5.20}{}}
+\newlabel{prop:decompcomult}{{4.5.21}{132}{$e$-copiable decomposition of comultiplication}{theorem.4.5.21}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Mathematician's endnotes}{135}{section.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.1}The category \textbf  {ContRel}}{135}{subsection.4.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.2}Symmetric Monoidal structure}{135}{subsection.4.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.3}Rig category structure}{136}{subsection.4.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.4}\textbf  {ContRel} and \textbf  {Rel} are related by a free-forgetful adjunction}{137}{subsection.4.6.4}\protected@file@percent }
+\newlabel{lem:disccont}{{4.6.7}{137}{Any relation $R$ between discrete topologies is continuous}{theorem.4.6.7}{}}
+\newlabel{lem:idadj}{{4.6.10}{137}{$RL = 1_{\textbf {Rel}}$}{theorem.4.6.10}{}}
+\newlabel{lem:coarse}{{4.6.12}{137}{Coarsening is a continuous relation}{theorem.4.6.12}{}}
+\newlabel{prop:reladj}{{4.6.13}{138}{$L \dashv R$}{theorem.4.6.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.5}Why not Span(\textbf  {Top})?}{139}{subsection.4.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.6}Why not a Kleisli construction on \textbf  {Top}?}{139}{subsection.4.6.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.7}Where is the topology coming from?}{140}{subsection.4.6.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6.8}Why are continuous relations worth the trouble?}{140}{subsection.4.6.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Sketches of the shape of language}{143}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:sketches}{{5}{149}{Sketches of the shape of language}{chapter.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Topological concepts in flatland via \textbf  {ContRel}}{150}{section.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Shapes and places}{150}{subsection.5.1.1}\protected@file@percent }
-\newlabel{sec:shapes}{{5.1.1}{150}{Shapes and places}{subsection.5.1.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}The unit interval}{153}{subsection.5.1.2}\protected@file@percent }
-\newlabel{sec:interval}{{5.1.2}{153}{The unit interval}{subsection.5.1.2}{}}
-\newlabel{thm:Friedman}{{5.1.7}{153}{Friedman}{theorem.5.1.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Displacing shapes}{156}{subsection.5.1.3}\protected@file@percent }
-\newlabel{sec:displace}{{5.1.3}{156}{Displacing shapes}{subsection.5.1.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.4}Moving shapes}{159}{subsection.5.1.4}\protected@file@percent }
-\newlabel{sec:moving}{{5.1.4}{159}{Moving shapes}{subsection.5.1.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.5}Rigid motion}{163}{subsection.5.1.5}\protected@file@percent }
-\newlabel{sec:rigidmotion}{{5.1.5}{163}{Rigid motion}{subsection.5.1.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.6}Modelling linguistic topological concepts}{166}{subsection.5.1.6}\protected@file@percent }
-\newlabel{sec:topconcept}{{5.1.6}{166}{Modelling linguistic topological concepts}{subsection.5.1.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.7}States, actions, manner}{171}{subsection.5.1.7}\protected@file@percent }
-\newlabel{sec:statesactions}{{5.1.7}{171}{States, actions, manner}{subsection.5.1.7}{}}
-\newlabel{cons:morph}{{5.1.11}{175}{Morphing sticky spiders with homotopies}{theorem.5.1.11}{}}
-\newlabel{sec:topconcepts}{{5.1}{177}{Topological concepts in flatland via \textbf {ContRel}}{theorem.5.1.11}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}On entification, general anaphora, computers, and lassos.}{178}{section.5.2}\protected@file@percent }
-\newlabel{sec:lassos}{{5.1}{189}{Topological concepts in flatland via \textbf {ContRel}}{theorem.5.2.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}(Im)possibility results for learning text circuits from data}{190}{section.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Approximating Text Circuits with deterministic neural nets}{190}{subsection.5.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Text circuits with unbounded depth and width}{195}{subsection.5.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Text circuits of unbounded width in noncartesian settings}{196}{subsection.5.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.4}A value proposition for quantum machine learning}{197}{subsection.5.3.4}\protected@file@percent }
-\newlabel{sec:learn}{{5.1}{198}{Topological concepts in flatland via \textbf {ContRel}}{subsection.5.3.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Towards learning gates that satisfy First-Order Logic specifications over boundedly finite models}{199}{section.5.4}\protected@file@percent }
-\newlabel{prop:allthenex}{{5.4.3}{200}{}{theorem.5.4.3}{}}
-\newlabel{prop:promotion}{{5.4.4}{201}{}{theorem.5.4.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Discussion}{203}{subsection.5.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}Modelling metaphor}{204}{section.5.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Orders, Temperature, Colour, Mood}{204}{subsection.5.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Complex conceptual structure}{204}{subsection.5.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.3}}{205}{subsection.5.5.3}\protected@file@percent }
+\newlabel{chapter:sketches}{{5}{143}{Sketches of the shape of language}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Topological concepts in flatland via \textbf  {ContRel}}{144}{section.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Shapes and places}{144}{subsection.5.1.1}\protected@file@percent }
+\newlabel{sec:shapes}{{5.1.1}{144}{Shapes and places}{subsection.5.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}The unit interval}{147}{subsection.5.1.2}\protected@file@percent }
+\newlabel{sec:interval}{{5.1.2}{147}{The unit interval}{subsection.5.1.2}{}}
+\newlabel{thm:Friedman}{{5.1.7}{147}{Friedman}{theorem.5.1.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Displacing shapes}{150}{subsection.5.1.3}\protected@file@percent }
+\newlabel{sec:displace}{{5.1.3}{150}{Displacing shapes}{subsection.5.1.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.4}Moving shapes}{153}{subsection.5.1.4}\protected@file@percent }
+\newlabel{sec:moving}{{5.1.4}{153}{Moving shapes}{subsection.5.1.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.5}Rigid motion}{157}{subsection.5.1.5}\protected@file@percent }
+\newlabel{sec:rigidmotion}{{5.1.5}{157}{Rigid motion}{subsection.5.1.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.6}Modelling linguistic topological concepts}{160}{subsection.5.1.6}\protected@file@percent }
+\newlabel{sec:topconcept}{{5.1.6}{160}{Modelling linguistic topological concepts}{subsection.5.1.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.7}States, actions, manner}{165}{subsection.5.1.7}\protected@file@percent }
+\newlabel{sec:statesactions}{{5.1.7}{165}{States, actions, manner}{subsection.5.1.7}{}}
+\newlabel{cons:morph}{{5.1.11}{169}{Morphing sticky spiders with homotopies}{theorem.5.1.11}{}}
+\newlabel{sec:topconcepts}{{5.1}{171}{Topological concepts in flatland via \textbf {ContRel}}{theorem.5.1.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}On entification, general anaphora, computers, and lassos.}{172}{section.5.2}\protected@file@percent }
+\newlabel{sec:lassos}{{5.1}{183}{Topological concepts in flatland via \textbf {ContRel}}{theorem.5.2.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}(Im)possibility results for learning text circuits from data}{184}{section.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Approximating Text Circuits with deterministic neural nets}{184}{subsection.5.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Text circuits with unbounded depth and width}{189}{subsection.5.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Text circuits of unbounded width in noncartesian settings}{190}{subsection.5.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.4}A value proposition for quantum machine learning}{191}{subsection.5.3.4}\protected@file@percent }
+\newlabel{sec:learn}{{5.1}{192}{Topological concepts in flatland via \textbf {ContRel}}{subsection.5.3.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Towards learning gates that satisfy First-Order Logic specifications over boundedly finite models}{193}{section.5.4}\protected@file@percent }
+\newlabel{prop:allthenex}{{5.4.3}{194}{}{theorem.5.4.3}{}}
+\newlabel{prop:promotion}{{5.4.4}{195}{}{theorem.5.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Discussion}{197}{subsection.5.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Modelling metaphor}{198}{section.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Orders, Temperature, Colour, Mood}{198}{subsection.5.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Complex conceptual structure}{198}{subsection.5.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.3}}{199}{subsection.5.5.3}\protected@file@percent }
 \citation{}
 \citation{}
-\@writefile{toc}{\contentsline {section}{\numberline {5.6}Grounding verbs of cognition}{206}{section.5.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.1}Capabilities of spatial agents}{206}{subsection.5.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.2}In which directions do the animals run?}{206}{subsection.5.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.3}How do the animals run in the directions they run?}{206}{subsection.5.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Grounding verbs of cognition}{200}{section.5.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.1}Capabilities of spatial agents}{200}{subsection.5.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.2}In which directions do the animals run?}{200}{subsection.5.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.3}How do the animals run in the directions they run?}{200}{subsection.5.6.3}\protected@file@percent }
 \citation{}
 \citation{}
 \citation{}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.4}Why do the animals run the way they do?}{208}{subsection.5.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6.4}Why do the animals run the way they do?}{202}{subsection.5.6.4}\protected@file@percent }
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
 \ttl@finishall
-\gdef \@abspage@last{209}
+\gdef \@abspage@last{204}

@@ -1,0 +1,129 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-10, 1) {};
+		\node [style=none] (1) at (-10, -1) {};
+		\node [style=none] (2) at (-8, -1) {};
+		\node [style=none] (3) at (-8, 1) {};
+		\node [style=none] (4) at (-10, 0) {};
+		\node [style=none] (5) at (-8, 0) {};
+		\node [style=none] (6) at (-9, -1) {};
+		\node [style=dotG] (7) at (-9, 0) {\footnotesize{\texttt{i}}};
+		\node [style=none] (8) at (-7.5, 0) {$\rightarrow$};
+		\node [style=none] (9) at (-7, 1) {};
+		\node [style=none] (10) at (-7, -1) {};
+		\node [style=none] (11) at (-5, -1) {};
+		\node [style=none] (12) at (-5, 1) {};
+		\node [style=dotG] (13) at (-5.5, 0.5) {\footnotesize{\texttt{i}}};
+		\node [style=none] (14) at (-7, 0.5) {};
+		\node [style=none] (15) at (-5, 0.5) {};
+		\node [style=dotO] (16) at (-6.5, 0.5) {};
+		\node [style=smallorangedot] (17) at (-6, -0.25) {};
+		\node [style=none] (18) at (-6, -1) {};
+		\node [style=none] (19) at (-7.5, 1.5) {$\textcolor{orange}{\texttt{ADV}}$-intro};
+		\node [style=none] (20) at (-3, 1) {};
+		\node [style=none] (21) at (-3, -1) {};
+		\node [style=none] (22) at (-1, -1) {};
+		\node [style=none] (23) at (-1, 1) {};
+		\node [style=none] (24) at (-3, 0) {};
+		\node [style=none] (25) at (-1, 0) {};
+		\node [style=dotO] (26) at (-2, 0) {};
+		\node [style=none] (27) at (-0.5, 0) {$\rightarrow$};
+		\node [style=none] (28) at (0, 1) {};
+		\node [style=none] (29) at (0, -1) {};
+		\node [style=none] (30) at (2, -1) {};
+		\node [style=none] (31) at (2, 1) {};
+		\node [style=none] (32) at (0, -0.25) {};
+		\node [style=none] (33) at (2, -0.25) {};
+		\node [style=none] (34) at (0.75, 0.5) {};
+		\node [style=none] (35) at (1.25, 0.5) {};
+		\node [style=none] (36) at (1, 0.5) {};
+		\node [style=smallorangedot] (37) at (1, -0.25) {};
+		\node [style=none] (38) at (-0.5, 1.5) {$\textcolor{orange}{\texttt{ADV}}$-label};
+		\node [style=none] (39) at (4, 1) {};
+		\node [style=none] (40) at (6, 1) {};
+		\node [style=none] (41) at (4, -1) {};
+		\node [style=none] (42) at (6, -1) {};
+		\node [style=none] (43) at (7, 1) {};
+		\node [style=none] (44) at (7, -1) {};
+		\node [style=none] (45) at (9, -1) {};
+		\node [style=none] (46) at (9, 1) {};
+		\node [style=none] (47) at (6.5, 0) {$\rightarrow$};
+		\node [style=none] (48) at (13, 1) {};
+		\node [style=none] (49) at (11, 1) {};
+		\node [style=none] (50) at (13, -1) {};
+		\node [style=none] (51) at (11, -1) {};
+		\node [style=none] (56) at (13.5, 0) {$\leftrightarrow$};
+		\node [style=none] (57) at (5.5, 1) {};
+		\node [style=none] (58) at (4.5, -1) {};
+		\node [style=smallorangedot] (59) at (4.75, -0.25) {};
+		\node [style=smallorangedot] (60) at (5.25, 0.25) {};
+		\node [style=none] (61) at (5, 1) {};
+		\node [style=none] (62) at (4.5, 1) {};
+		\node [style=none] (63) at (8.5, 0) {};
+		\node [style=none] (64) at (7.25, -1) {};
+		\node [style=none] (65) at (8.5, 1) {};
+		\node [style=smallorangedot] (66) at (8, -0.5) {};
+		\node [style=smallorangedot] (67) at (7.75, 0.25) {};
+		\node [style=none] (68) at (8, 1) {};
+		\node [style=none] (69) at (7.5, 1) {};
+		\node [style=none] (70) at (6.5, 1.5) {$\textcolor{orange}{\texttt{ADV}}$-gather};
+		\node [style=smallorangedot] (71) at (11.75, -0.25) {};
+		\node [style=smallorangedot] (72) at (12.25, 0.25) {};
+		\node [style=none] (73) at (11.5, 1) {};
+		\node [style=none] (74) at (12, 1) {};
+		\node [style=none] (75) at (12.5, 1) {};
+		\node [style=none] (76) at (11.5, 0.25) {};
+		\node [style=none] (77) at (11.75, -1) {};
+		\node [style=none] (89) at (13.5, 1.5) {$\textcolor{orange}{\texttt{ADV}}$-assoc.};
+		\node [style=none] (90) at (-2, -1) {};
+		\node [style=none] (91) at (1, -1) {};
+		\node [style=none] (92) at (14, 1) {};
+		\node [style=none] (93) at (16, 1) {};
+		\node [style=none] (94) at (14, -1) {};
+		\node [style=none] (95) at (16, -1) {};
+		\node [style=smallorangedot] (96) at (15.25, -0.25) {};
+		\node [style=smallorangedot] (97) at (14.75, 0.25) {};
+		\node [style=none] (98) at (15.5, 1) {};
+		\node [style=none] (99) at (15, 1) {};
+		\node [style=none] (100) at (14.5, 1) {};
+		\node [style=none] (101) at (15.5, 0.25) {};
+		\node [style=none] (102) at (15.25, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KM] (4.center) to (5.center);
+		\draw [style=KG] (7) to (6.center);
+		\draw [style=KM] (14.center) to (15.center);
+		\draw [style=KG, in=270, out=30, looseness=0.75] (17) to (13);
+		\draw [style=KG] (17) to (18.center);
+		\draw [style=KM] (24.center) to (25.center);
+		\draw [style=KM] (32.center) to (33.center);
+		\draw [style=KO] (34.center) to (35.center);
+		\draw [style=KO] (36.center) to (37);
+		\draw [style=KG, in=-90, out=90] (58.center) to (57.center);
+		\draw [style=KG] (64.center)
+			 to [in=-90, out=90] (63.center)
+			 to (65.center);
+		\draw [style=KHO, in=150, out=-90] (16) to (17);
+		\draw [style=KHO] (26) to (90.center);
+		\draw [style=KHO] (37) to (91.center);
+		\draw [style=KHO, in=105, out=-90] (62.center) to (59);
+		\draw [style=KHO, in=105, out=-90] (61.center) to (60);
+		\draw [style=KHO, in=120, out=-90] (69.center) to (67);
+		\draw [style=KHO, in=60, out=-90] (68.center) to (67);
+		\draw [style=KHO, in=105, out=-90] (67) to (66);
+		\draw [style=KHO] (71)
+			 to [in=-90, out=135, looseness=1.25] (76.center)
+			 to (73.center);
+		\draw [style=KHO, in=-90, out=15] (71) to (72);
+		\draw [style=KHO, in=-90, out=45] (72) to (75.center);
+		\draw [style=KHO, in=120, out=-90] (74.center) to (72);
+		\draw [style=KHO] (71) to (77.center);
+		\draw [style=KHO] (96)
+			 to [in=-90, out=45, looseness=1.25] (101.center)
+			 to (98.center);
+		\draw [style=KHO, in=-90, out=165] (96) to (97);
+		\draw [style=KHO, in=-90, out=135] (97) to (100.center);
+		\draw [style=KHO, in=60, out=-90] (99.center) to (97);
+		\draw [style=KHO] (96) to (102.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

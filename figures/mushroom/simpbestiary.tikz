@@ -1,0 +1,183 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (293) at (-13.5, 2) {\textcolor{green}{\texttt{IV}}-intro};
+		\node [style=none] (315) at (-4.5, 2) {\textcolor{green}{\texttt{TV}}-intro};
+		\node [style=none] (350) at (1, 1) {};
+		\node [style=none] (351) at (1, -1) {};
+		\node [style=none] (352) at (3, 1) {};
+		\node [style=none] (353) at (3, -1) {};
+		\node [style=none] (354) at (3.5, 0) {$\rightarrow$};
+		\node [style=none] (355) at (3.5, 0.5) {\footnotesize{$\texttt{v} \in \mathbf{V}_i$}};
+		\node [style=none] (356) at (1, 0) {};
+		\node [style=none] (357) at (3, 0) {};
+		\node [style=dotG] (358) at (2, 0) {\footnotesize{\texttt{i}}};
+		\node [style=none] (359) at (2, -1) {};
+		\node [style=none] (361) at (4, 1) {};
+		\node [style=none] (362) at (4, -1) {};
+		\node [style=none] (363) at (6, -1) {};
+		\node [style=none] (364) at (6, 1) {};
+		\node [style=none] (365) at (4, -0.5) {};
+		\node [style=none] (366) at (6, -0.5) {};
+		\node [style=none] (368) at (5, -1) {};
+		\node [style=none] (369) at (4.75, 0.5) {};
+		\node [style=none] (370) at (5.25, 0.5) {};
+		\node [style=none] (371) at (5, 0.5) {};
+		\node [style=smalldotG] (372) at (5, -0.5) {};
+		\node [style=none] (374) at (3.5, 1.5) {\textcolor{green}{\texttt{V}}-label};
+		\node [style=none] (375) at (-17, 1.5) {};
+		\node [style=none] (376) at (-14, 1.5) {};
+		\node [style=none] (377) at (-14, -1.5) {};
+		\node [style=none] (378) at (-17, -1.5) {};
+		\node [style=dotM] (379) at (-16.5, 0) {};
+		\node [style=dotM] (380) at (-14.5, 0) {};
+		\node [style=none] (381) at (-17, 0) {};
+		\node [style=none] (382) at (-14, 0) {};
+		\node [style=none] (383) at (-16.25, 0.75) {};
+		\node [style=none] (384) at (-16.25, -0.75) {};
+		\node [style=none] (385) at (-14.75, 0.75) {};
+		\node [style=none] (386) at (-14.75, -0.75) {};
+		\node [style=dot] (387) at (-15.5, 0.75) {};
+		\node [style=smalldotb] (388) at (-15.5, -0.75) {};
+		\node [style=none] (389) at (-15.5, 1.5) {};
+		\node [style=none] (390) at (-15.5, -1.5) {};
+		\node [style=none] (391) at (-13, 1.5) {};
+		\node [style=none] (392) at (-10, 1.5) {};
+		\node [style=none] (393) at (-10, -1.5) {};
+		\node [style=none] (394) at (-13, -1.5) {};
+		\node [style=dotM] (395) at (-12.5, 0) {};
+		\node [style=dotM] (396) at (-10.5, 0) {};
+		\node [style=none] (397) at (-13, 0) {};
+		\node [style=none] (398) at (-10, 0) {};
+		\node [style=none] (399) at (-12.25, 0.75) {};
+		\node [style=none] (400) at (-12.25, -0.75) {};
+		\node [style=none] (401) at (-10.75, 0.75) {};
+		\node [style=none] (402) at (-10.75, -0.75) {};
+		\node [style=smalldotb] (404) at (-11.5, -0.75) {};
+		\node [style=none] (405) at (-12, 1.5) {};
+		\node [style=none] (406) at (-11.5, -1.5) {};
+		\node [style=none] (407) at (-8, 1.5) {};
+		\node [style=none] (408) at (-5, 1.5) {};
+		\node [style=none] (409) at (-5, -1.5) {};
+		\node [style=none] (410) at (-8, -1.5) {};
+		\node [style=dotM] (411) at (-7.5, 0) {};
+		\node [style=dotM] (412) at (-5.5, 0) {};
+		\node [style=none] (413) at (-8, 0) {};
+		\node [style=none] (414) at (-5, 0) {};
+		\node [style=none] (415) at (-7.25, 0.75) {};
+		\node [style=none] (416) at (-7.25, -0.75) {};
+		\node [style=none] (417) at (-5.75, 0.75) {};
+		\node [style=none] (418) at (-5.75, -0.75) {};
+		\node [style=dot] (419) at (-7, 0.75) {};
+		\node [style=smalldotb] (420) at (-7, -0.75) {};
+		\node [style=none] (421) at (-7, 1.5) {};
+		\node [style=none] (422) at (-7, -1.5) {};
+		\node [style=dotb] (439) at (-12, 0.75) {};
+		\node [style=dotG] (440) at (-11, 0.75) {\footnotesize{\texttt{1}}};
+		\node [style=dot] (442) at (-6, 0.75) {};
+		\node [style=smalldotb] (443) at (-6, -0.75) {};
+		\node [style=none] (444) at (-6, 1.5) {};
+		\node [style=none] (445) at (-6, -1.5) {};
+		\node [style=none] (446) at (-4, 1.5) {};
+		\node [style=none] (447) at (-1, 1.5) {};
+		\node [style=none] (448) at (-1, -1.5) {};
+		\node [style=none] (449) at (-4, -1.5) {};
+		\node [style=dotM] (450) at (-3.5, 0) {};
+		\node [style=dotM] (451) at (-1.5, 0) {};
+		\node [style=none] (452) at (-4, 0) {};
+		\node [style=none] (453) at (-1, 0) {};
+		\node [style=none] (454) at (-3.25, 0.75) {};
+		\node [style=none] (455) at (-3.25, -0.75) {};
+		\node [style=none] (456) at (-1.75, 0.75) {};
+		\node [style=none] (457) at (-1.75, -0.75) {};
+		\node [style=smalldotb] (459) at (-3, -0.75) {};
+		\node [style=none] (461) at (-3, -1.5) {};
+		\node [style=smalldotb] (463) at (-2, -0.75) {};
+		\node [style=none] (465) at (-2, -1.5) {};
+		\node [style=smalldotG] (466) at (-11.5, 0) {};
+		\node [style=smalldotG] (467) at (-2.5, 0) {};
+		\node [style=dotG] (468) at (-2.5, 0.75) {\footnotesize{\texttt{2}}};
+		\node [style=dotb] (469) at (-3, 0.75) {};
+		\node [style=dotb] (470) at (-2, 0.75) {};
+		\node [style=none] (471) at (-3, 1.5) {};
+		\node [style=none] (472) at (-2, 1.5) {};
+		\node [style=none] (473) at (-4.5, 0) {$\rightarrow$};
+		\node [style=none] (474) at (-13.5, 0) {$\rightarrow$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KM] (356.center) to (357.center);
+		\draw [style=KG] (358) to (359.center);
+		\draw [style=KM] (365.center) to (366.center);
+		\draw [style=KG] (369.center) to (370.center);
+		\draw [style=KG] (372) to (368.center);
+		\draw [style=KG] (372) to (371.center);
+		\draw [style=KM] (381.center) to (379);
+		\draw [style=KM] (380) to (382.center);
+		\draw [style=KM] (379)
+			 to [in=-180, out=90, looseness=0.75] (383.center)
+			 to (385.center)
+			 to [in=90, out=0, looseness=0.75] (380);
+		\draw [style=D] (388) to (390.center);
+		\draw [style=D] (387) to (389.center);
+		\draw [style=KM] (397.center) to (395);
+		\draw [style=KM] (396) to (398.center);
+		\draw [style=KM] (395)
+			 to [in=-180, out=90, looseness=0.75] (399.center)
+			 to (401.center)
+			 to [in=90, out=0, looseness=0.75] (396);
+		\draw [style=D] (404) to (406.center);
+		\draw [style=KM] (413.center) to (411);
+		\draw [style=KM] (412) to (414.center);
+		\draw [style=KM] (411)
+			 to [in=-180, out=90, looseness=0.75] (415.center)
+			 to (417.center)
+			 to [in=90, out=0, looseness=0.75] (412);
+		\draw [style=D] (420) to (422.center);
+		\draw [style=D] (419) to (421.center);
+		\draw [style=D] (405.center) to (439);
+		\draw [style=K] (387) to (388);
+		\draw [style=K] (442) to (443);
+		\draw [style=K] (419) to (420);
+		\draw [style=D] (444.center) to (442);
+		\draw [style=D] (443) to (445.center);
+		\draw [style=KM] (452.center) to (450);
+		\draw [style=KM] (451) to (453.center);
+		\draw [style=KM, in=-180, out=90, looseness=0.75] (450) to (454.center);
+		\draw [style=KM] (454.center) to (456.center);
+		\draw [style=KM, in=90, out=0, looseness=0.75] (456.center) to (451);
+		\draw [style=D] (459) to (461.center);
+		\draw [style=D] (463) to (465.center);
+		\draw [style=KG, in=-90, out=30] (466) to (440);
+		\draw [style=K, in=-90, out=150] (466) to (439);
+		\draw [style=K] (466) to (404);
+		\draw [style=K, in=150, out=-90] (469) to (467);
+		\draw [style=K, in=-90, out=30] (467) to (470);
+		\draw [style=K, in=90, out=-150] (467) to (459);
+		\draw [style=K, in=90, out=-30] (467) to (463);
+		\draw [style=KG] (468) to (467);
+		\draw [style=D] (471.center) to (469);
+		\draw [style=D] (472.center) to (470);
+		\draw [style=KP] (379)
+			 to [in=180, out=-90, looseness=0.75] (384.center)
+			 to (388.center)
+			 to (386.center)
+			 to [in=-90, out=0, looseness=0.75] (380);
+		\draw [style=KP] (395)
+			 to [in=165, out=-90, looseness=0.75] (400.center)
+			 to (404.center)
+			 to (402.center)
+			 to [in=-90, out=0, looseness=0.75] (396);
+		\draw [style=KP, in=180, out=-90, looseness=0.75] (411) to (416.center);
+		\draw [style=KP] (416.center)
+			 to (420.center)
+			 to (443.center)
+			 to (418.center);
+		\draw [style=KP, in=-90, out=0, looseness=0.75] (418.center) to (412);
+		\draw [style=KP] (450)
+			 to [in=-180, out=-90, looseness=0.75] (455.center)
+			 to (459);
+		\draw [style=KP] (459) to (463);
+		\draw [style=KP] (463)
+			 to (457.center)
+			 to [in=-90, out=0, looseness=0.75] (451);
+	\end{pgfonlayer}
+\end{tikzpicture}
