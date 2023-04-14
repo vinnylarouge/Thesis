@@ -1,7 +1,7 @@
 \section{Process Theories}
 
 \marginnote{
-    There are a lot of definitions to get started, but as with programming languages, preloading the work makes it easier to scale. This is the mathematical source code of string diagrams that generalises the examples we have seen so far, and it's only necessary if we need to show that something new is a symmetric monoidal category or if we are tinkering deeply, so it can be skipped for now. The important takeaway is that string diagrams are syntax, with morphisms in symmetric monoidal categories as semantics.
+    There are a lot of definitions to get started, but as with programming languages, preloading the work makes it easier to scale. This is the mathematical source code of string diagrams, which is only necessary if we need to show that something new is a symmetric monoidal category or if we are tinkering deeply, so it can be skipped for now. The important takeaway is that string diagrams are syntax, with morphisms in symmetric monoidal categories as semantics.
 
 \begin{defn}[Category]
 A \emph{category} $\mathcal{C}$ consists of the following data
@@ -24,7 +24,10 @@ This data has to satisfy two coherence conditions, which are:
 In a category $\mathcal{C}$, given two objects $a,b \in \text{Ob}(\mathcal{C})$, the \emph{product} $A \times B$, if it exists, is an object with projection morphisms $\pi_0: A \times B \rightarrow A$ and $\pi_1: A \times B \rightarrow B$ such that for any object $x \in \text{Ob}(\mathcal{C})$ and any pair of morphisms $f: X \rightarrow A$ and $g: x \rightarrow b$, there exists a unique morphism $f \times g: X \rightarrow A \times B$ such that $f = (f \times g) ; \pi_0$ and $g = (f \times g); \pi_1$. This is a mouthful which is easier expressed as a commuting diagram as below. The dashed arrow indicates uniqueness. $A \times B$ is a product when every path through the diagram following the arrows between two objects is an equality.
 \[placeholder\]
 \end{defn}
-The idea behind the definition is simple: instead of explicitly constructing the cartesian product of sets from within, let's say \emph{a product is as a product does}. For objects, the cartesian product of sets $A \times B$ is a set of pairs, and we may destruct those pairs by extracting or projecting out the first and second elements, hence the projection maps $\pi_0,\pi_1$. Another thing we would like to do with pairs is construct them; whenever we have some $A$-data and $B$-data, we can pair them in such a way that construction followed by destruction is lossless and doesn't add anything. In category-theoretic terms, we select `arbitrary' $A$- and $B$-data by arrows $f: X \rightarrow A$ and $g: X \rightarrow B$, and we declare that $f \times g: X \rightarrow A \times B$ is the unique way to select corresponding tuples in $A \times B$. This design-pattern of "for all such-and-such there exists a unique such-and-such" is an instance of a so-called \emph{universal property}, the purpose of which is to establish isomorphism between operationally equivalent implementations.
+}
+
+\marginnote{
+The idea behind the definition of product is simple: instead of explicitly constructing the cartesian product of sets from within, let's say \emph{a product is as a product does}. For objects, the cartesian product of sets $A \times B$ is a set of pairs, and we may destruct those pairs by extracting or projecting out the first and second elements, hence the projection maps $\pi_0,\pi_1$. Another thing we would like to do with pairs is construct them; whenever we have some $A$-data and $B$-data, we can pair them in such a way that construction followed by destruction is lossless and doesn't add anything. In category-theoretic terms, we select `arbitrary' $A$- and $B$-data by arrows $f: X \rightarrow A$ and $g: X \rightarrow B$, and we declare that $f \times g: X \rightarrow A \times B$ is the unique way to select corresponding tuples in $A \times B$. This design-pattern of "for all such-and-such there exists a unique such-and-such" is an instance of a so-called \emph{universal property}, the purpose of which is to establish isomorphism between operationally equivalent implementations.
 }
 
 \marginnote{
@@ -43,12 +46,64 @@ Both satisfy the commutative diagram defining the product.
 Something neat happens when we pick $A \overset{K}{\times} B$ to be the arbitrary $X$ for the product definition of $A \overset{W}{\times} B$ and vice versa. We get to mash the commuting diagrams together:
 
 \[placeholder\]
+}
 
+\marginnote{
 The two unique arrows are format-conversions. For example, by maplet notation, the conversion from $A \overset{K}{\times} B \rightarrow A \overset{W}{\times} B$ is $\{\{a\},\{a,b\}\} \mapsto \{\{a,\varnothing\},b\}$, and similarly for the other direction. Because these conversions are uniquely determined arrows, their composite is also uniquely determined. But their composite $A \overset{K}{\times} B \rightarrow A \overset{K}{\times} B \rightarrow A \overset{K}{\times} B$ describes the trivial path on $A \overset{K}{\times} B$, which is the implicitly-present identity morphism of $A \overset{K}{\times} B$. Since all paths in a commuting diagram commute, these conversions witness an \emph{isomorphism} between $A \overset{K}{\times} B$ and $A \overset{W}{\times} W$; a pair of maps $X \rightarrow Y$ and $Y \rightarrow X$ such that their loop-composites equal identities. This in a nutshell is the category-theoretic approach to overcoming the bureaucracy of syntax: use universal properties (or whatever else) encode your intents and purposes, establish isomorphisms, and then treat isomorphic things as "the same for all intents and purposes". The idea of treating isomorphic objects as the same is ingrained in category theory, so isomorphism notation $\simeq$ is often just written as equality $=$.
 }
 
+\marginnote{
+\begin{defn}[Functor]
+A functor $F: \mathcal{C} \rightarrow \mathcal{D}$ (read: with domain a category $\mathcal{C}$ and codomain a category $\mathcal{D}$) consists of two suitably related functions. An object function $F_0 : \text{Ob}(\mathcal{C}) \rightarrow \text{Ob}(\mathcal{D})$ and a morphism function (equivalently viewed as a family of functions indexed by pairs of objects of $\mathcal{C}$) $F_1(X,Y) : \mathcal{C}(X,Y) \rightarrow \mathcal{D}(F_0 X,F_0 Y )$. $F_1$ must map identities to identities -- i.e., be such that for all $X \in \mathcal{C}$, $F_1(1_X) = 1_{F_0 X}$ -- and $F_1$ must map composites to composites -- i.e., for all $X,Y,Z \in \text{Ob}(\mathcal{C})$ and all $f: X \rightarrow Y$ and $g: Y \rightarrow Z$, $F_1 (f;g) = F_1 f ; F_1 g$.
+\end{defn}
 
-This section seeks to give an introduction to process theories in an intuitively grounded manner. We aim here to build the process-theoretic mathematics towards linguistic spatial relations -- words like "to the left of" and "between" -- which are a common ground of competence we all possess. Here we only focus on geometric relations in two dimensional Euclidean space equipped with notions of metric and distance. This section provides adequate foundations to follow \citep{}talkspace, in which I demonstrate how text circuits can be obtained from sentences and how such text circuits interpreted in the category of sets and relations \textbf{Rel} provides a semantics for such sentences. Moreover, this section motivates the question of how to express the (arguably more primitive \citep{}piaget) linguistic topological concepts -- such as "touching" and "inside" -- the mathematics of which will be in Chapter \ref{}; the reader may skip straight to that chapter after this section if they are uninterested in syntax. We close this section with a brief aside on how process theories relate to mathematical foundations and computer science.
+Functors in short map categories to categories, preserving the structure of identities and composition. They are the essence of "structure preserving transformation". Insofar as semantics is the science of finding structure-preserving transformations that tell us when syntactic things are equal, functors are just that. They are incredibly useful and mysterious and worth internalising in a way I am not adept enough to impress by example. For us, for now, they are just stepping stones to define transformations \emph{between functors}.
+}
+
+\marginnote{
+\begin{defn}[Natural Transformation]
+A natural transformation $\theta: F \rightarrow G$ for (co)domain-aligned functors $F,G: \mathcal{C} \rightarrow \mathcal{D}$ is a family of morphisms in $\mathcal{D}$ indexed by objects $X \in \mathcal{C}$ such that for all $f: X \rightarrow Y$ in $\mathcal{C}$, the following commuting diagram holds in $\mathcal{D}$:
+% https://q.uiver.app/?q=WzAsNCxbMCwwLCJGWCJdLFsyLDAsIkZZIl0sWzAsMiwiR1giXSxbMiwyLCJHWSJdLFswLDIsIlxcdGhldGFfWCIsMV0sWzAsMSwiRmYiLDFdLFsxLDMsIlxcdGhldGFfWSIsMV0sWzIsMywiR2YiLDFdXQ==
+\[placeholder\]
+\end{defn}
+}
+
+\marginnote{
+\begin{defn}[$\mathbf{Cat}$]
+$\mathbf{Cat}$ is a (2-)category where the objects are (1-)categories as defined above, the morphisms are functors, and the (2-)morphisms are natural transformations. (2-)morphisms are morphisms between morphisms that we discuss in more detail in Section \ref{ncat}. There's no "set of all sets" paradox here by construction; $\mathbf{Cat}$ is slightly more than a category as we have seen so far because of the (2-)morphisms. We're introducing this just to state that the definition of product also works here so that we can consider product categories $\mathcal{C} \times \mathcal{D}$, whose objects are pairs of objects and morphisms pairs of morphisms.
+\end{defn}
+}
+
+\marginnote{
+\begin{defn}[Monoidal Category]
+A monoidal category consists of a category $\mathcal{C}$, a functor $\otimes: \mathcal{C} \times \mathcal{C} \rightarrow C$, a monoidal unit object $I \in \text{Ob}(\mathcal{C})$, an associator natural transformation $\alpha: ((- \otimes =) \otimes \equiv) \mapsto (- \otimes (= \otimes \equiv))$, a right unitor N.T. $\rho - \otimes I \mapsto -$, and a left unitor $\lambda I \otimes - \mapsto -\big)$. For those familiar with monoids, a monoidal category is like a monoid in $\mathbf{Cat}$, except equalities have been replaced by natural isomorphisms. The natural isomorphisms must obey the following \emph{coherence laws}, expressed as commuting diagrams.
+\[placeholder\]
+\end{defn}
+}
+
+\marginnote{
+\begin{defn}[Symmetric Monoidal Category]
+A symmetric monoidal category is a monoidal category with an additional natural isomorphism $\theta: - \otimes = \mapsto = \otimes -$. The coherence laws are:
+\[placeholder\]
+\end{defn}
+}
+
+\marginnote{
+Here are two theorems that make it so that it's not really necessary to know the source code by heart.
+
+\begin{theorem}[Strictification]
+
+\end{theorem}
+}
+
+\marginnote{
+\begin{theorem}[Graphical?]
+
+\end{theorem}
+}
+
+
+This section seeks to give an introduction to process theories. The main body will work by examples towards process-theoretic mathematics of linguistic spatial relations -- words like "to the left of" and "between" -- which are a common ground of competence we all possess. The margin material will provide the formal mathematics of string diagrams from the bottum-up. Here we only focus on geometric relations in two dimensional Euclidean space equipped with notions of metric and distance. This section provides adequate foundations to follow \citep{}talkspace, in which I demonstrate how text circuits can be obtained from sentences and how such text circuits interpreted in the category of sets and relations \textbf{Rel} provides a semantics for such sentences. Moreover, this section motivates the question of how to express the (arguably more primitive \citep{}piaget) linguistic topological concepts -- such as "touching" and "inside" -- the mathematics of which will be in Chapter \ref{}; the reader may skip straight to that chapter after this section if they are uninterested in syntax. We close this section with a brief aside on how process theories relate to mathematical foundations and computer science.
 
 A \emph{process} is something that transforms some number of input system types to some number of output system types. We depict systems as wires, labelled with their type, and processes as boxes. We read processes from left to right.
 \[\tikzfig{proctheory/process}\]
