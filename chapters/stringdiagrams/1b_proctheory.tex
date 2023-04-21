@@ -22,7 +22,16 @@ This data has to satisfy two coherence conditions, which are:
 \marginnote{
 \begin{defn}[Categorical Product]
 In a category $\mathcal{C}$, given two objects $a,b \in \text{Ob}(\mathcal{C})$, the \emph{product} $A \times B$, if it exists, is an object with projection morphisms $\pi_0: A \times B \rightarrow A$ and $\pi_1: A \times B \rightarrow B$ such that for any object $x \in \text{Ob}(\mathcal{C})$ and any pair of morphisms $f: X \rightarrow A$ and $g: x \rightarrow b$, there exists a unique morphism $f \times g: X \rightarrow A \times B$ such that $f = (f \times g) ; \pi_0$ and $g = (f \times g); \pi_1$. This is a mouthful which is easier expressed as a commuting diagram as below. The dashed arrow indicates uniqueness. $A \times B$ is a product when every path through the diagram following the arrows between two objects is an equality.
-\[placeholder\]
+\[\begin{tikzcd}[ampersand replacement=\&]
+	\&\& x \\
+	\\
+	a \&\& {a \times b} \&\& b
+	\arrow["{\langle f,g \rangle}"{description}, dashed, from=1-3, to=3-3]
+	\arrow["f"{description}, from=1-3, to=3-1]
+	\arrow["g"{description}, from=1-3, to=3-5]
+	\arrow["{\pi_1}"{description}, from=3-3, to=3-5]
+	\arrow["{\pi_0}"{description}, from=3-3, to=3-1]
+\end{tikzcd}\]
 \end{defn}
 }
 
@@ -31,7 +40,7 @@ The idea behind the definition of product is simple: instead of explicitly const
 }
 
 \marginnote{
-For example, let's revisit Kuratowski's and Wiener's definitions of cartesian product, which are, respectively:
+To understand what this style of definition give us, let's revisit Kuratowski's and Wiener's definitions of cartesian product, which are, respectively:
 \[A \overset{K}{\times} B := \bigg\{ \{\{a\},\{a,b\}\} \ | \ a \in A \ , \ b \in B \bigg\}\]
 \[A \overset{W}{\times} B := \bigg\{ \{\{a,\varnothing\},b\} \ | \ a \in A \ , \ b \in B \bigg\}\]
 Keeping overset-labels and using maplet notation, the associated projections are:
@@ -44,12 +53,26 @@ And maps $f,g$ into $A$ and $B$ are tupled by the following:
 \[f \overset{W}{\times} g := x \mapsto \{\{f(x),\varnothing\},g(x)\}\]
 Both satisfy the commutative diagram defining the product.
 Something neat happens when we pick $A \overset{K}{\times} B$ to be the arbitrary $X$ for the product definition of $A \overset{W}{\times} B$ and vice versa. We get to mash the commuting diagrams together:
-
-\[placeholder\]
+% https://q.uiver.app/?q=WzAsNSxbNCwxLCJCIl0sWzAsMSwiQSJdLFsyLDAsIkEgXFxvdmVyc2V0e0t9e1xcdGltZXN9IEIiXSxbMSwzLCJBIFxcb3ZlcnNldHtXfXtcXHRpbWVzfSBCIl0sWzMsMywiQSBcXG92ZXJzZXR7V317XFx0aW1lc30gQiJdLFsyLDEsIlxcb3ZlcnNldHtLfXtcXHBpXzB9IiwxXSxbMiwwLCJcXG92ZXJzZXR7S317XFxwaV8xfSIsMV0sWzMsMCwiXFxvdmVyc2V0e1d9e1xccGlfMX0iLDFdLFszLDEsIlxcb3ZlcnNldHtXfXtcXHBpXzB9IiwxXSxbMiwzLCIiLDEseyJjdXJ2ZSI6LTIsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFszLDIsIiIsMSx7ImN1cnZlIjotMiwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzQsMSwiXFxvdmVyc2V0e1d9e1xccGlfMH0iLDEseyJsYWJlbF9wb3NpdGlvbiI6ODB9XSxbNCwwLCJcXG92ZXJzZXR7V317XFxwaV8xfSIsMV0sWzMsNCwiaWQiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJhcnJvd2hlYWQifSwiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV1d
+\[\begin{tikzcd}[ampersand replacement=\&]
+	\&\& {A \overset{K}{\times} B} \\
+	A \&\&\&\& B \\
+	\\
+	\& {A \overset{W}{\times} B} \&\& {A \overset{W}{\times} B}
+	\arrow["{\overset{K}{\pi_0}}"{description}, from=1-3, to=2-1]
+	\arrow["{\overset{K}{\pi_1}}"{description}, from=1-3, to=2-5]
+	\arrow["{\overset{W}{\pi_1}}"{description}, from=4-2, to=2-5]
+	\arrow["{\overset{W}{\pi_0}}"{description}, from=4-2, to=2-1]
+	\arrow[curve={height=-12pt}, dashed, from=1-3, to=4-2]
+	\arrow[curve={height=-12pt}, dashed, from=4-2, to=1-3]
+	\arrow["{\overset{W}{\pi_0}}"{description, pos=0.8}, from=4-4, to=2-1]
+	\arrow["{\overset{W}{\pi_1}}"{description}, from=4-4, to=2-5]
+	\arrow["id"{description}, dashed, tail reversed, from=4-2, to=4-4]
+\end{tikzcd}\]
 }
 
 \marginnote{
-The two unique arrows are format-conversions. For example, by maplet notation, the conversion from $A \overset{K}{\times} B \rightarrow A \overset{W}{\times} B$ is $\{\{a\},\{a,b\}\} \mapsto \{\{a,\varnothing\},b\}$, and similarly for the other direction. Because these conversions are uniquely determined arrows, their composite is also uniquely determined. But their composite $A \overset{K}{\times} B \rightarrow A \overset{K}{\times} B \rightarrow A \overset{K}{\times} B$ describes the trivial path on $A \overset{K}{\times} B$, which is the implicitly-present identity morphism of $A \overset{K}{\times} B$. Since all paths in a commuting diagram commute, these conversions witness an \emph{isomorphism} between $A \overset{K}{\times} B$ and $A \overset{W}{\times} W$; a pair of maps $X \rightarrow Y$ and $Y \rightarrow X$ such that their loop-composites equal identities. This in a nutshell is the category-theoretic approach to overcoming the bureaucracy of syntax: use universal properties (or whatever else) encode your intents and purposes, establish isomorphisms, and then treat isomorphic things as "the same for all intents and purposes". The idea of treating isomorphic objects as the same is ingrained in category theory, so isomorphism notation $\simeq$ is often just written as equality $=$.
+The two unique arrows between $\overset{K}{\times}$ and $\overset{W}{\times}$ are format-conversions, and we know by definition that the unique arrow that performs format conversion from $\overset{W}{\times}$ to itself in the bottom face is the identity. In maplet notation, the conversion from $A \overset{K}{\times} B \rightarrow A \overset{W}{\times} B$ is $\{\{a\},\{a,b\}\} \mapsto \{\{a,\varnothing\},b\}$, and similarly for the other direction. Because these conversions are uniquely determined arrows, their composite is also uniquely determined, and we know their composite is equal to the identity. So, the nontrivial conversions witness an \emph{isomorphism} between $A \overset{K}{\times} B$ and $A \overset{W}{\times} W$; a pair of maps $X \rightarrow Y$ and $Y \rightarrow X$ such that their loop-composites equal identities. This in a nutshell is the category-theoretic approach to overcoming the bureaucracy of syntax: use universal properties (or whatever else) encode your intents and purposes, establish isomorphisms, and then treat isomorphic things as "the same for all intents and purposes". The idea of treating isomorphic objects as the same is ingrained in category theory, so isomorphism notation $\simeq$ is often just written as equality $=$; going forward we will use equality notation unless there are good reasons to remember that we only have isomorphisms.
 }
 
 \marginnote{
@@ -57,14 +80,22 @@ The two unique arrows are format-conversions. For example, by maplet notation, t
 A functor $F: \mathcal{C} \rightarrow \mathcal{D}$ (read: with domain a category $\mathcal{C}$ and codomain a category $\mathcal{D}$) consists of two suitably related functions. An object function $F_0 : \text{Ob}(\mathcal{C}) \rightarrow \text{Ob}(\mathcal{D})$ and a morphism function (equivalently viewed as a family of functions indexed by pairs of objects of $\mathcal{C}$) $F_1(X,Y) : \mathcal{C}(X,Y) \rightarrow \mathcal{D}(F_0 X,F_0 Y )$. $F_1$ must map identities to identities -- i.e., be such that for all $X \in \mathcal{C}$, $F_1(1_X) = 1_{F_0 X}$ -- and $F_1$ must map composites to composites -- i.e., for all $X,Y,Z \in \text{Ob}(\mathcal{C})$ and all $f: X \rightarrow Y$ and $g: Y \rightarrow Z$, $F_1 (f;g) = F_1 f ; F_1 g$.
 \end{defn}
 
-Functors in short map categories to categories, preserving the structure of identities and composition. They are the essence of "structure preserving transformation". Insofar as semantics is the science of finding structure-preserving transformations that tell us when syntactic things are equal, functors are just that. They are incredibly useful and mysterious and worth internalising in a way I am not adept enough to impress by example. For us, for now, they are just stepping stones to define transformations \emph{between functors}.
+Functors in short map categories to categories, preserving the structure of identities and composition. They are the essence of "structure preserving transformation". Insofar as semantics is the science of finding structure-preserving transformations that tell us when syntactic things are equal, functors are just that. They are incredibly useful and mysterious and worth internalising in a way I am not adept enough to impress by example in this margin. For us, for now, they are just stepping stones to define transformations \emph{between functors}.
 }
 
 \marginnote{
 \begin{defn}[Natural Transformation]
 A natural transformation $\theta: F \rightarrow G$ for (co)domain-aligned functors $F,G: \mathcal{C} \rightarrow \mathcal{D}$ is a family of morphisms in $\mathcal{D}$ indexed by objects $X \in \mathcal{C}$ such that for all $f: X \rightarrow Y$ in $\mathcal{C}$, the following commuting diagram holds in $\mathcal{D}$:
 % https://q.uiver.app/?q=WzAsNCxbMCwwLCJGWCJdLFsyLDAsIkZZIl0sWzAsMiwiR1giXSxbMiwyLCJHWSJdLFswLDIsIlxcdGhldGFfWCIsMV0sWzAsMSwiRmYiLDFdLFsxLDMsIlxcdGhldGFfWSIsMV0sWzIsMywiR2YiLDFdXQ==
-\[placeholder\]
+\[\begin{tikzcd}[ampersand replacement=\&]
+	FX \&\& FY \\
+	\\
+	GX \&\& GY
+	\arrow["{\theta_X}"{description}, from=1-1, to=3-1]
+	\arrow["Ff"{description}, from=1-1, to=1-3]
+	\arrow["{\theta_Y}"{description}, from=1-3, to=3-3]
+	\arrow["Gf"{description}, from=3-1, to=3-3]
+\end{tikzcd}\]
 \end{defn}
 }
 
@@ -76,20 +107,84 @@ $\mathbf{Cat}$ is a (2-)category where the objects are (1-)categories as defined
 
 \marginnote{
 \begin{defn}[Monoidal Category]
-A monoidal category consists of a category $\mathcal{C}$, a functor $\otimes: \mathcal{C} \times \mathcal{C} \rightarrow C$, a monoidal unit object $I \in \text{Ob}(\mathcal{C})$, an associator natural transformation $\alpha: ((- \otimes =) \otimes \equiv) \mapsto (- \otimes (= \otimes \equiv))$, a right unitor N.T. $\rho - \otimes I \mapsto -$, and a left unitor $\lambda I \otimes - \mapsto -\big)$. For those familiar with monoids, a monoidal category is like a monoid in $\mathbf{Cat}$, except equalities have been replaced by natural isomorphisms. The natural isomorphisms must obey the following \emph{coherence laws}, expressed as commuting diagrams.
-\[placeholder\]
+A monoidal category consists of a category $\mathcal{C}$, a functor $\otimes: \mathcal{C} \times \mathcal{C} \rightarrow C$, a monoidal unit object $I \in \text{Ob}(\mathcal{C})$, and the following natural isomorphisms -- i.e. natural transformations with inverses, where multiple bar notation indicates variable object argument positions: an associator $\alpha: ((- \ \otimes =) \otimes \equiv) \mapsto (- \ \otimes (= \otimes \equiv))$, a right unitor $\rho - \otimes I \mapsto -$, and a left unitor $\lambda I \otimes - \mapsto -\big)$. These natural isomorphisms must in addition satisfy certain \emph{coherence} diagrams, to be displayed shortly.
 \end{defn}
+}
+
+\marginnote{
+\begin{theorem}[Coherence for monoidal categories]
+The following pentagon and triangle diagrams are conditions in the definition of a monoidal category. When they hold, all composites of associators and unitors (and their inverses) are isomorphisms \cite{}. $1$ denotes identities.
+% https://q.uiver.app/?q=WzAsNSxbMSwwLCIoKFcgXFxvdGltZXMgWCkgXFxvdGltZXMgKFkgXFxvdGltZXMgWikpIl0sWzAsMSwiKFcgXFxvdGltZXMgKFggXFxvdGltZXMgKFkgXFxvdGltZXMgWikpKSJdLFsxLDIsIigoKFcgXFxvdGltZXMgWCkgXFxvdGltZXMgWSkgXFxvdGltZXMgWikiXSxbMCwzLCIoVyBcXG90aW1lcyAoKFggXFxvdGltZXMgWSkgXFxvdGltZXMgWikpIl0sWzEsNCwiKChXIFxcb3RpbWVzIChYIFxcb3RpbWVzIFkpKSBcXG90aW1lcyBaKSJdLFsxLDAsIlxcYWxwaGEiLDFdLFswLDIsIlxcYWxwaGEiLDFdLFs0LDIsIlxcYWxwaGEgXFxvdGltZXMgMSIsMV0sWzMsNCwiXFxhbHBoYSIsMV0sWzEsMywiMSBcXG90aW1lcyBcXGFscGhhIiwxXV0=
+\[\begin{tikzcd}[ampersand replacement=\&]
+	\& {((W \otimes X) \otimes (Y \otimes Z))} \\
+	{(W \otimes (X \otimes (Y \otimes Z)))} \\
+	\& {(((W \otimes X) \otimes Y) \otimes Z)} \\
+	{(W \otimes ((X \otimes Y) \otimes Z))} \\
+	\& {((W \otimes (X \otimes Y)) \otimes Z)}
+	\arrow["\alpha"{description}, from=2-1, to=1-2]
+	\arrow["\alpha"{description}, from=1-2, to=3-2]
+	\arrow["{\alpha \otimes 1}"{description}, from=5-2, to=3-2]
+	\arrow["\alpha"{description}, from=4-1, to=5-2]
+	\arrow["{1 \otimes \alpha}"{description}, from=2-1, to=4-1]
+\end{tikzcd}\]
+
+% https://q.uiver.app/?q=WzAsMyxbMCwwLCIoWCBcXG90aW1lcyAoSSBcXG90aW1lcyBZKSkiXSxbMSwxLCIoKFggXFxvdGltZXMgSSkgXFxvdGltZXMgWSkiXSxbMCwyLCIoWCBcXG90aW1lcyBZKSJdLFswLDEsIlxcYWxwaGEiLDFdLFswLDIsIjEgXFxvdGltZXMgXFxsYW1iZGEiLDFdLFsxLDIsIlxccmhvIFxcb3RpbWVzIDEiLDFdXQ==
+\[\begin{tikzcd}[ampersand replacement=\&]
+	{(X \otimes (I \otimes Y))} \\
+	\& {((X \otimes I) \otimes Y)} \\
+	{(X \otimes Y)}
+	\arrow["\alpha"{description}, from=1-1, to=2-2]
+	\arrow["{1 \otimes \lambda}"{description}, from=1-1, to=3-1]
+	\arrow["{\rho \otimes 1}"{description}, from=2-2, to=3-1]
+\end{tikzcd}\]
+
+\end{theorem}
+}
+
+\marginnote{
+\begin{remark}[Coherence]
+Coherence is about getting rid of syntactic bureaucracy. Addition for example is a binary associative operation, and knowing that $(x + (y + z)) = ((x + y) + z)$ is what allows us to safely drop all possible bracketings and just write $1+2+3$. We further know that addition is a monoid with unit 0, so we can always write $x + 0 = x = 0 + x$. Now the situation is that we have replaced the associativity equation with associator natural transformations $((X \otimes Y) \otimes Z) \overset{\alpha_{XYZ}}{\rightarrow} (X \otimes (Y \otimes Z))$, and unit equations with left and right unitors $(X \otimes I) \overset{\rho_X}{\rightarrow} X \overset{\lambda_X}\rightarrow (I \otimes X)$. Recalling that we're happy with isomorphism in place of equality, we would like to know that every possible composite of these structural operations is an isomorphism.
+\end{remark}
 }
 
 \marginnote{
 \begin{defn}[Symmetric Monoidal Category]
-A symmetric monoidal category is a monoidal category with an additional natural isomorphism $\theta: - \otimes = \mapsto = \otimes -$. The coherence laws are:
-\[placeholder\]
+A symmetric monoidal category is a monoidal category with an additional natural isomorphism $\theta: - \ \otimes = \ \mapsto \ = \otimes \ -$. Coherence requires the following pair of hexagons \cite{}.
+% https://q.uiver.app/?q=WzAsNixbMCwwLCIoWCBcXG90aW1lcyAoWSBcXG90aW1lcyBaKSkiXSxbMCwxLCIoWCBcXG90aW1lcyAoWiBcXG90aW1lcyBZKSkiXSxbMSwxLCIoKFogXFxvdGltZXMgWCkgXFxvdGltZXMgWSkiXSxbMCwyLCIoQSBcXG90aW1lcyAoWiBcXG90aW1lcyBYKSkiXSxbMSwyLCIoKFggXFxvdGltZXMgWikgXFxvdGltZXMgWSkiXSxbMSwwLCIoWiBcXG90aW1lcyAoWCBcXG90aW1lcyBZKSkiXSxbMCw1LCJcXHRoZXRhIl0sWzUsMiwiXFxhbHBoYSJdLFsyLDQsIlxcdGhldGFeey0xfSJdLFswLDEsIlxcYWxwaGFeey0xfSIsMl0sWzEsMywiMSBcXG90aW1lcyBcXHRoZXRhIiwyXSxbMyw0LCJcXGFscGhhIiwyXV0=
+\[\begin{tikzcd}[ampersand replacement=\&]
+	{(X \otimes (Y \otimes Z))} \& {(Z \otimes (X \otimes Y))} \\
+	{(X \otimes (Z \otimes Y))} \& {((Z \otimes X) \otimes Y)} \\
+	{(X \otimes (Z \otimes Y))} \& {((X \otimes Z) \otimes Y)}
+	\arrow["\theta", from=1-1, to=1-2]
+	\arrow["\alpha", from=1-2, to=2-2]
+	\arrow["{\theta^{-1}}", from=2-2, to=3-2]
+	\arrow["{\alpha^{-1}}"', from=1-1, to=2-1]
+	\arrow["{1 \otimes \theta}"', from=2-1, to=3-1]
+	\arrow["\alpha"', from=3-1, to=3-2]
+\end{tikzcd}\]
+
+% https://q.uiver.app/?q=WzAsNixbMCwwLCIoWCBcXG90aW1lcyAoWSBcXG90aW1lcyBaKSkiXSxbMCwxLCIoKFggXFxvdGltZXMgWSkgXFxvdGltZXMgWikiXSxbMSwxLCIoWSBcXG90aW1lcyAoWiBcXG90aW1lcyBYKSkiXSxbMCwyLCIoKFkgXFxvdGltZXMgWCkgXFxvdGltZXMgWikiXSxbMSwyLCIoWiBcXG90aW1lcyAoWCBcXG90aW1lcyBZKSkiXSxbMSwwLCIoKFkgXFxvdGltZXMgWikgXFxvdGltZXMgWCkiXSxbMCw1LCJcXHRoZXRhIl0sWzUsMiwiXFxhbHBoYV57LTF9Il0sWzIsNCwiMVxcb3RpbWVzIFxcdGhldGEiXSxbMyw0LCJcXGFscGhhXnstMX0iLDJdLFsxLDMsIlxcdGhldGFeey0xfSIsMl0sWzAsMSwiXFxhbHBoYSIsMl1d
+\[\begin{tikzcd}[ampersand replacement=\&]
+	{(X \otimes (Y \otimes Z))} \& {((Y \otimes Z) \otimes X)} \\
+	{((X \otimes Y) \otimes Z)} \& {(Y \otimes (Z \otimes X))} \\
+	{((Y \otimes X) \otimes Z)} \& {(Z \otimes (X \otimes Y))}
+	\arrow["\theta", from=1-1, to=1-2]
+	\arrow["{\alpha^{-1}}", from=1-2, to=2-2]
+	\arrow["{1\otimes \theta}", from=2-2, to=3-2]
+	\arrow["{\alpha^{-1}}"', from=3-1, to=3-2]
+	\arrow["{\theta^{-1}}"', from=2-1, to=3-1]
+	\arrow["\alpha"', from=1-1, to=2-1]
+\end{tikzcd}\]
 \end{defn}
 }
 
 \marginnote{
-Here are two theorems that make it so that it's not really necessary to know the source code by heart.
+\begin{remark}[Coherence for symmetric monoidal categories]
+Going back to addition, we can rearrange sums by commutativity of the addition monoid: $x + y = y + x$. In the monoidal setting, the natural isomorphism $\theta$ is the twisting of wires. Just as we would like to have addition equations such as $(x + (y + z)) = ((z + y) + x)$, we would like the twists $\theta$ to behave well with respect to the bundling of objects and morphisms with the associator $\alpha$.
+\end{remark}
+}
+
+\marginnote{
 
 \begin{theorem}[Strictification]
 
@@ -183,7 +278,7 @@ The delete relation is defined:
 
 We may verify that, no matter the concrete interpretation of the diagram in terms of linear maps, functions or relations, the following equations characterise a cocommutative comonoid internal to a monoidal category.
 \begin{equation}\label{cocom}
-\scalebox{0.75}{\tikzfig{bestiary/basicrelations}}
+\resizebox{\textwidth}{!}{\tikzfig{bestiary/basicrelations}}
 \end{equation}
 
 It is worth pausing here to think about how one might characterise the process of copying in words; it is challenging to do so for such an intuitive process. The diagrammatic equations in the margin, when translated into prose, provide an answer.
