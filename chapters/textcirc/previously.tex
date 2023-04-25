@@ -7,7 +7,7 @@ DisCoCat is a research programme in applied mathematical linguistics that is \te
 
 It's hard for me to do justice to Jim Lambek's life. I feel as if have been in intimate conversation with Jim throughout my research, despite our separation by time. Anyone can look up the Curry-Howard-Lambek correspondence and follow the rabbit hole to see Jim's broad reach and lasting impact on category theory. I know that he was a jovial man who always carried a wad of twenties, a good sense of humour, and responsibility for his many friends.\\
 
-I also can't do better than Moortgat's history and exposition of typelogical grammar in \citep{}, so I will borrow Moortgat's phrasing and summarise Lambek's role in the story. Typelogical grammar originated in two seminal papers by Lambek in 1958 and 1961 \citep{}, where Lambek sought “to obtain an effective rule (or algorithm) for distinguishing sentences from non-sentences, which works not only for the formal languages of interest to the mathematical logician, but also for natural languages […]”.\\
+I also can't do better than Moortgat's history and exposition of typelogical grammar in \bR CITE \e, so I will borrow Moortgat's phrasing and summarise Lambek's role in the story. Typelogical grammar originated in two seminal papers by Lambek in 1958 and 1961 \bR CITE \e, where Lambek sought “to obtain an effective rule (or algorithm) for distinguishing sentences from non-sentences, which works not only for the formal languages of interest to the mathematical logician, but also for natural languages […]”.\\
 
 The method is to assign grammatical categories -- parts of speech such as nouns and verbs -- logical formulae. Whether a sentence is grammatical or not is obtained from deduction using these logical formulae in a Gentzen-style sequent proof. For a simple example, in English, we may consider a noun to have type $n$, and an transitive english verb $(n/s)\setminus n$, to yield a well-formedness proof of \texttt{Bob drinks beer} as:
 
@@ -28,7 +28,7 @@ Whereas a group is a monoid with inverses up to left- and right-multiplication, 
 
 \newthought{Coecke's Composition}\\
 
-Meanwhile, an underground grunge vagabond moonlighting as a quantum physicist moonlighting as a computer scientist was causing a shortage of cigars and whiskey in a small English town. He noticed a funny thing about the composition of multiple non-destructive measurements of a quantum system, which was that information could be carried, or flow, between them. So he wrote a paper \citep{}, which contained informal diagrams that looked like this:
+Meanwhile, an underground grunge vagabond moonlighting as a quantum physicist moonlighting as a computer scientist was causing a shortage of cigars and whiskey in a small English town. He noticed a funny thing about the composition of multiple non-destructive measurements of a quantum system, which was that information could be carried, or flow, between them. So he wrote a paper \bR CITE \e, which contained informal diagrams that looked like this:
 
 \[placeholder\]
 
@@ -50,7 +50,7 @@ However, dealing with superpositions necessitated using summation operators with
 
 \[placeholder\]
 
-An elegant diagrammatic simplification arose with the observation that special-$\dagger$-frobenius algebras, or spiders, correspond to choices of orthonormal bases \citep{} in \textbf{FdHilb}, the ambient setting of finite-dimensional hilbert spaces. Not only did this remove the need for summation operators, it also revealed that strong compact closure was a derived, rather than fundamental structure, since spiders induce compact closed structure as follows:
+An elegant diagrammatic simplification arose with the observation that special-$\dagger$-frobenius algebras, or spiders, correspond to choices of orthonormal bases \bR CITE \e in \textbf{FdHilb}, the ambient setting of finite-dimensional hilbert spaces. Not only did this remove the need for summation operators, it also revealed that strong compact closure was a derived, rather than fundamental structure, since spiders induce compact closed structure as follows:
 
 \[placeholder\]
 
@@ -66,7 +66,7 @@ And it turns out that interacting frobenius algebras are kind of useful for desc
 
 \newthought{Development in Oxford}\\
 
-Bob and Jim's meeting brought together the adjectives 'compositional' and 'categorical', but one more actor Steve was required to introduce 'distributional', which refers to Firth's maxim \citep{} "you shall know a word by the company it keeps". In its modern incarnation, this refers generally to vector-based semantics for words, where proximity of vectors models semantic closeness.
+Bob and Jim's meeting brought together the adjectives 'compositional' and 'categorical', but one more actor Steve was required to introduce 'distributional', which refers to Firth's maxim \bR CITE \e "you shall know a word by the company it keeps". In its modern incarnation, this refers generally to vector-based semantics for words, where proximity of vectors models semantic closeness.
 
 \[placeholder\]
 
@@ -94,7 +94,47 @@ Cross-pollination goes both ways: natural language processing was done on a quan
 
 \[qnlp\]
 
-\newthought{Where I come in}
+\newthought{I killed DisCoCat, and I would do it again.}
 
+I met Bob in my master's in 2019, where he taught the picturing quantum processes course. When quantum teleportation was explained in half a minute by a diagram, I decided to pursue a DPhil in diagrammatic mathematics. In the last lecture, I threw Bob a cider, after which he seemed to like me. I did not know he was an alcoholic.
+
+\[placeholder\]
+
+I was shanghaied into thinking diagrams for language. I was deeply dissatisfied with the content from the standpoint of intellectual integrity. For one, there was an unspoken claim that the presence of cups in pregroup diagrams (which implied a noncartesian and hence large tensor product) made it necessary to use quantum computers to effectively compute pregroup diagrams. I just could not believe that my brain required quantum computation to understand language. This implicit claim of kinship between quantum and linguistics was further entrenched by the analysis of the relative pronoun in terms of frobenius algebras. The best steelman I could muster at the time was that frobenius algebras (which are central to bicategories of relations \bR CITE \e) just happen to be a ubiquitous mathematical structure that are well-suited to express the mathematics of connections, both in language and in quantum. Second, representing the content of a sentence as a vector in a sentence-vector-space did not sit well with me. This move meant that the only meaningful thing one could do with two sentences was take their inner-product as a measure of similarity, so the practical experiments did not impress me. Further, I had the theoretical concern that language is in principle indefinitely productive, so one could construct a sentence that marshalled indefinitely many nouns, and at some point for any finite vector space $s$ one would run out of room to encode relationships.
+
+\[placeholder\]
+
+Then COVID happened. During the first lockdown, I visited Bob's garden under technically legal circumstances, and I suggested a solution to the longstanding problem of representing linguistic spatial relationships. My theoretical concern was the culprit: the initial attempts at the problem failed because the approach was to find a single sentence object $s$ in which one could paste the data of arbitrarily many distinct spatial entities. The simple solution was a change in perspective:
+
+\[placeholder\]
+
+That this move of splitting up the sentence-wire into a sentence-dependent collection of wires was sufficient to solve what had appeared to be a difficult problem prompted some re-examination of foundations. It had been known for a while that a free autonomous category construction by Delpeuch \bR CITE \e could potentially eliminate some of the cups in pregroup diagrams, yielding what amounted to a method to transform a pregroup diagram a string diagram in the shape of a context-free grammar tree. However, this trick was insufficient to account for the role of iterated duals in grammatical types and the nice analysis of the relative pronoun in terms of frobenius spiders. Quantum and linguistics were nearly separated as I had hoped.
+
+\[placeholder\]
+
+I then discovered that by interpreting spiders as the well-known "pair of pants" algebra in a compact closed monoidal setting allowed for a procedure in which the final form was purely symmetric monoidal -- the absence of cups and caps meant that there was no practical necessity to interpret diagrams on quantum computers: any computer would suffice. The role of spiders for relative pronouns was illuminated in the presence of splitting the sentence wire: the pair-of-pants are the algebra of morphism composition, and splitting the sentence wire into a collection of nouns allowed relative-pronoun-spiders to pick out the participating nouns to compose relationships onto.
+
+\[placeholder\]
+
+A coherent conservative generalisation of DisCoCat with less baggage had emerged, or rather, DisCoCirc was placed to formally subsume DisCoCat. It was now understood that the sentence type was a formal syntactic ansatz for the sake of grammar, which was to be interpreted in the semantic domain not as a single wire, but as a sentence-dependent collection of wires. It was further realised that the complexity of pregroup diagrams was due to grammar -- the topological deformation of semantic connections to fit the one-dimensional line of language -- whereas the essential connective content of language could be expressed in a simple form that distilled away the bureaucracy of syntax.
+
+\[placeholder\]
+
+We wrote up the story about spaces in \bR CITE \e. We could formally calculate the meanings of sentences that used linguistic spatial relations, all using a simple and tactile diagrammatic calculus.
+
+\[placeholder\]
+\[placeholder\]
+\[placeholder\]
+
+The paper on spatial relations actually came very late, because I was busy with Bob's ludicrous request to go turn "all of language" into circuits. I bitched and moaned for a good time about how I wasn't a linguist and how it was an impossible task, but I was in too deep to back out. I suppose the nice thing about aiming for the moon is that even failure might mean you leave orbit. So I settled for what I thought was a sensible fragment of English, for which I devised internal wirings and an algorithm that transformed pregroup diagrams with the internal wirings into circuit form. Many diagrams later, I presented my results in the first draft of "distilling text into circuits".
+
+\[placeholder\]
+\[placeholder\]
+\[placeholder\]
+\[placeholder\]
+
+Bob had a good point. Everything worked, but we had no understanding as to why, and accordingly, whether or not it would all break. At this point in time, Jonathon Liu, who was a masters' student I taught during COVID, had committed the error of thinking diagrams were cool, and was now hanging out with me and Bob. After understanding the procedure, Jono independently devised the same arcane internal wirings as I had, but neither of us could explain how we did it. So we had evidence of an underlying governing structure that was coherent but inarticulable. I realised that our intuitions were coming from a generative (in the coalgebraic sense) conception of grammar, and that the path of least resistance for obtaining formal guarantees for the language-to-circuit procedure was to just handcraft a formal generative grammar for the fragment of language we were interested in. This meant scrapping everything in the first draft and starting again from scratch. Always difficult, but Bob always had a word of gentle encouragement, giving me the motivation to perservere.
+
+\[placeholder\]
 
 \end{fullwidth}
