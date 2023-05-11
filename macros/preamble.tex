@@ -1,4 +1,4 @@
-\documentclass[nobib,notoc]{tufte-book}
+\documentclass[nobib,notoc,twoside,symmetric]{tufte-book}
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
 
@@ -12,9 +12,9 @@
 
 \renewcommand{\footnotesize}{\small}
 
-\geometry{a4paper,landscape,left=15mm,top=15mm,headsep=\baselineskip,textwidth=180mm,marginparsep=8mm,marginparwidth=80mm,textheight=178mm,headheight=\baselineskip}
+\geometry{a4paper,landscape,inner=30mm,top=15mm,bottom=10mm,headsep=\baselineskip,textwidth=170mm,marginparsep=8mm,marginparwidth=80mm,textheight=170mm,headheight=\baselineskip}
 
-\geometry{showframe}% for debugging purposes -- displays the margins
+%\geometry{showframe}% for debugging purposes -- displays the margins
 
 %\usepackage{stmaryrd}
 %\usepackage{fontawesome}
@@ -49,6 +49,11 @@
 \newtheorem{notation}[theorem]{Notation}
 \newtheorem{refinement}[theorem]{Refinement}
 \newtheorem{thesis}[theorem]{Thesis}
+
+%for fonts
+\usepackage{newpxtext}
+%\usepackage[fracspacing]{newpxmath}
+\linespread{1.05}
 
 \usepackage{tikz-cd}
 \usepackage{macros/tikzfig}

@@ -1,22 +1,18 @@
-\begin{fullwidth}
 \section{An introduction to weak n-categories for formal linguists}
 
 Geometrically, a set is a collection of labelled zero-dimensional points. A category is a collection of one-dimensional labelled arrows upon a set of zero-dimensional points (that satisfy certain additional conditions, such as having identity morphisms and associativity of composition.) Naturally, we might ask what happens when we generalise to more dimensions, asking for two-dimensional somethings going between one-dimensional arrows, and three-dimensional somethings going between two-dimensional somethings, and so on. This is the gist of an $n$-category, where $n$ is a positive integer denoting dimension.\\
 
-There is a fork in the road in generalisation. First, different choices of what n-dimensional somethings could be give different conceptions of $n$-category, because there are multiple mathematically well-founded choices for filling in the blank of \texttt{points, lines, ???}. Simplices, cubical sets, and globular sets are three common options; though the names are fancy, they correspond to triangular, cubical, and circular families of objects indexed by dimension.
-
-\[placeholder\]
+There is a fork in the road in generalisation. First, different choices of what n-dimensional somethings could be give different conceptions of $n$-category, because there are multiple mathematically well-founded choices for filling in the blank of \texttt{points, lines, ???}. Simplices, cubical sets, and globular sets are three common options; though the names are fancy, they correspond to triangular, cubical, and circular families of objects indexed by dimension.\\
 
 Second, there is a distinction between \emph{strict} and \emph{weak} $n$-categories. Just as in regular or $1$-category theory we are interested in objects up to isomorphism rather than equality -- because isomorphic objects in a category are as good as one another -- lifting this philosophy to $n$-categories gives us \emph{weak} $n$-categories. In a strict $k$-category, all of the $j$-dimensional morphisms for $j > k$ are identity-equalities. In a weak $k$-category, all equalities for dimensions $j > k$ are replaced by isomorphisms all the way up: which means that a $k$-equality $\alpha = \beta$ in the strict setting is replaced by a pair of $k+1$-morphisms witnessing the isomorphism of $\alpha$ and $\beta$, and that pair of $k+1$-morphisms has a pair of $k+2$ morphisms witnessing that they are $k+1$-isomorphic, and so on for $k+3$ and all the way up. Unsurprisingly, strict $n$-categories are easy to formalise, and weaks $n$-categories are hard. A conjecture or guiding principle like the Church-Turing thesis holds for weak $n$-categories that they should all be equivalent to one another, whatever equivalence means.\\
 
-Mathematicians, computer scientists, and physicists may have good reasons to work with weak $n$-categories \bR CITE \e, but what is the value proposition for formal linguists? A philosophical draw for the formal semanticist is that insofar as semantics is synonymy -- the study of when expressions are equivalent -- weak $n$-categories are an exquisite setting to control and study sameness in terms of meta-equivalences. A practical draw for the formal syntactician is that weak $n$-categories provide a natural setting to model generic rewriting systems, and that is what we will focus on here. In this setting we will introduce weak $n$-categories in the \texttt{homotopy.io} formulation, along the way showing how they provide a common setting to formalise string-rewrite and tree-adjoining grammars, setting the stage for us to specify a circuit-adjoining grammar for text circuits later on. 
-\end{fullwidth}
+Mathematicians, computer scientists, and physicists may have good reasons to work with weak $n$-categories \bR CITE \e, but what is the value proposition for formal linguists? A philosophical draw for the formal semanticist is that insofar as semantics is synonymy -- the study of when expressions are equivalent -- weak $n$-categories are an exquisite setting to control and study sameness in terms of meta-equivalences. A practical draw for the formal syntactician is that weak $n$-categories provide a natural setting to model generic rewriting systems, and that is what we will focus on here. In this setting we will introduce weak $n$-categories in the \texttt{homotopy.io} formulation, along the way showing how they provide a common setting to formalise string-rewrite and tree-adjoining grammars, setting the stage for us to specify a circuit-adjoining grammar for text circuits later on.
 
 \subsection{String-rewrite systems as 1-object-2-categories}
 
 Say we have an alphabet $\Sigma := \{\textcolor{green}{\alpha}, \textcolor{orange}{\beta}, \textcolor{cyan}{\gamma}\}$. Then the Kleene-star $\Sigma^*$ consists of all strings (including the empty string $\varepsilon$) made up of $\Sigma$, and we consider formal languages on $\Sigma$ to be subsets of $\Sigma^*$. Another way of viewing $\Sigma^*$ is as the free monoid generated by $\Sigma$ under the binary concatenation operation $(\_ \ \cdot \ \_)$ which is associative and unital with unit $\varepsilon$, the empty string. Associativity and unitality are precisely the conditions of composition of morphisms in categories, so we have yet another way to express $\Sigma^*$ as a finitely presented category; we consider a category with a single object $\star$, taking $\varepsilon$ to be the identity morphism $\textbf{1}_\star$ on the single object, and we ask for the category obtained when we consider the closure under composition of three non-identity morphisms $\textcolor{green}{\alpha}, \textcolor{orange}{\beta}, \textcolor{cyan}{\gamma}: \star \rightarrow \star$. In this category, every morphism $\star \rightarrow \star$ corresponds to a string in $\Sigma^*$. We illustrate this example in the margins. A string-rewrite system additionally consists of a finite number of string-transformation rules. Building on our example, we might have a named rule $\textcolor{magenta}{R}: \textcolor{green}{\alpha} \mapsto \textcolor{orange}{\beta} \cdot \textcolor{cyan}{\gamma}$, which we illustrate in Figure \ref{fig:ruleR}.\\
 
-\begin{marginfigure}[10cm]
+\begin{marginfigure}
 \centering
 \[\tikzfig{ncat/flower1}\]
 \caption{The category in question can be visualised as a commutative diagram.}
@@ -60,80 +56,70 @@ Let's say Bob is a different sort of formal linguist who wants to model the two 
 
 In fact, Bob gets to express a new kind of rewrite in the middle: the kind where two non-conflicting rewrites happen \emph{concurrently}. The important aspect of Bob's view over Alice's is that equalities have been replaced by isomorphisms between syntactically inequal rewrites. This demotion of equalities to isomorphisms means that Bob is dealing with a \emph{weak} 1-object-2-category; Bob does have 3-cells that relate different 2-cells with the same source and target, but all of Bob's $n$-cells for $n \geq 3$ are isomorphisms, rather than equalities.
 
-\subsection{A context free grammar to generate \texttt{Alice sees Bob quickly run to school}}
-
-We can describe a context-free grammar in Figure \ref{fig:cfgsig} with the same combinatorial rewriting data that specifies planar string diagrams as we have been illustrating so far. One aspect of rewrite systems we adapt for now is the distinction between terminal and nonterminal symbols; terminal symbols are those after which no further rewrites are possible. We capture this string-diagrammatically by modelling terminal rewrites as 2-cells with target equal to the 1-cell identity of the 0-cell $\star$, which amounts to graphically terminating a wire. The generators subscripted $L$ (for \emph{label} or \emph{leaf}) correspond to terminals of the CFG, and represent a family of generators indexed by a lexicon for the language. The generators subscripted $i$ (for \emph{introducing a type}) correspond to rewrites of the CFG.
-
 \begin{marginfigure}\label{fig:cfgsig}
 \centering
 \[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/cfg/cfgsignature}}\]
-\caption{A context-free grammar for \texttt{Alice sees Bob quickly run to school}.}
+\caption{A context-free grammar for \texttt{Alice sees Bob quickly run to school}. We can describe a context-free grammar with the same combinatorial rewriting data that specifies planar string diagrams as we have been illustrating so far. One aspect of rewrite systems we adapt for now is the distinction between terminal and nonterminal symbols; terminal symbols are those after which no further rewrites are possible. We capture this string-diagrammatically by modelling terminal rewrites as 2-cells with target equal to the 1-cell identity of the 0-cell $\star$, which amounts to graphically terminating a wire. The generators subscripted $L$ (for \emph{label} or \emph{leaf}) correspond to terminals of the CFG, and represent a family of generators indexed by a lexicon for the language. The generators subscripted $i$ (for \emph{introducing a type}) correspond to rewrites of the CFG. Reading the central diagram in the main body from left-to-right, we additionally depict the breakdown of the derivation in terms of rewrites of lower dimension from our signature.
+}
 \end{marginfigure}
 
-\begin{marginfigure}\label{fig:bigcfg}
-\centering
-\[\resizebox{0.4\textwidth}{!}{\tikzfig{tree2gate/workedexample/bigcfg}}\]
-\caption{Consider the sentence \texttt{Alice sees Bob quickly run to school}, which we take to be generated by the above context-free grammar derivation, read from bottom-to-top.}
-\end{marginfigure}
+\[\resizebox{0.75\textwidth}{!}{\tikzfig{tree2gate/cfg/bigcfgbreakdown}}\]
 
-\begin{marginfigure}\label{fig:cfgbreakdown}
-\centering
-\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/cfg/bigcfgbreakdown}}\]
-\caption{Reading the central diagram from left-to-right, we additionally depict the breakdown of the derivation in terms of rewrites of lower dimension from our signature.}
-\end{marginfigure}
 
+\clearpage
 \subsection{Tree Adjoining Grammars}
 
-Here is a formal but unenlightening definition of \emph{elementary} tree adjoining grammars which we will convert to diagrams. We will deal with the extensions of links and local constraints to adjoining shortly.
+\marginnote{
+The essence of a tree-\emph{adjoining} grammar is as follows: whereas for a CFG one grows the tree by appending branches and leaves at the top of the tree (substitution), in a TAG one can also sprout subtrees from the middle of a branch (adjoining). Now we show that this gloss is more formal than it sounds, by the following steps. First we show that the 2-categorical data of a CFG can be transformed into 3-categorical data -- which we call \emph{Leaf-Ansatz} -- which presents a rewrite system that obtains the same sentences as the CFG, by a bijective correspondence between composition of 2-cells in the CFG and constructed 3-cells in the leaf-ansatz. These 3-cells in the leaf ansatz correspond precisely to the permitted \emph{substitutions} in a TAG. Then we show how to model \emph{adjoining} as 3-cells. Throughout we work with a running example, the CFG grammar introduced earlier. Here is the formal but unenlightening definition of \emph{elementary} tree adjoining grammars which we will convert to diagrams. We will deal with the extensions of links and local constraints to adjoining shortly.
 
 \begin{defn}[\emph{Elementary} Tree Adjoining Grammar: Classic Computer Science style]
 An elementary \textbf{TAG} is a tuple
 \[(\mathcal{N}, \mathcal{N}^\downarrow, \mathcal{N}^*, \Sigma, \mathcal{I}, \mathcal{A})\]
-These denote, respectively:
-\begin{itemize}
-	\item{ The \emph{non-terminals}:
-		\begin{itemize}
+\end{defn}
+}
+
+\marginnote{
+The first four elements of the tuple are referred to as \emph{non-terminals}. They are:
+	\begin{itemize}
 			\item{A set of \emph{non-terminal symbols} $\mathcal{N}$ -- these stand in for grammatical types such as $\texttt{NP}$ and $\texttt{VP}$.}
 			\item{A bijection $\downarrow: \mathcal{N} \rightarrow \mathcal{N}^\downarrow$ which acts as $\texttt{X} \mapsto \texttt{X}^\downarrow$. Nonterminals in $\mathcal{N}$ are sent to marked counterparts in $\mathcal{N}^\downarrow$, and the inverse sends marked nonterminals to their unmarked counterparts. These markings are \emph{substitution markers}, which are used to indicate when certain leaf nodes are valid targets for a substitution operation -- discussed later.}
 			\item{A bijection $*: \mathcal{N} \rightarrow \mathcal{N}^*$ -- the same idea as above. This time to mark \emph{foot nodes} on auxiliary trees, which is structural information used by the adjoining operation -- discussed later.}
 	\end{itemize}
-	}
-	\item{A set of \emph{terminal symbols} $\Sigma$ -- these stand in for the words of the natural language being modelled.}
-	\item{The \emph{elementary trees}:
-		\begin{itemize}
-			\item{A set of \emph{initial trees} $\mathcal{I}$, which satisfy the following constraints:
-			\begin{itemize}
-				\item{The interior nodes of an initial tree must be labelled with nonterminals from $\mathcal{N}$}
-				\item{The leaf nodes of an initial tree must be labelled from $\Sigma \cup \mathcal{N}^{\downarrow}$}
-			\end{itemize}
-			}
-	\item{A set of \emph{auxiliary trees} $\mathcal{A}$, which satisfy the following constraints:
-		\begin{itemize}
-			\item{The interior nodes of an auxiliary tree must be labelled with nonterminals from $\mathcal{N}$}
-			\item{Exactly one leaf node of an auxiliary tree must be labelled with a foot node $\texttt{X}^{*} \in \mathcal{N}^{*}$; moreover, this labelled foot node must be the marked counterpart of the root node label of the tree.}
-			\item{All other leaf nodes of an auxiliary tree are labelled from $\Sigma \cup \mathcal{N}^{\downarrow}$}
-		\end{itemize}
-		}
+}
+
+\marginnote{$\Sigma$ is a set of \emph{terminal symbols} -- these stand in for the words of the natural language being modelled.}
+
+
+\marginnote{$\mathcal{I}$ and $\mathcal{A}$ are sets of \emph{elementary trees}, which are either \emph{initial} or \emph{auxiliary}, respectively. \emph{initial trees} satisfy the following constraints:
+	\begin{itemize}
+		\item{The interior nodes of an initial tree must be labelled with nonterminals from $\mathcal{N}$}
+		\item{The leaf nodes of an initial tree must be labelled from $\Sigma \cup \mathcal{N}^{\downarrow}$}
 	\end{itemize}
-	}
-\end{itemize}
-There are two operations to build what are called \emph{derived trees} from elementary and derived trees. These operations are called \emph{substitution} and \emph{adjoining}.
+\emph{Auxiliary trees} satisfy the following constraints:
+	\begin{itemize}
+		\item{The interior nodes of an auxiliary tree must be labelled with nonterminals from $\mathcal{N}$}
+		\item{Exactly one leaf node of an auxiliary tree must be labelled with a foot node $\texttt{X}^{*} \in \mathcal{N}^{*}$; moreover, this labelled foot node must be the marked counterpart of the root node label of the tree.}
+		\item{All other leaf nodes of an auxiliary tree are labelled from $\Sigma \cup \mathcal{N}^{\downarrow}$}
+	\end{itemize}
+}
+
+\marginnote{
+Further, there are two operations to build what are called \emph{derived trees} from elementary and derived trees. These operations are called \emph{substitution} and \emph{adjoining}.
 \begin{itemize}
 	\item{\emph{Substitution} replaces a substitution marked leaf node $\texttt{X}^\downarrow$ in a tree $\alpha$ with another tree $\alpha'$ that has $\texttt{X}$ as a root node.}
 	\item{\emph{Adjoining} takes auxiliary tree $\beta$ with root and foot nodes $\texttt{X},\texttt{X}^\star$, and a derived tree $\gamma$ at an interior node $\texttt{X}$ of $\gamma$. Removing the $\texttt{X}$ node from $\gamma$ separates it into a parent tree with an $\texttt{X}$-shaped hole for one of its leaves, and possibly multiple child trees with \texttt{X}-shaped holes for roots. The result of adjoining is obtained by identifying the root of $\beta$ with the $\texttt{X}$-context of the parent, and making all the child trees children of $\beta$s foot node $\texttt{X}^\star$.}
 \end{itemize}
-\end{defn}
-
-The essence of a tree-\emph{adjoining} grammar is as follows: whereas for a CFG one grows the tree by appending branches and leaves at the top of the tree (substitution), in a TAG one can also sprout subtrees from the middle of a branch (adjoining). Now we show that this gloss is more formal than it sounds, by the following steps. First we show that the 2-categorical data of a CFG can be transformed into 3-categorical data -- which we call \emph{Leaf-Ansatz} -- which presents a rewrite system that obtains the same sentences as the CFG, by a bijective correspondence between composition of 2-cells in the CFG and constructed 3-cells in the leaf-ansatz. These 3-cells in the leaf ansatz correspond precisely to the permitted \emph{substitutions} in a TAG. Then we show how to model \emph{adjoining} as 3-cells. Throughout we work with a running example, the CFG grammar introduced earlier.
+}
 
 \begin{construction}[Leaf-Ansatz of a CFG]
-Given a signature $\mathfrak{G}$ for a CFG, we construct a new signature $\mathfrak{G}'$ which has the same 0- and 1-cells as $\mathfrak{G}$. See the dashed magenta arrows in the schematic below. For each 1-cell wire type $\texttt{X}$ of $\mathfrak{G}$, we introduce a \emph{leaf-ansatz} 2-cell $\texttt{X}^\downarrow$. For each leaf 2-cell $\texttt{X}_L$ in $\mathfrak{G}$, we introduce a renamed copy $\texttt{X}'_L$ in $\mathfrak{G}'$. Now see the solid magenta arrows in the schematic below. We construct a 3-cell in $\mathfrak{G}'$ for each 2-cell in $\mathfrak{G}$, which has the effect of systematically replacing open output wires in $\mathfrak{G}$ with leaf-ansatzes in $\mathfrak{G}'$.
-\[\scalebox{0.5}{\tikzfig{tree2gate/tag/CFGtoTAGpattern}}\]
+Given a signature $\mathfrak{G}$ for a CFG, we construct a new signature $\mathfrak{G}'$ which has the same 0- and 1-cells as $\mathfrak{G}$. See the dashed magenta arrows in the schematic below: for each 1-cell wire type $\texttt{X}$ of $\mathfrak{G}$, we introduce a \emph{leaf-ansatz} 2-cell $\texttt{X}^\downarrow$. For each leaf 2-cell $\texttt{X}_L$ in $\mathfrak{G}$, we introduce a renamed copy $\texttt{X}'_L$ in $\mathfrak{G}'$. Now refer to the solid magenta: we construct a 3-cell in $\mathfrak{G}'$ for each 2-cell in $\mathfrak{G}$, which has the effect of systematically replacing open output wires in $\mathfrak{G}$ with leaf-ansatzes in $\mathfrak{G}'$.
+\[\scalebox{0.52}{\tikzfig{tree2gate/tag/CFGtoTAGpattern}}\]
 \end{construction}
+\clearpage
 
 \begin{example}
 The leaf-ansatz construction just makes formal the following observation: there are multiple equivalent ways of modelling terminal symbols in a rewrite system considered string-diagrammatically. One way (which we have already done) is to treat non-terminals as wires and terminals as effects, so that the presence of an open wire available for composition visually indicates non-terminality. Another (which is the leaf-ansatz construction) treats all symbols in a rewrite system as leaves, where bookkeeping the distinction between (non-)terminals occurs in the signature. So for a sentence like \texttt{Bob drinks}, we have the following derivations that match step for step in the two ways we have considered.
-\[\scalebox{0.5}{\tikzfig{tree2gate/tag/leafansatzintuition}}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/tag/leafansatzintuition}}\]
 \end{example}
 
 \begin{proposition}[Leaf-ansatzes of CFGs are precisely TAGs with only initial trees and substitution]\label{prop:cfgastag1}
@@ -142,19 +128,24 @@ By construction. Consider a CFG given by 2-categorical signature $\mathfrak{G}$,
 \end{proof}
 \end{proposition}
 
-\begin{example}[Leaf-ansatz signature of \texttt{Alice sees Bob quickly run to school} CFG]
-\[\scalebox{0.5}{\tikzfig{tree2gate/tag/CFGasTAGsign}}\]
-\end{example}
+\clearpage
+\begin{figure}
+\[\scalebox{0.6}{\tikzfig{tree2gate/tag/CFGasTAGsign}}\]
+\caption{Leaf-ansatz signature of \texttt{Alice sees Bob quickly run to school} CFG}
+\end{figure}
 
-\begin{example}[Adjoining is sprouting subtrees in the middle of branches]
-One way we might obtain the sentence \texttt{Bob runs to school} is to start from the simpler sentence \texttt{Bob runs}, and then refine the verb \texttt{runs} into \texttt{runs to school}. This refinement on part of an already completed sentence is not permitted in CFGs, since terminals can no longer be modified. The adjoining operation of TAGs gets around this constraint by permitting rewrites in the middle of trees, as follows:
-\[\scalebox{0.5}{\tikzfig{tree2gate/tag/3compareintuition}}\]
-\end{example}
+\clearpage
+\begin{figure}
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/tag/3compareintuition}}\]
+\caption{Adjoining is sprouting subtrees in the middle of branches. One way we might obtain the sentence \texttt{Bob runs to school} is to start from the simpler sentence \texttt{Bob runs}, and then refine the verb \texttt{runs} into \texttt{runs to school}. This refinement on part of an already completed sentence is not permitted in CFGs, since terminals can no longer be modified. The adjoining operation of TAGs gets around this constraint by permitting rewrites in the middle of trees.}
+\end{figure}
 
-\begin{example}[TAG signature of \texttt{Alice sees Bob quickly run to school}]
-The highlighted 2-cells are auxiliary trees that replace CFG 2-cells for verbs with sentential complement, adverbs, and adpositions. The highlighted 3-cells are the tree adjoining operations of the auxiliary trees.
-\[\scalebox{0.5}{\tikzfig{tree2gate/tag/tagsignature}}\]
-\end{example}
+\clearpage
+\begin{figure}
+\[\scalebox{0.6}{\tikzfig{tree2gate/tag/tagsignature}}\]
+\caption{TAG signature of \texttt{Alice sees Bob quickly run to school}. The highlighted 2-cells are auxiliary trees that replace CFG 2-cells for verbs with sentential complement, adverbs, and adpositions. The highlighted 3-cells are the tree adjoining operations of the auxiliary trees.}
+\end{figure}
+\clearpage
 
 The construction yields as a corollary an alternate proof of Theorem [Joshi 6.1.1...]...
 
@@ -169,6 +160,7 @@ Proposition \ref{prop:cfgastag1} provides one direction of both equivalences. Fo
 
 The usual conception of TAGs includes two extensions to the basic definition presented above. First, there may be \emph{local constraints} on adjoining, which only allows certain trees to be adjoined at certain nodes. Second, TAGs may have links, which are extra edges between nodes obeying a c-command condition. Here we deal with local constraints; dealing with links requires the introduction of braiding.
 
+\marginnote{
 \begin{defn}[TAG with local constraints: CS-style] [Joshi]
 $G = (I,A)$ is a TAG with local constraints if for each node $n$ and each tree $t$, exactly one of the following constraints is specified:
 \begin{enumerate}
@@ -177,6 +169,7 @@ $G = (I,A)$ is a TAG with local constraints if for each node $n$ and each tree $
 \item{Obligatory Adjoining (OA): At least one out of all the auxiliary trees adjoinable at $n$ must be adjoined at $n$.}
 \end{enumerate}
 \end{defn}
+}
 
 The $n$-categorical approach easily accommodates local constraints. For (SA), whereas before we take the source of adjoining rewrites to be identities, we can instead introduce ansatz endomorphisms that are rewritable to the desired subsets. For (NA), we assert that identities have no rewrites (NA). For (OA), we can make a distinction between finished and unfinished derivations, where we require that unfinished derivations are precisely those that still contain an obligatory-rewrite endomorphism.
 

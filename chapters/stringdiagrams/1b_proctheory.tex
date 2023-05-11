@@ -40,7 +40,7 @@ The idea behind the definition of product is simple: instead of explicitly const
 }
 
 \marginnote{
-To understand what this style of definition give us, let's revisit Kuratowski's and Wiener's definitions of cartesian product, which are, respectively:
+To understand what this style of definition gives us, let's revisit Kuratowski's and Wiener's definitions of cartesian product, which are, respectively:
 \[A \overset{K}{\times} B := \bigg\{ \{\{a\},\{a,b\}\} \ | \ a \in A \ , \ b \in B \bigg\}\]
 \[A \overset{W}{\times} B := \bigg\{ \{\{a,\varnothing\},b\} \ | \ a \in A \ , \ b \in B \bigg\}\]
 Keeping overset-labels and using maplet notation, the associated projections are:
@@ -197,23 +197,22 @@ Going back to addition, we can rearrange sums by commutativity of the addition m
 \end{theorem}
 }
 
+This section seeks to introduce process theories via string diagrams. The margin material will provide the formal mathematics of string diagrams from the bottum-up. The main body develops process theories via string diagrams by example, through which we develop towards a model of linguistic spatial relations -- words like "to the left of" and "between" -- which are a common ground of competence we all possess. Here we only focus on geometric relations between points in two dimensional Euclidean space equipped with the usual notions of metric and distance, providing adequate foundations to follow \citep{}talkspace, in which I demonstrate how text circuits can be obtained from sentences and how such text circuits interpreted in the category of sets and relations \textbf{Rel} provides a semantics for such sentences. This motivates the question of how to express the (arguably more primitive \citep{}piaget) linguistic topological concepts -- such as "touching" and "inside" -- the mathematics of which will be in Chapter \ref{}; the reader may skip straight to that chapter after this section if they are uninterested in syntax. We close this section with a brief note on how process theories relate to mathematical foundations and computer science.\\
 
-This section seeks to give an introduction to process theories. The main body will work by examples towards process-theoretic mathematics of linguistic spatial relations -- words like "to the left of" and "between" -- which are a common ground of competence we all possess. The margin material will provide the formal mathematics of string diagrams from the bottum-up. Here we only focus on geometric relations in two dimensional Euclidean space equipped with notions of metric and distance. This section provides adequate foundations to follow \citep{}talkspace, in which I demonstrate how text circuits can be obtained from sentences and how such text circuits interpreted in the category of sets and relations \textbf{Rel} provides a semantics for such sentences. Moreover, this section motivates the question of how to express the (arguably more primitive \citep{}piaget) linguistic topological concepts -- such as "touching" and "inside" -- the mathematics of which will be in Chapter \ref{}; the reader may skip straight to that chapter after this section if they are uninterested in syntax. We close this section with a brief aside on how process theories relate to mathematical foundations and computer science.
-
-A \emph{process} is something that transforms some number of input system types to some number of output system types. We depict systems as wires, labelled with their type, and processes as boxes. We read processes from left to right.
-\[\tikzfig{proctheory/process}\]
-Processes may compose in parallel, which we depict as vertically stacking boxes.
-\[\tikzfig{proctheory/processpar}\]
-Processes may compose sequentially, which we depict as connecting wires of the same type from left to right.
-\[\tikzfig{proctheory/processseq}\]
+A \emph{process} is something that transforms some number of input system types to some number of output system types. We depict systems as wires, labelled with their type, and processes as boxes. Unless otherwise specified, we read processes from left to right.
+\[\scalebox{0.5}{\tikzfig{proctheory/process}}\]
+Processes may compose in parallel, depicted as placing boxes next to each other.
+\[\scalebox{0.5}{\tikzfig{proctheory/processpar}}\]
+Processes may compose sequentially, depicted as connecting wires of the same type.
+\[\scalebox{0.5}{\tikzfig{proctheory/processseq}}\]
 In these diagrams only input-output connectivity matters: so we may twist wires and slide boxes along wires to obtain different diagrams that still refer to the same process. So the diagram below is equal to the diagram above.
-\[\tikzfig{proctheory/processeq}\]
+\[\scalebox{0.5}{\tikzfig{proctheory/processeq}}\]
 Some processes have no inputs; we call these \emph{states}. 
-\[\tikzfig{proctheory/state}\]
+\[\scalebox{0.5}{\tikzfig{proctheory/state}}\]
 Some processes have no outputs; we call these \emph{tests}.
-\[\tikzfig{proctheory/test}\]
+\[\scalebox{0.5}{\tikzfig{proctheory/test}}\]
 A process with no inputs and no outputs is a \emph{number}; the number tells us the outcome of applying tests to a composite of states modified by processes.
-\[\tikzfig{proctheory/number}\]
+\[\scalebox{0.5}{\tikzfig{proctheory/number}}\]
 
 A process theory is given by the following data:
 \begin{itemize}
@@ -231,7 +230,7 @@ $$\begin{bmatrix}
 \mathbf{0} & \mathbf{B}
 \end{bmatrix}$$
 The unit of parallel composition is the singleton 0-dimensional vector space.
-States are row vectors. Tests are column vectors. The numbers are $\mathbb{R}$. Usually the monoidal product is written with the symbol $\otimes$, which denotes hadamard product for linear maps. The process theory we have just described takes the direct sum $\oplus$ to be the monoidal product. To avoid confusion we will use the linear algebraic notation when linear algebra is concerned.
+States are row vectors. Tests are column vectors. The numbers are $\mathbb{R}$. Usually the monoidal product is written with the symbol $\otimes$, which clashes with notation for the hadamard product for linear maps, while the process theory we have just described takes the direct sum $\oplus$ to be the monoidal product.
 \end{example}
 
 \begin{example}[Sets and functions with cartesian product]
@@ -265,7 +264,7 @@ The delete map is the column vector of 1s:
 \begin{example}[Sets and functions]
 Consider a set $A$. The copy function is defined:
 \[\Delta_A : A \rightarrow A \times A := a \mapsto (a,a)\]
-The delete funtion is defined:
+The delete function is defined:
 \[\epsilon_A : A \rightarrow \{\star\} := a \mapsto \star\]
 \end{example}
 
@@ -281,7 +280,7 @@ We may verify that, no matter the concrete interpretation of the diagram in term
 \resizebox{\textwidth}{!}{\tikzfig{bestiary/basicrelations}}
 \end{equation}
 
-It is worth pausing here to think about how one might characterise the process of copying in words; it is challenging to do so for such an intuitive process. The diagrammatic equations in the margin, when translated into prose, provide an answer.
+It is worth pausing here to think about how one might characterise the process of copying in words; it is challenging to do so for such an intuitive process. The diagrammatic equations, when translated into prose, provide an answer.
 \begin{description}
 \item[\textbf{Coassociativity}:] says there is no difference between copying copies.
 \item[\textbf{Cocommutativity}:] says there is no difference between the outputs of a copy process.
@@ -313,9 +312,7 @@ In the previous section we have seen how we can start with concrete examples of 
 
 Perhaps the most familiar setting for an update is a database. In a database, an \bM entry\e often takes the form of pairs of \bB fields\e and \bO values\e. For example, where a database contains information about employees, a typical entry might look like:
 \[\texttt{\bM < \bB\textbf{NAME}\e:\bO Jono Doe\e, \bB\textbf{AGE}\e:\bO 69\e, \bB\textbf{JOB}\e:\bO CONTENT CREATOR\e, \bB\textbf{SALARY}\e:\bO\$420\e, ... >\e}\]
-There are all kinds of reasons one might wish to update the value of a field: Jono might legally change their name, a year might pass and Jono's age must be incremented, Jono might be promoted or demoted or get a raise and so on. It was the concern of database theorists to formalise and axiomatise the notion of updating the value of a field -- \emph{independently of the specific programming language implementation of a database} -- so that they had reasoning tools to ensure program correctness []. The problem is reducible to axiomatising a \emph{rewrite}: we can think of updating a value as first calculating the new value, then \emph{putting} the new value in place of the old. Since often the new value depends in some way on the old value, we also need a procedure to \emph{get} the current value.\\
-
-That was a flash-prehistory of \emph{bidirectional transformations} []. Following the monoidal generalisation of lenses in [], a rewrite as we have described above is specified by system diagrammatic equations in the margin, each of which we introduce in prose.
+There are all kinds of reasons one might wish to update the value of a field: Jono might legally change their name, a year might pass and Jono's age must be incremented, Jono might be promoted or demoted or get a raise and so on. It was the concern of database theorists to formalise and axiomatise the notion of updating the value of a field -- \emph{independently of the specific programming language implementation of a database} -- so that they had reasoning tools to ensure program correctness []. The problem is reducible to axiomatising a \emph{rewrite}: we can think of updating a value as first calculating the new value, then \emph{putting} the new value in place of the old. Since often the new value depends in some way on the old value, we also need a procedure to \emph{get} the current value. That was a flash-prehistory of \emph{bidirectional transformations} []. Following the monoidal generalisation of lenses in [], a rewrite as we have described above is specified by system diagrammatic equations in the margin, each of which we introduce in prose.
 
 \begin{description}
 \item[\textbf{PutPut}:] Putting in one value and then a second is the same as deleting the first value and just putting in the second.
@@ -337,74 +334,6 @@ These diagrammatic equations do two things. First, they completely specify what 
 Now we can diagrammatically depict the process of updating Jono's age, by \bB getting\e Jono's \bO age value\e from their \bM entry\e, incrementing it by 1, and \bB putting\e it back in.
 
 \[\tikzfig{proctheory/incrementage}\]
-
-\subsection{Spatial predicates}
-
-The following simple inference is what we will try to capture process-theoretically:
-
-\begin{itemize}
-\item \texttt{Oxford is north of London}
-\item \texttt{Vincent is in Oxford}
-\item \texttt{Philipp is in London}
-\end{itemize}
-
-How might it follow that \texttt{Philipp is south of Vincent}?\\
-
-One way we might approach such a problem computationally is to assign a global coordinate system, for instance interpreting `north' and `south' and `is in' using longitude and latitude. Another coordinate system we might use is a locally flat map of England. The fact that either coordinate system would work is a sign that there is a degree of implementation-independence.\\
-
-This coordinate/implementation-independence is true of most spatial language: we specify locations only by relative positions to other landmarks or things in space, rather than by means of a coordinate system. This is necessarily so for the communication of spatial information between agents who may have very different reference frames.\\
-
-So the process-theoretic modelling aim is to specify how relations between entities can be \emph{updated} and \emph{classified} without requiring individual spatial entities to intrinsically possess meaningful or determinate spatial location.\\
-
-So far we have established how to update properties of individual entities. We can build on what we have so far by observing that a relation between two entities can be considered a property of the pair.
-
-\[placeholder\]
-
-Spatial relations obey certain compositional constraints, such as transitivity in the case of `north of':
-
-\[placeholder\]
-
-Or the equivalence between 'north of' and 'south of' up to swapping the order of arguments:
-
-\[\]
-
-There are other general constraints on spatial relations, such as order-independence: the order in which spatial relations are updated does not (at least for perfect reasoners) affect the resultant presentation. This is depicted diagrammatically as commuting gates:
-
-\[placeholder\]
-
-\subsection{Deterministic Neural Nets and Closed Monoidal Categories}
-
-For those unfamiliar, it is worth understanding the fundamentals of how neural nets work, which illuminates how they are able to transmute large amounts of input data into strong and "theory-free" [] performance at tasks. The ability to convert data (in which we are drowning), along with the universal approximation theorem, explain why data-driven learning methods have recently outperformed handcrafted rules-based approaches to artificial intelligence. I will focus only on the basic deep neural net -- so the reader is warned that the state of the art in terms of learning architectures is far more sophisticated, such as transformers [] used in large language models. There are only two important takeaways from this section. First is that the reader must understand why it is that data-driven learning methods outperform human axiomatising when dealing with complex problem domains, and are therefore (with the usual caveats of explainability) preferable. Second is an understanding of the statement of the universal approximation theorem, which will reappear in Section \ref{sec:learn}, where it will be of service in an attempt to introduce compositionality via interacting ensembles of neural nets.
-
-\newthought{Neural nets arise from a toy model of biological neurons.} At a glance, biological neurons have many receptors and one output, and the neuron fires a signal out if its combined inputs exceed an activation threshold. As a simplification, McCulloch-Pitts neurons are a sum of $n$ inputs passed through an activation function $\sigma: \mathbf{R}^n \rightarrow \mathbf{R}$ that is permitted to be nonlinear, but traditionally monotone increasing and sigmoidal, which bounds the range of the function $\exists a_{\mathbb{R}} b_{\mathbb{R}} \forall x_{\mathbb{R}} : a \leq \sigma(x) \leq b$, and asks that $\sigma$ approaches the lower and upper bounds in the limit as $x$ goes to $-\infty$ and $\infty$ respectively. Using the diagrammatic calculus for linear algebra [] equipped with a nonlinear activation function -- all of which is interpretable in \textbf{TopRel}, we can immediately grasp a visual resemblance between the designs of nature and man:
-
-\[placeholder\]
-
-\newthought{The first use of neural nets was in application to the problem of machine vision.} These first, single-layer neural nets were called \emph{perceptrons}. Mimicking the neuronal organisation of the visual cortex, it was a sensible idea to stack these layers on top of one another [] -- these layers are the original reason for the word "deep" in "deep learning", but words change in meaning over time.
-
-\[placeholder\]
-
-\newthought{The modern ubiquity of neural nets is due to several factors.} First is Hinton's backpropagation algorithm [] (which may be obsolete when you are reading this by Hinton's forward-forward second salvo [].) Observe that even after one has decided on the shape of the neural net in terms of neuronal connectivity, there are still many degrees of freedom in the parameters of the activation functions, in particular their horizontal shift (bias) and vertical stretching (weights). Borrowing diagrammatic notation for parameters as orthogonal wires from [], we can depict the degrees of freedom for a single neuron like this:
-
-\[placeholder\]
-
-\newthought{There is a massive space of parameters to set for even a moderately sized neural net.} So how do we set the parameters in such a way that the neural net computes something useful? Backpropagation solves this problem by leveraging the shape of a neural net. There are many easily searchable resources that cover backpropagation for the interested reader, including category-theoretic ones []. The simple explanation goes like this. Let's just focus on the weight parameter of each neuron. By analogy each neuron is a shitty person, and their weight is how strongly they hold a binary opinion. A neural net by analogy is a shitty rigid hierachical society with voters in the back and decision makers in the front. As a simple example, Alice and Bob each make a recommendation to Claire based on what they receive as input.
-
-\[placeholder\]
-
-Suppose that Claire's decision is wrong. She revises her own opinion then meets with her confidantes. Alice's recommendation was faulty, so Claire blames her; as a narcissistic defense, the viciousness of the blame is proportional to how wrong Claire was. Alice revises her own opinion proportional how mean Claire is being, and then Alice goes to seek out her confidantes to perpetuate a vicious cycle of psychological violence. Bob on the other hand was right, Claire tells him this with sheepishness proportional to her error, and he starts gloating "I told you so!" with glee proportional to how much cleverer he feels than Claire. So Bob becomes slightly more entrenched in his opinion, and then he goes to seek out his confidantes to either congratulate or belittle them, again proportional to how right he was. When all of the blame and backpatting has backpropagated throughout society, all the shitty people have adjusted their opinions, and their shitty society will be less prone to making the same mistake again. In human terms, this process is repeated for all of recorded history or longer, and then you have a neural net that can recognise handwritten digits.
-
-\[placeholder\]
-
-All this process needs to get started is a lot of labelled pairs of data, input along with the desired output for that input. The formal terminology for the scenario above that converts data into performance is "training", which is a computationally intensive process when lots of data is involved for big neural nets. So the second factor of the ubiquity of neural nets is Moore's law and analogues, which have overseen exponential growth in computational power and digital data storage capacity. Neural nets convert data and compute power as fuel into practical applications, and we live in an era of increasingly plentiful data and compute. Hence, the bitter lesson []; clever theories are no match for stupid methods with lots of data and a big computer. But why the hell should any of this work in the first place? Surely there are limits to what neural nets can do. Now the third factor; Moore's law and the bitter lesson might be cheated, but the third factor is a law backed by mathematics.
-
-\begin{theorem}[Universal Approximation Theorem]
-
-\end{theorem}
-
-\newthought{Any problem that can be encoded as a continuous transformation of lists of real numbers into other lists of real numbers is potential prey for a big enough neural net.} A little creative thought will show that many practical problems can be treated in this way. The litigious can easily spot problems in neural nets outside of this law. For example, to the best of our knowledge there is no known lower bound for how much data is required -- as a function of desired accuracy within a desired confidence -- for a neural net to learn its target, so for all we know, any big neural net could suddenly fail on an easy input instance for no good reason. The universal approximation theorem is a double-edged sword, and the side that cuts the holder is that for complex problems, the input data cannot span the whole problem domain, so there will be many neural nets that agree perfectly on the training data but will perform differently out-of-distribution -- this common phenomenon is called "overfitting". Moreover, a major component of explainability from the human perspective is having mental representations and rules for their manipulation, whereas it is in general very difficult to determine how or even whether the neural net has internal representations and rules for its inputs. This introduces an ethical criterion that most data-driven algorithms fail: it is not a big deal to be recommended a show we do not like or have a machine play a game more innovatively than a human could, but if the stakes are higher, such as operating a vehicle or on a patient, we would prefer safety guarantees predicated upon internal representations and rules that we can understand and negotiate in human terms. In Section \ref{sec:learn} we will try to blunt the painful edges by using the universal approximation theorem and overfitting to our advantage in search of compositional, explainable internal representations.
-
-\newthought{What is the diagrammatic content of the Universal Approximation Theorem?}
 
 \subsection{Pregroup diagrams and correlations}
 
