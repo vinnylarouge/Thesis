@@ -153,63 +153,100 @@ As is convention for parsing, let's grant that there's a daemon in Fondo's head 
 We introduce the concept of a discrete monoidal fibration: a mathematical bookkeeping tool that relates kinds of choices speakers and listeners make when generating and parsing text respectively. We proceed diagrammatically. The first concept is that of a \emph{monoidal functor box}.
 
 \begin{scholium}
-Functor boxes are from [meillies]. Expressing the coherence conditions of monoidal functors using equations involving functor boxes as below is not new [meillies].
-The idea of a functor being simultaneously monoidal and a fibration is not new [monoidalfibration]. What is new is minor: the express requirement that the lifts of the fibration satisfy interchange, which is in general not guaranteed by just having a functor be monoidal and a (even discrete) fibration [fosco].
+Functor boxes are from \bR CITE \e. Expressing the coherence conditions of monoidal functors using equations involving functor boxes as below is not new \bR CITE \e.
+The idea of a functor being simultaneously monoidal and a fibration is not new \bR CITE \e. What is new is minor: the express requirement that the lifts of the fibration satisfy interchange, which is in general not guaranteed by just having a functor be monoidal and a (even discrete) fibration [fosco].
 \end{scholium}
 
-Suppose we have a functor between monoidal categories $\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$. Then we have the following diagrammatic representation of a morphism $\mathbf{F}A \overset{\mathbf{F}f}{\rightarrow} \mathbf{F}B$ in $\mathcal{D}$:
+\begin{figure}[h!]
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-notation}}\]
+\caption{Suppose we have a functor between monoidal categories $\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$. Then we have this diagrammatic representation of a morphism $\mathbf{F}A \overset{\mathbf{F}f}{\rightarrow} \mathbf{F}B$ in $\mathcal{D}$.}
+\end{figure}
 
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-notation}\]
+\begin{figure}[h!]
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-seq}}\]
+\caption{The use of a functor box is like a window from the target category $\mathcal{D}$ into the source category $\mathcal{C}$; when we know that a morphism in $\mathcal{D}$ is the image under $\mathbf{F}$ of some morphism in $\mathcal{C}$, the functor box notation is just a way of presenting all of that data at once. Since $\mathbf{F}$ is a functor, we must have that $\mathbf{F}f ; \mathbf{F}g = \mathbf{F}(f;g)$. Diagrammatically this equation is represented by freely splitting and merging functor boxes vertically.}
+\end{figure}
 
-The use of a functor box is like a window from the target category $\mathcal{D}$ into the source category $\mathcal{C}$; when we know that a morphism in $\mathcal{D}$ is the image under $\mathbf{F}$ of some morphism in $\mathcal{C}$, the functor box notation is just a way of presenting all of that data at once. Since $\mathbf{F}$ is a functor, we must have that $\mathbf{F}f ; \mathbf{F}g = \mathbf{F}(f;g)$. Diagrammatically this equation is represented by freely splitting and merging functor boxes vertically.
+\begin{figure}[h!]
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+structural}}\]
+\caption{Assume that $\mathbf{F}$ is strict monoidal; without loss of generality by the strictification theorem \bR CITE \e, this lets us gloss over the associators and unitors. For $\mathbf{F}$ to be strict monoidal, it has to preserve monoidal units and tensor products on the nose: i.e. $\mathbf{F}I_\mathcal{C} = I_\mathcal{D}$ and $\mathbf{F}A \otimes_\mathcal{D} \mathbf{F}B = \mathbf{F}(A \otimes_\mathcal{C} B)$. Diagrammatically these structural constraints amount to these equations.}
+\end{figure}
 
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-seq}\]
+\begin{figure}[h!]
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-tensor}}\]
+\caption{What remains is the monoidality of $\mathbf{F}$, which is the requirement $\mathbf{F}f \otimes \mathbf{F}g = \mathbf{F}(f \otimes g)$. Diagrammatically, this equation is represented by freely splitting and merging functor boxes horizontally; analogously to how splitting vertically is the functor-boxes' way of respecting sequential composition, splitting horizontally is how they respect parallel composition.}
+\end{figure}
 
-Assume that $\mathbf{F}$ is strict monoidal; without loss of generality by the strictification theorem [], this lets us gloss over the associators and unitors. For $\mathbf{F}$ to be strict monoidal, it has to preserve monoidal units and tensor products on the nose: i.e. $\mathbf{F}I_\mathcal{C} = I_\mathcal{D}$ and $\mathbf{F}A \otimes_\mathcal{D} \mathbf{F}B = \mathbf{F}(A \otimes_\mathcal{C} B)$. Diagrammatically these structural constraints amount to the following equations:
+\begin{figure}[h!]
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-twist}}\]
+\caption{And for when we want $\mathbf{F}$ to be a (strict) symmetric monoidal functor, we are just asking that boxes and twists do not get stuck on one another.}
+\end{figure}
 
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+structural}\]
+\begin{figure}[h!]
+\[\resizebox{0.75\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-prefibex}}\]
+\caption{To motivate fibrations, first observe that by the diagrammatic equations of monoidal categories and functor boxes we have so far, we can always "slide out" the contents of a functor box out of the bottom. When can we do the reverse? That is, take a morphism in $\mathcal{D}$ and \emph{slide it into} a functor box? We know that in general this is not possible, because not all morphisms in $\mathcal{D}$ may be in the image of $\mathbf{F}$. So instead we ask "under what circumstances" can we do this for a functor $\mathbf{F}$? The answer is when $\mathbf{F}$ is a discrete fibration.}
+\end{figure}
 
-What remains is the monoidality of $\mathbf{F}$, which is the requirement $\mathbf{F}f \otimes \mathbf{F}g = \mathbf{F}(f \otimes g)$. Diagrammatically, this equation is represented by freely splitting and merging functor boxes horizontally; analogously to how splitting vertically is the functor-boxes' way of respecting sequential composition, splitting horizontally is how they respect parallel composition.
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-tensor}\]
-
-And for when we want $\mathbf{F}$ to be a (strict) symmetric monoidal functor, we are just asking that boxes and twists do not get stuck on one another.
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-twist}\]
-
-\begin{remark}
-To motivate fibrations, first observe that by the diagrammatic equations of monoidal categories and functor boxes we have so far, we can always "slide out" the contents of a functor box out of the bottom:
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-prefibex}\]
-When can we do the reverse? That is, take a morphism in $\mathcal{D}$ and \emph{slide it into} a functor box? We know that in general this is not possible, because not all morphisms in $\mathcal{D}$ may be in the image of $\mathbf{F}$. So instead we ask "under what circumstances" can we do this for a functor $\mathbf{F}$? The answer is when $\mathbf{F}$ is a discrete fibration.
-\end{remark}
-
+\begin{figure}[h!]
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration}}\]
+\caption{
 \begin{defn}[Discrete opfibration]
-$\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$ is a \emph{discrete fibration} when:\\
-for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$...\\
-there exists a unique object $\Phi^A_f$ and a unique morphism $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$...\\
-such that $f = \mathbf{F}\phi_f$.\\
-
-Diagrammatically, we can present all of the above as an equation reminiscent of sliding a morphism \emph{into} a functor box from below.
-\[\tikzfig{tree2gate/mfunctorbox/mfbox-fibration}\]
+$\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$ is a \emph{discrete fibration} when:
+for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$, there exists a unique object $\Phi^A_f$ and a unique morphism $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$, such that $f = \mathbf{F}\phi_f$. Diagrammatically, we can present all of the above as an equation reminiscent of sliding a morphism \emph{into} a functor box from below.
 \end{defn}
+}
+\end{figure}
 
-\begin{defn}[Monoidal discrete opfibration]
-We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opfibration} when it is a (strict, symmetric) monoidal functor, a discrete opfibration, and the following equations relating lifts to interchange hold:
-\[\scalebox{0.75}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+interchange}}\]
-\end{defn}
+
+\begin{figure}
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+interchange}}\]
+\caption{\begin{defn}[Monoidal discrete opfibration]
+We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opfibration} when it is a (strict, symmetric) monoidal functor, a discrete opfibration, and the depicted equations relating lifts to interchange hold. The diagrammatic motivation for the additional coherence equations is that -- if we view the lifts of opfibrations as sliding morphisms into functor boxes -- we do not want the order in which sliding occurs to affect the final result. In this way, lifts behave as 'graphical primitives' in the same manner as interchange isotopies and symmetry twists.
+\end{defn}}
+\end{figure}
+
+\begin{figure}[h!]\label{fig:plan1}
+\[\resizebox{0.75\textwidth}{!}{\tikzfig{tree2gate/workedexample/bigex012}}\]
+\caption{We aim to be able to use discrete monoidal functor-boxes like so. In the leftmost diagram, we would like to graphically introduce pregroup states. In the first equation (isomorphism), we would like to use the monoidal condition of the functor to horizontally merge functor boxes. In the second equation, we would like to use the discrete fibration condition of the functor to expand the box downwards, converting a string diagram obtained from a context-free grammar into a pregroup diagram. Observe that the adverb \texttt{quickly} has its label vertically flipped, alongside the adposition \texttt{to} and the sentential-complement verb \texttt{sees}. This is by design for all grammatical categories where pregroup typings are contextually dependent, as will be illustrated in Figure \ref{fig:plan2}.}
+\end{figure}
+
+\begin{figure}[h!]\label{fig:plan2}
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/workedexample/gather_quickly}}\]
+\caption{\texttt{quickly} could find itself modifying an intransitive (single noun) or transitive (two noun) verb. Suppose that it is the job of some process $\textcolor{orange}{\texttt{q'}}$ to handle intransitive verbs, and similarly $\textcolor{orange}{\texttt{q''}}$ to handle transitive ones. We use the functor for bookkeeping, by asking it to send both $\textcolor{orange}{\texttt{q'}}$ and $\textcolor{orange}{\texttt{q''}}$ to the dependent label $\textcolor{orange}{\bar{\texttt{q}}}$. Treating the label as a test rather than a state allows the fibration-box to choose the right version based on the domain wires as it expands top-down.
+}
+\end{figure}
+
+\begin{figure}[h!]\label{fig:plan3}
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/workedexample/bigex_2bad}}\]
+\caption{However, this procedure as described is at risk of being ill-defined. Observe that in the third diagram of Figure \ref{fig:plan1}, the assignment of wires in the domain of the functor to wires in the codomain of the functor is only declared by diagrammatic grouping; if we consider the algebraic data available in the third diagram, really all we have is the data in the figure. How do we know which wires in the domain of the functor correspond to which wires in the codomain? Resolving this issue is the purpose of the next section.}
+\end{figure}
+
+\clearpage
+
+\subsection{Strictified diagrams for monoidal categories}
+
+The crux of the issue sketched in Figure \ref{fig:plan3} is that while pregroup \emph{proofs} -- viewed as sequent trees -- syntactically distinguish the roots of subtrees, interpretation as pregroup \emph{diagrams} in a monoidal category forgets the subtree structure of the specific proof the diagram arises from. But it is precisely this forgotten structure that contains the algebraic data we require to keep track of (co)domain data diagrammatically. So a solution would be to force the diagrams in the blue domain recording pregroup data to hold onto this proof structure. For this purpose we use strictified diagrams for monoidal categories.
+
 \marginnote{
-\begin{remark}
-The diagrammatic motivation for the additional coherence equations is that -- if we view the lifts of opfibrations as sliding morphisms into functor boxes -- we do not want the order in which sliding occurs to affect the final result. In this way, lifts behave as 'graphical primitives' in the same manner as interchange isotopies and symmetry twists.
-\end{remark}
+Pregroups by themselves are thin rigid autonomous categories, meaning there is at most one morphism between any pair of objects and that there are directed cups and caps in addition to plain monoidal structure. Contra the aims of DisCoCat, this implies there is no nontrivial strong monoidal functor from pregroups into $\textbf{FinVect}^\otimes$, where strength for a monoidal functor means that $Fx \otimes Fy \simeq F(x \otimes y)$ in the codomain. This is because for any object $x$ in the pregroup, any strong monoidal $F$ into $\textbf{FinVect}^\otimes$ that interprets duals in the usual way must identify the following diagrams up to isomorphism of finite vector spaces with their duals:
+\[placeholder\]
+The only vector space $Fx$ for which this holds is the base field of $\textbf{Vect}$; the monoidal unit. The same argument applies for functors into $\textbf{Rel}$ -- another common semantic domain -- where the only valid target is the singleton as monoidal unit. One "fix" for this problem is to only ask for lax monoidal functors, where instead of isomorphism, only a unidirectional laxator natural transformation $Fx \otimes Fy \rightarrow F(x \otimes y)$ is required. I dislike using lax constructions just on their own, because they are an admission that there is extra stuff in $F(x \otimes y)$ we can't probe that wasn't present in $Fx \otimes Fy$. In prose, this is approximately "emergent behaviour in the whole that wasn't present in the parts", which sounds impressive, but doesn't give us any understanding because it is only assigning a name to what we do not know without going into it. What is suggested in this section is to factorise the lax monoidal semantic functor $\mathcal{P} \rightarrow \mathcal{M}$ from categorified pregroup proofs to a monoidal category as $\mathcal{P} \rightarrow \bar{\mathcal{M}} \rightarrow \mathcal{M}$ where $\bar{\mathcal{M}}$ is the strictification of $\mathcal{M}$. %The first leg of the factorisation is a strict monoidal functor, sending categorified pregroup proofs (which are thin, hence strict, i.e. all monoidal structural isomorphisms are equalities) to strictified diagrams of $\mathcal{M}$, which holds onto pregroup proof structure. The second leg destrictifies, forgetting proof structure.}
 }
 
+\begin{defn}[Strictified string diagrams]
+\bR CITE \e
+\end{defn}
+
+\begin{proposition}[$\bar{\mathcal{M}}$ and $\mathcal{M}$ are monoidally equivalent]
+
+\begin{proof}
+\bR CITE \e
+\end{proof}
+\end{proposition}
+
+
+\clearpage
 \subsection{Relating the generative grammar to a pregroup grammar via a discrete monoidal fibration}
-We merge the monoidal functor-boxes and we slide the bottom edge down using the fibration.
-\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_0}}
-\quad = \quad
-\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_1}}
-\quad = \quad
-\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_2}}\]
-\texttt{quickly} could find itself modifying an intransitive (single noun) or transitive (two noun) verb. Suppose that it is the job of some process $\textcolor{orange}{\texttt{q'}}$ to handle intransitive verbs, and similarly $\textcolor{orange}{\texttt{q''}}$ to handle transitive ones. We use the functor for bookkeeping, by asking it to send both $\textcolor{orange}{\texttt{q'}}$ and $\textcolor{orange}{\texttt{q''}}$ to the dependent label $\textcolor{orange}{\bar{\texttt{q}}}$. Diagrammatically, this assignment is expressed by the following equations:
-\[\tikzfig{tree2gate/workedexample/gather_quickly}\]
 Since the functor is a monoidal discrete fibration, it introduces the appropriate choice of \texttt{quickly} when we pull the functor-box down, while leaving everything else in parallel alone.
 \[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_2}}
 \quad = \quad
