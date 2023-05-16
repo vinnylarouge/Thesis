@@ -17,51 +17,65 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \newpmemlabel{^_1}{1}
-\@writefile{toc}{\contentsline {chapter}{\numberline {0}Internal wirings come from communication}{5}{chapter.0}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {0}Where do internal wirings come from?}{5}{chapter.0}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {0.1}How do we communicate using language?}{5}{section.0.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.1}Grammars of speakers and listeners}{6}{subsection.0.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.2}Discrete Monoidal Fibrations}{14}{subsection.0.1.2}\protected@file@percent }
-\newpmemlabel{^_2}{14}
-\newpmemlabel{^_3}{14}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Suppose we have a functor between monoidal categories $\mathbf  {F}: \mathcal  {C} \rightarrow \mathcal  {D}$. Then we have this diagrammatic representation of a morphism $\mathbf  {F}A \begingroup \setbox \z@ \hbox {\thinmuskip 0mu \medmuskip \m@ne mu\thickmuskip \@ne mu \setbox \tw@ \hbox {$\rightarrow \mathsurround \z@ $}\kern -\wd \tw@ ${}\rightarrow {}\mathsurround \z@ $}\edef false{\endgroup \let \binrel@@ \relax }false\binrel@@ {\mathop {\kern \z@ \rightarrow }\limits ^{\mathbf  {F}f}} \mathbf  {F}B$ in $\mathcal  {D}$.}}{14}{theorem.0.1.6}\protected@file@percent }
-\newpmemlabel{^_4}{14}
-\newpmemlabel{^_6}{14}
-\newpmemlabel{^_8}{14}
-\newpmemlabel{^_10}{14}
-\newpmemlabel{^_12}{14}
-\newpmemlabel{^_14}{14}
-\newpmemlabel{^_16}{14}
-\newpmemlabel{^_18}{14}
-\newpmemlabel{^_20}{14}
-\newpmemlabel{^_22}{14}
-\newpmemlabel{^_5}{15}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The use of a functor box is like a window from the target category $\mathcal  {D}$ into the source category $\mathcal  {C}$; when we know that a morphism in $\mathcal  {D}$ is the image under $\mathbf  {F}$ of some morphism in $\mathcal  {C}$, the functor box notation is just a way of presenting all of that data at once. Since $\mathbf  {F}$ is a functor, we must have that $\mathbf  {F}f ; \mathbf  {F}g = \mathbf  {F}(f;g)$. Diagrammatically this equation is represented by freely splitting and merging functor boxes vertically.}}{15}{theorem.0.1.6}\protected@file@percent }
-\newpmemlabel{^_7}{15}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Assume that $\mathbf  {F}$ is strict monoidal; without loss of generality by the strictification theorem \begin  {color}{red}CITE \end  {color}\xspace  , this lets us gloss over the associators and unitors. For $\mathbf  {F}$ to be strict monoidal, it has to preserve monoidal units and tensor products on the nose: i.e. $\mathbf  {F}I_\mathcal  {C} = I_\mathcal  {D}$ and $\mathbf  {F}A \otimes _\mathcal  {D} \mathbf  {F}B = \mathbf  {F}(A \otimes _\mathcal  {C} B)$. Diagrammatically these structural constraints amount to these equations.}}{15}{theorem.0.1.6}\protected@file@percent }
-\newpmemlabel{^_9}{16}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces What remains is the monoidality of $\mathbf  {F}$, which is the requirement $\mathbf  {F}f \otimes \mathbf  {F}g = \mathbf  {F}(f \otimes g)$. Diagrammatically, this equation is represented by freely splitting and merging functor boxes horizontally; analogously to how splitting vertically is the functor-boxes' way of respecting sequential composition, splitting horizontally is how they respect parallel composition.}}{16}{theorem.0.1.6}\protected@file@percent }
-\newpmemlabel{^_11}{16}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces And for when we want $\mathbf  {F}$ to be a (strict) symmetric monoidal functor, we are just asking that boxes and twists do not get stuck on one another.}}{16}{theorem.0.1.6}\protected@file@percent }
-\newpmemlabel{^_13}{16}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces To motivate fibrations, first observe that by the diagrammatic equations of monoidal categories and functor boxes we have so far, we can always "slide out" the contents of a functor box out of the bottom. When can we do the reverse? That is, take a morphism in $\mathcal  {D}$ and \emph  {slide it into} a functor box? We know that in general this is not possible, because not all morphisms in $\mathcal  {D}$ may be in the image of $\mathbf  {F}$. So instead we ask "under what circumstances" can we do this for a functor $\mathbf  {F}$? The answer is when $\mathbf  {F}$ is a discrete fibration.}}{16}{theorem.0.1.6}\protected@file@percent }
-\newpmemlabel{^_15}{17}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces  \begin  {defn}[Discrete opfibration] $\mathbf  {F}: \mathcal  {C} \rightarrow \mathcal  {D}$ is a \emph  {discrete fibration} when: for all morphisms $f: \mathbf  {F}A \rightarrow B$ in $\mathcal  {D}$ with domain in the image of $\mathbf  {F}$, there exists a unique object $\Phi ^A_f$ and a unique morphism $\phi _f: A \rightarrow \Phi ^A_f$ in $\mathcal  {C}$, such that $f = \mathbf  {F}\phi _f$. Diagrammatically, we can present all of the above as an equation reminiscent of sliding a morphism \emph  {into} a functor box from below. \end  {defn} }}{17}{theorem.0.1.6}\protected@file@percent }
-\newpmemlabel{^_17}{17}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \begin  {defn}[Monoidal discrete opfibration] We consider $\mathbf  {F}$ to be a \emph  {(strict, symmetric) monoidal discrete opfibration} when it is a (strict, symmetric) monoidal functor, a discrete opfibration, and the depicted equations relating lifts to interchange hold. The diagrammatic motivation for the additional coherence equations is that -- if we view the lifts of opfibrations as sliding morphisms into functor boxes -- we do not want the order in which sliding occurs to affect the final result. In this way, lifts behave as 'graphical primitives' in the same manner as interchange isotopies and symmetry twists. \end  {defn}}}{17}{theorem.0.1.7}\protected@file@percent }
-\newpmemlabel{^_19}{18}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces We aim to be able to use discrete monoidal functor-boxes like so. In the leftmost diagram, we would like to graphically introduce pregroup states. In the first equation (isomorphism), we would like to use the monoidal condition of the functor to horizontally merge functor boxes. In the second equation, we would like to use the discrete fibration condition of the functor to expand the box downwards, converting a string diagram obtained from a context-free grammar into a pregroup diagram. Observe that the adverb \texttt  {quickly} has its label vertically flipped, alongside the adposition \texttt  {to} and the sentential-complement verb \texttt  {sees}. This is by design for all grammatical categories where pregroup typings are contextually dependent, as will be illustrated in Figure \ref  {fig:plan2}.}}{18}{theorem.0.1.8}\protected@file@percent }
-\newlabel{fig:plan1}{{9}{18}{Discrete Monoidal Fibrations}{theorem.0.1.8}{}}
-\newpmemlabel{^_21}{18}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \texttt  {quickly} could find itself modifying an intransitive (single noun) or transitive (two noun) verb. Suppose that it is the job of some process $\leavevmode {\color  {orange}\texttt  {q'}}$ to handle intransitive verbs, and similarly $\leavevmode {\color  {orange}\texttt  {q''}}$ to handle transitive ones. We use the functor for bookkeeping, by asking it to send both $\leavevmode {\color  {orange}\texttt  {q'}}$ and $\leavevmode {\color  {orange}\texttt  {q''}}$ to the dependent label $\leavevmode {\color  {orange}\bar  {\texttt  {q}}}$. Treating the label as a test rather than a state allows the fibration-box to choose the right version based on the domain wires as it expands top-down. }}{18}{theorem.0.1.8}\protected@file@percent }
-\newlabel{fig:plan2}{{10}{18}{Discrete Monoidal Fibrations}{theorem.0.1.8}{}}
-\newpmemlabel{^_23}{18}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces However, this procedure as described is at risk of being ill-defined. Observe that in the third diagram of Figure \ref  {fig:plan1}, the assignment of wires in the domain of the functor to wires in the codomain of the functor is only declared by diagrammatic grouping; if we consider the algebraic data available in the third diagram, really all we have is the data in the figure. How do we know which wires in the domain of the functor correspond to which wires in the codomain? Resolving this issue is the purpose of the next section.}}{18}{theorem.0.1.8}\protected@file@percent }
-\newlabel{fig:plan3}{{11}{18}{Discrete Monoidal Fibrations}{theorem.0.1.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.3}Strictified diagrams for monoidal categories}{19}{subsection.0.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.4}Relating the generative grammar to a pregroup grammar via a discrete monoidal fibration}{20}{subsection.0.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.5}Discrete monoidal fibrations for grammatical functions}{26}{subsection.0.1.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.6}Discussion}{26}{subsection.0.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {0.1}Internal wirings redux}{5}{section.0.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {0.2}How do we communicate using language?}{5}{section.0.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.1}Grammars of speakers and listeners}{6}{subsection.0.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.2}Discrete Monoidal Fibrations}{12}{subsection.0.2.2}\protected@file@percent }
+\newpmemlabel{^_2}{12}
+\newpmemlabel{^_4}{12}
+\newpmemlabel{^_6}{12}
+\newpmemlabel{^_8}{12}
+\newpmemlabel{^_10}{12}
+\newpmemlabel{^_12}{12}
+\newpmemlabel{^_14}{12}
+\newpmemlabel{^_16}{12}
+\newpmemlabel{^_18}{12}
+\newpmemlabel{^_20}{12}
+\newpmemlabel{^_22}{12}
+\newpmemlabel{^_3}{13}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Suppose we have a functor between monoidal categories $\mathbf  {F}: \mathcal  {C} \rightarrow \mathcal  {D}$. Then we have this diagrammatic representation of a morphism $\mathbf  {F}A \begingroup \setbox \z@ \hbox {\thinmuskip 0mu \medmuskip \m@ne mu\thickmuskip \@ne mu \setbox \tw@ \hbox {$\rightarrow \mathsurround \z@ $}\kern -\wd \tw@ ${}\rightarrow {}\mathsurround \z@ $}\edef false{\endgroup \let \binrel@@ \relax }false\binrel@@ {\mathop {\kern \z@ \rightarrow }\limits ^{\mathbf  {F}f}} \mathbf  {F}B$ in $\mathcal  {D}$.}}{13}{theorem.0.2.3}\protected@file@percent }
+\newpmemlabel{^_5}{13}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The use of a functor box is like a window from the target category $\mathcal  {D}$ into the source category $\mathcal  {C}$; when we know that a morphism in $\mathcal  {D}$ is the image under $\mathbf  {F}$ of some morphism in $\mathcal  {C}$, the functor box notation is just a way of presenting all of that data at once. Since $\mathbf  {F}$ is a functor, we must have that $\mathbf  {F}f ; \mathbf  {F}g = \mathbf  {F}(f;g)$. Diagrammatically this equation is represented by freely splitting and merging functor boxes vertically.}}{13}{theorem.0.2.3}\protected@file@percent }
+\newpmemlabel{^_7}{14}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Assume that $\mathbf  {F}$ is strict monoidal; without loss of generality by the strictification theorem \begin  {color}{red}CITE \end  {color}\xspace  , this lets us gloss over the associators and unitors. For $\mathbf  {F}$ to be strict monoidal, it has to preserve monoidal units and tensor products on the nose: i.e. $\mathbf  {F}I_\mathcal  {C} = I_\mathcal  {D}$ and $\mathbf  {F}A \otimes _\mathcal  {D} \mathbf  {F}B = \mathbf  {F}(A \otimes _\mathcal  {C} B)$. Diagrammatically these structural constraints amount to these equations.}}{14}{theorem.0.2.3}\protected@file@percent }
+\newpmemlabel{^_9}{14}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces What remains is the monoidality of $\mathbf  {F}$, which is the requirement $\mathbf  {F}f \otimes \mathbf  {F}g = \mathbf  {F}(f \otimes g)$. Diagrammatically, this equation is represented by freely splitting and merging functor boxes horizontally; analogously to how splitting vertically is the functor-boxes' way of respecting sequential composition, splitting horizontally is how they respect parallel composition.}}{14}{theorem.0.2.3}\protected@file@percent }
+\newpmemlabel{^_11}{14}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces And for when we want $\mathbf  {F}$ to be a (strict) symmetric monoidal functor, we are just asking that boxes and twists do not get stuck on one another.}}{14}{theorem.0.2.3}\protected@file@percent }
+\newpmemlabel{^_13}{15}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces To motivate fibrations, first observe that by the diagrammatic equations of monoidal categories and functor boxes we have so far, we can always "slide out" the contents of a functor box out of the bottom. When can we do the reverse? That is, take a morphism in $\mathcal  {D}$ and \emph  {slide it into} a functor box? We know that in general this is not possible, because not all morphisms in $\mathcal  {D}$ may be in the image of $\mathbf  {F}$. So instead we ask "under what circumstances" can we do this for a functor $\mathbf  {F}$? The answer is when $\mathbf  {F}$ is a discrete fibration.}}{15}{theorem.0.2.3}\protected@file@percent }
+\newpmemlabel{^_15}{15}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces  \begin  {defn}[Discrete opfibration] $\mathbf  {F}: \mathcal  {C} \rightarrow \mathcal  {D}$ is a \emph  {discrete fibration} when: for all morphisms $f: \mathbf  {F}A \rightarrow B$ in $\mathcal  {D}$ with domain in the image of $\mathbf  {F}$, there exists a unique object $\Phi ^A_f$ and a unique morphism $\phi _f: A \rightarrow \Phi ^A_f$ in $\mathcal  {C}$, such that $f = \mathbf  {F}\phi _f$. Diagrammatically, we can present all of the above as an equation reminiscent of sliding a morphism \emph  {into} a functor box from below. \end  {defn} }}{15}{theorem.0.2.3}\protected@file@percent }
+\newpmemlabel{^_17}{16}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \begin  {defn}[Monoidal discrete opfibration] We consider $\mathbf  {F}$ to be a \emph  {(strict, symmetric) monoidal discrete opfibration} when it is a (strict, symmetric) monoidal functor, a discrete opfibration, and the depicted equations relating lifts to interchange hold. The diagrammatic motivation for the additional coherence equations is that -- if we view the lifts of opfibrations as sliding morphisms into functor boxes -- we do not want the order in which sliding occurs to affect the final result. In this way, lifts behave as 'graphical primitives' in the same manner as interchange isotopies and symmetry twists. \end  {defn}}}{16}{theorem.0.2.4}\protected@file@percent }
+\newpmemlabel{^_19}{16}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces We aim to be able to use discrete monoidal functor-boxes like so. In the leftmost diagram, we would like to graphically introduce pregroup states. In the first equation (isomorphism), we would like to use the monoidal condition of the functor to horizontally merge functor boxes. In the second equation, we would like to use the discrete fibration condition of the functor to expand the box downwards, converting a string diagram obtained from a context-free grammar into a pregroup diagram. Observe that the adverb \texttt  {quickly} has its label vertically flipped, alongside the adposition \texttt  {to} and the sentential-complement verb \texttt  {sees}. This is by design for all grammatical categories where pregroup typings are contextually dependent, as will be illustrated in Figure \ref  {fig:plan2}.}}{16}{theorem.0.2.5}\protected@file@percent }
+\newlabel{fig:plan1}{{9}{16}{Discrete Monoidal Fibrations}{theorem.0.2.5}{}}
+\newpmemlabel{^_21}{16}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \texttt  {quickly} could find itself modifying an intransitive (single noun) or transitive (two noun) verb. Suppose that it is the job of some process $\leavevmode {\color  {orange}\texttt  {q'}}$ to handle intransitive verbs, and similarly $\leavevmode {\color  {orange}\texttt  {q''}}$ to handle transitive ones. We use the functor for bookkeeping, by asking it to send both $\leavevmode {\color  {orange}\texttt  {q'}}$ and $\leavevmode {\color  {orange}\texttt  {q''}}$ to the dependent label $\leavevmode {\color  {orange}\bar  {\texttt  {q}}}$. Treating the label as a test rather than a state allows the fibration-box to choose the right version based on the domain wires as it expands top-down. }}{16}{theorem.0.2.5}\protected@file@percent }
+\newlabel{fig:plan2}{{10}{16}{Discrete Monoidal Fibrations}{theorem.0.2.5}{}}
+\newpmemlabel{^_23}{17}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces However, this procedure as described is at risk of being ill-defined. Observe that in the third diagram of Figure \ref  {fig:plan1}, the assignment of wires in the domain of the functor to wires in the codomain of the functor is only declared by diagrammatic grouping; if we consider the algebraic data available in the third diagram, really all we have is the data in the figure. How do we know which wires in the domain of the functor correspond to which wires in the codomain? Resolving this issue is the purpose of the next section.}}{17}{theorem.0.2.5}\protected@file@percent }
+\newlabel{fig:plan3}{{11}{17}{Discrete Monoidal Fibrations}{theorem.0.2.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.3}Strictified diagrams for monoidal categories}{18}{subsection.0.2.3}\protected@file@percent }
+\newlabel{cons:bracketing}{{0.2.8}{18}{Pregroups with bracketing}{theorem.0.2.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.4}Monoidal Cofunctors}{20}{subsection.0.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {0.3}Communicative constraints as a cofunctor from productive to parsing grammar}{21}{section.0.3}\protected@file@percent }
+\newpmemlabel{^_24}{21}
+\newpmemlabel{^_25}{21}
+\newlabel{fig:plan1}{{0.3}{21}{Communicative constraints as a cofunctor from productive to parsing grammar}{section.0.3}{}}
+\newpmemlabel{^_26}{21}
+\newpmemlabel{^_27}{21}
+\newlabel{fig:plan2}{{0.3}{21}{Communicative constraints as a cofunctor from productive to parsing grammar}{section.0.3}{}}
+\newpmemlabel{^_28}{21}
+\newpmemlabel{^_29}{21}
+\newlabel{fig:plan3}{{0.3}{21}{Communicative constraints as a cofunctor from productive to parsing grammar}{section.0.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {0.4}Relating circuits and CFGs fibrationally}{28}{section.0.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {0.5}Where internal wirings come from}{29}{section.0.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.5.1}Discrete monoidal fibrations for grammatical functions}{29}{subsection.0.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {0.6}Discussion and Limitations}{30}{section.0.6}\protected@file@percent }
 \ttl@finishall
-\gdef \@abspage@last{29}
+\gdef \@abspage@last{34}

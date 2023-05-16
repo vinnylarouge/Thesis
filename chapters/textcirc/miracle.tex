@@ -1,3 +1,5 @@
+\section{Internal wirings redux}
+
 \section{How do we communicate using language?}
 
 \newthought{Speakers and listeners understand one another.} Obviously, natural language involves communication, which involves at minimum a speaker and a listener, or a producer and a parser. The fact that communication happens at all is an everyday miracle that any formal understanding of language must account for. The miracle remains so even if we cautiously hedge to exclude pragmatics and context and only encompass small and boring fragments of factual language like \texttt{Alice sees Bob quickly run to school}. At minimum, we should be able to model a single conversational turn, where a speaker produces a sentence from a thought and a listener parses it to recover the thought. Here is a sequence of diagram equations that demonstrates mathematically how the miracle works for two toy grammars, for the sentence \texttt{Alice sees Bob quickly run to school}. On the left we have a grammatical structure obtained from a context-free grammar, and we have equations from a discrete monoidal fibration all the way to the right, where we obtain a pregroup representation of the same sentence. Going from right to left recovers the correspondence in the other direction.
@@ -44,9 +46,303 @@ The nature of their challenge can be summarised as an asymmetry of information. 
 \[\texttt{Alice likes flowers that Bob gives Claire.}\]
 \[\texttt{Bob gives Claire flowers. Alice likes (those) flowers.}\]
 
-Whether those decisions are made by committee or coinflips, those decisions represent information that must be supplied to Preube in the process of speaking a thought. For this reason, we consider context-free-grammars (and more generally, other string-rewrite systems) to be \emph{grammars of the speaker}. The start symbol $S$ is incrementally expanded and determined by rule-applications that are selected by the speaker. The important aspect here is that the speaker has an initial state of information $S$ that requires more information as input in order to arrive at the final sentence. Note that the concept of grammars of the speaker are not exhausted by string-rewrite systems, merely that string-rewrite systems are a prototype that illustrate the concept well.
+Whether those decisions are made by committee or coinflips, they represent information that must be supplied to Preube in the process of producing language. For this reason, we consider context-free-grammars (and more generally, other string-rewrite systems) to be \emph{grammars of the speaker}, or \emph{productive grammars}. The start symbol $S$ is incrementally expanded and determined by rule-applications that are selected by the speaker. The important aspect here is that the speaker has an initial state of information $S$ that requires more information as input in order to arrive at the final sentence. Note that the concept of productive grammars are not exhausted by string-rewrite systems, merely that string-rewrite systems are a prototype that illustrate the concept well.
 
-\newthought{Listeners deduce.} The listener Fondo must supply decisions about which words are grammatically related, and how. Like right-of-way in driving, sometimes these decisions are settled by convention, for example, subject-verb-object order in English. Sometimes sophisticated decisions need to be made that override or are orthogonal to conventions.
+\newthought{Listeners deduce.} The listener Fondo must supply decisions about which words are grammatically related, and how. Like right-of-way in driving, sometimes these decisions are settled by convention, for example, subject-verb-object order in English. Sometimes sophisticated decisions need to be made that override or are orthogonal to conventions, as will be illustrated in the closing discussions and limitations section of this chapter. Since Fondo has to supply information in the form of choices in the process of converting text into meaning, we consider \emph{parsing grammars} -- such as all typelogical grammars, including pregroups and CCGs -- to be \emph{grammars of the listener}.
+
+%As is convention for parsing, let's grant that there's a daemon in Fondo's head that makes all these lexical disambiguation choices for them, automatically settling on which sense of \texttt{the old man} or \texttt{somebody} is appropriate. As mathematicians looking for a toy model to get started, we are looking for the simplest kind of choice that Fondo can be trusted to make with only grammatical information available to them.
+
+\newthought{The speaker's choices and the listener's deductions must be related.} The way the speaker decomposes the thought into words in text in the speaker's grammar must allow the listener to reconstruct the thought in the listener's grammar. Even in simple cases where both parties are aiming for unambiguous communication, the listener still must make choices. This is best illustrated by introducing two toy grammars -- we pick a context-free grammar for the speaker and a pregroup grammar for the listener, because they are simple, planar, and known to be weakly equivalent.
+
+\subsection{Discrete Monoidal Fibrations}
+
+We introduce the concept of a discrete monoidal fibration: a mathematical bookkeeping tool that relates kinds of choices speakers and listeners make when generating and parsing text respectively. We proceed diagrammatically. The first concept is that of a \emph{monoidal functor box}.
+
+\begin{scholium}
+Functor boxes are from \bR CITE \e. Expressing the coherence conditions of monoidal functors using equations involving functor boxes as below is not new \bR CITE \e.
+The idea of a functor being simultaneously monoidal and a fibration is not new \bR CITE \e. What is new is minor: the express requirement that the lifts of the fibration satisfy interchange, which is in general not guaranteed by just having a functor be monoidal and a (even discrete) fibration [fosco].
+\end{scholium}
+
+\begin{figure}[h!]
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-notation}}\]
+\caption{Suppose we have a functor between monoidal categories $\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$. Then we have this diagrammatic representation of a morphism $\mathbf{F}A \overset{\mathbf{F}f}{\rightarrow} \mathbf{F}B$ in $\mathcal{D}$.}
+\end{figure}
+
+\begin{figure}[h!]
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-seq}}\]
+\caption{The use of a functor box is like a window from the target category $\mathcal{D}$ into the source category $\mathcal{C}$; when we know that a morphism in $\mathcal{D}$ is the image under $\mathbf{F}$ of some morphism in $\mathcal{C}$, the functor box notation is just a way of presenting all of that data at once. Since $\mathbf{F}$ is a functor, we must have that $\mathbf{F}f ; \mathbf{F}g = \mathbf{F}(f;g)$. Diagrammatically this equation is represented by freely splitting and merging functor boxes vertically.}
+\end{figure}
+
+\begin{figure}[h!]
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+structural}}\]
+\caption{Assume that $\mathbf{F}$ is strict monoidal; without loss of generality by the strictification theorem \bR CITE \e, this lets us gloss over the associators and unitors. For $\mathbf{F}$ to be strict monoidal, it has to preserve monoidal units and tensor products on the nose: i.e. $\mathbf{F}I_\mathcal{C} = I_\mathcal{D}$ and $\mathbf{F}A \otimes_\mathcal{D} \mathbf{F}B = \mathbf{F}(A \otimes_\mathcal{C} B)$. Diagrammatically these structural constraints amount to these equations.}
+\end{figure}
+
+\begin{figure}[h!]
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-tensor}}\]
+\caption{What remains is the monoidality of $\mathbf{F}$, which is the requirement $\mathbf{F}f \otimes \mathbf{F}g = \mathbf{F}(f \otimes g)$. Diagrammatically, this equation is represented by freely splitting and merging functor boxes horizontally; analogously to how splitting vertically is the functor-boxes' way of respecting sequential composition, splitting horizontally is how they respect parallel composition.}
+\end{figure}
+
+\begin{figure}[h!]
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-twist}}\]
+\caption{And for when we want $\mathbf{F}$ to be a (strict) symmetric monoidal functor, we are just asking that boxes and twists do not get stuck on one another.}
+\end{figure}
+
+\begin{figure}[h!]
+\[\resizebox{0.75\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-prefibex}}\]
+\caption{To motivate fibrations, first observe that by the diagrammatic equations of monoidal categories and functor boxes we have so far, we can always "slide out" the contents of a functor box out of the bottom. When can we do the reverse? That is, take a morphism in $\mathcal{D}$ and \emph{slide it into} a functor box? We know that in general this is not possible, because not all morphisms in $\mathcal{D}$ may be in the image of $\mathbf{F}$. So instead we ask "under what circumstances" can we do this for a functor $\mathbf{F}$? The answer is when $\mathbf{F}$ is a discrete fibration.}
+\end{figure}
+
+\begin{figure}[h!]
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration}}\]
+\caption{
+\begin{defn}[Discrete opfibration]
+$\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$ is a \emph{discrete fibration} when:
+for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$, there exists a unique object $\Phi^A_f$ and a unique morphism $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$, such that $f = \mathbf{F}\phi_f$. Diagrammatically, we can present all of the above as an equation reminiscent of sliding a morphism \emph{into} a functor box from below.
+\end{defn}
+}
+\end{figure}
+
+
+\begin{figure}
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+interchange}}\]
+\caption{\begin{defn}[Monoidal discrete opfibration]
+We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opfibration} when it is a (strict, symmetric) monoidal functor, a discrete opfibration, and the depicted equations relating lifts to interchange hold. The diagrammatic motivation for the additional coherence equations is that -- if we view the lifts of opfibrations as sliding morphisms into functor boxes -- we do not want the order in which sliding occurs to affect the final result. In this way, lifts behave as 'graphical primitives' in the same manner as interchange isotopies and symmetry twists.
+\end{defn}}
+\end{figure}
+
+\begin{figure}[h!]\label{fig:plan1}
+\[\resizebox{0.75\textwidth}{!}{\tikzfig{tree2gate/workedexample/bigex012}}\]
+\caption{We aim to be able to use discrete monoidal functor-boxes like so. In the leftmost diagram, we would like to graphically introduce pregroup states. In the first equation (isomorphism), we would like to use the monoidal condition of the functor to horizontally merge functor boxes. In the second equation, we would like to use the discrete fibration condition of the functor to expand the box downwards, converting a string diagram obtained from a context-free grammar into a pregroup diagram. Observe that the adverb \texttt{quickly} has its label vertically flipped, alongside the adposition \texttt{to} and the sentential-complement verb \texttt{sees}. This is by design for all grammatical categories where pregroup typings are contextually dependent, as will be illustrated in Figure \ref{fig:plan2}.}
+\end{figure}
+
+\begin{figure}[h!]\label{fig:plan2}
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/workedexample/gather_quickly}}\]
+\caption{\texttt{quickly} could find itself modifying an intransitive (single noun) or transitive (two noun) verb. Suppose that it is the job of some process $\textcolor{orange}{\texttt{q'}}$ to handle intransitive verbs, and similarly $\textcolor{orange}{\texttt{q''}}$ to handle transitive ones. We use the functor for bookkeeping, by asking it to send both $\textcolor{orange}{\texttt{q'}}$ and $\textcolor{orange}{\texttt{q''}}$ to the dependent label $\textcolor{orange}{\bar{\texttt{q}}}$. Treating the label as a test rather than a state allows the fibration-box to choose the right version based on the domain wires as it expands top-down.
+}
+\end{figure}
+
+\begin{figure}[h!]\label{fig:plan3}
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/workedexample/bigex_2bad}}\]
+\caption{However, this procedure as described is at risk of being ill-defined. Observe that in the third diagram of Figure \ref{fig:plan1}, the assignment of wires in the domain of the functor to wires in the codomain of the functor is only declared by diagrammatic grouping; if we consider the algebraic data available in the third diagram, really all we have is the data in the figure. How do we know which wires in the domain of the functor correspond to which wires in the codomain? Resolving this issue is the purpose of the next section.}
+\end{figure}
+
+\clearpage
+
+\subsection{Strictified diagrams for monoidal categories}
+
+The crux of the issue sketched in Figure \ref{fig:plan3} is that while pregroup \emph{proofs} -- viewed as sequent trees -- syntactically distinguish the roots of subtrees, interpretation as pregroup \emph{diagrams} in a monoidal category forgets the subtree structure of the specific proof the diagram arises from. But it is precisely this forgotten structure that contains the algebraic data we require to keep track of (co)domain data diagrammatically. So a solution would be to force the diagrams in the blue domain recording pregroup data to hold onto this proof structure. For this purpose we use strictified diagrams for monoidal categories, defined in the margins.\\
+
+\marginnote{
+\begin{defn}[Strictified string diagrams]
+(Presentation taken from \bR CITE \e) Fix an arbitrary (non-strict) monoidal category $\mathcal{C}$. The \emph{strictification} $(\overline{\mathcal{C}},\bullet)$ is defined as follows (where strictness of $\overline{\mathcal{C}}$ entitles use of string-diagrammatic notation):
+\begin{itemize}
+\item[(1)]{Objects $\overline{A}$ for each $A \in \mathcal{C}$}
+\end{itemize}
+\end{defn}
+}
+
+\marginnote{
+\begin{itemize}
+\item[(2)] The following generators, with $\overline{f}: \overline{A} \rightarrow \overline{B}$ for each $f \in \mathcal{C}(A,B)$, where we adopt the convention of notating the monoidal unit with a dashed line:
+\[\resizebox{\marginparwidth}{!}{\tikzfig{strictify/strictgens}}\]
+\end{itemize}
+}
+
+\marginnote{
+\begin{itemize}
+\item[(3)] The following functoriality equations:
+\[\resizebox{\marginparwidth}{!}{\tikzfig{strictify/strictfunct}}\]
+\end{itemize}
+}
+
+\marginnote{
+\begin{itemize}
+\item[(4)] The following adapter equations:
+\[\resizebox{\marginparwidth}{!}{\tikzfig{strictify/strictadapt}}\]
+\end{itemize}
+}
+
+\marginnote{
+\begin{itemize}
+\item[(3)] The following representations of the natural isomorphisms in the definition of a monoidal category:
+\[\resizebox{\marginparwidth}{!}{\tikzfig{strictify/strictators}}\]
+\end{itemize}
+}
+
+\marginnote{
+\begin{proposition}[$\bar{\mathcal{M}}$ and $\mathcal{M}$ are monoidally equivalent]
+
+\begin{proof}
+\bR CITE \e
+\end{proof}
+\end{proposition}
+}
+
+We are seeking some way to algebraically group or bracket together pregroup types that arise from a single word, in a distinguished way from concatenation-as-tensor. In this way we can preserve the structure of pregroup-sequent proofs: grouping indicates a node in the proof-tree, while tensor indicates parallel composition of proof trees. With strictified diagrams, we can model grouping (ab)using biased tensor structure, i.e. treating $(\cdots((A \otimes B) \otimes C) \cdots \otimes \cdots Z)$ as a bracketed expression $[A \otimes B \cdots \otimes Z]$.
+
+\begin{construction}[Pregroups with bracketing]\label{cons:bracketing}
+Where $\mathcal{P}$ is a monoidal category generated by pregroup states and (directed) cups, we define pregroups-with-bracketing as subcategory of the \emph{free} strictification $\overline{\mathcal{P}}$, generated by:
+\begin{itemize}
+\item For each pregroup state $\texttt{w}: I \rightarrow \bigotimes\limits_{i} X_i$, a strictified state generator $\texttt{w}: I \rightarrow (\cdots((X_1 \otimes X_2) \otimes \cdots X_i) \cdots )$ with left-nested syntactic tensors. To illustrate, a state with 5 wires would correspond to a generator as follows:
+\[\tikzfig{strictify/strictstate}\]
+\item Let $[A \cdot B \cdots Z]$ denote the left-nested tensoring $((A \otimes B) \cdots \otimes Z)$, and let $\mathbf{X}$ denote $(\bigotimes\limits_i X_i)$. For each directed cap $\mathbf{X} \otimes \mathbf{X}^{-1} \rightarrow I$ (and symmetrically for caps of the other direction and cups), and for each pair of bracketed types $[\mathbf{A} \cdot \mathbf{X}]$ and $[\mathbf{X}^{-1} \cdot \mathbf{B}]$, we ask for a generator that fully detensors, applies the directed cup, and then retensors. Diagrammatically, this amounts to asking for generators that look like the following, that mimick a single proof step.
+\[\tikzfig{strictify/stricteval}\]
+\end{itemize}
+\end{construction}
+
+Construction \ref{cons:bracketing} solves the (co)domain assignment problem by organising the data as a monoidal cofunctor.
+
+\clearpage
+\subsection{Monoidal Cofunctors}
+
+\marginnote{
+Cofunctors are arguably necessary even for vanilla DisCoCat. Pregroups by themselves are thin rigid autonomous categories, meaning there is at most one morphism between any pair of objects and that there are directed cups and caps in addition to plain monoidal structure. Contra the aims of DisCoCat, this implies there is no nontrivial strong monoidal functor from pregroups into $\textbf{FinVect}^\otimes$, where strength for a monoidal functor means that $Fx \otimes Fy \simeq F(x \otimes y)$ in the codomain. This is because for any object $x$ in the pregroup, any strong monoidal $F$ into $\textbf{FinVect}^\otimes$ that interprets duals in the usual way must identify the following diagrams up to isomorphism of finite vector spaces with their duals:
+\[placeholder\]
+The only vector space $Fx$ for which this holds is the base field of $\textbf{Vect}$; the monoidal unit. The same argument applies for functors into other strong compact closed categories, such as variants of $\textbf{Rel}$ -- another common family of semantic domains -- where the only valid target is the singleton as monoidal unit. 
+}
+
+Asking for opfibrations to be discrete is an unnecessarily strict condition. Often rather than asking for uniqueness, we are happy to supply a choice of lift...
+
+\begin{defn}[Bijective-on-objects functor]
+A functor $F: \mathcal{C} \rightarrow \mathcal{D}$ is \emph{bijective-on-objects} if for all $d \in \mathcal{D}$, there exists a $c \in \mathcal{C}$ such that $Fc = d$.
+\end{defn}
+
+\begin{proposition}[]
+
+\end{proposition}
+
+\newpage
+\section{Communicative constraints as a cofunctor from productive to parsing grammar}
+\begin{figure}[h!]\label{fig:plan1}
+\[\resizebox{0.75\textwidth}{!}{\tikzfig{tree2gate/workedexample/bigex012}}\]
+\caption{}
+\end{figure}
+
+\begin{figure}[h!]\label{fig:plan2}
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/workedexample/gather_quickly}}\]
+\caption{}
+\end{figure}
+
+\begin{figure}[h!]\label{fig:plan3}
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/workedexample/bigex_2bad}}\]
+\caption{}
+\end{figure}
+
+Since the functor is a monoidal discrete fibration, it introduces the appropriate choice of \texttt{quickly} when we pull the functor-box down, while leaving everything else in parallel alone.
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_2}}
+\quad = \quad
+\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_3}}\]
+Adpositions can apply for verbs of any noun-arity. We again use the fiber of the functor for bookkeeping by asking it to send all of the following partial pregroup diagrams to the adposition generator. We consider the pregroup typing of a verb of noun-arity $k \geq 1$ to be $^{-1} n \cdot s \cdot \underbrace{n^{-1} \cdots n^{-1}}_{(k-1)}$.
+\[\tikzfig{tree2gate/workedexample/gather_adp}\]
+When we pull down the functor-box, the discrete fibration introduces the appropriate choice of diagram from above, corresponding to the intransitive verb case.
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_3}}
+\quad = \quad
+\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_4}}\]
+Similarly to \texttt{quickly}, we suppose we have a family of processes for the word \texttt{to}, one for each noun-arity of verb.
+\[\tikzfig{tree2gate/workedexample/gather_to}\]
+Again the discrete fibration introduces the appropriate choice of \texttt{to} when we pull the functor box down.
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_4}}
+\quad = \quad
+\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_5}}\]
+Now we visually simplify the inside of the functor-box by applying yanking equations.
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_5}}
+\quad = \quad
+\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_6}}\]
+Similarly as before, we can pull the functor-box past the intransitive verb node. There is only one pregroup type $^{-1}n \cdot s$ that corresponds to the grammatical category $\textcolor{green}{\texttt{(I)VP}}$.
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_6to7}}\]
+Proceeding similarly, we can pull the functor-box past the sentential-complement-verb node. There are multiple possible pregroup types for $\textcolor{ForestGreen}{\texttt{SCV}}$, depending on how many noun-phrases are taken as arguments in addition to the sentence. For example, in $\texttt{Alice \textcolor{ForestGreen}{sees} \textcolor{cyan}{[sentence]}}$, $\textcolor{ForestGreen}{\texttt{sees}}$ returns a sentence after taking a noun to the left and a sentence to the right, so it has pregroup typing $^{-1}n \cdot s \cdot s^{-1}$. On the other hand, for something like $\texttt{Alice \textcolor{ForestGreen}{\texttt{tells}} Bob \textcolor{cyan}{[sentence]}}$, $\textcolor{ForestGreen}{\texttt{tells}}$ returns a sentence after taking a noun (the teller) to the left, a noun (the tellee) to the left, and a sentence (the story) to the left, so it has a pregroup typing $^{-1}n \cdot s \cdot n^{-1} \cdot s^{-1}$. These two instances of sentential-complement-verbs are introduced by different nodes. We can record both of these pregroup typings in the functor by asking for the following:
+\[\tikzfig{tree2gate/workedexample/gather_scv}\]
+Pulling down the functor box:
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_7}}
+\quad = \quad
+\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_8}}\]
+As before, we can ask the functor to send an appropriate partial pregroup diagram to the dependent label $\textcolor{ForestGreen}{\bar{\texttt{see}}}$.
+\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_8to9}}\]
+Now again we can visually simplify using the yanking equation and isotopies, which obtains a pregroup diagram.
+\[\tikzfig{tree2gate/workedexample/bigex_a0}\]
+The pregroup diagram corresponds to a particular pregroup proof of the syntactic correctness of the sentence \texttt{Alice sees Bob run quickly to school}.
+\[
+\resizebox{\textwidth}{!}{
+\AxiomC{$\texttt{A} : n$}
+\AxiomC{$\textcolor{green}{\texttt{s}} : ^{-1}n \cdot s \cdot s^{-1}$}
+\BinaryInfC{$\texttt{A\textvisiblespace \textcolor{green}{s}} : s \cdot s^{-1}$}
+\AxiomC{$\texttt{B} : n$}
+\AxiomC{$\textcolor{orange}{\texttt{q}} :  (^{-1}n \cdot s) \cdot ( ^{-1}n \cdot s)^{-1} $}
+\AxiomC{$\textcolor{green}{\texttt{r}} : ^{-1}n \cdot s$}
+\BinaryInfC{$\texttt{\textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}} : ^{-1}n \cdot s$}
+\AxiomC{$\textcolor{blue}{\texttt{t}} : ^{-1}( ^{-1}n \cdot s) \cdot ( ^{-1}n \cdot s) \cdot n^{-1}$}
+\BinaryInfC{$\texttt{\textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}\textvisiblespace \textcolor{blue}{t}} : (^{-1}n \cdot s) \cdot n^{-1}$}
+\AxiomC{$\texttt{S} : n$}
+\BinaryInfC{$\texttt{\textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}\textvisiblespace \textcolor{blue}{t}\textvisiblespace S} : ^{-1}n \cdot s$}
+\BinaryInfC{$\texttt{B\textvisiblespace \textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}\textvisiblespace \textcolor{blue}{t}\textvisiblespace S} : s$}
+\BinaryInfC{$\texttt{A\textvisiblespace \textcolor{green}{s}\textvisiblespace B\textvisiblespace \textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}\textvisiblespace \textcolor{blue}{t}\textvisiblespace S} : s$}
+\DisplayProof
+}
+\]
+
+
+\clearpage
+\section{Relating circuits and CFGs fibrationally}
+
+\clearpage
+\section{Where internal wirings come from}
+
+\subsection{Discrete monoidal fibrations for grammatical functions}
+
+\clearpage
+\section{Discussion and Limitations}
+
+\newthought{What are the assumptions and limitations?} In my view, the preceding analysis is fair if one entertains the following three commitments.
+
+\begin{enumerate}
+\item{At some level, semantics is compositional, and syntax directs this composition.}
+\item{Speakers produce sentences, and listeners parse sentences.}
+\item{Speakers and listeners understand each other, insofar as the compositional structure of their semantic representations are isomorphic.}
+\end{enumerate}
+
+Insofar as compositionality entails that infinite ends can be achieved by finite combinatorial means, discrete monoidal fibrations are bookkeeping for an idealised structural correspondence between the components of productive and parsing grammars, and internal wirings arise as balancing terms in the bookkeeping.\\
+
+\begin{CJK*}{UTF8}{gbsn}
+The first assumption establishes an idealised view of communication and compositionality where there are no extraneous rules in the language, i.e. that a particular phrase of five or sixty-seven words is to be parsed exceptionally. This is not the case in natural languages, where everyday idioms may be considered semantically atomic despite being compositionally decomposable. For example, in Mandarin, 马上 \ is the concatenation of "horse" and "up", and would be "on horseback" if interpreted literally, but is treated as an adverbial "as soon as possible" in imperative contexts. I use the hedging phrase "at some level" in the first assumption to describe the compositionality of semantics just to indicate an assumption that we are not dealing with exceptional rules all the way up.\\
+\end{CJK*}
+
+The second assumption commits to an idealisation that speakers and listeners communicate for the purposes of exchanging propositional information as well-formed and disambiguated sentences, which is clearly not all that language is for. I can promise nothing regarding questions, imperatives, speech acts, and so on.\\
+
+The third assumption asks that one entertain string diagrams as representative of what the content of language is, and even so, it still requires some elaboration on what is meant by "understanding", as it is obviously untrue that everyone understands one another. I do not mean understanding in the strong sense as a form of telepathy of mental states, c.f. Wittgenstein's beetle-in-a-box thought experiment. I mean that insofar as the speaker and listener both have their own ideas about cats, sitting, space, and mats, their respective mental models of \texttt{the cat sat on the mat} are indistinguishable as far as meaningfully equivalent syntactic re-presentations and probings go; for instance, both speakers ought to agree that \texttt{the mat is beneath the cat}, and both speakers ought to agree despite the concrete images in their minds that there is insufficient information to know the colour of the cat from the sentence alone, and so on. This is a shallow form of understanding; consider the case where one communicator is a human with mental models encoded in meat and another is an LLM with tokens encoding who-knows-what -- they may be in perfect agreement about rephrasings of texts for an arbitrary finite amount of communication, even if the representations of the latter are not compositional. It would be nice to ask that "mutual understanding" requires structurally equivalent (as opposed to extensionally indistinguishable) meaning-representation mechanisms between language agents c.f. Chomsky's universal grammar, but our means of achieving mutual understanding in practice seems to align with the shallow view: we pose comprehension challenges and ask clarifying questions all at the level of language, without taking a scalpel to the other's head. Depending on one's view of what understanding language entails, it may be that humans and LLMs both understand language in their own way, but mutual understanding between the two kinds is an illusion.\\
+
+Despite these limitations, I believe that this formal approach to grounding relationships between productive and parsing grammars in mathematical considerations surrounding communication has some merits.
+
+\newthought{Theories of grammar by themselves are insufficient to account for communication.} At minimum, for every grammar that produces sentences, one must also provide a corresponding parsing grammar. A theory of grammar that only produces correct sentences or correct parses is a 'theory' of language outperformed in every respect by an LLM. So we must distinguish between grammars of the speaker and listener, and then investigate how they cohere.\\
+
+\newthought{Coherence of theories of grammar is inextricable from semantics.} We are interested in the ideal of communication, the end result of a single turn of which is that both speaker and listener have the same semantic information, whether that be a logical expression or something else. A consequence of this criterion is that in order to obtain an adequate account of communication, we must seek a relation between grammars and semantics beyond weak and strong equivalence of pairs of theories of grammar.\\
+
+Firstly, "weak equivalence" between grammar formalisms in terms of possible sets of generated sentences is insufficient. Weak equivalence proofs are mathematical busywork that have nothing to do with a unified account of syntax and semantics. For example, merely demonstrating that, e.g. pregroup grammars and context-free grammars can generate the same sentences [] only admits the possibility that a speaker using a context-free grammar and a listener using a pregroup grammar \emph{could} understand each other, without providing any explanation \emph{how}. But we already know that users of language \emph{do} understand one another more-or-less, so the exercise is more-or-less pointless.\\
+
+Secondly, "strong equivalence" that seeks equivalence at a structural level between theories of syntax often helps, but is not always necessary. I will explain by analogy. Theories of syntax are like file formats, e.g. \texttt{.png} or \texttt{.jpeg} for images. A model for a particular language is a particular file or photograph. The task here is to show that two photographs in different file formats that both purport to model the same language are really photographs of the same thing from different perspectives. It is overkill to demonstrate that all \texttt{.pngs} and \texttt{.jpegs} are structurally bijectable, just as it is overkill to show that, say, context-free grammars are strongly equivalent to pregroup grammars, because there are context-free and pregroup grammars that generate sets of strings that have nothing to do with natural language. It could just as well be that there is a pair of productive and parsing grammar-formats that are not strongly equivalent, but happen to coincide for a particular natural language -- in this sense, asking for a discrete monoidal fibration is a way to check a weaker condition than strong equivalence that achieves the more specific aim of determining whether a pair of productive and parsing grammars for a language are plausible models.\\
+
+A systematic analysis of communication requires intimacy with specific grammars and a specific semantics. Specific grammars -- and not formats of grammar, such as "all CFGs" -- that model natural languages, even poorly, are the only relevant objects of study for any form of language intended to communicate information. Once you have a specific grammar that produces sentences in natural language, then to explain communication, you must supply a specific partnered parsing grammar such that on the produced sentences, both grammars yield the same semantic objects by a Montagovian approach, broadly construed as a homomorphism from syntax to semantics. On this account, syntax does not hold a dictatorship over semantics, but we can find duarchies, and in these duumvirates the two syntaxes and the semantics mutually constrain one another.\\
+
+\newthought{It is worth noting that in practice, neither grammar nor meaning strictly determines the other.} Clearly there are cases where grammar supercedes: when Fondo hears \texttt{man bites dog}, despite his prior prejudices and associations about which animal is more likely to be biting, he knows that the \texttt{man} is doing the biting and the \texttt{dog} is getting bitten. Going the other way, there are many cases in which the meaning of a subphrase affects grammatical acceptability and structure.
+
+\begin{example}[Exclamations: how meaning affects grammar]
+The following examples from [Lakofflecture] illustrate how whether a phrase is an \emph{exclamation} affects what kinds of grammatical constructions are acceptable. By this argument, to know whether something is an exclamation in context is an aspect of meaning, so we have cases where meaning determines grammar. Observe first that the following three phrases are all grammatically acceptable and mean the same thing.
+\[\texttt{\textcolor{blue}{nobody knows} how many beers Bob drinks}\]
+\[\texttt{\textcolor{blue}{who knows} how many beers Bob drinks}\]
+\[\texttt{\textcolor{blue}{God knows} how many beers Bob drinks}\]
+The latter two are distinguished when \texttt{God knows} and \texttt{who knows} are exclamations. First, the modularity of grammar and meaning may not match when an exclamation is involved. For example, negating the blue text, we obtain:
+\[\texttt{\textcolor{blue}{somebody knows} how many beers Bob drinks}\]
+\[\texttt{\textcolor{blue}{who doesn't know} how many beers Bob drinks}\]
+\[\texttt{\textcolor{purple}{God doesn't} know how many beers Bob drinks}\]
+The first two are acceptable, but mean different things; the latter means to say that everyone knows how many beers Bob drinks, which is stronger than the former. The last sentence is awkward: unlike in the first two cases, the quantified variable in the (gloss) $\cdots \neg \exists x_{Person} \cdots$ of \texttt{God knows} is lost, and what is left is a literal reading $\cdots \neg \texttt{knows}(\texttt{God},\cdots) \cdots$.
+Second, whether a sentence is grammatically acceptable may depend on whether an exclamation is involved. \texttt{\textcolor{blue}{God knows}} and \texttt{\textcolor{blue}{who knows}} can be shuffled into the sentence to behave as an intensifier as in:
+\[\texttt{Bob drinks \textcolor{blue}{God knows} how many beers}\]
+\[\texttt{Bob drinks \textcolor{blue}{who knows} how many beers}\]
+But it is awkward to have:
+\[\texttt{Bob drank \textcolor{purple}{nobody knows} how many beers}\]
+And it is not acceptable to have:
+\[\texttt{Bob drank \textcolor{red}{Alice knows} how many beers}\]
+\end{example}
 
 \begin{example}[Garden path sentences]
 So-called "garden path" sentences illustrate that listeners have to make choices to resolve lexical ambiguities. One such garden-path sentence is \texttt{The old man the boat}, where typically readers take \texttt{The old man} as a noun-phrase and \texttt{the boat} as another noun-phrase. We can sketch how the readers might think with a (failed) pregroup grammar derivation:
@@ -135,10 +431,6 @@ Now we can plug-in these interpretations to obtain the two different meanings. W
 
 \end{example}
 
-As is convention for parsing, let's grant that there's a daemon in Fondo's head that makes all these lexical disambiguation choices for them, automatically settling on which sense of \texttt{the old man} or \texttt{somebody} is appropriate. As mathematicians looking for a toy model to get started, we are looking for the simplest kind of choice that Fondo can be trusted to make with only grammatical information available to them.
-
-%\newthought{The speaker's choices and the listener's deductions must be related.} The way the speaker decomposes the thought into words in text in the speaker's grammar must allow the listener to reconstruct the thought in the listener's grammar. Even in simple cases where both parties are aiming for unambiguous communication, the listener still must make choices. This is best illustrated by introducing two toy grammars -- we pick a context-free grammar for the speaker and a pregroup grammar for the listener, because they are simple, planar, and known to be weakly equivalent.
-
 \begin{example}
 (grammar pieces -- as simple as it gets)
 \texttt{Bob runs.}
@@ -146,214 +438,4 @@ As is convention for parsing, let's grant that there's a daemon in Fondo's head 
 \texttt{Bob drinks beer.}
 \texttt{Bob quickly drinks beer.}
 
-\end{example}
-
-\subsection{Discrete Monoidal Fibrations}
-
-We introduce the concept of a discrete monoidal fibration: a mathematical bookkeeping tool that relates kinds of choices speakers and listeners make when generating and parsing text respectively. We proceed diagrammatically. The first concept is that of a \emph{monoidal functor box}.
-
-\begin{scholium}
-Functor boxes are from \bR CITE \e. Expressing the coherence conditions of monoidal functors using equations involving functor boxes as below is not new \bR CITE \e.
-The idea of a functor being simultaneously monoidal and a fibration is not new \bR CITE \e. What is new is minor: the express requirement that the lifts of the fibration satisfy interchange, which is in general not guaranteed by just having a functor be monoidal and a (even discrete) fibration [fosco].
-\end{scholium}
-
-\begin{figure}[h!]
-\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-notation}}\]
-\caption{Suppose we have a functor between monoidal categories $\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$. Then we have this diagrammatic representation of a morphism $\mathbf{F}A \overset{\mathbf{F}f}{\rightarrow} \mathbf{F}B$ in $\mathcal{D}$.}
-\end{figure}
-
-\begin{figure}[h!]
-\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-seq}}\]
-\caption{The use of a functor box is like a window from the target category $\mathcal{D}$ into the source category $\mathcal{C}$; when we know that a morphism in $\mathcal{D}$ is the image under $\mathbf{F}$ of some morphism in $\mathcal{C}$, the functor box notation is just a way of presenting all of that data at once. Since $\mathbf{F}$ is a functor, we must have that $\mathbf{F}f ; \mathbf{F}g = \mathbf{F}(f;g)$. Diagrammatically this equation is represented by freely splitting and merging functor boxes vertically.}
-\end{figure}
-
-\begin{figure}[h!]
-\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+structural}}\]
-\caption{Assume that $\mathbf{F}$ is strict monoidal; without loss of generality by the strictification theorem \bR CITE \e, this lets us gloss over the associators and unitors. For $\mathbf{F}$ to be strict monoidal, it has to preserve monoidal units and tensor products on the nose: i.e. $\mathbf{F}I_\mathcal{C} = I_\mathcal{D}$ and $\mathbf{F}A \otimes_\mathcal{D} \mathbf{F}B = \mathbf{F}(A \otimes_\mathcal{C} B)$. Diagrammatically these structural constraints amount to these equations.}
-\end{figure}
-
-\begin{figure}[h!]
-\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-tensor}}\]
-\caption{What remains is the monoidality of $\mathbf{F}$, which is the requirement $\mathbf{F}f \otimes \mathbf{F}g = \mathbf{F}(f \otimes g)$. Diagrammatically, this equation is represented by freely splitting and merging functor boxes horizontally; analogously to how splitting vertically is the functor-boxes' way of respecting sequential composition, splitting horizontally is how they respect parallel composition.}
-\end{figure}
-
-\begin{figure}[h!]
-\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-twist}}\]
-\caption{And for when we want $\mathbf{F}$ to be a (strict) symmetric monoidal functor, we are just asking that boxes and twists do not get stuck on one another.}
-\end{figure}
-
-\begin{figure}[h!]
-\[\resizebox{0.75\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-prefibex}}\]
-\caption{To motivate fibrations, first observe that by the diagrammatic equations of monoidal categories and functor boxes we have so far, we can always "slide out" the contents of a functor box out of the bottom. When can we do the reverse? That is, take a morphism in $\mathcal{D}$ and \emph{slide it into} a functor box? We know that in general this is not possible, because not all morphisms in $\mathcal{D}$ may be in the image of $\mathbf{F}$. So instead we ask "under what circumstances" can we do this for a functor $\mathbf{F}$? The answer is when $\mathbf{F}$ is a discrete fibration.}
-\end{figure}
-
-\begin{figure}[h!]
-\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration}}\]
-\caption{
-\begin{defn}[Discrete opfibration]
-$\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$ is a \emph{discrete fibration} when:
-for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$, there exists a unique object $\Phi^A_f$ and a unique morphism $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$, such that $f = \mathbf{F}\phi_f$. Diagrammatically, we can present all of the above as an equation reminiscent of sliding a morphism \emph{into} a functor box from below.
-\end{defn}
-}
-\end{figure}
-
-
-\begin{figure}
-\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+interchange}}\]
-\caption{\begin{defn}[Monoidal discrete opfibration]
-We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opfibration} when it is a (strict, symmetric) monoidal functor, a discrete opfibration, and the depicted equations relating lifts to interchange hold. The diagrammatic motivation for the additional coherence equations is that -- if we view the lifts of opfibrations as sliding morphisms into functor boxes -- we do not want the order in which sliding occurs to affect the final result. In this way, lifts behave as 'graphical primitives' in the same manner as interchange isotopies and symmetry twists.
-\end{defn}}
-\end{figure}
-
-\begin{figure}[h!]\label{fig:plan1}
-\[\resizebox{0.75\textwidth}{!}{\tikzfig{tree2gate/workedexample/bigex012}}\]
-\caption{We aim to be able to use discrete monoidal functor-boxes like so. In the leftmost diagram, we would like to graphically introduce pregroup states. In the first equation (isomorphism), we would like to use the monoidal condition of the functor to horizontally merge functor boxes. In the second equation, we would like to use the discrete fibration condition of the functor to expand the box downwards, converting a string diagram obtained from a context-free grammar into a pregroup diagram. Observe that the adverb \texttt{quickly} has its label vertically flipped, alongside the adposition \texttt{to} and the sentential-complement verb \texttt{sees}. This is by design for all grammatical categories where pregroup typings are contextually dependent, as will be illustrated in Figure \ref{fig:plan2}.}
-\end{figure}
-
-\begin{figure}[h!]\label{fig:plan2}
-\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/workedexample/gather_quickly}}\]
-\caption{\texttt{quickly} could find itself modifying an intransitive (single noun) or transitive (two noun) verb. Suppose that it is the job of some process $\textcolor{orange}{\texttt{q'}}$ to handle intransitive verbs, and similarly $\textcolor{orange}{\texttt{q''}}$ to handle transitive ones. We use the functor for bookkeeping, by asking it to send both $\textcolor{orange}{\texttt{q'}}$ and $\textcolor{orange}{\texttt{q''}}$ to the dependent label $\textcolor{orange}{\bar{\texttt{q}}}$. Treating the label as a test rather than a state allows the fibration-box to choose the right version based on the domain wires as it expands top-down.
-}
-\end{figure}
-
-\begin{figure}[h!]\label{fig:plan3}
-\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/workedexample/bigex_2bad}}\]
-\caption{However, this procedure as described is at risk of being ill-defined. Observe that in the third diagram of Figure \ref{fig:plan1}, the assignment of wires in the domain of the functor to wires in the codomain of the functor is only declared by diagrammatic grouping; if we consider the algebraic data available in the third diagram, really all we have is the data in the figure. How do we know which wires in the domain of the functor correspond to which wires in the codomain? Resolving this issue is the purpose of the next section.}
-\end{figure}
-
-\clearpage
-
-\subsection{Strictified diagrams for monoidal categories}
-
-The crux of the issue sketched in Figure \ref{fig:plan3} is that while pregroup \emph{proofs} -- viewed as sequent trees -- syntactically distinguish the roots of subtrees, interpretation as pregroup \emph{diagrams} in a monoidal category forgets the subtree structure of the specific proof the diagram arises from. But it is precisely this forgotten structure that contains the algebraic data we require to keep track of (co)domain data diagrammatically. So a solution would be to force the diagrams in the blue domain recording pregroup data to hold onto this proof structure. For this purpose we use strictified diagrams for monoidal categories.
-
-\marginnote{
-Pregroups by themselves are thin rigid autonomous categories, meaning there is at most one morphism between any pair of objects and that there are directed cups and caps in addition to plain monoidal structure. Contra the aims of DisCoCat, this implies there is no nontrivial strong monoidal functor from pregroups into $\textbf{FinVect}^\otimes$, where strength for a monoidal functor means that $Fx \otimes Fy \simeq F(x \otimes y)$ in the codomain. This is because for any object $x$ in the pregroup, any strong monoidal $F$ into $\textbf{FinVect}^\otimes$ that interprets duals in the usual way must identify the following diagrams up to isomorphism of finite vector spaces with their duals:
-\[placeholder\]
-The only vector space $Fx$ for which this holds is the base field of $\textbf{Vect}$; the monoidal unit. The same argument applies for functors into $\textbf{Rel}$ -- another common semantic domain -- where the only valid target is the singleton as monoidal unit. One "fix" for this problem is to only ask for lax monoidal functors, where instead of isomorphism, only a unidirectional laxator natural transformation $Fx \otimes Fy \rightarrow F(x \otimes y)$ is required. I dislike using lax constructions just on their own, because they are an admission that there is extra stuff in $F(x \otimes y)$ we can't probe that wasn't present in $Fx \otimes Fy$. In prose, this is approximately "emergent behaviour in the whole that wasn't present in the parts", which sounds impressive, but doesn't give us any understanding because it is only assigning a name to what we do not know without going into it. What is suggested in this section is to factorise the lax monoidal semantic functor $\mathcal{P} \rightarrow \mathcal{M}$ from categorified pregroup proofs to a monoidal category as $\mathcal{P} \rightarrow \bar{\mathcal{M}} \rightarrow \mathcal{M}$ where $\bar{\mathcal{M}}$ is the strictification of $\mathcal{M}$. %The first leg of the factorisation is a strict monoidal functor, sending categorified pregroup proofs (which are thin, hence strict, i.e. all monoidal structural isomorphisms are equalities) to strictified diagrams of $\mathcal{M}$, which holds onto pregroup proof structure. The second leg destrictifies, forgetting proof structure.}
-}
-
-\begin{defn}[Strictified string diagrams]
-\bR CITE \e
-\end{defn}
-
-\begin{proposition}[$\bar{\mathcal{M}}$ and $\mathcal{M}$ are monoidally equivalent]
-
-\begin{proof}
-\bR CITE \e
-\end{proof}
-\end{proposition}
-
-
-\clearpage
-\subsection{Relating the generative grammar to a pregroup grammar via a discrete monoidal fibration}
-Since the functor is a monoidal discrete fibration, it introduces the appropriate choice of \texttt{quickly} when we pull the functor-box down, while leaving everything else in parallel alone.
-\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_2}}
-\quad = \quad
-\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_3}}\]
-Adpositions can apply for verbs of any noun-arity. We again use the fiber of the functor for bookkeeping by asking it to send all of the following partial pregroup diagrams to the adposition generator. We consider the pregroup typing of a verb of noun-arity $k \geq 1$ to be $^{-1} n \cdot s \cdot \underbrace{n^{-1} \cdots n^{-1}}_{(k-1)}$.
-\[\tikzfig{tree2gate/workedexample/gather_adp}\]
-When we pull down the functor-box, the discrete fibration introduces the appropriate choice of diagram from above, corresponding to the intransitive verb case.
-\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_3}}
-\quad = \quad
-\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_4}}\]
-Similarly to \texttt{quickly}, we suppose we have a family of processes for the word \texttt{to}, one for each noun-arity of verb.
-\[\tikzfig{tree2gate/workedexample/gather_to}\]
-Again the discrete fibration introduces the appropriate choice of \texttt{to} when we pull the functor box down.
-\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_4}}
-\quad = \quad
-\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_5}}\]
-Now we visually simplify the inside of the functor-box by applying yanking equations.
-\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_5}}
-\quad = \quad
-\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_6}}\]
-Similarly as before, we can pull the functor-box past the intransitive verb node. There is only one pregroup type $^{-1}n \cdot s$ that corresponds to the grammatical category $\textcolor{green}{\texttt{(I)VP}}$.
-\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_6to7}}\]
-Proceeding similarly, we can pull the functor-box past the sentential-complement-verb node. There are multiple possible pregroup types for $\textcolor{ForestGreen}{\texttt{SCV}}$, depending on how many noun-phrases are taken as arguments in addition to the sentence. For example, in $\texttt{Alice \textcolor{ForestGreen}{sees} \textcolor{cyan}{[sentence]}}$, $\textcolor{ForestGreen}{\texttt{sees}}$ returns a sentence after taking a noun to the left and a sentence to the right, so it has pregroup typing $^{-1}n \cdot s \cdot s^{-1}$. On the other hand, for something like $\texttt{Alice \textcolor{ForestGreen}{\texttt{tells}} Bob \textcolor{cyan}{[sentence]}}$, $\textcolor{ForestGreen}{\texttt{tells}}$ returns a sentence after taking a noun (the teller) to the left, a noun (the tellee) to the left, and a sentence (the story) to the left, so it has a pregroup typing $^{-1}n \cdot s \cdot n^{-1} \cdot s^{-1}$. These two instances of sentential-complement-verbs are introduced by different nodes. We can record both of these pregroup typings in the functor by asking for the following:
-\[\tikzfig{tree2gate/workedexample/gather_scv}\]
-Pulling down the functor box:
-\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_7}}
-\quad = \quad
-\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_8}}\]
-As before, we can ask the functor to send an appropriate partial pregroup diagram to the dependent label $\textcolor{ForestGreen}{\bar{\texttt{see}}}$.
-\[\scalebox{0.5}{\tikzfig{tree2gate/workedexample/bigex_8to9}}\]
-Now again we can visually simplify using the yanking equation and isotopies, which obtains a pregroup diagram.
-\[\tikzfig{tree2gate/workedexample/bigex_a0}\]
-The pregroup diagram corresponds to a particular pregroup proof of the syntactic correctness of the sentence \texttt{Alice sees Bob run quickly to school}.
-\[
-\AxiomC{$\texttt{A} : n$}
-\AxiomC{$\textcolor{green}{\texttt{s}} : ^{-1}n \cdot s \cdot s^{-1}$}
-\BinaryInfC{$\texttt{A\textvisiblespace \textcolor{green}{s}} : s \cdot s^{-1}$}
-\AxiomC{$\texttt{B} : n$}
-\AxiomC{$\textcolor{orange}{\texttt{q}} :  (^{-1}n \cdot s) \cdot ( ^{-1}n \cdot s)^{-1} $}
-\AxiomC{$\textcolor{green}{\texttt{r}} : ^{-1}n \cdot s$}
-\BinaryInfC{$\texttt{\textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}} : ^{-1}n \cdot s$}
-\AxiomC{$\textcolor{blue}{\texttt{t}} : ^{-1}( ^{-1}n \cdot s) \cdot ( ^{-1}n \cdot s) \cdot n^{-1}$}
-\BinaryInfC{$\texttt{\textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}\textvisiblespace \textcolor{blue}{t}} : (^{-1}n \cdot s) \cdot n^{-1}$}
-\AxiomC{$\texttt{S} : n$}
-\BinaryInfC{$\texttt{\textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}\textvisiblespace \textcolor{blue}{t}\textvisiblespace S} : ^{-1}n \cdot s$}
-\BinaryInfC{$\texttt{B\textvisiblespace \textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}\textvisiblespace \textcolor{blue}{t}\textvisiblespace S} : s$}
-\BinaryInfC{$\texttt{A\textvisiblespace \textcolor{green}{s}\textvisiblespace B\textvisiblespace \textcolor{orange}{q}\textvisiblespace \textcolor{green}{r}\textvisiblespace \textcolor{blue}{t}\textvisiblespace S} : s$}
-\DisplayProof
-\]
-
-\begin{remark}
-Technical addendums.\\
-The above construction only requires the source category of the functor to be rigid autonomous. Since no braidings are required, the free autonomous completion [Antonificaton] of any monoidal category may be used.\\
-To enforce the well-definedness of the functor $\mathbf{F}: \mathcal{P}\mathcal{G} \rightarrow \mathcal{G}$ on objects, we may consider the strictified "category of..." [ghicadiagrams]...
-\end{remark}
-
-\subsection{Discrete monoidal fibrations for grammatical functions}
-
-\subsection{Discussion}
-
-\newthought{What are the assumptions and limitations?} In my view, the preceding analysis is fair if one entertains the following three commitments.
-
-\begin{enumerate}
-\item{At some level, semantics is compositional, and syntax directs this composition.}
-\item{Speakers produce sentences, and listeners parse sentences.}
-\item{Speakers and listeners understand each other, insofar as the compositional structure of their semantic representations are isomorphic.}
-\end{enumerate}
-
-Insofar as compositionality entails that infinite ends can be achieved by finite combinatorial means, discrete monoidal fibrations are bookkeeping for an idealised structural correspondence between the components of productive and parsing grammars, and internal wirings arise as balancing terms in the bookkeeping.\\
-
-\begin{CJK*}{UTF8}{gbsn}
-The first assumption establishes an idealised view of communication and compositionality where there are no extraneous rules in the language, i.e. that a particular phrase of five or sixty-seven words is to be parsed exceptionally. This is not the case in natural languages, where everyday idioms may be considered semantically atomic despite being compositionally decomposable. For example, in Mandarin, 马上 \ is the concatenation of "horse" and "up", and would be "on horseback" if interpreted literally, but is treated as an adverbial "as soon as possible" in imperative contexts. I use the hedging phrase "at some level" in the first assumption to describe the compositionality of semantics just to indicate an assumption that we are not dealing with exceptional rules all the way up.\\
-\end{CJK*}
-
-The second assumption commits to an idealisation that speakers and listeners communicate for the purposes of exchanging propositional information as well-formed and disambiguated sentences, which is clearly not all that language is for. I can promise nothing regarding questions, imperatives, speech acts, and so on.\\
-
-The third assumption asks that one entertain string diagrams as representative of what the content of language is, and even so, it still requires some elaboration on what is meant by "understanding", as it is obviously untrue that everyone understands one another. I do not mean understanding in the strong sense as a form of telepathy of mental states, c.f. Wittgenstein's beetle-in-a-box thought experiment. I mean that insofar as the speaker and listener both have their own ideas about cats, sitting, space, and mats, their respective mental models of \texttt{the cat sat on the mat} are indistinguishable as far as meaningfully equivalent syntactic re-presentations and probings go; for instance, both speakers ought to agree that \texttt{the mat is beneath the cat}, and both speakers ought to agree despite the concrete images in their minds that there is insufficient information to know the colour of the cat from the sentence alone, and so on. This is a shallow form of understanding; consider the case where one communicator is a human with mental models encoded in meat and another is an LLM with tokens encoding who-knows-what -- they may be in perfect agreement about rephrasings of texts for an arbitrary finite amount of communication, even if the representations of the latter are not compositional. It would be nice to ask that "mutual understanding" requires structurally equivalent (as opposed to extensionally indistinguishable) meaning-representation mechanisms between language agents c.f. Chomsky's universal grammar, but our means of achieving mutual understanding in practice seems to align with the shallow view: we pose comprehension challenges and ask clarifying questions all at the level of language, without taking a scalpel to the other's head. Depending on one's view of what understanding language entails, it may be that humans and LLMs both understand language in their own way, but mutual understanding between the two kinds is an illusion.\\
-
-Despite these limitations, I believe that this formal approach to grounding relationships between productive and parsing grammars in mathematical considerations surrounding communication has some merits.
-
-\newthought{Theories of grammar by themselves are insufficient to account for communication.} At minimum, for every grammar that produces sentences, one must also provide a corresponding parsing grammar. A theory of grammar that only produces correct sentences or correct parses is a 'theory' of language outperformed in every respect by an LLM. So we must distinguish between grammars of the speaker and listener, and then investigate how they cohere.\\
-
-\newthought{Coherence of theories of grammar is inextricable from semantics.} We are interested in the ideal of communication, the end result of a single turn of which is that both speaker and listener have the same semantic information, whether that be a logical expression or something else. A consequence of this criterion is that in order to obtain an adequate account of communication, we must seek a relation between grammars and semantics beyond weak and strong equivalence of pairs of theories of grammar.\\
-
-Firstly, "weak equivalence" between grammar formalisms in terms of possible sets of generated sentences is insufficient. Weak equivalence proofs are mathematical busywork that have nothing to do with a unified account of syntax and semantics. For example, merely demonstrating that, e.g. pregroup grammars and context-free grammars can generate the same sentences [] only admits the possibility that a speaker using a context-free grammar and a listener using a pregroup grammar \emph{could} understand each other, without providing any explanation \emph{how}. But we already know that users of language \emph{do} understand one another more-or-less, so the exercise is more-or-less pointless.\\
-
-Secondly, "strong equivalence" that seeks equivalence at a structural level between theories of syntax often helps, but is not always necessary. I will explain by analogy. Theories of syntax are like file formats, e.g. \texttt{.png} or \texttt{.jpeg} for images. A model for a particular language is a particular file or photograph. The task here is to show that two photographs in different file formats that both purport to model the same language are really photographs of the same thing from different perspectives. It is overkill to demonstrate that all \texttt{.pngs} and \texttt{.jpegs} are structurally bijectable, just as it is overkill to show that, say, context-free grammars are strongly equivalent to pregroup grammars, because there are context-free and pregroup grammars that generate sets of strings that have nothing to do with natural language. It could just as well be that there is a pair of productive and parsing grammar-formats that are not strongly equivalent, but happen to coincide for a particular natural language -- in this sense, asking for a discrete monoidal fibration is a way to check a weaker condition than strong equivalence that achieves the more specific aim of determining whether a pair of productive and parsing grammars for a language are plausible models.\\
-
-A systematic analysis of communication requires intimacy with specific grammars and a specific semantics. Specific grammars -- and not formats of grammar, such as "all CFGs" -- that model natural languages, even poorly, are the only relevant objects of study for any form of language intended to communicate information. Once you have a specific grammar that produces sentences in natural language, then to explain communication, you must supply a specific partnered parsing grammar such that on the produced sentences, both grammars yield the same semantic objects by a Montagovian approach, broadly construed as a homomorphism from syntax to semantics. On this account, syntax does not hold a dictatorship over semantics, but we can find duarchies, and in these duumvirates the two syntaxes and the semantics mutually constrain one another.\\
-
-\newthought{It is worth noting that in practice, neither grammar nor meaning strictly determines the other.} Clearly there are cases where grammar supercedes: when Fondo hears \texttt{man bites dog}, despite his prior prejudices and associations about which animal is more likely to be biting, he knows that the \texttt{man} is doing the biting and the \texttt{dog} is getting bitten. Going the other way, there are many cases in which the meaning of a subphrase affects grammatical acceptability and structure.
-
-\begin{example}[Exclamations: how meaning affects grammar]
-The following examples from [Lakofflecture] illustrate how whether a phrase is an \emph{exclamation} affects what kinds of grammatical constructions are acceptable. By this argument, to know whether something is an exclamation in context is an aspect of meaning, so we have cases where meaning determines grammar. Observe first that the following three phrases are all grammatically acceptable and mean the same thing.
-\[\texttt{\textcolor{blue}{nobody knows} how many beers Bob drinks}\]
-\[\texttt{\textcolor{blue}{who knows} how many beers Bob drinks}\]
-\[\texttt{\textcolor{blue}{God knows} how many beers Bob drinks}\]
-The latter two are distinguished when \texttt{God knows} and \texttt{who knows} are exclamations. First, the modularity of grammar and meaning may not match when an exclamation is involved. For example, negating the blue text, we obtain:
-\[\texttt{\textcolor{blue}{somebody knows} how many beers Bob drinks}\]
-\[\texttt{\textcolor{blue}{who doesn't know} how many beers Bob drinks}\]
-\[\texttt{\textcolor{purple}{God doesn't} know how many beers Bob drinks}\]
-The first two are acceptable, but mean different things; the latter means to say that everyone knows how many beers Bob drinks, which is stronger than the former. The last sentence is awkward: unlike in the first two cases, the quantified variable in the (gloss) $\cdots \neg \exists x_{Person} \cdots$ of \texttt{God knows} is lost, and what is left is a literal reading $\cdots \neg \texttt{knows}(\texttt{God},\cdots) \cdots$.
-Second, whether a sentence is grammatically acceptable may depend on whether an exclamation is involved. \texttt{\textcolor{blue}{God knows}} and \texttt{\textcolor{blue}{who knows}} can be shuffled into the sentence to behave as an intensifier as in:
-\[\texttt{Bob drinks \textcolor{blue}{God knows} how many beers}\]
-\[\texttt{Bob drinks \textcolor{blue}{who knows} how many beers}\]
-But it is awkward to have:
-\[\texttt{Bob drank \textcolor{purple}{nobody knows} how many beers}\]
-And it is not acceptable to have:
-\[\texttt{Bob drank \textcolor{red}{Alice knows} how many beers}\]
 \end{example}

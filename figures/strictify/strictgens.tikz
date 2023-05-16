@@ -1,0 +1,92 @@
+\begin{tikzpicture}[{every node/.style}={scale=2}]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-5.5, 2) {};
+		\node [style=none] (1) at (-5.5, 0) {};
+		\node [style=none] (2) at (-4.5, 1.5) {};
+		\node [style=none] (3) at (-4.5, 0.5) {};
+		\node [style=none] (4) at (-7.35, -1) {$\varphi$};
+		\node [style=none] (10) at (-5.5, 1.5) {};
+		\node [style=none] (11) at (-5.5, 0.5) {};
+		\node [style=none] (12) at (-5, 1) {$\Phi$};
+		\node [style=none] (14) at (-7, -0.25) {};
+		\node [style=none] (15) at (-7, -1.75) {};
+		\node [style=none] (16) at (-8, -1) {};
+		\node [style=none] (21) at (-6.5, 1.5) {};
+		\node [style=none] (22) at (-6.5, 0.5) {};
+		\node [style=none] (23) at (-4.5, 1) {};
+		\node [style=none] (24) at (-3.5, 1) {};
+		\node [style=none] (25) at (-7, 1.5) {$\overline{A}$};
+		\node [style=none] (26) at (-7, 0.5) {$\overline{B}$};
+		\node [style=none] (27) at (-2.5, 1) {$\overline{A \otimes B}$};
+		\node [style=none] (28) at (4.525, 2) {};
+		\node [style=none] (29) at (4.525, 0) {};
+		\node [style=none] (30) at (3.525, 1.5) {};
+		\node [style=none] (31) at (3.525, 0.5) {};
+		\node [style=none] (32) at (4.525, 1.5) {};
+		\node [style=none] (33) at (4.525, 0.5) {};
+		\node [style=none] (34) at (4.025, 1) {$\Phi^*$};
+		\node [style=none] (35) at (5.525, 1.5) {};
+		\node [style=none] (36) at (5.525, 0.5) {};
+		\node [style=none] (37) at (3.525, 1) {};
+		\node [style=none] (38) at (2.525, 1) {};
+		\node [style=none] (39) at (6.025, 1.5) {$\overline{A}$};
+		\node [style=none] (40) at (6.025, 0.5) {$\overline{B}$};
+		\node [style=none] (41) at (1.525, 1) {$\overline{A \otimes B}$};
+		\node [style=none] (42) at (-6, -1) {};
+		\node [style=none] (43) at (-7, -1) {};
+		\node [style=none] (44) at (-5.25, -1) {$\overline{I_\mathcal{C}}$};
+		\node [style=none] (45) at (6.375, -1) {$\varphi^*$};
+		\node [style=none] (46) at (6.025, -0.25) {};
+		\node [style=none] (47) at (6.025, -1.75) {};
+		\node [style=none] (48) at (7.025, -1) {};
+		\node [style=none] (49) at (5.025, -1) {};
+		\node [style=none] (50) at (6.025, -1) {};
+		\node [style=none] (51) at (4.275, -1) {$\overline{I_\mathcal{C}}$};
+		\node [style=none] (52) at (-1, -0.5) {};
+		\node [style=none] (53) at (-1, -1.5) {};
+		\node [style=none] (54) at (0, -1.5) {};
+		\node [style=none] (55) at (0, -0.5) {};
+		\node [style=none] (56) at (-0.5, -1) {$\overline{f}$};
+		\node [style=none] (57) at (-2, -1) {};
+		\node [style=none] (58) at (-1, -1) {};
+		\node [style=none] (59) at (0, -1) {};
+		\node [style=none] (60) at (1, -1) {};
+		\node [style=none] (61) at (-2.725, -1) {$\overline{A}$};
+		\node [style=none] (62) at (1.525, -1) {$\overline{B}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (1.center)
+			 to (0.center)
+			 to (2.center)
+			 to (3.center)
+			 to cycle;
+		\draw (15.center)
+			 to (14.center)
+			 to (16.center)
+			 to cycle;
+		\draw (21.center) to (10.center);
+		\draw (22.center) to (11.center);
+		\draw (23.center) to (24.center);
+		\draw (29.center)
+			 to (28.center)
+			 to (30.center)
+			 to (31.center)
+			 to cycle;
+		\draw (35.center) to (32.center);
+		\draw (36.center) to (33.center);
+		\draw (37.center) to (38.center);
+		\draw (47.center)
+			 to (46.center)
+			 to (48.center)
+			 to cycle;
+		\draw (54.center)
+			 to (53.center)
+			 to (52.center)
+			 to (55.center)
+			 to cycle;
+		\draw (57.center) to (58.center);
+		\draw (59.center) to (60.center);
+		\draw [style=H] (43.center) to (42.center);
+		\draw [style=H] (50.center) to (49.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
