@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{CGG{\etalchar{+}}22}
+\begin{thebibliography}{GPAM{\etalchar{+}}14}
 
 \bibitem[Bas22]{bastian_google_2022}
 Matthias Bastian.
@@ -59,6 +59,14 @@ Bob Coecke and Ross Duncan.
 \newblock {\em New Journal of Physics}, 13(4):043016, April 2011.
 \newblock arXiv:0906.4725 [quant-ph].
 
+\bibitem[CG16]{chen_xgboost_2016}
+Tianqi Chen and Carlos Guestrin.
+\newblock {XGBoost}: {A} {Scalable} {Tree} {Boosting} {System}.
+\newblock In {\em Proceedings of the 22nd {ACM} {SIGKDD} {International}
+  {Conference} on {Knowledge} {Discovery} and {Data} {Mining}}, pages 785--794,
+  August 2016.
+\newblock arXiv:1603.02754 [cs].
+
 \bibitem[CGG{\etalchar{+}}22]{cruttwell_categorical_2022}
 Geoffrey~SH Cruttwell, Bruno Gavranović, Neil Ghani, Paul Wilson, and Fabio
   Zanasi.
@@ -113,6 +121,12 @@ Bob Coecke.
 \newblock Compositionality as we see it, everywhere around us, October 2021.
 \newblock arXiv:2110.05327 [quant-ph].
 
+\bibitem[CSC10]{coecke_mathematical_2010}
+Bob Coecke, Mehrnoosh Sadrzadeh, and Stephen Clark.
+\newblock Mathematical {Foundations} for a {Compositional} {Distributional}
+  {Model} of {Meaning}, March 2010.
+\newblock arXiv:1003.4394 [cs, math].
+
 \bibitem[FGP21]{fritz_finettis_2021}
 Tobias Fritz, Tomáš Gonda, and Paolo Perrone.
 \newblock De {Finetti}'s {Theorem} in {Categorical} {Probability}.
@@ -130,6 +144,18 @@ Luciano Floridi.
 \newblock Selbst concrete {Dinge} sind nicht immer vorstellbar. {Man} muss die
   {Wörter} im {Satze} betrachten, wenn man nach ihrer {Bedeutung} fragt.
 \newblock In {\em Die {Grundlagen} der arithmetik}. 1884.
+
+\bibitem[GPAM{\etalchar{+}}14]{goodfellow_generative_2014}
+Ian~J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David
+  Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio.
+\newblock Generative {Adversarial} {Networks}, June 2014.
+\newblock arXiv:1406.2661 [cs, stat].
+
+\bibitem[Gä14]{gardenfors_geometry_2014}
+Peter Gärdenfors.
+\newblock {\em The {Geometry} of {Meaning}: {Semantics} {Based} on {Conceptual}
+  {Spaces}}.
+\newblock January 2014.
 
 \bibitem[HBK{\etalchar{+}}21]{hendrycks_measuring_2021}
 Dan Hendrycks, Collin Burns, Saurav Kadavath, Akul Arora, Steven Basart, Eric
@@ -173,9 +199,25 @@ André Joyal and Ross Street.
 \newblock The geometry of tensor calculus, {I}.
 \newblock {\em Advances in Mathematics}, 88(1):55--112, July 1991.
 
+\bibitem[Kan19]{kanerva_computing_2019}
+Pentti Kanerva.
+\newblock Computing with {High}-{Dimensional} {Vectors}.
+\newblock {\em IEEE Design \& Test}, 36(3):7--14, June 2019.
+
 \bibitem[Kha23]{khan_what_2023}
 Tabarak Khan.
 \newblock What are tokens and how to count them?, 2023.
+
+\bibitem[KS16]{kriegeskorte_grid_2016}
+Nikolaus Kriegeskorte and Katherine~R. Storrs.
+\newblock Grid {Cells} for {Conceptual} {Spaces}?
+\newblock {\em Neuron}, 92(2):280--284, October 2016.
+
+\bibitem[KWM23]{koralus_humans_2023}
+Philipp Koralus and Vincent Wang-Maścianica.
+\newblock Humans in {Humans} {Out}: {On} {GPT} {Converging} {Toward} {Common}
+  {Sense} in both {Success} and {Failure}, March 2023.
+\newblock arXiv:2303.17276 [cs].
 
 \bibitem[Lan10]{lane_categories_2010}
 Saunders~Mac Lane.
@@ -183,11 +225,25 @@ Saunders~Mac Lane.
 \newblock Springer, New York, NY, 2nd ed. 1978. softcover reprint of the
   original 2nd ed. 1978 edition edition, November 2010.
 
+\bibitem[LAS21]{lietard_language_2021}
+Bastien Liétard, Mostafa Abdou, and Anders Søgaard.
+\newblock Do {Language} {Models} {Know} the {Way} to {Rome}?
+\newblock In {\em Proceedings of the {Fourth} {BlackboxNLP} {Workshop} on
+  {Analyzing} and {Interpreting} {Neural} {Networks} for {NLP}}, pages
+  510--517, Punta Cana, Dominican Republic, November 2021. Association for
+  Computational Linguistics.
+
 \bibitem[LBH15]{lecun_deep_2015}
 Yann LeCun, Yoshua Bengio, and Geoffrey Hinton.
 \newblock Deep learning.
 \newblock {\em Nature}, 521(7553):436--444, May 2015.
 \newblock Number: 7553 Publisher: Nature Publishing Group.
+
+\bibitem[LGT23]{liu_seeing_2023}
+Ziming Liu, Eric Gan, and Max Tegmark.
+\newblock Seeing is {Believing}: {Brain}-{Inspired} {Modular} {Training} for
+  {Mechanistic} {Interpretability}, May 2023.
+\newblock arXiv:2305.08746 [cond-mat, q-bio].
 
 \bibitem[LT23]{lorenz_causal_2023}
 Robin Lorenz and Sean Tull.
@@ -200,6 +256,11 @@ Saunders MacLane.
 \newblock {\em Rice Institute Pamphlet - Rice University Studies}, 49(4),
   October 1963.
 \newblock Accepted: 2011-11-08T19:13:47Z Publisher: Rice University.
+
+\bibitem[Mar77]{marr_artificial_1977}
+D.~Marr.
+\newblock Artificial intelligence—{A} personal view.
+\newblock {\em Artificial Intelligence}, 9(1):37--48, August 1977.
 
 \bibitem[MN21]{mcshane_linguistics_2021}
 Marjorie McShane and Sergei Nirenburg.
@@ -258,6 +319,12 @@ Paweł Sobociński.
 Richard Sutton.
 \newblock The {Bitter} {Lesson}, 2019.
 
+\bibitem[Sø23]{sogaard_grounding_2023}
+Anders Søgaard.
+\newblock Grounding the {Vector} {Space} of an {Octopus}: {Word} {Meaning} from
+  {Raw} {Text}.
+\newblock {\em Minds and Machines}, 33(1):33--54, March 2023.
+
 \bibitem[{ted}22]{teddy_teddynpc_i_2022}
 {teddy [@teddynpc]}.
 \newblock I made {ChatGPT} take a full {SAT} test. {Here}'s how it did:
@@ -285,5 +352,18 @@ Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
   Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
 \newblock Attention {Is} {All} {You} {Need}, December 2017.
 \newblock arXiv:1706.03762 [cs].
+
+\bibitem[Wol02]{wolfram_new_2002}
+Stephen Wolfram.
+\newblock {\em A {New} {Kind} of {Science}}.
+\newblock Wolfram Media Inc, Champaign, IL, illustrated edition edition, August
+  2002.
+
+\bibitem[WWS{\etalchar{+}}23]{wei_chain--thought_2023-1}
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia,
+  Ed~Chi, Quoc Le, and Denny Zhou.
+\newblock Chain-of-{Thought} {Prompting} {Elicits} {Reasoning} in {Large}
+  {Language} {Models}, January 2023.
+\newblock arXiv:2201.11903 [cs].
 
 \end{thebibliography}
