@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  16 MAY 2023 12:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  24 MAY 2023 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1558,6 +1558,12 @@ LaTeX Warning: Unused global option(s):
 
 (./chap2.aux
 
+LaTeX Warning: Label `fig:GFOLex3a' multiply defined.
+
+
+LaTeX Warning: Label `fig:GFOLex3a' multiply defined.
+
+
 LaTeX Warning: Label `fig:plan1' multiply defined.
 
 
@@ -1873,6 +1879,10 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
 (Font)              scaled to size 12.0pt on input line 1.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 3.
+LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 3.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
 (Font)              scaled to size 10.0pt on input line 5.
 LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
@@ -1887,26 +1897,45 @@ LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 (./figures/tree2gate/workedexample/bigexaltogether.tikz
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 (Font)              scaled to size 9.0pt on input line 32.
-) [5]
-LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 11.
-LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 11.
+)
+Overfull \hbox (241.83076pt too wide) detected at line 7
+[]
+ []
 
-(./figures/intro/GFOLex.tikz) [6]
-Underfull \vbox (badness 4765) has occurred while \output is active []
-
- [7]
-(./figures/intro/GFOLex2a.tikz
+[5]
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 7.5pt on input line 26.
+(Font)              scaled to size 7.5pt on input line 15.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 26.
-) (./figures/intro/GFOLex2b.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(Font)              scaled to size 6.0pt on input line 15.
+ [6] (./figures/intro/GFOLex.tikz)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 30.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 30.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 30.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 30.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 30.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 30.
+ (./figures/intro/GFOLex2a.tikz)
 
- [8]
-(./figures/intro/GFOLex2c.tikz) (./figures/intro/GFOLex2d.tikz)
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figures/intro/GFOLex2b.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figures/intro/GFOLex2c.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figures/intro/GFOLex2d.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 (./figures/intro/GFOLex2.tikz
 
 ! LaTeX Error: Environment pFconlayer undefined.
@@ -1979,28 +2008,38 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
-(./figures/intro/GFOLex3a.tikz) (./figures/intro/GFOLex3b.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- [10]
-(./figures/intro/GFOLex3.tikz) [11]
+[7] [8] [9] [10] (./figures/intro/GFOLex3a.tikz) (./figures/intro/GFOLex3b.tikz
+) (./figures/intro/GFOLex3.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 88.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 88.
+LaTeX Font Info:    Trying to load font information for T1+zplsups on input lin
+e 90.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/t1zplsups.fd
+File: t1zplsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
+(Font)              scaled to size 10.0pt on input line 90.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 90.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 90.
+ [11
+
+]
+(./figures/tree2gate/conventions/outsidein.tikz)
+(./figures/tree2gate/conventions/insideout.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 (./figures/tree2gate/mfunctorbox/mfbox-notation.tikz)
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 69.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 69.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 69.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 69.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 69.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 69.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2021,16 +2060,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/tree2gate/mfunctorbox/mfbox-prefibex.tikz)
-LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 94.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/tree2gate/mfunctorbox/mfbox-fibration.tikz)
-LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 104.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2040,11 +2073,6 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/tree2gate/workedexample/gather_quickly.tikz)
-LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 123.
-LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 123.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2053,37 +2081,37 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [12] [13] [14] [15] [16] [17] (./figures/strictify/strictgens.tikz)
-Overfull \hbox (12.00053pt too wide) detected at line 150
+Overfull \hbox (12.00053pt too wide) detected at line 189
 []
  []
 
 (./figures/strictify/strictfunct.tikz)
-Overfull \hbox (12.00652pt too wide) detected at line 157
+Overfull \hbox (12.00652pt too wide) detected at line 196
 []
  []
 
 (./figures/strictify/strictadapt.tikz)
-Overfull \hbox (11.9968pt too wide) detected at line 164
+Overfull \hbox (11.9968pt too wide) detected at line 203
 []
  []
 
 (./figures/strictify/strictators.tikz)
-Overfull \hbox (12.00616pt too wide) detected at line 171
+Overfull \hbox (12.00616pt too wide) detected at line 210
 []
  []
 
 
-Overfull \hbox (30.98573pt too wide) in paragraph at lines 180--180
+Overfull \hbox (30.98573pt too wide) in paragraph at lines 219--219
 [] 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+zplTLF on input lin
-e 187.
+e 226.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 File: ts1zpltlf.fd 2021/11/24 v1.0 fd file for TS1/zplTLF
 )
 LaTeX Font Info:    Font shape `TS1/zplTLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 187.
+(Font)              scaled to size 10.0pt on input line 226.
 
 (./figures/strictify/strictstate.tikz) (./figures/strictify/stricteval.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2095,7 +2123,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ! Undefined control sequence.
 <argument> ... (c,u)}{\longrightarrow } \mathtext 
                                                   {cod}(\varphi (c,u))\] The...
-l.214 }
+l.253 }
        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2106,7 +2134,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...ack where you started.\[f(\mathtext 
                                                   {cod}(\varphi (c,u))) = b\...
-l.214 }
+l.253 }
        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2117,7 +2145,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...(c, v \circ u) = \varphi (\mathtext 
                                                   {cod}(\mathtext {cod}(\var...
-l.214 }
+l.253 }
        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2128,7 +2156,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ... \varphi (\mathtext {cod}(\mathtext 
                                                   {cod}(\varphi (c,u))),v) \...
-l.214 }
+l.253 }
        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2145,7 +2173,7 @@ and I'll forget about whatever was undefined.
 (./figures/tree2gate/workedexample/gather_adp.tikz)
 (./figures/tree2gate/workedexample/bigex_3.tikz)
 (./figures/tree2gate/workedexample/bigex_4.tikz)
-Overfull \hbox (516.1515pt too wide) detected at line 278
+Overfull \hbox (516.1515pt too wide) detected at line 321
 []  \LS1/stix/m/n/10 =  []
  []
 
@@ -2157,13 +2185,13 @@ Overfull \vbox (42.49768pt too high) has occurred while \output is active []
 
 
 [23] (./figures/tree2gate/workedexample/gather_to.tikz)
-Overfull \hbox (69.64845pt too wide) detected at line 280
+Overfull \hbox (69.64845pt too wide) detected at line 323
 []
  []
 
 (./figures/tree2gate/workedexample/bigex_4.tikz)
 (./figures/tree2gate/workedexample/bigex_5.tikz)
-Overfull \hbox (516.14453pt too wide) detected at line 284
+Overfull \hbox (516.14453pt too wide) detected at line 327
 []  \LS1/stix/m/n/10 =  []
  []
 
@@ -2176,7 +2204,7 @@ Overfull \vbox (42.49768pt too high) has occurred while \output is active []
 
 [25] (./figures/tree2gate/workedexample/bigex_5.tikz)
 (./figures/tree2gate/workedexample/bigex_6.tikz)
-Overfull \hbox (516.13513pt too wide) detected at line 288
+Overfull \hbox (516.13513pt too wide) detected at line 331
 []  \LS1/stix/m/n/10 =  []
  []
 
@@ -2185,13 +2213,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
 (./figures/tree2gate/workedexample/gather_scv.tikz)
-Overfull \hbox (46.3039pt too wide) detected at line 292
+Overfull \hbox (46.3039pt too wide) detected at line 335
 []
  []
 
 (./figures/tree2gate/workedexample/bigex_7.tikz)
 (./figures/tree2gate/workedexample/bigex_8.tikz)
-Overfull \hbox (516.15755pt too wide) detected at line 296
+Overfull \hbox (516.15755pt too wide) detected at line 339
 []  \LS1/stix/m/n/10 =  []
  []
 
@@ -2204,7 +2232,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
 (./figures/tree2gate/workedexample/bigex_a0.tikz)
-Overfull \hbox (1.99979pt too wide) detected at line 300
+Overfull \hbox (1.99979pt too wide) detected at line 343
 []
  []
 
@@ -2243,7 +2271,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 File: UTF8.chr 2021/10/16 4.8.5
 )
 LaTeX Font Info:    Trying to load font information for C70+gbsn on input line 
-344.
+387.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fd
 File: c70gbsn.fd 2021/10/16 4.8.5
@@ -2257,12 +2285,12 @@ File: c70gbsn.fdx 2021/10/16 4.8.5
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
-Overfull \hbox (16.63567pt too wide) detected at line 458
+Overfull \hbox (16.63567pt too wide) detected at line 501
 []
  []
 
 
-Overfull \hbox (16.63567pt too wide) detected at line 467
+Overfull \hbox (16.63567pt too wide) detected at line 510
 []
  []
 
@@ -2280,38 +2308,40 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `chap2.out' has not changed.
-(rerunfilecheck)             Checksum: 76425528A8AB7BDF61F24218C3EA67DE;1800.
+(rerunfilecheck)             Checksum: 8F34BE7F5E06FC2EBB4A739D5FC6300F;1630.
  ) 
 Here is how much of TeX's memory you used:
- 53668 strings out of 478268
- 1159107 string characters out of 5846348
- 1891262 words of memory out of 5000000
- 70710 multiletter control sequences out of 15000+600000
- 601329 words of font info for 157 fonts, out of 8000000 for 9000
+ 53753 strings out of 478268
+ 1160772 string characters out of 5846348
+ 1931881 words of memory out of 5000000
+ 70785 multiletter control sequences out of 15000+600000
+ 602582 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,17n,121p,2130b,1395s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,17n,121p,2063b,1395s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}{/usr/
-local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/usr/loc
-al/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/tex
-live/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/2022
-/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4e.pfb></usr/local/texlive/2022/texmf
--dist/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/local/texlive/2022/texmf-dist/
-fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2022/texmf-dist/fonts/
-type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-dist/fonts/ty
-pe1/public/stix/stix-mathex.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
-/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pu
-blic/stix/stix-mathrm-bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
-public/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pub
-lic/stix/stix-mathscr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publi
-c/stix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/s
-tix/stix-mathtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfo
-nts/t1xtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplb
-.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplr.pfb></us
-r/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on chap2.pdf (37 pages, 381377 bytes).
+local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/npxsups_T1.enc}{/usr/local/
+texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/usr/local/tex
+live/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2
+022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/2022/texmf
+-dist/fonts/type1/arphic/gbsnu/gbsnu4e.pfb></usr/local/texlive/2022/texmf-dist/
+fonts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/local/texlive/2022/texmf-dist/fonts/
+type1/public/newpx/npxsups-Regular.pfb></usr/local/texlive/2022/texmf-dist/font
+s/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type
+1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
+public/stix/stix-mathex.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pub
+lic/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public
+/stix/stix-mathrm-bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publ
+ic/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/
+stix/stix-mathscr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/st
+ix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix/
+stix-mathtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/
+t1xtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb
+></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/lo
+cal/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
+Output written on chap2.pdf (37 pages, 385473 bytes).
 PDF statistics:
  374 PDF objects out of 1000 (max. 8388607)
- 282 compressed objects within 3 object streams
- 75 named destinations out of 1000 (max. 500000)
- 2733 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 280 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 2725 words of extra memory for PDF output out of 10000 (max. 10000000)
 
