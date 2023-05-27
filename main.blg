@@ -9,48 +9,51 @@ Warning--I didn't find a database entry for "wilson_string_2022"
 Warning--I didn't find a database entry for "merry_reasoning_2014"
 Warning--I didn't find a database entry for "quick_-logic_2015"
 Warning--I didn't find a database entry for "zamdzhiev_rewriting_2017"
+Warning--empty booktitle in bonchi_categorical_2014
+Warning--empty publisher in frege_gottlob_selbst_1884
+Warning--empty publisher in gardenfors_geometry_2014
 Warning--empty publisher in mcshane_linguistics_2021
 Warning--empty booktitle in selinger_survey_2010
 Warning--empty publisher in selinger_survey_2010
-You've used 23 entries,
+You've used 59 entries,
             2118 wiz_defined-function locations,
-            625 strings with 9057 characters,
-and the built_in function-call counts, 8357 in all, are:
-= -- 728
-> -- 594
-< -- 3
-+ -- 245
-- -- 216
-* -- 641
-:= -- 1437
-add.period$ -- 66
-call.type$ -- 23
-change.case$ -- 174
+            816 strings with 15847 characters,
+and the built_in function-call counts, 20239 in all, are:
+= -- 1863
+> -- 1212
+< -- 10
++ -- 490
+- -- 422
+* -- 1466
+:= -- 3385
+add.period$ -- 184
+call.type$ -- 59
+change.case$ -- 380
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 237
-empty$ -- 557
-format.name$ -- 216
-if$ -- 1661
+cite$ -- 65
+duplicate$ -- 650
+empty$ -- 1499
+format.name$ -- 422
+if$ -- 4151
 int.to.chr$ -- 0
-int.to.str$ -- 23
-missing$ -- 16
-newline$ -- 113
-num.names$ -- 46
-pop$ -- 236
+int.to.str$ -- 59
+missing$ -- 41
+newline$ -- 298
+num.names$ -- 120
+pop$ -- 516
 preamble$ -- 1
-purify$ -- 154
+purify$ -- 326
 quote$ -- 0
-skip$ -- 197
+skip$ -- 520
 stack$ -- 0
-substring$ -- 295
-swap$ -- 43
-text.length$ -- 3
+substring$ -- 872
+swap$ -- 129
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 84
-warning$ -- 3
-while$ -- 59
-width$ -- 25
-write$ -- 235
-(There were 9 warnings)
+type$ -- 222
+warning$ -- 6
+while$ -- 169
+width$ -- 61
+write$ -- 631
+(There were 12 warnings)

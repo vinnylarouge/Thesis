@@ -1,6 +1,6 @@
 \section{How do we communicate using language?}
 
-\marginnote[-1cm]{There is a distinction between \emph{grammars of the speaker} -- which produce sentences -- and \emph{grammars of the listener} -- which deduce sentences. Viewed as mathematical processes, the two kinds of grammars go in opposite directions; speaking grammars (e.g. string-rewrite systems) start with some grammatical structure, and require informational input (e.g. which rule comes next) to produce lists of words -- sentences. Conversely, listening grammars (e.g. typelogical grammars) start with a sentence, and require informational input (e.g. grammatical typing and which proof rule to try next) to deduce or parse a grammatical structure. Since we can understand each other, these two types of grammar must enjoy a systematic correspondence, and if one believes that semantics is compositional according to syntax, then the correspondence must further explain how both speaking and listening grammars manipulate the same underlying semantic expression, whatever that may be. \textbf{I argue that cofunctors capture this correspondence.}}
+\marginnote{There is a distinction between \emph{grammars of the speaker} -- which produce sentences -- and \emph{grammars of the listener} -- which deduce sentences. Viewed as mathematical processes, the two kinds of grammars go in opposite directions; speaking grammars (e.g. string-rewrite systems) start with some grammatical structure, and require informational input (e.g. which rule comes next) to produce lists of words -- sentences. Conversely, listening grammars (e.g. typelogical grammars) start with a sentence, and require informational input (e.g. grammatical typing and which proof rule to try next) to deduce or parse a grammatical structure. Since we can understand each other, these two types of grammar must enjoy a systematic correspondence, and if one believes that semantics is compositional according to syntax, then the correspondence must further explain how both speaking and listening grammars manipulate the same underlying semantic expression, whatever that may be. \textbf{I argue that cofunctors capture this correspondence.}}
 
 \newthought{Speakers and listeners understand one another.} Obviously, natural language involves communication, which involves at minimum a speaker and a listener, or a producer and a parser. The fact that communication happens at all is an everyday miracle that any formal understanding of language must account for. The miracle remains so even if we cautiously hedge to exclude pragmatics and context and only encompass small and boring fragments of factual language like \texttt{Alice sees Bob quickly run to school}. At minimum, we should be able to model a single conversational turn, where a speaker produces a sentence, the listener parses it, and both agree on the semantics. Here is a sequence of diagram equations that demonstrates mathematically how the miracle works for two toy grammars, for the sentence \texttt{Alice sees Bob quickly run to school}. On the left we have a grammatical structure obtained from a context-free grammar, and we have equations from a discrete monoidal fibration all the way to the right, where we obtain a pregroup representation of the same sentence. Going from right to left recovers the correspondence in the other direction.
 
@@ -295,7 +295,7 @@ Pregroups by themselves are thin rigid autonomous categories, meaning there is a
 
 
 \newpage
-\section{Communicative constraints as a cofunctor from productive to parsing grammar}
+\subsection{Communicative constraints as a cofunctor from productive to parsing grammar}
 \begin{figure}[h!]\label{fig:plan1}
 \[\resizebox{0.75\textwidth}{!}{\tikzfig{tree2gate/workedexample/bigex012}}\]
 \caption{}
@@ -363,15 +363,15 @@ The pregroup diagram corresponds to a particular pregroup proof of the syntactic
 
 
 \clearpage
-\section{Relating circuits and CFGs fibrationally}
+\subsection{Relating circuits and CFGs fibrationally}
 
 \clearpage
-\section{Where internal wirings come from}
+\subsection{Where internal wirings come from}
 
 \subsection{Discrete monoidal fibrations for grammatical functions}
 
 \clearpage
-\section{Discussion and Limitations}
+\subsection{Discussion and Limitations}
 
 \newthought{What are the assumptions and limitations?} In my view, the preceding analysis is fair if one entertains the following three commitments.
 
