@@ -1,0 +1,72 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\newpmemlabel{^_1}{1}
+\@writefile{toc}{\contentsline {section}{\numberline {-1.1}An introduction to weak n-categories for formal linguists}{4}{section.-1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The category in question can be visualised as a commutative diagram.}}{5}{subsection.-1.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces When there are too many generating morphisms, we can instead present the same data as a table of $n$-cells; there is a single 0-cell $\star $, and three non-identity 1-cells corresponding to $\leavevmode {\color  {green}\alpha }, \leavevmode {\color  {orange}\beta }, \leavevmode {\color  {cyan}\gamma }$, each with source and target 0-cells $\star $. Typically identity morphisms can be omitted from tables as they come for free. Observe that composition of identities enforces the behaviour of the empty string, so that for any string $x$, we have $\epsilon \cdot x = x = \epsilon \cdot x$.}}{5}{subsection.-1.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces For a concrete example, we can depict the string $\leavevmode {\color  {green}\alpha } \cdot \leavevmode {\color  {cyan}\gamma } \cdot \leavevmode {\color  {cyan}\gamma } \cdot \leavevmode {\color  {orange}\beta }$ as a morphism in a commuting diagram.}}{5}{subsection.-1.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.1.1}String-rewrite systems as 1-object-2-categories}{5}{subsection.-1.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The string-diagrammatic view, where $\star $ is treated as a wire and morphisms are treated as boxes or dots is an expression of the same data under the Poincar\'{e} dual.}}{6}{subsection.-1.1.1}\protected@file@percent }
+\newlabel{fig:ruleR}{{-1.1.1}{6}{String-rewrite systems as 1-object-2-categories}{subsection.-1.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces We can visualise the rule as a commutative diagram where $\leavevmode {\color  {magenta}R}$ is a 2-cell between the source and target 1-cells. Just as 1-cells are arrows between 0-cell points in a commuting diagram, a 2-cell can also be conceptualised as a directed surface from a 1-cell to another. Taking the Poincar\'{e} dual of this view gives us a string diagram for the 2-cell $\leavevmode {\color  {magenta}R}$.}}{6}{subsection.-1.1.1}\protected@file@percent }
+\newlabel{fig:cfgsig}{{-1.1.1}{7}{String-rewrite systems as 1-object-2-categories}{subsection.-1.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces A context-free grammar for \texttt  {Alice sees Bob quickly run to school}. We can describe a context-free grammar with the same combinatorial rewriting data that specifies planar string diagrams as we have been illustrating so far. One aspect of rewrite systems we adapt for now is the distinction between terminal and nonterminal symbols; terminal symbols are those after which no further rewrites are possible. We capture this string-diagrammatically by modelling terminal rewrites as 2-cells with target equal to the 1-cell identity of the 0-cell $\star $, which amounts to graphically terminating a wire. The generators subscripted $L$ (for \emph  {label} or \emph  {leaf}) correspond to terminals of the CFG, and represent a family of generators indexed by a lexicon for the language. The generators subscripted $i$ (for \emph  {introducing a type}) correspond to rewrites of the CFG. Reading the central diagram in the main body from left-to-right, we additionally depict the breakdown of the derivation in terms of rewrites of lower dimension from our signature. }}{7}{subsection.-1.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.1.2}Tree Adjoining Grammars}{8}{subsection.-1.1.2}\protected@file@percent }
+\newlabel{prop:cfgastag1}{{-1.1.4}{9}{Leaf-ansatzes of CFGs are precisely TAGs with only initial trees and substitution}{theorem.-1.1.4}{}}
+\newpmemlabel{^_3}{10}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Leaf-ansatz signature of \texttt  {Alice sees Bob quickly run to school} CFG}}{10}{theorem.-1.1.4}\protected@file@percent }
+\newpmemlabel{^_2}{11}
+\newpmemlabel{^_4}{11}
+\newpmemlabel{^_5}{11}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Adjoining is sprouting subtrees in the middle of branches. One way we might obtain the sentence \texttt  {Bob runs to school} is to start from the simpler sentence \texttt  {Bob runs}, and then refine the verb \texttt  {runs} into \texttt  {runs to school}. This refinement on part of an already completed sentence is not permitted in CFGs, since terminals can no longer be modified. The adjoining operation of TAGs gets around this constraint by permitting rewrites in the middle of trees.}}{11}{theorem.-1.1.4}\protected@file@percent }
+\newpmemlabel{^_7}{12}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces TAG signature of \texttt  {Alice sees Bob quickly run to school}. The highlighted 2-cells are auxiliary trees that replace CFG 2-cells for verbs with sentential complement, adverbs, and adpositions. The highlighted 3-cells are the tree adjoining operations of the auxiliary trees.}}{12}{theorem.-1.1.4}\protected@file@percent }
+\newpmemlabel{^_6}{13}
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.1.3}Tree adjoining grammars with local constraints}{13}{subsection.-1.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.1.4}Braiding, symmetries, and suspension}{15}{subsection.-1.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.1.5}TAGs with links}{20}{subsection.-1.1.5}\protected@file@percent }
+\citation{wilson_string_2022}
+\citation{merry_reasoning_2014}
+\citation{quick_-logic_2015}
+\citation{zamdzhiev_rewriting_2017}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Nouns are represented by wires, each `distinct' noun having its own wire.}}{27}{theorem.-1.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces We represent adjectives, intransitive verbs, and transitive verbs by gates acting on noun-wires. Since a transitive verb has both a subject and an object noun, that will then be two noun-wires, while adjectives and intransitive verbs only have one.}}{27}{theorem.-1.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {-1.2}Text circuits}{27}{section.-1.2}\protected@file@percent }
+\newlabel{sec:circs}{{-1.2}{27}{Text circuits}{section.-1.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Adverbs, which modify verbs, we represent as boxes with holes in them, with a number of dangling wires in the hole indicating the shape of gate expected, and these should match the input- and output-wires of the box with the whole.}}{28}{theorem.-1.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Similarly, adpositions also modify verbs, by moreover adding another noun-wire to the right.}}{28}{theorem.-1.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {-1.3}A generative grammar for text circuits}{28}{section.-1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.3.1}A circuit-growing grammar}{28}{subsection.-1.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.3.2}Sentences}{28}{subsection.-1.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces For verbs that take sentential complements and conjunctions, we have families of boxes to accommodate input circuits of all sizes. They add another noun-wire to the left of a circuit.}}{29}{theorem.-1.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Conjunctions are boxes that take two circuits which might share labels on some wires.}}{29}{theorem.-1.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.3.3}Simple sentences}{29}{subsection.-1.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces As special cases, when the noun-wires of two circuits are disjoint or coincide, we depict them accordingly.}}{30}{theorem.-1.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Of course filled up boxes are just gates.}}{30}{theorem.-1.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.3.4}Modifiers}{30}{subsection.-1.3.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Gates compose sequentially by matching labels on some of their noun-wires and in parallel when they share no noun-wires, to give \underline  {text circuits}.}}{31}{theorem.-1.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.3.5}Rewriting to circuit-form}{31}{subsection.-1.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.3.6}Extensions I: relative and reflexive pronouns}{31}{subsection.-1.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.3.7}Extensions II: grammar equations}{32}{subsection.-1.3.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.3.8}Extensions III: higher-order modifiers}{32}{subsection.-1.3.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.3.9}Equivalence to internal wirings}{32}{subsection.-1.3.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.3.10}Text circuit theorem}{32}{subsection.-1.3.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {-1.3.11}Related work}{32}{subsection.-1.3.11}\protected@file@percent }
+\ttl@finishall
+\gdef \@abspage@last{32}

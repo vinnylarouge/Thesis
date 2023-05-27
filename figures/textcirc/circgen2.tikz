@@ -1,0 +1,106 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (172) at (-2.75, -4.75) {};
+		\node [style=none] (173) at (-1.75, -5.25) {\texttt{SOBER}};
+		\node [style=none] (174) at (-0.75, -4.75) {};
+		\node [style=none] (175) at (-0.75, -5.75) {};
+		\node [style=none] (176) at (-2.75, -5.75) {};
+		\node [style=none] (177) at (-1.75, -4) {};
+		\node [style=none] (178) at (-1.75, -4.75) {};
+		\node [style=none] (179) at (-1.75, -3.25) {\texttt{ALICE}};
+		\node [style=none] (180) at (1.25, -3.25) {\texttt{BOB}};
+		\node [style=none] (181) at (1.25, -4) {};
+		\node [style=none] (182) at (1.25, -6.75) {};
+		\node [style=none] (183) at (-1.75, -6.75) {};
+		\node [style=none] (184) at (-1.75, -5.75) {};
+		\node [style=none] (193) at (-0.5, -7) {};
+		\node [style=none] (194) at (3, -7) {};
+		\node [style=none] (195) at (-0.5, -9.25) {};
+		\node [style=none] (196) at (3, -9.25) {};
+		\node [style=none] (197) at (0.25, -7.25) {};
+		\node [style=none] (198) at (0.25, -8.25) {};
+		\node [style=none] (199) at (2.25, -7.25) {};
+		\node [style=none] (200) at (2.25, -8.25) {};
+		\node [style=none] (201) at (1.25, -7.75) {\texttt{DANCE}};
+		\node [style=none] (202) at (-0.5, -7) {};
+		\node [style=none] (203) at (3, -7) {};
+		\node [style=none] (204) at (3, -9.25) {};
+		\node [style=none] (205) at (-0.5, -9.25) {};
+		\node [style=none] (206) at (1.25, -8.75) {\texttt{CLUMSILY}};
+		\node [style=none] (207) at (-2.5, -6.75) {};
+		\node [style=none] (208) at (3.25, -6.75) {};
+		\node [style=none] (209) at (3.25, -9.5) {};
+		\node [style=none] (210) at (-2.5, -9.5) {};
+		\node [style=none] (211) at (-1.5, -8.25) {\texttt{SEES}};
+		\node [style=none] (213) at (-1.75, -9.5) {};
+		\node [style=none] (215) at (1.25, -9.5) {};
+		\node [style=none] (216) at (1.25, -10) {};
+		\node [style=none] (217) at (-1.75, -11.5) {};
+		\node [style=none] (218) at (0.25, -10) {};
+		\node [style=none] (219) at (1.25, -10.5) {\texttt{DRUNK}};
+		\node [style=none] (220) at (2.25, -10) {};
+		\node [style=none] (221) at (2.25, -11) {};
+		\node [style=none] (222) at (0.25, -11) {};
+		\node [style=none] (224) at (1.25, -11) {};
+		\node [style=none] (225) at (1.25, -11.5) {};
+		\node [style=none] (226) at (-3.25, -11.5) {};
+		\node [style=none] (227) at (2.25, -11.5) {};
+		\node [style=none] (228) at (-3.25, -13) {};
+		\node [style=none] (229) at (2.25, -13) {};
+		\node [style=none] (231) at (-3, -11.75) {};
+		\node [style=none] (232) at (-1.75, -12.25) {\texttt{LAUGHS}};
+		\node [style=none] (233) at (-0.5, -11.75) {};
+		\node [style=none] (234) at (-0.5, -12.75) {};
+		\node [style=none] (235) at (-3, -12.75) {};
+		\node [style=none] (236) at (1.25, -12.25) {\texttt{AT}};
+		\node [style=none] (237) at (-1.75, -13.5) {};
+		\node [style=none] (238) at (-1.75, -13.5) {};
+		\node [style=none] (239) at (-1.75, -13) {};
+		\node [style=none] (240) at (1.25, -13) {};
+		\node [style=none] (241) at (1.25, -13.5) {};
+		\node [style=none] (315) at (0, -10.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (172.center) to (174.center);
+		\draw (174.center) to (175.center);
+		\draw (175.center) to (176.center);
+		\draw (176.center) to (172.center);
+		\draw (177.center) to (178.center);
+		\draw (181.center) to (182.center);
+		\draw (184.center) to (183.center);
+		\draw [style=wF] (195.center)
+			 to (193.center)
+			 to (194.center)
+			 to (196.center)
+			 to cycle;
+		\draw (198.center) to (200.center);
+		\draw (197.center) to (199.center);
+		\draw (197.center) to (198.center);
+		\draw (199.center) to (200.center);
+		\draw (202.center) to (203.center);
+		\draw (202.center) to (205.center);
+		\draw (205.center) to (204.center);
+		\draw (203.center) to (204.center);
+		\draw (207.center) to (208.center);
+		\draw (208.center) to (209.center);
+		\draw (209.center) to (210.center);
+		\draw (210.center) to (207.center);
+		\draw (213.center) to (217.center);
+		\draw (215.center) to (216.center);
+		\draw (218.center) to (220.center);
+		\draw (220.center) to (221.center);
+		\draw (221.center) to (222.center);
+		\draw (222.center) to (218.center);
+		\draw (224.center) to (225.center);
+		\draw (226.center) to (227.center);
+		\draw (227.center) to (229.center);
+		\draw (229.center) to (228.center);
+		\draw (228.center) to (226.center);
+		\draw (231.center) to (233.center);
+		\draw (233.center) to (234.center);
+		\draw (234.center) to (235.center);
+		\draw (235.center) to (231.center);
+		\draw (239.center) to (238.center);
+		\draw (240.center) to (241.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

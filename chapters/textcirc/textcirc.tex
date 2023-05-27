@@ -1,58 +1,81 @@
 \section{Text circuits}\label{sec:circs}  
 
-%\bR A \emph{text circuit} is made up of \emph{gates}\e\TODOb{Not exactly true, because of holes.} -- which represent non-noun words -- which in turn are boxes with input and output wires that represent nouns. \bR The mathematical structure at play is a \textbf{Symmetric Monoidal Category, where all generating morphisms are endomorphisms}\e.\TODOb{That's not at all true, because of the holes.} 
-
-
-\subsection{Definition}
-
-Our \emph{text circuits} are made up of three ingredients:
+\marginnote{
+\begin{defn}[Text Circuits]
+\emph{Text circuits} are made up of three ingredients:
 \begin{itemize}
 \item wires
 \item boxes, or gates
 \item boxes with holes that fit a box, or 2nd order gates
 \end{itemize}
-Firstly, nouns are represented by wires, each `distinct' noun having its own wire:
+\end{defn}
+}
+
+\begin{marginfigure}
 \[
 \tikzfig{textcirc/nounwiresABN} 
 \]
-We represent adjectives, intransitive verbs, and transitive verbs by gates acting on noun-wires: 
+\caption{Nouns are represented by wires, each `distinct' noun having its own wire.}
+\end{marginfigure}
+
+\begin{marginfigure}
 \[
 \tikzfig{textcirc/ADJgate} \quad\quad\quad \tikzfig{textcirc/IVgate} \quad\quad\quad \tikzfig{textcirc/TVgate}
 \]
-Since a transitive verb has both a subject and an object  noun, that will then be two noun-wires, while adjectives and intransitive verbs only have one. 
+\caption{We represent adjectives, intransitive verbs, and transitive verbs by gates acting on noun-wires. Since a transitive verb has both a subject and an object noun, that will then be two noun-wires, while adjectives and intransitive verbs only have one.}
+\end{marginfigure}
 
-Adverbs, which modify verbs, we represent as boxes with holes in them, with a number of dangling wires in the hole indicating the shape of gate expected, and these should match the input- and output-wires  of the box with the whole:
+\begin{marginfigure}
 \[
 \tikzfig{textcirc/ADVbox}
 \]
-Similarly, adpositions also modify verbs, by moreover adding another noun-wire to the right:
+\caption{Adverbs, which modify verbs, we represent as boxes with holes in them, with a number of dangling wires in the hole indicating the shape of gate expected, and these should match the input- and output-wires  of the box with the whole.}
+\end{marginfigure}
+
+\begin{marginfigure}
 \[
 \tikzfig{textcirc/ADPIVbox}
-\]
-For verbs that take sentential complements and conjunctions, we have families of boxes to accommodate input circuits of all sizes. They add another noun-wire to the left of a circuit:\footnote{The `dot dot dot' notation within boxes is graphically formal \cite{wilson_string_2022}. Interpretations of such boxes were earlier formalised in \cite{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}.}
+\]  
+\caption{Similarly, adpositions also modify verbs, by moreover adding another noun-wire to the right.}
+\end{marginfigure}
+
+\begin{marginfigure}
 \[
 \tikzfig{textcirc/SCVbox}
 \]
-while conjunctions are boxes that take two circuits which might share labels on some wires:
-%\TODOj{This bit about CNJ boxes needs rejigging to be consistent with our current treatment}
+\caption{For verbs that take sentential complements and conjunctions, we have families of boxes to accommodate input circuits of all sizes. They add another noun-wire to the left of a circuit.}
+\end{marginfigure}
+
+\begin{marginfigure}
 \[
 \tikzfig{textcirc/CNJbox2}
 \]
-As special cases, when the noun-wires of two circuits are disjoint (left), or coincide (right), conjunctions are depicted as follows:
-\[
-\tikzfig{textcirc/CNJbox} \qquad\qquad\qquad\qquad \tikzfig{textcirc/CNJbox3}
-\]
+\caption{Conjunctions are boxes that take two circuits which might share labels on some wires.}
+\end{marginfigure}
 
-Of course filled up boxes are just gates
-%\COMMv{the business with empty wire being "exists" is actually necessary in order for this claim to be true.}\TODOb{Don't understand.}
+\begin{marginfigure}
+\[
+\tikzfig{textcirc/CNJbox}
+\]
+\[\tikzfig{textcirc/CNJbox3}\]
+\caption{As special cases, when the noun-wires of two circuits are disjoint or coincide, we depict them accordingly.}
+\end{marginfigure}
+
+\begin{marginfigure}
 \[
 \tikzfig{textcirc/ADPIVgate}
 \]
-and we will now discuss how those compose. Gates compose sequentially by matching labels on some of their noun-wires and in parallel when they share no noun-wires,  to give \underline{text circuits}, which by convention we read from top-to-bottom:  
+\caption{Of course filled up boxes are just gates.}
+\end{marginfigure}
+
+\begin{marginfigure}
 \[
 \tikzfig{textcirc/gatecompex1}  
 \]
+\caption{Gates compose sequentially by matching labels on some of their noun-wires and in parallel when they share no noun-wires, to give \underline{text circuits}.}
+\end{marginfigure}
 
+\begin{marginfigure}
 \begin{convention}\label{conv:sliding}
 Sometimes we allow wires to twist past each other, and we consider two circuits the same if their gate-connectivity is the same:
 \[
@@ -68,21 +91,25 @@ consider circuits to be equal up to sequentially composed gates commuting past e
 \tikzfig{textcirc/gateneqcommute}  
 \]
 \end{convention}
+\end{marginfigure}
 
-\begin{example}  
+Text circuits are introduced diagrammatically in the margins. The `dot dot dot' notation within boxes is graphically formal \cite{wilson_string_2022}, and interpretations of such boxes were earlier formalised in \cite{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}. The two forms of interacting composition, one symmetric monoidal and the other by nesting is elsewhere called \emph{produoidal}, and the reader is referred to \bR CITE \e for formal treatment and a coherence theorem. Boxes with holes may be interpreted in several different ways. Firstly, boxes may be considered syntactic sugar for higher-order processes in monoidal closed categories, and boxes are diagrammatically preferable to combs in this regard, since the latter admits a typing pathology where two mutually facing combs interlock. Secondly, boxes need not be decomposable as processes native to the base category, admitting for instance an interpretation as elementwise inversion in linear maps, which specialises in the case of \textbf{Rel} (viewed as \textbf{Vect} over the boolean ring) to negation-by-complement. In practice, for quantum discocirc applications, boxes are modelled as quantum combs. In classical discocirc, boxes are sandwiches of neural nets. In practice, boxes with 'dot dot dot' typing are interpreted as families of processes, which can be factored for instance as a pair of content-carrying gates along with a monoid+comonoid convolution to accommodate multiplicity of wires.\\
+
+We proceed in the main body with examples and illustrations. Figure \ref{fig:circuitgen} illustrates how to directly generate text circuits, by providing an example analogous to the text generated in Figure \ref{fig:comic1} where we used our hybrid grammar.
+
+\begin{example} 
 The sentence \texttt{\underline{ALICE SEES BOB LIKES FLOWERS THAT CLAIRE PICKS}} can intuitively be given the following text circuit:
-%\TODOb{This should probably be done in two  or even three steps: (1) BOB LIKES FLOWERS (2) ... THAT CLARE PICKS (3) ALICE SEES ...}
 \[
 \tikzfig{textcirc/multigateholeex}
 \]
 \end{example}
 
-\begin{example}
-Figure \ref{fig:circuitgen} illustrates how to directly generate text circuits, by providing an example analogous to the text generated in Figure \ref{fig:comic1} where we used our hybrid grammar.
-\begin{figure}[h!]
+
+\begin{marginfigure}
     \centering
-    \scalebox{1}{\tikzfig{textcirc/circuitgen}}
-    \caption{Generating text circuits directly.}
+    \resizebox{\marginparwidth}{!}{\tikzfig{textcirc/circuitgen}}
+    \caption{Sentences correspond to filled gates, boxes with fixed arity correspond to first-order modifiers such as adverbs and adpositions, and boxes with variable arity correspond to sentential-level modifiers such as conjunctions and verbs with sentential complements. Composition by connecting wires corresponds to identifying coreferences in discourse, and composition by nesting corresponds to grammatical structure within sentences.}
     \label{fig:circuitgen}
-\end{figure}
-\end{example}
+\end{marginfigure}
+
+\clearpage

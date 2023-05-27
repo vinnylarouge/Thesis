@@ -36,6 +36,93 @@
 \caption{In practice, higher order gates may be implemented as gates that modify parameters of other gates. Grammar, and \emph{function words} -- words that operate on meanings -- are in principle absorbed by the geometry of the diagram. These diagrams are natural vehicles for \emph{dynamic semantics}, broadly construed, where states are prior contexts and sentences-as-processes update prior contexts.}
 \end{marginfigure}
 
+\marginnote{
+\begin{defn}[Text Circuits]
+\emph{Text circuits} are made up of three ingredients:
+\begin{itemize}
+\item wires
+\item boxes, or gates
+\item boxes with holes that fit a box, or 2nd order gates
+\end{itemize}
+\end{defn}
+}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/nounwiresABN} 
+\]
+\caption{Nouns are represented by wires, each `distinct' noun having its own wire.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/ADJgate} \quad\quad\quad \tikzfig{textcirc/IVgate} \quad\quad\quad \tikzfig{textcirc/TVgate}
+\]
+\caption{We represent adjectives, intransitive verbs, and transitive verbs by gates acting on noun-wires. Since a transitive verb has both a subject and an object noun, that will then be two noun-wires, while adjectives and intransitive verbs only have one.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/ADVbox}
+\]
+\caption{Adverbs, which modify verbs, we represent as boxes with holes in them, with a number of dangling wires in the hole indicating the shape of gate expected, and these should match the input- and output-wires  of the box with the whole.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/ADPIVbox}
+\]  
+\caption{Similarly, adpositions also modify verbs, by moreover adding another noun-wire to the right.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/SCVbox}
+\]
+\caption{For verbs that take sentential complements and conjunctions, we have families of boxes to accommodate input circuits of all sizes. They add another noun-wire to the left of a circuit.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/CNJbox2}
+\]
+\caption{Conjunctions are boxes that take two circuits which might share labels on some wires.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/ADPIVgate}
+\]
+\caption{Of course filled up boxes are just gates.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/gatecompex1}  
+\]
+\caption{Gates compose sequentially by matching labels on some of their noun-wires and in parallel when they share no noun-wires, to give \underline{text circuits}.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\resizebox{\marginparwidth}{!}{\tikzfig{textcirc/circgen1}}
+\caption{To summarise: composition by nesting corresponds to grammatical structure within sentences. Sentences correspond to filled gates, boxes with fixed arity correspond to first-order modifiers such as adverbs and adpositions, and boxes with variable arity correspond to sentential-level modifiers such as conjunctions and verbs with sentential complements.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\resizebox{0.75\marginparwidth}{!}{\tikzfig{textcirc/circgen2}}
+\caption{Composition by connecting wires corresponds to identifying coreferences in discourse. We obtain the same circuit for multiple text presentations of the same content, e.g. \texttt{Sober Alice who sees drunk Bob clumsily dance laughs at him.} yields the same circuit as the text \texttt{Alice is sober. She sees Bob clumsily dance. Bob is drunk. She laughs at him.}}
+\end{marginfigure}
+
 \newthought{This thesis is about studying language using string diagrams.}
 
 I am interested in using contemporary mathematical tools as a fresh approach to modelling some features of natural language considered as a formal object. Specifically, I am concerned with the compositional aspect of language, which I seek to model with the compositionality of string diagrams. Insofar as compositionality is the centrepiece of `knowledge of language', I share a common interest with linguists, but I will not hold myself hostage to their methods, literature, nor their concern with empirical capture. I will make all the usual simplifying assumptions that are available to theoreticians, such that an oracular machine will decide on lexical disambiguation and the appropriate parse using whatever resources it wants, so that I am left to work with lexically disambiguated words decorating some formal grammatical structure. It is with this remaining disambiguated mathematical structure that I seek to state a general framework for \emph{meaningful compositional representations of text}, in the same way we humans construct rich and interactable representations of things-going-on in our minds when we read a storybook. So if you are interested in understanding language, this thesis is an invitation to a conception of formal linguistics that's maybe worth a damn in a world where large language models exist.
@@ -97,7 +184,11 @@ The bitter lesson is so harsh and often-enough repeated that this viewpoint is w
 
 \subsection{\textbf{Objection:} GOFAI? GO-F-yourself.}
  
-Hostility (or at least indifference) to symbolic approaches is a stance espoused by virtually all of modern machine learning, and for good reasons. This stance is worth elaborating and steelmanning for pen-and-paper-people in the context of language. First, many linguistic phenomena are nebulous \citep{chapman_david_nebulosity_2010}: the boundary of a simile is like that of a cloud, not sharp like the boundary of a billiard ball. Second, linguistic phenomena are complex, dynamic, and multifactorial: there are so many interacting mechanisms and forces in the production and comprehension of language that even if we do have crisp mathematical models for all the constituent processes we are still left with something computationally irreducible. These two points together weakly characterise the kinds of problem domains where machine learning shines. It is just fact that LLM outputs today conform to any reasonable understanding of syntax, semantics, pragmatics, conversational implicature, and whatever else we have theorised. It is just a fact that they produce better poetry and humor than anything we could explicitly program according to our current understanding. It is almost a natural law that they will only get better from here. So what good are pen-and-paper theories as far as practical applications are concerned? To borrow terms from concurrency, there is already plenty of liveness, what is needed is more safety; liveness is when the program does something good, and safety is a guarantee it won't do something bad\marginnote{For example, there is ongoing work in integrating LLMs with stuctured databases for uses where facts and figures and ontologies matter; there is still a need for safeguards to prevent harmful outputs and adversarial attacks like prompt injection; while LLMs give a very convincing impression of reasoned thought, we would like to be sure if ever we decide to use such a machine for anything more than entertainment, such as assisting a caregiver in the course of healthcare decisions.}. The good news is that symbolic-compositional theories are the right shape for safety concerns, because they can be picked apart and reasoned about. It is clear however that symbolic-compositional approaches by themselves are nowhere near achieving the kind of liveness LLMs have. Therefore, the direction of progress is synthesis.
+Hostility (or at least indifference) to symbolic approaches is a stance espoused by virtually all of modern machine learning, and for good reasons. This stance is worth elaborating and steelmanning for pen-and-paper-people in the context of language. First, many linguistic phenomena are nebulous \citep{chapman_david_nebulosity_2010}: the boundary of a simile is like that of a cloud, not sharp like the boundary of a billiard ball. Second, linguistic phenomena are complex, dynamic, and multifactorial: there are so many interacting mechanisms and forces in the production and comprehension of language that even if we do have crisp mathematical models for all the constituent processes we are still left with something computationally irreducible. These two points together weakly characterise the kinds of problem domains where machine learning shines. It is just fact that LLM outputs today conform to any reasonable understanding of syntax, semantics, pragmatics, conversational implicature, and whatever else we have theorised. It is just a fact that they produce better poetry and humor than anything we could explicitly program according to our current understanding. It is almost a natural law that they will only get better from here.\\
+
+So what good are pen-and-paper theories as far as practical applications are concerned? To borrow terms from concurrency, there is already plenty of liveness, what is needed is more safety; liveness is when the program does something good, and safety is a guarantee it won't do something bad. For example, there is ongoing work in integrating LLMs with stuctured databases for uses where facts and figures and ontologies matter; there is still a need for safeguards to prevent harmful outputs and adversarial attacks like prompt injection; while LLMs give a very convincing impression of reasoned thought, we would like to be sure if ever we decide to use such a machine for anything more than entertainment, such as assisting a caregiver in the course of healthcare decisions.\\
+
+The good news is that symbolic-compositional theories are the right shape for safety concerns, because they can be picked apart and reasoned about. It is clear however that symbolic-compositional approaches by themselves are nowhere near achieving the kind of liveness LLMs have. Therefore, the direction of progress is synthesis.
 
 \subsection{\textbf{Point of Information:} What is computational irreducibility?}
 
