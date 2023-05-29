@@ -165,10 +165,10 @@
 			 to (136.center)
 			 to [in=90, out=0, looseness=0.75] (131);
 		\draw [style=K] (138) to (139);
-		\draw [style=D] (145.center) to (138);
-		\draw [style=D] (139) to (146.center);
-		\draw [style=D] (143.center) to (119);
-		\draw [style=D] (102) to (144.center);
+		\draw [style=KD] (145.center) to (138);
+		\draw [style=KD] (139) to (146.center);
+		\draw [style=KD] (143.center) to (119);
+		\draw [style=KD] (102) to (144.center);
 		\draw [style=KM] (65) to (68);
 		\draw [style=KM] (87) to (147);
 		\draw [style=KTB] (147)

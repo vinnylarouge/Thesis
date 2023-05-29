@@ -116,36 +116,36 @@
 			 to [in=-180, out=90, looseness=0.75] (383.center)
 			 to (385.center)
 			 to [in=90, out=0, looseness=0.75] (380);
-		\draw [style=D] (388) to (390.center);
-		\draw [style=D] (387) to (389.center);
+		\draw [style=KD] (388) to (390.center);
+		\draw [style=KD] (387) to (389.center);
 		\draw [style=KM] (397.center) to (395);
 		\draw [style=KM] (396) to (398.center);
 		\draw [style=KM] (395)
 			 to [in=-180, out=90, looseness=0.75] (399.center)
 			 to (401.center)
 			 to [in=90, out=0, looseness=0.75] (396);
-		\draw [style=D] (404) to (406.center);
+		\draw [style=KD] (404) to (406.center);
 		\draw [style=KM] (413.center) to (411);
 		\draw [style=KM] (412) to (414.center);
 		\draw [style=KM] (411)
 			 to [in=-180, out=90, looseness=0.75] (415.center)
 			 to (417.center)
 			 to [in=90, out=0, looseness=0.75] (412);
-		\draw [style=D] (420) to (422.center);
-		\draw [style=D] (419) to (421.center);
-		\draw [style=D] (405.center) to (439);
+		\draw [style=KD] (420) to (422.center);
+		\draw [style=KD] (419) to (421.center);
+		\draw [style=KD] (405.center) to (439);
 		\draw [style=K] (387) to (388);
 		\draw [style=K] (442) to (443);
 		\draw [style=K] (419) to (420);
-		\draw [style=D] (444.center) to (442);
-		\draw [style=D] (443) to (445.center);
+		\draw [style=KD] (444.center) to (442);
+		\draw [style=KD] (443) to (445.center);
 		\draw [style=KM] (452.center) to (450);
 		\draw [style=KM] (451) to (453.center);
 		\draw [style=KM, in=-180, out=90, looseness=0.75] (450) to (454.center);
 		\draw [style=KM] (454.center) to (456.center);
 		\draw [style=KM, in=90, out=0, looseness=0.75] (456.center) to (451);
-		\draw [style=D] (459) to (461.center);
-		\draw [style=D] (463) to (465.center);
+		\draw [style=KD] (459) to (461.center);
+		\draw [style=KD] (463) to (465.center);
 		\draw [style=KG, in=-90, out=30] (466) to (440);
 		\draw [style=K, in=-90, out=150] (466) to (439);
 		\draw [style=K] (466) to (404);
@@ -154,8 +154,8 @@
 		\draw [style=K, in=90, out=-150] (467) to (459);
 		\draw [style=K, in=90, out=-30] (467) to (463);
 		\draw [style=KG] (468) to (467);
-		\draw [style=D] (471.center) to (469);
-		\draw [style=D] (472.center) to (470);
+		\draw [style=KD] (471.center) to (469);
+		\draw [style=KD] (472.center) to (470);
 		\draw [style=KP] (379)
 			 to [in=180, out=-90, looseness=0.75] (384.center)
 			 to (388.center)

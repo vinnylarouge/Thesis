@@ -248,53 +248,53 @@
 		\draw [style=KM] (83)
 			 to [in=0, out=105] (81.center)
 			 to (79.center);
-		\draw [style=D] (86) to (87);
-		\draw [style=D] (88) to (89);
+		\draw [style=KD] (86) to (87);
+		\draw [style=KD] (88) to (89);
 		\draw [style=K] (89) to (86);
 		\draw [style=KM] (96.center) to (98.center);
 		\draw [style=KM] (97.center) to (99.center);
 		\draw [style=K] (100) to (101);
-		\draw [style=D] (101) to (103.center);
-		\draw [style=D] (100) to (102.center);
+		\draw [style=KD] (101) to (103.center);
+		\draw [style=KD] (100) to (102.center);
 		\draw [style=KM] (121.center) to (123.center);
 		\draw [style=KM] (122.center) to (124.center);
 		\draw [style=K] (125) to (126);
 		\draw [style=K] (129) to (130);
-		\draw [style=D, in=180, out=-75, looseness=1.25] (126) to (132);
-		\draw [style=D, in=-105, out=0, looseness=1.25] (132) to (130);
-		\draw [style=D] (132) to (133.center);
-		\draw [style=D, in=-180, out=90, looseness=1.25] (125) to (131);
-		\draw [style=D, in=0, out=90, looseness=1.25] (129) to (131);
-		\draw [style=D] (131) to (134.center);
+		\draw [style=KD, in=180, out=-75, looseness=1.25] (126) to (132);
+		\draw [style=KD, in=-105, out=0, looseness=1.25] (132) to (130);
+		\draw [style=KD] (132) to (133.center);
+		\draw [style=KD, in=-180, out=90, looseness=1.25] (125) to (131);
+		\draw [style=KD, in=0, out=90, looseness=1.25] (129) to (131);
+		\draw [style=KD] (131) to (134.center);
 		\draw [style=KM] (184.center) to (185.center);
 		\draw [style=K] (187) to (189.center);
 		\draw [style=K] (186) to (188.center);
-		\draw [style=D] (187) to (191.center);
-		\draw [style=D] (186) to (190.center);
+		\draw [style=KD] (187) to (191.center);
+		\draw [style=KD] (186) to (190.center);
 		\draw [style=KM] (237.center) to (238.center);
 		\draw [style=K, in=90, out=-90, looseness=0.75] (240) to (242.center);
 		\draw [style=K, in=90, out=-90, looseness=0.75] (239) to (241.center);
-		\draw [style=D, in=-90, out=90, looseness=0.75] (240) to (244.center);
-		\draw [style=D, in=-90, out=90, looseness=0.75] (239) to (243.center);
+		\draw [style=KD, in=-90, out=90, looseness=0.75] (240) to (244.center);
+		\draw [style=KD, in=-90, out=90, looseness=0.75] (239) to (243.center);
 		\draw [style=KM] (250.center) to (251.center);
 		\draw [style=K] (253) to (255.center);
 		\draw [style=K] (252) to (254.center);
-		\draw [style=D] (253) to (256.center);
-		\draw [style=D] (252) to (257.center);
+		\draw [style=KD] (253) to (256.center);
+		\draw [style=KD] (252) to (257.center);
 		\draw [style=KM] (264.center) to (265.center);
 		\draw [style=K, in=-90, out=90] (267) to (269.center);
 		\draw [style=K, in=-90, out=90, looseness=0.75] (266) to (268.center);
-		\draw [style=D, in=90, out=-90] (267) to (270.center);
-		\draw [style=D, in=90, out=-90, looseness=0.75] (266) to (271.center);
+		\draw [style=KD, in=90, out=-90] (267) to (270.center);
+		\draw [style=KD, in=90, out=-90, looseness=0.75] (266) to (271.center);
 		\draw [style=KM] (332.center) to (333.center);
-		\draw [style=D] (336.center) to (334);
+		\draw [style=KD] (336.center) to (334);
 		\draw [style=K] (334) to (335.center);
 		\draw [style=KM] (337.center) to (338.center);
 		\draw [style=K] (339.center) to (340);
 		\draw [style=K] (341.center) to (342.center);
 		\draw [style=K] (340) to (343.center);
 		\draw [style=K] (344.center) to (345.center);
-		\draw [style=D] (347.center) to (348.center);
+		\draw [style=KD] (347.center) to (348.center);
 		\draw [style=KM] (356.center) to (357.center);
 		\draw [style=KG] (358) to (359.center);
 		\draw [style=KM] (365.center) to (366.center);
@@ -311,8 +311,8 @@
 			 to [in=-180, out=-90, looseness=0.75] (384.center)
 			 to (386.center)
 			 to [in=-90, out=0, looseness=0.75] (380);
-		\draw [style=D] (388) to (390.center);
-		\draw [style=D] (387) to (389.center);
+		\draw [style=KD] (388) to (390.center);
+		\draw [style=KD] (387) to (389.center);
 		\draw [style=KM] (397.center) to (395);
 		\draw [style=KM] (396) to (398.center);
 		\draw [style=KM] (395)
@@ -323,7 +323,7 @@
 			 to [in=-180, out=-90, looseness=0.75] (400.center)
 			 to (402.center)
 			 to [in=-90, out=0, looseness=0.75] (396);
-		\draw [style=D] (404) to (406.center);
+		\draw [style=KD] (404) to (406.center);
 		\draw [style=KM] (413.center) to (411);
 		\draw [style=KM] (412) to (414.center);
 		\draw [style=KM] (411)
@@ -334,14 +334,14 @@
 			 to [in=-180, out=-90, looseness=0.75] (416.center)
 			 to (418.center)
 			 to [in=-90, out=0, looseness=0.75] (412);
-		\draw [style=D] (420) to (422.center);
-		\draw [style=D] (419) to (421.center);
-		\draw [style=D] (405.center) to (439);
+		\draw [style=KD] (420) to (422.center);
+		\draw [style=KD] (419) to (421.center);
+		\draw [style=KD] (405.center) to (439);
 		\draw [style=K] (387) to (388);
 		\draw [style=K] (442) to (443);
 		\draw [style=K] (419) to (420);
-		\draw [style=D] (444.center) to (442);
-		\draw [style=D] (443) to (445.center);
+		\draw [style=KD] (444.center) to (442);
+		\draw [style=KD] (443) to (445.center);
 		\draw [style=KM] (452.center) to (450);
 		\draw [style=KM] (451) to (453.center);
 		\draw [style=KM, in=-180, out=90, looseness=0.75] (450) to (454.center);
@@ -350,8 +350,8 @@
 		\draw [style=KM, in=-180, out=-90, looseness=0.75] (450) to (455.center);
 		\draw [style=KM] (455.center) to (457.center);
 		\draw [style=KM, in=-90, out=0, looseness=0.75] (457.center) to (451);
-		\draw [style=D] (459) to (461.center);
-		\draw [style=D] (463) to (465.center);
+		\draw [style=KD] (459) to (461.center);
+		\draw [style=KD] (463) to (465.center);
 		\draw [style=KG, in=-90, out=30] (466) to (440);
 		\draw [style=K, in=-90, out=150] (466) to (439);
 		\draw [style=K] (466) to (404);
@@ -360,7 +360,7 @@
 		\draw [style=K, in=90, out=-150] (467) to (459);
 		\draw [style=K, in=90, out=-30] (467) to (463);
 		\draw [style=KG] (468) to (467);
-		\draw [style=D] (471.center) to (469);
-		\draw [style=D] (472.center) to (470);
+		\draw [style=KD] (471.center) to (469);
+		\draw [style=KD] (472.center) to (470);
 	\end{pgfonlayer}
 \end{tikzpicture}

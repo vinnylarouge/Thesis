@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  27 MAY 2023 13:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  29 MAY 2023 14:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2232,17 +2232,17 @@ Overfull \hbox (4.1977pt too wide) in paragraph at lines 9--10
  []
 
 (./figures/mushroom/howtoread.tikz)
-Overfull \hbox (1.7716pt too wide) detected at line 13
+Overfull \hbox (1.2716pt too wide) detected at line 13
 []
  []
 
 [22] (./figures/mushroom/bestiary2.tikz)
-Overfull \hbox (201.169pt too wide) detected at line 21
+Overfull \hbox (200.669pt too wide) detected at line 21
 []
  []
 
 (./figures/mushroom/nounbestiary.tikz)
-Overfull \hbox (87.35803pt too wide) detected at line 27
+Overfull \hbox (86.85803pt too wide) detected at line 27
 []
  []
 
@@ -2251,41 +2251,56 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
 (./figures/mushroom/simpbestiary.tikz)
-Overfull \hbox (172.71626pt too wide) detected at line 31
+Overfull \hbox (172.21626pt too wide) detected at line 31
 []
  []
 
 (./figures/mushroom/adjadv.tikz)
-Overfull \hbox (258.0745pt too wide) detected at line 39
+Overfull \hbox (257.5745pt too wide) detected at line 39
 []
  []
 
 [24] (./figures/mushroom/adpbestiary.tikz)
-Overfull \hbox (115.81078pt too wide) detected at line 45
+Overfull \hbox (115.31078pt too wide) detected at line 45
 []
  []
 
-[25]) [26] (./chapters/textcirc/textcirc.tex (./figures/textcirc/babiex.tikz)
+(./figures/mushroom/pronbestiary.tikz)
+Overfull \hbox (114.81076pt too wide) detected at line 53
+[]
+ []
 
-Package natbib Warning: Citation `wilson_string_2022' on page 27 undefined on i
+(./figures/mushroom/pronres.tikz)
+Overfull \hbox (286.02724pt too wide) detected at line 57
+[]
+ []
+
+
+Underfull \vbox (badness 4048) has occurred while \output is active []
+
+ [25]
+(./figures/mushroom/bigex1.tikz) [26]) [27] (./chapters/textcirc/textcirc.tex
+(./figures/textcirc/babiex.tikz)
+
+Package natbib Warning: Citation `wilson_string_2022' on page 28 undefined on i
 nput line 20.
 
 
-Package natbib Warning: Citation `merry_reasoning_2014' on page 27 undefined on
+Package natbib Warning: Citation `merry_reasoning_2014' on page 28 undefined on
  input line 20.
 
 
-Package natbib Warning: Citation `quick_-logic_2015' on page 27 undefined on in
+Package natbib Warning: Citation `quick_-logic_2015' on page 28 undefined on in
 put line 20.
 
 
-Package natbib Warning: Citation `zamdzhiev_rewriting_2017' on page 27 undefine
+Package natbib Warning: Citation `zamdzhiev_rewriting_2017' on page 28 undefine
 d on input line 20.
 
 
 Underfull \vbox (badness 7907) has occurred while \output is active []
 
- [27]
+ [28]
 (./figures/textcirc/gatecompex1.tikz) (./figures/textcirc/gatecompex2.tikz)
 (./figures/textcirc/gateeqslide.tikz)
 Overfull \hbox (50.79208pt too wide) detected at line 30
@@ -2295,9 +2310,9 @@ Overfull \hbox (50.79208pt too wide) detected at line 30
 (./figures/textcirc/gateneqcommute.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28]
+ [29]
 (./figures/textcirc/multigateholeex.tikz) (./figures/textcirc/circuitgen.tikz)
-[29])
+[30])
 
 Package natbib Warning: There were undefined citations.
 
@@ -2306,7 +2321,7 @@ Package bibentry Warning: You have used \nobibliography*
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-[30
+[31
 
 ]
 
@@ -2333,10 +2348,10 @@ Package rerunfilecheck Info: File `chap3.out' has not changed.
 (rerunfilecheck)             Checksum: ED5402B95556BE5603536E0BE116EDA7;873.
  ) 
 Here is how much of TeX's memory you used:
- 52651 strings out of 478268
- 1131998 string characters out of 5846348
- 1900812 words of memory out of 5000000
- 69712 multiletter control sequences out of 15000+600000
+ 52727 strings out of 478268
+ 1134105 string characters out of 5846348
+ 1909675 words of memory out of 5000000
+ 69778 multiletter control sequences out of 15000+600000
  606812 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  119i,15n,121p,1943b,1212s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2356,10 +2371,10 @@ type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
 public/newpx/zplb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/ne
 wpx/zplr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplri
 .pfb>
-Output written on chap3.pdf (30 pages, 363918 bytes).
+Output written on chap3.pdf (31 pages, 376128 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
- 253 compressed objects within 3 object streams
- 80 named destinations out of 1000 (max. 500000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
+ 81 named destinations out of 1000 (max. 500000)
  2693 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -63,7 +63,7 @@
 		\draw [style=KM] (18) to (6.center);
 		\draw [style=KM, in=90, out=-90, looseness=1.25] (17) to (19);
 		\draw [style=KM, in=180, out=-45, looseness=0.75] (19) to (18);
-		\draw [style=D, in=-90, out=90] (22) to (19);
+		\draw [style=KD, in=-90, out=90] (22) to (19);
 		\draw [style=KM] (30.center) to (28);
 		\draw [style=KM] (29) to (31.center);
 		\draw [style=KM, bend left=90, looseness=1.50] (29) to (28);
@@ -88,7 +88,7 @@
 			 to [in=-180, out=-90, looseness=0.75] (70.center)
 			 to (72.center)
 			 to [in=-90, out=0, looseness=0.75] (66);
-		\draw [style=D] (73) to (75.center);
+		\draw [style=KD] (73) to (75.center);
 		\draw [style=K] (78) to (73);
 		\draw [style=K] (82.center) to (83.center);
 		\draw [style=K] (74.center) to (80);

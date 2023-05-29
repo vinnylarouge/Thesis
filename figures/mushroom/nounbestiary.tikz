@@ -90,22 +90,22 @@
 		\draw [style=KM] (83)
 			 to [in=0, out=105] (81.center)
 			 to (79.center);
-		\draw [style=D] (86) to (87);
-		\draw [style=D] (88) to (89);
+		\draw [style=KD] (86) to (87);
+		\draw [style=KD] (88) to (89);
 		\draw [style=K] (89) to (86);
 		\draw [style=KM] (96.center) to (98.center);
 		\draw [style=K] (100) to (101);
-		\draw [style=D] (101) to (103.center);
-		\draw [style=D] (100) to (102.center);
+		\draw [style=KD] (101) to (103.center);
+		\draw [style=KD] (100) to (102.center);
 		\draw [style=KM] (121.center) to (123.center);
 		\draw [style=K] (125) to (126);
 		\draw [style=K] (129) to (130);
-		\draw [style=D, in=180, out=-75, looseness=1.25] (126) to (132);
-		\draw [style=D, in=-105, out=0, looseness=1.25] (132) to (130);
-		\draw [style=D] (132) to (133.center);
-		\draw [style=D, in=-180, out=90, looseness=1.25] (125) to (131);
-		\draw [style=D, in=0, out=90, looseness=1.25] (129) to (131);
-		\draw [style=D] (131) to (134.center);
+		\draw [style=KD, in=180, out=-75, looseness=1.25] (126) to (132);
+		\draw [style=KD, in=-105, out=0, looseness=1.25] (132) to (130);
+		\draw [style=KD] (132) to (133.center);
+		\draw [style=KD, in=-180, out=90, looseness=1.25] (125) to (131);
+		\draw [style=KD, in=0, out=90, looseness=1.25] (129) to (131);
+		\draw [style=KD] (131) to (134.center);
 		\draw [style=KP, in=-120, out=0] (77.center) to (71);
 		\draw [style=KP] (80.center) to (86);
 		\draw [style=KP] (86)
@@ -115,13 +115,13 @@
 		\draw [style=KP] (101) to (99.center);
 		\draw [style=KP] (122.center) to (124.center);
 		\draw [style=KM] (145.center) to (146.center);
-		\draw [style=D] (149.center) to (147);
+		\draw [style=KD] (149.center) to (147);
 		\draw [style=K] (147) to (148.center);
 		\draw [style=KM] (150.center) to (151.center);
 		\draw [style=K] (152.center) to (153);
 		\draw [style=K] (154.center) to (155.center);
 		\draw [style=K] (153) to (156.center);
 		\draw [style=K] (157.center) to (158.center);
-		\draw [style=D] (160.center) to (161.center);
+		\draw [style=KD] (160.center) to (161.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
