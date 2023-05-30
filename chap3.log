@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  29 MAY 2023 14:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  29 MAY 2023 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2279,28 +2279,78 @@ Overfull \hbox (286.02724pt too wide) detected at line 57
 Underfull \vbox (badness 4048) has occurred while \output is active []
 
  [25]
-(./figures/mushroom/bigex1.tikz) [26]) [27] (./chapters/textcirc/textcirc.tex
+[26] (./figures/mushroom/bigex1.tikz) (./figures/mushroom/bigex2.tikz)
+(./figures/mushroom/bigex3.tikz) (./figures/mushroom/bigex4.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figures/mushroom/bigex5.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figures/mushroom/bigex6.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figures/mushroom/bigex7.tikz
+
+Package pgf Warning: Returning node center instead of a point on node border. D
+id you specify a point identical to the center of node ``8''? on input line 164
+.
+
+
+Package pgf Warning: Returning node center instead of a point on node border. D
+id you specify a point identical to the center of node ``164''? on input line 2
+38.
+
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figures/mushroom/bigex8.tikz
+
+Package pgf Warning: Returning node center instead of a point on node border. D
+id you specify a point identical to the center of node ``88''? on input line 24
+5.
+
+
+Package pgf Warning: Returning node center instead of a point on node border. D
+id you specify a point identical to the center of node ``167''? on input line 3
+20.
+
+
+Package pgf Warning: Returning node center instead of a point on node border. D
+id you specify a point identical to the center of node ``248''? on input line 3
+90.
+
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27] [28] [29]) [30
+
+] [31] (./chapters/textcirc/textcirc.tex
 (./figures/textcirc/babiex.tikz)
 
-Package natbib Warning: Citation `wilson_string_2022' on page 28 undefined on i
+Package natbib Warning: Citation `wilson_string_2022' on page 32 undefined on i
 nput line 20.
 
 
-Package natbib Warning: Citation `merry_reasoning_2014' on page 28 undefined on
+Package natbib Warning: Citation `merry_reasoning_2014' on page 32 undefined on
  input line 20.
 
 
-Package natbib Warning: Citation `quick_-logic_2015' on page 28 undefined on in
+Package natbib Warning: Citation `quick_-logic_2015' on page 32 undefined on in
 put line 20.
 
 
-Package natbib Warning: Citation `zamdzhiev_rewriting_2017' on page 28 undefine
+Package natbib Warning: Citation `zamdzhiev_rewriting_2017' on page 32 undefine
 d on input line 20.
 
 
 Underfull \vbox (badness 7907) has occurred while \output is active []
 
- [28]
+ [32]
 (./figures/textcirc/gatecompex1.tikz) (./figures/textcirc/gatecompex2.tikz)
 (./figures/textcirc/gateeqslide.tikz)
 Overfull \hbox (50.79208pt too wide) detected at line 30
@@ -2310,9 +2360,9 @@ Overfull \hbox (50.79208pt too wide) detected at line 30
 (./figures/textcirc/gateneqcommute.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29]
+ [33]
 (./figures/textcirc/multigateholeex.tikz) (./figures/textcirc/circuitgen.tikz)
-[30])
+[34])
 
 Package natbib Warning: There were undefined citations.
 
@@ -2321,7 +2371,7 @@ Package bibentry Warning: You have used \nobibliography*
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-[31
+[35
 
 ]
 
@@ -2348,10 +2398,10 @@ Package rerunfilecheck Info: File `chap3.out' has not changed.
 (rerunfilecheck)             Checksum: ED5402B95556BE5603536E0BE116EDA7;873.
  ) 
 Here is how much of TeX's memory you used:
- 52727 strings out of 478268
- 1134105 string characters out of 5846348
- 1909675 words of memory out of 5000000
- 69778 multiletter control sequences out of 15000+600000
+ 53104 strings out of 478268
+ 1143855 string characters out of 5846348
+ 2315355 words of memory out of 5000000
+ 70130 multiletter control sequences out of 15000+600000
  606812 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  119i,15n,121p,1943b,1212s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2371,10 +2421,10 @@ type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/
 public/newpx/zplb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/ne
 wpx/zplr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplri
 .pfb>
-Output written on chap3.pdf (31 pages, 376128 bytes).
+Output written on chap3.pdf (35 pages, 465237 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 257 compressed objects within 3 object streams
- 81 named destinations out of 1000 (max. 500000)
+ 353 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
+ 85 named destinations out of 1000 (max. 500000)
  2693 words of extra memory for PDF output out of 10000 (max. 10000000)
 
