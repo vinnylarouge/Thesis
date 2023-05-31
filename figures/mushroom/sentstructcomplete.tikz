@@ -1,0 +1,79 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dotw] (0) at (0, 0) {};
+		\node [style=none] (2) at (-1.5, -0.75) {};
+		\node [style=none] (3) at (0, -0.75) {};
+		\node [style=none] (4) at (1.5, -0.75) {};
+		\node [style=none] (8) at (0, 0.75) {};
+		\node [style=none] (34) at (-1, 2.75) {};
+		\node [style=none] (35) at (-1, 0.75) {};
+		\node [style=none] (36) at (1, 0.75) {};
+		\node [style=none] (37) at (1, 2.75) {};
+		\node [style=none] (38) at (-1, 1.75) {};
+		\node [style=none] (39) at (1, 1.75) {};
+		\node [style=dotM] (40) at (-0.4, 1.75) {};
+		\node [style=dotM] (41) at (0.4, 1.75) {};
+		\node [style=none] (42) at (-2.75, -0.75) {};
+		\node [style=none] (43) at (-2.75, -2.75) {};
+		\node [style=none] (44) at (2.75, -2.75) {};
+		\node [style=none] (45) at (2.75, -0.75) {};
+		\node [style=none] (46) at (-3, -1.75) {};
+		\node [style=dotM] (47) at (-1.9, -1.75) {};
+		\node [style=dotM] (48) at (-1.35, -1.75) {};
+		\node [style=none] (49) at (3, -1.75) {};
+		\node [style=dotM] (50) at (1.35, -1.75) {};
+		\node [style=dotM] (51) at (1.9, -1.75) {};
+		\node [style=dotB] (52) at (0, -1.75) {};
+		\node [style=smallbluedot] (53) at (-0.75, -1.75) {};
+		\node [style=smallbluedot] (54) at (-2.4, -1.75) {};
+		\node [style=none] (55) at (-2.4, -1.25) {};
+		\node [style=none] (56) at (-2.4, -2.25) {};
+		\node [style=none] (57) at (-0.75, -1.25) {};
+		\node [style=none] (58) at (-0.75, -2.25) {};
+		\node [style=smallbluedot] (59) at (2.45, -1.75) {};
+		\node [style=smallbluedot] (60) at (0.75, -1.75) {};
+		\node [style=none] (61) at (0.75, -1.25) {};
+		\node [style=none] (62) at (0.75, -2.25) {};
+		\node [style=none] (63) at (2.45, -1.25) {};
+		\node [style=none] (64) at (2.45, -2.25) {};
+		\node [style=none] (65) at (-2.25, -0.75) {};
+		\node [style=none] (66) at (-0.75, -0.75) {};
+		\node [style=none] (67) at (0.75, -0.75) {};
+		\node [style=none] (68) at (2.25, -0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KM] (38.center) to (40);
+		\draw [style=KM] (41) to (39.center);
+		\draw [style=KM, bend left=90, looseness=1.25] (40) to (41);
+		\draw [style=KP, bend right=90, looseness=1.25] (40) to (41);
+		\draw [style=vM] (0) to (8.center);
+		\draw [style=vM] (0) to (2.center);
+		\draw [style=vM] (0) to (4.center);
+		\draw [style=KBv] (0) to (3.center);
+		\draw [style=KM] (46.center) to (47);
+		\draw [style=KM, bend left=90, looseness=1.25] (47) to (48);
+		\draw [style=KM] (51) to (49.center);
+		\draw [style=KM, bend left=90, looseness=1.25] (50) to (51);
+		\draw [style=KTB] (54)
+			 to (55.center)
+			 to [in=90, out=90, looseness=0.25] (57.center)
+			 to (53);
+		\draw [style=KTB] (53)
+			 to (58.center)
+			 to [in=-90, out=-90, looseness=0.25] (56.center)
+			 to (54);
+		\draw [style=KP, bend right=90, looseness=1.25] (47) to (48);
+		\draw [style=KP, bend right=90, looseness=1.25] (50) to (51);
+		\draw [style=KTB] (60) to (61.center);
+		\draw [style=KTB, in=90, out=90, looseness=0.25] (61.center) to (63.center);
+		\draw [style=KTB] (63.center) to (59);
+		\draw [style=KTB] (59) to (64.center);
+		\draw [style=KTB, in=-90, out=-90, looseness=0.25] (64.center) to (62.center);
+		\draw [style=KTB] (62.center) to (60);
+		\draw [style=KDB] (53) to (60);
+		\draw [style=KBvH] (0) to (66.center);
+		\draw [style=KBvH] (0) to (67.center);
+		\draw [style=KBvH] (0) to (68.center);
+		\draw [style=KBvH] (0) to (65.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

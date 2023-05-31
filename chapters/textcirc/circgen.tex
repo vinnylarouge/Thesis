@@ -1,3 +1,5 @@
+\newpage
+
 \section{A generative grammar for text circuits}
 
 \subsection{A circuit-growing grammar}
@@ -6,25 +8,114 @@ There are many different ways to write an $n$-categorical signature that generat
 
 \newthought{Simplifications}: Propositions only, no determiners, only one tense, no morphological agreement between nouns and their verbs and referring pronouns, and we assume that adverbs, adverbial adjunctions, and adjectives stack indefinitely and without further order requirements; e.g. \texttt{Yesterday yesterday yesterday Alice happily secretly finds red big toy shiny car that he gives to Bob.} we consider grammatical enough. For now, we consider only the case where adjectives and adverbs appear before their respective noun or verb. Note that all of these limitations can principle be overcome by the techniques we developed in Section \ref{sec:ncat} for restricted tree-adjoining and links.
 
-\newthought{How to read the following diagrams}: We work in a dimension where wires behave symmetric monoidally by homotopy, and the signature still works if interpreted in a compact closed setting. We start each derivation with a pink sentence bubble, which we depict for aesthetic purposes as horizontal, which amounts to picking slightly different axes by which to read diagrams. The insides of the sentence bubble will fill up with a circuit, and labelled words will appear on the top surface bubble like stylised mushrooms, to be read off left-to-right. We will only express the rewrite rules; the generators of lower dimension are implicit.
+\marginnote{
+\begin{defn}[Lexicon]
+We define a lexicon $\mathcal{L}$ to be a tuple $(\mathbf{N}, \mathbf{V}_1, \mathbf{V}_2, \mathbf{V}_{\texttt{S}}, \mathbf{A}_{\texttt{N}}, \mathbf{A}_{\texttt{V}}, \mathbf{A}_{\texttt{S}}, \mathbf{C})$
+\end{defn}
+}
 
+\marginnote{
+Where:
+\begin{itemize}
+\item $\mathbf{N}$ is a set of \emph{proper nouns}
+\item $\mathbf{V}_1$ is a set of \emph{intransitive verbs}
+\item $\mathbf{V}_2$ is a set of \emph{transitive verbs}
+\item $\mathbf{V}_{\texttt{S}}$ is a set of \emph{sentential-complement verbs}
+\item $\mathbf{A}_{\texttt{N}}$ is a set of \emph{adjectives}
+\item $\mathbf{A}_{\texttt{V}}$ is a set of \emph{adverbs}
+\item $\mathbf{A}_{\texttt{S}}$ is a set of \emph{adverbial adpositions}
+\item $\mathbf{C}$ is a set of \emph{conjunctions}
+\end{itemize}
+}
+
+\clearpage
+
+\subsection{Text structure}
+
+\begin{marginfigure}
+\centering
 \[
-\tikzfig{mushroom/howtoread}
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/howtoread}}
 \]
+\caption{\textbf{How to read the diagrams in this section:} we will be making heavy use of pink and purple bubbles as frames to construct circuits. We will depict the bubbles horizontally, as we are permitted to by compact closure, or by reading diagrams with slightly skewed axes.}
+\end{marginfigure}
 
-\subsection{Sentences}
+We work in a dimension where wires behave symmetric monoidally by homotopy, and further assume compact closure rewrite rules for all wire-types. Our strategy is to generate "bubbles" for sentences, within which we can grow circuit structure piecemeal. We will only express the rewrite rules; the generators of lower dimension are implicit. We aim to recover the linear ordering of words in text (essential to any syntax) by traversing the top surface of a chain of bubbles representing sentence structure in text -- this order will be invariant despite compact closure. First we introduce rules to capture the broad structure of text as a structured collection of \emph{simple sentences}, where a simple sentence is one that only contains a single verb.\\
 
-Before the contents of a sentence are even decided, we may decide to (top row, left to right) get another sentence ready, introduce an adverbial adjunction (such as \texttt{yesterday}), or introduce a conjunction of two sentences (such as \texttt{because}). Introducing new words yields dots that carry information of the grammatical category of the word, and there are separate rewrites that allow dots to be labelled according to the lexicon. In the bottom, we have a rewrite that allows a sentence with one unlabelled noun to be the subject of a "sentential complement verb", abbreviated \texttt{SCV}: these are verbs that take sentences as objects rather than other nouns, and they are typically verbs of cognition, perception, and causation, such as \texttt{Alice \underline{suspects} Bob drinks}. The blue-dotted lines are just syntactic guardrails that correspond to the holes in boxes of circuits later.
+Starting from a single simple sentence bubble, we may always append another to obtain a list. However, more than list structure, we may have two simple sentences joined by a conjunction, e.g. \texttt{Alice dances \underline{while} Bob drinks}. In the same vein, the unary case of a conjunction of simple sentences is an adverbial adposition, e.g. \texttt{\underline{Yesterday} Alice dance(d)}. Finally, we may have verbs that take a sentential complement rather than a noun phrase, e.g. \texttt{Alice \underline{sees} Bob dance}; these verbs require nouns, which we depict as wires spanning bubbles.
 
+\begin{figure}[h!]\label{fig:sentbestiary}
+\centering
 \[
-\tikzfig{mushroom/bestiary2}
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/bestiary2}}
 \]
+\caption{The blue-dotted guards are for circuit-translation later, to indicate the contents of boxes.}
+\end{figure}
+
+\marginnote{
+\begin{defn}[Simple sentence structure]
+In prose, a text is a list of sentences. A sentence can be a pair of sentences, each guarded by scopes with a conjunction in between. A sentence can carry an adverbial adposition at the start. As a CFG, these considerations are respectively depicted as:
+\end{defn}
+\[
+\resizebox{\marginparwidth}{!}{\tikzfig{mushroom/textstructureCFG}}
+\]
+}
+
+\marginnote{
+\begin{proposition}
+The sentence introduction rules are complete with respect to simple sentence structure.
+\begin{proof}
+Excluding verbs with sentential complements to be dealt with later, the sentence-introduction rewrites graphically correspond to the CFG rules.
+\end{proof}
+\end{proposition}
+\[\resizebox{\marginparwidth}{!}{\tikzfig{mushroom/sentstructcomplete}}\]
+}
 
 \subsection{Simple sentences}
-Within each sentence bubble, each derivation starts life as a "simple sentence", which only involves nouns and a single verb, which is either an intransitive verb that takes a single noun argument, or a transitive verb that takes two. You just can't have a (propositional) sentence without at least a noun and a verb. Within each sentence, we may start introducing nouns. From left-to-right; we may introduce a new noun (which comes with tendrils that extrude outside the sentence bubble for later use to resolve pronominal reference); split a noun so that the same noun-label is used multiply; and label a noun \emph{if it is saturated -- depicted by a solid black circle} which includes a copy of the label for bookkeeping purposes when resolving references.
+
+Simple sentences are sentences that only contain a single intransitive or transitive verb. Simple sentences will contain at least one noun, and may optionally contain adjectives, adverbs, and adpositions. The rules for generating simple sentences are as follows:
+
 \[
-\tikzfig{mushroom/nounbestiary}
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/simplesentences}}
 \]
+
+The $\texttt{N}_\uparrow$-intro rule introduces new unsaturated nouns from the end of a simple sentence. The \textcolor{green}{\texttt{IV}}-intro rule applies when there is precisely one unsaturated noun in the sentence, and the \textcolor{green}{\texttt{TV}}-intro rule applies when there are precisely two. Both verb-introduction rules saturate their respective nouns, which we depict with a black bulb. Adjectives may be introduced immediately preceding saturated nouns, and adverbs may be introduced immediately preceding any kind of verb. The position of adpositions in English is not context-free, and requires some aid from the deep structure beneath the surface. The $\textcolor{blue}{\texttt{ADP}}_{\textcolor{green}{\texttt{V}}}$-tendril rule allows an unsaturated adposition to appear immediately after a verb; a bulb may travel by homotopy to the right, seeking an unsaturated noun. Conversely, the bidirectional $\textcolor{blue}{\texttt{ADP}}_{\texttt{N}}$-tendril rule sends a mycelic tendril to the left, seeking a verb. The two pass-rules allow unsaturated adpositions to swap past saturated nouns and adjectives; note that by construction, neither verbs nor adverbs will appear in a simple sentence to the right of a verb, so unsaturated adpositions will move right until encountering an unsaturated noun, and in case it doesn't, the tendril- and pass- rules are bidirectional and hence reversible.
+
+
+
+\subsection{Noun distribution and linking}
+
+\marginnote{
+We require a definition of coreference structure in order verify that our rewrite rules are complete with respect to them. One reasonable constraint on coreference in text is that coreference always goes backwards. One way to express this constraint mathematically is the following:
+\begin{defn}[Coreference structure]
+In a text with $K \in \mathbb{N}$ distinct nouns and their coreferents, the linear order of noun+referents in a text corresponds to a list of positive integers that:
+\begin{enumerate}
+\item Starts with 1
+\item Contains every $k \in [1\cdots K]$
+\item For all $k \in [1 \cdots K]$, the head of the list up to the first occurence of $k$ contains all $j < k$.
+\end{enumerate}
+\end{defn}
+}
+
+\marginnote{
+\begin{proposition}
+The noun-introduction and manipulation rules are expressively complete with respect to coreference structure.
+\begin{proof}
+
+\end{proof}
+\end{proposition}
+}
+
+Now we deal with nouns. The major complication here is the accommodation of coreference. We want to keep track of which (pro)nouns share a reference so that we can ultimately eliminate the distinction between e.g. \texttt{Bob likes himself} and \texttt{Bob likes Bob}. So we will generate \emph{unsaturated} nouns and their coreference structure first. We will further ask for a distinction between \emph{unsaturated} and \emph{saturated} nouns -- only the latter of which are ready to be labelled -- which will resolve a minor complication regarding the context-sensitivity of adpositions. We define three classes of rules for nouns. The first is the introduction of novel unsaturated nouns, which can occur in any sentence-bubble. The second class handles the introduction of a new, coreferentially-linked noun to the right of an extant noun. The third concerns swapping the positions of unsaturated and linked nouns within and between bubbles.
+
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/nounbestiary_new}}
+\]
+
+
+
+\newpage
+
 Nouns require verbs in order to be saturated. From left-to-right; if there is precisely one unlabelled noun, we may introduce an unlabelled intransitive verb and saturate the noun so that it is now ready to grow a label; or if there are two unlabelled nouns, we may introduce an unlabelled transitive verb on the surface and saturate the two nouns that will be subject and object; and verbs may be labelled.
 \[
 \tikzfig{mushroom/simpbestiary}

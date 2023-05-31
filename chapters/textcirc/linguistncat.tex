@@ -258,26 +258,9 @@ A \emph{TAG with links} is a TAG in which some of the elementary trees may have 
 \end{defn}
 }
 
-\begin{example}
-The following is a reproduction in \texttt{homotopy.io} of Example 2.4 of [Joshi], illustrating TAGs with links; as a proof assistant for weak $n$-categories, \texttt{homotopy.io} automatically performs tree adjunction after the signature has been properly spelled out. The trees given in Examples 2.4 are:
-
-\[placeholder\]
-
-Which we interpret as expressions comprised of the following signature:
-
-\[placeholder\]
-
-In the process of interpretation, we introduce a link wire-type (in purple), and include directed link generation and elimination morphisms for the $T$ wire-type (in blue). A necessary step in the process of interpretation (which for us involves taking a Poincar\'{e} dual to interpret nodes as wires) is a typing assignment of the tree-branches connected to terminal nodes, which we have opted to read as sharing a $T$-type for minimality, though we could just as well have introduced a separate label-type wire.
-
-\[\resizebox{\textwidth}{!}{\input{figures/tree2gate/tag/ex24.tikz}}\]
-\[\resizebox{\textwidth}{!}{\input{figures/tree2gate/tag/ex242.tikz}}\]
-\[\resizebox{\textwidth}{!}{\input{figures/tree2gate/tag/ex243.tikz}}\]
-\[\resizebox{\textwidth}{!}{\input{figures/tree2gate/tag/ex244.tikz}}\]
-
-\textbf{N.B.} In practice when using \texttt{homotopy.io} for the symmetric monoidal setting, it is simpler to suspend symmetric monoidal signatures to begin at 4-cells rather than 3-cells. The reason for this is that under- and over-braids still exist in the symmetric monoidal setting, and while sequentially composed braids are homotopically equivalent to the pair of identities, they are not uniquely so, thus these homotopies must be input manually. By beginning at 4-cells (or higher, due to the stabilisation hypothesis \bR CITE \e), braid-eliminations are unique up to homotopy and can be performed more easily in the proof assistant.
-\end{example}
-
+\marginnote{
 Now we have enough to spell out full TAGs with local constraints and links as an $n$-categorical signature. To recap briefly, we have seen that we can model the passage from CFGs to TAGs in the $n$-categorical setting, and then how selective and null adjoining rules by specifying endomorphisms on wires as the source of rewrites, and finally that we can model links in the symmetric monoidal setting. Maintaining planarity (which is important for a left-to-right order of terminals for spelling out a language) and modelling obligatory rewrites can be done by requiring that \emph{finished} derivations are precisely those whose only twists are link-wires, and have no sources for obligatory adjoins.
+}
 
 \marginnote{
 \begin{defn}[Tree Adjoining Grammars with local constraints and links in \texttt{homotopy.io}]
@@ -345,4 +328,25 @@ We spell out how this data becomes an $n$-categorical signature by enumerating c
 \item{}
 \end{enumerate}
 }
+
+\begin{example}
+The following is a reproduction in \texttt{homotopy.io} of Example 2.4 of [Joshi], illustrating TAGs with links; as a proof assistant for weak $n$-categories, \texttt{homotopy.io} automatically performs tree adjunction after the signature has been properly spelled out. The trees given in Examples 2.4 are:
+
+\[placeholder\]
+
+Which we interpret as expressions comprised of the following signature:
+
+\[placeholder\]
+
+In the process of interpretation, we introduce a link wire-type (in purple), and include directed link generation and elimination morphisms for the $T$ wire-type (in blue). A necessary step in the process of interpretation (which for us involves taking a Poincar\'{e} dual to interpret nodes as wires) is a typing assignment of the tree-branches connected to terminal nodes, which we have opted to read as sharing a $T$-type for minimality, though we could just as well have introduced a separate label-type wire.
+
+\[\resizebox{\textwidth}{!}{\input{figures/tree2gate/tag/ex24.tikz}}\]
+\[\resizebox{\textwidth}{!}{\input{figures/tree2gate/tag/ex242.tikz}}\]
+\[\resizebox{\textwidth}{!}{\input{figures/tree2gate/tag/ex243.tikz}}\]
+\[\resizebox{\textwidth}{!}{\input{figures/tree2gate/tag/ex244.tikz}}\]
+
+\textbf{N.B.} In practice when using \texttt{homotopy.io} for the symmetric monoidal setting, it is simpler to suspend symmetric monoidal signatures to begin at 4-cells rather than 3-cells. The reason for this is that under- and over-braids still exist in the symmetric monoidal setting, and while sequentially composed braids are homotopically equivalent to the pair of identities, they are not uniquely so, thus these homotopies must be input manually. By beginning at 4-cells (or higher, due to the stabilisation hypothesis \bR CITE \e), braid-eliminations are unique up to homotopy and can be performed more easily in the proof assistant.
+\end{example}
+
+
 

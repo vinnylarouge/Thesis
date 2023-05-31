@@ -17,98 +17,55 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \newpmemlabel{^_1}{1}
-\@writefile{toc}{\contentsline {section}{\numberline {0.1}An introduction to weak n-categories for formal linguists}{4}{section.0.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The category in question can be visualised as a commutative diagram.}}{5}{subsection.0.1.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces When there are too many generating morphisms, we can instead present the same data as a table of $n$-cells; there is a single 0-cell $\star $, and three non-identity 1-cells corresponding to $\leavevmode {\color  {green}\alpha }, \leavevmode {\color  {orange}\beta }, \leavevmode {\color  {cyan}\gamma }$, each with source and target 0-cells $\star $. Typically identity morphisms can be omitted from tables as they come for free. Observe that composition of identities enforces the behaviour of the empty string, so that for any string $x$, we have $\epsilon \cdot x = x = \epsilon \cdot x$.}}{5}{subsection.0.1.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces For a concrete example, we can depict the string $\leavevmode {\color  {green}\alpha } \cdot \leavevmode {\color  {cyan}\gamma } \cdot \leavevmode {\color  {cyan}\gamma } \cdot \leavevmode {\color  {orange}\beta }$ as a morphism in a commuting diagram.}}{5}{subsection.0.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.1}String-rewrite systems as 1-object-2-categories}{5}{subsection.0.1.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The string-diagrammatic view, where $\star $ is treated as a wire and morphisms are treated as boxes or dots is an expression of the same data under the Poincar\'{e} dual.}}{6}{subsection.0.1.1}\protected@file@percent }
-\newlabel{fig:ruleR}{{0.1.1}{6}{String-rewrite systems as 1-object-2-categories}{subsection.0.1.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces We can visualise the rule as a commutative diagram where $\leavevmode {\color  {magenta}R}$ is a 2-cell between the source and target 1-cells. Just as 1-cells are arrows between 0-cell points in a commuting diagram, a 2-cell can also be conceptualised as a directed surface from a 1-cell to another. Taking the Poincar\'{e} dual of this view gives us a string diagram for the 2-cell $\leavevmode {\color  {magenta}R}$.}}{6}{subsection.0.1.1}\protected@file@percent }
-\newlabel{fig:cfgsig}{{0.1.1}{6}{String-rewrite systems as 1-object-2-categories}{subsection.0.1.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces We can describe a context-free grammar with the same combinatorial rewriting data that specifies planar string diagrams as we have been illustrating so far. Here is a context-free grammar for \texttt  {Alice sees Bob quickly run to school}. }}{6}{subsection.0.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.2}Tree Adjoining Grammars}{7}{subsection.0.1.2}\protected@file@percent }
-\newpmemlabel{^_3}{8}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \begin  {construction}[Leaf-Ansatz of a CFG] Given a signature $\mathfrak  {G}$ for a CFG, we construct a new signature $\mathfrak  {G}'$ which has the same 0- and 1-cells as $\mathfrak  {G}$. Now, referring to the dashed magenta arrows in the schematic below: for each 1-cell wire type $\texttt  {X}$ of $\mathfrak  {G}$, we introduce a \emph  {leaf-ansatz} 2-cell $\texttt  {X}^\downarrow $. For each leaf 2-cell $\texttt  {X}_L$ in $\mathfrak  {G}$, we introduce a renamed copy $\texttt  {X}'_L$ in $\mathfrak  {G}'$. Now refer to the solid magenta: we construct a 3-cell in $\mathfrak  {G}'$ for each 2-cell in $\mathfrak  {G}$, which has the effect of systematically replacing open output wires in $\mathfrak  {G}$ with leaf-ansatzes in $\mathfrak  {G}'$. \end  {construction} \par \begin  {proposition} Leaf-ansatzes of CFGs are precisely TAGs with only initial trees and substitution. \begin  {proof} By construction. Consider a CFG given by 2-categorical signature $\mathfrak  {G}$, with leaf-ansatz signature $\mathfrak  {G}'$. The types $\texttt  {X}$ of $\mathfrak  {G}$ become substitution marked symbols $\texttt  {X}^{\downarrow }$ in $\mathfrak  {G}'$. The trees $\texttt  {X}_i$ in $\mathfrak  {G}$ become initial trees $\texttt  {X}^0$ in $\mathfrak  {G}'$. The 3-cells $\texttt  {X}_s$ of $\mathfrak  {G}'$ are precisely substitution operations corresponding to appending the 2-cells $\texttt  {X}_i$ of $\mathfrak  {G}$. \end  {proof} \end  {proposition} }}{8}{theorem.0.1.1}\protected@file@percent }
-\newlabel{prop:cfgastag1}{{7}{8}{Tree Adjoining Grammars}{theorem.0.1.3}{}}
-\newpmemlabel{^_2}{9}
-\newpmemlabel{^_4}{9}
-\newpmemlabel{^_5}{9}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Instead of treating non-terminals as wires and terminals as effects (so that the presence of an open wire available for composition visually indicates non-terminality) the leaf-ansatz construction treats all symbols in a rewrite system as leaves, and the signature bookkeeps the distinction between nonterminals and terminals.}}{9}{theorem.0.1.3}\protected@file@percent }
-\newpmemlabel{^_6}{9}
-\newpmemlabel{^_7}{9}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Adjoining is sprouting subtrees in the middle of branches. One way we might obtain the sentence \texttt  {Bob runs to school} is to start from the simpler sentence \texttt  {Bob runs}, and then refine the verb \texttt  {runs} into \texttt  {runs to school}. This refinement on part of an already completed sentence is not permitted in CFGs, since terminals can no longer be modified. The adjoining operation of TAGs gets around this constraint by permitting rewrites in the middle of trees.}}{9}{theorem.0.1.3}\protected@file@percent }
-\newpmemlabel{^_9}{10}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces  Leaf-ansatz signature of \texttt  {Alice sees Bob quickly run to school} CFG. One aspect of rewrite systems we adapt for now is the distinction between terminal and nonterminal symbols; terminal symbols are those after which no further rewrites are possible. We capture this string-diagrammatically by modelling terminal rewrites as 2-cells with target equal to the 1-cell identity of the 0-cell $\star $, which amounts to graphically terminating a wire. The generators subscripted $L$ (for \emph  {label} or \emph  {leaf}) correspond to terminals of the CFG, and represent a family of generators indexed by a lexicon for the language. The generators subscripted $i$ (for \emph  {introducing a type}) correspond to rewrites of the CFG. Reading the central diagram in the main body from left-to-right, we additionally depict the breakdown of the derivation in terms of rewrites of lower dimension from our signature. \[\resizebox {\textwidth }{!}{\IfFileExists  {tree2gate/cfg/bigcfgbreakdown.tikz} {\let \reserved@d =\bgroup \def \par } {\IfFileExists  {./figures/tree2gate/cfg/bigcfgbreakdown.tikz} {\let \reserved@d =\bgroup \def \par } {\begingroup \def {;}\def {:}\def {|}\def {!}\let \pgfutil@reserved@d =[\def \par }}}\] }}{10}{theorem.0.1.3}\protected@file@percent }
-\newpmemlabel{^_11}{11}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces TAG signature of \texttt  {Alice sees Bob quickly run to school}. The highlighted 2-cells are auxiliary trees that replace CFG 2-cells for verbs with sentential complement, adverbs, and adpositions. The highlighted 3-cells are the tree adjoining operations of the auxiliary trees. The construction yields as a corollary an alternate proof of Theorem [Joshi 6.1.1...]... \begin  {corollary} For every context-free grammar $\mathfrak  {G}$ there exists a tree-adjoining grammar $\mathfrak  {G}'$ such that $\mathfrak  {G}$ and $\mathfrak  {G}'$ are strongly equivalent -- both formalisms generate the same set of strings (weak equivalence) and the same abstract syntactic structures (in this case, trees) behind the strings (strong equivalence). \begin  {proof} Proposition \ref  {prop:cfgastag1} provides one direction of both equivalences. For the other direction, we have to show that each auxiliary tree (a 2-cell) and its adjoining operation (a 3-cell) in $\mathfrak  {G}'$ corresponds to a single 2-cell tree of some CFG signature $\mathfrak  {G}$, which we demonstrate by construction. The highlighted 3-cells of $\mathfrak  {G}'$ are obtained systematically from the auxiliary 2-cells as follows: the root and foot nodes $\texttt  {X},\texttt  {X}^\star $ indicate which wire-type to take as the identity in the left of the 3-cell, and the right of the 3-cell is obtained by replacing all non-$\texttt  {X}$ open wires $\texttt  {Y}$ with their leaf-ansatzes $\texttt  {Y}^\downarrow $. This establishes a correspondence between any 2-cells of $\mathfrak  {G}$ considered as auxiliary trees in $\mathfrak  {G}'$. \end  {proof} \end  {corollary}}}{11}{theorem.0.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {0.1}A generative grammar for text circuits}{4}{section.0.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.1}A circuit-growing grammar}{4}{subsection.0.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {How to read the diagrams in this section:} we will be making heavy use of pink and purple bubbles as frames to construct circuits. We will depict the bubbles horizontally, as we are permitted to by compact closure, or by reading diagrams with slightly skewed axes.}}{5}{subsection.0.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.2}Text structure}{5}{subsection.0.1.2}\protected@file@percent }
+\newpmemlabel{^_2}{5}
+\newpmemlabel{^_3}{5}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The blue-dotted guards are for circuit-translation later, to indicate the contents of boxes.}}{5}{subsection.0.1.2}\protected@file@percent }
+\newlabel{fig:sentbestiary}{{2}{5}{Text structure}{subsection.0.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.3}Simple sentences}{5}{subsection.0.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.4}Noun distribution and linking}{7}{subsection.0.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.5}Modifiers}{9}{subsection.0.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.6}Rewriting to circuit-form}{10}{subsection.0.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.7}Putting it all together}{12}{subsection.0.1.7}\protected@file@percent }
+\newpmemlabel{^_4}{12}
+\newpmemlabel{^_5}{12}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Starting from the initial sentence bubble, we generate a new sentence, introduce some nouns and an SCV, and then we connect our references at the bottom.}}{12}{subsection.0.1.7}\protected@file@percent }
+\newpmemlabel{^_6}{12}
+\newpmemlabel{^_7}{12}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Then we introduce intransitive verbs to saturate nouns, and we may also sprout some modifying adjectives and adverbs.}}{12}{subsection.0.1.7}\protected@file@percent }
 \newpmemlabel{^_8}{12}
+\newpmemlabel{^_9}{12}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces For the remaining unsaturated noun, we use the adposition introduction rules to sprout tendrils off of the other verb in the bubble, and connect.}}{12}{subsection.0.1.7}\protected@file@percent }
 \newpmemlabel{^_10}{12}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.3}Tree adjoining grammars with local constraints}{12}{subsection.0.1.3}\protected@file@percent }
 \newpmemlabel{^_12}{12}
-\newpmemlabel{^_13}{12}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces  Selective and null adjoining diagrammatically: a reproduction of Example 2.5 of [Joshi] which demonstrates the usage of selective and null adjoining. The notation from [Joshi] is presented first, followed by their corresponding representations in an $n$-categorical signature. The initial tree is presented as a 2-cell where the (SA) rules are rewritable nodes, that serve as sources of rewrites in the 3-cell presentations of the auxiliary trees. }}{12}{Item.3}\protected@file@percent }
 \newpmemlabel{^_14}{12}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.4}Braiding, symmetries, and suspension}{12}{subsection.0.1.4}\protected@file@percent }
+\newpmemlabel{^_16}{12}
+\newpmemlabel{^_18}{12}
+\newpmemlabel{^_11}{13}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces All of the non-noun words may now be labelled.}}{13}{subsection.0.1.7}\protected@file@percent }
+\newpmemlabel{^_13}{13}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces To begin assigning nouns, observe that by compact closure of the bubble boundaries, we can deform the diagram to obtain suitable forms for our local rewrite rules for link-generation at the bottom.}}{13}{subsection.0.1.7}\protected@file@percent }
 \newpmemlabel{^_15}{13}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces  Obligatory adjoining diagrammatically: a reproduction of Example 2.11 of [Joshi] which demonstrates the usage of obligatory adjoining, marked orange. The notation from [Joshi] is presented first, followed by their corresponding representations in an $n$-categorical signature. The initial tree is presented as a 2-cell where the (OA) rule is given its own 2-cell, which is the source of rewrites in 3-cell presentations of auxiliary trees. We may capture the obligatory nature of the rewrite by asking that finished derivations contain no instance of the orange 2-cell. }}{13}{Item.3}\protected@file@percent }
-\newpmemlabel{^_16}{13}
-\newpmemlabel{^_17}{13}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces  In our analogy with string rewrite systems, we might like that the following rewrites are equivalent, while respecting that they are not equal, representing $x,a,b$ as blue, red, and green wires respectively. Such rewrites from the empty string to itself are more generally called \emph  {scalars} in the monoidal setting, viewed 2-categorically. }}{13}{subsection.0.1.4}\protected@file@percent }
-\newpmemlabel{^_18}{13}
-\newpmemlabel{^_20}{13}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Now we can introduce our noun labels and linearise our link structure.}}{13}{subsection.0.1.7}\protected@file@percent }
+\newpmemlabel{^_17}{14}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Once the link structure is linearised, we can undo the deformation, and propagate links to the surface.}}{14}{subsection.0.1.7}\protected@file@percent }
 \newpmemlabel{^_19}{14}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces We may generally represent such scalars as labelled dots. A fact about scalars in a 1-object-2-category called the Eckmann-Hilton argument \begin  {color}{red}CITE \end  {color}\xspace  is that dots may circle around one another, and all of those expressions are equivalent up to homotopy. The mechanism that enables this in our setting is that the empty string is equal to copies of itself, which creates the necessary space for manoeuvering; translating into the $n$-categorical setting, expressions are equivalent up to introducing and contracting identities.}}{14}{subsection.0.1.4}\protected@file@percent }
-\newpmemlabel{^_21}{14}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces We may view the homotopies that get us from one rewrite to another as 3-cells, which produces a braid in a pair of wires when viewed as a vignette. Up to processive isotopies \begin  {color}{red}CITE \end  {color}\xspace  , which are continuous bijective transformations that don't let wires double back on themselves, we can identify two different braidings that are not continuously deformable to one another in the 3-dimensional space of the vignette. We distinguish the braidings visually by letting wires either go over or under one another.}}{14}{subsection.0.1.4}\protected@file@percent }
-\newpmemlabel{^_22}{15}
-\newpmemlabel{^_23}{15}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces We can depict these swaps by movements in a cubic volume where each axis corresponds to a direction of composition. Whereas on the plane the dots have two ways to swap places -- clockwise and counterclockwise rotation -- in the volume they have two new ways to swap places -- clockwise and counterclockwise in the new dimension. Shown below are two ways to swap left-to-right sequentially composed dots by clockwise rotations in the forward-backward and up-down directions of composition:}}{15}{subsection.0.1.4}\protected@file@percent }
-\newpmemlabel{^_24}{16}
-\newpmemlabel{^_25}{16}
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces For example, taking our CFG signature from earlier, suspension promotes 1-cells to 3-cells and 2-cells to 4-cells. The resulting signature gives us the same diagrams, now with the added ability to consider diagrams equivalent up to twisting wires, which models a string-rewrite system with free swapping of symbol order.}}{16}{subsection.0.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.5}TAGs with links}{17}{subsection.0.1.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {0.2}A generative grammar for text circuits}{22}{section.0.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.1}A circuit-growing grammar}{22}{subsection.0.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.2}Sentences}{22}{subsection.0.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.3}Simple sentences}{23}{subsection.0.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.4}Modifiers}{24}{subsection.0.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.5}Rewriting to circuit-form}{25}{subsection.0.2.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.6}Putting it all together}{27}{subsection.0.2.6}\protected@file@percent }
-\newpmemlabel{^_26}{27}
-\newpmemlabel{^_27}{27}
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Starting from the initial sentence bubble, we generate a new sentence, introduce some nouns and an SCV, and then we connect our references at the bottom.}}{27}{subsection.0.2.6}\protected@file@percent }
-\newpmemlabel{^_28}{27}
-\newpmemlabel{^_29}{27}
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Then we introduce intransitive verbs to saturate nouns, and we may also sprout some modifying adjectives and adverbs.}}{27}{subsection.0.2.6}\protected@file@percent }
-\newpmemlabel{^_30}{27}
-\newpmemlabel{^_31}{27}
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces For the remaining unsaturated noun, we use the adposition introduction rules to sprout tendrils off of the other verb in the bubble, and connect.}}{27}{subsection.0.2.6}\protected@file@percent }
-\newpmemlabel{^_32}{27}
-\newpmemlabel{^_34}{27}
-\newpmemlabel{^_36}{27}
-\newpmemlabel{^_38}{27}
-\newpmemlabel{^_40}{27}
-\newpmemlabel{^_33}{28}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces All of the non-noun words may now be labelled.}}{28}{subsection.0.2.6}\protected@file@percent }
-\newpmemlabel{^_35}{28}
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces To begin assigning nouns, observe that by compact closure of the bubble boundaries, we can deform the diagram to obtain suitable forms for our local rewrite rules for link-generation at the bottom.}}{28}{subsection.0.2.6}\protected@file@percent }
-\newpmemlabel{^_37}{28}
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Now we can introduce our noun labels and linearise our link structure.}}{28}{subsection.0.2.6}\protected@file@percent }
-\newpmemlabel{^_39}{29}
-\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Once the link structure is linearised, we can undo the deformation, and propagate links to the surface.}}{29}{subsection.0.2.6}\protected@file@percent }
-\newpmemlabel{^_41}{29}
-\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces The bubbles may be rearranged to respect circuit-form, such that the propagation of noun labels to the surface traces out the wires of the end circuit.}}{29}{subsection.0.2.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.7}Extensions I: relative and reflexive pronouns}{30}{subsection.0.2.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.8}Extensions II: grammar equations}{30}{subsection.0.2.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.9}Extensions III: higher-order modifiers}{30}{subsection.0.2.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.10}Equivalence to internal wirings}{31}{subsection.0.2.10}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.11}Text circuit theorem}{31}{subsection.0.2.11}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.12}Related work}{31}{subsection.0.2.12}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces The bubbles may be rearranged to respect circuit-form, such that the propagation of noun labels to the surface traces out the wires of the end circuit.}}{14}{subsection.0.1.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.8}Extensions I: relative and reflexive pronouns}{15}{subsection.0.1.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.9}Extensions II: grammar equations}{15}{subsection.0.1.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.10}Extensions III: higher-order modifiers}{15}{subsection.0.1.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.11}Equivalence to internal wirings}{16}{subsection.0.1.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.12}Text circuit theorem}{16}{subsection.0.1.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.13}Related work}{16}{subsection.0.1.13}\protected@file@percent }
 \citation{wilson_string_2022}
 \citation{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}
-\@writefile{toc}{\contentsline {section}{\numberline {0.3}Text circuits: details, demos, developments}{32}{section.0.3}\protected@file@percent }
-\newlabel{sec:circs}{{0.3}{32}{Text circuits: details, demos, developments}{section.0.3}{}}
-\newlabel{conv:sliding}{{0.3.1}{33}{}{theorem.0.3.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {0.2}Text circuits: details, demos, developments}{17}{section.0.2}\protected@file@percent }
+\newlabel{sec:circs}{{0.2}{17}{Text circuits: details, demos, developments}{section.0.2}{}}
+\newlabel{conv:sliding}{{0.2.1}{18}{}{theorem.0.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Sentences correspond to filled gates, boxes with fixed arity correspond to first-order modifiers such as adverbs and adpositions, and boxes with variable arity correspond to sentential-level modifiers such as conjunctions and verbs with sentential complements. Composition by connecting wires corresponds to identifying coreferences in discourse, and composition by nesting corresponds to grammatical structure within sentences.}}{19}{theorem.0.2.2}\protected@file@percent }
+\newlabel{fig:circuitgen}{{11}{19}{Text circuits: details, demos, developments}{theorem.0.2.2}{}}
 \ttl@finishall
-\gdef \@abspage@last{35}
+\gdef \@abspage@last{19}
