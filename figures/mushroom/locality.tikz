@@ -1,0 +1,101 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dotC] (0) at (-7, 0.25) {};
+		\node [style=dotC] (1) at (-7, 1.25) {};
+		\node [style=dotM] (2) at (-7.5, -0.75) {};
+		\node [style=dotM] (3) at (-8.5, -1.25) {};
+		\node [style=dotY] (4) at (-5.5, -1.25) {};
+		\node [style=dotY] (5) at (-7.75, 0) {};
+		\node [style=none] (12) at (-5, 0.5) {$\simeq$};
+		\node [style=none] (13) at (-5, 0) {$\rightarrow$};
+		\node [style=none] (14) at (-2.5, 1) {};
+		\node [style=none] (15) at (-2.5, -1) {};
+		\node [style=none] (18) at (-3.25, 0.75) {};
+		\node [style=none] (19) at (-3.55, 0) {};
+		\node [style=none] (20) at (-1.45, 0) {};
+		\node [style=dotY] (21) at (-2.75, 0.25) {};
+		\node [style=dotY] (22) at (-2.25, -0.25) {};
+		\node [style=none] (30) at (0, 0) {$\rightarrow$};
+		\node [style=dotC] (31) at (-1, 1.5) {};
+		\node [style=dotC] (32) at (-4, 1.5) {};
+		\node [style=dotM] (33) at (-4, -1.5) {};
+		\node [style=dotM] (34) at (-1, -1.5) {};
+		\node [style=none] (35) at (-2, 1.25) {};
+		\node [style=none] (36) at (2.5, 1) {};
+		\node [style=none] (37) at (2.5, -1) {};
+		\node [style=none] (38) at (1.75, 0.75) {};
+		\node [style=none] (39) at (1.45, 0) {};
+		\node [style=none] (40) at (3.55, 0) {};
+		\node [style=dotY] (41) at (2.25, 0.25) {};
+		\node [style=dotY] (42) at (2.75, -0.25) {};
+		\node [style=dotC] (43) at (4, 1.5) {};
+		\node [style=dotC] (44) at (1, 1.5) {};
+		\node [style=dotM] (45) at (1, -1.5) {};
+		\node [style=dotM] (46) at (4, -1.5) {};
+		\node [style=none] (47) at (3, 1.25) {};
+		\node [style=none] (48) at (5, 0.5) {$\simeq$};
+		\node [style=none] (49) at (5, 0) {$\rightarrow$};
+		\node [style=dotC] (50) at (7, 0.25) {};
+		\node [style=dotC] (51) at (7, 1.25) {};
+		\node [style=dotM] (52) at (6.5, -0.75) {};
+		\node [style=dotM] (53) at (5.5, -1.25) {};
+		\node [style=dotY] (54) at (8.5, -1.25) {};
+		\node [style=dotY] (55) at (6.25, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KB] (0) to (2);
+		\draw [style=KB] (3) to (5);
+		\draw [style=KM] (5) to (1);
+		\draw [style=KO] (1) to (4);
+		\draw [style=KG] (3) to (4);
+		\draw [style=KD] (15.center)
+			 to [bend left=90, looseness=1.75] (14.center)
+			 to [bend left=90, looseness=1.75] cycle;
+		\draw [style=KM] (21)
+			 to [in=-15, out=105] (18.center)
+			 to [in=-105, out=165] (32);
+		\draw [style=KB] (21)
+			 to [in=0, out=-135] (19.center)
+			 to [in=90, out=-180, looseness=0.75] (33);
+		\draw [style=KR] (3) to (2);
+		\draw [style=KR] (0) to (1);
+		\draw [style=KG] (22)
+			 to [in=90, out=-120] (15.center)
+			 to [in=0, out=-90, looseness=0.75] (33);
+		\draw [style=KO] (22)
+			 to [in=-180, out=30] (20.center)
+			 to [in=-15, out=0, looseness=1.25] (35.center)
+			 to [in=15, out=165, looseness=0.75] (32);
+		\draw [style=KR, in=-135, out=60, looseness=0.75] (33) to (34);
+		\draw [style=KR, in=165, out=-30, looseness=0.75] (32) to (31);
+		\draw [style=KB, in=105, out=-75, looseness=0.75] (31) to (34);
+		\draw [style=KD] (37.center)
+			 to [bend left=90, looseness=1.75] (36.center)
+			 to [bend left=90, looseness=1.75] cycle;
+		\draw [style=KM] (41)
+			 to [in=-15, out=105] (38.center)
+			 to [in=-105, out=165] (44);
+		\draw [style=KB] (41)
+			 to [in=0, out=-135] (39.center)
+			 to [in=90, out=-180, looseness=0.75] (45);
+		\draw [style=KG] (42)
+			 to [in=90, out=-120] (37.center)
+			 to [in=0, out=-90, looseness=0.75] (45);
+		\draw [style=KO] (42)
+			 to [in=-180, out=30] (40.center)
+			 to [in=-15, out=0, looseness=1.25] (47.center)
+			 to [in=15, out=165, looseness=0.75] (44);
+		\draw [style=KR, in=-135, out=60, looseness=0.75] (45) to (46);
+		\draw [style=KR, in=165, out=-30, looseness=0.75] (44) to (43);
+		\draw [style=KB, in=105, out=-75, looseness=0.75] (43) to (46);
+		\draw [style=KP] (41) to (42);
+		\draw [style=KB] (50) to (52);
+		\draw [style=KB] (53) to (55);
+		\draw [style=KM] (55) to (51);
+		\draw [style=KO] (51) to (54);
+		\draw [style=KG] (53) to (54);
+		\draw [style=KR] (53) to (52);
+		\draw [style=KR] (50) to (51);
+		\draw [style=KP] (55) to (54);
+	\end{pgfonlayer}
+\end{tikzpicture}

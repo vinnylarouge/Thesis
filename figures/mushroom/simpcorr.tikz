@@ -1,0 +1,63 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1, 0) {};
+		\node [style=none] (1) at (1, -1) {};
+		\node [style=none] (2) at (1, 1) {};
+		\node [style=smalldotG] (3) at (0, 0) {};
+		\node [style=dotM] (5) at (-2, -0.5) {};
+		\node [style=dotM] (6) at (-2, 0.5) {};
+		\node [style=none] (7) at (-2, -1) {};
+		\node [style=none] (8) at (-2, 1) {};
+		\node [style=none] (9) at (-2.5, -0.25) {};
+		\node [style=none] (10) at (-1.5, -0.5) {};
+		\node [style=none] (11) at (-2.5, 0.25) {};
+		\node [style=none] (12) at (-1.5, 0.5) {};
+		\node [style=dot] (13) at (-2.5, 0) {};
+		\node [style=dotM] (14) at (2.5, -1) {};
+		\node [style=dotM] (15) at (2.5, 1) {};
+		\node [style=none] (16) at (2.5, -1.5) {};
+		\node [style=none] (17) at (2.5, 1.5) {};
+		\node [style=none] (18) at (1.75, -0.75) {};
+		\node [style=none] (19) at (3.5, -1) {};
+		\node [style=none] (20) at (1.75, 0.75) {};
+		\node [style=none] (21) at (3.5, 1) {};
+		\node [style=none] (22) at (3.5, 0) {};
+		\node [style=dotb] (23) at (1.75, -0.5) {};
+		\node [style=dotG] (24) at (1.75, 0.5) {\footnotesize{\texttt{1}}};
+		\node [style=smalldotG] (25) at (2.5, 0) {};
+		\node [style=none] (27) at (-1.5, 0) {};
+		\node [style=none] (28) at (1, 1.25) {};
+		\node [style=none] (29) at (1.75, 1.25) {};
+		\node [style=none] (30) at (1, -1.5) {};
+		\node [style=none] (31) at (1.75, -1.5) {};
+		\node [style=none] (32) at (-1, 1.25) {};
+		\node [style=none] (33) at (-2.5, 1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (3) to (1.center);
+		\draw [style=KG] (3) to (2.center);
+		\draw [style=KD] (0.center) to (3);
+		\draw [style=KM] (7.center) to (5);
+		\draw [style=KM] (6) to (8.center);
+		\draw [style=KM] (5)
+			 to [in=-90, out=180, looseness=0.75] (9.center)
+			 to (11.center);
+		\draw [style=KM, in=180, out=90, looseness=0.75] (11.center) to (6);
+		\draw [style=KM] (16.center) to (14);
+		\draw [style=KM] (15) to (17.center);
+		\draw [style=KM, in=-90, out=180, looseness=0.75] (14) to (18.center);
+		\draw [style=KM] (18.center) to (20.center);
+		\draw [style=KM, in=180, out=90, looseness=0.75] (20.center) to (15);
+		\draw [style=KG, in=0, out=120] (25) to (24);
+		\draw [style=K, in=0, out=-120] (25) to (23);
+		\draw [style=KP] (5) to (10.center);
+		\draw [style=KP] (12.center) to (6);
+		\draw [style=KP] (14) to (19.center);
+		\draw [style=KP] (21.center) to (15);
+		\draw [style=K] (13) to (27.center);
+		\draw [style=K] (25) to (22.center);
+		\draw [style=v, bend left=90, looseness=2.00] (28.center) to (29.center);
+		\draw [style=v, bend right=90, looseness=2.25] (30.center) to (31.center);
+		\draw [style=v, bend left=270, looseness=1.25] (32.center) to (33.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

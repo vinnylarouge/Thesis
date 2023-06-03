@@ -1,0 +1,29 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (4) at (-3.5, 0) {};
+		\node [style=none] (5) at (-1.5, 0) {};
+		\node [style=dotM] (6) at (-2.9, 0) {};
+		\node [style=dotM] (7) at (-2.1, 0) {};
+		\node [style=none] (8) at (-1, 0) {$\rightarrow$};
+		\node [style=none] (9) at (-0.5, 0) {};
+		\node [style=dotM] (11) at (0.1, 0) {};
+		\node [style=dotM] (12) at (0.9, 0) {};
+		\node [style=none] (14) at (3, 0) {};
+		\node [style=dotM] (15) at (1.6, 0) {};
+		\node [style=dotM] (16) at (2.4, 0) {};
+		\node [style=none] (17) at (0, 1) {\texttt{S}-intro};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KM] (4.center) to (6);
+		\draw [style=KM] (7) to (5.center);
+		\draw [style=KM, bend left=90, looseness=1.25] (6) to (7);
+		\draw [style=KP, bend right=90, looseness=1.25] (6) to (7);
+		\draw [style=KM] (9.center) to (11);
+		\draw [style=KM, bend left=90, looseness=1.25] (11) to (12);
+		\draw [style=KP, bend right=90, looseness=1.25] (11) to (12);
+		\draw [style=KM] (16) to (14.center);
+		\draw [style=KM, bend left=90, looseness=1.25] (15) to (16);
+		\draw [style=KP, bend right=90, looseness=1.25] (15) to (16);
+		\draw [style=KM] (12) to (15);
+	\end{pgfonlayer}
+\end{tikzpicture}

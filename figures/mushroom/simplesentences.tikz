@@ -369,6 +369,8 @@
 		\node [style=none] (425) at (4, -12.75) {};
 		\node [style=dotB] (426) at (2.5, -11.75) {};
 		\node [style=dotB] (427) at (4.5, -11.75) {};
+		\node [style=none] (428) at (10.5, -3.5) {\footnotesize{$\texttt{j} \in \mathbf{A}_{\texttt{N}}$}};
+		\node [style=none] (430) at (10.5, -7.5) {\footnotesize{$\texttt{p} \in \mathbf{A}_{\texttt{N}}$}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=KM] (8.center) to (9.center);
