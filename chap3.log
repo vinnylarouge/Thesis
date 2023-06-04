@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  3 JUN 2023 13:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  4 JUN 2023 01:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1908,12 +1908,9 @@ LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
 
 LaTeX Warning: Reference `sec:ncat' on page 4 undefined on input line 36.
 
-(./figures/mushroom/locality.tikz)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4] [5] (./figures/mushroom/simpleCFG.tikz) (./figures/mushroom/simpleADP.tikz)
-(./figures/mushroom/simpcorr.tikz) (./figures/mushroom/simplesentences.tikz
+[4] (./figures/mushroom/locality.tikz) [5] (./figures/mushroom/simpleCFG.tikz)
+(./figures/mushroom/simpleADP.tikz) (./figures/mushroom/simpcorr.tikz)
+(./figures/mushroom/simplesentences.tikz
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 7.5pt on input line 96.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
@@ -1939,12 +1936,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ] [8] [9] (./figures/mushroom/sintro.tikz)
 (./figures/mushroom/circuitplan.tikz) (./figures/mushroom/reflcomplication.tikz
-) (./figures/mushroom/nounbestiary_newnew.tikz)
-Underfull \vbox (badness 1946) has occurred while \output is active []
+) [10
 
- [10
-
-]
+] (./figures/mushroom/nounbestiary_newnew.tikz)
 LaTeX Font Info:    Freeze math alphabet allocation in version normal.
 (Font)              Allocated math groups: 15 (local: 2) on input line 202.
 LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
@@ -2469,10 +2463,10 @@ Package rerunfilecheck Info: File `chap3.out' has not changed.
 (rerunfilecheck)             Checksum: 31D8276674AF408FD1B30427ADD07ECA;522.
  ) 
 Here is how much of TeX's memory you used:
- 51869 strings out of 478268
- 1124579 string characters out of 5846348
- 2268855 words of memory out of 5000000
- 68970 multiletter control sequences out of 15000+600000
+ 51909 strings out of 478268
+ 1125682 string characters out of 5846348
+ 2271366 words of memory out of 5000000
+ 69010 multiletter control sequences out of 15000+600000
  595550 words of font info for 156 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  119i,15n,121p,1943b,1212s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2492,10 +2486,10 @@ e1/public/txfonts/t1xtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pub
 lic/newpx/zplb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx
 /zplr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplri.pf
 b>
-Output written on chap3.pdf (22 pages, 397930 bytes).
+Output written on chap3.pdf (22 pages, 408006 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
+ 278 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
  61 named destinations out of 1000 (max. 500000)
  2685 words of extra memory for PDF output out of 10000 (max. 10000000)
 
