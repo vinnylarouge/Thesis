@@ -183,11 +183,42 @@ Adpositions form by first sprouting and connecting tendrils under the surface. B
 
 \newpage
 
-Now we will deal with coreferential structure and noun-labels. Coreferenced unsaturated nouns will possess their own introduction rule, along with pass- rules to allow them to shift further down text.
-
+Now we will deal with coreferential structure and noun-labels.
+\begin{fullwidth}
 \[
-\resizebox{\textwidth}{!}{\tikzfig{mushroom/nounbestiary_newnew}}
+\resizebox{1.5\textwidth}{!}{\tikzfig{mushroom/nounbestiary_newnew}}
 \]
+\end{fullwidth}
+
+The linked-\texttt{N}-intro rules introduce a new unsaturated noun in the next sentence that coreferences the noun in the previous sentence that generated it. The \texttt{N}-shift rules allow any unsaturated noun to move into the next sentence. For both of the previous rules, the $\beta$ variant handles the case where the next sentence is related to the first by a conjunction. Observe that nouns with a forward coreference have two dotted-black wires leaving the root of their wires, which distinguishes them from nouns that only have a backward coreference or no coreference at all, which only have a single dotted-black wire leaving the root of their wire.\\
+
+The \texttt{N}-swap rule variants allow a unsaturated noun with no forward coreferences to swap places with any unsaturated noun that immediately succeeds it.\\
+
+\begin{figure}[h!]\label{fig:nounkinds}
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/nounkinds}}
+\]
+\caption{At this point, it is worth establishing some terminology about the kinds of unsaturated nouns we have in play. The kinds of nouns are distinguished by their tails. \emph{Lonely} nouns have no coreferences, their tails connect to nothing. \emph{Head} nouns have a forward coreference in text; they have two tails, one that connects to nothing and the other to a noun later in text. \emph{Middle} nouns have a forward and backward coreference; they have two tails, one that connects to a noun in some preceding sentence, and one that connects forward to a noun in a succeeding sentence. \emph{Foot} nouns only have a backward coreference; they have a single tail connecting to a noun in some preceding sentence.}
+\end{figure}
+
+\begin{proposition}\label{prop:linkedlist}
+The unsaturated noun kinds listed in Figure \ref{fig:nounkinds} are exhaustive, hence nouns that share a coreference are organised as a diagrammatic linked-list.
+\begin{proof}
+The \texttt{N}-intro rule creates lonely nouns. Head nouns can only be created by the linked-\texttt{N}-intro applied to a lonely noun. Any new noun created by linked-\texttt{N}-intro is a foot noun. The linked-\texttt{N}-intro rule turns foot nouns into middle nouns. These two intro- rules are the only ones that introduce unsaturated nouns, so it remains to demonstrate that no other rules can introduce noun-kinds that fall outside our taxonomy. The \texttt{N}-shift rule changes relative position of either a lonely or foot noun but cannot change its kind. The \texttt{N}-swap rule may start with either a lonely or foot noun on the left and either a head or middle noun on the right, but the outcome of the rule cannot change the starting kinds as tail-arity is conserved.
+\end{proof}
+\end{proposition}
+
+\begin{proposition}
+Let the \emph{population} of unsaturated nouns in a diagram be the multiset of kinds with multiplicity of their occurence. The \texttt{N}-shift and \texttt{N}-swap rules keep the population invariant.
+\begin{proof}
+By the end of the argument in Proposition \ref{prop:linkedlist}, conservation of tail-arities by these two local rewrites cannot affect the population.
+\end{proof}
+\end{proposition}
+
+
+
+The link-label rule is a (finite) family of rules parameterised by the nouns in the lexicon
 
 \marginnote{
 We require a definition of coreference structure in order verify that our rewrite rules are complete with respect to them. One reasonable constraint on coreference in text is that coreference always goes backwards. One way to express this constraint mathematically is the following:
