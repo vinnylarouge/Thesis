@@ -444,3 +444,155 @@ Within each sentence bubble, each derivation starts life as a "simple sentence",
 
 
 Now we deal with nouns. The major complication here is the accommodation of coreference. We want to keep track of which (pro)nouns share a reference so that we can ultimately eliminate the distinction between e.g. \texttt{Bob likes himself} and \texttt{Bob likes Bob}. So we will generate \emph{unsaturated} nouns and their coreference structure first. We will further ask for a distinction between \emph{unsaturated} and \emph{saturated} nouns -- only the latter of which are ready to be labelled -- which will resolve a minor complication regarding the context-sensitivity of adpositions. We define three classes of rules for nouns. The first is the introduction of novel unsaturated nouns, which can occur in any sentence-bubble. The second class handles the introduction of a new, coreferentially-linked noun to the right of an extant noun. The third concerns swapping the positions of unsaturated and linked nouns within and between bubbles.
+
+Running the named rules in reverse yields the following string manipulations on coreference structures, where integers are notated $j,(j+1),k$, and $X_j$ denotes the leading part of the string has highest integer $j$.
+\begin{align}
+&\texttt{S-}intro &\texttt{]} &\mapsto \texttt{] [ ]}\\
+&\texttt{CNJ-}intro &\texttt{[ ] [ ]} &\mapsto \texttt{[ ]}\\
+&\texttt{SCV-}intro &\texttt{[ j [ ] ]} &\mapsto \texttt{[ j ]}\\
+&linked\texttt{-N-}intro &\texttt{j ] [ j} &\mapsto \texttt{j ] [}\\
+&\texttt{N-}shift &\texttt{] [ j} &\mapsto \texttt{j ] [}\\
+&\texttt{N-}swap &\texttt{j k} &\mapsto \texttt{k j}
+\end{align}
+
+The \texttt{N}-intro rule in reverse affects the coreference structure string globally. It removes an integer if it is the only occurrence of that integer, and decrements all integers higher than it by one.
+
+\begin{align}
+&\texttt{N-}intro &\texttt{X}_\texttt{j} \ \texttt{(j+1) ]} &\mapsto \texttt{X}_\texttt{j} \ \texttt{]}\\
+\end{align}
+
+
+\begin{defn}[(restricted) coreference structure]\label{defn:corefstruct}
+Considering the \texttt{S}-intro and \texttt{CNJ}-intro rules to be concatenations of sentences and the \texttt{SCV}-intro rule to introduce a nested sentence, \emph{sentential structure} corresponds to a well-bracketing, where $\texttt{[}$ indicates the start of a sentence and $\texttt{]}$ the end. In a text with $K \in \mathbb{N}$ coreference classes of nouns, coreference structure is a string in $\{\texttt{[}, \texttt{]}, \texttt{1}, \texttt{2}, \ldots, \texttt{K}\}$ that:
+\begin{itemize}
+\item starts with $\texttt{[}$ and ends with $\texttt{]}$
+\item is a well-bracketing with respect to $\texttt{[},\texttt{]}$
+\item for every occurrence of \texttt{[} after the first, has it immediately preceded by \texttt{[ j}, where $j$ is some integer.
+\item contains at least one occurrence of every $k \in [\texttt{1} \cdots \texttt{K}]$
+\item For all $k \in [1 \cdots K]$, the sublist up to the first occurrence of $k$ contains all $j < k$.
+\item no $k \in [1 \cdots K]$ occurs more than once within a matched pair of brackets.
+\end{itemize}
+Conditions 1 and 2 together indicate that the simplest coreference structure corresponds to the empty sentence and model sentence structure as well-bracketings. Condition 3 respects that only the \texttt{SCV}-intro rule can introduce nesting sentence structure, which requires a single noun to be present. Conditions 4 and 5 together label every coreference class with an integer "without gaps", such that every new noun that occurs from left to right with a distinct coreference class gets assigned the next available integer. Condition 6 rules out reflexive coreferences that occur within the same sentence, following the discussion surrounding Figure \ref{fig:reflcomp}.
+\end{defn}
+
+\begin{example}\label{ex:corefex}
+\texttt{sober} $\alpha$ \texttt{sees drunk} $\beta$ \texttt{clumsily dance.} has coreference structure $\texttt{[1[2]]}$. \texttt{sober} $\alpha$ \texttt{sees drunk} $\beta$ \texttt{clumsily dance.} $\alpha$ \texttt{laughs at} $\beta$ has coreference structure $\texttt{[1[2]][12]}$.
+\end{example}
+
+\begin{proposition}[Completeness with respect to coreference structures]
+\texttt{S}-intro, \texttt{CNJ}-intro, \texttt{SCV}-intro, \texttt{N}-intro, linked-\texttt{N}-intro, \texttt{N}-shift, and \texttt{N}-swap can generate any coreference structure as in Definition \ref{defn:corefstruct}, and only those.
+\begin{proof}
+For the "only" claim, we must argue that the named rewrites are compliant with the 5 conditions of Definition \ref{defn:corefstruct}. The \texttt{S}-intro, \texttt{CNJ}-intro, \texttt{SCV}-intro rules satisfy conditions 1 through 3. There is nothing to check for condition 4, which governs the interpretation of coreference structures as in Example \ref{ex:corefex}. Condition 5 is satisfied by Lemma \ref{prop:linkedlist}. For condition 6, it suffices to observe that novel linked-nouns occur in later sentences than their spawning noun, and this fact is kept invariant by all the named rules.\\
+We approach the "any" claim by demonstrating that the named rules \emph{operating in reverse} suffice to turn any starting coreference structure into the simplest coreference structure $\texttt{[]}$, cf. Condition 1 and that a single sentence-bubble is the start of our diagrammatic derivations. ). First observe that, aided by Lemma \ref{prop:linkedlist}, we can construct a circuit-growing diagram, unique up to homotopies, for any restricted coreference structure. As a running example, suppose the coreference structure is \texttt{[1[[][]]]}
+\end{proof}
+\end{proposition}
+
+
+\begin{lemma}
+Let the \emph{population} of unsaturated nouns in a diagram be the multiset of kinds with multiplicity of their occurence. The \texttt{N}-shift and \texttt{N}-swap rules keep the population invariant.
+\begin{proof}
+By the end of the argument in Proposition \ref{prop:linkedlist}, conservation of tail-arities and their endings by these two local rewrites cannot affect the population.
+\end{proof}
+\end{lemma}
+
+Nouns require verbs in order to be saturated. From left-to-right; if there is precisely one unlabelled noun, we may introduce an unlabelled intransitive verb and saturate the noun so that it is now ready to grow a label; or if there are two unlabelled nouns, we may introduce an unlabelled transitive verb on the surface and saturate the two nouns that will be subject and object; and verbs may be labelled.
+\[
+\tikzfig{mushroom/simpbestiary}
+\]
+
+\subsection{Modifiers}
+
+Modifiers are optional parts of sentences that modify (and hence depend on there being) nouns and verbs. We consider adjectives, adverbs, and adpositions. From left to right; we allow adjectives to sprout immediately before a saturated noun, and we allow adverbs to sprout immediately before any verb.
+
+\[
+\tikzfig{mushroom/adjadv}
+\]
+
+Adpositions modify verbs by tying in an additional noun argument; e.g. while \texttt{runs} is intransitive, \texttt{runs towards} behaves as a transitive verb. Some more advanced technology is required to place adpositions and their thematic nouns in the correct linear order on the surface. In the left column; an adposition tendril can sprout from a verb via an unsaturated adposition, seeking an unsaturated noun to the right; an unsaturated noun can sprout an tendril seeking a verb to connect to on the left. Both of these rewrites are bidirectional, as tendrils might attempt connection but fail, and so be retracted. In the centre, when an unsaturated adposition and its tendril find an unsaturated noun, they may connect, saturating the adposition so that it is ready to label. In the right column; an unsaturated adposition may move past a saturated noun in the same sentence, which allows multiple adpositions for the same verb; finally, a saturated adposition can be labelled.
+
+\[
+\tikzfig{mushroom/adpbestiary}
+\]
+
+\subsection{Rewriting to circuit-form}
+
+\newthought{Resolving references}
+
+\[
+\tikzfig{mushroom/pronbestiary}
+\]
+
+\[
+\tikzfig{mushroom/pronres}
+\]
+
+\newthought{Connecting circuits}
+
+\newpage
+\subsection{Putting it all together}
+
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex1}}
+\]
+\caption{Starting from the initial sentence bubble, we generate a new sentence, introduce some nouns and an SCV, and then we connect our references at the bottom.}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex2}}
+\]
+\caption{Then we introduce intransitive verbs to saturate nouns, and we may also sprout some modifying adjectives and adverbs.}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex3}}
+\]
+\caption{For the remaining unsaturated noun, we use the adposition introduction rules to sprout tendrils off of the other verb in the bubble, and connect.}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex4}}
+\]
+\caption{All of the non-noun words may now be labelled.}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex5}}
+\]
+\caption{To begin assigning nouns, observe that by compact closure of the bubble boundaries, we can deform the diagram to obtain suitable forms for our local rewrite rules for link-generation at the bottom.}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex6}}
+\]
+\caption{Now we can introduce our noun labels and linearise our link structure.}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex7}}
+\]
+\caption{Once the link structure is linearised, we can undo the deformation, and propagate links to the surface.}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex8}}
+\]
+\caption{The bubbles may be rearranged to respect circuit-form, such that the propagation of noun labels to the surface traces out the wires of the end circuit.}
+\end{figure}
+
+\clearpage

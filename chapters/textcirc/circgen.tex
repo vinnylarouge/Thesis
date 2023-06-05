@@ -101,7 +101,7 @@ Now we consider two refinements; conjunctions, and verbs that take sentential co
 \[
 \resizebox{\textwidth}{!}{\tikzfig{mushroom/Sbestiary}}
 \]
-\caption{The dotted-blue wires do not contentfully interact with anything else; they will serve as visual aids for circuit-translation later, to indicate the contents of boxes. They do however indicate a diagrammatic strategy for extensions to accommodate noun phrases, to be explored later.}
+\caption{The dotted-blue wires do not contentfully interact with anything else, but this noninteraction disallows overgeneration cases where adpositional phrases might interject between \texttt{SCV} verbs and their sentential complement, e.g. \textcolor{red}{\texttt{Alice sees \underline{at lunch} Bob drink}}. The dotted-blue wires also indicate a diagrammatic strategy for extensions to accommodate noun phrases, to be explored later.}
 \end{figure}
 
 \marginnote{
@@ -184,11 +184,9 @@ Adpositions form by first sprouting and connecting tendrils under the surface. B
 \newpage
 
 Now we will deal with coreferential structure and noun-labels.
-\begin{fullwidth}
 \[
-\resizebox{1.5\textwidth}{!}{\tikzfig{mushroom/nounbestiary_newnew}}
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/nounbestiary_newnew}}
 \]
-\end{fullwidth}
 
 The linked-\texttt{N}-intro rules introduce a new unsaturated noun in the next sentence that coreferences the noun in the previous sentence that generated it. The \texttt{N}-shift rules allow any unsaturated noun to move into the next sentence. For both of the previous rules, the $\beta$ variant handles the case where the next sentence is related to the first by a conjunction. Observe that nouns with a forward coreference have two dotted-black wires leaving the root of their wires, which distinguishes them from nouns that only have a backward coreference or no coreference at all, which only have a single dotted-black wire leaving the root of their wire.\\
 
@@ -202,148 +200,58 @@ The \texttt{N}-swap rule variants allow a unsaturated noun with no forward coref
 \caption{At this point, it is worth establishing some terminology about the kinds of unsaturated nouns we have in play. The kinds of nouns are distinguished by their tails. \emph{Lonely} nouns have no coreferences, their tails connect to nothing. \emph{Head} nouns have a forward coreference in text; they have two tails, one that connects to nothing and the other to a noun later in text. \emph{Middle} nouns have a forward and backward coreference; they have two tails, one that connects to a noun in some preceding sentence, and one that connects forward to a noun in a succeeding sentence. \emph{Foot} nouns only have a backward coreference; they have a single tail connecting to a noun in some preceding sentence.}
 \end{figure}
 
-\begin{proposition}\label{prop:linkedlist}
+\marginnote{
+\begin{lemma}\label{prop:linkedlist}
 The unsaturated noun kinds listed in Figure \ref{fig:nounkinds} are exhaustive, hence nouns that share a coreference are organised as a diagrammatic linked-list.
 \begin{proof}
-The \texttt{N}-intro rule creates lonely nouns. Head nouns can only be created by the linked-\texttt{N}-intro applied to a lonely noun. Any new noun created by linked-\texttt{N}-intro is a foot noun. The linked-\texttt{N}-intro rule turns foot nouns into middle nouns. These two intro- rules are the only ones that introduce unsaturated nouns, so it remains to demonstrate that no other rules can introduce noun-kinds that fall outside our taxonomy. The \texttt{N}-shift rule changes relative position of either a lonely or foot noun but cannot change its kind. The \texttt{N}-swap rule may start with either a lonely or foot noun on the left and either a head or middle noun on the right, but the outcome of the rule cannot change the starting kinds as tail-arity is conserved.
+The \texttt{N}-intro rule creates lonely nouns. Head nouns can only be created by the linked-\texttt{N}-intro applied to a lonely noun. Any new noun created by linked-\texttt{N}-intro is a foot noun. The linked-\texttt{N}-intro rule turns foot nouns into middle nouns. These two intro- rules are the only ones that introduce unsaturated nouns, so it remains to demonstrate that no other rules can introduce noun-kinds that fall outside our taxonomy. The \texttt{N}-shift rule changes relative position of either a lonely or foot noun but cannot change its kind. The \texttt{N}-swap rule may start with either a lonely or foot noun on the left and either a head or middle noun on the right, but the outcome of the rule cannot change the starting kinds as tail-arity is conserved and the local nature of rewrites cannot affect the ends of tails.
 \end{proof}
-\end{proposition}
-
-\begin{proposition}
-Let the \emph{population} of unsaturated nouns in a diagram be the multiset of kinds with multiplicity of their occurence. The \texttt{N}-shift and \texttt{N}-swap rules keep the population invariant.
-\begin{proof}
-By the end of the argument in Proposition \ref{prop:linkedlist}, conservation of tail-arities by these two local rewrites cannot affect the population.
-\end{proof}
-\end{proposition}
-
-
-
-The link-label rule is a (finite) family of rules parameterised by the nouns in the lexicon
-
-\marginnote{
-We require a definition of coreference structure in order verify that our rewrite rules are complete with respect to them. One reasonable constraint on coreference in text is that coreference always goes backwards. One way to express this constraint mathematically is the following:
-\begin{defn}[Coreference structure]
-In a text with $K \in \mathbb{N}$ distinct nouns and their coreferents, the linear order of noun+referents in a text corresponds to a list of positive integers that:
-\begin{enumerate}
-\item Starts with 1
-\item Contains every $k \in [1\cdots K]$
-\item For all $k \in [1 \cdots K]$, the head of the list up to the first occurence of $k$ contains all $j < k$.
-\end{enumerate}
-\end{defn}
+\end{lemma}
 }
 
-\marginnote{
-\begin{proposition}
-The noun-introduction and manipulation rules are expressively complete with respect to coreference structure.
-\begin{proof}
-
-\end{proof}
-\end{proposition}
-}
-
-\newpage
-
-Nouns require verbs in order to be saturated. From left-to-right; if there is precisely one unlabelled noun, we may introduce an unlabelled intransitive verb and saturate the noun so that it is now ready to grow a label; or if there are two unlabelled nouns, we may introduce an unlabelled transitive verb on the surface and saturate the two nouns that will be subject and object; and verbs may be labelled.
-\[
-\tikzfig{mushroom/simpbestiary}
-\]
-
-\subsection{Modifiers}
-
-Modifiers are optional parts of sentences that modify (and hence depend on there being) nouns and verbs. We consider adjectives, adverbs, and adpositions. From left to right; we allow adjectives to sprout immediately before a saturated noun, and we allow adverbs to sprout immediately before any verb.
+When the linked-list structure of coreferences is set, we propagate noun labels from the head of each list. The rules for noun-label propagation are as follows:
 
 \[
-\tikzfig{mushroom/adjadv}
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/nounbestiary_newnew2}}
 \]
 
-Adpositions modify verbs by tying in an additional noun argument; e.g. while \texttt{runs} is intransitive, \texttt{runs towards} behaves as a transitive verb. Some more advanced technology is required to place adpositions and their thematic nouns in the correct linear order on the surface. In the left column; an adposition tendril can sprout from a verb via an unsaturated adposition, seeking an unsaturated noun to the right; an unsaturated noun can sprout an tendril seeking a verb to connect to on the left. Both of these rewrites are bidirectional, as tendrils might attempt connection but fail, and so be retracted. In the centre, when an unsaturated adposition and its tendril find an unsaturated noun, they may connect, saturating the adposition so that it is ready to label. In the right column; an unsaturated adposition may move past a saturated noun in the same sentence, which allows multiple adpositions for the same verb; finally, a saturated adposition can be labelled.
+\bR FILL IN DESCRIPTIONS \e
 
-\[
-\tikzfig{mushroom/adpbestiary}
-\]
-
-\subsection{Rewriting to circuit-form}
-
-\newthought{Resolving references}
-
-\[
-\tikzfig{mushroom/pronbestiary}
-\]
-
-\[
-\tikzfig{mushroom/pronres}
-\]
-
-\newthought{Connecting circuits}
-
-\newpage
-\subsection{Putting it all together}
-
-\begin{figure}[h!]
+\begin{example}[\texttt{sober Alice sees Bob clumsily dance. She laughs at him.}]
+\end{example}
+\begin{figure}[h!]\label{fig:corefex1}
 \centering
 \[
-\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex1}}
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/corefex1}}
 \]
-\caption{Starting from the initial sentence bubble, we generate a new sentence, introduce some nouns and an SCV, and then we connect our references at the bottom.}
+\caption{\bR FILL IN DESCRIPTIONS \e}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[h!]\label{fig:corefex2}
 \centering
 \[
-\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex2}}
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/corefex2}}
 \]
-\caption{Then we introduce intransitive verbs to saturate nouns, and we may also sprout some modifying adjectives and adverbs.}
+\caption{\bR FILL IN DESCRIPTIONS \e}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[h!]\label{fig:corefex3}
 \centering
 \[
-\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex3}}
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/corefex3}}
 \]
-\caption{For the remaining unsaturated noun, we use the adposition introduction rules to sprout tendrils off of the other verb in the bubble, and connect.}
+\caption{\bR FILL IN DESCRIPTIONS \e}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[h!]\label{fig:corefex4}
 \centering
 \[
-\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex4}}
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/corefex4}}
 \]
-\caption{All of the non-noun words may now be labelled.}
+\caption{\bR FILL IN DESCRIPTIONS \e}
 \end{figure}
 
-\begin{figure}[h!]
-\centering
-\[
-\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex5}}
-\]
-\caption{To begin assigning nouns, observe that by compact closure of the bubble boundaries, we can deform the diagram to obtain suitable forms for our local rewrite rules for link-generation at the bottom.}
-\end{figure}
 
-\begin{figure}[h!]
-\centering
-\[
-\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex6}}
-\]
-\caption{Now we can introduce our noun labels and linearise our link structure.}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\[
-\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex7}}
-\]
-\caption{Once the link structure is linearised, we can undo the deformation, and propagate links to the surface.}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\[
-\resizebox{\textwidth}{!}{\tikzfig{mushroom/bigex8}}
-\]
-\caption{The bubbles may be rearranged to respect circuit-form, such that the propagation of noun labels to the surface traces out the wires of the end circuit.}
-\end{figure}
-
-\clearpage
 \newpage
 \subsection{Extensions I: relative and reflexive pronouns}
 
