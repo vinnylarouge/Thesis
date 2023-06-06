@@ -200,16 +200,7 @@ The \texttt{N}-swap rule variants allow a unsaturated noun with no forward coref
 \caption{At this point, it is worth establishing some terminology about the kinds of unsaturated nouns we have in play. The kinds of nouns are distinguished by their tails. \emph{Lonely} nouns have no coreferences, their tails connect to nothing. \emph{Head} nouns have a forward coreference in text; they have two tails, one that connects to nothing and the other to a noun later in text. \emph{Middle} nouns have a forward and backward coreference; they have two tails, one that connects to a noun in some preceding sentence, and one that connects forward to a noun in a succeeding sentence. \emph{Foot} nouns only have a backward coreference; they have a single tail connecting to a noun in some preceding sentence.}
 \end{figure}
 
-\marginnote{
-\begin{lemma}\label{prop:linkedlist}
-The unsaturated noun kinds listed in Figure \ref{fig:nounkinds} are exhaustive, hence nouns that share a coreference are organised as a diagrammatic linked-list.
-\begin{proof}
-The \texttt{N}-intro rule creates lonely nouns. Head nouns can only be created by the linked-\texttt{N}-intro applied to a lonely noun. Any new noun created by linked-\texttt{N}-intro is a foot noun. The linked-\texttt{N}-intro rule turns foot nouns into middle nouns. These two intro- rules are the only ones that introduce unsaturated nouns, so it remains to demonstrate that no other rules can introduce noun-kinds that fall outside our taxonomy. The \texttt{N}-shift rule changes relative position of either a lonely or foot noun but cannot change its kind. The \texttt{N}-swap rule may start with either a lonely or foot noun on the left and either a head or middle noun on the right, but the outcome of the rule cannot change the starting kinds as tail-arity is conserved and the local nature of rewrites cannot affect the ends of tails.
-\end{proof}
-\end{lemma}
-}
-
-When the linked-list structure of coreferences is set, we propagate noun labels from the head of each list. The rules for noun-label propagation are as follows:
+When the structure of coreferences is set, we propagate noun labels from the head of each list. The rules for noun-label propagation are as follows:
 
 \[
 \resizebox{\textwidth}{!}{\tikzfig{mushroom/nounbestiary_newnew2}}
@@ -251,6 +242,41 @@ When the linked-list structure of coreferences is set, we propagate noun labels 
 \caption{\bR FILL IN DESCRIPTIONS \e}
 \end{figure}
 
+\subsection{Text to circuit}
+
+\begin{defn}[Finished text diagram]
+The circuit-growing grammar produces \emph{text diagrams}. We call a text diagram \emph{finished} if all surface nodes are labelled.
+\end{defn}
+
+\begin{defn}[Text grammar $\mathcal{T}$]
+For the lexicon $\mathcal{L}$, the \emph{text grammar} $\mathcal{T}$ is the set of strings of $\mathcal{L}ˆ*$ associated with finished text diagrams. The sentence-wise grammaticality is gauged by Propositions \ref{prop:simpsent} and \ref{prop:compsent}.
+\end{defn}
+
+\begin{lemma}\label{prop:linkedlist}
+The unsaturated noun kinds listed in Figure \ref{fig:nounkinds} are exhaustive, hence nouns that share a coreference are organised as a diagrammatic linked-list.
+\begin{proof}
+The \texttt{N}-intro rule creates lonely nouns. Head nouns can only be created by the linked-\texttt{N}-intro applied to a lonely noun. Any new noun created by linked-\texttt{N}-intro is a foot noun. The linked-\texttt{N}-intro rule turns foot nouns into middle nouns. These two intro- rules are the only ones that introduce unsaturated nouns, so it remains to demonstrate that no other rules can introduce noun-kinds that fall outside our taxonomy. The \texttt{N}-shift rule changes relative position of either a lonely or foot noun but cannot change its kind. The \texttt{N}-swap rule may start with either a lonely or foot noun on the left and either a head or middle noun on the right, but the outcome of the rule cannot change the starting kinds as tail-arity is conserved and the local nature of rewrites cannot affect the ends of tails.
+\end{proof}
+\end{lemma}
+
+\begin{lemma}\label{prop:norefl}
+No nouns within the same sentence are coreferentially linked.
+\begin{proof}
+Novel linked nouns can only be obtained from the linked-\texttt{N}-intro rule, which places them in succeeding sentences. The swap rules only operate within the same sentence and keep the claim invariant. The \texttt{N}-shift rules only apply to nouns with no forward coreferences; nouns with both forward and backward coreferences cannot leave the sentence they are in. Moreover, \texttt{N}-shift is unidirectional and only allows the rightmost coreference in a linked-list structure to move to later sentences. So there is no danger of an \texttt{N}-shift breaking the invariant.
+\end{proof}
+\end{lemma}
+
+\begin{construction}[Text to circuit]
+
+\end{construction}
+
+\subsection{Circuit to text}
+
+\begin{construction}[Circuit to text]
+
+\end{construction}
+
+\subsection{Text Circuit Theorem}
 
 \newpage
 \subsection{Extensions I: relative and reflexive pronouns}
@@ -308,7 +334,5 @@ When the linked-list structure of coreferences is set, we propagate noun labels 
 \end{example}
 
 \subsection{Equivalence to internal wirings}
-
-\subsection{Text circuit theorem}
 
 \subsection{Related work}
