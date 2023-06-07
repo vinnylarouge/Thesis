@@ -248,13 +248,93 @@ When the structure of coreferences is set, we propagate noun labels from the hea
 
 \subsection{Text to circuit}
 
+\marginnote{
+\begin{defn}[Text Circuits]
+\emph{Text circuits} are made up of three ingredients:
+\begin{itemize}
+\item wires
+\item boxes, or gates
+\item boxes with holes that fit a box, or 2nd order gates
+\end{itemize}
+\end{defn}
+}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/nounwiresABN} 
+\]
+\caption{Nouns are represented by wires, each `distinct' noun having its own wire.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/ADJgate} \quad\quad\quad \tikzfig{textcirc/IVgate} \quad\quad\quad \tikzfig{textcirc/TVgate}
+\]
+\caption{We represent adjectives, intransitive verbs, and transitive verbs by gates acting on noun-wires. Since a transitive verb has both a subject and an object noun, that will then be two noun-wires, while adjectives and intransitive verbs only have one.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/ADVbox}
+\]
+\caption{Adverbs, which modify verbs, we represent as boxes with holes in them, with a number of dangling wires in the hole indicating the shape of gate expected, and these should match the input- and output-wires  of the box with the whole.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/ADPIVbox}
+\]  
+\caption{Similarly, adpositions also modify verbs, by moreover adding another noun-wire to the right.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/SCVbox}
+\]
+\caption{For verbs that take sentential complements and conjunctions, we have families of boxes to accommodate input circuits of all sizes. They add another noun-wire to the left of a circuit.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/CNJbox2}
+\]
+\caption{Conjunctions are boxes that take two circuits which might share labels on some wires.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/ADPIVgate}
+\]
+\caption{Of course filled up boxes are just gates.}
+\end{marginfigure}
+
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{textcirc/gatecompex1}  
+\]
+\caption{Gates compose sequentially by matching labels on some of their noun-wires and in parallel when they share no noun-wires, to give \underline{text circuits}.}
+\end{marginfigure}
+
+Now we demonstrate that \emph{finished} text diagrams yield unique text circuits up to homotopy. Text circuits are presented again in the margins as a reminder. The strategy will be to present new rewrites that transform coreferential structure into symmetric monoidal wire-connectivity.
+
 \begin{defn}[Finished text diagram]
 The circuit-growing grammar produces \emph{text diagrams}. We call a text diagram \emph{finished} if all surface nodes are labelled.
 \end{defn}
 
-\begin{defn}[Text grammar $\mathcal{T}$]
-For the lexicon $\mathcal{L}$, the \emph{text grammar} $\mathcal{T}$ is the set of strings of $\mathcal{L}^\texttt{*}$ associated with finished text diagrams. The sentence-wise grammaticality is gauged by Propositions \ref{prop:simpsent} and \ref{prop:compsent}.
-\end{defn}
+\begin{proposition}
+Finished text diagrams yield text, up to interpreting distinct sentences as concatenated with punctuation \texttt{.}, \texttt{,}, contentless conjunctions or complementisers -- such as \texttt{and}, or \texttt{that} respectively.
+\begin{proof}
+Sentence-wise grammaticality is gauged by Propositions \ref{prop:simpsent} and \ref{prop:compsent}. When multiple sentences occur within the scope of a \texttt{SCV} we might prefer the use of contentless complementisers and conjunctions, e.g. \texttt{Alice sees( Bob draws Charlie drinks ) Dennis dances} is grammatically preferable as but meaningfully equivalent to \texttt{Alice sees \underline{that} Bob draws \underline{and} Charlie drinks \underline{, and} Dennis dances \underline{.}} For our purposes it makes no difference whether surface text has these decorations, as the deep structure of text diagrams encodes all the information we care to know.
+\end{proof}
+\end{proposition}
 
 \begin{lemma}\label{prop:linkedlist}
 The unsaturated noun kinds listed in Figure \ref{fig:nounkinds} are exhaustive, hence nouns that share a coreference are organised as a diagrammatic linked-list.

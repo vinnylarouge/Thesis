@@ -428,7 +428,6 @@
 		\draw [style=KM, in=105, out=0] (207.center) to (180);
 		\draw [style=K] (204) to (210);
 		\draw [style=K, in=-90, out=165] (210) to (208);
-		\draw [style=KM] (198.center) to (196);
 		\draw [style=KO] (218.center) to (219.center);
 		\draw [style=KG] (221.center) to (223.center);
 		\draw [style=KG] (224.center) to (226.center);
@@ -442,5 +441,7 @@
 		\draw [style=KG] (213) to (217);
 		\draw [style=KHO, in=-90, out=150] (213) to (216);
 		\draw [style=KO, in=-90, out=180] (202) to (215);
+		\draw [style=KM] (215) to (214);
+		\draw [style=KDB] (214) to (196);
 	\end{pgfonlayer}
 \end{tikzpicture}
