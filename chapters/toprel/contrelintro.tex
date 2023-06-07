@@ -1,0 +1,34 @@
+\section{Continuous Relations for iconic semantics}
+
+
+
+
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/conduitmetaphor}}\]
+
+Sometimes it is very helpful to illustrate concepts using iconic representations in cartoons. For instance in the \emph{conduit metaphor} \bR CITE \e, \texttt{words} are considered \emph{containers} for \texttt{ideas}, and \texttt{communication} is considered a \emph{conduit} along which those containers are sent. The aim of this chapter is to formalise cartoon doodles like the one above in a symmetric monoidal category so that we can give semantics to text circuits in terms of graphical, iconic representations -- cartoons, in short. To do so, we introduce the category \textbf{ContRel} of \emph{continuous relations}, which are a na\"{i}ve extension of the category \textbf{Top} of topological spaces and continuous functions towards continuous relations.\\
+
+The main reason we prefer \textbf{ContRel} to either \textbf{Rel} or \textbf{Top} for our purposes is that we can diagrammatically characterise set-indexed collections of mutually disjoint open sets as \emph{sticky-spiders}: a generalisation of spiders that interact with idempotents. We can then treat the indexing set as a collection of labels, and an indexed open set as a doodle. Notably, spiders don't exist in cartesian \textbf{Top} except for the one-point space, and the spatial structure of open sets doesn't exist in \textbf{Rel}.
+
+\[placeholder: stickyspider laws\]
+
+But there are all kinds of poorly behaved open sets even on the plane, so enter the next benefit: In \textbf{ContRel}, we can diagrammatically characterise the reals as a topological space up to homeomorphism, which gives us a diagrammatic handle on paths and homotopies, mathematical concepts that enable us to diagrammatically characterise when open sets are connected, how they might move and transform continuously in space, and when open sets are contained inside others.
+
+\[real characterisation\]
+
+And once we've formalised doodles we'll be able to treat ourselves to cartoons as formal semantics for language and nobody can stop us.
+
+\newthought{Sidenote for category theorists}
+
+The na\"{i}ve approach I take is to observe that the preimages of functions are precisely relational converses when functions are viewed as relations, so the preimage-preserves-opens condition that defines continuous functions directly translates to the relational case. To the best of my knowledge, the study of \textbf{ContRel} is a novel contribution. I venture two potential reasons.\\
+
+First, it is because and not despite of the na\"{i}vity of the construction. Usually, the relationship between \textbf{Rel} and \textbf{Set} is often understood in sophisticated general methods which are inappropriate in different ways. I have tried applying Kliesli machinery which generalises to "relationification" of arbitrary categories via appropriate analogs of the powerset monad to relate \textbf{Top} and \textbf{ContRel}, but it is not evident to me whether there is such a monad. The view of relations as spans of maps in the base category should work, since \textbf{Top} has pullbacks, but this makes calculation difficult and especially cumbersome when monoidal structure is involved. See Section \bR ref \e for details.\\
+
+Second, the relational nature of \textbf{ContRel} means that the category has poor exactness properties. Even if the sophisticated machinery mentioned in the first reason do manage to work, relational variants of \textbf{Top} are poor candidates for any kind of serious mathematics because they lack many limits and colimits. Since we take an entirely "monoidal" approach, we are able to find and make use of the rich structure of \textbf{ContRel} with a different toolkit.
+
+\newthought{Itinerary of the chapter:} First we'll build some intuitions about what continuous relations are by example in Section \bR ref \e. Before we can start reasoning diagrammatically, we ought to define the category \textbf{ContRel} and show it is symmetric monoidal, which will be the work in Section \bR ref \e. Then we introduce sticky spiders and prove the following theorem:
+
+\begin{theorem}
+\[placeholder: thm statement\]
+\end{theorem}
+
+Finally, in Section \bR ref \e, we build a vocabulary of topological concepts upon sticky spiders diagrammatically, where the point is to demonstrate sufficient expressivity to reason about whatever we want in principle. We start with the unit interval and isometries, through to rigid motions of shapes in configuration, connectedness and contractibility of shapes via homotopies, until we get to sketching some cognitively primitive relations like parthood, touching, and insideness.
