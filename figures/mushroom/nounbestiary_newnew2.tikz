@@ -233,6 +233,8 @@
 		\node [style=dotb] (230) at (1.5, 7.75) {\footnotesize{\textcolor{white}{\texttt{n}}}};
 		\node [style=none] (231) at (0, 8) {$\rightarrow$};
 		\node [style=none] (232) at (0, 9.5) {link-label};
+		\node [style=none] (233) at (4, -1) {};
+		\node [style=none] (234) at (12, -1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=KD] (0) to (1);
@@ -390,5 +392,7 @@
 		\draw (101.center) to (225.center);
 		\draw [style=KD] (228) to (227.center);
 		\draw [style=KD] (229.center) to (230);
+		\draw [style=KD, in=0, out=-135] (179) to (234.center);
+		\draw [style=KD, in=0, out=-135] (114) to (233.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

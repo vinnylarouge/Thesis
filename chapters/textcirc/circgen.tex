@@ -183,7 +183,7 @@ Adpositions form by first sprouting and connecting tendrils under the surface. B
 
 \newpage
 
-Now we will deal with coreferential structure and noun-labels.
+Now we will deal with coreferential structure and noun-labels. \bR TODO: need more linked-intro variants to handle leaving right-side of conjunction, nested SCV, CNJ to SCV, and SCV to CNJ. Consider using the same graywire convention to simplify case analysis? \e
 \[
 \resizebox{\textwidth}{!}{\tikzfig{mushroom/nounbestiary_newnew}}
 \]
@@ -202,11 +202,13 @@ The \texttt{N}-swap rule variants allow a unsaturated noun with no forward coref
 
 When the structure of coreferences is set, we propagate noun labels from the head of each list. The rules for noun-label propagation are as follows:
 
+\begin{figure}
+\centering
 \[
 \resizebox{\textwidth}{!}{\tikzfig{mushroom/nounbestiary_newnew2}}
 \]
-
-\bR FILL IN DESCRIPTIONS \e
+\caption{The $n \in \mathbf{N}$ notation indicates a family of rewrites (and generators) for each noun in the lexicon. Link-label assigns a noun to a diagrammatically linked collection of coreferent nouns, and link-propagation is a case analysis that copies a link label and distributes is across coreferent nouns. Link-rise is a case analysis to connect labels to the surface, and finally \texttt{N}-label allows a saturated noun to inherit the label of its coreference class, which may either be a noun \texttt{n} or a pronoun appropriate for the noun, notated $^\texttt{*}\texttt{n}$}
+\end{figure}
 
 \begin{example}[\texttt{sober Alice sees Bob clumsily dance. She laughs at him.}]
 \end{example}
@@ -215,7 +217,7 @@ When the structure of coreferences is set, we propagate noun labels from the hea
 \[
 \resizebox{\textwidth}{!}{\tikzfig{mushroom/corefex1}}
 \]
-\caption{\bR FILL IN DESCRIPTIONS \e}
+\caption{We start the derivation by setting up the sentence structure using \texttt{S}- and \texttt{SCV}-intro rules, and two instances of \texttt{N}-intro, one for Alice, and one for Bob. Observe how the \texttt{N}-intro for Bob occurs within the subsentence scoped over by the \texttt{SCV}-rule.}
 \end{figure}
 
 \begin{figure}[h!]\label{fig:corefex2}
@@ -223,7 +225,7 @@ When the structure of coreferences is set, we propagate noun labels from the hea
 \[
 \resizebox{\textwidth}{!}{\tikzfig{mushroom/corefex2}}
 \]
-\caption{\bR FILL IN DESCRIPTIONS \e}
+\caption{By homotopy, we can rearrange the previous diagram to obtain the source of the linked-\texttt{N}-intro rewrite in the dashed-box visual aid. Observe how we drag in the root of what is to be Alice's wire. Then we use the \texttt{IV}-intro in the second sentence, which sets up the surface structure \texttt{she laughs}, and the deep structure for bookkeeping that \texttt{she} refers to \texttt{Alice}.}
 \end{figure}
 
 \begin{figure}[h!]\label{fig:corefex3}
@@ -231,7 +233,7 @@ When the structure of coreferences is set, we propagate noun labels from the hea
 \[
 \resizebox{\textwidth}{!}{\tikzfig{mushroom/corefex3}}
 \]
-\caption{\bR FILL IN DESCRIPTIONS \e}
+\caption{By homotopy again, we can do the same for Bob, this time setting up for the $\gamma$ variant of linked-\texttt{N}-intro which handles the case when the spawning noun is within the scope of an SCV. Then by applying a series of $\texttt{N}_\uparrow$-swaps, the unsaturated noun is placed to the right of the intransitive verb phrase.}
 \end{figure}
 
 \begin{figure}[h!]\label{fig:corefex4}
@@ -239,8 +241,10 @@ When the structure of coreferences is set, we propagate noun labels from the hea
 \[
 \resizebox{\textwidth}{!}{\tikzfig{mushroom/corefex4}}
 \]
-\caption{\bR FILL IN DESCRIPTIONS \e}
+\caption{We've already done the surface derivation for the two sentences separately in Figures \ref{fig:soberA} and \ref{fig:Alaughs}; since neither of those derivations touch the roots of noun-wires, we can emulate those derivations and skip ahead to the first diagram. }
 \end{figure}
+
+\newpage
 
 \subsection{Text to circuit}
 
@@ -249,7 +253,7 @@ The circuit-growing grammar produces \emph{text diagrams}. We call a text diagra
 \end{defn}
 
 \begin{defn}[Text grammar $\mathcal{T}$]
-For the lexicon $\mathcal{L}$, the \emph{text grammar} $\mathcal{T}$ is the set of strings of $\mathcal{L}ˆ*$ associated with finished text diagrams. The sentence-wise grammaticality is gauged by Propositions \ref{prop:simpsent} and \ref{prop:compsent}.
+For the lexicon $\mathcal{L}$, the \emph{text grammar} $\mathcal{T}$ is the set of strings of $\mathcal{L}^\texttt{*}$ associated with finished text diagrams. The sentence-wise grammaticality is gauged by Propositions \ref{prop:simpsent} and \ref{prop:compsent}.
 \end{defn}
 
 \begin{lemma}\label{prop:linkedlist}

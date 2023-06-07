@@ -123,6 +123,8 @@
 		\node [style=dot] (259) at (12.5, 0) {};
 		\node [style=dotb] (260) at (12, 0.75) {};
 		\node [style=dotG] (261) at (13, 0.75) {\footnotesize{\texttt{1}}};
+		\node [style=none] (262) at (-3.5, 3) {linked-\texttt{N}-intro$(\alpha)$};
+		\node [style=none] (263) at (5.5, 3) {\texttt{IV}-intro};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=KTB] (135)

@@ -1,13 +1,9 @@
-\begin{fullwidth}
-
 \section{Populating space with shapes using sticky spiders}\label{sec:stickyspider}
 
 \begin{figure}\label{fig:spiderbicate}
 \scalebox{0.7}{\tikzfig{bestiary/spiderbicat}}
 \caption{The generators (in dashed boxes) and relations that make a spider. When the spider satisfies in addition the three inequalities b1-3, we call it a \textbf{relation-spider}.}
 \end{figure}
-
-\end{fullwidth}
 
 \subsection{When does an object have a spider (or something close to one)?}
 
@@ -50,8 +46,6 @@ The following case analysis shows that our open set only contains the point $p$.
 }
 
 It will be more aesthetic going forward to colour processes and treat the colours as variables instead of labelling them.
-
-\begin{fullwidth}
 
 \newthought{We can use split idempotents to transform copy-spiders from discrete topologies to almost-spiders on other spaces.} We can graphically express the behaviour of a split idempotent $e$ as follows, where the semicircles for the section and retract $r,s$ form a visual pun.
 
@@ -236,5 +230,3 @@ The if direction is an easy check. For the unit/everything relation, we have:
 For the counit/delete relation, we observe that for any split idempotent, the retract must be a partial function. To see this, suppose the split idempotent $e = r;s$ is on $(X,\tau)$ and the discrete topology is $Y^\star$. Seeking contradiction, if the retract is not a partial function, then there is some point $x \in X$ such that $x \in e(x)$, and the image $I := r(x) \subseteq Y$ contains more than one point, which we denote and discriminate $a,b \in r(x) \subseteq Y$ and $a \neq b$. Because the composite $s;r = 1_Y$ of the section and retract must recover the identity on $Y^\star$, the section $s$ must be total -- i.e. the image $s(X) = Y$. So $x \in s(a) \cap s(b)$. Now we have that $(a,x),(b,x) \in s$, and $(x,a),(x,b) \in r$, therefore $(a,b),(b,a) \in s;r$, which by $a \neq b$ contradicts that $s;r$ is the identity relation $1_Y$.
 \[\scalebox{0.8}{\tikzfig{idemproof/finalproof4}}\]
 \end{proof}
-
-\end{fullwidth}
