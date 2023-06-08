@@ -19,35 +19,9 @@ In practice, the process of obtaining transparently computable text goes through
 
 In terms of underpinning mathematical theory, the `dot dot dot' notation within boxes is graphically formal \citep{wilson_string_2022}, and interpretations of such boxes were earlier formalised in \citep{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}. The two forms of interacting composition, one symmetric monoidal and the other by nesting is elsewhere called \emph{produoidal}, and the reader is referred to \bR CITE \e for formal treatment and a coherence theorem. Boxes with holes may be interpreted in several different ways. Firstly, boxes may be considered syntactic sugar for higher-order processes in monoidal closed categories, and boxes are diagrammatically preferable to combs in this regard, since the latter admits a typing pathology where two mutually facing combs interlock. Secondly, boxes need not be decomposable as processes native to the base category, admitting for instance an interpretation as elementwise inversion in linear maps, which specialises in the case of \textbf{Rel} (viewed as \textbf{Vect} over the boolean ring) to negation-by-complement. In some sense, none of these formalities really matter, on the view that text circuits are algebraic jazz for interpreting text, where facets are open to interpretation and modification.\\
 
-\begin{convention}\label{conv:sliding}
-Sometimes we allow wires to twist past each other, and we consider two circuits the same if their gate-connectivity is the same:
-\[
-\tikzfig{textcirc/gatecompex1} \quad\quad = \quad\quad \tikzfig{textcirc/gatecompex2}
-\]
-Since only gate-connectivity matters, we consider circuits the same if all that differs is the horizontal positioning of gates composed in parallel:
-\[
-\tikzfig{textcirc/gateeqslide} 
-\]
-We do care about output-to-input connectivity, so in particular, we {\bR\bf do not\e}
-consider circuits to be equal up to sequentially composed gates commuting past each other:  
-\[
-\tikzfig{textcirc/gateneqcommute}  
-\]
-\end{convention}
-
-\begin{example} 
-The sentence \texttt{\underline{ALICE SEES BOB LIKES FLOWERS THAT CLAIRE PICKS}} can intuitively be given the following text circuit:
-\[
-\tikzfig{textcirc/multigateholeex}
-\]
-\end{example}
 
 
-\begin{marginfigure}
-    \centering
-    \resizebox{\marginparwidth}{!}{\tikzfig{textcirc/circuitgen}}
-    \caption{Sentences correspond to filled gates, boxes with fixed arity correspond to first-order modifiers such as adverbs and adpositions, and boxes with variable arity correspond to sentential-level modifiers such as conjunctions and verbs with sentential complements. Composition by connecting wires corresponds to identifying coreferences in discourse, and composition by nesting corresponds to grammatical structure within sentences.}
-    \label{fig:circuitgen}
-\end{marginfigure}
+
+
 
 \clearpage

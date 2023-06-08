@@ -246,7 +246,7 @@ When the structure of coreferences is set, we propagate noun labels from the hea
 
 \newpage
 
-\subsection{Text to circuit}
+\subsection{Text circuit theorem}
 
 \marginnote{
 \begin{defn}[Text Circuits]
@@ -332,7 +332,7 @@ The circuit-growing grammar produces \emph{text diagrams}. We call a text diagra
 \begin{proposition}
 Finished text diagrams yield text, up to interpreting distinct sentences as concatenated with punctuation \texttt{.}, \texttt{,}, contentless conjunctions or complementisers -- such as \texttt{and}, or \texttt{that} respectively.
 \begin{proof}
-Sentence-wise grammaticality is gauged by Propositions \ref{prop:simpsent} and \ref{prop:compsent}. When multiple sentences occur within the scope of a \texttt{SCV} we might prefer the use of contentless complementisers and conjunctions, e.g. \texttt{Alice sees( Bob draws Charlie drinks ) Dennis dances} is grammatically preferable as but meaningfully equivalent to \texttt{Alice sees \underline{that} Bob draws \underline{and} Charlie drinks \underline{, and} Dennis dances \underline{.}} For our purposes it makes no difference whether surface text has these decorations, as the deep structure of text diagrams encodes all the information we care to know.
+Sentence-wise grammaticality is gauged by Propositions \ref{prop:simpsent} and \ref{prop:compsent}. When multiple sentences occur within the scope of a \texttt{SCV} we might prefer the use of contentless complementisers and conjunctions, e.g. \texttt{Alice sees( Bob draws Charlie drinks ) Dennis dances} is grammatically preferable but meaningfully equivalent to \texttt{Alice sees \underline{that} Bob draws \underline{and} Charlie drinks \underline{, and} Dennis dances \underline{.}} For our purposes it makes no difference whether surface text has these decorations, as the deep structure of text diagrams encodes all the information we care to know.
 \end{proof}
 \end{proposition}
 
@@ -350,17 +350,98 @@ Novel linked nouns can only be obtained from the linked-\texttt{N}-intro rule, w
 \end{proof}
 \end{lemma}
 
-\begin{construction}[Text to circuit]
+\newpage
 
+\begin{construction}[Text to circuit]\label{cons:wirejoin}
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/sentjoin}} 
+\]
+\caption{We turn finished text diagrams into text circuits by operating \emph{in situ}, with extra rules outside the grammatical system that handle connecting noun wires.
+}
+\end{figure}
 \end{construction}
 
-\subsection{Circuit to text}
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/sentjoinex}} 
+\]
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/sentjoinex2}} 
+\]
+\caption{
+In the first step, by Lemmas \ref{prop:linkedlist} and \ref{prop:norefl}, we can always rearrange a finished text diagram such that the noun wires are processive.\\
 
-\begin{construction}[Circuit to text]
+In the second step, use the first rewrite of Construction \ref{cons:wirejoin} to prepare the wires for connection.\\
 
-\end{construction}
+In the third step, we just ignore the existence of the bubble-scaffolding and the loose scalars. We could in principle add more rewrites to melt the scaffolding away if we wanted, but who cares?\\
 
-\subsection{Text Circuit Theorem}
+In the fourth step, we apply the second and third rewrites of Construction \ref{cons:wirejoin} to connect the wires and eliminate nodules underneath labels. We can also straighten up the wires a bit and make them look proper.\\
+
+At this point, we're actually done, because the resulting diagram \emph{is already a text circuit up to a choice of notation}.
+}
+\end{figure}
+
+\begin{proposition}[Finished text diagrams yield unique-up-to-processive-isotopy text circuits]\label{prop:text2circ}
+\begin{proof}
+Every sentence corresponds to a gate up to notation, and we have a handle on sentences via Propositions \ref{prop:simpsent} and \ref{prop:compsent}. Lemmas \ref{prop:linkedlist} and \ref{prop:norefl} guarantee processivity. Uniqueness-up-to-processive-isotopy is inherited: text diagrams themselves are already specified up-to-connectivity, which is strictly more general than processive isotopy. Therefore, for any circuit $C$ obtained from a text diagram $T$ by Construction \ref{cons:wirejoin}, $T$ can be modified up to processive-isotopy on noun wires to yield $T'$ and another circuit $C'$ that only differs from $C$ up to processive isotopy, and all $C'$ can be obtained in this way.
+\end{proof}
+\end{proposition}
+
+The converse of Proposition \ref{prop:text2circ} would be that any text circuit that can be formed by the composition of symmetric monoidal categories and of plugging gates into boxes yields a text diagram. This would mean that text circuit composition is acceptable as a generative grammar for text. Establishing this converse requires elaboration of some conventions.
+
+\marginnote{
+\begin{remark}
+There are some oddities about our conventions that will make sense later when we consider semantics. For example, Convention \ref{conv:twist} an acceptable thing to ask for syntactically but quite odd to think about at the semantic level, where we would like to think that distinct nouns manifest as different states on the same noun-wire-type. A semantic interpretation that makes use of this convention will become clearer in Section \bR configspace \e. Similarly, Convention \ref{conv:exists} wouldn't be true if we consider the order of text to reflect the chronological ordering of events, in which case there are implicit \texttt{... and then ...} conjunctions that distinguish ordered gates from parallel gates conjoined by an implicit \texttt{... while ...}; this particular complication is handled at the semantic level in Section \bR statesactionmanner \e.
+\end{remark}
+}
+
+
+
+\begin{figure}[h!]
+\centering
+\[
+\tikzfig{textcirc/gatecompextgt}
+\]
+\caption{
+\begin{convention}[Wire twisting]\label{conv:twist}
+\end{convention}
+Wires are labelled by nouns. We consider two circuits the same if their gate-connectivity is the same. In particular, this means that we can eliminate unnecessary twists in wires to obtain diagrammatically simpler representations.
+}
+\end{figure}
+
+
+
+
+\begin{figure}[h!]
+\centering
+\[
+\tikzfig{textcirc/gateeqslide} 
+\]
+\caption{
+\begin{convention}[Sliding]\label{conv:sliding}
+\end{convention}
+Since only gate-connectivity matters, we consider circuits the same if all that differs is the horizontal positioning of gates composed in parallel.
+\begin{convention}[Reading text circuits]\label{conv:reading}
+\end{convention}
+Text circuits ought to be presented so that they can be read from top to bottom and from left to right, like English text.
+}
+\end{figure}
+
+\begin{convention}[Contentless conjunctions]
+\end{convention}
+Conventions \ref{conv:sliding} and \ref{conv:reading} require something else to allow them to work at the same time. The left text circuit may be read \texttt{C hates D. A likes B.}, and the right as \texttt{A likes B. C hates D.} The middle text circuit requires something to distinguish the fact that the gates are parallel: a "contentless" conjunction, such as \texttt{and}, or \texttt{while}. In terms of text diagram rewrites, something like this:
+
+
+\begin{convention}[Lonely wires]\label{conv:exists}
+There's really only a single kind of text circuit we can draw that doesn't obviously correspond to a text diagram, and that's one where gates are missing.
+\[
+\tikzfig{textcirc/lonelywires} 
+\]
+In process theories, wires are identity processes that do nothing to their inputs. We require a text-diagram analogue, and an intransitive "null-verb" in English that seems to work is \texttt{is}, in the sense of \texttt{exists}. In terms of text diagram rewrites, we want something like this:
+\end{convention}
 
 \newpage
 \subsection{Extensions I: relative and reflexive pronouns}

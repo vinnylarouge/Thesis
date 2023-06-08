@@ -63,9 +63,7 @@
 \newpmemlabel{^_17}{12}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces At this point, it is worth establishing some terminology about the kinds of unsaturated nouns we have in play. The kinds of nouns are distinguished by their tails. \emph  {Lonely} nouns have no coreferences, their tails connect to nothing. \emph  {Head} nouns have a forward coreference in text; they have two tails, one that connects to nothing and the other to a noun later in text. \emph  {Middle} nouns have a forward and backward coreference; they have two tails, one that connects to a noun in some preceding sentence, and one that connects forward to a noun in a succeeding sentence. \emph  {Foot} nouns only have a backward coreference; they have a single tail connecting to a noun in some preceding sentence.}}{12}{subsection.0.1.4}\protected@file@percent }
 \newlabel{fig:nounkinds}{{9}{12}{Text structure and noun-coreference}{subsection.0.1.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.5}Text to circuit}{12}{subsection.0.1.5}\protected@file@percent }
-\newlabel{prop:linkedlist}{{0.1.11}{12}{}{theorem.0.1.11}{}}
-\newlabel{prop:norefl}{{0.1.12}{12}{}{theorem.0.1.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.5}Text circuit theorem}{12}{subsection.0.1.5}\protected@file@percent }
 \newpmemlabel{^_19}{13}
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces The $n \in \mathbf  {N}$ notation indicates a family of rewrites (and generators) for each noun in the lexicon. Link-label assigns a noun to a diagrammatically linked collection of coreferent nouns, and link-propagation is a case analysis that copies a link label and distributes is across coreferent nouns. Link-rise is a case analysis to connect labels to the surface, and finally \texttt  {N}-label allows a saturated noun to inherit the label of its coreference class, which may either be a noun \texttt  {n} or a pronoun appropriate for the noun, notated $^\texttt  {*}\texttt  {n}$}}{13}{subsection.0.1.4}\protected@file@percent }
 \newpmemlabel{^_21}{14}
@@ -77,22 +75,37 @@
 \newpmemlabel{^_25}{14}
 \@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces By homotopy again, we can do the same for Bob, this time setting up for the $\gamma $ variant of linked-\texttt  {N}-intro which handles the case when the spawning noun is within the scope of an SCV. Then by applying a series of $\texttt  {N}_\uparrow $-swaps, the unsaturated noun is placed to the right of the intransitive verb phrase.}}{14}{theorem.0.1.8}\protected@file@percent }
 \newlabel{fig:corefex3}{{13}{14}{Text structure and noun-coreference}{theorem.0.1.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.6}Circuit to text}{14}{subsection.0.1.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.7}Text Circuit Theorem}{14}{subsection.0.1.7}\protected@file@percent }
 \newpmemlabel{^_27}{15}
 \@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces We've already done the surface derivation for the two sentences separately in Figures \ref  {fig:soberA} and \ref  {fig:Alaughs}; since neither of those derivations touch the roots of noun-wires, we can emulate those derivations and skip ahead to the first diagram. }}{15}{theorem.0.1.8}\protected@file@percent }
 \newlabel{fig:corefex4}{{14}{15}{Text structure and noun-coreference}{theorem.0.1.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.8}Extensions I: relative and reflexive pronouns}{16}{subsection.0.1.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.9}Extensions II: grammar equations}{16}{subsection.0.1.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.10}Extensions III: higher-order modifiers}{16}{subsection.0.1.10}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.11}Equivalence to internal wirings}{17}{subsection.0.1.11}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.12}Related work}{17}{subsection.0.1.12}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Nouns are represented by wires, each `distinct' noun having its own wire.}}{16}{theorem.0.1.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces We represent adjectives, intransitive verbs, and transitive verbs by gates acting on noun-wires. Since a transitive verb has both a subject and an object noun, that will then be two noun-wires, while adjectives and intransitive verbs only have one.}}{16}{theorem.0.1.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Adverbs, which modify verbs, we represent as boxes with holes in them, with a number of dangling wires in the hole indicating the shape of gate expected, and these should match the input- and output-wires of the box with the whole.}}{16}{theorem.0.1.9}\protected@file@percent }
+\newlabel{prop:linkedlist}{{0.1.12}{16}{}{theorem.0.1.12}{}}
+\newlabel{prop:norefl}{{0.1.13}{16}{}{theorem.0.1.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Similarly, adpositions also modify verbs, by moreover adding another noun-wire to the right.}}{17}{theorem.0.1.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces For verbs that take sentential complements and conjunctions, we have families of boxes to accommodate input circuits of all sizes. They add another noun-wire to the left of a circuit.}}{17}{theorem.0.1.9}\protected@file@percent }
+\newlabel{cons:wirejoin}{{0.1.14}{17}{Text to circuit}{theorem.0.1.14}{}}
+\newpmemlabel{^_28}{17}
+\newpmemlabel{^_29}{17}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces We turn finished text diagrams into text circuits by operating \emph  {in situ}, with extra rules outside the grammatical system that handle connecting noun wires. }}{17}{theorem.0.1.14}\protected@file@percent }
+\newpmemlabel{^_30}{17}
+\newpmemlabel{^_31}{17}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces  In the first step, by Lemmas \ref  {prop:linkedlist} and \ref  {prop:norefl}, we can always rearrange a finished text diagram such that the noun wires are processive.\\ \par In the second step, use the first rewrite of Construction \ref  {cons:wirejoin} to prepare the wires for connection.\\ \par In the third step, we just ignore the existence of the bubble-scaffolding and the loose scalars. We could in principle add more rewrites to melt the scaffolding away if we wanted, but who cares?\\ \par In the fourth step, we apply the second and third rewrites of Construction \ref  {cons:wirejoin} to connect the wires and eliminate nodules underneath labels. We can also straighten up the wires a bit and make them look proper.\\ \par At this point, we're actually done, because the resulting diagram \emph  {is already a text circuit up to a choice of notation}. }}{17}{theorem.0.1.14}\protected@file@percent }
+\newlabel{prop:text2circ}{{0.1.15}{17}{Finished text diagrams yield unique-up-to-processive-isotopy text circuits}{theorem.0.1.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Conjunctions are boxes that take two circuits which might share labels on some wires.}}{18}{theorem.0.1.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Of course filled up boxes are just gates.}}{18}{theorem.0.1.9}\protected@file@percent }
+\newlabel{conv:twist}{{0.1.16}{18}{Wire twisting}{theorem.0.1.16}{}}
+\newlabel{conv:sliding}{{0.1.17}{18}{Sliding}{theorem.0.1.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Gates compose sequentially by matching labels on some of their noun-wires and in parallel when they share no noun-wires, to give \underline  {text circuits}.}}{19}{theorem.0.1.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.6}Extensions I: relative and reflexive pronouns}{19}{subsection.0.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.7}Extensions II: grammar equations}{19}{subsection.0.1.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.8}Extensions III: higher-order modifiers}{19}{subsection.0.1.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.9}Equivalence to internal wirings}{20}{subsection.0.1.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.10}Related work}{20}{subsection.0.1.10}\protected@file@percent }
 \citation{wilson_string_2022}
 \citation{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}
-\@writefile{toc}{\contentsline {section}{\numberline {0.2}Text circuits: details, demos, developments}{18}{section.0.2}\protected@file@percent }
-\newlabel{sec:circs}{{0.2}{18}{Text circuits: details, demos, developments}{section.0.2}{}}
-\newlabel{conv:sliding}{{0.2.1}{19}{}{theorem.0.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Sentences correspond to filled gates, boxes with fixed arity correspond to first-order modifiers such as adverbs and adpositions, and boxes with variable arity correspond to sentential-level modifiers such as conjunctions and verbs with sentential complements. Composition by connecting wires corresponds to identifying coreferences in discourse, and composition by nesting corresponds to grammatical structure within sentences.}}{20}{theorem.0.2.2}\protected@file@percent }
-\newlabel{fig:circuitgen}{{15}{20}{Text circuits: details, demos, developments}{theorem.0.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {0.2}Text circuits: details, demos, developments}{21}{section.0.2}\protected@file@percent }
+\newlabel{sec:circs}{{0.2}{21}{Text circuits: details, demos, developments}{section.0.2}{}}
 \ttl@finishall
-\gdef \@abspage@last{20}
+\gdef \@abspage@last{22}

@@ -80,6 +80,18 @@
 		\node [style=none] (77) at (8.75, -1.75) {};
 		\node [style=none] (78) at (-3.5, 0) {$=$};
 		\node [style=none] (79) at (3.75, 0) {$=$};
+		\node [style=none] (80) at (-8.5, 2.25) {\texttt{A}};
+		\node [style=none] (81) at (-7.5, 2.25) {\texttt{B}};
+		\node [style=none] (82) at (-6, 2.25) {\texttt{C}};
+		\node [style=none] (83) at (-5, 2.25) {\texttt{D}};
+		\node [style=none] (84) at (-2, 2.25) {\texttt{A}};
+		\node [style=none] (85) at (-1, 2.25) {\texttt{B}};
+		\node [style=none] (86) at (1, 2.25) {\texttt{C}};
+		\node [style=none] (87) at (2, 2.25) {\texttt{D}};
+		\node [style=none] (88) at (5.25, 2.25) {\texttt{A}};
+		\node [style=none] (89) at (6.25, 2.25) {\texttt{B}};
+		\node [style=none] (90) at (7.75, 2.25) {\texttt{C}};
+		\node [style=none] (91) at (8.75, 2.25) {\texttt{D}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (1.center) to (3.center);

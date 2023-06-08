@@ -598,3 +598,34 @@ Adpositions modify verbs by tying in an additional noun argument; e.g. while \te
 \clearpage
 
 If you are already happy to treat such doodles as formal, then I think you're alright, you can skip the rest of this chapter. If you are a category theorist or just curious, hello, how are you, please do write me to share your thoughts if you care to, and please skip the rest of this paragraph. If you are still reading, I assume you are some kind of smelly epistemic-paranoiac Bourbaki-thrall sets-and-lambdas math-phallus-worshipping truth-condition-blinded symbol-pusher who takes things too seriously. I hope you choke on the math. I will begin the intimidation immediately.\\
+
+
+\begin{convention}\label{conv:sliding}
+We consider two circuits the same if their gate-connectivity is the same:
+\[
+\tikzfig{textcirc/gatecompex1} \quad\quad = \quad\quad \tikzfig{textcirc/gatecompex2}
+\]
+Since only gate-connectivity matters, we consider circuits the same if all that differs is the horizontal positioning of gates composed in parallel:
+\[
+\tikzfig{textcirc/gateeqslide} 
+\]
+We do care about output-to-input connectivity, so in particular, we {\bR\bf do not\e}
+consider circuits to be equal up to sequentially composed gates commuting past each other:  
+\[
+\tikzfig{textcirc/gateneqcommute}  
+\]
+\end{convention}
+
+\begin{example} 
+The sentence \texttt{\underline{ALICE SEES BOB LIKES FLOWERS THAT CLAIRE PICKS}} can intuitively be given the following text circuit:
+\[
+\tikzfig{textcirc/multigateholeex}
+\]
+\end{example}
+
+\begin{marginfigure}
+    \centering
+    \resizebox{\marginparwidth}{!}{\tikzfig{textcirc/circuitgen}}
+    \caption{Sentences correspond to filled gates, boxes with fixed arity correspond to first-order modifiers such as adverbs and adpositions, and boxes with variable arity correspond to sentential-level modifiers such as conjunctions and verbs with sentential complements. Composition by connecting wires corresponds to identifying coreferences in discourse, and composition by nesting corresponds to grammatical structure within sentences.}
+    \label{fig:circuitgen}
+\end{marginfigure}

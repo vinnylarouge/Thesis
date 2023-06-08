@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  6 JUN 2023 12:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  8 JUN 2023 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1960,46 +1960,51 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11]
+[11] [12] [13] [14] [15] (./figures/textcirc/nounwiresABN.tikz)
+(./figures/textcirc/ADJgate.tikz) (./figures/textcirc/IVgate.tikz)
+(./figures/textcirc/TVgate.tikz) (./figures/textcirc/ADVbox.tikz)
+(./figures/textcirc/ADPIVbox.tikz) (./figures/textcirc/SCVbox.tikz)
+(./figures/textcirc/CNJbox2.tikz) (./figures/textcirc/ADPIVgate.tikz)
+(./figures/textcirc/gatecompex1.tikz)
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 252.
- [12] [13] [14]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(Font)              scaled to size 10.0pt on input line 326.
+ [16
 
- [15])
-[16] [17] (./chapters/textcirc/textcirc.tex (./figures/textcirc/babiex.tikz)
+] (./figures/mushroom/sentjoin.tikz)
+Overfull \hbox (163.78992pt too wide) in paragraph at lines 363--363
+[][] 
+ []
 
-Package natbib Warning: Citation `wilson_string_2022' on page 18 undefined on i
+(./figures/mushroom/sentjoinex.tikz) (./figures/mushroom/sentjoinex2.tikz)
+[17] (./figures/textcirc/gatecompex1.tikz) (./figures/textcirc/gatecompex2.tikz
+) (./figures/textcirc/gateeqslide.tikz)
+Overfull \hbox (50.79208pt too wide) detected at line 406
+[]
+ []
+
+[18]) [19] [20] (./chapters/textcirc/textcirc.tex
+(./figures/textcirc/babiex.tikz)
+
+Package natbib Warning: Citation `wilson_string_2022' on page 21 undefined on i
 nput line 20.
 
 
-Package natbib Warning: Citation `merry_reasoning_2014' on page 18 undefined on
+Package natbib Warning: Citation `merry_reasoning_2014' on page 21 undefined on
  input line 20.
 
 
-Package natbib Warning: Citation `quick_-logic_2015' on page 18 undefined on in
+Package natbib Warning: Citation `quick_-logic_2015' on page 21 undefined on in
 put line 20.
 
 
-Package natbib Warning: Citation `zamdzhiev_rewriting_2017' on page 18 undefine
+Package natbib Warning: Citation `zamdzhiev_rewriting_2017' on page 21 undefine
 d on input line 20.
 
 
 Underfull \vbox (badness 7907) has occurred while \output is active []
 
- [18]
-(./figures/textcirc/gatecompex1.tikz) (./figures/textcirc/gatecompex2.tikz)
-(./figures/textcirc/gateeqslide.tikz)
-Overfull \hbox (50.79208pt too wide) detected at line 30
-[]
- []
-
-(./figures/textcirc/gateneqcommute.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-(./figures/textcirc/multigateholeex.tikz) (./figures/textcirc/circuitgen.tikz)
-[20])
+ [21]
+[22])
 
 Package natbib Warning: There were undefined citations.
 
@@ -2019,32 +2024,40 @@ Package rerunfilecheck Info: File `chap3.out' has not changed.
 (rerunfilecheck)             Checksum: 31D8276674AF408FD1B30427ADD07ECA;522.
  ) 
 Here is how much of TeX's memory you used:
- 55185 strings out of 478268
- 1169285 string characters out of 5846348
- 2390995 words of memory out of 5000000
- 72312 multiletter control sequences out of 15000+600000
+ 55277 strings out of 478268
+ 1171135 string characters out of 5846348
+ 2389404 words of memory out of 5000000
+ 72374 multiletter control sequences out of 15000+600000
  595199 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,15n,121p,1943b,1212s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}{/usr/
-local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/
-texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/usr/local/tex
-live/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/2022
-/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2022/texmf
--dist/fonts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-d
-ist/fonts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist
-/fonts/type1/public/stix/stix-mathrm-bold.pfb></usr/local/texlive/2022/texmf-di
-st/fonts/type1/public/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/
-fonts/type1/public/stix/stix-mathscr.pfb></usr/local/texlive/2022/texmf-dist/fo
-nts/type1/public/stix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts
-/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
-/public/newpx/zplb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/n
-ewpx/zplr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplr
-i.pfb>
-Output written on chap3.pdf (20 pages, 367033 bytes).
+ 119i,15n,121p,1943b,1081s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{theorem.0.1.15} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{theorem.0.1.14} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}{/usr/lo
+cal/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/te
+xlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/usr/local/texli
+ve/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/2022/t
+exmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2022/texmf-d
+ist/fonts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-dis
+t/fonts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/f
+onts/type1/public/stix/stix-mathrm-bold.pfb></usr/local/texlive/2022/texmf-dist
+/fonts/type1/public/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/fo
+nts/type1/public/stix/stix-mathscr.pfb></usr/local/texlive/2022/texmf-dist/font
+s/type1/public/stix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
+ype1/public/txfonts/t1xtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/p
+ublic/newpx/zplb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/new
+px/zplr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplri.
+pfb>
+Output written on chap3.pdf (22 pages, 392197 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 285 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
  2685 words of extra memory for PDF output out of 10000 (max. 10000000)
 
