@@ -106,65 +106,6 @@ The preimage $R^\dag(\star)$ of $\star$ must be an open set of $X^\tau$ by defin
 
 \newthought{There are 16 candidate relations $\mathcal{S} \rightarrow \mathcal{S}$ to check.} A case-by-case approach won't scale, so we could instead identify the building blocks of continuous relations with the same source and target space.
 
-\newthought{Which relations $X^\tau \rightarrow Y^\sigma$ are always continuous?}
-
-\newthought{The empty relation is always continuous.}
-\marginnote{
-    \begin{rem}[Empty relation]
-    The \textbf{empty relation} $X \rightarrow Y$ relates nothing. It is defined:
-    \[ \varnothing \subset X \times Y\]
-    \end{rem}
-}
-\begin{proposition}
-\label{prop:emptyrel}
-\begin{proof}
-The preimage of the empty relation is always $\varnothing$, which is open by definition.
-\end{proof}
-\end{proposition}
-
-\newthought{Full relations are always continuous}
-\marginnote{
-    \begin{rem}[Full relation]
-    The \textbf{full relation} $X \rightarrow Y$ relates everything to everything. It is all of $X \times Y$.
-    \end{rem}
-}
-\begin{proposition}
-\label{prop:fullrel}
-\begin{proof}
-The preimage of any subset of $Y$ -- open or not -- under the full relation is the whole of $X$, which is open by definition.
-\end{proof}
-\end{proposition}
-
-\newthought{Full relations restricted to open sets in the domain are continuous.}
-\begin{proposition}\label{prop:bowtie}
-Given an open $U \subseteq X^\tau$, and an arbitrary subset $K \subset Y^\sigma$, the relation $U \times K \subseteq X \times Y$ is open.
-\begin{proof}
-Consider an arbitrary open set $V \in \sigma$. Either $V$ and $K$ are disjoint, or they overlap. If they are disjoint, the preimage of $V$ is $\varnothing$, which is open. If they overlap, the preimage of $V$ is $U$, which is open.
-\end{proof}
-\end{proposition}
-
-\newthought{Continuous functions are always continuous.}
-\begin{proposition}\label{prop:func}
-If $f: X^\tau \rightarrow Y^\sigma$ is a continuous function, then it is also a continuous relation.
-\begin{proof}
-Functions are special cases of relations. The relational converse of a function viewed in this way is the same thing as the preimage.
-\end{proof}
-\end{proposition}
-
-\newthought{The identity relation is always continuous.}
-\marginnote{
-    \begin{rem}[Identity relation]
-    The \textbf{identity relation} $X \rightarrow X$ relates anything to itself. It is defined:
-    \[ \{(x,x) : x \in X\} \subseteq X \times X\]
-    \end{rem}
-}
-The identity relation is also the "trivial" continuous map from a space to itself, so this also follows from Proposition \ref{prop:func}.
-\begin{proposition}\label{prop:idrel}
-\begin{proof}
-The preimage of any open set under the identity relation is itself, which is open by assumption.
-\end{proof}
-\end{proposition}
-
 \newthought{Given two continuous relations $R,S : X^\tau \rightarrow Y^\sigma$, how can we combine them?}\marginnote{
 \begin{rem}[Union, intersection, and ordering of relations]
 Recall that relations $X \rightarrow Y$ can be viewed as subsets of $X \times Y$. So it makes sense to speak of the union and intersection of relations, and of partially ordering them by inclusion.
@@ -238,7 +179,7 @@ Let $\mathcal{N}(x)$ denote some open neighbourhood of $x$ with respect to the t
 \begin{proposition}\label{prop:hombasis}
 Continuous partial functions form a topological basis for the space $(X \times Y)^{(\tau \multimap \sigma)}$, where the opens are continuous relations $X^\tau \rightarrow Y^\sigma$.
 \begin{proof}
-We will show that every continuous relation $R: X^\tau \rightarrow Y^\sigma$ arises as a union of partial functions. Denote the set of continuous partial functions $\mathfrak{f}$. We claim that:
+We will show that every continuous relation $R: X^\tau \rightarrow Y^\sigma$ arises as a union of continuous partial functions. Denote the set of continuous partial functions $\mathfrak{f}$. We claim that:
 \[ R = \bigcup\limits_{F \in \mathfrak{f}} (R \cap F) \]
 The $\supseteq$ direction is evident, while the $\subseteq$ direction follows from Lemma \ref{lem:edgecomplete}.
 By Lemma \ref{lem:capideal}, every $R \cap F$ term is a partial function, and by Corollary \ref{cor:homspace}, continuous.
@@ -300,3 +241,41 @@ So a continuous partial function is \texttt{"(countably) many (open-ended) lines
 \scalebox{0.8}{\includegraphics{figures/paintingexamples/starrynight}}
 \caption{Like it or not, a continuous relation $[0,1] \rightarrow \blacksquare$: "The Starry Night", by Vincent van Gogh.}
 \end{marginfigure}
+
+\newthought{As one more step towards abstraction, we ask: which relations $X^\tau \rightarrow Y^\sigma$ are always continuous?}
+
+\begin{proposition}
+The \textbf{empty relation} $X \rightarrow Y$ relates nothing. It is defined $\varnothing \subset X \times Y$. The empty relation is always continuous.
+\label{prop:emptyrel}
+\begin{proof}
+The preimage of the empty relation is always $\varnothing$, which is open by definition.
+\end{proof}
+\end{proposition}
+
+\begin{proposition}\label{prop:fullrel}
+The \textbf{full relation} $X \rightarrow Y$ relates everything to everything. It is all of $X \times Y$. Full relations are always continuous.
+\begin{proof}
+The preimage of any subset of $Y$ under the full relation is the whole of $X$, which is open by definition.
+\end{proof}
+\end{proposition}
+
+\begin{proposition}\label{prop:bowtie}
+Full relations restricted to open sets in the domain are continuous. Given an open $U \subseteq X^\tau$, and an arbitrary subset $K \subset Y^\sigma$, the relation $U \times K \subseteq X \times Y$ is open.
+\begin{proof}
+Consider an arbitrary open set $V \in \sigma$. Either $V$ and $K$ are disjoint, or they overlap. If they are disjoint, the preimage of $V$ is $\varnothing$, which is open. If they overlap, the preimage of $V$ is $U$, which is open.
+\end{proof}
+\end{proposition}
+
+\begin{proposition}\label{prop:func}
+Continuous functions are always continuous. If $f: X^\tau \rightarrow Y^\sigma$ is a continuous function, then it is also a continuous relation.
+\begin{proof}
+Functions are special cases of relations. The relational converse of a function viewed in this way is the same thing as the preimage.
+\end{proof}
+\end{proposition}
+
+\begin{proposition}\label{prop:idrel}
+The \textbf{identity relation} $X \rightarrow X$ relates anything to itself. It is defined $\{(x,x) : x \in X\} \subseteq X \times X$. The identity relation is always continuous.
+\begin{proof}
+The preimage of any open set under the identity relation is itself, which is open by assumption. The identity relation is also the "trivial" continuous map from a space to itself, so this also follows from Proposition \ref{prop:func}.
+\end{proof}
+\end{proposition}

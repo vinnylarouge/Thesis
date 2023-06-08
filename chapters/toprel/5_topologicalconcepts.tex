@@ -49,55 +49,83 @@ will send the king to a2, the bishop to b4, and the knight to d1, i.e. $\bra{K} 
 \newpage
 
 \subsection{The unit interval}\label{sec:interval}
-To begin modelling more complex concepts, we first need to extend our topological tools. If we have the unit interval, we can begin to define what it would mean for spaces to be connected (by drawing lines between points in those spaces), and we can also move towards defining motion as movement along a line.
-
-\newthought{The reals} There are many spaces homeomorphic to the real line. How do we know when we have one of them? The following theorem provides an answer:
+To begin modelling more complex concepts, we first need to extend our topological tools. If we have the unit interval, we can begin to define what it would mean for spaces to be connected (by drawing lines between points in those spaces), and we can also move towards defining motion as movement along a line. There are many spaces homeomorphic to the real line. How do we know when we have one of them? The following theorem provides an answer:
 \begin{theorem}[Friedman]\label{thm:Friedman}
 Let $\big((X,\tau), < \big)$ be a topological space with a total order. If there exists a continuous map $f: X \times X \rightarrow X$ such that $\forall a,b_{\in X} : a < f(a,b) < b$, then $X$ is homeomorphic to $\mathbb{R}$.
+\bR CITE \e
 \end{theorem}
-We can define all of these pieces using diagrammatic equations.
 
-\newthought{Less than} We define a total order $<$ as an open set -- i.e. a test -- on $X \times X$ that obeys the usual axiomatic rules:
-\[\scalebox{0.75}{\tikzfig{topology/lessthan}}\]
-\[\tikzfig{topology/lessthantotal}\]
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/lessthan}}\]
+\caption{We can express the theorem using diagrammatic equations. First we define a total order $<$ as an open set on $X \times X$ that obeys the usual axiomatic rules:}
+\end{figure}
 
-\newthought{Endpoints} We can introduce endpoints for open intervals directly by asking for the space $X$ to have points that are less than or greater than all other points. Another method, which we will use here for primarily aesthetic reasons, is to use endocombinators to define suprema. Endocombinators are like functional expressions applied to diagrams. For a motivating example, consider the case when we have a locally indiscrete topology:
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/lessthantotal}}\]
+\caption{Trichotomy requires us to appeal to the rig structure, which is nonstandard for process-theoretic equations, but algebraically permissible. Going forward we will also introduce quantifiers into process-theoretic equations, essentially treating process-equations as we would any other symbolic algebraic specification.}
+\end{figure}
 
+\newpage
+
+\marginnote{We can introduce endpoints for open intervals directly by asking for the space $X$ to have points that are less than or greater than all other points. Another method, which we will use here for primarily aesthetic reasons, is to use endocombinators to define suprema. Endocombinators are like functional expressions applied to diagrams. For a motivating example, consider the case when we have a locally indiscrete topology:
+}
+
+\marginnote{
 \begin{defn}[Locally indiscrete topology]
 $(X,\tau)$ is \emph{locally indiscrete} when every open set is also closed.
 \end{defn}
+}
 
+\marginnote{
 If we know that a topology is locally indiscrete and we are given an open $U$, we would like to notate the complement $X/U$ -- which we know to be open -- as any of the following, which only differ up to notation.
+}
 
-\[\tikzfig{topology/negbubble}\]
+\marginnote{
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/negbubble}}\]
+}
 
-Unfortunately, the complementation operation $X/-$ is not in general a continuous relation, hence in the lattermost expression above we resort to using bubbles as a syntactic sugar. Formally, these bubbles are \emph{endocombinators}, the semantics and notation for which we borrow and modify from [].
+\marginnote{
+Unfortunately, the complementation operation $X/-$ is not in general a continuous relation, hence in the lattermost expression above we resort to using bubbles as a syntactic sugar. Formally, these bubbles are \emph{endocombinators}, the semantics and notation for which we borrow and modify from \bR CITE \e.
+}
 
+\marginnote{
 \begin{defn}[Partial endocombinator]
 In a category $\mathcal{C}$, a \emph{partial endocombinator} on a homset $\mathcal(C)(A,B)$ is a function $\mathcal(C)(A,B) \rightarrow \mathcal(C)(A,B)$
 \end{defn}
+}
 
-Using this technology, we can define:
+Using the technology in the margins, we can define:
 
-\[\tikzfig{topology/upperbound}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/upperbound}}\]
 
 And we can add in further equations governing the upper bound endocombinator to turn it into a supremum, where the lower endpoint is obtained as the supremum of the empty set, and the upper endpoint is the supremum of the whole set.
 
-\[\tikzfig{topology/sup}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/sup}}\]
 
 Now we can define endpoints purely graphically:
 
-\[\tikzfig{topology/endpoints}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/endpoints}}\]
 
 Going forward, we will denote the unit interval using a thick dotted wire.
+
+\newpage
 
 \newthought{Simply connected spaces}
 
 Once we have a unit interval, we can define the usual topological notion of a simply connected space: one where any two points can be connected by a continuous line without leaving the space.
 
-\[\tikzfig{topology/simplyconnected}\]
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/simplyconnected}}\]
+\caption{
+\begin{defn}[Simple connectivity]\label{def:simpconn}
+\end{defn}
+In prose: for any pair of points that are within the open $V$, there exists some continuous function from the unit interval into the space that starts at one of the points and ends at the other.}
+\end{figure}
 
-This is a useful enough concept that we will notate simply connected open sets as follows, where the hole is a reminder that simply connected spaces might still have holes in them.
+Simple connectivity is a useful enough concept that we will notate simply connected open sets as follows, where the hole is a reminder that simply connected spaces might still have holes in them.
 
 \[\tikzfig{topology/simpconnotation}\]
 
@@ -105,35 +133,50 @@ This is a useful enough concept that we will notate simply connected open sets a
 
 Static shapes in space are nice, but moving them around would be nicer. So we have to define a stock of concepts to express rigid motion. Rigidity however is a difficult concept to express in topological spaces up to homeomorphism -- everyone is well aware of the popular gloss of topology in terms of coffee cups being homeomorphic to donuts. To obtain rigid transformations as we have in Euclidean space, we need to define metrics, and in order to do that, we need addition.
 
-\newthought{Addition}
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/addition}}\]
+\caption{
+\begin{defn}[Addition]\label{def:addition}
+\end{defn}
 
-More precisely, we only need an additive monoid structure on the unit interval. We do not care about obtaining precise values from our metric, and we will not need to subtract distances from each other. All we need to know is that the lower endpoint stands in for "zero distance" -- as the unit of the monoid -- and that adding positive distances together will give you a larger positive distance deterministically.
+More precisely, we only need an additive monoid structure on the unit interval. We do not care about obtaining precise values from our metric, and we will not need to subtract distances from each other. All we need to know is that the lower endpoint stands in for "zero distance" -- as the unit of the monoid -- and that adding positive distances together will give you a larger positive distance deterministically.}
+\end{figure}
 
-\[\scalebox{0.75}{\tikzfig{topology/addition}}\]
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/metric}}\]
+\caption{
+\begin{defn}[Metric]\label{def:metric}
+\end{defn}
+A metric on a space is a continuous map $X \rightarrow \mathbf{R}^+$ to the positive reals that satisfies these axioms.}
+\end{figure}
 
-\newthought{Metrics}
-
-A metric on a space is a continuous map $X \rightarrow \mathbf{R}^+$ to the positive reals that satisfies the following axioms.
-
-\[\scalebox{0.75}{\tikzfig{topology/metric}}\]
-
-\newthought{Open balls}
-
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/openball}}\]
+\caption{\begin{defn}[Open balls]\label{def:openball}
 Once we have metrics, we can define the usual topological notion of open balls. Open balls will come in handy later, and a side-effect which we note but do not explore is that open balls form a basis for any metric space, so in the future whenever we construct spaces that come with natural metrics, we can speak of their topology without any further work.
+\end{defn}
+}
+\end{figure}
 
-\[\tikzfig{topology/openball}\]
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/topologicalgroup}}\]
+\caption{\begin{defn}[Topological groups]\label{def:topgrp} 
+\end{defn}
+It is no trouble to depict collections of invertible transformations of spaces $X \rightarrow X$. A consequence of invertibility and the requirement that the identity transform is a group element forces all transformations in a topological group to be functions.}
+\end{figure}
 
-\newthought{Topological Group}
-
-It is no trouble to depict collections of invertible transformations of spaces $X \rightarrow X$:
-
-\[\tikzfig{topology/topologicalgroup}\]
-
-\newthought{Isometry}
-
-But recall that the collections of invertible transformations we are really interested in are the \emph{rigid} ones, the ones that move objects in space without deforming them. We can identify when a transformation is rigid by the following criterion:
-
+\begin{figure}[h!]
+\centering
 \[\tikzfig{topology/isometry}\]
+\caption{\begin{defn}[Isometry]\label{def:topological groups}
+\end{defn}
+But recall that the collections of invertible transformations we are really interested in are the \emph{rigid} ones, the ones that move objects in space without deforming them, i.e. the isometries. Iso-metry means same-distance. A distance preserving transformation is one such that applying the metric pointwise before and after the transformation of a shape gives a fixed value. \bR RHS should be dotted output! \e
+}
+\end{figure}
 
 \newthought{Rigid displacements}
 
@@ -187,25 +230,31 @@ Contractible open sets are worth their own notation too; a solid black effect, t
 
 \subsection{Rigid motion}\label{sec:rigidmotion}
 
-Now at last we can define sliding shapes. What we mean by two sticky spiders being relatable by sliding shapes is that we have a homotopy that begins at one and ends at the other, such that every point in between is itself a sticky spider related to the first by rigid displacement.
-
-\[\tikzfig{topology/rigidmotion}\]
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/rigidmotion}}\]
+\caption{Now at last we can define sliding shapes. What we mean by two sticky spiders being relatable by sliding shapes is that we have a homotopy that begins at one and ends at the other, such that every point in between is itself a sticky spider related to the first by rigid displacement.}
+\end{figure}
 
 \newthought{Configuration spaces}
 
-We can depict the \emph{configuration space} of shapes that are obtainable by displacing the shapes of a given spider by a split idempotent through the n-fold tensor of rigid transformations -- a restriction to the subspace of the largest open set contained in the subset of all valid (with correct chirality) combinations of displacements that yield another spider.
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/configurations}}\]
+\caption{We can depict the \emph{configuration space} of shapes that are obtainable by displacing the shapes of a given spider by a split idempotent through the n-fold tensor of rigid transformations -- a restriction to the subspace of the largest open set contained in the subset of all valid (with correct chirality) combinations of displacements that yield another spider.}
+\end{figure}
 
-\[\tikzfig{topology/configurations}\]
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/rigidmotion2}}\]
+\caption{Observe that the data of rigid motion on a sticky spider as we have defined above can be captured as a continuous map from the unit interval to rigid transformations: one for each shape in the spider. This is precisely a continuous path in configuration space.}
+\end{figure}
 
-Observe that the data of rigid motion on a sticky spider as we have defined above can be captured as a continuous map from the unit interval to rigid transformations: one for each shape in the spider. This is precisely a continuous path in configuration space.
-
-\[\tikzfig{topology/rigidmotion2}\]
-
-What are the connected components of configuration space? Evidently, there are pairs of spiders that are both valid displacements, but not mutually reachable by rigid motion. For example, shapes might \emph{enclose} or \emph{trap} other shapes, or shapes might be \emph{interlocked}. Depicted below are some pairs of configurations that are mutually unreachable by rigid transformations:
-
-\[\tikzfig{topology/encloseexample}\]
-
-Now we have the conceptual toolkit to begin modelling these concepts in the configuration space of a sticky spider.
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/encloseexample}}\]
+\caption{What are the connected components of configuration space? Evidently, there are pairs of spiders that are both valid displacements, but not mutually reachable by rigid motion. For example, shapes might \emph{enclose} or \emph{trap} other shapes, or shapes might be \emph{interlocked}. Depicted are some pairs of configurations that are mutually unreachable by rigid transformations. Now we have the conceptual toolkit to begin modelling these concepts in the configuration space of a sticky spider.}
+\end{figure}
 
 \subsection{Modelling linguistic topological concepts}\label{sec:topconcept}
 
