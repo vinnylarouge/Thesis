@@ -229,7 +229,7 @@ So a continuous partial function is \texttt{"(countably) many (open-ended) lines
 \label{fig:thickbrush}
 \end{marginfigure}
 
-\newthought{Any painting is a continuous relation $[0,1] \rightarrow \blacksquare$.} By colour-coding $[0,1]$ and controlling brushstrokes, we can do quite a lot. Now we would like to develop the abstract machinery required to \emph{formally} paint pictures with words.
+\newthought{Any painting is a continuous relation $[0,1] \rightarrow \blacksquare$.} By colour-coding $[0,1]$ and controlling brushstrokes, we can do quite a lot. So, like it or not, here's a continuous relation $[0,1] \rightarrow \blacksquare$.
 
 \begin{marginfigure}
 \centering
@@ -237,46 +237,12 @@ So a continuous partial function is \texttt{"(countably) many (open-ended) lines
 \caption{Assign the visible spectrum of light to $[0,1]$. Colour open sets according to perceptual addition of light, computing brightness by normalising the measure of the open set.}
 \end{marginfigure}
 
-\begin{marginfigure}
+\begin{figure}
 \centering
-\scalebox{0.8}{\includegraphics{figures/paintingexamples/starrynight}}
-\caption{Like it or not, a continuous relation $[0,1] \rightarrow \blacksquare$: "The Starry Night", by Vincent van Gogh.}
-\end{marginfigure}
+\scalebox{0.75}{\includegraphics{figures/paintingexamples/starrynight}}
+\caption{}
+\end{figure}
 
-\newthought{As one more step towards abstraction, we ask: which relations $X^\tau \rightarrow Y^\sigma$ are always continuous?}
+Now we would like to develop the abstract machinery required to \emph{formally} paint pictures with words.
 
-\begin{proposition}
-The \textbf{empty relation} $X \rightarrow Y$ relates nothing. It is defined $\varnothing \subset X \times Y$. The empty relation is always continuous.
-\label{prop:emptyrel}
-\begin{proof}
-The preimage of the empty relation is always $\varnothing$, which is open by definition.
-\end{proof}
-\end{proposition}
-
-\begin{proposition}\label{prop:fullrel}
-The \textbf{full relation} $X \rightarrow Y$ relates everything to everything. It is all of $X \times Y$. Full relations are always continuous.
-\begin{proof}
-The preimage of any subset of $Y$ under the full relation is the whole of $X$, which is open by definition.
-\end{proof}
-\end{proposition}
-
-\begin{proposition}\label{prop:bowtie}
-Full relations restricted to open sets in the domain are continuous. Given an open $U \subseteq X^\tau$, and an arbitrary subset $K \subset Y^\sigma$, the relation $U \times K \subseteq X \times Y$ is open.
-\begin{proof}
-Consider an arbitrary open set $V \in \sigma$. Either $V$ and $K$ are disjoint, or they overlap. If they are disjoint, the preimage of $V$ is $\varnothing$, which is open. If they overlap, the preimage of $V$ is $U$, which is open.
-\end{proof}
-\end{proposition}
-
-\begin{proposition}\label{prop:func}
-Continuous functions are always continuous. If $f: X^\tau \rightarrow Y^\sigma$ is a continuous function, then it is also a continuous relation.
-\begin{proof}
-Functions are special cases of relations. The relational converse of a function viewed in this way is the same thing as the preimage.
-\end{proof}
-\end{proposition}
-
-\begin{proposition}\label{prop:idrel}
-The \textbf{identity relation} $X \rightarrow X$ relates anything to itself. It is defined $\{(x,x) : x \in X\} \subseteq X \times X$. The identity relation is always continuous.
-\begin{proof}
-The preimage of any open set under the identity relation is itself, which is open by assumption. The identity relation is also the "trivial" continuous map from a space to itself, so this also follows from Proposition \ref{prop:func}.
-\end{proof}
-\end{proposition}
+\clearpage
