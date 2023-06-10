@@ -95,17 +95,42 @@
 \newlabel{prop:text2circ}{{0.1.15}{17}{Finished text diagrams yield unique-up-to-processive-isotopy text circuits}{theorem.0.1.15}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Conjunctions are boxes that take two circuits which might share labels on some wires.}}{18}{theorem.0.1.9}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Of course filled up boxes are just gates.}}{18}{theorem.0.1.9}\protected@file@percent }
-\newlabel{conv:twist}{{0.1.16}{18}{Wire twisting}{theorem.0.1.16}{}}
-\newlabel{conv:sliding}{{0.1.17}{18}{Sliding}{theorem.0.1.17}{}}
+\newpmemlabel{^_32}{18}
+\newpmemlabel{^_33}{18}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces  \begin  {convention}[Wire twisting] \end  {convention} Wires are labelled by nouns. We consider two circuits the same if their gate-connectivity is the same. In particular, this means that we can eliminate unnecessary twists in wires to obtain diagrammatically simpler representations. }}{18}{theorem.0.1.16}\protected@file@percent }
+\newlabel{conv:twist}{{25}{18}{Text circuit theorem}{theorem.0.1.17}{}}
+\newpmemlabel{^_34}{18}
+\newpmemlabel{^_35}{18}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces  \begin  {convention}[Sliding] \end  {convention} Since only gate-connectivity matters, we consider circuits the same if all that differs is the horizontal positioning of gates composed in parallel. \begin  {convention}[Reading text circuits] \end  {convention} Text circuits ought to be presented so that they can be read from top to bottom and from left to right, like English text. }}{18}{theorem.0.1.17}\protected@file@percent }
+\newlabel{conv:reading}{{26}{18}{Text circuit theorem}{theorem.0.1.19}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Gates compose sequentially by matching labels on some of their noun-wires and in parallel when they share no noun-wires, to give \underline  {text circuits}.}}{19}{theorem.0.1.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.6}Extensions I: relative and reflexive pronouns}{19}{subsection.0.1.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.7}Extensions II: grammar equations}{19}{subsection.0.1.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.8}Extensions III: higher-order modifiers}{19}{subsection.0.1.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.9}Equivalence to internal wirings}{20}{subsection.0.1.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.10}Related work}{20}{subsection.0.1.10}\protected@file@percent }
+\newlabel{conv:gaps}{{0.1.20}{19}{Arbitary vs. fixed holes}{theorem.0.1.20}{}}
+\newlabel{conv:and}{{0.1.21}{19}{Contentless conjunctions}{theorem.0.1.21}{}}
+\newlabel{conv:exists}{{0.1.22}{19}{Lonely wires}{theorem.0.1.22}{}}
+\newlabel{prop:circ2text}{{0.1.23}{20}{Circuit to text}{theorem.0.1.23}{}}
+\newpmemlabel{^_36}{20}
+\newpmemlabel{^_37}{20}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Starting with a circuit, we may use Convention \ref  {conv:twist} to arrange the circuit into alternating slices of twisting wires and (possibly tensored) circuits, and this arrangement recurses within boxes. Slices with multiple tensored gates will be treated using Convention \ref  {conv:and}. By convention \ref  {conv:exists}, we decorate lonely wires with formal \texttt  {exists} gates, as in the \texttt  {Frank sees} box. Observe how verbs with sentential complement are depicted with grey gaps, whereas the adverb and adposition combination of \texttt  {Mac crazily laughs at Cricket} is gapless, according to Convention \ref  {conv:gaps}.}}{20}{theorem.0.1.23}\protected@file@percent }
+\newpmemlabel{^_38}{20}
+\newpmemlabel{^_40}{20}
+\newpmemlabel{^_42}{20}
+\newpmemlabel{^_44}{20}
+\newpmemlabel{^_39}{21}
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces We then linearise the slices, representing top-to-bottom composition as left-to-right. Twist layers are eliminated, replaced instead by dotted connections indicating processive connectivity. The dashed vertical line distinguishes slices. This step of the procedure always behaves well, guaranteed by Proposition \ref  {prop:linkedlist}. Noun wires that do not participate in earlier slices can be shifted right until the slice they are introduced.}}{21}{theorem.0.1.23}\protected@file@percent }
+\newpmemlabel{^_41}{21}
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces We recurse the linearisation procedure within boxes until there are no more sequentially composed gates. The linearisation procedure evidently terminates for finite text circuits. At this point, we have abstracted away connectivity data, and we are left with individual gates.}}{21}{theorem.0.1.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.6}Extensions I: relative and reflexive pronouns}{21}{subsection.0.1.6}\protected@file@percent }
+\newpmemlabel{^_43}{22}
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces By Proposition \ref  {prop:compsent}, gates are equivalent to sentences up to notation, so we swap notations \emph  {in situ}. Conventions \ref  {conv:and} and \ref  {conv:exists} handle the edge cases of parallel gates and lonely wires. Observe that the blue-dotted wiring in text diagrams delineates the contents of boxes that accept sentences.}}{22}{theorem.0.1.23}\protected@file@percent }
+\newpmemlabel{^_45}{22}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Recursing notation swaps outwards and connecting left-to-right slices as sentence-bubbles connect yields a text circuit, up to the inclusion of rewrites from Conventions \ref  {conv:and} and \ref  {conv:exists}: applying the reverse of those rewrites and the reverse of text-diagram rewrites yields a valid text-diagram derivation, by Propositions \ref  {prop:compsent} and \ref  {prop:linkedlist}.}}{22}{theorem.0.1.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.7}Extensions II: grammar equations}{23}{subsection.0.1.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.8}Extensions III: higher-order modifiers}{23}{subsection.0.1.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.9}Equivalence to internal wirings}{23}{subsection.0.1.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.1.10}Related work}{23}{subsection.0.1.10}\protected@file@percent }
 \citation{wilson_string_2022}
 \citation{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}
-\@writefile{toc}{\contentsline {section}{\numberline {0.2}Text circuits: details, demos, developments}{21}{section.0.2}\protected@file@percent }
-\newlabel{sec:circs}{{0.2}{21}{Text circuits: details, demos, developments}{section.0.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {0.2}Text circuits: details, demos, developments}{24}{section.0.2}\protected@file@percent }
+\newlabel{sec:circs}{{0.2}{24}{Text circuits: details, demos, developments}{section.0.2}{}}
 \ttl@finishall
-\gdef \@abspage@last{22}
+\gdef \@abspage@last{25}

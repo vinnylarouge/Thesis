@@ -28,9 +28,9 @@ The copy map is a spider iff the topology is discrete.
 \begin{proof}
 Discrete topologies inherit the usual copy-compare spiders from \textbf{Rel}, so we have to show that when the copy map is a spider, the underlying wire must have a discrete topology. Suppose that some wire has a spider, and construct the following open set using an arbitrary point $p$:
 \[\scalebox{0.5}{\tikzfig{structure/copyspiderproof/openpoint}}\]
-It will suffice to show that this open set is the singleton $\{p\}$ -- when all singletons are open, the topology is discrete. As a lemma, using frobenius rules and the collapsing behaviour of zero morphisms, we can show that comparing distinct points $p \neq q$ yields the $\varnothing$ state.
+It will suffice to show that this open set tests whether the input is the singleton $\{p\}$ -- when all singletons are open, the topology is discrete. As a lemma, we show that comparing distinct points $p \neq q$ yields the empty state.
 \[\scalebox{0.5}{\tikzfig{structure/copyspiderproof/openpointproof}}\]
-The following case analysis shows that our open set only contains the point $p$.
+The (zero) implication follows since $p \neq q$ by assumption, so we know that deleting the comparison of $p$ and $q$ cannot be the unit scalar, and so must be the zero scalar, hence the comparison of $p$ and $q$ is the empty state. Now, the following case analysis shows that our open set only contains the point $p$.
 \[\resizebox{0.75\textwidth}{!}{\tikzfig{structure/copyspiderproof/openpointcases}}\]
 \end{proof}
 \end{proposition}

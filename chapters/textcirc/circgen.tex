@@ -394,11 +394,9 @@ The converse of Proposition \ref{prop:text2circ} would be that any text circuit 
 
 \marginnote{
 \begin{remark}
-There are some oddities about our conventions that will make sense later when we consider semantics. For example, Convention \ref{conv:twist} an acceptable thing to ask for syntactically but quite odd to think about at the semantic level, where we would like to think that distinct nouns manifest as different states on the same noun-wire-type. A semantic interpretation that makes use of this convention will become clearer in Section \bR configspace \e. Similarly, Convention \ref{conv:exists} wouldn't be true if we consider the order of text to reflect the chronological ordering of events, in which case there are implicit \texttt{... and then ...} conjunctions that distinguish ordered gates from parallel gates conjoined by an implicit \texttt{... while ...}; this particular complication is handled at the semantic level in Section \bR statesactionmanner \e.
+There are some oddities about our conventions that will make sense later when we consider semantics. For example, Convention \ref{conv:twist} an acceptable thing to ask for syntactically but quite odd to think about at the semantic level, where we would like to think that distinct nouns manifest as different states on the same noun-wire-type. A semantic interpretation that makes use of this convention will become clearer in Section \bR configspace \e. Similarly, Convention \ref{conv:exists} wouldn't be true if we consider the order of text to reflect the chronological ordering of events, in which case there are implicit \texttt{... and then ...} conjunctions that distinguish ordered gates from parallel gates conjoined by an implicit \texttt{... while ...}; this particular complication is handled at the semantic level in Section \bR statesactionmanner \e. The distinction in Convention \ref{conv:gaps} between typed and "untyped" higher-order processes will be given a suitable semantic interpretation in Section \bR lassos \e.
 \end{remark}
 }
-
-
 
 \begin{figure}[h!]
 \centering
@@ -411,9 +409,6 @@ There are some oddities about our conventions that will make sense later when we
 Wires are labelled by nouns. We consider two circuits the same if their gate-connectivity is the same. In particular, this means that we can eliminate unnecessary twists in wires to obtain diagrammatically simpler representations.
 }
 \end{figure}
-
-
-
 
 \begin{figure}[h!]
 \centering
@@ -430,18 +425,71 @@ Text circuits ought to be presented so that they can be read from top to bottom 
 }
 \end{figure}
 
-\begin{convention}[Contentless conjunctions]
+\begin{convention}[Arbitary vs. fixed holes]\label{conv:gaps}
+Diagrammatically, adverbs and adpositions are depicted with no gap between the bounding box and their contents, whereas conjunctions and verbs with sentential complement are depicted with a gap; this is a visual indication that the former are type-sensitive, and the latter can take any circuit.
 \end{convention}
-Conventions \ref{conv:sliding} and \ref{conv:reading} require something else to allow them to work at the same time. The left text circuit may be read \texttt{C hates D. A likes B.}, and the right as \texttt{A likes B. C hates D.} The middle text circuit requires something to distinguish the fact that the gates are parallel: a "contentless" conjunction, such as \texttt{and}, or \texttt{while}. In terms of text diagram rewrites, we want something like this:
 
+\begin{convention}[Contentless conjunctions]\label{conv:and}
+Conventions \ref{conv:sliding} and \ref{conv:reading} require something else to allow them to work at the same time. The left text circuit may be read \texttt{C hates D. A likes B.}, and the right as \texttt{A likes B. C hates D.} The middle text circuit can be rewritten as either the left or right, which can be done if we're happy to make such choices. A choiceless approach requires something to distinguish the fact that the gates are parallel: a "contentless" conjunction, such as \texttt{and}, or \texttt{while}. In terms of text diagrams, we want a rewrites that introduces such contentless conjunctions and witnesses their associativity, like this:
+\[
+\tikzfig{mushroom/contentlesscnj} 
+\]
+\end{convention}
 
 \begin{convention}[Lonely wires]\label{conv:exists}
 There's really only a single kind of text circuit we can draw that doesn't obviously correspond to a text diagram, and that's one where gates are missing.
 \[
 \tikzfig{textcirc/lonelywires} 
 \]
-In process theories, wires are identity processes that do nothing to their inputs. We require a text-diagram analogue, and an intransitive "null-verb" in English that seems to work is \texttt{is}, in the sense of \texttt{exists}. In terms of text diagram rewrites, we want something like this:
+In process theories, wires are identity processes that do nothing to their inputs. We require a text diagram analogue, and an intransitive "null-verb" in English that seems to work is \texttt{is}, in the sense of \texttt{exists}. In terms of text diagrams, we want a rewrite that introduces such contentless verbs, like this:
+\[
+\tikzfig{mushroom/exists} 
+\]
 \end{convention}
+
+\begin{construction}[Circuit to text]\label{prop:circ2text}
+In the presence of additional rewrites from Conventions \ref{conv:and} and \ref{conv:exists}, every text circuit is obtainable from some text diagram, up to Conventions \ref{conv:twist} and \ref{conv:sliding}.
+
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{0.75\textwidth}{!}{\tikzfig{textcirc/sunny1}}
+\]
+\caption{Starting with a circuit, we may use Convention \ref{conv:twist} to arrange the circuit into alternating slices of twisting wires and (possibly tensored) circuits, and this arrangement recurses within boxes. Slices with multiple tensored gates will be treated using Convention \ref{conv:and}. By convention \ref{conv:exists}, we decorate lonely wires with formal \texttt{exists} gates, as in the \texttt{Frank sees} box. Observe how verbs with sentential complement are depicted with grey gaps, whereas the adverb and adposition combination of \texttt{Mac crazily laughs at Cricket} is gapless, according to Convention \ref{conv:gaps}.}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{textcirc/sunny2}}
+\]
+\caption{We then linearise the slices, representing top-to-bottom composition as left-to-right. Twist layers are eliminated, replaced instead by dotted connections indicating processive connectivity. The dashed vertical line distinguishes slices. This step of the procedure always behaves well, guaranteed by Proposition \ref{prop:linkedlist}. Noun wires that do not participate in earlier slices can be shifted right until the slice they are introduced.}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{textcirc/sunny3}}
+\]
+\caption{We recurse the linearisation procedure within boxes until there are no more sequentially composed gates. The linearisation procedure evidently terminates for finite text circuits. At this point, we have abstracted away connectivity data, and we are left with individual gates.}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{textcirc/sunny4}}
+\]
+\caption{By Proposition \ref{prop:compsent}, gates are equivalent to sentences up to notation, so we swap notations \emph{in situ}. Conventions \ref{conv:and} and \ref{conv:exists} handle the edge cases of parallel gates and lonely wires. Observe that the blue-dotted wiring in text diagrams delineates the contents of boxes that accept sentences.}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{textcirc/sunny5}}
+\]
+\caption{Recursing notation swaps outwards and connecting left-to-right slices as sentence-bubbles connect yields a text circuit, up to the inclusion of rewrites from Conventions \ref{conv:and} and \ref{conv:exists}: applying the reverse of those rewrites and the reverse of text-diagram rewrites yields a valid text-diagram derivation, by Propositions \ref{prop:compsent} and \ref{prop:linkedlist}.}
+\end{figure}
+\end{construction}
 
 \newpage
 \subsection{Extensions I: relative and reflexive pronouns}
