@@ -11,9 +11,6 @@
 		\node [style=smalldotb] (8) at (2, -1) {};
 		\node [style=none] (9) at (-2, -1) {};
 		\node [style=none] (10) at (-3, -1) {};
-		\node [style=none] (11) at (-2, 2.5) {};
-		\node [style=none] (12) at (-2, -4) {};
-		\node [style=none] (13) at (3, -1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K] (2.center)
@@ -25,9 +22,5 @@
 		\draw [style=K] (7) to (8);
 		\draw [style=K, in=180, out=0] (9.center) to (6.center);
 		\draw [style=K] (9.center) to (10.center);
-		\draw [style=KH] (11.center)
-			 to (12.center)
-			 to (13.center)
-			 to cycle;
 	\end{pgfonlayer}
 \end{tikzpicture}

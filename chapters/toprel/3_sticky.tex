@@ -1,13 +1,16 @@
 \section{Populating space with shapes using sticky spiders}\label{sec:stickyspider}
 
-\begin{figure}\label{fig:spiderbicate}
-\scalebox{0.7}{\tikzfig{bestiary/spiderbicat}}
-\caption{The generators (in dashed boxes) and relations that make a spider. When the spider satisfies in addition the three inequalities b1-3, we call it a \textbf{relation-spider}.}
-\end{figure}
+%\begin{figure}\label{fig:spiderbicate}
+%\scalebox{0.7}{\tikzfig{bestiary/spiderbicat}}
+%\caption{The generators (in dashed boxes) and relations that make a spider. When the spider satisfies in addition the three inequalities b1-3, we call it a \textbf{relation-spider}.}
+%\end{figure}
 
 \subsection{When does an object have a spider (or something close to one)?}
-
 \marginnote{
+\begin{example}[The copy-compare spiders of $\mathbf{Rel}$ are not always continuous]\label{ex:compnotspider}
+The compare map for the Sierpi\'{n}ski space is not continuous, because the preimage of $\{0,1\}$ is $\{(0,0),(1,1)\}$, which is not open in the product space of $\mathcal{S}$ with itself.
+\end{example}
+}
 \begin{rem}[copy-compare spiders of $\mathbf{Rel}$]
 For a set $X$, the \emph{copy} map $X \rightarrow X \times X$ is defined:
 \[\{(x,(x,x)) : x \in X \}\]
@@ -18,134 +21,134 @@ These two maps are the (co)multiplications of special frobenius algebras. The (c
 and \emph{everything}:
 \[\{(\star,x) : x \in X\}\]
 \end{rem}
-}
 
-\begin{example}[The copy-compare spiders of $\mathbf{Rel}$ are not always continuous]\label{ex:compnotspider}
-The compare map for the Sierpi\'{n}ski space is not continuous, because the preimage of $\{0,1\}$ is $\{(0,0),(1,1)\}$, which is not open in the product space of $\mathcal{S}$ with itself.
-\end{example}
-
+\begin{myboxR}
 \begin{proposition}\label{prop:copydiscrete}
 The copy map is a spider iff the topology is discrete.
 \begin{proof}
 Discrete topologies inherit the usual copy-compare spiders from \textbf{Rel}, so we have to show that when the copy map is a spider, the underlying wire must have a discrete topology. Suppose that some wire has a spider, and construct the following open set using an arbitrary point $p$:
 \[\scalebox{0.5}{\tikzfig{structure/copyspiderproof/openpoint}}\]
-It will suffice to show that this open set is the singleton $\{p\}$ -- when all singletons are open, the topology is discrete. As a lemma, using frobenius rules and the property of zero morphisms, we can show that comparing distinct points $p \neq q$ yields the $\varnothing$ state.
+It will suffice to show that this open set is the singleton $\{p\}$ -- when all singletons are open, the topology is discrete. As a lemma, using frobenius rules and the collapsing behaviour of zero morphisms, we can show that comparing distinct points $p \neq q$ yields the $\varnothing$ state.
 \[\scalebox{0.5}{\tikzfig{structure/copyspiderproof/openpointproof}}\]
 The following case analysis shows that our open set only contains the point $p$.
-\[\scalebox{0.5}{\tikzfig{structure/copyspiderproof/openpointcases}}\]
+\[\resizebox{0.75\textwidth}{!}{\tikzfig{structure/copyspiderproof/openpointcases}}\]
 \end{proof}
 \end{proposition}
+\end{myboxR}
 
-\marginnote{
-    \begin{rem}[Split idempotents]
-    An \textbf{idempotent} in a category is a map $e: A \rightarrow A$ such that \[A \overset{e}{\rightarrow} A \overset{e}{\rightarrow} A = A \overset{e}{\rightarrow} A\]
-    A \textbf{split idempotent} is an idempotent $e: A \rightarrow A$ along with a \textbf{retract} $r: A \rightarrow B$ and a \textbf{section} $s: B \rightarrow A$ such that:
-    \[A \overset{e}{\rightarrow} A = A \overset{r}{\rightarrow} B \overset{s}{\rightarrow} A\]
-    \[B \overset{s}{\rightarrow} A \overset{r}{\rightarrow} B = B \overset{\mathop{id}}{\rightarrow} B\]
-    \end{rem}
-}
-
-It will be more aesthetic going forward to colour processes and treat the colours as variables instead of labelling them.
-
-\newthought{We can use split idempotents to transform copy-spiders from discrete topologies to almost-spiders on other spaces.} We can graphically express the behaviour of a split idempotent $e$ as follows, where the semicircles for the section and retract $r,s$ form a visual pun.
-
-\[\scalebox{1}{\tikzfig{structure/idemspider/splitidem}}\]
-
+\begin{myboxB}
 \begin{defn}[Sticky spiders]\label{defn:stickyspider}
 A \textbf{sticky spider} (or just an $e$-spider, if we know that $e$ is a split idempotent), is a spider \emph{except} every identity wire on any side of an equation in Figure \ref{fig:spiderbicate} is replaced by the idempotent $e$.
-\[\scalebox{1}{\tikzfig{structure/idemspider/espiderproperties}}\]
-\[\scalebox{1}{\tikzfig{structure/idemspider/espiderproperties2}}\]
-
-The desired graphical behaviour of a sticky spider is that one can still coalesce all connected spider-bodies together, but the 1-1 spider "sticks around" rather than disappearing as the identity. This is achieved by the following rules that cohere the idempotent $e$ with the (co)unit and (co)multiplications; they are the same as the usual rules for a special commutative frobenius algebra with two exceptions. First, where an identity wire appears in an equation, we replace it with an idempotent. Second, the monoid and comonoid components freely emit and absorb idempotents. By these rules, the usual proof [] for the normal form of spiders follows, except the idempotent becomes an explicit 1-1 spider, rather than the identity.
-\[\scalebox{0.7}{\tikzfig{structure/idemspider/stickyrelations}}\]
+\[\scalebox{0.75}{\tikzfig{structure/idemspider/espiderproperties}} \qquad\qquad\qquad\qquad \scalebox{0.75}{\tikzfig{structure/idemspider/espiderproperties2}}\]
 \end{defn}
 
-\begin{construction}[Sticky spiders from split idempotents]
+The desired graphical behaviour of a sticky spider is that one can still coalesce all connected spider-bodies together, but the 1-1 spider "sticks around" rather than disappearing as the identity. This is achieved by the following rules that cohere the idempotent $e$ with the (co)unit and (co)multiplications; they are the same as the usual rules for a special commutative frobenius algebra with two exceptions. First, where an identity wire appears in an equation, we replace it with an idempotent. Second, the monoid and comonoid components freely emit and absorb idempotents. By these rules, the usual proof [] for the normal form of spiders follows, except the idempotent becomes an explicit 1-1 spider, rather than the identity.
+\[\resizebox{\textwidth}{!}{\tikzfig{structure/idemspider/stickyrelations}}\]
+\end{myboxB}
+
+\begin{myboxR}
+\newthought{We can use split idempotents to transform copy-spiders from discrete topologies to sticky-spiders on other spaces.}
+
+\begin{rem}[Split idempotents]
+An \textbf{idempotent} in a category is a map $e: A \rightarrow A$ such that \[A \overset{e}{\rightarrow} A \overset{e}{\rightarrow} A = A \overset{e}{\rightarrow} A\]
+A \textbf{split idempotent} is an idempotent $e: A \rightarrow A$ along with a \textbf{retract} $r: A \rightarrow B$ and a \textbf{section} $s: B \rightarrow A$ such that:
+\[A \overset{e}{\rightarrow} A = A \overset{r}{\rightarrow} B \overset{s}{\rightarrow} A\]
+\[B \overset{s}{\rightarrow} A \overset{r}{\rightarrow} B = B \overset{\mathop{id}}{\rightarrow} B\]
+\end{rem}
+
+We can graphically express the behaviour of a split idempotent $e$ as follows, where the semicircles for the section and retract $r,s$ form a visual pun.
+
+\[\scalebox{1}{\tikzfig{structure/idemspider/splitidem}}\]
+\end{myboxR}
+
+\begin{myboxB}
+\begin{construction}[Sticky spiders from split idempotents]\label{cons:stickyfromsplit}
 Given an idempotent $e: Y^\sigma \rightarrow Y^\sigma$ that splits through a discrete topology $X^\star$, we construct a new (co)multiplication as follows:
 \[\scalebox{1}{\tikzfig{structure/idemspider/idemspiderv2}}\]
 \end{construction}
+\end{myboxB}
 
+\begin{myboxR}
 \begin{proposition}[Every idempotent that splits through a discrete topology gives a sticky spider]\label{prop:splitmeanssticky}
 \[\scalebox{1}{\tikzfig{structure/idemspider/espiderstatement}}\]
-\begin{proof}
-We can check that our construction satisfies the frobenius rules as follows. We only present one equality; the rest follow the same idea.
+\end{proposition}
+We can check that Construction \ref{cons:stickyfromsplit} satisfies the frobenius rules as follows. We only present one equality; the rest follow the same idea.
 \[\scalebox{1}{\tikzfig{structure/idemspider/espiderproofv2}}\]
-To verify the sticky spider rules, we first observe that since \[X^\star \overset{s}{\rightarrow} Y^\sigma \overset{r}{\rightarrow} X^\star = X^\star \overset{\mathop{id}}{\rightarrow} X^\star\]
-$r$ must have all of $X^\star$ in its image, and $s$ must have all of $X^\star$ in its preimage, so we have the following:
+\end{myboxR}
+\begin{myboxR}
+To verify the sticky spider rules, we first observe that since $X^\star \overset{s}{\rightarrow} Y^\sigma \overset{r}{\rightarrow} X^\star = X^\star \overset{\mathop{id}}{\rightarrow} X^\star$, $r$ must have all of $X^\star$ in its image, and $s$ must have all of $X^\star$ in its preimage, so we have the following:
 \[\scalebox{1}{\tikzfig{structure/idemspider/splitonto}}\]
 Now we show that e-unitality holds:
 \[\scalebox{1}{\tikzfig{structure/idemspider/espiderproof2}}\]
 The proofs of e-counitality, and e-speciality follow similarly.
-\end{proof}
-\end{proposition}
+\end{myboxR}
 
+\begin{myboxB}
 \newthought{We can prove a partial converse of Proposition \ref{prop:splitmeanssticky}:} we can identify two diagrammatic equations that tell us precisely when a sticky spider has an idempotent that splits though some discrete topology.
-
 \begin{theorem}\label{thm:stickygraphical}
 A sticky spider has an idempotent that splits through a discrete topology if and only if in addition to the sticky spider equalities, the following relations are also satisfied.
 \[\scalebox{1}{\tikzfig{idemproof/unit-everything}} \quad\quad\quad\quad\quad\quad\quad\quad \scalebox{1}{\tikzfig{idemproof/comult-copy}}\]
 \end{theorem}
+The proof is involved, so here is a map of lemmas and propositions.
+\[\resizebox{0.8\textwidth}{!}{\tikzfig{idemproof/claimmap2}}\]
+\end{myboxB}
 
-The proof is rather involved, so we provide a map below of the various lemmas and propositions that will yield the claim.
-
-\[\scalebox{0.75}{\tikzfig{idemproof/claimmap2}}\]
-
-\newpage
+\begin{myboxR}
 \begin{proposition}[comult/copy implies counit/delete]\label{prop:counitdelete}
 \[\scalebox{1}{\tikzfig{idemproof/ecopy2delclaim}}\]
 \begin{proof}
 \[\scalebox{1}{\tikzfig{idemproof/ecopy2del}}\]
 \end{proof}
 \end{proposition}
+\end{myboxR}
 
-\newpage
+\begin{myboxB}
 \begin{lemma}[All-or-Nothing]\label{lem:allornothing}
 Consider the set $e(\{x\})$ obtained by applying the idempotent $e$ to a singleton $\{x\}$, and take an arbitrary element $y \in e(x)$ of this set. Then $e(\{y\}) = \varnothing$ or $e(\{x\}) = e(\{y\})$. Diagrammatically: \[\scalebox{0.75}{\tikzfig{idemproof/allornothingclaim}}\]
-\begin{proof}
-\[\scalebox{0.75}{\tikzfig{idemproof/allornothing2a}}\]
-\[\scalebox{0.75}{\tikzfig{idemproof/allornothing2b}}\]
-\end{proof}
 \end{lemma}
+\[\scalebox{0.75}{\tikzfig{idemproof/allornothing2a}}\]
+\end{myboxB}
+\begin{myboxB}
+\[\scalebox{0.75}{\tikzfig{idemproof/allornothing2b}}\]
+\end{myboxB}
 
-\newpage
-\vspace*{\fill}
+\begin{myboxR}
 \begin{proposition}[$e$ of any point is $e$-copiable]\label{prop:epointcopy}
 \[\scalebox{0.75}{\tikzfig{idemproof/pointidemcopiable}}\]
 \begin{proof}
 \[\scalebox{0.75}{\tikzfig{idemproof/pointidemcopiableproof}}\]
 \end{proof}
 \end{proposition}
-\vspace*{\fill}
+\end{myboxR}
 
-\newpage
+\begin{myboxB}
 \begin{proposition}[The unit is the union of all $e$-copiables]\label{prop:copiablebasis}
 \[\scalebox{0.8}{\tikzfig{idemproof/copiablebasisclaim}}\]
 \begin{proof}
 \[\scalebox{0.8}{\tikzfig{idemproof/copiablebasis}}\]
 \end{proof}
 \end{proposition}
+\end{myboxB}
 
-\newpage
-\vspace*{\fill}
+\begin{myboxR}
 \begin{proposition}[$e$-copiable decomposition of $e$]\label{prop:decompidem}
 \[\scalebox{1}{\tikzfig{idemproof/decompidemclaim}}\]
 \begin{proof}
 \[\scalebox{1}{\tikzfig{idemproof/decompidem}}\]
 \end{proof}
 \end{proposition}
-\vspace*{\fill}
+\end{myboxR}
 
-\newpage
-\vspace*{\fill}
+\begin{myboxB}
 \begin{proposition}[$e$-copiable decomposition of counit]\label{prop:decompcounit}
 \[\scalebox{1}{\tikzfig{idemproof/decompcounitclaim}}\]
 \begin{proof}
 \[\scalebox{1}{\tikzfig{idemproof/decompcounit}}\]
 \end{proof}
 \end{proposition}
-\vspace*{\fill}
+\end{myboxB}
 
-\newpage
+\begin{myboxR}
 \newthought{The $e$-copiable states really do behave like an orthonormal basis, as the following Lemmas show.}
 \begin{lemma}[$e$-copiables are orthogonal under multiplication]\label{lem:match}
 \[\scalebox{0.75}{\tikzfig{idemproof/matchclaim}}\]
@@ -153,19 +156,18 @@ Consider the set $e(\{x\})$ obtained by applying the idempotent $e$ to a singlet
 \[\scalebox{0.75}{\tikzfig{idemproof/match}}\]
 \end{proof}
 \end{lemma}
+\end{myboxR}
 
-\newpage
-\vspace*{\fill}
+\begin{myboxB}
 \begin{convention}[Shorthand for the open set associated with an $e$-copiable]
 We introduce the following diagrammatic shorthand.
 \[\scalebox{1}{\tikzfig{idemproof/openshorthand}}\]
 Including the coloured dot is justified, because these open sets are co-copiable with respect to the multiplication of the sticky spider.
 \[\scalebox{1}{\tikzfig{idemproof/shorthandjustification}}\]
 \end{convention}
-\vspace*{\fill}
+\end{myboxB}
 
-\newpage
-\vspace*{\fill}
+\begin{myboxR}
 \begin{lemma}[Co-match]\label{lem:comatch}
 \[\scalebox{1}{\tikzfig{idemproof/comatchclaim}}\]
 \begin{proof}
@@ -173,10 +175,9 @@ Including the coloured dot is justified, because these open sets are co-copiable
 The claim then follows by applying Lemma \ref{lem:match} to the final diagram.
 \end{proof}
 \end{lemma}
-\vspace*{\fill}
+\end{myboxR}
 
-\newpage
-\vspace*{\fill}
+\begin{myboxB}
 \begin{lemma}[e-copiables are e-fixpoints]\label{lem:ecopyfixpoint}
 \[\scalebox{1}{\tikzfig{idemproof/dotcopyableclaim}}\]
 \begin{proof}
@@ -184,49 +185,49 @@ The claim then follows by applying Lemma \ref{lem:match} to the final diagram.
 Observe that the final equation of the proof also holds when the initial e-copiable is the empty set.
 \end{proof}
 \end{lemma}
-\vspace*{\fill}
+\end{myboxB}
 
-\newpage
-\vspace*{\fill}
+\begin{myboxR}
 \begin{lemma}[$e$-copiables are normal]\label{lem:ecopynormal}
 \[\scalebox{1}{\tikzfig{idemproof/copynormalclaim}}\]
 \begin{proof}
 \[\scalebox{1}{\tikzfig{idemproof/copynormal}}\]
 \end{proof}
 \end{lemma}
-\vspace*{\fill}
+\end{myboxR}
 
-\newpage
-\vspace*{\fill}
+\begin{myboxB}
 \begin{proposition}[$e$-copiable decomposition of multiplication]\label{prop:decompmult}
 \[\scalebox{1}{\tikzfig{idemproof/decompmultclaim}}\]
 \begin{proof}
 \[\scalebox{1}{\tikzfig{idemproof/decompmult}}\]
 \end{proof}
 \end{proposition}
-\vspace*{\fill}
+\end{myboxB}
 
-\newpage
-\vspace*{\fill}
+\begin{myboxR}
 \begin{proposition}[$e$-copiable decomposition of comultiplication]\label{prop:decompcomult}
 \[\scalebox{1}{\tikzfig{idemproof/decompcomultclaim}}\]
 \begin{proof}
 \[\scalebox{1}{\tikzfig{idemproof/decompcomult}}\]
 \end{proof}
 \end{proposition}
-\vspace*{\fill}
+\end{myboxR}
 
-\newpage
+\begin{myboxB}
 \newthought{Now we can prove Theorem \ref{thm:stickygraphical}.}
-\begin{proof}
 First a reminder of the claim; we want to show that when given a sticky spider, the following relations hold if and only if the idempotent splits through a discrete topology.
 \[\scalebox{0.8}{\tikzfig{idemproof/unit-everything}} \quad\quad\quad\quad\quad\quad\quad\quad \scalebox{0.8}{\tikzfig{idemproof/comult-copy}}\]
 The crucial observation is that the $e$-copiable decomposition of the idempotent given by Proposition \ref{prop:decompidem} is equivalent to a split idempotent though the set of $e$-copiables equipped with discrete topology.
 \[\scalebox{0.8}{\tikzfig{idemproof/finalproof}}\]
 By copiable basis Proposition \ref{prop:copiablebasis} and the decompositions Propositions \ref{prop:decompcounit}, \ref{prop:decompmult}, \ref{prop:decompcomult}, we obtain the only-if direction.
 \[\scalebox{0.8}{\tikzfig{idemproof/finalproof2}}\]
+\end{myboxB}
+\begin{myboxB}
 The if direction is an easy check. For the unit/everything relation, we have:
 \[\scalebox{0.8}{\tikzfig{idemproof/finalproof3}}\]
 For the counit/delete relation, we observe that for any split idempotent, the retract must be a partial function. To see this, suppose the split idempotent $e = r;s$ is on $(X,\tau)$ and the discrete topology is $Y^\star$. Seeking contradiction, if the retract is not a partial function, then there is some point $x \in X$ such that $x \in e(x)$, and the image $I := r(x) \subseteq Y$ contains more than one point, which we denote and discriminate $a,b \in r(x) \subseteq Y$ and $a \neq b$. Because the composite $s;r = 1_Y$ of the section and retract must recover the identity on $Y^\star$, the section $s$ must be total -- i.e. the image $s(X) = Y$. So $x \in s(a) \cap s(b)$. Now we have that $(a,x),(b,x) \in s$, and $(x,a),(x,b) \in r$, therefore $(a,b),(b,a) \in s;r$, which by $a \neq b$ contradicts that $s;r$ is the identity relation $1_Y$.
 \[\scalebox{0.8}{\tikzfig{idemproof/finalproof4}}\]
-\end{proof}
+\end{myboxB}
+
+\clearpage
