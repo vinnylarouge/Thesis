@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  10 JUN 2023 14:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  12 JUN 2023 10:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1054,10 +1054,6 @@ Library (tcolorbox): 'tcbposter.code.tex' version '5.0.2'
 Package geometry Warning: Over-specification in `v'-direction.
     `height' (483.69684pt) is ignored.
 
-
-Package geometry Warning: Over-specification in `v'-direction.
-    `height' (483.69684pt) is ignored.
-
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks44
@@ -1831,7 +1827,7 @@ LaTeX Info: Redefining \nameref on input line 3.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: landscape twoside showframe 
+* modes: landscape twoside 
 * h-part:(L,W,R)=(85.35826pt, 483.69684pt, 275.99174pt)
 * v-part:(T,H,B)=(42.67912pt, 526.376pt, 28.45274pt)
 * \paperwidth=845.04684pt
@@ -1979,78 +1975,597 @@ File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
 
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 9.
+
+(./chapters/textcirc/linguistncat.tex
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 1.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
+(Font)              scaled to size 12.0pt on input line 1.
  [3]
-(./chapters/textcirc/circgen.tex
-LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 3.
-LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 3.
-LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 5.
-LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 5.
-LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 11.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 11.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 11.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 11.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 11.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 11.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 11.
 LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
-11.
+5.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 9.0pt on input line 11.
+(Font)              scaled to size 10.0pt on input line 5.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 7.
+
+Overfull \hbox (2.5727pt too wide) in paragraph at lines 9--10
+[]\T1/zplTLF/m/n/10 Mathematicians, com-puter sci-en-tists, and physi-cists may
+ have good rea-sons to work with weak $\LS1/stix/m/it/10 n$\T1/zplTLF/m/n/10 -c
+ategories 
+ []
+
+LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 11.
+[4]
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 11.
+(Font)              scaled to size 10.95pt on input line 13.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 13.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 17.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 17.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 17.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 17.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 17.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 17.
+ (./figures/ncat/flower1.tikz) (./figures/ncat/table1.tikz
+LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 35.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 11.
+(Font)              scaled to size 7.0pt on input line 35.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 35.
+)
+(./figures/ncat/cstring1.tikz) (./figures/ncat/string1.tikz)
+(./figures/ncat/poindual.tikz) (./figures/tree2gate/cfg/cfgsignature.tikz
+LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
+(Font)              scaled to size 9.0pt on input line 46.
+)
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 7.5pt on input line 52.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 52.
+LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 52.
+
+(./figures/ncat/2ways.tikz) [5] (./figures/ncat/thinalice.tikz)
+(./figures/ncat/bobfat.tikz) [6]
+LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 72.
 LaTeX Font Info:    Trying to load font information for TS1+zplTLF on input lin
-e 24.
+e 82.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 File: ts1zpltlf.fd 2021/11/24 v1.0 fd file for TS1/zplTLF
 )
 LaTeX Font Info:    Font shape `TS1/zplTLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 82.
+ [7]
+(./figures/tree2gate/tag/CFGtoTAGpattern.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8] (./figures/tree2gate/tag/leafansatzintuition.tikz
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 73.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 74.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 87.
+
+) (./figures/tree2gate/tag/3compareintuition.tikz) [9
+
+]
+(./figures/tree2gate/tag/CFGasTAGsign.tikz)
+! Argument of \@iiminipage has an extra }.
+<inserted text> 
+                \par 
+l.142 \end{figure}
+                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+{\floatalignment }{\@iinput }\def \reserved@b {\@@input }\futurelet \@let@token
+ \ETC.
+! Paragraph ended before \@iiminipage was complete.
+<to be read again> 
+                   \par 
+l.142 \end{figure}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@iiminipage has an extra }.
+<inserted text> 
+                \par 
+l.142 \end{figure}
+                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+{\floatalignment }{\@iinput }\def \reserved@b {\@@input }\futurelet \@let@token
+ \ETC.
+! Paragraph ended before \@iiminipage was complete.
+<to be read again> 
+                   \par 
+l.142 \end{figure}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\tikz@deactivatthings ->\def ;
+                              {\tikz@nonactivesemicolon }\def :{\tikz@nonact...
+l.142 \end{figure}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\tikz@deactivatthings ...onactivesemicolon }\def :
+                                                  {\tikz@nonactivecolon }\de...
+l.142 \end{figure}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\tikz@deactivatthings ...kz@nonactivecolon }\def |
+                                                  {\tikz@nonactivebar }\def ...
+l.142 \end{figure}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\tikz@deactivatthings ...tikz@nonactivebar }\def !
+                                                  {\tikz@nonactiveexlmark }
+l.142 \end{figure}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \tikz@style@parseA has an extra }.
+<inserted text> 
+                \par 
+l.142 \end{figure}
+                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+-0.5em]{\node [draw=red,font=\color {red},fill=red!10!white] {\textit \ETC.
+! Paragraph ended before \tikz@style@parseA was complete.
+<to be read again> 
+                   \par 
+l.142 \end{figure}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \Hy@tempa has an extra }.
+<inserted text> 
+                \par 
+l.142 \end{figure}
+                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\@iinput }\def \reserved@b {\@@input }\futurelet \@let@token \ETC.
+! Paragraph ended before \Hy@tempa was complete.
+<to be read again> 
+                   \par 
+l.142 \end{figure}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \Hy@tempa has an extra }.
+<inserted text> 
+                \par 
+l.142 \end{figure}
+                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\@captype {\@iinput }\def \reserved@b {\@@input }\futurelet \@let@token \ETC.
+! Paragraph ended before \Hy@tempa was complete.
+<to be read again> 
+                   \par 
+l.142 \end{figure}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\tikz@deactivatthings ->\def ;
+                              {\tikz@nonactivesemicolon }\def :{\tikz@nonact...
+l.142 \end{figure}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\tikz@deactivatthings ...onactivesemicolon }\def :
+                                                  {\tikz@nonactivecolon }\de...
+l.142 \end{figure}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\tikz@deactivatthings ...kz@nonactivecolon }\def |
+                                                  {\tikz@nonactivebar }\def ...
+l.142 \end{figure}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\tikz@deactivatthings ...tikz@nonactivebar }\def !
+                                                  {\tikz@nonactiveexlmark }
+l.142 \end{figure}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \tikz@style@parseA has an extra }.
+<inserted text> 
+                \par 
+l.142 \end{figure}
+                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+-0.5em]{\node [draw=red,font=\color {red},fill=red!10!white] {\textit \ETC.
+! Paragraph ended before \tikz@style@parseA was complete.
+<to be read again> 
+                   \par 
+l.142 \end{figure}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+(./figures/tree2gate/cfg/bigcfgbreakdown.tikz) [10]
+(./figures/tree2gate/tag/tagsignature.tikz) [11]
+(./figures/tree2gate/tag/ex25.tikz) (./figures/tree2gate/tag/ex211.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12
+
+
+
+] (./figures/ncat/xab.tikz) (./figures/ncat/eckhilt2.tikz)
+(./figures/ncat/braidstogether.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13] (./figures/ncat/cubes.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1990) has occurred while \output is active []
+
+ [14]
+(./figures/tree2gate/cfg/cfgsigtwists.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15] (./figures/tree2gate/tag/joshiex24.tikz)
+(./figures/tree2gate/tag/joshiex241.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figures/tree2gate/tag/ex24.tikz) (./figures/tree2gate/tag/ex242.tikz)
+(./figures/tree2gate/tag/ex243.tikz)
+Overfull \hbox (1.26344pt too wide) detected at line 274
+[] []  [] []  []
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figures/tree2gate/tag/ex244.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16] [17] [18]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 287.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 287.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 287.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 287.
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
+[][]\T1/zplTLF/b/n/10 Definition 0.1.9 \T1/zplTLF/m/n/10 (Lin-guis-tic Tree Ad-
+join-ing Gram-mars)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 A \T1/zplTLF/m/it/10
+ Lin-guis-tic Tree Ad-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+[]\T1/zplTLF/m/n/10 The ini-tial el-e-ments are the same as an el-e-men-tary tr
+ee-adjoining gram-mar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+[]$\LS1/stixscr/m/n/10 ¸\LS1/stix/m/it/10 ; \LS1/stixscr/m/n/10 á$ \T1/zplTLF/m
+/n/10 are fresh sym-bols. $\LS1/stixscr/m/n/10 ¸$ \T1/zplTLF/m/n/10 marks \T1/z
+plTLF/m/it/10 oblig-a-tory ad-joins\T1/zplTLF/m/n/10 , and $\LS1/stixscr/m/n/10
+ á$ \T1/zplTLF/m/n/10 marks \T1/zplTLF/m/it/10 op-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+\T1/zplTLF/m/n/10 bel is ei-ther a ter-mi-nal sym-bol (as a leaf), or oth-er-wi
+se a non-ter-mi-nal, along
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+\T1/zplTLF/m/n/10 with a sub-set of aux-il-iary trees that in-di-cates se-lect 
+ad-joins (or null-adjoins
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+\T1/zplTLF/m/n/10 when the sub-set is $\LS1/stix/m/n/10 É$\T1/zplTLF/m/n/10 ), 
+a marker in-di-cat-ing whether those ad-joins are oblig-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+\T1/zplTLF/m/n/10 a-tory or op-tional, and a marker in-di-cat-ing whether the n
+ode is a foot node
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+\T1/zplTLF/m/n/10 or not. Ob-serve that there is no need to in-di-cate when a n
+ode is a valid tar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
+[]$\LS1/stix/m/it/10 n[]$ \T1/zplTLF/m/it/10 c-commands $\LS1/stix/m/it/10 n[]$
+\T1/zplTLF/m/n/10 , (i.e., $\LS1/stix/m/it/10 n[]$ \T1/zplTLF/m/n/10 is not an 
+an-ces-tor of $\LS1/stix/m/it/10 n[]$\T1/zplTLF/m/n/10 , and there ex-ists a no
+de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--326
+[][]\T1/zplTLF/b/n/10 Construction 0.1.10 \T1/zplTLF/m/n/10 (TAGs in \T1/npxtt/
+m/n/10 homotopy.io\T1/zplTLF/m/n/10 )\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 We
+ spell out how the data of a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--342
+[]\T1/zplTLF/m/n/10 We dis-tin-guish be-tween \T1/zplTLF/m/it/10 atomic \T1/zpl
+TLF/m/n/10 and \T1/zplTLF/m/it/10 com-pos-ite \T1/zplTLF/m/n/10 gen-er-a-tors a
+t this level. The
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--342
+\T1/zplTLF/m/n/10 trees them-selves are com-pos-ites of \T1/zplTLF/m/it/10 atom
+ic \T1/zplTLF/m/n/10 gen-er-a-tors. The \T1/zplTLF/m/it/10 atomic \T1/zplTLF/m/
+n/10 gen-er-a-tors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--344
+[]\T1/zplTLF/m/n/10 For each node $\LS1/stix/m/it/10 n$ \T1/zplTLF/m/n/10 that 
+oc-curs in ei-ther $\LS2/stixcal/m/n/10 I$ \T1/zplTLF/m/n/10 or $\LS2/stixcal/m
+/n/10 A$\T1/zplTLF/m/n/10 , we pop-u-late cells by a case
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+[]\T1/zplTLF/m/n/10 For each node $\LS1/stix/m/it/10 p$ \T1/zplTLF/m/n/10 of ty
+pe $\LS1/stix/b/n/10 T[]$ \T1/zplTLF/m/n/10 in ei-ther $\LS2/stixcal/m/n/10 I$ 
+\T1/zplTLF/m/n/10 or $\LS2/stixcal/m/n/10 A$ \T1/zplTLF/m/n/10 with a nonempty 
+left-to-right
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
+\T1/zplTLF/m/n/10 We rep-re-sent trees by com-pos-ite gen-er-a-tors, de-fined r
+e-cur-sively. For a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
+\T1/zplTLF/m/n/10 given tree $\LS2/stixcal/m/n/10 T$ \T1/zplTLF/m/n/10 in ei-th
+er $\LS2/stixcal/m/n/10 I$ \T1/zplTLF/m/n/10 or $\LS2/stixcal/m/n/10 A$\T1/zplT
+LF/m/n/10 , we de-fine a com-pos-ite gen-er-a-tor be-gin-ning at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
+\T1/zplTLF/m/n/10 branches, we com-pose the branch cell $\LS1/stix/m/it/10 C[]$
+ \T1/zplTLF/m/n/10 to this cell se-quen-tially. If $\LS1/stix/m/it/10 p$ \T1/zp
+lTLF/m/n/10 has a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
+\T1/zplTLF/m/n/10 child $\LS1/stix/m/it/10 c$ \T1/zplTLF/m/n/10 that has a link
+, we do a case anal-y-sis. If that child c-commands the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
+\T1/zplTLF/m/n/10 other end of the link we gen-er-ate the first half of the lin
+k-ing wire by com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
+\T1/zplTLF/m/n/10 pos-ing $\LS1/stix/b/n/10 T[]$ \T1/zplTLF/m/n/10 for the ap-p
+ro-pri-ate type $\LS1/stix/b/n/10 T$ \T1/zplTLF/m/n/10 of the child node. Oth-e
+r-wise the child
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
+\T1/zplTLF/m/n/10 is c-commanded by a pre-vi-ously gen-er-ated link, which we b
+raid over and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
+\T1/zplTLF/m/n/10 con-nect us-ing $\LS1/stix/b/n/10 T[]$\T1/zplTLF/m/n/10 , aga
+in with the ap-pro-pri-ate typ-ing for the child. Now we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
+\T1/zplTLF/m/n/10 may re-curse the pro-ce-dure for sub-trees. If a node has no 
+chil-dren, it is a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
+\T1/zplTLF/m/n/10 ter-mi-nal sym-bol (thus killing the wire), and oth-er-wise w
+e leave an open $\LS1/stix/b/n/10 T$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
+\T1/zplTLF/m/n/10 wire af-ter ap-pend-ing $\LS1/stix/b/n/10 S[]$\T1/zplTLF/m/n/
+10 . Al-to-gether this ob-tains a 3-cell which we de-note
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
+\LS2/stixcal/m/n/10 T$\T1/zplTLF/m/n/10 , over-load-ing no-ta-tion; dif-fer-ent
+ execution-orders of the above pro-ce-dure
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--357
+[]\T1/zplTLF/m/n/10 For each $\LS1/stix/m/it/10 ^^^\LS1/stix/b/n/10 S[]$\T1/zpl
+TLF/m/n/10 , $\LS1/stix/m/it/10 ^^^\LS1/stix/b/n/10 S[]$\T1/zplTLF/m/n/10 , and
+ for each type-match-ing 4-cell tree in the sub-set of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--357
+\T1/zplTLF/m/n/10 se-lect ad-joins of $\LS1/stix/m/it/10 ^^^$\T1/zplTLF/m/n/10 
+, we cre-ate a 5-cell rewrite that per-forms tree ad-join-ing,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+\T1/zplTLF/m/n/10 A deriva-tion is fin-ished when there are no oblig-a-tory ad-
+join nodes, all leaves
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+\T1/zplTLF/m/n/10 are ter-mi-nal sym-bols, and ho-mo-topies are ap-plied such t
+hat only de-pen-dency
+ []
+
+[19
+
+] [20]) (./chapters/textcirc/circgen.tex
+LaTeX Font Info:    Font shape `TS1/zplTLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 24.
-LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 24.
+ (./figures/mushroom/howtoread.tikz)
 
-(./figures/mushroom/howtoread.tikz)
-LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 36.
-LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 36.
-LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 36.
+LaTeX Warning: Reference `sec:ncat' on page 21 undefined on input line 36.
 
+[21
 
-LaTeX Warning: Reference `sec:ncat' on page 4 undefined on input line 36.
-
-[4] (./figures/mushroom/locality.tikz) [5] (./figures/mushroom/simpleCFG.tikz)
-(./figures/mushroom/simpleADP.tikz) (./figures/mushroom/simpcorr.tikz)
+] (./figures/mushroom/locality.tikz) [22] (./figures/mushroom/simpleCFG.tikz) (
+./figures/mushroom/simpleADP.tikz) (./figures/mushroom/simpcorr.tikz)
 (./figures/mushroom/simplesentences.tikz
-LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 7.5pt on input line 96.
-LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 96.
-
 
 Package pgf Warning: Returning node center instead of a point on node border. D
 id you specify a point identical to the center of node ``208''? on input line 4
 59.
 
-) [6
+) [23
 
 ] (./figures/mushroom/Sbestiary.tikz)
 (./figures/mushroom/complexsentenceCSG.tikz) (./figures/mushroom/soberA.tikz)
@@ -2061,11 +2576,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7
+[24
 
-] [8] [9] (./figures/mushroom/sintro.tikz)
+] [25] [26] (./figures/mushroom/sintro.tikz)
 (./figures/mushroom/circuitplan.tikz) (./figures/mushroom/reflcomplication.tikz
-) [10
+) [27
 
 ] (./figures/mushroom/nounbestiary_newnew.tikz)
 (./figures/mushroom/nounkinds.tikz)
@@ -2089,15 +2604,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11] [12] [13] [14] [15] (./figures/textcirc/nounwiresABN.tikz)
+[28] [29] [30] [31] [32] (./figures/textcirc/nounwiresABN.tikz)
 (./figures/textcirc/ADJgate.tikz) (./figures/textcirc/IVgate.tikz)
 (./figures/textcirc/TVgate.tikz) (./figures/textcirc/ADVbox.tikz)
 (./figures/textcirc/ADPIVbox.tikz) (./figures/textcirc/SCVbox.tikz)
 (./figures/textcirc/CNJbox2.tikz) (./figures/textcirc/ADPIVgate.tikz)
-(./figures/textcirc/gatecompex1.tikz)
-LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 326.
- [16
+(./figures/textcirc/gatecompex1.tikz) [33
 
 ] (./figures/mushroom/sentjoin.tikz)
 Overfull \hbox (163.78992pt too wide) in paragraph at lines 363--363
@@ -2105,21 +2617,21 @@ Overfull \hbox (163.78992pt too wide) in paragraph at lines 363--363
  []
 
 (./figures/mushroom/sentjoinex.tikz) (./figures/mushroom/sentjoinex2.tikz)
-[17] (./figures/textcirc/gatecompextgt.tikz)
+[34] (./figures/textcirc/gatecompextgt.tikz)
 (./figures/textcirc/gateeqslide.tikz)
 Overfull \hbox (50.79208pt too wide) detected at line 417
 []
  []
 
-[18]
+[35]
 
-LaTeX Warning: Reference `conv:sliding' on page 19 undefined on input line 433.
+LaTeX Warning: Reference `conv:sliding' on page 36 undefined on input line 433.
 
 
 (./figures/mushroom/contentlesscnj.tikz) (./figures/textcirc/lonelywires.tikz)
-(./figures/mushroom/exists.tikz) [19]
+(./figures/mushroom/exists.tikz) [36]
 
-LaTeX Warning: Reference `conv:sliding' on page 20 undefined on input line 451.
+LaTeX Warning: Reference `conv:sliding' on page 37 undefined on input line 451.
 
 
 (./figures/textcirc/sunny1.tikz) (./figures/textcirc/sunny2.tikz)
@@ -2138,29 +2650,68 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20] [21] [22]) [23] (./chapters/textcirc/textcirc.tex
-(./figures/textcirc/babiex.tikz)
+[37] [38]
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
+[][]\T1/zplTLF/b/n/10 Construction 0.2.24. []\T1/zplTLF/m/n/10 We can ex-tend o
+ur sys-tem to ac-com-mo-date rel-a-tive pro-nouns as fol-lows. The in-tro-duc-t
+ion of a rel-a-tive pro-noun is con-sid-ered to start a
+ []
 
-Package natbib Warning: Citation `wilson_string_2022' on page 24 undefined on i
+
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
+\T1/zplTLF/m/n/10 new sen-tence with a pre-made pronom-i-nal link. The rel-a-ti
+ve pro-noun con-nects to a new kind of sur-face noun, which for most in-tents a
+nd pur-poses be-haves
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
+\T1/zplTLF/m/n/10 just like the nouns we have seen be-fore, ex-cept for two cav
+eats: it can-not be la-belled (since the rel-a-tive pro-noun is al-ready han-dl
+ing that), and it can-not leave
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
+\T1/zplTLF/m/n/10 the sen-tence it starts in by \T1/npxtt/m/n/10 N\T1/zplTLF/m/
+n/10 -shift rules. We can elim-i-nate rel-a-tive pro-nouns by forc-ing the gov-
+erned noun to be named, which is equiv-a-lent to drop-ping the
+ []
+
+(./figures/mushroom/rpintroelim.tikz) (./figures/mushroom/RPex.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figures/mushroom/RPex2.tikz)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1412) has occurred while \output is active []
+
+ [39]
+[40]) [41] (./chapters/textcirc/textcirc.tex (./figures/textcirc/babiex.tikz)
+
+Package natbib Warning: Citation `wilson_string_2022' on page 42 undefined on i
 nput line 20.
 
 
-Package natbib Warning: Citation `merry_reasoning_2014' on page 24 undefined on
+Package natbib Warning: Citation `merry_reasoning_2014' on page 42 undefined on
  input line 20.
 
 
-Package natbib Warning: Citation `quick_-logic_2015' on page 24 undefined on in
+Package natbib Warning: Citation `quick_-logic_2015' on page 42 undefined on in
 put line 20.
 
 
-Package natbib Warning: Citation `zamdzhiev_rewriting_2017' on page 24 undefine
+Package natbib Warning: Citation `zamdzhiev_rewriting_2017' on page 42 undefine
 d on input line 20.
 
 
 Underfull \vbox (badness 7907) has occurred while \output is active []
 
- [24]
-[25])
+ [42]
+[43])
 
 Package natbib Warning: There were undefined citations.
 
@@ -2177,22 +2728,22 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `chap3.out' has not changed.
-(rerunfilecheck)             Checksum: 31D8276674AF408FD1B30427ADD07ECA;522.
+(rerunfilecheck)             Checksum: ED5402B95556BE5603536E0BE116EDA7;873.
  ) 
 Here is how much of TeX's memory you used:
- 61681 strings out of 478268
- 1332160 string characters out of 5846348
- 2583178 words of memory out of 5000000
- 78659 multiletter control sequences out of 15000+600000
- 595199 words of font info for 153 fonts, out of 8000000 for 9000
+ 62437 strings out of 478268
+ 1350021 string characters out of 5846348
+ 2581888 words of memory out of 5000000
+ 79262 multiletter control sequences out of 15000+600000
+ 621358 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,15n,107p,1943b,1109s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,15n,107p,1943b,1128s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{theorem.0.1.15} has been referenced but does not ex
+pdfTeX warning (dest): name{theorem.0.2.15} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{theorem.0.1.14} has been referenced but does not ex
+pdfTeX warning (dest): name{theorem.0.2.14} has been referenced but does not ex
 ist, replaced by a fixed one
 
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}{/usr/lo
@@ -2201,19 +2752,21 @@ xlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/usr/local/texli
 ve/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/2022/t
 exmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2022/texmf-d
 ist/fonts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-dis
-t/fonts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/f
-onts/type1/public/stix/stix-mathrm-bold.pfb></usr/local/texlive/2022/texmf-dist
-/fonts/type1/public/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/fo
-nts/type1/public/stix/stix-mathscr.pfb></usr/local/texlive/2022/texmf-dist/font
-s/type1/public/stix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
-ype1/public/txfonts/t1xtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/p
-ublic/newpx/zplb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/new
-px/zplr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplri.
-pfb>
-Output written on chap3.pdf (25 pages, 429988 bytes).
+t/fonts/type1/public/stix/stix-mathex.pfb></usr/local/texlive/2022/texmf-dist/f
+onts/type1/public/stix/stix-mathfrak.pfb></usr/local/texlive/2022/texmf-dist/fo
+nts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/fonts
+/type1/public/stix/stix-mathrm-bold.pfb></usr/local/texlive/2022/texmf-dist/fon
+ts/type1/public/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/fonts/
+type1/public/stix/stix-mathscr.pfb></usr/local/texlive/2022/texmf-dist/fonts/ty
+pe1/public/stix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
+/public/stix/stix-mathtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pu
+blic/txfonts/t1xtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/n
+ewpx/zplb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplr
+.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
+Output written on chap3.pdf (43 pages, 611626 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
- 258 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
- 2733 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 483 PDF objects out of 1000 (max. 8388607)
+ 380 compressed objects within 4 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 2741 words of extra memory for PDF output out of 10000 (max. 10000000)
 

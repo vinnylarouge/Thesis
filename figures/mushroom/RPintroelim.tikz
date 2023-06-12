@@ -1,0 +1,98 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (5.5, 0) {$\rightarrow$};
+		\node [style=none] (11) at (4.5, -0.5) {};
+		\node [style=none] (14) at (1.75, 1) {};
+		\node [style=none] (15) at (2.25, 1) {};
+		\node [style=none] (16) at (2, 1) {};
+		\node [style=none] (17) at (2, 1.5) {\textcolor{blue}{\texttt{rp}}};
+		\node [style=none] (18) at (-9, 0.5) {};
+		\node [style=none] (19) at (-9, -0.5) {};
+		\node [style=dot] (22) at (-8, 0.5) {};
+		\node [style=smalldotb] (23) at (-8, -0.5) {};
+		\node [style=none] (24) at (-6, 0) {$\rightarrow$};
+		\node [style=none] (25) at (-9, -1) {};
+		\node [style=none] (27) at (-2.75, 1) {};
+		\node [style=none] (28) at (-2.25, 1) {};
+		\node [style=none] (29) at (-2.5, 1) {};
+		\node [style=none] (30) at (-2.5, 1.5) {\textcolor{blue}{\texttt{rp}}};
+		\node [style=none] (31) at (-5, 0.5) {};
+		\node [style=none] (32) at (-5, -0.5) {};
+		\node [style=dotM] (33) at (-3.75, 0) {};
+		\node [style=smalldotb] (35) at (-4.5, -0.5) {};
+		\node [style=none] (36) at (-5, -1) {};
+		\node [style=none] (37) at (-1, 0.5) {};
+		\node [style=none] (38) at (-1, -0.5) {};
+		\node [style=dotM] (39) at (-3.25, 0) {};
+		\node [style=none] (42) at (-5, 2.25) {rel. pron. intro};
+		\node [style=none] (43) at (5.5, 2.25) {rel. pron. elim.};
+		\node [style=none] (44) at (-7, 0.5) {};
+		\node [style=none] (45) at (-7, -0.5) {};
+		\node [style=smallbluedot] (46) at (-2.5, 0.5) {};
+		\node [style=none] (47) at (1.5, 0.5) {};
+		\node [style=none] (48) at (4, -1.5) {};
+		\node [style=none] (49) at (9.5, -0.5) {};
+		\node [style=none] (51) at (6.5, -0.5) {};
+		\node [style=none] (52) at (9, -1.5) {};
+		\node [style=dotb] (53) at (3.5, -1) {\footnotesize{\textcolor{white}{\texttt{n}}}};
+		\node [style=none] (54) at (3, -1.5) {};
+		\node [style=smalldotb] (55) at (9, -0.5) {};
+		\node [style=none] (56) at (8, -1.5) {};
+		\node [style=none] (57) at (8.75, 0) {};
+		\node [style=none] (58) at (9.25, 0) {};
+		\node [style=none] (59) at (9, 0) {};
+		\node [style=none] (62) at (-2.5, -0.5) {};
+		\node [style=none] (63) at (-2.5, 0.5) {};
+		\node [style=smalldotb] (65) at (-1.75, -0.5) {};
+		\node [style=dot] (66) at (-4.5, 0.5) {};
+		\node [style=none] (67) at (-4.5, 0.5) {};
+		\node [style=smallbluedot] (68) at (-1.75, 0.5) {};
+		\node [style=smallbluedot] (69) at (2, 0.5) {};
+		\node [style=smallbluedot] (70) at (4, -0.5) {};
+		\node [style=none] (71) at (4.5, 0.5) {};
+		\node [style=none] (72) at (1.5, -0.5) {};
+		\node [style=none] (73) at (5.5, 0.5) {\footnotesize{$\texttt{n} \in \mathbf{N}$}};
+		\node [style=none] (74) at (9, 0.5) {$\texttt{n}$};
+		\node [style=none] (75) at (6.5, 1) {};
+		\node [style=none] (76) at (9.5, 1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KB] (14.center) to (15.center);
+		\draw [style=K] (22) to (23);
+		\draw [style=KD, in=0, out=-105] (23) to (25.center);
+		\draw [style=KB] (27.center) to (28.center);
+		\draw [style=KP, in=0, out=-120] (33) to (35);
+		\draw [style=KP] (35) to (32.center);
+		\draw [style=KD, bend left=45] (35) to (36.center);
+		\draw [style=KM] (33) to (39);
+		\draw [style=KM] (18.center) to (44.center);
+		\draw [style=KP] (19.center) to (45.center);
+		\draw [style=KB] (29.center) to (46);
+		\draw [style=KM] (51.center) to (49.center);
+		\draw [style=Kg] (53) to (54.center);
+		\draw [style=Kg] (55) to (56.center);
+		\draw [style=K] (57.center) to (58.center);
+		\draw [style=K] (59.center) to (55);
+		\draw [style=K] (55) to (52.center);
+		\draw [style=KM] (39)
+			 to [in=180, out=60] (63.center)
+			 to (37.center);
+		\draw [style=KP] (39)
+			 to [in=-180, out=-60, looseness=1.25] (62.center)
+			 to (38.center);
+		\draw [style=KD, bend right] (35) to (65);
+		\draw [style=KM] (33)
+			 to [in=0, out=135, looseness=1.25] (67.center)
+			 to (31.center);
+		\draw [style=K] (66) to (35);
+		\draw [style=KDB, bend left=60, looseness=1.50] (68) to (63.center);
+		\draw [style=K] (68) to (65);
+		\draw [style=KD, in=225, out=45] (53) to (70);
+		\draw [style=K] (70) to (48.center);
+		\draw [style=KB] (16.center) to (69);
+		\draw [style=KM] (47.center) to (71.center);
+		\draw [style=KM] (72.center) to (11.center);
+		\draw [style=KDB, in=-150, out=-90] (69) to (70);
+		\draw [style=KM] (75.center) to (76.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

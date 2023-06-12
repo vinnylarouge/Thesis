@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (9) at (0, 0) {$\rightarrow$};
+		\node [style=none] (10) at (1, 0.5) {};
+		\node [style=none] (11) at (1, -0.5) {};
+		\node [style=dotM] (12) at (1.5, 0) {};
+		\node [style=dotM] (13) at (2.5, 0) {};
+		\node [style=none] (14) at (3, 0.5) {};
+		\node [style=none] (15) at (3, -0.5) {};
+		\node [style=none] (16) at (-3, 0.5) {};
+		\node [style=none] (17) at (-3, -0.5) {};
+		\node [style=dotM] (18) at (-2.5, 0) {};
+		\node [style=dotM] (19) at (-1.5, 0) {};
+		\node [style=none] (20) at (-1, 0.5) {};
+		\node [style=none] (21) at (-1, -0.5) {};
+		\node [style=smallbluedot] (22) at (-2, 0) {};
+		\node [style=none] (23) at (-2.25, 0.5) {};
+		\node [style=none] (24) at (-1.75, 0.5) {};
+		\node [style=none] (25) at (-2, 0.5) {};
+		\node [style=none] (26) at (-2, 1) {\textcolor{blue}{\texttt{rp}}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KM, in=105, out=0] (10.center) to (12);
+		\draw [style=KM] (12) to (13);
+		\draw [style=KM, in=-180, out=75] (13) to (14.center);
+		\draw [style=KP, in=0, out=-105, looseness=1.25] (12) to (11.center);
+		\draw [style=KP, in=-180, out=-75] (13) to (15.center);
+		\draw [style=KM, in=105, out=0] (16.center) to (18);
+		\draw [style=KM] (18) to (19);
+		\draw [style=KM, in=-180, out=75] (19) to (20.center);
+		\draw [style=KP, in=0, out=-105, looseness=1.25] (18) to (17.center);
+		\draw [style=KP, in=-180, out=-75] (19) to (21.center);
+		\draw [style=KB] (23.center) to (24.center);
+		\draw [style=KB] (25.center) to (22);
+	\end{pgfonlayer}
+\end{tikzpicture}

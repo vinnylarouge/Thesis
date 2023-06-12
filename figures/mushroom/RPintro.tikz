@@ -1,0 +1,58 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-3, 0.5) {};
+		\node [style=none] (2) at (-3, -0.5) {};
+		\node [style=dotM] (3) at (-1.5, 0) {};
+		\node [style=none] (4) at (-1, 0) {};
+		\node [style=dot] (5) at (-2.5, 0.5) {};
+		\node [style=smalldotb] (6) at (-2.5, -0.5) {};
+		\node [style=none] (8) at (0, 0) {$\rightarrow$};
+		\node [style=none] (9) at (-3, -1) {};
+		\node [style=smallbluedot] (16) at (3, 0) {};
+		\node [style=none] (21) at (2.75, 0.5) {};
+		\node [style=none] (22) at (3.25, 0.5) {};
+		\node [style=none] (23) at (3, 0.5) {};
+		\node [style=none] (24) at (3, 1) {\textcolor{blue}{\texttt{rp}}};
+		\node [style=none] (25) at (1, 0.5) {};
+		\node [style=none] (26) at (1, -0.5) {};
+		\node [style=dotM] (27) at (2.5, 0) {};
+		\node [style=dot] (29) at (1.5, 0.5) {};
+		\node [style=smalldotb] (30) at (1.5, -0.5) {};
+		\node [style=none] (31) at (1, -1) {};
+		\node [style=none] (32) at (5, 0.5) {};
+		\node [style=none] (33) at (5, -0.5) {};
+		\node [style=dotM] (34) at (3.5, 0) {};
+		\node [style=dot] (36) at (4.5, 0.5) {};
+		\node [style=smalldotb] (37) at (4.5, -0.5) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KM] (4.center) to (3);
+		\draw [style=KM] (3)
+			 to [in=0, out=120] (5.center)
+			 to (0.center);
+		\draw [style=KP] (3)
+			 to [in=0, out=-135] (6.center)
+			 to (2.center);
+		\draw [style=K] (5) to (6);
+		\draw [style=KD, bend left=45] (6) to (9.center);
+		\draw [style=KB] (21.center) to (22.center);
+		\draw [style=KB] (23.center) to (16);
+		\draw [style=KM] (27)
+			 to [in=0, out=120] (29.center)
+			 to (25.center);
+		\draw [style=KP] (27)
+			 to [in=0, out=-135] (30.center)
+			 to (26.center);
+		\draw [style=K] (29) to (30);
+		\draw [style=KD, bend left=45] (30) to (31.center);
+		\draw [style=KM] (34)
+			 to [in=180, out=60] (36.center)
+			 to (32.center);
+		\draw [style=KP] (34)
+			 to [in=180, out=-45] (37.center)
+			 to (33.center);
+		\draw [style=K] (36) to (37);
+		\draw [style=KM] (27) to (34);
+		\draw [style=KD, bend right] (30) to (37);
+	\end{pgfonlayer}
+\end{tikzpicture}

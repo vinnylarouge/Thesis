@@ -487,24 +487,42 @@ In the presence of additional rewrites from Conventions \ref{conv:and} and \ref{
 \[
 \resizebox{\textwidth}{!}{\tikzfig{textcirc/sunny5}}
 \]
-\caption{Recursing notation swaps outwards and connecting left-to-right slices as sentence-bubbles connect yields a text circuit, up to the inclusion of rewrites from Conventions \ref{conv:and} and \ref{conv:exists}: applying the reverse of those rewrites and the reverse of text-diagram rewrites yields a valid text-diagram derivation, by Propositions \ref{prop:compsent} and \ref{prop:linkedlist}.}
+\caption{Recursing notation swaps outwards and connecting left-to-right slices as sentence-bubbles connect yields a text circuit, up to the inclusion of rewrites from Conventions \ref{conv:and} and \ref{conv:exists}: applying the reverse of those rewrites and the reverse of text-diagram rewrites yields a valid text-diagram derivation, by Propositions \ref{prop:compsent} and \ref{prop:linkedlist}. We haven't formally included transitive verbs with sentential complement in our vocabulary, but it should be obvious at this point how they function with our existing machinery.}
 \end{figure}
 \end{construction}
+
+\bR TODO: insert text circuit theorem \e
 
 \newpage
 \subsection{Extensions I: relative and reflexive pronouns}
 
-\newthought{Subject relative pronouns}
+\newthought{Relative pronouns}
 
-\begin{example}
+A relative pronoun glues two sentences across a single noun. For example, what would be a text with two sentences \texttt{Alice teaches at school. School bores Bob.} can be composed by identifying \texttt{school}: \texttt{Alice teaches at school \underline{that} bores Bob.} In this case, \texttt{that} is called a subject-relative pronoun, as it stands in for the subject argument in \texttt{bores}. In \texttt{Alices teaches at school \underline{that} Bob attends.}, we have an object-relative pronoun, as \texttt{that} stands in for the object argument in \texttt{attends}. In English, relative pronouns occur immediately after the noun they copy, and are followed immediately by a sentence missing a noun.
 
+\begin{myboxB}
+\begin{construction}\label{cons:relpron}
+We can extend our system to accommodate relative pronouns as follows. The introduction of a relative pronoun is considered to start a new sentence with a premade pronominal link. The relative pronoun connects to a new kind of surface noun, which for most intents and purposes behaves just like the nouns we have seen before, except for two caveats: it cannot be labelled (since the relative pronoun is already handling that), and it cannot leave the sentence it starts in by \texttt{N}-shift rules. We can eliminate relative pronouns by forcing the governed noun to be named, which is equivalent to dropping the relative pronoun and recovering distinct sentences.
+\[\tikzfig{mushroom/rpintroelim}\]
+\end{construction}
+\end{myboxB}
+
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/RPex}}\]
+\caption{
+\begin{example}[Introducing relative pronouns]
 \end{example}
+Here we demonstrate derivations of \texttt{Alice teaches at school that bores Bob} and \texttt{Alice teaches at school that Bob attends}. The initial steps in both cases are the same, setting up the \texttt{teaches} phrase structure and introducing a new unsaturated noun in the \texttt{Bob} phrase to work with the relative pronoun.
+}
+\end{figure}
 
-\newthought{Object relative pronouns}
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/RPex2}}\]
+\caption{Now have a branching derivation. We may either directly generate a transitive verb treating the relative pronoun as a subject, or we may first perform an $\texttt{N}_\uparrow$-swap first and then generate a transitive verb, treating the relative pronoun as an object. Now the ends of either branch can be labelled to recover our initial examples.}
+\end{figure}
 
-\begin{example}
-
-\end{example}
 
 \newthought{Reflexive pronouns}
 

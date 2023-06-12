@@ -8,7 +8,7 @@ Second, there is a distinction between \emph{strict} and \emph{weak} $n$-categor
 
 Mathematicians, computer scientists, and physicists may have good reasons to work with weak $n$-categories \bR CITE \e, but what is the value proposition for formal linguists? A philosophical draw for the formal semanticist is that insofar as semantics is synonymy -- the study of when expressions are equivalent -- weak $n$-categories are an exquisite setting to control and study sameness in terms of meta-equivalences. A practical draw for the formal syntactician is that weak $n$-categories provide a natural setting to model generic rewriting systems, and that is what we will focus on here. In this setting we will introduce weak $n$-categories in the \texttt{homotopy.io} formulation, along the way showing how they provide a common setting to formalise string-rewrite and tree-adjoining grammars, setting the stage for us to specify a circuit-adjoining grammar for text circuits later on.
 
-\clearpage
+\newpage
 
 \subsection{String-rewrite systems as 1-object-2-categories}
 
@@ -99,7 +99,7 @@ $\Sigma$ is a set of \emph{terminal symbols} -- these stand in for the words of 
 
 Further, there are two operations to build what are called \emph{derived trees} from elementary and derived trees. \emph{Substitution} replaces a substitution marked leaf node $\texttt{X}^\downarrow$ in a tree $\alpha$ with another tree $\alpha'$ that has $\texttt{X}$ as a root node. \emph{Adjoining} takes auxiliary tree $\beta$ with root and foot nodes $\texttt{X},\texttt{X}^\star$, and a derived tree $\gamma$ at an interior node $\texttt{X}$ of $\gamma$. Removing the $\texttt{X}$ node from $\gamma$ separates it into a parent tree with an $\texttt{X}$-shaped hole for one of its leaves, and possibly multiple child trees with \texttt{X}-shaped holes for roots. The result of adjoining is obtained by identifying the root of $\beta$ with the $\texttt{X}$-context of the parent, and making all the child trees children of $\beta$s foot node $\texttt{X}^\star$.
 
-\clearpage
+\newpage
 
 \begin{figure}[h!]
 \centering
@@ -142,7 +142,6 @@ Leaf-ansatz signature of \texttt{Alice sees Bob quickly run to school} CFG. One 
 \end{figure}
 \clearpage
 
-\clearpage
 \begin{figure}
 \[\scalebox{0.6}{\tikzfig{tree2gate/tag/tagsignature}}\]
 \caption{TAG signature of \texttt{Alice sees Bob quickly run to school}. The highlighted 2-cells are auxiliary trees that replace CFG 2-cells for verbs with sentential complement, adverbs, and adpositions. The highlighted 3-cells are the tree adjoining operations of the auxiliary trees. The construction yields as a corollary an alternate proof of Theorem [Joshi 6.1.1...]...
@@ -157,8 +156,6 @@ Proposition \ref{prop:cfgastag1} provides one direction of both equivalences. Fo
 
 \subsection{Tree adjoining grammars with local constraints}
 
-The usual conception of TAGs includes two extensions to the basic definition presented above. First, there may be \emph{local constraints} on adjoining, which only allows certain trees to be adjoined at certain nodes. Second, TAGs may have links, which are extra edges between nodes obeying a c-command condition. Here we deal with local constraints; dealing with links requires the introduction of braiding.
-
 \marginnote{
 \begin{defn}[TAG with local constraints: CS-style] [Joshi]
 $G = (I,A)$ is a TAG with local constraints if for each node $n$ and each tree $t$, exactly one of the following constraints is specified:
@@ -169,6 +166,8 @@ $G = (I,A)$ is a TAG with local constraints if for each node $n$ and each tree $
 \end{enumerate}
 \end{defn}
 }
+
+The usual conception of TAGs includes two extensions to the basic definition presented above. First, there may be \emph{local constraints} on adjoining, which only allows certain trees to be adjoined at certain nodes. Second, TAGs may have links, which are extra edges between nodes obeying a c-command condition. Here we deal with local constraints; dealing with links requires the introduction of braiding.
 
 The $n$-categorical approach easily accommodates local constraints. For (SA), whereas before we take the source of adjoining rewrites to be identities, we can instead introduce ansatz endomorphisms that are rewritable to the desired subsets. For (NA), we assert that identities have no rewrites (NA). For (OA), we can make a distinction between finished and unfinished derivations, where we require that unfinished derivations are precisely those that still contain an obligatory-rewrite endomorphism.
 
@@ -218,7 +217,7 @@ In our analogy with string rewrite systems, we might like that the following rew
 \caption{We may view the homotopies that get us from one rewrite to another as 3-cells, which produces a braid in a pair of wires when viewed as a vignette. Up to processive isotopies \bR CITE \e, which are continuous bijective transformations that don't let wires double back on themselves, we can identify two different braidings that are not continuously deformable to one another in the 3-dimensional space of the vignette. We distinguish the braidings visually by letting wires either go over or under one another.}
 \end{figure}
 
-\clearpage
+\newpage
 
 Now we have a setting in which we can consider wires swapping places. However, having two different ways to swap wires presents a complication. While useful for knot-theory, in symmetric monoidal categories we don't want this distinction. Perhaps surprisingly, this distinction is eliminated if we consider swapping dots in the 3D volume rather than the 2D plane. Now we have to extend our analogy to reach 1-object-4-categories. Just as symbols on a 1D string were encoded as 1-cells on the 0-cell identity initially, our braidings are the behaviour of symbols on the 2D plane, encoded as 2-cells on the 1-cell identity of the 0-cell. So, to obtain symbols in a 3D volume, we want 3-cells on the 2-cell identity of the 1-cell identity of the 0-cell. That is a mouthful, so we instead clumsily denote the stacked identity as $\textbf{1}_{\textbf{1}_\star}$. To obtain a dot in a 3-dimensional volume, we consider a rewrite from $\textbf{1}_{\textbf{1}_\star}$ to itself. These dots also enjoy a version of the Eckmann-Hilton argument in 3 dimensions (which holds for all dimensions 2 and higher).
 
@@ -258,20 +257,43 @@ A \emph{TAG with links} is a TAG in which some of the elementary trees may have 
 \end{defn}
 }
 
-\marginnote{
 Now we have enough to spell out full TAGs with local constraints and links as an $n$-categorical signature. To recap briefly, we have seen that we can model the passage from CFGs to TAGs in the $n$-categorical setting, and then how selective and null adjoining rules by specifying endomorphisms on wires as the source of rewrites, and finally that we can model links in the symmetric monoidal setting. Maintaining planarity (which is important for a left-to-right order of terminals for spelling out a language) and modelling obligatory rewrites can be done by requiring that \emph{finished} derivations are precisely those whose only twists are link-wires, and have no sources for obligatory adjoins.
-}
 
-\marginnote{
-\begin{defn}[Tree Adjoining Grammars with local constraints and links in \texttt{homotopy.io}]
+\begin{example}
+The following is a reproduction in \texttt{homotopy.io} of Example 2.4 of [Joshi], illustrating TAGs with links; as a proof assistant for weak $n$-categories, \texttt{homotopy.io} automatically performs tree adjunction after the signature has been properly spelled out.
 
-A \emph{Linguistic Tree Adjoining Grammar} is given by the following data:
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/tag/joshiex24}}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/tag/joshiex241}}\]
+\caption{The TAG signature and example derivation are as above. Joshi stresses that adjoining \emph{preserves} links, and that elementary trees may become \emph{stretched} in the process of derivation, which are fundamentally topological constraints, akin to the "only (processive) connectivity" matters criterion identifying string diagrams up to isomorphism. Moreover, TAGs evidently have links of two natures: tree edges intended to be planar, and dashed dependency edges intended to freely cross over tree edges. It is easy, but a hack, to ask for planar processive isomorphisms for tree edges and extraplanar behaviour for dependency edges: these are evidently two different kinds of structure glued together, rather than facets of some whole. Weak $n$-categories offer a unified mathematical framework that natively accommodates the desired topological constraints while also granting expressive control over wire-types of differing behaviours. One method to recover TAGs true to the original conception is to stay in a planar 1-object-2-category setting while explicitly including wire-crossing cells for dependency links. The alternative method we opt for in Section \bR ref \e is to work in a pure "only connectivity matters" setting, recovering the linear ordering of words by generating cells along a chosen wire. I do not know of any conceptual justification for why planarity is so often an implicit constraint in approaches to formal syntax. My best guesses are either that the first port of call for rewrites between 1-dimensional strings of words is a 2-dimensional setting, or it is a limitation of 2-dimensional paper as a medium of thought along with some confusion of map for territory.}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\[\vcenter{\hbox{\resizebox{0.1\textwidth}{!}{\input{figures/tree2gate/tag/ex24.tikz}}}} \overset{\beta_1}{\rightarrow} \quad \vcenter{\hbox{\resizebox{0.3\textwidth}{!}{\input{figures/tree2gate/tag/ex242.tikz}}}} \overset{\beta_1}{\rightarrow} \quad \vcenter{\hbox{\resizebox{0.5\textwidth}{!}{\input{figures/tree2gate/tag/ex243.tikz}}}}\]
+\caption{With our interpretation of TAGS as weak $n$-categorical signatures, We can recover each step of the example derivation automagically in \texttt{homotopy.io}; just clicking on where we want rewrites allows the proof assistant to execute a typematching tree adjunction. In the process of interpretation, we introduce a link wire-type (in purple), and include directed link generation and elimination morphisms for the $T$ wire-type (in blue). A necessary step in the process of interpretation (which for us involves taking a Poincar\'{e} dual to interpret nodes as wires) is a typing assignment of the tree-branches connected to terminal nodes, which we have opted to read as sharing a $T$-type for minimality, though we could just as well have introduced a separate label-type wire.}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\[\overset{\beta_2}{\rightarrow} \vcenter{\hbox{\resizebox{0.9\textwidth}{!}{\input{figures/tree2gate/tag/ex244.tikz}}}}\]
+\caption{The intended takeaway is that even if you don't buy the necessity or formality of weak $n$-categories, there is always the fallback epistemic underpinning of a formal proof assistant for higher dimensional rewriting theories, which is rather simple to use if I have succeeded in communicating higher-dimensional intuitions in this section. \textbf{N.B.} In practice when using \texttt{homotopy.io} for the symmetric monoidal setting, it is simpler to suspend symmetric monoidal signatures to begin at 4-cells rather than 3-cells. The reason for this is that under- and over-braids still exist in the symmetric monoidal setting, and while sequentially composed braids are homotopically equivalent to the pair of identities, they are not uniquely so, thus these homotopies must be input manually. By beginning at 4-cells (or higher, due to the stabilisation hypothesis \bR CITE \e), braid-eliminations are unique up to homotopy and can be performed more easily in the proof assistant.}
+\end{figure}
+\end{example}
+
+\clearpage
+
+\subsection{Full TAGs in weak $n$-categories}
+
+I apologise in advance for the sheer ugliness of the following construction. Partly this is inevitable for combinatorial data, but the diagrammatic signatures also present combinatorial data and are easier to read, so what gives? This is what happens when one defines mathematical objects outside of their natural habitat. The native habitat of TAGs is diagrammatic, to accommodate a natural and spatially-intuitive generalisation of context-free grammars by allowing trees to be adjoined on nodes other than the leaves. I consider the offensiveness of the translation to follow a direct measure of the wrongness of linear-symbolic foundations, and an example of the harm that results from the prejudice that pictures cannot be formal.
+
+\begin{myboxB}
+\begin{multicols}{2}
+\begin{defn}[Linguistic Tree Adjoining Grammars] A \emph{Linguistic Tree Adjoining Grammar} is given by the following data:
 
 \[(\mathcal{N}, \mathcal{N}^\downarrow, \mathcal{N}^*, \Sigma, \mathcal{I}, \mathcal{A}, \mathfrak{S} \subseteq \mathcal{P}(\mathcal{A}), \Box, \Diamond, \mathfrak{L} \subseteq \mathcal{N})\]
-\end{defn}
-}
 
-\marginnote{
 The initial elements are the same as an elementary tree-adjoining grammar and obey the same constraints. The modifications are:
 
 \begin{itemize}
@@ -293,10 +315,14 @@ A set of ordered pairs of nodes $(n_1,n_2)$ of the tree such that:
 \end{enumerate}
 }
 \end{itemize}
-}
+\end{defn}
+\end{multicols}
+\end{myboxB}
 
-\marginnote{
-We spell out how this data becomes an $n$-categorical signature by enumerating cell dimensions:
+\begin{myboxB}
+\begin{multicols}{2}
+\begin{construction}[TAGs in \texttt{homotopy.io}]
+We spell out how the data of a TAG becomes an $n$-categorical signature by enumerating cell dimensions:
 
 \begin{enumerate}
 \setcounter{enumi}{-1}
@@ -316,8 +342,8 @@ We spell out how this data becomes an $n$-categorical signature by enumerating c
 	\item{For each node $n$ that occurs in either $\mathcal{I}$ or $\mathcal{A}$, we populate cells by a case analysis:
 	\begin{itemize}
 		\item{If $n$ is a terminal $\sigma \in \Sigma$, we create a cell $\sigma: \top \rightarrow \mathbf{1}_{\mathbf{1}_{\mathbf{1}_\star}}$.}
-		\item{If $n = (\mathbf{T},\mathbf{S},\dagger,\bar{*})$, we create $\mathbf{S}_\mathbf{T}^\Box: \mathbf{T} \rightarrow \mathbf{T}$ if the node is marked obligatory ($\dagger = \Box$), and a cell $\mathbf{S}_\mathbf{T}^\Diamond: \mathbf{T} \rightarrow \mathbf{T}$ otherwise.}
-		\item{If $n = (\mathbf{T},\mathbf{S},\dagger,*)$, it is a foot note, for which we create a cell $\mathbf{S}_\mathbf{T}^\Box: \mathbf{T} \rightarrow \mathbf{1}_{\mathbf{1}_{\mathbf{1}_\star}}$ if the node is marked obligatory ($\dagger = \Box$), and a cell $\mathbf{S}_\mathbf{T}^\Diamond: \mathbf{T} \rightarrow \mathbf{1}_{\mathbf{1}_{\mathbf{1}_\star}}$ otherwise.}
+		\item{Where $\phi \in \mathfrak{S}$ denotes a selective adjoining rule where required, if $n = (\mathbf{T},\mathbf{S},\dagger,\bar{*})$, we create $\phi\mathbf{S}_\mathbf{T}^\Box: \mathbf{T} \rightarrow \mathbf{T}$ if the node is marked obligatory ($\dagger = \Box$), and a cell $\phi\mathbf{S}_\mathbf{T}^\Diamond: \mathbf{T} \rightarrow \mathbf{T}$ otherwise.}
+		\item{If $n = (\mathbf{T},\mathbf{S},\dagger,*)$, it is a foot node, for which we create a cell $\mathbf{S}_\mathbf{T}^\Box: \mathbf{T} \rightarrow \mathbf{1}_{\mathbf{1}_{\mathbf{1}_\star}}$ if the node is marked obligatory ($\dagger = \Box$), and a cell $\mathbf{S}_\mathbf{T}^\Diamond: \mathbf{T} \rightarrow \mathbf{1}_{\mathbf{1}_{\mathbf{1}_\star}}$ otherwise.}
 	\end{itemize}
 	}
 	\item{For each $\mathbf{L} \in \mathfrak{L}$ (which is also a type $\mathbf{T} \in \mathcal{N}$) a pair of cells $\mathbf{T}^\mathbf{L} := \mathbf{T} \rightarrow \mathbf{T} \otimes \mathbf{L}$ and $\mathbf{T}_\mathbf{L} := \mathbf{L} \otimes \mathbf{T} \rightarrow \mathbf{T}$.}
@@ -325,28 +351,14 @@ We spell out how this data becomes an $n$-categorical signature by enumerating c
 	\end{itemize}
 	We represent trees by composite generators, defined recursively. For a given tree $\mathcal{T}$ in either $\mathcal{I}$ or $\mathcal{A}$, we define a composite generator beginning at the root. Where the root node is $p = (\mathbf{T},\mathbf{S},\dagger)$, we begin with the cell $\mathbf{S}_\mathbf{T}^\dagger$. For branches, we compose the branch cell $C_p$ to this cell sequentially. If $p$ has a child $c$ that has a link, we do a case analysis. If that child c-commands the other end of the link we generate the first half of the linking wire by composing $\mathbf{T}^\mathbf{L}$ for the appropriate type $\mathbf{T}$ of the child node. Otherwise the child is c-commanded by a previously generated link, which we braid over and connect using $\mathbf{T}_\mathbf{L}$, again with the appropriate typing for the child. Now we may recurse the procedure for subtrees. If a node has no children, it is a leaf $l = (\mathbf{T},\mathbf{S},\dagger)$ or a terminal symbol. We append a terminal cell $\sigma$ if $l$ is a terminal symbol (thus killing the wire), and otherwise we leave an open $\mathbf{T}$ wire after appending $\mathbf{S}_\mathbf{T}^\dagger$. Altogether this obtains a 3-cell which we denote $\mathcal{T}$, overloading notation; different execution-orders of the above procedure evidently obtain 3-cells equivalent up to homotopy.
 }
-\item{}
-\end{enumerate}
+\item{
+For each $\phi\mathbf{S}_\mathbf{T}^\Box$, $\phi\mathbf{S}_\mathbf{T}^\Diamond$, and for each typematching 4-cell tree in the subset of select adjoins of $\phi$, we create a 5-cell rewrite that performs tree adjoining, taking the former to be the source and the latter to be the target.
 }
+\end{enumerate}
+A derivation is finished when there are no obligatory adjoin nodes, all leaves are terminal symbols, and homotopies are applied such that only dependency link-wires participate in braidings, which implies that the tree-part is planar.
+\end{construction}
+\end{multicols}
+\end{myboxB}
 
-\begin{example}
-The following is a reproduction in \texttt{homotopy.io} of Example 2.4 of [Joshi], illustrating TAGs with links; as a proof assistant for weak $n$-categories, \texttt{homotopy.io} automatically performs tree adjunction after the signature has been properly spelled out. The trees given in Examples 2.4 are:
-
-\[placeholder\]
-
-Which we interpret as expressions comprised of the following signature:
-
-\[placeholder\]
-
-In the process of interpretation, we introduce a link wire-type (in purple), and include directed link generation and elimination morphisms for the $T$ wire-type (in blue). A necessary step in the process of interpretation (which for us involves taking a Poincar\'{e} dual to interpret nodes as wires) is a typing assignment of the tree-branches connected to terminal nodes, which we have opted to read as sharing a $T$-type for minimality, though we could just as well have introduced a separate label-type wire.
-
-\[\resizebox{\textwidth}{!}{\input{figures/tree2gate/tag/ex24.tikz}}\]
-\[\resizebox{\textwidth}{!}{\input{figures/tree2gate/tag/ex242.tikz}}\]
-\[\resizebox{\textwidth}{!}{\input{figures/tree2gate/tag/ex243.tikz}}\]
-\[\resizebox{\textwidth}{!}{\input{figures/tree2gate/tag/ex244.tikz}}\]
-
-\textbf{N.B.} In practice when using \texttt{homotopy.io} for the symmetric monoidal setting, it is simpler to suspend symmetric monoidal signatures to begin at 4-cells rather than 3-cells. The reason for this is that under- and over-braids still exist in the symmetric monoidal setting, and while sequentially composed braids are homotopically equivalent to the pair of identities, they are not uniquely so, thus these homotopies must be input manually. By beginning at 4-cells (or higher, due to the stabilisation hypothesis \bR CITE \e), braid-eliminations are unique up to homotopy and can be performed more easily in the proof assistant.
-\end{example}
-
-
+\clearpage
 
