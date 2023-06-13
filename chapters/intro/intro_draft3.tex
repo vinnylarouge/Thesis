@@ -148,7 +148,7 @@ Large language models raise questions of existential concern for the field of li
 
 \newthought{Let me outline the terms and stakes.} Because the field is developing so quickly, assume that everything about LLMs is prefaced with "at the time of writing". Large Language Models are programs trained -- using a lot of data and a lot of compute time -- to predict the next word in text, computational techniques for which have evolved from Markov n-grams to transformers \citep{vaswani_attention_2017}. This sounds unimpressive, but -- in tandem with fine-tuning from human feedback in the case of chatGPT \citep{openai_chatgpt_2022} -- it is enough to tell and explain jokes \citep{bastian_google_2022}, pass the SAT \citep{teddy_teddynpc_i_2022} and score within human ranges on IQ tests \citep{thompson_gpt-35_2022}. There is an aspect of genuine scientific and historical surprise that text-prediction can do this kind of magic. On the account of \citep{mcshane_linguistics_2021}, computational linguistics began in a time when compute was too scarce to properly attempt rationalist, knowledge-based and theoretically-principled approaches to modelling language. Text-prediction as a task arose from a deliberate pursuit of "low-hanging fruit" as a productive and knowledge-lean alternative to doing nothing in an increasingly data-rich environment. Some observers \citep{church_pendulum_2011} expressed concern that all this fruit would be picked bare in a generation to force a return to knowledge-based methods, but those concerns appear now to be unfounded.\\
 
-I'm sure there will be many further notable developments, and to be safe I won't make any claims about what machines can't do if we keep making them bigger and feed them more data or have them interact with one another in clever ways. Nonetheless there remain limitations that seem persistent for the foreseeable future, not in terms of \emph{capabilities}, but in terms of \emph{explainability and safety}. These models have a tendency to hallucinate facts and (ironically, for a computer) bad arithmetic \citep{hendrycks_measuring_2021}, and I imagine that the cycle of discovering limitations and overcoming them will continue. Despite whatever limitations exist in the state-of-the-art, it is evident to all sane observers that this is an important technology, for several reasons.
+I'm sure there will be many further notable developments, and to be safe I won't make any claims about what machines can't do if we keep making them bigger and feed them more data or have them interact with one another in clever ways. Nonetheless there remain limitations that seem persistent for the foreseeable future, not in terms of \emph{capabilities}, but in terms of \emph{interpretability, explainability and safety}. These models have a tendency to hallucinate facts and are (ironically, for a computer) bad at arithmetic \citep{hendrycks_measuring_2021}. I imagine that the cycle of discovering limitations and overcoming them will continue. Despite whatever limitations exist in the state-of-the-art, it is evident to all sane observers that this is an important technology, for several reasons.
 
 \begin{enumerate}
 \item{
@@ -250,34 +250,79 @@ The problems I have mentioned above are obstacles, and I hope to show that using
 
 To summarise the first value proposition, string diagrams are an aesthetic, intuitive, flexible, and rigourous metalanguage syntax that gives agency to the modeller by operating at a level of abstraction of their choice.  In this vein, theories of syntax expressed in terms of string diagrams makes it easier to reason about expressive equivalence between theories at a compositional level. More precisely, a theory of syntax is expressed as a finitely presented symmetric monoidal category, and relationships between theories are expressed as symmetric monoidal functors, which are generalised structure-preserving maps. The upshot of reasoning in this way is that equivalences are established at a structural level between the atomic components of corresponding theories, which lets us push the boundaries of what may be considered formal semantics in \bR Section \ref{} \e.
 
-\newthought{TL;DR of introduction:} LLMs do not explain language, and formal linguists "explain" language using the mathematical equivalent of punchcard machines. Both sides stand to gain from synthesis, but synthesis requires a shared mathematical metalanguage. I propose string diagrams and applied category theory as a candidate, and the rest of the thesis is about justifying the proposal.
+\newthought{TL;DR of introduction:} Computers do not explain language, and formal linguists "explain" language using the mathematical equivalent of punchcard machines. Both sides stand to gain from synthesis, but synthesis requires a shared mathematical metalanguage. I propose string diagrams and applied category theory as a candidate, and the rest of the thesis is about justifying the proposal.
 
 \section{Synopsis of the thesis}
 
 \marginnote{
 \textbf{Novel contributions:}
 \begin{itemize}
-\item
-Section \ref{} demonstrates how string-diagrammatic reasoning allows for graphical proofs of strong equivalences between typelogical, string-production, and further strong equivalence to a fragment of tree-adjoining grammars. 
-\item
-Text diagrams and text circuits lie at the heart of the above correspondences and of this thesis, which we introduce and investigate in Section \ref{} in an abridged re-presentation of \bR CITE \e, culminating in a proof relating the expressive capacity of text circuits to a controlled fragment of English that serves as evidence that text circuits are a natural metalanguage for grammatical relationships that make no extraneous distinctions.
-\item
-In Section \ref{}, moving towards applications, I introduce the category of continuous relations, to set a mathematical stage upon which we can build toy models, expanding upon my previous work on linguistically compositional spatial relations \bR CITE \e towards modelling mechanical systems and containers.
-\item
-I mathematically investigate the possibilities and limitations of textual modelling with text circuits on classical and quantum computers in Section \ref{} by examining the limitations of cartesian monoidal categories for modelling text circuits, taking the universal approximation theorem into account.
-\item
-In Section \ref{}, I extend the string-diagrammatic techniques used to prove correspondences between different syntactic theories to text circuits provides a framework for the formal, conceptually-compliant modelling of textual metaphor.
-\item
-I demonstrate a formal connection between tame topologies and tensed language in Section \ref{}, which extends to a formal framework to model narratives as database rewrites in Section \ref{}.
+\item{Section \bR CITE \e is a pedestrian introduction to weak $n$-category theory (via \texttt{homotopy.io}, underpinned by the theory of associative $n$-categories) from the perspective of generalising familiar string-rewrite systems to higher dimensions. The chief development of this section is a demonstration by construction that context-free grammars and tree-adjoining grammars may be formalised in the $n$-categorical setting.}
+\end{itemize}
+}
+\marginnote{
+\begin{itemize}
+\item{Section \bR CITE \e spells out a generative grammar for text using an $n$-categorical signature as a rewrite system, which additionally provides a unified framework from which the Text Circuit Theorem first proved in \bR CITE \e is recovered.}
+\end{itemize}
+}
+\marginnote{
+\begin{itemize}
+\item{Section \bR CITE \e introduces the category \textbf{ContRel} of continuous relations. I detail the relationships (or lack thereof) of \textbf{ContRel} to its cousins \textbf{Top} and \textbf{Rel}. Though \textbf{ContRel} is constructed na\"{i}vely, its definition and an exposition of its expressivity from the monoidal perspective appears to be novel.}
+\end{itemize}
+}
+\marginnote{
+\begin{itemize}
+\item{Section \bR CITE \e string-diagrammatically characterises set-indexed collections of disjoint open subsets of spaces in \textbf{ContRel} as \emph{sticky spiders} -- special frobenius algebras that satisfy certain interaction relations with an idempotent. The diagrammatic outcome is that reasoning with such set-indexed collections remains as graphically intuitive as with spiders.}
+\end{itemize}
+}
+\marginnote{
+\begin{itemize}
+\item{Section \bR CITE \e -- with the aid of a theorem by Friedman \bR CITE \e -- string-diagrammatically characterises a vocabulary of linguistic topological relations in \textbf{ContRel} such as simple connectedness, touching, insideness, and rigid motion.}
+\end{itemize}
+}
+\marginnote{
+\begin{itemize}
+\item{Section \bR CITE \e argues for the centrality of explaining communication as a criterion for formal approaches to syntax, and explores the relationship between productive and parsing grammars as organised by a monoidal cofunctor. A diagrammatic treatment of monoidal cofunctor boxes is introduced for this purpose.}
+\end{itemize}
+}
+\marginnote{
+\begin{itemize}
+\item{Appendix \bR CITE \e contains mathematical background, including a pedestrian exposition of process theories both in terms of the underpinning category theory and diagrammatically, along with brief process-theoretic expositions of some topical concepts such as neural nets.}
+\end{itemize}
+}
+\marginnote{
+\begin{itemize}
+\item{Appendix \bR CITE \e contains a standalone introduction to the mathematical setup of Montague's \emph{Universal Grammar}, aimed at modern algebraists. An outcome of this section is the placement of text circuits as a natural mathematical development in the broadly conceived programme of Montague Semantics.}
+\end{itemize}
+}
+\marginnote{
+\begin{itemize}
+\item{Appendix \bR CITE \e contains a short recipe for learnable finite first-order models by interpreting text circuits in $\textbf{Vect}^\otimes$ over what is essentially a tropical semiring.}
+\end{itemize}
+}
+\marginnote{
+\begin{itemize}
+\item{Appendix \bR CITE \e is an initial investigation into the theoretical limitations of learning text circuits in neural nets with vector concatenation as monoidal product.}
+\end{itemize}
+}
+\marginnote{
+\begin{itemize}
+\item{Appendix \bR CITE \e constructs a subcategory of sticky spiders in \textbf{ContRel} on the unit square that behaves as a model of \textbf{FinRel} equipped with a \emph{Turing object} -- a single object in a category with respect to which all other objects and morphisms between them may be encoded. This is of particular relevance to the linguistic phenomenon of \emph{entification} -- that essentially all grammatical categories of words and even phrases have noun-equivalents, e.g. $\texttt{to run} \simeq \texttt{running}$, $\texttt{Bob drinks} \simeq \texttt{the fact that Bob drinks}$. The presence of a Turing object in a symmetric monoidal category additionally provides a semantic model for higher-order processes of generic input type, and for \emph{lasso diagrams}.
+}
+\end{itemize}
+}
+\marginnote{
+\begin{itemize}
+\item{In Section \bR CITE \e, by parsing text as circuits (Section \bR CITE \e) and using monoidal cofunctor boxes (Section \bR CITE \e) to interpret those circuits in \textbf{ContRel} as iconic representations equipped with a vocabulary of lingustic-topological concepts (Section \bR CITE \e), I calculate the semantics of metaphors by hand.}
 \end{itemize}
 }
 
-Chapter 2 provides the relevant background and foundations for category theory, machine learning, and formal syntax for this thesis, which lives at the intersection. The ideas required from the parent fields will be basic, so the exposition is meant to get readers across disciplines on the same page, not impress experts. For string diagrams I will first provide a primer for how process-theoretic reasoning with string diagrams work, by example. On the category theoretic end, I will recount symmetric monoidal categories as the mathematical objects that string diagrams are syntax for, as well as provide a working understanding of PROPs \bR CITE \e and n-categories as formalised by \bR CITE \e, which provide a metalanguage for specifying families of string diagrams. Once the reader is happy with string diagrams, for machine learning I will just introduce how deep neural nets and backpropagation work in string-diagrammatic terms to provide a foundation of formal understanding, and I will explain the mathematical and real-world reasons why deep learning is so powerful. For formal linguistics, I will sketch out a partial history of categorial linguistics in general, along the way briefly recasting \bR CITE \e in more modern mathematical terminology to justify string diagrams as a generalisation of Montague's original conception of syntax and semantics.\\
+If formally analysing a metaphor from syntax down to semantics string-diagrammatically doesn't convince a formal linguist, nothing will. All of the rest of the thesis until then is preparation for that exercise, while the appendix materials play a supporting role. Those unfamiliar with process theories are encouraged to look at Appendix \bR REF \e. For text circuit practitioners, Appendix \bR REF \e contains some (im)possibility results for learning text circuits in neural nets as they are normally used, and Appendix \bR REF \e is a short recipe for learning finite first-order models in a totally linear setting, albeit one over what amounts to a tropical semiring. Appendix \bR REF \e is the first half of a modern mathematician's reading companion to Montague's seminal paper \emph{Universal Grammar}. Appendix \bR REF \e answers the question of how to semantically interpret higher-order boxes that are not picky about the type of the morphism they contain, but it is also an amalgamation of some sketches of language I was too sentimental to omit. It provides a construction of a monoidal computer on \textbf{FinRel} using sticky spiders, in the process providing; the only semantic setting I know of for the linguistic phenomenon of \emph{entification}; a recipe for grounding certain verbs of cognition; and a setting for \emph{lasso diagrams}.\\
 
-Chapter 3 is about string diagrams for formal syntax. Here I recount context-free, pregroup, and tree-adjoining grammars to the reader, recast them string-diagrammatically, and relate them by means of discrete monoidal fibrations, a piece of mathematics I will develop. Then we (re)introduce text circuits as the common structure between those different theories of grammar that abstracts away differences in linear syntactic presentation while conserving a core set of grammatical relations. During my DPhil, I wrote a paper \bR CITE \e in collaboration with Jonathon Liu and Bob Coecke which introduced text circuits in a pedestrian way, and characterised their expressive capacity with respect to a controlled fragment of English. I will just recover the main beats of that paper, this time using the metalanguage of n-categories.\\
+Now back to business. First, it will be necessary to justify some kind of systematic relationship between text circuits and something resembling text in natural language, which will be the purpose of Chapter \bR CITE \e. Here I introduce weak $n$-categorical signatures as generalisations of string rewrite systems to higher dimensions. I demonstrate that context-free, context-sensitive, and tree-adjoining grammars are all formalisable in this one setting, in which I then construct a generative grammar for text. This construction will also provide the structure necessary to relate text to circuits, culminating in the Text Circuit Theorem. I close this section with some discussion of ongoing practical and theoretical developments in text circuits, and point out some avenues of generalisation.\\
 
-Chapter 4 sets a mathematical stage for us to model and calculate using text circuits, for which purpose I introduce the category of continuous relations \textbf{ContRel}, a na\"{i}ve generalisation of the category of continuous maps between topological spaces. \textbf{ContRel} is new, in the sense that the category-theoretically obvious approaches to obtaining such a category either do not work or yield something different. This section culminates in formal semantics for topological concepts such as \texttt{inside} which underpin the kinds of schematic doodle cartoons we might draw on paper to illustrate events occurring in space.\\
+Once we have text circuits, we will need some monoidal category in which to interpret and calculate with them. In particular, it would be nice to calculate formally with the kinds of iconic cartoon representations that are typically used typically as informal schematic illustrations of metaphors. So in Chapter \bR CITE \e I introduce \textbf{ContRel}, a symmetric monoidal category of continuous relations. Within it I characterise set-indexed collections of disjoint open subsets of a space: i.e. shapes. I will then develop a vocabulary of linguistic topological concepts so that shapes can be connected or touching or inside one another, and I will make them move and dance as I please. All of that gets done using just equations between string diagrams, and the diagrams underpinning these iconic semantics are a natural basis upon which one can perform truth-conditional analyses.\\
 
-Chapter 5 is a formal invitation to playtime for the reader who gets that far. I don't expect that I've explored any novel linguistic phenomena, and I don't think I've invented any substantially new mathematics. All I've done is a form of intellectual arbitrage, putting tools from one field to work in another. To properly give weight to my claim that string diagrams and category theory are a good metalanguage for linguistics as a whole, it is necessary to demonstrate breadth. So, I model linguistic topological concepts; I give a mathematical setting for the study of generalised anaphora that reference any meaningful part of text; I provide formal semantics for the container metaphor in particular and textual metaphors in general; I sketch a formal correspondence between tensed language and tame topologies that extends to formally reckoning with narrative structure. All of this is to show that the methods I use are flexible and not doctrinal. I am not interested in whether these topics have been mathematicised more thoroughly and deeply before; what I care to demonstrate is that a little category theory and some imagination can go a long way.\\
+Once we have text circuits and a formal setting to reason with and about cartoons, we require something that leverages the systematicity of a metaphor to form a structured correspondence between a text and a cartoon representation. In Chapter \bR CITE \e, I introduce monoidal cofunctors for this purpose diagrammatically, in the process also settling some questions about how productive and parsing grammars ought to relate to each other in light of the fact that communication is possible. Then I will put everything together to calculate a metaphor, by turning words into diagrams and diagrams into cartoons.\\
 
-Finally, I close with a discussion and prospectus. For the convenience of the reader, bibliographies are placed at the end of each chapter. Corrections, comments, and suggestions are welcome at \texttt{vincentwangsemailaddress@gmail.com}. I hope you enjoy the read, or if nothing else, I hope you like my diagrams!
+Corrections, comments, and suggestions are welcome at \texttt{vincentwangsemailaddress@gmail.com}. I hope you enjoy the read, or if nothing else, I hope you like my diagrams!
