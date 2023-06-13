@@ -681,3 +681,48 @@ Full relations restricted to open sets in the domain are continuous. Given an op
 Consider an arbitrary open set $V \in \sigma$. Either $V$ and $K$ are disjoint, or they overlap. If they are disjoint, the preimage of $V$ is $\varnothing$, which is open. If they overlap, the preimage of $V$ is $U$, which is open.
 \end{proof}
 \end{proposition}
+
+
+
+\newthought{Summary:} Logical Type Theory in mathematics had a twin sister Categorial Grammar in linguistics, born in the 30s to Ajdukiewicz, raised into the 50s by Bar-Hillel and Lambek. Montague brought formal semantics to the picture via the Lambda-Calculus in the 70s, around the time Category Theory was getting started. The Curry-Howard correspondence between types and logic became Curry-Howard-Lambek to include categories, thus relating the typed lambda-calculus, intuitionistic logic, and cartesian closed categories. Lambek and Moortgat evolved categorial grammar into typelogical grammar; the use of different proof systems as models of grammar, which in turn suggested semantic categories beyond the cartesian closed setting. Alternative semantics in the form of quantum computers were realised by Coecke and Lambek, who together added string diagrams to the correspondence via a \emph{literally} observed correspondence between quantum bell states and reductions in Pregroup Grammar. Sazradeh and Clark enter the collaboration, bringing in Firth's distributional semantics -- which had by the time become computationally practical as the basis of neural methods for word encoding -- to create DisCoCat; a \underline{Dis}tributional, \underline{Co}mpositional and \underline{Cat}egorial framework for language. Mirroring the developmental circumstances of Discourse Representation Theory (itself independently conceived by Kamp and Heim), Coecke suggested promoting DisCoCat as framework for sentences towards a circuit-shaped framework for text -- DisCoCirc. But there remained unanswered questions and ugly spots, and some poor sap had to work out the formal details and clean things up. That poor sap is me.
+
+
+\subsection{Curry-Howard-Lambek}
+
+\begin{table}[]
+\begin{tabular}{ccc}
+(Typed) Lambda-Calculus & Intuitionistic Logic & Cartesian Closed Categories  \\
+ Types & Propositions & Categories  \\
+ Curry & Howard & Lambek 
+\end{tabular}
+\end{table}
+
+This correspondence means that you can use the lambda-calculus on any family of data organised as a cartesian closed category; this could be strings, or sets and functions, topological shapes with holes, neural nets and finite vectors. So one small benefit of the category-theoretic viewpoint is a formal underpinning for these mild extensions.\\
+
+Describing the bigger benefit requires a bigger picture. 
+
+
+and Lambek and Coecke fully integrated the picture with syntax and categories. So the linguist's trinity may look something like this:
+
+\begin{table}[]
+\begin{tabular}{ccc}
+Computation & Syntax & Semantics \\
+(Typed) Lambda-calculus & Combinatory Categorial Grammar & Cartesian Closed Categories \\
+Montague & Ajdukiewicz & Lambek
+\end{tabular}
+\end{table}
+
+Or this:
+
+\begin{table}[]
+\begin{tabular}{ccc}
+Computation & Syntax & Semantics \\
+(Typed) Lambda-calculus & Pregroup Grammar & Rigid Autonomous Monoidal Categories \\
+Montague & Ajdukiewicz & Lambek
+\end{tabular}
+\end{table}
+
+So here is the story today as far as a linguist may be concerned. We know that Curry-Howard-Lambek- correspondence generalises: if you poke Howard for a grammar that is expressively distinct from a CCG, the type-theory changes, so Lambek gives a different family of semantic categories with different internal logics, and Curry gives you a syntactic composition gadget that differs from the lambda-calculus.
+
+
+ Thus, Montague semantics has largely been in the care of linguists rather than mathematicians. This meant sparse opportunity for the ideas to `update' according to mainstream developments in mathematics.\\

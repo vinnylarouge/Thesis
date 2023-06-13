@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  12 JUN 2023 10:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  12 JUN 2023 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1981,6 +1981,9 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
 (Font)              scaled to size 12.0pt on input line 1.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [3]
 LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
 5.
@@ -2686,32 +2689,324 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[39] (./figures/mushroom/schoolboresbob.tikz)
 
-Underfull \vbox (badness 1412) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- [39]
-[40]) [41] (./chapters/textcirc/textcirc.tex (./figures/textcirc/babiex.tikz)
 
-Package natbib Warning: Citation `wilson_string_2022' on page 42 undefined on i
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1616) has occurred while \output is active []
+
+ [40]
+[41]) [42] (./chapters/textcirc/textcirc.tex (./figures/textcirc/babiex.tikz)
+
+Package natbib Warning: Citation `wilson_string_2022' on page 43 undefined on i
 nput line 20.
 
 
-Package natbib Warning: Citation `merry_reasoning_2014' on page 42 undefined on
+Package natbib Warning: Citation `merry_reasoning_2014' on page 43 undefined on
  input line 20.
 
 
-Package natbib Warning: Citation `quick_-logic_2015' on page 42 undefined on in
+Package natbib Warning: Citation `quick_-logic_2015' on page 43 undefined on in
 put line 20.
 
 
-Package natbib Warning: Citation `zamdzhiev_rewriting_2017' on page 42 undefine
+Package natbib Warning: Citation `zamdzhiev_rewriting_2017' on page 43 undefine
 d on input line 20.
 
 
 Underfull \vbox (badness 7907) has occurred while \output is active []
 
- [42]
-[43])
+ [43]
+
+! LaTeX Error: \begin{document} ended by \end{example}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{example}
+                  [\texttt{Bob drinks all the beers}]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.46 \end{example}
+                  [\texttt{Bob drinks all the beers}]
+Things are pretty mixed up, but I think the worst is over.
+
+
+! LaTeX Error: \begin{document} ended by \end{example}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 \end{example}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.48 \end{example}
+                  
+Things are pretty mixed up, but I think the worst is over.
+
+
+! LaTeX Error: \begin{document} ended by \end{example}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{example}
+                  [\texttt{If bob drinks one beer, he's going to drink all o...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.50 \end{example}
+                  [\texttt{If bob drinks one beer, he's going to drink all o...
+Things are pretty mixed up, but I think the worst is over.
+
+
+! LaTeX Error: \begin{document} ended by \end{example}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{example}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.52 \end{example}
+                  
+Things are pretty mixed up, but I think the worst is over.
+
+[44]) (./chapters/stringdiagrams/1e_montague.tex
+LaTeX Font Info:    Trying to load font information for T1+zplsups on input lin
+e 7.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/t1zplsups.fd
+File: t1zplsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
+(Font)              scaled to size 10.0pt on input line 7.
+
+
+Package natbib Warning: Citation `montague1970universal' undefined on input lin
+e 7.
+
+
+Package natbib Warning: Citation `montague1973proper' undefined on input line 7
+.
+
+LaTeX Font Info:    Freeze math alphabet allocation in version normal.
+(Font)              Allocated math groups: 15 (local: 2) on input line 68.
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
+68.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+)
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
+ [45
+
+]
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 77.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 77.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 77.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 80.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 80.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 80.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 81.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 81.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 81.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 82.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 85.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 85.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 85.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 85.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 85.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 85.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 85.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 85.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 85.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 85.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 87.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 87.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 87.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 87.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 87.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 87.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 87.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 87.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 87.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 87.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 89.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 89.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 89.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 89.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 89.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 89.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 89.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 89.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 89.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 89.
+ [46]
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 91.
+)
 
 Package natbib Warning: There were undefined citations.
 
@@ -2720,7 +3015,7 @@ Package bibentry Warning: You have used \nobibliography*
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-(./chap3.aux)
+[47] (./chap3.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2728,14 +3023,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `chap3.out' has not changed.
-(rerunfilecheck)             Checksum: ED5402B95556BE5603536E0BE116EDA7;873.
+(rerunfilecheck)             Checksum: B50BC90BCC5932ECD408DC80B7A9347A;1125.
  ) 
 Here is how much of TeX's memory you used:
- 62437 strings out of 478268
- 1350021 string characters out of 5846348
- 2581888 words of memory out of 5000000
- 79262 multiletter control sequences out of 15000+600000
- 621358 words of font info for 188 fonts, out of 8000000 for 9000
+ 62564 strings out of 478268
+ 1352448 string characters out of 5846348
+ 2582374 words of memory out of 5000000
+ 79345 multiletter control sequences out of 15000+600000
+ 622962 words of font info for 192 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,15n,107p,1943b,1128s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -2746,27 +3041,30 @@ ist, replaced by a fixed one
 pdfTeX warning (dest): name{theorem.0.2.14} has been referenced but does not ex
 ist, replaced by a fixed one
 
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}{/usr/lo
-cal/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/te
-xlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/usr/local/texli
-ve/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/2022/t
-exmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2022/texmf-d
-ist/fonts/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-dis
-t/fonts/type1/public/stix/stix-mathex.pfb></usr/local/texlive/2022/texmf-dist/f
-onts/type1/public/stix/stix-mathfrak.pfb></usr/local/texlive/2022/texmf-dist/fo
-nts/type1/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/fonts
-/type1/public/stix/stix-mathrm-bold.pfb></usr/local/texlive/2022/texmf-dist/fon
-ts/type1/public/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/fonts/
-type1/public/stix/stix-mathscr.pfb></usr/local/texlive/2022/texmf-dist/fonts/ty
-pe1/public/stix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
-/public/stix/stix-mathtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pu
-blic/txfonts/t1xtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/n
-ewpx/zplb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplr
-.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on chap3.pdf (43 pages, 611626 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/npxsups_T1.enc}{/usr/
+local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}{/usr/local/te
+xlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/
+2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/usr/local/texlive/202
+2/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/2022/texmf-d
+ist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2022/texmf-dist/
+fonts/type1/public/newpx/npxsups-Regular.pfb></usr/local/texlive/2022/texmf-dis
+t/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2022/texmf-dist/font
+s/type1/public/stix/stix-mathcal.pfb></usr/local/texlive/2022/texmf-dist/fonts/
+type1/public/stix/stix-mathex.pfb></usr/local/texlive/2022/texmf-dist/fonts/typ
+e1/public/stix/stix-mathfrak.pfb></usr/local/texlive/2022/texmf-dist/fonts/type
+1/public/stix/stix-mathit.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/p
+ublic/stix/stix-mathrm-bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
+/public/stix/stix-mathrm.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pu
+blic/stix/stix-mathscr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publ
+ic/stix/stix-mathsf.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/
+stix/stix-mathtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/txf
+onts/t1xtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zpl
+b.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplr.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
+Output written on chap3.pdf (47 pages, 639264 bytes).
 PDF statistics:
- 483 PDF objects out of 1000 (max. 8388607)
- 380 compressed objects within 4 object streams
- 120 named destinations out of 1000 (max. 500000)
- 2741 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 553 PDF objects out of 1000 (max. 8388607)
+ 441 compressed objects within 5 object streams
+ 149 named destinations out of 1000 (max. 500000)
+ 2749 words of extra memory for PDF output out of 10000 (max. 10000000)
 

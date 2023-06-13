@@ -529,70 +529,48 @@ Here we demonstrate derivations of \texttt{Alice teaches at school that bores Bo
 
 One heuristic for extension of text diagrams to larger fragments of text is to devise \emph{grammar equations} that express novel textual elements in terms of known text diagrams. The application of this heuristic is illustrated by example.
 
-\newthought{Passive voice}
-
-\begin{example}[\texttt{School bores Bob} = \texttt{Bob \underline{is bored by} school}]
-
+\begin{figure}[h!]
+\centering
+\[\tikzfig{mushroom/schoolboresbob}\]
+\caption{
+\begin{example}[\textbf{Passive voice}: \texttt{School bores Bob} = \texttt{Bob \underline{is bored by} school}]
 \end{example}
+Twists in wires can be used to model passive voice constructions, which amount to swapping the argument order of verbs. In the original paper \bR CITE \e, a more detailed analysis including the flanking words \texttt{\texttt{is} bored \texttt{by}} involves introducing a new diagrammatic region, which is modelled by having more than a single 0-cell in the $n$-categorical signature.
+}
+\end{figure}
 
-\newthought{Copulas, and attributive vs. predicative modifiers}
-
-\begin{example}[\texttt{Red car} = \texttt{Car is red}]
-
+\begin{figure}[h!]
+\centering
+\[placeholder\]
+\caption{
+\begin{example}[\textbf{Copulas and modifiers}: \texttt{Red car} = \texttt{Car is red}]
 \end{example}
+Modifiers such as adjectives and adverbs when they occur before their respective noun or verb are called \emph{attributive}. When modifiers occur after their respective target, they are called \emph{predicative}. In English, without the aid of \texttt{and}, only a single predicative modifier is permissible, e.g. \texttt{big red car} and \texttt{big car is red} are both acceptable, but \textcolor{red}{texttt{car is big red}} is not. There is no issue in introducing rewrites to handle copular modifier constructions in text diagrams, and in text circuits, there is no distinction between either kind of modifier.}
+\end{figure}
 
-\newthought{Possessive pronouns}
-
-\begin{example}[\texttt{Bob\underline{'s} pub} = \texttt{Pub that Bob owns}]
-
+\begin{figure}[h!]
+\centering
+\[placeholder\]
+\caption{
+\begin{example}[\textbf{Possessive pronouns}: \texttt{Bob\underline{'s} pub} = \texttt{Pub \underline{that} Bob \underline{owns}}]
 \end{example}
+This example, along with other grammar equations, was first introduced in the pregroups and internal wirings context in \bR CITE \e. We observe the syntactic context of text diagrams that possessive pronouns may be dealt with (in the presence of a transitive ownership verb) by a single rewrite, which corresponds to a box-analysis in text circuits.
+}
+\end{figure}
 
-\subsection{Extensions III: the shape of meaning}
+\subsection{Extensions III: type-theory as nesting}
 
-Another heuristic for the extension of text diagrams is the absorption of grammar into geometry. In the examples of intensifiers and comparatives, this can be arranged by exploiting the implicit type-theoretic constraints of nesting boxes. The example of noun phrases illustrates the higher principle that the particulars of interpretational choices into string diagrams are inessential: any consistent scheme will do, because the role of string diagrams is to give voice to the computational content of dynamic semantics.
+A heuristic for the extension of text diagrams to novel grammatical categories is the absorption of type-theoretical compositional constraints at the level of sentences into nesting of boxes. A mathematical-historical perspective that justifies this usage of diagrams is in Appendix \bR CITE \e.
 
 \newthought{Intensifiers}
 
-\begin{example}
+\begin{example}[\texttt{Alice very quickly runs}]
 
 \end{example}
 
 \newthought{Comparatives}
 
-\begin{example}
+\begin{example}[\texttt{Alice drinks less than Bob drinks}]
 
 \end{example}
 
-\newthought{Noun phrases}
-
-\subsection{Extensions IV: syncategorematicity and structural logic}
-
-A useful heuristic for the application of text diagrams is to treat individual text circuits as analogous to propositional contents, and certain logical or temporal connectives as structural operations upon circuits -- rewrites -- that must be applied in order to obtain a purely propositional format.
-
-\begin{example}[\texttt{Alice and Bob dance}]
-
-\end{example}
-
-\begin{example}[\texttt{Alice and Bob drink beer and wine respectively}]
-
-\end{example}
-
-\begin{example}[\texttt{Alice arrived after Bob}]
-
-\end{example}
-
-\subsection{Extensions V: determiners, quantifiers, context}
-
-Extending the reach of text circuits to determiners and quantifiers appears to require a contextual process theory in which to evaluate and enforce constraints upon the purely syntactic content of text circuits.
-
-\begin{example}[\texttt{Bob drinks the beer}]
-
-\end{example}
-
-\end{example}[\texttt{Bob drinks all the beers}]
-
-\end{example}
-
-\end{example}[\texttt{If bob drinks one beer, he's going to drink all of them}]
-
-\end{example}
