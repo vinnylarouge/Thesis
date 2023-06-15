@@ -197,34 +197,49 @@
 \newpmemlabel{^_80}{40}
 \newpmemlabel{^_82}{40}
 \newpmemlabel{^_84}{40}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.8}Extensions III: type-theory as nesting}{40}{subsection.0.2.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.2.8}Extensions III: Types and Nesting}{40}{subsection.0.2.8}\protected@file@percent }
 \newpmemlabel{^_79}{41}
 \@writefile{lof}{\contentsline {figure}{\numberline {54}{\ignorespaces Now have a branching derivation. We may either directly generate a transitive verb treating the relative pronoun as a subject, or we may first perform an $\texttt  {N}_\uparrow $-swap first and then generate a transitive verb, treating the relative pronoun as an object. Now the ends of either branch can be labelled to recover our initial examples.}}{41}{theorem.0.2.25}\protected@file@percent }
 \newpmemlabel{^_81}{41}
-\@writefile{lof}{\contentsline {figure}{\numberline {55}{\ignorespaces  \begin  {example}[\textbf  {Passive voice}: \texttt  {School bores Bob} = \texttt  {Bob \underline  {is bored by} school}] \end  {example} Twists in wires can be used to model passive voice constructions, which amount to swapping the argument order of verbs. In the original paper \begin  {color}{red}CITE \end  {color}\xspace  , a more detailed analysis including the flanking words \texttt  {\texttt  {is} bored \texttt  {by}} involves introducing a new diagrammatic region, which is modelled by having more than a single 0-cell in the $n$-categorical signature. }}{41}{subsection.0.2.7}\protected@file@percent }
-\newpmemlabel{^_83}{41}
-\@writefile{lof}{\contentsline {figure}{\numberline {56}{\ignorespaces  \begin  {example}[\textbf  {Copulas and modifiers}: \texttt  {Red car} = \texttt  {Car is red}] \end  {example} Modifiers such as adjectives and adverbs when they occur before their respective noun or verb are called \emph  {attributive}. When modifiers occur after their respective target, they are called \emph  {predicative}. In English, without the aid of \texttt  {and}, only a single predicative modifier is permissible, e.g. \texttt  {big red car} and \texttt  {big car is red} are both acceptable, but \leavevmode {\color  {red}texttt{car is big red}} is not. There is no issue in introducing rewrites to handle copular modifier constructions in text diagrams, and in text circuits, there is no distinction between either kind of modifier.}}{41}{theorem.0.2.26}\protected@file@percent }
-\newpmemlabel{^_85}{41}
-\@writefile{lof}{\contentsline {figure}{\numberline {57}{\ignorespaces  \begin  {example}[\textbf  {Possessive pronouns}: \texttt  {Bob\underline  {'s} pub} = \texttt  {Pub \underline  {that} Bob \underline  {owns}}] \end  {example} This example, along with other grammar equations, was first introduced in the pregroups and internal wirings context in \begin  {color}{red}CITE \end  {color}\xspace  . We observe the syntactic context of text diagrams that possessive pronouns may be dealt with (in the presence of a transitive ownership verb) by a single rewrite, which corresponds to a box-analysis in text circuits. }}{41}{theorem.0.2.27}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {55}{\ignorespaces  \begin  {example}[\textbf  {Passive voice}] \[\texttt  {School bores Bob} = \texttt  {Bob \underline  {is bored by} school}\] \end  {example} Twists in wires can be used to model passive voice constructions, which amount to swapping the argument order of verbs. In the original paper \begin  {color}{red}CITE \end  {color}\xspace  , a more detailed analysis including the flanking words \texttt  {\texttt  {is} bored \texttt  {by}} involves introducing a new diagrammatic region, which is modelled by having more than a single 0-cell in the $n$-categorical signature. }}{41}{subsection.0.2.7}\protected@file@percent }
+\newpmemlabel{^_86}{41}
+\newpmemlabel{^_88}{41}
+\newpmemlabel{^_83}{42}
+\@writefile{lof}{\contentsline {figure}{\numberline {56}{\ignorespaces  \begin  {example}[\textbf  {Copulas}] \[\texttt  {Red car} = \texttt  {Car is red}\] \end  {example} Modifiers such as adjectives and adverbs when they occur before their respective noun or verb are called \emph  {attributive}. When modifiers occur after their respective target, they are called \emph  {predicative}. In English, without the aid of \texttt  {and}, only a single predicative modifier is permissible, e.g. \texttt  {big red car} and \texttt  {big car is red} are both acceptable, but \leavevmode {\color  {red}texttt{car is big red}} is not. There is no issue in introducing rewrites to handle copular modifier constructions in text diagrams, and in text circuits, there is no distinction between either kind of modifier.}}{42}{theorem.0.2.26}\protected@file@percent }
+\newpmemlabel{^_85}{42}
+\@writefile{lof}{\contentsline {figure}{\numberline {57}{\ignorespaces  \begin  {example}[\textbf  {Possessive pronouns}] \[\texttt  {Bob\underline  {'s} pub} = \texttt  {Pub \underline  {that} Bob \underline  {owns}}\] \end  {example} This example, along with other grammar equations, was first introduced in the pregroups and internal wirings context in \begin  {color}{red}CITE \end  {color}\xspace  . Possessive pronouns are placed contiguously in between noun-phrases, for which the diagrammatic technology we developed for placing adpositions can be repurposed. Possessive pronouns may be dealt with by a single rewrite that relies on the presence of a transitive ownership verb in the lexicon, which corresponds to a box-analysis in text circuits. }}{42}{theorem.0.2.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {0.3}Text circuits: details, demos, developments}{42}{section.0.3}\protected@file@percent }
+\newlabel{sec:circs}{{0.3}{42}{Text circuits: details, demos, developments}{section.0.3}{}}
+\newpmemlabel{^_87}{43}
+\@writefile{lof}{\contentsline {figure}{\numberline {58}{\ignorespaces  \begin  {example}[\textbf  {Intensifers}] \[\texttt  {Alice very quickly runs}\] \end  {example} The deep nodes of a text diagram may be equivalently viewed as evaluators in a symmetric monoidal closed setting, and the surface nodes as states for the evaluators. By Curry-Howard-Lambek, this view recovers typelogical grammar settings where composition is some variant of modus ponens. So long as the typing rules are operadic or treelike (which is almost always the case for typelogical grammars, as there are rarely gentzen-style sequent rules that generate multiple outputs), we may instead use a notation where parent edges of evaluation branches become nesting boxes. }}{43}{subsection.0.2.8}\protected@file@percent }
+\newpmemlabel{^_89}{43}
+\@writefile{lof}{\contentsline {figure}{\numberline {59}{\ignorespaces  \begin  {example}[\textbf  {Comparatives}] \[\texttt  {Alice drinks \underline  {less than} Bob drinks}\] \end  {example} Just as transitive verbs modify two nouns, comparatives are higher-order transitive modifiers that act on the data of verbs or adjectives. A benefit of the symmetric monoidal closed view is that it easily accommodates mixed-order and multi-argument modifiers. }}{43}{theorem.0.2.29}\protected@file@percent }
 \citation{wilson_string_2022}
 \citation{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}
-\@writefile{toc}{\contentsline {section}{\numberline {0.3}Text circuits: details, demos, developments}{43}{section.0.3}\protected@file@percent }
-\newlabel{sec:circs}{{0.3}{43}{Text circuits: details, demos, developments}{section.0.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.3.1}Avenues I: syncategorematicity and structural logic}{44}{subsection.0.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.3.2}Avenues II: determiners, quantifiers, context}{44}{subsection.0.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.3.3}Avenues III: grammar as geometry, geometry as computation}{44}{subsection.0.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.3.1}Avenues I: syncategorematicity as distributivity}{44}{subsection.0.3.1}\protected@file@percent }
+\newpmemlabel{^_90}{44}
+\newpmemlabel{^_92}{44}
+\newpmemlabel{^_94}{44}
+\newpmemlabel{^_91}{45}
+\@writefile{lof}{\contentsline {figure}{\numberline {60}{\ignorespaces  \begin  {example}[\textbf  {Syncategorematicity I}] \[\texttt  {Alice \underline  {and} Bob drink}\] \end  {example} \emph  {Syncategorematic} are roughly words have contextually-dependent semantics. In our terms, since we consider the semantics of text circuits to be underpinned by monoidal functors that reify the circuits in a target category, syncategorematic words such as \texttt  {and} may be treated as distributive laws. In this example, \underline  {and} occurs as a conjunction of nouns, and is eliminated by distributive-law rewrites within the deep structure of the text diagram \emph  {before translation into circuits}. Note that what is meant by \emph  {distributive} here is, in string-diagrammatic terms, precisely the same as that in algebra, for expressions such as $a \times (b + c) = (a \times b) + (a \times c)$. A new copy-node for verb labels that has rewrites for all verbs facilitates distribution, and the deep \texttt  {and} nodes come in a tensor-dentensor pair analogous to those for nonstrict string diagrams \begin  {color}{red}CITE \end  {color}\xspace  . Sources of rewrites are outlined in dashed boxes. }}{45}{subsection.0.3.1}\protected@file@percent }
+\newpmemlabel{^_93}{45}
+\@writefile{lof}{\contentsline {figure}{\numberline {61}{\ignorespaces  \begin  {example}[\textbf  {Syncategorematicity II}] \[\texttt  {Bob drinks \underline  {and} smokes}\] \end  {example} In this example, the same word \texttt  {and} is a conjunction of verbs. In this case we choose to interpret the conjunction of verbs as sequential composition, so there is no need for a corresponding detensor for the \texttt  {and} of verbs. }}{45}{theorem.0.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.3.2}Avenues II: determiners and quantifiers in context}{45}{subsection.0.3.2}\protected@file@percent }
+\newpmemlabel{^_95}{46}
+\@writefile{lof}{\contentsline {figure}{\numberline {62}{\ignorespaces  \begin  {example}[\textbf  {Coordination}] \[\texttt  {Alice \underline  {and} Bob drink beer \underline  {and} wine \underline  {respectively}}\] \end  {example} We stand to win in terms of conceptual economy for modelling; more complex phenomena of text structure such as coordination appear to be resolvable in the same framework of distributivity-law rewrites. }}{46}{theorem.0.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.3.3}Avenues III: grammar as geometry, geometry as computation}{47}{subsection.0.3.3}\protected@file@percent }
 \citation{montague1970universal}
 \citation{montague1973proper}
-\newlabel{algdata}{{.1.1}{45}{Generating data of an Algebra}{theorem.Alph0.1.1}{}}
-\newlabel{ids}{{.1.2}{45}{Identities}{theorem.Alph0.1.2}{}}
-\newlabel{constants}{{.1.3}{45}{Constants}{theorem.Alph0.1.3}{}}
-\newlabel{comp}{{.1.4}{45}{Composition}{theorem.Alph0.1.4}{}}
-\newlabel{polyop}{{.1.5}{45}{Polynomial Operations}{theorem.Alph0.1.5}{}}
-\newlabel{homo}{{.1.6}{45}{Homomorphism of Algebras}{theorem.Alph0.1.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {.1}Why nesting boxes is natural and good}{45}{section.Alph0.1}\protected@file@percent }
-\newlabel{sec:linghist}{{.1}{45}{Why nesting boxes is natural and good}{section.Alph0.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {.1.1}What did Montague consider grammar to be?}{45}{subsection.Alph0.1.1}\protected@file@percent }
-\newlabel{sec:monty}{{.1.1}{45}{What did Montague consider grammar to be?}{subsection.Alph0.1.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {.1.2}On Syntax}{46}{subsection.Alph0.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {.1}A modern mathematician's companion to Montague's "Universal Grammar"}{48}{section.Alph0.1}\protected@file@percent }
+\newlabel{sec:linghist}{{.1}{48}{A modern mathematician's companion to Montague's "Universal Grammar"}{section.Alph0.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {.1.1}What did Montague consider grammar to be?}{48}{subsection.Alph0.1.1}\protected@file@percent }
+\newlabel{sec:monty}{{.1.1}{48}{What did Montague consider grammar to be?}{subsection.Alph0.1.1}{}}
+\newlabel{algdata}{{.1.1}{49}{Generating data of an Algebra}{theorem.Alph0.1.1}{}}
+\newlabel{ids}{{.1.2}{49}{Identities}{theorem.Alph0.1.2}{}}
+\newlabel{constants}{{.1.3}{49}{Constants}{theorem.Alph0.1.3}{}}
+\newlabel{comp}{{.1.4}{49}{Composition}{theorem.Alph0.1.4}{}}
+\newlabel{polyop}{{.1.5}{49}{Polynomial Operations}{theorem.Alph0.1.5}{}}
+\newlabel{homo}{{.1.6}{49}{Homomorphism of Algebras}{theorem.Alph0.1.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {.1.2}On the historical inevitability of text diagrams}{50}{subsection.Alph0.1.2}\protected@file@percent }
 \ttl@finishall
-\gdef \@abspage@last{47}
+\gdef \@abspage@last{50}

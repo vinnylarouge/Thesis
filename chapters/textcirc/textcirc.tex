@@ -17,48 +17,85 @@ This section covers some practical developments, conventions, references for tec
 
 In practice, the process of obtaining transparently computable text goes through two phases. First, one has to obtain text circuits from text, which is conceptually simple: typelogical parsers for sentences can be modified to produce circuit-components rather than trees, and a separate pronomial resolution module dictates symmetric monoidal compositionality; details are in the same forthcoming report \bR CITE \e. Second, one implements the text circuits on a computer. On quantum computers, boxes are modelled as quantum combs \bR CITE \e. On classical computers, boxes are sandwiches of generic vector-manipulation neural nets, and boxes with 'dot dot dot' typing are interpreted as families of processes, which can be factored for instance as a pair of content-carrying gates along with a monoid+comonoid convolution to accommodate multiplicity of wires. The theoretical-to-practical upshot of text circuits when compared to DisCoCat is that the full gamut of compositional techniques, variations, and implementation substrates of symmetric monoidal categories may be used for modelling, compared to the restrictions inherent in hypergraph and strongly compact closed categories.\\
 
-In terms of underpinning mathematical theory, the `dot dot dot' notation within boxes is graphically formal \citep{wilson_string_2022}, and interpretations of such boxes were earlier formalised in \citep{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}. The two forms of interacting composition, one symmetric monoidal and the other by nesting is elsewhere called \emph{produoidal}, and the reader is referred to \bR CITE \e for formal treatment and a coherence theorem. Boxes with holes may be interpreted in several different ways. Firstly, boxes may be considered syntactic sugar for higher-order processes in monoidal closed categories, and boxes are diagrammatically preferable to combs in this regard, since the latter admits a typing pathology where two mutually facing combs interlock. Secondly, boxes need not be decomposable as processes native to the base category, admitting for instance an interpretation as elementwise inversion in linear maps, which specialises in the case of \textbf{Rel} (viewed as \textbf{Vect} over the boolean ring) to negation-by-complement. In some sense, none of these formalities really matter, on the view that text circuits are algebraic jazz for interpreting text, where facets are open to interpretation and modification.
+In terms of underpinning mathematical theory, the `dot dot dot' notation within boxes that indicates related families of morphisms is graphically formal \citep{wilson_string_2022}, and interpretations of such boxes were earlier formalised in \citep{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}. The two forms of interacting composition, one symmetric monoidal and the other by nesting is elsewhere called \emph{produoidal}, and the reader is referred to \bR CITE \e for formal treatment and a coherence theorem. Boxes with holes may be interpreted in several different ways. Firstly, boxes may be considered syntactic sugar for higher-order processes in monoidal closed categories, and boxes are diagrammatically preferable to combs in this regard, since the latter admits a typing pathology where two mutually facing combs interlock. Secondly, boxes need not be decomposable as processes native to the base category, admitting for instance an interpretation as elementwise inversion in linear maps, which specialises in the case of \textbf{Rel} (viewed as \textbf{Vect} over the boolean ring) to negation-by-complement. In some sense, none of these formalities really matter, on the view that text circuits are algebraic jazz for interpreting text, where facets are open to interpretation and modification. What follows are brief sketches of avenues for extensions of the theory.
 
-\subsection{Avenues I: syncategorematicity and structural logic}
+\subsection{Avenues I: syncategorematicity as distributivity}
 
-A useful heuristic for the application of text diagrams is to treat individual text circuits as analogous to propositional contents, and certain logical or temporal connectives as structural operations upon circuits -- rewrites -- that must be applied in order to obtain a purely propositional format.
+A useful heuristic for the application of text diagrams is to treat individual text circuits as analogous to propositional contents, and certain logical or temporal connectives as structural operations upon circuits -- rewrites -- that must be applied in order to obtain a purely propositional format. In other words, logical or structural words are to be treated as circuit-manipulation instructions to be executed in order to obtain a circuit, in the same way that $1 + 1$ is only an integer expression once addition has been evaluated. It is suggested here that the $n$-categorical setting is a suitably rich rewriting system to accommodate such rewrites.
 
-\begin{example}[\texttt{Alice and Bob dance}]
-
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/ABdrink}}\]
+\caption{
+\begin{example}[\textbf{Syncategorematicity I}]
+\[\texttt{Alice \underline{and} Bob drink}\]
 \end{example}
+\emph{Syncategorematic} are roughly words have contextually-dependent semantics. In our terms, since we consider the semantics of text circuits to be underpinned by monoidal functors that reify the circuits in a target category, syncategorematic words such as \texttt{and} may be treated as distributive laws. In this example, \underline{and} occurs as a conjunction of nouns, and is eliminated by distributive-law rewrites within the deep structure of the text diagram \emph{before translation into circuits}. Note that what is meant by \emph{distributive} here is, in string-diagrammatic terms, precisely the same as that in algebra, for expressions such as $a \times (b + c) = (a \times b) + (a \times c)$. A new copy-node for verb labels that has rewrites for all verbs facilitates distribution, and the deep \texttt{and} nodes come in a tensor-dentensor pair analogous to those for nonstrict string diagrams \bR CITE \e. Sources of rewrites are outlined in dashed boxes.
+}
+\end{figure}
 
-\begin{example}[\texttt{Alice and Bob drink beer and wine respectively}]
-
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/Bdrinksmoke}}\]
+\caption{
+\begin{example}[\textbf{Syncategorematicity II}]
+\[\texttt{Bob drinks \underline{and} smokes}\]
 \end{example}
+In this example, the same word \texttt{and} is a conjunction of verbs. In this case we choose to interpret the conjunction of verbs as sequential composition, so there is no need for a corresponding detensor for the \texttt{and} of verbs.
+}
+\end{figure}
 
-\begin{example}[\texttt{Alice arrived after Bob}]
-
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/respectively}}\]
+\caption{
+\begin{example}[\textbf{Coordination}]
+\[\texttt{Alice \underline{and} Bob drink beer \underline{and} wine \underline{respectively}}\]
 \end{example}
+We stand to win in terms of conceptual economy for modelling; more complex phenomena of text structure such as coordination appear to be resolvable in the same framework of distributivity-law rewrites.
+}
+\end{figure}
 
-\subsection{Avenues II: determiners, quantifiers, context}
 
-Extending the reach of text circuits to determiners and quantifiers appears to require a contextual process theory in which to evaluate and enforce constraints upon the purely syntactic content of text circuits.
+\subsection{Avenues II: determiners and quantifiers in context}
 
-\begin{example}[\texttt{Bob drinks the beer}]
+Extending the reach of text circuits to determiners, quantifiers, and conditionals appears to require a contextual diagram or process theory in which to evaluate and enforce constraints upon the purely syntactic content of text circuits. The broad strategy sketched here rests upon three tactics. First, as in the neural approach to bAbi, word-gates are considered to be paired with measurement-processes that return an analog of truth values\footnote{If a tree falls in a forest but nobody hears it, does it make a sound? If data is modified but we have no way to check, has an update happened?}, the latter of which may be generic tests for adjectives as static predicates or verbs as dynamic predicates. These truth-measurements allow conditionals to be expressed as either circuit-rewrites or constraints on truth-measurements, the latter which are in turn interpretable as loss-functions in the process of training gates\footnote{For learnability limitations of the gate-test setup, the reader is referred to Appendix \bR REF \e.}. Second, we model context as the rest of the text circuit, which is a modifiably finite model. Third, we suppose we have a way to record and relate alternative circuits. These tactics appear sufficient for a first pass. Determiners may be considered to be context-sensitive connectivity. Universal quantifiers\footnote{For a short recipe on learning finite first-order models in a cousin of \textbf{Vect} with the kronecker product, the reader is referred to Appendix \bR REF \e.} may be analysed in particular finitary contexts as conditionals and constraints on truth-conditional measurements. Existential quantifiers evaluated in the finitary case yield alternative circuits.
 
+\begin{example}[\textbf{Determiners I}]
+\[\texttt{Bob drinks \underline{the} beer} \text{ (among drinks)}\]
 \end{example}
+Here, \texttt{drinks} is considered transitive and \texttt{the beer} a nesting box for \texttt{drinks} that reaches over to contextual wires representing a selection of beverages. In this case (relying on the implicit uniqueness of \texttt{the}), a series of \texttt{beer?} tests may be computed, and the best match chosen as the resulting argument for \texttt{drinks}.
 
-\end{example}[\texttt{Bob drinks all the beers}]
-
+\begin{example}[\textbf{Determiners II}]
+\[\texttt{Bob drinks \underline{a} beer} \text{ (among drinks)}\]
 \end{example}
+We take the logical reading of \texttt{a} as $\exists x: \texttt{beer?}(x) \wedge \texttt{drinks?}(\texttt{Bob},x). When there are other beverages around, we may create alternative circuits for each successful \texttt{beer?} test.$
 
-\end{example}[\texttt{If bob drinks one beer, he's going to drink all of them}]
-
+\begin{example}[\textbf{Determiners III}]
+\[\texttt{Bob drinks \underline{a} beer} \text{ (that we didn't know about)}\]
 \end{example}
+When there are no beers in context, the same statement takes on a dynamic reading: it constitutes the introduction of a beer into discourse. In terms of text circuits, this amounts to introducing a novel beer-state and beer-wire. Determining an appropriate setting to accommodate "arbitrary" vs. "concrete" beers (c.f. Fine's arbitrary objects \bR CITE \e) requires further research and experimentation, but preliminarily it is known that density matrices are capable of modelling semantic entailment \bR CITE \e, at the computational cost of adopting the kronecker product.
+
+\end{example}[\textbf{Quantifiers I}]
+\[\texttt{Bob drinks \underline{all the beers}} \text{ (in context)}\]
+\end{example}
+In a finitary context, drinking all the beers amounts to applying the distributivity of \texttt{and}.
+
+\end{example}[\textbf{Quantifiers II}]
+\[\texttt{Bob drinks \underline{all} beers} \text{ (generic)}\]
+\end{example}
+Without the determiner \texttt{the}, this becomes a generic statement, which logically amounts to (analysing the usual conditional as a disjunction) \texttt{\forall x: \neg\texttt{beer?}(x) \vee \texttt{drinks?}(\texttt{Bob},x). We can treat generic universal quantifiers of this kind as rewrite rules: any time a beverage wire satisfies a beer test, we may freely add on a gate witnessing that Bob drinks that beverage.}
 
 \subsection{Avenues III: grammar as geometry, geometry as computation}
 
 The example of noun phrases illustrates the higher principle that the particulars of interpretational choices into string diagrams are inessential: any consistent scheme will do, and the string diagrams will give voice to the computational structure of dynamic semantics.
 
-\newthought{Noun phrases}
+\begin{example}[\textbf{Noun phrases I}]
+\[\texttt{The king of France is bald} \text{ (new discourse)}\]
+\end{example}
 
-\begin{example}[\texttt{The king of France is bald}]
-
+\begin{example}[\textbf{Noun phrases II}]
+\[\texttt{The king of France is bald} \text{ (discourse modifier)}\]
 \end{example}
 
 

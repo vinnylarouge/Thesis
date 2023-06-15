@@ -4,33 +4,6 @@ The goal of this section is to demonstrate the use of sticky spiders as formal s
 
 \subsection{Shapes and places}\label{sec:shapes}
 
-\begin{defn}[Labels, shapes, cores, halos]
-Recall by Proposition \ref{prop:decompidem} that we can express the idempotent as a union of continuous relations formed of a state and test, for some indexing set of \emph{labels} $\mathcal{L}$.
-\[\tikzfig{topology/shape1}\]
-A \emph{shape} is a component of this union corresponding to some arbitary $l \in L$. So we refer to a sticky spider as a labelled collection of shapes. The state of a shape is the \emph{halo} of the shape. The halos are precisely the copiables of the sticky spider. The test of a shape is the \emph{core}. The cores are precisely the cocopiables of the sticky spider.
-\[\tikzfig{topology/shape2}\]
-\end{defn}
-
-\begin{proposition}[Core exclusion: Distinct cores cannot overlap]
-\begin{proof}
-A direct consequence of Lemma \ref{lem:comatch}.
-\end{proof}
-\end{proposition}
-
-\begin{proposition}[Core-halo exclusion: Each core only overlaps with its corresponding halo]
-\begin{proof}
-Seeking contradiction, if a core overlapped with multiple halos, Lemma \ref{lem:ecopyfixpoint} would be violated.
-\end{proof}
-\end{proposition}
-
-\begin{proposition}[Halo non-exclusion: halos may overlap]
-\begin{proof}
-By example:
-\[\tikzfig{topology/halooverlap}\]
-The two shapes are colour coded cyan and magenta. The halos are two triangles which overlap at a yellow region, and partially overlap with their blobby cores. The cores are outlined in dotted blue and orange respectively. Observe that cores and halos do not have to be simply connected; in this example the core of the magenta shape has two connected components. Viewing these sticky spiders as a process, any shape that overlaps with the magenta core will be deleted and replaced by the magenta triangle, and similarly with the cyan cores and triangle. Any shape that overlaps with both the magenta and cyan cores will be deleted and replaced by the union of the triangles. Any shape that overlaps with neither core will be deleted and not replaced.
-\end{proof}
-\end{proposition}
-
 \begin{remark}
 When we draw on a finite canvas representing all of euclidean space, properly there should be a fishbowl effect that relatively magnifies shapes close to the origin and shrinks those at the periphery, but that is only an artefact of representing all of euclidean space on a finite canvas. Since all the usual metrics are still really there, going forward we will ignore this fishbowl effect and just doodle shapes as we see fit.
 

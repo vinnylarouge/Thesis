@@ -1,0 +1,136 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-4.625, -1) {};
+		\node [style=smalldotG] (1) at (-4.625, 1) {};
+		\node [style=none] (4) at (-5.75, 2) {};
+		\node [style=none] (5) at (-5.75, 7) {};
+		\node [style=none] (6) at (-3.5, 2) {};
+		\node [style=none] (7) at (-3.5, 4) {};
+		\node [style=none] (8) at (-4.25, 3) {};
+		\node [style=none] (9) at (-5, 3) {};
+		\node [style=smalldotR] (10) at (-4.625, 2.25) {};
+		\node [style=none] (11) at (-6.25, 7.5) {};
+		\node [style=none] (12) at (-2.75, 3) {};
+		\node [style=smalldotG] (13) at (-3.5, 4) {};
+		\node [style=smallorangedot] (14) at (-4.25, 4.925) {};
+		\node [style=smalldotR] (15) at (-5, 5.9) {};
+		\node [style=smalldotb] (16) at (-5.75, 6.9) {};
+		\node [style=none] (17) at (-2.75, 7) {\texttt{N}};
+		\node [style=none] (18) at (-2.75, 6) {\textcolor{red}{\texttt{INT}}};
+		\node [style=none] (19) at (-2.75, 5) {\textcolor{orange}{\texttt{ADV}}};
+		\node [style=none] (20) at (-2.75, 4) {\textcolor{green}{\texttt{IV}}};
+		\node [style=none] (21) at (8, 2) {};
+		\node [style=none] (22) at (8, 0) {};
+		\node [style=none] (23) at (10, 2) {};
+		\node [style=none] (24) at (10, 0) {};
+		\node [style=none] (25) at (8.25, 1.75) {};
+		\node [style=none] (26) at (9.75, 1.75) {};
+		\node [style=none] (27) at (8.25, 0.5) {};
+		\node [style=none] (28) at (9.75, 0.5) {};
+		\node [style=none] (29) at (8.5, 1) {};
+		\node [style=none] (30) at (9.5, 1) {};
+		\node [style=none] (31) at (8.5, 1.5) {};
+		\node [style=none] (32) at (9.5, 1.5) {};
+		\node [style=none] (33) at (9, 2) {};
+		\node [style=none] (34) at (9, 3) {};
+		\node [style=none] (35) at (9, 0) {};
+		\node [style=none] (36) at (9, -1) {};
+		\node [style=none] (37) at (9, 3.25) {\texttt{N}};
+		\node [style=none] (38) at (9, 0.25) {\textcolor{red}{\texttt{INT}}};
+		\node [style=none] (39) at (9, 0.75) {\textcolor{orange}{\texttt{ADV}}};
+		\node [style=none] (40) at (9, 1.25) {\textcolor{green}{\texttt{IV}}};
+		\node [style=smallorangedot] (41) at (-3.75, 1.25) {};
+		\node [style=none] (42) at (-1, 1) {$\Leftrightarrow$};
+		\node [style=none] (43) at (1.75, 0) {};
+		\node [style=none] (44) at (1.75, -0.5) {};
+		\node [style=none] (45) at (2.25, 0) {};
+		\node [style=none] (46) at (2.75, -0.5) {};
+		\node [style=none] (47) at (2.75, -0.5) {};
+		\node [style=none] (48) at (2, 0) {};
+		\node [style=none] (49) at (2.75, -0.5) {};
+		\node [style=none] (50) at (2.25, -0.5) {};
+		\node [style=none] (51) at (1, 3) {};
+		\node [style=none] (52) at (2.25, -1) {};
+		\node [style=none] (53) at (4, 0.75) {};
+		\node [style=none] (54) at (4, 0.25) {};
+		\node [style=none] (55) at (3, 0.25) {};
+		\node [style=none] (56) at (3.5, 0.75) {};
+		\node [style=none] (57) at (2.5, -0.25) {};
+		\node [style=none] (58) at (3, 1.5) {};
+		\node [style=none] (59) at (3, 1) {};
+		\node [style=none] (60) at (2.5, 1.5) {};
+		\node [style=none] (61) at (2, 1) {};
+		\node [style=none] (62) at (3.5, 0.25) {};
+		\node [style=none] (63) at (3.75, 0.75) {};
+		\node [style=none] (64) at (3.25, 0.5) {};
+		\node [style=none] (65) at (2.75, 1.5) {};
+		\node [style=none] (67) at (2.5, 1) {};
+		\node [style=none] (68) at (2.25, 1.25) {};
+		\node [style=none] (69) at (2, 3) {};
+		\node [style=none] (70) at (3, 3) {};
+		\node [style=none] (71) at (4, 3) {};
+		\node [style=none] (72) at (2.5, 7) {$\texttt{n}$};
+		\node [style=none] (73) at (2.5, 4) {$\texttt{n} \textcolor{green}{\Rightarrow} \texttt{n}$};
+		\node [style=none] (74) at (2.5, 5) {$(\texttt{n} \textcolor{green}{\Rightarrow} \texttt{n}) \textcolor{orange}{\Rightarrow} (\texttt{n} \textcolor{green}{\Rightarrow} \texttt{n})$};
+		\node [style=none] (75) at (2.5, 6) {$((\texttt{n} \textcolor{green}{\Rightarrow} \texttt{n}) \textcolor{orange}{\Rightarrow} (\texttt{n} \textcolor{green}{\Rightarrow} \texttt{n})) \textcolor{red}{\Rightarrow} ((\texttt{n} \textcolor{green}{\Rightarrow} \texttt{n}) \textcolor{orange}{\Rightarrow} (\texttt{n} \textcolor{green}{\Rightarrow} \texttt{n}))$};
+		\node [style=none] (76) at (6, 1) {$\equiv$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (0.center) to (1);
+		\draw [style=K] (1)
+			 to [in=-90, out=-180] (4.center)
+			 to (5.center);
+		\draw [style=KG] (6.center) to (7.center);
+		\draw [style=KDO] (10)
+			 to [in=270, out=30] (8.center)
+			 to (14);
+		\draw [style=KDR] (10)
+			 to [in=-90, out=150] (9.center)
+			 to (15);
+		\draw [style=KM] (11.center) to (12.center);
+		\draw (32.center)
+			 to (30.center)
+			 to (29.center)
+			 to (31.center)
+			 to cycle;
+		\draw (27.center)
+			 to (25.center)
+			 to (26.center)
+			 to (28.center)
+			 to cycle;
+		\draw (23.center)
+			 to (24.center)
+			 to (22.center)
+			 to (21.center)
+			 to cycle;
+		\draw (35.center) to (36.center);
+		\draw (33.center) to (34.center);
+		\draw [style=KG] (1)
+			 to [in=-150, out=0] (41.center)
+			 to [in=-90, out=45] (6.center);
+		\draw [style=KDO, in=-90, out=120] (41) to (10);
+		\draw [style=KG] (43.center)
+			 to (45.center)
+			 to (46.center)
+			 to (47.center)
+			 to (44.center)
+			 to cycle;
+		\draw [style=K, in=270, out=90] (52.center) to (50.center);
+		\draw [style=K, in=270, out=90] (48.center) to (51.center);
+		\draw [style=KO] (54.center)
+			 to (53.center)
+			 to (56.center)
+			 to (55.center)
+			 to cycle;
+		\draw [style=KR] (61.center)
+			 to (59.center)
+			 to (58.center)
+			 to (60.center)
+			 to cycle;
+		\draw [style=KG, in=-90, out=90, looseness=0.75] (57.center) to (62.center);
+		\draw [style=KDR, in=270, out=90] (68.center) to (69.center);
+		\draw [style=KDO, in=90, out=-90] (70.center) to (65.center);
+		\draw [style=KDO, in=-90, out=90] (64.center) to (67.center);
+		\draw [style=KG, in=90, out=-90] (71.center) to (63.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

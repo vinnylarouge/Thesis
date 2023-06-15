@@ -533,7 +533,8 @@ One heuristic for extension of text diagrams to larger fragments of text is to d
 \centering
 \[\tikzfig{mushroom/schoolboresbob}\]
 \caption{
-\begin{example}[\textbf{Passive voice}: \texttt{School bores Bob} = \texttt{Bob \underline{is bored by} school}]
+\begin{example}[\textbf{Passive voice}]
+\[\texttt{School bores Bob} = \texttt{Bob \underline{is bored by} school}\]
 \end{example}
 Twists in wires can be used to model passive voice constructions, which amount to swapping the argument order of verbs. In the original paper \bR CITE \e, a more detailed analysis including the flanking words \texttt{\texttt{is} bored \texttt{by}} involves introducing a new diagrammatic region, which is modelled by having more than a single 0-cell in the $n$-categorical signature.
 }
@@ -541,36 +542,50 @@ Twists in wires can be used to model passive voice constructions, which amount t
 
 \begin{figure}[h!]
 \centering
-\[placeholder\]
+\[\tikzfig{mushroom/redcar}\]
 \caption{
-\begin{example}[\textbf{Copulas and modifiers}: \texttt{Red car} = \texttt{Car is red}]
+\begin{example}[\textbf{Copulas}]
+\[\texttt{Red car} = \texttt{Car is red}\]
 \end{example}
 Modifiers such as adjectives and adverbs when they occur before their respective noun or verb are called \emph{attributive}. When modifiers occur after their respective target, they are called \emph{predicative}. In English, without the aid of \texttt{and}, only a single predicative modifier is permissible, e.g. \texttt{big red car} and \texttt{big car is red} are both acceptable, but \textcolor{red}{texttt{car is big red}} is not. There is no issue in introducing rewrites to handle copular modifier constructions in text diagrams, and in text circuits, there is no distinction between either kind of modifier.}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
-\[placeholder\]
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/bobpub}}\]
 \caption{
-\begin{example}[\textbf{Possessive pronouns}: \texttt{Bob\underline{'s} pub} = \texttt{Pub \underline{that} Bob \underline{owns}}]
+\begin{example}[\textbf{Possessive pronouns}]
+\[\texttt{Bob\underline{'s} pub} = \texttt{Pub \underline{that} Bob \underline{owns}}\]
 \end{example}
-This example, along with other grammar equations, was first introduced in the pregroups and internal wirings context in \bR CITE \e. We observe the syntactic context of text diagrams that possessive pronouns may be dealt with (in the presence of a transitive ownership verb) by a single rewrite, which corresponds to a box-analysis in text circuits.
+This example, along with other grammar equations, was first introduced in the pregroups and internal wirings context in \bR CITE \e. Possessive pronouns are placed contiguously in between noun-phrases, for which the diagrammatic technology we developed for placing adpositions can be repurposed. Possessive pronouns may be dealt with by a single rewrite that relies on the presence of a transitive ownership verb in the lexicon, which corresponds to a box-analysis in text circuits.
 }
 \end{figure}
 
-\subsection{Extensions III: type-theory as nesting}
+\subsection{Extensions III: Types and Nesting}
 
 A heuristic for the extension of text diagrams to novel grammatical categories is the absorption of type-theoretical compositional constraints at the level of sentences into nesting of boxes. A mathematical-historical perspective that justifies this usage of diagrams is in Appendix \bR CITE \e.
 
 \newthought{Intensifiers}
 
-\begin{example}[\texttt{Alice very quickly runs}]
-
+\begin{figure}[h!]
+\centering
+\[\tikzfig{mushroom/Acvqr}\]
+\caption{
+\begin{example}[\textbf{Intensifers}]
+\[\texttt{Alice very quickly runs}\]
 \end{example}
+The deep nodes of a text diagram may be equivalently viewed as evaluators in a symmetric monoidal closed setting, and the surface nodes as states for the evaluators. By Curry-Howard-Lambek, this view recovers typelogical grammar settings where composition is some variant of modus ponens. So long as the typing rules are operadic or treelike (which is almost always the case for typelogical grammars, as there are rarely gentzen-style sequent rules that generate multiple outputs), we may instead use a notation where parent edges of evaluation branches become nesting boxes.
+}
+\end{figure}
 
-\newthought{Comparatives}
-
-\begin{example}[\texttt{Alice drinks less than Bob drinks}]
-
+\begin{figure}[h!]
+\centering
+\[\tikzfig{mushroom/AdltBd}\]
+\caption{
+\begin{example}[\textbf{Comparatives}]
+\[\texttt{Alice drinks \underline{less than} Bob drinks}\]
 \end{example}
+Just as transitive verbs modify two nouns, comparatives are higher-order transitive modifiers that act on the data of verbs or adjectives. A benefit of the symmetric monoidal closed view is that it easily accommodates mixed-order and multi-argument modifiers.
+}
+\end{figure}
 
