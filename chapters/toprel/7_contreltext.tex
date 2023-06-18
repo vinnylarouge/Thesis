@@ -1,0 +1,74 @@
+\section{Interpreting text circuits in \textbf{ContRel}}
+
+Recall that there were some mathematically odd choices in conventions for text circuits, such as the labelling of noun wires and some subtleties with respect to interchange of parallel gates and text order. The explanation of those choices was deferred "to semantics", and since we're here now we have to make good. The aim of this section is to now explain those choices through an interpretation of text circuits in \textbf{ContRel}.
+
+\subsection{Sticky spiders: iconic semantics of nouns}
+Without loss of generality we may consider sticky spiders to be set-indexed collections of disjoint open subsets of an ambient space, i.e. a collection of shapes in space that a labelled from a set of names. So particular sticky spiders will be particular models of a collection of nouns; the indexing set names them, and the corresponding shapes in space are a particular iconic representation of those nouns in space.
+
+\subsection{Open sets: concepts}
+
+Apart from enabling us to paint pictures with words, \textbf{ContRel} is worth the trouble because the opens of topological spaces crudely model how we talk about concepts, and the points of a topological space crudely model instances of concepts. We consider these open-set tests to correspond to "concepts", such as redness or quickness of motion. Figure \ref{fig:pointing} generalises to a sketch argument that insofar as we conceive of concepts in (possibly abstractly) spatial terms, the meanings of words are modellable as shared strategies for spatial deixis; absolute precision is communicatively impossible, and the next best thing mathematically requires topology.
+
+\begin{figure}[h!]\label{fig:pointing}
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/pointingfinger}}\]
+\caption{Points in space are a useful mathematical fiction. Suppose we have a point on a unit interval. Consider how we might tell someone else about where this point is. We could point at it with a pudgy appendage, or the tip of a pencil, or give some finite decimal approximation. But in each case we are only speaking of a vicinity, a neighbourhood, an \emph{open set in the borel basis of the reals} that contains the point. Identifying a true point on a real line requires an infinite intersection of open balls of decreasing radius; an infinite process of pointing again and again, which nobody has the time to do. In the same way, most language outside of mathematics is only capable of offering successively finer, finite approximations to whatever it is that occurs in the mind or in reality.}
+\end{figure}
+
+This may explain the asymmetry of why tests are open sets, but why are states allowed to be arbitrary subsets? One could argue that states in this model represent what is conceived or perceived. Suppose we have an analog photograph whether in hand or in mind, and we want to remark on a particular shade of red in some uniform patch of the photograph. As in the case of pointing out a point on the real interval, we have successively finer approximations with a vocabulary of concepts: "red", "burgundy", "hex code \#800021"... but never the point in colourspace itself. If someone takes our linguistic description of the colour and tries to reproduce it, they will be off in a manner that we can in principle detect, cognize, and correct: "make it a little darker" or "add a little blue to it". That is to say, there are in principle differences in mind that we cannot distinguish linguistically in a finite manner; we would have to continue the process of "even darker" and "add a bit less blue than last time" forever. All this is just the mathematical formulation of a very common observation: sometimes you cannot do an experience justice with words, and you eventually give up with "I guess you just had to be there". Yet the experience is there and we can perform linguistic operations on it, and the states accommodate this.
+
+\subsection{Configuration spaces: labelled noun wires}
+
+Whereas sticky spiders correspond to particular iconic representations, we want to interpret text circuits in the configuration spaces of sticky spiders, so that text process-theoretically restricts, expands, and modifies a space of permissible iconic representations\footnote{\textbf{Top} is symmetric monoidal closed with respect to product, why we just work there from the start? Because \textbf{Top} is cartesian monoidal, which in particular means that there is only one test (the map into the terminal singleton topology), and worse, all states are tensor-separable. The latter fact means that we cannot reason natively in diagrams about correlated states, which are extremely useful representing entangled quantum states [dodo], and for reasoning about spatial relations \bR [talkspace] \e. I'll briefly explain the gist of the analogy in prose because it is already presented formally in the cited works and elaborated in \bR [bobcomp] \e. The Fregean notion of compositionality is roughly that to know a composite system is equivalent to knowing all of its parts, and diagrammatically this amounts to tensor-separability, which arises as a consequence of cartesian monoidality. Schr\"{o}dinger suggests an alternative of compositionality via a lesson from entangled states in quantum mechanics: \emph{perfect knowledge of the whole does not entail perfect knowledge of the parts.} Let's say we have information about a composite system if we can restrict the range of possible outcomes; this is the case for the bell-state, where we know that there is an even chance both qubits measure up or both measure down, and we can rule out mismatched measurements. However, discarding one entangled qubit from a bell-state means we only know that the remaining qubit has a 50/50 of measuring up or down, which is the minimal state of information we can have about a qubit. So we have a case where we can know things about the whole, but nothing about its parts. A more familiar example from everyday life is if I ask you to imagine \texttt{a cup on a table in a room}. There are many ways to envision or realise this scenario in your mind's eye, all drawn from a restricted set of permissable positions of the cup and the table in some room. The spatial locations of the cup and table are entangled, in that you can only consider the positions of both together. If you discard either the cup or the table from your memory, there are no restrictions about where the other object could be in the room; that is, the meaning of the utterance is not localised in any of the parts, it resides in the entangled whole.}. So it is via configuration spaces that we aim for an iconic semantics of general text. Recall from the definition of configuration spaces via split idempotents \bR REF \e that the section and retract diagrammatically allow the configuration space wire to open up to guitar strings we can place our circuits in. However, this section and retract pair is not uniquely determined. For example, in the case of configuration spaces of rigid transformations of shapes, one obtains a family of encodings of the configuration space of an $n$-shape sticky spider in the $n$-fold tensor of isometry spaces by choosing a basepoint for each shape and rigidly transforming with respect to that basepoint, which on the plane may lead to different reifications of rotating shapes. Interpreting text circuits with respect to a particular split idempotent of configuration space hence gives a good reason to label the noun wires: so that we can remember which space of isometries corresponds to which noun-shape in the absence of knowing how precisely the split idempotent encodes configuration space as the $n$-fold contribution of spatial possibilities for each noun.
+
+\begin{example}[Differing encodings]
+
+\end{example}
+
+\subsection{Copy: stative verbs and adjectives}
+
+\emph{Stative} verbs are those that posit an unchanging state of affairs, such as \texttt{Bob \underline{likes} drinking}. Insofar as stative verbs are restrictions of all possible configurations to a permissible subset, they are conceptually similar to adjectives, such as \texttt{\underline{red} car}, which restricts permissible representations in colourspace. When we interpret concepts as open-set tests, \textbf{ContRel} conspires in our favour by giving us free copy maps on every wire \bR REF \e. This allows us to define a family of processes that really behave like stative constructions that merely restrict possibilities. The desirable property we obtain is that in the absence of \emph{dynamic} verbs that posit a change in the state of affairs, stative constructions commute in text: if I'm just telling you static properties of the way things are, it doesn't matter in what order I tell you the facts because restrictions commute. Recall:
+
+\[\scalebox{0.75}{\tikzfig{topology/copygatecommute}}\]
+
+\begin{example}[Adjectives by analysis of configuration spaces]
+
+\end{example}
+
+\subsection{Homotopies: dynamic verbs and weak interchange}
+
+\emph{Dynamic} verbs are those that posit a change in state, such as \texttt{Bob \underline{goes} home}. We want to model these verbs by homotopies, where the unit interval parameter models time. A nice and diagrammatically immediate property is that dynamic verbs are obstacles to the commutation of stative words.
+
+\begin{example}[Dynamic verbs block stative commutations]
+
+\end{example}
+
+The composition of dynamic verbs in time also explains the weak-interchange subtlety of text diagrams. When we are dealing with dynamic verbs, the order of sentences does make a difference in semantics between \texttt{Bob goes home. Bob gets drunk.} and \texttt{Bob gets drunk. Bob goes home.} So we have:
+
+\begin{example}[Sequential versus concurrent]
+
+\end{example}
+
+\newthought{Three short sketches}
+
+I want to sketch in passing three mathematically and linguistically interesting avenues to do with playing with unit-interval parameters that I won't explore fully here. The first is to do with the string-diagrammatic algebra of tenses, which can be modelled like so:
+
+\[before\]
+
+Recall that unit intervals come with a $\leq$ relation and that \textbf{ContRel} is a rig category with respect to unions. So suppose we model a tense algebra to be generated by the following PROP, to which we also include the ability to take unions:
+
+\[prop\]
+
+Using these generators it's easy to create more complex temporal relations string-diagrammatically such as \texttt{during}, \texttt{after}, \texttt{between} and so on. The interesting claim would be that \emph{all} temporal relationships in natural languages are \emph{necessarily} obtained in this way. The argument is one from computational feasibility, and the path to it is unexpected. The gist is that the generators along with union correspond to the axioms of an o-minimal structure via interpreting the copy-delete comonoid as product and projection (via Fox's theorem \bR ref \e), and o-minimal structures are considered good candidates for so-called "tame topologies" that don't have counterintuitive counterexamples that plague the usual definition of topology \bR ref \e. It turns out that o-minimality and tameness is a sufficient condition for learnability in a formal sense \bR ref \e, so there lurks an argument for the canonicity of tensed language on the grounds of computational hardness.\\
+
+Second, there is a strong but little-known criterion for the goodness of a theory of language called Becker's criterion \bR CITE \e, which is stated "Any theory (or partial theory) of the English Language that is expounded in the English Language must account for (or at least apply to) the text of its own exposition", and followed by the comment: "Using this handy guideline, you can pretty much wipe your theoretical linguistics shelf clean and start over". Text circuits with iconic semantics in \textbf{ContRel} appear to have sufficient structure to satisfy Becker's criterion in some sense. Recall that the generative syntactic formulation of text circuits is defined in terms of weak $n$-categories with strict unitality and associativity but weak interchange. In \textbf{ContRel}, the composition of homotopies satisfies the first two strictness conditions and is close to satisfying weak interchange: for any composite gluing of the unit interval, there is a continuous endo-relation on the real line that achieves arbitrary permutation of the constituent intervals (up to finitely many discontinuities, at the gluing points), since continuous relations are unions of partial continuous functions \bR REF \e. So modulo a model of weak interchange that is insensitive to finitely many discontinuities, and a daunting G\"{o}del-style self-encoding argument, we could have a (perhaps the only) theory of language that suffices to model itself.\\
+
+Third, the interaction of stative and dynamic (or, more generally, costates intersected by comonoids versus parameterised morphisms) appears to be a suitable model for categorified hypergraphs, just as monoidal categories are categorified monoids. The gist is that any open hypergraph is representable as a morphism in a hypergraph category \bR CITE \e, and we may use the special frobenius laws to rewrite such morphisms to only use the comonoid part of the spiders in stative form. The non-commutation of statives past dynamics then justifies the view that the dynamic parameterised morphisms can be viewed going between objects enriched in a hypergraph structure.
+
+\[hypergist\]
+
+\subsection{Coclosure: adverbs and adpositions}
+
+
+
+\subsection{Turing objects: sentential complementation}
+

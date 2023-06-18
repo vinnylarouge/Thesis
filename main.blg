@@ -4,56 +4,62 @@ The top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: thesis_intro.bib
 Warning--I didn't find a database entry for "joyal_geometry_nodate"
-Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "friedman_fom_200"
 Warning--I didn't find a database entry for "wilson_string_2022"
 Warning--I didn't find a database entry for "merry_reasoning_2014"
 Warning--I didn't find a database entry for "quick_-logic_2015"
 Warning--I didn't find a database entry for "zamdzhiev_rewriting_2017"
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "montague1970universal"
+Warning--I didn't find a database entry for "montague1973proper"
+Warning--to sort, need author or key in noauthor_riley_2022
 Warning--empty booktitle in bonchi_categorical_2014
+Warning--empty journal in davidad_open_nodate
+Warning--empty year in davidad_open_nodate
 Warning--empty publisher in frege_gottlob_selbst_1884
 Warning--empty publisher in gardenfors_geometry_2014
 Warning--empty publisher in mcshane_linguistics_2021
 Warning--empty booktitle in selinger_survey_2010
 Warning--empty publisher in selinger_survey_2010
-You've used 59 entries,
+You've used 64 entries,
             2118 wiz_defined-function locations,
-            816 strings with 15847 characters,
-and the built_in function-call counts, 20239 in all, are:
-= -- 1863
-> -- 1212
+            839 strings with 16787 characters,
+and the built_in function-call counts, 21845 in all, are:
+= -- 2001
+> -- 1329
 < -- 10
-+ -- 490
-- -- 422
-* -- 1466
-:= -- 3385
-add.period$ -- 184
-call.type$ -- 59
-change.case$ -- 380
++ -- 539
+- -- 464
+* -- 1590
+:= -- 3659
+add.period$ -- 197
+call.type$ -- 64
+change.case$ -- 416
 chr.to.int$ -- 0
-cite$ -- 65
-duplicate$ -- 650
-empty$ -- 1499
-format.name$ -- 422
-if$ -- 4151
+cite$ -- 73
+duplicate$ -- 697
+empty$ -- 1606
+format.name$ -- 464
+if$ -- 4467
 int.to.chr$ -- 0
-int.to.str$ -- 59
-missing$ -- 41
-newline$ -- 298
-num.names$ -- 120
-pop$ -- 516
+int.to.str$ -- 64
+missing$ -- 45
+newline$ -- 321
+num.names$ -- 128
+pop$ -- 567
 preamble$ -- 1
-purify$ -- 326
+purify$ -- 357
 quote$ -- 0
-skip$ -- 520
+skip$ -- 556
 stack$ -- 0
-substring$ -- 872
-swap$ -- 129
+substring$ -- 915
+swap$ -- 133
 text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 222
-warning$ -- 6
-while$ -- 169
-width$ -- 61
-write$ -- 631
-(There were 12 warnings)
+type$ -- 240
+warning$ -- 9
+while$ -- 179
+width$ -- 66
+write$ -- 678
+(There were 18 warnings)

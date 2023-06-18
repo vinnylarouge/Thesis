@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1.5, 0) {};
+		\node [style=none] (1) at (1.5, 0) {};
+		\node [style=none] (2) at (-2.25, 0) {$X^\tau$};
+		\node [style=none] (4) at (2.25, 0) {$X^\rho$};
+		\node [style=dot] (5) at (0, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (0.center) to (1.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

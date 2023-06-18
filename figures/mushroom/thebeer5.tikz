@@ -1,0 +1,220 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (20) at (-6.75, 2) {};
+		\node [style=none] (27) at (-8.5, 1.5) {};
+		\node [style=none] (28) at (-8.5, -1) {};
+		\node [style=none] (29) at (-5, -1) {};
+		\node [style=none] (30) at (-5, 1.5) {};
+		\node [style=none] (31) at (-6.75, 1.5) {};
+		\node [style=none] (32) at (-6.75, -1) {};
+		\node [style=none] (33) at (-6.75, -1.5) {};
+		\node [style=none] (42) at (-6.75, -0.5) {\texttt{all beers}};
+		\node [style=none] (43) at (-6.75, 2.5) {\texttt{Bob}};
+		\node [style=none] (76) at (-5.5, 1.25) {};
+		\node [style=none] (77) at (-8, 1.25) {};
+		\node [style=none] (78) at (-8, -0.25) {};
+		\node [style=none] (79) at (-5.5, -0.25) {};
+		\node [style=none] (80) at (-7.5, 1) {};
+		\node [style=none] (81) at (-5.75, 1) {};
+		\node [style=none] (82) at (-7.75, 1) {};
+		\node [style=none] (83) at (-7.75, 0) {};
+		\node [style=none] (84) at (-5.75, 0) {};
+		\node [style=none] (85) at (-6.75, 0.5) {\texttt{drinks}};
+		\node [style=none] (86) at (-7.5, 1.25) {};
+		\node [style=none] (87) at (-6.25, 1.25) {};
+		\node [style=none] (88) at (-6.25, 1) {};
+		\node [style=none] (89) at (-7.5, 0) {};
+		\node [style=none] (90) at (-7.5, -0.25) {};
+		\node [style=none] (91) at (-6.25, 0) {};
+		\node [style=none] (92) at (-6.25, -0.25) {};
+		\node [style=none] (130) at (-4.25, 0) {$:=$};
+		\node [style=none] (213) at (-2.5, 1) {};
+		\node [style=none] (215) at (-2.5, 1.5) {\texttt{x}};
+		\node [style=none] (217) at (-3.25, 0.25) {};
+		\node [style=none] (218) at (-1.75, 0.25) {};
+		\node [style=none] (219) at (-3, -0.25) {};
+		\node [style=none] (220) at (-2, -0.25) {};
+		\node [style=none] (221) at (-2.5, 0) {\texttt{b?}};
+		\node [style=none] (222) at (-2.5, 0.25) {};
+		\node [style=none] (223) at (-2.5, -0.25) {};
+		\node [style=none] (224) at (-2.5, -1) {};
+		\node [style=none] (225) at (-1.25, 0) {$=$};
+		\node [style=none] (226) at (-0.25, 1) {};
+		\node [style=none] (227) at (-0.75, 0.25) {};
+		\node [style=none] (228) at (0.25, 0.25) {};
+		\node [style=none] (229) at (-0.25, 0.5) {\texttt{1}};
+		\node [style=none] (230) at (-0.25, 0.25) {};
+		\node [style=none] (231) at (-0.25, -1) {};
+		\node [style=none] (232) at (1.25, 0) {$\Rightarrow$};
+		\node [style=none] (233) at (2.25, 0) {};
+		\node [style=none] (234) at (4.25, 0) {};
+		\node [style=none] (235) at (2.5, -0.5) {};
+		\node [style=none] (236) at (4, -0.5) {};
+		\node [style=none] (237) at (3.25, -0.25) {\texttt{d?}};
+		\node [style=none] (238) at (2.5, 0) {};
+		\node [style=none] (239) at (3.25, -0.5) {};
+		\node [style=none] (240) at (4, 0) {};
+		\node [style=none] (241) at (3.25, 0) {};
+		\node [style=none] (242) at (2.5, 1.5) {\texttt{Bob}};
+		\node [style=none] (243) at (4, 1.5) {\texttt{x}};
+		\node [style=none] (244) at (4, 1) {};
+		\node [style=none] (245) at (2.5, 1) {};
+		\node [style=none] (246) at (5.75, 1) {};
+		\node [style=none] (247) at (5.25, 0.25) {};
+		\node [style=none] (248) at (6.25, 0.25) {};
+		\node [style=none] (249) at (5.75, 0.5) {\texttt{1}};
+		\node [style=none] (250) at (5.75, 0.25) {};
+		\node [style=none] (251) at (5.75, -1) {};
+		\node [style=none] (252) at (4.75, 0) {$=$};
+		\node [style=none] (253) at (3.25, -1) {};
+		\node [style=none] (254) at (7.75, 0) {Or};
+		\node [style=none] (255) at (9.5, 1.5) {};
+		\node [style=none] (256) at (9.5, 2) {\texttt{x}};
+		\node [style=none] (257) at (8.75, 0.75) {};
+		\node [style=none] (258) at (10.25, 0.75) {};
+		\node [style=none] (259) at (9, 0.25) {};
+		\node [style=none] (260) at (10, 0.25) {};
+		\node [style=none] (261) at (9.5, 0.5) {\texttt{b?}};
+		\node [style=none] (262) at (9.5, 0.75) {};
+		\node [style=none] (263) at (9.5, 0.25) {};
+		\node [style=none] (264) at (9.5, -0.5) {};
+		\node [style=none] (265) at (8.75, -0.5) {};
+		\node [style=none] (266) at (8.75, -1.25) {};
+		\node [style=none] (267) at (10.25, -0.5) {};
+		\node [style=none] (268) at (10.25, -1.25) {};
+		\node [style=none] (270) at (10.25, -0.875) {};
+		\node [style=none] (271) at (9.5, -0.875) {$\texttt{=1?}$};
+		\node [style=none] (272) at (11, 0.25) {};
+		\node [style=none] (273) at (12, 2) {};
+		\node [style=none] (274) at (11.5, 2) {};
+		\node [style=none] (275) at (11.5, -1.25) {};
+		\node [style=none] (276) at (12, -1.25) {};
+		\node [style=none] (277) at (17.75, 2) {};
+		\node [style=none] (278) at (18.25, 2) {};
+		\node [style=none] (279) at (18.25, -1.25) {};
+		\node [style=none] (280) at (17.75, -1.25) {};
+		\node [style=none] (281) at (12.25, 1) {};
+		\node [style=none] (282) at (13.75, 1) {};
+		\node [style=none] (283) at (12.25, -1) {};
+		\node [style=none] (284) at (13.75, -1) {};
+		\node [style=none] (285) at (12.25, 1.5) {\texttt{Bob}};
+		\node [style=none] (286) at (13.75, 1.5) {\texttt{x}};
+		\node [style=none] (287) at (14.75, 0.25) {$\mapsto$};
+		\node [style=none] (288) at (16, 1) {};
+		\node [style=none] (289) at (17.5, 1) {};
+		\node [style=none] (290) at (16, 0.5) {};
+		\node [style=none] (291) at (17.5, 0.5) {};
+		\node [style=none] (292) at (16, 1.5) {\texttt{Bob}};
+		\node [style=none] (293) at (17.5, 1.5) {\texttt{x}};
+		\node [style=none] (294) at (15.75, 0.5) {};
+		\node [style=none] (295) at (15.75, -0.5) {};
+		\node [style=none] (296) at (17.75, -0.5) {};
+		\node [style=none] (297) at (17.75, 0.5) {};
+		\node [style=none] (298) at (16.75, 0) {\texttt{drinks}};
+		\node [style=none] (299) at (16, -0.5) {};
+		\node [style=none] (300) at (17.5, -0.5) {};
+		\node [style=none] (301) at (16, -1) {};
+		\node [style=none] (302) at (17.5, -1) {};
+		\node [style=none] (303) at (-3, 2) {};
+		\node [style=none] (304) at (-3.5, 2) {};
+		\node [style=none] (305) at (-3.5, -1.25) {};
+		\node [style=none] (306) at (-3, -1.25) {};
+		\node [style=none] (307) at (6.25, 2) {};
+		\node [style=none] (308) at (6.75, 2) {};
+		\node [style=none] (309) at (6.75, -1.25) {};
+		\node [style=none] (310) at (6.25, -1.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (28.center)
+			 to (27.center)
+			 to (30.center)
+			 to (29.center)
+			 to cycle;
+		\draw (20.center) to (31.center);
+		\draw (33.center) to (32.center);
+		\draw [style=dgF] (79.center)
+			 to (76.center)
+			 to (77.center)
+			 to (78.center)
+			 to cycle;
+		\draw [style=Fw] (84.center)
+			 to (83.center)
+			 to (82.center)
+			 to (81.center)
+			 to cycle;
+		\draw (82.center)
+			 to (83.center)
+			 to (84.center)
+			 to (81.center)
+			 to cycle;
+		\draw (86.center) to (80.center);
+		\draw (87.center) to (88.center);
+		\draw (89.center) to (90.center);
+		\draw (91.center) to (92.center);
+		\draw (220.center)
+			 to (219.center)
+			 to (217.center)
+			 to (218.center)
+			 to cycle;
+		\draw (213.center) to (222.center);
+		\draw [style=Bv] (223.center) to (224.center);
+		\draw (226.center)
+			 to (227.center)
+			 to (228.center)
+			 to cycle;
+		\draw [style=Bv] (230.center) to (231.center);
+		\draw (236.center)
+			 to (235.center)
+			 to (233.center)
+			 to (234.center)
+			 to cycle;
+		\draw (245.center) to (238.center);
+		\draw (244.center) to (240.center);
+		\draw (246.center)
+			 to (247.center)
+			 to (248.center)
+			 to cycle;
+		\draw [style=Bv] (250.center) to (251.center);
+		\draw [style=Bv] (239.center) to (253.center);
+		\draw (260.center)
+			 to (259.center)
+			 to (257.center)
+			 to (258.center)
+			 to cycle;
+		\draw (255.center) to (262.center);
+		\draw [style=Bv] (263.center) to (264.center);
+		\draw (268.center)
+			 to (266.center)
+			 to (265.center)
+			 to (267.center)
+			 to cycle;
+		\draw [style=Ov, in=180, out=0] (270.center) to (272.center);
+		\draw [style=K] (273.center)
+			 to (274.center)
+			 to (275.center)
+			 to (276.center);
+		\draw [style=K] (277.center)
+			 to (278.center)
+			 to (279.center)
+			 to (280.center);
+		\draw (281.center) to (283.center);
+		\draw (282.center) to (284.center);
+		\draw (288.center) to (290.center);
+		\draw (289.center) to (291.center);
+		\draw (295.center)
+			 to (294.center)
+			 to (297.center)
+			 to (296.center)
+			 to [in=360, out=180] cycle;
+		\draw (300.center) to (302.center);
+		\draw (299.center) to (301.center);
+		\draw [style=K] (303.center)
+			 to (304.center)
+			 to (305.center)
+			 to (306.center);
+		\draw [style=K] (307.center)
+			 to (308.center)
+			 to (309.center)
+			 to (310.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

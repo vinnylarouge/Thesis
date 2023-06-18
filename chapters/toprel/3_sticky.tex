@@ -6,11 +6,11 @@
 %\end{figure}
 
 \subsection{When does an object have a spider (or something close to one)?}
-\marginnote{
+
 \begin{example}[The copy-compare spiders of $\mathbf{Rel}$ are not always continuous]\label{ex:compnotspider}
 The compare map for the Sierpi\'{n}ski space is not continuous, because the preimage of $\{0,1\}$ is $\{(0,0),(1,1)\}$, which is not open in the product space of $\mathcal{S}$ with itself.
 \end{example}
-}
+
 \begin{rem}[copy-compare spiders of $\mathbf{Rel}$]
 For a set $X$, the \emph{copy} map $X \rightarrow X \times X$ is defined:
 \[\{(x,(x,x)) : x \in X \}\]
@@ -46,7 +46,6 @@ The desired graphical behaviour of a sticky spider is that one can still coalesc
 \[\resizebox{\textwidth}{!}{\tikzfig{structure/idemspider/stickyrelations}}\]
 \end{myboxB}
 
-\begin{myboxR}
 \newthought{We can use split idempotents to transform copy-spiders from discrete topologies to sticky-spiders on other spaces.}
 
 \begin{rem}[Split idempotents]
@@ -59,7 +58,6 @@ A \textbf{split idempotent} is an idempotent $e: A \rightarrow A$ along with a \
 We can graphically express the behaviour of a split idempotent $e$ as follows, where the semicircles for the section and retract $r,s$ form a visual pun.
 
 \[\scalebox{1}{\tikzfig{structure/idemspider/splitidem}}\]
-\end{myboxR}
 
 \begin{myboxB}
 \begin{construction}[Sticky spiders from split idempotents]\label{cons:stickyfromsplit}
@@ -229,6 +227,8 @@ The if direction is an easy check. For the unit/everything relation, we have:
 For the counit/delete relation, we observe that for any split idempotent, the retract must be a partial function. To see this, suppose the split idempotent $e = r;s$ is on $(X,\tau)$ and the discrete topology is $Y^\star$. Seeking contradiction, if the retract is not a partial function, then there is some point $x \in X$ such that $x \in e(x)$, and the image $I := r(x) \subseteq Y$ contains more than one point, which we denote and discriminate $a,b \in r(x) \subseteq Y$ and $a \neq b$. Because the composite $s;r = 1_Y$ of the section and retract must recover the identity on $Y^\star$, the section $s$ must be total -- i.e. the image $s(X) = Y$. So $x \in s(a) \cap s(b)$. Now we have that $(a,x),(b,x) \in s$, and $(x,a),(x,b) \in r$, therefore $(a,b),(b,a) \in s;r$, which by $a \neq b$ contradicts that $s;r$ is the identity relation $1_Y$.
 \[\scalebox{0.8}{\tikzfig{idemproof/finalproof4}}\]
 \end{myboxB}
+
+\clearpage
 
 \begin{defn}[Labels, shapes, cores, halos]
 Recall by Proposition \ref{prop:decompidem} that we can express the idempotent as a union of continuous relations formed of a state and test, for some indexing set of \emph{labels} $\mathcal{L}$.

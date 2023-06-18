@@ -17,7 +17,7 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \newpmemlabel{^_1}{1}
-\@writefile{toc}{\contentsline {section}{\numberline {0.1}An introduction to weak n-categories for formal linguists}{4}{section.0.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {0.1}An introduction to weak n-categories for formal linguists}{3}{section.0.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The category in question can be visualised as a commutative diagram.}}{5}{subsection.0.1.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces When there are too many generating morphisms, we can instead present the same data as a table of $n$-cells; there is a single 0-cell $\star $, and three non-identity 1-cells corresponding to $\leavevmode {\color  {green}\alpha }, \leavevmode {\color  {orange}\beta }, \leavevmode {\color  {cyan}\gamma }$, each with source and target 0-cells $\star $. Typically identity morphisms can be omitted from tables as they come for free. Observe that composition of identities enforces the behaviour of the empty string, so that for any string $x$, we have $\epsilon \cdot x = x = \epsilon \cdot x$.}}{5}{subsection.0.1.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces For a concrete example, we can depict the string $\leavevmode {\color  {green}\alpha } \cdot \leavevmode {\color  {cyan}\gamma } \cdot \leavevmode {\color  {cyan}\gamma } \cdot \leavevmode {\color  {orange}\beta }$ as a morphism in a commuting diagram.}}{5}{subsection.0.1.1}\protected@file@percent }
@@ -227,19 +227,21 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {0.3.2}Avenues II: determiners and quantifiers in context}{45}{subsection.0.3.2}\protected@file@percent }
 \newpmemlabel{^_95}{46}
 \@writefile{lof}{\contentsline {figure}{\numberline {62}{\ignorespaces  \begin  {example}[\textbf  {Coordination}] \[\texttt  {Alice \underline  {and} Bob drink beer \underline  {and} wine \underline  {respectively}}\] \end  {example} We stand to win in terms of conceptual economy for modelling; more complex phenomena of text structure such as coordination appear to be resolvable in the same framework of distributivity-law rewrites. }}{46}{theorem.0.3.2}\protected@file@percent }
+\newpmemlabel{^_96}{46}
+\newpmemlabel{^_97}{46}
+\@writefile{lof}{\contentsline {figure}{\numberline {63}{\ignorespaces  \begin  {example}[\textbf  {Determiners I}] \[\texttt  {Bob drinks \underline  {the} beer} \text  { (among drinks)}\] \end  {example} Here, \texttt  {drinks} is considered transitive and \texttt  {the beer} a nesting box for \texttt  {drinks} that reaches over to contextual wires representing a selection of beverages. In this case (relying on the implicit uniqueness of \texttt  {the}), a series of \texttt  {beer?} tests may be computed, and the best match chosen as the resulting argument for \texttt  {drinks}. }}{46}{subsection.0.3.2}\protected@file@percent }
+\newpmemlabel{^_98}{46}
+\newpmemlabel{^_99}{46}
+\@writefile{lof}{\contentsline {figure}{\numberline {64}{\ignorespaces  \begin  {example}[\textbf  {Determiners II}] \[\texttt  {Bob drinks \underline  {a} beer} \text  { (among drinks)}\] \end  {example} We take the logical (and pragmatic) reading of \texttt  {a} as $\exists ! x: \texttt  {beer?}(x) \wedge \texttt  {drinks?}(\texttt  {Bob},x)$. Subject to having a method to hold onto alternatives -- in essence an inquisitive semantics approach -- we may create alternative circuits for each successful \texttt  {beer?} test. }}{46}{theorem.0.3.4}\protected@file@percent }
+\newpmemlabel{^_100}{46}
+\newpmemlabel{^_102}{46}
+\newpmemlabel{^_104}{46}
+\newpmemlabel{^_101}{47}
+\@writefile{lof}{\contentsline {figure}{\numberline {65}{\ignorespaces  \begin  {example}[\textbf  {Determiners III}] \[\texttt  {Bob drinks \underline  {a} beer} \text  { (that we didn't know about)}\] \end  {example} When there are no beers in context, the same statement takes on a dynamic reading: it constitutes the introduction of a beer into discourse. In terms of text circuits, this amounts to introducing a novel beer-state and beer-wire. Determining an appropriate setting to accommodate "arbitrary" vs. "concrete" beers (c.f. Fine's arbitrary objects \begin  {color}{red}CITE \end  {color}\xspace  ) requires further research and experimentation, but preliminarily it is known that density matrices are capable of modelling semantic entailment \begin  {color}{red}CITE \end  {color}\xspace  , at the computational cost of adopting the kronecker product. This diagram doesn't typecheck, but note that it doesn't have to, because our strategy for evaluation of determiners treats circuits as syntactic objects to be manipulated. }}{47}{theorem.0.3.5}\protected@file@percent }
+\newpmemlabel{^_103}{47}
+\@writefile{lof}{\contentsline {figure}{\numberline {66}{\ignorespaces  \begin  {example}[\textbf  {Quantifiers I}] \[\texttt  {Bob drinks \underline  {all the beers}} \text  { (in context)}\] \end  {example} In a finitary context, drinking all the beers amounts to applying the distributivity of \texttt  {and}. }}{47}{theorem.0.3.6}\protected@file@percent }
+\newpmemlabel{^_105}{47}
+\@writefile{lof}{\contentsline {figure}{\numberline {67}{\ignorespaces  \begin  {example}[\textbf  {Quantifiers II}] \[\texttt  {Bob drinks \underline  {all} beers} \text  { (generic)}\] \end  {example} Without the determiner \texttt  {the}, this becomes a generic statement, which logically amounts to (analysing the usual conditional as a disjunction) $\forall x: \neg \texttt  {beer?}(x) \vee \texttt  {drinks?}(\texttt  {Bob},x)$. We can treat generic universal quantifiers of this kind in at least two ways. The first essentially truth-conditional approach is to treat the generic as a process-theoretic condition governing measurements: whenever it is the case that something is a beer, it is the case that Bob drinks it. The second "inferential" appraoch is to treat the generic as a rewrite of text circuits conditioned on a beer test: whenever something is a beer we may add on a gate witnessing that Bob drinks that beverage. }}{47}{theorem.0.3.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {0.3.3}Avenues III: grammar as geometry, geometry as computation}{47}{subsection.0.3.3}\protected@file@percent }
-\citation{montague1970universal}
-\citation{montague1973proper}
-\@writefile{toc}{\contentsline {section}{\numberline {.1}A modern mathematician's companion to Montague's "Universal Grammar"}{48}{section.Alph0.1}\protected@file@percent }
-\newlabel{sec:linghist}{{.1}{48}{A modern mathematician's companion to Montague's "Universal Grammar"}{section.Alph0.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {.1.1}What did Montague consider grammar to be?}{48}{subsection.Alph0.1.1}\protected@file@percent }
-\newlabel{sec:monty}{{.1.1}{48}{What did Montague consider grammar to be?}{subsection.Alph0.1.1}{}}
-\newlabel{algdata}{{.1.1}{49}{Generating data of an Algebra}{theorem.Alph0.1.1}{}}
-\newlabel{ids}{{.1.2}{49}{Identities}{theorem.Alph0.1.2}{}}
-\newlabel{constants}{{.1.3}{49}{Constants}{theorem.Alph0.1.3}{}}
-\newlabel{comp}{{.1.4}{49}{Composition}{theorem.Alph0.1.4}{}}
-\newlabel{polyop}{{.1.5}{49}{Polynomial Operations}{theorem.Alph0.1.5}{}}
-\newlabel{homo}{{.1.6}{49}{Homomorphism of Algebras}{theorem.Alph0.1.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {.1.2}On the historical inevitability of text diagrams}{50}{subsection.Alph0.1.2}\protected@file@percent }
 \ttl@finishall
-\gdef \@abspage@last{50}
+\gdef \@abspage@last{49}

@@ -1,0 +1,112 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (4) at (-5.5, 1) {};
+		\node [style=none] (6) at (-5.5, 1) {};
+		\node [style=none] (7) at (-4, 1) {};
+		\node [style=none] (8) at (-8, -1) {};
+		\node [style=none] (9) at (-8, -3) {};
+		\node [style=none] (15) at (-8, 2.5) {};
+		\node [style=none] (16) at (-13, 0) {};
+		\node [style=none] (18) at (-5.5, -2) {};
+		\node [style=none] (19) at (-1, -2) {};
+		\node [style=dot] (35) at (-8, -3) {};
+		\node [style=dot] (36) at (-5.5, 1) {};
+		\node [style=smalldotb] (37) at (-9, -2) {};
+		\node [style=smalldotb] (38) at (-10, -2) {};
+		\node [style=smalldotb] (41) at (-10, 1.5) {};
+		\node [style=smalldotb] (42) at (-11, 1.5) {};
+		\node [style=none] (44) at (-9, 2.5) {};
+		\node [style=none] (45) at (-9, 0) {};
+		\node [style=smalldotb] (46) at (-8, 0) {};
+		\node [style=none] (50) at (8.5, 0.5) {};
+		\node [style=none] (51) at (8.5, 0.5) {};
+		\node [style=none] (52) at (7.5, 0.5) {};
+		\node [style=none] (53) at (7.5, -1.5) {};
+		\node [style=none] (54) at (6, 1.5) {};
+		\node [style=none] (55) at (1, -1.5) {};
+		\node [style=none] (56) at (8, -1.5) {};
+		\node [style=none] (57) at (12.5, -1.5) {};
+		\node [style=smalldotb] (60) at (6.5, -0.5) {};
+		\node [style=smalldotb] (61) at (5.75, -0.5) {};
+		\node [style=smalldotb] (62) at (4, 0.5) {};
+		\node [style=smalldotb] (63) at (3.25, 0.5) {};
+		\node [style=none] (64) at (5, 1.5) {};
+		\node [style=smalldotb] (66) at (4.75, -1.5) {};
+		\node [style=none] (67) at (9.5, 2.5) {};
+		\node [style=none] (68) at (9.5, 0) {};
+		\node [style=none] (69) at (0, 0) {$=$};
+		\node [style=smalldotb] (70) at (4, -1.5) {};
+		\node [style=none] (72) at (8.5, 1.5) {};
+		\node [style=none] (73) at (10, 2) {};
+		\node [style=none] (74) at (10, 1) {};
+		\node [style=none] (75) at (8.5, 2.5) {};
+		\node [style=none] (76) at (8.5, 0) {};
+		\node [style=none] (77) at (9, 2) {};
+		\node [style=none] (78) at (9, 1) {};
+		\node [style=none] (79) at (-4, 2) {};
+		\node [style=none] (80) at (-4, 0) {};
+		\node [style=none] (81) at (9, 1.5) {};
+		\node [style=none] (82) at (10, 1.5) {};
+		\node [style=none] (83) at (10, 0.5) {};
+		\node [style=none] (84) at (0, 0.5) {\textbf{Rel}};
+		\node [style=none] (85) at (14, 0) {$=$};
+		\node [style=none] (86) at (15, 0) {};
+		\node [style=none] (87) at (16, 0.5) {};
+		\node [style=none] (88) at (16, -0.5) {};
+		\node [style=none] (89) at (17, 0.5) {};
+		\node [style=none] (90) at (17, -0.5) {};
+		\node [style=none] (91) at (18, 0) {};
+		\node [style=none] (92) at (16, 0) {};
+		\node [style=none] (93) at (17, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K, bend right=90, looseness=1.75] (8.center) to (9.center);
+		\draw [style=K, in=-180, out=0, looseness=1.25] (8.center) to (6.center);
+		\draw [style=K] (4.center)
+			 to [in=0, out=180, looseness=1.25] (15.center)
+			 to (44.center)
+			 to [bend right=45] (41);
+		\draw [style=K, in=180, out=0] (9.center) to (18.center);
+		\draw [style=K, in=-180, out=0] (18.center) to (19.center);
+		\draw [style=K] (6.center) to (7.center);
+		\draw [style=K] (38) to (37);
+		\draw [style=K] (41) to (42);
+		\draw [style=K] (16.center) to (46);
+		\draw [style={Kvp(thick)}, in=90, out=-90] (41) to (45.center);
+		\draw [style=K, bend right=90, looseness=1.75] (52.center) to (53.center);
+		\draw [style=K] (54.center) to (64.center);
+		\draw [style=K, bend right=45] (64.center) to (62);
+		\draw [style=K, in=180, out=0] (53.center) to (56.center);
+		\draw [style=K, in=-180, out=0] (56.center) to (57.center);
+		\draw [style=K, in=-180, out=0] (50.center) to (51.center);
+		\draw [style=K] (61) to (60);
+		\draw [style=K] (62) to (63);
+		\draw [style=K] (55.center) to (66);
+		\draw [style=K, in=90, out=-90] (62) to (70);
+		\draw [style=KH] (68.center)
+			 to [bend right=90, looseness=2.25] (67.center)
+			 to (75.center)
+			 to (76.center)
+			 to cycle;
+		\draw [style=K, in=-180, out=0] (52.center) to (50.center);
+		\draw [style=K, in=180, out=0] (54.center) to (72.center);
+		\draw [style={K(CF)}] (80.center)
+			 to [bend right=90, looseness=1.75] (79.center)
+			 to cycle;
+		\draw [style={K(CF)}] (78.center)
+			 to (77.center)
+			 to (73.center)
+			 to (74.center)
+			 to cycle;
+		\draw [style=K] (72.center) to (81.center);
+		\draw [style=K, bend left=90, looseness=2.00] (82.center) to (83.center);
+		\draw [style=K, in=0, out=-180] (83.center) to (51.center);
+		\draw [style={K(CF)}] (90.center)
+			 to (88.center)
+			 to (87.center)
+			 to (89.center)
+			 to cycle;
+		\draw [style=K] (86.center) to (92.center);
+		\draw [style=K] (93.center) to (91.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

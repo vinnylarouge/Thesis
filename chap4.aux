@@ -54,8 +54,6 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {1.9}{\ignorespaces We can control the thickness of the brushstroke, by taking the union of (uncountably) many lines.}}{13}{theorem.1.2.19}\protected@file@percent }
 \newlabel{fig:thickbrush}{{1.9}{13}{Continuous Relations by examples}{theorem.1.2.19}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.10}{\ignorespaces Assign the visible spectrum of light to $[0,1]$. Colour open sets according to perceptual addition of light, computing brightness by normalising the measure of the open set.}}{13}{theorem.1.2.19}\protected@file@percent }
-\newpmemlabel{^_6}{13}
-\newpmemlabel{^_7}{13}
 \newlabel{prop:func}{{1.3.1}{14}{}{theorem.1.3.1}{}}
 \newlabel{corr:top2contrel}{{1.3.2}{14}{}{theorem.1.3.2}{}}
 \newlabel{prop:idrel}{{1.3.3}{14}{}{theorem.1.3.3}{}}
@@ -63,182 +61,148 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {1.11}{\ignorespaces The \emph  {copy} map $X^\tau \rightarrow X^\tau \times X^\tau $, $\{(x,\begin  {pmatrix} x \\ x \end  {pmatrix}) \ | \ x \in X\}$.}}{14}{theorem.1.3.3}\protected@file@percent }
 \newlabel{prop:copy}{{1.3.4}{14}{}{theorem.1.3.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.3}The category \textbf  {ContRel}}{14}{section.1.3}\protected@file@percent }
-\newpmemlabel{^_8}{14}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.3.1}Symmetric Monoidal structure}{14}{subsection.1.3.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1.12}{\ignorespaces An alternative proof of Proposition \ref  {prop:copy} follows from Proposition \ref  {prop:func}, Corollary \ref  {corr:top2contrel}, and the definition of the product topology as the coarsest topology that satisfies categorical product for the diagram above.}}{15}{theorem.1.3.4}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1.13}{\ignorespaces The \emph  {everything} state is the relation $\{((\star ,x) \ | \ x \in X\}$, notated as above. \begin  {proposition} The everything states are continuous relations. \begin  {proof} The preimage of any subset of $X$ -- in particular the opens -- is the whole of the singleton space, which is open. \end  {proof} \end  {proposition} }}{15}{theorem.1.3.4}\protected@file@percent }
+\newlabel{prop:everything}{{1.3.5}{15}{}{theorem.1.3.5}{}}
 \newlabel{fig:everything}{{1.13}{15}{The category \textbf {ContRel}}{theorem.1.3.5}{}}
 \newlabel{fig:delete}{{1.3}{15}{The category \textbf {ContRel}}{theorem.1.3.5}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.14}{\ignorespaces The \emph  {delete} test, $\{((x,\star ) \ | \ x \in X\}$. \begin  {proposition} The delete tests are continuous relations. \begin  {proof} There are only two opens in the singleton space. The preimage of the empty set is the empty set, and the preimage of the singleton is the whole of $X$; both are opens in $X$ by definition. \end  {proof} \end  {proposition} }}{15}{theorem.1.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.2}Rig category structure}{15}{subsection.1.3.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1.15}{\ignorespaces Copy and delete satisfy the above properties, expressed as diagrammatic equations.}}{16}{theorem.1.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.2}Rig category structure}{16}{subsection.1.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.3}Monoidal (co!)closure}{16}{subsection.1.3.3}\protected@file@percent }
+\newlabel{prop:prodvsclos}{{1.3.17}{16}{}{theorem.1.3.17}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.16}{\ignorespaces Relations that interact with copy and delete are nice, and we notate them with the same black dots as for copy and delete to mark them. States are singletons, or points, when they are copiable. Partial continuous functions are those that commute with copy. Left-total relations are those that commute with delete. Continuous functions are those that satisfy the latter two criteria.}}{17}{theorem.1.3.6}\protected@file@percent }
 \newlabel{prop:fullrel}{{1.3.7}{17}{}{theorem.1.3.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.3}Category-theoretic endnotes}{17}{subsection.1.3.3}\protected@file@percent }
-\newlabel{lem:disccont}{{1.3.16}{17}{Any relation $R$ between discrete topologies is continuous}{theorem.1.3.16}{}}
-\newlabel{lem:idadj}{{1.3.19}{17}{$RL = 1_{\textbf {Rel}}$}{theorem.1.3.19}{}}
-\newlabel{lem:coarse}{{1.3.21}{17}{Coarsening is a continuous relation}{theorem.1.3.21}{}}
+\newlabel{defn:coarsening}{{1.3.19}{17}{Coarsening}{theorem.1.3.19}{}}
+\newlabel{defn:compare}{{1.3.20}{17}{Pseudo-compare}{theorem.1.3.20}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.17}{\ignorespaces  The \textbf  {empty state} $\bullet \rightarrow X^\tau $ and \textbf  {empty test} relate nothing. The \textbf  {empty relation} $X^\tau \rightarrow Y^\sigma $ is the composite of empty tests and states, and relates nothing: as a relation it is $\varnothing \subset X \times Y$. \begin  {proposition} Empty states, tests, and relations are continuous. \begin  {proof} The preimage of any empty relation is the empty set, which is definitionally open. \end  {proof} \end  {proposition} }}{18}{theorem.1.3.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1.19}{\ignorespaces There is a zero-morphism for every input-output pair of objects in \textbf  {ContRel}, which is diagrammatically the composition of the empty test and state. Zero scalars turn any relation into a zero relation. Substituting the zero relation into the LHS of the above equation means that zero relations also spawn zero scalars.}}{18}{theorem.1.3.8}\protected@file@percent }
-\newlabel{prop:reladj}{{1.3.22}{18}{$L \dashv R$}{theorem.1.3.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.18}{\ignorespaces There are two scalars: the unit, and the zero scalar. Zero scalars are idempotent, which diagrammatically means that a single zero scalar can copy itself.}}{18}{theorem.1.3.8}\protected@file@percent }
+\newlabel{defn:perfectclosure}{{1.3.21}{18}{}{theorem.1.3.21}{}}
+\newlabel{prop:coclosure}{{1.3.22}{18}{\textbf {ContRel} is monoidal coclosed}{theorem.1.3.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.19}{\ignorespaces There is a zero-morphism for every input-output pair of objects in \textbf  {ContRel}, which is diagrammatically the composition of the empty test and state. Zero scalars turn any relation into a zero relation. Substituting the zero relation into the LHS of the above equation means that zero relations also spawn zero scalars.}}{19}{theorem.1.3.8}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1.20}{\ignorespaces So, whenever a zero-process appears in a diagram, it spawns zero scalars which infect all other processes, turning them all into zero-processes. The same holds for whenever a zero-scalar appears; it makes copies of itself to infect all other processes.}}{19}{theorem.1.3.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.4}Conceptual motivations}{21}{subsection.1.3.4}\protected@file@percent }
-\newpmemlabel{^_9}{21}
-\newpmemlabel{^_10}{21}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.21}{\ignorespaces Points in space are a useful mathematical fiction. Suppose we have a point on a unit interval. Consider how we might tell someone else about where this point is. We could point at it with a pudgy appendage, or the tip of a pencil, or give some finite decimal approximation. But in each case we are only speaking of a vicinity, a neighbourhood, an \emph  {open set in the borel basis of the reals} that contains the point. Identifying a true point on a real line requires an infinite intersection of open balls of decreasing radius; an infinite process of pointing again and again, which nobody has the time to do. In the same way, most language outside of mathematics is only capable of offering successively finer, finite approximations to whatever it is that occurs in the mind or in reality.}}{21}{subsection.1.3.4}\protected@file@percent }
-\newlabel{fig:pointing}{{1.21}{21}{Conceptual motivations}{subsection.1.3.4}{}}
-\newlabel{ex:compnotspider}{{1.4.1}{23}{The copy-compare spiders of $\mathbf {Rel}$ are not always continuous}{theorem.1.4.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.4}Populating space with shapes using sticky spiders}{23}{section.1.4}\protected@file@percent }
-\newlabel{sec:stickyspider}{{1.4}{23}{Populating space with shapes using sticky spiders}{section.1.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.1}When does an object have a spider (or something close to one)?}{23}{subsection.1.4.1}\protected@file@percent }
-\tcolorbox@label{1}{24}
-\newlabel{prop:copydiscrete}{{1.4.3}{24}{}{theorem.1.4.3}{}}
-\tcolorbox@label{2}{25}
-\newlabel{defn:stickyspider}{{1.4.4}{25}{Sticky spiders}{theorem.1.4.4}{}}
-\tcolorbox@label{3}{26}
-\tcolorbox@label{4}{26}
-\newlabel{cons:stickyfromsplit}{{1.4.6}{26}{Sticky spiders from split idempotents}{theorem.1.4.6}{}}
-\tcolorbox@label{5}{27}
-\newlabel{prop:splitmeanssticky}{{1.4.7}{27}{Every idempotent that splits through a discrete topology gives a sticky spider}{theorem.1.4.7}{}}
-\tcolorbox@label{6}{28}
-\tcolorbox@label{7}{29}
-\newlabel{thm:stickygraphical}{{1.4.8}{29}{}{theorem.1.4.8}{}}
-\tcolorbox@label{8}{30}
-\newlabel{prop:counitdelete}{{1.4.9}{30}{comult/copy implies counit/delete}{theorem.1.4.9}{}}
-\tcolorbox@label{9}{31}
-\newlabel{lem:allornothing}{{1.4.10}{31}{All-or-Nothing}{theorem.1.4.10}{}}
-\tcolorbox@label{10}{32}
-\tcolorbox@label{11}{33}
-\newlabel{prop:epointcopy}{{1.4.11}{33}{$e$ of any point is $e$-copiable}{theorem.1.4.11}{}}
-\tcolorbox@label{12}{34}
-\newlabel{prop:copiablebasis}{{1.4.12}{34}{The unit is the union of all $e$-copiables}{theorem.1.4.12}{}}
-\tcolorbox@label{13}{35}
-\newlabel{prop:decompidem}{{1.4.13}{35}{$e$-copiable decomposition of $e$}{theorem.1.4.13}{}}
-\tcolorbox@label{14}{36}
-\newlabel{prop:decompcounit}{{1.4.14}{36}{$e$-copiable decomposition of counit}{theorem.1.4.14}{}}
-\tcolorbox@label{15}{37}
-\newlabel{lem:match}{{1.4.15}{37}{$e$-copiables are orthogonal under multiplication}{theorem.1.4.15}{}}
-\tcolorbox@label{16}{38}
-\tcolorbox@label{17}{39}
-\newlabel{lem:comatch}{{1.4.17}{39}{Co-match}{theorem.1.4.17}{}}
-\tcolorbox@label{18}{39}
-\newlabel{lem:ecopyfixpoint}{{1.4.18}{39}{e-copiables are e-fixpoints}{theorem.1.4.18}{}}
-\tcolorbox@label{19}{40}
-\newlabel{lem:ecopynormal}{{1.4.19}{40}{$e$-copiables are normal}{theorem.1.4.19}{}}
-\tcolorbox@label{20}{40}
-\newlabel{prop:decompmult}{{1.4.20}{40}{$e$-copiable decomposition of multiplication}{theorem.1.4.20}{}}
-\tcolorbox@label{21}{41}
-\newlabel{prop:decompcomult}{{1.4.21}{41}{$e$-copiable decomposition of comultiplication}{theorem.1.4.21}{}}
-\tcolorbox@label{22}{42}
-\tcolorbox@label{23}{43}
-\@writefile{toc}{\contentsline {section}{\numberline {1.5}Topological concepts in flatland via \textbf  {ContRel}}{44}{section.1.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.1}Shapes and places}{44}{subsection.1.5.1}\protected@file@percent }
-\newlabel{sec:shapes}{{1.5.1}{44}{Shapes and places}{subsection.1.5.1}{}}
-\newlabel{ex:chessboard}{{1.5.6}{47}{Where is a piece on a chessboard?}{theorem.1.5.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.2}The unit interval}{49}{subsection.1.5.2}\protected@file@percent }
-\newlabel{sec:interval}{{1.5.2}{49}{The unit interval}{subsection.1.5.2}{}}
-\newlabel{thm:Friedman}{{1.5.7}{49}{Friedman}{theorem.1.5.7}{}}
-\newpmemlabel{^_11}{49}
-\newpmemlabel{^_12}{49}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.22}{\ignorespaces We can express the theorem using diagrammatic equations. First we define a total order $<$ as an open set on $X \times X$ that obeys the usual axiomatic rules:}}{49}{theorem.1.5.7}\protected@file@percent }
-\newpmemlabel{^_13}{49}
-\newpmemlabel{^_14}{50}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.23}{\ignorespaces Trichotomy requires us to appeal to the rig structure, which is nonstandard for process-theoretic equations, but algebraically permissible. Going forward we will also introduce quantifiers into process-theoretic equations, essentially treating process-equations as we would any other symbolic algebraic specification.}}{50}{theorem.1.5.7}\protected@file@percent }
-\newpmemlabel{^_15}{52}
-\newpmemlabel{^_16}{52}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.24}{\ignorespaces  \begin  {defn}[Simple connectivity] \end  {defn} In prose: for any pair of points that are within the open $V$, there exists some continuous function from the unit interval into the space that starts at one of the points and ends at the other.}}{52}{theorem.1.5.9}\protected@file@percent }
-\newlabel{def:simpconn}{{1.24}{52}{The unit interval}{theorem.1.5.10}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.3}Displacing shapes}{52}{subsection.1.5.3}\protected@file@percent }
-\newlabel{sec:displace}{{1.5.3}{52}{Displacing shapes}{subsection.1.5.3}{}}
-\newpmemlabel{^_17}{52}
-\newpmemlabel{^_19}{52}
-\newpmemlabel{^_21}{52}
-\newpmemlabel{^_23}{52}
-\newpmemlabel{^_25}{52}
-\newpmemlabel{^_18}{53}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.25}{\ignorespaces  \begin  {defn}[Addition] \end  {defn} \par More precisely, we only need an additive monoid structure on the unit interval. We do not care about obtaining precise values from our metric, and we will not need to subtract distances from each other. All we need to know is that the lower endpoint stands in for "zero distance" -- as the unit of the monoid -- and that adding positive distances together will give you a larger positive distance deterministically.}}{53}{subsection.1.5.3}\protected@file@percent }
-\newlabel{def:addition}{{1.25}{53}{Displacing shapes}{theorem.1.5.11}{}}
-\newpmemlabel{^_20}{53}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.26}{\ignorespaces  \begin  {defn}[Metric] \end  {defn} A metric on a space is a continuous map $X \rightarrow \mathbf  {R}^+$ to the positive reals that satisfies these axioms.}}{53}{theorem.1.5.11}\protected@file@percent }
-\newlabel{def:metric}{{1.26}{53}{Displacing shapes}{theorem.1.5.12}{}}
-\newpmemlabel{^_22}{53}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.27}{\ignorespaces \begin  {defn}[Open balls] Once we have metrics, we can define the usual topological notion of open balls. Open balls will come in handy later, and a side-effect which we note but do not explore is that open balls form a basis for any metric space, so in the future whenever we construct spaces that come with natural metrics, we can speak of their topology without any further work. \end  {defn} }}{53}{theorem.1.5.12}\protected@file@percent }
-\newlabel{def:openball}{{1.27}{53}{Displacing shapes}{theorem.1.5.13}{}}
-\newpmemlabel{^_24}{54}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.28}{\ignorespaces \begin  {defn}[Topological groups] \end  {defn} It is no trouble to depict collections of invertible transformations of spaces $X \rightarrow X$. A consequence of invertibility and the requirement that the identity transform is a group element forces all transformations in a topological group to be functions.}}{54}{theorem.1.5.13}\protected@file@percent }
-\newlabel{def:topgrp}{{1.28}{54}{Displacing shapes}{theorem.1.5.14}{}}
-\newpmemlabel{^_26}{54}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.29}{\ignorespaces \begin  {defn}[Isometry] \end  {defn} But recall that the collections of invertible transformations we are really interested in are the \emph  {rigid} ones, the ones that move objects in space without deforming them, i.e. the isometries. Iso-metry means same-distance. A distance preserving transformation is one such that applying the metric pointwise before and after the transformation of a shape gives a fixed value. \begin  {color}{red}RHS should be dotted output! \end  {color}\xspace  }}{54}{theorem.1.5.14}\protected@file@percent }
-\newlabel{def:topological groups}{{1.29}{54}{Displacing shapes}{theorem.1.5.15}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.4}Moving shapes}{55}{subsection.1.5.4}\protected@file@percent }
-\newlabel{sec:moving}{{1.5.4}{55}{Moving shapes}{subsection.1.5.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.5}Rigid motion}{59}{subsection.1.5.5}\protected@file@percent }
-\newlabel{sec:rigidmotion}{{1.5.5}{59}{Rigid motion}{subsection.1.5.5}{}}
-\newpmemlabel{^_27}{59}
-\newpmemlabel{^_29}{59}
-\newpmemlabel{^_31}{59}
-\newpmemlabel{^_33}{59}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.6}Modelling linguistic topological concepts}{59}{subsection.1.5.6}\protected@file@percent }
-\newlabel{sec:topconcept}{{1.5.6}{59}{Modelling linguistic topological concepts}{subsection.1.5.6}{}}
-\newpmemlabel{^_28}{60}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.30}{\ignorespaces Now at last we can define sliding shapes. What we mean by two sticky spiders being relatable by sliding shapes is that we have a homotopy that begins at one and ends at the other, such that every point in between is itself a sticky spider related to the first by rigid displacement.}}{60}{subsection.1.5.5}\protected@file@percent }
-\newpmemlabel{^_30}{60}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.31}{\ignorespaces We can depict the \emph  {configuration space} of shapes that are obtainable by displacing the shapes of a given spider by a split idempotent through the n-fold tensor of rigid transformations -- a restriction to the subspace of the largest open set contained in the subset of all valid (with correct chirality) combinations of displacements that yield another spider.}}{60}{subsection.1.5.5}\protected@file@percent }
-\newpmemlabel{^_32}{61}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.32}{\ignorespaces Observe that the data of rigid motion on a sticky spider as we have defined above can be captured as a continuous map from the unit interval to rigid transformations: one for each shape in the spider. This is precisely a continuous path in configuration space.}}{61}{subsection.1.5.5}\protected@file@percent }
-\newpmemlabel{^_34}{62}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.33}{\ignorespaces What are the connected components of configuration space? Evidently, there are pairs of spiders that are both valid displacements, but not mutually reachable by rigid motion. For example, shapes might \emph  {enclose} or \emph  {trap} other shapes, or shapes might be \emph  {interlocked}. Depicted are some pairs of configurations that are mutually unreachable by rigid transformations. Now we have the conceptual toolkit to begin modelling these concepts in the configuration space of a sticky spider.}}{62}{subsection.1.5.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.7}States, actions, manner}{67}{subsection.1.5.7}\protected@file@percent }
-\newlabel{sec:statesactions}{{1.5.7}{67}{States, actions, manner}{subsection.1.5.7}{}}
-\newlabel{cons:morph}{{1.5.17}{72}{Morphing sticky spiders with homotopies}{theorem.1.5.17}{}}
-\newlabel{sec:topconcepts}{{1.5.7}{75}{States, actions, manner}{theorem.1.5.17}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.6}Formal models from figurative language}{76}{section.1.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.1}Temperature and colour: the Planckian Locus}{77}{subsection.1.6.1}\protected@file@percent }
-\newlabel{ex:planck1}{{1.6.1}{77}{The Physicists' Planckian Locus}{theorem.1.6.1}{}}
-\newpmemlabel{^_35}{77}
-\newpmemlabel{^_36}{77}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.34}{\ignorespaces The Planckian Locus in the CIE 1931 chromaticity diagram. Chromaticity refers only to the hue of a colour, without other domains such as saturation.}}{77}{theorem.1.6.1}\protected@file@percent }
-\newpmemlabel{^_37}{78}
-\newpmemlabel{^_39}{78}
-\newpmemlabel{^_38}{78}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.35}{\ignorespaces Consider the unit square (depicted as a strip) as a fiber bundle over the unit interval representing temperature range. There is an injective continuous map from the strip into colourspace that is centered on the Planck Locus.}}{78}{theorem.1.6.2}\protected@file@percent }
-\newpmemlabel{^_40}{78}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.36}{\ignorespaces The left leg is bijective in the image restriction, so any point or displacement in the offset-strip in colourspace can be lifted to a point in the apex strip, which is then projected down along with other points in the vertical fiber to a point in temperaturespace. So we have a decategorified cofunctor!}}{78}{theorem.1.6.2}\protected@file@percent }
-\newpmemlabel{^_41}{79}
-\newpmemlabel{^_43}{79}
-\newpmemlabel{^_42}{79}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.37}{\ignorespaces Starting from the right, the lifting property of the right leg is what lets us map "hotter and colder" temperature talk into the more abstract quantity-talk of "more and less" in the apex strip. Then the left functor sends quantity-talk into the colour domain, which allows "hotter and colder" to be used in the colour domain.}}{79}{theorem.1.6.3}\protected@file@percent }
-\newpmemlabel{^_44}{79}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.38}{\ignorespaces The additional expressive power that the apex strip gives is the concept of vertical offset, which doesn't appear in the real line. So the apex strip allows talk of quantity and offset, and this offset, when translated into the colour domain, allows talk of offset towards and away from, for instance, green.}}{79}{theorem.1.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.2}Time and Money: complex conceptual structure}{80}{subsection.1.6.2}\protected@file@percent }
-\newpmemlabel{^_45}{81}
-\newpmemlabel{^_47}{81}
-\newpmemlabel{^_49}{81}
-\newpmemlabel{^_51}{81}
-\newpmemlabel{^_53}{81}
-\newpmemlabel{^_55}{81}
-\newpmemlabel{^_57}{81}
-\newpmemlabel{^_46}{81}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.39}{\ignorespaces In the \texttt  {TRADE} signature, we define two roles as wires: \texttt  {TRADERS} and \texttt  {TRADEABLES}. There is one static relation \texttt  {HAS} to indicate a trader's ownership of a tradeable, which can be further elaborated with equations to indicate e.g. exclusivity of ownership by interpreting violations of exclusivity as a zero morphism, assumed but elided for brevity. There is one dynamic verb (treated as a homotopy) \texttt  {TRADE}, which at time 0 enforces a precondition that the traders have their respective tradables, and at time 1 (completion of the trade), the traders swap possession of their tradeables. The \texttt  {TRADE} signature contains all nominal instantiations of nouns with respect to roles, which will be illustrated shortly.}}{81}{theorem.1.6.4}\protected@file@percent }
-\newlabel{fig:tradesig}{{1.39}{81}{\texttt {Vincent spends his morning writing}}{theorem.1.6.4}{}}
-\newlabel{sec:metaphor}{{1.6.2}{81}{Time and Money: complex conceptual structure}{theorem.1.6.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.4}Category-theoretic endnotes}{20}{subsection.1.3.4}\protected@file@percent }
+\newlabel{lem:disccont}{{1.3.23}{20}{Any relation $R$ between discrete topologies is continuous}{theorem.1.3.23}{}}
+\newlabel{lem:idadj}{{1.3.26}{20}{$RL = 1_{\textbf {Rel}}$}{theorem.1.3.26}{}}
+\newlabel{lem:coarse}{{1.3.28}{20}{Coarsening is a continuous relation}{theorem.1.3.28}{}}
+\newlabel{prop:reladj}{{1.3.29}{21}{$L \dashv R$}{theorem.1.3.29}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}Populating space with shapes using sticky spiders}{25}{section.1.4}\protected@file@percent }
+\newlabel{sec:stickyspider}{{1.4}{25}{Populating space with shapes using sticky spiders}{section.1.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.1}When does an object have a spider (or something close to one)?}{25}{subsection.1.4.1}\protected@file@percent }
+\newlabel{ex:compnotspider}{{1.4.1}{25}{The copy-compare spiders of $\mathbf {Rel}$ are not always continuous}{theorem.1.4.1}{}}
+\tcolorbox@label{1}{27}
+\newlabel{prop:copydiscrete}{{1.4.3}{27}{}{theorem.1.4.3}{}}
+\tcolorbox@label{2}{28}
+\newlabel{defn:stickyspider}{{1.4.4}{28}{Sticky spiders}{theorem.1.4.4}{}}
+\tcolorbox@label{3}{29}
+\newlabel{cons:stickyfromsplit}{{1.4.6}{29}{Sticky spiders from split idempotents}{theorem.1.4.6}{}}
+\tcolorbox@label{4}{30}
+\newlabel{prop:splitmeanssticky}{{1.4.7}{30}{Every idempotent that splits through a discrete topology gives a sticky spider}{theorem.1.4.7}{}}
+\tcolorbox@label{5}{31}
+\tcolorbox@label{6}{32}
+\newlabel{thm:stickygraphical}{{1.4.8}{32}{}{theorem.1.4.8}{}}
+\tcolorbox@label{7}{33}
+\newlabel{prop:counitdelete}{{1.4.9}{33}{comult/copy implies counit/delete}{theorem.1.4.9}{}}
+\tcolorbox@label{8}{34}
+\newlabel{lem:allornothing}{{1.4.10}{34}{All-or-Nothing}{theorem.1.4.10}{}}
+\tcolorbox@label{9}{35}
+\tcolorbox@label{10}{36}
+\newlabel{prop:epointcopy}{{1.4.11}{36}{$e$ of any point is $e$-copiable}{theorem.1.4.11}{}}
+\tcolorbox@label{11}{37}
+\newlabel{prop:copiablebasis}{{1.4.12}{37}{The unit is the union of all $e$-copiables}{theorem.1.4.12}{}}
+\tcolorbox@label{12}{38}
+\newlabel{prop:decompidem}{{1.4.13}{38}{$e$-copiable decomposition of $e$}{theorem.1.4.13}{}}
+\tcolorbox@label{13}{39}
+\newlabel{prop:decompcounit}{{1.4.14}{39}{$e$-copiable decomposition of counit}{theorem.1.4.14}{}}
+\tcolorbox@label{14}{40}
+\newlabel{lem:match}{{1.4.15}{40}{$e$-copiables are orthogonal under multiplication}{theorem.1.4.15}{}}
+\tcolorbox@label{15}{41}
+\tcolorbox@label{16}{42}
+\newlabel{lem:comatch}{{1.4.17}{42}{Co-match}{theorem.1.4.17}{}}
+\tcolorbox@label{17}{42}
+\newlabel{lem:ecopyfixpoint}{{1.4.18}{42}{e-copiables are e-fixpoints}{theorem.1.4.18}{}}
+\tcolorbox@label{18}{43}
+\newlabel{lem:ecopynormal}{{1.4.19}{43}{$e$-copiables are normal}{theorem.1.4.19}{}}
+\tcolorbox@label{19}{43}
+\newlabel{prop:decompmult}{{1.4.20}{43}{$e$-copiable decomposition of multiplication}{theorem.1.4.20}{}}
+\tcolorbox@label{20}{44}
+\newlabel{prop:decompcomult}{{1.4.21}{44}{$e$-copiable decomposition of comultiplication}{theorem.1.4.21}{}}
+\tcolorbox@label{21}{45}
+\tcolorbox@label{22}{46}
+\@writefile{toc}{\contentsline {section}{\numberline {1.5}Topological concepts in flatland via \textbf  {ContRel}}{49}{section.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.1}Shapes and places}{49}{subsection.1.5.1}\protected@file@percent }
+\newlabel{sec:shapes}{{1.5.1}{49}{Shapes and places}{subsection.1.5.1}{}}
+\newlabel{ex:chessboard}{{1.5.2}{50}{Where is a piece on a chessboard?}{theorem.1.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.2}The unit interval}{52}{subsection.1.5.2}\protected@file@percent }
+\newlabel{sec:interval}{{1.5.2}{52}{The unit interval}{subsection.1.5.2}{}}
+\newlabel{thm:Friedman}{{1.5.3}{52}{Friedman}{theorem.1.5.3}{}}
+\newpmemlabel{^_6}{52}
+\newpmemlabel{^_7}{52}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.21}{\ignorespaces We can express the theorem using diagrammatic equations. First we define a total order $<$ as an open set on $X \times X$ that obeys the usual axiomatic rules:}}{52}{theorem.1.5.3}\protected@file@percent }
+\newpmemlabel{^_8}{52}
+\newpmemlabel{^_9}{53}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.22}{\ignorespaces Trichotomy requires us to appeal to the rig structure, which is nonstandard for process-theoretic equations, but algebraically permissible. Going forward we will also introduce quantifiers into process-theoretic equations, essentially treating process-equations as we would any other symbolic algebraic specification.}}{53}{theorem.1.5.3}\protected@file@percent }
+\newpmemlabel{^_10}{55}
+\newpmemlabel{^_11}{55}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.23}{\ignorespaces  \begin  {defn}[Simple connectivity] \end  {defn} In prose: for any pair of points that are within the open $V$, there exists some continuous function from the unit interval into the space that starts at one of the points and ends at the other.}}{55}{theorem.1.5.5}\protected@file@percent }
+\newlabel{def:simpconn}{{1.23}{55}{The unit interval}{theorem.1.5.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.3}Displacing shapes}{55}{subsection.1.5.3}\protected@file@percent }
+\newlabel{sec:displace}{{1.5.3}{55}{Displacing shapes}{subsection.1.5.3}{}}
+\newpmemlabel{^_12}{55}
+\newpmemlabel{^_14}{55}
+\newpmemlabel{^_16}{55}
+\newpmemlabel{^_18}{55}
+\newpmemlabel{^_20}{55}
+\newpmemlabel{^_13}{56}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.24}{\ignorespaces  \begin  {defn}[Addition] \end  {defn} \par More precisely, we only need an additive monoid structure on the unit interval. We do not care about obtaining precise values from our metric, and we will not need to subtract distances from each other. All we need to know is that the lower endpoint stands in for "zero distance" -- as the unit of the monoid -- and that adding positive distances together will give you a larger positive distance deterministically.}}{56}{subsection.1.5.3}\protected@file@percent }
+\newlabel{def:addition}{{1.24}{56}{Displacing shapes}{theorem.1.5.7}{}}
+\newpmemlabel{^_15}{56}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.25}{\ignorespaces  \begin  {defn}[Metric] \end  {defn} A metric on a space is a continuous map $X \rightarrow \mathbf  {R}^+$ to the positive reals that satisfies these axioms.}}{56}{theorem.1.5.7}\protected@file@percent }
+\newlabel{def:metric}{{1.25}{56}{Displacing shapes}{theorem.1.5.8}{}}
+\newpmemlabel{^_17}{56}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.26}{\ignorespaces \begin  {defn}[Open balls] Once we have metrics, we can define the usual topological notion of open balls. Open balls will come in handy later, and a side-effect which we note but do not explore is that open balls form a basis for any metric space, so in the future whenever we construct spaces that come with natural metrics, we can speak of their topology without any further work. \end  {defn} }}{56}{theorem.1.5.8}\protected@file@percent }
+\newlabel{def:openball}{{1.26}{56}{Displacing shapes}{theorem.1.5.9}{}}
+\newpmemlabel{^_19}{57}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.27}{\ignorespaces \begin  {defn}[Topological groups] \end  {defn} It is no trouble to depict collections of invertible transformations of spaces $X \rightarrow X$. A consequence of invertibility and the requirement that the identity transform is a group element forces all transformations in a topological group to be functions.}}{57}{theorem.1.5.9}\protected@file@percent }
+\newlabel{def:topgrp}{{1.27}{57}{Displacing shapes}{theorem.1.5.10}{}}
+\newpmemlabel{^_21}{57}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.28}{\ignorespaces \begin  {defn}[Isometry] \end  {defn} But recall that the collections of invertible transformations we are really interested in are the \emph  {rigid} ones, the ones that move objects in space without deforming them, i.e. the isometries. Iso-metry means same-distance. A distance preserving transformation is one such that applying the metric pointwise before and after the transformation of a shape gives a fixed value. \begin  {color}{red}RHS should be dotted output! \end  {color}\xspace  }}{57}{theorem.1.5.10}\protected@file@percent }
+\newlabel{def:topological groups}{{1.28}{57}{Displacing shapes}{theorem.1.5.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.4}Moving shapes}{58}{subsection.1.5.4}\protected@file@percent }
+\newlabel{sec:moving}{{1.5.4}{58}{Moving shapes}{subsection.1.5.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.5}Rigid motion}{62}{subsection.1.5.5}\protected@file@percent }
+\newlabel{sec:rigidmotion}{{1.5.5}{62}{Rigid motion}{subsection.1.5.5}{}}
+\newpmemlabel{^_22}{62}
+\newpmemlabel{^_24}{62}
+\newpmemlabel{^_26}{62}
+\newpmemlabel{^_28}{62}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.6}Modelling linguistic topological concepts}{62}{subsection.1.5.6}\protected@file@percent }
+\newlabel{sec:topconcept}{{1.5.6}{62}{Modelling linguistic topological concepts}{subsection.1.5.6}{}}
+\newpmemlabel{^_23}{63}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.29}{\ignorespaces  Now at last we can define sliding shapes. What we mean by two sticky spiders being relatable by sliding shapes is that we have a homotopy that begins at one and ends at the other, such that every point in between is itself a sticky spider related to the first by rigid displacement.}}{63}{subsection.1.5.5}\protected@file@percent }
+\newpmemlabel{^_25}{63}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.30}{\ignorespaces  We can depict the \emph  {configuration space} of shapes that are obtainable by displacing the shapes of a given spider by a split idempotent through the n-fold tensor of rigid transformations -- a restriction to the subspace of the largest open set contained in the subset of all valid (with correct chirality) combinations of displacements that yield another spider. Note that as a subspace, the retract of the idempotent is a function. The section and retract pair is not unique; they may for instance encode a choice of basepoint for each shape relative to which the displacement of that shape occurs.}}{63}{subsection.1.5.5}\protected@file@percent }
+\newlabel{fig:configurationspace}{{1.30}{63}{Rigid motion}{subsection.1.5.5}{}}
+\newpmemlabel{^_27}{64}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.31}{\ignorespaces Observe that the data of rigid motion on a sticky spider as we have defined above can be captured as a continuous map from the unit interval to rigid transformations: one for each shape in the spider. This is precisely a continuous path in configuration space.}}{64}{subsection.1.5.5}\protected@file@percent }
+\newpmemlabel{^_29}{65}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.32}{\ignorespaces What are the connected components of configuration space? Evidently, there are pairs of spiders that are both valid displacements, but not mutually reachable by rigid motion. For example, shapes might \emph  {enclose} or \emph  {trap} other shapes, or shapes might be \emph  {interlocked}. Depicted are some pairs of configurations that are mutually unreachable by rigid transformations. Now we have the conceptual toolkit to begin modelling these concepts in the configuration space of a sticky spider.}}{65}{subsection.1.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.7}States, actions, manner}{70}{subsection.1.5.7}\protected@file@percent }
+\newlabel{sec:statesactions}{{1.5.7}{70}{States, actions, manner}{subsection.1.5.7}{}}
+\newlabel{cons:morph}{{1.5.13}{75}{Morphing sticky spiders with homotopies}{theorem.1.5.13}{}}
+\newlabel{sec:topconcepts}{{1.5.7}{78}{States, actions, manner}{theorem.1.5.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.6}Interpreting text circuits in \textbf  {ContRel}}{79}{section.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.1}Sticky spiders: iconic semantics of nouns}{79}{subsection.1.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.2}Open sets: concepts}{79}{subsection.1.6.2}\protected@file@percent }
+\newpmemlabel{^_30}{79}
+\newpmemlabel{^_31}{79}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.33}{\ignorespaces Points in space are a useful mathematical fiction. Suppose we have a point on a unit interval. Consider how we might tell someone else about where this point is. We could point at it with a pudgy appendage, or the tip of a pencil, or give some finite decimal approximation. But in each case we are only speaking of a vicinity, a neighbourhood, an \emph  {open set in the borel basis of the reals} that contains the point. Identifying a true point on a real line requires an infinite intersection of open balls of decreasing radius; an infinite process of pointing again and again, which nobody has the time to do. In the same way, most language outside of mathematics is only capable of offering successively finer, finite approximations to whatever it is that occurs in the mind or in reality.}}{79}{subsection.1.6.2}\protected@file@percent }
+\newlabel{fig:pointing}{{1.33}{79}{Open sets: concepts}{subsection.1.6.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.3}Configuration spaces: labelled noun wires}{80}{subsection.1.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.4}Copy: stative verbs and adjectives}{80}{subsection.1.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.5}Homotopies: dynamic verbs and weak interchange}{81}{subsection.1.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.6}Coclosure: adverbs and adpositions}{83}{subsection.1.6.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.7}Turing objects: sentential complementation}{83}{subsection.1.6.7}\protected@file@percent }
 \ttl@finishall
-\newpmemlabel{^_48}{82}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.40}{\ignorespaces We build the topological model from two sticky spiders in the Euclidean plane. The \texttt  {TRADER} spider will distinguish two regions of possession, so that \texttt  {HAS} may be interpreted as a region-test. The \texttt  {TRADEABLES} spider will specify four meeples or counters, three for time, and one for thesiswriting; we will use the configuration space of the \texttt  {TRADEABLES} spider to regulate their movement and distribution.}}{82}{theorem.1.6.4}\protected@file@percent }
-\newlabel{fig:topmodel}{{1.40}{82}{\texttt {Vincent spends his morning writing}}{theorem.1.6.4}{}}
-\newpmemlabel{^_50}{82}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.41}{\ignorespaces -10cm}}{82}{theorem.1.6.4}\protected@file@percent }
-\newlabel{fig:fibroles}{{1.41}{82}{\texttt {Vincent spends his morning writing}}{theorem.1.6.4}{}}
-\newpmemlabel{^_52}{83}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.42}{\ignorespaces The section of the fibration over the \texttt  {SPEND} verb is a tabulation of all the ways in which conceptual roles in the \texttt  {TRADING} domain can be assigned. To continue the example, we will assume the first lift in Example \ref  {fig:fibroles} as our interpretation. The identity-on-objects functor part of the cofunctor maps our chosen interpretation into the following diagram in \textbf  {ContRel}. Precise details of the monoidal structure of a process theory acting upon implicit substrates may be found in \begin  {color}{red}CITE \end  {color}\xspace  . Recalling \begin  {color}{red}REF \end  {color}\xspace  , the configuration space of the \texttt  {TRADEABLES} spider is expanded via split idempotent so that all thin wires in the diagram are typed as the Euclidean plane. Recalling Example \begin  {color}{red}REF \end  {color}\xspace  , \texttt  {HAS} is interpreted as the intersection of the position of a counter with the possessive region of the respective trader.}}{83}{theorem.1.6.4}\protected@file@percent }
-\newlabel{fig:interpret}{{1.42}{83}{\texttt {Vincent spends his morning writing}}{theorem.1.6.4}{}}
-\newpmemlabel{^_54}{83}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.43}{\ignorespaces We may verify that the equations governing \texttt  {TRADE} cohere with our topological figures. At time 0, before the trade, we can calculate that the permissible figures have \texttt  {Vincent} in possession of \texttt  {A.M} and \texttt  {writing} in possession of \texttt  {thesis}.}}{83}{theorem.1.6.4}\protected@file@percent }
-\newlabel{fig:time0}{{1.43}{83}{\texttt {Vincent spends his morning writing}}{theorem.1.6.4}{}}
-\newpmemlabel{^_56}{84}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.44}{\ignorespaces At time 1, we may calculate that the permissible figures must be such that \texttt  {Vincent} is in possession of \texttt  {thesis} and \texttt  {writing} is in possession of what was previously my morning.}}{84}{theorem.1.6.4}\protected@file@percent }
-\newlabel{fig:time1}{{1.44}{84}{\texttt {Vincent spends his morning writing}}{theorem.1.6.4}{}}
-\newpmemlabel{^_58}{84}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.45}{\ignorespaces In a more detailed conceptual model of \texttt  {TIME is MONEY}, rather than just \texttt  {TRADE}, we might consider income, the spender's agency, and cost. In Euclidean 3-space, we might model income as a clock-gated mechanism that deposits time-tokens serially into Vincent's possession, along with his agency as a gated chute, and the time cost of writing a thesis as a dispenser that requires a certain number of tokens to release a thesis-token into Vincent's possession. In this sketch model, one obtains short films for \texttt  {He used to waste his mornings but now he spends them writing}, or \texttt  {He once spent an evening writing but made no progress}. One can then ascertain certain consequences truth-theoretically; for instance that there is at least one morning that was not spent on writing, or that there is at least one evening spent on writing but not inside the slot that would help a thesis-release mechanism trigger. In every case, cofunctoriality handles bookkeeping for role-interpretation choices and guarantees systematicity of the topological figure according to the signature at the apex model that models the organising concept.}}{84}{theorem.1.6.4}\protected@file@percent }
-\newlabel{fig:fullermodel}{{1.45}{84}{\texttt {Vincent spends his morning writing}}{theorem.1.6.4}{}}
-\gdef \@abspage@last{84}
+\gdef \@abspage@last{83}

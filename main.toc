@@ -1,7 +1,7 @@
 \contentsline {chapter}{\numberline {0}Synopsis and concluding discussion}{7}{chapter.0}%
 \contentsline {section}{\numberline {0.1}What this thesis is about}{8}{section.0.1}%
 \contentsline {section}{\numberline {0.2}\textbf {Question:} What is the practical value of studying language when Large Language Models exist?}{10}{section.0.2}%
-\contentsline {section}{\numberline {0.3}\textbf {First Reply:} I don't know. Maybe explainability, maybe something else.}{11}{section.0.3}%
+\contentsline {section}{\numberline {0.3}\textbf {First Reply:} I don't know. Maybe interpretability, maybe something else.}{11}{section.0.3}%
 \contentsline {subsection}{\numberline {0.3.1}\textbf {Objection:} You're forgetting the bitter lesson.}{13}{subsection.0.3.1}%
 \contentsline {subsection}{\numberline {0.3.2}\textbf {Objection:} GOFAI? GO-F-yourself.}{14}{subsection.0.3.2}%
 \contentsline {subsection}{\numberline {0.3.3}\textbf {Point of Information:} What is computational irreducibility?}{15}{subsection.0.3.3}%
@@ -9,70 +9,83 @@
 \contentsline {subsection}{\numberline {0.3.5}\textbf {Objection:} Aren't string diagrams just graphs?}{16}{subsection.0.3.5}%
 \contentsline {section}{\numberline {0.4}\textbf {Second Reply:} LLMs don't help us understand language; how might string diagrams help?}{17}{section.0.4}%
 \contentsline {subsection}{\numberline {0.4.1}\textbf {Objection:} Isn't the better theory the one with better predictions?}{17}{subsection.0.4.1}%
-\contentsline {subsection}{\numberline {0.4.2}\textbf {Objection:} What's wrong with $\lambda $-calculus and sequent calculi and graphs?}{19}{subsection.0.4.2}%
-\contentsline {section}{\numberline {0.5}Synopsis of the thesis}{20}{section.0.5}%
-\contentsline {chapter}{\numberline {1}Background}{23}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Process Theories}{24}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}What does it mean to copy and delete?}{27}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}What is an update?}{30}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Pregroup diagrams and correlations}{32}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}Equational Constraints and Frobenius Algebras}{32}{subsection.1.1.4}%
-\contentsline {subsection}{\numberline {1.1.5}Processes, Sets, and Computers}{32}{subsection.1.1.5}%
-\contentsline {section}{\numberline {1.2}Previously, on DisCoCat}{34}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Lambek's Linguistics}{34}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Coecke's Composition}{38}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Categorical quantum mechanics}{39}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Enter computational linguistics}{42}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {1.2.5}I killed DisCoCat, and I would do it again.}{46}{subsection.1.2.5}%
-\contentsline {chapter}{\numberline {2}Text circuits}{57}{chapter.2}%
-\contentsline {section}{\numberline {2.1}An introduction to weak n-categories for formal linguists}{58}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}String-rewrite systems as 1-object-2-categories}{59}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Tree Adjoining Grammars}{61}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Tree adjoining grammars with local constraints}{66}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Braiding, symmetries, and suspension}{66}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}TAGs with links}{71}{subsection.2.1.5}%
-\contentsline {section}{\numberline {2.2}A generative grammar for text circuits}{76}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}A circuit-growing grammar}{76}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Simple sentences}{78}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Complex sentences}{79}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Text structure and noun-coreference}{82}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Text circuit theorem}{84}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}Extensions I: relative and reflexive pronouns}{91}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}Extensions II: grammar equations}{91}{subsection.2.2.7}%
-\contentsline {subsection}{\numberline {2.2.8}Extensions III: higher-order modifiers}{91}{subsection.2.2.8}%
-\contentsline {subsection}{\numberline {2.2.9}Equivalence to internal wirings}{92}{subsection.2.2.9}%
-\contentsline {subsection}{\numberline {2.2.10}Related work}{92}{subsection.2.2.10}%
-\contentsline {section}{\numberline {2.3}Text circuits: details, demos, developments}{93}{section.2.3}%
-\contentsline {chapter}{\numberline {3}A palette for toy models}{95}{chapter.3}%
-\contentsline {section}{\numberline {3.1}The category \textbf {ContRel}}{96}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Symmetric Monoidal structure}{96}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Rig category structure}{98}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Category-theoretic endnotes}{99}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Conceptual motivations}{103}{subsection.3.1.4}%
-\contentsline {section}{\numberline {3.2}Continuous Relations by examples}{105}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Populating space with shapes using sticky spiders}{110}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}When does an object have a spider (or something close to one)?}{110}{subsection.3.3.1}%
-\contentsline {section}{\numberline {3.4}Topological concepts in flatland via \textbf {ContRel}}{134}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Shapes and places}{134}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}The unit interval}{139}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Displacing shapes}{141}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Moving shapes}{142}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}Rigid motion}{146}{subsection.3.4.5}%
-\contentsline {subsection}{\numberline {3.4.6}Modelling linguistic topological concepts}{146}{subsection.3.4.6}%
-\contentsline {subsection}{\numberline {3.4.7}States, actions, manner}{152}{subsection.3.4.7}%
-\contentsline {chapter}{\numberline {4}Sketches of the shape of language}{161}{chapter.4}%
-\contentsline {section}{\numberline {4.1}On entification, general anaphora, computers, and lassos.}{162}{section.4.1}%
-\contentsline {section}{\numberline {4.2}How do we communicate using language?}{175}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Discrete Monoidal Fibrations}{178}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Strictified diagrams for monoidal categories}{179}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Monoidal Cofunctors}{181}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Communicative constraints as a cofunctor from productive to parsing grammar}{182}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Relating circuits and CFGs fibrationally}{191}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Where internal wirings come from}{192}{subsection.4.2.6}%
-\contentsline {subsection}{\numberline {4.2.7}Discrete monoidal fibrations for grammatical functions}{192}{subsection.4.2.7}%
-\contentsline {subsection}{\numberline {4.2.8}Discussion and Limitations}{193}{subsection.4.2.8}%
-\contentsline {section}{\numberline {4.3}Formal models from figurative language}{198}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Temperature and colour: the Planckian Locus}{199}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Time and Money: complex conceptual structure}{201}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Bibliography}{203}{chapter.5}%
+\contentsline {subsection}{\numberline {0.4.2}\textbf {Objection:} What's wrong with $\lambda $-calculus and sequent calculi and graphs and sets?}{19}{subsection.0.4.2}%
+\contentsline {section}{\numberline {0.5}Synopsis of the thesis}{21}{section.0.5}%
+\contentsline {section}{\numberline {0.6}Previously, on DisCoCat}{23}{section.0.6}%
+\contentsline {subsection}{\numberline {0.6.1}Lambek's Linguistics}{23}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {0.6.2}Coecke's Composition}{24}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {0.6.3}Categorical quantum mechanics}{25}{subsection.0.6.3}%
+\contentsline {subsection}{\numberline {0.6.4}Enter computational linguistics}{26}{subsection.0.6.4}%
+\contentsline {subsection}{\numberline {0.6.5}I killed DisCoCat, and I would do it again.}{27}{subsection.0.6.5}%
+\contentsline {chapter}{\numberline {1}Text circuits for syntax}{29}{chapter.1}%
+\contentsline {section}{\numberline {1.1}An introduction to weak n-categories for formal linguists}{30}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}String-rewrite systems as 1-object-2-categories}{31}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Tree Adjoining Grammars}{33}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Tree adjoining grammars with local constraints}{35}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Braiding, symmetries, and suspension}{35}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}TAGs with links}{37}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.6}Full TAGs in weak $n$-categories}{38}{subsection.1.1.6}%
+\contentsline {section}{\numberline {1.2}A generative grammar for text circuits}{39}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}A circuit-growing grammar}{39}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Simple sentences}{41}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Complex sentences}{42}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Text structure and noun-coreference}{43}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Text circuit theorem}{45}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Extensions I: relative and reflexive pronouns}{48}{subsection.1.2.6}%
+\contentsline {subsection}{\numberline {1.2.7}Extensions II: grammar equations}{48}{subsection.1.2.7}%
+\contentsline {subsection}{\numberline {1.2.8}Extensions III: Types and Nesting}{48}{subsection.1.2.8}%
+\contentsline {section}{\numberline {1.3}Text circuits: details, demos, developments}{49}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Avenues I: syncategorematicity as distributivity}{50}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Avenues II: determiners and quantifiers in context}{50}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Avenues III: grammar as geometry, geometry as computation}{50}{subsection.1.3.3}%
+\contentsline {chapter}{\numberline {2}A palette for toy models}{53}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Continuous Relations for iconic semantics}{54}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Continuous Relations by examples}{56}{section.2.2}%
+\contentsline {section}{\numberline {2.3}The category \textbf {ContRel}}{61}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Symmetric Monoidal structure}{61}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Rig category structure}{63}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Category-theoretic endnotes}{64}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Conceptual motivations}{68}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Populating space with shapes using sticky spiders}{70}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}When does an object have a spider (or something close to one)?}{70}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Topological concepts in flatland via \textbf {ContRel}}{73}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Shapes and places}{73}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}The unit interval}{76}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Displacing shapes}{78}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Moving shapes}{79}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Rigid motion}{83}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.5.6}Modelling linguistic topological concepts}{83}{subsection.2.5.6}%
+\contentsline {subsection}{\numberline {2.5.7}States, actions, manner}{89}{subsection.2.5.7}%
+\contentsline {chapter}{\numberline {3}Cofunctors and metaphor}{99}{chapter.3}%
+\contentsline {section}{\numberline {3.1}How do we communicate using language?}{100}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Discrete Monoidal Fibrations}{103}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Strictified diagrams for monoidal categories}{104}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Monoidal Cofunctors}{106}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Communicative constraints as a cofunctor from productive to parsing grammar}{107}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Relating circuits and CFGs fibrationally}{116}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Where internal wirings come from}{117}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.7}Discrete monoidal fibrations for grammatical functions}{117}{subsection.3.1.7}%
+\contentsline {subsection}{\numberline {3.1.8}Discussion and Limitations}{118}{subsection.3.1.8}%
+\contentsline {section}{\numberline {3.2}Formal models from figurative language}{123}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Temperature and colour: the Planckian Locus}{124}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Time and Money: complex conceptual structure}{126}{subsection.3.2.2}%
+\contentsline {section}{\numberline {.1}Process Theories}{128}{section.Alph0.1}%
+\contentsline {subsection}{\numberline {.1.1}What does it mean to copy and delete?}{131}{subsection.Alph0.1.1}%
+\contentsline {subsection}{\numberline {.1.2}What is an update?}{134}{subsection.Alph0.1.2}%
+\contentsline {subsection}{\numberline {.1.3}Pregroup diagrams and correlations}{136}{subsection.Alph0.1.3}%
+\contentsline {subsection}{\numberline {.1.4}Equational Constraints and Frobenius Algebras}{136}{subsection.Alph0.1.4}%
+\contentsline {subsection}{\numberline {.1.5}Processes, Sets, and Computers}{136}{subsection.Alph0.1.5}%
+\contentsline {section}{\numberline {.2}A modern mathematician's companion to Montague's "Universal Grammar"}{138}{section.Alph0.2}%
+\contentsline {subsection}{\numberline {.2.1}What did Montague consider grammar to be?}{138}{subsection.Alph0.2.1}%
+\contentsline {subsection}{\numberline {.2.2}On the historical inevitability of text diagrams}{141}{subsection.Alph0.2.2}%
+\contentsline {section}{\numberline {.3}Neural nets, and (im)possibility results for learning text circuits from data}{142}{section.Alph0.3}%
+\contentsline {subsection}{\numberline {.3.1}Deterministic Neural Nets and Closed Monoidal Categories}{142}{subsection.Alph0.3.1}%
+\contentsline {subsection}{\numberline {.3.2}Approximating Text Circuits with deterministic neural nets}{145}{subsection.Alph0.3.2}%
+\contentsline {subsection}{\numberline {.3.3}Text circuits with unbounded depth and width}{152}{subsection.Alph0.3.3}%
+\contentsline {subsection}{\numberline {.3.4}Text circuits of unbounded width in noncartesian settings}{154}{subsection.Alph0.3.4}%
+\contentsline {subsection}{\numberline {.3.5}A value proposition for quantum machine learning}{155}{subsection.Alph0.3.5}%
+\contentsline {section}{\numberline {.4}Towards learning gates that satisfy First-Order Logic specifications over boundedly finite models}{157}{section.Alph0.4}%
+\contentsline {subsection}{\numberline {.4.1}Discussion}{161}{subsection.Alph0.4.1}%
+\contentsline {section}{\numberline {.5}On entification, general anaphora, computers, and lassos.}{163}{section.Alph0.5}%
+\contentsline {chapter}{\numberline {A}Bibliography}{177}{appendix.A}%
 \contentsfinish 

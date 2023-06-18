@@ -57,7 +57,7 @@ For a direct proof, we draw on the fact that given a basis $\mathfrak{b}$ for a 
 \centering
 \tikzfig{bestiary/everything}
 \caption{The \emph{everything} state is the relation $\{((\star,x) \ | \ x \in X\}$, notated as above.
-\begin{proposition}
+\begin{proposition}\label{prop:everything}
 The everything states are continuous relations.
 \begin{proof}
 The preimage of any subset of $X$ -- in particular the opens -- is the whole of the singleton space, which is open.
@@ -119,7 +119,7 @@ The preimage of any empty relation is the empty set, which is definitionally ope
 \centering
 \scalebox{0.75}{\tikzfig{bestiary/scalarrelations}}
 \caption{There are two scalars: the unit, and the zero scalar. Zero scalars are idempotent, which diagrammatically means that a single zero scalar can copy itself.}
-\end{figure}
+\end{marginfigure}
 
 \begin{marginfigure}
 \centering
@@ -152,8 +152,8 @@ continuous relations form a category $\mathbf{ContRel}$.
 \subsection{Symmetric Monoidal structure}
 
 \begin{proposition}
-$(\mathbf{ContRel},\bullet,X^\tau \otimes Y^\sigma := (X \times Y)^{(\tau \times \sigma)})$ is a symmetric monoidal closed category.
-\begin{proof}
+$(\mathbf{ContRel},\bullet,X^\tau \otimes Y^\sigma := (X \times Y)^{(\tau \times \sigma)})$ is a symmetric monoidal category.
+\end{proposition}
 
 \newthought{Tensor Unit:} The one-point space $\bullet$. Explicitly, $\{\star\}$ with topology $\{\varnothing,\{\star\}\}$.
 
@@ -181,12 +181,6 @@ The braidings inherit continuity from the isomorphisms between $X^\tau \times Y^
 
 \newthought{Coherences:}
 Since we have verified all of the natural isomorphisms are continuous, it suffices to say that the coherences [] are inherited from the symmetric monoidal structure of \textbf{Rel} up to marking objects with topologies.
-\end{proof}
-
-\newthought{Monoidal Closure:}
-Here is the evaluator.
-\[placeholder\]
-\end{proposition}
 
 \subsection{Rig category structure}
 
@@ -209,8 +203,62 @@ The biproduct of topologies $X^\tau$ and $Y^\sigma$ is their direct sum topology
 \end{proposition}
 
 \begin{remark}
-Biproducts yield another symmetric monoidal structure which the $\times$ monoidal product distributes over appropriately to yield a rig category. Throughout the chapter we will use $\cup$, but we could have also "diagrammatised" $\cup$ by treating it as a monoid internal to \textbf{ContRel} viewed as a symmetric monoidal category with respect to the biproduct. There are at leasy two diagrammatic formalisms for rig categories that we could have used, \bR CITE \e and \bR CITE \e. Neither case is perfectly suitable due to the fact that we sometimes took unions over arbitrary indexing sets, which is alright in topology but not depictable as a finite diagram in the $\oplus$-structure. A neat fact that follows is that a topological space is compact precisely when any arbitrarily indexed $\cup$ of tests in the $\times$-structure is \emph{depictable} in the $\oplus$-structure of either diagrammatic calculus for rig categories. \textbf{FdHilb} also has a monoidal product notated $\otimes$ that distributes over the monoidal structure given by biproducts $\oplus$. In contrast, we have used $\times$ -- the cartesian product notation -- for the monoidal product of \textbf{ContRel} since that is closer to what is familiar for sets.
+Biproducts yield another symmetric monoidal structure which the $\times$ monoidal product distributes over appropriately to yield a rig category. Throughout the chapter we will use $\cup$, but we could have also "diagrammatised" $\cup$ by treating it as a monoid internal to \textbf{ContRel} viewed as a symmetric monoidal category with respect to the biproduct. There are at least two diagrammatic formalisms for rig categories that we could have used, \bR CITE \e and \bR CITE \e, but it gets too visually complicated. especially when we sometimes take unions over arbitrary indexing sets, which is alright in topology but not depictable as a finite diagram in the $\oplus$-structure. A neat fact that follows is that a topological space is compact precisely when any arbitrarily indexed $\cup$ of tests in the $\times$-structure is \emph{depictable} in the $\oplus$-structure of either diagrammatic calculus for rig categories. \textbf{FdHilb} also has a monoidal product notated $\otimes$ that distributes over the monoidal structure given by biproducts $\oplus$. In contrast, we have used $\times$ -- the cartesian product notation -- for the monoidal product of \textbf{ContRel} since that is closer to what is familiar for sets.
 \end{remark}
+
+\subsection{Monoidal (co!)closure}
+
+\begin{defn}[Closure type]
+Recall by Proposition \ref{prop:framehom} that continuous relations $X^\tau \rightarrow Y^\sigma$ form a topological space. Denote this space $(X \times Y)^{(\tau \multimap \sigma)}$
+\end{defn}
+
+The permissible continuous relations $X^\tau \rightarrow Y^\sigma$ are tests on $(X \times Y)^{(\tau \multimap \sigma)}$. \textbf{ContRel} is not monoidal closed, because taking a closure type as an input to the evaluator would permit arbitrary subsets of $X \times Y$ as arguments. So what we seek instead is a coevaluation, where the closure type is an output. This is not as straightforward as it is in strongly compact closed \textbf{Rel}, where we may use cups and caps for process-state duality (CJ-isomorphism), because in \textbf{ContRel} we have cups \emph{but no caps}. However, we may exploit the fact that discrete topologies behave like plain sets \foonote{See Lemma \ref{lem:disccont}) and the observation that we may coarsen discrete topologies into target topologies, which is essentially enough to recover monoidal coclosed structure.
+
+\begin{proposition}\label{prop:prodvsclos}
+For any $X^\tau$ and $Y^\sigma$, $\tau \times \sigma \subseteq \tau \multimap \sigma$; the product topology is coarser than the corresponding closure topology.
+\begin{proof}
+Let $\mathfrak{b}_\tau, \mathfrak{b}_\sigma$ be bases for $\tau$ and $\sigma$ respectively, then $\tau \times \sigma$ has basis $\mathfrak{b}_\tau \times \mathfrak{b}_\sigma$. An arbitrarily element $(t \in \tau, s \in \sigma)$ of this product basis can be viewed as a topological relation $t \times s \subseteq X \times Y$. Every open of $\tau \times \sigma$ is a union of such basis elements, and topological relations are closed under arbitrary union, so we have the (evidently injective) correspondence:
+\[ \tau \times \sigma \ni \bigcup\limits_{i \in I}(t_i \times s_i) \mapsto \bigcup\limits_{i \in I}(t_i \times s_i) \in \tau \multimap \sigma \]
+\end{proof}
+\end{proposition}
+
+\begin{example}[$\tau \multimap \sigma \nsubseteq \tau \times \sigma$]
+Recalling Proposition \ref{prop:states}, let $\tau = \{\varnothing,\{\star\}\}$ on the singleton, and $\sigma$ be an arbitrary nondiscrete topology on base space Y. $(\{\star\} \times Y)^{(\tau \times \sigma)}$ is isomorphic to $Y^\sigma$, but $(\{\star\} \times Y)^{(\tau \multimap \sigma)}$ is the isomorphic to the discrete topology $Y^\bullet$. For a more concrete example, consider the Sierpi\'{n}ski space $\mathcal{S}$ again, along with the topological relation $\{(0,0),(1,0),(1,1)\} \subset \mathcal{S} \times \mathcal{S}$; due to the presence of $(0,0)$, this topological relation cannot be formed by a union of basis elements of the product topology, which are:
+\begin{description}
+\centering
+\item[$\{1\} \times \{1\}$ =] $\{(1,1)\}$
+\item[$\{1\} \times \{0,1\}$ =] $\{ (1,0),(1,1) \}$
+\item[$\{0,1\} \times \{1\}$ =] $\{ (1,1),(0,1) \}$
+\item[$\{0,1\} \times \{0,1\}$ =] $\{ (0,0), (0,1), (1,0), (0,1) \}$
+\end{description}
+\end{example}
+
+\begin{defn}[Coarsening]\label{defn:coarsening}
+Where $\tau \supseteq \rho$ are topologies on $X$, the identity-on-elements relation $X^\tau \rightarrow X^\rho$ is continuous; the relational converse of the identity is the identity, which witnesses opens of $\rho$ as opens of $\tau$. but the converse is not unless $\tau = \rho$. We denote these \emph{coarsening} relations as:
+\[\tikzfig{structure/coarsening}\]
+\end{defn}
+
+\begin{defn}[Pseudo-compare]\label{defn:compare}
+For any $X^\tau$, the relation $X^\star \times X^\tau \rightarrow X^\tau$ defined on objects as \[\{ \begin{pmatrix} x \\ x \end{pmatrix}, x \ | \ x \in X\}\] is continuous; the relational converse is the copy map, which sends opens $U$ in $\tau$ to $U \times U \in \tau \times \tau \subseteq X \times X$, which are opens in $X^\star \times X^\tau$. We denote these \emph{pseudo-compare} maps:
+\[\tikzfig{structure/pseudocompare}\]
+\end{defn}
+
+\begin{proposition}\label{defn:perfectclosure}
+Where $\star_X$ and $\star_Y$ are discrete topologies on $X$ and $Y$, $\star_X \times \star_Y = \star_X \multimap \star_Y$.
+\begin{proof}
+Relations between discrete topologies are just arbitrary relations, and relations are monoidal closed with $X \multimap Y \simeq X \times Y$.
+\end{proof}
+\end{proposition}
+
+\begin{proposition}[\textbf{ContRel} is monoidal coclosed]\label{prop:coclosure}
+The coevaluation map is:
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{structure/coeval}}\]
+\begin{proof}
+The string diagram itself demonstrates that the coevaluation is continuous, since we have demonstrated that \textbf{ContRel} is symmetric monoidal, and we know that copy (Prop. \ref{prop:copy}), everything (Prop. \ref{prop:everything}), coarsenings (Defn. \ref{defn:coarsening}) and pseudo-compares (Defn. \ref{defn:compare}) are continuous. What remains to be demonstrated is that the coevaluation behaves like one; i.e. that plugging in a continuous relation expressed as a test into the closure type of the coevaluator recovers that continuous relation. This can be shown diagrammatically by equating the underlying relations on sets in \textbf{Rel}.
+\[\resizebox{\textwidth}{!}{\tikzfig{structure/coeval2}}\]
+The first equation is obtained by a few steps. Forgetting topology, we turn all coarsenings into identities in \textbf{Rel}, and in particular, proposition \ref{defn:perfectclosure} deals with the 2-1 coarsening. The expression inside the closure test is obtained by CJ-isomorphism using strong compact closure in \textbf{Rel}. The pseudo-compares in \textbf{ContRel} becomes an honest compare in \textbf{Rel}. The second equation then follows by frobenius.
+\end{proof}
+\end{proposition}
 
 \newthought{That's all we need for the diagrams.} The remainder of this section are endnotes for category theorists addressing the question of how \textbf{ContRel} relates to \textbf{Rel} and \textbf{Top}, and some conceptual motivations for topological relations. If none of that interests you, ignore the main body: the margins carry on with diagrammatic facts about \textbf{ContRel}.
 
@@ -332,14 +380,3 @@ This condition would be nice to have because it witnesses $K_{\mathcal{P}}$ as p
 \newthought{Where is the topology coming from?}
 
 It is category-theoretically natural to ask whether \textbf{ContRel} is "giving topology to relations" or "powering up topologies with relations", but we have explored those techniques and it doesn't seem to be that. It is possible that the failure of these regular avenues may explain why I had such difficulty finding \textbf{ContRel} in the literature. However, we do have a free-forgetful adjunction between \textbf{ContRel} and \textbf{Rel}, and if we focus on this, it \emph{is} possible to crack the nut of where topology is coming from with enough machinery; here is one such sketch. Observe that the forgetful functor looks like it could be a kind of fibration, where the elements of the fibre over any set $A$ in \textbf{Rel} correspond to all possible topologies on $A$. Moreover, these topologies may be partially ordered by coarseness-fineness to form a frame (though a considering it a preorder will suffice.) The fibre over a relation $R: A \rightarrow B$ is all pairs of topologies $\tau, \sigma$ such that $R$ is continuous between $A^\tau$ and $B^\sigma$. The crucial observation is that if $R$ is continuous between $\tau$ and $\sigma$, then $R$ will be continuous for any finer topology in the domain, $\tau \leq \tau'$, and any coarser topology in the codomain $\sigma' \leq \sigma$; that is, the fibre over $R$ displays a boolean-valued profunctor between preorders. So \textbf{ContRel} can be viewed as the display category induced by a functor $\textbf{Rel} \rightarrow \mathcal{C}$, where $\mathcal{C}$ is a category with preorders for objects and boolean-enriched profunctors as morphisms, and the functor encodes topological data by sending sets in \textbf{Rel} to preorders of all possible topologies, and relations to profunctors. I have deliberately left this as a sketch because it doesn't seem worth it to view something so simple in such a complex way (I accept the charges of hypocrisy having just used weak $n$-categories to present TAGs.)
-
-\subsection{Conceptual motivations}
-
-\begin{figure}[h!]\label{fig:pointing}
-\[\resizebox{\textwidth}{!}{\tikzfig{topology/pointingfinger}}\]
-\caption{Points in space are a useful mathematical fiction. Suppose we have a point on a unit interval. Consider how we might tell someone else about where this point is. We could point at it with a pudgy appendage, or the tip of a pencil, or give some finite decimal approximation. But in each case we are only speaking of a vicinity, a neighbourhood, an \emph{open set in the borel basis of the reals} that contains the point. Identifying a true point on a real line requires an infinite intersection of open balls of decreasing radius; an infinite process of pointing again and again, which nobody has the time to do. In the same way, most language outside of mathematics is only capable of offering successively finer, finite approximations to whatever it is that occurs in the mind or in reality.}
-\end{figure}
-
-Why are continuous relations worth the trouble? Apart from enabling us to paint pictures with words, because the opens of topological spaces crudely model how we talk about concepts, and the points of a topological space crudely model instances of concepts. Figure \ref{fig:pointing} generalises to a sketch argument that insofar as we conceive of concepts in spatial terms, the meanings of words are modellable as shared strategies for spatial deixis; absolute precision is communicatively impossible, and the next best thing mathematically requires topology. This may explain the asymmetry of why tests are open sets, but why are states allowed to be arbitrary subsets? One could argue that states in this model represent what is conceived or perceived. Suppose we have an analog photograph whether in hand or in mind, and we want to remark on a particular shade of red in some uniform patch of the photograph. As in the case of pointing out a point on the real interval, we have successively finer approximations with a vocabulary of concepts: "red", "burgundy", "hex code \#800021"... but never the point in colourspace itself. If someone takes our linguistic description of the colour and tries to reproduce it, they will be off in a manner that we can in principle detect, cognize, and correct: "make it a little darker" or "add a little blue to it". That is to say, there are in principle differences in mind that we cannot distinguish linguistically in a finite manner; we would have to continue the process of "even darker" and "add a bit less blue than last time" forever. All this is just the mathematical formulation of a very common observation: sometimes you cannot do an experience justice with words, and you eventually give up with "I guess you just had to be there". Yet the experience is there and we can perform linguistic operations on it, and the states accommodate this.
-
-\newthought{\textbf{Top} is symmetric monoidal closed with respect to product, why didn't you just work there from the start?} Because \textbf{Top} is cartesian monoidal, which in particular means that there is only one test (the map into the terminal singleton topology), and worse, all states are tensor-separable. The latter fact means that we cannot reason natively in diagrams about correlated states, which are extremely useful representing entangled quantum states [dodo], and for reasoning about spatial relations [talkspace]. I'll briefly explain the gist of the analogy in prose because it is already presented formally in the cited works and elaborated in [bobcomp]. The Fregean notion of compositionality is roughly that to know a composite system is equivalent to knowing all of its parts, and diagrammatically this amounts to tensor-separability, which arises as a consequence of cartesian monoidality. Schr\"{o}dinger suggests an alternative of compositionality via a lesson from entangled states in quantum mechanics: \emph{perfect knowledge of the whole does not entail perfect knowledge of the parts.} Let's say we have information about a composite system if we can restrict the range of possible outcomes; this is the case for the bell-state, where we know that there is an even chance both qubits measure up or both measure down, and we can rule out mismatched measurements. However, discarding one entangled qubit from a bell-state means we only know that the remaining qubit has a 50/50 of measuring up or down, which is the minimal state of information we can have about a qubit. So we have a case where we can know things about the whole, but nothing about its parts. A more familiar example from everyday life is if I ask you to imagine \texttt{a cup on a table in a room}. There are many ways to envision or realise this scenario in your mind's eye, all drawn from a restricted set of permissable positions of the cup and the table in some room. The spatial locations of the cup and table are entangled, in that you can only consider the positions of both together. If you discard either the cup or the table from your memory, there are no restrictions about where the other object could be in the room; that is, the meaning of the utterance is not localised in any of the parts, it resides in the entangled whole.

@@ -1,34 +1,42 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (4) at (0.5, 1) {};
-		\node [style=none] (6) at (0.5, 1) {};
-		\node [style=none] (7) at (4, 1) {};
-		\node [style=none] (8) at (-4, 0) {};
-		\node [style=none] (9) at (-4, -2) {};
-		\node [style=none] (15) at (-4, 2) {};
-		\node [style=none] (16) at (-8, 0) {};
-		\node [style=none] (17) at (-6.5, 0) {};
+		\node [style=none] (4) at (0.5, 2) {};
+		\node [style=none] (6) at (0.5, 2) {};
+		\node [style=none] (7) at (5.5, 2) {};
+		\node [style=none] (8) at (-2, 0) {};
+		\node [style=none] (9) at (-2, -2) {};
+		\node [style=none] (15) at (-2, 3.5) {};
+		\node [style=none] (16) at (-9, 1) {};
 		\node [style=none] (18) at (0.5, -1) {};
-		\node [style=none] (19) at (4.5, -1) {};
-		\node [style=dotb] (21) at (0.5, 1) {};
-		\node [style=none] (22) at (-6.5, 2.75) {};
-		\node [style=none] (23) at (3, 2.75) {};
+		\node [style=none] (19) at (5.5, -1) {};
+		\node [style=none] (22) at (-7, 4.25) {};
+		\node [style=none] (23) at (3, 4.25) {};
 		\node [style=none] (24) at (3, -2.75) {};
-		\node [style=none] (25) at (-6.5, -2.75) {};
-		\node [style=none] (26) at (-8.75, 0) {$X^\tau$};
-		\node [style=none] (27) at (-5.75, -1) {$Y^\star$};
-		\node [style=dotb] (29) at (-4, -2) {};
-		\node [style=none] (31) at (-3.25, -1.5) {$Y^\sigma$};
-		\node [style=none] (32) at (0.5, 0.25) {$(X \times Y)^{(\tau \rightarrow \sigma)}$};
-		\node [style=none] (33) at (5.25, -1) {$Y^\sigma$};
-		\node [style=none] (34) at (6.25, 1) {$(X \times Y)^{(\tau \rightarrow \sigma)}$};
+		\node [style=none] (25) at (-7, -2.75) {};
+		\node [style=none] (26) at (-9.5, 1) {$X^\tau$};
+		\node [style=none] (27) at (-5, -1) {$Y^\star$};
+		\node [style=none] (33) at (6, -1) {$Y^\sigma$};
+		\node [style=none] (34) at (5.5, 2.5) {$(X \times Y)^{(\tau \rightarrow \sigma)}$};
+		\node [style=dot] (35) at (-2, -2) {};
+		\node [style=dot] (36) at (0.5, 2) {};
+		\node [style=smalldotb] (37) at (-3, -1) {};
+		\node [style=smalldotb] (38) at (-4, -1) {};
+		\node [style=none] (39) at (-0.25, 3.5) {$X^\star$};
+		\node [style=none] (40) at (-0.25, 0.5) {$Y^\star$};
+		\node [style=smalldotb] (41) at (-4, 2.5) {};
+		\node [style=smalldotb] (42) at (-5, 2.5) {};
+		\node [style=none] (43) at (-6, 2.5) {$X^\star$};
+		\node [style=none] (44) at (-3, 3.5) {};
+		\node [style=none] (45) at (-3, 1) {};
+		\node [style=smalldotb] (46) at (-2, 1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K, bend right=90, looseness=1.75] (8.center) to (9.center);
 		\draw [style=K, in=-180, out=0, looseness=1.25] (8.center) to (6.center);
-		\draw [style=K, in=0, out=180, looseness=1.25] (4.center) to (15.center);
-		\draw [style=K, in=-180, out=0] (17.center) to (15.center);
-		\draw [style=K] (16.center) to (17.center);
+		\draw [style=K] (4.center)
+			 to [in=0, out=180, looseness=1.25] (15.center)
+			 to (44.center)
+			 to [bend right=45] (41);
 		\draw [style=K, in=180, out=0] (9.center) to (18.center);
 		\draw [style=K, in=-180, out=0] (18.center) to (19.center);
 		\draw [style=KH] (24.center)
@@ -36,6 +44,10 @@
 			 to (22.center)
 			 to (23.center)
 			 to cycle;
-		\draw [style=K] (21) to (7.center);
+		\draw [style=K] (6.center) to (7.center);
+		\draw [style=K] (38) to (37);
+		\draw [style=K] (41) to (42);
+		\draw [style=K] (16.center) to (46);
+		\draw [style={Kvp(thick)}, in=90, out=-90] (41) to (45.center);
 	\end{pgfonlayer}
 \end{tikzpicture}
