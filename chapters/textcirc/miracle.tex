@@ -85,7 +85,7 @@ We assume Preube and Fondo speak the same language, so both know how words in th
 \end{figure}
 \end{example}
 
-\subsection{Discrete Monoidal Fibrations}
+\section{Discrete Monoidal Fibrations}
 
 To capture the kinds of diagrammatic correspondences we have just sketched, we will develop monoidal cofunctors diagrammatically. The first step is introducing the concept of a discrete monoidal fibration\footnote{Expressing the coherence conditions of monoidal functors using equations involving functor boxes as below is not new \bR CITE \e. The idea of a functor being simultaneously monoidal and a fibration is not new \bR CITE \e. What is new is minor: the express requirement that the lifts of the fibration satisfy interchange, which is in general not guaranteed by just having a functor be monoidal and a (even discrete) fibration [fosco].}
 : a mathematical bookkeeping tool that relates kinds of choices speakers and listeners make when generating and parsing text respectively. This in turn will require introducing \emph{monoidal functor boxes}.
@@ -145,14 +145,14 @@ for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in
 
 \begin{figure}
 \[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+interchange}}\]
-\caption{\begin{defn}[Monoidal discrete opfibration]
+\caption{\begin{defn}[Monoidal discrete opfibration]\label{defn:mondiscopf}
 We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opfibration} when it is a (strict, symmetric) monoidal functor, a discrete opfibration, and the depicted equations relating lifts to interchange hold. The diagrammatic motivation for the additional coherence equations is that -- if we view the lifts of opfibrations as sliding morphisms into functor boxes -- we do not want the order in which sliding occurs to affect the final result. In this way, lifts behave as 'graphical primitives' in the same manner as interchange isotopies and symmetry twists.
 \end{defn}}
 \end{figure}
 
 \begin{figure}[h!]\label{fig:plan1}
 \[\resizebox{0.75\textwidth}{!}{\tikzfig{tree2gate/workedexample/bigex012}}\]
-\caption{We aim to be able to use discrete monoidal functor-boxes like so. In the leftmost diagram, we would like to graphically introduce pregroup states. In the first equation (isomorphism), we would like to use the monoidal condition of the functor to horizontally merge functor boxes. In the second equation, we would like to use the discrete fibration condition of the functor to expand the box downwards, converting a string diagram obtained from a context-free grammar into a pregroup diagram. Observe that the adverb \texttt{quickly} has its label vertically flipped, alongside the adposition \texttt{to} and the sentential-complement verb \texttt{sees}. This is by design for all grammatical categories where pregroup typings are contextually dependent, as will be illustrated in Figure \ref{fig:plan2}.}
+\caption{We aim to be able to use discrete monoidal functor-boxes like so. In the leftmost diagram, we would like to graphically introduce pregroup states at the top of a modified context-free grammar via a functor box. In the first equation (isomorphism), we would like to use the monoidal condition of the functor to horizontally merge functor boxes. In the second equation, we would like to use the discrete fibration condition of the functor to expand the box downwards, converting a string diagram obtained from a context-free grammar into a pregroup diagram. Observe that the adverb \texttt{quickly} has its label vertically flipped, alongside the adposition \texttt{to} and the sentential-complement verb \texttt{sees}. This is by design for all grammatical categories where pregroup typings are contextually dependent, as will be illustrated in Figure \ref{fig:plan2}.}
 \end{figure}
 
 \begin{figure}[h!]\label{fig:plan2}
@@ -168,7 +168,7 @@ We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opf
 
 \clearpage
 
-\subsection{Strictified diagrams for monoidal categories}
+\section{Strictified diagrams for monoidal categories}
 
 The crux of the issue sketched in Figure \ref{fig:plan3} is that while pregroup \emph{proofs} -- viewed as sequent trees -- syntactically distinguish the roots of subtrees, interpretation as pregroup \emph{diagrams} in a monoidal category forgets the subtree structure of the specific proof the diagram arises from. But it is precisely this forgotten structure that contains the algebraic data we require to keep track of (co)domain data diagrammatically. So a solution would be to force the diagrams in the blue domain recording pregroup data to hold onto this proof structure. For this purpose we use strictified diagrams for monoidal categories, defined in the margins.\\
 
@@ -210,7 +210,7 @@ The crux of the issue sketched in Figure \ref{fig:plan3} is that while pregroup 
 }
 
 \marginnote{
-\begin{proposition}[$\bar{\mathcal{M}}$ and $\mathcal{M}$ are monoidally equivalent]
+\begin{proposition}[$\bar{\mathcal{M}}$ and $\mathcal{M}$ are monoidally equivalent]\label{prop:strictequiv}
 
 \begin{proof}
 \bR CITE \e
@@ -221,19 +221,18 @@ The crux of the issue sketched in Figure \ref{fig:plan3} is that while pregroup 
 We are seeking some way to algebraically group or bracket together pregroup types that arise from a single word, in a distinguished way from concatenation-as-tensor. In this way we can preserve the structure of pregroup-sequent proofs: grouping indicates a node in the proof-tree, while tensor indicates parallel composition of proof trees. With strictified diagrams, we can model bracketing with biased tensor structure, e.g. treating for instance the left-nested tensoring $(\cdots((A \otimes B) \otimes C) \cdots \otimes \cdots Z)$ as a bracketed expression $[A \otimes B \cdots \otimes Z]$.
 
 \begin{construction}[Pregroups with bracketing]\label{cons:bracketing}
-Where $\mathcal{P}$ is a monoidal category generated by pregroup states and (directed) cups, we define pregroups-with-bracketing as subcategory of the \emph{free} strictification $\overline{\mathcal{P}}$, which consists of all the generators of the strictification $\overline{\mathcal{P}}$ as given by Definition \ref{defn:strict}, but none of the additional equations. The subcategory is constructed from the following generators:
-\begin{itemize}
+Where $\mathbf{PGD}$ is a rigid monoidal category generated by pregroup states and (directed) cups, we define pregroups-with-bracketing as subcategory of the \emph{free strictification without relations of \textbf{PGD}}, which we denote $\overline{\mathbf{PGD}}'$, which consists of all the generators of the strictification $\overline{\mathbf{PGD}}$ as given by Definition \ref{defn:strict}, but none of the additional equations. The subcategory is constructed from the following generators:
+\begin{enumerate}
 \item For each pregroup state $\texttt{w}: I \rightarrow \bigotimes\limits_{i} X_i$, a strictified state generator $\texttt{w}: I \rightarrow (\cdots((X_1 \otimes X_2) \otimes \cdots X_i) \cdots )$ with left-nested syntactic tensors. To illustrate, a state with 5 wires would correspond to a generator as follows:
 \[\tikzfig{strictify/strictstate}\]
 \item Let $[A \cdot B \cdots Z]$ denote the left-nested tensoring $((A \otimes B) \cdots \otimes Z)$, and let $\mathbf{X}$ denote $(\bigotimes\limits_i X_i)$. For each directed cap $\mathbf{X} \otimes \mathbf{X}^{-1} \rightarrow I$ (and symmetrically for caps of the other direction and cups), and for each pair of bracketed types $[\mathbf{A} \cdot \mathbf{X}]$ and $[\mathbf{X}^{-1} \cdot \mathbf{B}]$, we ask for a generator that fully detensors, applies the directed cup, and then retensors. Diagrammatically, this amounts to asking for generators that look like the following, that mimick a single proof step.
 \[\tikzfig{strictify/stricteval}\]
-\end{itemize}
+\end{enumerate}
 \end{construction}
 
 Construction \ref{cons:bracketing} solves the (co)domain assignment problem by organising the data as a monoidal cofunctor.
 
-\clearpage
-\subsection{Monoidal Cofunctors}
+\section{Monoidal cofunctor boxes}
 
 \marginnote{
 These definitions and conventions follow \bR CITE \e. Given a (small) category $\mathcal{C}$ we notate the objects $\mathcal{C}_0$ and the morphisms $\mathcal{C}_1$, hence a functor $F: \mathcal{C} \rightarrow \mathcal{D}$ consists of an object assignment $F_0: \mathcal{C}_0 \rightarrow \mathcal{D}_0$ and a morphism assignment $F_1: \mathcal{C}_1 \rightarrow \mathcal{D}_1$.
@@ -242,12 +241,12 @@ These definitions and conventions follow \bR CITE \e. Given a (small) category $
 \marginnote{
 \begin{defn}[Cofunctors]
 From \bR CITE Defn 2.2 \e.  A \emph{cofunctor} $(f,\varphi): \mathcal{C} \nrightarrow \mathcal{D}$ consists of a function $f: \mathcal{C}_0 \rightarrow \mathcal{D}_0$ which I'll call \emph{lowering}, together with a \emph{lifting operation} $\varphi$, a function that maps pairs of objects of $\mathcal{C}$ and certain morphisms in $\mathcal{D}$ to morphisms of $\mathcal{C}$:
-\[(c \in \mathcal{C}_0, f(c) \overset{u}{\longrightarrow} b \in \mathcal{D}_1) \ \mapsto \ a \overset{\varphi(c,u)}{\longrightarrow} \mathtext{cod}(\varphi(c,u))\]
+\[(c \in \mathcal{C}_0, f(c) \overset{u}{\longrightarrow} b \in \mathcal{D}_1) \ \mapsto \ a \overset{\varphi(c,u)}{\longrightarrow} \text{cod}(\varphi(c,u))\]
 The following conditions are required:
 \begin{enumerate}
-\item Lowering the tip of a lifted arrow gets you back where you started.\[f(\mathtext{cod}(\varphi(c,u))) = b\]
+\item Lowering the tip of a lifted arrow gets you back where you started.\[f(\text{cod}(\varphi(c,u))) = b\]
 \item The lifts of identities are identities.\[\varphi(c,1_{f(c)}) = 1_c\]
-\item The lift of composites is the composite of lifts-with-respect-to the tips of lifted arrows.\[\varphi(c, v \circ u) = \varphi(\mathtext{cod}(\mathtext{cod}(\varphi(c,u))),v) \circ \varphi(c,u)\]
+\item The lift of composites is the composite of lifts-with-respect-to the tips of lifted arrows.\[\varphi(c, v \circ u) = \varphi(\text{cod}(\text{cod}(\varphi(c,u))),v) \circ \varphi(c,u)\]
 \end{enumerate}
 \end{defn}
 }
@@ -259,13 +258,13 @@ Conditions 2 and 3 of the definition of cofunctor are reminiscent of functors. I
 }
 
 \marginnote{
-\begin{defn}[Bijective-on-objects functor]
+\begin{defn}[Bijective-on-objects functor]\label{defn:bijonobj}
 From \bR CITE, Defn 2.8 \e. A functor $F: \mathcal{C} \rightarrow \mathcal{D}$ is \emph{bijective-on-objects} if for all $d \in \mathcal{D}$, there exists a $c \in \mathcal{C}$ such that $Fc = d$.
 \end{defn}
 }
 
 \marginnote{
-\begin{proposition}[Cofunctors as spans of functors]
+\begin{proposition}[Cofunctors as spans of functors]\label{prop:cofunctorspan}
 From \bR CITE, Prop 2.10 \e, all cofunctors $(f,\varphi):\mathcal{C} \nrightarrow \mathcal{D}$ correspond to spans of functors where the left leg $L$ is bijective on objects and the right leg $R$ is a discrete opfibration:
 % https://q.uiver.app/?q=WzAsMyxbMiwwLCJcXG1hdGhjYWx7WH0iXSxbMCwyLCJcXG1hdGhjYWx7Q30iXSxbNCwyLCJcXG1hdGhjYWx7RH0iXSxbMCwxLCJGIiwyLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJib3R0b20ifX19XSxbMCwyLCJHIiwwLHsic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoiZXBpIn19fV1d
 \[\begin{tikzcd}[ampersand replacement=\&]
@@ -287,12 +286,17 @@ there exists a cofunctor $(f,\varphi):\mathcal{C} \nrightarrow \mathcal{D}$ and 
 \end{proposition}
 }
 
-Pregroups by themselves are thin rigid autonomous categories, meaning there is at most one morphism between any pair of objects and that there are directed cups and caps in addition to plain monoidal structure. Thinness raises big issues for compositional semantics. Firstly, contra the aims of DisCoCat, all grammatically correct sentences correspond to states on the sentence type, which must all be equal by thinness, hence \emph{no functor} from the pregroup grammar to any other category can distinguish different sentences. One workaround to save claims of functoriality is to construct a free rigid autonomous category from a collection of word-states as generators, i.e. to start from \emph{pregroup diagrams for a pregroup grammar} rather than just pregroups themselves, and these pregroup diagrams are the usual domain of a semantic interpretation functor into $\textbf{FinVect}^\otimes$ or other strongly compact closed categories like variants of $\textbf{Rel}$. All we're observing here is that for a given pregroup grammar, there is a cofunctor from pregroup diagrams of that grammar to the pregroup grammar as a thin rigid autonomous category, presentable as a span of monoidal functors with the free strictification as the apex.
+\begin{defn}[Monoidal cofunctor]
+A monoidal cofunctor, following Proposition \ref{prop:cofunctorspan}, is a span of functors such that the left leg is monoidal and bijective-on-objects, and the right is a monoidal discrete opfibration by Definition \ref{defn:mondiscopf}.
+\end{defn}
 
-\begin{proposition}[Construction \ref{cons:bracketing} yields a discrete monoidal fibration]
+\begin{construction}[Monoidal cofunctor box]
+A monoidal cofunctor box first uses the inside-out convention for functor boxes for the right leg, and then the outside-in convention for the left leg.
+\end{construction}
 
-\end{proposition}
+\begin{example}[Solving the wire assignment problem]
 
+\end{example}
 
 \newpage
 \subsection{Communicative constraints as a cofunctor from productive to parsing grammar}
