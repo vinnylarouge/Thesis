@@ -1,0 +1,155 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-1.25, 2.75) {};
+		\node [style=none] (1) at (-1.75, 2.25) {};
+		\node [style=none] (2) at (-0.75, 2.25) {};
+		\node [style=none] (3) at (-1.25, 2.5) {\footnotesize{\texttt{A}}};
+		\node [style=none] (4) at (4, -0.5) {};
+		\node [style=none] (5) at (3.5, -1) {};
+		\node [style=none] (6) at (4.5, -1) {};
+		\node [style=none] (7) at (4, -0.75) {\footnotesize{\texttt{B}}};
+		\node [style=none] (8) at (2, 3) {};
+		\node [style=none] (9) at (1.25, 2.25) {};
+		\node [style=none] (10) at (2.75, 2.25) {};
+		\node [style=none] (11) at (2, 2.5) {\footnotesize{\texttt{l}}};
+		\node [style=none] (12) at (-1.25, 2.25) {};
+		\node [style=none] (13) at (2, 2.25) {};
+		\node [style=none] (14) at (4, -1) {};
+		\node [style=none] (15) at (-1.25, 0.25) {};
+		\node [style=none] (16) at (2, 1) {};
+		\node [style=none] (17) at (4, -2.25) {};
+		\node [style=none] (18) at (1.75, 1) {};
+		\node [style=none] (19) at (2.25, 1) {};
+		\node [style=none] (20) at (1.5, 0.75) {};
+		\node [style=none] (21) at (2.5, 0.75) {};
+		\node [style=none] (22) at (1.75, 0.75) {};
+		\node [style=none] (23) at (2.25, 0.75) {};
+		\node [style=none] (24) at (1.5, 0.5) {};
+		\node [style=none] (25) at (1.25, 0.5) {};
+		\node [style=none] (26) at (1.75, 0.5) {};
+		\node [style=none] (27) at (1, 0.25) {};
+		\node [style=none] (28) at (2, 0.25) {};
+		\node [style=none] (29) at (1.25, 0.25) {};
+		\node [style=none] (30) at (1.75, 0.25) {};
+		\node [style=none] (31) at (2.25, 0.25) {};
+		\node [style=none] (32) at (1.75, 0.25) {};
+		\node [style=none] (33) at (1.25, 0.25) {};
+		\node [style=none] (34) at (0.5, -1) {};
+		\node [style=none] (35) at (0.25, -1) {};
+		\node [style=none] (36) at (0.75, -1) {};
+		\node [style=none] (37) at (0, -0.75) {};
+		\node [style=none] (38) at (1, -0.75) {};
+		\node [style=none] (39) at (0.25, -0.75) {};
+		\node [style=none] (40) at (0.75, -0.75) {};
+		\node [style=none] (41) at (0.5, -2) {};
+		\node [style=none] (43) at (0.25, -2) {};
+		\node [style=none] (44) at (0.75, -2) {};
+		\node [style=none] (45) at (0, -2.25) {};
+		\node [style=none] (46) at (1, -2.25) {};
+		\node [style=none] (47) at (0.25, -2.25) {};
+		\node [style=none] (48) at (0.75, -2.25) {};
+		\node [style=none] (49) at (2, -4) {};
+		\node [style=none] (50) at (2, -4.75) {};
+		\node [style=none] (51) at (-1.75, 1.25) {};
+		\node [style=none] (52) at (2.75, 1.25) {};
+		\node [style=none] (53) at (2.75, -1.25) {};
+		\node [style=none] (54) at (-1.75, -1.25) {};
+		\node [style=none] (55) at (-2, 3) {};
+		\node [style=none] (56) at (-2, 2) {};
+		\node [style=none] (57) at (-0.5, 2) {};
+		\node [style=none] (58) at (-0.5, 3) {};
+		\node [style=none] (59) at (1, 3.25) {};
+		\node [style=none] (60) at (1, 2) {};
+		\node [style=none] (61) at (3, 2) {};
+		\node [style=none] (62) at (3, 3.25) {};
+		\node [style=none] (63) at (3.25, -1.25) {};
+		\node [style=none] (64) at (3.25, -0.25) {};
+		\node [style=none] (65) at (4.75, -0.25) {};
+		\node [style=none] (66) at (4.75, -1.25) {};
+		\node [style=none] (67) at (-0.25, -1.75) {};
+		\node [style=none] (68) at (4.25, -1.75) {};
+		\node [style=none] (69) at (-0.25, -4) {};
+		\node [style=none] (70) at (4.25, -4) {};
+		\node [style=none] (71) at (-7, -0.75) {$
+\AxiomC{$\texttt{Alice} : \textcolor{blue}{n}$}
+\AxiomC{$\texttt{likes} : {}^{-}\textcolor{blue}{n} \cdot \textcolor{magenta}{s} \cdot \textcolor{blue}{n}^{-}$}
+\BinaryInfC{$\texttt{Alice\textvisiblespace likes} : \textcolor{magenta}{s} \cdot \textcolor{blue}{n}^{-}$}
+\AxiomC{$\texttt{Bob} : \textcolor{blue}{n}$}
+\BinaryInfC{$\texttt{Alice\textvisiblespace likes\textvisiblespace Bob} : \textcolor{magenta}{s}$}
+\DisplayProof$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (0.center)
+			 to (1.center)
+			 to (2.center)
+			 to cycle;
+		\draw (4.center)
+			 to (5.center)
+			 to (6.center)
+			 to cycle;
+		\draw (8.center)
+			 to (9.center)
+			 to (10.center)
+			 to cycle;
+		\draw (13.center) to (16.center);
+		\draw (19.center)
+			 to (21.center)
+			 to (20.center)
+			 to (18.center)
+			 to cycle;
+		\draw (26.center)
+			 to (28.center)
+			 to (27.center)
+			 to (25.center)
+			 to cycle;
+		\draw (22.center) to (24.center);
+		\draw [style=blue] (23.center) to (31.center);
+		\draw [style=M] (30.center) to (32.center);
+		\draw [style=blue] (29.center)
+			 to (33.center)
+			 to [bend left=90, looseness=0.75] (15.center)
+			 to (12.center);
+		\draw [style=blue] (48.center)
+			 to [bend right=90, looseness=0.75] (17.center)
+			 to (14.center);
+		\draw (36.center)
+			 to (38.center)
+			 to (37.center)
+			 to (35.center)
+			 to cycle;
+		\draw [style=M, in=90, out=-90, looseness=0.50] (32.center) to (39.center);
+		\draw [style=blue, in=-90, out=90, looseness=0.75] (40.center) to (31.center);
+		\draw (34.center) to (41.center);
+		\draw (44.center) to (46.center);
+		\draw (46.center) to (45.center);
+		\draw (45.center) to (43.center);
+		\draw (43.center) to (44.center);
+		\draw [style=M] (47.center)
+			 to [in=90, out=-90] (49.center)
+			 to (50.center);
+		\draw [style=H] (53.center)
+			 to (54.center)
+			 to (51.center)
+			 to (52.center)
+			 to cycle;
+		\draw [style=H] (56.center)
+			 to (55.center)
+			 to (58.center)
+			 to (57.center)
+			 to cycle;
+		\draw [style=H] (60.center)
+			 to (59.center)
+			 to (62.center)
+			 to (61.center)
+			 to cycle;
+		\draw [style=H] (64.center)
+			 to (65.center)
+			 to (66.center)
+			 to (63.center)
+			 to cycle;
+		\draw [style=H] (67.center) to (68.center);
+		\draw [style=H] (68.center) to (70.center);
+		\draw [style=H] (70.center) to (69.center);
+		\draw [style=H] (69.center) to (67.center);
+	\end{pgfonlayer}
+\end{tikzpicture}
