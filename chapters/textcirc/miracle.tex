@@ -246,17 +246,24 @@ The $\texttt{w}^*$ and $\texttt{[w]}$ generate a freely strictified rigid autono
 \end{enumerate}
 \end{construction}
 
-\begin{example}[Pregroups with bracketing recover proof trees]
+\begin{example}[Pregroups with bracketing recover proof trees]\label{ex:prooftree}
 The essence of the construction is to maintain a correspondence with proof-tree structure: a left-bracketed collection of types corresponds to a pregroup typing that is stuck together as the outcome of a sequent rule and must thereafter travel together. Starting from bracketed word states $\texttt{[w]}$, point 2 of the construction maintains an invariant correspondence that bracketed collections of types are the roots of proof steps.
 \[\tikzfig{strictify/strictproofex}\]
 \end{example}
 
 \begin{myboxR}
-\begin{construction}[Discrete monoidal opfibration from pregroups with bracketing into dependent CFGs]\label{cons:pg2cfg} The fibre over a noun state in the dCFG is the corresponding noun-state in a pregroup with bracketing, which we aim to construct. The fibre over a verb state in the dCFG is either an intransitive or transitive word-state, depending on the word \texttt{w}.
+\begin{construction}[Discrete monoidal opfibration from pregroups with bracketing into dependent CFGs]\label{cons:pg2cfg} We aim to elucidate the pregroup with bracketing in sufficient detail to describe the functor into dCFGs; in particular, we need to know what the generators of the pregroup are. The fibre over a noun state in the dCFG is the corresponding noun-state in the bracketed pregroup. The fibre over a verb state in the dCFG is either an intransitive or transitive word-state, depending on the word \texttt{w}.
 \[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/workedexample/functorsig}}\]
-We depict the case of adverbs explicitly. Here are two lifts of the adverb label in the fibre of the opfibration corresponding to the intransitive and transitive case, and the corresponding lifts for the introduction rule for adverbs. Introduction rules in the dCFG correspond precisely to proof steps in pregroups with bracketing.
+We depict the case of adverbs explicitly. Here are two lifts of the adverb label in the fibre of the opfibration corresponding to the intransitive and transitive case, and the corresponding lifts for the introduction rule for adverbs.
 \[\resizebox{0.7\textwidth}{!}{\tikzfig{tree2gate/workedexample/functorsig2}}\]
 \end{construction}
+\end{myboxR}
+
+\begin{myboxR}
+The correspondence of introduction rules in the dCFG to proof steps in the sequent formulation of pregroup proofs (c.f. Example \ref{ex:prooftree}) is obtained obliquely, because labels for dependent types are facing the wrong way; hence the cups for the lifts of labels. Consider the \texttt{IV} lift of the introduction of \texttt{ADV} label. We obtain the following series of diagrams. The second equation is a supplied choice of lift on the \texttt{V} wire, so that the third monoidality equation allows the top and bottom boxes to typematch.
+\[\resizebox{0.7\textwidth}{!}{\tikzfig{tree2gate/workedexample/functorsig3}}\]
+When the types are matched, the boxes may be sequentially (vertically) merged. Now within the box, we may apply the equations available to us in the strictified setting to eliminate the (de)tensors. Observe that resolving the snakes causes the second diagram to \emph{behave as though} we defined lifts for "right-side-up" labels and introduction rules; we could not have done so directly, or else the opfibration would have no diagrammatic way to determine the correct lift.
+\[\resizebox{0.7\textwidth}{!}{\tikzfig{tree2gate/workedexample/functorsig4}}\]
 \end{myboxR}
 
 \begin{myboxR}
@@ -359,8 +366,6 @@ A monoidal cofunctor box first uses the inside-out convention for functor boxes 
 
 \newpage
 
-\subsection{From speaker to listener}
-
 \begin{myboxB}
 \begin{example}[Turning dCFGs into pregroup diagrams with a monoidal cofunctor]
 The apex is given by Construction \ref{cons:bracketing}. The right leg is the monoidal discrete opfibration from Construction \ref{cons:pg2cfg} into the dCFG. In the first diagram below, we apply the opfibration to the word states, which have unique lifts. The second diagram follows by monoidality. In the third, we apply the left leg of the cofunctor using the outside-in convention, which is the evidently bijective-on-objects monoidal functor to the ambient rigid autonomous category of pregroup diagrams from the free strictification. In the fourth, we apply the monoidality of the inner functor.
@@ -379,7 +384,6 @@ And so we can continue all the way, occasionally straightening out some wires on
 \clearpage
 
 \newpage
-\subsection{From listener to speaker}
 
 \section{Discussion and Limitations}
 
