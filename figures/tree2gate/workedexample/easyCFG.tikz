@@ -1,0 +1,64 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=smalldotG] (1) at (-6, 0) {\texttt{IV}};
+		\node [style=none] (2) at (-6, -1) {};
+		\node [style=none] (3) at (-5, 0) {\textcolor{green}{\texttt{V}}};
+		\node [style=none] (4) at (-6, -1.5) {\textcolor{blue}{\texttt{S}}};
+		\node [style=none] (5) at (-6.25, 2) {};
+		\node [style=none] (6) at (-5.75, 2) {};
+		\node [style=none] (7) at (-6, 2) {};
+		\node [style=none] (8) at (-3.25, 2) {};
+		\node [style=none] (9) at (-2.75, 2) {};
+		\node [style=none] (10) at (-3, 2) {};
+		\node [style=none] (11) at (-9.25, 2) {};
+		\node [style=none] (12) at (-8.75, 2) {};
+		\node [style=none] (13) at (-9, 2) {};
+		\node [style=none] (14) at (-6, 1) {\textcolor{orange}{\texttt{ADV}}};
+		\node [style=none] (15) at (-8, 0.5) {\texttt{N}};
+		\node [style=none] (16) at (-9, 2.5) {\texttt{Bob}};
+		\node [style=none] (17) at (-6, 2.5) {\texttt{quickly}};
+		\node [style=none] (18) at (-3, 2.5) {\texttt{runs}};
+		\node [style=smalldotG] (20) at (4.5, 0) {\texttt{TV}};
+		\node [style=none] (21) at (4.5, -1) {};
+		\node [style=none] (23) at (4.5, -1.5) {\textcolor{blue}{\texttt{S}}};
+		\node [style=none] (24) at (2.75, 2) {};
+		\node [style=none] (25) at (3.25, 2) {};
+		\node [style=none] (26) at (3, 2) {};
+		\node [style=none] (27) at (5.75, 2) {};
+		\node [style=none] (28) at (6.25, 2) {};
+		\node [style=none] (29) at (6, 2) {};
+		\node [style=none] (30) at (-0.25, 2) {};
+		\node [style=none] (31) at (0.25, 2) {};
+		\node [style=none] (32) at (0, 2) {};
+		\node [style=none] (35) at (0, 2.5) {\texttt{Bob}};
+		\node [style=none] (36) at (3, 2.5) {\texttt{quickly}};
+		\node [style=none] (37) at (6, 2.5) {\texttt{drinks}};
+		\node [style=none] (38) at (8.75, 2) {};
+		\node [style=none] (39) at (9.25, 2) {};
+		\node [style=none] (40) at (9, 2) {};
+		\node [style=none] (41) at (9, 2.5) {\texttt{Duvel}};
+		\node [style=smallorangedot] (42) at (-4.5, 1) {};
+		\node [style=smallorangedot] (43) at (4.5, 1.25) {};
+		\node [style=none] (44) at (-3.5, 1) {\textcolor{green}{\texttt{V}}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KC] (2.center) to (1);
+		\draw [style=KO] (5.center) to (6.center);
+		\draw [style=KG] (8.center) to (9.center);
+		\draw [style=K] (11.center) to (12.center);
+		\draw [style=K] (13.center) to (1);
+		\draw [style=KC] (21.center) to (20);
+		\draw [style=KO] (24.center) to (25.center);
+		\draw [style=KG] (27.center) to (28.center);
+		\draw [style=K] (30.center) to (31.center);
+		\draw [style=K] (32.center) to (20);
+		\draw [style=K] (20) to (40.center);
+		\draw [style=K] (38.center) to (39.center);
+		\draw [style=KG] (1) to (42);
+		\draw [style=KG] (42) to (10.center);
+		\draw [style=KG] (20) to (43);
+		\draw [style=KG] (43) to (29.center);
+		\draw [style=KO] (43) to (26.center);
+		\draw [style=KO] (42) to (7.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

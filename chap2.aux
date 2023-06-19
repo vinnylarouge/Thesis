@@ -94,36 +94,36 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {0.2.1}What are they good for?}{17}{subsection.0.2.1}\protected@file@percent }
 \newpmemlabel{^_40}{17}
 \newpmemlabel{^_41}{17}
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Monoidal discrete opfibration boxes decide which lift to depict if you decide what wires are involved, which is very useful. For example, \texttt  {quickly} could find itself modifying an intransitive (single noun) or transitive (two noun) verb. Suppose that in a pregroup diagram, it is the job of some process $\leavevmode {\color  {orange}\texttt  {q'}}$ to handle intransitive verbs, and similarly $\leavevmode {\color  {orange}\texttt  {q''}}$ to handle transitive ones. We can use the functor for bookkeeping, by asking it to send both $\leavevmode {\color  {orange}\texttt  {q'}}$ and $\leavevmode {\color  {orange}\texttt  {q''}}$ to the dependent label $\leavevmode {\color  {orange}\bar  {\texttt  {q}}}$. Treating the label as a test rather than a state allows the fibration-box to choose the right version based on the domain wires as it expands top-down. }}{17}{subsection.0.2.1}\protected@file@percent }
-\newlabel{fig:plan0}{{20}{17}{What are they good for?}{subsection.0.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces  Let's consider an easy context-free grammar, with just four types and three rules apart from labels. The types are: \texttt  {S} for sentences, \texttt  {N} for nouns, \texttt  {ADV} for adverbs, and \texttt  {V} for verbs. There is a single adverb introduction rule, and two verb introduction rules for intransitive and transitive verbs. }}{17}{subsection.0.2.1}\protected@file@percent }
 \newpmemlabel{^_42}{17}
 \newpmemlabel{^_43}{17}
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces In our example, all grammatical categories other than nouns and basic verbs have multiple instantiations depending on what wires they have to work with. Because we want to treat these dependent types as tests so that the opfibration can work for us, we have to flip them over in the CFG to obtain a \emph  {dependent CFG}; in this case, since CFGs are planar, there's no confusion, and we can always flip the labels back over.}}{17}{subsection.0.2.1}\protected@file@percent }
-\newlabel{fig:plan1}{{21}{17}{What are they good for?}{subsection.0.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces  Now suppose we want to describe a functor from this context free grammar to a pregroup grammar with just types $n$ and $s$. We know how verb states ought to look, and we know that adverbs ought to modify a verb. We can get pretty close with a first sketch, depicting the desired action of the functor using the outside-in convention for functor boxes, and we can slim them down to tubes. Now the simplicity of the CFG reveals a complication. Since there are two possible kinds of verbs, there are two possible kinds of adverbs, and accordingly two possible kinds of adverb introduction rules. A functor from the CFG to a pregroup diagram can't send the single adverb introduction rule to two different things at the same time. But there's something \emph  {kind of functorial} going on; the appropriate choice of adverb label and adverb introduction rule seems to depend in a systematic way on the contextual verb type. In this example, there's a binary choice to make, depending on whether the verb in the sentence is transitive or intransitive. }}{17}{subsection.0.2.1}\protected@file@percent }
 \newpmemlabel{^_44}{17}
 \newpmemlabel{^_46}{17}
+\newpmemlabel{^_48}{17}
+\newpmemlabel{^_50}{17}
 \newpmemlabel{^_45}{18}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces We aim to be able to use discrete monoidal functor-boxes like so. In the leftmost diagram, we would like to graphically introduce pregroup states at the top of a modified context-free grammar via an opfibration box. In the first equation (isomorphism), we would like to use the monoidal condition of the functor to horizontally merge functor boxes. In the second equation, we would like to use the discrete fibration condition of the functor to expand the box downwards, converting a string diagram obtained from a context-free grammar into a pregroup diagram.}}{18}{subsection.0.2.1}\protected@file@percent }
-\newlabel{fig:plan2}{{22}{18}{What are they good for?}{subsection.0.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces  Now we try to get monoidal discrete opfibrations into the picture. First we flip over the labels and introduction rules for adverbs. Call this a \emph  {dependent CFG}, or \emph  {dCFG}. Treating the label as a test rather than a state will allow the fibration-box to choose the right version based on the domain wires as it expands top-down. In this case, since CFGs are planar, flipping causes no confusion, since we can always flip the labels back over. There are several ways to do this formally, by e.g. specifying a new string-diagram signature from the old one or assuming rigid autonomous completion, and it doesn't matter which we use. }}{18}{subsection.0.2.1}\protected@file@percent }
 \newpmemlabel{^_47}{18}
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces However, this procedure as described is at risk of being ill-defined. Observe that in the third diagram of Figure \ref  {fig:plan1}, the assignment of wires in the domain of the functor to wires in the codomain of the functor is only declared by diagrammatic grouping; if we consider the algebraic data available in the third diagram, really all we have is the data in the figure. How do we know which wires in the domain of the functor correspond to which wires in the codomain? Resolving this issue by formalising this diagrammatic grouping of wires algebraically is the purpose of the next section.}}{18}{subsection.0.2.1}\protected@file@percent }
-\newlabel{fig:plan3}{{23}{18}{What are they good for?}{subsection.0.2.1}{}}
-\newlabel{defn:strict}{{0.3.1}{19}{Strictified string diagrams}{theorem.0.3.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {0.3}Strictified diagrams for monoidal categories}{19}{section.0.3}\protected@file@percent }
-\newlabel{cons:bracketing}{{0.3.3}{19}{Pregroups with bracketing}{theorem.0.3.3}{}}
-\newlabel{prop:strictequiv}{{0.3.2}{20}{$\bar {\mathcal {M}}$ and $\mathcal {M}$ are monoidally equivalent}{theorem.0.3.2}{}}
-\newlabel{ex:prooftree}{{0.3.4}{20}{Pregroups with bracketing recover proof trees}{theorem.0.3.4}{}}
-\tcolorbox@label{1}{21}
-\newlabel{cons:pg2cfg}{{0.3.5}{21}{Discrete monoidal opfibration from pregroups with bracketing into dependent CFGs}{theorem.0.3.5}{}}
-\tcolorbox@label{2}{22}
-\tcolorbox@label{3}{23}
-\@writefile{toc}{\contentsline {section}{\numberline {0.4}Monoidal cofunctor boxes}{24}{section.0.4}\protected@file@percent }
-\newlabel{defn:bijonobj}{{0.4.3}{24}{Bijective-on-objects functor}{theorem.0.4.3}{}}
-\newlabel{prop:cofunctorspan}{{0.4.4}{24}{Cofunctors as spans of functors}{theorem.0.4.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.4.1}From speaker to listener}{25}{subsection.0.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces  Recall that opfibrations can decide which lift to depict given a choice of codomain wires. We would like to encode the dependency of the upside-down adverb labels and introduction rules as lifts that depend on the lift of the verb wire, which may be either an intransitive or transitive verb. }}{18}{subsection.0.2.1}\protected@file@percent }
+\newpmemlabel{^_49}{19}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces  Instead of \emph  {us} making the choice, we can force the choice using the information of the CFG structure. Starting from a dCFG diagram, the state-labels have unique lifts: noun labels in CFGs correspond uniquely to noun-states in pregroup diagrams, and verb labels to verb-states which may be either intransitive or transitive. This obtains the first equation. The second equation is obtained by monoidality. The third "eating downwards" equation is obtained by the opfibration property; note that because the codomain wires before the lift are already decided to be those of an intransitive verb's pregroup type, the correct adverb introduction rule can be selected for the lift. }}{19}{subsection.0.2.1}\protected@file@percent }
+\newpmemlabel{^_51}{19}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces  But there's a technical problem. We have been assigning wires from the codomain of the lift to the dCFG implicitly, by grouping wires together visually to indicate which wires inside the functor box correspond to wires outside. However, when we consider the algebraic data available, all we know is depicted in the figure: we need some way to assign the wires. Solving the wire assignment probem will be the focus of the next section. }}{19}{subsection.0.2.1}\protected@file@percent }
+\newlabel{defn:strict}{{0.3.1}{20}{Strictified string diagrams}{theorem.0.3.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {0.3}Strictified diagrams for monoidal categories}{20}{section.0.3}\protected@file@percent }
+\newlabel{cons:bracketing}{{0.3.3}{20}{Pregroups with bracketing}{theorem.0.3.3}{}}
+\newlabel{prop:strictequiv}{{0.3.2}{21}{$\bar {\mathcal {M}}$ and $\mathcal {M}$ are monoidally equivalent}{theorem.0.3.2}{}}
+\newlabel{ex:prooftree}{{0.3.4}{21}{Pregroups with bracketing recover proof trees}{theorem.0.3.4}{}}
+\tcolorbox@label{1}{22}
+\newlabel{cons:pg2cfg}{{0.3.5}{22}{Discrete monoidal opfibration from pregroups with bracketing into dependent CFGs}{theorem.0.3.5}{}}
+\tcolorbox@label{2}{23}
+\tcolorbox@label{3}{24}
+\@writefile{toc}{\contentsline {section}{\numberline {0.4}Monoidal cofunctor boxes}{25}{section.0.4}\protected@file@percent }
+\newlabel{defn:bijonobj}{{0.4.3}{25}{Bijective-on-objects functor}{theorem.0.4.3}{}}
+\newlabel{prop:cofunctorspan}{{0.4.4}{25}{Cofunctors as spans of functors}{theorem.0.4.4}{}}
 \tcolorbox@label{4}{26}
 \tcolorbox@label{5}{27}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.4.2}From listener to speaker}{28}{subsection.0.4.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {0.5}Discussion and Limitations}{28}{section.0.5}\protected@file@percent }
 \ttl@finishall
 \gdef \@abspage@last{32}
