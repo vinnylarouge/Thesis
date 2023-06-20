@@ -48,18 +48,18 @@ We assume Charlie and Dennis speak the same language, so both know how words in 
 \begin{figure}[h!]\label{fig:GFOLex2c}
 \centering
 \[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex2c}}\]
-\caption{Now that Charlie can express their grammatical structure string-diagrammatically, they can try to deform their first-order-logic diagram -- representing what they mean to communicate -- subject to the constraint that every one of their branchings (the structure of the CFG) is something recoverable by Dennis using just pregroup reductions. To do so, Charlie introduces a formal blue wire to mimic Dennis's sentence-type, and stuffs some complexity inside the labels in the form of internal wirings: a multiwire configuration for \texttt{that}, and a twist for \texttt{gives}. Those internal wirings are the content of Charlie and Dennis's shared strategy.}
+\caption{Now that Charlie can express their grammatical structure string-diagrammatically, they can try to deform their first-order-logic diagram -- representing what they mean to communicate -- subject to the constraint that every one of their branchings (the structure of the CFG) is something recoverable by Dennis using just pregroup reductions. To do so, Charlie introduces a formal blue wire to mimic Dennis's sentence-type, and stuffs some complexity inside the labels in the form of internal wirings: a multiwire configuration for \texttt{that}, and a twist for \texttt{gives}. Those internal wirings are the content of Charlie and Dennis's shared strategy. In passing, I'll remark that by the outside-in convention for functor boxes \ref{fig:outsidein}, this diagram constitutes a monoidal functor from this particular CFG to pregroup diagrams, where nonlabel tree-nodes are partial monoidal closure evaluators. Replacing rigid autonomous closure with cartesian closure and $n,s$ with $e,t$ recovers montague semantics for CFGs (c.f. Curry-Howard-Lambek correspondence for the case of typed lambda-calculus and cartesian closed categories, and all of Heim and Kratzer \citep{heim_semantics_1998}), and interpreting the closure in a compact closed setting recovers montague semantics for CCGs \citep{yeung_ccg-based_2021}.}
 \end{figure}
 
 \begin{figure}[h!]\label{fig:GFOLex2d}
 \centering
 \[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex2d}}\]
-\caption{So, when Dennis receives the sentence, Dennis's pregroup derivation yields a pregroup diagram that is connectively equivalent to what Charlie stuffed inside the context-free grammar structure. So now the two have strong equivalence between their grammars in the sense that every one of Charlie's branches is resolved by one of Dennis's reductions.}
+\caption{So, when Dennis receives the sentence, Dennis's pregroup derivation yields a pregroup diagram that is connectively equivalent to what Charlie stuffed inside the context-free grammar structure. So now the two have strong equivalence between their grammars in the sense that every one of Charlie's branches is resolved by one of Dennis's reductions. As is convention for pregroup diagrams, we only use types $n$ and $s$ -- the latter denoted by a blue wire here -- and we'll leave the directionality (rigid autonomous turning number) of wires implicit, so you can either trust me that everything typechecks or do it yourself.}
 \end{figure}
 
 \begin{figure}[h!]\label{fig:GFOLex2}
 \centering
-\[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex2}}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex2_new}}\]
 \caption{Now to fully recover Charlie's intended FOL-diagram, Dennis refers to the internal wirings from their shared strategy, and fills those in.}
 \end{figure}
 \end{example}
@@ -87,7 +87,38 @@ We assume Charlie and Dennis speak the same language, so both know how words in 
 
 \newthought{The essence of internal wirings:} The relational content that is communicated by language is not inherently one-dimensional, but must be encoded in and decoded from the one-dimensional strings of language. Internal wirings \bR CITES \e provide a way to approach this coding problem topologically: while productive and parsing grammars have different topologies, by choosing internal wirings for individual words, the speaker and listener can obtain topologically equivalent representations.
 
-\newthought{But how do internal wirings come about?} If we take internal wirings to be somehow real, then we can wave away the problem by saying that they are obtained by trial and error in the course of the development of language. But purely mathematical mysteries remain. How do we characterise the dynamics of communication between producer and parser? What is the relationship of internal wirings to these dynamics? What is the general idea? Here is a first attempt at an answer: monoidal cofunctors relate parsing and productive grammars, and internal wirings make it so that going round-trip on either side through these cofunctors gets you back where you started up to diagrammatic equivalence. Now what the hell is a monoidal cofunctor? Bear with me.
+%\newthought{But how do internal wirings come about?} If we take internal wirings to be somehow real, then we can wave away the problem by saying that they are obtained by trial and error in the course of the development of language. But purely mathematical mysteries remain. How do we characterise the dynamics of communication between producer and parser? What is the relationship of internal wirings to these dynamics? What is the general idea? Here is a first attempt at an answer: monoidal cofunctors relate parsing and productive grammars, and internal wirings make it so that going round-trip on either side through these cofunctors gets you back where you started up to diagrammatic equivalence. Now what the hell is a monoidal cofunctor? Bear with me.
+
+\subsection{An issue with functorial semantics of internal wirings}
+
+\newthought{There is a mathematical issue:} the "filling in" of internal wirings is not \emph{in general} functorial, for either speaker or listener. The issue in both cases is that sometimes the particular internal wiring depends on what words are around it.
+
+\begin{figure}[h!]
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/easyCFG}}\]
+\caption{
+\begin{example}[Nonfunctoriality of internal wirings for productive grammars]\label{ex:nonfunctprod}
+\end{example}
+Let's consider an easy context-free grammar, with just four types and three rules apart from labels. The types are: \texttt{S} for sentences, \texttt{N} for nouns, \texttt{ADV} for adverbs, and \texttt{V} for verbs. There is a single adverb introduction rule, and two verb introduction rules for intransitive and transitive verbs.
+}
+\end{figure}
+
+\begin{figure}[h!]
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/easyCFG2}}\]
+\caption{
+Now suppose we want to describe a functor from this context free grammar to a pregroup grammar with just types $n$ and $s$. We know how verb states ought to look, and we know that adverbs ought to modify a verb. We can get pretty close with a first sketch, depicting the desired action of the functor using the outside-in convention for functor boxes, and we can slim them down to tubes. Now the simplicity of the CFG reveals a complication. Since there are two possible kinds of verbs, there are two possible kinds of adverbs, and accordingly two possible kinds of adverb introduction rules. A functor from the CFG to a pregroup diagram can't send the single adverb introduction rule to two different things at the same time.
+}
+\end{figure}
+
+\begin{figure}[h!]
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/nonfunctparse}}\]
+\caption{
+\begin{example}[Nonfunctoriality of internal wirings for parsing grammars]\label{ex:nonfunctparse}
+\end{example}
+Compare \texttt{Alice likes flowers that Bob hates} to the sentence in Figure \ref{fig:GFOLex2}; here the object relative pronoun \texttt{that} is connected to a transitive verb \texttt{hates} rather than a ditransitive \texttt{gives}. The internal wirings work fine in this example, but now \texttt{that} deletes two wires instead of three; a functor can't map the same word-state to two possible instantiations.
+}
+\end{figure}
+
+So we're in a situation where internal wirings are conceptually nice and work well \emph{within} examples, but are not described \emph{across} examples by functorial semantics. It turns out that the right kind of ...
 
 \section{Discrete Monoidal Opfibrations}
 
@@ -113,7 +144,7 @@ To capture the kinds of diagrammatic correspondences we have just sketched, we w
 
 \begin{figure}[h!]
 \[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-seq}}\]
-\caption{The use of a functor box is like a window from the target category $\mathcal{D}$ into the source category $\mathcal{C}$; when we know that a morphism in $\mathcal{D}$ is the image under $\mathbf{F}$ of some morphism in $\mathcal{C}$, the functor box notation is just a way of presenting all of that data at once. Since $\mathbf{F}$ is a functor, we must have that $\mathbf{F}f ; \mathbf{F}g = \mathbf{F}(f;g)$. Diagrammatically this equation is represented by freely splitting and merging functor boxes vertically.}
+\caption{The use of a functor box is like a window from the target category $\mathcal{D}$ into the source category $\mathcal{C}$; when we know that a morphism in $\mathcal{D}$ is the image under $\mathbf{F}$ of some morphism in $\mathcal{C}$, the functor box notation is just a way of presenting all of that data at once. Since $\mathbf{F}$ is a functor, we must have that $\mathbf{F}f ; \mathbf{F}g = \mathbf{F}(f;g)$. Diagrammatically this equation is represented by freely splitting and merging functor boxes vertically. \textbf{N.B.} sequential merging of two boxes requires that the two wires to-be-connected within the boxes -- in this case labelled $B$ -- need to be the same; a case where merging is disallowed is when $Ff;Fg$ typechecks in the outside/target category, but $f;g$ does not in the inside/source category because the functor identifies nonequal wires.}
 \end{figure}
 
 \begin{figure}[h!]
@@ -157,19 +188,7 @@ We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opf
 
 \subsection{What are they good for?}
 
-\begin{figure}[h!]
-\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/easyCFG}}\]
-\caption{
-Let's consider an easy context-free grammar, with just four types and three rules apart from labels. The types are: \texttt{S} for sentences, \texttt{N} for nouns, \texttt{ADV} for adverbs, and \texttt{V} for verbs. There is a single adverb introduction rule, and two verb introduction rules for intransitive and transitive verbs.
-}
-\end{figure}
 
-\begin{figure}[h!]
-\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/easyCFG2}}\]
-\caption{
-Now suppose we want to describe a functor from this context free grammar to a pregroup grammar with just types $n$ and $s$. We know how verb states ought to look, and we know that adverbs ought to modify a verb. We can get pretty close with a first sketch, depicting the desired action of the functor using the outside-in convention for functor boxes, and we can slim them down to tubes. Now the simplicity of the CFG reveals a complication. Since there are two possible kinds of verbs, there are two possible kinds of adverbs, and accordingly two possible kinds of adverb introduction rules. A functor from the CFG to a pregroup diagram can't send the single adverb introduction rule to two different things at the same time. But there's something \emph{kind of functorial} going on; the appropriate choice of adverb label and adverb introduction rule seems to depend in a systematic way on the contextual verb type. In this example, there's a binary choice to make, depending on whether the verb in the sentence is transitive or intransitive.
-}
-\end{figure}
 
 \begin{figure}[h!]
 \[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/easydepCFG}}\]
@@ -192,17 +211,16 @@ Instead of \emph{us} making the choice, we can force the choice using the inform
 }
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[h!]\label{fig:wireproblem}
 \[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/workedexample/easyproblem}}\]
 \caption{
 But there's a technical problem. We have been assigning wires from the codomain of the lift to the dCFG implicitly, by grouping wires together visually to indicate which wires inside the functor box correspond to wires outside. However, when we consider the algebraic data available, all we know is depicted in the figure: we need some way to assign the wires. Solving the wire assignment probem will be the focus of the next section.
 }
 \end{figure}
 \clearpage
-
 \section{Strictified diagrams for monoidal categories}
 
-The crux of the issue sketched in Figure \ref{fig:plan3} is that while pregroup \emph{proofs} -- viewed as sequent trees -- syntactically distinguish the roots of subtrees, interpretation as pregroup \emph{diagrams} in a monoidal category forgets the subtree structure of the specific proof the diagram arises from. But it is precisely this forgotten structure that contains the algebraic data we require to keep track of (co)domain data diagrammatically. So a solution would be to force the diagrams in the blue domain recording pregroup data to hold onto this proof structure. For this purpose we use strictified diagrams for monoidal categories, defined in the margins.\\
+The crux of the issue sketched in Figure \ref{fig:wireproblem} is that while pregroup \emph{proofs} -- viewed as sequent trees -- syntactically distinguish the roots of subtrees, interpretation as pregroup \emph{diagrams} in a monoidal category forgets the subtree structure of the specific proof the diagram arises from. But it is precisely this forgotten structure that contains the algebraic data we require to keep track of (co)domain data diagrammatically. So a solution would be to force the diagrams in the blue domain recording pregroup data to hold onto this proof structure. For this purpose we use strictified diagrams for monoidal categories, defined in the margins.\\
 
 \marginnote{
 \begin{defn}[Strictified string diagrams]\label{defn:strict}
@@ -272,7 +290,7 @@ The essence of the construction is to maintain a correspondence with proof-tree 
 \end{example}
 
 \begin{myboxR}
-\begin{construction}[Discrete monoidal opfibration from pregroups with bracketing into dependent CFGs]\label{cons:pg2cfg} We aim to elucidate the pregroup with bracketing in sufficient detail to describe the functor into dCFGs; in particular, we need to know what the generators of the pregroup are. The fibre over a noun state in the dCFG is the corresponding noun-state in the bracketed pregroup. The fibre over a verb state in the dCFG is either an intransitive or transitive word-state, depending on the word \texttt{w}.
+\begin{construction}[Discrete monoidal opfibration from pregroups with bracketing into dependent CFGs]\label{cons:pg2cfg} We aim to elucidate the pregroup with bracketing in sufficient detail to describe the functor into dCFGs; in particular, we need to know what the generators of the pregroup are. The fibre over a noun state in the dCFG is the corresponding noun-state in the bracketed pregroup. The fibre over a verb state in the dCFG is either an intransitive or transitive word-state, depending on the word \texttt{w}. Note that only the $\texttt{[w]}$ are available as generators, through we may reason about them as if they are tensor-bracketings of $\texttt{w}^*$.
 \[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/workedexample/functorsig}}\]
 We depict the case of adverbs explicitly. Here are two lifts of the adverb label in the fibre of the opfibration corresponding to the intransitive and transitive case, and the corresponding lifts for the introduction rule for adverbs.
 \[\resizebox{0.7\textwidth}{!}{\tikzfig{tree2gate/workedexample/functorsig2}}\]
@@ -280,9 +298,9 @@ We depict the case of adverbs explicitly. Here are two lifts of the adverb label
 \end{myboxR}
 
 \begin{myboxR}
-The correspondence of introduction rules in the dCFG to proof steps in the sequent formulation of pregroup proofs (c.f. Example \ref{ex:prooftree}) is obtained obliquely, because labels for dependent types are facing the wrong way; hence the cups for the lifts of labels. Consider the \texttt{IV} lift of the introduction of \texttt{ADV} label. We obtain the following series of diagrams. The second equation is a supplied choice of lift on the \texttt{V} wire, so that the third monoidality equation allows the top and bottom boxes to typematch.
+The correspondence of introduction rules in the dCFG to proof steps in the sequent formulation of pregroup proofs (c.f. Example \ref{ex:prooftree}) is obtained obliquely, because labels for dependent types are facing the wrong way; hence the cups for the lifts of labels. We can observe the correspondence by the following diagrams. The second equation is a supplied choice of lift on the \texttt{V} wire, so that the third monoidality equation allows the top and bottom boxes to typematch.
 \[\resizebox{0.7\textwidth}{!}{\tikzfig{tree2gate/workedexample/functorsig3}}\]
-When the types are matched, the boxes may be sequentially (vertically) merged. Now within the box, we may apply the equations available to us in the strictified setting to eliminate the (de)tensors. Observe that resolving the snakes causes the second diagram to \emph{behave as though} we defined lifts for "right-side-up" labels and introduction rules; we could not have done so directly, or else the opfibration would have no diagrammatic way to determine the correct lift.
+When (and only when) the types are matched, the boxes may be sequentially (vertically) merged. Now within the box, we may apply the equations available to us in the strictified setting to eliminate the (de)tensors. Observe that resolving snaking wires causes the second diagram to \emph{behave as though} we defined lifts for "right-side-up" labels and introduction rules; we could not have done so directly, or else the opfibration would have no diagrammatic way to determine the correct lift.
 \[\resizebox{0.7\textwidth}{!}{\tikzfig{tree2gate/workedexample/functorsig4}}\]
 \end{myboxR}
 
@@ -402,7 +420,28 @@ And so we can continue all the way, occasionally straightening out some wires on
 \end{myboxB}
 
 \clearpage
+\newpage
 
+\begin{myboxR}
+\begin{example}[A monoidal functor into pregroup diagrams from a subcategory of bracketed pregroups with spiders]
+\end{example}
+Source category is the free strictification of a single wire equipped with a spider, with generator-states implied bu the following equations. Target is pregroup diagrams in $n,s$. Sentence type is bracketings of nouns: alternate bracketing notation is introduced for brevity. Strictified unit is used to distinguish the bracketed single noun wire from the plain noun wire, which is its own lift. Bracketing monoidal units gives the Dyck language, which may be in principle used to distinguish turning numbers in the rigid autonomous setting, omitted for brevity. For more internal wirings for other grammatical categories, see \bR CITE \e. This data suffices to model how the listener recovers the data conveyed by the speaker, c.f. Figure \ref
+\[\resizebox{0.8\textwidth}{!}{\tikzfig{tree2gate/workedexample/pg2cfgcof0}}\]
+\end{myboxR}
+
+\begin{myboxB}
+\[\resizebox{0.95\textwidth}{!}{\tikzfig{tree2gate/workedexample/pg2cfgcof1}}\]
+\end{myboxB}
+
+\begin{myboxB}
+\[\resizebox{0.95\textwidth}{!}{\tikzfig{tree2gate/workedexample/pg2cfgcof2}}\]
+\end{myboxB}
+
+\begin{myboxB}
+\[\resizebox{0.95\textwidth}{!}{\tikzfig{tree2gate/workedexample/pg2cfgcof3}}\]
+\end{myboxB}
+
+\clearpage
 \newpage
 
 \section{Discussion and Limitations}

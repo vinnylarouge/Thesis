@@ -286,7 +286,7 @@
 		\draw (79.center) to (80.center);
 		\draw (80.center) to (78.center);
 		\draw (81.center) to (85.center);
-		\draw [style=M] (82.center)
+		\draw [style=KB] (82.center)
 			 to (84.center)
 			 to [in=30, out=-120, looseness=0.50] (88.center)
 			 to [in=-60, out=-150, looseness=0.50] (92.center)
@@ -299,7 +299,7 @@
 			 to (101.center)
 			 to cycle;
 		\draw [in=270, out=90] (91.center) to (104.center);
-		\draw [style=M] (106.center)
+		\draw [style=KB] (106.center)
 			 to (93.center)
 			 to [in=135, out=-60, looseness=0.25] (108.center)
 			 to [in=45, out=-45, looseness=1.25] (96.center)
@@ -320,11 +320,11 @@
 		\draw (118.center)
 			 to (124.center)
 			 to [in=90, out=-45] (128.center);
-		\draw [style=M] (117.center)
+		\draw [style=KB] (117.center)
 			 to (123.center)
 			 to [in=90, out=-45, looseness=0.75] (129.center)
 			 to (131.center);
-		\draw [style=M] (114.center)
+		\draw [style=KB] (114.center)
 			 to (120.center)
 			 to [in=-135, out=-45, looseness=1.25] (126.center)
 			 to (133.center);
@@ -336,15 +336,15 @@
 		\draw [bend left=15, looseness=0.75] (115.center) to (138.center);
 		\draw (116.center) to (137.center);
 		\draw (118.center) to (135.center);
-		\draw [style=M] (139.center) to (114.center);
-		\draw [style=M] (136.center) to (117.center);
+		\draw [style=KB] (139.center) to (114.center);
+		\draw [style=KB] (136.center) to (117.center);
 		\draw (146.center)
 			 to (147.center)
 			 to (145.center)
 			 to cycle;
 		\draw (132.center) to (149.center);
 		\draw (134.center) to (151.center);
-		\draw [style=M] (133.center) to (150.center);
+		\draw [style=KB] (133.center) to (150.center);
 		\draw (155.center)
 			 to (156.center)
 			 to (157.center)
