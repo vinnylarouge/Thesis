@@ -1,10 +1,6 @@
 \section{How do we communicate using language?}
 
-\marginnote{There is a distinction between \emph{grammars of the speaker} -- which produce sentences -- and \emph{grammars of the listener} -- which deduce sentences. Viewed as mathematical processes, the two kinds of grammars go in opposite directions; speaking grammars (e.g. string-rewrite systems) start with some grammatical structure, and require informational input (e.g. which rule comes next) to produce lists of words -- sentences. Conversely, listening grammars (e.g. typelogical grammars) start with a sentence, and require informational input (e.g. grammatical typing and which proof rule to try next) to deduce or parse a grammatical structure. Since we can understand each other, these two types of grammar must enjoy a systematic correspondence, and if one believes that semantics is compositional according to syntax, then the correspondence must further explain how both speaking and listening grammars manipulate the same underlying semantic expression, whatever that may be. \textbf{I argue that cofunctors capture this correspondence.}}
-
-\newthought{Speakers and listeners understand one another.} Obviously, natural language involves communication, which involves at minimum a speaker and a listener, or a producer and a parser. The fact that communication happens at all is an everyday miracle that any formal understanding of language must account for. The miracle remains so even if we cautiously hedge to exclude pragmatics and context and only encompass small and boring fragments of factual language like \texttt{Alice sees Bob quickly run to school}. At minimum, we should be able to model a single conversational turn, where a speaker produces a sentence, the listener parses it, and both agree on the semantics. Here is a sequence of diagram equations that demonstrates mathematically how the miracle works for two toy grammars, for the sentence \texttt{Alice sees Bob quickly run to school}. On the left we have a grammatical structure obtained from a context-free grammar, and we have equations from a discrete monoidal fibration all the way to the right, where we obtain a pregroup representation of the same sentence. Going from right to left recovers the correspondence in the other direction.
-
-\[\resizebox{1.5\textwidth}{!}{\tikzfig{tree2gate/workedexample/bigexaltogether}}\]
+\newthought{Speakers and listeners understand one another.} Obviously, natural language involves communication, which involves at minimum a speaker and a listener, or a producer and a parser. The fact that communication happens at all is an everyday miracle that any formal understanding of language must account for. The miracle remains so even if we cautiously hedge to exclude pragmatics and context and only encompass small and boring fragments of factual language. At minimum, we should be able to model a single conversational turn, where a speaker produces a sentence, the listener parses it, and both agree on the semantics. Here is a sequence of diagram equations that demonstrates mathematically how the miracle works for two toy grammars, for the sentence \texttt{Alice sees Bob quickly run to school}. On the left we have a grammatical structure obtained from a context-free grammar, and we have equations from a discrete monoidal fibration all the way to the right, where we obtain a pregroup representation of the same sentence. Going from right to left recovers the correspondence in the other direction.
 
 \newthought{Here are some na\"{i}ve observations on the nature of speaking and listening.} Let's suppose that a speaker, Charlie, wants to communicate a thought to Dennis. Charlie and Dennis cooperate to achieve the miracle; Charlie encodes his thoughts -- a structure that isn't a one-dimensional string of symbols -- into a one-dimensional string of symbols. And then Dennis does the reverse, turning a one-dimensional string of symbols into a thought-structure like that of Charlie's. It may still be that Charlie and Dennis have radically different internal conceptions of what \texttt{FLOWERS} or \texttt{GIVING} or \texttt{BEETLES IN BOXES} are, but that is alright: we only care that the \emph{relational structure} of the thought-representations in each person's head are the same, not their specific representations.
 
@@ -170,9 +166,9 @@ To capture the kinds of diagrammatic correspondences we have just sketched, we w
 \begin{figure}[h!]
 \[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration}}\]
 \caption{
-\begin{defn}[Discrete opfibration]
+\begin{defn}[Discrete opfibration]\label{defn:discopf}
 $\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$ is a \emph{discrete fibration} when:
-for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$, there exists a unique object $\Phi^A_f$ and a unique morphism $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$, such that $f = \mathbf{F}\phi_f$. Diagrammatically, we can present all of the above as an equation reminiscent of sliding a morphism \emph{into} a functor box from below.
+for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$, there exists a unique object $\Phi^A_f$ and a unique morphism $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$, such that $f = \mathbf{F}\phi_f$. Diagrammatically, we can present all of the above as an equation reminiscent of sliding a morphism \emph{into} a functor box from below. The process inside the box is called \emph{the lift} of the process that was slid in. The collection of all lifts over a wire or box is called \emph{the fibre over} that wire or box.
 \end{defn}
 }
 \end{figure}
@@ -188,12 +184,10 @@ We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opf
 
 \subsection{What are they good for?}
 
-
-
 \begin{figure}[h!]
 \[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/easydepCFG}}\]
 \caption{
-Now we try to get monoidal discrete opfibrations into the picture. First we flip over the labels and introduction rules for adverbs. Call this a \emph{dependent CFG}, or \emph{dCFG}. Treating the label as a test rather than a state will allow the fibration-box to choose the right version based on the domain wires as it expands top-down. In this case, since CFGs are planar, flipping causes no confusion, since we can always flip the labels back over. There are several ways to do this formally, by e.g. specifying a new string-diagram signature from the old one or assuming rigid autonomous completion, and it doesn't matter which we use.
+Now we try to use monoidal discrete opfibrations to help us solve the speaker's nonfunctoriality problem (Example \ref{ex:nonfunctprod}). First we flip over the labels and introduction rules for adverbs. Call this a \emph{dependent CFG}, or \emph{dCFG}. Treating the label as a test rather than a state will allow the fibration-box to choose the right version based on the domain wires as it expands top-down. In this case, since CFGs are planar, flipping causes no confusion, since we can always flip the labels back over. There are several ways to do this formally, by e.g. specifying a new string-diagram signature from the old one or assuming rigid autonomous completion, and it doesn't matter which we use.
 }
 \end{figure}
 
@@ -291,9 +285,9 @@ The essence of the construction is to maintain a correspondence with proof-tree 
 
 \begin{myboxR}
 \begin{construction}[Discrete monoidal opfibration from pregroups with bracketing into dependent CFGs]\label{cons:pg2cfg} We aim to elucidate the pregroup with bracketing in sufficient detail to describe the functor into dCFGs; in particular, we need to know what the generators of the pregroup are. The fibre over a noun state in the dCFG is the corresponding noun-state in the bracketed pregroup. The fibre over a verb state in the dCFG is either an intransitive or transitive word-state, depending on the word \texttt{w}. Note that only the $\texttt{[w]}$ are available as generators, through we may reason about them as if they are tensor-bracketings of $\texttt{w}^*$.
-\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/workedexample/functorsig}}\]
+\[\resizebox{0.45\textwidth}{!}{\tikzfig{tree2gate/workedexample/functorsig}}\]
 We depict the case of adverbs explicitly. Here are two lifts of the adverb label in the fibre of the opfibration corresponding to the intransitive and transitive case, and the corresponding lifts for the introduction rule for adverbs.
-\[\resizebox{0.7\textwidth}{!}{\tikzfig{tree2gate/workedexample/functorsig2}}\]
+\[\resizebox{0.65\textwidth}{!}{\tikzfig{tree2gate/workedexample/functorsig2}}\]
 \end{construction}
 \end{myboxR}
 
@@ -422,10 +416,36 @@ And so we can continue all the way, occasionally straightening out some wires on
 \clearpage
 \newpage
 
+\section{Monoidal kinda-confunctor boxes}
+
+Now we'd like to use the cofunctor technology we have developed to tackle the other problem, the nonfunctoriality of internal wirings for the listener (Example \ref{ex:nonfunctparse}.) We run into a problem again: the right leg cannot be a discrete opfibration into pregroup diagrams.
+
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/notafibex}}\]
+\caption{
+\begin{example}[Lifts for cups are not always defined]
+\end{example} Starting from the leftmost diagram, in order to let the functor box eat the whole diagram, we need to first choose a lift for the left-sentence wire for the cup. Recalling Figures \ref{fig:GFOLex2} and \ref{ex:nonfunctparse}, there are at least two lifts for the sentence-wire in pregroup diagrams, for the case of two or three noun-wires. Everything works smoothly when the lifts on the two sentence wires of a cup match. When if we make the wrong choice and they don't, there is no lift, because there is no such thing as a cup that has two wires on one end and three on the other. Recall from Definition \ref{defn:discopf} that a unique lift is required for \emph{every possible} codomain inside the functor box; so we do not have a discrete opfibration, and so we cannot have a cofunctor.
+}
+\end{figure}
+
+But hold on, if we know that cups need pairs of matching identity-lifts, in the above example it would have been obvious \emph{from the connectivity of the diagram} what the correct choice of lift ought to have been. In order to reason diagrammatically with hungry functor boxes in the way we'd like, we can weaken the requirement that the right leg of the cofunctor be a discrete opfibration\footnote{The job we want the right leg to do is just to bookkeep choices of lift in its fibres. Discrete opfibrations do too much by enacting safety standards and curtailing our choice. Nevermind universal properties, we want to make our own decisions, good or bad.}. We don't need lifts to always \emph{exist uniquely} for \emph{all} codomains; that they always exist for some codomains is enough for our functor boxes to eat and merge the way they do. However, now instead of just looking up the lift, we'll get to make decisions in order to help the functor box grow, but as we've seen from our example, we'll be guided by the connectivity of the diagrams.
+
+\begin{defn}[Kinda-opfibration]\label{defn:discopf}
+$\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$ is a \emph{kinda-opfibration}\footnote{This probably exists somewhere in the literature, though maybe not, since we're getting rid of the universal properties.} when for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$, there exists some object $\Phi^A_f$ and some $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$, such that $f = \mathbf{F}\phi_f$.
+\end{defn}
+
+\begin{defn}[Monoidal kinda-opfibration and kinda-cofunctor]
+Mentally search and replace discrete for kinda- in Definition \ref{defn:mondiscopf} and Proposition \ref{prop:cofunctorspan}.
+\end{defn}
+
+\clearpage
+\newpage
+
 \begin{myboxR}
-\begin{example}[A monoidal functor into pregroup diagrams from a subcategory of bracketed pregroups with spiders]
+\begin{example}[A monoidal kinda-opfibration into pregroup diagrams from a subcategory of bracketed pregroups with spiders]
 \end{example}
-Source category is the free strictification of a single wire equipped with a spider, with generator-states implied bu the following equations. Target is pregroup diagrams in $n,s$. Sentence type is bracketings of nouns: alternate bracketing notation is introduced for brevity. Strictified unit is used to distinguish the bracketed single noun wire from the plain noun wire, which is its own lift. Bracketing monoidal units gives the Dyck language, which may be in principle used to distinguish turning numbers in the rigid autonomous setting, omitted for brevity. For more internal wirings for other grammatical categories, see \bR CITE \e. This data suffices to model how the listener recovers the data conveyed by the speaker, c.f. Figure \ref
+Source category is the free strictification of a single wire equipped with a spider, with generator-states implied by the following equations. Target is pregroup diagrams in $n,s$. Sentence type is bracketings of nouns: alternate bracketing notation is introduced for brevity. Strictified unit is used to distinguish the bracketed single noun wire from the plain noun wire, which is its own lift. Bracketing monoidal units gives the Dyck language, which may be in principle used to distinguish turning numbers in the rigid autonomous setting, omitted for brevity. For more internal wirings for other grammatical categories, see \bR CITE \e. This data suffices to model how the listener recovers the data conveyed by the speaker, c.f. Example \ref{ex:nonfunctparse}. Solution to Example \ref{ex:nonfunctparse} on next page.
 \[\resizebox{0.8\textwidth}{!}{\tikzfig{tree2gate/workedexample/pg2cfgcof0}}\]
 \end{myboxR}
 
