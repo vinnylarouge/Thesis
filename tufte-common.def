@@ -1455,15 +1455,25 @@
 % Produces a full title page
 
 \newcommand{\maketitlepage}[0]{%
+  \thispagestyle{empty}%
   \cleardoublepage%
   {%
   \sffamily%
   \begin{fullwidth}%
+  %\vspace{11.5pc}%
+  \centering
+  \includegraphics[width=0.5\textwidth]{beltcrest.pdf}
+  \fontsize{24}{40}\selectfont\par\noindent\textcolor{darkgray}{\allcaps{\thanklesstitle}}%
+  \vfill
   \fontsize{18}{20}\selectfont\par\noindent\textcolor{darkgray}{\allcaps{\thanklessauthor}}%
-  \vspace{11.5pc}%
-  \fontsize{36}{40}\selectfont\par\noindent\textcolor{darkgray}{\allcaps{\thanklesstitle}}%
-  \vfill%
-  \fontsize{14}{16}\selectfont\par\noindent\allcaps{\thanklesspublisher}%
+  \vfill
+  \fontsize{14}{16}\selectfont\par\noindent\allcaps{St. Catherine's College}%
+  \fontsize{14}{16}\selectfont\par\noindent\allcaps{The University of Oxford}%
+  \fontsize{14}{16}\selectfont\par\noindent\allcaps{Department of Computer Science}%
+  \vfill
+  \fontsize{10}{14}\selectfont\par\noindent\allcaps{A thesis submitted for the degree of Doctor of Philosophy}%
+  \fontsize{10}{14}\selectfont\par\noindent\allcaps{2023}%
+  \vfill
   \end{fullwidth}%
   }
   \thispagestyle{empty}%

@@ -1,8 +1,9 @@
 \input{macros/preamble}
 
 \begin{document}
-
+\thispagestyle{empty}%
 \maketitle% this prints the handout title, author, and date
+
 
 %\begin{fullwidth}
 %\begin{multicols}{2}
@@ -10,8 +11,39 @@
 %\end{multicols}
 %\end{fullwidth}
 
+\newpage
+\vfill
+\begin{myboxB}
+\centering
+\textbf{Novel contributions:}
+\begin{itemize}
+
+\item Section \bR REF \e is a pedestrian introduction to weak $n$-category theory (via \texttt{homotopy.io}, underpinned by the theory of associative $n$-categories) from the perspective of generalising familiar string-rewrite systems to higher dimensions. The chief development of this section is a demonstration that context-free grammars and tree-adjoining grammars may be formalised in the $n$-categorical setting.
+
+\item Section \bR REF \e spells out a generative grammar for text using an $n$-categorical signature as a rewrite system, which additionally provides a unified framework from which the Text Circuit Theorem first proved in \bR CITE \e is recovered.
+
+\item Section \bR REF \e introduces the category \textbf{ContRel} of continuous relations. I detail the relationships (or lack thereof) of \textbf{ContRel} to its cousins \textbf{Top} and \textbf{Rel}. Though \textbf{ContRel} is constructed na\"{i}vely, its definition and an exposition of its expressivity from the monoidal perspective appears to be novel.
+
+\item Section \bR REF \e string-diagrammatically characterises set-indexed collections of disjoint open subsets of spaces in \textbf{ContRel} as \emph{sticky spiders} -- special frobenius algebras that satisfy certain interaction relations with an idempotent. The diagrammatic outcome is that reasoning with such set-indexed collections remains as graphically intuitive as with spiders.
+
+\item Section \bR REF \e string-diagrammatically characterises a vocabulary of linguistic topological relations in \textbf{ContRel} such as simple connectedness, touching, insideness, and rigid motion.
+
+\item Section \bR REF \e argues for the centrality of explaining communication as a criterion for formal approaches to syntax, and explores the relationship between productive and parsing grammars as organised by a monoidal cofunctor. A diagrammatic treatment of monoidal cofunctor boxes is introduced for this purpose.
+
+\item \bR REF \e is a standalone introduction to the mathematical setup of Montague's \emph{Universal Grammar}, aimed at modern algebraists. An outcome of this section is the placement of text circuits as a natural mathematical development in the broadly conceived programme of Montague Semantics.
+
+\item Appendix \bR REF \e constructs a subcategory of sticky spiders in \textbf{ContRel} on the unit square that behaves as a model of \textbf{FinRel} equipped with a \emph{Turing object} -- a single object in a category with respect to which all other objects and morphisms between them may be encoded. This is of particular relevance to the linguistic phenomenon of \emph{entification} -- that essentially all grammatical categories of words and even phrases have noun-equivalents, e.g. $\texttt{to run} \simeq \texttt{running}$, $\texttt{Bob drinks} \simeq \texttt{the fact that Bob drinks}$. The presence of a Turing object in a symmetric monoidal category additionally provides a semantic model for higher-order processes of generic input type, and for \emph{lasso diagrams}.
+
+\item In Section \bR REF \e, by parsing text as circuits (Section \bR REF \e) and using merge-boxes (Section \bR REF \e) to interpret those circuits in \textbf{ContRel} as iconic representations equipped with a vocabulary of lingustic-topological concepts (Section \bR REF \e), I sketch the computation of metaphors by hand.
+
+\end{itemize}
+\end{myboxB}
+\vfill
+\clearpage
+\newpage
+
 \setcounter{chapter}{-1}
-\textbf{Chapter summary:} There are potentially practical and theoretical benefits to a fresh mathematical take of basic linguistics, using string diagrams. String diagrams are formal, intuitive, expressive, fun, and pretty. I give a literature review of the relevant research context in cartoons.
+There are potentially practical and theoretical benefits to a fresh mathematical take on basic linguistics. String diagrams are formal, intuitive, expressive, fun, and pretty. I review the relevant research context.
 \chapter{Context and synopsis}
 \newpage
 \input{chapters/intro/intro_draft3}
@@ -21,12 +53,12 @@
 \input{chapters/textcirc/previously}
 
 \chapter{Internal wirings: what, why, and where from?}
-\textbf{Chapter summary:} Speakers produce, and listeners parse sentences. If we believe that semantics is compositional according to syntax, because communication is possible, these two ways of conceiving of grammar (e.g. string-rewrite systems and typelogical grammars, respectively) must be mathematically related: the semantics of a sentence ought to be "the same" in either grammar. Using string diagrams as semantics allows us to formalise "sameness" as "up to topological deformation", and internal wirings constitute a shared representation strategy on words between speaker and listener that witnesses this topological equivalence for any sentence that both grammars can produce. However, internal wirings are not functorially determined by syntax: the same word may have different internal wirings in a way that depends systematically on context. We can capture this systematicity as a span of functors closely related to cofunctors, for which we develop a string-diagrammatic reasoning technique that works like functor boxes, along with the attendant mathematics.
+Speakers produce, and listeners parse sentences. If we believe that semantics is compositional according to syntax, because communication is possible, these two ways of conceiving of grammar (e.g. string-rewrite systems and typelogical grammars, respectively) must be mathematically related: the semantics of a sentence ought to be "the same" in either grammar. Using string diagrams as semantics allows us to formalise "sameness" as "up to topological deformation", and internal wirings constitute a shared representation strategy on words between speaker and listener that witnesses this topological equivalence for any sentence that both grammars can produce. However, internal wirings are not functorially determined by syntax: the same word may have different internal wirings in a way that depends systematically on context. We can capture this systematicity as a span of functors closely related to cofunctors, for which we develop a string-diagrammatic reasoning technique that works like functor boxes, along with the attendant mathematics.
 \newpage
 \input{chapters/textcirc/miracle}
 
 \chapter{Text circuits for syntax}\label{chapter:textcircuits}
-\textbf{Chapter summary:} We want to establish that there is a systematic correspondence between text circuits and grammatically acceptable text, which would allow us to use text circuits as a generative grammar without further justification. First we show that context-free grammars, string-rewrite systems, and tree-adjoining grammars are all special cases of higher-dimensional rewriting systems called weak $n$-categories. Then we provide a "circuit-growing" grammar in terms of a weak $n$-categorical signature that simultaneously generates strings of grammatically acceptable text and its "deep structure" in terms of text circuits, from which we obtain the desired correspondence between text circuits and text. We close with demonstrations of how the syntactic theory of text circuits may be modified and expanded, and a brief note on how text circuits relate to Montague's "Universal Grammar".
+We want to establish that there is a systematic correspondence between text circuits and grammatically acceptable text, which would allow us to use text circuits as a generative grammar without further justification. First we show that context-free grammars, string-rewrite systems, and tree-adjoining grammars are all special cases of higher-dimensional rewriting systems called weak $n$-categories. Then we provide a "circuit-growing" grammar in terms of a weak $n$-categorical signature that simultaneously generates strings of grammatically acceptable text and its "deep structure" in terms of text circuits, from which we obtain the desired correspondence between text circuits and text. We close with demonstrations of how the syntactic theory of text circuits may be modified and expanded, and a brief note on how text circuits relate to Montague's "Universal Grammar".
 \newpage
 \input{chapters/textcirc/linguistncat}\label{sec:ncat}
 \newpage
@@ -37,7 +69,7 @@
 \input{chapters/stringdiagrams/1e_montague}
 
 \chapter{Continuous relations for semantics}\label{chapter:contrel}
-\textbf{Chapter summary:} We want to reason formally with and about pictorial iconic representations, of the sort one might draw to solve a problem in elementary geometry stated in words, involving topological concepts such as \texttt{touching} and \texttt{inside}.
+We want to reason formally with and about pictorial iconic representations, of the sort one might draw to solve a problem in elementary geometry stated in words, involving topological concepts such as \texttt{touching} and \texttt{inside}. To do this in string diagrams, I introduce and investigate the category of continuous relations, \textbf{ContRel}.
 \newpage
 \input{chapters/toprel/contrelintro}
 \newpage
@@ -50,16 +82,16 @@
 \input{chapters/toprel/5_topologicalconcepts}\label{sec:topconcepts}
 \newpage
 \input{chapters/toprel/7_contreltext}
-
-\newpage
-\chapter{Computing Metaphors}
-\textbf{Chapter summary:}
 \newpage
 \input{chapters/toprel/4_lassos}
+
+\newpage
+\chapter{What formal linguistics could look like}
+I outline some potential directions of research and theses. I sketch what formal linguistics could be.
 \newpage
 \input{chapters/beyond/metaphor}\label{sec:metaphor}
 
-\bibliographystyle{plain}
+\bibliographystyle{alpha}
 \bibliography{thesis_intro}
 
 

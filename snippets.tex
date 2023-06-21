@@ -906,3 +906,27 @@ The pregroup diagram corresponds to a particular pregroup proof of the syntactic
 
 
 speaking grammars (e.g. string-rewrite systems) start with some grammatical structure, and require informational input (e.g. which rule comes next) to produce lists of words -- sentences. Conversely, listening grammars (e.g. typelogical grammars) start with a sentence, and require informational input (e.g. grammatical typing and which proof rule to try next) to deduce or parse a grammatical structure. Since we can understand each other, these two types of grammar must enjoy a systematic correspondence, and if one believes that semantics is compositional according to syntax, then the correspondence must further explain how both grammars underlying semantic expression. 
+
+
+
+This is best understood by example. We have a closed-form mathematical expression to shortcut the computation of the evolution of a system of two point masses under gravity, but we have no such shortcut for the three-body problem; the best we can do is simulate the system's evolution, and an inconvenient fact is that even for very simple systems, it is possible that no amount of causal-mechanistic understanding will simplify compututational simulation.
+
+
+It is plain fact that LLM outputs today conform to any reasonable understanding of syntax, semantics, pragmatics, conversational implicature, and whatever else we have theorised. It is plain fact that they produce better poetry and humor than anything we could explicitly program according to our current understanding. It is almost a natural law that they will only get better from here.
+
+We have working understandings of several aspects about this level. We know something about the nature of internal representations in neural nets both in terms of semantic encoding within weight distributions \bR CITE \e and of token-embeddings in latent space \bR CITE \e. We can explain how transformer models work in terms of attention mechanisms and lookback \bR CITE \e, which serves as working understanding of the procedural aspect of LLMs. We also understand mathematically how it is that these models are trained using data to produce the outputs they do. The deep problem is that in spite of these understandings which should jointly cover all of level 2, we only obtain explanations at the wrong level of abstraction for the purposes we care about \bR CITE \e. Level 2 is in a sense the important level to get right for the purposes of explainability, auditability, and extension, since it is at the level of representation and procedure that we can investigate internal structure and match levels of abstraction across domains. Since the three levels interact, the challenge is to slot in a story about level 2 that coheres with what we already know about levels 1 and 3. The preliminary evidence (see Section \bR ref \e) appears to be that we can go about this challenge using string diagrams as a lingua franca for mathematical linguists and machines.
+
+\newthought{TL;DR of introduction:} Computers do not explain language, and formal linguists "explain" language using the mathematical equivalent of punchcard machines. Both sides stand to gain from synthesis, but synthesis requires a shared mathematical metalanguage. I propose string diagrams and applied category theory as a candidate, and the rest of the thesis is about justifying the proposal.
+
+
+Throughout this thesis I will be re-presenting familiar and unfamiliar things in string diagrams, so I request the reader to remember the koan and keep an open mind.\\
+
+
+, while the appendix materials play a supporting role. Those unfamiliar with process theories and string diagrams are encouraged to start with Appendix \bR REF \e. For text circuit practitioners, Appendix \bR REF \e contains some (im)possibility results for learning text circuits in neural nets as they are normally used, and Appendix \bR REF \e is a short recipe for learning finite first-order models in a totally linear setting, albeit one over what amounts to a tropical semiring. Appendix \bR REF \e is the first half of a modern mathematician's reading companion to Montague's seminal paper \emph{Universal Grammar}. Appendix \bR REF \e answers the question of how to semantically interpret higher-order boxes that are not picky about the type of the morphism they contain, but it is also an amalgamation of some sketches of language I was too sentimental to omit. It provides a construction of a monoidal computer on \textbf{FinRel} using sticky spiders, in the process providing; the only semantic setting I know of for the linguistic phenomenon of \emph{entification}; a recipe for grounding certain verbs of cognition; and a setting for \emph{lasso diagrams}.\\
+
+Now back to business. 
+
+
+
+
+Corrections, comments, and suggestions are welcome at \texttt{vincentwangsemailaddress@gmail.com}. I hope you enjoy the read, or if nothing else, I hope you like my diagrams!

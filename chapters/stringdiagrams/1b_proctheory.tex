@@ -1,22 +1,28 @@
 \section{Process Theories}
 
 \marginnote{
-    There are a lot of definitions to get started, but as with programming languages, preloading the work makes it easier to scale. This is the mathematical source code of string diagrams, which is only necessary if we need to show that something new is a symmetric monoidal category or if we are tinkering deeply, so it can be skipped for now. The important takeaway is that string diagrams are syntax, with morphisms in symmetric monoidal categories as semantics.
+There are a lot of definitions to get started, but as with programming languages, preloading the work makes it easier to scale. This is the mathematical source code of string diagrams, which is only necessary if we need to show that something new is a symmetric monoidal category or if we are tinkering deeply, so it can be skipped for now. The important takeaway is that string diagrams are syntax, with morphisms in symmetric monoidal categories as semantics.
+}
 
+\marginnote{
 \begin{defn}[Category]
 A \emph{category} $\mathcal{C}$ consists of the following data
+\end{defn}
+}
+
+\marginnote{
 \begin{itemize}
 \item{A collection $\text{Ob}(\mathcal{C})$ of \emph{objects}}
 \item{For every pair of objects $A,B \in \text{Ob}(\mathcal{C})$, a set $\mathcal{C}(A,B)$ of \emph{morphisms} from $a$ to $b$.}
 \item{Every object $a \in \text{Ob}(\mathcal{C})$ has a specified morphism $1_a$ in $\mathcal{C}(a,a)$ called \emph{the identity morphism} on $a$.}
 \item{Every triple of objects $A,B,C \in \text{Ob}(\mathcal{C})$, and every pair of morphisms $f \in \mathcal{C}(A,B)$ and $g \in \mathcal{C}(b,c)$ has a specified morphism $(f;g) \in \mathcal{C}(a,c)$ called \emph{the composite} of $f$ and $g$.}
 \end{itemize}
-This data has to satisfy two coherence conditions, which are:
+}
 
-\newthought{Unitality:} For any morphism $f: a \rightarrow b$, $1_a;f = f = f;1_b$
-
-\newthought{Associativity:} For any four objects $A,B,C,D$ and three morphisms $f: A \rightarrow B$, $g: B \rightarrow C$, $h: C \rightarrow D$, $(f;g);h = f;(g;h)$
-\end{defn}
+\marginnote{
+This data has to satisfy two coherence conditions, which are:\\
+\textbf{Unitality:} For any morphism $f: a \rightarrow b$, $1_a;f = f = f;1_b$\\
+\textbf{Associativity:} For any four objects $A,B,C,D$ and three morphisms $f: A \rightarrow B$, $g: B \rightarrow C$, $h: C \rightarrow D$, $(f;g);h = f;(g;h)$
 }
 
 \marginnote{
