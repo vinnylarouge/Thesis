@@ -106,12 +106,6 @@ A natural transformation $\theta: F \rightarrow G$ for (co)domain-aligned functo
 }
 
 \marginnote{
-\begin{defn}[$\mathbf{Cat}$]
-$\mathbf{Cat}$ is a (2-)category where the objects are (1-)categories as defined above, the morphisms are functors, and the (2-)morphisms are natural transformations. (2-)morphisms are morphisms between morphisms that we discuss in more detail in Section \ref{ncat}. There's no "set of all sets" paradox here by construction; $\mathbf{Cat}$ is slightly more than a category as we have seen so far because of the (2-)morphisms. We're introducing this just to state that the definition of product also works here so that we can consider product categories $\mathcal{C} \times \mathcal{D}$, whose objects are pairs of objects and morphisms pairs of morphisms.
-\end{defn}
-}
-
-\marginnote{
 \begin{defn}[Monoidal Category]
 A monoidal category consists of a category $\mathcal{C}$, a functor $\otimes: \mathcal{C} \times \mathcal{C} \rightarrow C$, a monoidal unit object $I \in \text{Ob}(\mathcal{C})$, and the following natural isomorphisms -- i.e. natural transformations with inverses, where multiple bar notation indicates variable object argument positions: an associator $\alpha: ((- \ \otimes =) \otimes \equiv) \mapsto (- \ \otimes (= \otimes \equiv))$, a right unitor $\rho - \otimes I \mapsto -$, and a left unitor $\lambda I \otimes - \mapsto -\big)$. These natural isomorphisms must in addition satisfy certain \emph{coherence} diagrams, to be displayed shortly.
 \end{defn}
@@ -119,7 +113,7 @@ A monoidal category consists of a category $\mathcal{C}$, a functor $\otimes: \m
 
 \marginnote{
 \begin{theorem}[Coherence for monoidal categories]
-The following pentagon and triangle diagrams are conditions in the definition of a monoidal category. When they hold, all composites of associators and unitors (and their inverses) are isomorphisms \cite{}. $1$ denotes identities.
+The following pentagon and triangle diagrams are conditions in the definition of a monoidal category. When they hold, all composites of associators and unitors (and their inverses) are isomorphisms \bR CITE \e.
 % https://q.uiver.app/?q=WzAsNSxbMSwwLCIoKFcgXFxvdGltZXMgWCkgXFxvdGltZXMgKFkgXFxvdGltZXMgWikpIl0sWzAsMSwiKFcgXFxvdGltZXMgKFggXFxvdGltZXMgKFkgXFxvdGltZXMgWikpKSJdLFsxLDIsIigoKFcgXFxvdGltZXMgWCkgXFxvdGltZXMgWSkgXFxvdGltZXMgWikiXSxbMCwzLCIoVyBcXG90aW1lcyAoKFggXFxvdGltZXMgWSkgXFxvdGltZXMgWikpIl0sWzEsNCwiKChXIFxcb3RpbWVzIChYIFxcb3RpbWVzIFkpKSBcXG90aW1lcyBaKSJdLFsxLDAsIlxcYWxwaGEiLDFdLFswLDIsIlxcYWxwaGEiLDFdLFs0LDIsIlxcYWxwaGEgXFxvdGltZXMgMSIsMV0sWzMsNCwiXFxhbHBoYSIsMV0sWzEsMywiMSBcXG90aW1lcyBcXGFscGhhIiwxXV0=
 \[\begin{tikzcd}[ampersand replacement=\&]
 	\& {((W \otimes X) \otimes (Y \otimes Z))} \\
@@ -147,15 +141,19 @@ The following pentagon and triangle diagrams are conditions in the definition of
 \end{theorem}
 }
 
-\marginnote{
-\begin{remark}[Coherence]
-Coherence is about getting rid of syntactic bureaucracy. Addition for example is a binary associative operation, and knowing that $(x + (y + z)) = ((x + y) + z)$ is what allows us to safely drop all possible bracketings and just write $1+2+3$. We further know that addition is a monoid with unit 0, so we can always write $x + 0 = x = 0 + x$. Now the situation is that we have replaced the associativity equation with associator natural transformations $((X \otimes Y) \otimes Z) \overset{\alpha_{XYZ}}{\rightarrow} (X \otimes (Y \otimes Z))$, and unit equations with left and right unitors $(X \otimes I) \overset{\rho_X}{\rightarrow} X \overset{\lambda_X}\rightarrow (I \otimes X)$. Recalling that we're happy with isomorphism in place of equality, we would like to know that every possible composite of these structural operations is an isomorphism.
-\end{remark}
-}
+\clearmargin
+\clearpage
 
 \marginnote{
 \begin{defn}[Symmetric Monoidal Category]
-A symmetric monoidal category is a monoidal category with an additional natural isomorphism $\theta: - \ \otimes = \ \mapsto \ = \otimes \ -$. Coherence requires the following pair of hexagons \cite{}.
+\end{defn}
+A symmetric monoidal category is a monoidal category with an additional natural isomorphism
+\[\theta: - \ \otimes = \ \mapsto \ = \otimes \ -\] 
+Which satisfies the following pair of hexagons \bR CITE \e.
+
+}
+
+\begin{marginfigure}
 % https://q.uiver.app/?q=WzAsNixbMCwwLCIoWCBcXG90aW1lcyAoWSBcXG90aW1lcyBaKSkiXSxbMCwxLCIoWCBcXG90aW1lcyAoWiBcXG90aW1lcyBZKSkiXSxbMSwxLCIoKFogXFxvdGltZXMgWCkgXFxvdGltZXMgWSkiXSxbMCwyLCIoQSBcXG90aW1lcyAoWiBcXG90aW1lcyBYKSkiXSxbMSwyLCIoKFggXFxvdGltZXMgWikgXFxvdGltZXMgWSkiXSxbMSwwLCIoWiBcXG90aW1lcyAoWCBcXG90aW1lcyBZKSkiXSxbMCw1LCJcXHRoZXRhIl0sWzUsMiwiXFxhbHBoYSJdLFsyLDQsIlxcdGhldGFeey0xfSJdLFswLDEsIlxcYWxwaGFeey0xfSIsMl0sWzEsMywiMSBcXG90aW1lcyBcXHRoZXRhIiwyXSxbMyw0LCJcXGFscGhhIiwyXV0=
 \[\begin{tikzcd}[ampersand replacement=\&]
 	{(X \otimes (Y \otimes Z))} \& {(Z \otimes (X \otimes Y))} \\
@@ -168,7 +166,10 @@ A symmetric monoidal category is a monoidal category with an additional natural 
 	\arrow["{1 \otimes \theta}"', from=2-1, to=3-1]
 	\arrow["\alpha"', from=3-1, to=3-2]
 \end{tikzcd}\]
+\end{marginfigure}
 
+
+\begin{marginfigure}
 % https://q.uiver.app/?q=WzAsNixbMCwwLCIoWCBcXG90aW1lcyAoWSBcXG90aW1lcyBaKSkiXSxbMCwxLCIoKFggXFxvdGltZXMgWSkgXFxvdGltZXMgWikiXSxbMSwxLCIoWSBcXG90aW1lcyAoWiBcXG90aW1lcyBYKSkiXSxbMCwyLCIoKFkgXFxvdGltZXMgWCkgXFxvdGltZXMgWikiXSxbMSwyLCIoWiBcXG90aW1lcyAoWCBcXG90aW1lcyBZKSkiXSxbMSwwLCIoKFkgXFxvdGltZXMgWikgXFxvdGltZXMgWCkiXSxbMCw1LCJcXHRoZXRhIl0sWzUsMiwiXFxhbHBoYV57LTF9Il0sWzIsNCwiMVxcb3RpbWVzIFxcdGhldGEiXSxbMyw0LCJcXGFscGhhXnstMX0iLDJdLFsxLDMsIlxcdGhldGFeey0xfSIsMl0sWzAsMSwiXFxhbHBoYSIsMl1d
 \[\begin{tikzcd}[ampersand replacement=\&]
 	{(X \otimes (Y \otimes Z))} \& {((Y \otimes Z) \otimes X)} \\
@@ -181,26 +182,21 @@ A symmetric monoidal category is a monoidal category with an additional natural 
 	\arrow["{\theta^{-1}}"', from=2-1, to=3-1]
 	\arrow["\alpha"', from=1-1, to=2-1]
 \end{tikzcd}\]
-\end{defn}
-}
+\end{marginfigure}
+
+\clearmargin
+\clearpage
 
 \marginnote{
-\begin{remark}[Coherence for symmetric monoidal categories]
-Going back to addition, we can rearrange sums by commutativity of the addition monoid: $x + y = y + x$. In the monoidal setting, the natural isomorphism $\theta$ is the twisting of wires. Just as we would like to have addition equations such as $(x + (y + z)) = ((z + y) + x)$, we would like the twists $\theta$ to behave well with respect to the bundling of objects and morphisms with the associator $\alpha$.
-\end{remark}
-}
-
-\marginnote{
-
-\begin{theorem}[Strictification]
-
-\end{theorem}
-}
-
-\marginnote{
-\begin{theorem}[Graphical?]
-
-\end{theorem}
+Coherence is about getting rid of syntactic bureaucracy. Addition for example is a commutative monoid, which satisfies:
+\[(x + (y + z)) = ((x + y) + z)\]
+\[x + 0 = x = 0 + x\]
+\[x + y = y + x\]
+These equations are what let us forget about bracketings, zeroes, and the ordering of summation. Now the situation is that we have replaced the associativity equation with associator natural transformations:
+\[((X \otimes Y) \otimes Z) \overset{\alpha_{XYZ}}{\rightarrow} (X \otimes (Y \otimes Z))\]
+And we have replaced unit equations with left and right unitors:
+\[(X \otimes I) \overset{\rho_X}{\rightarrow} X \overset{\lambda_X}\rightarrow (I \otimes X)\]
+And we have replaced commutation with natural isomorphisms $\theta$ that are depicted as twisting wires in string diagrams. Recalling that we're happy with isomorphism in place of equality, coherence conditions ask that every possible composite of these structural operations is an isomorphism. In terms of the graphical language for monoidal categories, this means that string diagrams up-to-(processive)-planar-isotopy (and connectivity of wires in the case of symmetric monoidal categories) represent equivalent-up-to-isomorphism morphisms in an appropriate monoidal category. The reader is referred to \bR selinger, joyal 1 and 2 \e for details.
 }
 
 This section seeks to introduce process theories via string diagrams. The margin material will provide the formal mathematics of string diagrams from the bottum-up. The main body develops process theories via string diagrams by example, through which we develop towards a model of linguistic spatial relations -- words like "to the left of" and "between" -- which are a common ground of competence we all possess. Here we only focus on geometric relations between points in two dimensional Euclidean space equipped with the usual notions of metric and distance, providing adequate foundations to follow \citep{}talkspace, in which I demonstrate how text circuits can be obtained from sentences and how such text circuits interpreted in the category of sets and relations \textbf{Rel} provides a semantics for such sentences. This motivates the question of how to express the (arguably more primitive \citep{}piaget) linguistic topological concepts -- such as "touching" and "inside" -- the mathematics of which will be in Chapter \ref{}; the reader may skip straight to that chapter after this section if they are uninterested in syntax. We close this section with a brief note on how process theories relate to mathematical foundations and computer science.\\
@@ -282,9 +278,7 @@ The delete relation is defined:
 \end{example}
 
 We may verify that, no matter the concrete interpretation of the diagram in terms of linear maps, functions or relations, the following equations characterise a cocommutative comonoid internal to a monoidal category.
-\begin{equation}\label{cocom}
-\resizebox{\textwidth}{!}{\tikzfig{bestiary/basicrelations}}
-\end{equation}
+\[\resizebox{\textwidth}{!}{\tikzfig{bestiary/basicrelations_old}}\]
 
 It is worth pausing here to think about how one might characterise the process of copying in words; it is challenging to do so for such an intuitive process. The diagrammatic equations, when translated into prose, provide an answer.
 \begin{description}
@@ -310,7 +304,7 @@ The copyability of states is a special case of a more general form of interactio
 A cyan map that satisfies this equation is said to be a homomorphism with respect to the commutative comonoid. In the process theory of relations, those relations that satisfy this equation are precisely the functions; in other words, this diagrammatic equation expresses \emph{determinism}.
 \end{remark}
 
-Here is an unexpected consequence. Suppose we insist that \emph{to copy} in principle also implies the ability to copy \emph{anything} -- arbitrary states. From Example \ref{ex:copyablestate} and Remark \ref{ft:determinism}, we know that this demand is incompatible with certain process theories. In particular, this demand would constrain a process theory of sets and relations to a subtheory of sets and functions. The moral here is that process theories are flexible enough to meet ontological needs. A classical computer scientist who works with perfectly copyable data and processes might demand universal copying along with Equations \ref{cocom}, whereas a quantum physicist who wishes to distinguish between copyable classical data and non-copyable quantum data might taxonomise copy and delete as a special case of a more generic quasi-copy and quasi-delete that only satisfies equations \ref{cocom}. In fact, quantum physicists \emph{do} do this; see Dodo: [].
+Here is an unexpected consequence. Suppose we insist that \emph{to copy} in principle also implies the ability to copy \emph{anything} -- arbitrary states. From Example \ref{ex:copyablestate} and Remark \ref{ft:determinism}, we know that this demand is incompatible with certain process theories. In particular, this demand would constrain a process theory of sets and relations to a subtheory of sets and functions. The moral here is that process theories are flexible enough to meet ontological needs. A classical computer scientist who works with perfectly copyable data and processes might demand universal copying along with the commutative comonoid equations, whereas a quantum physicist who wishes to distinguish between copyable classical data and non-copyable quantum data might taxonomise copy and delete as a special case of a more generic quasi-copy and quasi-delete that is only a commutative comonoid. In fact, quantum physicists \emph{do} do this; see Dodo: \bR CITE \e.
 
 \subsection{What is an update?}\label{ss:update}
 
@@ -318,7 +312,7 @@ In the previous section we have seen how we can start with concrete examples of 
 
 Perhaps the most familiar setting for an update is a database. In a database, an \bM entry\e often takes the form of pairs of \bB fields\e and \bO values\e. For example, where a database contains information about employees, a typical entry might look like:
 \[\texttt{\bM < \bB\textbf{NAME}\e:\bO Jono Doe\e, \bB\textbf{AGE}\e:\bO 69\e, \bB\textbf{JOB}\e:\bO CONTENT CREATOR\e, \bB\textbf{SALARY}\e:\bO\$420\e, ... >\e}\]
-There are all kinds of reasons one might wish to update the value of a field: Jono might legally change their name, a year might pass and Jono's age must be incremented, Jono might be promoted or demoted or get a raise and so on. It was the concern of database theorists to formalise and axiomatise the notion of updating the value of a field -- \emph{independently of the specific programming language implementation of a database} -- so that they had reasoning tools to ensure program correctness []. The problem is reducible to axiomatising a \emph{rewrite}: we can think of updating a value as first calculating the new value, then \emph{putting} the new value in place of the old. Since often the new value depends in some way on the old value, we also need a procedure to \emph{get} the current value. That was a flash-prehistory of \emph{bidirectional transformations} []. Following the monoidal generalisation of lenses in [], a rewrite as we have described above is specified by system diagrammatic equations in the margin, each of which we introduce in prose.
+There are all kinds of reasons one might wish to update the value of a field: Jono might legally change their name, a year might pass and Jono's age must be incremented, Jono might be promoted or demoted or get a raise and so on. It was the concern of database theorists to formalise and axiomatise the notion of updating the value of a field -- \emph{independently of the specific programming language implementation of a database} -- so that they had reasoning tools to ensure program correctness \bR CITE \e. The problem is reducible to axiomatising a \emph{rewrite}: we can think of updating a value as first calculating the new value, then \emph{putting} the new value in place of the old. Since often the new value depends in some way on the old value, we also need a procedure to \emph{get} the current value. That was a flash-prehistory of \emph{bidirectional transformations} \bR CITE \e. Following the monoidal generalisation of lenses in \bR CITE \e, a rewrite as we have described above is specified by system diagrammatic equations in the margin, each of which we introduce in prose.
 
 \begin{description}
 \item[\textbf{PutPut}:] Putting in one value and then a second is the same as deleting the first value and just putting in the second.
@@ -347,7 +341,7 @@ Let's revisit the copy and delete maps for a moment. Suppose our process theory 
 
 \[placeholder\]
 
-But there are certainly process theories in which we don't want this. For example, if states are random variables and parallel composition is the product of independent random variables (as is the case in Markov categories for probability theory []) then copying a random variable gives a perfectly correlated pair of variables, which cannot be expressed as the product of a pair of independent random variables.
+But there are certainly process theories in which we don't want this. For example, if states are random variables and parallel composition is the product of independent random variables (as is the case in Markov categories for probability theory \bR CITE \e) then copying a random variable gives a perfectly correlated pair of variables, which cannot be expressed as the product of a pair of independent random variables.
 
 \subsection{Equational Constraints and Frobenius Algebras}
 

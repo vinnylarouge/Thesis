@@ -930,3 +930,29 @@ Now back to business.
 
 
 Corrections, comments, and suggestions are welcome at \texttt{vincentwangsemailaddress@gmail.com}. I hope you enjoy the read, or if nothing else, I hope you like my diagrams!
+
+
+\marginnote{
+\begin{defn}[$\mathbf{Cat}$]
+$\mathbf{Cat}$ is a (2-)category where the objects are (1-)categories as defined above, the morphisms are functors, and the (2-)morphisms are natural transformations. (2-)morphisms are morphisms between morphisms that we discuss in more detail in Section \ref{ncat}. There's no "set of all sets" paradox here by construction; $\mathbf{Cat}$ is slightly more than a category as we have seen so far because of the (2-)morphisms. We're introducing this just to state that the definition of product also works here so that we can consider product categories $\mathcal{C} \times \mathcal{D}$, whose objects are pairs of objects and morphisms pairs of morphisms.
+\end{defn}
+}
+
+
+\marginnote{
+Coherence is about getting rid of syntactic bureaucracy. Addition for example is a commutative monoid, which satisfies:
+\[(x + (y + z)) = ((x + y) + z)\]
+\[x + 0 = x = 0 + x\]
+\[x + y = y + x\]
+These equations are what let us forget about bracketings, zeroes, and the ordering of summation. Now the situation is that we have replaced the associativity equation with associator natural transformations:
+\[((X \otimes Y) \otimes Z) \overset{\alpha_{XYZ}}{\rightarrow} (X \otimes (Y \otimes Z))\]
+And we have replaced unit equations with left and right unitors:
+\[(X \otimes I) \overset{\rho_X}{\rightarrow} X \overset{\lambda_X}\rightarrow (I \otimes X)\]
+And we have replaced commutation with natural isomorphisms $\theta$ that are depicted as twisting wires in string diagrams. Recalling that we're happy with isomorphism in place of equality, we would like to know that every possible composite of these structural operations is an isomorphism.
+}
+
+\marginnote{
+\begin{remark}[Coherence for symmetric monoidal categories]
+Going back to addition, we can rearrange sums by commutativity of the addition monoid: . In the monoidal setting, the natural isomorphism $\theta$ is the twisting of wires. Just as we would like to have addition equations such as $(x + (y + z)) = ((z + y) + x)$, we would like the twists $\theta$ to behave well with respect to the bundling of objects and morphisms with the associator $\alpha$.
+\end{remark}
+}
