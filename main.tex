@@ -11,13 +11,23 @@
 %\end{fullwidth}
 
 \setcounter{chapter}{-1}
-\chapter{Synopsis and concluding discussion}
+\textbf{Chapter summary:} There are potentially practical and theoretical benefits to a fresh mathematical take of basic linguistics, using string diagrams. String diagrams are formal, intuitive, expressive, fun, and pretty. I give a literature review of the relevant research context in cartoons.
+\chapter{Context and synopsis}
 \newpage
 \input{chapters/intro/intro_draft3}
 \newpage
+\input{chapters/stringdiagrams/1b_proctheory}\label{sec:proctheory}
+\newpage
 \input{chapters/textcirc/previously}
 
+\setcounter{chapter}
+\chapter{Internal wirings: what, why, and where from?}
+\textbf{Chapter summary:} Speakers produce, and listeners parse sentences. If we believe that semantics is compositional according to syntax, because communication is possible, these two ways of conceiving of grammar (e.g. string-rewrite systems and typelogical grammars, respectively) must be mathematically related: the semantics of a sentence ought to be "the same" in either grammar. Using string diagrams as semantics allows us to formalise "sameness" as "up to topological deformation", and internal wirings constitute a shared representation strategy on words between speaker and listener that witnesses this topological equivalence for any sentence that both grammars can produce. However, internal wirings are not functorially determined by syntax: the same word may have different internal wirings in a way that depends systematically on context. We can capture this systematicity as a span of functors closely related to cofunctors, for which we develop a string-diagrammatic reasoning technique that works like functor boxes, along with the attendant mathematics.
+\newpage
+\input{chapters/textcirc/miracle}
+
 \chapter{Text circuits for syntax}\label{chapter:textcircuits}
+\textbf{Chapter summary:} We want to establish that there is a systematic correspondence between text circuits and grammatically acceptable text, which would allow us to use text circuits as a generative grammar without further justification. First we show that context-free grammars, string-rewrite systems, and tree-adjoining grammars are all special cases of higher-dimensional rewriting systems called weak $n$-categories. Then we provide a "circuit-growing" grammar in terms of a weak $n$-categorical signature that simultaneously generates strings of grammatically acceptable text and its "deep structure" in terms of text circuits, from which we obtain the desired correspondence between text circuits and text. We close with demonstrations of how the syntactic theory of text circuits may be modified and expanded, and a brief note on how text circuits relate to Montague's "Universal Grammar".
 \newpage
 \input{chapters/textcirc/linguistncat}\label{sec:ncat}
 \newpage
@@ -25,8 +35,10 @@
 \newpage
 \input{chapters/textcirc/textcirc}
 \newpage
+\input{chapters/stringdiagrams/1e_montague}
 
-\chapter{A palette for toy models}\label{chapter:contrel}
+\chapter{Continuous relations for semantics}\label{chapter:contrel}
+\textbf{Chapter summary:} We want to reason formally with and about pictorial iconic representations, of the sort one might draw to solve a problem in elementary geometry stated in words, involving topological concepts such as \texttt{touching} and \texttt{inside}.
 \newpage
 \input{chapters/toprel/contrelintro}
 \newpage
@@ -37,27 +49,16 @@
 \input{chapters/toprel/3_sticky}
 \newpage
 \input{chapters/toprel/5_topologicalconcepts}\label{sec:topconcepts}
+\newpage
+\input{chapters/toprel/7_contreltext}
 
 \newpage
-\chapter{Cofunctors and metaphor}\label{chapter:sketches}
-\newpage
-\input{chapters/textcirc/miracle}\label{sec:miracle}
-\newpage
-\input{chapters/beyond/metaphor}\label{sec:metaphor}
-
-\newpage
-\begin{appendix}
-\newpage
-\input{chapters/stringdiagrams/1b_proctheory}\label{sec:proctheory}
-\newpage
-\input{chapters/stringdiagrams/1e_montague}\label{sec:miracle}
-\newpage
-\input{chapters/stringdiagrams/1c_ulearn}
-\newpage
-\input{chapters/beyond/FOL}
+\chapter{Computing Metaphors}
+\textbf{Chapter summary:}
 \newpage
 \input{chapters/toprel/4_lassos}
-\end{appendix}
+\newpage
+\input{chapters/beyond/metaphor}\label{sec:metaphor}
 
 \bibliographystyle{plain}
 \bibliography{thesis_intro}
