@@ -365,317 +365,320 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Adjoining is sprouting subtrees in the middle of branches. One way we might obtain the sentence \texttt  {Bob runs to school} is to start from the simpler sentence \texttt  {Bob runs}, and then refine the verb \texttt  {runs} into \texttt  {runs to school}. This refinement on part of an already completed sentence is not permitted in CFGs, since terminals can no longer be modified. The adjoining operation of TAGs gets around this constraint by permitting rewrites in the middle of trees.}}{95}{theorem.2.1.3}\protected@file@percent }
 \newpmemlabel{^_120}{95}
 \newpmemlabel{^_121}{96}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces  Leaf-ansatz signature of \texttt  {Alice sees Bob quickly run to school} CFG. One aspect of rewrite systems we adapt for now is the distinction between terminal and nonterminal symbols; terminal symbols are those after which no further rewrites are possible. We capture this string-diagrammatically by modelling terminal rewrites as 2-cells with target equal to the 1-cell identity of the 0-cell $\star $, which amounts to graphically terminating a wire. The generators subscripted $L$ (for \emph  {label} or \emph  {leaf}) correspond to terminals of the CFG, and represent a family of generators indexed by a lexicon for the language. The generators subscripted $i$ (for introducing a type) correspond to rewrites of the CFG. Reading the central diagram in the main body from left-to-right, we additionally depict the breakdown of the derivation in terms of rewrites of lower dimension from our signature. \[\resizebox {\textwidth }{!}{\IfFileExists  {tree2gate/cfg/bigcfgbreakdown.tikz} {\let \reserved@d =\bgroup \def \par } {\IfFileExists  {./figures/tree2gate/cfg/bigcfgbreakdown.tikz} {\let \reserved@d =\bgroup \def \par } {\begingroup \def {;}\def {:}\def {|}\def {!}\let \pgfutil@reserved@d =[\def \par }}}\] }}{96}{theorem.2.1.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces  Leaf-ansatz signature of \texttt  {Alice sees Bob quickly run to school} CFG. One aspect of rewrite systems we adapt for now is the distinction between terminal and nonterminal symbols; terminal symbols are those after which no further rewrites are possible. We capture this string-diagrammatically by modelling terminal rewrites as 2-cells with target equal to the 1-cell identity of the 0-cell $\star $, which amounts to graphically terminating a wire. The generators subscripted $L$ (for \emph  {label} or \emph  {leaf}) correspond to terminals of the CFG, and represent a family of generators indexed by a lexicon for the language. The generators subscripted $i$ (for introducing a type) correspond to rewrites of the CFG. }}{96}{theorem.2.1.3}\protected@file@percent }
 \newpmemlabel{^_122}{97}
 \newpmemlabel{^_123}{97}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces TAG signature of \texttt  {Alice sees Bob quickly run to school}. The highlighted 2-cells are auxiliary trees that replace CFG 2-cells for verbs with sentential complement, adverbs, and adpositions. The highlighted 3-cells are the tree adjoining operations of the auxiliary trees. The construction yields as a corollary an alternate proof of Theorem [Joshi 6.1.1...]... \begin  {corollary} For every context-free grammar $\mathfrak  {G}$ there exists a tree-adjoining grammar $\mathfrak  {G}'$ such that $\mathfrak  {G}$ and $\mathfrak  {G}'$ are strongly equivalent -- both formalisms generate the same set of strings (weak equivalence) and the same abstract syntactic structures (in this case, trees) behind the strings (strong equivalence). \begin  {proof} Proposition \ref  {prop:cfgastag1} provides one direction of both equivalences. For the other direction, we have to show that each auxiliary tree (a 2-cell) and its adjoining operation (a 3-cell) in $\mathfrak  {G}'$ corresponds to a single 2-cell tree of some CFG signature $\mathfrak  {G}$, which we demonstrate by construction. The highlighted 3-cells of $\mathfrak  {G}'$ are obtained systematically from the auxiliary 2-cells as follows: the root and foot nodes $\texttt  {X},\texttt  {X}^\star $ indicate which wire-type to take as the identity in the left of the 3-cell, and the right of the 3-cell is obtained by replacing all non-$\texttt  {X}$ open wires $\texttt  {Y}$ with their leaf-ansatzes $\texttt  {Y}^\downarrow $. This establishes a correspondence between any 2-cells of $\mathfrak  {G}$ considered as auxiliary trees in $\mathfrak  {G}'$. \end  {proof} \end  {corollary}}}{97}{theorem.2.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Tree adjoining grammars with local constraints}{98}{subsection.2.1.3}\protected@file@percent }
 \newpmemlabel{^_124}{98}
 \newpmemlabel{^_125}{98}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces  Selective and null adjoining diagrammatically: a reproduction of Example 2.5 of [Joshi] which demonstrates the usage of selective and null adjoining. The notation from [Joshi] is presented first, followed by their corresponding representations in an $n$-categorical signature. The initial tree is presented as a 2-cell where the (SA) rules are rewritable nodes, that serve as sources of rewrites in the 3-cell presentations of the auxiliary trees. }}{98}{Item.14}\protected@file@percent }
-\newpmemlabel{^_126}{98}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}Braiding, symmetries, and suspension}{98}{subsection.2.1.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Reading the central diagram in the main body from left-to-right, we additionally depict the breakdown of the complete derivation in terms of the constitituent 2-cells, and the source and target 1-cells. Evidently, all string rewriting systems with finitely many symbols and rules can be viewed as finitely presented 1-object-2-categories.}}{98}{theorem.2.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Tree adjoining grammars with local constraints}{99}{subsection.2.1.3}\protected@file@percent }
+\newpmemlabel{^_126}{99}
 \newpmemlabel{^_127}{99}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces  Obligatory adjoining diagrammatically: a reproduction of Example 2.11 of [Joshi] which demonstrates the usage of obligatory adjoining, marked orange. The notation from [Joshi] is presented first, followed by their corresponding representations in an $n$-categorical signature. The initial tree is presented as a 2-cell where the (OA) rule is given its own 2-cell, which is the source of rewrites in 3-cell presentations of auxiliary trees. We may capture the obligatory nature of the rewrite by asking that finished derivations contain no instance of the orange 2-cell. }}{99}{Item.14}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces  Selective and null adjoining diagrammatically: a reproduction of Example 2.5 of [Joshi] which demonstrates the usage of selective and null adjoining. The notation from [Joshi] is presented first, followed by their corresponding representations in an $n$-categorical signature. The initial tree is presented as a 2-cell where the (SA) rules are rewritable nodes, that serve as sources of rewrites in the 3-cell presentations of the auxiliary trees. }}{99}{Item.14}\protected@file@percent }
 \newpmemlabel{^_128}{99}
-\newpmemlabel{^_129}{99}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.14}{\ignorespaces  In our analogy with string rewrite systems, we might like that the following rewrites are equivalent, while respecting that they are not equal, representing $x,a,b$ as blue, red, and green wires respectively. Such rewrites from the empty string to itself are more generally called \emph  {scalars} in the monoidal setting, viewed 2-categorically. }}{99}{subsection.2.1.4}\protected@file@percent }
-\newpmemlabel{^_130}{99}
-\newpmemlabel{^_132}{99}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}Braiding, symmetries, and suspension}{99}{subsection.2.1.4}\protected@file@percent }
+\newpmemlabel{^_129}{100}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.14}{\ignorespaces  Obligatory adjoining diagrammatically: a reproduction of Example 2.11 of [Joshi] which demonstrates the usage of obligatory adjoining, marked orange. The notation from [Joshi] is presented first, followed by their corresponding representations in an $n$-categorical signature. The initial tree is presented as a 2-cell where the (OA) rule is given its own 2-cell, which is the source of rewrites in 3-cell presentations of auxiliary trees. We may capture the obligatory nature of the rewrite by asking that finished derivations contain no instance of the orange 2-cell. }}{100}{Item.14}\protected@file@percent }
+\newpmemlabel{^_130}{100}
 \newpmemlabel{^_131}{100}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.15}{\ignorespaces We may generally represent such scalars as labelled dots. A fact about scalars in a 1-object-2-category called the Eckmann-Hilton argument \begin  {color}{red}CITE \end  {color}\xspace  is that dots may circle around one another, and all of those expressions are equivalent up to homotopy. The mechanism that enables this in our setting is that the empty string is equal to copies of itself, which creates the necessary space for manoeuvering; translating into the $n$-categorical setting, expressions are equivalent up to introducing and contracting identities.}}{100}{subsection.2.1.4}\protected@file@percent }
-\newpmemlabel{^_133}{100}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.16}{\ignorespaces We may view the homotopies that get us from one rewrite to another as 3-cells, which produces a braid in a pair of wires when viewed as a vignette. Up to processive isotopies \begin  {color}{red}CITE \end  {color}\xspace  , which are continuous bijective transformations that don't let wires double back on themselves, we can identify two different braidings that are not continuously deformable to one another in the 3-dimensional space of the vignette. We distinguish the braidings visually by letting wires either go over or under one another.}}{100}{subsection.2.1.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.15}{\ignorespaces  In our analogy with string rewrite systems, we might like that the following rewrites are equivalent, while respecting that they are not equal, representing $x,a,b$ as blue, red, and green wires respectively. Such rewrites from the empty string to itself are more generally called \emph  {scalars} in the monoidal setting, viewed 2-categorically. }}{100}{subsection.2.1.4}\protected@file@percent }
+\newpmemlabel{^_132}{100}
 \newpmemlabel{^_134}{100}
+\newpmemlabel{^_133}{101}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.16}{\ignorespaces We may generally represent such scalars as labelled dots. A fact about scalars in a 1-object-2-category called the Eckmann-Hilton argument \begin  {color}{red}CITE \end  {color}\xspace  is that dots may circle around one another, and all of those expressions are equivalent up to homotopy. The mechanism that enables this in our setting is that the empty string is equal to copies of itself, which creates the necessary space for manoeuvering; translating into the $n$-categorical setting, expressions are equivalent up to introducing and contracting identities.}}{101}{subsection.2.1.4}\protected@file@percent }
 \newpmemlabel{^_135}{101}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.17}{\ignorespaces We can depict these swaps by movements in a cubic volume where each axis corresponds to a direction of composition. Whereas on the plane the dots have two ways to swap places -- clockwise and counterclockwise rotation -- in the volume they have two new ways to swap places -- clockwise and counterclockwise in the new dimension. Shown below are two ways to swap left-to-right sequentially composed dots by clockwise rotations in the forward-backward and up-down directions of composition:}}{101}{subsection.2.1.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.17}{\ignorespaces We may view the homotopies that get us from one rewrite to another as 3-cells, which produces a braid in a pair of wires when viewed as a vignette. Up to processive isotopies \begin  {color}{red}CITE \end  {color}\xspace  , which are continuous bijective transformations that don't let wires double back on themselves, we can identify two different braidings that are not continuously deformable to one another in the 3-dimensional space of the vignette. We distinguish the braidings visually by letting wires either go over or under one another.}}{101}{subsection.2.1.4}\protected@file@percent }
 \newpmemlabel{^_136}{101}
 \newpmemlabel{^_137}{102}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.18}{\ignorespaces For example, taking our CFG signature from earlier, suspension promotes 1-cells to 3-cells and 2-cells to 4-cells. The resulting signature gives us the same diagrams, now with the added ability to consider diagrams equivalent up to twisting wires, which models a string-rewrite system with free swapping of symbol order.}}{102}{subsection.2.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.5}TAGs with links}{102}{subsection.2.1.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.18}{\ignorespaces We can depict these swaps by movements in a cubic volume where each axis corresponds to a direction of composition. Whereas on the plane the dots have two ways to swap places -- clockwise and counterclockwise rotation -- in the volume they have two new ways to swap places -- clockwise and counterclockwise in the new dimension. Shown below are two ways to swap left-to-right sequentially composed dots by clockwise rotations in the forward-backward and up-down directions of composition:}}{102}{subsection.2.1.4}\protected@file@percent }
 \newpmemlabel{^_138}{102}
-\newpmemlabel{^_140}{102}
-\newpmemlabel{^_142}{102}
 \newpmemlabel{^_139}{103}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.19}{\ignorespaces The TAG signature and example derivation are as above. Joshi stresses that adjoining \emph  {preserves} links, and that elementary trees may become \emph  {stretched} in the process of derivation, which are fundamentally topological constraints, akin to the "only (processive) connectivity" matters criterion identifying string diagrams up to isomorphism. Moreover, TAGs evidently have links of two natures: tree edges intended to be planar, and dashed dependency edges intended to freely cross over tree edges. It is easy, but a hack, to ask for planar processive isomorphisms for tree edges and extraplanar behaviour for dependency edges: these are evidently two different kinds of structure glued together, rather than facets of some whole. Weak $n$-categories offer a unified mathematical framework that natively accommodates the desired topological constraints while also granting expressive control over wire-types of differing behaviours. One method to recover TAGs true to the original conception is to stay in a planar 1-object-2-category setting while explicitly including wire-crossing cells for dependency links. The alternative method we opt for in Section \begin  {color}{red}ref \end  {color}\xspace  is to work in a pure "only connectivity matters" setting, recovering the linear ordering of words by generating cells along a chosen wire. I do not know of any conceptual justification for why planarity is so often an implicit constraint in approaches to formal syntax. My best guesses are either that the first port of call for rewrites between 1-dimensional strings of words is a 2-dimensional setting, or it is a limitation of 2-dimensional paper as a medium of thought along with some confusion of map for territory.}}{103}{theorem.2.1.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.19}{\ignorespaces For example, taking our CFG signature from earlier, suspension promotes 1-cells to 3-cells and 2-cells to 4-cells. The resulting signature gives us the same diagrams, now with the added ability to consider diagrams equivalent up to twisting wires, which models a string-rewrite system with free swapping of symbol order.}}{103}{subsection.2.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.5}TAGs with links}{103}{subsection.2.1.5}\protected@file@percent }
+\newpmemlabel{^_140}{103}
+\newpmemlabel{^_142}{103}
+\newpmemlabel{^_144}{103}
 \newpmemlabel{^_141}{104}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.20}{\ignorespaces With our interpretation of TAGS as weak $n$-categorical signatures, We can recover each step of the example derivation automagically in \texttt  {homotopy.io}; just clicking on where we want rewrites allows the proof assistant to execute a typematching tree adjunction. In the process of interpretation, we introduce a link wire-type (in purple), and include directed link generation and elimination morphisms for the $T$ wire-type (in blue). A necessary step in the process of interpretation (which for us involves taking a Poincar\'{e} dual to interpret nodes as wires) is a typing assignment of the tree-branches connected to terminal nodes, which we have opted to read as sharing a $T$-type for minimality, though we could just as well have introduced a separate label-type wire.}}{104}{theorem.2.1.8}\protected@file@percent }
-\newpmemlabel{^_143}{104}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.21}{\ignorespaces The intended takeaway is that even if you don't buy the necessity or formality of weak $n$-categories, there is always the fallback epistemic underpinning of a formal proof assistant for higher dimensional rewriting theories, which is rather simple to use if I have succeeded in communicating higher-dimensional intuitions in this section. \textbf  {N.B.} In practice when using \texttt  {homotopy.io} for the symmetric monoidal setting, it is simpler to suspend symmetric monoidal signatures to begin at 4-cells rather than 3-cells. The reason for this is that under- and over-braids still exist in the symmetric monoidal setting, and while sequentially composed braids are homotopically equivalent to the pair of identities, they are not uniquely so, thus these homotopies must be input manually. By beginning at 4-cells (or higher, due to the stabilisation hypothesis \begin  {color}{red}CITE \end  {color}\xspace  ), braid-eliminations are unique up to homotopy and can be performed more easily in the proof assistant.}}{104}{theorem.2.1.8}\protected@file@percent }
-\tcolorbox@label{11}{105}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.6}Full TAGs in weak $n$-categories}{105}{subsection.2.1.6}\protected@file@percent }
-\tcolorbox@label{12}{106}
-\newlabel{defn:lex}{{2.2.1}{107}{Lexicon}{theorem.2.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.22}{\ignorespaces \textbf  {How to read the diagrams in this section:} we will be making heavy use of pink and purple bubbles as frames to construct circuits. We will depict the bubbles horizontally, as we are permitted to by compact closure, or by reading diagrams with slightly skewed axes.}}{107}{theorem.2.2.1}\protected@file@percent }
-\newlabel{sec:ncat}{{2.1.6}{107}{Full TAGs in weak $n$-categories}{Item.26}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}A generative grammar for text circuits}{107}{section.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}A circuit-growing grammar}{107}{subsection.2.2.1}\protected@file@percent }
-\newpmemlabel{^_144}{108}
-\newpmemlabel{^_145}{108}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.23}{\ignorespaces In this toy example, obtaining the same rewrite that connects the two yellow nodes with a purple wire using only graph-theoretically-local rewrites could potentially require an infinite family of rules for all possible configurations of pink and cyan nodes that separate the yellow, or would otherwise require disturbing other nodes in the rewrite process. In our setting, strong compact closure homotopies handle navigation between different spatial presentations so that a single rewrite rule suffices: the source and target notated by dotted-black circles. Despite the expressive economy and power of finitely presented signatures, we cannot "computationally cheat" graph isomorphism: formally we must supply the compact-closure homotopies as part of the rewrite, absorbed and hidden here by the $\simeq $ notation.}}{108}{theorem.2.2.1}\protected@file@percent }
-\newlabel{fig:locality}{{2.23}{108}{A circuit-growing grammar}{theorem.2.2.1}{}}
-\newlabel{dfn:simpCSG}{{2.2.2}{109}{CSG for simple sentences}{theorem.2.2.2}{}}
-\newlabel{prop:simpsent}{{2.2.3}{109}{}{theorem.2.2.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Simple sentences}{109}{subsection.2.2.2}\protected@file@percent }
-\newlabel{dfn:sentCSG}{{2.2.4}{110}{Sentence structure}{theorem.2.2.4}{}}
-\newlabel{prop:compsent}{{2.2.5}{110}{}{theorem.2.2.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Complex sentences}{110}{subsection.2.2.3}\protected@file@percent }
-\newpmemlabel{^_146}{110}
-\newpmemlabel{^_147}{110}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.24}{\ignorespaces The dotted-blue wires do not contentfully interact with anything else, but this noninteraction disallows overgeneration cases where adpositional phrases might interject between \texttt  {SCV} verbs and their sentential complement, e.g. \leavevmode {\color  {red}\texttt  {Alice sees \underline  {at lunch} Bob drink}}. The dotted-blue wires also indicate a diagrammatic strategy for extensions to accommodate noun phrases, to be explored later.}}{110}{subsection.2.2.3}\protected@file@percent }
-\newlabel{fig:sentbestiary}{{2.24}{110}{Complex sentences}{subsection.2.2.3}{}}
-\newpmemlabel{^_148}{110}
-\newpmemlabel{^_150}{110}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.20}{\ignorespaces The TAG signature and example derivation are as above. Joshi stresses that adjoining \emph  {preserves} links, and that elementary trees may become \emph  {stretched} in the process of derivation, which are fundamentally topological constraints, akin to the "only (processive) connectivity" matters criterion identifying string diagrams up to isomorphism. Moreover, TAGs evidently have links of two natures: tree edges intended to be planar, and dashed dependency edges intended to freely cross over tree edges. It is easy, but a hack, to ask for planar processive isomorphisms for tree edges and extraplanar behaviour for dependency edges: these are evidently two different kinds of structure glued together, rather than facets of some whole. Weak $n$-categories offer a unified mathematical framework that natively accommodates the desired topological constraints while also granting expressive control over wire-types of differing behaviours. One method to recover TAGs true to the original conception is to stay in a planar 1-object-2-category setting while explicitly including wire-crossing cells for dependency links. The alternative method we opt for in Section \begin  {color}{red}ref \end  {color}\xspace  is to work in a pure "only connectivity matters" setting, recovering the linear ordering of words by generating cells along a chosen wire. I do not know of any conceptual justification for why planarity is so often an implicit constraint in approaches to formal syntax. My best guesses are either that the first port of call for rewrites between 1-dimensional strings of words is a 2-dimensional setting, or it is a limitation of 2-dimensional paper as a medium of thought along with some confusion of map for territory.}}{104}{theorem.2.1.8}\protected@file@percent }
+\newpmemlabel{^_143}{105}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.21}{\ignorespaces With our interpretation of TAGS as weak $n$-categorical signatures, We can recover each step of the example derivation automagically in \texttt  {homotopy.io}; just clicking on where we want rewrites allows the proof assistant to execute a typematching tree adjunction. In the process of interpretation, we introduce a link wire-type (in purple), and include directed link generation and elimination morphisms for the $T$ wire-type (in blue). A necessary step in the process of interpretation (which for us involves taking a Poincar\'{e} dual to interpret nodes as wires) is a typing assignment of the tree-branches connected to terminal nodes, which we have opted to read as sharing a $T$-type for minimality, though we could just as well have introduced a separate label-type wire.}}{105}{theorem.2.1.8}\protected@file@percent }
+\newpmemlabel{^_145}{105}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.22}{\ignorespaces The intended takeaway is that even if you don't buy the necessity or formality of weak $n$-categories, there is always the fallback epistemic underpinning of a formal proof assistant for higher dimensional rewriting theories, which is rather simple to use if I have succeeded in communicating higher-dimensional intuitions in this section. \textbf  {N.B.} In practice when using \texttt  {homotopy.io} for the symmetric monoidal setting, it is simpler to suspend symmetric monoidal signatures to begin at 4-cells rather than 3-cells. The reason for this is that under- and over-braids still exist in the symmetric monoidal setting, and while sequentially composed braids are homotopically equivalent to the pair of identities, they are not uniquely so, thus these homotopies must be input manually. By beginning at 4-cells (or higher, due to the stabilisation hypothesis \begin  {color}{red}CITE \end  {color}\xspace  ), braid-eliminations are unique up to homotopy and can be performed more easily in the proof assistant.}}{105}{theorem.2.1.8}\protected@file@percent }
+\tcolorbox@label{11}{106}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.6}Full TAGs in weak $n$-categories}{106}{subsection.2.1.6}\protected@file@percent }
+\tcolorbox@label{12}{107}
+\newlabel{defn:lex}{{2.2.1}{108}{Lexicon}{theorem.2.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.23}{\ignorespaces \textbf  {How to read the diagrams in this section:} we will be making heavy use of pink and purple bubbles as frames to construct circuits. We will depict the bubbles horizontally, as we are permitted to by compact closure, or by reading diagrams with slightly skewed axes.}}{108}{theorem.2.2.1}\protected@file@percent }
+\newlabel{sec:ncat}{{2.1.6}{108}{Full TAGs in weak $n$-categories}{Item.26}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}A generative grammar for text circuits}{108}{section.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}A circuit-growing grammar}{108}{subsection.2.2.1}\protected@file@percent }
+\newpmemlabel{^_146}{109}
+\newpmemlabel{^_147}{109}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.24}{\ignorespaces In this toy example, obtaining the same rewrite that connects the two yellow nodes with a purple wire using only graph-theoretically-local rewrites could potentially require an infinite family of rules for all possible configurations of pink and cyan nodes that separate the yellow, or would otherwise require disturbing other nodes in the rewrite process. In our setting, strong compact closure homotopies handle navigation between different spatial presentations so that a single rewrite rule suffices: the source and target notated by dotted-black circles. Despite the expressive economy and power of finitely presented signatures, we cannot "computationally cheat" graph isomorphism: formally we must supply the compact-closure homotopies as part of the rewrite, absorbed and hidden here by the $\simeq $ notation.}}{109}{theorem.2.2.1}\protected@file@percent }
+\newlabel{fig:locality}{{2.24}{109}{A circuit-growing grammar}{theorem.2.2.1}{}}
+\newlabel{dfn:simpCSG}{{2.2.2}{110}{CSG for simple sentences}{theorem.2.2.2}{}}
+\newlabel{prop:simpsent}{{2.2.3}{110}{}{theorem.2.2.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Simple sentences}{110}{subsection.2.2.2}\protected@file@percent }
+\newlabel{dfn:sentCSG}{{2.2.4}{111}{Sentence structure}{theorem.2.2.4}{}}
+\newlabel{prop:compsent}{{2.2.5}{111}{}{theorem.2.2.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Complex sentences}{111}{subsection.2.2.3}\protected@file@percent }
+\newpmemlabel{^_148}{111}
 \newpmemlabel{^_149}{111}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.25}{\ignorespaces  \begin  {example}[\texttt  {sober} $\alpha $ \texttt  {sees drunk} $\beta $ \texttt  {clumsily dance.}] Now we can see our rewrites in action for sentences. As a matter of convention -- reflected in how the various pass- rules do not interact with labels -- we assume that labelling occurs after all of the words are saturated. We have still not introduced rules for labelling nouns: we delay their consideration until we have settled coreferential structure. For now they are labelled informally with greeks. \end  {example} }}{111}{theorem.2.2.5}\protected@file@percent }
-\newlabel{fig:soberA}{{2.25}{111}{Complex sentences}{theorem.2.2.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.25}{\ignorespaces The dotted-blue wires do not contentfully interact with anything else, but this noninteraction disallows overgeneration cases where adpositional phrases might interject between \texttt  {SCV} verbs and their sentential complement, e.g. \leavevmode {\color  {red}\texttt  {Alice sees \underline  {at lunch} Bob drink}}. The dotted-blue wires also indicate a diagrammatic strategy for extensions to accommodate noun phrases, to be explored later.}}{111}{subsection.2.2.3}\protected@file@percent }
+\newlabel{fig:sentbestiary}{{2.25}{111}{Complex sentences}{subsection.2.2.3}{}}
+\newpmemlabel{^_150}{111}
+\newpmemlabel{^_152}{111}
 \newpmemlabel{^_151}{112}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.26}{\ignorespaces  \begin  {example}[$\alpha $ \texttt  {laughs at} $\beta $] Adpositions form by first sprouting and connecting tendrils under the surface. Because the tendril- and pass- rules are bidirectional, extraneous tendrils can always be retracted, and failed attempts for verbs to find an adpositional unsaturated noun argument can be undone. Though this seems computationally wasteful, it is commonplace in generative grammars to have the grammar overgenerate and later define the set of sentences by restriction, which is reasonable so long as computing the restriction is not computationally hard. In our case, observe that once a verb has been introduced and its argument nouns have been saturated, only the introduction of adpositions can saturate additionally introduced unsaturated nouns. Therefore we may define the finished sentences of the circuit-growing grammar to be those that e.g. contain no unsaturated nodes on the surface, which is a very plausible linear-time check by traversing the surface. \end  {example} }}{112}{theorem.2.2.6}\protected@file@percent }
-\newlabel{fig:Alaughs}{{2.26}{112}{Complex sentences}{theorem.2.2.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Text structure and noun-coreference}{113}{subsection.2.2.4}\protected@file@percent }
-\newpmemlabel{^_152}{113}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.26}{\ignorespaces  \begin  {example}[\texttt  {sober} $\alpha $ \texttt  {sees drunk} $\beta $ \texttt  {clumsily dance.}] Now we can see our rewrites in action for sentences. As a matter of convention -- reflected in how the various pass- rules do not interact with labels -- we assume that labelling occurs after all of the words are saturated. We have still not introduced rules for labelling nouns: we delay their consideration until we have settled coreferential structure. For now they are labelled informally with greeks. \end  {example} }}{112}{theorem.2.2.5}\protected@file@percent }
+\newlabel{fig:soberA}{{2.26}{112}{Complex sentences}{theorem.2.2.6}{}}
 \newpmemlabel{^_153}{113}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.27}{\ignorespaces Only considering words, text is just a list of sentences. However, for our purposes, text additionally has \emph  {coreferential structure}. Ideally, we would like to connect "the same noun" from distinct sentences as we would circuits.}}{113}{subsection.2.2.4}\protected@file@percent }
-\newpmemlabel{^_154}{113}
-\newpmemlabel{^_155}{113}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.28}{\ignorespaces We choose the convention of connecting from left-to-right and from bottom-to-top, so that we might read circuits as we would text: the components corresponding to words will be arranged left-to-right and top-to-bottom. Connecting nouns across distinct sentences presents no issue, but a complication arises when connecting nouns within the same sentence as with reflexive pronouns e.g. \texttt  {Alice likes herself}.}}{113}{subsection.2.2.4}\protected@file@percent }
-\newpmemlabel{^_156}{113}
-\newpmemlabel{^_157}{113}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.29}{\ignorespaces Reflexive coreference would violate of the processivity condition of string diagrams for symmetric monoidal categories. Not all symmetric monoidal categories possess the appropriate structure to interpret such reflexive pronouns, but there exist interpretative options. From left to right in roughly decreasing stringency, compact closed categories are the most direct solution. More weakly, traced symmetric monoidal categories also suffice. If there are no traces, so long as the noun wire possesses a monoid and comonoid, a convolution works. If all else fails, one can just specify a new gate. We will define coreference structure to exclude such reflexive coreference and revisit the issue as an extension.}}{113}{subsection.2.2.4}\protected@file@percent }
-\newlabel{fig:reflcomp}{{2.29}{113}{Text structure and noun-coreference}{subsection.2.2.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.27}{\ignorespaces  \begin  {example}[$\alpha $ \texttt  {laughs at} $\beta $] Adpositions form by first sprouting and connecting tendrils under the surface. Because the tendril- and pass- rules are bidirectional, extraneous tendrils can always be retracted, and failed attempts for verbs to find an adpositional unsaturated noun argument can be undone. Though this seems computationally wasteful, it is commonplace in generative grammars to have the grammar overgenerate and later define the set of sentences by restriction, which is reasonable so long as computing the restriction is not computationally hard. In our case, observe that once a verb has been introduced and its argument nouns have been saturated, only the introduction of adpositions can saturate additionally introduced unsaturated nouns. Therefore we may define the finished sentences of the circuit-growing grammar to be those that e.g. contain no unsaturated nodes on the surface, which is a very plausible linear-time check by traversing the surface. \end  {example} }}{113}{theorem.2.2.6}\protected@file@percent }
+\newlabel{fig:Alaughs}{{2.27}{113}{Complex sentences}{theorem.2.2.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Text structure and noun-coreference}{114}{subsection.2.2.4}\protected@file@percent }
+\newpmemlabel{^_154}{114}
+\newpmemlabel{^_155}{114}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.28}{\ignorespaces Only considering words, text is just a list of sentences. However, for our purposes, text additionally has \emph  {coreferential structure}. Ideally, we would like to connect "the same noun" from distinct sentences as we would circuits.}}{114}{subsection.2.2.4}\protected@file@percent }
+\newpmemlabel{^_156}{114}
+\newpmemlabel{^_157}{114}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.29}{\ignorespaces We choose the convention of connecting from left-to-right and from bottom-to-top, so that we might read circuits as we would text: the components corresponding to words will be arranged left-to-right and top-to-bottom. Connecting nouns across distinct sentences presents no issue, but a complication arises when connecting nouns within the same sentence as with reflexive pronouns e.g. \texttt  {Alice likes herself}.}}{114}{subsection.2.2.4}\protected@file@percent }
 \newpmemlabel{^_158}{114}
-\newpmemlabel{^_160}{114}
-\newpmemlabel{^_162}{114}
-\newpmemlabel{^_164}{114}
-\newpmemlabel{^_166}{114}
-\newpmemlabel{^_168}{114}
-\newpmemlabel{^_159}{115}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.30}{\ignorespaces At this point, it is worth establishing some terminology about the kinds of unsaturated nouns we have in play. The kinds of nouns are distinguished by their tails. \emph  {Lonely} nouns have no coreferences, their tails connect to nothing. \emph  {Head} nouns have a forward coreference in text; they have two tails, one that connects to nothing and the other to a noun later in text. \emph  {Middle} nouns have a forward and backward coreference; they have two tails, one that connects to a noun in some preceding sentence, and one that connects forward to a noun in a succeeding sentence. \emph  {Foot} nouns only have a backward coreference; they have a single tail connecting to a noun in some preceding sentence.}}{115}{subsection.2.2.4}\protected@file@percent }
-\newlabel{fig:nounkinds}{{2.30}{115}{Text structure and noun-coreference}{subsection.2.2.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.5}Text circuit theorem}{115}{subsection.2.2.5}\protected@file@percent }
+\newpmemlabel{^_159}{114}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.30}{\ignorespaces Reflexive coreference would violate of the processivity condition of string diagrams for symmetric monoidal categories. Not all symmetric monoidal categories possess the appropriate structure to interpret such reflexive pronouns, but there exist interpretative options. From left to right in roughly decreasing stringency, compact closed categories are the most direct solution. More weakly, traced symmetric monoidal categories also suffice. If there are no traces, so long as the noun wire possesses a monoid and comonoid, a convolution works. If all else fails, one can just specify a new gate. We will define coreference structure to exclude such reflexive coreference and revisit the issue as an extension.}}{114}{subsection.2.2.4}\protected@file@percent }
+\newlabel{fig:reflcomp}{{2.30}{114}{Text structure and noun-coreference}{subsection.2.2.4}{}}
+\newpmemlabel{^_160}{115}
+\newpmemlabel{^_162}{115}
+\newpmemlabel{^_164}{115}
+\newpmemlabel{^_166}{115}
+\newpmemlabel{^_168}{115}
+\newpmemlabel{^_170}{115}
 \newpmemlabel{^_161}{116}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.31}{\ignorespaces The $n \in \mathbf  {N}$ notation indicates a family of rewrites (and generators) for each noun in the lexicon. Link-label assigns a noun to a diagrammatically linked collection of coreferent nouns, and link-propagation is a case analysis that copies a link label and distributes is across coreferent nouns. Link-rise is a case analysis to connect labels to the surface, and finally \texttt  {N}-label allows a saturated noun to inherit the label of its coreference class, which may either be a noun \texttt  {n} or a pronoun appropriate for the noun, notated $^\texttt  {*}\texttt  {n}$}}{116}{subsection.2.2.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.31}{\ignorespaces At this point, it is worth establishing some terminology about the kinds of unsaturated nouns we have in play. The kinds of nouns are distinguished by their tails. \emph  {Lonely} nouns have no coreferences, their tails connect to nothing. \emph  {Head} nouns have a forward coreference in text; they have two tails, one that connects to nothing and the other to a noun later in text. \emph  {Middle} nouns have a forward and backward coreference; they have two tails, one that connects to a noun in some preceding sentence, and one that connects forward to a noun in a succeeding sentence. \emph  {Foot} nouns only have a backward coreference; they have a single tail connecting to a noun in some preceding sentence.}}{116}{subsection.2.2.4}\protected@file@percent }
+\newlabel{fig:nounkinds}{{2.31}{116}{Text structure and noun-coreference}{subsection.2.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.5}Text circuit theorem}{116}{subsection.2.2.5}\protected@file@percent }
 \newpmemlabel{^_163}{117}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.32}{\ignorespaces We start the derivation by setting up the sentence structure using \texttt  {S}- and \texttt  {SCV}-intro rules, and two instances of \texttt  {N}-intro, one for Alice, and one for Bob. Observe how the \texttt  {N}-intro for Bob occurs within the subsentence scoped over by the \texttt  {SCV}-rule.}}{117}{theorem.2.2.8}\protected@file@percent }
-\newlabel{fig:corefex1}{{2.32}{117}{Text structure and noun-coreference}{theorem.2.2.8}{}}
-\newpmemlabel{^_165}{117}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.33}{\ignorespaces By homotopy, we can rearrange the previous diagram to obtain the source of the linked-\texttt  {N}-intro rewrite in the dashed-box visual aid. Observe how we drag in the root of what is to be Alice's wire. Then we use the \texttt  {IV}-intro in the second sentence, which sets up the surface structure \texttt  {she laughs}, and the deep structure for bookkeeping that \texttt  {she} refers to \texttt  {Alice}.}}{117}{theorem.2.2.8}\protected@file@percent }
-\newlabel{fig:corefex2}{{2.33}{117}{Text structure and noun-coreference}{theorem.2.2.8}{}}
-\newpmemlabel{^_167}{117}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.34}{\ignorespaces By homotopy again, we can do the same for Bob, this time setting up for the $\gamma $ variant of linked-\texttt  {N}-intro which handles the case when the spawning noun is within the scope of an SCV. Then by applying a series of $\texttt  {N}_\uparrow $-swaps, the unsaturated noun is placed to the right of the intransitive verb phrase.}}{117}{theorem.2.2.8}\protected@file@percent }
-\newlabel{fig:corefex3}{{2.34}{117}{Text structure and noun-coreference}{theorem.2.2.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.32}{\ignorespaces The $n \in \mathbf  {N}$ notation indicates a family of rewrites (and generators) for each noun in the lexicon. Link-label assigns a noun to a diagrammatically linked collection of coreferent nouns, and link-propagation is a case analysis that copies a link label and distributes is across coreferent nouns. Link-rise is a case analysis to connect labels to the surface, and finally \texttt  {N}-label allows a saturated noun to inherit the label of its coreference class, which may either be a noun \texttt  {n} or a pronoun appropriate for the noun, notated $^\texttt  {*}\texttt  {n}$}}{117}{subsection.2.2.4}\protected@file@percent }
+\newpmemlabel{^_165}{118}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.33}{\ignorespaces We start the derivation by setting up the sentence structure using \texttt  {S}- and \texttt  {SCV}-intro rules, and two instances of \texttt  {N}-intro, one for Alice, and one for Bob. Observe how the \texttt  {N}-intro for Bob occurs within the subsentence scoped over by the \texttt  {SCV}-rule.}}{118}{theorem.2.2.8}\protected@file@percent }
+\newlabel{fig:corefex1}{{2.33}{118}{Text structure and noun-coreference}{theorem.2.2.8}{}}
+\newpmemlabel{^_167}{118}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.34}{\ignorespaces By homotopy, we can rearrange the previous diagram to obtain the source of the linked-\texttt  {N}-intro rewrite in the dashed-box visual aid. Observe how we drag in the root of what is to be Alice's wire. Then we use the \texttt  {IV}-intro in the second sentence, which sets up the surface structure \texttt  {she laughs}, and the deep structure for bookkeeping that \texttt  {she} refers to \texttt  {Alice}.}}{118}{theorem.2.2.8}\protected@file@percent }
+\newlabel{fig:corefex2}{{2.34}{118}{Text structure and noun-coreference}{theorem.2.2.8}{}}
 \newpmemlabel{^_169}{118}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.35}{\ignorespaces We've already done the surface derivation for the two sentences separately in Figures \ref  {fig:soberA} and \ref  {fig:Alaughs}; since neither of those derivations touch the roots of noun-wires, we can emulate those derivations and skip ahead to the first diagram. }}{118}{theorem.2.2.8}\protected@file@percent }
-\newlabel{fig:corefex4}{{2.35}{118}{Text structure and noun-coreference}{theorem.2.2.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.36}{\ignorespaces Nouns are represented by wires, each `distinct' noun having its own wire.}}{119}{theorem.2.2.9}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.37}{\ignorespaces We represent adjectives, intransitive verbs, and transitive verbs by gates acting on noun-wires. Since a transitive verb has both a subject and an object noun, that will then be two noun-wires, while adjectives and intransitive verbs only have one.}}{119}{theorem.2.2.9}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.38}{\ignorespaces Adverbs, which modify verbs, we represent as boxes with holes in them, with a number of dangling wires in the hole indicating the shape of gate expected, and these should match the input- and output-wires of the box with the whole.}}{119}{theorem.2.2.9}\protected@file@percent }
-\newlabel{prop:linkedlist}{{2.2.12}{119}{}{theorem.2.2.12}{}}
-\newlabel{prop:norefl}{{2.2.13}{119}{}{theorem.2.2.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.39}{\ignorespaces Similarly, adpositions also modify verbs, by moreover adding another noun-wire to the right.}}{120}{theorem.2.2.9}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.40}{\ignorespaces For verbs that take sentential complements and conjunctions, we have families of boxes to accommodate input circuits of all sizes. They add another noun-wire to the left of a circuit.}}{120}{theorem.2.2.9}\protected@file@percent }
-\newlabel{cons:wirejoin}{{2.2.14}{120}{Text to circuit}{theorem.2.2.14}{}}
-\newpmemlabel{^_170}{120}
-\newpmemlabel{^_171}{120}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.44}{\ignorespaces We turn finished text diagrams into text circuits by operating \emph  {in situ}, with extra rules outside the grammatical system that handle connecting noun wires. }}{120}{theorem.2.2.14}\protected@file@percent }
-\newpmemlabel{^_172}{120}
-\newpmemlabel{^_173}{120}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.45}{\ignorespaces  In the first step, by Lemmas \ref  {prop:linkedlist} and \ref  {prop:norefl}, we can always rearrange a finished text diagram such that the noun wires are processive.\\ \par In the second step, use the first rewrite of Construction \ref  {cons:wirejoin} to prepare the wires for connection.\\ \par In the third step, we just ignore the existence of the bubble-scaffolding and the loose scalars. We could in principle add more rewrites to melt the scaffolding away if we wanted, but who cares?\\ \par In the fourth step, we apply the second and third rewrites of Construction \ref  {cons:wirejoin} to connect the wires and eliminate nodules underneath labels. We can also straighten up the wires a bit and make them look proper.\\ \par At this point, we're actually done, because the resulting diagram \emph  {is already a text circuit up to a choice of notation}. }}{120}{theorem.2.2.14}\protected@file@percent }
-\newlabel{prop:text2circ}{{2.2.15}{120}{Finished text diagrams yield unique-up-to-processive-isotopy text circuits}{theorem.2.2.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.41}{\ignorespaces Conjunctions are boxes that take two circuits which might share labels on some wires.}}{121}{theorem.2.2.9}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.42}{\ignorespaces Of course filled up boxes are just gates.}}{121}{theorem.2.2.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.35}{\ignorespaces By homotopy again, we can do the same for Bob, this time setting up for the $\gamma $ variant of linked-\texttt  {N}-intro which handles the case when the spawning noun is within the scope of an SCV. Then by applying a series of $\texttt  {N}_\uparrow $-swaps, the unsaturated noun is placed to the right of the intransitive verb phrase.}}{118}{theorem.2.2.8}\protected@file@percent }
+\newlabel{fig:corefex3}{{2.35}{118}{Text structure and noun-coreference}{theorem.2.2.8}{}}
+\newpmemlabel{^_171}{119}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.36}{\ignorespaces We've already done the surface derivation for the two sentences separately in Figures \ref  {fig:soberA} and \ref  {fig:Alaughs}; since neither of those derivations touch the roots of noun-wires, we can emulate those derivations and skip ahead to the first diagram. }}{119}{theorem.2.2.8}\protected@file@percent }
+\newlabel{fig:corefex4}{{2.36}{119}{Text structure and noun-coreference}{theorem.2.2.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.37}{\ignorespaces Nouns are represented by wires, each `distinct' noun having its own wire.}}{120}{theorem.2.2.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.38}{\ignorespaces We represent adjectives, intransitive verbs, and transitive verbs by gates acting on noun-wires. Since a transitive verb has both a subject and an object noun, that will then be two noun-wires, while adjectives and intransitive verbs only have one.}}{120}{theorem.2.2.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.39}{\ignorespaces Adverbs, which modify verbs, we represent as boxes with holes in them, with a number of dangling wires in the hole indicating the shape of gate expected, and these should match the input- and output-wires of the box with the whole.}}{120}{theorem.2.2.9}\protected@file@percent }
+\newlabel{prop:linkedlist}{{2.2.12}{120}{}{theorem.2.2.12}{}}
+\newlabel{prop:norefl}{{2.2.13}{120}{}{theorem.2.2.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.40}{\ignorespaces Similarly, adpositions also modify verbs, by moreover adding another noun-wire to the right.}}{121}{theorem.2.2.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.41}{\ignorespaces For verbs that take sentential complements and conjunctions, we have families of boxes to accommodate input circuits of all sizes. They add another noun-wire to the left of a circuit.}}{121}{theorem.2.2.9}\protected@file@percent }
+\newlabel{cons:wirejoin}{{2.2.14}{121}{Text to circuit}{theorem.2.2.14}{}}
+\newpmemlabel{^_172}{121}
+\newpmemlabel{^_173}{121}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.45}{\ignorespaces We turn finished text diagrams into text circuits by operating \emph  {in situ}, with extra rules outside the grammatical system that handle connecting noun wires. }}{121}{theorem.2.2.14}\protected@file@percent }
 \newpmemlabel{^_174}{121}
 \newpmemlabel{^_175}{121}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.46}{\ignorespaces  \begin  {convention}[Wire twisting] \end  {convention} Wires are labelled by nouns. We consider two circuits the same if their gate-connectivity is the same. In particular, this means that we can eliminate unnecessary twists in wires to obtain diagrammatically simpler representations. }}{121}{theorem.2.2.16}\protected@file@percent }
-\newlabel{conv:twist}{{2.46}{121}{Text circuit theorem}{theorem.2.2.17}{}}
-\newpmemlabel{^_176}{121}
-\newpmemlabel{^_177}{121}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.47}{\ignorespaces  \begin  {convention}[Sliding] \end  {convention} Since only gate-connectivity matters, we consider circuits the same if all that differs is the horizontal positioning of gates composed in parallel. \begin  {convention}[Reading text circuits] \end  {convention} Text circuits ought to be presented so that they can be read from top to bottom and from left to right, like English text. }}{121}{theorem.2.2.17}\protected@file@percent }
-\newlabel{conv:reading}{{2.47}{121}{Text circuit theorem}{theorem.2.2.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.43}{\ignorespaces Gates compose sequentially by matching labels on some of their noun-wires and in parallel when they share no noun-wires, to give \underline  {text circuits}.}}{122}{theorem.2.2.9}\protected@file@percent }
-\newlabel{conv:gaps}{{2.2.20}{122}{Arbitary vs. fixed holes}{theorem.2.2.20}{}}
-\newlabel{conv:and}{{2.2.21}{122}{Contentless conjunctions}{theorem.2.2.21}{}}
-\newlabel{conv:exists}{{2.2.22}{122}{Lonely wires}{theorem.2.2.22}{}}
-\newlabel{prop:circ2text}{{2.2.23}{123}{Circuit to text}{theorem.2.2.23}{}}
-\newpmemlabel{^_178}{123}
-\newpmemlabel{^_179}{123}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.48}{\ignorespaces Starting with a circuit, we may use Convention \ref  {conv:twist} to arrange the circuit into alternating slices of twisting wires and (possibly tensored) circuits, and this arrangement recurses within boxes. Slices with multiple tensored gates will be treated using Convention \ref  {conv:and}. By convention \ref  {conv:exists}, we decorate lonely wires with formal \texttt  {exists} gates, as in the \texttt  {Frank sees} box. Observe how verbs with sentential complement are depicted with grey gaps, whereas the adverb and adposition combination of \texttt  {Mac crazily laughs at Cricket} is gapless, according to Convention \ref  {conv:gaps}.}}{123}{theorem.2.2.23}\protected@file@percent }
-\newpmemlabel{^_180}{123}
-\newpmemlabel{^_182}{123}
-\newpmemlabel{^_184}{123}
-\newpmemlabel{^_186}{123}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.46}{\ignorespaces  In the first step, by Lemmas \ref  {prop:linkedlist} and \ref  {prop:norefl}, we can always rearrange a finished text diagram such that the noun wires are processive.\\ \par In the second step, use the first rewrite of Construction \ref  {cons:wirejoin} to prepare the wires for connection.\\ \par In the third step, we just ignore the existence of the bubble-scaffolding and the loose scalars. We could in principle add more rewrites to melt the scaffolding away if we wanted, but who cares?\\ \par In the fourth step, we apply the second and third rewrites of Construction \ref  {cons:wirejoin} to connect the wires and eliminate nodules underneath labels. We can also straighten up the wires a bit and make them look proper.\\ \par At this point, we're actually done, because the resulting diagram \emph  {is already a text circuit up to a choice of notation}. }}{121}{theorem.2.2.14}\protected@file@percent }
+\newlabel{prop:text2circ}{{2.2.15}{121}{Finished text diagrams yield unique-up-to-processive-isotopy text circuits}{theorem.2.2.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.42}{\ignorespaces Conjunctions are boxes that take two circuits which might share labels on some wires.}}{122}{theorem.2.2.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.43}{\ignorespaces Of course filled up boxes are just gates.}}{122}{theorem.2.2.9}\protected@file@percent }
+\newpmemlabel{^_176}{122}
+\newpmemlabel{^_177}{122}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.47}{\ignorespaces  \begin  {convention}[Wire twisting] \end  {convention} Wires are labelled by nouns. We consider two circuits the same if their gate-connectivity is the same. In particular, this means that we can eliminate unnecessary twists in wires to obtain diagrammatically simpler representations. }}{122}{theorem.2.2.16}\protected@file@percent }
+\newlabel{conv:twist}{{2.47}{122}{Text circuit theorem}{theorem.2.2.17}{}}
+\newpmemlabel{^_178}{122}
+\newpmemlabel{^_179}{122}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.48}{\ignorespaces  \begin  {convention}[Sliding] \end  {convention} Since only gate-connectivity matters, we consider circuits the same if all that differs is the horizontal positioning of gates composed in parallel. \begin  {convention}[Reading text circuits] \end  {convention} Text circuits ought to be presented so that they can be read from top to bottom and from left to right, like English text. }}{122}{theorem.2.2.17}\protected@file@percent }
+\newlabel{conv:reading}{{2.48}{122}{Text circuit theorem}{theorem.2.2.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.44}{\ignorespaces Gates compose sequentially by matching labels on some of their noun-wires and in parallel when they share no noun-wires, to give \underline  {text circuits}.}}{123}{theorem.2.2.9}\protected@file@percent }
+\newlabel{conv:gaps}{{2.2.20}{123}{Arbitary vs. fixed holes}{theorem.2.2.20}{}}
+\newlabel{conv:and}{{2.2.21}{123}{Contentless conjunctions}{theorem.2.2.21}{}}
+\newlabel{conv:exists}{{2.2.22}{123}{Lonely wires}{theorem.2.2.22}{}}
+\newlabel{prop:circ2text}{{2.2.23}{124}{Circuit to text}{theorem.2.2.23}{}}
+\newpmemlabel{^_180}{124}
 \newpmemlabel{^_181}{124}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.49}{\ignorespaces We then linearise the slices, representing top-to-bottom composition as left-to-right. Twist layers are eliminated, replaced instead by dotted connections indicating processive connectivity. The dashed vertical line distinguishes slices. This step of the procedure always behaves well, guaranteed by Proposition \ref  {prop:linkedlist}. Noun wires that do not participate in earlier slices can be shifted right until the slice they are introduced.}}{124}{theorem.2.2.23}\protected@file@percent }
-\newpmemlabel{^_183}{124}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.50}{\ignorespaces We recurse the linearisation procedure within boxes until there are no more sequentially composed gates. The linearisation procedure evidently terminates for finite text circuits. At this point, we have abstracted away connectivity data, and we are left with individual gates.}}{124}{theorem.2.2.23}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.6}Extensions I: relative and reflexive pronouns}{124}{subsection.2.2.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.49}{\ignorespaces Starting with a circuit, we may use Convention \ref  {conv:twist} to arrange the circuit into alternating slices of twisting wires and (possibly tensored) circuits, and this arrangement recurses within boxes. Slices with multiple tensored gates will be treated using Convention \ref  {conv:and}. By convention \ref  {conv:exists}, we decorate lonely wires with formal \texttt  {exists} gates, as in the \texttt  {Frank sees} box. Observe how verbs with sentential complement are depicted with grey gaps, whereas the adverb and adposition combination of \texttt  {Mac crazily laughs at Cricket} is gapless, according to Convention \ref  {conv:gaps}.}}{124}{theorem.2.2.23}\protected@file@percent }
+\newpmemlabel{^_182}{124}
+\newpmemlabel{^_184}{124}
+\newpmemlabel{^_186}{124}
+\newpmemlabel{^_188}{124}
+\newpmemlabel{^_183}{125}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.50}{\ignorespaces We then linearise the slices, representing top-to-bottom composition as left-to-right. Twist layers are eliminated, replaced instead by dotted connections indicating processive connectivity. The dashed vertical line distinguishes slices. This step of the procedure always behaves well, guaranteed by Proposition \ref  {prop:linkedlist}. Noun wires that do not participate in earlier slices can be shifted right until the slice they are introduced.}}{125}{theorem.2.2.23}\protected@file@percent }
 \newpmemlabel{^_185}{125}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.51}{\ignorespaces By Proposition \ref  {prop:compsent}, gates are equivalent to sentences up to notation, so we swap notations \emph  {in situ}. Conventions \ref  {conv:and} and \ref  {conv:exists} handle the edge cases of parallel gates and lonely wires. Observe that the blue-dotted wiring in text diagrams delineates the contents of boxes that accept sentences.}}{125}{theorem.2.2.23}\protected@file@percent }
-\newpmemlabel{^_187}{125}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.52}{\ignorespaces Recursing notation swaps outwards and connecting left-to-right slices as sentence-bubbles connect yields a text circuit, up to the inclusion of rewrites from Conventions \ref  {conv:and} and \ref  {conv:exists}: applying the reverse of those rewrites and the reverse of text-diagram rewrites yields a valid text-diagram derivation, by Propositions \ref  {prop:compsent} and \ref  {prop:linkedlist}. We haven't formally included transitive verbs with sentential complement in our vocabulary, but it should be obvious at this point how they function with our existing machinery.}}{125}{theorem.2.2.23}\protected@file@percent }
-\newpmemlabel{^_188}{125}
-\newpmemlabel{^_190}{125}
-\tcolorbox@label{13}{126}
-\newlabel{cons:relpron}{{2.2.24}{126}{}{theorem.2.2.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.51}{\ignorespaces We recurse the linearisation procedure within boxes until there are no more sequentially composed gates. The linearisation procedure evidently terminates for finite text circuits. At this point, we have abstracted away connectivity data, and we are left with individual gates.}}{125}{theorem.2.2.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.6}Extensions I: relative and reflexive pronouns}{125}{subsection.2.2.6}\protected@file@percent }
+\newpmemlabel{^_187}{126}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.52}{\ignorespaces By Proposition \ref  {prop:compsent}, gates are equivalent to sentences up to notation, so we swap notations \emph  {in situ}. Conventions \ref  {conv:and} and \ref  {conv:exists} handle the edge cases of parallel gates and lonely wires. Observe that the blue-dotted wiring in text diagrams delineates the contents of boxes that accept sentences.}}{126}{theorem.2.2.23}\protected@file@percent }
 \newpmemlabel{^_189}{126}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.53}{\ignorespaces  \begin  {example}[Introducing relative pronouns] \end  {example} Here we demonstrate derivations of \texttt  {Alice teaches at school that bores Bob} and \texttt  {Alice teaches at school that Bob attends}. The initial steps in both cases are the same, setting up the \texttt  {teaches} phrase structure and introducing a new unsaturated noun in the \texttt  {Bob} phrase to work with the relative pronoun. }}{126}{theorem.2.2.24}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.7}Extensions II: grammar equations}{126}{subsection.2.2.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.53}{\ignorespaces Recursing notation swaps outwards and connecting left-to-right slices as sentence-bubbles connect yields a text circuit, up to the inclusion of rewrites from Conventions \ref  {conv:and} and \ref  {conv:exists}: applying the reverse of those rewrites and the reverse of text-diagram rewrites yields a valid text-diagram derivation, by Propositions \ref  {prop:compsent} and \ref  {prop:linkedlist}. We haven't formally included transitive verbs with sentential complement in our vocabulary, but it should be obvious at this point how they function with our existing machinery.}}{126}{theorem.2.2.23}\protected@file@percent }
+\newpmemlabel{^_190}{126}
 \newpmemlabel{^_192}{126}
-\newpmemlabel{^_194}{126}
-\newpmemlabel{^_196}{126}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.8}Extensions III: Types and Nesting}{126}{subsection.2.2.8}\protected@file@percent }
+\tcolorbox@label{13}{127}
+\newlabel{cons:relpron}{{2.2.24}{127}{}{theorem.2.2.24}{}}
 \newpmemlabel{^_191}{127}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.54}{\ignorespaces Now have a branching derivation. We may either directly generate a transitive verb treating the relative pronoun as a subject, or we may first perform an $\texttt  {N}_\uparrow $-swap first and then generate a transitive verb, treating the relative pronoun as an object. Now the ends of either branch can be labelled to recover our initial examples.}}{127}{theorem.2.2.25}\protected@file@percent }
-\newpmemlabel{^_193}{127}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.55}{\ignorespaces  \begin  {example}[\textbf  {Passive voice}] \[\texttt  {School bores Bob} = \texttt  {Bob \underline  {is bored by} school}\] \end  {example} Twists in wires can be used to model passive voice constructions, which amount to swapping the argument order of verbs. In the original paper \begin  {color}{red}CITE \end  {color}\xspace  , a more detailed analysis including the flanking words \texttt  {\texttt  {is} bored \texttt  {by}} involves introducing a new diagrammatic region, which is modelled by having more than a single 0-cell in the $n$-categorical signature. }}{127}{subsection.2.2.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.54}{\ignorespaces  \begin  {example}[Introducing relative pronouns] \end  {example} Here we demonstrate derivations of \texttt  {Alice teaches at school that bores Bob} and \texttt  {Alice teaches at school that Bob attends}. The initial steps in both cases are the same, setting up the \texttt  {teaches} phrase structure and introducing a new unsaturated noun in the \texttt  {Bob} phrase to work with the relative pronoun. }}{127}{theorem.2.2.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.7}Extensions II: grammar equations}{127}{subsection.2.2.7}\protected@file@percent }
+\newpmemlabel{^_194}{127}
+\newpmemlabel{^_196}{127}
 \newpmemlabel{^_198}{127}
-\newpmemlabel{^_200}{127}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.8}Extensions III: Types and Nesting}{127}{subsection.2.2.8}\protected@file@percent }
+\newpmemlabel{^_193}{128}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.55}{\ignorespaces Now have a branching derivation. We may either directly generate a transitive verb treating the relative pronoun as a subject, or we may first perform an $\texttt  {N}_\uparrow $-swap first and then generate a transitive verb, treating the relative pronoun as an object. Now the ends of either branch can be labelled to recover our initial examples.}}{128}{theorem.2.2.25}\protected@file@percent }
 \newpmemlabel{^_195}{128}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.56}{\ignorespaces  \begin  {example}[\textbf  {Copulas}] \[\texttt  {Red car} = \texttt  {Car is red}\] \end  {example} Modifiers such as adjectives and adverbs when they occur before their respective noun or verb are called \emph  {attributive}. When modifiers occur after their respective target, they are called \emph  {predicative}. In English, without the aid of \texttt  {and}, only a single predicative modifier is permissible, e.g. \texttt  {big red car} and \texttt  {big car is red} are both acceptable, but \leavevmode {\color  {red}texttt{car is big red}} is not. There is no issue in introducing rewrites to handle copular modifier constructions in text diagrams, and in text circuits, there is no distinction between either kind of modifier.}}{128}{theorem.2.2.26}\protected@file@percent }
-\newpmemlabel{^_197}{128}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.57}{\ignorespaces  \begin  {example}[\textbf  {Possessive pronouns}] \[\texttt  {Bob\underline  {'s} pub} = \texttt  {Pub \underline  {that} Bob \underline  {owns}}\] \end  {example} This example, along with other grammar equations, was first introduced in the pregroups and internal wirings context in \begin  {color}{red}CITE \end  {color}\xspace  . Possessive pronouns are placed contiguously in between noun-phrases, for which the diagrammatic technology we developed for placing adpositions can be repurposed. Possessive pronouns may be dealt with by a single rewrite that relies on the presence of a transitive ownership verb in the lexicon, which corresponds to a box-analysis in text circuits. }}{128}{theorem.2.2.27}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Text circuits: details, demos, developments}{128}{section.2.3}\protected@file@percent }
-\newlabel{sec:circs}{{2.3}{128}{Text circuits: details, demos, developments}{section.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.56}{\ignorespaces  \begin  {example}[\textbf  {Passive voice}] \[\texttt  {School bores Bob} = \texttt  {Bob \underline  {is bored by} school}\] \end  {example} Twists in wires can be used to model passive voice constructions, which amount to swapping the argument order of verbs. In the original paper \begin  {color}{red}CITE \end  {color}\xspace  , a more detailed analysis including the flanking words \texttt  {\texttt  {is} bored \texttt  {by}} involves introducing a new diagrammatic region, which is modelled by having more than a single 0-cell in the $n$-categorical signature. }}{128}{subsection.2.2.7}\protected@file@percent }
+\newpmemlabel{^_200}{128}
+\newpmemlabel{^_202}{128}
+\newpmemlabel{^_197}{129}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.57}{\ignorespaces  \begin  {example}[\textbf  {Copulas}] \[\texttt  {Red car} = \texttt  {Car is red}\] \end  {example} Modifiers such as adjectives and adverbs when they occur before their respective noun or verb are called \emph  {attributive}. When modifiers occur after their respective target, they are called \emph  {predicative}. In English, without the aid of \texttt  {and}, only a single predicative modifier is permissible, e.g. \texttt  {big red car} and \texttt  {big car is red} are both acceptable, but \leavevmode {\color  {red}texttt{car is big red}} is not. There is no issue in introducing rewrites to handle copular modifier constructions in text diagrams, and in text circuits, there is no distinction between either kind of modifier.}}{129}{theorem.2.2.26}\protected@file@percent }
 \newpmemlabel{^_199}{129}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.58}{\ignorespaces  \begin  {example}[\textbf  {Intensifers}] \[\texttt  {Alice very quickly runs}\] \end  {example} The deep nodes of a text diagram may be equivalently viewed as evaluators in a symmetric monoidal closed setting, and the surface nodes as states for the evaluators. By Curry-Howard-Lambek, this view recovers typelogical grammar settings where composition is some variant of modus ponens. So long as the typing rules are operadic or treelike (which is almost always the case for typelogical grammars, as there are rarely gentzen-style sequent rules that generate multiple outputs), we may instead use a notation where parent edges of evaluation branches become nesting boxes. }}{129}{subsection.2.2.8}\protected@file@percent }
-\newpmemlabel{^_201}{129}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.59}{\ignorespaces  \begin  {example}[\textbf  {Comparatives}] \[\texttt  {Alice drinks \underline  {less than} Bob drinks}\] \end  {example} Just as transitive verbs modify two nouns, comparatives are higher-order transitive modifiers that act on the data of verbs or adjectives. A benefit of the symmetric monoidal closed view is that it easily accommodates mixed-order and multi-argument modifiers. }}{129}{theorem.2.2.29}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.58}{\ignorespaces  \begin  {example}[\textbf  {Possessive pronouns}] \[\texttt  {Bob\underline  {'s} pub} = \texttt  {Pub \underline  {that} Bob \underline  {owns}}\] \end  {example} This example, along with other grammar equations, was first introduced in the pregroups and internal wirings context in \begin  {color}{red}CITE \end  {color}\xspace  . Possessive pronouns are placed contiguously in between noun-phrases, for which the diagrammatic technology we developed for placing adpositions can be repurposed. Possessive pronouns may be dealt with by a single rewrite that relies on the presence of a transitive ownership verb in the lexicon, which corresponds to a box-analysis in text circuits. }}{129}{theorem.2.2.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Text circuits: details, demos, developments}{129}{section.2.3}\protected@file@percent }
+\newlabel{sec:circs}{{2.3}{129}{Text circuits: details, demos, developments}{section.2.3}{}}
+\newpmemlabel{^_201}{130}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.59}{\ignorespaces  \begin  {example}[\textbf  {Intensifers}] \[\texttt  {Alice very quickly runs}\] \end  {example} The deep nodes of a text diagram may be equivalently viewed as evaluators in a symmetric monoidal closed setting, and the surface nodes as states for the evaluators. By Curry-Howard-Lambek, this view recovers typelogical grammar settings where composition is some variant of modus ponens. So long as the typing rules are operadic or treelike (which is almost always the case for typelogical grammars, as there are rarely gentzen-style sequent rules that generate multiple outputs), we may instead use a notation where parent edges of evaluation branches become nesting boxes. }}{130}{subsection.2.2.8}\protected@file@percent }
+\newpmemlabel{^_203}{130}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.60}{\ignorespaces  \begin  {example}[\textbf  {Comparatives}] \[\texttt  {Alice drinks \underline  {less than} Bob drinks}\] \end  {example} Just as transitive verbs modify two nouns, comparatives are higher-order transitive modifiers that act on the data of verbs or adjectives. A benefit of the symmetric monoidal closed view is that it easily accommodates mixed-order and multi-argument modifiers. }}{130}{theorem.2.2.29}\protected@file@percent }
 \citation{wilson_string_2022}
 \citation{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Avenues I: syncategorematicity as distributivity}{130}{subsection.2.3.1}\protected@file@percent }
-\newpmemlabel{^_202}{130}
-\newpmemlabel{^_204}{130}
-\newpmemlabel{^_206}{130}
-\newpmemlabel{^_203}{131}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.60}{\ignorespaces  \begin  {example}[\textbf  {Syncategorematicity I}] \[\texttt  {Alice \underline  {and} Bob drink}\] \end  {example} \emph  {Syncategorematic} are roughly words have contextually-dependent semantics. In our terms, since we consider the semantics of text circuits to be underpinned by monoidal functors that reify the circuits in a target category, syncategorematic words such as \texttt  {and} may be treated as distributive laws. In this example, \underline  {and} occurs as a conjunction of nouns, and is eliminated by distributive-law rewrites within the deep structure of the text diagram \emph  {before translation into circuits}. Note that what is meant by \emph  {distributive} here is, in string-diagrammatic terms, precisely the same as that in algebra, for expressions such as $a \times (b + c) = (a \times b) + (a \times c)$. A new copy-node for verb labels that has rewrites for all verbs facilitates distribution, and the deep \texttt  {and} nodes come in a tensor-dentensor pair analogous to those for nonstrict string diagrams \begin  {color}{red}CITE \end  {color}\xspace  . Sources of rewrites are outlined in dashed boxes. }}{131}{subsection.2.3.1}\protected@file@percent }
-\newpmemlabel{^_205}{131}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.61}{\ignorespaces  \begin  {example}[\textbf  {Syncategorematicity II}] \[\texttt  {Bob drinks \underline  {and} smokes}\] \end  {example} In this example, the same word \texttt  {and} is a conjunction of verbs. In this case we choose to interpret the conjunction of verbs as sequential composition, so there is no need for a corresponding detensor for the \texttt  {and} of verbs. }}{131}{theorem.2.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Avenues II: determiners and quantifiers in context}{131}{subsection.2.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Avenues I: syncategorematicity as distributivity}{131}{subsection.2.3.1}\protected@file@percent }
+\newpmemlabel{^_204}{131}
+\newpmemlabel{^_206}{131}
+\newpmemlabel{^_208}{131}
+\newpmemlabel{^_205}{132}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.61}{\ignorespaces  \begin  {example}[\textbf  {Syncategorematicity I}] \[\texttt  {Alice \underline  {and} Bob drink}\] \end  {example} \emph  {Syncategorematic} are roughly words have contextually-dependent semantics. In our terms, since we consider the semantics of text circuits to be underpinned by monoidal functors that reify the circuits in a target category, syncategorematic words such as \texttt  {and} may be treated as distributive laws. In this example, \underline  {and} occurs as a conjunction of nouns, and is eliminated by distributive-law rewrites within the deep structure of the text diagram \emph  {before translation into circuits}. Note that what is meant by \emph  {distributive} here is, in string-diagrammatic terms, precisely the same as that in algebra, for expressions such as $a \times (b + c) = (a \times b) + (a \times c)$. A new copy-node for verb labels that has rewrites for all verbs facilitates distribution, and the deep \texttt  {and} nodes come in a tensor-dentensor pair analogous to those for nonstrict string diagrams \begin  {color}{red}CITE \end  {color}\xspace  . Sources of rewrites are outlined in dashed boxes. }}{132}{subsection.2.3.1}\protected@file@percent }
 \newpmemlabel{^_207}{132}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.62}{\ignorespaces  \begin  {example}[\textbf  {Coordination}] \[\texttt  {Alice \underline  {and} Bob drink beer \underline  {and} wine \underline  {respectively}}\] \end  {example} We stand to win in terms of conceptual economy for modelling; more complex phenomena of text structure such as coordination appear to be resolvable in the same framework of distributivity-law rewrites. }}{132}{theorem.2.3.2}\protected@file@percent }
-\newpmemlabel{^_208}{132}
-\newpmemlabel{^_209}{132}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.63}{\ignorespaces  \begin  {example}[\textbf  {Determiners I}] \[\texttt  {Bob drinks \underline  {the} beer} \text  { (among drinks)}\] \end  {example} Here, \texttt  {drinks} is considered transitive and \texttt  {the beer} a nesting box for \texttt  {drinks} that reaches over to contextual wires representing a selection of beverages. In this case (relying on the implicit uniqueness of \texttt  {the}), a series of \texttt  {beer?} tests may be computed, and the best match chosen as the resulting argument for \texttt  {drinks}. }}{132}{subsection.2.3.2}\protected@file@percent }
-\newpmemlabel{^_210}{132}
-\newpmemlabel{^_211}{132}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.64}{\ignorespaces  \begin  {example}[\textbf  {Determiners II}] \[\texttt  {Bob drinks \underline  {a} beer} \text  { (among drinks)}\] \end  {example} We take the logical (and pragmatic) reading of \texttt  {a} as $\exists ! x: \texttt  {beer?}(x) \wedge \texttt  {drinks?}(\texttt  {Bob},x)$. Subject to having a method to hold onto alternatives -- in essence an inquisitive semantics approach -- we may create alternative circuits for each successful \texttt  {beer?} test. }}{132}{theorem.2.3.4}\protected@file@percent }
-\newpmemlabel{^_212}{132}
-\newpmemlabel{^_214}{132}
-\newpmemlabel{^_216}{132}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.62}{\ignorespaces  \begin  {example}[\textbf  {Syncategorematicity II}] \[\texttt  {Bob drinks \underline  {and} smokes}\] \end  {example} In this example, the same word \texttt  {and} is a conjunction of verbs. In this case we choose to interpret the conjunction of verbs as sequential composition, so there is no need for a corresponding detensor for the \texttt  {and} of verbs. }}{132}{theorem.2.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Avenues II: determiners and quantifiers in context}{132}{subsection.2.3.2}\protected@file@percent }
+\newpmemlabel{^_209}{133}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.63}{\ignorespaces  \begin  {example}[\textbf  {Coordination}] \[\texttt  {Alice \underline  {and} Bob drink beer \underline  {and} wine \underline  {respectively}}\] \end  {example} We stand to win in terms of conceptual economy for modelling; more complex phenomena of text structure such as coordination appear to be resolvable in the same framework of distributivity-law rewrites. }}{133}{theorem.2.3.2}\protected@file@percent }
+\newpmemlabel{^_210}{133}
+\newpmemlabel{^_211}{133}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.64}{\ignorespaces  \begin  {example}[\textbf  {Determiners I}] \[\texttt  {Bob drinks \underline  {the} beer} \text  { (among drinks)}\] \end  {example} Here, \texttt  {drinks} is considered transitive and \texttt  {the beer} a nesting box for \texttt  {drinks} that reaches over to contextual wires representing a selection of beverages. In this case (relying on the implicit uniqueness of \texttt  {the}), a series of \texttt  {beer?} tests may be computed, and the best match chosen as the resulting argument for \texttt  {drinks}. }}{133}{subsection.2.3.2}\protected@file@percent }
+\newpmemlabel{^_212}{133}
 \newpmemlabel{^_213}{133}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.65}{\ignorespaces  \begin  {example}[\textbf  {Determiners III}] \[\texttt  {Bob drinks \underline  {a} beer} \text  { (that we didn't know about)}\] \end  {example} When there are no beers in context, the same statement takes on a dynamic reading: it constitutes the introduction of a beer into discourse. In terms of text circuits, this amounts to introducing a novel beer-state and beer-wire. Determining an appropriate setting to accommodate "arbitrary" vs. "concrete" beers (c.f. Fine's arbitrary objects \begin  {color}{red}CITE \end  {color}\xspace  ) requires further research and experimentation, but preliminarily it is known that density matrices are capable of modelling semantic entailment \begin  {color}{red}CITE \end  {color}\xspace  , at the computational cost of adopting the kronecker product. This diagram doesn't typecheck, but note that it doesn't have to, because our strategy for evaluation of determiners treats circuits as syntactic objects to be manipulated. }}{133}{theorem.2.3.5}\protected@file@percent }
-\newpmemlabel{^_215}{133}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.66}{\ignorespaces  \begin  {example}[\textbf  {Quantifiers I}] \[\texttt  {Bob drinks \underline  {all the beers}} \text  { (in context)}\] \end  {example} In a finitary context, drinking all the beers amounts to applying the distributivity of \texttt  {and}. }}{133}{theorem.2.3.6}\protected@file@percent }
-\newpmemlabel{^_217}{133}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.67}{\ignorespaces  \begin  {example}[\textbf  {Quantifiers II}] \[\texttt  {Bob drinks \underline  {all} beers} \text  { (generic)}\] \end  {example} Without the determiner \texttt  {the}, this becomes a generic statement, which logically amounts to (analysing the usual conditional as a disjunction) $\forall x: \neg \texttt  {beer?}(x) \vee \texttt  {drinks?}(\texttt  {Bob},x)$. We can treat generic universal quantifiers of this kind in at least two ways. The first essentially truth-conditional approach is to treat the generic as a process-theoretic condition governing measurements: whenever it is the case that something is a beer, it is the case that Bob drinks it. The second "inferential" appraoch is to treat the generic as a rewrite of text circuits conditioned on a beer test: whenever something is a beer we may add on a gate witnessing that Bob drinks that beverage. }}{133}{theorem.2.3.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}A modern mathematician's companion to Montague's "Universal Grammar"}{133}{section.2.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.65}{\ignorespaces  \begin  {example}[\textbf  {Determiners II}] \[\texttt  {Bob drinks \underline  {a} beer} \text  { (among drinks)}\] \end  {example} We take the logical (and pragmatic) reading of \texttt  {a} as $\exists ! x: \texttt  {beer?}(x) \wedge \texttt  {drinks?}(\texttt  {Bob},x)$. Subject to having a method to hold onto alternatives -- in essence an inquisitive semantics approach -- we may create alternative circuits for each successful \texttt  {beer?} test. }}{133}{theorem.2.3.4}\protected@file@percent }
+\newpmemlabel{^_214}{133}
+\newpmemlabel{^_216}{133}
+\newpmemlabel{^_218}{133}
+\newpmemlabel{^_215}{134}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.66}{\ignorespaces  \begin  {example}[\textbf  {Determiners III}] \[\texttt  {Bob drinks \underline  {a} beer} \text  { (that we didn't know about)}\] \end  {example} When there are no beers in context, the same statement takes on a dynamic reading: it constitutes the introduction of a beer into discourse. In terms of text circuits, this amounts to introducing a novel beer-state and beer-wire. Determining an appropriate setting to accommodate "arbitrary" vs. "concrete" beers (c.f. Fine's arbitrary objects \begin  {color}{red}CITE \end  {color}\xspace  ) requires further research and experimentation, but preliminarily it is known that density matrices are capable of modelling semantic entailment \begin  {color}{red}CITE \end  {color}\xspace  , at the computational cost of adopting the kronecker product. This diagram doesn't typecheck, but note that it doesn't have to, because our strategy for evaluation of determiners treats circuits as syntactic objects to be manipulated. }}{134}{theorem.2.3.5}\protected@file@percent }
+\newpmemlabel{^_217}{134}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.67}{\ignorespaces  \begin  {example}[\textbf  {Quantifiers I}] \[\texttt  {Bob drinks \underline  {all the beers}} \text  { (in context)}\] \end  {example} In a finitary context, drinking all the beers amounts to applying the distributivity of \texttt  {and}. }}{134}{theorem.2.3.6}\protected@file@percent }
+\newpmemlabel{^_219}{134}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.68}{\ignorespaces  \begin  {example}[\textbf  {Quantifiers II}] \[\texttt  {Bob drinks \underline  {all} beers} \text  { (generic)}\] \end  {example} Without the determiner \texttt  {the}, this becomes a generic statement, which logically amounts to (analysing the usual conditional as a disjunction) $\forall x: \neg \texttt  {beer?}(x) \vee \texttt  {drinks?}(\texttt  {Bob},x)$. We can treat generic universal quantifiers of this kind in at least two ways. The first essentially truth-conditional approach is to treat the generic as a process-theoretic condition governing measurements: whenever it is the case that something is a beer, it is the case that Bob drinks it. The second "inferential" appraoch is to treat the generic as a rewrite of text circuits conditioned on a beer test: whenever something is a beer we may add on a gate witnessing that Bob drinks that beverage. }}{134}{theorem.2.3.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}A modern mathematician's companion to Montague's "Universal Grammar"}{134}{section.2.4}\protected@file@percent }
 \citation{montague1970universal}
 \citation{montague1973proper}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}What did Montague consider grammar to be?}{134}{subsection.2.4.1}\protected@file@percent }
-\newlabel{sec:monty}{{2.4.1}{134}{What did Montague consider grammar to be?}{subsection.2.4.1}{}}
-\newlabel{algdata}{{2.4.1}{135}{Generating data of an Algebra}{theorem.2.4.1}{}}
-\newlabel{ids}{{2.4.2}{135}{Identities}{theorem.2.4.2}{}}
-\newlabel{constants}{{2.4.3}{135}{Constants}{theorem.2.4.3}{}}
-\newlabel{comp}{{2.4.4}{135}{Composition}{theorem.2.4.4}{}}
-\newlabel{polyop}{{2.4.5}{135}{Polynomial Operations}{theorem.2.4.5}{}}
-\newlabel{homo}{{2.4.6}{135}{Homomorphism of Algebras}{theorem.2.4.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}On the historical inevitability of text diagrams}{137}{subsection.2.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}What did Montague consider grammar to be?}{135}{subsection.2.4.1}\protected@file@percent }
+\newlabel{sec:monty}{{2.4.1}{135}{What did Montague consider grammar to be?}{subsection.2.4.1}{}}
+\newlabel{algdata}{{2.4.1}{136}{Generating data of an Algebra}{theorem.2.4.1}{}}
+\newlabel{ids}{{2.4.2}{136}{Identities}{theorem.2.4.2}{}}
+\newlabel{constants}{{2.4.3}{136}{Constants}{theorem.2.4.3}{}}
+\newlabel{comp}{{2.4.4}{136}{Composition}{theorem.2.4.4}{}}
+\newlabel{polyop}{{2.4.5}{136}{Polynomial Operations}{theorem.2.4.5}{}}
+\newlabel{homo}{{2.4.6}{136}{Homomorphism of Algebras}{theorem.2.4.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}On the historical inevitability of text diagrams}{138}{subsection.2.4.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapter}{\numberline {3}Continuous relations for semantics}{139}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chapter:contrel}{{3}{139}{Continuous relations for semantics}{chapter.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Continuous Relations for iconic semantics}{140}{section.3.1}\protected@file@percent }
-\newpmemlabel{^_218}{140}
-\newpmemlabel{^_219}{140}
+\newpmemlabel{^_220}{140}
+\newpmemlabel{^_221}{140}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Sometimes it is very helpful to illustrate concepts using iconic representations in cartoons. For instance in the \emph  {conduit metaphor} \begin  {color}{red}CITE \end  {color}\xspace  , \texttt  {words} are considered \emph  {containers} for \texttt  {ideas}, and \texttt  {communication} is considered a \emph  {conduit} along which those containers are sent.}}{140}{section.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Continuous Relations by examples}{142}{section.3.2}\protected@file@percent }
-\newlabel{defn:Contrelation}{{3.2.7}{143}{Continuous Relation}{theorem.3.2.7}{}}
-\newlabel{prop:framehom}{{3.2.13}{144}{}{theorem.3.2.13}{}}
-\newlabel{cor:homspace}{{3.2.14}{144}{}{theorem.3.2.14}{}}
-\newlabel{lem:capideal}{{3.2.17}{145}{Partial functions are a $\cap $-ideal}{theorem.3.2.17}{}}
-\newlabel{lem:edgecomplete}{{3.2.18}{145}{Any single edge can be extended to a continuous partial function}{theorem.3.2.18}{}}
-\newlabel{prop:hombasis}{{3.2.19}{145}{}{theorem.3.2.19}{}}
-\newpmemlabel{^_220}{146}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}The category \textbf  {ContRel}}{148}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Symmetric Monoidal structure}{148}{subsection.3.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Rig category structure}{149}{subsection.3.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Monoidal (co!)closure}{150}{subsection.3.3.3}\protected@file@percent }
-\newlabel{prop:prodvsclos}{{3.3.17}{150}{}{theorem.3.3.17}{}}
-\newlabel{defn:coarsening}{{3.3.19}{151}{Coarsening}{theorem.3.3.19}{}}
-\newlabel{defn:compare}{{3.3.20}{151}{Pseudo-compare}{theorem.3.3.20}{}}
-\newlabel{defn:perfectclosure}{{3.3.21}{152}{}{theorem.3.3.21}{}}
-\newlabel{prop:coclosure}{{3.3.22}{152}{\textbf {ContRel} is monoidal coclosed}{theorem.3.3.22}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Category-theoretic endnotes}{154}{subsection.3.3.4}\protected@file@percent }
-\newlabel{lem:disccont}{{3.3.23}{154}{Any relation $R$ between discrete topologies is continuous}{theorem.3.3.23}{}}
-\newlabel{lem:idadj}{{3.3.26}{154}{$RL = 1_{\textbf {Rel}}$}{theorem.3.3.26}{}}
-\newlabel{lem:coarse}{{3.3.28}{154}{Coarsening is a continuous relation}{theorem.3.3.28}{}}
-\newlabel{prop:reladj}{{3.3.29}{155}{$L \dashv R$}{theorem.3.3.29}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Populating space with shapes using sticky spiders}{159}{section.3.4}\protected@file@percent }
-\newlabel{sec:stickyspider}{{3.4}{159}{Populating space with shapes using sticky spiders}{section.3.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}When does an object have a spider (or something close to one)?}{159}{subsection.3.4.1}\protected@file@percent }
-\newlabel{ex:compnotspider}{{3.4.1}{159}{The copy-compare spiders of $\mathbf {Rel}$ are not always continuous}{theorem.3.4.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Topological concepts in flatland via \textbf  {ContRel}}{163}{section.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Shapes and places}{163}{subsection.3.5.1}\protected@file@percent }
-\newlabel{sec:shapes}{{3.5.1}{163}{Shapes and places}{subsection.3.5.1}{}}
-\newlabel{ex:chessboard}{{3.5.2}{164}{Where is a piece on a chessboard?}{theorem.3.5.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}The unit interval}{166}{subsection.3.5.2}\protected@file@percent }
-\newlabel{sec:interval}{{3.5.2}{166}{The unit interval}{subsection.3.5.2}{}}
-\newlabel{thm:Friedman}{{3.5.3}{166}{Friedman}{theorem.3.5.3}{}}
-\newpmemlabel{^_222}{166}
-\newpmemlabel{^_224}{166}
-\newpmemlabel{^_226}{168}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Displacing shapes}{168}{subsection.3.5.3}\protected@file@percent }
-\newlabel{sec:displace}{{3.5.3}{168}{Displacing shapes}{subsection.3.5.3}{}}
-\newpmemlabel{^_228}{168}
-\newpmemlabel{^_230}{168}
-\newpmemlabel{^_232}{168}
-\newpmemlabel{^_234}{168}
-\newpmemlabel{^_236}{168}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.4}Moving shapes}{169}{subsection.3.5.4}\protected@file@percent }
-\newlabel{sec:moving}{{3.5.4}{169}{Moving shapes}{subsection.3.5.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.5}Rigid motion}{173}{subsection.3.5.5}\protected@file@percent }
-\newlabel{sec:rigidmotion}{{3.5.5}{173}{Rigid motion}{subsection.3.5.5}{}}
-\newpmemlabel{^_238}{173}
-\newpmemlabel{^_240}{173}
-\newpmemlabel{^_242}{173}
-\newpmemlabel{^_244}{173}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.6}Modelling linguistic topological concepts}{173}{subsection.3.5.6}\protected@file@percent }
-\newlabel{sec:topconcept}{{3.5.6}{173}{Modelling linguistic topological concepts}{subsection.3.5.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.7}States, actions, manner}{179}{subsection.3.5.7}\protected@file@percent }
-\newlabel{sec:statesactions}{{3.5.7}{179}{States, actions, manner}{subsection.3.5.7}{}}
-\newlabel{cons:morph}{{3.5.13}{184}{Morphing sticky spiders with homotopies}{theorem.3.5.13}{}}
-\newlabel{sec:topconcepts}{{3.5.7}{187}{States, actions, manner}{theorem.3.5.13}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}Interpreting text circuits in \textbf  {ContRel}}{188}{section.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}Sticky spiders: iconic semantics of nouns}{188}{subsection.3.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}Open sets: concepts}{188}{subsection.3.6.2}\protected@file@percent }
-\newpmemlabel{^_246}{188}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.3}Configuration spaces: labelled noun wires}{189}{subsection.3.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.4}Copy: stative verbs and adjectives}{189}{subsection.3.6.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.5}Homotopies: dynamic verbs and weak interchange}{190}{subsection.3.6.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.6}Coclosure: adverbs and adpositions}{191}{subsection.3.6.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.7}Turing objects: sentential complementation}{191}{subsection.3.6.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.7}On entification, general anaphora, computers, and lassos.}{192}{section.3.7}\protected@file@percent }
+\newlabel{defn:Contrelation}{{3.2.11}{142}{Continuous Relation}{theorem.3.2.11}{}}
+\newlabel{prop:framehom}{{3.2.13}{143}{}{theorem.3.2.13}{}}
+\newlabel{cor:homspace}{{3.2.14}{143}{}{theorem.3.2.14}{}}
+\newlabel{lem:capideal}{{3.2.17}{144}{Partial functions are a $\cap $-ideal}{theorem.3.2.17}{}}
+\newlabel{lem:edgecomplete}{{3.2.18}{144}{Any single edge can be extended to a continuous partial function}{theorem.3.2.18}{}}
+\newlabel{prop:hombasis}{{3.2.19}{144}{}{theorem.3.2.19}{}}
+\newpmemlabel{^_222}{145}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}The category \textbf  {ContRel}}{147}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Symmetric Monoidal structure}{147}{subsection.3.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Rig category structure}{148}{subsection.3.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Monoidal (co!)closure}{149}{subsection.3.3.3}\protected@file@percent }
+\newlabel{prop:prodvsclos}{{3.3.17}{149}{}{theorem.3.3.17}{}}
+\newlabel{defn:coarsening}{{3.3.19}{150}{Coarsening}{theorem.3.3.19}{}}
+\newlabel{defn:compare}{{3.3.20}{150}{Pseudo-compare}{theorem.3.3.20}{}}
+\newlabel{defn:perfectclosure}{{3.3.21}{151}{}{theorem.3.3.21}{}}
+\newlabel{prop:coclosure}{{3.3.22}{151}{\textbf {ContRel} is monoidal coclosed}{theorem.3.3.22}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Category-theoretic endnotes}{153}{subsection.3.3.4}\protected@file@percent }
+\newlabel{lem:disccont}{{3.3.23}{153}{Any relation $R$ between discrete topologies is continuous}{theorem.3.3.23}{}}
+\newlabel{lem:idadj}{{3.3.26}{153}{$RL = 1_{\textbf {Rel}}$}{theorem.3.3.26}{}}
+\newlabel{lem:coarse}{{3.3.28}{153}{Coarsening is a continuous relation}{theorem.3.3.28}{}}
+\newlabel{prop:reladj}{{3.3.29}{154}{$L \dashv R$}{theorem.3.3.29}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Populating space with shapes using sticky spiders}{158}{section.3.4}\protected@file@percent }
+\newlabel{sec:stickyspider}{{3.4}{158}{Populating space with shapes using sticky spiders}{section.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}When does an object have a spider (or something close to one)?}{158}{subsection.3.4.1}\protected@file@percent }
+\newlabel{ex:compnotspider}{{3.4.1}{158}{The copy-compare spiders of $\mathbf {Rel}$ are not always continuous}{theorem.3.4.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Topological concepts in flatland via \textbf  {ContRel}}{162}{section.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Shapes and places}{162}{subsection.3.5.1}\protected@file@percent }
+\newlabel{sec:shapes}{{3.5.1}{162}{Shapes and places}{subsection.3.5.1}{}}
+\newlabel{ex:chessboard}{{3.5.2}{163}{Where is a piece on a chessboard?}{theorem.3.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}The unit interval}{165}{subsection.3.5.2}\protected@file@percent }
+\newlabel{sec:interval}{{3.5.2}{165}{The unit interval}{subsection.3.5.2}{}}
+\newlabel{thm:Friedman}{{3.5.3}{165}{Friedman}{theorem.3.5.3}{}}
+\newpmemlabel{^_224}{165}
+\newpmemlabel{^_226}{165}
+\newpmemlabel{^_228}{167}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Displacing shapes}{167}{subsection.3.5.3}\protected@file@percent }
+\newlabel{sec:displace}{{3.5.3}{167}{Displacing shapes}{subsection.3.5.3}{}}
+\newpmemlabel{^_230}{167}
+\newpmemlabel{^_232}{167}
+\newpmemlabel{^_234}{167}
+\newpmemlabel{^_236}{167}
+\newpmemlabel{^_238}{167}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.4}Moving shapes}{168}{subsection.3.5.4}\protected@file@percent }
+\newlabel{sec:moving}{{3.5.4}{168}{Moving shapes}{subsection.3.5.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.5}Rigid motion}{172}{subsection.3.5.5}\protected@file@percent }
+\newlabel{sec:rigidmotion}{{3.5.5}{172}{Rigid motion}{subsection.3.5.5}{}}
+\newpmemlabel{^_240}{172}
+\newpmemlabel{^_242}{172}
+\newpmemlabel{^_244}{172}
+\newpmemlabel{^_246}{172}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.6}Modelling linguistic topological concepts}{172}{subsection.3.5.6}\protected@file@percent }
+\newlabel{sec:topconcept}{{3.5.6}{172}{Modelling linguistic topological concepts}{subsection.3.5.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.7}States, actions, manner}{178}{subsection.3.5.7}\protected@file@percent }
+\newlabel{sec:statesactions}{{3.5.7}{178}{States, actions, manner}{subsection.3.5.7}{}}
+\newlabel{cons:morph}{{3.5.13}{183}{Morphing sticky spiders with homotopies}{theorem.3.5.13}{}}
+\newlabel{sec:topconcepts}{{3.5.7}{186}{States, actions, manner}{theorem.3.5.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Interpreting text circuits in \textbf  {ContRel}}{187}{section.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}Sticky spiders: iconic semantics of nouns}{187}{subsection.3.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}Open sets: concepts}{187}{subsection.3.6.2}\protected@file@percent }
+\newpmemlabel{^_248}{187}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.3}Configuration spaces: labelled noun wires}{188}{subsection.3.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.4}Copy: stative verbs and adjectives}{188}{subsection.3.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.5}Homotopies: dynamic verbs and weak interchange}{189}{subsection.3.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.6}Coclosure: adverbs and adpositions}{190}{subsection.3.6.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.7}Turing objects: sentential complementation}{190}{subsection.3.6.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}On entification, general anaphora, computers, and lassos.}{191}{section.3.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}What formal linguistics could look like}{205}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}Formal models from figurative language}{206}{section.4.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Temperature and colour: the Planckian Locus}{207}{subsection.4.1.1}\protected@file@percent }
 \newlabel{ex:planck1}{{4.1.1}{207}{The Physicists' Planckian Locus}{theorem.4.1.1}{}}
-\newpmemlabel{^_248}{207}
 \newpmemlabel{^_250}{207}
 \newpmemlabel{^_252}{207}
-\newpmemlabel{^_254}{208}
+\newpmemlabel{^_254}{207}
 \newpmemlabel{^_256}{208}
+\newpmemlabel{^_258}{208}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Time and Money: complex conceptual structure}{209}{subsection.4.1.2}\protected@file@percent }
 \bibstyle{alpha}
 \bibdata{thesis_intro}
-\newpmemlabel{^_258}{210}
 \newpmemlabel{^_260}{210}
 \newpmemlabel{^_262}{210}
 \newpmemlabel{^_264}{210}
 \newpmemlabel{^_266}{210}
 \newpmemlabel{^_268}{210}
 \newpmemlabel{^_270}{210}
+\newpmemlabel{^_272}{210}
 \newlabel{sec:metaphor}{{4.1.2}{210}{Time and Money: complex conceptual structure}{theorem.4.1.4}{}}
 \bibcite{bastian_google_2022}{{Bas22}{}{{}}{{}}}
 \bibcite{bronstein_geometric_2021}{{BBCV21}{}{{}}{{}}}
