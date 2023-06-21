@@ -210,7 +210,7 @@
 \newpmemlabel{^_57}{53}
 \@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces Bob had a good point. Everything worked, but we had no understanding as to why, and accordingly, whether or not it would all break. At this point in time, Jonathon Liu, who was a masters' student I taught during COVID, had committed the error of thinking diagrams were cool, and was now hanging out with me and Bob. After understanding the procedure, Jono independently devised the same arcane internal wirings as I had, but neither of us could explain how we did it. So we had evidence of an underlying governing structure that was coherent but inarticulable.}}{53}{subsection.0.7.5}\protected@file@percent }
 \newpmemlabel{^_59}{54}
-\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces I realised that our intuitions were coming from an implicit productive grammar, rather than a parsing one, and that the path of least resistance for obtaining formal guarantees for the language-to-circuit procedure was to just handcraft a generative grammar for the fragment of language we were interested in. This meant scrapping everything in the first draft and starting again from scratch. Bob always had a word of gentle encouragement, giving me the motivation to persevere.\\ \\ \par So now we had two ways to obtain text circuits. One from pregroups (which Jono had extended the technique for to CCGs in his master's thesis \begin  {color}{red}CITE \end  {color}\xspace  ), and one from handcrafted productive grammars. Then came time for me to write my thesis. Three salient questions arose. Firstly, what is the relationship between these two ways of getting at text circuits? Secondly, how do text circuits stand in relation to other generative grammars? Thirdly, what is it that text circuits allow us to do?\\ \\ \par These questions are now what the rest of the thesis seeks to answer. }}{54}{subsection.0.7.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces I realised that our intuitions were coming from an implicit productive grammar, rather than a parsing one, and that the path of least resistance for obtaining formal guarantees for the language-to-circuit procedure was to just handcraft a generative grammar for the fragment of language we were interested in. This meant scrapping everything in the first draft and starting again from scratch. Bob always had a word of gentle encouragement, giving me the motivation to persevere.\\ \par So now we had two ways to obtain text circuits. One from pregroups (which Jono had extended the technique for to CCGs in his master's thesis \begin  {color}{red}CITE \end  {color}\xspace  ), and one from handcrafted productive grammars. Then came time for me to write my thesis. Three salient questions arose. Firstly, what is the relationship between these two ways of getting at text circuits? Secondly, how do text circuits stand in relation to other generative grammars? Thirdly, what is it that text circuits allow us to do?\\ \par These questions are now what the rest of the thesis seeks to answer. }}{54}{subsection.0.7.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Internal wirings: what, why, and where from?}{55}{chapter.1}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -363,12 +363,12 @@
 \newpmemlabel{^_118}{95}
 \newpmemlabel{^_119}{95}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Adjoining is sprouting subtrees in the middle of branches. One way we might obtain the sentence \texttt  {Bob runs to school} is to start from the simpler sentence \texttt  {Bob runs}, and then refine the verb \texttt  {runs} into \texttt  {runs to school}. This refinement on part of an already completed sentence is not permitted in CFGs, since terminals can no longer be modified. The adjoining operation of TAGs gets around this constraint by permitting rewrites in the middle of trees.}}{95}{theorem.2.1.3}\protected@file@percent }
+\newpmemlabel{^_120}{95}
 \newpmemlabel{^_121}{96}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces  Leaf-ansatz signature of \texttt  {Alice sees Bob quickly run to school} CFG. One aspect of rewrite systems we adapt for now is the distinction between terminal and nonterminal symbols; terminal symbols are those after which no further rewrites are possible. We capture this string-diagrammatically by modelling terminal rewrites as 2-cells with target equal to the 1-cell identity of the 0-cell $\star $, which amounts to graphically terminating a wire. The generators subscripted $L$ (for \emph  {label} or \emph  {leaf}) correspond to terminals of the CFG, and represent a family of generators indexed by a lexicon for the language. The generators subscripted $i$ (for \emph  {introducing a type}) correspond to rewrites of the CFG. Reading the central diagram in the main body from left-to-right, we additionally depict the breakdown of the derivation in terms of rewrites of lower dimension from our signature. \[\resizebox {\textwidth }{!}{\IfFileExists  {tree2gate/cfg/bigcfgbreakdown.tikz} {\let \reserved@d =\bgroup \def \par } {\IfFileExists  {./figures/tree2gate/cfg/bigcfgbreakdown.tikz} {\let \reserved@d =\bgroup \def \par } {\begingroup \def {;}\def {:}\def {|}\def {!}\let \pgfutil@reserved@d =[\def \par }}}\] }}{96}{theorem.2.1.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces  Leaf-ansatz signature of \texttt  {Alice sees Bob quickly run to school} CFG. One aspect of rewrite systems we adapt for now is the distinction between terminal and nonterminal symbols; terminal symbols are those after which no further rewrites are possible. We capture this string-diagrammatically by modelling terminal rewrites as 2-cells with target equal to the 1-cell identity of the 0-cell $\star $, which amounts to graphically terminating a wire. The generators subscripted $L$ (for \emph  {label} or \emph  {leaf}) correspond to terminals of the CFG, and represent a family of generators indexed by a lexicon for the language. The generators subscripted $i$ (for introducing a type) correspond to rewrites of the CFG. Reading the central diagram in the main body from left-to-right, we additionally depict the breakdown of the derivation in terms of rewrites of lower dimension from our signature. \[\resizebox {\textwidth }{!}{\IfFileExists  {tree2gate/cfg/bigcfgbreakdown.tikz} {\let \reserved@d =\bgroup \def \par } {\IfFileExists  {./figures/tree2gate/cfg/bigcfgbreakdown.tikz} {\let \reserved@d =\bgroup \def \par } {\begingroup \def {;}\def {:}\def {|}\def {!}\let \pgfutil@reserved@d =[\def \par }}}\] }}{96}{theorem.2.1.3}\protected@file@percent }
+\newpmemlabel{^_122}{97}
 \newpmemlabel{^_123}{97}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces TAG signature of \texttt  {Alice sees Bob quickly run to school}. The highlighted 2-cells are auxiliary trees that replace CFG 2-cells for verbs with sentential complement, adverbs, and adpositions. The highlighted 3-cells are the tree adjoining operations of the auxiliary trees. The construction yields as a corollary an alternate proof of Theorem [Joshi 6.1.1...]... \begin  {corollary} For every context-free grammar $\mathfrak  {G}$ there exists a tree-adjoining grammar $\mathfrak  {G}'$ such that $\mathfrak  {G}$ and $\mathfrak  {G}'$ are strongly equivalent -- both formalisms generate the same set of strings (weak equivalence) and the same abstract syntactic structures (in this case, trees) behind the strings (strong equivalence). \begin  {proof} Proposition \ref  {prop:cfgastag1} provides one direction of both equivalences. For the other direction, we have to show that each auxiliary tree (a 2-cell) and its adjoining operation (a 3-cell) in $\mathfrak  {G}'$ corresponds to a single 2-cell tree of some CFG signature $\mathfrak  {G}$, which we demonstrate by construction. The highlighted 3-cells of $\mathfrak  {G}'$ are obtained systematically from the auxiliary 2-cells as follows: the root and foot nodes $\texttt  {X},\texttt  {X}^\star $ indicate which wire-type to take as the identity in the left of the 3-cell, and the right of the 3-cell is obtained by replacing all non-$\texttt  {X}$ open wires $\texttt  {Y}$ with their leaf-ansatzes $\texttt  {Y}^\downarrow $. This establishes a correspondence between any 2-cells of $\mathfrak  {G}$ considered as auxiliary trees in $\mathfrak  {G}'$. \end  {proof} \end  {corollary}}}{97}{theorem.2.1.3}\protected@file@percent }
-\newpmemlabel{^_120}{98}
-\newpmemlabel{^_122}{98}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Tree adjoining grammars with local constraints}{98}{subsection.2.1.3}\protected@file@percent }
 \newpmemlabel{^_124}{98}
 \newpmemlabel{^_125}{98}
@@ -589,72 +589,72 @@
 \newpmemlabel{^_219}{140}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Sometimes it is very helpful to illustrate concepts using iconic representations in cartoons. For instance in the \emph  {conduit metaphor} \begin  {color}{red}CITE \end  {color}\xspace  , \texttt  {words} are considered \emph  {containers} for \texttt  {ideas}, and \texttt  {communication} is considered a \emph  {conduit} along which those containers are sent.}}{140}{section.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Continuous Relations by examples}{142}{section.3.2}\protected@file@percent }
-\newlabel{defn:Contrelation}{{3.2.7}{142}{Continuous Relation}{theorem.3.2.7}{}}
-\newlabel{prop:framehom}{{3.2.13}{143}{}{theorem.3.2.13}{}}
-\newlabel{cor:homspace}{{3.2.14}{143}{}{theorem.3.2.14}{}}
-\newlabel{lem:capideal}{{3.2.17}{144}{Partial functions are a $\cap $-ideal}{theorem.3.2.17}{}}
-\newlabel{lem:edgecomplete}{{3.2.18}{144}{Any single edge can be extended to a continuous partial function}{theorem.3.2.18}{}}
-\newlabel{prop:hombasis}{{3.2.19}{144}{}{theorem.3.2.19}{}}
-\newpmemlabel{^_220}{145}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}The category \textbf  {ContRel}}{147}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Symmetric Monoidal structure}{147}{subsection.3.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Rig category structure}{148}{subsection.3.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Monoidal (co!)closure}{149}{subsection.3.3.3}\protected@file@percent }
-\newlabel{prop:prodvsclos}{{3.3.17}{149}{}{theorem.3.3.17}{}}
-\newlabel{defn:coarsening}{{3.3.19}{150}{Coarsening}{theorem.3.3.19}{}}
-\newlabel{defn:compare}{{3.3.20}{150}{Pseudo-compare}{theorem.3.3.20}{}}
-\newlabel{defn:perfectclosure}{{3.3.21}{151}{}{theorem.3.3.21}{}}
-\newlabel{prop:coclosure}{{3.3.22}{151}{\textbf {ContRel} is monoidal coclosed}{theorem.3.3.22}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Category-theoretic endnotes}{153}{subsection.3.3.4}\protected@file@percent }
-\newlabel{lem:disccont}{{3.3.23}{153}{Any relation $R$ between discrete topologies is continuous}{theorem.3.3.23}{}}
-\newlabel{lem:idadj}{{3.3.26}{153}{$RL = 1_{\textbf {Rel}}$}{theorem.3.3.26}{}}
-\newlabel{lem:coarse}{{3.3.28}{153}{Coarsening is a continuous relation}{theorem.3.3.28}{}}
-\newlabel{prop:reladj}{{3.3.29}{154}{$L \dashv R$}{theorem.3.3.29}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Populating space with shapes using sticky spiders}{158}{section.3.4}\protected@file@percent }
-\newlabel{sec:stickyspider}{{3.4}{158}{Populating space with shapes using sticky spiders}{section.3.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}When does an object have a spider (or something close to one)?}{158}{subsection.3.4.1}\protected@file@percent }
-\newlabel{ex:compnotspider}{{3.4.1}{158}{The copy-compare spiders of $\mathbf {Rel}$ are not always continuous}{theorem.3.4.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Topological concepts in flatland via \textbf  {ContRel}}{162}{section.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Shapes and places}{162}{subsection.3.5.1}\protected@file@percent }
-\newlabel{sec:shapes}{{3.5.1}{162}{Shapes and places}{subsection.3.5.1}{}}
-\newlabel{ex:chessboard}{{3.5.2}{163}{Where is a piece on a chessboard?}{theorem.3.5.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}The unit interval}{165}{subsection.3.5.2}\protected@file@percent }
-\newlabel{sec:interval}{{3.5.2}{165}{The unit interval}{subsection.3.5.2}{}}
-\newlabel{thm:Friedman}{{3.5.3}{165}{Friedman}{theorem.3.5.3}{}}
-\newpmemlabel{^_222}{165}
-\newpmemlabel{^_224}{165}
-\newpmemlabel{^_226}{167}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Displacing shapes}{167}{subsection.3.5.3}\protected@file@percent }
-\newlabel{sec:displace}{{3.5.3}{167}{Displacing shapes}{subsection.3.5.3}{}}
-\newpmemlabel{^_228}{167}
-\newpmemlabel{^_230}{167}
-\newpmemlabel{^_232}{167}
-\newpmemlabel{^_234}{167}
-\newpmemlabel{^_236}{167}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.4}Moving shapes}{168}{subsection.3.5.4}\protected@file@percent }
-\newlabel{sec:moving}{{3.5.4}{168}{Moving shapes}{subsection.3.5.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.5}Rigid motion}{172}{subsection.3.5.5}\protected@file@percent }
-\newlabel{sec:rigidmotion}{{3.5.5}{172}{Rigid motion}{subsection.3.5.5}{}}
-\newpmemlabel{^_238}{172}
-\newpmemlabel{^_240}{172}
-\newpmemlabel{^_242}{172}
-\newpmemlabel{^_244}{172}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.6}Modelling linguistic topological concepts}{172}{subsection.3.5.6}\protected@file@percent }
-\newlabel{sec:topconcept}{{3.5.6}{172}{Modelling linguistic topological concepts}{subsection.3.5.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.7}States, actions, manner}{178}{subsection.3.5.7}\protected@file@percent }
-\newlabel{sec:statesactions}{{3.5.7}{178}{States, actions, manner}{subsection.3.5.7}{}}
-\newlabel{cons:morph}{{3.5.13}{183}{Morphing sticky spiders with homotopies}{theorem.3.5.13}{}}
-\newlabel{sec:topconcepts}{{3.5.7}{186}{States, actions, manner}{theorem.3.5.13}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}Interpreting text circuits in \textbf  {ContRel}}{187}{section.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}Sticky spiders: iconic semantics of nouns}{187}{subsection.3.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}Open sets: concepts}{187}{subsection.3.6.2}\protected@file@percent }
-\newpmemlabel{^_246}{187}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.3}Configuration spaces: labelled noun wires}{188}{subsection.3.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.4}Copy: stative verbs and adjectives}{188}{subsection.3.6.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.5}Homotopies: dynamic verbs and weak interchange}{189}{subsection.3.6.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.6}Coclosure: adverbs and adpositions}{190}{subsection.3.6.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.7}Turing objects: sentential complementation}{190}{subsection.3.6.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.7}On entification, general anaphora, computers, and lassos.}{191}{section.3.7}\protected@file@percent }
+\newlabel{defn:Contrelation}{{3.2.7}{143}{Continuous Relation}{theorem.3.2.7}{}}
+\newlabel{prop:framehom}{{3.2.13}{144}{}{theorem.3.2.13}{}}
+\newlabel{cor:homspace}{{3.2.14}{144}{}{theorem.3.2.14}{}}
+\newlabel{lem:capideal}{{3.2.17}{145}{Partial functions are a $\cap $-ideal}{theorem.3.2.17}{}}
+\newlabel{lem:edgecomplete}{{3.2.18}{145}{Any single edge can be extended to a continuous partial function}{theorem.3.2.18}{}}
+\newlabel{prop:hombasis}{{3.2.19}{145}{}{theorem.3.2.19}{}}
+\newpmemlabel{^_220}{146}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}The category \textbf  {ContRel}}{148}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Symmetric Monoidal structure}{148}{subsection.3.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Rig category structure}{149}{subsection.3.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Monoidal (co!)closure}{150}{subsection.3.3.3}\protected@file@percent }
+\newlabel{prop:prodvsclos}{{3.3.17}{150}{}{theorem.3.3.17}{}}
+\newlabel{defn:coarsening}{{3.3.19}{151}{Coarsening}{theorem.3.3.19}{}}
+\newlabel{defn:compare}{{3.3.20}{151}{Pseudo-compare}{theorem.3.3.20}{}}
+\newlabel{defn:perfectclosure}{{3.3.21}{152}{}{theorem.3.3.21}{}}
+\newlabel{prop:coclosure}{{3.3.22}{152}{\textbf {ContRel} is monoidal coclosed}{theorem.3.3.22}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Category-theoretic endnotes}{154}{subsection.3.3.4}\protected@file@percent }
+\newlabel{lem:disccont}{{3.3.23}{154}{Any relation $R$ between discrete topologies is continuous}{theorem.3.3.23}{}}
+\newlabel{lem:idadj}{{3.3.26}{154}{$RL = 1_{\textbf {Rel}}$}{theorem.3.3.26}{}}
+\newlabel{lem:coarse}{{3.3.28}{154}{Coarsening is a continuous relation}{theorem.3.3.28}{}}
+\newlabel{prop:reladj}{{3.3.29}{155}{$L \dashv R$}{theorem.3.3.29}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Populating space with shapes using sticky spiders}{159}{section.3.4}\protected@file@percent }
+\newlabel{sec:stickyspider}{{3.4}{159}{Populating space with shapes using sticky spiders}{section.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}When does an object have a spider (or something close to one)?}{159}{subsection.3.4.1}\protected@file@percent }
+\newlabel{ex:compnotspider}{{3.4.1}{159}{The copy-compare spiders of $\mathbf {Rel}$ are not always continuous}{theorem.3.4.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Topological concepts in flatland via \textbf  {ContRel}}{163}{section.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Shapes and places}{163}{subsection.3.5.1}\protected@file@percent }
+\newlabel{sec:shapes}{{3.5.1}{163}{Shapes and places}{subsection.3.5.1}{}}
+\newlabel{ex:chessboard}{{3.5.2}{164}{Where is a piece on a chessboard?}{theorem.3.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}The unit interval}{166}{subsection.3.5.2}\protected@file@percent }
+\newlabel{sec:interval}{{3.5.2}{166}{The unit interval}{subsection.3.5.2}{}}
+\newlabel{thm:Friedman}{{3.5.3}{166}{Friedman}{theorem.3.5.3}{}}
+\newpmemlabel{^_222}{166}
+\newpmemlabel{^_224}{166}
+\newpmemlabel{^_226}{168}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Displacing shapes}{168}{subsection.3.5.3}\protected@file@percent }
+\newlabel{sec:displace}{{3.5.3}{168}{Displacing shapes}{subsection.3.5.3}{}}
+\newpmemlabel{^_228}{168}
+\newpmemlabel{^_230}{168}
+\newpmemlabel{^_232}{168}
+\newpmemlabel{^_234}{168}
+\newpmemlabel{^_236}{168}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.4}Moving shapes}{169}{subsection.3.5.4}\protected@file@percent }
+\newlabel{sec:moving}{{3.5.4}{169}{Moving shapes}{subsection.3.5.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.5}Rigid motion}{173}{subsection.3.5.5}\protected@file@percent }
+\newlabel{sec:rigidmotion}{{3.5.5}{173}{Rigid motion}{subsection.3.5.5}{}}
+\newpmemlabel{^_238}{173}
+\newpmemlabel{^_240}{173}
+\newpmemlabel{^_242}{173}
+\newpmemlabel{^_244}{173}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.6}Modelling linguistic topological concepts}{173}{subsection.3.5.6}\protected@file@percent }
+\newlabel{sec:topconcept}{{3.5.6}{173}{Modelling linguistic topological concepts}{subsection.3.5.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.7}States, actions, manner}{179}{subsection.3.5.7}\protected@file@percent }
+\newlabel{sec:statesactions}{{3.5.7}{179}{States, actions, manner}{subsection.3.5.7}{}}
+\newlabel{cons:morph}{{3.5.13}{184}{Morphing sticky spiders with homotopies}{theorem.3.5.13}{}}
+\newlabel{sec:topconcepts}{{3.5.7}{187}{States, actions, manner}{theorem.3.5.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Interpreting text circuits in \textbf  {ContRel}}{188}{section.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}Sticky spiders: iconic semantics of nouns}{188}{subsection.3.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}Open sets: concepts}{188}{subsection.3.6.2}\protected@file@percent }
+\newpmemlabel{^_246}{188}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.3}Configuration spaces: labelled noun wires}{189}{subsection.3.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.4}Copy: stative verbs and adjectives}{189}{subsection.3.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.5}Homotopies: dynamic verbs and weak interchange}{190}{subsection.3.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.6}Coclosure: adverbs and adpositions}{191}{subsection.3.6.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.7}Turing objects: sentential complementation}{191}{subsection.3.6.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}On entification, general anaphora, computers, and lassos.}{192}{section.3.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}What formal linguistics could look like}{205}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}

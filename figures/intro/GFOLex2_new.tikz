@@ -1,5 +1,5 @@
 \begin{tikzpicture}
-	\begin{pFconlayer}{nodelayer}
+	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (-8.25, 0.5) {};
 		\node [style=none] (1) at (-7.25, 0.5) {};
 		\node [style=none] (2) at (-7.75, 1.5) {};
@@ -72,8 +72,8 @@
 		\node [style=none] (119) at (1, 0.5) {};
 		\node [style=none] (120) at (0.75, 0.5) {};
 		\node [style=none] (121) at (0.5, 0.5) {};
-	\end{pFconlayer}
-	\begin{pFconlayer}{edgelayer}
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
 		\draw (2.center) to (0.center);
 		\draw (0.center) to (1.center);
 		\draw (1.center) to (2.center);
@@ -148,5 +148,5 @@
 		\draw [bend right=90] (121.center) to (112.center);
 		\draw [bend right=90] (101.center) to (105.center);
 		\draw [bend right=90, looseness=1.25] (106.center) to (26.center);
-	\end{pFconlayer}
+	\end{pgfonlayer}
 \end{tikzpicture}

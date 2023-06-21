@@ -49,6 +49,8 @@ For relations between sets $R: X \rightarrow Y, S: A \rightarrow B$, the product
 \end{rem}
 }
 
+\clearpage
+
 \begin{defn}[Continuous Relation]\label{defn:Contrelation}
 A continuous relation $R: (X,\tau) \rightarrow (Y,\sigma)$ is a relation $R: X \rightarrow Y$ such that \[U \in \sigma \Rightarrow R^{\dag}(U) \in \tau\] where $\dag$ denotes the relational converse.
 \end{defn}
@@ -80,18 +82,25 @@ The relation $\{(0,\bullet)\} \subset \mathcal{S} \times \bullet$ is not a conti
 There four candidate relations from the Sierpi\'{n}ski space to the singleton, but as we see in Example \ref{ex:nontop}, not all of them are topological.
 
 \newthought{Now we need some abstraction.} We cannot study the continuous relations between the singleton and the unit square case by case. We discover that continuous relations out of the singleton indicate arbitrary subsets, and that continuous relations into the singleton indicate arbitrary opens.
+
+\clearmargin
+
 \marginnote{
 \begin{term}
 Call a continuous relation $\bullet \rightarrow X^\tau$ a \textbf{state} of $X^\tau$, and a continuous relation $X^\tau \rightarrow \bullet$ a \textbf{test} of $X^\tau$.
 \end{term}
+}
 
+\marginnote{
 \begin{proposition}\label{prop:states}
 States $R: \bullet \rightarrow X^{\tau}$ correspond with subsets of $X$.
 \begin{proof}
 The preimage $R^\dag(U)$ of a (non-$\varnothing$) open $U \in \tau$ is $\star$ if $R(\star) \cap U$ is nonempty, and $\varnothing$ otherwise. Both $\star$ and $\varnothing$ are open in $\{\star\}^{\bullet}$. $R(\star)$ is free to specify any non-$\varnothing$ subset of $X$. The empty relation handles $\varnothing$ as an open of $X^{\tau}$.
 \end{proof}
 \end{proposition}
+}
 
+\marginnote{
 \begin{proposition}\label{prop:tests}
 Tests $R: X^\tau \rightarrow \bullet$ correspond with open sets $U \in \tau$.
 \begin{proof}

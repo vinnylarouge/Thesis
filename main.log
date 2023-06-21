@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  21 JUN 2023 16:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  21 JUN 2023 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2704,19 +2704,6 @@ Package pdftex.def Info: figures/cartoons/bob2.png  used on input line 46.
  [37
 
  <./figures/cartoons/bob1.png> <./figures/cartoons/bob2.png>]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 \subsection{Categorical quantum mechanics}\\
-                                                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 <figures/cartoons/samson.png, id=678, 1176.395pt x 609.27625pt>
 File: figures/cartoons/samson.png Graphic file (type png)
 <use figures/cartoons/samson.png>
@@ -2735,19 +2722,11 @@ Package pdftex.def Info: figures/cartoons/spiders.png  used on input line 67.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 69.
 
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 73.
-! Extra }, or forgotten \endgroup.
-l.73 \[classicalquantumstructuralism\]}
-                                       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2934,32 +2913,6 @@ Package pdftex.def Info: figures/cartoons/bigpaper1.png  used on input line 208
 .
 (pdftex.def)             Requested size: 483.70094pt x 234.53433pt.
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.216 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.216 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) [46
@@ -3112,28 +3065,6 @@ ine 54.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/intro/GFOLex2_new.tikz
-
-! LaTeX Error: Environment pFconlayer undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2 	\begin{pFconlayer}
-                       {nodelayer}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 6.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3146,54 +3077,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 22.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 26.
-
-! LaTeX Error: \begin{tikzpicture} on input line 1 ended by \end{pFconlayer}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.75 	\end{pFconlayer}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment pFconlayer undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.76 	\begin{pFconlayer}
-                        {edgelayer}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-
-! LaTeX Error: \begin{tikzpicture} on input line 1 ended by \end{pFconlayer}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 	\end{pFconlayer}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 58.
@@ -6336,9 +6219,7 @@ ine 283.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 130.
- [95
 
-]
 (./figures/tree2gate/tag/CFGasTAGsign.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 45.
@@ -6444,12 +6325,12 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 333.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 135.
 
 ! Argument of \@iiminipage has an extra }.
 <inserted text> 
                 \par 
-l.141 \end{figure}
+l.140 \end{figure}
                   
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -6464,7 +6345,7 @@ Runaway argument?
 ! Paragraph ended before \@iiminipage was complete.
 <to be read again> 
                    \par 
-l.141 \end{figure}
+l.140 \end{figure}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -6473,7 +6354,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Argument of \@iiminipage has an extra }.
 <inserted text> 
                 \par 
-l.141 \end{figure}
+l.140 \end{figure}
                   
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -6488,7 +6369,7 @@ Runaway argument?
 ! Paragraph ended before \@iiminipage was complete.
 <to be read again> 
                    \par 
-l.141 \end{figure}
+l.140 \end{figure}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -6497,7 +6378,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 \tikz@deactivatthings ->\def ;
                               {\tikz@nonactivesemicolon }\def :{\tikz@nonact...
-l.141 \end{figure}
+l.140 \end{figure}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6508,7 +6389,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \tikz@deactivatthings ...onactivesemicolon }\def :
                                                   {\tikz@nonactivecolon }\de...
-l.141 \end{figure}
+l.140 \end{figure}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6519,7 +6400,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \tikz@deactivatthings ...kz@nonactivecolon }\def |
                                                   {\tikz@nonactivebar }\def ...
-l.141 \end{figure}
+l.140 \end{figure}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6530,7 +6411,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \tikz@deactivatthings ...tikz@nonactivebar }\def !
                                                   {\tikz@nonactiveexlmark }
-l.141 \end{figure}
+l.140 \end{figure}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6541,7 +6422,7 @@ and I'll forget about whatever was undefined.
 ! Argument of \tikz@style@parseA has an extra }.
 <inserted text> 
                 \par 
-l.141 \end{figure}
+l.140 \end{figure}
                   
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -6555,7 +6436,7 @@ Runaway argument?
 ! Paragraph ended before \tikz@style@parseA was complete.
 <to be read again> 
                    \par 
-l.141 \end{figure}
+l.140 \end{figure}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -6564,7 +6445,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Argument of \Hy@tempa has an extra }.
 <inserted text> 
                 \par 
-l.141 \end{figure}
+l.140 \end{figure}
                   
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -6578,7 +6459,7 @@ Runaway argument?
 ! Paragraph ended before \Hy@tempa was complete.
 <to be read again> 
                    \par 
-l.141 \end{figure}
+l.140 \end{figure}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -6587,7 +6468,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Argument of \Hy@tempa has an extra }.
 <inserted text> 
                 \par 
-l.141 \end{figure}
+l.140 \end{figure}
                   
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -6601,7 +6482,7 @@ Runaway argument?
 ! Paragraph ended before \Hy@tempa was complete.
 <to be read again> 
                    \par 
-l.141 \end{figure}
+l.140 \end{figure}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -6610,7 +6491,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 \tikz@deactivatthings ->\def ;
                               {\tikz@nonactivesemicolon }\def :{\tikz@nonact...
-l.141 \end{figure}
+l.140 \end{figure}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6621,7 +6502,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \tikz@deactivatthings ...onactivesemicolon }\def :
                                                   {\tikz@nonactivecolon }\de...
-l.141 \end{figure}
+l.140 \end{figure}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6632,7 +6513,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \tikz@deactivatthings ...kz@nonactivecolon }\def |
                                                   {\tikz@nonactivebar }\def ...
-l.141 \end{figure}
+l.140 \end{figure}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6643,7 +6524,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \tikz@deactivatthings ...tikz@nonactivebar }\def !
                                                   {\tikz@nonactiveexlmark }
-l.141 \end{figure}
+l.140 \end{figure}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6654,7 +6535,7 @@ and I'll forget about whatever was undefined.
 ! Argument of \tikz@style@parseA has an extra }.
 <inserted text> 
                 \par 
-l.141 \end{figure}
+l.140 \end{figure}
                   
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -6668,18 +6549,18 @@ Runaway argument?
 ! Paragraph ended before \tikz@style@parseA was complete.
 <to be read again> 
                    \par 
-l.141 \end{figure}
+l.140 \end{figure}
                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 141.
+ine 140.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 141.
+ine 140.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 141.
+ine 140.
 (./figures/tree2gate/cfg/bigcfgbreakdown.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 55.
@@ -6705,9 +6586,22 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 232.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 141.
- [96]
-(./figures/tree2gate/tag/tagsignature.tikz
+ine 140.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[95
+
+]
+
+LaTeX Warning: Text page 96 contains only floats.
+
+
+Overfull \vbox (5.06546pt too high) has occurred while \output is active []
+
+
+[96] (./figures/tree2gate/tag/tagsignature.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 45.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -6849,7 +6743,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 153.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 153.
- [97]
+ [97
+
+]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 167.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -7020,8 +6916,6 @@ ine 195.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 195.
 [98
-
-
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -9656,57 +9550,92 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 50.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 50.
+ [142]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 53.
+ine 55.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 53.
+ine 55.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 53.
+ine 55.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 53.
+ine 55.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 58.
+ine 60.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 59.
- (./figures/testspaces/singleton.tikz)
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 62.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 63.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 63.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 63.
+ine 61.
 
-(./figures/testspaces/sierpinski.tikz)
+(./figures/testspaces/singleton.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 66.
+ine 64.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 66.
- (./figures/testspaces/unitsquare.tikz)
+ine 65.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 69.
+ine 65.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 69.
+ine 65.
+ (./figures/testspaces/sierpinski.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 69.
+ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 68.
 
-[142]
+(./figures/testspaces/unitsquare.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 71.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 71.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 74.
+ine 71.
+ [143
+
+]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 79.
+ine 73.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 79.
+ine 73.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 79.
+ine 76.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 81.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 81.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 81.
 
 
-LaTeX Warning: Reference `ex:nontop' on page 143 undefined on input line 80.
+LaTeX Warning: Reference `ex:nontop' on page 144 undefined on input line 82.
+
+
+! LaTeX Error: Too many unprocessed floats.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 }
+      
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 92.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 92.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 92.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 92.
+
+! LaTeX Error: Too many unprocessed floats.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 }
+      
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 ! LaTeX Error: Too many unprocessed floats.
@@ -9752,32 +9681,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 101.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 101.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 101.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 101.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 101.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 101.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 101.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 101.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 101.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 101.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 101.
-
-LaTeX Warning: Reference `defn:toprelation' on page 143 undefined on input line
- 101.
-
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 101.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 101.
 
 ! LaTeX Error: Too many unprocessed floats.
 
@@ -9790,21 +9693,6 @@ l.101 }
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 103.
-
-LaTeX Warning: Reference `prop:states' on page 143 undefined on input line 103.
-
-
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 105.
-
-LaTeX Warning: Reference `prop:tests' on page 143 undefined on input line 105.
-
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 107.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 109.
 
 ! LaTeX Error: Too many unprocessed floats.
 
@@ -9812,15 +9700,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.113 }
+l.110 }
        
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 113.
+ine 110.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 113.
+ine 110.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 110.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 110.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 110.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 110.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 110.
 
 ! LaTeX Error: Too many unprocessed floats.
 
@@ -9828,81 +9726,124 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.113 }
+l.110 }
        
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 116.
+ine 112.
+
+LaTeX Warning: Reference `prop:states' on page 144 undefined on input line 112.
+
+
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 114.
+
+LaTeX Warning: Reference `prop:tests' on page 144 undefined on input line 114.
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 116.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 116.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 118.
+
+! LaTeX Error: Too many unprocessed floats.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 }
+       
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 122.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 122.
+
+! LaTeX Error: Too many unprocessed floats.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 }
+       
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 125.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 125.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 125.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 127.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 127.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 127.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 118.
+ine 127.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 123.
+ine 127.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 123.
+ine 127.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 123.
+ine 127.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 123.
+ine 127.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 129.
+ine 127.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 129.
+ine 127.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 129.
+ine 132.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 129.
-[143]
+ine 132.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 135.
+ine 132.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 135.
+ine 132.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 138.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 139.
+ine 138.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 139.
+ine 138.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 139.
+ine 138.
+[144]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 141.
+ine 144.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 141.
+ine 144.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 141.
+ine 147.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 141.
+ine 148.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 141.
- (./figures/paintingexamples/sierandcanvas2_2.tikz)
+ine 148.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 148.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 150.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 150.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 150.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 150.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 150.
+ (./figures/paintingexamples/sierandcanvas2_2.tikz)
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 157.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 159.
 
 
 ! LaTeX Error: Too many unprocessed floats.
@@ -9911,30 +9852,30 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.150 \end{marginfigure}
+l.159 \end{marginfigure}
                         
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 153.
+ine 162.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 153.
+ine 162.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 153.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 155.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 155.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 155.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 155.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 155.
-(./figures/paintingexamples/s2sqzoom.tikz)
+ine 162.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 164.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 164.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 164.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 164.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 164.
+(./figures/paintingexamples/s2sqzoom.tikz)
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 173.
 
 
 ! LaTeX Error: Too many unprocessed floats.
@@ -9943,16 +9884,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.164 \end{marginfigure}
+l.173 \end{marginfigure}
                         
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 (./figures/paintingexamples/s2sqpainting.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 169.
+ine 178.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 171.
+ine 180.
 
 
 ! LaTeX Error: Too many unprocessed floats.
@@ -9961,16 +9902,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.171 \end{marginfigure}
+l.180 \end{marginfigure}
                         
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 (./figures/paintingexamples/sq2spainting.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 176.
+ine 185.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 178.
+ine 187.
 
 
 ! LaTeX Error: Too many unprocessed floats.
@@ -9979,51 +9920,51 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.178 \end{marginfigure}
+l.187 \end{marginfigure}
                         
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 181.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 181.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 183.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 183.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 184.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 185.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 185.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 186.
+ine 190.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 190.
-
-LaTeX Warning: Reference `fig:hassesierpinski' on page 144 undefined on input l
-ine 190.
-
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 192.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 192.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 193.
-
-LaTeX Warning: Reference `fig:yellowgreen' on page 144 undefined on input line 
-193.
-
-
-LaTeX Warning: Reference `fig:cyan' on page 144 undefined on input line 193.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 193.
+ine 194.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 194.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 195.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 195.
-[144]
+ine 199.
+
+LaTeX Warning: Reference `fig:hassesierpinski' on page 145 undefined on input l
+ine 199.
+
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 201.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 202.
+
+LaTeX Warning: Reference `fig:yellowgreen' on page 145 undefined on input line 
+202.
+
+
+LaTeX Warning: Reference `fig:cyan' on page 145 undefined on input line 202.
+
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 202.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 204.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 204.
+[145]
 
 ! LaTeX Error: Too many unprocessed floats.
 
@@ -10031,7 +9972,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.197 \begin{figure}\label
+l.206 \begin{figure}\label
                           {fig:hassesierpinski}
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -10040,7 +9981,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 <argument> \MFX@AssertionError 
                                
-l.201 \end{figure}
+l.210 \end{figure}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10048,14 +9989,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[145]
+[146]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 205.
+ine 214.
  (./figures/paintingexamples/contline.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 211.
+ine 220.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 213.
+ine 222.
 
 
 ! LaTeX Error: Too many unprocessed floats.
@@ -10064,20 +10005,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.213 \end{marginfigure}
+l.222 \end{marginfigure}
                         
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 214.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 214.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 214.
-(./figures/paintingexamples/contlines.tikz)
+ine 223.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 223.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 223.
+(./figures/paintingexamples/contlines.tikz)
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 232.
 
 
 ! LaTeX Error: Too many unprocessed floats.
@@ -10086,7 +10027,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.223 \end{marginfigure}
+l.232 \end{marginfigure}
                         
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -10102,7 +10043,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 13.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 230.
+ine 239.
 
 
 ! LaTeX Error: Too many unprocessed floats.
@@ -10111,21 +10052,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.230 \end{marginfigure}
+l.239 \end{marginfigure}
                         
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/paintingexamples/spectrum.png, id=1383, 1194.4625pt x 34.1275pt>
+<figures/paintingexamples/spectrum.png, id=1387, 1194.4625pt x 34.1275pt>
 File: figures/paintingexamples/spectrum.png Graphic file (type png)
 <use figures/paintingexamples/spectrum.png>
 Package pdftex.def Info: figures/paintingexamples/spectrum.png  used on input l
-ine 234.
+ine 243.
 (pdftex.def)             Requested size: 227.60637pt x 6.50302pt.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 235.
+ine 244.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 236.
+ine 245.
 
 ! LaTeX Error: Too many unprocessed floats.
 
@@ -10133,27 +10074,27 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.236 \end{marginfigure}
+l.245 \end{marginfigure}
                         
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-)
-Runaway argument?
-{Any painting is a continuous relation $[0,1] \rightarrow \blacksquare \ETC.
-! File ended while scanning use of \newthought.
-<inserted text> 
-                \par 
-l.76 \input{chapters/toprel/1_examples}
-                                       
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 247.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 247.
+<figures/paintingexamples/starrynight.jpg, id=1388, 2569.6pt x 2034.60126pt>
+File: figures/paintingexamples/starrynight.jpg Graphic file (type jpg)
+<use figures/paintingexamples/starrynight.jpg>
+Package pdftex.def Info: figures/paintingexamples/starrynight.jpg  used on inpu
+t line 249.
+(pdftex.def)             Requested size: 483.68085pt x 382.97699pt.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 249.
+[147
 
-[146
-
-] (./chapters/toprel/0_contrel.tex
+ <./figures/paintingexamples/starrynight.jpg>])
+(./chapters/toprel/0_contrel.tex
 
 ! LaTeX Error: Too many unprocessed floats.
 
@@ -10223,7 +10164,7 @@ ine 25.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 25.
 
-LaTeX Warning: Reference `prop:func' on page 147 undefined on input line 25.
+LaTeX Warning: Reference `prop:func' on page 148 undefined on input line 25.
 
 
 ! LaTeX Error: Too many unprocessed floats.
@@ -10408,13 +10349,13 @@ ine 52.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 52.
 
-LaTeX Warning: Reference `prop:copy' on page 147 undefined on input line 53.
+LaTeX Warning: Reference `prop:copy' on page 148 undefined on input line 53.
 
 
-LaTeX Warning: Reference `prop:func' on page 147 undefined on input line 53.
+LaTeX Warning: Reference `prop:func' on page 148 undefined on input line 53.
 
 
-LaTeX Warning: Reference `corr:top2contrel' on page 147 undefined on input line
+LaTeX Warning: Reference `corr:top2contrel' on page 148 undefined on input line
  53.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10744,7 +10685,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 166.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 166.
-[147]
+[148
+
+]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 170.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10805,7 +10748,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 180.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 192.
- [148]
+ [149]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 199.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10856,16 +10799,6 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 215.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 215.
-
-! Undefined control sequence.
-l.215 ...opologies behave like plain sets \foonote
-                                                  {See Lemma \ref{lem:discco...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 218.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10888,14 +10821,14 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 220.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 220.
-[149]
+ [150]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 221.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 225.
 
 
-LaTeX Warning: Reference `prop:states' on page 150 undefined on input line 226.
+LaTeX Warning: Reference `prop:states' on page 151 undefined on input line 226.
 
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -10982,7 +10915,7 @@ ine 8.
 )
 Underfull \vbox (badness 3838) has occurred while \output is active []
 
- [150]
+ [151]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 243.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11018,10 +10951,10 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 255.
 
 
-LaTeX Warning: Reference `prop:copy' on page 151 undefined on input line 257.
+LaTeX Warning: Reference `prop:copy' on page 152 undefined on input line 257.
 
 
-LaTeX Warning: Reference `prop:everything' on page 151 undefined on input line 
+LaTeX Warning: Reference `prop:everything' on page 152 undefined on input line 
 257.
 
 (./figures/structure/coeval2.tikz
@@ -11032,7 +10965,7 @@ ine 52.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 258.
- [151] [152]
+ [152] [153]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 273.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11133,7 +11066,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 313.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 315.
- [153]
+ [154]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 317.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11218,7 +11151,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 336.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 336.
- [154]
+ [155]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 343.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11281,7 +11214,7 @@ ine 354.
 (./figures/topology/spanctrex.tikz)
 Underfull \vbox (badness 1092) has occurred while \output is active []
 
- [155]
+ [156]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 359.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11526,7 +11459,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 378.
 
 
-LaTeX Warning: Reference `prop:tests' on page 156 undefined on input line 378.
+LaTeX Warning: Reference `prop:tests' on page 157 undefined on input line 378.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 378.
@@ -11574,7 +11507,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 382.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 382.
-) [156] [157] (./chapters/toprel/3_sticky.tex
+) [157] [158] (./chapters/toprel/3_sticky.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 10.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11697,7 +11630,7 @@ ine 41.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 41.
 
-LaTeX Warning: Reference `fig:spiderbicate' on page 158 undefined on input line
+LaTeX Warning: Reference `fig:spiderbicate' on page 159 undefined on input line
  41.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11919,7 +11852,7 @@ Overfull \hbox (25.33936pt too wide) detected at line 60
 
 Underfull \vbox (badness 5939) has occurred while \output is active []
 
- [158]
+ [159]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 60.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -11985,7 +11918,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 71.
 
 
-LaTeX Warning: Reference `cons:stickyfromsplit' on page 159 undefined on input 
+LaTeX Warning: Reference `cons:stickyfromsplit' on page 160 undefined on input 
 line 73.
 
 (./figures/structure/idemspider/espiderproofv2.tikz
@@ -12165,7 +12098,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `prop:splitmeanssticky' on page 159 undefined on input
+LaTeX Warning: Reference `prop:splitmeanssticky' on page 160 undefined on input
  line 85.
 
 
@@ -12236,46 +12169,46 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 173.
 
 
-LaTeX Warning: Reference `lem:allornothing' on page 159 undefined on input line
+LaTeX Warning: Reference `lem:allornothing' on page 160 undefined on input line
  209.
 
 
-LaTeX Warning: Reference `prop:epointcopy' on page 159 undefined on input line 
+LaTeX Warning: Reference `prop:epointcopy' on page 160 undefined on input line 
 210.
 
 
-LaTeX Warning: Reference `prop:counitdelete' on page 159 undefined on input lin
+LaTeX Warning: Reference `prop:counitdelete' on page 160 undefined on input lin
 e 221.
 
 
-LaTeX Warning: Reference `lem:ecopyfixpoint' on page 159 undefined on input lin
+LaTeX Warning: Reference `lem:ecopyfixpoint' on page 160 undefined on input lin
 e 224.
 
 
-LaTeX Warning: Reference `prop:decompidem' on page 159 undefined on input line 
+LaTeX Warning: Reference `prop:decompidem' on page 160 undefined on input line 
 231.
 
 
-LaTeX Warning: Reference `prop:decompcounit' on page 159 undefined on input lin
+LaTeX Warning: Reference `prop:decompcounit' on page 160 undefined on input lin
 e 232.
 
 
-LaTeX Warning: Reference `prop:decompmult' on page 159 undefined on input line 
+LaTeX Warning: Reference `prop:decompmult' on page 160 undefined on input line 
 233.
 
 
-LaTeX Warning: Reference `lem:match' on page 159 undefined on input line 234.
+LaTeX Warning: Reference `lem:match' on page 160 undefined on input line 234.
 
 
-LaTeX Warning: Reference `lem:comatch' on page 159 undefined on input line 235.
+LaTeX Warning: Reference `lem:comatch' on page 160 undefined on input line 235.
 
 
 
-LaTeX Warning: Reference `prop:decompcomult' on page 159 undefined on input lin
+LaTeX Warning: Reference `prop:decompcomult' on page 160 undefined on input lin
 e 251.
 
 
-LaTeX Warning: Reference `prop:copiablebasis' on page 159 undefined on input li
+LaTeX Warning: Reference `prop:copiablebasis' on page 160 undefined on input li
 ne 252.
 
 )
@@ -12467,7 +12400,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 54.
 
 
-LaTeX Warning: Reference `lem:allornothing' on page 159 undefined on input line
+LaTeX Warning: Reference `lem:allornothing' on page 160 undefined on input line
  60.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12529,7 +12462,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 30.
 
 
-LaTeX Warning: Reference `prop:epointcopy' on page 159 undefined on input line 
+LaTeX Warning: Reference `prop:epointcopy' on page 160 undefined on input line 
 35.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12543,7 +12476,7 @@ ine 45.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 58.
 
-LaTeX Warning: Reference `lem:ecopyfixpoint' on page 159 undefined on input lin
+LaTeX Warning: Reference `lem:ecopyfixpoint' on page 160 undefined on input lin
 e 60.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12603,7 +12536,7 @@ ine 10.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 42.
 
-LaTeX Warning: Reference `prop:copiablebasis' on page 159 undefined on input li
+LaTeX Warning: Reference `prop:copiablebasis' on page 160 undefined on input li
 ne 57.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12655,7 +12588,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 32.
 
 
-LaTeX Warning: Reference `prop:decompidem' on page 159 undefined on input line 
+LaTeX Warning: Reference `prop:decompidem' on page 160 undefined on input line 
 52.
 
 )
@@ -12779,7 +12712,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 172.
 
 
-LaTeX Warning: Reference `lem:match' on page 159 undefined on input line 173.
+LaTeX Warning: Reference `lem:match' on page 160 undefined on input line 173.
 
 
 ! LaTeX Error: Too many unprocessed floats.
@@ -12847,7 +12780,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 190.
  (./figures/idemproof/copynormal.tikz
 
-LaTeX Warning: Reference `lem:ecopyfixpoint' on page 159 undefined on input lin
+LaTeX Warning: Reference `lem:ecopyfixpoint' on page 160 undefined on input lin
 e 27.
 
 )
@@ -12889,13 +12822,13 @@ ine 199.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 27.
 
-LaTeX Warning: Reference `prop:decompidem' on page 159 undefined on input line 
+LaTeX Warning: Reference `prop:decompidem' on page 160 undefined on input line 
 48.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 68.
 
-LaTeX Warning: Reference `lem:match' on page 159 undefined on input line 70.
+LaTeX Warning: Reference `lem:match' on page 160 undefined on input line 70.
 
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12940,11 +12873,11 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 60.
 
 
-LaTeX Warning: Reference `prop:decompidem' on page 159 undefined on input line 
+LaTeX Warning: Reference `prop:decompidem' on page 160 undefined on input line 
 83.
 
 
-LaTeX Warning: Reference `lem:comatch' on page 159 undefined on input line 84.
+LaTeX Warning: Reference `lem:comatch' on page 160 undefined on input line 84.
 
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -12974,7 +12907,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `thm:stickygraphical' on page 159 undefined on input l
+LaTeX Warning: Reference `thm:stickygraphical' on page 160 undefined on input l
 ine 216.
 
 
@@ -12998,7 +12931,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 219.
 
 
-LaTeX Warning: Reference `prop:decompidem' on page 159 undefined on input line 
+LaTeX Warning: Reference `prop:decompidem' on page 160 undefined on input line 
 219.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -13015,7 +12948,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 6.
 
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 21.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 21.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 21.
@@ -13036,19 +12969,19 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 220.
 
 
-LaTeX Warning: Reference `prop:copiablebasis' on page 159 undefined on input li
+LaTeX Warning: Reference `prop:copiablebasis' on page 160 undefined on input li
 ne 221.
 
 
-LaTeX Warning: Reference `prop:decompcounit' on page 159 undefined on input lin
+LaTeX Warning: Reference `prop:decompcounit' on page 160 undefined on input lin
 e 221.
 
 
-LaTeX Warning: Reference `prop:decompmult' on page 159 undefined on input line 
+LaTeX Warning: Reference `prop:decompmult' on page 160 undefined on input line 
 221.
 
 
-LaTeX Warning: Reference `prop:decompcomult' on page 159 undefined on input lin
+LaTeX Warning: Reference `prop:decompcomult' on page 160 undefined on input lin
 e 221.
 
 (./figures/idemproof/finalproof2.tikz
@@ -13058,11 +12991,11 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 44.
 
 
-LaTeX Warning: Reference `prop:decompcomult' on page 159 undefined on input lin
+LaTeX Warning: Reference `prop:decompcomult' on page 160 undefined on input lin
 e 45.
 
 
-LaTeX Warning: Reference `prop:decompmult' on page 159 undefined on input line 
+LaTeX Warning: Reference `prop:decompmult' on page 160 undefined on input line 
 46.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -13070,7 +13003,7 @@ ine 52.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 53.
 
-LaTeX Warning: Reference `prop:copiablebasis' on page 159 undefined on input li
+LaTeX Warning: Reference `prop:copiablebasis' on page 160 undefined on input li
 ne 55.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -13078,11 +13011,11 @@ ine 68.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 74.
 
-LaTeX Warning: Reference `prop:counitdelete' on page 159 undefined on input lin
+LaTeX Warning: Reference `prop:counitdelete' on page 160 undefined on input lin
 e 75.
 
 
-LaTeX Warning: Reference `prop:decompcounit' on page 159 undefined on input lin
+LaTeX Warning: Reference `prop:decompcounit' on page 160 undefined on input lin
 e 76.
 
 )
@@ -13114,7 +13047,7 @@ and I'll forget about whatever was undefined.
 
 (./figures/idemproof/finalproof3.tikz
 
-LaTeX Warning: Reference `prop:splitmeanssticky' on page 159 undefined on input
+LaTeX Warning: Reference `prop:splitmeanssticky' on page 160 undefined on input
  line 5.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -13198,9 +13131,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[159]
+[160]
 
-LaTeX Warning: Reference `prop:decompidem' on page 160 undefined on input line 
+LaTeX Warning: Reference `prop:decompidem' on page 161 undefined on input line 
 234.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -13210,7 +13143,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 8.
 
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 11.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 11.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 11.
@@ -13235,23 +13168,23 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 237.
 
 
-LaTeX Warning: Reference `lem:comatch' on page 160 undefined on input line 242.
+LaTeX Warning: Reference `lem:comatch' on page 161 undefined on input line 242.
 
 
 
-LaTeX Warning: Reference `lem:ecopyfixpoint' on page 160 undefined on input lin
+LaTeX Warning: Reference `lem:ecopyfixpoint' on page 161 undefined on input lin
 e 248.
 
 (./figures/topology/halooverlap.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [160
+ [161
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 255.
 
-[161]) (./chapters/toprel/5_topologicalconcepts.tex
+[162]) (./chapters/toprel/5_topologicalconcepts.tex
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
 ne 3.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
@@ -13272,7 +13205,7 @@ ine 19.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 10.
- [162
+ [163
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -13331,7 +13264,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 262.
 
 
-LaTeX Font Warning: Command \huge invalid in math mode on input line 290.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 290.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 290.
@@ -13344,11 +13277,11 @@ ine 302.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [163]
+ [164]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 20.
 
-[164]
+[165]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 27.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -13462,7 +13395,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[165]
+[166]
 
 ! LaTeX Error: Too many unprocessed floats.
 
@@ -13682,7 +13615,7 @@ ine 31.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 82.
- [166]
+ [167]
 
 ! LaTeX Error: Too many unprocessed floats.
 
@@ -14012,7 +13945,7 @@ ine 22.
 )
 Underfull \vbox (badness 2875) has occurred while \output is active []
 
- [167]
+ [168]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 162.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -14047,7 +13980,7 @@ Overfull \hbox (16.57793pt too wide) detected at line 180
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [168]
+ [169]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 180.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -14100,7 +14033,7 @@ Overfull \hbox (172.21625pt too wide) detected at line 184
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [169]
+ [170]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 184.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -14119,7 +14052,7 @@ Overfull \hbox (16.57793pt too wide) detected at line 188
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [170]
+ [171]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 188.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -14150,7 +14083,7 @@ ine 192.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [171]
+ [172]
 (./figures/topology/contractible.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
@@ -14350,7 +14283,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[172]
+[173]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 240.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -14411,7 +14344,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 246.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 246.
-[173] (./figures/topology/touching.tikz
+[174] (./figures/topology/touching.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -14517,7 +14450,7 @@ ine 38.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [174]
+ [175]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 254.
 
@@ -14561,7 +14494,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 264.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 264.
- [175] (./figures/topology/trapped.tikz
+ [176] (./figures/topology/trapped.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 14.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -14668,7 +14601,7 @@ Overfull \hbox (53.57916pt too wide) detected at line 272
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [176]
+ [177]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 272.
 
@@ -14679,7 +14612,7 @@ Overfull \hbox (57.90529pt too wide) detected at line 278
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 278.
-[177] (./figures/topology/labelledwires.tikz
+[178] (./figures/topology/labelledwires.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 25.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -14751,7 +14684,7 @@ Overfull \hbox (91.55116pt too wide) detected at line 287
 
 Underfull \vbox (badness 6063) has occurred while \output is active []
 
- [178]
+ [179]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 287.
 
@@ -14781,7 +14714,7 @@ Overfull \hbox (20.72539pt too wide) detected at line 291
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [179]
+ [180]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 291.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -14838,7 +14771,7 @@ ine 38.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [180]
+ [181]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 295.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -14879,7 +14812,7 @@ ine 298.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [181]
+ [182]
 (./figures/topology/inopenout.tikz)
 Overfull \hbox (200.169pt too wide) detected at line 299
 []
@@ -14895,7 +14828,7 @@ Overfull \hbox (57.90529pt too wide) detected at line 301
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [182]
+ [183]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 301.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -14927,7 +14860,7 @@ ine 46.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [183]
+ [184]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 305.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15005,7 +14938,7 @@ ine 26.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [184]
+ [185]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 309.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15026,7 +14959,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 310.
 
 
-LaTeX Warning: Reference `prop:exclusion' on page 185 undefined on input line 3
+LaTeX Warning: Reference `prop:exclusion' on page 186 undefined on input line 3
 10.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15034,10 +14967,10 @@ ine 310.
 )
 Underfull \vbox (badness 1215) has occurred while \output is active []
 
- [185]
-[186] (./chapters/toprel/7_contreltext.tex
+ [186]
+[187] (./chapters/toprel/7_contreltext.tex
 
-LaTeX Warning: Reference `fig:pointing' on page 187 undefined on input line 10.
+LaTeX Warning: Reference `fig:pointing' on page 188 undefined on input line 10.
 
 
 
@@ -15104,7 +15037,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 21.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 21.
-[187]
+[188]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 29.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15117,7 +15050,7 @@ ine 57.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [188]
+ [189]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 31.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15129,12 +15062,12 @@ ine 57.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 59.
 
-[189]
+[190]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 63.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 67.
-) [190] (./chapters/toprel/4_lassos.tex
+) [191] (./chapters/toprel/4_lassos.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
 
@@ -15158,15 +15091,11 @@ ine 32.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 5.
- [191]
+ [192]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 11.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
 ne 13.
-
-
-LaTeX Warning: Command \textasciicircum invalid in math mode on input line 13.
-
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
 ne 13.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15175,22 +15104,11 @@ LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
 ne 13.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 13.
-! Undefined control sequence.
-<argument> ... Ob(\mathcal {C}) \exists \mathtext 
-                                                  {ev}ˆ{ \mathbb {A}}_{\mat...
-l.18 \end{align}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Command \textasciicircum invalid in math mode on input line 18.
-
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 18.
+ne 16.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 16.
+
 (./figures/spatialencoding/eval.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
@@ -15206,127 +15124,57 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 27.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 30.
-
-! Undefined control sequence.
-l.31 ...yle=none] (28) at (3.5, 0.25) {${\mathtext
-                                                  {ev}?\mathbb{A}}_\mathbb{B...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 31.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
 ne 31.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
 ne 32.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 18.
+ine 19.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 18.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 18.
-
-! Undefined control sequence.
-<argument> ... Ob(\mathcal {C}) \exists \mathtext 
-                                                  {ev}ˆ{ \mathbb {A}}_{\mat...
-l.18 \end{align}
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Command \textasciicircum invalid in math mode on input line 18.
-
+ine 24.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 18.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 18.
-(./figures/spatialencoding/eval.tikz
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 7.
+ne 24.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 12.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 13.
+ne 24.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 14.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 26.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 27.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 30.
-
-! Undefined control sequence.
-l.31 ...yle=none] (28) at (3.5, 0.25) {${\mathtext
-                                                  {ev}?\mathbb{A}}_\mathbb{B...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 31.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 32.
-)
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 18.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 18.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 18.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 23.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 23.
-
-
-LaTeX Warning: Command \textasciicircum invalid in math mode on input line 23.
-
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 23.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 23.
-[192]
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 32.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 32.
+ine 24.
+ [193]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 33.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 33.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 33.
+ine 34.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 35.
- (./figures/spatialencoding/circencodingconstruct.tikz)
-Overfull \hbox (60.90529pt too wide) detected at line 36
+ine 34.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 34.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 36.
+
+(./figures/spatialencoding/circencodingconstruct.tikz)
+Overfull \hbox (60.90529pt too wide) detected at line 37
 []
  []
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 36.
+ine 37.
 (./figures/spatialencoding/stickymorphismdefn.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 17.
-) [193]
+)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 42.
+ine 43.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 46.
+ine 47.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 46.
+ine 47.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 46.
-
+ine 47.
+ [194]
 (./figures/spatialencoding/arbsetclaim.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 17.
@@ -15359,12 +15207,12 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 76.
 )
-Overfull \hbox (229.56577pt too wide) detected at line 47
+Overfull \hbox (229.56577pt too wide) detected at line 48
 []
  []
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 47.
+ine 48.
 (./figures/spatialencoding/arbset.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 40.
@@ -15413,20 +15261,20 @@ ine 112.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 113.
 )
-Overfull \hbox (36.67462pt too wide) detected at line 49
+Overfull \hbox (36.67462pt too wide) detected at line 50
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [194]
+ [195]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 49.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 53.
+ine 50.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 54.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 55.
 
 (./figures/spatialencoding/directsumconstruct.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15451,9 +15299,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 91.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 92.
-) [195]
+) [196]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 55.
+ine 56.
 
 (./figures/spatialencoding/leftrightcompressions.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15474,7 +15322,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 18.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 57.
+ine 58.
 
 (./figures/spatialencoding/leftrightcompressions2.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15491,7 +15339,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 14.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 59.
+ine 60.
 
 (./figures/spatialencoding/leftrightcompressions3.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15504,11 +15352,11 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 28.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 61.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 62.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 62.
+ine 63.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 63.
 
 (./figures/spatialencoding/leftrightcompressions4.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15524,15 +15372,15 @@ ine 11.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [196]
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 63.
+ [197]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 64.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 64.
+ine 65.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 64.
+ine 65.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 65.
 
 (./figures/spatialencoding/tensorconstruct.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15554,14 +15402,14 @@ ine 99.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 102.
 )
-Overfull \hbox (36.69765pt too wide) detected at line 67
+Overfull \hbox (36.69765pt too wide) detected at line 68
 []
  []
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 67.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 68.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 69.
 (./figures/spatialencoding/boxcompression.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 23.
@@ -15582,18 +15430,18 @@ ine 37.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 38.
 )
-Overfull \hbox (6.47116pt too wide) detected at line 69
+Overfull \hbox (6.47116pt too wide) detected at line 70
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [197]
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 69.
+ [198]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 70.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 71.
 
 (./figures/spatialencoding/obtainboxposition.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15613,17 +15461,17 @@ ine 34.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [198]
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 71.
+ [199]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 72.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 73.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 73.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 73.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 73.
 
 (./figures/spatialencoding/tensordetensor.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15661,12 +15509,12 @@ ine 46.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 49.
 )
-Overfull \hbox (96.4712pt too wide) detected at line 73
+Overfull \hbox (96.4712pt too wide) detected at line 74
 []
  []
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 73.
+ine 74.
 (./figures/spatialencoding/tensordetensor2.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
@@ -15720,9 +15568,9 @@ id you specify a point identical to the center of node ``51''? on input line 77
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [199]
+ [200]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 75.
+ine 76.
 
 (./figures/spatialencoding/tensordetensor3.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15761,11 +15609,11 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 31.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 77.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 80.
+ine 78.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 81.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 82.
 
 (./figures/spatialencoding/relcomp1.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15812,16 +15660,16 @@ id you specify a point identical to the center of node ``81''? on input line 15
 3.
 
 )
-Overfull \hbox (32.45255pt too wide) detected at line 82
+Overfull \hbox (32.45255pt too wide) detected at line 83
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [200]
+ [201]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 82.
+ine 83.
 
 (./figures/spatialencoding/relcomp2.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15877,16 +15725,16 @@ ine 135.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 136.
 )
-Overfull \hbox (206.8869pt too wide) detected at line 84
+Overfull \hbox (206.8869pt too wide) detected at line 85
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [201]
+ [202]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 84.
+ine 85.
 
 (./figures/spatialencoding/relcomp3.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -15956,22 +15804,22 @@ ine 149.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 150.
 )
-Overfull \hbox (157.09459pt too wide) detected at line 86
+Overfull \hbox (157.09459pt too wide) detected at line 87
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [202]
+ [203]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 86.
+ine 87.
 )
-[203] [204
-
-]
+[204]
 Chapter 4.
-[205] (./chapters/beyond/metaphor.tex
+[205
+
+] (./chapters/beyond/metaphor.tex
 
 ! LaTeX Error: Too many unprocessed floats.
 
@@ -16044,7 +15892,7 @@ l.19 \begin{figure}[h]
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/metaphor/PlanckianLocus.png, id=1711, 1304.875pt x 1467.4825pt>
+<figures/metaphor/PlanckianLocus.png, id=1710, 1304.875pt x 1467.4825pt>
 File: figures/metaphor/PlanckianLocus.png Graphic file (type png)
 <use figures/metaphor/PlanckianLocus.png>
 Package pdftex.def Info: figures/metaphor/PlanckianLocus.png  used on input lin
@@ -16073,7 +15921,7 @@ l.32 \begin{figure}[h]
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/metaphor/colourlocus1.png, id=1713, 1343.0175pt x 781.92125pt>
+<figures/metaphor/colourlocus1.png, id=1712, 1343.0175pt x 781.92125pt>
 File: figures/metaphor/colourlocus1.png Graphic file (type png)
 <use figures/metaphor/colourlocus1.png>
 Package pdftex.def Info: figures/metaphor/colourlocus1.png  used on input line 
@@ -16091,7 +15939,7 @@ l.37 \begin{figure}[h]
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/metaphor/colourlocus2.png, id=1714, 1343.0175pt x 781.92125pt>
+<figures/metaphor/colourlocus2.png, id=1713, 1343.0175pt x 781.92125pt>
 File: figures/metaphor/colourlocus2.png Graphic file (type png)
 <use figures/metaphor/colourlocus2.png>
 Package pdftex.def Info: figures/metaphor/colourlocus2.png  used on input line 
@@ -16126,7 +15974,7 @@ l.48 \begin{figure}[h]
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/metaphor/offset1.jpeg, id=1715, 1947.275pt x 572.1375pt>
+<figures/metaphor/offset1.jpeg, id=1714, 1947.275pt x 572.1375pt>
 File: figures/metaphor/offset1.jpeg Graphic file (type jpg)
 <use figures/metaphor/offset1.jpeg>
 Package pdftex.def Info: figures/metaphor/offset1.jpeg  used on input line 50.
@@ -16143,7 +15991,7 @@ l.53 \begin{figure}[h]
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/metaphor/offset2.jpeg, id=1716, 1884.03876pt x 603.25375pt>
+<figures/metaphor/offset2.jpeg, id=1715, 1884.03876pt x 603.25375pt>
 File: figures/metaphor/offset2.jpeg Graphic file (type jpg)
 <use figures/metaphor/offset2.jpeg>
 Package pdftex.def Info: figures/metaphor/offset2.jpeg  used on input line 55.
@@ -16255,7 +16103,7 @@ l.75 \begin{figure}[h]
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/metaphor/tradesignature.png, id=1728, 1540.75626pt x 880.28876pt>
+<figures/metaphor/tradesignature.png, id=1727, 1540.75626pt x 880.28876pt>
 File: figures/metaphor/tradesignature.png Graphic file (type png)
 <use figures/metaphor/tradesignature.png>
 Package pdftex.def Info: figures/metaphor/tradesignature.png  used on input lin
@@ -16273,7 +16121,7 @@ l.80 \begin{figure}[h]
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/metaphor/toptrademodel.jpeg, id=1729, 1530.71875pt x 907.39pt>
+<figures/metaphor/toptrademodel.jpeg, id=1728, 1530.71875pt x 907.39pt>
 File: figures/metaphor/toptrademodel.jpeg Graphic file (type jpg)
 <use figures/metaphor/toptrademodel.jpeg>
 Package pdftex.def Info: figures/metaphor/toptrademodel.jpeg  used on input lin
@@ -16291,7 +16139,7 @@ l.85 \begin{figure}\label
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/metaphor/fibroles.jpeg, id=1730, 1925.1925pt x 657.45625pt>
+<figures/metaphor/fibroles.jpeg, id=1729, 1925.1925pt x 657.45625pt>
 File: figures/metaphor/fibroles.jpeg Graphic file (type jpg)
 <use figures/metaphor/fibroles.jpeg>
 Package pdftex.def Info: figures/metaphor/fibroles.jpeg  used on input line 87.
@@ -16309,7 +16157,7 @@ l.90 \begin{figure}[h]
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/metaphor/interpret.jpeg, id=1731, 1876.00874pt x 1047.915pt>
+<figures/metaphor/interpret.jpeg, id=1730, 1876.00874pt x 1047.915pt>
 File: figures/metaphor/interpret.jpeg Graphic file (type jpg)
 <use figures/metaphor/interpret.jpeg>
 Package pdftex.def Info: figures/metaphor/interpret.jpeg  used on input line 92
@@ -16331,7 +16179,7 @@ l.95 \begin{figure}[h]
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/metaphor/time0.jpeg, id=1732, 1876.00874pt x 501.875pt>
+<figures/metaphor/time0.jpeg, id=1731, 1876.00874pt x 501.875pt>
 File: figures/metaphor/time0.jpeg Graphic file (type jpg)
 <use figures/metaphor/time0.jpeg>
 Package pdftex.def Info: figures/metaphor/time0.jpeg  used on input line 97.
@@ -16348,7 +16196,7 @@ l.101 \begin{figure}[h]
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/metaphor/time1.jpeg, id=1733, 2075.755pt x 548.0475pt>
+<figures/metaphor/time1.jpeg, id=1732, 2075.755pt x 548.0475pt>
 File: figures/metaphor/time1.jpeg Graphic file (type jpg)
 <use figures/metaphor/time1.jpeg>
 Package pdftex.def Info: figures/metaphor/time1.jpeg  used on input line 103.
@@ -16365,7 +16213,7 @@ l.106 \begin{figure}[h]
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<figures/metaphor/fullermodel.png, id=1734, 1440.38126pt x 786.94pt>
+<figures/metaphor/fullermodel.png, id=1733, 1440.38126pt x 786.94pt>
 File: figures/metaphor/fullermodel.png Graphic file (type png)
 <use figures/metaphor/fullermodel.png>
 Package pdftex.def Info: figures/metaphor/fullermodel.png  used on input line 1
@@ -16490,10 +16338,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D73A826E5731726D376393C806CD436E;7968.
  ) 
 Here is how much of TeX's memory you used:
- 69296 strings out of 478268
- 1533294 string characters out of 5846348
- 2667451 words of memory out of 5000000
- 84771 multiletter control sequences out of 15000+600000
+ 69302 strings out of 478268
+ 1533716 string characters out of 5846348
+ 2668451 words of memory out of 5000000
+ 84779 multiletter control sequences out of 15000+600000
  727354 words of font info for 352 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,19n,107p,4001b,1459s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -16535,10 +16383,10 @@ fb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xttsc.pfb><
 l/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplbi.pfb></usr/local/texliv
 e/2022/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/te
 xmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (216 pages, 19222628 bytes).
+Output written on main.pdf (216 pages, 21696811 bytes).
 PDF statistics:
- 1999 PDF objects out of 2073 (max. 8388607)
- 1620 compressed objects within 17 object streams
- 565 named destinations out of 1000 (max. 500000)
- 28783 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1997 PDF objects out of 2073 (max. 8388607)
+ 1617 compressed objects within 17 object streams
+ 563 named destinations out of 1000 (max. 500000)
+ 28788 words of extra memory for PDF output out of 29859 (max. 10000000)
 
