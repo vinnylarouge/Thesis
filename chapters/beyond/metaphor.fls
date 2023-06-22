@@ -5,5 +5,8 @@ INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT metaphor.tex
 OUTPUT metaphor.log
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT metaphor.pdf
+INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map

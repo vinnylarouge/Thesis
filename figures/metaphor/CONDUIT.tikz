@@ -1,0 +1,183 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-4.25, 2) {};
+		\node [style=none] (1) at (-1, 2) {};
+		\node [style=none] (2) at (-4.25, 12) {};
+		\node [style=none] (3) at (5, 12) {};
+		\node [style=none] (4) at (-3.25, 2.5) {\texttt{sender}};
+		\node [style=none] (5) at (-3.25, 12.5) {\texttt{receiver}};
+		\node [style=none] (6) at (-4.25, 4.5) {};
+		\node [style=none] (7) at (-1, 4.5) {};
+		\node [style=none] (8) at (-3.25, 5) {\texttt{container}};
+		\node [style=none] (9) at (-4.25, 7) {};
+		\node [style=none] (10) at (-1, 7) {};
+		\node [style=none] (11) at (-3.25, 7.5) {\texttt{content}};
+		\node [style=none] (12) at (-1, 7.75) {};
+		\node [style=none] (13) at (-1, 1.5) {};
+		\node [style=none] (14) at (1, 1.5) {};
+		\node [style=none] (15) at (1, 7.75) {};
+		\node [style=none] (16) at (-0.75, 7.5) {};
+		\node [style=none] (17) at (-0.75, 4) {};
+		\node [style=none] (18) at (0.75, 4) {};
+		\node [style=none] (19) at (0.75, 7.5) {};
+		\node [style=none] (20) at (0, 2.75) {\rotatebox{90}{\texttt{cause}}};
+		\node [style=none] (22) at (0, 5.75) {\rotatebox{90}{\texttt{contain}}};
+		\node [style=none] (23) at (5.5, 5) {};
+		\node [style=none] (25) at (5.5, 9.5) {};
+		\node [style=none] (26) at (5.5, 10) {};
+		\node [style=none] (27) at (5.5, 4.5) {};
+		\node [style=none] (28) at (7.5, 4.5) {};
+		\node [style=none] (29) at (7.5, 10) {};
+		\node [style=none] (30) at (5.75, 6.75) {};
+		\node [style=none] (31) at (5.75, 4.75) {};
+		\node [style=none] (32) at (7.25, 4.75) {};
+		\node [style=none] (33) at (7.25, 6.75) {};
+		\node [style=none] (34) at (6.5, 2.75) {\rotatebox{90}{\texttt{cause}}};
+		\node [style=none] (35) at (6.5, 5.75) {\rotatebox{90}{\texttt{go}}};
+		\node [style=none] (37) at (1, 5.75) {};
+		\node [style=none] (38) at (1, 2) {};
+		\node [style=none] (39) at (5, 12.75) {};
+		\node [style=none] (40) at (8, 12.75) {};
+		\node [style=none] (41) at (6.5, 8.25) {\rotatebox{90}{\texttt{thru}}};
+		\node [style=none] (42) at (5, 1.25) {};
+		\node [style=none] (43) at (8, 1.25) {};
+		\node [style=none] (44) at (5, 2) {};
+		\node [style=none] (45) at (5, 5.75) {};
+		\node [style=none] (46) at (5, 9.5) {};
+		\node [style=none] (47) at (-4.25, 9.5) {};
+		\node [style=none] (48) at (1, 9.5) {};
+		\node [style=none] (49) at (-3.25, 10) {\texttt{conduit}};
+		\node [style=none] (50) at (6.5, 11.25) {\rotatebox{90}{\texttt{to}}};
+		\node [style=none] (51) at (3, 6.25) {\texttt{container}};
+		\node [style=none] (54) at (7.75, 12.5) {};
+		\node [style=none] (55) at (5.25, 12.5) {};
+		\node [style=none] (56) at (5.25, 4.25) {};
+		\node [style=none] (57) at (7.75, 4.25) {};
+		\node [style=none] (58) at (6.5, 12.75) {};
+		\node [style=none] (59) at (0, 7.75) {};
+		\node [style=circ] (60) at (6.5, 14) {};
+		\node [style=circ] (61) at (0, 14) {};
+		\node [style=none] (62) at (-4, 14) {};
+		\node [style=circ] (63) at (12, 14) {};
+		\node [style=none] (69) at (8, 12) {};
+		\node [style=none] (70) at (8, 5.75) {};
+		\node [style=none] (71) at (11, 10.75) {};
+		\node [style=none] (72) at (11, 7) {};
+		\node [style=none] (73) at (8, 9.5) {};
+		\node [style=none] (74) at (11, 4.5) {};
+		\node [style=none] (75) at (13, 12) {};
+		\node [style=none] (76) at (16, 12) {};
+		\node [style=none] (78) at (13, 9.5) {};
+		\node [style=none] (79) at (13, 7) {};
+		\node [style=none] (80) at (13, 4.5) {};
+		\node [style=none] (81) at (16, 9.5) {};
+		\node [style=none] (82) at (8, 2) {};
+		\node [style=none] (83) at (19, 2) {};
+		\node [style=none] (84) at (16, 7) {};
+		\node [style=none] (85) at (16, 4.5) {};
+		\node [style=none] (86) at (13, 7) {};
+		\node [style=none] (87) at (13, 9.5) {};
+		\node [style=none] (88) at (13, 12) {};
+		\node [style=none] (89) at (13, 12.75) {};
+		\node [style=none] (90) at (13, 6.5) {};
+		\node [style=none] (91) at (11, 6.5) {};
+		\node [style=none] (92) at (11, 12.75) {};
+		\node [style=none] (93) at (12.75, 12.5) {};
+		\node [style=none] (94) at (12.75, 9) {};
+		\node [style=none] (95) at (11.25, 9) {};
+		\node [style=none] (96) at (11.25, 12.5) {};
+		\node [style=none] (97) at (12, 7.75) {\rotatebox{90}{\texttt{cause}}};
+		\node [style=none] (98) at (12, 10.75) {\rotatebox{90}{\texttt{extract}}};
+		\node [style=none] (99) at (11, 10.75) {};
+		\node [style=none] (100) at (11, 7) {};
+		\node [style=none] (101) at (12, 12.75) {};
+		\node [style=none] (102) at (19, 12) {};
+		\node [style=none] (103) at (19, 9.5) {};
+		\node [style=none] (104) at (19, 7) {};
+		\node [style=none] (105) at (19, 4.5) {};
+		\node [style=none] (106) at (18, 2.5) {\texttt{sender}};
+		\node [style=none] (107) at (18, 12.5) {\texttt{receiver}};
+		\node [style=none] (108) at (18, 5) {\texttt{container}};
+		\node [style=none] (109) at (18, 7.5) {\texttt{content}};
+		\node [style=none] (110) at (18, 10) {\texttt{conduit}};
+		\node [style=none] (111) at (19, 14) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (0.center) to (1.center);
+		\draw (2.center) to (3.center);
+		\draw (6.center) to (7.center);
+		\draw (9.center) to (10.center);
+		\draw (12.center)
+			 to (15.center)
+			 to (14.center)
+			 to (13.center)
+			 to cycle;
+		\draw (18.center)
+			 to (17.center)
+			 to (16.center)
+			 to (19.center)
+			 to cycle;
+		\draw (26.center)
+			 to (29.center)
+			 to (28.center)
+			 to (27.center)
+			 to cycle;
+		\draw (32.center)
+			 to (31.center)
+			 to (30.center)
+			 to (33.center)
+			 to cycle;
+		\draw (40.center)
+			 to (43.center)
+			 to (42.center)
+			 to (39.center)
+			 to cycle;
+		\draw [in=-180, out=0] (38.center) to (44.center);
+		\draw (47.center) to (48.center);
+		\draw [in=-180, out=0] (48.center) to (46.center);
+		\draw [in=-180, out=0] (37.center) to (45.center);
+		\draw (56.center)
+			 to (55.center)
+			 to (54.center)
+			 to (57.center)
+			 to cycle;
+		\draw [style=D] (62.center) to (61);
+		\draw [style=D] (61) to (59.center);
+		\draw [style=D] (61) to (60);
+		\draw [style=D] (60) to (58.center);
+		\draw [in=180, out=0, looseness=0.50] (70.center) to (71.center);
+		\draw (73.center)
+			 to [in=-180, out=0, looseness=0.50] (74.center)
+			 to (80.center)
+			 to [in=180, out=0, looseness=0.50] (81.center);
+		\draw [in=-180, out=0, looseness=0.75] (69.center) to (72.center);
+		\draw [style=H] (10.center) to (37.center);
+		\draw [style=H] (7.center) to (37.center);
+		\draw (82.center) to (83.center);
+		\draw (79.center)
+			 to [in=-180, out=0, looseness=0.50] (76.center)
+			 to (102.center);
+		\draw (75.center)
+			 to [in=180, out=0, looseness=0.50] (84.center)
+			 to (104.center);
+		\draw (78.center)
+			 to [in=180, out=0, looseness=0.50] (85.center)
+			 to (105.center);
+		\draw (89.center)
+			 to (92.center)
+			 to (91.center)
+			 to (90.center)
+			 to cycle;
+		\draw (95.center)
+			 to (94.center)
+			 to (93.center)
+			 to (96.center)
+			 to cycle;
+		\draw [style=H] (88.center) to (99.center);
+		\draw [style=H] (87.center) to (99.center);
+		\draw (81.center) to (103.center);
+		\draw [style=D] (60) to (63);
+		\draw [style=D] (63) to (101.center);
+		\draw [style=D] (63) to (111.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

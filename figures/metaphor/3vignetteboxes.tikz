@@ -1,0 +1,33 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-2, 2) {};
+		\node [style=none] (1) at (-2, -2) {};
+		\node [style=none] (2) at (2, -2) {};
+		\node [style=none] (3) at (2, 2) {};
+		\node [style=none] (4) at (3, 2) {};
+		\node [style=none] (5) at (3, -2) {};
+		\node [style=none] (6) at (7, 2) {};
+		\node [style=none] (7) at (7, -2) {};
+		\node [style=none] (8) at (8, 2) {};
+		\node [style=none] (9) at (8, -2) {};
+		\node [style=none] (10) at (12, -2) {};
+		\node [style=none] (11) at (12, 2) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (1.center)
+			 to (0.center)
+			 to (3.center)
+			 to [bend left=15] (2.center)
+			 to cycle;
+		\draw (7.center)
+			 to (5.center)
+			 to [bend left=15] (4.center)
+			 to (6.center)
+			 to [bend left=15] cycle;
+		\draw (10.center)
+			 to (9.center)
+			 to [bend left=15] (8.center)
+			 to (11.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}
