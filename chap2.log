@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  20 JUN 2023 22:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  22 JUN 2023 08:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1896,17 +1896,22 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 3.
 
+<beltcrest.pdf, id=71, 116.435pt x 139.52126pt>
+File: beltcrest.pdf Graphic file (type pdf)
+<use beltcrest.pdf>
+Package pdftex.def Info: beltcrest.pdf  used on input line 5.
+(pdftex.def)             Requested size: 193.49701pt x 231.86281pt.
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 30.08008pt on input line 5.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 16.92004pt on input line 5.
-LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 33.84009pt on input line 5.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 13.16003pt on input line 5.
 [1
 
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./beltc
+rest.pdf>] [2
 
 
 ]
@@ -2059,78 +2064,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./figures/intro/GFOLex2_new.tikz
-
-! LaTeX Error: Environment pFconlayer undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2 	\begin{pFconlayer}
-                       {nodelayer}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-
-! LaTeX Error: \begin{tikzpicture} on input line 1 ended by \end{pFconlayer}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.75 	\end{pFconlayer}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment pFconlayer undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.76 	\begin{pFconlayer}
-                        {edgelayer}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-
-! LaTeX Error: \begin{tikzpicture} on input line 1 ended by \end{pFconlayer}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 	\end{pFconlayer}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-)
+(./figures/intro/GFOLex2_new.tikz)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2718,11 +2652,11 @@ Package rerunfilecheck Info: File `chap2.out' has not changed.
 (rerunfilecheck)             Checksum: 05CDD608158B96BB508C89AE0DE83617;1616.
  ) 
 Here is how much of TeX's memory you used:
- 62458 strings out of 478268
- 1354051 string characters out of 5846348
- 2353578 words of memory out of 5000000
- 79394 multiletter control sequences out of 15000+600000
- 610839 words of font info for 184 fonts, out of 8000000 for 9000
+ 62467 strings out of 478268
+ 1354234 string characters out of 5846348
+ 2359861 words of memory out of 5000000
+ 79401 multiletter control sequences out of 15000+600000
+ 613836 words of font info for 185 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,15n,107p,2063b,1458s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/npxsups_T1.enc}{/us
@@ -2744,10 +2678,10 @@ ic/stix/stix-mathtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/
 txfonts/t1xtt.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/
 zplb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplr.pfb>
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on chap2.pdf (38 pages, 427571 bytes).
+Output written on chap2.pdf (38 pages, 442499 bytes).
 PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
- 315 compressed objects within 4 object streams
+ 422 PDF objects out of 1000 (max. 8388607)
+ 318 compressed objects within 4 object streams
  85 named destinations out of 1000 (max. 500000)
- 2781 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3298 words of extra memory for PDF output out of 10000 (max. 10000000)
 
