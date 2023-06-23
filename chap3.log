@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  23 JUN 2023 08:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  23 JUN 2023 12:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1709,7 +1709,11 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 LaTeX Warning: Unused global option(s):
     [nobib].
 
-(./chap3.aux)
+(./chap3.aux
+
+LaTeX Warning: Label `ex:quant2' multiply defined.
+
+)
 \openout1 = `chap3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -1797,8 +1801,7 @@ LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for LS1/stix2/m/n on input line 3.
 LaTeX Font Info:    Trying to load font information for LS1+stix2 on input line
  3.
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/stix2-type1/ls1stix2.fd
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/stix2-type1/ls1stix2.fd
 File: ls1stix2.fd 2018/04/02 v2.0.0-latex stix2 LS1 font definitions
 )
 LaTeX Font Info:    ... okay on input line 3.
@@ -1924,7 +1927,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 3.
 
-<beltcrest.pdf, id=51, 116.435pt x 139.52126pt>
+<beltcrest.pdf, id=59, 116.435pt x 139.52126pt>
 File: beltcrest.pdf Graphic file (type pdf)
 <use beltcrest.pdf>
 Package pdftex.def Info: beltcrest.pdf  used on input line 5.
@@ -2029,7 +2032,7 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 11.
-[5] (./chapters/textcirc/circgen.tex
+(./chapters/textcirc/circgen.tex [5]
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 3.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
@@ -2075,17 +2078,17 @@ LaTeX Font Info:    Font shape `TS1/zplTLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 24.
 
-(./figures/mushroom/howtoread.tikz)
+(./figures/mushroom/howtoread.tikz) (./figures/mushroom/sintro.tikz)
 LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 36.
+(Font)              scaled to size 10.0pt on input line 44.
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 36.
+(Font)              scaled to size 10.0pt on input line 44.
 
 
-LaTeX Warning: Reference `sec:ncat' on page 6 undefined on input line 36.
+LaTeX Warning: Reference `sec:ncat' on page 6 undefined on input line 44.
 
 [6] (./figures/mushroom/locality.tikz) [7]
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 [][]\T1/zplTLF/b/n/10 Rules 1.1.2 \T1/zplTLF/m/n/10 (Sim-ple sen-tences)\T1/zpl
 TLF/b/n/10 . []\T1/zplTLF/m/n/10 Sim-ple sen-tences are sen-tences that only co
 n-tain a sin-gle in-tran-si-tive or tran-si-tive verb. Sim-ple sen-tences will 
@@ -2104,7 +2107,7 @@ id you specify a point identical to the center of node ``208''? on input line 4
 59.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 []\T1/zplTLF/m/n/10 The $[][]$-intro rule in-tro-duces new un-sat-u-rated nouns
 . The []\T1/npxtt/m/n/10 IV[]\T1/zplTLF/m/n/10 -intro and []\T1/npxtt/m/n/10 TV
 []\T1/zplTLF/m/n/10 -intro rules ap-ply when there are pre-cisely one or two un
@@ -2112,42 +2115,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 \T1/zplTLF/m/n/10 sen-tence re-spec-tively, sat-u-rat-ing their re-spec-tive no
 uns. Ad-jec-tives may be in-tro-duced im-me-di-ately pre-ced-ing sat-u-rated no
 uns. Ad-verbs may be in-tro-duced
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 \T1/zplTLF/m/n/10 im-me-di-ately pre-ced-ing verbs. To cap-ture context-sensiti
 ve place-ment of ad-po-si-tion in-tro-duc-tions, the $[][][]$-tendril rule al-l
 ows an un-sat-u-rated ad-po-si-tion to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 \T1/zplTLF/m/n/10 suc-ceed a verb; a bulb may travel by ho-mo-topy to the right
  seek-ing an un-sat-u-rated noun. Con-versely, the bidi-rec-tional $[][][]$-ten
 dril rule sends a mycelic ten-dril
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 \T1/zplTLF/m/n/10 to the left, seek-ing a verb. The two pass-rules al-low un-sa
 t-u-rated ad-po-si-tions to swap past sat-u-rated nouns and ad-jec-tives. By co
 n-struc-tion, nei-ther verbs nor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 \T1/zplTLF/m/n/10 ad-verbs will ap-pear in a sim-ple sen-tence to the right of 
 a verb, so un-sat-u-rated ad-po-si-tions will move right un-til en-coun-ter-ing
  an un-sat-u-rated noun. In case it
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 [][]\T1/zplTLF/b/n/10 Rules 1.1.3 \T1/zplTLF/m/n/10 (Com-plex sen-tences)\T1/zp
 lTLF/b/n/10 . []\T1/zplTLF/m/n/10 Now we con-sider two re-fine-ments; con-junc-
 tions, and verbs that take sen-ten-tial com-ple-ments. we may have two sen-tenc
@@ -2155,21 +2158,21 @@ es
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 \T1/zplTLF/m/n/10 joined by a con-junc-tion, e.g. \T1/npxtt/m/n/10 Alice dances
  $[]$ Bob drinks\T1/zplTLF/m/n/10 . We may also have verbs that take a sen-ten-
 tial com-ple-ment rather than a noun phrase, e.g.
  []
 
 (./figures/mushroom/Sbestiary.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
 \T1/zplTLF/m/n/10 The dotted-blue wires do not con-tent-fully in-ter-act with a
 ny-thing else, but this non-in-ter-ac-tion dis-al-lows over-gen-er-a-tion cases
  where ad-po-si-tional phrases might
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
 \T1/zplTLF/m/n/10 in-ter-ject be-tween \T1/npxtt/m/n/10 SCV \T1/zplTLF/m/n/10 v
 erbs and their sen-ten-tial com-ple-ment, e.g. []\T1/npxtt/m/n/10 Alice sees $[
 ]$ Bob drink[]\T1/zplTLF/m/n/10 . Later, they serve as vi-sual in-di-ca-tors fo
@@ -2177,7 +2180,7 @@ r the con-tents of
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 [][]\T1/zplTLF/b/n/10 Example 1.1.4 \T1/zplTLF/m/n/10 (\T1/npxtt/m/n/10 sober $
 \LS1/stix2/m/it/10 $ \T1/npxtt/m/n/10 sees drunk $\LS1/stix2/m/it/10 ^^L$ \T1/
 npxtt/m/n/10 clumsily dance.\T1/zplTLF/m/n/10 )\T1/zplTLF/b/n/10 . []\T1/zplTLF
@@ -2186,42 +2189,42 @@ con-ven-tion -- re-flected in how
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 \T1/zplTLF/m/n/10 the var-i-ous pass- rules do not in-ter-act with la-bels -- w
 e as-sume that la-belling oc-curs af-ter all of the words are sat-u-rated. We h
 ave still not in-tro-duced rules for
  []
 
 (./figures/mushroom/soberA.tikz) [10]
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 \T1/zplTLF/m/n/10 tional, ex-tra-ne-ous ten-drils can al-ways be re-tracted, an
 d failed at-tempts for verbs to find an ad-po-si-tional un-sat-u-rated noun ar-
 gu-ment can be un-done. Though
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 \T1/zplTLF/m/n/10 this seems com-pu-ta-tion-ally waste-ful, it is com-mon-place
  in gen-er-a-tive gram-mars to have the gram-mar over-gen-er-ate and later de-f
 ine the set of sen-tences by
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 \T1/zplTLF/m/n/10 re-stric-tion, which is rea-son-able so long as com-put-ing t
 he re-stric-tion is not com-pu-ta-tion-ally hard. In our case, ob-serve that on
 ce a verb has been in-tro-duced
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 \T1/zplTLF/m/n/10 and its ar-gu-ment nouns have been sat-u-rated, only the in-t
 ro-duc-tion of ad-po-si-tions can sat-u-rate ad-di-tion-ally in-tro-duced un-sa
 t-u-rated nouns. There-fore we may
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 \T1/zplTLF/m/n/10 de-fine the fin-ished sen-tences of the circuit-growing gram-
 mar to be those that e.g. con-tain no un-sat-u-rated nodes on the sur-face, whi
 ch is a very plau-si-ble linear-
@@ -2229,35 +2232,35 @@ ch is a very plau-si-ble linear-
 
 (./figures/mushroom/Alaughs.tikz) [11]
 (./figures/mushroom/nounbestiary_newnew.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 108--110
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
 \T1/zplTLF/m/n/10 The linked-\T1/npxtt/m/n/10 N\T1/zplTLF/m/n/10 -intro rules i
 n-tro-duce a new un-sat-u-rated noun in the next sen-tence that coref-er-ences 
 the noun in the pre-vi-ous sen-tence that gen-er-ated it, with vari-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 []\T1/npxtt/m/n/10 N\T1/zplTLF/m/n/10 -shift rules al-low any un-sat-u-rated no
 un to move into the next sen-tence, again with vari-ants for dif-fer-ent pairs 
 of sen-tences. Ob-serve that nouns with a for-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 \T1/zplTLF/m/n/10 ward coref-er-ence have two dotted-black wires leav-ing the r
 oot of their wires, which dis-tin-guishes them from nouns that only have a back
 -ward coref-er-ence or
  []
 
 [12] (./figures/mushroom/nounbestiary_newnew2.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
 \T1/zplTLF/m/n/10 tion of coref-er-ent nouns, and link-propagation is a case an
 al-y-sis that copies a link la-bel and dis-tributes is across coref-er-ent noun
 s. Link-rise is a case anal-y-sis to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
 \T1/zplTLF/m/n/10 con-nect la-bels to the sur-face, and fi-nally \T1/npxtt/m/n/
 10 N\T1/zplTLF/m/n/10 -label al-lows a sat-u-rated noun to in-herit the la-bel 
 of its coref-er-ence class, which may ei-ther be a noun \T1/npxtt/m/n/10 n \T1/
@@ -2265,7 +2268,7 @@ zplTLF/m/n/10 or a pro-noun
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 [][]\T1/zplTLF/b/n/10 Example 1.1.8 \T1/zplTLF/m/n/10 (\T1/npxtt/m/n/10 sober A
 lice sees Bob clumsily dance. She laughs at him.\T1/zplTLF/m/n/10 )\T1/zplTLF/b
 /n/10 . []\T1/zplTLF/m/n/10 We start the deriva-tion by set-ting up the sen-ten
@@ -2273,7 +2276,7 @@ ce struc-ture us-ing \T1/npxtt/m/n/10 S\T1/zplTLF/m/n/10 - and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 \T1/npxtt/m/n/10 SCV\T1/zplTLF/m/n/10 -intro rules, and two in-stances of \T1/n
 pxtt/m/n/10 N\T1/zplTLF/m/n/10 -intro, one for Al-ice, and one for Bob. Ob-serv
 e how the \T1/npxtt/m/n/10 N\T1/zplTLF/m/n/10 -intro for Bob oc-curs within the
@@ -2281,14 +2284,14 @@ e how the \T1/npxtt/m/n/10 N\T1/zplTLF/m/n/10 -intro for Bob oc-curs within the
  []
 
 (./figures/mushroom/corefex1.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \T1/zplTLF/m/n/10 By ho-mo-topy, we can re-ar-range the pre-vi-ous di-a-gram to
  ob-tain the source of the linked-\T1/npxtt/m/n/10 N\T1/zplTLF/m/n/10 -intro re
 write in the dashed-box vi-sual aid. Ob-serve how we drag in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 \T1/zplTLF/m/n/10 the root of what is to be Al-ice's wire. Then we use the \T1/
 npxtt/m/n/10 IV\T1/zplTLF/m/n/10 -intro in the sec-ond sen-tence, which sets up
  the sur-face struc-ture \T1/npxtt/m/n/10 she laughs\T1/zplTLF/m/n/10 , and the
@@ -2296,7 +2299,7 @@ npxtt/m/n/10 IV\T1/zplTLF/m/n/10 -intro in the sec-ond sen-tence, which sets up
  []
 
 (./figures/mushroom/corefex2.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
 \T1/zplTLF/m/n/10 By ho-mo-topy again, we can do the same for Bob, this time se
 t-ting up for the $\LS1/stix2/m/it/10 ^^M$ \T1/zplTLF/m/n/10 vari-ant of linked
 -\T1/npxtt/m/n/10 N\T1/zplTLF/m/n/10 -intro which han-dles the case when the sp
@@ -2304,20 +2307,57 @@ awn-ing noun is
  []
 
 (./figures/mushroom/corefex3.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 143--145
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 \T1/zplTLF/m/n/10 We've al-ready done the sur-face deriva-tion for the two sen-
 tences sep-a-rately in Ex-am-ples []1.1.4[] and []1.1.5[]; since nei-ther of th
 ose deriva-tions touch the roots of
  []
 
 
-LaTeX Warning: Float too large for page by 2.71753pt on input line 145.
+LaTeX Warning: Float too large for page by 2.71753pt on input line 153.
 
-[14] (./figures/mushroom/corefex4.tikz) [15] (./figures/mushroom/simpleCFG.tikz
-) (./figures/mushroom/simpleADP.tikz) (./figures/mushroom/simpcorr.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[14] (./figures/mushroom/corefex4.tikz) [15]
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+[][]\T1/zplTLF/b/n/10 Rules 1.1.9 \T1/zplTLF/m/n/10 (Text to cir-cuit)\T1/zplTL
+F/b/n/10 . []\T1/zplTLF/m/n/10 We turn fin-ished text di-a-grams into text cir-
+cuits by op-er-at-ing \T1/zplTLF/m/it/10 in situ\T1/zplTLF/m/n/10 , with ex-tra
+ rules out-side the gram-mat-i-cal sys-tem that han-dle
+ []
 
- [16
+(./figures/mushroom/sentjoin.tikz) [16]
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+[][]\T1/zplTLF/b/n/10 Example 1.1.10 \T1/zplTLF/m/n/10 (Text to cir-cuit in ac-
+tion)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 In the first step be-low, by Lem-m
+as []1.1.17[] and []1.1.18[], we can al-ways re-ar-range a fin-ished text di-a-
+gram such that the
+ []
+
+(./figures/mushroom/sentjoinex.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
+\T1/zplTLF/m/n/10 In the third step, we just ig-nore the ex-is-tence of the bub
+ble-scaffolding and the loose scalars. We could in prin-ci-ple add more rewrite
+s to melt the scaf-fold-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
+\T1/zplTLF/m/n/10 away if we wanted to. In the fourth step, we ap-ply the sec-o
+nd and third rewrites of Con-struc-tion []1.1.9[] to con-nect the wires and eli
+m-i-nate nod-ules un-der-neath
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
+\T1/zplTLF/m/n/10 la-bels. We can also straighten up the wires a bit and make t
+hem look proper. At this point, we're ac-tu-ally done, be-cause the re-sult-ing
+ di-a-gram \T1/zplTLF/m/it/10 is al-ready a text
+ []
+
+(./figures/mushroom/sentjoinex2.tikz) [17] (./figures/mushroom/simpleCFG.tikz)
+(./figures/mushroom/simpleADP.tikz) (./figures/mushroom/simpcorr.tikz) [18
+
+
+
 
 
 
@@ -2328,187 +2368,523 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-LaTeX Font Info:    Font shape `TS1/zplTLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 184.
+(./figures/mushroom/complexsentenceCSG.tikz)
+(./figures/mushroom/circuitplan.tikz) (./figures/mushroom/reflcomplication.tikz
+) [19
 
-(./figures/mushroom/complexsentenceCSG.tikz) (./figures/mushroom/nounkinds.tikz
-)
+] (./figures/mushroom/nounkinds.tikz) [20
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./figures/mushroom/sintro.tikz)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./figures/mushroom/circuitplan.tikz)
+]
+(./figures/textcirc/gatecompextgt.tikz) (./figures/textcirc/gateeqslide.tikz)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./figures/mushroom/reflcomplication.tikz)
+(./figures/mushroom/contentlesscnj.tikz)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17] [18] [19] (./figures/textcirc/nounwiresABN.tikz)
-(./figures/textcirc/ADJgate.tikz) (./figures/textcirc/IVgate.tikz)
-(./figures/textcirc/TVgate.tikz) (./figures/textcirc/ADVbox.tikz)
-(./figures/textcirc/ADPIVbox.tikz) (./figures/textcirc/SCVbox.tikz)
-(./figures/textcirc/CNJbox2.tikz) (./figures/textcirc/ADPIVgate.tikz)
-(./figures/textcirc/gatecompex1.tikz) [20
+(./figures/textcirc/lonelywires.tikz) (./figures/mushroom/exists.tikz)
 
-] (./figures/mushroom/sentjoin.tikz)
-Overfull \hbox (163.78992pt too wide) in paragraph at lines 338--338
-[][] 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
+[][]\T1/zplTLF/b/n/10 Construction 1.1.27 \T1/zplTLF/m/n/10 (Cir-cuit to text)\
+T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 In the pres-ence of ad-di-tional rewrite
+s from Con-ven-tions []1.13[] and []1.14[], ev-ery text cir-cuit is ob-tain-abl
+e from some text di-
  []
 
-(./figures/mushroom/sentjoinex.tikz) (./figures/mushroom/sentjoinex2.tikz)
-[21] (./figures/textcirc/gatecompextgt.tikz)
-(./figures/textcirc/gateeqslide.tikz)
-Overfull \hbox (50.79208pt too wide) detected at line 392
-[]
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
+\T1/zplTLF/m/n/10 a-gram, up to Con-ven-tions []1.11[] and []1.12[]. Start-ing 
+with a cir-cuit, we may use Con-ven-tion []1.11[] to ar-range the cir-cuit into
+ al-ter-nat-ing slices of twist-ing wires and
  []
 
-[22]
 
-LaTeX Warning: Reference `conv:sliding' on page 23 undefined on input line 408.
-
-
-(./figures/mushroom/contentlesscnj.tikz) (./figures/textcirc/lonelywires.tikz)
-(./figures/mushroom/exists.tikz) [23]
-
-LaTeX Warning: Reference `conv:sliding' on page 24 undefined on input line 426.
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
+\T1/zplTLF/m/n/10 (pos-si-bly ten-sored) cir-cuits, and this ar-range-ment re-c
+urses within boxes. Slices with mul-ti-ple ten-sored gates will be treated us-i
+ng Con-ven-tion []1.13[]. By con-ven-
+ []
 
 
-(./figures/textcirc/sunny1.tikz) (./figures/textcirc/sunny2.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
+\T1/zplTLF/m/n/10 tion []1.14[], we dec-o-rate lonely wires with for-mal \T1/np
+xtt/m/n/10 exists \T1/zplTLF/m/n/10 gates, as in the \T1/npxtt/m/n/10 Frank see
+s \T1/zplTLF/m/n/10 box. Ob-serve how verbs with sen-ten-tial com-ple-ment are 
+de-picted with grey
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+(./figures/textcirc/sunny1.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
+[]\T1/zplTLF/m/n/10 We then lin-earise the slices, rep-re-sent-ing top-to-botto
+m com-po-si-tion as left-to-right. Twist lay-ers are elim-i-nated, re-placed in
+-stead by dot-ted con-nec-tions in-di-
+ []
 
-(./figures/textcirc/sunny3.tikz)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
+\T1/zplTLF/m/n/10 cat-ing pro-ces-sive con-nec-tiv-ity. The dashed ver-ti-cal l
+ine dis-tin-guishes slices. This step of the pro-ce-dure al-ways be-haves well,
+ guar-an-teed by Propo-si-tion []1.1.17[].
+ []
+
+(./figures/textcirc/sunny2.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 407--409
+\T1/zplTLF/m/n/10 We re-curse the lin-eari-sa-tion pro-ce-dure within boxes un-
+til there are no more se-quen-tially com-posed gates. The lin-eari-sa-tion pro-
+ce-dure ev-i-dently ter-mi-nates for
+ []
+
+(./figures/textcirc/sunny3.tikz) [23] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 418--419
+[]\T1/zplTLF/m/n/10 By Propo-si-tion []1.7[], gates are equiv-a-lent to sen-ten
+ces up to no-ta-tion, so we swap no-ta-tions \T1/zplTLF/m/it/10 in situ\T1/zplT
+LF/m/n/10 . Con-ven-tions []1.13[] and []1.14[] han-dle the edge cases of par-a
+l-lel
+ []
 
 (./figures/textcirc/sunny4.tikz)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./figures/textcirc/sunny5.tikz)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
-[][]\T1/zplTLF/b/n/10 Construction 1.1.28. []\T1/zplTLF/m/n/10 We can ex-tend o
-ur sys-tem to ac-com-mo-date rel-a-tive pro-nouns as fol-lows. The in-tro-duc-t
-ion of a rel-a-tive pro-noun is con-sid-ered to start a
+Underfull \hbox (badness 10000) in paragraph at lines 421--423
+\T1/zplTLF/m/n/10 Recursing no-ta-tion swaps out-wards and con-nect-ing left-to
+-right slices as sentence-bubbles con-nect yields a text cir-cuit, up to the in
+-clu-sion of rewrites from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
-\T1/zplTLF/m/n/10 new sen-tence with a pre-made pronom-i-nal link. The rel-a-ti
-ve pro-noun con-nects to a new kind of sur-face noun, which for most in-tents a
-nd pur-poses be-haves
+Underfull \hbox (badness 10000) in paragraph at lines 421--423
+\T1/zplTLF/m/n/10 Con-ven-tions []1.13[] and []1.14[]: ap-ply-ing the re-verse 
+of those rewrites and the re-verse of text-diagram rewrites yields a valid text
+-diagram deriva-tion, by Propo-si-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
-\T1/zplTLF/m/n/10 just like the nouns we have seen be-fore, ex-cept for two cav
-eats: it can-not be la-belled (since the rel-a-tive pro-noun is al-ready han-dl
-ing that), and it can-not leave
+Underfull \hbox (badness 10000) in paragraph at lines 421--423
+\T1/zplTLF/m/n/10 tions []1.7[] and []1.1.17[]. We haven't for-mally in-cluded 
+tran-si-tive verbs with sen-ten-tial com-ple-ment in our vo-cab-u-lary, but it 
+should be ob-vi-ous at this point how
+ []
+
+(./figures/textcirc/sunny5.tikz) [25]
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+[]\T1/zplTLF/m/n/10 Sensibility at the sen-ten-tial level is es-tab-lished by P
+ropo-si-tions []1.6[] and []1.7[]. Propo-si-tion []1.1.19[] es-tab-lishes a map
+ from text to cir-cuits, and Con-struc-tion
+ []
+
+[26]) (./chapters/textcirc/textcirc.tex (./figures/textcirc/babiex.tikz)
+
+Package natbib Warning: Citation `wilson_string_2022' on page 27 undefined on i
+nput line 19.
+
+
+Package natbib Warning: Citation `merry_reasoning_2014' on page 27 undefined on
+ input line 19.
+
+
+Package natbib Warning: Citation `quick_-logic_2015' on page 27 undefined on in
+put line 19.
+
+
+Package natbib Warning: Citation `zamdzhiev_rewriting_2017' on page 27 undefine
+d on input line 19.
+
+
+Underfull \vbox (badness 7907) has occurred while \output is active []
+
+ [27
+
+
+
+
+]
+[28]
+LaTeX Font Info:    Font shape `T1/zplTLF/b/sc' will be
+(Font)              scaled to size 10.0pt on input line 37.
+ [29] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+[][]\T1/zplTLF/b/n/10 Rules 1.3.1. []\T1/zplTLF/m/n/10 A rel-a-tive pro-noun gl
+ues two sen-tences across a sin-gle noun. For ex-am-ple, what would be a text w
+ith two sen-tences \T1/npxtt/m/n/10 Alice teaches at school.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
-\T1/zplTLF/m/n/10 the sen-tence it starts in by \T1/npxtt/m/n/10 N\T1/zplTLF/m/
-n/10 -shift rules. We can elim-i-nate rel-a-tive pro-nouns by forc-ing the gov-
-erned noun to be named, which is equiv-a-lent to drop-ping the
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+\T1/npxtt/m/n/10 School bores Bob. \T1/zplTLF/m/n/10 can be com-posed by iden-t
+i-fy-ing \T1/npxtt/m/n/10 school\T1/zplTLF/m/n/10 : \T1/npxtt/m/n/10 Alice teac
+hes at school $[]$ bores Bob. \T1/zplTLF/m/n/10 In this case, \T1/npxtt/m/n/10 
+that \T1/zplTLF/m/n/10 is called a subject-relative pro-
  []
 
-(./figures/mushroom/rpintroelim.tikz) (./figures/mushroom/RPex.tikz)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+\T1/zplTLF/m/n/10 noun, as it stands in for the sub-ject ar-gu-ment in \T1/npxt
+t/m/n/10 bores\T1/zplTLF/m/n/10 . In \T1/npxtt/m/n/10 Alices teaches at school 
+$[]$ Bob attends.\T1/zplTLF/m/n/10 , we have an object-relative pro-noun, as \T
+1/npxtt/m/n/10 that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+\T1/zplTLF/m/n/10 stands in for the ob-ject ar-gu-ment in \T1/npxtt/m/n/10 atte
+nds\T1/zplTLF/m/n/10 . In En-glish, rel-a-tive pro-nouns oc-cur im-me-di-ately 
+af-ter the noun they copy, and are fol-lowed im-me-di-ately by a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+\T1/zplTLF/m/n/10 sen-tence miss-ing a noun. Re-flex-ive pro-nouns may be dealt
+ with in a sim-i-lar fash-ion as we have with rel-a-tive pro-nouns, and var-i-o
+us se-man-tic in-ter-pre-ta-tion op-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+\T1/zplTLF/m/n/10 tions have been cov-ered al-ready in Fig-ure []1.9[]. We can 
+ex-tend our sys-tem to ac-com-mo-date rel-a-tive pro-nouns as fol-lows. The in-
+tro-duc-tion of a rel-a-tive pro-noun
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+\T1/zplTLF/m/n/10 is con-sid-ered to start a new sen-tence with a pre-made pron
+om-i-nal link. The rel-a-tive pro-noun con-nects to a new kind of sur-face noun
+, which for most in-tents
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+\T1/zplTLF/m/n/10 and pur-poses be-haves just like the nouns we have seen be-fo
+re, ex-cept for two caveats: it can-not be la-belled (since the rel-a-tive pro-
+noun is al-ready han-dling that),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+\T1/zplTLF/m/n/10 and it can-not leave the sen-tence it starts in by \T1/npxtt/
+m/n/10 N\T1/zplTLF/m/n/10 -shift rules. We can elim-i-nate rel-a-tive pro-nouns
+ by forc-ing the gov-erned noun to be named, which is equiv-a-lent
+ []
+
+(./figures/mushroom/rpintroelim.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+[][]\T1/zplTLF/b/n/10 Example 1.3.2 \T1/zplTLF/m/n/10 (In-tro-duc-ing rel-a-tiv
+e pro-nouns)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 Here we demon-strate deriva
+-tions of \T1/npxtt/m/n/10 Alice teaches at school that bores Bob \T1/zplTLF/m/
+n/10 and \T1/npxtt/m/n/10 Alice teaches at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+\T1/npxtt/m/n/10 school that Bob attends\T1/zplTLF/m/n/10 . The ini-tial steps 
+in both cases are the same, set-ting up the \T1/npxtt/m/n/10 teaches \T1/zplTLF
+/m/n/10 phrase struc-ture and in-tro-duc-ing a new un-sat-u-rated noun in
+ []
+
+(./figures/mushroom/RPex.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/zplTLF/m/n/10 Now have a branch-ing deriva-tion. We may ei-ther di-rectly g
+en-er-ate a tran-si-tive verb treat-ing the rel-a-tive pro-noun as a sub-ject, 
+or we may first per-form an $[][]$-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/zplTLF/m/n/10 swap first and then gen-er-ate a tran-si-tive verb, treat-ing
+ the rel-a-tive pro-noun as an ob-ject. Now the ends of ei-ther branch can be l
+a-belled to re-cover our ini-tial
+ []
 
 (./figures/mushroom/RPex2.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
+\T1/zplTLF/m/n/10 Twists in wires can be used to model pas-sive voice con-struc
+-tions, which amount to swap-ping the ar-gu-ment or-der of verbs. In the orig-i
+-nal pa-per []CITE [], a more
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26] (./figures/mushroom/schoolboresbob.tikz
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
+\T1/zplTLF/m/n/10 de-tailed anal-y-sis in-clud-ing the flank-ing words \T1/npxt
+t/m/n/10 is bored by \T1/zplTLF/m/n/10 in-volves in-tro-duc-ing a new di-a-gram
+-matic re-gion, which is mod-elled by hav-ing more than a sin-gle
+ []
+
+(./figures/mushroom/schoolboresbob.tikz
 
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 35.
 
 )
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
+\T1/zplTLF/m/n/10 Modifiers such as ad-jec-tives and ad-verbs when they oc-cur 
+be-fore their re-spec-tive noun or verb are called \T1/zplTLF/m/it/10 at-tribu-
+tive\T1/zplTLF/m/n/10 . When mod-i-fiers oc-cur af-ter their re-spec-
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
+\T1/zplTLF/m/n/10 tive tar-get, they are called \T1/zplTLF/m/it/10 pred-ica-tiv
+e\T1/zplTLF/m/n/10 . In En-glish, with-out the aid of \T1/npxtt/m/n/10 and\T1/z
+plTLF/m/n/10 , only a sin-gle pred-ica-tive mod-i-fier is per-mis-si-ble, e.g. 
+\T1/npxtt/m/n/10 big red car \T1/zplTLF/m/n/10 and \T1/npxtt/m/n/10 big car is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
+\T1/npxtt/m/n/10 red \T1/zplTLF/m/n/10 are both ac-cept-able, but []textttcar i
+s big red[] is not. There is no is-sue in in-tro-duc-ing rewrites to han-dle co
+p-u-lar mod-i-fier con-struc-tions in text di-a-grams, and
+ []
 
 (./figures/mushroom/redcar.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+\T1/zplTLF/m/n/10 This ex-am-ple, along with other gram-mar equa-tions, was fir
+st in-tro-duced in the pre-groups and in-ter-nal wirings con-text in []CITE [].
+ Pos-ses-sive pro-nouns are
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+\T1/zplTLF/m/n/10 placed con-tigu-ously in be-tween noun-phrases, for which the
+ di-a-gram-matic tech-nol-ogy we de-vel-oped for plac-ing ad-po-si-tions can be
+ re-pur-posed. Pos-ses-sive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+\T1/zplTLF/m/n/10 pro-nouns may be dealt with by a sin-gle rewrite that re-lies
+ on the pres-ence of a tran-si-tive own-er-ship verb in the lex-i-con, which co
+r-re-sponds to a box-analysis in
+ []
 
 (./figures/mushroom/bobpub.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
+\T1/zplTLF/m/n/10 The deep nodes of a text di-a-gram may be equiv-a-lently view
+ed as eval-u-a-tors in a sym-met-ric monoidal closed set-ting, and the sur-face
+ nodes as states for the
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
+\T1/zplTLF/m/n/10 eval-u-a-tors. By Curry-Howard-Lambek, this view re-cov-ers t
+ype-l-og-i-cal gram-mar set-tings where com-po-si-tion is some vari-ant of modu
+s po-nens. So long as the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
+\T1/zplTLF/m/n/10 typ-ing rules are op-eradic or tree-like (which is al-most al
+-ways the case for type-l-og-i-cal gram-mars, as there are rarely gentzen-style
+ se-quent rules that gen-er-ate
+ []
 
 (./figures/mushroom/Acvqr.tikz)
-Underfull \vbox (badness 1616) has occurred while \output is active []
-
- [27]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
+\T1/zplTLF/m/n/10 Just as tran-si-tive verbs mod-ify two nouns, com-par-a-tives
+ are higher-order tran-si-tive mod-i-fiers that act on the data of verbs or ad-
+jec-tives. A ben-e-fit of the sym-
+ []
 
 (./figures/mushroom/AdltBd.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+[][]\T1/zplTLF/b/n/10 Example 1.3.8 \T1/zplTLF/m/n/10 (\T1/zplTLF/b/n/10 Syncat
+egorematicity I\T1/zplTLF/m/n/10 )\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/it/10 Syn-
+cat-e-gore-matic \T1/zplTLF/m/n/10 words are roughly those that have contextual
+ly-dependent se-man-tics. Their de-pen-dency is usu-ally
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+\T1/zplTLF/m/n/10 pred-i-cated on the gram-mat-i-cal type of their ar-gu-ments.
+ In our terms, since we con-sider the se-man-tics of text cir-cuits to be un-de
+r-pinned by monoidal func-tors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+\T1/zplTLF/m/n/10 that reify the cir-cuits in a tar-get cat-e-gory, syn-cat-e-g
+ore-matic words such as \T1/npxtt/m/n/10 and \T1/zplTLF/m/n/10 may be treated a
+s dis-tribu-tive laws. Here \T1/npxtt/m/n/10 and \T1/zplTLF/m/n/10 oc-curs as a
+ con-junc-tion of nouns
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+\T1/zplTLF/m/n/10 and is elim-i-nated by distributive-law rewrites within the d
+eep struc-ture of the text di-a-gram \T1/zplTLF/m/it/10 be-fore trans-la-tion i
+nto cir-cuits\T1/zplTLF/m/n/10 . Note that what is meant by \T1/zplTLF/m/it/10 
+dis-tribu-
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 100--101
+\T1/zplTLF/m/it/10 tive \T1/zplTLF/m/n/10 here is, in string-diagrammatic terms
+, pre-cisely the same as that in al-ge-bra, for ex-pres-sions such as $\LS1/sti
+x2/m/it/10 a \LS1/stix2/m/n/10 ù .\LS1/stix2/m/it/10 b \LS1/stix2/m/n/10 + \LS1
+/stix2/m/it/10 c\LS1/stix2/m/n/10 / = .\LS1/stix2/m/it/10 a \LS1/stix2/m/n/10 ù
+ \LS1/stix2/m/it/10 b\LS1/stix2/m/n/10 / + .\LS1/stix2/m/it/10 a \LS1/stix2/m/n
+/10 ù \LS1/stix2/m/it/10 c\LS1/stix2/m/n/10 /$\T1/zplTLF/m/n/10 . A new copy-no
+de for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+\T1/zplTLF/m/n/10 verb la-bels that has rewrites for all verbs fa-cil-i-tates d
+is-tri-bu-tion, and the deep \T1/npxtt/m/n/10 and \T1/zplTLF/m/n/10 nodes come 
+in a tensor-dentensor pair anal-o-gous to those for non-strict string
+ []
+
+(./figures/mushroom/ABdrink.tikz) [31] [32] [33] [34] [35] [36] [37]
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
+\T1/zplTLF/m/n/10 In this ex-am-ple, the same word \T1/npxtt/m/n/10 and \T1/zpl
+TLF/m/n/10 is a con-junc-tion of verbs. In this case we choose to in-ter-pret t
+he con-junc-tion of verbs as se-quen-tial com-po-si-tion, so there is
+ []
+
+(./figures/mushroom/Bdrinksmoke.tikz
+
+Package pgf Warning: Returning node center instead of a point on node border. D
+id you specify a point identical to the center of node ``34''? on input line 11
+4.
 
 )
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
+\T1/zplTLF/m/n/10 We stand to win in terms of con-cep-tual econ-omy for mod-ell
+ing; more com-plex phe-nom-ena of text struc-ture such as co-or-di-na-tion ap-p
+ear to be re-solv-able in the
+ []
+
+(./figures/mushroom/respectively.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
+\T1/zplTLF/m/n/10 Here, \T1/npxtt/m/n/10 drinks \T1/zplTLF/m/n/10 is con-sid-er
+ed tran-si-tive and \T1/npxtt/m/n/10 the beer \T1/zplTLF/m/n/10 a nest-ing box 
+for \T1/npxtt/m/n/10 drinks \T1/zplTLF/m/n/10 that reaches over to con-tex-tual
+ wires rep-re-sent-ing a se-lec-tion of bev-er-ages. In this
+ []
+
+(./figures/mushroom/thebeer1.tikz) (./figures/mushroom/thebeer2.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
+\T1/zplTLF/m/n/10 When there are no beers in con-text, the same state-ment take
+s on a dy-namic read-ing: it con-sti-tutes the in-tro-duc-tion of a beer into d
+is-course. In terms of text
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
+\T1/zplTLF/m/n/10 cir-cuits, this amounts to in-tro-duc-ing a novel beer-state 
+and beer-wire. De-ter-min-ing an ap-pro-pri-ate set-ting to ac-com-mo-date "ar-
+bi-trary" vs. "con-crete" beers
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
+\T1/zplTLF/m/n/10 (c.f. Fine's ar-bi-trary ob-jects []CITE []) re-quires fur-th
+er re-search and ex-per-i-men-ta-tion, but pre-lim-i-nar-ily it is known that d
+en-sity ma-tri-ces are ca-pa-ble of mod-elling
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
+\T1/zplTLF/m/n/10 se-man-tic en-tail-ment []CITE [], at the com-pu-ta-tional co
+st of adopt-ing the kro-necker prod-uct. This di-a-gram doesn't type-check, but
+ note that it doesn't have to,
+ []
+
+(./figures/mushroom/thebeer3.tikz)
+
+LaTeX Warning: Reference `ex:beer2' on page 38 undefined on input line 152.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
+\T1/zplTLF/m/n/10 In a fini-tary con-text, drink-ing \T1/npxtt/m/n/10 all the b
+eers \T1/zplTLF/m/n/10 amounts to ap-ply-ing the dis-tribu-tiv-ity of \T1/npxtt
+/m/n/10 and \T1/zplTLF/m/n/10 it-er-a-tively in that con-text. In this case, \T
+1/npxtt/m/n/10 all the beers \T1/zplTLF/m/n/10 is treated as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
+\T1/zplTLF/m/n/10 a reference-in-context to \T1/npxtt/m/n/10 Hells \T1/zplTLF/m
+/n/10 and \T1/npxtt/m/n/10 Duvel\T1/zplTLF/m/n/10 . In the same man-ner, ex-is-
+ten-tial quan-ti-fiers in fi-nite con-texts can be treated as fini-tary dis-jun
+c-tions, which is han-dled
+ []
+
+(./figures/mushroom/thebeer4.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+[]\LS1/stix2/m/n/10 .[]\LS1/stix2/m/it/10 ; x\LS1/stix2/m/n/10 /$\T1/zplTLF/m/n
+/10 . We can treat generic uni-ver-sal quan-ti-fiers of this kind in at least t
+wo ways. The first es-sen-tially truth-conditional ap-proach is to treat the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+\T1/zplTLF/m/n/10 generic as a process-theoretic con-di-tion gov-ern-ing mea-su
+re-ments: when-ever it is the case that some-thing is a beer, it is the case th
+at Bob drinks it. The sec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+\T1/zplTLF/m/n/10 ond "in-fer-en-tial" ap-praoch is to treat the generic as a r
+ewrite of text cir-cuits con-di-tioned on a beer test: when-ever some-thing is 
+a beer we may add on a gate
+ []
+
+(./figures/mushroom/thebeer5.tikz))
+
+Package natbib Warning: There were undefined citations.
+
 
 Package bibentry Warning: You have used \nobibliography* 
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-[28] [29] [30] (./chap3.aux)
+[38] [39] [40] [41] [42] (./chap3.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `chap3.out' has not changed.
-(rerunfilecheck)             Checksum: 2AE2C52056C7CD8D773E4BADCA424E56;431.
+(rerunfilecheck)             Checksum: 95C8E9D0E7DD96D061EACB53692D7975;802.
  ) 
 Here is how much of TeX's memory you used:
- 62599 strings out of 478268
- 1350255 string characters out of 5846348
- 2289250 words of memory out of 5000000
- 79530 multiletter control sequences out of 15000+600000
- 603174 words of font info for 156 fonts, out of 8000000 for 9000
+ 62759 strings out of 478268
+ 1354029 string characters out of 5846348
+ 2256580 words of memory out of 5000000
+ 79669 multiletter control sequences out of 15000+600000
+ 628633 words of font info for 189 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,14n,104p,1724b,1156s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,13n,104p,3118b,1156s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{theorem.1.1.19} has been referenced but does not ex
 ist, replaced by a fixed one
 
-
-pdfTeX warning (dest): name{theorem.1.1.18} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathscr.e
-nc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathsf
-.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}{/u
-sr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm-bold.
-enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathr
-m.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mat
-hcal.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-p
-c.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mat
-hit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.en
-c}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local
-/texlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texli
-ve/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/t
-exmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/texmf-dist
-/fonts/type1/public/newpx/zplri.pfb>
-Output written on chap3.pdf (30 pages, 662913 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/u
+sr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathsf.enc}{
+/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}{/usr/loc
+al/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm-bold.enc}{/
+usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc}
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathcal.e
+nc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit
+.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{
+/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/loca
+l/texlive/2022/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr/lo
+cal/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/te
+xlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/
+2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/texm
+f-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/texmf-dist/fo
+nts/type1/public/newpx/zplri.pfb>
+Output written on chap3.pdf (42 pages, 719022 bytes).
 PDF statistics:
- 353 PDF objects out of 1000 (max. 8388607)
- 274 compressed objects within 3 object streams
- 73 named destinations out of 1000 (max. 500000)
- 3250 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 440 PDF objects out of 1000 (max. 8388607)
+ 348 compressed objects within 4 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 3778 words of extra memory for PDF output out of 10000 (max. 10000000)
 

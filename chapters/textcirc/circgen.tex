@@ -31,6 +31,14 @@ Where:
 \caption{\textbf{How to read the diagrams in this section:} we will be making heavy use of pink and purple bubbles as frames to construct circuits. We will depict the bubbles horizontally, as we are permitted to by compact closure, or by reading diagrams with slightly skewed axes.}
 \end{marginfigure}
 
+\begin{marginfigure}
+\centering
+\[
+\tikzfig{mushroom/sintro}
+\]
+\caption{Every derivation starts with a single blank sentence bubble, to which we may append more blank sentences.}
+\end{marginfigure}
+
 There are many different ways to write a weak $n$-categorical signature that generates circuits. Mostly as an illustration of expressivity, I will provide a signature where the terms "surface" and "deep" structure are taken literally as metaphors; the generative grammar will grow a line of words in syntactic order, and like mushrooms on soil, the circuits will behave as the mycelium underneath the words. It won't be the most efficient way to do it in terms of the number of rules to consider, but it will look nice and we'll be able to reason about it easily.\\
 
 \newthought{Simplifications and limitations}: For now we only consider word types as in Definition \ref{defn:lex}, though we will see how to engineer extensions later. We only deal with propositional statements, without determiners, in only one tense, with no morphological agreement between nouns and their verbs and referring pronouns, and we assume that adverbs, adjectives stack indefinitely and without further order requirements: e.g. \texttt{Alice happily secretly finds red big toy shiny car that he gives to Bob} is a sentence we consider grammatical enough. For now, we consider only the case where adjectives and adverbs appear before their respective noun or verb. Note that all of these limitations apart from the limited lexicon can principle be overcome by the techniques we developed in Section \ref{sec:ncat} for restricted tree-adjoining and links. As a historical remark, generative-transformational grammars fell out of favour linguistically due to the problem of overgeneration: the generation of nonsense or unacceptable sentences in actual language use. We're undergenerating and overgenerating at the same time, but we're also not concerned with empirical capture: we only require a concrete mathematical basis to build interesting things on top of. On a related note, there's zero chance that this particular circuit-growing grammar even comes close to how language is actually produced by humans, and I have no idea whether a generalised graph-rewriting approach is cognitively realistic.
@@ -69,7 +77,7 @@ The $\texttt{N}_\uparrow$-intro rule introduces new unsaturated nouns. The \text
 \clearpage
 
 \begin{myboxB}
-\begin{rules}[Complex sentences]\label{fig:sentbestiary}
+\begin{rules}[Complex sentences]\label{rules:comp}
 Now we consider two refinements; conjunctions, and verbs that take sentential complements. we may have two sentences joined by a conjunction, e.g. \texttt{Alice dances \underline{while} Bob drinks}. We may also have verbs that take a sentential complement rather than a noun phrase, e.g. \texttt{Alice \underline{sees} Bob dance}; these verbs require nouns, which we depict as wires spanning bubbles.
 \[
 \resizebox{0.75\textwidth}{!}{\tikzfig{mushroom/Sbestiary}}
@@ -100,7 +108,7 @@ Adpositions form by first sprouting and connecting tendrils under the surface. B
 \clearpage
 
 \begin{myboxB}
-\begin{rules}[Coreferential structure and noun labels]
+\begin{rules}[Coreferential structure and noun labels]\label{rules:coref}
 %\bR TODO: need more linked-intro variants to handle leaving right-side of conjunction, nested SCV, CNJ to SCV, and SCV to CNJ. Consider using the same graywire convention to simplify case analysis? \e
 % dealt with in prose.
 \[
@@ -116,7 +124,7 @@ The \texttt{N}-swap rule variants allow a unsaturated noun with no forward coref
 \clearpage
 
 \begin{myboxB}
-\begin{rules}[Labelling nouns]
+\begin{rules}[Labelling nouns]\label{rules:labels}
 When the structure of coreferences is set, we propagate noun labels from the head of each list. The rules for noun-label propagation are as follows:
 \[
 \resizebox{\textwidth}{!}{\tikzfig{mushroom/nounbestiary_newnew2}}
@@ -153,75 +161,106 @@ We've already done the surface derivation for the two sentences separately in Ex
 \end{myboxR}
 \clearpage
 
+\clearpage
+\vfill
+
+\begin{myboxB}
+\begin{rules}[Text to circuit]\label{cons:wirejoin}
+We turn finished text diagrams into text circuits by operating \emph{in situ}, with extra rules outside the grammatical system that handle connecting noun wires.
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/sentjoin}} 
+\]
+\end{rules}
+\end{myboxB}
+
+\vfill
+
+\newpage
+\clearpage
+
+\vfill
+
+\begin{myboxR}
+\begin{example}[Text to circuit in action]
+In the first step below, by Lemmas \ref{prop:linkedlist} and \ref{prop:norefl}, we can always rearrange a finished text diagram such that the noun wires are processive. In the second step, use the first rewrite of Construction \ref{cons:wirejoin} to prepare the wires for connection.
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/sentjoinex}} 
+\]
+In the third step, we just ignore the existence of the bubble-scaffolding and the loose scalars. We could in principle add more rewrites to melt the scaffolding away if we wanted to. In the fourth step, we apply the second and third rewrites of Construction \ref{cons:wirejoin} to connect the wires and eliminate nodules underneath labels. We can also straighten up the wires a bit and make them look proper. At this point, we're actually done, because the resulting diagram \emph{is already a text circuit up to a choice of notation}.
+\[
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/sentjoinex2}} 
+\]
+\end{example}
+\end{myboxR}
+
+\vfill
+
+\newpage
+\clearpage
+
 \newpage
 
 \subsection{Text circuit theorem}
 
-\begin{defn}[CSG for simple sentences]\label{dfn:simpCSG}
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{0.75\textwidth}{!}{\tikzfig{mushroom/simpleCFG}}
+\]
+\caption{
+\begin{construction}[CSG for simple sentences]\label{dfn:simpCSG}
+\end{construction}
 We may gauge the expressivity of simple sentences with the following context-sensitive grammar.
-\[
-\resizebox{\textwidth}{!}{\tikzfig{mushroom/simpleCFG}}
-\]
-Adpositions require several helper-generators; we depict for example the beginning of the sequence of derivations that result from appending adpositions to an intransitive verb (the generators are implicit in the derivations):
-\[
-\resizebox{0.75\textwidth}{!}{\tikzfig{mushroom/simpleADP}}
-\]
-\end{defn}
+}
+\end{figure}
 
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{0.6\textwidth}{!}{\tikzfig{mushroom/simpleADP}}
+\]
+\caption{
+Adpositions require several helper-generators; we depict for example the beginning of the sequence of derivations that result from appending adpositions to an intransitive verb (the generators are implicit in the derivations):
+}
+\end{figure}
+
+\begin{figure}[h!]
+\[
+\resizebox{0.45\textwidth}{!}{\tikzfig{mushroom/simpcorr}}
+\]
+\centering
+\caption{
 \begin{proposition}\label{prop:simpsent}
 Up to labels, the simple-sentence rules yield the same simple sentences as the CSG for simple sentences.
 \begin{proof}
-By graphical correspondence; viewing nodes on the pink surface as 1-cells, each rewrite rule yields a 2-cell. For example, for the \textcolor{green}{\texttt{IV}}-intro:
-\[
-\resizebox{0.5\textwidth}{!}{\tikzfig{mushroom/simpcorr}}
-\]
+By graphical correspondence; viewing nodes on the pink surface as 1-cells, each rewrite rule yields a 2-cell. Reading top-down, the dashed-blue helper lines for adpositions indicate \textcolor{blue}{\texttt{ADP}}-pass rules. The correspondence is visually evident, but may be expressed as a separate signature. The correspondence \textcolor{green}{\texttt{IV}}-intro is depicted, to be read from left-to-right.
 \end{proof}
 \end{proposition}
+}
+\end{figure}
 
-\begin{defn}[Sentence structure]\label{dfn:sentCSG}
-A sentence can be:
-\begin{itemize}
-\item a simple sentence, which...
-\item ... may generate unsaturated nouns from the right.
-\item a pair of sentences with a conjunction in between.
-\item (if there is a single unsaturated noun) a sentence with a sentential-complement verb that scopes over a sentence.
-\end{itemize}
-As a CSG, these considerations are respectively depicted as:
-\end{defn}
+\clearpage
+\clearmargin
+
+\begin{figure}[h!]
+\centering
 \[
-\resizebox{\marginparwidth}{!}{\tikzfig{mushroom/complexsentenceCSG}}
+\resizebox{\textwidth}{!}{\tikzfig{mushroom/complexsentenceCSG}}
 \]
-
+\caption{
 \begin{proposition}\label{prop:compsent}
-Up to labels, the rules so far yield the same sentences as the combined CSG of Definitions \ref{dfn:simpCSG} and \ref{dfn:sentCSG}.
+Up to labels, Rules \ref{rules:simp} and \ref{rules:comp} for simple and complex sentence yield the same sentences as the combined CSG of Construction \ref{dfn:simpCSG} with the depicted additional rules.
 \begin{proof}
 Same correspondence as Proposition \ref{prop:simpsent}, ignoring the dotted-blue guards.
 \end{proof}
 \end{proposition}
-
-\begin{figure}[h!]\label{fig:nounkinds}
-\centering
-\[
-\resizebox{\textwidth}{!}{\tikzfig{mushroom/nounkinds}}
-\]
-\caption{
-\begin{term}[Kinds of nouns with respect to coreference]
-\end{term}
-The kinds of nouns are distinguished by their tails. \emph{Lonely} nouns have no coreferences, their tails connect to nothing. \emph{Head} nouns have a forward coreference in text; they have two tails, one that connects to nothing and the other to a noun later in text. \emph{Middle} nouns have a forward and backward coreference; they have two tails, one that connects to a noun in some preceding sentence, and one that connects forward to a noun in a succeeding sentence. \emph{Foot} nouns only have a backward coreference; they have a single tail connecting to a noun in some preceding sentence.}
+}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
 \[
-\tikzfig{mushroom/sintro}
-\]
-\caption{Only considering words, text is just a list of sentences. However, for our purposes, text additionally has \emph{coreferential structure}. Ideally, we would like to connect "the same noun" from distinct sentences as we would circuits.}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\[
-\tikzfig{mushroom/circuitplan}
+\resizebox{0.9\textwidth}{!}{\tikzfig{mushroom/circuitplan}}
 \]
 \caption{We choose the convention of connecting from left-to-right and from bottom-to-top, so that we might read circuits as we would text: the components corresponding to words will be arranged left-to-right and top-to-bottom. Connecting nouns across distinct sentences presents no issue, but a complication arises when connecting nouns within the same sentence as with reflexive pronouns e.g. \texttt{Alice likes herself}.}
 \end{figure}
@@ -229,78 +268,27 @@ The kinds of nouns are distinguished by their tails. \emph{Lonely} nouns have no
 \begin{figure}[h!]\label{fig:reflcomp}
 \centering
 \[
-\tikzfig{mushroom/reflcomplication}
+\resizebox{0.9\textwidth}{!}{\tikzfig{mushroom/reflcomplication}}
 \]
-\caption{Reflexive coreference would violate of the processivity condition of string diagrams for symmetric monoidal categories. Not all symmetric monoidal categories possess the appropriate structure to interpret such reflexive pronouns, but there exist interpretative options. From left to right in roughly decreasing stringency, compact closed categories are the most direct solution. More weakly, traced symmetric monoidal categories also suffice. If there are no traces, so long as the noun wire possesses a monoid and comonoid, a convolution works. If all else fails, one can just specify a new gate. We provide a syntactic treatment in Construction \ref{cons:relpron}}
+\caption{Reflexive coreference would violate of the processivity condition of string diagrams for symmetric monoidal categories. Not all symmetric monoidal categories possess the appropriate structure to interpret such reflexive pronouns, but there exist interpretative options. From left to right in roughly decreasing stringency, compact closed categories are the most direct solution. More weakly, traced symmetric monoidal categories also suffice. If there are no traces, so long as the noun wire possesses a monoid and comonoid, a convolution works. If all else fails, one can just specify a new gate. We provide a purely syntactic treatment in \bR CITE \e; for now we treat them as if they were just verbs of lower arity.}
 \end{figure}
 
-\begin{marginfigure}
+\clearpage
+\newpage
+
+\begin{figure}[h!]\label{fig:nounkinds}
 \centering
 \[
-\tikzfig{textcirc/nounwiresABN} 
+\resizebox{0.75\textwidth}{!}{\tikzfig{mushroom/nounkinds}}
 \]
-\caption{Nouns are represented by wires, each `distinct' noun having its own wire.}
-\end{marginfigure}
+\caption{
+\begin{term}[Kinds of nouns with respect to coreference]
+The kinds of nouns are distinguished by their tails. \emph{Lonely} nouns have no coreferences, their tails connect to nothing. \emph{Head} nouns have a forward coreference in text; they have two tails, one that connects to nothing and the other to a noun later in text. \emph{Middle} nouns have a forward and backward coreference; they have two tails, one that connects to a noun in some preceding sentence, and one that connects forward to a noun in a succeeding sentence. \emph{Foot} nouns only have a backward coreference; they have a single tail connecting to a noun in some preceding sentence.
+\end{term}
+}
+\end{figure}
 
-\begin{marginfigure}
-\centering
-\[
-\tikzfig{textcirc/ADJgate} \quad\quad\quad \tikzfig{textcirc/IVgate} \quad\quad\quad \tikzfig{textcirc/TVgate}
-\]
-\caption{We represent adjectives, intransitive verbs, and transitive verbs by gates acting on noun-wires. Since a transitive verb has both a subject and an object noun, that will then be two noun-wires, while adjectives and intransitive verbs only have one.}
-\end{marginfigure}
-
-\begin{marginfigure}
-\centering
-\[
-\tikzfig{textcirc/ADVbox}
-\]
-\caption{Adverbs, which modify verbs, we represent as boxes with holes in them, with a number of dangling wires in the hole indicating the shape of gate expected, and these should match the input- and output-wires  of the box with the whole.}
-\end{marginfigure}
-
-\begin{marginfigure}
-\centering
-\[
-\tikzfig{textcirc/ADPIVbox}
-\]  
-\caption{Similarly, adpositions also modify verbs, by moreover adding another noun-wire to the right.}
-\end{marginfigure}
-
-\begin{marginfigure}
-\centering
-\[
-\tikzfig{textcirc/SCVbox}
-\]
-\caption{For verbs that take sentential complements and conjunctions, we have families of boxes to accommodate input circuits of all sizes. They add another noun-wire to the left of a circuit.}
-\end{marginfigure}
-
-\begin{marginfigure}
-\centering
-\[
-\tikzfig{textcirc/CNJbox2}
-\]
-\caption{Conjunctions are boxes that take two circuits which might share labels on some wires.}
-\end{marginfigure}
-
-\begin{marginfigure}
-\centering
-\[
-\tikzfig{textcirc/ADPIVgate}
-\]
-\caption{Of course filled up boxes are just gates.}
-\end{marginfigure}
-
-\begin{marginfigure}
-\centering
-\[
-\tikzfig{textcirc/gatecompex1}  
-\]
-\caption{Gates compose sequentially by matching labels on some of their noun-wires and in parallel when they share no noun-wires, to give \underline{text circuits}.}
-\end{marginfigure}
-
-Now we demonstrate that \emph{finished} text diagrams yield unique text circuits up to homotopy. Text circuits are presented again in the margins as a reminder. The strategy will be to present new rewrites that transform coreferential structure into symmetric monoidal wire-connectivity.
-
-\begin{defn}[Finished text diagram]
+\begin{defn}[Finished text diagram]\label{defn:finished}
 The circuit-growing grammar produces \emph{text diagrams}. We call a text diagram \emph{finished} if all surface nodes are labelled.
 \end{defn}
 
@@ -325,40 +313,6 @@ Novel linked nouns can only be obtained from the linked-\texttt{N}-intro rule, w
 \end{proof}
 \end{lemma}
 
-\newpage
-
-\begin{construction}[Text to circuit]\label{cons:wirejoin}
-\begin{figure}[h!]
-\centering
-\[
-\resizebox{\textwidth}{!}{\tikzfig{mushroom/sentjoin}} 
-\]
-\caption{We turn finished text diagrams into text circuits by operating \emph{in situ}, with extra rules outside the grammatical system that handle connecting noun wires.
-}
-\end{figure}
-\end{construction}
-
-\begin{figure}[h!]
-\centering
-\[
-\resizebox{\textwidth}{!}{\tikzfig{mushroom/sentjoinex}} 
-\]
-\[
-\resizebox{\textwidth}{!}{\tikzfig{mushroom/sentjoinex2}} 
-\]
-\caption{
-In the first step, by Lemmas \ref{prop:linkedlist} and \ref{prop:norefl}, we can always rearrange a finished text diagram such that the noun wires are processive.\\
-
-In the second step, use the first rewrite of Construction \ref{cons:wirejoin} to prepare the wires for connection.\\
-
-In the third step, we just ignore the existence of the bubble-scaffolding and the loose scalars. We could in principle add more rewrites to melt the scaffolding away if we wanted, but who cares?\\
-
-In the fourth step, we apply the second and third rewrites of Construction \ref{cons:wirejoin} to connect the wires and eliminate nodules underneath labels. We can also straighten up the wires a bit and make them look proper.\\
-
-At this point, we're actually done, because the resulting diagram \emph{is already a text circuit up to a choice of notation}.
-}
-\end{figure}
-
 \begin{proposition}[Finished text diagrams yield unique-up-to-processive-isotopy text circuits]\label{prop:text2circ}
 \begin{proof}
 Every sentence corresponds to a gate up to notation, and we have a handle on sentences via Propositions \ref{prop:simpsent} and \ref{prop:compsent}. Lemmas \ref{prop:linkedlist} and \ref{prop:norefl} guarantee processivity. Uniqueness-up-to-processive-isotopy is inherited: text diagrams themselves are already specified up-to-connectivity, which is strictly more general than processive isotopy. Therefore, for any circuit $C$ obtained from a text diagram $T$ by Construction \ref{cons:wirejoin}, $T$ can be modified up to processive-isotopy on noun wires to yield $T'$ and another circuit $C'$ that only differs from $C$ up to processive isotopy, and all $C'$ can be obtained in this way.
@@ -367,7 +321,7 @@ Every sentence corresponds to a gate up to notation, and we have a handle on sen
 
 The converse of Proposition \ref{prop:text2circ} would be that any text circuit that can be formed by the composition of symmetric monoidal categories and of plugging gates into boxes yields a text diagram. This would mean that text circuit composition is acceptable as a generative grammar for text. Establishing this converse requires elaboration of some conventions.
 
-\marginnote{
+\marginnote[-8cm]{
 \begin{remark}
 There are some oddities about our conventions that will make sense later when we consider semantics. For example, Convention \ref{conv:twist} an acceptable thing to ask for syntactically but quite odd to think about at the semantic level, where we would like to think that distinct nouns manifest as different states on the same noun-wire-type. A semantic interpretation that makes use of this convention will become clearer in Section \bR configspace \e. Similarly, Convention \ref{conv:exists} wouldn't be true if we consider the order of text to reflect the chronological ordering of events, in which case there are implicit \texttt{... and then ...} conjunctions that distinguish ordered gates from parallel gates conjoined by an implicit \texttt{... while ...}; this particular complication is handled at the semantic level in Section \bR statesactionmanner \e. The distinction in Convention \ref{conv:gaps} between typed and "untyped" higher-order processes will be given a suitable semantic interpretation in Section \bR lassos \e.
 \end{remark}
@@ -380,187 +334,109 @@ There are some oddities about our conventions that will make sense later when we
 \]
 \caption{
 \begin{convention}[Wire twisting]\label{conv:twist}
-\end{convention}
 Wires are labelled by nouns. We consider two circuits the same if their gate-connectivity is the same. In particular, this means that we can eliminate unnecessary twists in wires to obtain diagrammatically simpler representations.
+\end{convention}
 }
 \end{figure}
 
-\begin{figure}[h!]
-\centering
-\[
-\tikzfig{textcirc/gateeqslide} 
-\]
-\caption{
-\begin{convention}[Sliding]\label{conv:sliding}
-\end{convention}
-Since only gate-connectivity matters, we consider circuits the same if all that differs is the horizontal positioning of gates composed in parallel.
-\begin{convention}[Reading text circuits]\label{conv:reading}
-\end{convention}
-Text circuits ought to be presented so that they can be read from top to bottom and from left to right, like English text.
-}
-\end{figure}
-
+\marginnote[-4cm]{
 \begin{convention}[Arbitary vs. fixed holes]\label{conv:gaps}
 Diagrammatically, adverbs and adpositions are depicted with no gap between the bounding box and their contents, whereas conjunctions and verbs with sentential complement are depicted with a gap; this is a visual indication that the former are type-sensitive, and the latter can take any circuit.
 \end{convention}
+}
 
-\begin{convention}[Contentless conjunctions]\label{conv:and}
-Conventions \ref{conv:sliding} and \ref{conv:reading} require something else to allow them to work at the same time. The left text circuit may be read \texttt{C hates D. A likes B.}, and the right as \texttt{A likes B. C hates D.} The middle text circuit can be rewritten as either the left or right, which can be done if we're happy to make such choices. A choiceless approach requires something to distinguish the fact that the gates are parallel: a "contentless" conjunction, such as \texttt{and}, or \texttt{while}. In terms of text diagrams, we want a rewrites that introduces such contentless conjunctions and witnesses their associativity, like this:
+\begin{figure}[h!]
+\centering
+\[
+\resizebox{\textwidth}{!}{\tikzfig{textcirc/gateeqslide}} 
+\]
+\caption{
+\begin{convention}[Sliding]\label{conv:sliding}
+Since only gate-connectivity matters, we consider circuits the same if all that differs is the horizontal positioning of gates composed in parallel.
+\end{convention}
+}
+\end{figure}
+
+\marginnote{
+\begin{convention}[Reading text circuits]\label{conv:reading}
+Text circuits ought to be presented so that they can be read from top to bottom and from left to right, like English text.
+\end{convention}
+}
+
+\begin{figure}[h!]
+\centering
 \[
 \tikzfig{mushroom/contentlesscnj} 
 \]
+\caption{
+\begin{convention}[Contentless conjunctions]\label{conv:and}
+Conventions \ref{conv:sliding} and \ref{conv:reading} require something else to allow them to work at the same time: something to distinguish when the gates are parallel. So we ask for "contentless" conjunctions, such as \texttt{and}, or \texttt{while}. In terms of text diagrams, we want rewrites that introduces such contentless conjunctions and witnesses their associativity, like this:
 \end{convention}
+}
+\end{figure}
 
-\begin{convention}[Lonely wires]\label{conv:exists}
-There's really only a single kind of text circuit we can draw that doesn't obviously correspond to a text diagram, and that's one where gates are missing.
+\begin{figure}[h!]
+\centering
 \[
 \tikzfig{textcirc/lonelywires} 
-\]
-In process theories, wires are identity processes that do nothing to their inputs. We require a text diagram analogue, and an intransitive "null-verb" in English that seems to work is \texttt{is}, in the sense of \texttt{exists}. In terms of text diagrams, we want a rewrite that introduces such contentless verbs, like this:
-\[
+\qquad\qquad\qquad
 \tikzfig{mushroom/exists} 
 \]
+\caption{
+\begin{convention}[Lonely wires]\label{conv:exists}
+There's really only a single kind of text circuit we can draw that doesn't obviously correspond to a text diagram, and that's one where gates are missing (left). In process theories, wires are identity processes that do nothing to their inputs. We require a text diagram analogue, and an intransitive "null-verb" in English that seems to work is \texttt{is}, in the sense of \texttt{exists}. So to deal with lonely wires in terms of text diagrams, we want a rewrite that introduces such contentless verbs (right).
 \end{convention}
-
-\begin{construction}[Circuit to text]\label{prop:circ2text}
-In the presence of additional rewrites from Conventions \ref{conv:and} and \ref{conv:exists}, every text circuit is obtainable from some text diagram, up to Conventions \ref{conv:twist} and \ref{conv:sliding}.
-
-\begin{figure}[h!]
-\centering
-\[
-\resizebox{0.75\textwidth}{!}{\tikzfig{textcirc/sunny1}}
-\]
-\caption{Starting with a circuit, we may use Convention \ref{conv:twist} to arrange the circuit into alternating slices of twisting wires and (possibly tensored) circuits, and this arrangement recurses within boxes. Slices with multiple tensored gates will be treated using Convention \ref{conv:and}. By convention \ref{conv:exists}, we decorate lonely wires with formal \texttt{exists} gates, as in the \texttt{Frank sees} box. Observe how verbs with sentential complement are depicted with grey gaps, whereas the adverb and adposition combination of \texttt{Mac crazily laughs at Cricket} is gapless, according to Convention \ref{conv:gaps}.}
+}
 \end{figure}
 
-\begin{figure}[h!]
-\centering
-\[
-\resizebox{\textwidth}{!}{\tikzfig{textcirc/sunny2}}
-\]
-\caption{We then linearise the slices, representing top-to-bottom composition as left-to-right. Twist layers are eliminated, replaced instead by dotted connections indicating processive connectivity. The dashed vertical line distinguishes slices. This step of the procedure always behaves well, guaranteed by Proposition \ref{prop:linkedlist}. Noun wires that do not participate in earlier slices can be shifted right until the slice they are introduced.}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\[
-\resizebox{\textwidth}{!}{\tikzfig{textcirc/sunny3}}
-\]
-\caption{We recurse the linearisation procedure within boxes until there are no more sequentially composed gates. The linearisation procedure evidently terminates for finite text circuits. At this point, we have abstracted away connectivity data, and we are left with individual gates.}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\[
-\resizebox{\textwidth}{!}{\tikzfig{textcirc/sunny4}}
-\]
-\caption{By Proposition \ref{prop:compsent}, gates are equivalent to sentences up to notation, so we swap notations \emph{in situ}. Conventions \ref{conv:and} and \ref{conv:exists} handle the edge cases of parallel gates and lonely wires. Observe that the blue-dotted wiring in text diagrams delineates the contents of boxes that accept sentences.}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\[
-\resizebox{\textwidth}{!}{\tikzfig{textcirc/sunny5}}
-\]
-\caption{Recursing notation swaps outwards and connecting left-to-right slices as sentence-bubbles connect yields a text circuit, up to the inclusion of rewrites from Conventions \ref{conv:and} and \ref{conv:exists}: applying the reverse of those rewrites and the reverse of text-diagram rewrites yields a valid text-diagram derivation, by Propositions \ref{prop:compsent} and \ref{prop:linkedlist}. We haven't formally included transitive verbs with sentential complement in our vocabulary, but it should be obvious at this point how they function with our existing machinery.}
-\end{figure}
-\end{construction}
-
-\bR TODO: insert text circuit theorem \e
-
-\newpage
-\subsection{Extensions I: relative and reflexive pronouns}
-
-\newthought{Relative pronouns}
-
-A relative pronoun glues two sentences across a single noun. For example, what would be a text with two sentences \texttt{Alice teaches at school. School bores Bob.} can be composed by identifying \texttt{school}: \texttt{Alice teaches at school \underline{that} bores Bob.} In this case, \texttt{that} is called a subject-relative pronoun, as it stands in for the subject argument in \texttt{bores}. In \texttt{Alices teaches at school \underline{that} Bob attends.}, we have an object-relative pronoun, as \texttt{that} stands in for the object argument in \texttt{attends}. In English, relative pronouns occur immediately after the noun they copy, and are followed immediately by a sentence missing a noun.
+\clearpage
 
 \begin{myboxB}
-\begin{construction}\label{cons:relpron}
-We can extend our system to accommodate relative pronouns as follows. The introduction of a relative pronoun is considered to start a new sentence with a premade pronominal link. The relative pronoun connects to a new kind of surface noun, which for most intents and purposes behaves just like the nouns we have seen before, except for two caveats: it cannot be labelled (since the relative pronoun is already handling that), and it cannot leave the sentence it starts in by \texttt{N}-shift rules. We can eliminate relative pronouns by forcing the governed noun to be named, which is equivalent to dropping the relative pronoun and recovering distinct sentences.
-\[\tikzfig{mushroom/rpintroelim}\]
+\begin{construction}[Circuit to text]\label{cons:circ2text}
+In the presence of additional rewrites from Conventions \ref{conv:and} and \ref{conv:exists}, every text circuit is obtainable from some text diagram, up to Conventions \ref{conv:twist} and \ref{conv:sliding}. Starting with a circuit, we may use Convention \ref{conv:twist} to arrange the circuit into alternating slices of twisting wires and (possibly tensored) circuits, and this arrangement recurses within boxes. Slices with multiple tensored gates will be treated using Convention \ref{conv:and}. By convention \ref{conv:exists}, we decorate lonely wires with formal \texttt{exists} gates, as in the \texttt{Frank sees} box. Observe how verbs with sentential complement are depicted with grey gaps, whereas the adverb and adposition combination of \texttt{Mac crazily laughs at Cricket} is gapless, according to Convention \ref{conv:gaps}.
+\[
+\resizebox{0.5\textwidth}{!}{\tikzfig{textcirc/sunny1}}
+\]
 \end{construction}
 \end{myboxB}
 
-\begin{figure}[h!]
-\centering
-\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/RPex}}\]
-\caption{
-\begin{example}[Introducing relative pronouns]
-\end{example}
-Here we demonstrate derivations of \texttt{Alice teaches at school that bores Bob} and \texttt{Alice teaches at school that Bob attends}. The initial steps in both cases are the same, setting up the \texttt{teaches} phrase structure and introducing a new unsaturated noun in the \texttt{Bob} phrase to work with the relative pronoun.
-}
-\end{figure}
+\begin{myboxB}
+We then linearise the slices, representing top-to-bottom composition as left-to-right. Twist layers are eliminated, replaced instead by dotted connections indicating processive connectivity. The dashed vertical line distinguishes slices. This step of the procedure always behaves well, guaranteed by Proposition \ref{prop:linkedlist}. Noun wires that do not participate in earlier slices can be shifted right until the slice they are introduced.
+\[
+\resizebox{0.75\textwidth}{!}{\tikzfig{textcirc/sunny2}}
+\]
+We recurse the linearisation procedure within boxes until there are no more sequentially composed gates. The linearisation procedure evidently terminates for finite text circuits. At this point, we have abstracted away connectivity data, and we are left with individual gates.
+\[
+\resizebox{0.75\textwidth}{!}{\tikzfig{textcirc/sunny3}}
+\]
 
-\begin{figure}[h!]
-\centering
-\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/RPex2}}\]
-\caption{Now have a branching derivation. We may either directly generate a transitive verb treating the relative pronoun as a subject, or we may first perform an $\texttt{N}_\uparrow$-swap first and then generate a transitive verb, treating the relative pronoun as an object. Now the ends of either branch can be labelled to recover our initial examples.}
-\end{figure}
+\end{myboxB}
 
-\newthought{Reflexive pronouns} are dealt with in a similar fashion as we have with relative pronouns, and various semantic interpretation options have been covered already in Figure \ref{fig:reflcomp}.
+\clearpage
 
-\subsection{Extensions II: grammar equations}
+\begin{myboxB}
+By Proposition \ref{prop:compsent}, gates are equivalent to sentences up to notation, so we swap notations \emph{in situ}. Conventions \ref{conv:and} and \ref{conv:exists} handle the edge cases of parallel gates and lonely wires. Observe that the blue-dotted wiring in text diagrams delineates the contents of boxes that accept sentences.
+\[
+\resizebox{0.9\textwidth}{!}{\tikzfig{textcirc/sunny4}}
+\]
+Recursing notation swaps outwards and connecting left-to-right slices as sentence-bubbles connect yields a text circuit, up to the inclusion of rewrites from Conventions \ref{conv:and} and \ref{conv:exists}: applying the reverse of those rewrites and the reverse of text-diagram rewrites yields a valid text-diagram derivation, by Propositions \ref{prop:compsent} and \ref{prop:linkedlist}. We haven't formally included transitive verbs with sentential complement in our vocabulary, but it should be obvious at this point how they function with our existing machinery.
+\[
+\resizebox{0.9\textwidth}{!}{\tikzfig{textcirc/sunny5}}
+\]
+\end{myboxB}
 
-One heuristic for extension of text diagrams to larger fragments of text is to devise \emph{grammar equations} that express novel textual elements in terms of known text diagrams. The application of this heuristic is illustrated by example.
+\newpage
+\clearpage
 
-\begin{figure}[h!]
-\centering
-\[\tikzfig{mushroom/schoolboresbob}\]
-\caption{
-\begin{example}[\textbf{Passive voice}]
-\[\texttt{School bores Bob} = \texttt{Bob \underline{is bored by} school}\]
-\end{example}
-Twists in wires can be used to model passive voice constructions, which amount to swapping the argument order of verbs. In the original paper \bR CITE \e, a more detailed analysis including the flanking words \texttt{\texttt{is} bored \texttt{by}} involves introducing a new diagrammatic region, which is modelled by having more than a single 0-cell in the $n$-categorical signature.
-}
-\end{figure}
+\begin{myboxB}
+\begin{theorem}[Text Circuit Theorem]
+Text generated by the circuit-growing grammar is sensible and surjects onto text circuits. Hence:
+\[\textbf{Text circuits are a generative grammar for text}\]
+\begin{proof}
+Sensibility at the sentential level is established by Propositions \ref{prop:simpsent} and \ref{prop:compsent}. Proposition \ref{prop:text2circ} establishes a map from text to circuits, and Construction \ref{cons:circ2text} witnesses its surjectivity. The conventions required for the construction are accompanied by justifications of sensibility.
+\end{proof}
+\end{theorem}
+\end{myboxB}
 
-\begin{figure}[h!]
-\centering
-\[\tikzfig{mushroom/redcar}\]
-\caption{
-\begin{example}[\textbf{Copulas}]
-\[\texttt{Red car} = \texttt{Car is red}\]
-\end{example}
-Modifiers such as adjectives and adverbs when they occur before their respective noun or verb are called \emph{attributive}. When modifiers occur after their respective target, they are called \emph{predicative}. In English, without the aid of \texttt{and}, only a single predicative modifier is permissible, e.g. \texttt{big red car} and \texttt{big car is red} are both acceptable, but \textcolor{red}{texttt{car is big red}} is not. There is no issue in introducing rewrites to handle copular modifier constructions in text diagrams, and in text circuits, there is no distinction between either kind of modifier.}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/bobpub}}\]
-\caption{
-\begin{example}[\textbf{Possessive pronouns}]
-\[\texttt{Bob\underline{'s} pub} = \texttt{Pub \underline{that} Bob \underline{owns}}\]
-\end{example}
-This example, along with other grammar equations, was first introduced in the pregroups and internal wirings context in \bR CITE \e. Possessive pronouns are placed contiguously in between noun-phrases, for which the diagrammatic technology we developed for placing adpositions can be repurposed. Possessive pronouns may be dealt with by a single rewrite that relies on the presence of a transitive ownership verb in the lexicon, which corresponds to a box-analysis in text circuits.
-}
-\end{figure}
-
-\subsection{Extensions III: Types and Nesting}
-
-A heuristic for the extension of text diagrams to novel grammatical categories is the absorption of type-theoretical compositional constraints at the level of sentences into nesting of boxes. A mathematical-historical perspective that justifies this usage of diagrams is in Appendix \bR CITE \e.
-
-\newthought{Intensifiers}
-
-\begin{figure}[h!]
-\centering
-\[\tikzfig{mushroom/Acvqr}\]
-\caption{
-\begin{example}[\textbf{Intensifers}]
-\[\texttt{Alice very quickly runs}\]
-\end{example}
-The deep nodes of a text diagram may be equivalently viewed as evaluators in a symmetric monoidal closed setting, and the surface nodes as states for the evaluators. By Curry-Howard-Lambek, this view recovers typelogical grammar settings where composition is some variant of modus ponens. So long as the typing rules are operadic or treelike (which is almost always the case for typelogical grammars, as there are rarely gentzen-style sequent rules that generate multiple outputs), we may instead use a notation where parent edges of evaluation branches become nesting boxes.
-}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-\[\tikzfig{mushroom/AdltBd}\]
-\caption{
-\begin{example}[\textbf{Comparatives}]
-\[\texttt{Alice drinks \underline{less than} Bob drinks}\]
-\end{example}
-Just as transitive verbs modify two nouns, comparatives are higher-order transitive modifiers that act on the data of verbs or adjectives. A benefit of the symmetric monoidal closed view is that it easily accommodates mixed-order and multi-argument modifiers.
-}
-\end{figure}
-
+\clearpage
+\newpage

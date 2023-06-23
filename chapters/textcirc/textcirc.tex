@@ -1,4 +1,4 @@
-\section{Text circuits: details, demos, developments}\label{sec:circs}
+\section{Text circuits: details and development}\label{sec:circs}
 
 \marginnote{An example from Task 1, "single supporting fact", is:\\
 \[\texttt{Mary went to the bathroom.}\]
@@ -12,116 +12,154 @@ Translating the setup of each task into a circuit of neural nets-to-be-learnt, a
 \]
 }
 
-This section covers some practical developments, conventions, references for technical details of text circuits. The most striking demonstration to date is that circuits are defined over a large enough fragment of language to \emph{leverage} several bAbi tasks \bR CITE \e, which are a family of 20 general-reasoning text tasks -- the italicised choice of wording will be elaborated shortly. Each family of tasks consists of tuples of text in simple sentences concluded by a question, along with an answer. It was initially believed that world models were required for the solution of these tasks, but they have been solved using transformer architectures \bR CITE \e. While there is no improvement in capabilities by solving bAbi using text circuits, the bAbi tasks have been used as a dataset to learn word gates from data, in a conceptually compliant and compositional manner, detailed in the margin. Surprisingly, despite the low-data, low-compute regime, the tasks for which the current theory has the expressive capacity to cover are solved better by text circuits than by LSTMs; a proof-of-concept that with the aid of appropriate mathematics, not only might fundamental linguistic considerations help rather than hinder NLP, but also that explainability and capability are not mutually exclusive. Experimental details are elaborated in a forthcoming report \bR CITE \e. While there are expressivity constraints contingent on theoretical development, this price buys a good amount of flexibility within the theoretically established domain: text circuits leave room for both learning-from-data and "hand-coded" logical constraints expressed process-theoretically, and naturally accommodate previously computed vector embeddings of words.\\
+This section covers some practical developments, references for technical details of text circuits, and sketches of how to play with them. The most striking demonstration to date is that circuits are defined over a large enough fragment of language to \emph{leverage} several bAbi tasks \bR CITE \e, which are a family of 20 general-reasoning text tasks -- the italicised choice of wording will be elaborated shortly. Each family of tasks consists of tuples of text in simple sentences concluded by a question, along with an answer. It was initially believed that world models were required for the solution of these tasks, but they have been solved using transformer architectures \bR CITE \e. While there is no improvement in capabilities by solving bAbi using text circuits, the bAbi tasks have been used as a dataset to learn word gates from data, in a conceptually compliant and compositional manner, detailed in the margin. Surprisingly, despite the low-data, low-compute regime, the tasks for which the current theory has the expressive capacity to cover are solved better by text circuits than by LSTMs; a proof-of-concept that with the aid of appropriate mathematics, not only might fundamental linguistic considerations help rather than hinder NLP, but also that explainability and capability are not mutually exclusive. Experimental details are elaborated in a forthcoming report \bR CITE \e. While there are expressivity constraints contingent on theoretical development, this price buys a good amount of flexibility within the theoretically established domain: text circuits leave room for both learning-from-data and "hand-coded" logical constraints expressed process-theoretically, and naturally accommodate previously computed vector embeddings of words.\\
 
 In practice, the process of obtaining transparently computable text goes through two phases. First, one has to obtain text circuits from text, which is conceptually simple: typelogical parsers for sentences can be modified to produce circuit-components rather than trees, and a separate pronomial resolution module dictates symmetric monoidal compositionality; details are in the same forthcoming report \bR CITE \e. Second, one implements the text circuits on a computer. On quantum computers, boxes are modelled as quantum combs \bR CITE \e. On classical computers, boxes are sandwiches of generic vector-manipulation neural nets, and boxes with 'dot dot dot' typing are interpreted as families of processes, which can be factored for instance as a pair of content-carrying gates along with a monoid+comonoid convolution to accommodate multiplicity of wires; an example of this interpretation of families of processes is the use of an aggregation monoid in graph neural network \bR CITE \e. The theoretical-to-practical upshot of text circuits when compared to DisCoCat is that the full gamut of compositional techniques, variations, and implementation substrates of symmetric monoidal categories may be used for modelling, compared to the restrictions inherent in hypergraph and strongly compact closed categories.\\
 
-In terms of underpinning mathematical theory, the `dot dot dot' notation within boxes that indicates related families of morphisms is graphically formal \citep{wilson_string_2022}, and interpretations of such boxes were earlier formalised in \citep{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}. The two forms of interacting composition, one symmetric monoidal and the other by nesting is elsewhere called \emph{produoidal}, and the reader is referred to \bR CITE \e for formal treatment and a coherence theorem. Boxes with holes may be interpreted in several different ways. Firstly, boxes may be considered syntactic sugar for higher-order processes in monoidal closed categories, and boxes are diagrammatically preferable to combs in this regard, since the latter admits a typing pathology where two mutually facing combs interlock. Secondly, boxes need not be decomposable as processes native to the base category, admitting for instance an interpretation as elementwise inversion in linear maps, which specialises in the case of \textbf{Rel} (viewed as \textbf{Vect} over the boolean ring) to negation-by-complement. In some sense, none of these formalities really matter, on the view that text circuits are algebraic jazz for computing with text, where facets are open to interpretation and modification. What follows are brief sketches of avenues for extensions of the theory.
+In terms of underpinning mathematical theory, the `dot dot dot' notation within boxes that indicates related families of morphisms is graphically formal \citep{wilson_string_2022}, and interpretations of such boxes were earlier formalised in \citep{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}. The two forms of interacting composition, one symmetric monoidal and the other by nesting is elsewhere called \emph{produoidal}, and the reader is referred to \bR CITE \e for formal treatment and a coherence theorem. Boxes with holes may be interpreted in several different ways. Firstly, boxes may be considered syntactic sugar for higher-order processes in monoidal closed categories, and boxes are diagrammatically preferable to combs in this regard, since the latter admits a typing pathology where two mutually facing combs interlock. Secondly, boxes need not be decomposable as processes native to the base category, admitting for instance an interpretation as elementwise inversion in linear maps, which specialises in the case of \textbf{Rel} (viewed as \textbf{Vect} over the boolean ring) to negation-by-complement. In some sense, none of these formalities really matter, on the view that text circuits are algebraic jazz for computing with text, where facets are open to interpretation and modification.\\
 
-\subsection{Avenues I: syncategorematicity as distributivity}
+\section{How to play}
 
-A useful heuristic for the application of text diagrams is to treat individual text circuits as analogous to propositional contents, and certain logical or temporal connectives as structural operations upon circuits -- rewrites -- that must be applied in order to obtain a purely propositional format. In other words, logical or structural words are to be treated as circuit-manipulation instructions to be executed in order to obtain a circuit, in the same way that $1 + 1$ is only an integer expression once addition has been evaluated. It is suggested here that the $n$-categorical setting is a suitably rich rewriting system to accommodate such rewrites.
+Text diagrams of the sort we have been growing with the circuit-growing grammar have rich structure for modelling syntactic structure. In tandem with an implementation in neural nets, there are many things that can be achieved. Here I want to share some possibilities and general principles.
 
-\begin{figure}[h!]
-\centering
-\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/ABdrink}}\]
-\caption{
-\begin{example}[\textbf{Syncategorematicity I}]
+\newthought{Functional words.} No separate "information structure" is required; all is transparent and manipulable. For instance, in the case of relative pronouns in Example \ref{ex:relpron}, ansatz wires may be freely introduced and manipulated to achieve the desired correspondence between deep and surface structure.
+
+\newthought{Grammar equations.} A principle for the extension of text diagrams to larger fragments of text is to devise \emph{grammar equations} \bR CITE \e that express novel textual elements in terms of known text diagrams, for instance, that the use of passive voice or copulas amounts to swaps in the linear surface order, as in Examples \ref{ex:pass} and \ref{ex:copula}. Syntactic rules may even introduce semantic components, as in for instance the treatment of the possessive pronoun in Example \ref{ex:posspron}. In sum, intuitions about the systematicity of language are directly translatable into rewrite rules that manipulate deep structure as one sees fit.
+
+\newthought{Grammatical typing is nesting.} A heuristic for the extension of text diagrams to novel grammatical categories is the absorption of type-theoretical compositional constraints at the level of sentences into nesting of boxes, as demonstrated in Examples \ref{ex:intensifiers} and \ref{ex:comparatives}.
+
+\newthought{Syncategorematicity.} A useful heuristic for the application of text diagrams is to treat individual text circuits as analogous to propositional contents, and certain logical or temporal connectives as structural operations upon circuits -- rewrites -- that must be applied in order to obtain a purely propositional format. In other words, logical or structural words are to be treated as circuit-manipulation instructions to be executed in order to obtain a circuit, in the same way that $1 + 1$ is only an integer expression once addition has been evaluated. See Examples \ref{ex:syncat1} and \ref{ex:syncat2} for a demonstration.
+
+\newthought{Syntax in context.} Extending the reach of text circuits to determiners, quantifiers, and conditionals appears to require a contextual process theory in which to evaluate and enforce constraints upon the purely syntactic content of text circuits. The broad strategy sketched here rests upon three tactics. First, as in the neural approach to bAbi, word-gates are considered to be paired with measurement-processes that return an analog of truth values, the latter of which may be generic tests for adjectives as static predicates or verbs as dynamic predicates. The pairing of gates with measurements follows the philosophy of update structures \bR CITE \e. The truth-measurements allow conditionals to be expressed as either circuit-rewrites or constraints on truth-measurements, the latter which are in turn interpretable as loss-functions in the process of training gates. Second, we model context as the rest of the text circuit, which is a modifiably finite model. Third, we suppose we have a way to record and relate alternative circuits. These tactics appear sufficient for a first pass. Determiners may be considered to be context-sensitive connectivity. Universal quantifiers may be analysed in particular finitary contexts as conditionals and constraints on truth-conditional measurements. Existential quantifiers evaluated in the finitary case yield alternative circuits. See Examples \ref{ex:det1}, \ref{ex:det2}, \ref{ex:det3}, \ref{ex:quant2}, and \ref{ex:quant2} for demonstrations.
+
+\newthought{Text is composition.} Apart from nesting, the other form of composition available for text circuits is the connectivity of wires. We have presented a simplified theory of discourse where the only discourse referents are nouns, but this is not an inherent limitation of text diagrams, where grammatical data of all kinds are freely presentable and composable. In this presentation, I have stuck to string-diagrams in a compact-closed setting and their rewrites, and I have avoided the affordance of weak $n$-categories to specify \emph{manifold} diagrams and their rewrites, where in addition to 1-D strings connecting 0-D boxes, there may be 2-D planes connecting 1-D strings, 3-D volumes connecting planes, string diagrams restricted to surfaces or volumes... All this is to say that if you can draw it, language can have whatever geometry you want. It just so happens that symmetric monoidal categories are the royal road for pedagogy and practicality (who knows how to interpret a manifold diagram as a computational process?), so it is best to stick to strings.
+
+\newthought{\textbf{Objection!:} Hold on, isn't this just transformational grammar? Haven't we moved on from that?} In spirit, yes. The two major mathematical distinctions here are well-typing and many-input-many-output instead of treelike. The practical distinction is that this theory works with neural nets. Both approaches have the same theoretical problems: over- and undergeneration, no evidentiary basis for psychological realism, too rigid for functionalists, and so on. But recall that we differ in aims: our formalist approach is ultimately in service of approximating human language structure in machines for interpretability. How so? Solving language tasks such as bAbi via text circuits also means that each word gate has been learnt in a conceptually-compliant manner, insofar as the grounded meanings of words are reflected in how words interact and modify one another. What is meant by "conceptually-compliant" is a stronger variant of Firth's maxim: "the meaning of a word is \underline{how it interacts} with other words". How do we justify that claim? The initial conception of bAbi was that the ability to answer questions about -- for instance, the verb \texttt{to go} -- in many different contexts amounted to having a consistent internal "world-model". But question-answering performance by itself is evidently insufficient for the degree of interpretability implied by conceptual-compliance, because the internal model is not forthcoming in transformer solutions. On the other hand, we \emph{do} obtain the building blocks of compositional world-models by learning word gates in text circuits: each learnt word gate may be considered a well-grounded semantic primitive in the construction of novel text circuits, and the resulting circuits are modifiable world-models that are queriable using the (also learnt) measurement-gates. Why is that so? Because just as in Section \bR REF \e we do not need to know how an update is implemented if it satisfies characteristic operational constraints imposed by process-theoretic equations, we don't need to know what's going on inside the gate \texttt{to go} so long as it satisfies the process-theoretic equations that \texttt{to go} ought to satisfy. What are these equations? Firth says that it is how \texttt{to go} behaves with respect to all other words in all contexts, which we approximate by translating individual bAbi tasks involving the word \texttt{to go}, via text circuits, into a representative sample of the process-theoretic equations that \texttt{to go} ought to satisfy. So the philosophical strength of the claim that \texttt{to go} and synonyms have been learnt-from-data in a way that coheres with human conceptions rests on three points: performance, Firth (or if you like, the Yoneda Lemma), and the breadth and variety exhibited in the bAbi dataset. The real test is practical demonstration, for which time will tell.\marginnote{For the examples to follow, blue boxes denote rules already known, and the orange are either novel or worked examples.}
+
+\clearpage
+\newpage
+
+\begin{myboxB}
+\begin{rules}\label{rules:relpron}
+A relative pronoun glues two sentences across a single noun. For example, what would be a text with two sentences \texttt{Alice teaches at school. School bores Bob.} can be composed by identifying \texttt{school}: \texttt{Alice teaches at school \underline{that} bores Bob.} In this case, \texttt{that} is called a subject-relative pronoun, as it stands in for the subject argument in \texttt{bores}. In \texttt{Alices teaches at school \underline{that} Bob attends.}, we have an object-relative pronoun, as \texttt{that} stands in for the object argument in \texttt{attends}. In English, relative pronouns occur immediately after the noun they copy, and are followed immediately by a sentence missing a noun. Reflexive pronouns may be dealt with in a similar fashion as we have with relative pronouns, and various semantic interpretation options have been covered already in Figure \ref{fig:reflcomp}. We can extend our system to accommodate relative pronouns as follows. The introduction of a relative pronoun is considered to start a new sentence with a premade pronominal link. The relative pronoun connects to a new kind of surface noun, which for most intents and purposes behaves just like the nouns we have seen before, except for two caveats: it cannot be labelled (since the relative pronoun is already handling that), and it cannot leave the sentence it starts in by \texttt{N}-shift rules. We can eliminate relative pronouns by forcing the governed noun to be named, which is equivalent to dropping the relative pronoun and recovering distinct sentences.
+\[\tikzfig{mushroom/rpintroelim}\]
+\end{rules}
+\end{myboxB}
+
+\begin{myboxR}
+\begin{example}[Introducing relative pronouns]\label{ex:relpron}
+Here we demonstrate derivations of \texttt{Alice teaches at school that bores Bob} and \texttt{Alice teaches at school that Bob attends}. The initial steps in both cases are the same, setting up the \texttt{teaches} phrase structure and introducing a new unsaturated noun in the \texttt{Bob} phrase to work with the relative pronoun.
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/RPex}}\]
+Now have a branching derivation. We may either directly generate a transitive verb treating the relative pronoun as a subject, or we may first perform an $\texttt{N}_\uparrow$-swap first and then generate a transitive verb, treating the relative pronoun as an object. Now the ends of either branch can be labelled to recover our initial examples.
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/RPex2}}\]
+\end{example}
+\end{myboxR}
+
+\begin{myboxB}
+\begin{example}[\textbf{Passive voice}]\label{ex:pass}
+\[\texttt{School bores Bob} = \texttt{Bob \underline{is bored by} school}\]
+Twists in wires can be used to model passive voice constructions, which amount to swapping the argument order of verbs. In the original paper \bR CITE \e, a more detailed analysis including the flanking words \texttt{\texttt{is} bored \texttt{by}} involves introducing a new diagrammatic region, which is modelled by having more than a single 0-cell in the $n$-categorical signature.
+\end{example}
+\[\tikzfig{mushroom/schoolboresbob}\]
+\end{myboxB}
+
+\begin{myboxB}
+\begin{example}[\textbf{Copulas}]\label{ex:copula}
+\[\texttt{Red car} = \texttt{Car is red}\]
+Modifiers such as adjectives and adverbs when they occur before their respective noun or verb are called \emph{attributive}. When modifiers occur after their respective target, they are called \emph{predicative}. In English, without the aid of \texttt{and}, only a single predicative modifier is permissible, e.g. \texttt{big red car} and \texttt{big car is red} are both acceptable, but \textcolor{red}{texttt{car is big red}} is not. There is no issue in introducing rewrites to handle copular modifier constructions in text diagrams, and in text circuits, there is no distinction between either kind of modifier.
+\end{example}
+\[\tikzfig{mushroom/redcar}\]
+\end{myboxB}
+
+\begin{myboxB}
+\begin{example}[\textbf{Possessive pronouns}]\label{ex:posspron}
+\[\texttt{Bob\underline{'s} pub} = \texttt{Pub \underline{that} Bob \underline{owns}}\]
+This example, along with other grammar equations, was first introduced in the pregroups and internal wirings context in \bR CITE \e. Possessive pronouns are placed contiguously in between noun-phrases, for which the diagrammatic technology we developed for placing adpositions can be repurposed. Possessive pronouns may be dealt with by a single rewrite that relies on the presence of a transitive ownership verb in the lexicon, which corresponds to a box-analysis in text circuits.
+\end{example}
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/bobpub}}\]
+\end{myboxB}
+
+\begin{myboxB}
+\begin{example}[\textbf{Intensifers}]\label{ex:intensifiers}
+\[\texttt{Alice very quickly runs}\]
+The deep nodes of a text diagram may be equivalently viewed as evaluators in a symmetric monoidal closed setting, and the surface nodes as states for the evaluators. By Curry-Howard-Lambek, this view recovers typelogical grammar settings where composition is some variant of modus ponens. So long as the typing rules are operadic or treelike (which is almost always the case for typelogical grammars, as there are rarely gentzen-style sequent rules that generate multiple outputs), we may instead use a notation where parent edges of evaluation branches become nesting boxes.
+\end{example}
+\[\tikzfig{mushroom/Acvqr}\]
+\end{myboxB}
+
+\begin{myboxB}
+\begin{example}[\textbf{Comparatives}]\label{ex:comparatives}
+\[\texttt{Alice drinks \underline{less than} Bob drinks}\]
+Just as transitive verbs modify two nouns, comparatives are higher-order transitive modifiers that act on the data of verbs or adjectives. A benefit of the symmetric monoidal closed view is that it easily accommodates mixed-order and multi-argument modifiers.
+\end{example}
+\[\tikzfig{mushroom/AdltBd}\]
+\end{myboxB}
+
+\begin{myboxR}
+\begin{example}[\textbf{Syncategorematicity I}]\label{ex:syncat1}
+\emph{Syncategorematic} words are roughly those that have contextually-dependent semantics. Their dependency is usually predicated on the grammatical type of their arguments. In our terms, since we consider the semantics of text circuits to be underpinned by monoidal functors that reify the circuits in a target category, syncategorematic words such as \texttt{and} may be treated as distributive laws. Here \texttt{and} occurs as a conjunction of nouns and is eliminated by distributive-law rewrites within the deep structure of the text diagram \emph{before translation into circuits}. Note that what is meant by \emph{distributive} here is, in string-diagrammatic terms, precisely the same as that in algebra, for expressions such as $a \times (b + c) = (a \times b) + (a \times c)$. A new copy-node for verb labels that has rewrites for all verbs facilitates distribution, and the deep \texttt{and} nodes come in a tensor-dentensor pair analogous to those for nonstrict string diagrams \bR CITE \e. Sources of rewrites are outlined in dashed boxes.
 \[\texttt{Alice \underline{and} Bob drink}\]
 \end{example}
-\emph{Syncategorematic} words are roughly those that have contextually-dependent semantics. Their dependency is usually predicated on the grammatical type of their arguments. In our terms, since we consider the semantics of text circuits to be underpinned by monoidal functors that reify the circuits in a target category, syncategorematic words such as \texttt{and} may be treated as distributive laws. Here \texttt{and} occurs as a conjunction of nouns and is eliminated by distributive-law rewrites within the deep structure of the text diagram \emph{before translation into circuits}. Note that what is meant by \emph{distributive} here is, in string-diagrammatic terms, precisely the same as that in algebra, for expressions such as $a \times (b + c) = (a \times b) + (a \times c)$. A new copy-node for verb labels that has rewrites for all verbs facilitates distribution, and the deep \texttt{and} nodes come in a tensor-dentensor pair analogous to those for nonstrict string diagrams \bR CITE \e. Sources of rewrites are outlined in dashed boxes.
-}
-\end{figure}
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/ABdrink}}\]
+\end{myboxR}
 \clearpage
 \newpage
 
 
-\begin{figure}[h!]
-\centering
-\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/Bdrinksmoke}}\]
-\caption{
-\begin{example}[\textbf{Syncategorematicity II}]
+\begin{myboxR}
+\begin{example}[\textbf{Syncategorematicity II}]\label{ex:syncat2}
 \[\texttt{Bob drinks \underline{and} smokes}\]
-\end{example}
 In this example, the same word \texttt{and} is a conjunction of verbs. In this case we choose to interpret the conjunction of verbs as sequential composition, so there is no need for a corresponding detensor for the \texttt{and} of verbs.
-}
-\end{figure}
+\end{example}
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{mushroom/Bdrinksmoke}}\]
+\end{myboxR}
 
-\begin{figure}[h!]
-\centering
-\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/respectively}}\]
-\caption{
-\begin{example}[\textbf{Coordination}]
+\begin{myboxR}
+\begin{example}[\textbf{Coordination}]\label{ex:coord}
 \[\texttt{Alice \underline{and} Bob drink beer \underline{and} wine \underline{respectively}}\]
-\end{example}
 We stand to win in terms of conceptual economy for modelling; more complex phenomena of text structure such as coordination appear to be resolvable in the same framework of distributivity-law rewrites.
-}
-\end{figure}
+\end{example}
+\[\resizebox{0.75\textwidth}{!}{\tikzfig{mushroom/respectively}}\]
+\end{myboxR}
 
-
-\subsection{Avenues II: determiners and quantifiers in context}
-
-Extending the reach of text circuits to determiners, quantifiers, and conditionals appears to require a contextual diagram or process theory in which to evaluate and enforce constraints upon the purely syntactic content of text circuits. The broad strategy sketched here rests upon three tactics. First, as in the neural approach to bAbi, word-gates are considered to be paired with measurement-processes that return an analog of truth values, the latter of which may be generic tests for adjectives as static predicates or verbs as dynamic predicates. The pairing of gates with measurements follows the philosophy of update structures, introduced in Section \bR REF \e and elaborated in more detail in \bR CITE \e. The truth-measurements allow conditionals to be expressed as either circuit-rewrites or constraints on truth-measurements, the latter which are in turn interpretable as loss-functions in the process of training gates. Second, we model context as the rest of the text circuit, which is a modifiably finite model. Third, we suppose we have a way to record and relate alternative circuits. These tactics appear sufficient for a first pass. Determiners may be considered to be context-sensitive connectivity. Universal quantifiers may be analysed in particular finitary contexts as conditionals and constraints on truth-conditional measurements. Existential quantifiers evaluated in the finitary case yield alternative circuits.
-
-\begin{figure}[h!]
-\centering
-\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/thebeer1}}\]
-\caption{
-\begin{example}[\textbf{Determiners I}]
+\begin{myboxR}
+\begin{example}[\textbf{Determiners I}]\label{ex:det1}
 \[\texttt{Bob drinks \underline{the} beer} \text{ (among drinks)}\]
-\end{example}
 Here, \texttt{drinks} is considered transitive and \texttt{the beer} a nesting box for \texttt{drinks} that reaches over to contextual wires representing a selection of beverages. In this case (relying on the implicit uniqueness of \texttt{the}), a series of \texttt{beer?} tests may be computed, and the best match chosen as the resulting argument for \texttt{drinks}.
-}
-\end{figure}
+\end{example}
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/thebeer1}}\]
+\end{myboxR}
 
-\begin{figure}[h!]
-\centering
-\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/thebeer2}}\]
-\caption{
-\begin{example}[\textbf{Determiners II}]\label{ex:beer2}
+\begin{myboxR}
+\begin{example}[\textbf{Determiners II}]\label{ex:det2}
 \[\texttt{Bob drinks \underline{a} beer} \text{ (among drinks)}\]
-\end{example}
 We take the logical (and pragmatic) reading of \texttt{a} as $\exists ! x: \texttt{beer?}(x) \wedge \texttt{drinks?}(\texttt{Bob},x)$. Subject to having a method to hold onto alternatives -- in essence an inquisitive semantics approach -- we may create alternative circuits for each successful \texttt{beer?} test.
-}
-\end{figure}
+\end{example}
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/thebeer2}}\]
+\end{myboxR}
 
-\clearpage
-\newpage
-
-\begin{figure}[h!]
-\centering
-\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/thebeer3}}\]
-\caption{
-\begin{example}[\textbf{Determiners III}]
+\begin{myboxR}
+\begin{example}[\textbf{Determiners III}]\label{ex:det3}
 \[\texttt{Bob drinks \underline{a} beer} \text{ (that we didn't know about)}\]
-\end{example}
 When there are no beers in context, the same statement takes on a dynamic reading: it constitutes the introduction of a beer into discourse. In terms of text circuits, this amounts to introducing a novel beer-state and beer-wire. Determining an appropriate setting to accommodate "arbitrary" vs. "concrete" beers (c.f. Fine's arbitrary objects \bR CITE \e) requires further research and experimentation, but preliminarily it is known that density matrices are capable of modelling semantic entailment \bR CITE \e, at the computational cost of adopting the kronecker product. This diagram doesn't typecheck, but note that it doesn't have to, because our strategy for evaluation of determiners treats circuits as syntactic objects to be manipulated.
-}
-\end{figure}
+\end{example}
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/thebeer3}}\]
+\end{myboxR}
 
-\begin{figure}[h!]
-\centering
-\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/thebeer4}}\]
-\caption{
-\begin{example}[\textbf{Quantifiers I}]
+\begin{myboxR}
+\begin{example}[\textbf{Quantifiers I}]\label{ex:quant2}
 \[\texttt{Bob drinks \underline{all the beers}} \text{ (in context)}\]
-\end{example}
 In a finitary context, drinking \texttt{all the beers} amounts to applying the distributivity of \texttt{and} iteratively in that context. In this case, \texttt{all the beers} is treated as a reference-in-context to \texttt{Hells} and \texttt{Duvel}. In the same manner, existential quantifiers in finite contexts can be treated as finitary disjunctions, which is handled by creating alternative circuits, as in Example \ref{ex:beer2}
-}
-\end{figure}
-
-\clearpage
-\newpage
-
-\begin{figure}[h!]
-\centering
-\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/thebeer5}}\]
-\caption{
-\begin{example}[\textbf{Quantifiers II}]
-\[\texttt{Bob drinks \underline{all} beers} \text{ (generic)}\]
 \end{example}
-Without the determiner \texttt{the}, this becomes a generic statement, which logically amounts to (analysing the usual conditional as a disjunction) $\forall x: \neg\texttt{beer?}(x) \vee \texttt{drinks?}(\texttt{Bob},x)$. We can treat generic universal quantifiers of this kind in at least two ways. The first essentially truth-conditional approach is to treat the generic as a process-theoretic condition governing measurements: whenever it is the case that something is a beer, it is the case that Bob drinks it. The second "inferential" appraoch is to treat the generic as a rewrite of text circuits conditioned on a beer test: whenever something is a beer we may add on a gate witnessing that Bob drinks that beverage.
-}
-\end{figure}
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/thebeer4}}\]
+\end{myboxR}
 
-\newthought{\textbf{Objection!:} Hold on, isn't this just transformational grammar? Haven't we moved on from that?} In spirit, yes. The two major mathematical distinctions here are well-typing and many-input-many-output instead of treelike. Both approaches have the same problems: over- and undergeneration, no evidentiary basis for psychological realism, too rigid for functionalists, and so on. But recall that we differ in aims: our formalist approach is ultimately in service of approximating human language structure in machines for interpretability. How so? Solving language tasks such as bAbi via text circuits also means that each word gate has been learnt in a conceptually-compliant manner, insofar as the grounded meanings of words are reflected in how words interact and modify one another. What is meant by "conceptually-compliant" is a stronger variant of Firth's maxim: "the meaning of a word is \underline{how it interacts} with other words". How do we justify that claim? The initial conception of bAbi was that the ability to answer questions about -- for instance, the verb \texttt{to go} -- in many different contexts amounted to having a consistent internal "world-model". But question-answering performance by itself is evidently insufficient for the degree of interpretability implied by conceptual-compliance, because the internal model is not forthcoming in transformer solutions. On the other hand, we \emph{do} obtain the building blocks of compositional world-models by learning word gates in text circuits: each learnt word gate may be considered a well-grounded semantic primitive in the construction of novel text circuits, and the resulting circuits are modifiable world-models that are queriable using the (also learnt) measurement-gates. Why is that so? Because just as in Section \bR REF \e we do not need to know how an update is implemented if it satisfies characteristic operational constraints imposed by process-theoretic equations, we don't need to know what's going on inside the gate \texttt{to go} so long as it satisfies the process-theoretic equations that \texttt{to go} ought to satisfy. What are these equations? Firth says that it is how \texttt{to go} behaves with respect to all other words in all contexts, which we approximate by translating individual bAbi tasks involving the word \texttt{to go}, via text circuits, into a representative sample of the process-theoretic equations that \texttt{to go} ought to satisfy. So the philosophical strength of the claim that \texttt{to go} and synonyms have been learnt-from-data in a way that coheres with human conceptions rests on three points: performance, Firth (or if you like, the Yoneda Lemma), and the breadth and variety exhibited in the bAbi dataset. The real test is practical demonstration, for which time will tell.
+\begin{myboxR}
+\begin{example}[\textbf{Quantifiers II}]\label{ex:quant2}
+\[\texttt{Bob drinks \underline{all} beers} \text{ (generic)}\]
+Without the determiner \texttt{the}, this becomes a generic statement, which logically amounts to (analysing the usual conditional as a disjunction) $\forall x: \neg\texttt{beer?}(x) \vee \texttt{drinks?}(\texttt{Bob},x)$. We can treat generic universal quantifiers of this kind in at least two ways. The first essentially truth-conditional approach is to treat the generic as a process-theoretic condition governing measurements: whenever it is the case that something is a beer, it is the case that Bob drinks it. The second "inferential" appraoch is to treat the generic as a rewrite of text circuits conditioned on a beer test: whenever something is a beer we may add on a gate witnessing that Bob drinks that beverage.
+\end{example}
+\[\resizebox{\textwidth}{!}{\tikzfig{mushroom/thebeer5}}\]
+\end{myboxR}
+
+
