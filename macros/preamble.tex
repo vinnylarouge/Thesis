@@ -136,6 +136,8 @@
 %\renewcommand\cfttoctitlefont{\hfill\Large\bfseries}
 %\renewcommand\cftaftertoctitle{\hfill\mbox{}}
 
+\definecolor{Gray}{RGB}{200,200,200}
+\definecolor{White}{RGB}{255,255,255}
 \definecolor{LightBlood}{RGB}{229, 147, 81 }
 \definecolor{DeepBlood}{RGB}{229, 131, 51}
 \definecolor{LightOcean}{RGB}{81, 147, 229 }
@@ -144,8 +146,8 @@
     float, 
     floatplacement=t,
     enhanced, 
-    colback=LightOcean!10, 
-    colframe=DeepOcean,
+    colback=White,%LightOcean!10, 
+    colframe=Gray,%DeepOcean,
 %   show bounding box,
     notitle,
     grow to right by=\marginparsep+\marginparwidth,
@@ -156,8 +158,8 @@
     float, 
     floatplacement=t,
     enhanced, 
-    colback=LightBlood!10, 
-    colframe=DeepBlood,
+    colback=White,%LightBlood!10, 
+    colframe=Gray,%DeepBlood,
 %   show bounding box,
     notitle,
     grow to right by=\marginparsep+\marginparwidth,

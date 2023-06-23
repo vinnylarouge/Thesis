@@ -25,7 +25,7 @@
 		\node [style=none] (33) at (5, -0.5) {};
 		\node [style=smalldotb] (34) at (5, 0) {};
 		\node [style=none] (35) at (6, 0) {};
-		\node [style=none] (36) at (0, 2.5) {$\gamma$ is an \emph{isometry}};
+		\node [style=none] (36) at (0, 2.5) {$\gamma$ is an \emph{isometry} when:};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K] (4.center)
@@ -50,6 +50,6 @@
 			 to (32.center)
 			 to cycle;
 		\draw [style=K] (29.center) to (30);
-		\draw [style=K] (34) to (35.center);
+		\draw [style=KD] (34) to (35.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

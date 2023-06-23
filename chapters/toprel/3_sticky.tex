@@ -5,7 +5,7 @@
 %\caption{The generators (in dashed boxes) and relations that make a spider. When the spider satisfies in addition the three inequalities b1-3, we call it a \textbf{relation-spider}.}
 %\end{figure}
 
-\subsection{When does an object have a spider (or something close to one)?}
+In this section, we seek to process-theoretically characterise disjoint collections of open sets of a space, so that we can play with doodles on the page as formal objects. It turns out that in \textbf{ContRel}, we can express them as idempotents that interact with spiders in a certain way. Coloured boxes in this section just alternate, to delineate multipage proofs.
 
 \begin{example}[The copy-compare spiders of $\mathbf{Rel}$ are not always continuous]\label{ex:compnotspider}
 The compare map for the Sierpi\'{n}ski space is not continuous, because the preimage of $\{0,1\}$ is $\{(0,0),(1,1)\}$, which is not open in the product space of $\mathcal{S}$ with itself.
@@ -21,6 +21,8 @@ These two maps are the (co)multiplications of special frobenius algebras. The (c
 and \emph{everything}:
 \[\{(\star,x) : x \in X\}\]
 \end{rem}
+
+\newpage
 
 \begin{myboxR}
 \begin{proposition}\label{prop:copydiscrete}
@@ -46,8 +48,8 @@ The desired graphical behaviour of a sticky spider is that one can still coalesc
 \[\resizebox{\textwidth}{!}{\tikzfig{structure/idemspider/stickyrelations}}\]
 \end{myboxB}
 
+\begin{myboxR}
 \newthought{We can use split idempotents to transform copy-spiders from discrete topologies to sticky-spiders on other spaces.}
-
 \begin{rem}[Split idempotents]
 An \textbf{idempotent} in a category is a map $e: A \rightarrow A$ such that \[A \overset{e}{\rightarrow} A \overset{e}{\rightarrow} A = A \overset{e}{\rightarrow} A\]
 A \textbf{split idempotent} is an idempotent $e: A \rightarrow A$ along with a \textbf{retract} $r: A \rightarrow B$ and a \textbf{section} $s: B \rightarrow A$ such that:
@@ -58,6 +60,7 @@ A \textbf{split idempotent} is an idempotent $e: A \rightarrow A$ along with a \
 We can graphically express the behaviour of a split idempotent $e$ as follows, where the semicircles for the section and retract $r,s$ form a visual pun.
 
 \[\scalebox{1}{\tikzfig{structure/idemspider/splitidem}}\]
+\end{myboxR}
 
 \begin{myboxB}
 \begin{construction}[Sticky spiders from split idempotents]\label{cons:stickyfromsplit}
@@ -228,27 +231,32 @@ For the counit/delete relation, we observe that for any split idempotent, the re
 \[\scalebox{0.8}{\tikzfig{idemproof/finalproof4}}\]
 \end{myboxB}
 
-\clearpage
-
+\begin{myboxR}
 \begin{defn}[Labels, shapes, cores, halos]
 Recall by Proposition \ref{prop:decompidem} that we can express the idempotent as a union of continuous relations formed of a state and test, for some indexing set of \emph{labels} $\mathcal{L}$.
 \[\tikzfig{topology/shape1}\]
 A \emph{shape} is a component of this union corresponding to some arbitary $l \in L$. So we refer to a sticky spider as a labelled collection of shapes. The state of a shape is the \emph{halo} of the shape. The halos are precisely the copiables of the sticky spider. The test of a shape is the \emph{core}. The cores are precisely the cocopiables of the sticky spider.
 \[\tikzfig{topology/shape2}\]
 \end{defn}
+\end{myboxR}
 
-\begin{proposition}[Core exclusion: Distinct cores cannot overlap]
+\begin{myboxB}
+\begin{proposition}[Core exclusion: Distinct cores cannot overlap]\label{prop:core-core-exclusion}
 \begin{proof}
 A direct consequence of Lemma \ref{lem:comatch}.
 \end{proof}
 \end{proposition}
+\end{myboxB}
 
-\begin{proposition}[Core-halo exclusion: Each core only overlaps with its corresponding halo]
+\begin{myboxR}
+\begin{proposition}[Core-halo exclusion: Each core only overlaps with its corresponding halo]\label{prop:core-halo-exclusion}
 \begin{proof}
 Seeking contradiction, if a core overlapped with multiple halos, Lemma \ref{lem:ecopyfixpoint} would be violated.
 \end{proof}
 \end{proposition}
+\end{myboxR}
 
+\begin{myboxB}
 \begin{proposition}[Halo non-exclusion: halos may overlap]
 \begin{proof}
 By example:
@@ -256,13 +264,23 @@ By example:
 The two shapes are colour coded cyan and magenta. The halos are two triangles which overlap at a yellow region, and partially overlap with their blobby cores. The cores are outlined in dotted blue and orange respectively. Observe that cores and halos do not have to be simply connected; in this example the core of the magenta shape has two connected components. Viewing these sticky spiders as a process, any shape that overlaps with the magenta core will be deleted and replaced by the magenta triangle, and similarly with the cyan cores and triangle. Any shape that overlaps with both the magenta and cyan cores will be deleted and replaced by the union of the triangles. Any shape that overlaps with neither core will be deleted and not replaced.
 \end{proof}
 \end{proposition}
+\end{myboxB}
 
-\begin{example}[Analog of quantum venn diagram paradox]
+\begin{myboxR}
+\begin{corollary}[Only opens please]
+A sticky spider corresponds to a set-indexed disjoint collection of open sets when, in addition to the equations of Theorem \ref{thm:stickygraphical}, it satisfies one more, depicted below on the left.
+\[\scalebox{1}{\tikzfig{idemproof/opensonly}}\]
+Observe that the right hand equation above is precisely what we want expressed in diagrams: that every halo matches its core. For the forward direction, we have:
+\[\scalebox{1}{\tikzfig{idemproof/opensonly3}}\]
+\end{corollary}
+\end{myboxR}
 
-\end{example}
+\begin{myboxR}
+For the backward direction, we rely on the fact that cores are non-empty to eliminate the floating scalars.
+\[\scalebox{1}{\tikzfig{idemproof/opensonly2}}\]
+By Proposition \ref{prop:core-core-exclusion}, we have disjointness.\\
 
-\begin{proposition}[Set-indexed collection of open sets]
-
-\end{proposition}
+So, without loss of generality, we may treat any collection of disjoint shapes on a page as a sticky spider.
+\end{myboxR}
 
 \clearpage

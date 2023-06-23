@@ -972,3 +972,22 @@ The corresponding CSG rules are depicted.
 
 The left text circuit may be read \texttt{C hates D. A likes B.}, and the right as \texttt{A likes B. C hates D.} The middle text circuit can be rewritten as either the left or right, which can be done if we're happy to make such choices. A choiceless approach requires
 
+
+
+For a motivating example, consider the case when we have a locally indiscrete topology:
+\begin{defn}[Locally indiscrete topology]
+$(X,\tau)$ is \emph{locally indiscrete} when every open set is also closed.
+\end{defn}
+
+If we know that a topology is locally indiscrete and we are given an open $U$, we would like to notate the complement $X/U$ -- which we know to be open -- as any of the following, which only differ up to notation.
+
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{topology/negbubble}}\]
+
+Unfortunately, the complementation operation $X/-$ is not in general a continuous relation, hence in the lattermost expression above we resort to using bubbles as a syntactic sugar. Formally, these bubbles are \emph{endocombinators},
+
+
+\begin{remark}
+When we later draw on a finite canvas representing all of euclidean space, properly there should be a fishbowl effect that relatively magnifies shapes close to the origin and shrinks those at the periphery, but that is only an artefact of representing all of euclidean space on a finite canvas. Since all the usual metrics are still really there, going forward we will ignore this fishbowl effect and just doodle shapes as we see fit.
+\[\tikzfig{topology/fisheye}\]
+\end{remark}
+
