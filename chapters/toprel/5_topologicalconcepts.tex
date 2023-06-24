@@ -165,13 +165,13 @@ What is happening in the above film is that we have our starting open set, which
 \begin{defn}[Relational Homotopy]\label{defn:homotopy}
 We can patch the issue in Remark \ref{remark:homotopywrinkle} by asking for homotopies in \textbf{ContRel} to satisfy the additional condition that they are expressible as a union of continuous partial maps that are total on the unit interval.
 \[\tikzfig{topology/homotopy}\]
-Observe that the second condition asking for decomposition in terms of partial comes for free by Proposition \ref{prop:hombasis}; the constraint of the definition is provided by the first condition, which is a stronger condition than just asking that the original continuous relation be total on $I$:
-\[\tikzfig{topology/homotopyctrex1}\]
 \end{defn}
 \end{myboxB}
 
 \begin{myboxR}
 \begin{remark}
+Observe that the second condition asking for decomposition in terms of partial comes for free by Proposition \ref{prop:hombasis}; the constraint of the definition is provided by the first condition, which is a stronger condition than just asking that the original continuous relation be total on $I$:
+\[\tikzfig{topology/homotopyctrex1}\]
 Definition \ref{defn:homotopy} is "natural" in light of Proposition \ref{prop:hombasis}, that the partial continuous functions $A \rightarrow B$ form a basis for $\mathbf{ContRel}(A,B)$: we are just asking that homotopies between partial continuous functions -- which can be viewed as regular homotopies with domain restricted to the subspace topology induced by an open set -- form a basis for homotopies between continuous relations.
 \[\tikzfig{topology/homotopyctrex}\]
 \end{remark}
@@ -195,9 +195,9 @@ What we mean by two sticky spiders being relatable by sliding shapes is that we 
 
 \begin{myboxB}
 \begin{defn}\label{defn:configurationspace}
-We can depict the \emph{configuration space} of shapes that are obtainable by displacing the shapes of a given spider by a split idempotent through the n-fold tensor of rigid transformations -- a restriction to the subspace of the largest open set contained in the subset of all valid (with correct chirality) combinations of displacements that yield another spider. Note that as asubspace, the retract of the idempotent is a function. The section and retract pair is not unique; they may for instance encode a choice of basepoint for each shape relative to which the displacement of that shape occurs.
+We can depict the \emph{configuration space} of shapes that are obtainable by displacing the shapes of a given spider by a split idempotent through the n-fold tensor of rigid transformations -- a restriction to the subspace of the largest open set contained in the subset of all valid (with correct chirality) combinations of displacements that yield another spider; points in configuration space are sticky spiders related to each other by rigid transforms. Note that as asubspace, the retract of the idempotent is a function. The section and retract pair is not unique; they may for instance encode a choice of basepoint for each shape relative to which the displacement of that shape occurs.
 \[\tikzfig{topology/configurations}\]
-Observe that the data of rigid motion on a sticky spider as we have defined above can be captured as a continuous map from the unit interval to the space of rigid transformations: one for each shape in the spider. This is precisely a continuous path in configuration space.
+The data of rigid motion on a sticky spider as we have defined above can be captured as a continuous map from the unit interval to the space of rigid transformations; continuous paths in configuration space model motions of shapes in space.
 \[\tikzfig{topology/rigidmotion2}\]
 \end{defn}
 \end{myboxB}
@@ -211,7 +211,7 @@ What are the connected components of configuration space? Evidently, there are p
 
 
 \begin{myboxB}
-\begin{defn}\label{defn:parthood}
+\begin{defn}[Parthood]\label{defn:parthood}
 Let's say that a "part" refers to an entire simply connected component. Simply connected is already a concept in our toolkit. A shape $U$ is disjoint from another shape $V$ intuitively when we can cover $U$ in a blob with no holes such that the blob has no overlap with $V$. So, $U$ is a part of $V$ when it is simply connect, wholly contained in $V$, and there exists a contractible open that is disjoint from $V$ that covers $U$. Diagrammatically, this is:
 \[\tikzfig{topology/parthood}\]
 \end{defn}
@@ -219,21 +219,21 @@ Let's say that a "part" refers to an entire simply connected component. Simply c
 \end{myboxB}
 
 \begin{myboxR}
-\begin{defn}\label{defn:touching}
+\begin{defn}[Touching]\label{defn:touching}
 Let's distinguish touching from overlap. Two shapes are "touching" intuitively when they are as close as they can be to each other, somewhere; any closer and they would overlap. Let's assume that we can restrict our attention to the parts of the shape that are touching, and that we can fill in the holes of these parts. At the point of touching, there is an infinitesimal gap -- just as when we touch things in meatspace, there is a very small gap between us and the object due to the repulsive electromagnetic force between atoms. To deal with infinitesimals we borrow the $\epsilon-\delta$ trick from mathematical analysis; for any arbitrarily small $\delta$, we can pick an even smaller ball of radius $\epsilon$ such that if we stick the ball in the gap, the ball forms a bridge that overlaps the two filled-in shapes, which allows us to draw a continuous line between them. Diagrammatically, this is: 
-\[\tikzfig{topology/touching}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/touching}}\]
 \end{defn}
 \end{myboxR}
 
 \begin{myboxB}
-\begin{defn}\label{defn:within}
+\begin{defn}[Within and surrounds]\label{defn:within}
 If $U$ surrounds $V$, or equivalently, if $V$ is within $U$, then we are saying that leaving $V$ in almost any direction, we will see some of $U$ before we go off to infinity. We can once again use open balls for this purpose, which correspond to possible places you can get to from a starting point $\mathbf{x}$ within a distance $\epsilon$. In prose, we are asking that any open ball that contains all of $U$ must also contain all of $V$.
 \[\tikzfig{topology/within}\]
 \end{defn}
 \end{myboxB}
 
 \begin{myboxR}
-\begin{defn}\label{defn:containment}
+\begin{defn}[Containment and enclosure]\label{defn:containment}
 There is a strong version of within-ness, which we will call enclosure. As in when we are in elevators and the door is shut, nothing gets in or out of the container. Intuitively, there is a hole in the container surrounded on all sides, and the contained shape lives within the hole. To give a real-world example, honey lives within a honeycomb cell in a beehive, but whether the honey is enclosed in the cell depends on whether it is sealed off from air with beeswax. So in prose we are asking that any way we fill in the holes of the container with a blob, that blob must cover the contained shape. Diagrammatically, this amounts to levelling up from open balls in our previous definition to contractible sets:
 \[\tikzfig{topology/enclose}\]
 \end{defn}
@@ -241,58 +241,41 @@ There is a strong version of within-ness, which we will call enclosure. As in wh
 
 
 \begin{myboxB}
-\begin{defn}\label{defn:trapped}
+\begin{defn}[Trapping]\label{defn:trapped}
 There is an intermediate notion between within-ness and enclosure; for instance, standing in the stonehenge you are surrounded by the pillars, but you can always walk away, whereas if the pillars are very close, such as the bars of a jail cell, a human would not be able to leave the trap while still being able to see the outside. The difficulty here is that relative sizes come into play: small animals would still consider it a case of mere within-ness, because they can still walk away between the bars. So we would like to say that no matter how the pair of objects move rigidly, being trapped means that the trapped $V$ stays within $U$. In other words, that in configuration space, if we forget about all other shapes, we can partition our space of configurations by two concepts, whether $V$ is within $U$ or not, and moreover that these two components is disjoint -- i.e. not simply connected -- so there is no rigid motion that can allow $V$ to escape from being within $U$ if $V$ starts off trapped inside in $U$.
-\[\tikzfig{topology/trapped}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/trapped}}\]
 \end{defn}
 \end{myboxB}
 
 \begin{myboxR}
-\begin{defn}\label{defn:interlocked}
+\begin{defn}[Interlock]\label{defn:interlocked}
 Two shapes might be tightly interlocked without being inside one another. Some potentially familiar examples are plastic models of molecular structure that we encounter in school, metal lids in cold weather that are too tightly hugging the glass jar, or stubborn Lego pieces that refuse to come apart. The commonality of all these cases is that the two shapes must move together as one, unless deformed or broken. In other words, when two shapes are interlocked, knowing the position in space of one shape determines the position of the other, and this determination is a fixed isometry of space. So we only need to specify a range of positions $S$ for the entire subconfiguration of interlocked shapes $U$ and $V$, and we may obtain their respective positions by a fixed rigid motion $\rho$. Since objects may interlock in multiple ways, we may have a sum of these expressions. We additionally observe that interlocking shapes should also be touching, which translates to containment inside the touching concept. Finally, we observe that as in the case of entrapment and enclosure, rigid motions are interlocking-invariant, which translates diagrammatically to the constraint that each $S,\rho$ expression is an entire connected component in configuration space.
 \[\tikzfig{topology/interlock}\]
 \end{defn}
 \end{myboxR}
 
 \begin{myboxB}
-\begin{defn}\label{defn:constrained}
-A weaker notion of interlocking is when shapes only imperfectly determine each other's potential displacements, by specifying an allowed range. Here is an understatement: there is some interest in studying how shapes mutually constrain each other's movements in this way.
+\begin{defn}[Mutual constraint]\label{defn:constrained}
+A weaker notion of interlocking is when shapes only imperfectly determine each other's potential displacements, by specifying an allowed range. It would be an understatement to say there is some interest in studying how shapes mutually constrain each other's movements in this way.
 \[\tikzfig{topology/constrained}\]
 \end{defn}
 \end{myboxB}
 
-\clearpage
-\newpage
-
-\subsection{States, actions, manner}\label{sec:statesactions}
-
-Configuration space explains why we label noun wires: each wire in expanded configuration space must be labelled with the shape within the sticky spider it corresponds to, so that the section and retract know how to reconstruct the shapes, since each shape may have a different spatial extent.
-\[\scalebox{0.75}{\tikzfig{topology/labelledwires1}}\]
-\[\scalebox{0.75}{\tikzfig{topology/labelledwires2}}\]
-All of the concepts we have defined so far are open sets in configuration space -- and for any concept that isn't, we are always free to take the interior of the set; the largest open set contained within the concept. Passing through the split idempotent, we can recast each as a circuit gate using copy maps.
-\[\scalebox{0.75}{\tikzfig{topology/test2gate}}\]
-Going forward, we will just label the wires with the names of each shape when necessary. We notice that one feature of this procedure to get gates from open sets is that all gates commute, due to the commutativity of copy.
-\[\scalebox{0.75}{\tikzfig{topology/copygatecommute}}\]
-Moreover, since each gate of this form is a restriction to an open set, the gates are idempotent. So the concepts we have defined so far behave as if describing \emph{states} of affairs in space, as if we adding commuting adjectives to space to elaborate detail. For example, \texttt{fast red car}, \texttt{fast car that is red}, \texttt{car is (red and fast)} all mean the same thing. As we add on progressively more concepts, we get diminishing subspaces of configurations in the intersection of all the concepts. So the natural extension is to ask how states of affairs can change with motion. A simple example is the case of \emph{collision}, where two shapes start off not touching, and then they move rigidly towards one another to end up touching.
-\[\scalebox{0.75}{\tikzfig{topology/collisionparticular}}\]
-Recalling that homotopies between relations are the unions of homotopies between maps, we have a homotopy that is the union of all collision trajectories, which we mark $\textcolor{orange}{\forall}$. Now we seek to define the interior $i(\textcolor{orange}{\forall})$ as the concept of collision; the expressible collection of all particular collisions. But this is not just an open set on the potential configuration of shapes, it is a collection of open sets parameterised by homotopy.
-\[\scalebox{0.75}{\tikzfig{topology/collideinterior}}\]
-Once we have the open set $i(\textcolor{orange}{\forall})$ that corresponds to all expressible collisions, we have a homotopy-parameterised gate. Following a similar procedure, we can construct gates of motion that satisfy whatever pre- and post-conditions we like.
-\[\tikzfig{topology/collidegate}\]
-We can compose multiple rigid motions sequentially by a continuous function $\mathbf{;}$ that splits a single unit interval into two: $\mathbf{;} := x \mapsto \begin{cases} (2x,0) \ \text{if } x \in [0,\frac{1}{2}) \\ (1,2x - 1) \ \text{if} x \in [\frac{1}{2},1] \end{cases}$. The effect of the map is to splice two vignettes of the same length together by doubling their speed, then placing them one after the other. We can achieve the same thing without resorting to units of measurement, because recall by Theorem \ref{thm:Friedman} and by construction that we have access to a map that selects midpoints for us; we will revisit a string-diagrammatic treatment of homotopy and tenses in a later section. We can also compose multiple motions in parallel by copying the unit interval, allowing it to parameterise multiple gates simultaneously.
-\[\tikzfig{topology/seqparhom}\]
-It is easy to see that the gates can always be rewritten to respect the composition order given by $\mathbf{;}$ and copy, since for any input point at the unit interval the gates behave as restrictions to open sets. These new gates do not generally commute; consider comparing the situation where a tenant moves into one apartment and then another, with the situation where the tenant reverses the order of the apartments. These are different paths, as the postconditions must be different. So now we have noncommuting gates that model \emph{actions}, or verbs. What kinds of actions are there? In our toy setting, in general we can define actions that arbitrarily change states of affairs if we do not restrict ourselves to rigid motions. The trick to doing this is the observation that arbitrary homotopies allow deformations, so our verb gates allow shapes to shrink and open and bend in the process of a homotopy, as long as at the end they arrive at a rigid displacement of their original form.
-\[\tikzfig{topology/inopenout}\]
-We can further generalise by noting that completely different spiders can be related by homotopy, so we can model a situation where there is a permanent bend, or how a rigid shape might shatter.
-\[\tikzfig{topology/breaklock}\]
-We provide the following construction as a general recipe to construct homotopies between spiders.
+\begin{myboxB}
 \begin{construction}[Morphing sticky spiders with homotopies]\label{cons:morph}
 We aim to construct homotopies relating (almost) arbitrary sticky spiders. For now we focus on just changing one shape into another arbitrary one. The idea is as follows. First, we need a cover of open balls $\cup\mathcal{J} = T^0$ and $\cup\mathcal{K} = T^1$ of the start and end cores $T^0$ and $T^1$ such that each $k \in T^1$ is expressible as a rigid isometry of some core $j \in \mathcal{J}$; this is so we can slide and rearrange open balls comprising $T^0$ and reconstruct them as $T^1$. As an intermediate step to eliminate holes and unify connected components, we gather all of the balls at a meeting point $m$ (to be determined shortly.) Intuitively we can illustrate this process as follows:
 \[\tikzfig{topology/slideconstruction}\]
 Second, in order to perform the sliding of open balls, we observe that, given a basepoint to act as origin (which we assume is provided by the data of the split idempotent of configuration space) we can express the group action of rigid isometries $\mathbf{Iso}(\mathbf{R}^2)$ on $\mathbf{R}^2$ as a continuous function:
 \[\tikzfig{topology/groupaction}\]
+\end{construction}
+\end{myboxB}
+
+\begin{myboxB}
 Third, before we begin sliding the open balls, we must ensure that the halo of the shape cooperates. We observe that a given shape $i$ in a sticky spider may be expressed as the union of a family of constant continuous partial functions in the following way. Given an open cover $\mathcal{J}$ such that $\cup\mathcal{J} = T_i$, where $T_i$ is the core of the shape $i$, each function is a constant map from some $T_j \in \mathcal{J}$ to some point $x \in S_i$, where $S_i$ is the halo of the shape $i$. For each $T_j \in \mathcal{J}$ and every point $x \in S_i$, the constant partial function that maps $T_j$ to $x$ is in the family.
 \[\tikzfig{topology/spiderbreakdown}\]
-By definition of sticky spiders, there must exist some point $m$ that is in both the core and the halo: we pick such a point as the rendezvous for the open balls. For each partial map in the family, we provide a homotopy that varies only the image point $x$ continuously in the space to finish at $m$. Now we can slide the open balls to the rendezvous $m$. Since homotopies are reversible by the continuous map $t \mapsto (1-t)$ on the interval, we can perform the above steps for shapes $T^0$ and $T^1$ to finish at the same open ball, reversing the process for $T^1$ and composing sequentially to obtain a finished transformation. The final wrinkle to address is when dealing with multiple shapes. Recalling our exclusion conditions \ref{prop:exclusion} for shapes, it may be that parts of one shape are enclosed in another, so the processes must be coordinated so that there are no overlaps. For example, the enclosing shape must be first opened, so that the enclosed shape may leave. I will keep it an article of faith that such coordinations exist. I struggle to come up with a proof that all spiders $\mathbf{R}^2$ are mutually transformable by homotopy in this (or any other) way, so that will remain a conjecture. But it is clear that a great deal of spiders are mutually transformable; almost certainly any we would care to draw. So this will just be a construction for now.
-\end{construction}
+By definition of sticky spiders, there must exist some point $m$ that is in both the core and the halo: we pick such a point as the rendezvous for the open balls. For each partial map in the family, we provide a homotopy that varies only the image point $x$ continuously in the space to finish at $m$. Now we can slide the open balls to the rendezvous $m$. Since homotopies are reversible by the continuous map $t \mapsto (1-t)$ on the interval, we can perform the above steps for shapes $T^0$ and $T^1$ to finish at the same open ball, reversing the process for $T^1$ and composing sequentially to obtain a finished transformation. The final wrinkle to address is when dealing with multiple shapes. Recalling our exclusion conditions (Propositions \ref{prop:core-core-exclusion, prop:core-halo-exclusion}) for shapes, it may be that parts of one shape are enclosed in another, so the processes must be coordinated so that there are no overlaps. For example, the enclosing shape must be first opened, so that the enclosed shape may leave. I will keep it an article of faith that such coordinations exist. I struggle to come up with a proof that all sticky spiders $\mathbf{R}^2$ are mutually transformable by homotopy in this (or any other) way, so that will remain a conjecture. But it is clear that a great deal of spiders are mutually transformable; almost certainly any we would care to draw. So this will just be a construction for now.
+\end{myboxB}
+
+\clearpage
+\newpage
 
