@@ -103,6 +103,8 @@
 		\node [style=smalldotb] (112) at (10.75, -1.25) {};
 		\node [style=none] (113) at (-6.5, -3) {At $t=0$,  the shapes do not touch};
 		\node [style=none] (114) at (7.2, -3) {At $t=1$,  the shapes touch};
+		\node [style=none] (115) at (-15, 0) {};
+		\node [style=none] (116) at (15, 0) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style={K(Fy)}] (5.center)

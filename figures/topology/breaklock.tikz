@@ -1,4 +1,4 @@
-\begin{tikzpicture}
+\begin{tikzpicture}[{every node/.style}={scale=1.5}]
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (0) at (-10, 2) {};
 		\node [style=none] (1) at (-10, -2) {};
@@ -73,9 +73,8 @@
 		\node [style=none] (104) at (6, 0.25) {};
 		\node [style=none] (105) at (7.5, -1) {};
 		\node [style=none] (106) at (6, -1) {};
-		\node [style=none] (107) at (7, 3.25) {\textcolor{green}{Same shape}};
-		\node [style=none] (108) at (7, 2.5) {\textcolor{orange}{Same shape}};
 		\node [style=none] (109) at (7, -3) {Not interlocked};
+		\node [style=none] (110) at (7, 2.75) {\textcolor{cyan}{Merge}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (0.center) to (1.center);
@@ -107,7 +106,7 @@
 			 to [bend right=90, looseness=1.25] (28.center)
 			 to [in=75, out=-90, looseness=1.75] (32.center)
 			 to cycle;
-		\draw [style=Fy] (36.center)
+		\draw [style=Fo] (36.center)
 			 to [in=-90, out=-120, looseness=1.25] (35.center)
 			 to [in=90, out=90] (34.center)
 			 to [in=-90, out=-105] (37.center)
@@ -133,7 +132,7 @@
 			 to [bend right=90, looseness=1.25] (64.center)
 			 to [in=75, out=-90, looseness=1.75] (68.center)
 			 to cycle;
-		\draw [style=Fy] (77.center)
+		\draw [style=Fo] (77.center)
 			 to [in=-15, out=135, looseness=1.50] (75.center)
 			 to (74.center)
 			 to [in=-120, out=105] (76.center)

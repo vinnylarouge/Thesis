@@ -1,0 +1,81 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (4) at (-4.25, 1.5) {};
+		\node [style=none] (5) at (-2, 1.5) {};
+		\node [style=none] (6) at (-2, -1.5) {};
+		\node [style=none] (7) at (-4.25, -1.5) {};
+		\node [style=none] (8) at (-4, 1) {};
+		\node [style=none] (9) at (-4, -1) {};
+		\node [style=none] (10) at (-3, -1) {};
+		\node [style=none] (11) at (-3, 1) {};
+		\node [style=none] (12) at (-3.5, 0) {$\rotatebox{90}{\texttt{moves}}$};
+		\node [style=none] (13) at (-2.5, 0) {$\rotatebox{90}{\texttt{straight}}$};
+		\node [style=none] (14) at (-3.5, 1.5) {};
+		\node [style=none] (15) at (-3.5, 2.25) {};
+		\node [style=none] (16) at (-4.25, 0) {};
+		\node [style=none] (17) at (-2, 0) {};
+		\node [style=none] (18) at (-5, 0) {};
+		\node [style=none] (19) at (-1, 0) {};
+		\node [style=none] (20) at (-4.25, 0) {};
+		\node [style=none] (21) at (0, 0) {$:=$};
+		\node [style=none] (22) at (2, 0.5) {};
+		\node [style=none] (23) at (2, -1.5) {};
+		\node [style=none] (24) at (2.5, 0.5) {};
+		\node [style=none] (25) at (3, 0) {};
+		\node [style=none] (26) at (3, -1.5) {};
+		\node [style=none] (27) at (2.75, 0.25) {};
+		\node [style=none] (28) at (3, -1) {};
+		\node [style=none] (29) at (2.25, 0.5) {};
+		\node [style=none] (30) at (2, -1) {};
+		\node [style=none] (31) at (2.25, 2.25) {};
+		\node [style=none] (32) at (1, -1) {};
+		\node [style=smalldotG] (33) at (3.75, 0.75) {};
+		\node [style=none] (43) at (4.5, 1.5) {};
+		\node [style=none] (44) at (4.5, 0) {};
+		\node [style=none] (45) at (4.5, -0.5) {};
+		\node [style=none] (46) at (4.5, 0.5) {};
+		\node [style=none] (47) at (5.25, 0) {};
+		\node [style=none] (48) at (4.5, 1) {};
+		\node [style=none] (49) at (4.5, 2) {};
+		\node [style=none] (50) at (5.25, 1.5) {};
+		\node [style=none] (51) at (4.75, 0) {\texttt{m}};
+		\node [style=none] (52) at (4.75, 1.5) {\texttt{s}};
+		\node [style=none] (53) at (6, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style={K(Fo)}] (5.center)
+			 to (6.center)
+			 to (7.center)
+			 to (4.center)
+			 to cycle;
+		\draw [style={K(Fg)}] (8.center)
+			 to (11.center)
+			 to (10.center)
+			 to (9.center)
+			 to cycle;
+		\draw [style=KD] (15.center) to (14.center);
+		\draw [style=K] (17.center) to (19.center);
+		\draw [style=K] (22.center)
+			 to (24.center)
+			 to (25.center)
+			 to (26.center)
+			 to (23.center)
+			 to cycle;
+		\draw [style=K] (32.center) to (30.center);
+		\draw [style=KG, in=180, out=-90] (33) to (44.center);
+		\draw [style=KG, in=-180, out=90] (33) to (43.center);
+		\draw [style=KG, in=180, out=0] (27.center) to (33);
+		\draw [style={K(Fg)}] (45.center)
+			 to (46.center)
+			 to (47.center)
+			 to cycle;
+		\draw [style={K(Fo)}] (50.center)
+			 to (49.center)
+			 to (48.center)
+			 to cycle;
+		\draw [style=K] (28.center) to (53.center);
+		\draw [style=K] (24.center) to (25.center);
+		\draw [style=K] (18.center) to (20.center);
+		\draw [style=KD] (31.center) to (29.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

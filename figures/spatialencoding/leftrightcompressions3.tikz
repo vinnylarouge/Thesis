@@ -1,11 +1,11 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=circ] (15) at (-4, -1.25) {};
-		\node [style=none] (16) at (-5, -1.25) {};
-		\node [style=none] (17) at (-2, -1.25) {$:=$};
-		\node [style=none] (19) at (-3, -0.75) {};
-		\node [style=none] (20) at (-3, -1.75) {};
-		\node [style=none] (21) at (-3, -1.75) {};
+		\node [style=circ] (15) at (8, 1) {};
+		\node [style=none] (16) at (7, 1) {};
+		\node [style=none] (17) at (10, 1) {$:=$};
+		\node [style=none] (19) at (9, 1.5) {};
+		\node [style=none] (20) at (9, 0.5) {};
+		\node [style=none] (21) at (9, 0.5) {};
 		\node [style=circ] (22) at (-4, 1.25) {};
 		\node [style=none] (23) at (-3, 1.25) {};
 		\node [style=none] (24) at (-2, 1.25) {$:=$};
@@ -21,15 +21,15 @@
 		\node [style=none] (34) at (3, 1.75) {};
 		\node [style=dotb] (35) at (4, 0.75) {};
 		\node [style=none] (36) at (5, 1.25) {};
-		\node [style=none] (37) at (1, -0.75) {};
-		\node [style=none] (38) at (1, -1.75) {};
-		\node [style=dotb] (39) at (0, -0.75) {};
-		\node [style=none] (40) at (-1, -1.25) {};
-		\node [style=none] (41) at (2, -1.25) {$\bigcup$};
-		\node [style=none] (42) at (5, -1.75) {};
-		\node [style=none] (43) at (5, -0.75) {};
-		\node [style=dotb] (44) at (4, -1.75) {};
-		\node [style=none] (45) at (3, -1.25) {};
+		\node [style=none] (37) at (13, 1.5) {};
+		\node [style=none] (38) at (13, 0.5) {};
+		\node [style=dotb] (39) at (12, 1.5) {};
+		\node [style=none] (40) at (11, 1) {};
+		\node [style=none] (41) at (14, 1) {$\bigcup$};
+		\node [style=none] (42) at (17, 0.5) {};
+		\node [style=none] (43) at (17, 1.5) {};
+		\node [style=dotb] (44) at (16, 0.5) {};
+		\node [style=none] (45) at (15, 1) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K] (16.center) to (15);

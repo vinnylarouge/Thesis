@@ -69,24 +69,26 @@ will send the king to a2, the bishop to b4, and the knight to d1, i.e. $\bra{K} 
 
 \begin{myboxR}
 \begin{defn}[Less than]\label{defn:lessthan}
-First we define a total order $<$ as an open set on $X \times X$ that obeys the usual axiomatic rules:
-\[\tikzfig{topology/lessthan}\]
+We define a total ordering relation $<$ as an open set on $X \times X$ that obeys the usual axiomatic rules:
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/lessthan}}\]
 \[\tikzfig{topology/lessthantotal}\]
 \end{defn}
 \end{myboxR}
 
 \begin{myboxB}
 \begin{defn}[Friedman's function]
+Just as a wire in \textbf{ContRel} has the discrete topology if it possesses spider structure (Proposition \ref{prop:copydiscrete}), a wire is homeomorphic to the real line by Theorem \ref{thm:Friedman} if it possesses an open that behaves as Definition \ref{defn:lessthan}, and a map that satisfies:
 \[\tikzfig{topology/betweenfunct}\]
 \end{defn}
 \end{myboxB}
 
 \begin{myboxR}
 \begin{defn}[Upper and lower bounds via endocombinators]\label{defn:bounds}
+Upper bounds are endocombinators that send states to points.
 \[\tikzfig{topology/upperbound}\]
-And we can add in further equations governing the upper bound endocombinator to turn it into a supremum, where the lower endpoint is obtained as the supremum of the empty set, and the upper endpoint is the supremum of the whole set.
+We can add in further equations governing the upper bound endocombinator to turn it into a supremum, where the lower endpoint is obtained as the supremum of the empty set, and the upper endpoint is the supremum of the whole set.
 \[\tikzfig{topology/sup}\]
-Now we can define endpoints purely graphically:
+Now we can define endpoints purely graphically. The lower endpoint is the supremum of the empty state, and the upper the supremum of everything.
 \[\tikzfig{topology/endpoints}\]
 Going forward, we will denote the unit interval using a thick dotted wire.
 \end{defn}
@@ -104,7 +106,7 @@ Simple connectivity is a useful enough concept that we will notate simply connec
 \begin{myboxR}
 \begin{defn}[Addition]\label{def:addition}
 More precisely, we only need an additive monoid structure on the unit interval. We do not care about obtaining precise values from our metric, and we will not need to subtract distances from each other. All we need to know is that the lower endpoint of the unit interval stands in for "zero distance" -- as the unit of the monoid -- and that adding positive distances together will give you a larger positive distance deterministically.
-\[\tikzfig{topology/addition}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/addition}}\]
 \end{defn}
 \end{myboxR}
 
@@ -112,7 +114,7 @@ More precisely, we only need an additive monoid structure on the unit interval. 
 \begin{defn}[Metric]\label{def:metric}
 A metric on a space is a continuous map $X \rightarrow \mathbf{R}^+$ to the positive reals that satisfies these axioms.
 \end{defn}
-\[\tikzfig{topology/metric}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/metric}}\]
 \end{myboxB}
 
 \begin{myboxR}
@@ -131,7 +133,7 @@ It is no trouble to depict collections of invertible transformations of spaces $
 
 \begin{myboxR}
 \begin{defn}[Isometry]\label{def:isometry}
-But recall that the collections of invertible transformations we are really interested in are the \emph{rigid} ones, the ones that move objects in space without deforming them, i.e. the isometries. Iso-metry means same-distance. A distance preserving transformation is one such that applying the metric pointwise before and after the transformation of a shape gives a fixed value. \bR RHS should be dotted output! \e
+But recall that the collections of invertible transformations we are really interested in are the \emph{rigid} ones, the ones that move objects in space without deforming them, i.e. the isometries. Iso-metry means same-distance. A distance preserving transformation is one such that applying the metric pointwise before and after the transformation of a shape gives a fixed value.
 \end{defn}
 \[\tikzfig{topology/isometry}\]
 \end{myboxR}
@@ -180,7 +182,7 @@ Definition \ref{defn:homotopy} is "natural" in light of Proposition \ref{prop:ho
 \begin{myboxB}
 \begin{defn}[Contractibility]\label{defn:contractible}
 With homotopies in hand, we can define a stronger notion of connected shapes with no holes, which are usually called \emph{contractible}. The reason for the terminology reflects the method by which we can guarantee a shape in flatland has no holes: when any loop in the shape is \emph{contractible} to a point.
-\[\tikzfig{topology/contractible}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/contractible}}\]
 Contractible open sets are worth their own notation too; a solid black effect, this time with no hole.
 \[\tikzfig{topology/contractnotation}\]
 \end{defn}
@@ -250,7 +252,7 @@ There is an intermediate notion between within-ness and enclosure; for instance,
 \begin{myboxR}
 \begin{defn}[Interlock]\label{defn:interlocked}
 Two shapes might be tightly interlocked without being inside one another. Some potentially familiar examples are plastic models of molecular structure that we encounter in school, metal lids in cold weather that are too tightly hugging the glass jar, or stubborn Lego pieces that refuse to come apart. The commonality of all these cases is that the two shapes must move together as one, unless deformed or broken. In other words, when two shapes are interlocked, knowing the position in space of one shape determines the position of the other, and this determination is a fixed isometry of space. So we only need to specify a range of positions $S$ for the entire subconfiguration of interlocked shapes $U$ and $V$, and we may obtain their respective positions by a fixed rigid motion $\rho$. Since objects may interlock in multiple ways, we may have a sum of these expressions. We additionally observe that interlocking shapes should also be touching, which translates to containment inside the touching concept. Finally, we observe that as in the case of entrapment and enclosure, rigid motions are interlocking-invariant, which translates diagrammatically to the constraint that each $S,\rho$ expression is an entire connected component in configuration space.
-\[\tikzfig{topology/interlock}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/interlock}}\]
 \end{defn}
 \end{myboxR}
 

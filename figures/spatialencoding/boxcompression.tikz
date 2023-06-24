@@ -24,18 +24,18 @@
 		\node [style=none] (22) at (0.75, 3.25) {$\textcolor{red}{W}$};
 		\node [style=none] (23) at (0.25, -2) {};
 		\node [style=none] (24) at (0.25, -2.75) {$\textcolor{blue}{(P_x,P_y)}$};
-		\node [style=dotw] (25) at (-6, -5) {$\blackinwhitesquare$};
-		\node [style=none] (26) at (-7, -5) {};
-		\node [style=none] (27) at (-5, -5) {};
-		\node [style=none] (28) at (-6, -6) {$(x,y) \mapsto (\textcolor{red}{W}x + \textcolor{blue}{P_x},  \textcolor{orange}{H}y + \textcolor{blue}{P_y})$};
-		\node [style=dotwD] (29) at (6, -5) {$\blackinwhitesquare$};
-		\node [style=none] (30) at (5, -5) {};
-		\node [style=none] (31) at (7, -5) {};
-		\node [style=none] (32) at (6, -6) {$(x,y)\vert_{\in (\textcolor{blue}{P_x},\textcolor{blue}{P_x}+\textcolor{red}{W}) \times (\textcolor{blue}{P_x},\textcolor{blue}{P_y}+\textcolor{orange}{H})} \mapsto (\frac{x - \textcolor{blue}{P_y}}{\textcolor{red}{W}},\frac{y - \textcolor{blue}{P_y}}{\textcolor{orange}{H}})$};
-		\node [style=none] (33) at (-6, -4) {};
-		\node [style=none] (34) at (6, -4) {};
-		\node [style=none] (35) at (-6, -3.5) {$(\textcolor{red}{W},\textcolor{orange}{H},\textcolor{blue}{P_x},\textcolor{blue}{P_y})$};
-		\node [style=none] (36) at (6, -3.5) {$(\textcolor{red}{W},\textcolor{orange}{H},\textcolor{blue}{P_x},\textcolor{blue}{P_y})$};
+		\node [style=dotw] (25) at (-7, 0) {$\blackinwhitesquare$};
+		\node [style=none] (26) at (-8, 0) {};
+		\node [style=none] (27) at (-6, 0) {};
+		\node [style=none] (28) at (-7, -1) {$(x,y) \mapsto (\textcolor{red}{W}x + \textcolor{blue}{P_x},  \textcolor{orange}{H}y + \textcolor{blue}{P_y})$};
+		\node [style=dotwD] (29) at (7, 0) {$\blackinwhitesquare$};
+		\node [style=none] (30) at (6, 0) {};
+		\node [style=none] (31) at (8, 0) {};
+		\node [style=none] (32) at (7, -1) {$(x,y)\vert_{\in (\textcolor{blue}{P_x},\textcolor{blue}{P_x}+\textcolor{red}{W}) \times (\textcolor{blue}{P_x},\textcolor{blue}{P_y}+\textcolor{orange}{H})} \mapsto (\frac{x - \textcolor{blue}{P_y}}{\textcolor{red}{W}},\frac{y - \textcolor{blue}{P_y}}{\textcolor{orange}{H}})$};
+		\node [style=none] (33) at (-7, 1) {};
+		\node [style=none] (34) at (7, 1) {};
+		\node [style=none] (35) at (-7, 1.5) {$(\textcolor{red}{W},\textcolor{orange}{H},\textcolor{blue}{P_x},\textcolor{blue}{P_y})$};
+		\node [style=none] (36) at (7, 1.5) {$(\textcolor{red}{W},\textcolor{orange}{H},\textcolor{blue}{P_x},\textcolor{blue}{P_y})$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=ggF] (2.center)

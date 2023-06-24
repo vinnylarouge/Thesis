@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  24 JUN 2023 12:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  24 JUN 2023 16:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1924,7 +1924,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 3.
 
-<beltcrest.pdf, id=63, 116.435pt x 139.52126pt>
+<beltcrest.pdf, id=59, 116.435pt x 139.52126pt>
 File: beltcrest.pdf Graphic file (type pdf)
 <use beltcrest.pdf>
 Package pdftex.def Info: beltcrest.pdf  used on input line 5.
@@ -2297,13 +2297,9 @@ ine 78.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 87.
 )
-Overfull \hbox (144.93597pt too wide) detected at line 73
-[]
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 73.
-(./figures/topology/lessthantotal.tikz
+ (./figures/topology/lessthantotal.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 6.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2319,7 +2315,12 @@ ine 42.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 74.
- (./figures/topology/betweenfunct.tikz
+
+
+LaTeX Warning: Reference `prop:copydiscrete' on page 10 undefined on input line
+ 80.
+
+(./figures/topology/betweenfunct.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 56.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2350,9 +2351,8 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 106.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 80.
-
-(./figures/topology/upperbound.tikz
+ine 81.
+ (./figures/topology/upperbound.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 12.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2365,12 +2365,12 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 45.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 86.
+ine 88.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
-\T1/zplTLF/m/n/10 And we can add in fur-ther equa-tions gov-ern-ing the up-per 
-bound en-do-com-bi-na-tor to turn it into a supre-mum, where the lower end-poin
-t is ob-tained as the
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
+\T1/zplTLF/m/n/10 We can add in fur-ther equa-tions gov-ern-ing the up-per boun
+d en-do-com-bi-na-tor to turn it into a supre-mum, where the lower end-point is
+ ob-tained as the supre-
  []
 
 (./figures/topology/sup.tikz
@@ -2390,7 +2390,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 57.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
+ine 90.
  (./figures/topology/endpoints.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 18.
@@ -2402,11 +2402,11 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 31.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 90.
+ine 92.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 97.
+ine 99.
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 [][]\T1/zplTLF/b/n/10 Definition 1.1.9 \T1/zplTLF/m/n/10 (Sim-ple con-nec-tiv-i
 ty)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 In prose: for any pair of points tha
 t are within the open $\LS1/stix2/m/it/10 V$\T1/zplTLF/m/n/10 , there ex-ists s
@@ -2436,9 +2436,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 81.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 98.
+ine 100.
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 \T1/zplTLF/m/n/10 Simple con-nec-tiv-ity is a use-ful enough con-cept that we w
 ill no-tate sim-ply con-nected open sets as fol-lows, where the hole is a re-mi
 nder that sim-ply con-nected
@@ -2446,9 +2446,9 @@ nder that sim-ply con-nected
 
 (./figures/topology/simpconnotation.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 100.
+ine 102.
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 [][]\T1/zplTLF/b/n/10 Definition 1.1.10 \T1/zplTLF/m/n/10 (Ad-di-tion)\T1/zplTL
 F/b/n/10 . []\T1/zplTLF/m/n/10 More pre-cisely, we only need an ad-di-tive mono
 id struc-ture on the unit in-ter-val. We do not care about ob-tain-ing pre-cise
@@ -2456,7 +2456,7 @@ id struc-ture on the unit in-ter-val. We do not care about ob-tain-ing pre-cise
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 \T1/zplTLF/m/n/10 from our met-ric, and we will not need to sub-tract dis-tance
 s from each other. All we need to know is that the lower end-point of the unit 
 in-ter-val stands in for
@@ -2494,15 +2494,11 @@ ine 75.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 80.
 )
-Overfull \hbox (109.62006pt too wide) detected at line 107
-[]
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 107.
+ine 109.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 113.
-(./figures/topology/metric.tikz
+ine 115.
+ (./figures/topology/metric.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 18.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2534,14 +2530,10 @@ ine 114.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 119.
 )
-Overfull \hbox (216.31784pt too wide) detected at line 115
-[]
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 115.
+ine 117.
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 [][]\T1/zplTLF/b/n/10 Definition 1.1.12 \T1/zplTLF/m/n/10 (Open balls)\T1/zplTL
 F/b/n/10 . []\T1/zplTLF/m/n/10 Once we have met-rics, we can de-fine the usual 
 topo-log-i-cal no-tion of open balls. Open balls will come in handy later, and 
@@ -2549,7 +2541,7 @@ a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 \T1/zplTLF/m/n/10 side-effect which we note but do not ex-plore is that open ba
 lls form a ba-sis for any met-ric space, so in the fu-ture when-ever we con-str
 uct spaces that come with
@@ -2576,9 +2568,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 53.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 121.
+ine 123.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 127.
+ine 129.
  (./figures/topology/topologicalgroup.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
@@ -2592,9 +2584,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 14.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 129.
+ine 131.
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 [][]\T1/zplTLF/b/n/10 Definition 1.1.14 \T1/zplTLF/m/n/10 (Isom-e-try)\T1/zplTL
 F/b/n/10 . []\T1/zplTLF/m/n/10 But re-call that the col-lec-tions of in-vert-ib
 le trans-for-ma-tions we are re-ally in-ter-ested in are the \T1/zplTLF/m/it/10
@@ -2602,7 +2594,7 @@ le trans-for-ma-tions we are re-ally in-ter-ested in are the \T1/zplTLF/m/it/10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 \T1/zplTLF/m/n/10 jects in space with-out de-form-ing them, i.e. the isome-trie
 s. Iso-metry means same-distance. A dis-tance pre-serv-ing trans-for-ma-tion is
  one such that ap-ply-ing the
@@ -2619,9 +2611,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 28.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 136.
+ine 138.
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 [][]\T1/zplTLF/b/n/10 Definition 1.1.15 \T1/zplTLF/m/n/10 (Pla-nar isome-tries)
 \T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 We know the pla-nar isome-tries of Eu-c
 lidean space can be ex-pressed as a trans-la-tion, ro-ta-tion, and a bit to in-
@@ -2629,14 +2621,14 @@ di-cate the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 \T1/zplTLF/m/n/10 chi-ral-ity of the shape -- as mir-ror re-flec-tions are also
  an isom-e-try. In flat-land, we do not ex-pect shapes to sud-denly flip over. 
 We would like to ex-press just those
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 \T1/zplTLF/m/n/10 rigid trans-for-ma-tions that leave the chi-ral-ity of the sh
 ape in-tact, be-cause re-ally we want to only be able to slide the shapes aroun
 d the can-vas, not leave the
@@ -2659,9 +2651,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 13.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 142.
+ine 144.
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--144
+Underfull \hbox (badness 10000) in paragraph at lines 144--146
 \T1/zplTLF/m/n/10 With this in mind, we have the fol-low-ing con-di-tion re-lat
 -ing dif-fer-ent spi-ders on the unit square, telling us when one is the same a
 s the other up to rigidly dis-
@@ -2682,27 +2674,27 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 22.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 144.
+ine 146.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
+ine 156.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
+ine 156.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
+ine 156.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
+ine 156.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
+ine 156.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
+ine 156.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 154.
+ine 156.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 157.
+ine 159.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 157.
+ine 159.
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 []\T1/zplTLF/m/n/10 In other words, a ho-mo-topy is like a short film where at 
 the be-gin-ning there is an $\LS1/stix2/m/it/10 f$\T1/zplTLF/m/n/10 , which con
 -tin-u-ously de-forms to end the film be-ing a $\LS1/stix2/m/it/10 g$\T1/zplTLF
@@ -2710,7 +2702,7 @@ the be-gin-ning there is an $\LS1/stix2/m/it/10 f$\T1/zplTLF/m/n/10 , which con
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 \T1/zplTLF/m/n/10 "func-tion" with "re-la-tion" in the above def-i-ni-tion does
  not quite do what we want, be-cause we would be able to de-fine the fol-low-in
 g "ho-mo-topy" be-tween open
@@ -2723,25 +2715,25 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 12.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 159.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 161.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 163.
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 []\T1/zplTLF/m/n/10 What is hap-pen-ing in the above film is that we have our s
 tart-ing open set, which stays con-stant for a while. Then sud-denly the end-in
 g open set ap-pears, the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 \T1/zplTLF/m/n/10 start-ing open dis-ap-pears, and we are left with our end-ing
 ; while \T1/zplTLF/m/it/10 tech-ni-cally \T1/zplTLF/m/n/10 there was no dis-con
 -tin-u-ous jump, this isn't the no-tion of slid-ing we want. The
  []
 
 
-Underfull \hbox (badness 5274) in paragraph at lines 166--167
+Underfull \hbox (badness 5274) in paragraph at lines 168--169
 [][]\T1/zplTLF/b/n/10 Definition 1.1.18 \T1/zplTLF/m/n/10 (Re-la-tional Ho-mo-t
 opy)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 We can patch the is-sue in Re-mark 
 []1.1.16[] by ask-ing for ho-mo-topies in \T1/zplTLF/b/n/10 Con-tRel \T1/zplTLF
@@ -2789,22 +2781,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 145.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 167.
-
-
-LaTeX Warning: Reference `prop:hombasis' on page 10 undefined on input line 173
-.
-
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 173.
-(./figures/topology/homotopyctrex1.tikz
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 11.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 12.
-)
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 174.
+ine 169.
 
 
 LaTeX Warning: Reference `prop:hombasis' on page 10 undefined on input line 175
@@ -2812,10 +2789,25 @@ LaTeX Warning: Reference `prop:hombasis' on page 10 undefined on input line 175
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 175.
+(./figures/topology/homotopyctrex1.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 175.
+ine 11.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 12.
+)
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 176.
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--176
+
+LaTeX Warning: Reference `prop:hombasis' on page 10 undefined on input line 177
+.
+
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 177.
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--178
 \T1/zplTLF/m/n/10 mo-topies be-tween par-tial con-tin-u-ous func-tions -- which
  can be viewed as reg-u-lar ho-mo-topies with do-main re-stricted to the sub-sp
 ace topol-ogy in-duced by an
@@ -2840,9 +2832,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 71.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 176.
+ine 178.
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 [][]\T1/zplTLF/b/n/10 Definition 1.1.20 \T1/zplTLF/m/n/10 (Con-tractibil-ity)\T
 1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 With ho-mo-topies in hand, we can de-fine
  a stronger no-tion of con-nected shapes with no holes, which are usu-ally call
@@ -2850,7 +2842,7 @@ ed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 \T1/zplTLF/m/it/10 con-tractible\T1/zplTLF/m/n/10 . The rea-son for the ter-mi-
 nol-ogy re-flects the method by which we can guar-an-tee a shape in flat-land h
 as no holes: when any loop in the shape is
@@ -2886,15 +2878,12 @@ ine 115.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 120.
 )
-Overfull \hbox (73.89017pt too wide) detected at line 183
-[]
- []
-
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 183.
-(./figures/topology/contractnotation.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 185.
+
+(./figures/topology/contractnotation.tikz)
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 187.
  (./figures/topology/rigidmotion.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 41.
@@ -2912,9 +2901,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 60.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 192.
+ine 194.
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 [][]\T1/zplTLF/b/n/10 Definition 1.1.22. []\T1/zplTLF/m/n/10 We can de-pict the
  \T1/zplTLF/m/it/10 con-fig-u-ra-tion space \T1/zplTLF/m/n/10 of shapes that ar
 e ob-tain-able by dis-plac-ing the shapes of a given spi-der by a split idem-po
@@ -2922,21 +2911,21 @@ e ob-tain-able by dis-plac-ing the shapes of a given spi-der by a split idem-po
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 \T1/zplTLF/m/n/10 the n-fold ten-sor of rigid trans-for-ma-tions -- a re-stric-
 tion to the sub-space of the largest open set con-tained in the sub-set of all 
 valid (with cor-rect chi-ral-ity) com-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 \T1/zplTLF/m/n/10 bi-na-tions of dis-place-ments that yield an-other spi-der; p
 oints in con-fig-u-ra-tion space are sticky spi-ders re-lated to each other by 
 rigid trans-forms. Note that as
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 \T1/zplTLF/m/n/10 asub-space, the re-tract of the idem-po-tent is a func-tion. 
 The sec-tion and re-tract pair is not unique; they may for in-stance en-code a 
 choice of base-point for each
@@ -2967,9 +2956,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 50.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 199.
+ine 201.
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--201
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
 \T1/zplTLF/m/n/10 The data of rigid mo-tion on a sticky spi-der as we have de-f
 ined above can be cap-tured as a con-tin-u-ous map from the unit in-ter-val to 
 the space of rigid trans-for-
@@ -2990,9 +2979,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 34.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 201.
+ine 203.
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 [][]\T1/zplTLF/b/n/10 Example 1.1.23 \T1/zplTLF/m/n/10 (The con-nected com-po-n
 ents of con-fig-u-ra-tion space)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 What ar
 e the con-nected com-po-nents of con-fig-u-ra-tion space? Ev-i-dently, there ar
@@ -3000,7 +2989,7 @@ e pairs of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 \T1/zplTLF/m/n/10 spi-ders that are both valid dis-place-ments, but not mu-tu-a
 lly reach-able by rigid mo-tion. For ex-am-ple, shapes might \T1/zplTLF/m/it/10
  en-close \T1/zplTLF/m/n/10 or \T1/zplTLF/m/it/10 trap \T1/zplTLF/m/n/10 other 
@@ -3008,7 +2997,7 @@ shapes, or shapes might
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 \T1/zplTLF/m/n/10 be \T1/zplTLF/m/it/10 in-ter-locked\T1/zplTLF/m/n/10 . De-pic
 ted are some pairs of con-fig-u-ra-tions that are mu-tu-ally un-reach-able by r
 igid trans-for-ma-tions. Now we have the con-cep-tual toolkit to be-gin
@@ -3016,27 +3005,27 @@ igid trans-for-ma-tions. Now we have the con-cep-tual toolkit to be-gin
 
 (./figures/topology/encloseexample.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 208.
+ine 210.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 215.
+ine 217.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 215.
+ine 217.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 215.
+ine 217.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 215.
+ine 217.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 215.
+ine 217.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 215.
+ine 217.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 215.
+ine 217.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 215.
+ine 217.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 215.
+ine 217.
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 [][]\T1/zplTLF/b/n/10 Definition 1.1.24 \T1/zplTLF/m/n/10 (Part-hood)\T1/zplTLF
 /b/n/10 . []\T1/zplTLF/m/n/10 Let's say that a "part" refers to an en-tire sim-
 ply con-nected com-po-nent. Sim-ply con-nected is al-ready a con-cept in our to
@@ -3044,7 +3033,7 @@ olkit. A
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 \T1/zplTLF/m/n/10 shape $\LS1/stix2/m/it/10 U$ \T1/zplTLF/m/n/10 is dis-joint f
 rom an-other shape $\LS1/stix2/m/it/10 V$ \T1/zplTLF/m/n/10 in-tu-itively when 
 we can cover $\LS1/stix2/m/it/10 U$ \T1/zplTLF/m/n/10 in a blob with no holes s
@@ -3084,15 +3073,15 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 49.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 216.
+ine 218.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 223.
+ine 225.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 223.
+ine 225.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 223.
+ine 225.
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 [][]\T1/zplTLF/b/n/10 Definition 1.1.25 \T1/zplTLF/m/n/10 (Touch-ing)\T1/zplTLF
 /b/n/10 . []\T1/zplTLF/m/n/10 Let's dis-tin-guish touch-ing from over-lap. Two 
 shapes are "touch-ing" in-tu-itively when they are as close as they can be to e
@@ -3100,21 +3089,21 @@ ach
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 \T1/zplTLF/m/n/10 other, some-where; any closer and they would over-lap. Let's 
 as-sume that we can re-strict our at-ten-tion to the parts of the shape that ar
 e touch-ing, and that we
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 \T1/zplTLF/m/n/10 can fill in the holes of these parts. At the point of touch-i
 ng, there is an in-finites-i-mal gap -- just as when we touch things in meatspa
 ce, there is a very small gap
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 \T1/zplTLF/m/n/10 be-tween us and the ob-ject due to the re-pul-sive elec-tro-m
 ag-netic force be-tween atoms. To deal with in-finites-i-mals we bor-row the $\
 LS1/stix2/m/it/10 ^^O \LS1/stix2/m/n/10 * \LS1/stix2/m/it/10 ^^N$ \T1/zplTLF/m/
@@ -3122,7 +3111,7 @@ n/10 trick from math-e-mat-i-cal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 \T1/zplTLF/m/n/10 anal-y-sis; for any ar-bi-trar-ily small $\LS1/stix2/m/it/10 
 ^^N$\T1/zplTLF/m/n/10 , we can pick an even smaller ball of ra-dius $\LS1/stix2
 /m/it/10 ^^O$ \T1/zplTLF/m/n/10 such that if we stick the ball in the gap, the 
@@ -3182,29 +3171,29 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 98.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 224.
+ine 226.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 230.
+ine 232.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 230.
+ine 232.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 230.
+ine 232.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 230.
+ine 232.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 230.
+ine 232.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 230.
+ine 232.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 230.
+ine 232.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 230.
+ine 232.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 230.
+ine 232.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 230.
+ine 232.
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 \T1/zplTLF/m/n/10 see some of $\LS1/stix2/m/it/10 U$ \T1/zplTLF/m/n/10 be-fore 
 we go off to in-fin-ity. We can once again use open balls for this pur-pose, wh
 ich cor-re-spond to pos-si-ble places you can get to from a start-ing
@@ -3237,9 +3226,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 38.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 231.
+ine 233.
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 [][]\T1/zplTLF/b/n/10 Definition 1.1.27 \T1/zplTLF/m/n/10 (Con-tain-ment and en
 -clo-sure)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 There is a strong ver-sion of
  within-ness, which we will call en-clo-sure. As in when we are in el-e-va-tors
@@ -3247,21 +3236,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--238
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 \T1/zplTLF/m/n/10 door is shut, noth-ing gets in or out of the con-tainer. In-t
 u-itively, there is a hole in the con-tainer sur-rounded on all sides, and the 
 con-tained shape lives within
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 \T1/zplTLF/m/n/10 the hole. To give a real-world ex-am-ple, honey lives within 
 a hon-ey-comb cell in a bee-hive, but whether the honey is en-closed in the cel
 l de-pends on whether it
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 \T1/zplTLF/m/n/10 is sealed off from air with beeswax. So in prose we are ask-i
 ng that any way we fill in the holes of the con-tainer with a blob, that blob m
 ust cover the con-tained
@@ -3290,25 +3279,25 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 40.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 238.
+ine 240.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 245.
+ine 247.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 245.
+ine 247.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 245.
+ine 247.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 245.
+ine 247.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 245.
+ine 247.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 245.
+ine 247.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 245.
+ine 247.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 245.
+ine 247.
 
-Underfull \hbox (badness 6364) in paragraph at lines 245--246
+Underfull \hbox (badness 6364) in paragraph at lines 247--248
 [][]\T1/zplTLF/b/n/10 Definition 1.1.28 \T1/zplTLF/m/n/10 (Trap-ping)\T1/zplTLF
 /b/n/10 . []\T1/zplTLF/m/n/10 There is an in-ter-me-di-ate no-tion be-tween wit
 hin-ness and en-clo-sure; for in-stance, stand-ing in the stone-henge you are s
@@ -3316,28 +3305,28 @@ ur-rounded
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 \T1/zplTLF/m/n/10 by the pil-lars, but you can al-ways walk away, whereas if th
 e pil-lars are very close, such as the bars of a jail cell, a hu-man would not 
 be able to leave the trap
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 \T1/zplTLF/m/n/10 while still be-ing able to see the out-side. The dif-fi-culty
  here is that rel-a-tive sizes come into play: small an-i-mals would still con-
 sider it a case of mere within-ness,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 \T1/zplTLF/m/n/10 be-cause they can still walk away be-tween the bars. So we wo
 uld like to say that no mat-ter how the pair of ob-jects move rigidly, be-ing t
 rapped means that the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 \T1/zplTLF/m/n/10 trapped $\LS1/stix2/m/it/10 V$ \T1/zplTLF/m/n/10 stays within
  $\LS1/stix2/m/it/10 U$\T1/zplTLF/m/n/10 . In other words, that in con-fig-u-ra
 -tion space, if we for-get about all other shapes, we can par-ti-tion our space
@@ -3345,7 +3334,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--246
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 \T1/zplTLF/m/n/10 con-cepts, whether $\LS1/stix2/m/it/10 V$ \T1/zplTLF/m/n/10 i
 s within $\LS1/stix2/m/it/10 U$ \T1/zplTLF/m/n/10 or not, and more-over that th
 ese two com-po-nents is dis-joint -- i.e. not sim-ply con-nected -- so there is
@@ -3383,19 +3372,19 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 59.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 246.
+ine 248.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 252.
+ine 254.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 252.
+ine 254.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 252.
+ine 254.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 252.
+ine 254.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 252.
+ine 254.
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 [][]\T1/zplTLF/b/n/10 Definition 1.1.29 \T1/zplTLF/m/n/10 (In-ter-lock)\T1/zplT
 LF/b/n/10 . []\T1/zplTLF/m/n/10 Two shapes might be tightly in-ter-locked with-
 out be-ing in-side one an-other. Some po-ten-tially fa-mil-iar ex-am-ples are p
@@ -3403,28 +3392,28 @@ las-tic mod-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 \T1/zplTLF/m/n/10 els of molec-u-lar struc-ture that we en-counter in school, m
 etal lids in cold weather that are too tightly hug-ging the glass jar, or stub-
 born Lego pieces that refuse
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 \T1/zplTLF/m/n/10 to come apart. The com-mon-al-ity of all these cases is that 
 the two shapes must move to-gether as one, un-less de-formed or bro-ken. In oth
 er words, when two
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 \T1/zplTLF/m/n/10 shapes are in-ter-locked, know-ing the po-si-tion in space of
  one shape de-ter-mines the po-si-tion of the other, and this de-ter-mi-na-tion
  is a fixed isom-e-try of space.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 \T1/zplTLF/m/n/10 So we only need to spec-ify a range of po-si-tions $\LS1/stix
 2/m/it/10 S$ \T1/zplTLF/m/n/10 for the en-tire sub-con-fig-u-ra-tion of in-ter-
 locked shapes $\LS1/stix2/m/it/10 U$ \T1/zplTLF/m/n/10 and $\LS1/stix2/m/it/10 
@@ -3432,21 +3421,21 @@ V$\T1/zplTLF/m/n/10 , and we may ob-tain their re-spec-tive po-si-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 \T1/zplTLF/m/n/10 by a fixed rigid mo-tion $\LS1/stix2/m/it/10 ^^Z$\T1/zplTLF/m
 /n/10 . Since ob-jects may in-ter-lock in mul-ti-ple ways, we may have a sum of
  these ex-pres-sions. We ad-di-tion-ally ob-serve that in-ter-lock-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 \T1/zplTLF/m/n/10 shapes should also be touch-ing, which trans-lates to con-tai
 n-ment in-side the touch-ing con-cept. Fi-nally, we ob-serve that as in the cas
 e of en-trap-ment and en-clo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 \T1/zplTLF/m/n/10 sure, rigid mo-tions are interlocking-invariant, which trans-
 lates di-a-gram-mat-i-cally to the con-straint that each $\LS1/stix2/m/it/10 S;
  ^^Z$ \T1/zplTLF/m/n/10 ex-pres-sion is an en-tire con-nected com-po-nent in
@@ -3506,14 +3495,10 @@ ine 139.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 141.
 )
-Overfull \hbox (342.38814pt too wide) detected at line 253
-[]
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 253.
+ine 255.
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 [][]\T1/zplTLF/b/n/10 Definition 1.1.30 \T1/zplTLF/m/n/10 (Mu-tual con-straint)
 \T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 A weaker no-tion of in-ter-lock-ing is 
 when shapes only im-per-fectly de-ter-mine each other's po-ten-tial dis-place-m
@@ -3521,7 +3506,7 @@ ents, by
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 \T1/zplTLF/m/n/10 spec-i-fy-ing an al-lowed range. It would be an un-der-state-
 ment to say there is some in-ter-est in study-ing how shapes mu-tu-ally con-str
 ain each other's move-ments
@@ -3529,27 +3514,27 @@ ain each other's move-ments
 
 (./figures/topology/constrained.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 260.
+ine 262.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 266.
+ine 268.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 266.
+ine 268.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 266.
+ine 268.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 266.
+ine 268.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 266.
+ine 268.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 266.
+ine 268.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 266.
+ine 268.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 266.
+ine 268.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 266.
+ine 268.
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 [][]\T1/zplTLF/b/n/10 Construction 1.1.31 \T1/zplTLF/m/n/10 (Mor-ph-ing sticky 
 spi-ders with ho-mo-topies)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 We aim to co
 n-struct ho-mo-topies re-lat-ing (al-most) ar-bi-trary sticky spi-ders. For now
@@ -3557,7 +3542,7 @@ n-struct ho-mo-topies re-lat-ing (al-most) ar-bi-trary sticky spi-ders. For now
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 266--267
+Underfull \hbox (badness 1902) in paragraph at lines 268--269
 \T1/zplTLF/m/n/10 cores $\LS1/stix2/m/it/10 T[]$ \T1/zplTLF/m/n/10 and $\LS1/st
 ix2/m/it/10 T[]$ \T1/zplTLF/m/n/10 such that each $\LS1/stix2/m/it/10 k \LS1/st
 ix2/m/n/10 Ë \LS1/stix2/m/it/10 T[]$ \T1/zplTLF/m/n/10 is ex-press-ible as a ri
@@ -3567,7 +3552,7 @@ balls com-pris-ing $\LS1/stix2/m/it/10 T[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 \T1/zplTLF/m/n/10 and re-con-struct them as $\LS1/stix2/m/it/10 T[]$\T1/zplTLF/
 m/n/10 . As an in-ter-me-di-ate step to elim-i-nate holes and unify con-nected 
 com-po-nents, we gather all of the balls at a meet-ing point $\LS1/stix2/m/it/1
@@ -3583,13 +3568,13 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 46.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 267.
+ine 269.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 268.
+ine 270.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 268.
+ine 270.
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--269
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
 \T1/zplTLF/m/n/10 Second, in or-der to per-form the slid-ing of open balls, we 
 ob-serve that, given a base-point to act as ori-gin (which we as-sume is pro-vi
 ded by the data of the split
@@ -3620,35 +3605,35 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 16.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 269.
+ine 271.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 274.
+ine 276.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 274.
+ine 276.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 274.
+ine 276.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 274.
+ine 276.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 274.
+ine 276.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 274.
+ine 276.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 274.
+ine 276.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 274.
+ine 276.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 274.
+ine 276.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 274.
+ine 276.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 274.
+ine 276.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 274.
+ine 276.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 274.
+ine 276.
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 []\T1/zplTLF/m/n/10 Third, be-fore we be-gin slid-ing the open balls, we must e
 n-sure that the halo of the shape co-op-er-ates. We ob-serve that a given shape
  $\LS1/stix2/m/it/10 i$ \T1/zplTLF/m/n/10 in a sticky spi-der may be
@@ -3671,39 +3656,39 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 26.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 275.
+ine 277.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 276.
+ine 278.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 276.
+ine 278.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 276.
+ine 278.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 276.
+ine 278.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 276.
+ine 278.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 276.
+ine 278.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 276.
+ine 278.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 276.
+ine 278.
 
 
 LaTeX Warning: Reference `prop:core-core-exclusion, prop:core-halo-exclusion' o
-n page 10 undefined on input line 276.
+n page 10 undefined on input line 278.
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 276.
+ine 278.
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
 \T1/zplTLF/m/n/10 By def-i-ni-tion of sticky spi-ders, there must ex-ist some p
 oint $\LS1/stix2/m/it/10 m$ \T1/zplTLF/m/n/10 that is in both the core and the 
 halo: we pick such a point as the ren-dezvous for the open balls.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
 \T1/zplTLF/m/n/10 For each par-tial map in the fam-ily, we pro-vide a ho-mo-top
 y that varies only the im-age point $\LS1/stix2/m/it/10 x$ \T1/zplTLF/m/n/10 co
 n-tin-u-ously in the space to fin-ish at $\LS1/stix2/m/it/10 m$\T1/zplTLF/m/n/1
@@ -3711,7 +3696,7 @@ n-tin-u-ously in the space to fin-ish at $\LS1/stix2/m/it/10 m$\T1/zplTLF/m/n/1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
 \LS1/stix2/m/it/10 T[]$ \T1/zplTLF/m/n/10 and $\LS1/stix2/m/it/10 T[]$ \T1/zplT
 LF/m/n/10 to fin-ish at the same open ball, re-vers-ing the pro-cess for $\LS1/
 stix2/m/it/10 T[]$ \T1/zplTLF/m/n/10 and com-pos-ing se-quen-tially to ob-tain 
@@ -3719,28 +3704,28 @@ a fin-ished trans-for-ma-tion. The fi-nal wrin-kle to ad-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
 \T1/zplTLF/m/n/10 dress is when deal-ing with mul-ti-ple shapes. Re-call-ing ou
 r ex-clu-sion con-di-tions (Propo-si-tions []) for shapes, it may be that parts
  of one shape are en-closed in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
 \T1/zplTLF/m/n/10 an-other, so the pro-cesses must be co-or-di-nated so that th
 ere are no over-laps. For ex-am-ple, the en-clos-ing shape must be first opened
 , so that the en-closed shape
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
 \T1/zplTLF/m/n/10 may leave. I will keep it an ar-ti-cle of faith that such co-
 or-di-na-tions ex-ist. I strug-gle to come up with a proof that all sticky spi-
 ders $\LS1/stix2/b/n/10 R[]$ \T1/zplTLF/m/n/10 are mu-tu-ally trans-formable
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--277
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
 \T1/zplTLF/m/n/10 by ho-mo-topy in this (or any other) way, so that will re-mai
 n a con-jec-ture. But it is clear that a great deal of spi-ders are mu-tu-ally 
 trans-formable; al-most cer-tainly
@@ -3819,17 +3804,12 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 57.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 31.
+ine 30.
  (./figures/topology/oxfordex.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 34.
+ine 39.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 43.
-(./figures/topology/collisionparticular.tikz
+[36] (./figures/topology/collisionparticular.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 86.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3840,46 +3820,41 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 105.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 46.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+ine 50.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 57.
 
 (./figures/topology/collideinterior.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 15.
+ine 20.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 26.
+ine 31.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 44.
+ine 49.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 53.
+ine 58.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 66.
+ine 71.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 85.
+ine 90.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 103.
+ine 108.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 104.
+ine 109.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 112.
+ine 113.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 131.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 143.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 55.
+ine 60.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 59.
+ine 64.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 59.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./figures/topology/collisionex.tikz
+ine 64.
+ (./figures/topology/collisionex.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 65.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3892,45 +3867,68 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 131.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 62.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./figures/topology/seqparhom.tikz
+ine 67.
+ (./figures/topology/seqparhom.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 27.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 67.
+ine 72.
  (./figures/topology/inopenout.tikz)
-Overfull \hbox (200.169pt too wide) detected at line 74
-[]
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 74.
+ine 79.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/topology/breaklock.tikz)
-Overfull \hbox (57.90529pt too wide) detected at line 79
-[]
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 79.
-
-LaTeX Warning: Reference `' on page 36 undefined on input line 83.
+ine 84.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [36] [37] [38] [39] [40] (./chapters/toprel/4_lassos.tex
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 3.
+[37
 
-(./figures/spatialencoding/jono.tikz
+] [38] (./figures/topology/adverbex1.tikz
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 24.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 32.
+)
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 95.
+
+
+LaTeX Warning: Reference `prop:coclosure' on page 39 undefined on input line 99
+.
+
+(./figures/topology/adverbex2.tikz
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 11.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 12.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 20.
+)
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 102.
+ (./figures/topology/adverbex3.tikz
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 15.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 16.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 24.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 29.
+)
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 109.
+
+[39
+
+] (./figures/spatialencoding/jono.tikz
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 7.5pt on input line 6.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
@@ -3953,27 +3951,22 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 32.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 5.
- [41
+ine 124.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 131.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 131.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 131.
+ [40
 
 ]
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 11.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 13.
+ne 139.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 13.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 13.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 13.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 13.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 16.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 16.
- (./figures/spatialencoding/eval.tikz
+ne 139.
+
+(./figures/spatialencoding/eval.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
@@ -3996,48 +3989,91 @@ LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
 ne 32.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 19.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 24.
+ine 142.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 24.
+ne 148.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 24.
+ne 148.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 24.
- [42]
+ine 148.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 148.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 33.
+ine 148.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 33.
+ine 154.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 154.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
+ne 154.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 34.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 34.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 34.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 36.
- (./figures/spatialencoding/circencodingconstruct.tikz)
-Overfull \hbox (60.90529pt too wide) detected at line 37
-[]
+ine 154.
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+[][]\T1/zplTLF/b/n/10 Construction 1.2.6 \T1/zplTLF/m/n/10 (Sticky spi-ders on 
+the open unit square model the cat-e-gory re-la-tions be-tween count-able sets 
+equipped with a code ob-ject)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 Us-ing the
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+\T1/zplTLF/m/n/10 open unit square with its usual topol-ogy as the code ob-ject
+, there is a sub-cat-e-gory of \T1/zplTLF/b/n/10 Con-tRel \T1/zplTLF/m/n/10 whi
+ch be-haves as the cat-e-gory of count-able sets and re-la-tions
  []
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 37.
+ine 165.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 165.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 166.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 166.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 166.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 168.
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+[]\T1/zplTLF/m/n/10 The proof is by con-struc-tion. We'll as-sume the sticky-sp
+iders to be mere-olo-gies, so that cores and ha-los agree. Then we only have to
+ high-light the copi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+\T1/zplTLF/m/n/10 able open sets. Take some cir-cle and place axis-aligned open
+ squares evenly along them, one for each el-e-ment of $\LS1/stix2/m/it/10 X$\T1
+/zplTLF/m/n/10 . The cen-tres of the open squares lie on the
+ []
+
+(./figures/spatialencoding/circencodingconstruct.tikz)
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 169.
+
 (./figures/spatialencoding/stickymorphismdefn.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 17.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 43.
+ine 177.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 47.
+ine 183.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 47.
+ine 183.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 47.
- [43]
+ine 183.
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+[][]\T1/zplTLF/b/n/10 Proposition 1.2.9 \T1/zplTLF/m/n/10 (Mor-phisms of sticky
+ spi-ders en-code re-la-tions)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 For ar-bi
+-trary split idem-po-tents through $\LS1/stix2/m/it/10 A[]$ \T1/zplTLF/m/n/10 a
+nd $\LS1/stix2/m/it/10 B[]$\T1/zplTLF/m/n/10 , the mor-phisms be-tween the two 
+re-sult-
+ []
+
 (./figures/spatialencoding/arbsetclaim.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 17.
@@ -4070,12 +4106,12 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 76.
 )
-Overfull \hbox (229.70056pt too wide) detected at line 48
+Overfull \hbox (10.61427pt too wide) detected at line 184
 []
  []
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 48.
+ine 184.
 (./figures/spatialencoding/arbset.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 40.
@@ -4095,11 +4131,15 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 41.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 62.
+ine 60.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 63.
+ine 61.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
+ine 66.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 77.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 78.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 79.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4113,11 +4153,11 @@ ine 83.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 84.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 85.
+ine 84.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 86.
+ine 96.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 86.
+ine 97.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 98.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4125,32 +4165,22 @@ ine 99.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 100.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 101.
+ine 108.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 102.
+ine 109.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 110.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 111.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 112.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 113.
+ine 144.
 )
-Overfull \hbox (36.55957pt too wide) detected at line 50
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [44]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 50.
+ine 186.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 54.
+ine 192.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 55.
+ine 193.
 
 (./figures/spatialencoding/directsumconstruct.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4175,9 +4205,15 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 91.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 92.
-) [45]
+)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 56.
+ine 194.
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
+\T1/zplTLF/m/n/10 The im-por-tant bit of tech-nol-ogy is the home-o-mor-phism t
+hat loss-lessly squishes the whole unit square into one half of the unit square
+. The de-com-pres-sions are
+ []
 
 (./figures/spatialencoding/leftrightcompressions.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4198,7 +4234,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 18.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 58.
+ine 196.
 
 (./figures/spatialencoding/leftrightcompressions2.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4215,7 +4251,13 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 14.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 60.
+ine 198.
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
+[]\T1/zplTLF/m/n/10 Now, to put the two halves to-gether and to take them apart
+, we in-tro-duce the fol-low-ing two re-la-tions. In tan-dem with the squish-in
+g and stretch-ing we have
+ []
 
 (./figures/spatialencoding/leftrightcompressions3.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4228,15 +4270,19 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 28.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 62.
+ine 204.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 63.
+ine 205.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 63.
+ine 205.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
+\T1/zplTLF/m/n/10 The fol-low-ing equa-tion tells us that we can take any two r
+ep-re-sen-ta-tions in $\LS1/stix2scr/m/n/10 ½$\T1/zplTLF/m/n/10 , put them into
+ a sin-gle copy of $\LS1/stix2scr/m/n/10 ½$\T1/zplTLF/m/n/10 , and take them ou
+t again. Ba-nach and Tarski
+ []
 
- [46]
 (./figures/spatialencoding/leftrightcompressions4.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
@@ -4250,13 +4296,13 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 11.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 64.
+ine 206.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 65.
+ine 207.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 65.
+ine 207.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 65.
+ine 207.
 
 (./figures/spatialencoding/tensorconstruct.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4278,14 +4324,12 @@ ine 99.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 102.
 )
-Overfull \hbox (37.09764pt too wide) detected at line 68
-[]
- []
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 210.
+ [41] [42] [43] [44] [45]
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 215.
 
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 69.
 (./figures/spatialencoding/boxcompression.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 23.
@@ -4306,19 +4350,14 @@ ine 37.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 38.
 )
-Overfull \hbox (9.26181pt too wide) detected at line 70
+Overfull \hbox (66.1673pt too wide) detected at line 216
 []
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [47]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 70.
+ine 216.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 71.
-
+ine 217.
 (./figures/spatialencoding/obtainboxposition.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 15.
@@ -4335,19 +4374,16 @@ ine 33.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 34.
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 218.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 73.
+ine 219.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 73.
+ine 219.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 73.
+ine 219.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 73.
+ine 219.
 
 (./figures/spatialencoding/tensordetensor.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4385,12 +4421,19 @@ ine 46.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 49.
 )
-Overfull \hbox (96.4712pt too wide) detected at line 74
+Overfull \hbox (96.4712pt too wide) detected at line 220
 []
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46
+
+]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 74.
+ine 220.
+
 (./figures/spatialencoding/tensordetensor2.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
@@ -4442,13 +4485,9 @@ id you specify a point identical to the center of node ``51''? on input line 77
 .
 
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 76.
-
-(./figures/spatialencoding/tensordetensor3.tikz
+ine 222.
+ (./figures/spatialencoding/tensordetensor3.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 4.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4484,12 +4523,15 @@ ine 31.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 31.
 )
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 78.
+ine 224.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 81.
+ine 226.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 82.
+ine 227.
 
 (./figures/spatialencoding/relcomp1.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4536,17 +4578,12 @@ id you specify a point identical to the center of node ``81''? on input line 15
 3.
 
 )
-Overfull \hbox (32.45255pt too wide) detected at line 83
+Overfull \hbox (32.45255pt too wide) detected at line 228
 []
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 83.
-
+ine 228.
 (./figures/spatialencoding/relcomp2.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
@@ -4601,16 +4638,16 @@ ine 135.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 136.
 )
-Overfull \hbox (206.8869pt too wide) detected at line 85
+Overfull \hbox (206.8869pt too wide) detected at line 230
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51]
+ [48]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 85.
+ine 230.
 
 (./figures/spatialencoding/relcomp3.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4680,25 +4717,25 @@ ine 149.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 150.
 )
-Overfull \hbox (157.09459pt too wide) detected at line 87
+Overfull \hbox (157.09459pt too wide) detected at line 232
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52]
+ [49]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 87.
+ine 232.
 )
-(./chap4.bbl [53] [54
-
-]
+(./chap4.bbl [50]
 Chapter 2.
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [55] (./chap4.aux)
+) [51
+
+] (./chap4.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -4706,16 +4743,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `chap4.out' has not changed.
-(rerunfilecheck)             Checksum: EA66C5C969A5FDACF0AE26D76646A9FE;1222.
+(rerunfilecheck)             Checksum: AB2754A50AF22F2B9DCE720171673706;865.
  ) 
 Here is how much of TeX's memory you used:
- 58969 strings out of 478268
- 1307659 string characters out of 5846348
- 2730525 words of memory out of 5000000
- 75797 multiletter control sequences out of 15000+600000
- 656636 words of font info for 251 fonts, out of 8000000 for 9000
+ 59040 strings out of 478268
+ 1309110 string characters out of 5846348
+ 2705581 words of memory out of 5000000
+ 75865 multiletter control sequences out of 15000+600000
+ 657631 words of font info for 256 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,14n,104p,3615b,1161s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,14n,104p,3615b,1185s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/npxsups_T1.enc}{/us
 r/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathtt.enc}{/
 usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm-bold
@@ -4738,10 +4775,10 @@ local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/tex
 live/2022/texmf-dist/fonts/type1/public/newpx/zplbi.pfb></usr/local/texlive/202
 2/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/texmf-d
 ist/fonts/type1/public/newpx/zplri.pfb>
-Output written on chap4.pdf (55 pages, 670978 bytes).
+Output written on chap4.pdf (51 pages, 676498 bytes).
 PDF statistics:
- 486 PDF objects out of 1000 (max. 8388607)
- 371 compressed objects within 4 object streams
- 109 named destinations out of 1000 (max. 500000)
- 3786 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 468 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 3778 words of extra memory for PDF output out of 10000 (max. 10000000)
 
