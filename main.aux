@@ -332,528 +332,270 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {1.27}{\ignorespaces  \begin  {example}[Lifts for cups are not always defined] \end  {example} Starting from the leftmost diagram, in order to let the functor box eat the whole diagram, we need to first choose a lift for the left-sentence wire for the cup. Recalling Figures \ref  {fig:GFOLex2} and \ref  {ex:nonfunctparse}, there are at least two lifts for the sentence-wire in pregroup diagrams, for the case of two or three noun-wires. Everything works smoothly when the lifts on the two sentence wires of a cup match. When if we make the wrong choice and they don't, there is no lift, because there is no such thing as a cup that has two wires on one end and three on the other. Recall from Definition \ref  {defn:discopf} that a unique lift is required for \emph  {every possible} codomain inside the functor box; so we do not have a discrete opfibration, and so we cannot have a cofunctor. }}{79}{section.1.5}\protected@file@percent }
 \newlabel{defn:discopf}{{1.5.2}{79}{Kinda-opfibration}{theorem.1.5.2}{}}
 \tcolorbox@label{7}{80}
+\newlabel{Example:bigexlift}{{1.5.4}{80}{A monoidal kinda-opfibration into pregroup diagrams from a subcategory of bracketed pregroups with spiders}{theorem.1.5.4}{}}
 \tcolorbox@label{8}{81}
 \tcolorbox@label{9}{82}
 \tcolorbox@label{10}{83}
-\@writefile{toc}{\contentsline {section}{\numberline {1.6}Discussion and Limitations}{84}{section.1.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Text circuits for syntax}{89}{chapter.2}\protected@file@percent }
+\tcolorbox@label{11}{84}
+\tcolorbox@label{12}{85}
+\@writefile{toc}{\contentsline {section}{\numberline {1.6}Discussion and Limitations}{86}{section.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Text circuits for syntax}{93}{chapter.2}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:textcircuits}{{2}{89}{Text circuits for syntax}{chapter.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}An introduction to weak n-categories for formal linguists}{90}{section.2.1}\protected@file@percent }
-\newlabel{sec:weakn}{{2.1}{90}{An introduction to weak n-categories for formal linguists}{section.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces The category in question can be visualised as a commutative diagram.}}{91}{subsection.2.1.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces When there are too many generating morphisms, we can instead present the same data as a table of $n$-cells; there is a single 0-cell $\star $, and three non-identity 1-cells corresponding to $\leavevmode {\color  {green}\alpha }, \leavevmode {\color  {orange}\beta }, \leavevmode {\color  {cyan}\gamma }$, each with source and target 0-cells $\star $. Typically identity morphisms can be omitted from tables as they come for free. Observe that composition of identities enforces the behaviour of the empty string, so that for any string $x$, we have $\epsilon \cdot x = x = \epsilon \cdot x$.}}{91}{subsection.2.1.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces For a concrete example, we can depict the string $\leavevmode {\color  {green}\alpha } \cdot \leavevmode {\color  {cyan}\gamma } \cdot \leavevmode {\color  {cyan}\gamma } \cdot \leavevmode {\color  {orange}\beta }$ as a morphism in a commuting diagram.}}{91}{subsection.2.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}String-rewrite systems as 1-object-2-categories}{91}{subsection.2.1.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces The string-diagrammatic view, where $\star $ is treated as a wire and morphisms are treated as boxes or dots is an expression of the same data under the Poincar\'{e} dual.}}{92}{subsection.2.1.1}\protected@file@percent }
-\newlabel{fig:ruleR}{{2.1.1}{92}{String-rewrite systems as 1-object-2-categories}{subsection.2.1.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces We can visualise the rule as a commutative diagram where $\leavevmode {\color  {magenta}R}$ is a 2-cell between the source and target 1-cells. Just as 1-cells are arrows between 0-cell points in a commuting diagram, a 2-cell can also be conceptualised as a directed surface from a 1-cell to another. Taking the Poincar\'{e} dual of this view gives us a string diagram for the 2-cell $\leavevmode {\color  {magenta}R}$.}}{92}{subsection.2.1.1}\protected@file@percent }
-\newlabel{fig:cfgsig}{{2.1.1}{92}{String-rewrite systems as 1-object-2-categories}{subsection.2.1.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces We can describe a context-free grammar with the same combinatorial rewriting data that specifies planar string diagrams as we have been illustrating so far. Here is a context-free grammar for \texttt  {Alice sees Bob quickly run to school}. }}{92}{subsection.2.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Tree Adjoining Grammars}{93}{subsection.2.1.2}\protected@file@percent }
-\newpmemlabel{^_113}{94}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces \begin  {construction}[Leaf-Ansatz of a CFG] Given a signature $\mathfrak  {G}$ for a CFG, we construct a new signature $\mathfrak  {G}'$ which has the same 0- and 1-cells as $\mathfrak  {G}$. Now, referring to the dashed magenta arrows in the schematic below: for each 1-cell wire type $\texttt  {X}$ of $\mathfrak  {G}$, we introduce a \emph  {leaf-ansatz} 2-cell $\texttt  {X}^\downarrow $. For each leaf 2-cell $\texttt  {X}_L$ in $\mathfrak  {G}$, we introduce a renamed copy $\texttt  {X}'_L$ in $\mathfrak  {G}'$. Now refer to the solid magenta: we construct a 3-cell in $\mathfrak  {G}'$ for each 2-cell in $\mathfrak  {G}$, which has the effect of systematically replacing open output wires in $\mathfrak  {G}$ with leaf-ansatzes in $\mathfrak  {G}'$. \end  {construction} \par \begin  {proposition} Leaf-ansatzes of CFGs are precisely TAGs with only initial trees and substitution. \begin  {proof} By construction. Consider a CFG given by 2-categorical signature $\mathfrak  {G}$, with leaf-ansatz signature $\mathfrak  {G}'$. The types $\texttt  {X}$ of $\mathfrak  {G}$ become substitution marked symbols $\texttt  {X}^{\downarrow }$ in $\mathfrak  {G}'$. The trees $\texttt  {X}_i$ in $\mathfrak  {G}$ become initial trees $\texttt  {X}^0$ in $\mathfrak  {G}'$. The 3-cells $\texttt  {X}_s$ of $\mathfrak  {G}'$ are precisely substitution operations corresponding to appending the 2-cells $\texttt  {X}_i$ of $\mathfrak  {G}$. \end  {proof} \end  {proposition} }}{94}{theorem.2.1.1}\protected@file@percent }
-\newlabel{prop:cfgastag1}{{2.7}{94}{Tree Adjoining Grammars}{theorem.2.1.3}{}}
-\newpmemlabel{^_112}{95}
-\newpmemlabel{^_114}{95}
-\newpmemlabel{^_115}{95}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Instead of treating non-terminals as wires and terminals as effects (so that the presence of an open wire available for composition visually indicates non-terminality) the leaf-ansatz construction treats all symbols in a rewrite system as leaves, and the signature bookkeeps the distinction between nonterminals and terminals.}}{95}{theorem.2.1.3}\protected@file@percent }
-\newpmemlabel{^_116}{95}
-\newpmemlabel{^_117}{95}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Adjoining is sprouting subtrees in the middle of branches. One way we might obtain the sentence \texttt  {Bob runs to school} is to start from the simpler sentence \texttt  {Bob runs}, and then refine the verb \texttt  {runs} into \texttt  {runs to school}. This refinement on part of an already completed sentence is not permitted in CFGs, since terminals can no longer be modified. The adjoining operation of TAGs gets around this constraint by permitting rewrites in the middle of trees.}}{95}{theorem.2.1.3}\protected@file@percent }
-\newpmemlabel{^_118}{95}
-\newpmemlabel{^_119}{96}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces  Leaf-ansatz signature of \texttt  {Alice sees Bob quickly run to school} CFG. One aspect of rewrite systems we adapt for now is the distinction between terminal and nonterminal symbols; terminal symbols are those after which no further rewrites are possible. We capture this string-diagrammatically by modelling terminal rewrites as 2-cells with target equal to the 1-cell identity of the 0-cell $\star $, which amounts to graphically terminating a wire. The generators subscripted $L$ (for \emph  {label} or \emph  {leaf}) correspond to terminals of the CFG, and represent a family of generators indexed by a lexicon for the language. The generators subscripted $i$ (for introducing a type) correspond to rewrites of the CFG. }}{96}{theorem.2.1.3}\protected@file@percent }
-\newpmemlabel{^_120}{97}
-\newpmemlabel{^_121}{97}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces TAG signature of \texttt  {Alice sees Bob quickly run to school}. The highlighted 2-cells are auxiliary trees that replace CFG 2-cells for verbs with sentential complement, adverbs, and adpositions. The highlighted 3-cells are the tree adjoining operations of the auxiliary trees. The construction yields as a corollary an alternate proof of Theorem \begin  {color}{red}[Joshi 6.1.1...]... \end  {color}\xspace  \begin  {corollary} For every context-free grammar $\mathfrak  {G}$ there exists a tree-adjoining grammar $\mathfrak  {G}'$ such that $\mathfrak  {G}$ and $\mathfrak  {G}'$ are strongly equivalent -- both formalisms generate the same set of strings (weak equivalence) and the same abstract syntactic structures (in this case, trees) behind the strings (strong equivalence). \begin  {proof} Proposition \ref  {prop:cfgastag1} provides one direction of both equivalences. For the other direction, we have to show that each auxiliary tree (a 2-cell) and its adjoining operation (a 3-cell) in $\mathfrak  {G}'$ corresponds to a single 2-cell tree of some CFG signature $\mathfrak  {G}$, which we demonstrate by construction. The highlighted 3-cells of $\mathfrak  {G}'$ are obtained systematically from the auxiliary 2-cells as follows: the root and foot nodes $\texttt  {X},\texttt  {X}^\star $ indicate which wire-type to take as the identity in the left of the 3-cell, and the right of the 3-cell is obtained by replacing all non-$\texttt  {X}$ open wires $\texttt  {Y}$ with their leaf-ansatzes $\texttt  {Y}^\downarrow $. This establishes a correspondence between any 2-cells of $\mathfrak  {G}$ considered as auxiliary trees in $\mathfrak  {G}'$. \end  {proof} \end  {corollary}}}{97}{theorem.2.1.3}\protected@file@percent }
-\newpmemlabel{^_122}{98}
-\newpmemlabel{^_123}{98}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Reading the central diagram in the main body from left-to-right, we additionally depict the breakdown of the complete derivation in terms of the constitituent 2-cells, and the source and target 1-cells. Evidently, all context-sensitive grammars may be viewed as finitely presented 1-object-2-categories by considering multi-input-multi-output rewrites. More broadly, any string rewriting system is recoverable in the presence of higher dimensional cells. My source for that is that I made a Turing machine in \texttt  {homotopy.io} and executed busy-beaver on it as a homework exercise when Jamie Vicary taught Categorical Quantum Mechanics at Oxford.}}{98}{theorem.2.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Tree adjoining grammars with local constraints}{99}{subsection.2.1.3}\protected@file@percent }
-\newpmemlabel{^_124}{99}
-\newpmemlabel{^_125}{99}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces  Selective and null adjoining diagrammatically: a reproduction of Example 2.5 of [Joshi] which demonstrates the usage of selective and null adjoining. The notation from [Joshi] is presented first, followed by their corresponding representations in an $n$-categorical signature. The initial tree is presented as a 2-cell where the (SA) rules are rewritable nodes, that serve as sources of rewrites in the 3-cell presentations of the auxiliary trees. }}{99}{Item.14}\protected@file@percent }
-\newpmemlabel{^_126}{99}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}Braiding, symmetries, and suspension}{99}{subsection.2.1.4}\protected@file@percent }
-\newpmemlabel{^_127}{100}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.14}{\ignorespaces  Obligatory adjoining diagrammatically: a reproduction of Example 2.11 of [Joshi] which demonstrates the usage of obligatory adjoining, marked orange. The notation from [Joshi] is presented first, followed by their corresponding representations in an $n$-categorical signature. The initial tree is presented as a 2-cell where the (OA) rule is given its own 2-cell, which is the source of rewrites in 3-cell presentations of auxiliary trees. We may capture the obligatory nature of the rewrite by asking that finished derivations contain no instance of the orange 2-cell. }}{100}{Item.14}\protected@file@percent }
-\newpmemlabel{^_128}{100}
-\newpmemlabel{^_129}{100}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.15}{\ignorespaces  In our analogy with string rewrite systems, we might like that the following rewrites are equivalent, while respecting that they are not equal, representing $x,a,b$ as blue, red, and green wires respectively. Such rewrites from the empty string to itself are more generally called \emph  {scalars} in the monoidal setting, viewed 2-categorically. }}{100}{subsection.2.1.4}\protected@file@percent }
-\newpmemlabel{^_130}{100}
-\newpmemlabel{^_132}{100}
-\newpmemlabel{^_131}{101}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.16}{\ignorespaces We may generally represent such scalars as labelled dots. A fact about scalars in a 1-object-2-category called the Eckmann-Hilton argument \begin  {color}{red}CITE \end  {color}\xspace  is that dots may circle around one another, and all of those expressions are equivalent up to homotopy. The mechanism that enables this in our setting is that the empty string is equal to copies of itself, which creates the necessary space for manoeuvering; translating into the $n$-categorical setting, expressions are equivalent up to introducing and contracting identities.}}{101}{subsection.2.1.4}\protected@file@percent }
-\newpmemlabel{^_133}{101}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.17}{\ignorespaces We may view the homotopies that get us from one rewrite to another as 3-cells, which produces a braid in a pair of wires when viewed as a vignette. Up to processive isotopies \begin  {color}{red}CITE \end  {color}\xspace  , which are continuous bijective transformations that don't let wires double back on themselves, we can identify two different braidings that are not continuously deformable to one another in the 3-dimensional space of the vignette. We distinguish the braidings visually by letting wires either go over or under one another.}}{101}{subsection.2.1.4}\protected@file@percent }
-\newpmemlabel{^_134}{101}
-\newpmemlabel{^_135}{102}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.18}{\ignorespaces We can depict these swaps by movements in a cubic volume where each axis corresponds to a direction of composition. Whereas on the plane the dots have two ways to swap places -- clockwise and counterclockwise rotation -- in the volume they have two new ways to swap places -- clockwise and counterclockwise in the new dimension. Shown below are two ways to swap left-to-right sequentially composed dots by clockwise rotations in the forward-backward and up-down directions of composition:}}{102}{subsection.2.1.4}\protected@file@percent }
-\newpmemlabel{^_136}{102}
-\newpmemlabel{^_137}{103}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.19}{\ignorespaces For example, taking our CFG signature from earlier, suspension promotes 1-cells to 3-cells and 2-cells to 4-cells. The resulting signature gives us the same diagrams, now with the added ability to consider diagrams equivalent up to twisting wires, which models a string-rewrite system with free swapping of symbol order.}}{103}{subsection.2.1.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.5}TAGs with links}{103}{subsection.2.1.5}\protected@file@percent }
-\newpmemlabel{^_138}{103}
-\newpmemlabel{^_140}{103}
-\newpmemlabel{^_142}{103}
-\newpmemlabel{^_139}{104}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.20}{\ignorespaces The TAG signature and example derivation are as above. Joshi stresses that adjoining \emph  {preserves} links, and that elementary trees may become \emph  {stretched} in the process of derivation, which are fundamentally topological constraints, akin to the "only (processive) connectivity" matters criterion identifying string diagrams up to isomorphism. Moreover, TAGs evidently have links of two natures: tree edges intended to be planar, and dashed dependency edges intended to freely cross over tree edges. It is easy, but a hack, to ask for planar processive isomorphisms for tree edges and extraplanar behaviour for dependency edges: these are evidently two different kinds of structure glued together, rather than facets of some whole. Weak $n$-categories offer a unified mathematical framework that natively accommodates the desired topological constraints while also granting expressive control over wire-types of differing behaviours. One method to recover TAGs true to the original conception is to stay in a planar 1-object-2-category setting while explicitly including wire-crossing cells for dependency links. The alternative method we opt for in Section \begin  {color}{red}ref \end  {color}\xspace  is to work in a pure "only connectivity matters" setting, recovering the linear ordering of words by generating cells along a chosen wire. I do not know of any conceptual justification for why planarity is so often an implicit constraint in approaches to formal syntax. My best guesses are either that the first port of call for rewrites between 1-dimensional strings of words is a 2-dimensional setting, or it is a limitation of 2-dimensional paper as a medium of thought along with some confusion of map for territory.}}{104}{theorem.2.1.8}\protected@file@percent }
-\newpmemlabel{^_141}{105}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.21}{\ignorespaces With our interpretation of TAGS as weak $n$-categorical signatures, We can recover each step of the example derivation automagically in \texttt  {homotopy.io}; just clicking on where we want rewrites allows the proof assistant to execute a typematching tree adjunction. In the process of interpretation, we introduce a link wire-type (in purple), and include directed link generation and elimination morphisms for the $T$ wire-type (in blue). A necessary step in the process of interpretation (which for us involves taking a Poincar\'{e} dual to interpret nodes as wires) is a typing assignment of the tree-branches connected to terminal nodes, which we have opted to read as sharing a $T$-type for minimality, though we could just as well have introduced a separate label-type wire.}}{105}{theorem.2.1.8}\protected@file@percent }
-\newpmemlabel{^_143}{105}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.22}{\ignorespaces The intended takeaway is that even if you don't buy the necessity or formality of weak $n$-categories, there is always the fallback epistemic underpinning of a formal proof assistant for higher dimensional rewriting theories, which is rather simple to use if I have succeeded in communicating higher-dimensional intuitions in this section. \textbf  {N.B.} In practice when using \texttt  {homotopy.io} for the symmetric monoidal setting, it is simpler to suspend symmetric monoidal signatures to begin at 4-cells rather than 3-cells. The reason for this is that under- and over-braids still exist in the symmetric monoidal setting, and while sequentially composed braids are homotopically equivalent to the pair of identities, they are not uniquely so, thus these homotopies must be input manually. By beginning at 4-cells (or higher, due to the stabilisation hypothesis \begin  {color}{red}CITE \end  {color}\xspace  ), braid-eliminations are unique up to homotopy and can be performed more easily in the proof assistant.}}{105}{theorem.2.1.8}\protected@file@percent }
-\tcolorbox@label{11}{106}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.6}Full TAGs in weak $n$-categories}{106}{subsection.2.1.6}\protected@file@percent }
-\tcolorbox@label{12}{107}
-\newlabel{defn:lex}{{2.2.1}{108}{Lexicon}{theorem.2.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.23}{\ignorespaces \textbf  {How to read the diagrams in this section:} we will be making heavy use of pink and purple bubbles as frames to construct circuits. We will depict the bubbles horizontally, as we are permitted to by compact closure, or by reading diagrams with slightly skewed axes.}}{108}{theorem.2.2.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.24}{\ignorespaces Every derivation starts with a single blank sentence bubble, to which we may append more blank sentences.}}{108}{theorem.2.2.1}\protected@file@percent }
-\newlabel{sec:ncat}{{2.1.6}{108}{Full TAGs in weak $n$-categories}{Item.26}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}A generative grammar for text circuits}{108}{section.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}A circuit-growing grammar}{108}{subsection.2.2.1}\protected@file@percent }
-\newpmemlabel{^_144}{109}
-\newpmemlabel{^_145}{109}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.25}{\ignorespaces In this toy example, obtaining the same rewrite that connects the two yellow nodes with a purple wire using only graph-theoretically-local rewrites could potentially require an infinite family of rules for all possible configurations of pink and cyan nodes that separate the yellow, or would otherwise require disturbing other nodes in the rewrite process. In our setting, strong compact closure homotopies handle navigation between different spatial presentations so that a single rewrite rule suffices: the source and target notated by dotted-black circles. Despite the expressive economy and power of finitely presented signatures, we cannot "computationally cheat" graph isomorphism: formally we must supply the compact-closure homotopies as part of the rewrite, absorbed and hidden here by the $\simeq $ notation.}}{109}{theorem.2.2.1}\protected@file@percent }
-\newlabel{fig:locality}{{2.25}{109}{A circuit-growing grammar}{theorem.2.2.1}{}}
+\newlabel{chapter:textcircuits}{{2}{93}{Text circuits for syntax}{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}An introduction to weak n-categories for formal linguists}{94}{section.2.1}\protected@file@percent }
+\newlabel{sec:weakn}{{2.1}{94}{An introduction to weak n-categories for formal linguists}{section.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces The category in question can be visualised as a commutative diagram.}}{95}{subsection.2.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces When there are too many generating morphisms, we can instead present the same data as a table of $n$-cells; there is a single 0-cell $\star $, and three non-identity 1-cells corresponding to $\leavevmode {\color  {green}\alpha }, \leavevmode {\color  {orange}\beta }, \leavevmode {\color  {cyan}\gamma }$, each with source and target 0-cells $\star $. Typically identity morphisms can be omitted from tables as they come for free. Observe that composition of identities enforces the behaviour of the empty string, so that for any string $x$, we have $\epsilon \cdot x = x = \epsilon \cdot x$.}}{95}{subsection.2.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces For a concrete example, we can depict the string $\leavevmode {\color  {green}\alpha } \cdot \leavevmode {\color  {cyan}\gamma } \cdot \leavevmode {\color  {cyan}\gamma } \cdot \leavevmode {\color  {orange}\beta }$ as a morphism in a commuting diagram.}}{95}{subsection.2.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}String-rewrite systems as 1-object-2-categories}{95}{subsection.2.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces The string-diagrammatic view, where $\star $ is treated as a wire and morphisms are treated as boxes or dots is an expression of the same data under the Poincar\'{e} dual.}}{96}{subsection.2.1.1}\protected@file@percent }
+\newlabel{fig:ruleR}{{2.1.1}{96}{String-rewrite systems as 1-object-2-categories}{subsection.2.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces We can visualise the rule as a commutative diagram where $\leavevmode {\color  {magenta}R}$ is a 2-cell between the source and target 1-cells. Just as 1-cells are arrows between 0-cell points in a commuting diagram, a 2-cell can also be conceptualised as a directed surface from a 1-cell to another. Taking the Poincar\'{e} dual of this view gives us a string diagram for the 2-cell $\leavevmode {\color  {magenta}R}$.}}{96}{subsection.2.1.1}\protected@file@percent }
+\newlabel{fig:cfgsig}{{2.1.1}{96}{String-rewrite systems as 1-object-2-categories}{subsection.2.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces We can describe a context-free grammar with the same combinatorial rewriting data that specifies planar string diagrams as we have been illustrating so far. Here is a context-free grammar for \texttt  {Alice sees Bob quickly run to school}. }}{96}{subsection.2.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Tree Adjoining Grammars}{97}{subsection.2.1.2}\protected@file@percent }
+\newpmemlabel{^_113}{98}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces \begin  {construction}[Leaf-Ansatz of a CFG] Given a signature $\mathfrak  {G}$ for a CFG, we construct a new signature $\mathfrak  {G}'$ which has the same 0- and 1-cells as $\mathfrak  {G}$. Now, referring to the dashed magenta arrows in the schematic below: for each 1-cell wire type $\texttt  {X}$ of $\mathfrak  {G}$, we introduce a \emph  {leaf-ansatz} 2-cell $\texttt  {X}^\downarrow $. For each leaf 2-cell $\texttt  {X}_L$ in $\mathfrak  {G}$, we introduce a renamed copy $\texttt  {X}'_L$ in $\mathfrak  {G}'$. Now refer to the solid magenta: we construct a 3-cell in $\mathfrak  {G}'$ for each 2-cell in $\mathfrak  {G}$, which has the effect of systematically replacing open output wires in $\mathfrak  {G}$ with leaf-ansatzes in $\mathfrak  {G}'$. \end  {construction} \par \begin  {proposition} Leaf-ansatzes of CFGs are precisely TAGs with only initial trees and substitution. \begin  {proof} By construction. Consider a CFG given by 2-categorical signature $\mathfrak  {G}$, with leaf-ansatz signature $\mathfrak  {G}'$. The types $\texttt  {X}$ of $\mathfrak  {G}$ become substitution marked symbols $\texttt  {X}^{\downarrow }$ in $\mathfrak  {G}'$. The trees $\texttt  {X}_i$ in $\mathfrak  {G}$ become initial trees $\texttt  {X}^0$ in $\mathfrak  {G}'$. The 3-cells $\texttt  {X}_s$ of $\mathfrak  {G}'$ are precisely substitution operations corresponding to appending the 2-cells $\texttt  {X}_i$ of $\mathfrak  {G}$. \end  {proof} \end  {proposition} }}{98}{theorem.2.1.1}\protected@file@percent }
+\newlabel{prop:cfgastag1}{{2.7}{98}{Tree Adjoining Grammars}{theorem.2.1.3}{}}
+\newpmemlabel{^_112}{99}
+\newpmemlabel{^_114}{99}
+\newpmemlabel{^_115}{99}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Instead of treating non-terminals as wires and terminals as effects (so that the presence of an open wire available for composition visually indicates non-terminality) the leaf-ansatz construction treats all symbols in a rewrite system as leaves, and the signature bookkeeps the distinction between nonterminals and terminals.}}{99}{theorem.2.1.3}\protected@file@percent }
+\newpmemlabel{^_116}{99}
+\newpmemlabel{^_117}{99}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Adjoining is sprouting subtrees in the middle of branches. One way we might obtain the sentence \texttt  {Bob runs to school} is to start from the simpler sentence \texttt  {Bob runs}, and then refine the verb \texttt  {runs} into \texttt  {runs to school}. This refinement on part of an already completed sentence is not permitted in CFGs, since terminals can no longer be modified. The adjoining operation of TAGs gets around this constraint by permitting rewrites in the middle of trees.}}{99}{theorem.2.1.3}\protected@file@percent }
+\newpmemlabel{^_118}{99}
+\newpmemlabel{^_119}{100}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces  Leaf-ansatz signature of \texttt  {Alice sees Bob quickly run to school} CFG. One aspect of rewrite systems we adapt for now is the distinction between terminal and nonterminal symbols; terminal symbols are those after which no further rewrites are possible. We capture this string-diagrammatically by modelling terminal rewrites as 2-cells with target equal to the 1-cell identity of the 0-cell $\star $, which amounts to graphically terminating a wire. The generators subscripted $L$ (for \emph  {label} or \emph  {leaf}) correspond to terminals of the CFG, and represent a family of generators indexed by a lexicon for the language. The generators subscripted $i$ (for introducing a type) correspond to rewrites of the CFG. }}{100}{theorem.2.1.3}\protected@file@percent }
+\newpmemlabel{^_120}{101}
+\newpmemlabel{^_121}{101}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces TAG signature of \texttt  {Alice sees Bob quickly run to school}. The highlighted 2-cells are auxiliary trees that replace CFG 2-cells for verbs with sentential complement, adverbs, and adpositions. The highlighted 3-cells are the tree adjoining operations of the auxiliary trees. The construction yields as a corollary an alternate proof of Theorem \begin  {color}{red}[Joshi 6.1.1...]... \end  {color}\xspace  \begin  {corollary} For every context-free grammar $\mathfrak  {G}$ there exists a tree-adjoining grammar $\mathfrak  {G}'$ such that $\mathfrak  {G}$ and $\mathfrak  {G}'$ are strongly equivalent -- both formalisms generate the same set of strings (weak equivalence) and the same abstract syntactic structures (in this case, trees) behind the strings (strong equivalence). \begin  {proof} Proposition \ref  {prop:cfgastag1} provides one direction of both equivalences. For the other direction, we have to show that each auxiliary tree (a 2-cell) and its adjoining operation (a 3-cell) in $\mathfrak  {G}'$ corresponds to a single 2-cell tree of some CFG signature $\mathfrak  {G}$, which we demonstrate by construction. The highlighted 3-cells of $\mathfrak  {G}'$ are obtained systematically from the auxiliary 2-cells as follows: the root and foot nodes $\texttt  {X},\texttt  {X}^\star $ indicate which wire-type to take as the identity in the left of the 3-cell, and the right of the 3-cell is obtained by replacing all non-$\texttt  {X}$ open wires $\texttt  {Y}$ with their leaf-ansatzes $\texttt  {Y}^\downarrow $. This establishes a correspondence between any 2-cells of $\mathfrak  {G}$ considered as auxiliary trees in $\mathfrak  {G}'$. \end  {proof} \end  {corollary}}}{101}{theorem.2.1.3}\protected@file@percent }
+\newpmemlabel{^_122}{102}
+\newpmemlabel{^_123}{102}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Reading the central diagram in the main body from left-to-right, we additionally depict the breakdown of the complete derivation in terms of the constitituent 2-cells, and the source and target 1-cells. Evidently, all context-sensitive grammars may be viewed as finitely presented 1-object-2-categories by considering multi-input-multi-output rewrites. More broadly, any string rewriting system is recoverable in the presence of higher dimensional cells. My source for that is that I made a Turing machine in \texttt  {homotopy.io} and executed busy-beaver on it as a homework exercise when Jamie Vicary taught Categorical Quantum Mechanics at Oxford.}}{102}{theorem.2.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Tree adjoining grammars with local constraints}{103}{subsection.2.1.3}\protected@file@percent }
+\newpmemlabel{^_124}{103}
+\newpmemlabel{^_125}{103}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces  Selective and null adjoining diagrammatically: a reproduction of Example 2.5 of [Joshi] which demonstrates the usage of selective and null adjoining. The notation from [Joshi] is presented first, followed by their corresponding representations in an $n$-categorical signature. The initial tree is presented as a 2-cell where the (SA) rules are rewritable nodes, that serve as sources of rewrites in the 3-cell presentations of the auxiliary trees. }}{103}{Item.14}\protected@file@percent }
+\newpmemlabel{^_126}{103}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}Braiding, symmetries, and suspension}{103}{subsection.2.1.4}\protected@file@percent }
+\newpmemlabel{^_127}{104}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.14}{\ignorespaces  Obligatory adjoining diagrammatically: a reproduction of Example 2.11 of [Joshi] which demonstrates the usage of obligatory adjoining, marked orange. The notation from [Joshi] is presented first, followed by their corresponding representations in an $n$-categorical signature. The initial tree is presented as a 2-cell where the (OA) rule is given its own 2-cell, which is the source of rewrites in 3-cell presentations of auxiliary trees. We may capture the obligatory nature of the rewrite by asking that finished derivations contain no instance of the orange 2-cell. }}{104}{Item.14}\protected@file@percent }
+\newpmemlabel{^_128}{104}
+\newpmemlabel{^_129}{104}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.15}{\ignorespaces  In our analogy with string rewrite systems, we might like that the following rewrites are equivalent, while respecting that they are not equal, representing $x,a,b$ as blue, red, and green wires respectively. Such rewrites from the empty string to itself are more generally called \emph  {scalars} in the monoidal setting, viewed 2-categorically. }}{104}{subsection.2.1.4}\protected@file@percent }
+\newpmemlabel{^_130}{104}
+\newpmemlabel{^_132}{104}
+\newpmemlabel{^_131}{105}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.16}{\ignorespaces We may generally represent such scalars as labelled dots. A fact about scalars in a 1-object-2-category called the Eckmann-Hilton argument \begin  {color}{red}CITE \end  {color}\xspace  is that dots may circle around one another, and all of those expressions are equivalent up to homotopy. The mechanism that enables this in our setting is that the empty string is equal to copies of itself, which creates the necessary space for manoeuvering; translating into the $n$-categorical setting, expressions are equivalent up to introducing and contracting identities.}}{105}{subsection.2.1.4}\protected@file@percent }
+\newpmemlabel{^_133}{105}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.17}{\ignorespaces We may view the homotopies that get us from one rewrite to another as 3-cells, which produces a braid in a pair of wires when viewed as a vignette. Up to processive isotopies \begin  {color}{red}CITE \end  {color}\xspace  , which are continuous bijective transformations that don't let wires double back on themselves, we can identify two different braidings that are not continuously deformable to one another in the 3-dimensional space of the vignette. We distinguish the braidings visually by letting wires either go over or under one another.}}{105}{subsection.2.1.4}\protected@file@percent }
+\newpmemlabel{^_134}{105}
+\newpmemlabel{^_135}{106}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.18}{\ignorespaces We can depict these swaps by movements in a cubic volume where each axis corresponds to a direction of composition. Whereas on the plane the dots have two ways to swap places -- clockwise and counterclockwise rotation -- in the volume they have two new ways to swap places -- clockwise and counterclockwise in the new dimension. Shown below are two ways to swap left-to-right sequentially composed dots by clockwise rotations in the forward-backward and up-down directions of composition:}}{106}{subsection.2.1.4}\protected@file@percent }
+\newpmemlabel{^_136}{106}
+\newpmemlabel{^_137}{107}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.19}{\ignorespaces For example, taking our CFG signature from earlier, suspension promotes 1-cells to 3-cells and 2-cells to 4-cells. The resulting signature gives us the same diagrams, now with the added ability to consider diagrams equivalent up to twisting wires, which models a string-rewrite system with free swapping of symbol order.}}{107}{subsection.2.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.5}TAGs with links}{107}{subsection.2.1.5}\protected@file@percent }
+\newpmemlabel{^_138}{107}
+\newpmemlabel{^_140}{107}
+\newpmemlabel{^_142}{107}
+\newpmemlabel{^_139}{108}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.20}{\ignorespaces The TAG signature and example derivation are as above. Joshi stresses that adjoining \emph  {preserves} links, and that elementary trees may become \emph  {stretched} in the process of derivation, which are fundamentally topological constraints, akin to the "only (processive) connectivity" matters criterion identifying string diagrams up to isomorphism. Moreover, TAGs evidently have links of two natures: tree edges intended to be planar, and dashed dependency edges intended to freely cross over tree edges. It is easy, but a hack, to ask for planar processive isomorphisms for tree edges and extraplanar behaviour for dependency edges: these are evidently two different kinds of structure glued together, rather than facets of some whole. Weak $n$-categories offer a unified mathematical framework that natively accommodates the desired topological constraints while also granting expressive control over wire-types of differing behaviours. One method to recover TAGs true to the original conception is to stay in a planar 1-object-2-category setting while explicitly including wire-crossing cells for dependency links. The alternative method we opt for in Section \begin  {color}{red}ref \end  {color}\xspace  is to work in a pure "only connectivity matters" setting, recovering the linear ordering of words by generating cells along a chosen wire. I do not know of any conceptual justification for why planarity is so often an implicit constraint in approaches to formal syntax. My best guesses are either that the first port of call for rewrites between 1-dimensional strings of words is a 2-dimensional setting, or it is a limitation of 2-dimensional paper as a medium of thought along with some confusion of map for territory.}}{108}{theorem.2.1.8}\protected@file@percent }
+\newpmemlabel{^_141}{109}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.21}{\ignorespaces With our interpretation of TAGS as weak $n$-categorical signatures, We can recover each step of the example derivation automagically in \texttt  {homotopy.io}; just clicking on where we want rewrites allows the proof assistant to execute a typematching tree adjunction. In the process of interpretation, we introduce a link wire-type (in purple), and include directed link generation and elimination morphisms for the $T$ wire-type (in blue). A necessary step in the process of interpretation (which for us involves taking a Poincar\'{e} dual to interpret nodes as wires) is a typing assignment of the tree-branches connected to terminal nodes, which we have opted to read as sharing a $T$-type for minimality, though we could just as well have introduced a separate label-type wire.}}{109}{theorem.2.1.8}\protected@file@percent }
+\newpmemlabel{^_143}{109}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.22}{\ignorespaces The intended takeaway is that even if you don't buy the necessity or formality of weak $n$-categories, there is always the fallback epistemic underpinning of a formal proof assistant for higher dimensional rewriting theories, which is rather simple to use if I have succeeded in communicating higher-dimensional intuitions in this section. \textbf  {N.B.} In practice when using \texttt  {homotopy.io} for the symmetric monoidal setting, it is simpler to suspend symmetric monoidal signatures to begin at 4-cells rather than 3-cells. The reason for this is that under- and over-braids still exist in the symmetric monoidal setting, and while sequentially composed braids are homotopically equivalent to the pair of identities, they are not uniquely so, thus these homotopies must be input manually. By beginning at 4-cells (or higher, due to the stabilisation hypothesis \begin  {color}{red}CITE \end  {color}\xspace  ), braid-eliminations are unique up to homotopy and can be performed more easily in the proof assistant.}}{109}{theorem.2.1.8}\protected@file@percent }
 \tcolorbox@label{13}{110}
-\newlabel{rules:simp}{{2.2.2}{110}{Simple sentences}{theorem.2.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.6}Full TAGs in weak $n$-categories}{110}{subsection.2.1.6}\protected@file@percent }
 \tcolorbox@label{14}{111}
-\newlabel{rules:comp}{{2.2.3}{111}{Complex sentences}{theorem.2.2.3}{}}
-\tcolorbox@label{15}{112}
-\newlabel{ex:soberA}{{2.2.4}{112}{\texttt {sober} $\alpha $ \texttt {sees drunk} $\beta $ \texttt {clumsily dance.}}{theorem.2.2.4}{}}
-\tcolorbox@label{16}{113}
-\newlabel{ex:Alaughs}{{2.2.5}{113}{$\alpha $ \texttt {laughs at} $\beta $}{theorem.2.2.5}{}}
-\tcolorbox@label{17}{114}
-\newlabel{rules:coref}{{2.2.6}{114}{Coreferential structure and noun labels}{theorem.2.2.6}{}}
-\tcolorbox@label{18}{115}
-\newlabel{rules:labels}{{2.2.7}{115}{Labelling nouns}{theorem.2.2.7}{}}
-\tcolorbox@label{19}{116}
-\newlabel{ex:corefex1}{{2.2.8}{116}{\texttt {sober Alice sees Bob clumsily dance. She laughs at him.}}{theorem.2.2.8}{}}
-\tcolorbox@label{20}{117}
-\tcolorbox@label{21}{118}
-\newlabel{cons:wirejoin}{{2.2.9}{118}{Text to circuit}{theorem.2.2.9}{}}
-\tcolorbox@label{22}{119}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Text circuit theorem}{120}{subsection.2.2.2}\protected@file@percent }
-\newpmemlabel{^_146}{120}
-\newpmemlabel{^_147}{120}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.26}{\ignorespaces  \begin  {construction}[CSG for simple sentences] \end  {construction} We may gauge the expressivity of simple sentences with the following context-sensitive grammar. }}{120}{subsection.2.2.2}\protected@file@percent }
-\newlabel{dfn:simpCSG}{{2.26}{120}{Text circuit theorem}{theorem.2.2.11}{}}
-\newpmemlabel{^_148}{120}
-\newpmemlabel{^_149}{120}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.27}{\ignorespaces  Adpositions require several helper-generators; we depict for example the beginning of the sequence of derivations that result from appending adpositions to an intransitive verb (the generators are implicit in the derivations): }}{120}{theorem.2.2.11}\protected@file@percent }
-\newpmemlabel{^_150}{120}
-\newpmemlabel{^_151}{120}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.28}{\ignorespaces  \begin  {proposition} Up to labels, the simple-sentence rules yield the same simple sentences as the CSG for simple sentences. \begin  {proof} By graphical correspondence; viewing nodes on the pink surface as 1-cells, each rewrite rule yields a 2-cell. Reading top-down, the dashed-blue helper lines for adpositions indicate \leavevmode {\color  {blue}\texttt  {ADP}}-pass rules. The correspondence is visually evident, but may be expressed as a separate signature. The correspondence \leavevmode {\color  {green}\texttt  {IV}}-intro is depicted, to be read from left-to-right. \end  {proof} \end  {proposition} }}{120}{theorem.2.2.11}\protected@file@percent }
-\newlabel{prop:simpsent}{{2.28}{120}{Text circuit theorem}{theorem.2.2.12}{}}
-\newpmemlabel{^_152}{121}
-\newpmemlabel{^_153}{121}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.29}{\ignorespaces  \begin  {proposition} Up to labels, Rules \ref  {rules:simp} and \ref  {rules:comp} for simple and complex sentence yield the same sentences as the combined CSG of Construction \ref  {dfn:simpCSG} with the depicted additional rules. \begin  {proof} Same correspondence as Proposition \ref  {prop:simpsent}, ignoring the dotted-blue guards. \end  {proof} \end  {proposition} }}{121}{theorem.2.2.12}\protected@file@percent }
-\newlabel{prop:compsent}{{2.29}{121}{Text circuit theorem}{theorem.2.2.13}{}}
-\newpmemlabel{^_154}{121}
-\newpmemlabel{^_155}{121}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.30}{\ignorespaces We choose the convention of connecting from left-to-right and from bottom-to-top, so that we might read circuits as we would text: the components corresponding to words will be arranged left-to-right and top-to-bottom. Connecting nouns across distinct sentences presents no issue, but a complication arises when connecting nouns within the same sentence as with reflexive pronouns e.g. \texttt  {Alice likes herself}.}}{121}{theorem.2.2.13}\protected@file@percent }
-\newpmemlabel{^_156}{121}
-\newpmemlabel{^_157}{121}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.31}{\ignorespaces Reflexive coreference would violate of the processivity condition of string diagrams for symmetric monoidal categories. Not all symmetric monoidal categories possess the appropriate structure to interpret such reflexive pronouns, but there exist interpretative options. From left to right in roughly decreasing stringency, compact closed categories are the most direct solution. More weakly, traced symmetric monoidal categories also suffice. If there are no traces, so long as the noun wire possesses a monoid and comonoid, a convolution works. If all else fails, one can just specify a new gate. We provide a purely syntactic treatment in \begin  {color}{red}CITE \end  {color}\xspace  ; for now we treat them as if they were just verbs of lower arity.}}{121}{theorem.2.2.13}\protected@file@percent }
-\newlabel{fig:reflcomp}{{2.31}{121}{Text circuit theorem}{theorem.2.2.13}{}}
-\newpmemlabel{^_158}{122}
-\newpmemlabel{^_159}{122}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.32}{\ignorespaces  \begin  {term}[Kinds of nouns with respect to coreference] The kinds of nouns are distinguished by their tails. \emph  {Lonely} nouns have no coreferences, their tails connect to nothing. \emph  {Head} nouns have a forward coreference in text; they have two tails, one that connects to nothing and the other to a noun later in text. \emph  {Middle} nouns have a forward and backward coreference; they have two tails, one that connects to a noun in some preceding sentence, and one that connects forward to a noun in a succeeding sentence. \emph  {Foot} nouns only have a backward coreference; they have a single tail connecting to a noun in some preceding sentence. \end  {term} }}{122}{theorem.2.2.13}\protected@file@percent }
-\newlabel{fig:nounkinds}{{2.32}{122}{Text circuit theorem}{theorem.2.2.14}{}}
-\newlabel{defn:finished}{{2.2.15}{122}{Finished text diagram}{theorem.2.2.15}{}}
-\newlabel{prop:linkedlist}{{2.2.17}{122}{}{theorem.2.2.17}{}}
-\newlabel{prop:norefl}{{2.2.18}{122}{}{theorem.2.2.18}{}}
-\newlabel{conv:gaps}{{2.2.22}{123}{Arbitary vs. fixed holes}{theorem.2.2.22}{}}
-\newlabel{conv:reading}{{2.2.24}{123}{Reading text circuits}{theorem.2.2.24}{}}
-\newlabel{prop:text2circ}{{2.2.19}{123}{Finished text diagrams yield unique-up-to-processive-isotopy text circuits}{theorem.2.2.19}{}}
-\newpmemlabel{^_160}{123}
-\newpmemlabel{^_161}{123}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.33}{\ignorespaces  \begin  {convention}[Wire twisting] Wires are labelled by nouns. We consider two circuits the same if their gate-connectivity is the same. In particular, this means that we can eliminate unnecessary twists in wires to obtain diagrammatically simpler representations. \end  {convention} }}{123}{theorem.2.2.20}\protected@file@percent }
-\newlabel{conv:twist}{{2.33}{123}{Text circuit theorem}{theorem.2.2.21}{}}
-\newpmemlabel{^_162}{123}
-\newpmemlabel{^_164}{123}
-\newpmemlabel{^_166}{123}
-\newpmemlabel{^_163}{124}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.34}{\ignorespaces  \begin  {convention}[Sliding] Since only gate-connectivity matters, we consider circuits the same if all that differs is the horizontal positioning of gates composed in parallel. \end  {convention} }}{124}{theorem.2.2.22}\protected@file@percent }
-\newlabel{conv:sliding}{{2.34}{124}{Text circuit theorem}{theorem.2.2.23}{}}
-\newpmemlabel{^_165}{124}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.35}{\ignorespaces  \begin  {convention}[Contentless conjunctions] Conventions \ref  {conv:sliding} and \ref  {conv:reading} require something else to allow them to work at the same time: something to distinguish when the gates are parallel. So we ask for "contentless" conjunctions, such as \texttt  {and}, or \texttt  {while}. In terms of text diagrams, we want rewrites that introduces such contentless conjunctions and witnesses their associativity, like this: \end  {convention} }}{124}{theorem.2.2.24}\protected@file@percent }
-\newlabel{conv:and}{{2.35}{124}{Text circuit theorem}{theorem.2.2.25}{}}
-\newpmemlabel{^_167}{124}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.36}{\ignorespaces  \begin  {convention}[Lonely wires] There's really only a single kind of text circuit we can draw that doesn't obviously correspond to a text diagram, and that's one where gates are missing (left). In process theories, wires are identity processes that do nothing to their inputs. We require a text diagram analogue, and an intransitive "null-verb" in English that seems to work is \texttt  {is}, in the sense of \texttt  {exists}. So to deal with lonely wires in terms of text diagrams, we want a rewrite that introduces such contentless verbs (right). \end  {convention} }}{124}{theorem.2.2.25}\protected@file@percent }
-\newlabel{conv:exists}{{2.36}{124}{Text circuit theorem}{theorem.2.2.26}{}}
-\tcolorbox@label{23}{125}
-\newlabel{cons:circ2text}{{2.2.27}{125}{Circuit to text}{theorem.2.2.27}{}}
-\tcolorbox@label{24}{126}
-\tcolorbox@label{25}{127}
-\tcolorbox@label{26}{128}
+\newlabel{defn:lex}{{2.2.1}{112}{Lexicon}{theorem.2.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.23}{\ignorespaces \textbf  {How to read the diagrams in this section:} we will be making heavy use of pink and purple bubbles as frames to construct circuits. We will depict the bubbles horizontally, as we are permitted to by compact closure, or by reading diagrams with slightly skewed axes.}}{112}{theorem.2.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.24}{\ignorespaces Every derivation starts with a single blank sentence bubble, to which we may append more blank sentences.}}{112}{theorem.2.2.1}\protected@file@percent }
+\newlabel{sec:ncat}{{2.1.6}{112}{Full TAGs in weak $n$-categories}{Item.26}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}A generative grammar for text circuits}{112}{section.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}A circuit-growing grammar}{112}{subsection.2.2.1}\protected@file@percent }
+\newpmemlabel{^_144}{113}
+\newpmemlabel{^_145}{113}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.25}{\ignorespaces In this toy example, obtaining the same rewrite that connects the two yellow nodes with a purple wire using only graph-theoretically-local rewrites could potentially require an infinite family of rules for all possible configurations of pink and cyan nodes that separate the yellow, or would otherwise require disturbing other nodes in the rewrite process. In our setting, strong compact closure homotopies handle navigation between different spatial presentations so that a single rewrite rule suffices: the source and target notated by dotted-black circles. Despite the expressive economy and power of finitely presented signatures, we cannot "computationally cheat" graph isomorphism: formally we must supply the compact-closure homotopies as part of the rewrite, absorbed and hidden here by the $\simeq $ notation.}}{113}{theorem.2.2.1}\protected@file@percent }
+\newlabel{fig:locality}{{2.25}{113}{A circuit-growing grammar}{theorem.2.2.1}{}}
+\tcolorbox@label{15}{114}
+\newlabel{rules:simp}{{2.2.2}{114}{Simple sentences}{theorem.2.2.2}{}}
+\tcolorbox@label{16}{115}
+\newlabel{rules:comp}{{2.2.3}{115}{Complex sentences}{theorem.2.2.3}{}}
+\tcolorbox@label{17}{116}
+\newlabel{ex:soberA}{{2.2.4}{116}{\texttt {sober} $\alpha $ \texttt {sees drunk} $\beta $ \texttt {clumsily dance.}}{theorem.2.2.4}{}}
+\tcolorbox@label{18}{117}
+\newlabel{ex:Alaughs}{{2.2.5}{117}{$\alpha $ \texttt {laughs at} $\beta $}{theorem.2.2.5}{}}
+\tcolorbox@label{19}{118}
+\newlabel{rules:coref}{{2.2.6}{118}{Coreferential structure and noun labels}{theorem.2.2.6}{}}
+\tcolorbox@label{20}{119}
+\newlabel{rules:labels}{{2.2.7}{119}{Labelling nouns}{theorem.2.2.7}{}}
+\tcolorbox@label{21}{120}
+\newlabel{ex:corefex1}{{2.2.8}{120}{\texttt {sober Alice sees Bob clumsily dance. She laughs at him.}}{theorem.2.2.8}{}}
+\tcolorbox@label{22}{121}
+\tcolorbox@label{23}{122}
+\newlabel{cons:wirejoin}{{2.2.9}{122}{Text to circuit}{theorem.2.2.9}{}}
+\tcolorbox@label{24}{123}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Text circuit theorem}{124}{subsection.2.2.2}\protected@file@percent }
+\newpmemlabel{^_146}{124}
+\newpmemlabel{^_147}{124}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.26}{\ignorespaces  \begin  {construction}[CSG for simple sentences] \end  {construction} We may gauge the expressivity of simple sentences with the following context-sensitive grammar. }}{124}{subsection.2.2.2}\protected@file@percent }
+\newlabel{dfn:simpCSG}{{2.26}{124}{Text circuit theorem}{theorem.2.2.11}{}}
+\newpmemlabel{^_148}{124}
+\newpmemlabel{^_149}{124}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.27}{\ignorespaces  Adpositions require several helper-generators; we depict for example the beginning of the sequence of derivations that result from appending adpositions to an intransitive verb (the generators are implicit in the derivations): }}{124}{theorem.2.2.11}\protected@file@percent }
+\newpmemlabel{^_150}{124}
+\newpmemlabel{^_151}{124}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.28}{\ignorespaces  \begin  {proposition} Up to labels, the simple-sentence rules yield the same simple sentences as the CSG for simple sentences. \begin  {proof} By graphical correspondence; viewing nodes on the pink surface as 1-cells, each rewrite rule yields a 2-cell. Reading top-down, the dashed-blue helper lines for adpositions indicate \leavevmode {\color  {blue}\texttt  {ADP}}-pass rules. The correspondence is visually evident, but may be expressed as a separate signature. The correspondence \leavevmode {\color  {green}\texttt  {IV}}-intro is depicted, to be read from left-to-right. \end  {proof} \end  {proposition} }}{124}{theorem.2.2.11}\protected@file@percent }
+\newlabel{prop:simpsent}{{2.28}{124}{Text circuit theorem}{theorem.2.2.12}{}}
+\newpmemlabel{^_152}{125}
+\newpmemlabel{^_153}{125}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.29}{\ignorespaces  \begin  {proposition} Up to labels, Rules \ref  {rules:simp} and \ref  {rules:comp} for simple and complex sentence yield the same sentences as the combined CSG of Construction \ref  {dfn:simpCSG} with the depicted additional rules. \begin  {proof} Same correspondence as Proposition \ref  {prop:simpsent}, ignoring the dotted-blue guards. \end  {proof} \end  {proposition} }}{125}{theorem.2.2.12}\protected@file@percent }
+\newlabel{prop:compsent}{{2.29}{125}{Text circuit theorem}{theorem.2.2.13}{}}
+\newpmemlabel{^_154}{125}
+\newpmemlabel{^_155}{125}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.30}{\ignorespaces We choose the convention of connecting from left-to-right and from bottom-to-top, so that we might read circuits as we would text: the components corresponding to words will be arranged left-to-right and top-to-bottom. Connecting nouns across distinct sentences presents no issue, but a complication arises when connecting nouns within the same sentence as with reflexive pronouns e.g. \texttt  {Alice likes herself}.}}{125}{theorem.2.2.13}\protected@file@percent }
+\newpmemlabel{^_156}{125}
+\newpmemlabel{^_157}{125}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.31}{\ignorespaces Reflexive coreference would violate of the processivity condition of string diagrams for symmetric monoidal categories. Not all symmetric monoidal categories possess the appropriate structure to interpret such reflexive pronouns, but there exist interpretative options. From left to right in roughly decreasing stringency, compact closed categories are the most direct solution. More weakly, traced symmetric monoidal categories also suffice. If there are no traces, so long as the noun wire possesses a monoid and comonoid, a convolution works. If all else fails, one can just specify a new gate. We provide a purely syntactic treatment in \begin  {color}{red}CITE \end  {color}\xspace  ; for now we treat them as if they were just verbs of lower arity.}}{125}{theorem.2.2.13}\protected@file@percent }
+\newlabel{fig:reflcomp}{{2.31}{125}{Text circuit theorem}{theorem.2.2.13}{}}
+\newpmemlabel{^_158}{126}
+\newpmemlabel{^_159}{126}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.32}{\ignorespaces  \begin  {term}[Kinds of nouns with respect to coreference] The kinds of nouns are distinguished by their tails. \emph  {Lonely} nouns have no coreferences, their tails connect to nothing. \emph  {Head} nouns have a forward coreference in text; they have two tails, one that connects to nothing and the other to a noun later in text. \emph  {Middle} nouns have a forward and backward coreference; they have two tails, one that connects to a noun in some preceding sentence, and one that connects forward to a noun in a succeeding sentence. \emph  {Foot} nouns only have a backward coreference; they have a single tail connecting to a noun in some preceding sentence. \end  {term} }}{126}{theorem.2.2.13}\protected@file@percent }
+\newlabel{fig:nounkinds}{{2.32}{126}{Text circuit theorem}{theorem.2.2.14}{}}
+\newlabel{defn:finished}{{2.2.15}{126}{Finished text diagram}{theorem.2.2.15}{}}
+\newlabel{prop:linkedlist}{{2.2.17}{126}{}{theorem.2.2.17}{}}
+\newlabel{prop:norefl}{{2.2.18}{126}{}{theorem.2.2.18}{}}
+\newlabel{conv:gaps}{{2.2.22}{127}{Arbitary vs. fixed holes}{theorem.2.2.22}{}}
+\newlabel{conv:reading}{{2.2.24}{127}{Reading text circuits}{theorem.2.2.24}{}}
+\newlabel{prop:text2circ}{{2.2.19}{127}{Finished text diagrams yield unique-up-to-processive-isotopy text circuits}{theorem.2.2.19}{}}
+\newpmemlabel{^_160}{127}
+\newpmemlabel{^_161}{127}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.33}{\ignorespaces  \begin  {convention}[Wire twisting] Wires are labelled by nouns. We consider two circuits the same if their gate-connectivity is the same. In particular, this means that we can eliminate unnecessary twists in wires to obtain diagrammatically simpler representations. \end  {convention} }}{127}{theorem.2.2.20}\protected@file@percent }
+\newlabel{conv:twist}{{2.33}{127}{Text circuit theorem}{theorem.2.2.21}{}}
+\newpmemlabel{^_162}{127}
+\newpmemlabel{^_164}{127}
+\newpmemlabel{^_166}{127}
+\newpmemlabel{^_163}{128}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.34}{\ignorespaces  \begin  {convention}[Sliding] Since only gate-connectivity matters, we consider circuits the same if all that differs is the horizontal positioning of gates composed in parallel. \end  {convention} }}{128}{theorem.2.2.22}\protected@file@percent }
+\newlabel{conv:sliding}{{2.34}{128}{Text circuit theorem}{theorem.2.2.23}{}}
+\newpmemlabel{^_165}{128}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.35}{\ignorespaces  \begin  {convention}[Contentless conjunctions] Conventions \ref  {conv:sliding} and \ref  {conv:reading} require something else to allow them to work at the same time: something to distinguish when the gates are parallel. So we ask for "contentless" conjunctions, such as \texttt  {and}, or \texttt  {while}. In terms of text diagrams, we want rewrites that introduces such contentless conjunctions and witnesses their associativity, like this: \end  {convention} }}{128}{theorem.2.2.24}\protected@file@percent }
+\newlabel{conv:and}{{2.35}{128}{Text circuit theorem}{theorem.2.2.25}{}}
+\newpmemlabel{^_167}{128}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.36}{\ignorespaces  \begin  {convention}[Lonely wires] There's really only a single kind of text circuit we can draw that doesn't obviously correspond to a text diagram, and that's one where gates are missing (left). In process theories, wires are identity processes that do nothing to their inputs. We require a text diagram analogue, and an intransitive "null-verb" in English that seems to work is \texttt  {is}, in the sense of \texttt  {exists}. So to deal with lonely wires in terms of text diagrams, we want a rewrite that introduces such contentless verbs (right). \end  {convention} }}{128}{theorem.2.2.25}\protected@file@percent }
+\newlabel{conv:exists}{{2.36}{128}{Text circuit theorem}{theorem.2.2.26}{}}
+\tcolorbox@label{25}{129}
+\newlabel{cons:circ2text}{{2.2.27}{129}{Circuit to text}{theorem.2.2.27}{}}
+\tcolorbox@label{26}{130}
+\tcolorbox@label{27}{131}
+\tcolorbox@label{28}{132}
 \citation{wilson_string_2022}
 \citation{merry_reasoning_2014,quick_-logic_2015,zamdzhiev_rewriting_2017}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Text circuits: details and development}{129}{section.2.3}\protected@file@percent }
-\newlabel{sec:circs}{{2.3}{129}{Text circuits: details and development}{section.2.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}How to play}{130}{section.2.4}\protected@file@percent }
-\tcolorbox@label{27}{133}
-\newlabel{rules:relpron}{{2.4.1}{133}{}{theorem.2.4.1}{}}
-\tcolorbox@label{28}{134}
-\newlabel{ex:relpron}{{2.4.2}{134}{Introducing relative pronouns}{theorem.2.4.2}{}}
-\tcolorbox@label{29}{135}
-\newlabel{ex:pass}{{2.4.3}{135}{\textbf {Passive voice}}{theorem.2.4.3}{}}
-\tcolorbox@label{30}{135}
-\newlabel{ex:copula}{{2.4.4}{135}{\textbf {Copulas}}{theorem.2.4.4}{}}
-\tcolorbox@label{31}{136}
-\newlabel{ex:posspron}{{2.4.5}{136}{\textbf {Possessive pronouns}}{theorem.2.4.5}{}}
-\tcolorbox@label{32}{137}
-\newlabel{ex:intensifiers}{{2.4.6}{137}{\textbf {Intensifers}}{theorem.2.4.6}{}}
-\tcolorbox@label{33}{138}
-\newlabel{ex:comparatives}{{2.4.7}{138}{\textbf {Comparatives}}{theorem.2.4.7}{}}
-\tcolorbox@label{34}{139}
-\newlabel{ex:syncat1}{{2.4.8}{139}{\textbf {Syncategorematicity I}}{theorem.2.4.8}{}}
-\tcolorbox@label{35}{140}
-\newlabel{ex:syncat2}{{2.4.9}{140}{\textbf {Syncategorematicity II}}{theorem.2.4.9}{}}
-\tcolorbox@label{36}{140}
-\newlabel{ex:coord}{{2.4.10}{140}{\textbf {Coordination}}{theorem.2.4.10}{}}
-\tcolorbox@label{37}{141}
-\newlabel{ex:det1}{{2.4.11}{141}{\textbf {Determiners I}}{theorem.2.4.11}{}}
-\tcolorbox@label{38}{141}
-\newlabel{ex:det2}{{2.4.12}{141}{\textbf {Determiners II}}{theorem.2.4.12}{}}
-\tcolorbox@label{39}{142}
-\newlabel{ex:det3}{{2.4.13}{142}{\textbf {Determiners III}}{theorem.2.4.13}{}}
-\tcolorbox@label{40}{143}
-\newlabel{ex:quant2}{{2.4.14}{143}{\textbf {Quantifiers I}}{theorem.2.4.14}{}}
-\tcolorbox@label{41}{144}
-\newlabel{ex:quant2}{{2.4.15}{144}{\textbf {Quantifiers II}}{theorem.2.4.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Text circuits: details and development}{133}{section.2.3}\protected@file@percent }
+\newlabel{sec:circs}{{2.3}{133}{Text circuits: details and development}{section.2.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}How to play}{134}{section.2.4}\protected@file@percent }
+\tcolorbox@label{29}{137}
+\newlabel{rules:relpron}{{2.4.1}{137}{}{theorem.2.4.1}{}}
+\tcolorbox@label{30}{138}
+\newlabel{ex:relpron}{{2.4.2}{138}{Introducing relative pronouns}{theorem.2.4.2}{}}
+\tcolorbox@label{31}{139}
+\newlabel{ex:pass}{{2.4.3}{139}{\textbf {Passive voice}}{theorem.2.4.3}{}}
+\tcolorbox@label{32}{139}
+\newlabel{ex:copula}{{2.4.4}{139}{\textbf {Copulas}}{theorem.2.4.4}{}}
+\tcolorbox@label{33}{140}
+\newlabel{ex:posspron}{{2.4.5}{140}{\textbf {Possessive pronouns}}{theorem.2.4.5}{}}
+\tcolorbox@label{34}{141}
+\newlabel{ex:intensifiers}{{2.4.6}{141}{\textbf {Intensifers}}{theorem.2.4.6}{}}
+\tcolorbox@label{35}{142}
+\newlabel{ex:comparatives}{{2.4.7}{142}{\textbf {Comparatives}}{theorem.2.4.7}{}}
+\tcolorbox@label{36}{143}
+\newlabel{ex:syncat1}{{2.4.8}{143}{\textbf {Syncategorematicity I}}{theorem.2.4.8}{}}
+\tcolorbox@label{37}{144}
+\newlabel{ex:syncat2}{{2.4.9}{144}{\textbf {Syncategorematicity II}}{theorem.2.4.9}{}}
+\tcolorbox@label{38}{144}
+\newlabel{ex:coord}{{2.4.10}{144}{\textbf {Coordination}}{theorem.2.4.10}{}}
+\tcolorbox@label{39}{145}
+\newlabel{ex:det1}{{2.4.11}{145}{\textbf {Determiners I}}{theorem.2.4.11}{}}
+\tcolorbox@label{40}{145}
+\newlabel{ex:det2}{{2.4.12}{145}{\textbf {Determiners II}}{theorem.2.4.12}{}}
+\tcolorbox@label{41}{146}
+\newlabel{ex:det3}{{2.4.13}{146}{\textbf {Determiners III}}{theorem.2.4.13}{}}
+\tcolorbox@label{42}{147}
+\newlabel{ex:quant2}{{2.4.14}{147}{\textbf {Quantifiers I}}{theorem.2.4.14}{}}
+\tcolorbox@label{43}{148}
+\newlabel{ex:quant2}{{2.4.15}{148}{\textbf {Quantifiers II}}{theorem.2.4.15}{}}
 \citation{montague1970universal}
 \citation{montague1973proper}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}A modern mathematician's companion to Montague's "Universal Grammar"}{145}{section.2.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}What did Montague consider grammar to be?}{145}{subsection.2.5.1}\protected@file@percent }
-\newlabel{sec:monty}{{2.5.1}{145}{What did Montague consider grammar to be?}{subsection.2.5.1}{}}
-\newlabel{algdata}{{2.5.1}{146}{Generating data of an Algebra}{theorem.2.5.1}{}}
-\newlabel{ids}{{2.5.2}{146}{Identities}{theorem.2.5.2}{}}
-\newlabel{constants}{{2.5.3}{146}{Constants}{theorem.2.5.3}{}}
-\newlabel{comp}{{2.5.4}{146}{Composition}{theorem.2.5.4}{}}
-\newlabel{polyop}{{2.5.5}{147}{Polynomial Operations}{theorem.2.5.5}{}}
-\newlabel{homo}{{2.5.6}{147}{Homomorphism of Algebras}{theorem.2.5.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}On the historical inevitability of text diagrams}{148}{subsection.2.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Continuous relations for semantics}{149}{chapter.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}A modern mathematician's companion to Montague's "Universal Grammar"}{149}{section.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}What did Montague consider grammar to be?}{149}{subsection.2.5.1}\protected@file@percent }
+\newlabel{sec:monty}{{2.5.1}{149}{What did Montague consider grammar to be?}{subsection.2.5.1}{}}
+\newlabel{algdata}{{2.5.1}{150}{Generating data of an Algebra}{theorem.2.5.1}{}}
+\newlabel{ids}{{2.5.2}{150}{Identities}{theorem.2.5.2}{}}
+\newlabel{constants}{{2.5.3}{150}{Constants}{theorem.2.5.3}{}}
+\newlabel{comp}{{2.5.4}{150}{Composition}{theorem.2.5.4}{}}
+\newlabel{polyop}{{2.5.5}{151}{Polynomial Operations}{theorem.2.5.5}{}}
+\newlabel{homo}{{2.5.6}{151}{Homomorphism of Algebras}{theorem.2.5.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}On the historical inevitability of text diagrams}{152}{subsection.2.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Continuous relations for semantics}{153}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:contrel}{{3}{149}{Continuous relations for semantics}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Continuous Relations for iconic semantics}{150}{section.3.1}\protected@file@percent }
-\newpmemlabel{^_168}{150}
-\newpmemlabel{^_169}{150}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Sometimes it is very helpful to illustrate concepts using iconic representations in cartoons. For instance in the \emph  {conduit metaphor} \begin  {color}{red}CITE \end  {color}\xspace  , \texttt  {words} are considered \emph  {containers} for \texttt  {ideas}, and \texttt  {communication} is considered a \emph  {conduit} along which those containers are sent.}}{150}{section.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Continuous Relations by examples}{152}{section.3.2}\protected@file@percent }
-\newlabel{defn:Contrelation}{{3.2.12}{152}{Continuous Relation}{theorem.3.2.12}{}}
-\newlabel{ex:nontop}{{3.2.7}{153}{A noncontinuous relation}{theorem.3.2.7}{}}
-\newlabel{prop:states}{{3.2.9}{153}{}{theorem.3.2.9}{}}
-\newlabel{prop:tests}{{3.2.10}{153}{}{theorem.3.2.10}{}}
-\newlabel{prop:framehom}{{3.2.13}{153}{}{theorem.3.2.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Regions of $\blacksquare $ in the image of the yellow point alone will be coloured yellow, and regions in the image of both yellow and cyan will be coloured green:}}{154}{theorem.3.2.17}\protected@file@percent }
-\newlabel{fig:yellowgreen}{{3.2}{154}{Continuous Relations by examples}{theorem.3.2.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Regions in the image of the cyan point alone cannot be open sets by continuity, so they are either points or lines. Points and lines in cyan must be surrounded by an open region in either yellow or green, or else we violate continuity (open sets in red).}}{154}{theorem.3.2.18}\protected@file@percent }
-\newlabel{fig:cyan}{{3.3}{154}{Continuous Relations by examples}{theorem.3.2.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces A continuous relation $\mathcal  {S} \rightarrow \blacksquare $: "Flower and critter in a sunny field".}}{154}{theorem.3.2.18}\protected@file@percent }
-\newlabel{fig:flower}{{3.4}{154}{Continuous Relations by examples}{theorem.3.2.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces A continuous relation $\blacksquare \rightarrow \mathcal  {S}$: "still math?". Black lines and dots indicate gaps.}}{154}{theorem.3.2.18}\protected@file@percent }
-\newlabel{fig:shitpost}{{3.5}{154}{Continuous Relations by examples}{theorem.3.2.18}{}}
-\newlabel{cor:homspace}{{3.2.14}{154}{}{theorem.3.2.14}{}}
-\newlabel{lem:capideal}{{3.2.17}{154}{Partial functions are a $\cap $-ideal}{theorem.3.2.17}{}}
-\newlabel{lem:edgecomplete}{{3.2.18}{154}{Any single edge can be extended to a continuous partial function}{theorem.3.2.18}{}}
-\newlabel{prop:hombasis}{{3.2.19}{154}{}{theorem.3.2.19}{}}
-\newpmemlabel{^_170}{155}
-\newpmemlabel{^_171}{156}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Hasse diagram of all continuous relations from the Sierpi\'{n}ski space to itself. Each relation is depicted left to right, and inclusion order is bottom-to-top. Relations that form the topological basis are boxed.}}{156}{theorem.3.2.19}\protected@file@percent }
-\newlabel{fig:hassesierpinski}{{3.6}{156}{Continuous Relations by examples}{theorem.3.2.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces  continuous functions $[0,1] \rightarrow \blacksquare $ follow the na\"{i}ve notion of continuity: a line one can draw on paper without lifting the pen off the page. }}{157}{theorem.3.2.19}\protected@file@percent }
-\newlabel{fig:contline}{{3.7}{157}{Continuous Relations by examples}{theorem.3.2.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces  So a continuous partial function is \texttt  {"(countably) many (open-ended) lines, each of which one can draw on paper without lifting the pen off the page."} }}{157}{theorem.3.2.19}\protected@file@percent }
-\newlabel{fig:contline}{{3.8}{157}{Continuous Relations by examples}{theorem.3.2.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces We can control the thickness of the brushstroke, by taking the union of (uncountably) many lines.}}{157}{theorem.3.2.19}\protected@file@percent }
-\newlabel{fig:thickbrush}{{3.9}{157}{Continuous Relations by examples}{theorem.3.2.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Assign the visible spectrum of light to $[0,1]$. Colour open sets according to perceptual addition of light, computing brightness by normalising the measure of the open set.}}{157}{theorem.3.2.19}\protected@file@percent }
-\newlabel{prop:func}{{3.3.1}{158}{}{theorem.3.3.1}{}}
-\newlabel{corr:top2contrel}{{3.3.2}{158}{}{theorem.3.3.2}{}}
-\newlabel{prop:idrel}{{3.3.3}{158}{}{theorem.3.3.3}{}}
-\newlabel{fig:copy}{{3.3}{158}{The category \textbf {ContRel}}{theorem.3.3.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces The \emph  {copy} map $X^\tau \rightarrow X^\tau \times X^\tau $, $\{(x,\begin  {pmatrix} x \\ x \end  {pmatrix}) \ | \ x \in X\}$.}}{158}{theorem.3.3.3}\protected@file@percent }
-\newlabel{prop:copy}{{3.3.4}{158}{}{theorem.3.3.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}The category \textbf  {ContRel}}{158}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Symmetric Monoidal structure}{158}{subsection.3.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces An alternative proof of Proposition \ref  {prop:copy} follows from Proposition \ref  {prop:func}, Corollary \ref  {corr:top2contrel}, and the definition of the product topology as the coarsest topology that satisfies categorical product for the diagram above.}}{159}{theorem.3.3.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces The \emph  {everything} state is the relation $\{((\star ,x) \ | \ x \in X\}$, notated as above. \begin  {proposition} The everything states are continuous relations. \begin  {proof} The preimage of any subset of $X$ -- in particular the opens -- is the whole of the singleton space, which is open. \end  {proof} \end  {proposition} }}{159}{theorem.3.3.4}\protected@file@percent }
-\newlabel{prop:everything}{{3.3.5}{159}{}{theorem.3.3.5}{}}
-\newlabel{fig:everything}{{3.13}{159}{The category \textbf {ContRel}}{theorem.3.3.5}{}}
-\newlabel{fig:delete}{{3.3}{159}{The category \textbf {ContRel}}{theorem.3.3.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces The \emph  {delete} test, $\{((x,\star ) \ | \ x \in X\}$. \begin  {proposition} The delete tests are continuous relations. \begin  {proof} There are only two opens in the singleton space. The preimage of the empty set is the empty set, and the preimage of the singleton is the whole of $X$; both are opens in $X$ by definition. \end  {proof} \end  {proposition} }}{159}{theorem.3.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Rig category structure}{159}{subsection.3.3.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces Copy and delete satisfy the above properties, expressed as diagrammatic equations.}}{160}{theorem.3.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Monoidal (co!)closure}{160}{subsection.3.3.3}\protected@file@percent }
-\newlabel{prop:prodvsclos}{{3.3.17}{160}{}{theorem.3.3.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces Relations that interact with copy and delete are nice, and we notate them with the same black dots as for copy and delete to mark them. States are singletons, or points, when they are copiable. Partial continuous functions are those that commute with copy. Left-total relations are those that commute with delete. Continuous functions are those that satisfy the latter two criteria.}}{161}{theorem.3.3.6}\protected@file@percent }
-\newlabel{prop:fullrel}{{3.3.7}{161}{}{theorem.3.3.7}{}}
-\newlabel{defn:coarsening}{{3.3.19}{161}{Coarsening}{theorem.3.3.19}{}}
-\newlabel{defn:compare}{{3.3.20}{161}{Pseudo-compare}{theorem.3.3.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces  The \textbf  {empty state} $\bullet \rightarrow X^\tau $ and \textbf  {empty test} relate nothing. The \textbf  {empty relation} $X^\tau \rightarrow Y^\sigma $ is the composite of empty tests and states, and relates nothing: as a relation it is $\varnothing \subset X \times Y$. \begin  {proposition} Empty states, tests, and relations are continuous. \begin  {proof} The preimage of any empty relation is the empty set, which is definitionally open. \end  {proof} \end  {proposition} }}{162}{theorem.3.3.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces There are two scalars: the unit, and the zero scalar. Zero scalars are idempotent, which diagrammatically means that a single zero scalar can copy itself.}}{162}{theorem.3.3.8}\protected@file@percent }
-\newlabel{defn:perfectclosure}{{3.3.21}{162}{}{theorem.3.3.21}{}}
-\newlabel{prop:coclosure}{{3.3.22}{162}{\textbf {ContRel} is monoidal coclosed}{theorem.3.3.22}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces There is a zero-morphism for every input-output pair of objects in \textbf  {ContRel}, which is diagrammatically the composition of the empty test and state. Zero scalars turn any relation into a zero relation. Substituting the zero relation into the LHS of the above equation means that zero relations also spawn zero scalars.}}{163}{theorem.3.3.8}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces So, whenever a zero-process appears in a diagram, it spawns zero scalars which infect all other processes, turning them all into zero-processes. The same holds for whenever a zero-scalar appears; it makes copies of itself to infect all other processes.}}{163}{theorem.3.3.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Category-theoretic endnotes}{164}{subsection.3.3.4}\protected@file@percent }
-\newlabel{lem:disccont}{{3.3.23}{164}{Any relation $R$ between discrete topologies is continuous}{theorem.3.3.23}{}}
-\newlabel{lem:idadj}{{3.3.26}{164}{$RL = 1_{\textbf {Rel}}$}{theorem.3.3.26}{}}
-\newlabel{lem:coarse}{{3.3.28}{164}{Coarsening is a continuous relation}{theorem.3.3.28}{}}
-\newlabel{prop:reladj}{{3.3.29}{164}{$L \dashv R$}{theorem.3.3.29}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Populating space with shapes using sticky spiders}{169}{section.3.4}\protected@file@percent }
-\newlabel{sec:stickyspider}{{3.4}{169}{Populating space with shapes using sticky spiders}{section.3.4}{}}
-\newlabel{ex:compnotspider}{{3.4.1}{169}{The copy-compare spiders of $\mathbf {Rel}$ are not always continuous}{theorem.3.4.1}{}}
-\tcolorbox@label{42}{170}
-\newlabel{prop:copydiscrete}{{3.4.3}{170}{}{theorem.3.4.3}{}}
-\tcolorbox@label{43}{171}
-\newlabel{defn:stickyspider}{{3.4.4}{171}{Sticky spiders}{theorem.3.4.4}{}}
-\tcolorbox@label{44}{172}
-\tcolorbox@label{45}{172}
-\newlabel{cons:stickyfromsplit}{{3.4.6}{172}{Sticky spiders from split idempotents}{theorem.3.4.6}{}}
-\tcolorbox@label{46}{173}
-\newlabel{prop:splitmeanssticky}{{3.4.7}{173}{Every idempotent that splits through a discrete topology gives a sticky spider}{theorem.3.4.7}{}}
-\tcolorbox@label{47}{174}
-\tcolorbox@label{48}{175}
-\newlabel{thm:stickygraphical}{{3.4.8}{175}{}{theorem.3.4.8}{}}
-\tcolorbox@label{49}{176}
-\newlabel{prop:counitdelete}{{3.4.9}{176}{comult/copy implies counit/delete}{theorem.3.4.9}{}}
-\tcolorbox@label{50}{177}
-\newlabel{lem:allornothing}{{3.4.10}{177}{All-or-Nothing}{theorem.3.4.10}{}}
-\tcolorbox@label{51}{178}
-\tcolorbox@label{52}{179}
-\newlabel{prop:epointcopy}{{3.4.11}{179}{$e$ of any point is $e$-copiable}{theorem.3.4.11}{}}
-\tcolorbox@label{53}{180}
-\newlabel{prop:copiablebasis}{{3.4.12}{180}{The unit is the union of all $e$-copiables}{theorem.3.4.12}{}}
-\tcolorbox@label{54}{181}
-\newlabel{prop:decompidem}{{3.4.13}{181}{$e$-copiable decomposition of $e$}{theorem.3.4.13}{}}
-\tcolorbox@label{55}{182}
-\newlabel{prop:decompcounit}{{3.4.14}{182}{$e$-copiable decomposition of counit}{theorem.3.4.14}{}}
-\tcolorbox@label{56}{183}
-\newlabel{lem:match}{{3.4.15}{183}{$e$-copiables are orthogonal under multiplication}{theorem.3.4.15}{}}
-\tcolorbox@label{57}{184}
-\tcolorbox@label{58}{185}
-\newlabel{lem:comatch}{{3.4.17}{185}{Co-match}{theorem.3.4.17}{}}
-\tcolorbox@label{59}{185}
-\newlabel{lem:ecopyfixpoint}{{3.4.18}{185}{e-copiables are e-fixpoints}{theorem.3.4.18}{}}
-\tcolorbox@label{60}{186}
-\newlabel{lem:ecopynormal}{{3.4.19}{186}{$e$-copiables are normal}{theorem.3.4.19}{}}
-\tcolorbox@label{61}{186}
-\newlabel{prop:decompmult}{{3.4.20}{186}{$e$-copiable decomposition of multiplication}{theorem.3.4.20}{}}
-\tcolorbox@label{62}{187}
-\newlabel{prop:decompcomult}{{3.4.21}{187}{$e$-copiable decomposition of comultiplication}{theorem.3.4.21}{}}
-\tcolorbox@label{63}{188}
-\tcolorbox@label{64}{189}
-\tcolorbox@label{65}{190}
-\tcolorbox@label{66}{190}
-\newlabel{prop:core-core-exclusion}{{3.4.23}{190}{Core exclusion: Distinct cores cannot overlap}{theorem.3.4.23}{}}
-\tcolorbox@label{67}{190}
-\newlabel{prop:core-halo-exclusion}{{3.4.24}{190}{Core-halo exclusion: Each core only overlaps with its corresponding halo}{theorem.3.4.24}{}}
-\tcolorbox@label{68}{191}
-\tcolorbox@label{69}{192}
-\tcolorbox@label{70}{193}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Topological concepts in flatland via \textbf  {ContRel}}{194}{section.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Shapes and places}{194}{subsection.3.5.1}\protected@file@percent }
-\newlabel{sec:shapes}{{3.5.1}{194}{Shapes and places}{subsection.3.5.1}{}}
-\tcolorbox@label{71}{195}
-\newlabel{ex:chessboard}{{3.5.2}{195}{Where is a piece on a chessboard?}{theorem.3.5.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}The unit interval}{196}{subsection.3.5.2}\protected@file@percent }
-\newlabel{sec:interval}{{3.5.2}{196}{The unit interval}{subsection.3.5.2}{}}
-\newlabel{thm:Friedman}{{3.5.3}{196}{Friedman}{theorem.3.5.3}{}}
-\tcolorbox@label{72}{197}
-\newlabel{defn:lessthan}{{3.5.4}{197}{Less than}{theorem.3.5.4}{}}
-\tcolorbox@label{73}{198}
-\newpmemlabel{^_172}{199}
-\newpmemlabel{^_173}{199}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces  \begin  {defn}[Simple connectivity] \end  {defn} In prose: for any pair of points that are within the open $V$, there exists some continuous function from the unit interval into the space that starts at one of the points and ends at the other.}}{199}{theorem.3.5.5}\protected@file@percent }
-\newlabel{def:simpconn}{{3.21}{199}{The unit interval}{theorem.3.5.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Displacing shapes}{199}{subsection.3.5.3}\protected@file@percent }
-\newlabel{sec:displace}{{3.5.3}{199}{Displacing shapes}{subsection.3.5.3}{}}
-\newpmemlabel{^_174}{199}
-\newpmemlabel{^_176}{199}
-\newpmemlabel{^_178}{199}
-\newpmemlabel{^_180}{199}
-\newpmemlabel{^_182}{199}
-\newpmemlabel{^_175}{200}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.22}{\ignorespaces  \begin  {defn}[Addition] \end  {defn} \par More precisely, we only need an additive monoid structure on the unit interval. We do not care about obtaining precise values from our metric, and we will not need to subtract distances from each other. All we need to know is that the lower endpoint stands in for "zero distance" -- as the unit of the monoid -- and that adding positive distances together will give you a larger positive distance deterministically.}}{200}{subsection.3.5.3}\protected@file@percent }
-\newlabel{def:addition}{{3.22}{200}{Displacing shapes}{theorem.3.5.7}{}}
-\newpmemlabel{^_177}{200}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.23}{\ignorespaces  \begin  {defn}[Metric] \end  {defn} A metric on a space is a continuous map $X \rightarrow \mathbf  {R}^+$ to the positive reals that satisfies these axioms.}}{200}{theorem.3.5.7}\protected@file@percent }
-\newlabel{def:metric}{{3.23}{200}{Displacing shapes}{theorem.3.5.8}{}}
-\newpmemlabel{^_179}{200}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.24}{\ignorespaces \begin  {defn}[Open balls] Once we have metrics, we can define the usual topological notion of open balls. Open balls will come in handy later, and a side-effect which we note but do not explore is that open balls form a basis for any metric space, so in the future whenever we construct spaces that come with natural metrics, we can speak of their topology without any further work. \end  {defn} }}{200}{theorem.3.5.8}\protected@file@percent }
-\newlabel{def:openball}{{3.24}{200}{Displacing shapes}{theorem.3.5.9}{}}
-\newpmemlabel{^_181}{201}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.25}{\ignorespaces \begin  {defn}[Topological groups] \end  {defn} It is no trouble to depict collections of invertible transformations of spaces $X \rightarrow X$. A consequence of invertibility and the requirement that the identity transform is a group element forces all transformations in a topological group to be functions.}}{201}{theorem.3.5.9}\protected@file@percent }
-\newlabel{def:topgrp}{{3.25}{201}{Displacing shapes}{theorem.3.5.10}{}}
-\newpmemlabel{^_183}{201}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.26}{\ignorespaces \begin  {defn}[Isometry] \end  {defn} But recall that the collections of invertible transformations we are really interested in are the \emph  {rigid} ones, the ones that move objects in space without deforming them, i.e. the isometries. Iso-metry means same-distance. A distance preserving transformation is one such that applying the metric pointwise before and after the transformation of a shape gives a fixed value. \begin  {color}{red}RHS should be dotted output! \end  {color}\xspace  }}{201}{theorem.3.5.10}\protected@file@percent }
-\newlabel{def:topological groups}{{3.26}{201}{Displacing shapes}{theorem.3.5.11}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.4}Moving shapes}{202}{subsection.3.5.4}\protected@file@percent }
-\newlabel{sec:moving}{{3.5.4}{202}{Moving shapes}{subsection.3.5.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.5}Rigid motion}{206}{subsection.3.5.5}\protected@file@percent }
-\newlabel{sec:rigidmotion}{{3.5.5}{206}{Rigid motion}{subsection.3.5.5}{}}
-\newpmemlabel{^_184}{206}
-\newpmemlabel{^_186}{206}
-\newpmemlabel{^_188}{206}
-\newpmemlabel{^_190}{206}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.6}Modelling linguistic topological concepts}{206}{subsection.3.5.6}\protected@file@percent }
-\newlabel{sec:topconcept}{{3.5.6}{206}{Modelling linguistic topological concepts}{subsection.3.5.6}{}}
-\newpmemlabel{^_185}{207}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.27}{\ignorespaces  Now at last we can define sliding shapes. What we mean by two sticky spiders being relatable by sliding shapes is that we have a homotopy that begins at one and ends at the other, such that every point in between is itself a sticky spider related to the first by rigid displacement.}}{207}{subsection.3.5.5}\protected@file@percent }
-\newpmemlabel{^_187}{207}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.28}{\ignorespaces  We can depict the \emph  {configuration space} of shapes that are obtainable by displacing the shapes of a given spider by a split idempotent through the n-fold tensor of rigid transformations -- a restriction to the subspace of the largest open set contained in the subset of all valid (with correct chirality) combinations of displacements that yield another spider. Note that as a subspace, the retract of the idempotent is a function. The section and retract pair is not unique; they may for instance encode a choice of basepoint for each shape relative to which the displacement of that shape occurs.}}{207}{subsection.3.5.5}\protected@file@percent }
-\newlabel{fig:configurationspace}{{3.28}{207}{Rigid motion}{subsection.3.5.5}{}}
-\newpmemlabel{^_189}{208}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.29}{\ignorespaces Observe that the data of rigid motion on a sticky spider as we have defined above can be captured as a continuous map from the unit interval to rigid transformations: one for each shape in the spider. This is precisely a continuous path in configuration space.}}{208}{subsection.3.5.5}\protected@file@percent }
-\newpmemlabel{^_191}{209}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.30}{\ignorespaces What are the connected components of configuration space? Evidently, there are pairs of spiders that are both valid displacements, but not mutually reachable by rigid motion. For example, shapes might \emph  {enclose} or \emph  {trap} other shapes, or shapes might be \emph  {interlocked}. Depicted are some pairs of configurations that are mutually unreachable by rigid transformations. Now we have the conceptual toolkit to begin modelling these concepts in the configuration space of a sticky spider.}}{209}{subsection.3.5.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.7}States, actions, manner}{214}{subsection.3.5.7}\protected@file@percent }
-\newlabel{sec:statesactions}{{3.5.7}{214}{States, actions, manner}{subsection.3.5.7}{}}
-\newlabel{cons:morph}{{3.5.13}{219}{Morphing sticky spiders with homotopies}{theorem.3.5.13}{}}
-\newlabel{sec:topconcepts}{{3.5.7}{222}{States, actions, manner}{theorem.3.5.13}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}Interpreting text circuits in \textbf  {ContRel}}{223}{section.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}Sticky spiders: iconic semantics of nouns}{223}{subsection.3.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}Open sets: concepts}{223}{subsection.3.6.2}\protected@file@percent }
-\newpmemlabel{^_192}{223}
-\newpmemlabel{^_193}{223}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.31}{\ignorespaces Points in space are a useful mathematical fiction. Suppose we have a point on a unit interval. Consider how we might tell someone else about where this point is. We could point at it with a pudgy appendage, or the tip of a pencil, or give some finite decimal approximation. But in each case we are only speaking of a vicinity, a neighbourhood, an \emph  {open set in the borel basis of the reals} that contains the point. Identifying a true point on a real line requires an infinite intersection of open balls of decreasing radius; an infinite process of pointing again and again, which nobody has the time to do. In the same way, most language outside of mathematics is only capable of offering successively finer, finite approximations to whatever it is that occurs in the mind or in reality.}}{223}{subsection.3.6.2}\protected@file@percent }
-\newlabel{fig:pointing}{{3.31}{223}{Open sets: concepts}{subsection.3.6.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.3}Configuration spaces: labelled noun wires}{224}{subsection.3.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.4}Copy: stative verbs and adjectives}{224}{subsection.3.6.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.5}Homotopies: dynamic verbs and weak interchange}{225}{subsection.3.6.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.6}Coclosure: adverbs and adpositions}{227}{subsection.3.6.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.7}Turing objects: sentential complementation}{227}{subsection.3.6.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.7}On entification, general anaphora, computers, and lassos.}{228}{section.3.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}What formal linguistics could look like}{241}{chapter.4}\protected@file@percent }
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Formal models from figurative language}{242}{section.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Temperature and colour: the Planckian Locus}{243}{subsection.4.1.1}\protected@file@percent }
-\newlabel{ex:planck1}{{4.1.1}{243}{The Physicists' Planckian Locus}{theorem.4.1.1}{}}
-\newpmemlabel{^_194}{243}
-\newpmemlabel{^_195}{243}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces The Planckian Locus in the CIE 1931 chromaticity diagram. Chromaticity refers only to the hue of a colour, without other domains such as saturation.}}{243}{theorem.4.1.1}\protected@file@percent }
-\newpmemlabel{^_196}{244}
-\newpmemlabel{^_198}{244}
-\newpmemlabel{^_197}{244}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Consider the unit square (depicted as a strip) as a fiber bundle over the unit interval representing temperature range. There is an injective continuous map from the strip into colourspace that is centered on the Planck Locus.}}{244}{theorem.4.1.2}\protected@file@percent }
-\newpmemlabel{^_199}{244}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces The left leg is bijective in the image restriction, so any point or displacement in the offset-strip in colourspace can be lifted to a point in the apex strip, which is then projected down along with other points in the vertical fiber to a point in temperaturespace. So we have a decategorified cofunctor!}}{244}{theorem.4.1.2}\protected@file@percent }
-\newpmemlabel{^_200}{245}
-\newpmemlabel{^_202}{245}
-\newpmemlabel{^_201}{245}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Starting from the right, the lifting property of the right leg is what lets us map "hotter and colder" temperature talk into the more abstract quantity-talk of "more and less" in the apex strip. Then the left functor sends quantity-talk into the colour domain, which allows "hotter and colder" to be used in the colour domain.}}{245}{theorem.4.1.3}\protected@file@percent }
-\newpmemlabel{^_203}{245}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces The additional expressive power that the apex strip gives is the concept of vertical offset, which doesn't appear in the real line. So the apex strip allows talk of quantity and offset, and this offset, when translated into the colour domain, allows talk of offset towards and away from, for instance, green.}}{245}{theorem.4.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Time and Money: complex conceptual structure}{246}{subsection.4.1.2}\protected@file@percent }
-\newpmemlabel{^_204}{247}
-\newpmemlabel{^_206}{247}
-\newpmemlabel{^_208}{247}
-\newpmemlabel{^_210}{247}
-\newpmemlabel{^_212}{247}
-\newpmemlabel{^_214}{247}
-\newpmemlabel{^_216}{247}
-\newpmemlabel{^_205}{247}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces In the \texttt  {TRADE} signature, we define two roles as wires: \texttt  {TRADERS} and \texttt  {TRADEABLES}. There is one static relation \texttt  {HAS} to indicate a trader's ownership of a tradeable, which can be further elaborated with equations to indicate e.g. exclusivity of ownership by interpreting violations of exclusivity as a zero morphism, assumed but elided for brevity. There is one dynamic verb (treated as a homotopy) \texttt  {TRADE}, which at time 0 enforces a precondition that the traders have their respective tradables, and at time 1 (completion of the trade), the traders swap possession of their tradeables. The \texttt  {TRADE} signature contains all nominal instantiations of nouns with respect to roles, which will be illustrated shortly.}}{247}{theorem.4.1.4}\protected@file@percent }
-\newlabel{fig:tradesig}{{4.6}{247}{\texttt {Vincent spends his morning writing}}{theorem.4.1.4}{}}
-\newpmemlabel{^_207}{248}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces We build the topological model from two sticky spiders in the Euclidean plane. The \texttt  {TRADER} spider will distinguish two regions of possession, so that \texttt  {HAS} may be interpreted as a region-test. The \texttt  {TRADEABLES} spider will specify four meeples or counters, three for time, and one for thesiswriting; we will use the configuration space of the \texttt  {TRADEABLES} spider to regulate their movement and distribution.}}{248}{theorem.4.1.4}\protected@file@percent }
-\newlabel{fig:topmodel}{{4.7}{248}{\texttt {Vincent spends his morning writing}}{theorem.4.1.4}{}}
-\newpmemlabel{^_209}{248}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces -10cm}}{248}{theorem.4.1.4}\protected@file@percent }
-\newlabel{fig:fibroles}{{4.8}{248}{\texttt {Vincent spends his morning writing}}{theorem.4.1.4}{}}
-\newpmemlabel{^_211}{249}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces The section of the fibration over the \texttt  {SPEND} verb is a tabulation of all the ways in which conceptual roles in the \texttt  {TRADING} domain can be assigned. To continue the example, we will assume the first lift in Example \ref  {fig:fibroles} as our interpretation. The identity-on-objects functor part of the cofunctor maps our chosen interpretation into the following diagram in \textbf  {ContRel}. Precise details of the monoidal structure of a process theory acting upon implicit substrates may be found in \begin  {color}{red}CITE \end  {color}\xspace  . Recalling \begin  {color}{red}REF \end  {color}\xspace  , the configuration space of the \texttt  {TRADEABLES} spider is expanded via split idempotent so that all thin wires in the diagram are typed as the Euclidean plane. Recalling Example \begin  {color}{red}REF \end  {color}\xspace  , \texttt  {HAS} is interpreted as the intersection of the position of a counter with the possessive region of the respective trader.}}{249}{theorem.4.1.4}\protected@file@percent }
-\newlabel{fig:interpret}{{4.9}{249}{\texttt {Vincent spends his morning writing}}{theorem.4.1.4}{}}
-\newpmemlabel{^_213}{249}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces We may verify that the equations governing \texttt  {TRADE} cohere with our topological figures. At time 0, before the trade, we can calculate that the permissible figures have \texttt  {Vincent} in possession of \texttt  {A.M} and \texttt  {writing} in possession of \texttt  {thesis}.}}{249}{theorem.4.1.4}\protected@file@percent }
-\newlabel{fig:time0}{{4.10}{249}{\texttt {Vincent spends his morning writing}}{theorem.4.1.4}{}}
-\newpmemlabel{^_215}{250}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces At time 1, we may calculate that the permissible figures must be such that \texttt  {Vincent} is in possession of \texttt  {thesis} and \texttt  {writing} is in possession of what was previously my morning.}}{250}{theorem.4.1.4}\protected@file@percent }
-\newlabel{fig:time1}{{4.11}{250}{\texttt {Vincent spends his morning writing}}{theorem.4.1.4}{}}
-\newpmemlabel{^_217}{250}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces In a more detailed conceptual model of \texttt  {TIME is MONEY}, rather than just \texttt  {TRADE}, we might consider income, the spender's agency, and cost. In Euclidean 3-space, we might model income as a clock-gated mechanism that deposits time-tokens serially into Vincent's possession, along with his agency as a gated chute, and the time cost of writing a thesis as a dispenser that requires a certain number of tokens to release a thesis-token into Vincent's possession. In this sketch model, one obtains short films for \texttt  {He used to waste his mornings but now he spends them writing}, or \texttt  {He once spent an evening writing but made no progress}. One can then ascertain certain consequences truth-theoretically; for instance that there is at least one morning that was not spent on writing, or that there is at least one evening spent on writing but not inside the slot that would help a thesis-release mechanism trigger. In every case, cofunctoriality handles bookkeeping for role-interpretation choices and guarantees systematicity of the topological figure according to the signature at the apex model that models the organising concept.}}{250}{theorem.4.1.4}\protected@file@percent }
-\newlabel{fig:fullermodel}{{4.12}{250}{\texttt {Vincent spends his morning writing}}{theorem.4.1.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}The logical conclusions}{251}{section.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}How things could be.}{252}{subsection.4.2.1}\protected@file@percent }
-\bibstyle{alpha}
-\bibdata{thesis_intro}
-\newlabel{sec:metaphor}{{4.2.1}{258}{How things could be}{theorem.4.2.5}{}}
-\bibcite{bastian_google_2022}{{Bas22}{}{{}}{{}}}
-\bibcite{bronstein_geometric_2021}{{BBCV21}{}{{}}{{}}}
-\bibcite{bender_climbing_2020}{{BK20}{}{{}}{{}}}
-\bibcite{baez_open_2020}{{BM20}{}{{}}{{}}}
-\bibcite{bonchi_graphical_2019}{{BPSZ19}{}{{}}{{}}}
-\bibcite{boisseau_string_2022}{{BS22}{}{{}}{{}}}
-\bibcite{bonchi_categorical_2014}{{BSZ14}{}{{}}{{}}}
-\bibcite{bonchi_interacting_2017}{{BSZ17}{}{{}}{{}}}
-\bibcite{coecke_interacting_2011}{{CD11}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Bibliography}{259}{chapter.5}\protected@file@percent }
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\bibcite{chen_xgboost_2016}{{CG16}{}{{}}{{}}}
-\bibcite{cruttwell_categorical_2022}{{CGG{$^{+}$}22}{}{{}}{{}}}
-\bibcite{chapman_david_nebulosity_2010}{{{Cha}10}{}{{}}{{}}}
-\bibcite{chomsky_new_2000}{{Cho00}{}{{}}{{}}}
-\bibcite{church_pendulum_2011}{{Chu11}{}{{}}{{}}}
-\bibcite{coecke_picturing_2017}{{CK17}{}{{}}{{}}}
-\bibcite{chowdhery_palm_2022}{{CND{$^{+}$}22}{}{{}}{{}}}
-\bibcite{coecke_compositionality_2021}{{Coe21}{}{{}}{{}}}
-\bibcite{coecke_mathematical_2010}{{CSC10}{}{{}}{{}}}
-\bibcite{davidad_open_nodate}{{dav}{}{{}}{{}}}
-\bibcite{dziri_faith_2023}{{DLS{$^{+}$}23}{}{{}}{{}}}
-\bibcite{fritz_finettis_2021}{{FGP21}{}{{}}{{}}}
-\bibcite{floridi_fourth_2014}{{Flo14}{}{{}}{{}}}
-\bibcite{fodor_connectionism_1988}{{FP88}{}{{}}{{}}}
-\bibcite{frege_gottlob_selbst_1884}{{{Fre}84}{}{{}}{{}}}
-\bibcite{fong_invitation_2019}{{FS19}{}{{}}{{}}}
-\bibcite{goodfellow_generative_2014}{{GPAM{$^{+}$}14}{}{{}}{{}}}
-\bibcite{gardenfors_geometry_2014}{{Gä14}{}{{}}{{}}}
-\bibcite{hendrycks_measuring_2021}{{HBK{$^{+}$}21}{}{{}}{{}}}
-\bibcite{hedges_string_2015}{{Hed15}{}{{}}{{}}}
-\bibcite{herculano-houzel_remarkable_2012}{{HH12}{}{{}}{{}}}
-\bibcite{heim_semantics_1998}{{HK98}{}{{}}{{}}}
-\bibcite{hochreiter_long_1997}{{HS97}{}{{}}{{}}}
-\bibcite{haydon_compositional_2020}{{HS20}{}{{}}{{}}}
-\bibcite{jacobs_causal_2019}{{JKZ19}{}{{}}{{}}}
-\bibcite{joyal_geometry_1991}{{JS91}{}{{}}{{}}}
-\bibcite{kanerva_computing_2019}{{Kan19}{}{{}}{{}}}
-\bibcite{khan_what_2023}{{Kha23}{}{{}}{{}}}
-\bibcite{kriegeskorte_grid_2016}{{KS16}{}{{}}{{}}}
-\bibcite{koralus_humans_2023}{{KWM23}{}{{}}{{}}}
-\bibcite{lane_categories_2010}{{Lan10}{}{{}}{{}}}
-\bibcite{lietard_language_2021}{{LAS21}{}{{}}{{}}}
-\bibcite{lecun_deep_2015}{{LBH15}{}{{}}{{}}}
-\bibcite{liu_seeing_2023}{{LGT23}{}{{}}{{}}}
-\bibcite{lorenz_causal_2023}{{LT23}{}{{}}{{}}}
-\bibcite{maclane_natural_1963}{{Mac63}{}{{}}{{}}}
-\bibcite{marr_artificial_1977}{{Mar77}{}{{}}{{}}}
-\bibcite{mcshane_linguistics_2021}{{MN21}{}{{}}{{}}}
-\bibcite{mollica_humans_2019}{{MP19}{}{{}}{{}}}
-\bibcite{narang_pathways_2022}{{NC22}{}{{}}{{}}}
-\bibcite{noauthor_riley_2022}{{noa22}{}{{}}{{}}}
-\bibcite{openai_chatgpt_2022}{{{Ope}22}{}{{}}{{}}}
-\bibcite{poor_completeness_2023}{{PWS{$^{+}$}23}{}{{}}{{}}}
-\bibcite{rumelhart_learning_1987}{{RM87}{}{{}}{{}}}
-\bibcite{searle_minds_1980}{{Sea80}{}{{}}{{}}}
-\bibcite{selinger_survey_2010}{{Sel10}{}{{}}{{}}}
-\bibcite{sobocinski_graphical_2015}{{Sob15}{}{{}}{{}}}
-\bibcite{sutton_bitter_2019}{{Sut19}{}{{}}{{}}}
-\bibcite{sogaard_grounding_2023}{{Sø23}{}{{}}{{}}}
-\bibcite{teddy_teddynpc_i_2022}{{{ted}22}{}{{}}{{}}}
-\bibcite{taori_rohan_stanford_2023}{{TGZ{$^{+}$}23}{}{{}}{{}}}
-\bibcite{thompson_gpt-35_2022}{{Tho22}{}{{}}{{}}}
-\bibcite{tom_goldstein_tomgoldsteincs_training_2022}{{{Tom}22}{}{{}}{{}}}
-\bibcite{vaswani_attention_2017}{{VSP{$^{+}$}17}{}{{}}{{}}}
-\bibcite{wolfram_new_2002}{{Wol02}{}{{}}{{}}}
-\bibcite{wei_chain--thought_2023-1}{{WWS{$^{+}$}23}{}{{}}{{}}}
-\bibcite{yeung_ccg-based_2021}{{YK21}{}{{}}{{}}}
-\providecommand\NAT@force@numbers{}\NAT@force@numbers
-\ttl@finishall
-\gdef \@abspage@last{264}
+\newlabel{chapter:contrel}{{3}{153}{Continuous relations for semantics}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Continuous Relations for iconic semantics}{154}{section.3.1}\protected@file@percent }
+\newpmemlabel{^_168}{154}
+\newpmemlabel{^_169}{154}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Sometimes it is very helpful to illustrate concepts using iconic representations in cartoons. For instance in the \emph  {conduit metaphor} \begin  {color}{red}CITE \end  {color}\xspace  , \texttt  {words} are considered \emph  {containers} for \texttt  {ideas}, and \texttt  {communication} is considered a \emph  {conduit} along which those containers are sent.}}{154}{section.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Continuous Relations by examples}{156}{section.3.2}\protected@file@percent }
+\newlabel{defn:Contrelation}{{3.2.12}{156}{Continuous Relation}{theorem.3.2.12}{}}
+\newlabel{ex:nontop}{{3.2.7}{157}{A noncontinuous relation}{theorem.3.2.7}{}}
+\newlabel{prop:states}{{3.2.9}{157}{}{theorem.3.2.9}{}}
+\newlabel{prop:tests}{{3.2.10}{157}{}{theorem.3.2.10}{}}
+\newlabel{prop:framehom}{{3.2.13}{157}{}{theorem.3.2.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Regions of $\blacksquare $ in the image of the yellow point alone will be coloured yellow, and regions in the image of both yellow and cyan will be coloured green:}}{158}{theorem.3.2.17}\protected@file@percent }
+\newlabel{fig:yellowgreen}{{3.2}{158}{Continuous Relations by examples}{theorem.3.2.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Regions in the image of the cyan point alone cannot be open sets by continuity, so they are either points or lines. Points and lines in cyan must be surrounded by an open region in either yellow or green, or else we violate continuity (open sets in red).}}{158}{theorem.3.2.18}\protected@file@percent }
+\newlabel{fig:cyan}{{3.3}{158}{Continuous Relations by examples}{theorem.3.2.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces A continuous relation $\mathcal  {S} \rightarrow \blacksquare $: "Flower and critter in a sunny field".}}{158}{theorem.3.2.18}\protected@file@percent }
+\newlabel{fig:flower}{{3.4}{158}{Continuous Relations by examples}{theorem.3.2.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces A continuous relation $\blacksquare \rightarrow \mathcal  {S}$: "still math?". Black lines and dots indicate gaps.}}{158}{theorem.3.2.18}\protected@file@percent }
+\newlabel{fig:shitpost}{{3.5}{158}{Continuous Relations by examples}{theorem.3.2.18}{}}
+\newlabel{cor:homspace}{{3.2.14}{158}{}{theorem.3.2.14}{}}
+\newlabel{lem:capideal}{{3.2.17}{158}{Partial functions are a $\cap $-ideal}{theorem.3.2.17}{}}
+\newlabel{lem:edgecomplete}{{3.2.18}{158}{Any single edge can be extended to a continuous partial function}{theorem.3.2.18}{}}
+\newlabel{prop:hombasis}{{3.2.19}{158}{}{theorem.3.2.19}{}}
+\newpmemlabel{^_170}{159}
+\newpmemlabel{^_171}{160}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Hasse diagram of all continuous relations from the Sierpi\'{n}ski space to itself. Each relation is depicted left to right, and inclusion order is bottom-to-top. Relations that form the topological basis are boxed.}}{160}{theorem.3.2.19}\protected@file@percent }
+\newlabel{fig:hassesierpinski}{{3.6}{160}{Continuous Relations by examples}{theorem.3.2.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces  continuous functions $[0,1] \rightarrow \blacksquare $ follow the na\"{i}ve notion of continuity: a line one can draw on paper without lifting the pen off the page. }}{161}{theorem.3.2.19}\protected@file@percent }
+\newlabel{fig:contline}{{3.7}{161}{Continuous Relations by examples}{theorem.3.2.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces  So a continuous partial function is \texttt  {"(countably) many (open-ended) lines, each of which one can draw on paper without lifting the pen off the page."} }}{161}{theorem.3.2.19}\protected@file@percent }
+\newlabel{fig:contline}{{3.8}{161}{Continuous Relations by examples}{theorem.3.2.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces We can control the thickness of the brushstroke, by taking the union of (uncountably) many lines.}}{161}{theorem.3.2.19}\protected@file@percent }
+\newlabel{fig:thickbrush}{{3.9}{161}{Continuous Relations by examples}{theorem.3.2.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Assign the visible spectrum of light to $[0,1]$. Colour open sets according to perceptual addition of light, computing brightness by normalising the measure of the open set.}}{161}{theorem.3.2.19}\protected@file@percent }
+\newlabel{prop:func}{{3.3.1}{162}{}{theorem.3.3.1}{}}
+\newlabel{corr:top2contrel}{{3.3.2}{162}{}{theorem.3.3.2}{}}
+\newlabel{prop:idrel}{{3.3.3}{162}{}{theorem.3.3.3}{}}
+\newlabel{fig:copy}{{3.3}{162}{The category \textbf {ContRel}}{theorem.3.3.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces The \emph  {copy} map $X^\tau \rightarrow X^\tau \times X^\tau $, $\{(x,\begin  {pmatrix} x \\ x \end  {pmatrix}) \ | \ x \in X\}$.}}{162}{theorem.3.3.3}\protected@file@percent }
+\newlabel{prop:copy}{{3.3.4}{162}{}{theorem.3.3.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}The category \textbf  {ContRel}}{162}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Symmetric Monoidal structure}{162}{subsection.3.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces An alternative proof of Proposition \ref  {prop:copy} follows from Proposition \ref  {prop:func}, Corollary \ref  {corr:top2contrel}, and the definition of the product topology as the coarsest topology that satisfies categorical product for the diagram above.}}{163}{theorem.3.3.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces The \emph  {everything} state is the relation $\{((\star ,x) \ | \ x \in X\}$, notated as above. \begin  {proposition} The everything states are continuous relations. \begin  {proof} The preimage of any subset of $X$ -- in particular the opens -- is the whole of the singleton space, which is open. \end  {proof} \end  {proposition} }}{163}{theorem.3.3.4}\protected@file@percent }
+\newlabel{prop:everything}{{3.3.5}{163}{}{theorem.3.3.5}{}}
+\newlabel{fig:everything}{{3.13}{163}{The category \textbf {ContRel}}{theorem.3.3.5}{}}
+\newlabel{fig:delete}{{3.3}{163}{The category \textbf {ContRel}}{theorem.3.3.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces The \emph  {delete} test, $\{((x,\star ) \ | \ x \in X\}$. \begin  {proposition} The delete tests are continuous relations. \begin  {proof} There are only two opens in the singleton space. The preimage of the empty set is the empty set, and the preimage of the singleton is the whole of $X$; both are opens in $X$ by definition. \end  {proof} \end  {proposition} }}{163}{theorem.3.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Rig category structure}{163}{subsection.3.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces Copy and delete satisfy the above properties, expressed as diagrammatic equations.}}{164}{theorem.3.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Monoidal (co!)closure}{164}{subsection.3.3.3}\protected@file@percent }
+\newlabel{prop:prodvsclos}{{3.3.17}{164}{}{theorem.3.3.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces Relations that interact with copy and delete are nice, and we notate them with the same black dots as for copy and delete to mark them. States are singletons, or points, when they are copiable. Partial continuous functions are those that commute with copy. Left-total relations are those that commute with delete. Continuous functions are those that satisfy the latter two criteria.}}{165}{theorem.3.3.6}\protected@file@percent }
+\newlabel{prop:fullrel}{{3.3.7}{165}{}{theorem.3.3.7}{}}
+\newlabel{defn:coarsening}{{3.3.19}{165}{Coarsening}{theorem.3.3.19}{}}
+\newlabel{defn:compare}{{3.3.20}{165}{Pseudo-compare}{theorem.3.3.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces  The \textbf  {empty state} $\bullet \rightarrow X^\tau $ and \textbf  {empty test} relate nothing. The \textbf  {empty relation} $X^\tau \rightarrow Y^\sigma $ is the composite of empty tests and states, and relates nothing: as a relation it is $\varnothing \subset X \times Y$. \begin  {proposition} Empty states, tests, and relations are continuous. \begin  {proof} The preimage of any emp

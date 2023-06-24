@@ -400,7 +400,7 @@ A monoidal cofunctor box first uses the inside-out convention for functor boxes 
 
 \begin{myboxB}
 \begin{example}[Turning dCFGs into pregroup diagrams with a monoidal cofunctor]
-The apex is given by Construction \ref{cons:bracketing}. The right leg is the monoidal discrete opfibration from Construction \ref{cons:pg2cfg} into the dCFG. In the first diagram below, we apply the opfibration to the word states, which have unique lifts. The second diagram follows by monoidality. In the third, we apply the left leg of the cofunctor using the outside-in convention, which is the evidently bijective-on-objects monoidal functor to the ambient rigid autonomous category of pregroup diagrams from the free strictification. In the fourth, we apply the monoidality of the inner functor.
+Here is a more involved example, which uses a CFG and running example from the next chapter: \texttt{Alice sees Bob quickly run to school.} The apex is given by Construction \ref{cons:bracketing}. The right leg is the monoidal discrete opfibration from Construction \ref{cons:pg2cfg} into the dCFG. In the first diagram below, we apply the opfibration to the word states, which have unique lifts. The second diagram follows by monoidality. In the third, we apply the left leg of the cofunctor using the outside-in convention, which is the evidently bijective-on-objects monoidal functor to the ambient rigid autonomous category of pregroup diagrams from the free strictification. In the fourth, we apply the monoidality of the inner functor.
 \[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/cofunctorex1}}\]
 For the first equation, the magenta opfibration box now has already chosen a codomain for the lift, so it can eat the next morphism highlighted in a dashed box. For the second equation, note that eating-rules swap over for the different conventions of functor boxes: while inside-out functor boxes need extra data to eat, outside-in boxes need extra data to spit out, but can eat for free.
 \[\resizebox{0.75\textwidth}{!}{\tikzfig{tree2gate/workedexample/cofunctorex2}}\]
@@ -443,7 +443,7 @@ Mentally search and replace discrete for kinda- in Definition \ref{defn:mondisco
 \newpage
 
 \begin{myboxR}
-\begin{example}[A monoidal kinda-opfibration into pregroup diagrams from a subcategory of bracketed pregroups with spiders]
+\begin{example}[A monoidal kinda-opfibration into pregroup diagrams from a subcategory of bracketed pregroups with spiders]\label{ex:bigexlift}
 \end{example}
 Source category is the free strictification of a single wire equipped with a spider, with generator-states implied by the following equations. Target is pregroup diagrams in $n,s$. Sentence type is bracketings of nouns: alternate bracketing notation is introduced for brevity. Strictified unit is used to distinguish the bracketed single noun wire from the plain noun wire, which is its own lift. Bracketing monoidal units gives the Dyck language, which may be in principle used to distinguish turning numbers in the rigid autonomous setting, omitted for brevity. For more internal wirings for other grammatical categories, see \bR CITE \e. This data suffices to model how the listener recovers the data conveyed by the speaker, c.f. Example \ref{ex:nonfunctparse}. Solution to Example \ref{ex:nonfunctparse} on next page.
 \[\resizebox{0.8\textwidth}{!}{\tikzfig{tree2gate/workedexample/pg2cfgcof0}}\]
@@ -461,64 +461,41 @@ Source category is the free strictification of a single wire equipped with a spi
 \[\resizebox{0.95\textwidth}{!}{\tikzfig{tree2gate/workedexample/pg2cfgcof3}}\]
 \end{myboxB}
 
+\begin{myboxR}
+\begin{example}[...and from there to text circuits]
+Recall from Example \ref{fig:GFOLex3a} that pregroup diagrams can be daisy-chained for text. We'll assume that a finished text is one where the sentence-wire is deleted (i.e. no more sentences to daisy chain.)
+\[\resizebox{0.95\textwidth}{!}{\tikzfig{tree2gate/workedexample/pg2circ0}}\]
+And we'll specify the following monoidal functor from the category we just lifted to in Example \ref{ex:bigexlift} into a strongly compact closed category; preferably one that is a variant of \texttt{Prof}, in which one can reason with open string diagrams \bR Nick, Mario \e. The functor interprets spiders as pair of pants, and word-states as interesting-looking things. We'll show just the lifts of the monoid part of the spider; the comonoid part is the same thing upside down.
+\[\resizebox{0.85\textwidth}{!}{\tikzfig{tree2gate/workedexample/iwfunctor}}\]
+Applying this functor establishes that the same kind of span of functors that gets us from productive to parsing grammars is also sufficient to get us from parsing grammars to text circuits. By mathematically analysing and taking away the bureaucracy of syntax, it becomes evident that the natural habitat of language is not a line, but something else.
+\end{example}
+\end{myboxR}
+
+\begin{myboxR}
+\[\resizebox{0.95\textwidth}{!}{\tikzfig{tree2gate/workedexample/pg2circmagic}}\]
+\end{myboxR}
+
 \clearpage
 \newpage
 
 \section{Discussion and Limitations}
 
-\newthought{What are the assumptions and limitations?} In my view, the preceding analysis is fair if one entertains the following three commitments.
+\newthought{\textbf{Objection:} A handful of gadgets and examples isn't a theory.}
 
-\begin{enumerate}
-\item{At some level, semantics is compositional, and syntax directs this composition.}
-\item{Speakers produce sentences, and listeners parse sentences.}
-\item{Speakers and listeners understand each other, insofar as the compositional structure of their semantic representations are isomorphic.}
-\end{enumerate}
+I wanted to understand the nature of communication from first principles. I could not find a satisfying account that reflected the computational constraints of speaking and listening, so I used what mathematics I knew to build a model myself. So even if it is not a theory, I consider it better than nothing at all.\\
 
-Insofar as compositionality entails that infinite ends can be achieved by finite combinatorial means, discrete monoidal fibrations are bookkeeping for an idealised structural correspondence between the components of productive and parsing grammars, and internal wirings arise as balancing terms in the bookkeeping.\\
+The gadgets may be worthwhile beyond the story I've told here. I'll remark that the monoidal cofunctor technology seems to be just the kind of diagrammatic mathematics required by the "merge"-operation in minimalist syntax. They are probably better off named "merge-boxes".\\
 
-\begin{CJK*}{UTF8}{gbsn}
-The first assumption establishes an idealised view of communication and compositionality where there are no extraneous rules in the language, i.e. that a particular phrase of five or sixty-seven words is to be parsed exceptionally. This is not the case in natural languages, where everyday idioms may be considered semantically atomic despite being compositionally decomposable. For example, in Mandarin, 马上 \ is the concatenation of "horse" and "up", and would be "on horseback" if interpreted literally, but is treated as an adverbial "as soon as possible" in imperative contexts. I use the hedging phrase "at some level" in the first assumption to describe the compositionality of semantics just to indicate an assumption that we are not dealing with exceptional rules all the way up.\\
-\end{CJK*}
+The examples were necessary to display the mathematics, but this specificity also necessary in a broader sense. A systematic analysis of communication requires intimacy with specific grammars and a specific semantics, not \emph{formats} of grammar like "All CFGs". Specific grammars that model natural languages, even poorly, are the only relevant objects of study for any form of language intended to communicate information. Once one has a specific grammar that produces sentences in natural language, then to explain communication, one must supply a specific partnered parsing grammar such that on the produced sentences, both grammars yield the same semantic objects by a Montagovian approach, broadly construed as a homomorphism from syntax to semantics. On this account, syntax does not hold a dictatorship over semantics; there are duarchies, and in these duumvirates the two syntaxes and the semantics mutually constrain one another.
 
-The second assumption commits to an idealisation that speakers and listeners communicate for the purposes of exchanging propositional information as well-formed and disambiguated sentences, which is clearly not all that language is for. I can promise nothing regarding questions, imperatives, speech acts, and so on.\\
+\newthought{How far does this approach generalise? Where does it apply?}
 
-The third assumption asks that one entertain string diagrams as representative of what the content of language is, and even so, it still requires some elaboration on what is meant by "understanding", as it is obviously untrue that everyone understands one another. I do not mean understanding in the strong sense as a form of telepathy of mental states, c.f. Wittgenstein's beetle-in-a-box thought experiment. I mean that insofar as the speaker and listener both have their own ideas about cats, sitting, space, and mats, their respective mental models of \texttt{the cat sat on the mat} are indistinguishable as far as meaningfully equivalent syntactic re-presentations and probings go; for instance, both speakers ought to agree that \texttt{the mat is beneath the cat}, and both speakers ought to agree despite the concrete images in their minds that there is insufficient information to know the colour of the cat from the sentence alone, and so on. This is a shallow form of understanding; consider the case where one communicator is a human with mental models encoded in meat and another is an LLM with tokens encoding who-knows-what -- they may be in perfect agreement about rephrasings of texts for an arbitrary finite amount of communication, even if the representations of the latter are not compositional. It would be nice to ask that "mutual understanding" requires structurally equivalent (as opposed to extensionally indistinguishable) meaning-representation mechanisms between language agents c.f. Chomsky's universal grammar, but our means of achieving mutual understanding in practice seems to align with the shallow view: we pose comprehension challenges and ask clarifying questions all at the level of language, without taking a scalpel to the other's head. Depending on one's view of what understanding language entails, it may be that humans and LLMs both understand language in their own way, but mutual understanding between the two kinds is an illusion.\\
-
-Despite these limitations, I believe that this formal approach to grounding relationships between productive and parsing grammars in mathematical considerations surrounding communication has some merits.
-
-\newthought{Theories of grammar by themselves are insufficient to account for communication.} At minimum, for every grammar that produces sentences, one must also provide a corresponding parsing grammar. A theory of grammar that only produces correct sentences or correct parses is a 'theory' of language outperformed in every respect by an LLM. So we must distinguish between grammars of the speaker and listener, and then investigate how they cohere.\\
-
-\newthought{Coherence of theories of grammar is inextricable from semantics.} We are interested in the ideal of communication, the end result of a single turn of which is that both speaker and listener have the same semantic information, whether that be a logical expression or something else. A consequence of this criterion is that in order to obtain an adequate account of communication, we must seek a relation between grammars and semantics beyond weak and strong equivalence of pairs of theories of grammar.\\
-
-Firstly, "weak equivalence" between grammar formalisms in terms of possible sets of generated sentences is insufficient. Weak equivalence proofs are mathematical busywork that have nothing to do with a unified account of syntax and semantics. For example, merely demonstrating that, e.g. pregroup grammars and context-free grammars can generate the same sentences [] only admits the possibility that a speaker using a context-free grammar and a listener using a pregroup grammar \emph{could} understand each other, without providing any explanation \emph{how}. But we already know that users of language \emph{do} understand one another more-or-less, so the exercise is more-or-less pointless.\\
-
-Secondly, "strong equivalence" that seeks equivalence at a structural level between theories of syntax often helps, but is not always necessary. I will explain by analogy. Theories of syntax are like file formats, e.g. \texttt{.png} or \texttt{.jpeg} for images. A model for a particular language is a particular file or photograph. The task here is to show that two photographs in different file formats that both purport to model the same language are really photographs of the same thing from different perspectives. It is overkill to demonstrate that all \texttt{.pngs} and \texttt{.jpegs} are structurally bijectable, just as it is overkill to show that, say, context-free grammars are strongly equivalent to pregroup grammars, because there are context-free and pregroup grammars that generate sets of strings that have nothing to do with natural language. It could just as well be that there is a pair of productive and parsing grammar-formats that are not strongly equivalent, but happen to coincide for a particular natural language -- in this sense, asking for a discrete monoidal fibration is a way to check a weaker condition than strong equivalence that achieves the more specific aim of determining whether a pair of productive and parsing grammars for a language are plausible models.\\
-
-A systematic analysis of communication requires intimacy with specific grammars and a specific semantics. Specific grammars -- and not formats of grammar, such as "all CFGs" -- that model natural languages, even poorly, are the only relevant objects of study for any form of language intended to communicate information. Once you have a specific grammar that produces sentences in natural language, then to explain communication, you must supply a specific partnered parsing grammar such that on the produced sentences, both grammars yield the same semantic objects by a Montagovian approach, broadly construed as a homomorphism from syntax to semantics. On this account, syntax does not hold a dictatorship over semantics, but we can find duarchies, and in these duumvirates the two syntaxes and the semantics mutually constrain one another.\\
-
-\newthought{It is worth noting that in practice, neither grammar nor meaning strictly determines the other.} Clearly there are cases where grammar supercedes: when Dennis hears \texttt{man bites dog}, despite his prior prejudices and associations about which animal is more likely to be biting, he knows that the \texttt{man} is doing the biting and the \texttt{dog} is getting bitten. Going the other way, there are many cases in which the meaning of a subphrase affects grammatical acceptability and structure.
-
-\begin{example}[Exclamations: how meaning affects grammar]
-The following examples from [Lakofflecture] illustrate how whether a phrase is an \emph{exclamation} affects what kinds of grammatical constructions are acceptable. By this argument, to know whether something is an exclamation in context is an aspect of meaning, so we have cases where meaning determines grammar. Observe first that the following three phrases are all grammatically acceptable and mean the same thing.
-\[\texttt{\textcolor{blue}{nobody knows} how many beers Bob drinks}\]
-\[\texttt{\textcolor{blue}{who knows} how many beers Bob drinks}\]
-\[\texttt{\textcolor{blue}{God knows} how many beers Bob drinks}\]
-The latter two are distinguished when \texttt{God knows} and \texttt{who knows} are exclamations. First, the modularity of grammar and meaning may not match when an exclamation is involved. For example, negating the blue text, we obtain:
-\[\texttt{\textcolor{blue}{somebody knows} how many beers Bob drinks}\]
-\[\texttt{\textcolor{blue}{who doesn't know} how many beers Bob drinks}\]
-\[\texttt{\textcolor{purple}{God doesn't} know how many beers Bob drinks}\]
-The first two are acceptable, but mean different things; the latter means to say that everyone knows how many beers Bob drinks, which is stronger than the former. The last sentence is awkward: unlike in the first two cases, the quantified variable in the (gloss) $\cdots \neg \exists x_{Person} \cdots$ of \texttt{God knows} is lost, and what is left is a literal reading $\cdots \neg \texttt{knows}(\texttt{God},\cdots) \cdots$.
-Second, whether a sentence is grammatically acceptable may depend on whether an exclamation is involved. \texttt{\textcolor{blue}{God knows}} and \texttt{\textcolor{blue}{who knows}} can be shuffled into the sentence to behave as an intensifier as in:
-\[\texttt{Bob drinks \textcolor{blue}{God knows} how many beers}\]
-\[\texttt{Bob drinks \textcolor{blue}{who knows} how many beers}\]
-But it is awkward to have:
-\[\texttt{Bob drank \textcolor{purple}{nobody knows} how many beers}\]
-And it is not acceptable to have:
-\[\texttt{Bob drank \textcolor{red}{Alice knows} how many beers}\]
-\end{example}
+Internal wirings are a way to encode relationships between two different kinds of grammar, and a string-diagrammatic semantics. They arise as part of cofunctor boxes that witness a systematic correspondence between two grammars. While we have encoded a specific kind of grammatical resolution choice in the fibres of our lifting-functor, there are easy examples of other kinds of choices a listener has to make in order to parse a sentence that the current theory is not yet elaborated enough to accommodate.
 
 \begin{example}[Garden path sentences]
-So-called "garden path" sentences illustrate that listeners have to make choices to resolve lexical ambiguities. One such garden-path sentence is \texttt{The old man the boat}, where typically readers take \texttt{The old man} as a noun-phrase and \texttt{the boat} as another noun-phrase. We can sketch how the readers might think with a (failed) pregroup grammar derivation:
+Whereas we assume that grammatical types have already been chosen, garden-path sentences illustrate that listeners must make choices about what grammatical roles to assign words. We make these kinds of contextual decisions all the time with lexically ambiguous words or highly homophonic languages like Mandarin; garden-path sentences are special in that they trick the default strategy badly enough that the mental effort for correction is noticeable. One such garden-path sentence is \texttt{The old man the boat}, where typically readers take \texttt{The old man} as a noun-phrase and \texttt{the boat} as another noun-phrase. We can sketch how the readers might think with a (failed) pregroup grammar derivation:
+
+\newpage
 
 \[
 \AxiomC{$\texttt{the} : n \cdot n^{-1}$}
@@ -547,12 +524,10 @@ So the reader has to backtrack, taking \texttt{The old} as a noun-phrase and \te
 \BinaryInfC{$\texttt{the\textvisiblespace old\textvisiblespace man\textvisiblespace the\textvisiblespace boat\textvisiblespace}: s$}
 \DisplayProof
 \]
-
-Garden-path sentences illustrate that listeners must make choices about what grammatical roles to assign words. We make these kinds of contextual decisions all the time with lexically ambiguous words or highly homophonic languages like Mandarin; garden-path sentences are special in that they trick the default strategy badly enough that the mental effort for correction is noticeable.
 \end{example}
 
 \begin{example}[Ambiguous scoping]
-Consider the following sentence:
+The uniqueness condition of lifts is too stringent. Consider the following sentence:
 \[\texttt{Everyone loves someone}\]
 The sentence is secretly (at least) two, corresponding to two possible parses. The usual reading is (glossed) $\forall x \exists y : \texttt{loves}(x,y)$. The odd reading is $\exists y \forall x : \texttt{loves}(x,y)$: a situation where there is a single person loved by everyone. We can sketch this difference formally using a simple combinatory categorial grammar.
 
@@ -584,6 +559,8 @@ CCGs have functorial semantics in any cartesian closed category, such as one whe
 
 Now we can plug-in these interpretations to obtain the two different meanings. We decorate with corners just to visually distinguish which bits are partial first-order logic.
 
+\newpage
+
 \[
 \AxiomC{$\lambda (\lambda x . V(x)) . \ulcorner \forall x : V(x) \urcorner : (n \multimap s) \multimap s$}
 \AxiomC{$\lambda x \lambda y . \ulcorner \texttt{loves}(x,y) \urcorner : n \multimap s \ \rotatebox[origin=c]{180}{$\multimap$} \ n$}
@@ -601,14 +578,62 @@ Now we can plug-in these interpretations to obtain the two different meanings. W
 \BinaryInfC{$ \ulcorner \forall x \exists y : \texttt{loves}(x,y) \urcorner : s$}
 \DisplayProof
 \]
-
 \end{example}
 
-\begin{example}
-(grammar pieces -- as simple as it gets)
-\texttt{Bob runs.}
-\texttt{Bob quickly runs.}
-\texttt{Bob drinks beer.}
-\texttt{Bob quickly drinks beer.}
+\newthought{What are your assumptions? What are their limitations?} In my view, the preceding analysis is fair if one entertains the following three commitments.
 
+\begin{enumerate}
+\item{At some level, semantics is compositional, and syntax directs this composition.}
+\item{Speakers produce sentences, and listeners parse sentences.}
+\item{Speakers and listeners understand each other, insofar as the compositional structure of their semantic representations are isomorphic.}
+\end{enumerate}
+
+Insofar as compositionality entails that infinite ends can be achieved by finite combinatorial means, spans of monoidal functors are bookkeeping for an idealised structural correspondence between the components of productive and parsing grammars, and internal wirings arise as balancing terms in the bookkeeping.\\
+
+\newthought{Limitations of the first assumption:}
+
+\begin{CJK*}{UTF8}{gbsn}
+The first assumption establishes an idealised view of communication and compositionality where there are no extraneous rules in the language, i.e. that a particular phrase of five or sixty-seven words is to be parsed exceptionally. This is not the case in natural languages, where everyday idioms may be considered semantically atomic despite being compositionally decomposable. For example, in Mandarin, 马上 \ is the concatenation of "horse" and "up", and would be "on horseback" if interpreted literally, but is treated as an adverbial "as soon as possible" in imperative contexts. I use the hedging phrase "at some level" in the first assumption to describe the compositionality of semantics just to indicate an assumption that we are not dealing with exceptional rules all the way up.\\
+\end{CJK*}
+
+There is another implicit assumption here that syntax determines semantics. It is worth noting that in practice, neither grammar nor meaning strictly determines the other. Clearly there are cases where grammar supercedes: when Dennis hears \texttt{man bites dog}, despite his prior prejudices and associations about which animal is more likely to be biting, he knows that the \texttt{man} is doing the biting and the \texttt{dog} is getting bitten. Going the other way, there are many cases in which the meaning of a subphrase affects grammatical acceptability and structure.
+
+\begin{example}[Exclamations: how meaning affects grammar]
+The following examples from \bR [Lakofflecture] \e illustrate how whether a phrase is an \emph{exclamation} affects what kinds of grammatical constructions are acceptable. By this argument, to know whether something is an exclamation in context is an aspect of meaning, so we have cases where meaning determines grammar. Observe first that the following three phrases are all grammatically acceptable and mean the same thing.
+\[\texttt{\textcolor{blue}{nobody knows} how many beers Bob drinks}\]
+\[\texttt{\textcolor{blue}{who knows} how many beers Bob drinks}\]
+\[\texttt{\textcolor{blue}{God knows} how many beers Bob drinks}\]
+The latter two are distinguished when \texttt{God knows} and \texttt{who knows} are exclamations. First, the modularity of grammar and meaning may not match when an exclamation is involved. For example, negating the blue text, we obtain:
+\[\texttt{\textcolor{blue}{somebody knows} how many beers Bob drinks}\]
+\[\texttt{\textcolor{blue}{who doesn't know} how many beers Bob drinks}\]
+\[\texttt{\textcolor{purple}{God doesn't} know how many beers Bob drinks}\]
+The first two are acceptable, but mean different things; the latter means to say that everyone knows how many beers Bob drinks, which is stronger than the former. The last sentence is awkward: unlike in the first two cases, the quantified variable in the (gloss) $\cdots \neg \exists x_{Person} \cdots$ of \texttt{God knows} is lost, and what is left is a literal reading $\cdots \neg \texttt{knows}(\texttt{God},\cdots) \cdots$.
+Second, whether a sentence is grammatically acceptable may depend on whether an exclamation is involved. \texttt{\textcolor{blue}{God knows}} and \texttt{\textcolor{blue}{who knows}} can be shuffled into the sentence to behave as an intensifier as in:
+\[\texttt{Bob drinks \textcolor{blue}{God knows} how many beers}\]
+\[\texttt{Bob drinks \textcolor{blue}{who knows} how many beers}\]
+But it is awkward to have:
+\[\texttt{Bob drank \textcolor{purple}{nobody knows} how many beers}\]
+And it is not acceptable to have:
+\[\texttt{Bob drank \textcolor{red}{Alice knows} how many beers}\]
 \end{example}
+
+\newpage
+
+\newthought{Limitations of the second assumption:}
+
+The second assumption commits to an idealisation that speakers and listeners communicate for the purposes of exchanging propositional information as well-formed and disambiguated sentences, which is clearly not all that language is for. I can promise nothing yet regarding questions, imperatives, speech acts, and so on.
+
+\newthought{Limitations of the third assumption:}
+
+The third assumption asks that one entertain string diagrams as representative of what the content of language is, and even so, it still requires some elaboration on what is meant by "understanding", as it is obviously untrue that everyone understands one another. I do not mean understanding in the strong sense as a form of telepathy of mental states -- I mean that insofar as the speaker and listener both have their own ideas about cats, sitting, space, and mats, their respective mental models of \texttt{the cat sat on the mat} are indistinguishable as far as meaningfully equivalent syntactic re-presentations and probings go; for instance, both speakers ought to agree that \texttt{the mat is beneath the cat}, and both speakers ought to agree despite the concrete images in their minds that there is insufficient information to know the colour of the cat from the sentence alone, and so on. This is a shallow form of understanding; consider the case where one communicator is a human with mental models encoded in meat and another is an LLM with tokens encoding who-knows-what -- they may be in perfect agreement about rephrasings of texts for an arbitrary finite amount of communication, even if the representations of the latter are not compositional. It would be nice to ask that "mutual understanding" requires structurally equivalent (as opposed to extensionally indistinguishable) meaning-representation mechanisms between language agents c.f. Chomsky's universal grammar, but our means of achieving mutual understanding in practice seems to align with the shallow view: we pose comprehension challenges and ask clarifying questions all at the level of language, without taking a scalpel to the other's head. Depending on one's view of what understanding language entails, it may be that humans and LLMs both understand language in their own way, but mutual understanding between the two kinds is an illusion.
+
+\newpage
+\newthought{So what?}
+
+Despite these limitations, I believe that this formal approach to grounding relationships between productive and parsing grammars in mathematical considerations surrounding communication has some merits, or at least raises a change in perspective. Theories of grammar by themselves are insufficient to account for communication: a theory of grammar that merely produces correct sentences or correct parses is a 'theory' of language waiting to be or already outperformed in every respect by an LLM. Understanding the nature of syntax as a formal object demands a distinction and reconciliation of speaking and listening grammars. Moreover, semantics must play a role from the start: in the ideal of communication, both speaker and listener have the same semantic information by the end of a single turn, whether that be a logical expression or something else. For these reasons, we may at least conclude that "weak" and "strong" equivalence is just not suited for an adequate account of communication.\\
+
+Firstly, "weak equivalence" between grammar formalisms in terms of possible sets of generated sentences is insufficient. Weak equivalence proofs are mathematical busywork that have nothing to do with a unified account of syntax and semantics. For example, merely demonstrating that, e.g. pregroup grammars and context-free grammars can generate the same sentences \bR CITE \e only admits the possibility that a speaker using a context-free grammar and a listener using a pregroup grammar \emph{could} understand each other, without providing any explanation \emph{how}. But we already know that users of language \emph{do} understand one another (more-or-less), so weak equivalence is (more-or-less) pointless.\\
+
+Secondly, "strong equivalence" that seeks equivalence at a structural level between theories of syntax often helps, but is not always necessary. Theories of syntax are like file formats, e.g. \texttt{.png} or \texttt{.jpeg} for images. A model for a particular language is a particular file or photograph. The task here is to show that two photographs in different file formats that both purport to model the same language are really photographs of the same thing from different perspectives. It is overkill -- and has nothing to do with the object being photographed -- to demonstrate that all \texttt{.pngs} and \texttt{.jpegs} are structurally bijectable, just as it is overkill to show that, say, context-free grammars are strongly equivalent to pregroup grammars, because there are context-free and pregroup grammars that generate sets of strings that have nothing to do with natural language. It could just as well be that there is a pair of productive and parsing grammar-formats that are not strongly equivalent, but happen to coincide for a particular natural language -- in this sense, asking for something like a monoidal cofunctor is a way to check a weaker condition than strong equivalence that achieves the more specific aim of determining whether a pair of productive and parsing grammars for a language are plausibly compatible.
+
+\newthought{And what do \textbf{you} know about formal grammars?} More than I wish I did. See next chapter.
