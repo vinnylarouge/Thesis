@@ -27,11 +27,11 @@
 		\node [style=none] (29) at (-0.5, 2.35) {};
 		\node [style=none] (30) at (0.5, 2.675) {};
 		\node [style=none] (31) at (0.5, 2.325) {};
-		\node [style=none] (32) at (0, 3.25) {$\textcolor{red}{W^\alpha}$};
+		\node [style=none] (32) at (0, 3) {$\textcolor{red}{W^\alpha}$};
 		\node [style=none] (33) at (-0.5, -2) {};
 		\node [style=none] (34) at (-0.5, -2.5) {$\textcolor{blue}{(P_x^\alpha,P_y^\alpha)}$};
-		\node [style=none] (35) at (-6, 0) {$\dot{\alpha} = (\textcolor{red}{W^\alpha},\textcolor{orange}{H^\alpha},\textcolor{blue}{P_x^\alpha},\textcolor{blue}{P_y^\alpha})$};
-		\node [style=none] (36) at (6, 0) {$\dot{\beta} = (\textcolor{red}{W^\beta},\textcolor{orange}{H^\beta},\textcolor{blue}{P_x^\beta},\textcolor{blue}{P_y^\beta})$};
+		\node [style=none] (35) at (-6, 0.5) {$\dot{\alpha} = (\textcolor{red}{W^\alpha},\textcolor{orange}{H^\alpha},\textcolor{blue}{P_x^\alpha},\textcolor{blue}{P_y^\alpha})$};
+		\node [style=none] (36) at (-6, -0.5) {$\dot{\beta} = (\textcolor{red}{W^\beta},\textcolor{orange}{H^\beta},\textcolor{blue}{P_x^\beta},\textcolor{blue}{P_y^\beta})$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=ggF] (2.center)

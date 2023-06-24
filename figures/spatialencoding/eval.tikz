@@ -9,8 +9,8 @@
 		\node [style=none] (6) at (-3, 0) {};
 		\node [style=none] (7) at (-2, 0) {};
 		\node [style=none] (8) at (-1, 0) {};
-		\node [style=none] (9) at (-4, 0.5) {$\mathbb{A}$};
-		\node [style=none] (10) at (5, 0.5) {$\mathbb{B}$};
+		\node [style=none] (9) at (-4, 0.5) {$A$};
+		\node [style=none] (10) at (5, 0.5) {$B$};
 		\node [style=none] (11) at (0, 0) {$=$};
 		\node [style=none] (12) at (3, 1) {};
 		\node [style=none] (13) at (4, 1) {};
@@ -23,13 +23,13 @@
 		\node [style=none] (20) at (1.5, -1) {};
 		\node [style=none] (21) at (4, 0) {};
 		\node [style=none] (22) at (5, 0) {};
-		\node [style=none] (23) at (1, 1) {$\mathbb{A}$};
+		\node [style=none] (23) at (1, 1) {$A$};
 		\node [style=none] (24) at (1.825, -0.675) {$\ulcorner f \urcorner$};
 		\node [style=none] (25) at (2, -0.5) {};
 		\node [style=none] (26) at (3.5, -0.5) {};
 		\node [style=none] (27) at (3, -1) {$\Xi$};
-		\node [style=none] (28) at (3.5, 0.25) {${\text{ev}?\mathbb{A}}_\mathbb{B}$};
-		\node [style=none] (29) at (-1, 0.5) {$\mathbb{B}$};
+		\node [style=none] (28) at (3.5, 0.25) {${\text{ev}^A}_B$};
+		\node [style=none] (29) at (-1, 0.5) {$B$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw (1.center)

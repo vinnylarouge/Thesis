@@ -1,4 +1,4 @@
-\begin{tikzpicture}[{every node/.style}={scale=1}]
+\begin{tikzpicture}[{every node/.style}={scale=1.3}]
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (29) at (-8, 2) {};
 		\node [style=none] (30) at (-4, 2) {};
@@ -93,9 +93,9 @@
 		\node [style=none] (173) at (0, 1.25) {$u$};
 		\node [style=none] (174) at (-1, -0.75) {$v$};
 		\node [style=none] (175) at (1, -0.75) {$w$};
-		\node [style=none] (176) at (6, 3.5) {$(\alpha,u)$};
+		\node [style=none] (176) at (6, 3) {$(\alpha,u)$};
 		\node [style=none] (177) at (6, 1.75) {};
-		\node [style=none] (178) at (6, 3) {};
+		\node [style=none] (178) at (6, 2.5) {};
 		\node [style=none] (179) at (9.75, 0.875) {$(\alpha,w)$};
 		\node [style=none] (180) at (6.5, 0.875) {};
 		\node [style=none] (181) at (8.75, 0.875) {};

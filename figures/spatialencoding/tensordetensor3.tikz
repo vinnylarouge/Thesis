@@ -13,36 +13,38 @@
 		\node [style=dotG] (10) at (2, 0) {$\otimes$};
 		\node [style=dotY] (11) at (3, 0) {};
 		\node [style=none] (12) at (4, 0) {};
-		\node [style=none] (13) at (-5, -2) {};
-		\node [style=none] (14) at (-5, -2.5) {$((X \otimes Y) \otimes Z)$};
-		\node [style=none] (15) at (-2, -2) {};
-		\node [style=none] (16) at (-2, -2.5) {$(X \otimes Y) \otimes \_$};
-		\node [style=none] (17) at (-1, 2) {$X \otimes \_$};
-		\node [style=none] (18) at (0.5, 1.5) {};
-		\node [style=none] (19) at (1.5, 1.5) {};
-		\node [style=none] (20) at (2.5, 1.5) {};
-		\node [style=none] (21) at (0, -2) {};
-		\node [style=none] (22) at (1.5, -2) {};
-		\node [style=none] (23) at (4, -2.5) {$(X \otimes (Y \otimes Z))$};
-		\node [style=none] (24) at (0.5, 2) {$X$};
-		\node [style=none] (25) at (1.5, 2) {$Y$};
-		\node [style=none] (26) at (2.5, 2) {$Z$};
-		\node [style=none] (27) at (0, -2.5) {$Y \otimes \_$};
-		\node [style=none] (28) at (1.5, -2.5) {$X \otimes \_$};
-		\node [style=none] (29) at (4, -2) {};
+		\node [style=none] (13) at (-4.5, -1.5) {};
+		\node [style=none] (14) at (-4.5, -2) {$((X \otimes Y) \otimes Z)$};
+		\node [style=none] (15) at (-1.5, -1.5) {};
+		\node [style=none] (16) at (-1.5, -2) {$(X \otimes Y) \otimes \_$};
+		\node [style=none] (17) at (-2, 2) {$X \otimes \_$};
+		\node [style=none] (18) at (0, 1.5) {};
+		\node [style=none] (19) at (1, 1.5) {};
+		\node [style=none] (20) at (2, 1.5) {};
+		\node [style=none] (21) at (0.5, -1.5) {};
+		\node [style=none] (22) at (2, -1.5) {};
+		\node [style=none] (23) at (4.5, -2) {$(X \otimes (Y \otimes Z))$};
+		\node [style=none] (24) at (0, 2) {$X$};
+		\node [style=none] (25) at (1, 2) {$Y$};
+		\node [style=none] (26) at (2, 2) {$Z$};
+		\node [style=none] (27) at (0.5, -2) {$Y \otimes \_$};
+		\node [style=none] (28) at (2, -2) {$X \otimes \_$};
+		\node [style=none] (29) at (4.5, -1.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=K, in=-90, out=180] (3.center) to (2);
+		\draw [style=K] (2)
+			 to [in=180, out=-90] (3.center)
+			 to [in=180, out=0] (7);
 		\draw [style=K, in=90, out=180] (1) to (2);
 		\draw [style=K] (0) to (2);
-		\draw [style=K, in=0, out=180] (4.center) to (5);
+		\draw [style=K] (5)
+			 to [in=180, out=0] (4.center)
+			 to [in=90, out=0] (10);
 		\draw [style=K, in=180, out=90] (1) to (5);
 		\draw [style=K, in=-180, out=-90] (1) to (6);
-		\draw [style=K, in=180, out=0] (3.center) to (7);
 		\draw [style=K] (8.center) to (0);
 		\draw [style=K, in=90, out=0] (6) to (9);
 		\draw [style=K, in=-90, out=0] (7) to (9);
-		\draw [style=K, in=90, out=0] (4.center) to (10);
 		\draw [style=K, in=-90, out=0] (9) to (10);
 		\draw [style=K] (10) to (11);
 		\draw [style=K] (11) to (12.center);
