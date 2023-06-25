@@ -248,8 +248,10 @@ Systems are sets $A,B$. Processes are relations between sets $\Phi \subseteq A \
 \[A \overset{\Phi}{\nrightarrow} B \overset{\Psi}{\nrightarrow} C := \{(a,c) \ | \  a \in A, \ c \in C, \ \exists b_{\in B}: (a,b) \in \Phi \wedge (b,c) \in \Psi  \}\]
 Parallel composition of systems is the cartesian product of sets. The parallel composition of relations $A \otimes C \overset{\Phi \otimes \Psi}{\nrightarrow} B \otimes D$ of relations $A \overset{\Phi}{\nrightarrow} B$ and $C \overset{\Psi}{\nrightarrow} D$ is defined:
 \[\Phi \otimes \Psi := \{\big( (a,c) , (b,d) \big) \ | \ (a,b) \in \Phi \wedge (c,d) \in \Psi\}\]
-The unit of parallel composition is the singleton. States of a set $A$ are subsets of $A$. Tests of a set $A$ are also subsets of $A$.
+The unit of parallel composition is the singleton. States and tests of a set $A$ are subsets of $A$.
 \end{example}
+
+\clearpage
 
 \subsection{What does it mean to copy and delete?}
 
@@ -335,36 +337,54 @@ Now we can diagrammatically depict the process of updating Jono's age, by \bB ge
 
 \[\tikzfig{proctheory/incrementage}\]
 
-\subsection{Pregroup diagrams and correlations}
-
-Let's revisit the copy and delete maps for a moment. Suppose our process theory is such that for every wire $X$, there is a unique copy map $\delta_X$ such that every state on $X$ is copyable and deletable. A consequence of this assumption is that every state is $\otimes$-separable (read \emph{tensor separable}):
-
-\[placeholder\]
-
-But there are certainly process theories in which we don't want this. For example, if states are random variables and parallel composition is the product of independent random variables (as is the case in Markov categories for probability theory \bR CITE \e) then copying a random variable gives a perfectly correlated pair of variables, which cannot be expressed as the product of a pair of independent random variables.
-
-\subsection{Equational Constraints and Frobenius Algebras}
-
-\subsection{Processes, Sets, and Computers}
-
 \newthought{\texttt{Objection:} But what are the \emph{things} that the processes operate on?}
 
-This is a common objection from philosophers who want their ontologies tidy. The claim roughly goes that you can't really reason about processes without knowing the underlying objects that participate on those processes, and since set theory is the only way we know how to spell out objects intensionally in this way, we should stick to sets. In simpler terms, if we're drawing only functions as (black)-boxes in our diagrams, how will we know what they do to the elements of the underlying sets?\\
+This is a common objection from philosophers who want their ontologies tidy. The claim roughly goes that you can't really reason about processes without knowing the underlying objects that participate on those processes, and since set theory is the only way we know how to spell out objects intensionally in this way, we should stick to sets. In simpler terms, if we're drawing (black)-boxes in our diagrams, how will we know what they do to the elements of the underlying sets?\\
 
 The short answer is that -- perhaps surprisingly -- reasoning process-theoretically is mathematically equivalent to reasoning about sets and elements for all practical purposes; it is as if whatever is going on \emph{out there} is indifferent to whether we describe using a language of only nouns or only verbs.\\
 
-In the case of set theory, let's suppose that instead of encoding functions as sets, we treat functions as primitive, so that we have a process theory where wires are labelled with sets, and functions are process boxes that we draw. The problem we face now is that it is not immediately clear how we would access the elements of any set using only the diagrammatic language. The solution is the observation that the elements $\{x \ | \ X\}$ of a set $X$ are in bijective correspondence with the functions from a singleton into $X$: $\{ f(\star) \mapsto x \ | \ \{\star\} \overset{f}{\rightarrow} X $. In prose, for any element $x$ in a set $X$, we can find a function that behaves as a pointer to that element $\{\star\} \rightarrow X$. So the states we have been drawing, when interpreted in the category of sets and function, are precisely elements of the sets that label their output wires.\\
-
-The full and formal answer will require the reader to see Section \ref{} which spells out the category theory underpinning process theories. The caveat here is that process theories work for all \emph{practical} purposes, so I make no promises about how diagrams work for the kind of set theories that deals with hierarchies of infinities that set theorists do. For other issues concerning for instance the set of all functions between two sets, that requires symmetric monoidal closure, for which there exist string-diagrammatic formalisms \citep{}.
+In the case of set theory (the practical kind, not the one with crazy infinities), let's suppose that instead of encoding functions as sets, we treat functions as primitive, so that we have a process theory where wires are labelled with sets, and functions are process boxes that we draw. The problem we face now is that it is not immediately clear how we would access the elements of any set using only the diagrammatic language. The solution is the observation that the elements $\{x \ | \ X\}$ of a set $X$ are in bijective correspondence with the functions from a singleton into $X$: $\{ f(\star) \mapsto x \ | \ \{\star\} \overset{f}{\rightarrow} X $. In prose, for any element $x$ in a set $X$, we can find a function that behaves as a pointer to that element $\{\star\} \rightarrow X$. So the states we have been drawing, when interpreted in the category of sets and function, are precisely elements of the sets that label their output wires.
 
 \newthought{\texttt{Objection:} But if they're expressively the same, what's the point?}
 
-The following rebuttal draws on Harold Abelson's introductory lecture to computer science \citep{} (in which string diagrams appear to introduce programs without being explicitly named as such).\\
-
-There is a distinction between declarative and imperative knowledge. Declarative knowledge is \emph{knowing-that}, for example, 6 is the square root of 36, which we might write $6 = \sqrt{36}$. Imperative knowledge is \emph{knowing-how}, for example, to obtain the square root of a positive number, for instance, by Heron's iterative method: to obtain the square root of $Y$, make a guess $X$, and take the average of $X$ and $\frac{Y}{X}$ until your guess is good enough.\\
+The following rebuttal draws on Harold Abelson's introductory lecture to computer science \bR CITE \e (in which string diagrams appear to introduce programs without being explicitly named as such). There is a distinction between declarative and imperative knowledge. Declarative knowledge is \emph{knowing-that}, for example, 6 is the square root of 36, which we might write $6 = \sqrt{36}$. Imperative knowledge is \emph{knowing-how}, for example, to obtain the square root of a positive number, for instance, by Heron's iterative method: to obtain the square root of $Y$, make a guess $X$, and take the average of $X$ and $\frac{Y}{X}$ until your guess is good enough.\\
 
 Computer science concerns imperative knowledge. An obstacle to the study of imperative knowledge is complexity, which computer scientists manage by black-box abstraction -- suppressing irrelevant details, so that for instance once a square root procedure is defined, the reasoner outside the system does not need to know whether the procedure inside is an iterative method by Heron or Newton, only that it works and has certain properties. These black-boxes can be then composed into larger processes and procedures within human cognitive load.\\
 
 Abstraction also yields generality. For example, in the case of addition, it is not only numbers we may care to add, but perhaps vectors, or the waveforms of signals. So there is an abstract notion of addition which we concretely instantiate for different domains that share a common interface; we may decide for example that all binary operations that are commutative monoids are valid candidates for what it means to be an addition operation.\\
 
-In this light, string diagrams are a natural metalanguage for the study of imperative knowledge; string diagrams in fact independently evolved within computer science from flowcharts describing processes. Process theories, which are equations or logical sentences about processes, allow us to reason declaratively about imperative knowledge. Moreover, string diagrams as syntactic objects can be interpreted in various concrete settings, so that the same diagram serves as the common interface for a process like addition, with compliant implementation details for each particular domain spelled out separately.
+In this light, string diagrams are a natural metalanguage for the study of imperative knowledge; string diagrams in fact independently evolved within computer science from flowcharts describing processes. Process theories, which are equations or logical sentences about processes, allow us to reason declaratively about imperative knowledge. Moreover, string diagrams as syntactic objects can be interpreted in various concrete settings, so that the same diagram serves as the common interface for a process like addition, with compliant implementation details for each particular domain spelled out separately.\\
+
+\newthought{Now we define the one structure we really care about} Spiders -- or special frobenius algebras \bR CITE \e -- will be the master structure we work with.
+
+\clearpage
+
+\begin{myboxB}
+\begin{defn}[Spiders]
+I will describe the behaviour of a spider as a PROP \bR CITE \e, which as far as we care is just a way to list out processes and equations that their composites satisfy in a symmetric monoidal category. We say that an object is \emph{equipped} with a spider when it has the following processes:
+\[\scalebox{0.5}{\tikzfig{proctheory/spiders0}}\]
+That satisfy the following equations:
+\[\resizebox{\textwidth}{!}{\tikzfig{proctheory/spiders1}}\]
+Spiders imply strong compact closure; self-dual cups and caps, which we may use in pregroup diagrams, may be considered composite spiders. The equations for cups and caps are derived from spider rules, taking advantage of equality up to connectivity of wires.
+\[\resizebox{\textwidth}{!}{\tikzfig{proctheory/strongcompactclosed}}\]
+\end{defn}
+\end{myboxB}
+
+\begin{myboxB}
+\begin{term}
+We call a category in which every object has a spider a \emph{hypergraph category} \bR CITE \e. 
+\end{term}
+
+\begin{remark}[Spiders are easy]
+All connected configurations of spiders with the same number of inputs and outputs are equal. Intuitively, whereas wires connect end-to-end in string diagrams, spiders give us \emph{multiwires} that we may freely split and connect.
+\[\tikzfig{proctheory/multiwires}\]
+\end{remark}
+
+\begin{remark}[Only connectivity matters]
+In hypergraph categories, by recovery of strong compact closure, we may freely reason without a convention for reading direction of processes. By the multiwire property, all diagrams with the same connectivity are equal. Hence, \emph{only connectivity matters}.
+\end{remark}
+\end{myboxB}
+
+\clearpage
+
+

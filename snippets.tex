@@ -1052,3 +1052,18 @@ This aim of reasoning about programs in an implementation-independent fashion co
 
 
 This provides a plan of attack for the semantic modelling problem of entification: if we take noun-wires to be the code object in a monoidal computer, we have restricted the candidate symmetric monoidal categories to model text-circuits in a way that allows for entification.
+
+
+\subsection{Pregroup diagrams and correlations}
+
+Let's revisit the copy and delete maps for a moment. Suppose our process theory is such that for every wire $X$, there is a unique copy map $\delta_X$ such that every state on $X$ is copyable and deletable. A consequence of this assumption is that every state is $\otimes$-separable (read \emph{tensor separable}):
+
+\[placeholder\]
+
+But there are certainly process theories in which we don't want this. For example, if states are random variables and parallel composition is the product of independent random variables (as is the case in Markov categories for probability theory \bR CITE \e) then copying a random variable gives a perfectly correlated pair of variables, which cannot be expressed as the product of a pair of independent random variables.
+
+
+
+\\
+
+The caveat here is that process theories work for all \emph{practical} purposes, so I make no promises about how diagrams work for the kind of set theories that deals with hierarchies of infinities that set theorists do. For other issues concerning for instance the set of all functions between two sets, that requires symmetric monoidal closure, for which there exist string-diagrammatic formalisms \citep{}.

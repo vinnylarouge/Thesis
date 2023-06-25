@@ -1,0 +1,62 @@
+\begin{tikzpicture}[{every node/.style}={scale=2}]
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dotC] (0) at (-2, 0) {};
+		\node [style=none] (1) at (-3, 1) {};
+		\node [style=none] (2) at (-3, -1) {};
+		\node [style=none] (3) at (-1, 1) {};
+		\node [style=none] (4) at (-1, -1) {};
+		\node [style=none] (5) at (-1, 0.5) {};
+		\node [style=none] (6) at (-1, -0.5) {};
+		\node [style=none] (7) at (-3, 0) {};
+		\node [style=dotC] (8) at (-6, 0) {};
+		\node [style=none] (9) at (-5, 1) {};
+		\node [style=none] (10) at (-5, -1) {};
+		\node [style=none] (11) at (-7, 1) {};
+		\node [style=none] (12) at (-7, -1) {};
+		\node [style=none] (13) at (-7, 0.5) {};
+		\node [style=none] (14) at (-7, -0.5) {};
+		\node [style=none] (15) at (-5, 0) {};
+		\node [style=dotC] (16) at (1.5, 0) {};
+		\node [style=none] (17) at (3, 1) {};
+		\node [style=none] (18) at (3, -1) {};
+		\node [style=none] (19) at (1, 1) {};
+		\node [style=none] (20) at (1, -1) {};
+		\node [style=none] (23) at (3, 0) {};
+		\node [style=dotC] (24) at (6.5, 0) {};
+		\node [style=none] (25) at (5, 1) {};
+		\node [style=none] (26) at (5, -1) {};
+		\node [style=none] (27) at (7, 1) {};
+		\node [style=none] (28) at (7, -1) {};
+		\node [style=none] (29) at (5, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (7.center) to (0);
+		\draw [style=K, in=180, out=90] (0) to (5.center);
+		\draw [style=K, in=-180, out=-90, looseness=1.25] (0) to (6.center);
+		\draw [style=K] (15.center) to (8);
+		\draw [style=K, in=0, out=90] (8) to (13.center);
+		\draw [style=K, in=0, out=-90, looseness=1.25] (8) to (14.center);
+		\draw [style=K] (23.center) to (16);
+		\draw [style=K] (29.center) to (24);
+		\draw [style=H] (4.center)
+			 to (2.center)
+			 to (1.center)
+			 to (3.center)
+			 to cycle;
+		\draw [style=H] (9.center)
+			 to (10.center)
+			 to (12.center)
+			 to [in=270, out=90] (11.center)
+			 to cycle;
+		\draw [style=H] (18.center)
+			 to (20.center)
+			 to (19.center)
+			 to (17.center)
+			 to cycle;
+		\draw [style=H] (28.center)
+			 to (26.center)
+			 to (25.center)
+			 to (27.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}
