@@ -3,56 +3,46 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: chap1.aux
 The style file: alpha.bst
 Database file #1: thesis_intro.bib
-Warning--I didn't find a database entry for "joyal_geometry_nodate"
 Warning--I didn't find a database entry for ""
-Warning--to sort, need author or key in noauthor_riley_2022
-Warning--empty booktitle in bonchi_categorical_2014
-Warning--empty journal in davidad_open_nodate
-Warning--empty year in davidad_open_nodate
-Warning--empty publisher in frege_gottlob_selbst_1884
-Warning--empty publisher in gardenfors_geometry_2014
-Warning--empty publisher in mcshane_linguistics_2021
-Warning--empty booktitle in selinger_survey_2010
-Warning--empty publisher in selinger_survey_2010
-You've used 65 entries,
+You've used 1 entry,
             2543 wiz_defined-function locations,
-            897 strings with 17186 characters,
-and the built_in function-call counts, 26812 in all, are:
-= -- 2515
-> -- 1606
-< -- 37
-+ -- 572
-- -- 561
-* -- 2027
-:= -- 4420
-add.period$ -- 199
-call.type$ -- 65
-change.case$ -- 485
-chr.to.int$ -- 65
-cite$ -- 75
-duplicate$ -- 926
-empty$ -- 1824
-format.name$ -- 642
-if$ -- 5369
+            562 strings with 4526 characters,
+and the built_in function-call counts, 284 in all, are:
+= -- 23
+> -- 8
+< -- 1
++ -- 2
+- -- 2
+* -- 15
+:= -- 51
+add.period$ -- 2
+call.type$ -- 1
+change.case$ -- 5
+chr.to.int$ -- 1
+cite$ -- 1
+duplicate$ -- 11
+empty$ -- 26
+format.name$ -- 4
+if$ -- 56
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 45
-newline$ -- 326
-num.names$ -- 194
-pop$ -- 604
+missing$ -- 0
+newline$ -- 7
+num.names$ -- 3
+pop$ -- 10
 preamble$ -- 1
-purify$ -- 555
+purify$ -- 6
 quote$ -- 0
-skip$ -- 851
+skip$ -- 13
 stack$ -- 0
-substring$ -- 1051
-swap$ -- 134
-text.length$ -- 37
-text.prefix$ -- 26
+substring$ -- 7
+swap$ -- 1
+text.length$ -- 1
+text.prefix$ -- 1
 top$ -- 0
-type$ -- 488
-warning$ -- 9
-while$ -- 218
-width$ -- 67
-write$ -- 817
-(There were 11 warnings)
+type$ -- 8
+warning$ -- 0
+while$ -- 2
+width$ -- 2
+write$ -- 12
+(There was 1 warning)

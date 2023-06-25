@@ -1067,3 +1067,34 @@ But there are certainly process theories in which we don't want this. For exampl
 \\
 
 The caveat here is that process theories work for all \emph{practical} purposes, so I make no promises about how diagrams work for the kind of set theories that deals with hierarchies of infinities that set theorists do. For other issues concerning for instance the set of all functions between two sets, that requires symmetric monoidal closure, for which there exist string-diagrammatic formalisms \citep{}.
+
+
+
+\begin{marginfigure}
+\[\begin{tikzcd}[ampersand replacement=\&]
+    {(X \otimes (Y \otimes Z))} \& {(Z \otimes (X \otimes Y))} \\
+    {(X \otimes (Z \otimes Y))} \& {((Z \otimes X) \otimes Y)} \\
+    {(X \otimes (Z \otimes Y))} \& {((X \otimes Z) \otimes Y)}
+    \arrow["\theta", from=1-1, to=1-2]
+    \arrow["\alpha", from=1-2, to=2-2]
+    \arrow["{\theta^{-1}}", from=2-2, to=3-2]
+    \arrow["{\alpha^{-1}}"', from=1-1, to=2-1]
+    \arrow["{1 \otimes \theta}"', from=2-1, to=3-1]
+    \arrow["\alpha"', from=3-1, to=3-2]
+\end{tikzcd}\]
+\end{marginfigure}
+
+\begin{marginfigure}
+\[\begin{tikzcd}[ampersand replacement=\&]
+    {(X \otimes (Y \otimes Z))} \& {((Y \otimes Z) \otimes X)} \\
+    {((X \otimes Y) \otimes Z)} \& {(Y \otimes (Z \otimes X))} \\
+    {((Y \otimes X) \otimes Z)} \& {(Z \otimes (X \otimes Y))}
+    \arrow["\theta", from=1-1, to=1-2]
+    \arrow["{\alpha^{-1}}", from=1-2, to=2-2]
+    \arrow["{1\otimes \theta}", from=2-2, to=3-2]
+    \arrow["{\alpha^{-1}}"', from=3-1, to=3-2]
+    \arrow["{\theta^{-1}}"', from=2-1, to=3-1]
+    \arrow["\alpha"', from=1-1, to=2-1]
+\end{tikzcd}\]
+\end{marginfigure}
+

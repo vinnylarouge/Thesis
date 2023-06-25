@@ -21,7 +21,7 @@
 
 \item Section \ref{sec:weakn} is a pedestrian introduction to weak $n$-category theory (via \texttt{homotopy.io}, underpinned by the theory of associative $n$-categories) from the perspective of generalising familiar string-rewrite systems to higher dimensions. The chief development of this section is a demonstration that context-free grammars and tree-adjoining grammars may be formalised in the $n$-categorical setting.
 
-\item Section \ref{sec:circs} spells out a generative grammar for text using an $n$-categorical signature as a rewrite system, which additionally provides a unified framework from which the Text Circuit Theorem first proved in \bR CITE \e is recovered.
+\item Section \ref{sec:gencirc} spells out a generative grammar for text using an $n$-categorical signature as a rewrite system, which additionally provides a unified framework from which the Text Circuit Theorem first proved in \bR CITE \e is recovered.
 
 \item Section \ref{sec:contrelintro} introduces the category \textbf{ContRel} of continuous relations. I detail the relationships (or lack thereof) of \textbf{ContRel} to its cousins \textbf{Top} and \textbf{Rel} in Section \ref{sec:contrelmath}. Though \textbf{ContRel} is constructed na\"{i}vely, its definition and an exposition of its expressivity from the monoidal perspective appears to be novel.
 
@@ -55,9 +55,9 @@ There are potentially practical and theoretical benefits to a fresh mathematical
 \input{chapters/stringdiagrams/1b_proctheory}\label{sec:proctheory}
 \clearpage
 \newpage
-\input{chapters/textcirc/previously}
+\input{chapters/textcirc/previously}\label{sec:previously}
 
-\chapter{Internal wirings: what, why, and where from?}
+\chapter{Internal wirings: what, why, and where from?}\label{chapter:internalwirings}
 Speakers produce, and listeners parse sentences. If we believe that semantics is compositional according to syntax, because communication is possible, these two ways of conceiving of grammar (e.g. string-rewrite systems and typelogical grammars, respectively) must be mathematically related: the semantics of a sentence ought to be "the same" in either grammar. Using string diagrams as semantics allows us to formalise "sameness" as "up to topological deformation", and internal wirings constitute a shared representation strategy on words between speaker and listener that witnesses this topological equivalence for any sentence that both grammars can produce. However, internal wirings are not functorially determined by syntax: the same word may have different internal wirings in a way that depends systematically on context. We can capture this systematicity as a span of functors closely related to cofunctors, for which we develop a string-diagrammatic reasoning technique that works like functor boxes, along with the attendant mathematics.
 \clearpage
 \newpage
@@ -101,7 +101,7 @@ We want to reason formally with and about pictorial iconic representations, of t
 
 \clearpage
 \newpage
-\chapter{What formal linguistics could look like}
+\chapter{What formal linguistics could look like}\label{chapter:conclusion}
 By way of conclusion, I outline some potential underpinning theses, and I sketch what formal linguistics could be.
 \clearpage
 \newpage
