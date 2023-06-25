@@ -180,7 +180,7 @@ The braidings $\theta_{X^{\tau}Y^{\sigma}} : (X \times Y)^{\tau \times \sigma} \
 The braidings inherit continuity from the isomorphisms between $X^\tau \times Y^\sigma$ and $Y^\sigma \times X^\tau$ in \textbf{Top}. They inherit everything else from \textbf{Rel}
 
 \newthought{Coherences:}
-Since we have verified all of the natural isomorphisms are continuous, it suffices to say that the coherences [] are inherited from the symmetric monoidal structure of \textbf{Rel} up to marking objects with topologies.
+Since we have verified all of the natural isomorphisms are continuous, it suffices to say that the coherences are inherited from the symmetric monoidal structure of \textbf{Rel} up to marking objects with topologies.
 
 \subsection{Rig category structure}
 
@@ -203,7 +203,7 @@ The biproduct of topologies $X^\tau$ and $Y^\sigma$ is their direct sum topology
 \end{proposition}
 
 \begin{remark}
-Biproducts yield another symmetric monoidal structure which the $\times$ monoidal product distributes over appropriately to yield a rig category. Throughout the chapter we will use $\cup$, but we could have also "diagrammatised" $\cup$ by treating it as a monoid internal to \textbf{ContRel} viewed as a symmetric monoidal category with respect to the biproduct. There are at least two diagrammatic formalisms for rig categories that we could have used, \bR CITE \e and \bR CITE \e, but it gets too visually complicated. especially when we sometimes take unions over arbitrary indexing sets, which is alright in topology but not depictable as a finite diagram in the $\oplus$-structure. A neat fact that follows is that a topological space is compact precisely when any arbitrarily indexed $\cup$ of tests in the $\times$-structure is \emph{depictable} in the $\oplus$-structure of either diagrammatic calculus for rig categories. \textbf{FdHilb} also has a monoidal product notated $\otimes$ that distributes over the monoidal structure given by biproducts $\oplus$. In contrast, we have used $\times$ -- the cartesian product notation -- for the monoidal product of \textbf{ContRel} since that is closer to what is familiar for sets.
+Biproducts yield another symmetric monoidal structure which the $\times$ monoidal product distributes over appropriately to yield a rig category. Throughout the chapter we will use $\cup$, but we could have also "diagrammatised" $\cup$ by treating it as a monoid internal to \textbf{ContRel} viewed as a symmetric monoidal category with respect to the biproduct. There are at least two diagrammatic formalisms for rig categories that we could have used such as \citep{comfort_sheet_2020}, but it gets too visually complicated. especially when we sometimes take unions over arbitrary indexing sets, which is alright in topology but not depictable as a finite diagram in the $\oplus$-structure. A neat fact that follows is that a topological space is compact precisely when any arbitrarily indexed $\cup$ of tests in the $\times$-structure is \emph{depictable} in the $\oplus$-structure of either diagrammatic calculus for rig categories. \textbf{FdHilb} also has a monoidal product notated $\otimes$ that distributes over the monoidal structure given by biproducts $\oplus$. In contrast, we have used $\times$ -- the cartesian product notation -- for the monoidal product of \textbf{ContRel} since that is closer to what is familiar for sets.
 \end{remark}
 
 \subsection{Monoidal (co!)closure}
@@ -328,7 +328,7 @@ Now we evaluate $R \overset{\eta R}{\rightarrow} RLR \overset{R \epsilon}{\right
 
 The usual forgetful functor from \textbf{ContRel} to \textbf{Loc} has no left adjoint. Just as the forgetful functor from \textbf{ContRel} to \textbf{Rel} "forgets topology while keeping the points", we might consider a forgetful functor to \textbf{Loc} that "forgets points while remembering topology". But we show that there is no such functor that forms a free-forgetful adjunction.
 
-\begin{rem}[The category \textbf{Loc}]\bR CITE \e
+\begin{rem}[The category \textbf{Loc}]\citep{nlab_authors_loc_nodate}
 A \emph{frame} is a poset with all joins and finite meets satisfying the infinite distributive law:
 \[x \wedge (\bigvee\limits_{i}y_i) = \bigvee\limits_{i}(x \wedge y_i)\]
 A \emph{frame homomorphism} $\phi: A \rightarrow B$ is a function between frames that preserves finite meets and arbitrary joins, i.e.:
@@ -354,7 +354,7 @@ Seeking contradiction, if $U$ were a right adjoint, it would preserve limits. Th
 This is a rather frustrating result, because $U$ does turn continuous relations into backwards frame homomorphisms on lattices of opens; see Proposition \ref{prop:framehom}, and note that in the frame of opens associated with a topology, the empty set becomes the bottom element. The obstacle is the fact that the empty topology is both initial and terminal in \textbf{ContRel}. We may be tempted to try treating $U$ as a right adjoint going to \textbf{Frm} instead, but then the monad induced by the injunction on \textbf{Loc} would trivialise: left adjoints preserve colimits, so any putative left adjoint $F$ must send $\bot < \top$ (initial in \textbf{Frm} by duality) to the empty toplogy, and the empty topology as terminal object must be sent to the terminal singleton frame, which implies that the monad $UF$ on \textbf{Frm} sends everything to the singleton lattice.
 
 \newthought{Why not Span(\textbf{Top})?}
-One common generalisation of relations is to take spans of monics in the base category []. This actually produces a different category than the one we have defined. Below is an example of a span of monic continuous functions from \textbf{Top} that corresponds to a relation that doesn't live in \textbf{ContRel}. It is the span with the singleton as apex, with maps from the singleton to the closed points of a two Sierpi\'{n}ski spaces.
+One common generalisation of relations is to take spans of monics in the base category. This actually produces a different category than the one we have defined. Below is an example of a span of monic continuous functions from \textbf{Top} that corresponds to a relation that doesn't live in \textbf{ContRel}. It is the span with the singleton as apex, with maps from the singleton to the closed points of a two Sierpi\'{n}ski spaces.
 
 \[\tikzfig{topology/spanctrex}\]
 

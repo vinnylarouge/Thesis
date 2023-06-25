@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  24 JUN 2023 23:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  25 JUN 2023 14:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2071,9 +2071,15 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.29405pt on input line 26.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 26.
-LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
+LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 26.
 
+
+Package natbib Warning: Citation `haydon_compositional_2020' on page 7 undefine
+d on input line 26.
+
+LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
+(Font)              scaled to size 9.0pt on input line 26.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2086,9 +2092,6 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/intro/GFOLex2c.tikz)
-LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 48.
-
 
 Package natbib Warning: Citation `heim_semantics_1998' on page 7 undefined on i
 nput line 48.
@@ -2113,6 +2116,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+LaTeX Font Info:    Trying to load font information for T1+zplsups on input lin
+e 84.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/t1zplsups.fd
+File: t1zplsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
+(Font)              scaled to size 10.0pt on input line 84.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 84.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 84.
+
+
+Package natbib Warning: Citation `wang-mascianica_internal_nodate' undefined on
+ input line 84.
+
 [11
 
 ]
@@ -2130,24 +2149,16 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [12]
-LaTeX Font Info:    Trying to load font information for T1+zplsups on input lin
-e 121.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/t1zplsups.fd
-File: t1zplsups.fd 2015/01/17 v1.0
-)
-LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 121.
-LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 121.
-LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 121.
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
+
+Package natbib Warning: Citation `mellies_functorial_2006' on page 14 undefined
+ on input line 124.
+
 (./figures/tree2gate/conventions/outsidein.tikz)
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 128.
+(Font)              scaled to size 9.0pt on input line 131.
 
 (./figures/tree2gate/conventions/insideout.tikz)
 (./figures/tree2gate/mfunctorbox/mfbox-notation.tikz)
@@ -2197,30 +2208,34 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19
 
-] [20] (./figures/strictify/strictgens.tikz)
-Overfull \hbox (12.00053pt too wide) detected at line 233
+] [20]
+
+Package natbib Warning: Citation `wilson_string_2022' undefined on input line 2
+29.
+
+(./figures/strictify/strictgens.tikz)
+Overfull \hbox (12.00053pt too wide) detected at line 236
 []
  []
 
 (./figures/strictify/strictfunct.tikz)
-Overfull \hbox (12.00652pt too wide) detected at line 240
+Overfull \hbox (12.00652pt too wide) detected at line 243
 []
  []
 
 (./figures/strictify/strictadapt.tikz)
-Overfull \hbox (11.9968pt too wide) detected at line 247
+Overfull \hbox (11.9968pt too wide) detected at line 250
 []
  []
 
 (./figures/strictify/strictators.tikz)
-Overfull \hbox (12.00412pt too wide) detected at line 254
+Overfull \hbox (12.00412pt too wide) detected at line 257
 []
  []
 
 
-Overfull \hbox (29.3297pt too wide) in paragraph at lines 263--263
-[] 
- []
+Package natbib Warning: Citation `wilson_string_2022' undefined on input line 2
+62.
 
 (./figures/strictify/strictstate.tikz) [21
 
@@ -2235,7 +2250,7 @@ Overfull \hbox (29.3297pt too wide) in paragraph at lines 263--263
 \myCenter2=\dimen362
 \myScoreEnd2=\dimen363
 )
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 [][]\T1/zplTLF/b/n/10 Construction 0.3.5 \T1/zplTLF/m/n/10 (Dis-crete monoidal 
 op-fi-bra-tion from pre-groups with brack-et-ing into de-pen-dent CFGs)\T1/zplT
 LF/b/n/10 . []\T1/zplTLF/m/n/10 We aim to elu-ci-date the pre-group with brack-
@@ -2243,14 +2258,14 @@ et-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 \T1/zplTLF/m/n/10 in suf-fi-cient de-tail to de-scribe the func-tor into dCFGs;
  in par-tic-u-lar, we need to know what the gen-er-a-tors of the pre-group are.
  The fi-bre over a noun state in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 \T1/zplTLF/m/n/10 the dCFG is the cor-re-spond-ing noun-state in the brack-eted
  pre-group. The fi-bre over a verb state in the dCFG is ei-ther an in-tran-si-t
 ive or tran-si-tive word-state,
@@ -2264,7 +2279,7 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 41.
 LaTeX Font Warning: Command \small invalid in math mode on input line 96.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 288--290
+Underfull \hbox (badness 10000) in paragraph at lines 287--289
 \T1/zplTLF/m/n/10 We de-pict the case of ad-verbs ex-plic-itly. Here are two li
 fts of the ad-verb la-bel in the fi-bre of the op-fi-bra-tion cor-re-spond-ing 
 to the in-tran-si-tive and tran-si-tive
@@ -2290,14 +2305,14 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 224.
 LaTeX Font Warning: Command \small invalid in math mode on input line 293.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 []\T1/zplTLF/m/n/10 The cor-re-spon-dence of in-tro-duc-tion rules in the dCFG 
 to proof steps in the se-quent for-mu-la-tion of pre-group proofs (c.f. Ex-am-p
 le []0.3.4[]) is ob-tained obliquely,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 \T1/zplTLF/m/n/10 be-cause la-bels for de-pen-dent types are fac-ing the wrong 
 way; hence the cups for the lifts of la-bels. We can ob-serve the cor-re-spon-d
 ence by the fol-low-ing di-a-
@@ -2332,21 +2347,21 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 302.
 LaTeX Font Warning: Command \small invalid in math mode on input line 305.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 296--298
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 \T1/zplTLF/m/n/10 When (and only when) the types are matched, the boxes may be 
 se-quen-tially (ver-ti-cally) merged. Now within the box, we may ap-ply the equ
 a-tions avail-able
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--298
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 \T1/zplTLF/m/n/10 to us in the stric-ti-fied set-ting to elim-i-nate the (de)te
 nsors. Ob-serve that re-solv-ing snaking wires causes the sec-ond di-a-gram to 
 \T1/zplTLF/m/it/10 be-have as though \T1/zplTLF/m/n/10 we de-fined lifts
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--298
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 \T1/zplTLF/m/n/10 for "right-side-up" la-bels and in-tro-duc-tion rules; we cou
 ld not have done so di-rectly, or else the op-fi-bra-tion would have no di-a-gr
 am-matic way to de-ter-mine the
@@ -2366,28 +2381,28 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 101.
 LaTeX Font Warning: Command \small invalid in math mode on input line 182.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
 []\T1/zplTLF/m/n/10 The other lifts for other types are ob-tained sim-i-larly, 
 by the so-lu-tions of a sys-tem of pre-group equa-tions with bound-ary con-di-t
 ions that treat dCFG types as
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--311
+Underfull \hbox (badness 10000) in paragraph at lines 308--310
 \T1/zplTLF/m/n/10 The bound-ary con-di-tions are given by the par-tic-u-lar ver
 bs in the sen-tence, which may come in three kinds: in-tran-si-tive, tran-si-ti
 ve, or verbs that take a sen-ten-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--329
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
 \T1/zplTLF/m/n/10 in-duc-tively, where the brack-et-ing struc-ture is han-dled 
 by the ten-sor and de-ten-sors of the stric-ti-fied pre-group di-a-grams. The p
 re-group typ-ing so-lu-tions for \T1/npxtt/m/n/10 V\T1/zplTLF/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--329
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
 \T1/npxtt/m/n/10 ADV\T1/zplTLF/m/n/10 , \T1/npxtt/m/n/10 ADP \T1/zplTLF/m/n/10 
 across in-dices are unique, as the lat-ter two gen-er-a-tors of the string lan-
 guage cor-re-spond to verbs with sen-ten-tial com-ple-ment and ad-po-si-tions r
@@ -2395,58 +2410,69 @@ e-spec-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--329
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
 \T1/zplTLF/m/n/10 tively, so by the brack-et-ing struc-ture, in-dices cor-re-sp
 ond uniquely to dCFG di-a-grams up to la-bels. The fam-ily of pre-group typ-ing
  so-lu-tion yield the re-quired
  []
 
-[22] [23] [24] [25] [26
+[22
+pdfTeX warning (ext4): destination with the same identifier (name{cite.wilson_s
+tring_2022}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.330 \clearpage
+                ] [23] [24] [25]
+
+Package natbib Warning: Citation `clarke_double_2023' on page 26 undefined on i
+nput line 344.
+
+[26
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 \T1/zplTLF/m/n/10 from the next chap-ter: \T1/npxtt/m/n/10 Alice sees Bob quick
 ly run to school. \T1/zplTLF/m/n/10 The apex is given by Con-struc-tion []0.3.3
 []. The right leg is the monoidal dis-crete op-fi-bra-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 \T1/zplTLF/m/n/10 from Con-struc-tion []0.3.5[] into the dCFG. In the first di-
 a-gram be-low, we ap-ply the op-fi-bra-tion to the word states, which have uniq
 ue lifts. The sec-ond di-a-gram
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 \T1/zplTLF/m/n/10 fol-lows by monoidal-ity. In the third, we ap-ply the left le
 g of the co-func-tor us-ing the outside-in con-ven-tion, which is the ev-i-dent
 ly bijective-on-objects monoidal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 \T1/zplTLF/m/n/10 func-tor to the am-bi-ent rigid au-tonomous cat-e-gory of pre
 -group di-a-grams from the free stric-ti-fi-ca-tion. In the fourth, we ap-ply t
 he monoidal-ity of the in-ner
  []
 
 (./figures/tree2gate/workedexample/cofunctorex1.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 404--406
+Underfull \hbox (badness 10000) in paragraph at lines 403--405
 \T1/zplTLF/m/n/10 For the first equa-tion, the ma-genta op-fi-bra-tion box now 
 has al-ready cho-sen a codomain for the lift, so it can eat the next mor-phism 
 high-lighted in a dashed box.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--406
+Underfull \hbox (badness 10000) in paragraph at lines 403--405
 \T1/zplTLF/m/n/10 For the sec-ond equa-tion, note that eating-rules swap over f
 or the dif-fer-ent con-ven-tions of func-tor boxes: while inside-out func-tor b
 oxes need ex-tra data to eat,
  []
 
 (./figures/tree2gate/workedexample/cofunctorex2.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 406--408
+Underfull \hbox (badness 10000) in paragraph at lines 405--407
 \T1/zplTLF/m/n/10 So both func-tor boxes can eat their way through the out-side
  string di-a-gram, and wire-assignment is re-solved by the outer func-tor box k
 eep-ing track of the
@@ -2470,14 +2496,19 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 ) [29
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
+
+Package natbib Warning: Citation `wang-mascianica_internal_nodate' on page 30 u
+ndefined on input line 447.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 []\T1/zplTLF/m/n/10 Source cat-e-gory is the free stric-ti-fi-ca-tion of a sin-
 gle wire equipped with a spi-der, with generator-states im-plied by the fol-low
 -ing equa-tions. Tar-get is pre-group
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 \T1/zplTLF/m/n/10 di-a-grams in $\LS1/stix2/m/it/10 n; s$\T1/zplTLF/m/n/10 . Se
 n-tence type is brack-et-ings of nouns: al-ter-nate brack-et-ing no-ta-tion is 
 in-tro-duced for brevity. Stric-ti-fied unit is used to dis-tin-guish the brack
@@ -2485,17 +2516,17 @@ in-tro-duced for brevity. Stric-ti-fied unit is used to dis-tin-guish the brack
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 \T1/zplTLF/m/n/10 eted sin-gle noun wire from the plain noun wire, which is its
  own lift. Brack-et-ing monoidal units gives the Dyck lan-guage, which may be i
 n prin-ci-ple used to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 \T1/zplTLF/m/n/10 dis-tin-guish turn-ing num-bers in the rigid au-tonomous set-
 ting, omit-ted for brevity. For more in-ter-nal wirings for other gram-mat-i-ca
-l cat-e-gories, see []CITE []. This
+l cat-e-gories, see (\T1/zplTLF/b/n/10 ?\T1/zplTLF/m/n/10 ). This data
  []
 
 (./figures/tree2gate/workedexample/pg2cfgcof0.tikz
@@ -2669,28 +2700,45 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 85.
 LaTeX Font Warning: Command \small invalid in math mode on input line 90.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 467--469
+
+Package natbib Warning: Citation `hu_external_nodate' on page 30 undefined on i
+nput line 467.
+
+
+Package natbib Warning: Citation `roman_open_2021' on page 30 undefined on inpu
+t line 467.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--468
 \T1/zplTLF/m/n/10 And we'll spec-ify the fol-low-ing monoidal func-tor from the
  cat-e-gory we just lifted to in Ex-am-ple []0.5.4[] into a strongly com-pact c
 losed cat-e-gory; prefer-ably one
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--469
-\T1/zplTLF/m/n/10 that is a vari-ant of \T1/npxtt/m/n/10 Prof\T1/zplTLF/m/n/10 
-, in which one can rea-son with open string di-a-grams []Nick, Mario []. The fu
-nc-tor in-ter-prets spi-ders as pair of pants, and word-states as
+Underfull \hbox (badness 10000) in paragraph at lines 466--468
+\T1/zplTLF/m/n/10 that is a vari-ant of \T1/zplTLF/b/n/10 Prof\T1/zplTLF/m/n/10
+ , in which one can rea-son with open string di-a-grams (\T1/zplTLF/b/n/10 ??\T
+1/zplTLF/m/n/10 ). The func-tor in-ter-prets spi-ders as pair of pants, and wor
+d-states as interesting-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--468
+\T1/zplTLF/m/n/10 looking things. We'll show just the lifts of the monoid part 
+of the spi-der; the comonoid part is the same thing up-side down. A tech-ni-cal
+-ity we gloss over is the
  []
 
 (./figures/tree2gate/workedexample/iwfunctor.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 469--471
+Underfull \hbox (badness 10000) in paragraph at lines 468--470
 \T1/zplTLF/m/n/10 Applying this func-tor es-tab-lishes that the same kind of sp
 an of func-tors that gets us from pro-duc-tive to pars-ing gram-mars is also su
 f-fi-cient to get us from pars-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--471
+Underfull \hbox (badness 10000) in paragraph at lines 468--470
 \T1/zplTLF/m/n/10 ing gram-mars to text cir-cuits. By math-e-mat-i-cally analys
 ing and tak-ing away the bu-reau-cracy of syn-tax, it be-comes ev-i-dent that t
 he nat-u-ral habi-tat of lan-guage
@@ -2699,7 +2747,7 @@ he nat-u-ral habi-tat of lan-guage
 (./figures/tree2gate/workedexample/pg2circmagic.tikz) [30] [31] [32] [33]
 [34] [35]
 LaTeX Font Info:    Font shape `T1/zplTLF/b/sc' will be
-(Font)              scaled to size 10.0pt on input line 483.
+(Font)              scaled to size 10.0pt on input line 482.
  [36
 
 
@@ -2709,12 +2757,12 @@ LaTeX Font Info:    Font shape `T1/zplTLF/b/sc' will be
 \myCenter3=\dimen365
 \myScoreEnd3=\dimen366
  [37]
-Overfull \hbox (28.18535pt too wide) detected at line 571
+Overfull \hbox (28.18535pt too wide) detected at line 570
 []
  []
 
 
-Overfull \hbox (28.18535pt too wide) detected at line 580
+Overfull \hbox (28.18535pt too wide) detected at line 579
 []
  []
 
@@ -2728,7 +2776,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 File: UTF8.chr 2021/10/16 4.8.5
 )
 LaTeX Font Info:    Trying to load font information for C70+gbsn on input line 
-596.
+595.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fd
 File: c70gbsn.fd 2021/10/16 4.8.5
@@ -2736,7 +2784,16 @@ File: c70gbsn.fd 2021/10/16 4.8.5
 (/usr/local/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fdx
 File: c70gbsn.fdx 2021/10/16 4.8.5
 )
-[38] [39] [40])
+
+Package natbib Warning: Citation `linus_pauling_memorial_lecture_series_neurosc
+ience_2018' on page 38 undefined on input line 601.
+
+[38] [39] [40]
+
+Package natbib Warning: Citation `buszkowski_pregroup_nodate' on page 41 undefi
+ned on input line 634.
+
+)
 
 Package natbib Warning: There were undefined citations.
 
@@ -2756,10 +2813,10 @@ Package rerunfilecheck Info: File `chap2.out' has not changed.
 (rerunfilecheck)             Checksum: 05CDD608158B96BB508C89AE0DE83617;1616.
  ) 
 Here is how much of TeX's memory you used:
- 65263 strings out of 478268
- 1400460 string characters out of 5846348
- 2492840 words of memory out of 5000000
- 82160 multiletter control sequences out of 15000+600000
+ 65269 strings out of 478268
+ 1400609 string characters out of 5846348
+ 2492868 words of memory out of 5000000
+ 82162 multiletter control sequences out of 15000+600000
  624081 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  95i,15n,104p,1998b,1464s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2784,10 +2841,10 @@ exlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive
 /2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/tex
 mf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/texmf-dist/f
 onts/type1/public/newpx/zplri.pfb>
-Output written on chap2.pdf (41 pages, 642142 bytes).
+Output written on chap2.pdf (41 pages, 642248 bytes).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
- 332 compressed objects within 4 object streams
- 88 named destinations out of 1000 (max. 500000)
+ 438 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
  3810 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -82,6 +82,12 @@ The two unique arrows between $\overset{K}{\times}$ and $\overset{W}{\times}$ ar
 }
 
 \marginnote[1cm]{
+\begin{defn}[Product of categories]
+The product of categories $\mathcal{C} \times \mathcal{D}$ has ordered pairs of objects $(C,D)$ and pairs of morphisms $(f,g)$ with elementwise composition and pairs of identities for identity morphisms. It is also, up to unique isomorphism, the categorical product in \textbf{Cat}, the category of categories and functors.
+\end{defn}
+}
+
+\marginnote[1cm]{
 \begin{defn}[Functor]
 A functor $F: \mathcal{C} \rightarrow \mathcal{D}$ (read: with domain a category $\mathcal{C}$ and codomain a category $\mathcal{D}$) consists of two suitably related functions. An object function $F_0 : \text{Ob}(\mathcal{C}) \rightarrow \text{Ob}(\mathcal{D})$ and a morphism function (equivalently viewed as a family of functions indexed by pairs of objects of $\mathcal{C}$) $F_1(X,Y) : \mathcal{C}(X,Y) \rightarrow \mathcal{D}(F_0 X,F_0 Y )$. $F_1$ must map identities to identities -- i.e., be such that for all $X \in \mathcal{C}$, $F_1(1_X) = 1_{F_0 X}$ -- and $F_1$ must map composites to composites -- i.e., for all $X,Y,Z \in \text{Ob}(\mathcal{C})$ and all $f: X \rightarrow Y$ and $g: Y \rightarrow Z$, $F_1 (f;g) = F_1 f ; F_1 g$.
 \end{defn}
@@ -115,7 +121,7 @@ A monoidal category consists of a category $\mathcal{C}$, a functor $\otimes: \m
 
 \marginnote[2cm]{
 \begin{theorem}[Coherence for monoidal categories]
-The following pentagon and triangle diagrams are conditions in the definition of a monoidal category. When they hold, all composites of associators and unitors (and their inverses) are isomorphisms \bR CITE \e.
+The following pentagon and triangle diagrams are conditions in the definition of a monoidal category. When they hold, all composites of associators and unitors (and their inverses) are isomorphisms \citep{maclane_natural_1963,benabou_algebre_1964}.
 % https://q.uiver.app/?q=WzAsNSxbMSwwLCIoKFcgXFxvdGltZXMgWCkgXFxvdGltZXMgKFkgXFxvdGltZXMgWikpIl0sWzAsMSwiKFcgXFxvdGltZXMgKFggXFxvdGltZXMgKFkgXFxvdGltZXMgWikpKSJdLFsxLDIsIigoKFcgXFxvdGltZXMgWCkgXFxvdGltZXMgWSkgXFxvdGltZXMgWikiXSxbMCwzLCIoVyBcXG90aW1lcyAoKFggXFxvdGltZXMgWSkgXFxvdGltZXMgWikpIl0sWzEsNCwiKChXIFxcb3RpbWVzIChYIFxcb3RpbWVzIFkpKSBcXG90aW1lcyBaKSJdLFsxLDAsIlxcYWxwaGEiLDFdLFswLDIsIlxcYWxwaGEiLDFdLFs0LDIsIlxcYWxwaGEgXFxvdGltZXMgMSIsMV0sWzMsNCwiXFxhbHBoYSIsMV0sWzEsMywiMSBcXG90aW1lcyBcXGFscGhhIiwxXV0=
 \[\begin{tikzcd}[ampersand replacement=\&]
 	\& {((W \otimes X) \otimes (Y \otimes Z))} \\
@@ -144,42 +150,7 @@ The following pentagon and triangle diagrams are conditions in the definition of
 
 \clearmargin
 
-\marginnote[3cm]{
-\begin{defn}[Symmetric Monoidal Category]
-A symmetric monoidal category is a monoidal category with an additional natural isomorphism
-\[\theta: - \ \otimes = \ \mapsto \ = \otimes \ -\] 
-Which satisfies the following pair of hexagons \bR CITE \e.
-
-\[\begin{tikzcd}[ampersand replacement=\&]
-    {(X \otimes (Y \otimes Z))} \& {(Z \otimes (X \otimes Y))} \\
-    {(X \otimes (Z \otimes Y))} \& {((Z \otimes X) \otimes Y)} \\
-    {(X \otimes (Z \otimes Y))} \& {((X \otimes Z) \otimes Y)}
-    \arrow["\theta", from=1-1, to=1-2]
-    \arrow["\alpha", from=1-2, to=2-2]
-    \arrow["{\theta^{-1}}", from=2-2, to=3-2]
-    \arrow["{\alpha^{-1}}"', from=1-1, to=2-1]
-    \arrow["{1 \otimes \theta}"', from=2-1, to=3-1]
-    \arrow["\alpha"', from=3-1, to=3-2]
-\end{tikzcd}\]
-
-\[\begin{tikzcd}[ampersand replacement=\&]
-    {(X \otimes (Y \otimes Z))} \& {((Y \otimes Z) \otimes X)} \\
-    {((X \otimes Y) \otimes Z)} \& {(Y \otimes (Z \otimes X))} \\
-    {((Y \otimes X) \otimes Z)} \& {(Z \otimes (X \otimes Y))}
-    \arrow["\theta", from=1-1, to=1-2]
-    \arrow["{\alpha^{-1}}", from=1-2, to=2-2]
-    \arrow["{1\otimes \theta}", from=2-2, to=3-2]
-    \arrow["{\alpha^{-1}}"', from=3-1, to=3-2]
-    \arrow["{\theta^{-1}}"', from=2-1, to=3-1]
-    \arrow["\alpha"', from=1-1, to=2-1]
-\end{tikzcd}\]
-
-\end{defn}
-}
-
-\clearmargin
-
-This section seeks to introduce process theories via string diagrams. The margin material will provide the formal mathematics of string diagrams from the bottum-up. The main body develops process theories via string diagrams by example, through which we develop towards a model of linguistic spatial relations -- words like "to the left of" and "between" -- which are a common ground of competence we all possess. Here we only focus on geometric relations between points in two dimensional Euclidean space equipped with the usual notions of metric and distance, providing adequate foundations to follow \bR \citep{}talkspace \e, in which I demonstrate how text circuits can be obtained from sentences and how such text circuits interpreted in the category of sets and relations \textbf{Rel} provides a semantics for such sentences. This motivates the question of how to express the (arguably more primitive \bR \citep{}piaget)\e linguistic topological concepts -- such as "touching" and "inside" -- the mathematics of which will be in Chapter \ref{sec:concepts}; the reader may skip straight to that chapter after this section if they are uninterested in syntax. We close this section with a brief note on how process theories relate to mathematical foundations and computer science.\\
+This section seeks to introduce process theories via string diagrams. The margin material will provide the formal mathematics of string diagrams from the bottum-up. The main body develops process theories via string diagrams by example, through which we develop towards a model of linguistic spatial relations -- words like "to the left of" and "between" -- which are a common ground of competence we all possess. Here we only focus on geometric relations between points in two dimensional Euclidean space equipped with the usual notions of metric and distance, providing adequate foundations to follow \citep{wang-mascianica_talking_2021}, in which I demonstrate how text circuits can be obtained from sentences and how such text circuits interpreted in the category of sets and relations \textbf{Rel} provides a semantics for such sentences. This motivates the question of how to express the (arguably more primitive \citep{jean_childs_1967}) linguistic topological concepts -- such as "touching" and "inside" -- the mathematics of which will be in Chapter \ref{sec:concepts}; the reader may skip straight to that chapter after this section if they are uninterested in syntax. We close this section with a brief note on how process theories relate to mathematical foundations and computer science.\\
 
 A \emph{process} is something that transforms some number of input system types to some number of output system types. We depict systems as wires, labelled with their type, and processes as boxes. Unless otherwise specified, we read processes from left to right.
 \[\scalebox{0.5}{\tikzfig{proctheory/process}}\]
@@ -286,7 +257,7 @@ The copyability of states is a special case of a more general form of interactio
 A cyan map that satisfies this equation is said to be a homomorphism with respect to the commutative comonoid. In the process theory of relations, those relations that satisfy this equation are precisely the functions; in other words, this diagrammatic equation expresses \emph{determinism}.
 \end{remark}
 
-Here is an unexpected consequence. Suppose we insist that \emph{to copy} in principle also implies the ability to copy \emph{anything} -- arbitrary states. From Example \ref{ex:copyablestate} and Remark \ref{ft:determinism}, we know that this demand is incompatible with certain process theories. In particular, this demand would constrain a process theory of sets and relations to a subtheory of sets and functions. The moral here is that process theories are flexible enough to meet ontological needs. A classical computer scientist who works with perfectly copyable data and processes might demand universal copying along with the commutative comonoid equations, whereas a quantum physicist who wishes to distinguish between copyable classical data and non-copyable quantum data might taxonomise copy and delete as a special case of a more generic quasi-copy and quasi-delete that is only a commutative comonoid. In fact, quantum physicists \emph{do} do this; see Dodo: \bR CITE \e.
+Here is an unexpected consequence. Suppose we insist that \emph{to copy} in principle also implies the ability to copy \emph{anything} -- arbitrary states. From Example \ref{ex:copyablestate} and Remark \ref{ft:determinism}, we know that this demand is incompatible with certain process theories. In particular, this demand would constrain a process theory of sets and relations to a subtheory of sets and functions. The moral here is that process theories are flexible enough to meet ontological needs. A classical computer scientist who works with perfectly copyable data and processes might demand universal copying along with the commutative comonoid equations, whereas a quantum physicist who wishes to distinguish between copyable classical data and non-copyable quantum data might taxonomise copy and delete as a special case of a more generic quasi-copy and quasi-delete that is only a commutative comonoid. In fact, quantum physicists \emph{do} do this; see Dodo: \citep{coecke_picturing_2017}.
 
 \subsection{What is an update?}\label{ss:update}
 
@@ -294,9 +265,42 @@ In the previous section we have seen how we can start with concrete examples of 
 
 Perhaps the most familiar setting for an update is a database. In a database, an \bM entry\e often takes the form of pairs of \bB fields\e and \bO values\e. For example, where a database contains information about employees, a typical entry might look like:
 \[\texttt{\bM < \bB\textbf{NAME}\e:\bO Jono Doe\e, \bB\textbf{AGE}\e:\bO 69\e, \bB\textbf{JOB}\e:\bO CONTENT CREATOR\e, \bB\textbf{SALARY}\e:\bO\$420\e, ... >\e}\]
-There are all kinds of reasons one might wish to update the value of a field: Jono might legally change their name, a year might pass and Jono's age must be incremented, Jono might be promoted or demoted or get a raise and so on. It was the concern of database theorists to formalise and axiomatise the notion of updating the value of a field -- \emph{independently of the specific programming language implementation of a database} -- so that they had reasoning tools to ensure program correctness \bR CITE \e. The problem is reducible to axiomatising a \emph{rewrite}: we can think of updating a value as first calculating the new value, then \emph{putting} the new value in place of the old. Since often the new value depends in some way on the old value, we also need a procedure to \emph{get} the current value. That was a flash-prehistory of \emph{bidirectional transformations} \bR CITE \e. Following the monoidal generalisation of lenses in \bR CITE \e, a rewrite as we have described above is specified by system diagrammatic equations in the margin, each of which we introduce in prose.
+There are all kinds of reasons one might wish to update the value of a field: Jono might legally change their name, a year might pass and Jono's age must be incremented, Jono might be promoted or demoted or get a raise and so on. It was the concern of database theorists to formalise and axiomatise the notion of updating the value of a field independently of the specific programming language implementation of a database. The problem is reducible to axiomatising a \emph{rewrite}: we can think of updating a value as first calculating the new value, then \emph{putting} the new value in place of the old. Since often the new value depends in some way on the old value, we also need a procedure to \emph{get} the current value. That was a flash-prehistory of \emph{bidirectional transformations} \citep{czarnecki_bidirectional_2009}, which then met applied category theory in e.g. \citep{gibbons_relating_2012}. Following the monoidal generalisation of lenses in \citep{wilson_safari_2021,hefford_categories_2020}, a rewrite as we have described above is specified by system diagrammatic equations in the margin, each of which we introduce in prose.
 
 \clearpage
+
+\marginnote[3cm]{
+\begin{defn}[Symmetric Monoidal Category]
+A symmetric monoidal category is a monoidal category with an additional natural isomorphism
+\[\theta: - \ \otimes = \ \mapsto \ = \otimes \ -\] 
+Which satisfies the following pair of hexagons \citep{nlab_authors_symmetric_nodate}.
+
+\[\begin{tikzcd}[ampersand replacement=\&]
+    {(X \otimes (Y \otimes Z))} \& {(Z \otimes (X \otimes Y))} \\
+    {(X \otimes (Z \otimes Y))} \& {((Z \otimes X) \otimes Y)} \\
+    {(X \otimes (Z \otimes Y))} \& {((X \otimes Z) \otimes Y)}
+    \arrow["\theta", from=1-1, to=1-2]
+    \arrow["\alpha", from=1-2, to=2-2]
+    \arrow["{\theta^{-1}}", from=2-2, to=3-2]
+    \arrow["{\alpha^{-1}}"', from=1-1, to=2-1]
+    \arrow["{1 \otimes \theta}"', from=2-1, to=3-1]
+    \arrow["\alpha"', from=3-1, to=3-2]
+\end{tikzcd}\]
+
+\[\begin{tikzcd}[ampersand replacement=\&]
+    {(X \otimes (Y \otimes Z))} \& {((Y \otimes Z) \otimes X)} \\
+    {((X \otimes Y) \otimes Z)} \& {(Y \otimes (Z \otimes X))} \\
+    {((Y \otimes X) \otimes Z)} \& {(Z \otimes (X \otimes Y))}
+    \arrow["\theta", from=1-1, to=1-2]
+    \arrow["{\alpha^{-1}}", from=1-2, to=2-2]
+    \arrow["{1\otimes \theta}", from=2-2, to=3-2]
+    \arrow["{\alpha^{-1}}"', from=3-1, to=3-2]
+    \arrow["{\theta^{-1}}"', from=2-1, to=3-1]
+    \arrow["\alpha"', from=1-1, to=2-1]
+\end{tikzcd}\]
+
+\end{defn}
+}
 
 \begin{description}
 \item[\textbf{PutPut}:] Putting in one value and then a second is the same as deleting the first value and just putting in the second.
@@ -311,6 +315,17 @@ There are all kinds of reasons one might wish to update the value of a field: Jo
 
 \clearpage
 
+\marginnote[2cm]{
+Coherence is about getting rid of syntactic bureaucracy. Addition for example is a commutative monoid, which satisfies equations that let us forget about bracketings, zeroes, and the ordering of summation.
+\[(x + (y + z)) = ((x + y) + z)\]
+\[x + 0 = x = 0 + x\]
+\[x + y = y + x\]
+Now the situation is that we have replaced the associativity equation with associator natural transformations, unit equations with unitors (and commutation with natural isomorphisms $\theta$ that are depicted as twisting wires in string diagrams for symmetric monoidal categories.)
+\[((X \otimes Y) \otimes Z) \overset{\alpha_{XYZ}}{\rightarrow} (X \otimes (Y \otimes Z))\]
+\[(X \otimes I) \overset{\rho_X}{\rightarrow} X \overset{\lambda_X}\rightarrow (I \otimes X)\]
+Recalling that we're happy with isomorphism in place of equality, coherence conditions ask that every possible composite of these structural operations is an isomorphism. In terms of the graphical language for monoidal categories, this means that string diagrams up-to-(processive)-planar-isotopy (and connectivity of wires in the case of symmetric monoidal categories) represent equivalent-up-to-isomorphism morphisms in an appropriate monoidal category. The reader is referred to \citep{selinger_survey_2010,joyal_geometry_1991,joyal_geometry_nodate} for details.
+}
+
 These diagrammatic equations do two things. First, they completely specify what it means to get and put values in a field in an implementation independent manner; it doesn't matter whether database entries are encoded as bitstrings, qubits, slips or paper or anything else, what matters is the interaction of get and put. Second, the diagrammatic equations give us the right to call our processes \emph{get} and \emph{put} in the first place: we define what it means to get and put by outlining the mutual interactions of get, put, copy, and delete. These two points are worth condensing and rephrasing:
 \[
 \textbf{A \emph{kind of process} is determined by patterns of interaction with other kinds of processes.}
@@ -322,17 +337,6 @@ Now we can diagrammatically depict the process of updating Jono's age, by \bB ge
 
 \newthought{But what are the \emph{things} that the processes operate on?}
 
-\marginnote{
-Coherence is about getting rid of syntactic bureaucracy. Addition for example is a commutative monoid, which satisfies equations that let us forget about bracketings, zeroes, and the ordering of summation.
-\[(x + (y + z)) = ((x + y) + z)\]
-\[x + 0 = x = 0 + x\]
-\[x + y = y + x\]
-Now the situation is that we have replaced the associativity equation with associator natural transformations, unit equations with unitors (and commutation with natural isomorphisms $\theta$ that are depicted as twisting wires in string diagrams for symmetric monoidal categories.)
-\[((X \otimes Y) \otimes Z) \overset{\alpha_{XYZ}}{\rightarrow} (X \otimes (Y \otimes Z))\]
-\[(X \otimes I) \overset{\rho_X}{\rightarrow} X \overset{\lambda_X}\rightarrow (I \otimes X)\]
-Recalling that we're happy with isomorphism in place of equality, coherence conditions ask that every possible composite of these structural operations is an isomorphism. In terms of the graphical language for monoidal categories, this means that string diagrams up-to-(processive)-planar-isotopy (and connectivity of wires in the case of symmetric monoidal categories) represent equivalent-up-to-isomorphism morphisms in an appropriate monoidal category. The reader is referred to \bR selinger, joyal 1 and 2 \e for details.
-}
-
 This is a common objection from philosophers who want their ontologies tidy. The claim roughly goes that you can't really reason about processes without knowing the underlying objects that participate, and since set theory is the only way we know how to spell out objects intensionally in this way, we should stick to sets. In simpler terms, if we're drawing (black)-boxes in our diagrams, how will we know what they do to the elements of the underlying sets?\\
 
 The short answer is that -- perhaps surprisingly -- reasoning process-theoretically is mathematically equivalent to reasoning about sets and elements for all practical purposes; it is as if whatever is going on \emph{out there} is indifferent to whether we describe using a language of only nouns or only verbs.\\
@@ -341,7 +345,7 @@ In the case of set theory (the practical kind, not the one with crazy infinities
 
 \newthought{But if they're expressively the same, what's the point?}
 
-The following rebuttal draws on Harold Abelson's introductory lecture to computer science \bR CITE \e (in which string diagrams appear to introduce programs without being explicitly named as such). There is a distinction between declarative and imperative knowledge. Declarative knowledge is \emph{knowing-that}, for example, 6 is the square root of 36, which we might write $6 = \sqrt{36}$. Imperative knowledge is \emph{knowing-how}, for example, to obtain the square root of a positive number, for instance, by Heron's iterative method: to obtain the square root of $Y$, make a guess $X$, and take the average of $X$ and $\frac{Y}{X}$ until your guess is good enough.\\
+The following rebuttal draws on Harold Abelson's introductory lecture to computer science \citep{harold_abelson_lecture_2019} (in which string diagrams appear to introduce programs without being explicitly named as such). There is a distinction between declarative and imperative knowledge. Declarative knowledge is \emph{knowing-that}, for example, 6 is the square root of 36, which we might write $6 = \sqrt{36}$. Imperative knowledge is \emph{knowing-how}, for example, to obtain the square root of a positive number, for instance, by Heron's iterative method: to obtain the square root of $Y$, make a guess $X$, and take the average of $X$ and $\frac{Y}{X}$ until your guess is good enough.\\
 
 Computer science concerns imperative knowledge. An obstacle to the study of imperative knowledge is complexity, which computer scientists manage by black-box abstraction -- suppressing irrelevant details, so that for instance once a square root procedure is defined, the reasoner outside the system does not need to know whether the procedure inside is an iterative method by Heron or Newton, only that it works and has certain properties. These black-boxes can be then composed into larger processes and procedures within human cognitive load.\\
 
@@ -349,13 +353,13 @@ Abstraction also yields generality. For example, in the case of addition, it is 
 
 In this light, string diagrams are a natural metalanguage for the study of imperative knowledge; string diagrams in fact independently evolved within computer science from flowcharts describing processes. Process theories, which are equations or logical sentences about processes, allow us to reason declaratively about imperative knowledge. Moreover, string diagrams as syntactic objects can be interpreted in various concrete settings, so that the same diagram serves as the common interface for a process like addition, with compliant implementation details for each particular domain spelled out separately.\\
 
-\newthought{Now we define the one structure we really care about} Spiders -- or special frobenius algebras \bR CITE \e -- will be the master structure we work with.
+\newthought{Now we define the one structure we really care about} Spiders -- or special frobenius algebras (introduced in \citep{paquette_categorical_2008}) -- will be the master structure we work with.
 
 \clearpage
 
 \begin{myboxB}
 \begin{defn}[Spiders]
-I will describe the behaviour of a spider as a PROP \bR CITE \e, which as far as we care is just a way to list out processes and equations that their composites satisfy in a symmetric monoidal category. We say that an object is \emph{equipped} with a spider when it has the following processes:
+I will describe the behaviour of a spider as a PROP \citep{nlab_authors_prop_nodate}, which as far as we care is just a way to list out processes and equations that their composites satisfy in a symmetric monoidal category. We say that an object is \emph{equipped} with a spider when it has the following processes:
 \[\scalebox{0.5}{\tikzfig{proctheory/spiders0}}\]
 That satisfy the following equations:
 \[\resizebox{\textwidth}{!}{\tikzfig{proctheory/spiders1}}\]
@@ -366,7 +370,7 @@ Spiders imply strong compact closure; self-dual cups and caps may be viewed as c
 
 \begin{myboxB}
 \begin{term}
-We call a category in which every object has a spider a \emph{hypergraph category} \bR CITE \e. 
+We call a category in which every object has a spider a \emph{hypergraph category} \citep{fong_hypergraph_2018}. 
 \end{term}
 
 \begin{remark}[Spiders are easy]

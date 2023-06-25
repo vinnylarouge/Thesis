@@ -3,63 +3,80 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: alpha.bst
 Database file #1: thesis_intro.bib
-Warning--I didn't find a database entry for "joyal_geometry_nodate"
-Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "wilson_string_2022"
+Warning--I didn't find a database entry for "wei_chain--thought_2023-1"
 Warning--I didn't find a database entry for "merry_reasoning_2014"
 Warning--I didn't find a database entry for "quick_-logic_2015"
 Warning--I didn't find a database entry for "zamdzhiev_rewriting_2017"
 Warning--I didn't find a database entry for "montague1970universal"
 Warning--I didn't find a database entry for "montague1973proper"
 Warning--to sort, need author or key in noauthor_riley_2022
+Warning--to sort, need author or key in harold_abelson_lecture_2019
+Warning--to sort, need author or key in kartsaklis_lambeq_2023
+Warning--to sort, need author or key in linus_pauling_memorial_lecture_series_neuroscience_2018
+Warning--to sort, need author or key in noauthor_babi_nodate
+Warning--to sort, need author or key in noauthor_inquisitive_nodate
+Warning--to sort, need author or key in noauthor_spintronics_nodate
+Warning--to sort, need author or key in wikipedia_authors_jaquet-droz_2022
+Warning--empty note in anonymous_quantinuum_researchers_discocirc_nodate
+Warning--empty journal in buszkowski_pregroup_nodate
+Warning--empty year in buszkowski_pregroup_nodate
 Warning--empty booktitle in bonchi_categorical_2014
+Warning--can't use both author and editor fields in carnap_meaning_1988
 Warning--empty journal in davidad_open_nodate
 Warning--empty year in davidad_open_nodate
 Warning--empty publisher in frege_gottlob_selbst_1884
 Warning--empty publisher in gardenfors_geometry_2014
 Warning--can't use both author and editor fields in heim_semantics_1998
+Warning--empty note in hu_external_nodate
+Warning--empty journal in joyal_geometry_nodate
+Warning--empty year in joyal_geometry_nodate
+Warning--empty booktitle in jakobson_calculus_1961
+Warning--empty note in liu_language_2021
 Warning--empty publisher in mcshane_linguistics_2021
+Warning--empty year in reddy_conduit_nodate
 Warning--empty booktitle in selinger_survey_2010
 Warning--empty publisher in selinger_survey_2010
-You've used 66 entries,
+Warning--empty note in wang_graphical_2019
+Warning--empty year in wang-mascianica_internal_nodate
+You've used 155 entries,
             2543 wiz_defined-function locations,
-            909 strings with 17485 characters,
-and the built_in function-call counts, 27214 in all, are:
-= -- 2552
-> -- 1636
-< -- 36
-+ -- 583
-- -- 571
-* -- 2055
-:= -- 4493
-add.period$ -- 203
-call.type$ -- 66
-change.case$ -- 491
-chr.to.int$ -- 66
-cite$ -- 77
-duplicate$ -- 940
-empty$ -- 1849
-format.name$ -- 652
-if$ -- 5448
-int.to.chr$ -- 1
+            1310 strings with 29038 characters,
+and the built_in function-call counts, 56278 in all, are:
+= -- 5402
+> -- 2846
+< -- 92
++ -- 984
+- -- 947
+* -- 3914
+:= -- 9157
+add.period$ -- 468
+call.type$ -- 155
+change.case$ -- 980
+chr.to.int$ -- 147
+cite$ -- 192
+duplicate$ -- 2139
+empty$ -- 4172
+format.name$ -- 1146
+if$ -- 11419
+int.to.chr$ -- 9
 int.to.str$ -- 0
-missing$ -- 47
-newline$ -- 332
-num.names$ -- 197
-pop$ -- 612
+missing$ -- 98
+newline$ -- 765
+num.names$ -- 457
+pop$ -- 1287
 preamble$ -- 1
-purify$ -- 563
+purify$ -- 1147
 quote$ -- 0
-skip$ -- 863
+skip$ -- 1931
 stack$ -- 0
-substring$ -- 1059
-swap$ -- 136
-text.length$ -- 36
-text.prefix$ -- 25
+substring$ -- 2247
+swap$ -- 273
+text.length$ -- 92
+text.prefix$ -- 63
 top$ -- 0
-type$ -- 492
-warning$ -- 10
-while$ -- 222
-width$ -- 69
-write$ -- 831
-(There were 18 warnings)
+type$ -- 1168
+warning$ -- 29
+while$ -- 480
+width$ -- 160
+write$ -- 1911
+(There were 35 warnings)

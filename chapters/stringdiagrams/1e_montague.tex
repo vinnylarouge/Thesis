@@ -1,12 +1,12 @@
 \section{A modern mathematician's companion to Montague's "Universal Grammar"}\label{sec:monty}
 
-\newthought{Summary:} To do "Montague semantics" means taking structure-respecting homomorphisms from grammar to meaning \bR CITE \e. Montague considered grammars to be coloured operads; Montague's "algebras" are (multi-sorted) clones, which are in bijection with (multi-sorted) Lawvere Theories, which are equivalently coloured operads, which are special cases of PROPs for symmetric monoidal categories. Hence text circuits share a mathematical lineage with many other mathematical conceptions of grammar, while also enjoying Montague semantics.
+\newthought{Summary:} To do "Montague semantics" means taking structure-respecting homomorphisms from grammar to meaning \citep{janssen_montague_2021}. Montague considered grammars to be coloured operads; Montague's "algebras" are (multi-sorted) clones, which are in bijection with (multi-sorted) Lawvere Theories, which are equivalently coloured operads, which are special cases of PROPs for symmetric monoidal categories. Hence text circuits share a mathematical lineage with many other mathematical conceptions of grammar, while also enjoying Montague semantics.
 
 \subsection{What did Montague consider grammar to be?}\label{sec:monty}
 
-\newthought{Montague semantics/grammar as Montague envisioned it is largely contained in two papers} -- \emph{Universal Grammar} \citep{montague1970universal}, and \emph{The Proper Treatment of Quantifiers in English} \citep{montague1973proper} -- both written shortly before his murder in 1971. The methods employed were not mathematically novel -- the lambda calculus had been around since \bR DATE \e, and Tarski and Carnap had been developing intensional higher-order logics since \bR DATE \e -- but for linguists who, by-and-large, only knew first order predicate logic, these methods were a tour-de-force that solved longstanding problems in formal semantics.
+\newthought{Montague semantics/grammar as Montague envisioned it is largely contained in two papers} -- \emph{Universal Grammar} \citep{montague1970universal}, and \emph{The Proper Treatment of Quantifiers in English} \citep{montague1973proper} -- both written shortly before his murder in 1971. The methods employed were not mathematically novel -- the lambda calculus had been around since the 1930s \citep{church_set_1933}, and Tarski and Carnap had been developing intensional higher-order logics since the 40s \citep{carnap_meaning_1988} -- but for linguists who, by-and-large, only knew first order predicate logic, these methods were a tour-de-force that solved longstanding problems in formal semantics.
 
-\newthought{There is a natural division of Montague's approach into two structural components.} According to Partee \bR CITE \e, a formal semanticist, advocate, and torch-bearer for Montague, the chief interest of Montague's approach (as far as his contemporary linguists were concerned) lay in the following ideas:
+\newthought{There is a natural division of Montague's approach into two structural components.} According to Partee, a formal semanticist, advocate, and torch-bearer for Montague, the chief interest of Montague's approach (as far as his contemporary linguists were concerned) lay in the following ideas \citep{portner_formal_2008}:
 
 \begin{enumerate}
 \item{Take truth conditions to be the essential data of semantics.}
@@ -17,7 +17,7 @@
 \end{enumerate}}
 \end{enumerate}
 
-More precisely, Montague devised a higher-order intensional logic for the first point, and the notion of a structure-preserving map from syntax to semantics for the second. The truth-conditional perspective was important at the time for enabling semantic computation, but within formal semantics there arose other perspectives on the nature of formal semantics, such as inquisitive \bR CITE \e and update semantics \bR CITE \e. Today, the empirical evidence we have from vector-based methods in computational linguistics is that none of those conceptions of semantics are intrinsically interesting or canonical: certainly none are procedurally necessary for a broad conception of practicality. So let's nevermind points 1 and 2b.\\
+More precisely, Montague devised a higher-order intensional logic for the first point, and the notion of a structure-preserving map from syntax to semantics for the second. The truth-conditional perspective was important at the time for enabling semantic computation, but within formal semantics there arose other perspectives on the nature of formal semantics, such as inquisitive \citep{noauthor_inquisitive_nodate} and update semantics \citep{nouwen_dynamic_2022}. Today, the empirical evidence we have from vector-based methods in computational linguistics is that none of those conceptions of semantics are intrinsically interesting or canonical: certainly none are procedurally necessary for a broad conception of practicality. So let's nevermind points 1 and 2b.\\
 
 I have split the second point to highlight the role of lambdas. This element was the crux of the Montagovian revolution: according to Janssen in a personal communication with Partee from 1994, lambdas were "...the feature that made compositionality possible at all." Using lambdas to make the semantic domain compositional then gave a target for the structure-preserving homomorphism from the syntactic domain. Today, we have more refined ways to grant structure to semantic domains using category-theoretic tools. So let's redact "lambdas" from 2a.\\
 
@@ -60,14 +60,15 @@ The polynomial operations over an algebra $\langle A, F_\gamma \rangle_{\gamma \
 \end{defn}
 
 \begin{defn}[Homomorphism of Algebras]\label{homo}
-$h$ is a homomorphism from $\langle A, F_\gamma \rangle_{\gamma \in \Gamma}$ \emph{into} $\langle B, G_\gamma \rangle_{\gamma \in \Delta}$ iff
+$h$ is a homomorphism from $\langle A, F_\gamma \rangle_{\gamma \in \Gamma}$ \emph{into} $\langle B, G_\gamma \rangle_{\gamma \in \Delta}$ when
 \begin{enumerate}
-    \item{$\Gamma = \Delta$ and $\forall \gamma : $}
-    \item{\bR FILL! \e}
+    \item{$\Gamma = \Delta$ and for all $\gamma$, $F_\gamma$ and $G_\gamma$ agree in arity}
+    \item{$h: A \rightarrow B$}
+    \item{For all $\gamma$ and lists of arguments $\langle \mathbf{A} \rangle$, $h(F_\gamma(\langle \mathbf{A} \rangle)) = G_\gamma(h(\langle \mathbf{A} \rangle))$}
 \end{enumerate}
 \end{defn}
 
-Section 2 seeks to define a broad conception of `syntax', which he terms a \emph{disambiguated language}. This is a free clone with carrier set $A$, generating operations $F_\gamma$ indexed by $\gamma \in \Gamma$, along with extra decorating information:
+Section 2 seeks to define a broad conception of syntax, which he terms a \emph{disambiguated language}. This is a free clone with carrier set $A$, generating operations $F_\gamma$ indexed by $\gamma \in \Gamma$, along with extra decorating information:
 
 \begin{enumerate}
 \item{$(\delta \in) \Delta$ is an (indexing) set of syntactic categories (e.g.~\texttt{NP}, \texttt{V}, etc.). Montague calls this the \emph{set of category indices}. $X_\delta \subseteq A$ form the \emph{basic expressions} of type $\delta$ in the language.}
@@ -83,8 +84,8 @@ However, we see aspects where Montague was born ahead of his time mathematically
 
 \subsection{On the historical inevitability of text diagrams}
 
-Definition \ref{ids} is equivalent to asking for all projections. Definitions \ref{ids} and \ref{comp} together characterise Montagovian algebras as (concrete) clones \bR CITE \e, which then generalised to (abstract) clones \bR CITE \e, which were then discovered to be in bijection with Lawvere theories \bR CITE \e. By an evident extension of [Prop 3.51] to the typed case, a \emph{disambiguated language} is a multi-sorted Lawvere theory without relations, where the sorts are generated from products of a pointed set $(\Delta, \delta_0 : 1 \rightarrow \Delta)$.\\
+Definition \ref{ids} is equivalent to asking for all projections. Definitions \ref{ids} and \ref{comp} together characterise Montagovian algebras as (concrete) clones, which then generalised to (abstract) clones, which were then discovered to be in bijection with Lawvere theories \citep{kerkhoff_short_2014}. By an evident extension of [Prop 3.51] to the typed case, a \emph{disambiguated language} is a multi-sorted Lawvere theory without relations, where the sorts are generated from products of a pointed set $(\Delta, \delta_0 : 1 \rightarrow \Delta)$.\\
 
-Lawvere theories are themselves a special case of operadic composition \bR CITE \e. Operadic composition naturally as that of coloured trees \bR CITE \e, which is equivalently depicted as nesting expressions according to the tree-structure \bR CITE \e. Interpreting colours as types, operadic composition subsumes whatever one might wish to do with a typed gentzen-style sequent system where rules are multi-input single-output. While typelogical grammars stop there, PROPs generalise operadic composition to multi-input multi-output \bR CITE \e, and as combinatorial specifications for string diagrams, weak $n$-categories generalise PROPs, and we have shown weak $n$-categories to subsume a distinct evolutionary line of formal syntax from CFGs to TAGs.\\
+Lawvere theories are themselves a special case of operadic composition \citep{yau_colored_2016}. Operadic composition naturally viewed as that of coloured trees, which is equivalently depicted as nesting expressions according to the tree-structure. Interpreting colours as types, operadic composition subsumes whatever one might wish to do with a typed gentzen-style sequent system where rules are multi-input single-output. While typelogical grammars stop there, PROPs generalise operadic composition to multi-input multi-output, and as combinatorial specifications for string diagrams, weak $n$-categories generalise PROPs, and we have shown weak $n$-categories to subsume a distinct evolutionary line of formal syntax from CFGs to TAGs.\\
 
 In summary, text circuits share a common conceptual and mathematical ancestry with many approaches to formal syntax, hence one ought to expect deep compatibility.
