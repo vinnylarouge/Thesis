@@ -5,8 +5,6 @@ The style file: alpha.bst
 Database file #1: thesis_intro.bib
 Warning--I didn't find a database entry for "wei_chain--thought_2023-1"
 Warning--to sort, need author or key in noauthor_riley_2022
-Warning--to sort, need author or key in harold_abelson_lecture_2019
-Warning--to sort, need author or key in kartsaklis_lambeq_2023
 Warning--empty booktitle in bonchi_categorical_2014
 Warning--empty journal in davidad_open_nodate
 Warning--empty year in davidad_open_nodate
@@ -14,50 +12,48 @@ Warning--empty publisher in frege_gottlob_selbst_1884
 Warning--empty publisher in gardenfors_geometry_2014
 Warning--empty journal in joyal_geometry_nodate
 Warning--empty year in joyal_geometry_nodate
-Warning--empty booktitle in jakobson_calculus_1961
 Warning--empty publisher in mcshane_linguistics_2021
 Warning--empty booktitle in selinger_survey_2010
 Warning--empty publisher in selinger_survey_2010
-Warning--empty note in wang_graphical_2019
-You've used 110 entries,
+You've used 67 entries,
             2543 wiz_defined-function locations,
-            1114 strings with 23362 characters,
-and the built_in function-call counts, 42235 in all, are:
-= -- 4061
-> -- 2254
-< -- 66
-+ -- 789
-- -- 766
-* -- 3050
-:= -- 6932
-add.period$ -- 341
-call.type$ -- 110
-change.case$ -- 737
-chr.to.int$ -- 107
-cite$ -- 128
-duplicate$ -- 1552
-empty$ -- 3010
-format.name$ -- 908
-if$ -- 8511
-int.to.chr$ -- 4
+            907 strings with 17422 characters,
+and the built_in function-call counts, 27304 in all, are:
+= -- 2564
+> -- 1606
+< -- 39
++ -- 569
+- -- 558
+* -- 2047
+:= -- 4507
+add.period$ -- 206
+call.type$ -- 67
+change.case$ -- 490
+chr.to.int$ -- 67
+cite$ -- 79
+duplicate$ -- 964
+empty$ -- 1876
+format.name$ -- 644
+if$ -- 5473
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 74
-newline$ -- 552
-num.names$ -- 329
-pop$ -- 901
+missing$ -- 49
+newline$ -- 336
+num.names$ -- 202
+pop$ -- 616
 preamble$ -- 1
-purify$ -- 856
+purify$ -- 562
 quote$ -- 0
-skip$ -- 1399
+skip$ -- 866
 stack$ -- 0
-substring$ -- 1774
-swap$ -- 204
-text.length$ -- 66
-text.prefix$ -- 46
+substring$ -- 1065
+swap$ -- 135
+text.length$ -- 39
+text.prefix$ -- 28
 top$ -- 0
-type$ -- 832
-warning$ -- 15
-while$ -- 360
-width$ -- 114
-write$ -- 1386
-(There were 16 warnings)
+type$ -- 500
+warning$ -- 11
+while$ -- 223
+width$ -- 72
+write$ -- 842
+(There were 12 warnings)

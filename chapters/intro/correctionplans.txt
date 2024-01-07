@@ -1,0 +1,53 @@
+Important linguistic ideas:
+
+- "Autonomy of Syntax" has a structured alternative: "Duarchy of Syntax and Semantics (via communication)"
+	-- This kind of "mutual constraint" of syntax and semantics is an easy idea to have in prose, but I sketch the thought mathematically, such that it may be a formal alternative.
+
+- Montague semantics -- construed as structure-preserving relationships between syntax-data and semantic-data -- works independently of a truth-conditional view of semantics.
+	--(structure preserving maps, as has been expressed in the folklore, commits to a view of autonomy of syntax)
+
+
+To rephrase:
+
+Take Montague semantics (structure preserving maps + truth-conditional semantics)
+Replace truth-conditional with process-theoretic semantics.
+	- Process-theoretic semantics conservatively generalise basically everything.
+Replace "structure preserving maps" (which commits to an unnecessarily restrictive and empirically untenable view of autonomy of syntax) with "structure-preserving relationships".
+
+
+
+
+
+[Introduce ICMs informally.]
+
+A basic criticism of ICMs (or frames or whatever) is that they are informal. A weak and prejudicial version of this criticism stems from the presentation of ICMs in natural language [Ex] or specific image schema [Ex]. A stronger version relates to the ill-definition of what an ICM-or-whatever \emph{is}, and it might go as follows. For scientific purposes a framework should be at least so formal that we can verify when an analysis has occurred: if we do not know what constitutes an ICM mathematically, and someone claims to have analysed a complex concept in terms of ICMs, how would we verify the claim?
+
+I address both versions of the formality criticism by formalising ICMs via string diagrams. To qualify my technical claims and my attitudinal stance I will outline here a spectrum of systemophilia via two extremal kinds of responses to the criticism, so that I can position myself relatively. The first is a kind of whataboutism that rests on the premise that there is a tradeoff between formality and expressivity [linguistics wars]; "those generative semanticists constrain themselves with mathematical formalism too much to deal with interesting linguistic phenomena, we must tackle the wilderness as we see fit!" [Examples?] The second is the eternal reprise of Leibniz's cursed dream of the \emph{characteristica universalis} and its \emph{calculus ratiocinator}: "Let us devise a metalanguage to capture every form of knowledge and a logic to manipulate it!" [Examples?] I think these two responses are the only heroic stances and everything else is a concession borne of spiritual weakness. Now I will describe how I differ.
+
+(Where I am relative to the first kind of antiformal response)
+[Define the requisite mathematical structure of an ICM, and lay out how we satisfy.]
+
+(Relative to the second)
+
+
+- PROPs, viewed as text circuits, provide a formal, algebraic, and diagrammatic incarnation of the kinds of "image schema" (or ICMS or whatever) used in cognitive semantics.
+	- Image schema, via queries e.g. of containment and motion, provide mathematical foundations upon which truth-conditional analyses can begin, so we have properly bridged generative and cognitive semantics.
+	- There are at least three additional benefits of the text circuit formulation:
+		1. compatibility with discursive composition.
+		2. compatibility with other process-theories, e.g. learners.
+		3. easy to work with compared to symbolic-algebraic systems; comparably expressive as graph-models, and can for most purposes be considered fancy UML without conceptual loss.
+
+
+
+
+
+We demand accounts of entification and the semantics of untyped-boxes, subject to the constraint that there are only noun-wires around. The onus is on us to demonstrate that there exists a nontrivial mathematical model that does this, and there is, in ContRel.
+
+It turns out that Turing objects handle the semantics of both entification and untyped-boxes, all the while adhering to the constraint that noun-wires are the only kind of wire around.
+
+With respect to the cogsem tradition, the untyped-boxes I use refer to exactly the kinds of words that Fauconnier calls "space builders".
+Their semantics may be given in ContRel in the same fashion:
+[Include schematic diagram of "belief" being cordoned off in its own bubble]
+The setting of incremental structured sets is evidently a toy version of monoidal categories.
+
+With respect to the gensem tradition, untyped-boxes are words with intensional semantics, which are typically treated with possible-worlds semantics. The main distinctions as far as I can tell between possible-worlds and space-builder semantics lie in the aspects of the latter that cohere with obvious communicative, cognitive and computational constraints: space-builder semantics are dynamic, constructive, and finitistic.
