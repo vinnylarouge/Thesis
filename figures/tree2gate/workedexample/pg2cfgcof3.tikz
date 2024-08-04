@@ -330,7 +330,7 @@
 		\draw (735) to (733.center);
 		\draw (736) to (731.center);
 		\draw (737) to (734.center);
-		\draw [style=vhM, in=0, out=150] (738.center) to (739.center);
+		\draw [style=ghM, in=0, out=150] (738.center) to (739.center);
 		\draw [style={K(Fm)}] (744.center)
 			 to (743.center)
 			 to (746.center)
@@ -368,7 +368,7 @@
 			 to (785.center)
 			 to [bend left=90, looseness=0.75] (786.center)
 			 to (780.center);
-		\draw [style=vhM, in=0, out=-120, looseness=0.75] (738.center) to (787.center);
+		\draw [style=ghM, in=0, out=-120, looseness=0.75] (738.center) to (787.center);
 		\draw [style={K(Fm)}] (792.center)
 			 to (791.center)
 			 to (790.center)
@@ -414,14 +414,14 @@
 		\draw (686.center) to (802.center);
 		\draw (811.center) to (710.center);
 		\draw [bend right=90, looseness=1.25] (802.center) to (803.center);
-		\draw [style=vhM, bend left=75, looseness=0.75] (840.center) to (841.center);
-		\draw [style=vhM, bend right=45, looseness=0.75] (842.center) to (843.center);
-		\draw [style=vhM, in=120, out=-120] (844.center) to (845.center);
-		\draw [style=vhM, in=90, out=30, looseness=0.50] (847.center) to (846.center);
-		\draw [style=vhM, in=180, out=0] (848.center) to (849.center);
-		\draw [style=vhM, in=75, out=-15, looseness=1.25] (850.center) to (851.center);
-		\draw [style=vhM, in=90, out=-180, looseness=0.50] (850.center) to (852.center);
-		\draw [style=vhM, in=-180, out=-180, looseness=1.25] (853.center) to (854.center);
+		\draw [style=ghM, bend left=75, looseness=0.75] (840.center) to (841.center);
+		\draw [style=ghM, bend right=45, looseness=0.75] (842.center) to (843.center);
+		\draw [style=ghM, in=120, out=-120] (844.center) to (845.center);
+		\draw [style=ghM, in=90, out=30, looseness=0.50] (847.center) to (846.center);
+		\draw [style=ghM, in=180, out=0] (848.center) to (849.center);
+		\draw [style=ghM, in=75, out=-15, looseness=1.25] (850.center) to (851.center);
+		\draw [style=ghM, in=90, out=-180, looseness=0.50] (850.center) to (852.center);
+		\draw [style=ghM, in=-180, out=-180, looseness=1.25] (853.center) to (854.center);
 		\draw [style={K(Fm)}] (824.center)
 			 to (825.center)
 			 to (826.center)

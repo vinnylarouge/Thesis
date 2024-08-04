@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  25 JUN 2023 14:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  30 JUL 2024 13:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1627,6 +1627,18 @@ Proof Tree (bussproofs) style macros. Version 1.1.
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
+(/usr/local/texlive/2022/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks56
+\SOUL@lasttoken=\toks57
+\SOUL@cmds=\toks58
+\SOUL@buffer=\toks59
+\SOUL@token=\toks60
+\SOUL@spaceskip=\skip101
+\SOUL@ttwidth=\dimen356
+\SOUL@uldp=\dimen357
+\SOUL@ulht=\dimen358
+)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/skak/skak.sty
 Package: skak 2018/01/08 v1.5.3 Chess typesetting
 
@@ -1648,9 +1660,9 @@ File: lsienc.def 2006/06/09 v1.2 Standard LaTeX file
 Now handling font encoding LSI ...
 ... no UTF-8 mapping file for font encoding LSI
 )
-\len@cfss@squarewidth=\skip101
-\len@cfss@squaretotalheight=\skip102
-\len@cfss@squaredepth=\skip103
+\len@cfss@squarewidth=\skip102
+\len@cfss@squaretotalheight=\skip103
+\len@cfss@squaredepth=\skip104
 
 
 Package chessfss Warning: \comment already defined 
@@ -1668,9 +1680,9 @@ Package chessfss Warning: \comment already defined
 \c@helpgobble=\count378
 \c@helpnumber=\count379
 \c@helpnumberMove=\count380
-\squarelength=\skip104
+\squarelength=\skip105
 \square@multiplier=\count381
-\ranklift=\skip105
+\ranklift=\skip106
 LaTeX Font Info:    Trying to load font information for LSB+skaknew on input li
 ne 1774.
 
@@ -1689,10 +1701,10 @@ LaTeX Font Warning: Font shape `T1/qhv/m/up' undefined
 
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 9.40002pt on input line 1774.
-\store@toks=\toks56
+\store@toks=\toks61
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/up' will be
-(Font)              scaled to size 9.40002pt on input line 122.
+(Font)              scaled to size 9.40002pt on input line 125.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
 ))
@@ -1896,16 +1908,16 @@ LaTeX Info: Redefining \nameref on input line 3.
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count383
-\scratchdimen=\dimen356
+\scratchdimen=\dimen359
 \scratchbox=\box166
 \nofMPsegments=\count384
 \nofMParguments=\count385
-\everyMPshowfont=\toks57
+\everyMPshowfont=\toks62
 \MPscratchCnt=\count386
-\MPscratchDim=\dimen357
+\MPscratchDim=\dimen360
 \MPnumerator=\count387
 \makeMPintoPDFobject=\count388
-\everyMPtoPDFconversion=\toks58
+\everyMPtoPDFconversion=\toks63
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -2053,37 +2065,43 @@ File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 (Font)              scaled to size 10.0pt on input line 3.
-LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 7.5pt on input line 11.
-LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 11.
+
+(./figures/tree2gate/workedexample/bigexaltogether.tikz
+LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
+(Font)              scaled to size 9.0pt on input line 32.
+)
+Underfull \vbox (badness 2351) has occurred while \output is active []
+
  [6]
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 7.5pt on input line 13.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 13.
+
 (./figures/intro/GFOLex.tikz)
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 26.
+(Font)              scaled to size 9.37807pt on input line 28.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 26.
+(Font)              scaled to size 7.29405pt on input line 28.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 26.
+(Font)              scaled to size 5.21004pt on input line 28.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 26.
+(Font)              scaled to size 9.37807pt on input line 28.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 26.
+(Font)              scaled to size 7.29405pt on input line 28.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 26.
+(Font)              scaled to size 5.21004pt on input line 28.
 LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 26.
+(Font)              scaled to size 9.0pt on input line 28.
 
 
 Package natbib Warning: Citation `haydon_compositional_2020' on page 7 undefine
-d on input line 26.
+d on input line 28.
 
-LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 9.0pt on input line 26.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./figures/intro/GFOLex2a.tikz)
+[7] (./figures/intro/GFOLex2a.tikz)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2091,14 +2109,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./figures/intro/GFOLex2c.tikz)
+(./figures/intro/GFOLex2cv2.tikz)
 
-Package natbib Warning: Citation `heim_semantics_1998' on page 7 undefined on i
-nput line 48.
+Package natbib Warning: Citation `heim_semantics_1998' on page 8 undefined on i
+nput line 50.
 
 
-Package natbib Warning: Citation `yeung_ccg-based_2021' on page 7 undefined on 
-input line 48.
+Package natbib Warning: Citation `yeung_ccg-based_2021' on page 8 undefined on 
+input line 50.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2111,34 +2129,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7] [8] [9] [10] (./figures/intro/GFOLex3a.tikz) (./figures/intro/GFOLex3b.tikz
-) (./figures/intro/GFOLex3.tikz)
+[8] [9] [10] [11] (./figures/intro/GFOLex3a.tikz)
+(./figures/intro/GFOLex3b.tikz) (./figures/intro/GFOLex3.tikz)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Font Info:    Trying to load font information for T1+zplsups on input lin
-e 84.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/t1zplsups.fd
-File: t1zplsups.fd 2015/01/17 v1.0
-)
-LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 84.
-LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 84.
-LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 84.
 
+Package natbib Warning: Citation `wang-mascianica_internal_nodate' on page 12 u
+ndefined on input line 86.
 
-Package natbib Warning: Citation `wang-mascianica_internal_nodate' undefined on
- input line 84.
-
-[11
+[12
 
 ]
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 88.
+(Font)              scaled to size 10.95pt on input line 90.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 88.
+(Font)              scaled to size 10.95pt on input line 90.
  (./figures/tree2gate/workedexample/easyCFG.tikz)
 (./figures/tree2gate/workedexample/easyCFG2.tikz)
 
@@ -2148,14 +2154,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
+[13]
 
 Package natbib Warning: Citation `mellies_functorial_2006' on page 14 undefined
  on input line 124.
 
+
+Underfull \vbox (badness 2799) has occurred while \output is active []
+
+ [14]
 (./figures/tree2gate/conventions/outsidein.tikz)
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 131.
@@ -2189,8 +2196,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./figures/tree2gate/mfunctorbox/mfbox-fibration+interchange.tikz) [14]
-[15] [16] [17] [18] (./figures/tree2gate/workedexample/easydepCFG.tikz)
+(./figures/tree2gate/mfunctorbox/mfbox-fibration+interchange.tikz) [15]
+[16] [17] [18] [19] (./figures/tree2gate/workedexample/easydepCFG.tikz)
 (./figures/tree2gate/workedexample/easyfibres.tikz
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 141.
@@ -2206,9 +2213,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19
+[20
 
-] [20]
+] [21]
 
 Package natbib Warning: Citation `wilson_string_2022' undefined on input line 2
 29.
@@ -2237,18 +2244,18 @@ Overfull \hbox (12.00412pt too wide) detected at line 257
 Package natbib Warning: Citation `wilson_string_2022' undefined on input line 2
 62.
 
-(./figures/strictify/strictstate.tikz) [21
+(./figures/strictify/strictstate.tikz) [22
 
 ]
 (./figures/strictify/stricteval.tikz) (./figures/strictify/strictproofex.tikz
 \myBox1=\box167
-\myScoreStart1=\dimen358
-\myCenter1=\dimen359
-\myScoreEnd1=\dimen360
+\myScoreStart1=\dimen361
+\myCenter1=\dimen362
+\myScoreEnd1=\dimen363
 \myBox2=\box168
-\myScoreStart2=\dimen361
-\myCenter2=\dimen362
-\myScoreEnd2=\dimen363
+\myScoreStart2=\dimen364
+\myCenter2=\dimen365
+\myScoreEnd2=\dimen366
 )
 Underfull \hbox (badness 10000) in paragraph at lines 286--287
 [][]\T1/zplTLF/b/n/10 Construction 0.3.5 \T1/zplTLF/m/n/10 (Dis-crete monoidal 
@@ -2416,18 +2423,22 @@ ond uniquely to dCFG di-a-grams up to la-bels. The fam-ily of pre-group typ-ing
  so-lu-tion yield the re-quired
  []
 
-[22
+[23
 pdfTeX warning (ext4): destination with the same identifier (name{cite.wilson_s
 tring_2022}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.330 \clearpage
-                ] [23] [24] [25]
+                ] [24] [25] [26]
 
-Package natbib Warning: Citation `clarke_double_2023' on page 26 undefined on i
+Package natbib Warning: Citation `clarke_double_2023' on page 27 undefined on i
 nput line 344.
 
-[26
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 357.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 357.
+[27
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 402--403
@@ -2478,7 +2489,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 405--407
 eep-ing track of the
  []
 
-(./figures/tree2gate/workedexample/bigexaltogether_new.tikz) [27] [28]
+(./figures/tree2gate/workedexample/bigexaltogether_new.tikz) [28] [29]
 (./figures/tree2gate/workedexample/notafibex.tikz
 
 LaTeX Font Warning: Command \large invalid in math mode on input line 86.
@@ -2493,11 +2504,19 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 11.40997pt on input line 86.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 86.
-) [29
+)
+LaTeX Font Info:    Trying to load font information for T1+zplsups on input lin
+e 431.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/t1zplsups.fd
+File: t1zplsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
+(Font)              scaled to size 10.0pt on input line 431.
+ [30
 
 ]
 
-Package natbib Warning: Citation `wang-mascianica_internal_nodate' on page 30 u
+Package natbib Warning: Citation `wang-mascianica_internal_nodate' on page 31 u
 ndefined on input line 447.
 
 
@@ -2701,11 +2720,11 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 90.
 
 )
 
-Package natbib Warning: Citation `hu_external_nodate' on page 30 undefined on i
+Package natbib Warning: Citation `hu_external_nodate' on page 31 undefined on i
 nput line 467.
 
 
-Package natbib Warning: Citation `roman_open_2021' on page 30 undefined on inpu
+Package natbib Warning: Citation `roman_open_2021' on page 31 undefined on inpu
 t line 467.
 
 
@@ -2744,19 +2763,19 @@ ing and tak-ing away the bu-reau-cracy of syn-tax, it be-comes ev-i-dent that t
 he nat-u-ral habi-tat of lan-guage
  []
 
-(./figures/tree2gate/workedexample/pg2circmagic.tikz) [30] [31] [32] [33]
-[34] [35]
+(./figures/tree2gate/workedexample/pg2circmagic.tikz) [31] [32] [33] [34]
+[35] [36]
 LaTeX Font Info:    Font shape `T1/zplTLF/b/sc' will be
 (Font)              scaled to size 10.0pt on input line 482.
- [36
+ [37
 
 
 ]
 \myBox3=\box169
-\myScoreStart3=\dimen364
-\myCenter3=\dimen365
-\myScoreEnd3=\dimen366
- [37]
+\myScoreStart3=\dimen367
+\myCenter3=\dimen368
+\myScoreEnd3=\dimen369
+ [38]
 Overfull \hbox (28.18535pt too wide) detected at line 570
 []
  []
@@ -2786,11 +2805,11 @@ File: c70gbsn.fdx 2021/10/16 4.8.5
 )
 
 Package natbib Warning: Citation `linus_pauling_memorial_lecture_series_neurosc
-ience_2018' on page 38 undefined on input line 601.
+ience_2018' on page 39 undefined on input line 601.
 
-[38] [39] [40]
+[39] [40] [41]
 
-Package natbib Warning: Citation `buszkowski_pregroup_nodate' on page 41 undefi
+Package natbib Warning: Citation `buszkowski_pregroup_nodate' on page 42 undefi
 ned on input line 634.
 
 )
@@ -2802,7 +2821,7 @@ Package bibentry Warning: You have used \nobibliography*
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-[41] (./chap2.aux)
+[42] (./chap2.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2813,22 +2832,22 @@ Package rerunfilecheck Info: File `chap2.out' has not changed.
 (rerunfilecheck)             Checksum: 05CDD608158B96BB508C89AE0DE83617;1616.
  ) 
 Here is how much of TeX's memory you used:
- 65269 strings out of 478268
- 1400609 string characters out of 5846348
- 2492868 words of memory out of 5000000
- 82162 multiletter control sequences out of 15000+600000
- 624081 words of font info for 188 fonts, out of 8000000 for 9000
+ 65523 strings out of 478268
+ 1405459 string characters out of 5846348
+ 2495548 words of memory out of 5000000
+ 82408 multiletter control sequences out of 15000+600000
+ 624394 words of font info for 189 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  95i,15n,104p,1998b,1464s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{
-/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathtt.enc
-}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathex.e
-nc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathsc
-r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mat
-hcal.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-
-mathrm-bold.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1
-/stix2-mathsf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/npx
-sups_T1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/sti
+/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/npxsups_T1.enc}{/usr/l
+ocal/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathtt.enc}{/usr
+/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathex.enc}{/u
+sr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathscr.enc}
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathcal.e
+nc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm
+-bold.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2
+-mathsf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/sti
 x2-mathrm.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/s
 tix2-mathit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-e
 c-tlf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc
@@ -2841,10 +2860,10 @@ exlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive
 /2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/tex
 mf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/texmf-dist/f
 onts/type1/public/newpx/zplri.pfb>
-Output written on chap2.pdf (41 pages, 642248 bytes).
+Output written on chap2.pdf (42 pages, 660255 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
+ 441 PDF objects out of 1000 (max. 8388607)
+ 339 compressed objects within 4 object streams
  92 named destinations out of 1000 (max. 500000)
  3810 words of extra memory for PDF output out of 10000 (max. 10000000)
 

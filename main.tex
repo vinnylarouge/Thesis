@@ -4,12 +4,21 @@
 \thispagestyle{empty}%
 \maketitle% this prints the handout title, author, and date
 
+\clearpage
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.5\linewidth]{figures/thesismap1.png}
+\end{figure}
+\clearpage
 
 %\begin{fullwidth}
 %\begin{multicols}{2}
-\tableofcontents\marginnote{For my family, friends, and colleagues, past, present, and future. Thank you.}
+\marginnote{For my family, friends, and colleagues, past, present, and future. Thank you.}
+\tableofcontents
 %\end{multicols}
 %\end{fullwidth}
+
 
 \clearpage
 \newpage
@@ -17,7 +26,8 @@
 \begin{myboxB}
 \centering
 \textbf{Acknowledgements}
-Much of the underpinning work on text circuits was done in collaboration with Bob Coecke and Jonathon Liu.
+Much of the underpinning work on text circuits was done in collaboration with Bob Coecke and Jonathon Liu.\\
+
 \textbf{Novel contributions:}
 \begin{itemize}
 
@@ -46,7 +56,6 @@ Much of the underpinning work on text circuits was done in collaboration with Bo
 \clearpage
 \newpage
 
-\setcounter{chapter}{-1}
 \chapter{Context and synopsis}
 There are potentially practical and theoretical benefits to a fresh mathematical take on basic linguistics. String diagrams are formal, intuitive, expressive, fun, and pretty. I review the relevant research context.
 \clearpage
@@ -58,6 +67,8 @@ There are potentially practical and theoretical benefits to a fresh mathematical
 \clearpage
 \newpage
 \input{chapters/textcirc/previously}\label{sec:previously}
+\additionalchapter{\chapfrac{1}{2}}{Corrections}\label{ch:oneandhalf}
+\input{corrections}
 
 \chapter{Internal wirings: what, why, and where from?}\label{chapter:internalwirings}
 Speakers produce, and listeners parse sentences. If we believe that semantics is compositional according to syntax, because communication is possible, these two ways of conceiving of grammar (e.g. string-rewrite systems and typelogical grammars, respectively) must be mathematically related: the semantics of a sentence ought to be "the same" in either grammar. Using string diagrams as semantics allows us to formalise "sameness" as "up to topological deformation", and internal wirings constitute a shared representation strategy on words between speaker and listener that witnesses this topological equivalence for any sentence that both grammars can produce. However, internal wirings are not functorially determined by syntax: the same word may have different internal wirings in a way that depends systematically on context. We can capture this systematicity as a span of functors closely related to cofunctors, for which we develop a string-diagrammatic reasoning technique that works like functor boxes, along with the attendant mathematics.
@@ -66,7 +77,7 @@ Speakers produce, and listeners parse sentences. If we believe that semantics is
 \input{chapters/textcirc/miracle}
 
 \chapter{Text circuits for syntax}\label{chapter:textcircuits}
-We want to establish that there is a systematic correspondence between text circuits and grammatically acceptable text, which would allow us to use text circuits as a generative grammar without further justification. First we show that context-free grammars, string-rewrite systems, and tree-adjoining grammars are all special cases of higher-dimensional rewriting systems called weak $n$-categories. Then we provide a "circuit-growing" grammar in terms of a weak $n$-categorical signature that simultaneously generates strings of grammatically acceptable text and its "deep structure" in terms of text circuits, from which we obtain the desired correspondence between text circuits and text. We close with demonstrations of how the syntactic theory of text circuits may be modified and expanded, and a brief note on how text circuits relate to Montague's "Universal Grammar".
+We establish a systematic correspondence between text circuits and grammatically acceptable text, which allows us to use text circuits as a generative grammar without further justification. First we show that context-free grammars, string-rewrite systems, and tree-adjoining grammars are all special cases of higher-dimensional rewriting systems called weak $n$-categories. Then we provide a "circuit-growing" grammar in terms of a weak $n$-categorical signature that simultaneously generates strings of grammatically acceptable text and its "deep structure" in terms of text circuits, from which we obtain the desired correspondence between text circuits and text.
 \clearpage
 \newpage
 \input{chapters/textcirc/linguistncat}\label{sec:ncat}
@@ -77,11 +88,9 @@ We want to establish that there is a systematic correspondence between text circ
 \newpage
 \input{chapters/textcirc/textcirc}
 \clearpage
-\newpage
-\input{chapters/stringdiagrams/1e_montague}
 
 \chapter{Continuous relations for semantics}\label{chapter:contrel}
-We want to reason formally with and about pictorial iconic representations, of the sort one might draw to solve a problem in elementary geometry stated in words, involving topological concepts such as \texttt{touching} and \texttt{inside}. To do this in string diagrams, I introduce and investigate the category of continuous relations, \textbf{ContRel}.
+We want to reason formally with and about pictorial iconic representations, of the sort one might draw to illustrate a conceptual schema from cognitive linguistics. For this I introduce and investigate the category of continuous relations, \textbf{ContRel}. We formalise certain linguistically primitive topological concepts such as \texttt{touching} and \texttt{inside}, as a demonstration of adequate expressivity. We close by illustrating how stative verbs and adjectives, dynamic verbs, adverbs and adpositions, and sentential complementaion may be modelled as text circuits interpreted in \textbf{ContRel}.
 \clearpage
 \newpage
 \input{chapters/toprel/contrelintro}
@@ -103,8 +112,8 @@ We want to reason formally with and about pictorial iconic representations, of t
 
 \clearpage
 \newpage
-\chapter{What formal linguistics could look like}\label{chapter:conclusion}
-By way of conclusion, I outline some potential underpinning theses, and I sketch what formal linguistics could be.
+\chapter{Metaphor}\label{chapter:conclusion}
+How to compute metaphors by hand, and a pictorial conception of what formal linguistics could be.
 \clearpage
 \newpage
 \input{chapters/beyond/metaphor}\label{sec:metaphor}

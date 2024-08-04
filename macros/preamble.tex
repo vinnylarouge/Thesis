@@ -12,9 +12,10 @@
 %for mandarin
 \usepackage[most]{tcolorbox}
 %for better fullwidth boxes
-
+\usepackage{hyperref}
 %\usepackage{scrextend} 
 %\changefontsizes[11pt]{12pt}
+\usepackage{caption}
 
 \renewcommand{\footnotesize}{\small}
 
@@ -117,6 +118,9 @@
 \def\bM{\begin{color}{magenta}}
 \def\e{\end{color}\xspace}
 
+%for highlighting text
+\usepackage{soul}
+
 %For chesspieces
 \usepackage{skak}
 
@@ -166,3 +170,22 @@
     toggle enlargement=evenpage,
     #1
 }
+
+\NewDocumentCommand{\additionalchapter}{mO{#3}m}{%
+  % #1 = suffix to add
+  % #2 = optional argument for toc and header, as usual
+  % #3 = title
+  \addtocounter{chapter}{-1}%
+  \renewcommand{\thechapter}{\standardthechapter#1}%
+  \nonstandardchapter[#2]{#3}%
+}
+
+\AtBeginDocument{%
+  \NewCommandCopy{\standardthechapter}{\thechapter}%
+  \NewCommandCopy{\nonstandardchapter}{\chapter}%
+  \AddToHook{cmd/chapter/before}{%
+    \RenewCommandCopy{\thechapter}{\standardthechapter}%
+  }%
+}
+
+\NewDocumentCommand{\chapfrac}{mm}{$\frac{\text{#1}}{\text{#2}}$}

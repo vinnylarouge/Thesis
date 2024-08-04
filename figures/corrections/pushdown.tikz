@@ -1,0 +1,62 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=dotY] (0) at (0, 3) {$\texttt{sbj}$};
+		\node [style=dotw] (1) at (0, 1) {$\texttt{vb.}$};
+		\node [style=dotw] (2) at (0, -1) {$\texttt{obj}$};
+		\node [style=dotG] (3) at (0, -3) {\texttt{ok!}};
+		\node [style=dotR] (4) at (-3, 0) {\texttt{no!}};
+		\node [style=none] (5) at (0, 2.5) {};
+		\node [style=none] (9) at (0.5, 0.5) {};
+		\node [style=none] (10) at (0, 0.5) {};
+		\node [style=none] (13) at (0, -1.5) {};
+		\node [style=none] (14) at (0, 1.5) {};
+		\node [style=none] (15) at (0, -0.5) {};
+		\node [style=none] (17) at (0, -2.5) {};
+		\node [style=none] (18) at (0.5, -2.5) {};
+		\node [style=none] (20) at (0.5, 2) {\texttt{N}};
+		\node [style=none] (21) at (1.75, -1) {\texttt{IV}};
+		\node [style=none] (22) at (-0.5, -2) {\texttt{N}};
+		\node [style=none] (23) at (-0.5, 0) {\texttt{TV}};
+		\node [style=none] (24) at (-1, 3) {};
+		\node [style=none] (26) at (-2.25, 0.5) {};
+		\node [style=none] (28) at (-3, 0.5) {};
+		\node [style=none] (29) at (-1, 1) {};
+		\node [style=none] (30) at (-2.25, -0.5) {};
+		\node [style=none] (31) at (-1, -1) {};
+		\node [style=none] (32) at (-2, -1.25) {\texttt{IV,TV}};
+		\node [style=none] (33) at (-2, 1) {\texttt{N}};
+		\node [style=none] (34) at (-1.5, 1.75) {\texttt{IV,TV}};
+		\node [style=none] (35) at (0, 3.5) {};
+		\node [style=none] (36) at (0, 4.25) {};
+		\node [style=none] (37) at (0, 2) {};
+		\node [style=none] (40) at (3.25, 2) {};
+		\node [style=none] (42) at (3.25, -0.25) {$\textcolor{blue}{(\lambda x.(\lambda y. \texttt{TV}(x,y))) \star \texttt{\textvisiblespace}}$};
+		\node [style=none] (45) at (0, 0) {};
+		\node [style=none] (46) at (3.25, 0) {};
+		\node [style=none] (47) at (3.25, 1.75) {$\textcolor{blue}{\star \texttt{\textvisiblespace N}}$};
+		\node [style=dotBB] (49) at (0, 2) {};
+		\node [style=dotBB] (50) at (0, 0) {};
+		\node [style=dotBB] (51) at (0, -2) {};
+		\node [style=dotBB] (52) at (1.075, -1) {};
+		\node [style=none] (53) at (0, -2) {};
+		\node [style=none] (54) at (3.25, -2) {};
+		\node [style=none] (55) at (3.25, -2.25) {$\textcolor{blue}{\star \texttt{N}}$};
+		\node [style=none] (57) at (1.075, -1) {};
+		\node [style=none] (58) at (3.25, -1) {};
+		\node [style=none] (59) at (3.25, -1.25) {$\textcolor{blue}{(\lambda x. \texttt{IV}(x))\star \texttt{\textvisiblespace}}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=v] (5.center) to (14.center);
+		\draw [style=v] (10.center) to (15.center);
+		\draw [style=v] (13.center) to (17.center);
+		\draw [style=v, in=30, out=-30, looseness=0.75] (9.center) to (18.center);
+		\draw [style=v, in=90, out=180, looseness=0.75] (24.center) to (28.center);
+		\draw [style=v, in=30, out=180] (29.center) to (26.center);
+		\draw [style=v, in=-30, out=180] (31.center) to (30.center);
+		\draw [style=v] (36.center) to (35.center);
+		\draw [style=Bv, bend left=45, looseness=0.75] (37.center) to (40.center);
+		\draw [style=Bv, bend left=45, looseness=0.75] (45.center) to (46.center);
+		\draw [style=Bv, bend left=45, looseness=0.75] (53.center) to (54.center);
+		\draw [style=Bv, bend left=45, looseness=0.75] (57.center) to (58.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

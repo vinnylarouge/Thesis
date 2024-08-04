@@ -1,0 +1,44 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-5.5, 0) {\underline{\texttt{Seymour}}};
+		\node [style=none] (1) at (-3.5, 2) {\underline{\texttt{sliced}}};
+		\node [style=none] (2) at (-1.5, 0) {\underline{\texttt{the salami}}};
+		\node [style=none] (3) at (-3.5, 0) {\underline{\texttt{with}}};
+		\node [style=none] (4) at (-3.5, -2) {\underline{\texttt{a knife}}};
+		\node [style=none] (30) at (-4, 1.5) {};
+		\node [style=none] (31) at (-5, 0.5) {};
+		\node [style=none] (32) at (-3, 1.5) {};
+		\node [style=none] (33) at (-2, 0.5) {};
+		\node [style=none] (34) at (-3.5, 1.5) {};
+		\node [style=none] (35) at (-3.5, 0.5) {};
+		\node [style=none] (36) at (-3.5, -0.5) {};
+		\node [style=none] (37) at (-3.5, -1.5) {};
+		\node [style=none] (38) at (1.5, 0) {\underline{\texttt{Seymour}}};
+		\node [style=none] (39) at (3.5, 2) {\underline{\texttt{used}}};
+		\node [style=none] (40) at (4.5, -2) {\underline{\texttt{the salami}}};
+		\node [style=none] (41) at (3.5, 0) {\underline{\texttt{slice}}};
+		\node [style=none] (42) at (5.5, 0) {\underline{\texttt{a knife}}};
+		\node [style=none] (43) at (3, 1.5) {};
+		\node [style=none] (44) at (2, 0.5) {};
+		\node [style=none] (45) at (4, 1.5) {};
+		\node [style=none] (46) at (5, 0.5) {};
+		\node [style=none] (47) at (3.5, 1.5) {};
+		\node [style=none] (48) at (3.5, 0.5) {};
+		\node [style=none] (49) at (3.75, -0.5) {};
+		\node [style=none] (50) at (4.25, -1.5) {};
+		\node [style=none] (51) at (3.25, -0.5) {};
+		\node [style=none] (52) at (2.75, -1.5) {};
+		\node [style=none] (53) at (2.5, -2) {\underline{\texttt{to}}};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=v] (30.center) to (31.center);
+		\draw [style=v] (32.center) to (33.center);
+		\draw [style=v] (34.center) to (35.center);
+		\draw [style=v] (36.center) to (37.center);
+		\draw [style=v] (43.center) to (44.center);
+		\draw [style=v] (45.center) to (46.center);
+		\draw [style=v] (47.center) to (48.center);
+		\draw [style=v] (49.center) to (50.center);
+		\draw [style=v] (51.center) to (52.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

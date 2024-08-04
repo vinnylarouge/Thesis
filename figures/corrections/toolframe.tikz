@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-4, 0) {\textsc{Agent}};
+		\node [style=none] (1) at (0, 0) {\textsc{Tool}};
+		\node [style=none] (2) at (4, 0) {\textsc{Action}};
+		\node [style=none] (3) at (6, 0) {\textsc{Patient}};
+		\node [style=none] (4) at (-2, 0) {\texttt{[uses]}};
+		\node [style=none] (5) at (2, 0) {\texttt{[to/for]}};
+		\node [style=none] (6) at (-4, -1) {\textsc{Agent}};
+		\node [style=none] (7) at (4, -1) {\textsc{Tool}};
+		\node [style=none] (8) at (-2, -1) {\textsc{Action}};
+		\node [style=none] (9) at (0, -1) {\textsc{Patient}};
+		\node [style=none] (10) at (2, -1) {\texttt{[with/using]}};
+	\end{pgfonlayer}
+\end{tikzpicture}

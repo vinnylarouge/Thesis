@@ -113,10 +113,10 @@
 		\node [style=none] (125) at (14, 0) {};
 		\node [style=none] (126) at (13, -0.5) {};
 		\node [style=none] (127) at (13, -0.5) {};
-		\node [style=none] (128) at (-10.25, 2) {\texttt{N}-intro};
+		\node [style=none] (128) at (-10.25, 2) {$\texttt{N}_{\uparrow}$-intro};
 		\node [style=none] (129) at (-6.75, 2) {\texttt{SCV}-intro};
-		\node [style=none] (130) at (-0.25, 2) {\texttt{N}-intro};
 		\node [style=none] (131) at (6.25, 2) {\texttt{S}-intro};
+		\node [style=none] (132) at (-0.25, 2) {$\texttt{N}_{\uparrow}$-intro};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=KM] (0)

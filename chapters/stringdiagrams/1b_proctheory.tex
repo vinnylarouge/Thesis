@@ -21,7 +21,7 @@ A \emph{category} $\mathcal{C}$ consists of the following data
 
 \marginnote{
 This data has to satisfy two coherence conditions, which are:\\
-\textbf{Unitality:} For any morphism $f: a \rightarrow b$, $1_a;f = f = f;1_b$\\
+\textbf{Unitality:} For any morphism $f: a \rightarrow b$, we require $1_a;f = f = f;1_b$\\
 \textbf{Associativity:} For any four objects $A,B,C,D$ and three morphisms $f: A \rightarrow B$, $g: B \rightarrow C$, $h: C \rightarrow D$, $(f;g);h = f;(g;h)$
 }
 
@@ -115,7 +115,7 @@ A natural transformation $\theta: F \rightarrow G$ for (co)domain-aligned functo
 
 \marginnote{
 \begin{defn}[Monoidal Category]
-A monoidal category consists of a category $\mathcal{C}$, a functor $\otimes: \mathcal{C} \times \mathcal{C} \rightarrow C$, a monoidal unit object $I \in \text{Ob}(\mathcal{C})$, and the following natural isomorphisms -- i.e. natural transformations with inverses, where multiple bar notation indicates variable object argument positions: an associator $\alpha: ((- \ \otimes =) \otimes \equiv) \mapsto (- \ \otimes (= \otimes \equiv))$, a right unitor $\rho - \otimes I \mapsto -$, and a left unitor $\lambda I \otimes - \mapsto -\big)$. These natural isomorphisms must in addition satisfy certain \emph{coherence} diagrams, to be displayed shortly.
+A monoidal category consists of a category $\mathcal{C}$, a functor $\otimes: \mathcal{C} \times \mathcal{C} \rightarrow C$, a monoidal unit object $I \in \text{Ob}(\mathcal{C})$, and the following natural isomorphisms -- i.e. natural transformations with inverses, where multiple bar notation indicates variable object argument positions: an associator $\alpha: ((- \ \otimes =) \otimes \equiv) \mapsto (- \ \otimes (= \otimes \equiv))$, a right unitor $\rho: \otimes I \mapsto -$, and a left unitor $\lambda : I \otimes - \mapsto -\big)$. These natural isomorphisms must in addition satisfy certain \emph{coherence} diagrams, to be displayed shortly.
 \end{defn}
 }
 
@@ -210,10 +210,10 @@ Now we discuss how we might define the properties and behaviour of processes by 
 \[\tikzfig{proctheory/copydelete}\]
 
 \begin{example}[Linear maps]
-Consider a vector space $\mathbf{V}$, which we assume includes a choice of basis. The copy map is the rectangular matrix made of two identity matrices:
+Consider a vector space $\mathbf{V}$, which we assume includes a choice of basis. The copy map for a vector space $\mathbf{V}$ is the rectangular matrix made of two identity matrices:
 \[\Delta_\mathbf{V}: \mathbf{V} \rightarrow \mathbf{V} \oplus \mathbf{V} := \begin{bmatrix} \mathbf{1}_\mathbf{V} & \mathbf{1}_\mathbf{V} \end{bmatrix}\]
-The delete map is the column vector of 1s:
-\[\epsilon_\mathbf{V}: \mathbf{V} \rightarrow \mathbf{0} := \begin{bmatrix} 1 \\ \vdots \\ 1 \end{bmatrix}\]
+The delete map for $\mathbf{V}$ is an empty column; a matrix of dimensions $\mathop{dim}(V) \times 0$:
+\[\epsilon_\mathbf{V}: \mathbf{V} \rightarrow \mathbf{0}\]
 \end{example}
 
 \begin{example}[Sets and functions]
@@ -240,12 +240,12 @@ It is worth pausing here to think about how one might characterise the process o
 \item[\textbf{Counitality}:] says that if a copy is made and one of the copies is deleted, the remaining copy is the same as the original.
 \end{description}
 
-Insofar as we think this is an acceptable characterisation of copying, rather than specify concretely what a copy and delete does for each system $X$ we encounter, we can instead posit that so long as we have processes $\Delta_X: X \otimes X \rightarrow X$ and $\epsilon_X: X \rightarrow I$ that obey all the equational constraints above, $\Delta_X$ and $\epsilon_X$ are as good as a copy and delete.
+Insofar as we think this is an acceptable characterisation of copying, rather than specify concretely what a copy and delete does for each system $X$ we encounter, we can instead posit that so long as we have processes $\Delta_X: X \rightarrow X \otimes X$ and $\epsilon_X: X \rightarrow I$ that obey all the equational constraints above, $\Delta_X$ and $\epsilon_X$ are as good as a copy and delete.
 
 \begin{example}[Not all states are copyable]\label{ex:copyablestate}
 Call a state \emph{copyable} when it satisfies the following diagrammatic equation:
 \[\tikzfig{proctheory/copyable}\]
-In the process theory of sets and functions, all states are copyable. Not all states are copyable in the process theories of sets and relations and of linear maps. For example, consider the two element set $\mathbb{B} := \{0,1\}$, and let $\top : \{\star\} \nrightarrow \mathbb{B} := \{(\star,0),(\star,1)\} \simeq \{0,1\}$. Consider the composite of $\top$ with the copy relation:
+In the process theory of sets and functions, all states are copyable. Not all states are copyable in the process theories of sets and relations. For example, consider the two element set $\mathbb{B} := \{0,1\}$, and let $\top : \{\star\} \nrightarrow \mathbb{B} := \{(\star,0),(\star,1)\} \simeq \{0,1\}$. Consider the composite of $\top$ with the copy relation:
 \[\top;\Delta_{\mathbb{B}} := \{\big(\star,(0,0)\big),\big(\star,(1,1)\big)\} \simeq \{(0,0),(1,1)\}\]
 This is a perfectly correlated bipartite state, and it is not equal to $\{0,1\} \times \{0,1\}$, so $\top$ is not copyable.
 \end{example}
@@ -254,7 +254,7 @@ This is a perfectly correlated bipartite state, and it is not equal to $\{0,1\} 
 \begin{remark}\label{ft:determinism}
 The copyability of states is a special case of a more general form of interaction with the copy relation:
 \[\scalebox{0.75}{\tikzfig{proctheory/copyablefunc}}\]
-A cyan map that satisfies this equation is said to be a homomorphism with respect to the commutative comonoid. In the process theory of relations, those relations that satisfy this equation are precisely the functions; in other words, this diagrammatic equation expresses \emph{determinism}.
+A cyan map that satisfies this equation is said to be a homomorphism with respect to the commutative comonoid. In the process theory of relations, those relations that satisfy this equation are precisely the partial functions; in other words, this diagrammatic equation expresses \emph{determinism}.
 \end{remark}
 
 Here is an unexpected consequence. Suppose we insist that \emph{to copy} in principle also implies the ability to copy \emph{anything} -- arbitrary states. From Example \ref{ex:copyablestate} and Remark \ref{ft:determinism}, we know that this demand is incompatible with certain process theories. In particular, this demand would constrain a process theory of sets and relations to a subtheory of sets and functions. The moral here is that process theories are flexible enough to meet ontological needs. A classical computer scientist who works with perfectly copyable data and processes might demand universal copying along with the commutative comonoid equations, whereas a quantum physicist who wishes to distinguish between copyable classical data and non-copyable quantum data might taxonomise copy and delete as a special case of a more generic quasi-copy and quasi-delete that is only a commutative comonoid. In fact, quantum physicists \emph{do} do this; see Dodo: \citep{coecke_picturing_2017}.
@@ -353,7 +353,7 @@ Abstraction also yields generality. For example, in the case of addition, it is 
 
 In this light, string diagrams are a natural metalanguage for the study of imperative knowledge; string diagrams in fact independently evolved within computer science from flowcharts describing processes. Process theories, which are equations or logical sentences about processes, allow us to reason declaratively about imperative knowledge. Moreover, string diagrams as syntactic objects can be interpreted in various concrete settings, so that the same diagram serves as the common interface for a process like addition, with compliant implementation details for each particular domain spelled out separately.\\
 
-\newthought{Now we define the one structure we really care about} Spiders -- or special frobenius algebras (introduced in \citep{paquette_categorical_2008}) -- will be the master structure we work with.
+\newthought{Now we define a very useful structure.} Spiders -- or special frobenius algebras (introduced in \citep{paquette_categorical_2008}) -- will be important throughout this thesis.
 
 \clearpage
 
@@ -364,14 +364,19 @@ I will describe the behaviour of a spider as a PROP \citep{nlab_authors_prop_nod
 That satisfy the following equations:
 \[\resizebox{\textwidth}{!}{\tikzfig{proctheory/spiders1}}\]
 Spiders imply strong compact closure; self-dual cups and caps may be viewed as composite spiders. These are the cups which we use in pregroup diagrams to come. The equations for cups and caps are derived from spider rules, taking advantage of equality up to connectivity of wires.
-\[\resizebox{\textwidth}{!}{\tikzfig{proctheory/strongcompactclosed}}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{proctheory/compactclosed2}}\]
 \end{defn}
 \end{myboxB}
 
 \begin{myboxB}
 \begin{term}
-We call a category in which every object has a spider a \emph{hypergraph category} \citep{fong_hypergraph_2018}. 
+A \emph{hypergraph category} \citep{fong_hypergraph_2018} is a symmetric monoidal category in which every object is equipped with a choice of spider, and spiders of tensors are tensors of spiders, as illustrated below:
+\[\tikzfig{proctheory/supply}\]
 \end{term}
+
+\begin{example}
+The category of sets and relations with cartesian product as $\otimes$ is a hypergraph category, as is the category $\textbf{FdVect}^{\otimes}$, the category of finite dimensional vector spaces and linear maps with the Kronecker product as $\otimes$.
+\end{example}
 
 \begin{remark}[Spiders are easy]
 All connected configurations of spiders with the same number of inputs and outputs are equal. Intuitively, whereas wires connect end-to-end in string diagrams, spiders give us \emph{multiwires} that we may freely split and connect.

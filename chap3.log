@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  12 FEB 2024 16:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  4 AUG 2024 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1072,7 +1072,29 @@ File: pgflibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
 Library (tcolorbox): 'tcbposter.code.tex' version '5.0.2'
-))
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen306
+\captionmargin=\dimen307
+\caption@leftmargin=\dimen308
+\caption@rightmargin=\dimen309
+\caption@width=\dimen310
+\caption@indent=\dimen311
+\caption@parindent=\dimen312
+\caption@hangindent=\dimen313
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count346
+\c@continuedfloat=\count347
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen314
+\caption@adjustwidth@linewidth=\dimen315
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
 
 Package geometry Warning: Over-specification in `v'-direction.
     `height' (483.69684pt) is ignored.
@@ -1214,7 +1236,7 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup13
 \symAMSb=\mathgroup14
 )
-\c@theorem=\count346
+\c@theorem=\count348
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/newpxtext.sty
 Package: newpxtext 2022/01/30 v1.504(Michael Sharpe) latex and unicode latex su
@@ -1235,8 +1257,8 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2022/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count347
-\decimalpart=\count348
+\integerpart=\count349
+\decimalpart=\count350
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 )
@@ -1245,7 +1267,7 @@ LaTeX Font Info:    Setting zplLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplTLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplOsF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplTOsF sub-encoding to TS1/0 on input line 24.
-\zpl@cnt=\count349
+\zpl@cnt=\count351
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
@@ -1279,10 +1301,10 @@ File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowinset=\dimen306
-\pgfarrowlength=\dimen307
-\pgfarrowwidth=\dimen308
-\pgfarrowlinewidth=\dimen309
+\pgfarrowinset=\dimen316
+\pgfarrowlength=\dimen317
+\pgfarrowwidth=\dimen318
+\pgfarrowlinewidth=\dimen319
 ))) (./macros/tikzfig.sty
 (/usr/local/texlive/2022/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
@@ -1292,9 +1314,9 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 \t@pgfplots@toka=\toks52
 \t@pgfplots@tokb=\toks53
 \t@pgfplots@tokc=\toks54
-\pgfplots@tmpa=\dimen310
-\c@pgfplots@coordindex=\count350
-\c@pgfplots@scanlineindex=\count351
+\pgfplots@tmpa=\dimen320
+\c@pgfplots@coordindex=\count352
+\c@pgfplots@scanlineindex=\count353
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -1312,13 +1334,13 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count352
+\c@pgfplotsarray@tmp=\count354
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count353
+\c@pgfplotstable@counta=\count355
 \t@pgfplotstable@a=\toks55
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
@@ -1331,7 +1353,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count354
+\c@pgfplotslibrarysurf@no=\count356
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -1363,14 +1385,14 @@ x)
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen311
-\pgfdecoratedremainingdistance=\dimen312
-\pgfdecoratedinputsegmentcompleteddistance=\dimen313
-\pgfdecoratedinputsegmentremainingdistance=\dimen314
-\pgf@decorate@distancetomove=\dimen315
-\pgf@decorate@repeatstate=\count355
-\pgfdecorationsegmentamplitude=\dimen316
-\pgfdecorationsegmentlength=\dimen317
+\pgfdecoratedcompleteddistance=\dimen321
+\pgfdecoratedremainingdistance=\dimen322
+\pgfdecoratedinputsegmentcompleteddistance=\dimen323
+\pgfdecoratedinputsegmentremainingdistance=\dimen324
+\pgf@decorate@distancetomove=\dimen325
+\pgf@decorate@repeatstate=\count357
+\pgfdecorationsegmentamplitude=\dimen326
+\pgfdecorationsegmentlength=\dimen327
 )
 \tikz@lib@dec@box=\box132
 )
@@ -1384,13 +1406,13 @@ s/tikzlibrarydecorations.pathreplacing.code.tex
 brarydecorations.pathreplacing.code.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.contourlua.code.tex)
-\pgfplots@numplots=\count356
-\pgfplots@xmin@reg=\dimen318
-\pgfplots@xmax@reg=\dimen319
-\pgfplots@ymin@reg=\dimen320
-\pgfplots@ymax@reg=\dimen321
-\pgfplots@zmin@reg=\dimen322
-\pgfplots@zmax@reg=\dimen323
+\pgfplots@numplots=\count358
+\pgfplots@xmin@reg=\dimen328
+\pgfplots@xmax@reg=\dimen329
+\pgfplots@ymin@reg=\dimen330
+\pgfplots@ymax@reg=\dimen331
+\pgfplots@zmin@reg=\dimen332
+\pgfplots@zmax@reg=\dimen333
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryplotmarks.code.tex
@@ -1417,7 +1439,7 @@ File: tikzlibrarybackgrounds.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryfolding.code.tex
 File: tikzlibraryfolding.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\tikz@lib@fold@length=\dimen324
+\tikz@lib@fold@length=\dimen334
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarychains.code.tex
@@ -1442,7 +1464,7 @@ File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen325
+\arrowsize=\dimen335
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshadows.code.tex
@@ -1526,8 +1548,8 @@ s/circuits/tikzlibrarycircuits.ee.IEC.code.tex
 s/circuits/tikzlibrarycircuits.ee.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/circuits/tikzlibrarycircuits.code.tex
-\tikz@lib@circ@count=\count357
-\tikzcircuitssizeunit=\dimen326
+\tikz@lib@circ@count=\count359
+\tikzcircuitssizeunit=\dimen336
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/p
 gflibraryshapes.gates.ee.code.tex))
@@ -1553,23 +1575,23 @@ the 'stix' package, so I'm not going to load amssymb.
 )) (./macros/thesis.tikzstyles)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen327
-\lightrulewidth=\dimen328
-\cmidrulewidth=\dimen329
-\belowrulesep=\dimen330
-\belowbottomsep=\dimen331
-\aboverulesep=\dimen332
-\abovetopsep=\dimen333
-\cmidrulesep=\dimen334
-\cmidrulekern=\dimen335
-\defaultaddspace=\dimen336
-\@cmidla=\count358
-\@cmidlb=\count359
-\@aboverulesep=\dimen337
-\@belowrulesep=\dimen338
-\@thisruleclass=\count360
-\@lastruleclass=\count361
-\@thisrulewidth=\dimen339
+\heavyrulewidth=\dimen337
+\lightrulewidth=\dimen338
+\cmidrulewidth=\dimen339
+\belowrulesep=\dimen340
+\belowbottomsep=\dimen341
+\aboverulesep=\dimen342
+\abovetopsep=\dimen343
+\cmidrulesep=\dimen344
+\cmidrulekern=\dimen345
+\defaultaddspace=\dimen346
+\@cmidla=\count360
+\@cmidlb=\count361
+\@aboverulesep=\dimen347
+\@belowrulesep=\dimen348
+\@thisruleclass=\count362
+\@lastruleclass=\count363
+\@thisrulewidth=\dimen349
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/units/units.sty
 Package: units 1998/08/04 v0.9b Typesetting units
@@ -1582,11 +1604,11 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
-\FV@CodeLineNo=\count362
+\FV@CodeLineNo=\count364
 \FV@InFile=\read4
 \FV@TabBox=\box159
-\c@FancyVerbLine=\count363
-\FV@StepNumber=\count364
+\c@FancyVerbLine=\count365
+\FV@StepNumber=\count366
 \FV@OutFile=\write4
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.sty
@@ -1594,38 +1616,50 @@ Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
 Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count365
-\l__lipsum_a_int=\count366
-\l__lipsum_b_int=\count367
+\g__lipsum_par_int=\count367
+\l__lipsum_a_int=\count368
+\l__lipsum_b_int=\count369
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/bussproofs/bussproofs.sty
 Proof Tree (bussproofs) style macros. Version 1.1.
-\theLevel=\count368
-\myMaxLevel=\count369
+\theLevel=\count370
+\myMaxLevel=\count371
 \myBoxA=\box160
 \myBoxB=\box161
 \myBoxC=\box162
 \myBoxD=\box163
 \myBoxLL=\box164
 \myBoxRL=\box165
-\thisAboveSkip=\dimen340
-\thisBelowSkip=\dimen341
-\newScoreStart=\dimen342
-\newScoreEnd=\dimen343
-\newCenter=\dimen344
-\displace=\dimen345
-\leftLowerAmt=\dimen346
-\rightLowerAmt=\dimen347
-\scoreHeight=\dimen348
-\scoreDepth=\dimen349
-\htLbox=\dimen350
-\htRbox=\dimen351
-\htRRbox=\dimen352
-\htRRRbox=\dimen353
-\htAbox=\dimen354
-\htCbox=\dimen355
+\thisAboveSkip=\dimen350
+\thisBelowSkip=\dimen351
+\newScoreStart=\dimen352
+\newScoreEnd=\dimen353
+\newCenter=\dimen354
+\displace=\dimen355
+\leftLowerAmt=\dimen356
+\rightLowerAmt=\dimen357
+\scoreHeight=\dimen358
+\scoreDepth=\dimen359
+\htLbox=\dimen360
+\htRbox=\dimen361
+\htRRbox=\dimen362
+\htRRRbox=\dimen363
+\htAbox=\dimen364
+\htCbox=\dimen365
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2022/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks56
+\SOUL@lasttoken=\toks57
+\SOUL@cmds=\toks58
+\SOUL@buffer=\toks59
+\SOUL@token=\toks60
+\SOUL@spaceskip=\skip101
+\SOUL@ttwidth=\dimen366
+\SOUL@uldp=\dimen367
+\SOUL@ulht=\dimen368
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/skak/skak.sty
 Package: skak 2018/01/08 v1.5.3 Chess typesetting
@@ -1648,29 +1682,29 @@ File: lsienc.def 2006/06/09 v1.2 Standard LaTeX file
 Now handling font encoding LSI ...
 ... no UTF-8 mapping file for font encoding LSI
 )
-\len@cfss@squarewidth=\skip101
-\len@cfss@squaretotalheight=\skip102
-\len@cfss@squaredepth=\skip103
+\len@cfss@squarewidth=\skip102
+\len@cfss@squaretotalheight=\skip103
+\len@cfss@squaredepth=\skip104
 
 
 Package chessfss Warning: \comment already defined 
 (chessfss)                I will not overwrite it on input line 590.
 
 ) (/usr/local/texlive/2022/texmf-dist/tex/plain/lambda-lists/lambda.sty)
-\c@fileFrom=\count370
-\c@rankFrom=\count371
-\c@fileTo=\count372
-\c@rankTo=\count373
-\c@ps@inverse=\count374
-\c@ps@knightangle=\count375
-\c@halfmove=\count376
-\c@move=\count377
-\c@helpgobble=\count378
-\c@helpnumber=\count379
-\c@helpnumberMove=\count380
-\squarelength=\skip104
-\square@multiplier=\count381
-\ranklift=\skip105
+\c@fileFrom=\count372
+\c@rankFrom=\count373
+\c@fileTo=\count374
+\c@rankTo=\count375
+\c@ps@inverse=\count376
+\c@ps@knightangle=\count377
+\c@halfmove=\count378
+\c@move=\count379
+\c@helpgobble=\count380
+\c@helpnumber=\count381
+\c@helpnumberMove=\count382
+\squarelength=\skip105
+\square@multiplier=\count383
+\ranklift=\skip106
 LaTeX Font Info:    Trying to load font information for LSB+skaknew on input li
 ne 1774.
 
@@ -1689,10 +1723,10 @@ LaTeX Font Warning: Font shape `T1/qhv/m/up' undefined
 
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 9.40002pt on input line 1774.
-\store@toks=\toks56
+\store@toks=\toks61
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/up' will be
-(Font)              scaled to size 9.40002pt on input line 122.
+(Font)              scaled to size 9.40002pt on input line 126.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
 ))
@@ -1843,7 +1877,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count382
+\c@section@level=\count384
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -1889,17 +1923,17 @@ LaTeX Info: Redefining \nameref on input line 3.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count383
-\scratchdimen=\dimen356
+\scratchcounter=\count385
+\scratchdimen=\dimen369
 \scratchbox=\box166
-\nofMPsegments=\count384
-\nofMParguments=\count385
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count386
-\MPscratchDim=\dimen357
-\MPnumerator=\count387
-\makeMPintoPDFobject=\count388
-\everyMPtoPDFconversion=\toks58
+\nofMPsegments=\count386
+\nofMParguments=\count387
+\everyMPshowfont=\toks62
+\MPscratchCnt=\count388
+\MPscratchDim=\dimen370
+\MPnumerator=\count389
+\makeMPintoPDFobject=\count390
+\everyMPtoPDFconversion=\toks63
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1917,9 +1951,11 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count389
-\c@mv@tabular=\count390
-\c@mv@boldtabular=\count391
+\c@lstlisting=\count391
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\c@mv@tabular=\count392
+\c@mv@boldtabular=\count393
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
@@ -2085,7 +2121,18 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.29405pt on input line 16.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 16.
- (./figures/ncat/flower1.tikz) (./figures/ncat/table1.tikz
+ (./figures/ncat/flower1.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 17.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]\T1/zplTLF/m/n/10 Figure 1.1: |[]The cat-e-gory in ques-tion can be vi-su-
+ []
+
+(./figures/ncat/table1.tikz
 LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
 (Font)              scaled to size 9.0pt on input line 35.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
@@ -2093,16 +2140,167 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 5.0pt on input line 35.
 )
-(./figures/ncat/cstring1.tikz) (./figures/ncat/string1.tikz)
-(./figures/ncat/poindual.tikz) (./figures/tree2gate/cfg/cfgsignature.tikz
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 23.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]\T1/zplTLF/m/n/10 Figure 1.2: |[]When there are too many gen-er-at-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/zplTLF/m/n/10 ing mor-phisms, we can in-stead present the same
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/zplTLF/m/n/10 data as a ta-ble of $\LS1/stix2/m/it/10 n$\T1/zplTLF/m/n/10 -
+cells; there is a sin-gle 0-cell
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\LS1/stix2/m/it/10 ?$\T1/zplTLF/m/n/10 , and three non-identity 1-cells cor-re-
+spond-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/zplTLF/m/n/10 to $[][]\LS1/stix2/m/it/10 ; [][]; [][]$\T1/zplTLF/m/n/10 , e
+ach with source and tar-get 0-cells $\LS1/stix2/m/it/10 ?$\T1/zplTLF/m/n/10 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/zplTLF/m/n/10 Typ-i-cally iden-tity mor-phisms can be omit-ted from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/zplTLF/m/n/10 ta-bles as they come for free. Ob-serve that com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/zplTLF/m/n/10 po-si-tion of iden-ti-ties en-forces the be-haviour of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/zplTLF/m/n/10 the empty string, so that for any string $\LS1/stix2/m/it/10 
+x$\T1/zplTLF/m/n/10 , we have
+ []
+
+(./figures/ncat/cstring1.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 29.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]\T1/zplTLF/m/n/10 Figure 1.3: |[]For a con-crete ex-am-ple, we can de-pict
+ []
+
+(./figures/ncat/string1.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 35.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]\T1/zplTLF/m/n/10 Figure 1.4: |[]The string-diagrammatic view, where
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+\LS1/stix2/m/it/10 ?$ \T1/zplTLF/m/n/10 is treated as a wire and mor-phisms are
+ treated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+\T1/zplTLF/m/n/10 as boxes or dots is an ex-pres-sion of the same data
+ []
+
+(./figures/ncat/poindual.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 41.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]\T1/zplTLF/m/n/10 Figure 1.5: |[]We can vi-su-alise the rule as a com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/zplTLF/m/n/10 mu-ta-tive di-a-gram where $[][]$ is a 2-cell be-tween the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/zplTLF/m/n/10 source and tar-get 1-cells. Just as 1-cells are ar-rows
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/zplTLF/m/n/10 be-tween 0-cell points in a com-mut-ing di-a-gram, a 2-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/zplTLF/m/n/10 cell can also be con-cep-tu-alised as a di-rected sur-face
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/zplTLF/m/n/10 from a 1-cell to an-other. Tak-ing the Poincaré dual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/zplTLF/m/n/10 of this view gives us a string di-a-gram for the 2-cell
+ []
+
+(./figures/tree2gate/cfg/cfgsignature.tikz
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 (Font)              scaled to size 9.0pt on input line 46.
 )
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 48.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[]\T1/zplTLF/m/n/10 Figure 1.6: |[]We can de-scribe a context-free gram-mar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+\T1/zplTLF/m/n/10 with the same com-bi-na-to-rial rewrit-ing data that
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+\T1/zplTLF/m/n/10 spec-i-fies pla-nar string di-a-grams as we have been
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+\T1/zplTLF/m/n/10 il-lus-trat-ing so far. Here is a context-free gram-mar
+ []
+
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 7.5pt on input line 51.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 51.
-
 (./figures/ncat/2ways.tikz) [7] (./figures/ncat/thinalice.tikz)
 (./figures/ncat/bobfat.tikz) [8]
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
@@ -2117,6 +2315,280 @@ LaTeX Font Info:    Font shape `TS1/zplTLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 81.
  [9]
 (./figures/tree2gate/tag/CFGtoTAGpattern.tikz)
+! Argument of \@iiminipage has an extra }.
+<inserted text> 
+                \par 
+l.117 \end{figure}
+                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+{\floatalignment }{\def \reserved@a *{\def \caption@tempa {*}\caption@@withopta
+rgs \ETC.
+! Paragraph ended before \@iiminipage was complete.
+<to be read again> 
+                   \par 
+l.117 \end{figure}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+[][]\T1/zplTLF/b/n/10 Construction 1.1.4 \T1/zplTLF/m/n/10 (Leaf-Ansatz of a CF
+G)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 Given
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 a sig-na-ture $\LS1/stix2frak/m/n/10 G$ \T1/zplTLF/m/n/10 for
+ a CFG, we con-struct a new sig-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 na-ture $\LS1/stix2frak/m/n/10 G[]$ \T1/zplTLF/m/n/10 which h
+as the same 0- and 1-cells as $\LS1/stix2frak/m/n/10 G$\T1/zplTLF/m/n/10 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 Now, re-fer-ring to the dashed ma-genta ar-rows in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 the schematic be-low: for each 1-cell wire type $[]$ of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\LS1/stix2frak/m/n/10 G$\T1/zplTLF/m/n/10 , we in-tro-duce a \T1/zplTLF/m/it/10
+ leaf-ansatz \T1/zplTLF/m/n/10 2-cell $[][]$. For each leaf
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 2-cell $[][]$ in $\LS1/stix2frak/m/n/10 G$\T1/zplTLF/m/n/10 ,
+ we in-tro-duce a re-named copy $[][]$ in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\LS1/stix2frak/m/n/10 G[]$\T1/zplTLF/m/n/10 . Now re-fer to the solid ma-genta:
+ we con-struct a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 3-cell in $\LS1/stix2frak/m/n/10 G[]$ \T1/zplTLF/m/n/10 for e
+ach 2-cell in $\LS1/stix2frak/m/n/10 G$\T1/zplTLF/m/n/10 , which has the ef-fec
+t
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 of sys-tem-at-i-cally re-plac-ing open out-put wires in $\LS1
+/stix2frak/m/n/10 G$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+[][]\T1/zplTLF/b/n/10 Proposition 1.1.5. []\T1/zplTLF/m/n/10 Leaf-ansatzes of C
+FGs are pre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 cisely tree ad-join-ing gram-mars (TAGs) with only
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+[]\T1/zplTLF/m/n/10 By con-struc-tion. Con-sider a CFG given by 2-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 categorical sig-na-ture $\LS1/stix2frak/m/n/10 G$\T1/zplTLF/m
+/n/10 , with leaf-ansatz sig-na-ture
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\LS1/stix2frak/m/n/10 G[]$\T1/zplTLF/m/n/10 . The types $[]$ of $\LS1/stix2frak
+/m/n/10 G$ \T1/zplTLF/m/n/10 be-come sub-sti-tu-tion marked
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 sym-bols $[][]$ in $\LS1/stix2frak/m/n/10 G[]$\T1/zplTLF/m/n/
+10 . The trees $[][]$ in $\LS1/stix2frak/m/n/10 G$ \T1/zplTLF/m/n/10 be-come in
+i-tial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 trees $[][]$ in $\LS1/stix2frak/m/n/10 G[]$\T1/zplTLF/m/n/10 
+. The 3-cells $[][]$ of $\LS1/stix2frak/m/n/10 G[]$ \T1/zplTLF/m/n/10 are pre-c
+isely sub-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 sti-tu-tion op-er-a-tions cor-re-spond-ing to ap-pend-ing
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2130,8 +2602,199 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 74.
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 87.
 
-) (./figures/tree2gate/tag/3compareintuition.tikz)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\T1/zplTLF/m/n/10 Figure 1.8: |In-stead of treat-ing non-terminals as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+\T1/zplTLF/m/n/10 wires and ter-mi-nals as ef-fects (so that the pres-ence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+\T1/zplTLF/m/n/10 of an open wire avail-able for com-po-si-tion vi-su-ally
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+\T1/zplTLF/m/n/10 in-di-cates non-terminality) the leaf-ansatz con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+\T1/zplTLF/m/n/10 struc-tion treats all sym-bols in a rewrite sys-tem as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+\T1/zplTLF/m/n/10 leaves, and the sig-na-ture book-keeps the dis-tinc-tion
+ []
+
+(./figures/tree2gate/tag/3compareintuition.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]\T1/zplTLF/m/n/10 Figure 1.9: |Ad-join-ing is sprout-ing sub-trees in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\T1/zplTLF/m/n/10 mid-dle of branches. One way we might ob-tain the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\T1/zplTLF/m/n/10 sen-tence \T1/npxtt/m/n/10 Bob runs to school \T1/zplTLF/m/n/
+10 is to start from the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\T1/zplTLF/m/n/10 sim-pler sen-tence \T1/npxtt/m/n/10 Bob runs\T1/zplTLF/m/n/10
+ , and then re-fine the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\T1/zplTLF/m/n/10 verb \T1/npxtt/m/n/10 runs \T1/zplTLF/m/n/10 into \T1/npxtt/m
+/n/10 runs to school\T1/zplTLF/m/n/10 . This re-fine-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\T1/zplTLF/m/n/10 on part of an al-ready com-pleted sen-tence is not
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\T1/zplTLF/m/n/10 per-mit-ted in CFGs, since ter-mi-nals can no longer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\T1/zplTLF/m/n/10 be mod-i-fied. The ad-join-ing op-er-a-tion of TAGs gets
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\T1/zplTLF/m/n/10 around this con-straint by per-mit-ting rewrites in the
+ []
+
 (./figures/tree2gate/tag/CFGasTAGsign.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+[]\T1/zplTLF/m/n/10 Figure 1.10: |Leaf-ansatz sig-na-ture of \T1/npxtt/m/n/10 A
+lice sees
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+[]\T1/zplTLF/m/n/10 1-cells cor-re-spond to types. There are three kinds
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 of 2-cells or-gan-ised in rows; ter-mi-nals, sub-sti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 tutable an-sätze that con-vert wires into bulbs; and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 the sym-bolic rewrites of CFGs re-spec-tively. There
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 are two kinds of 3-cells sim-i-larly or-gan-ised in rows;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 terminal-rewrites that re-place a bulb with a ter-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 mi-nal, and rewrites that mimic the CFG rewrites
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 on an-sätze. Note the one-to-one cor-re-spon-dence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 be-tween the 2-cells and 3-cells for CFG rewrites
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+[]\T1/zplTLF/m/n/10 In more de-tail, one as-pect of rewrite sys-tems we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 adapt for now is the dis-tinc-tion be-tween ter-mi-nal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 and non-ter-mi-nal sym-bols; ter-mi-nal sym-bols are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 those af-ter which no fur-ther rewrites are pos-si-ble.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 We cap-ture this string-diagrammatically by mod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 elling ter-mi-nal rewrites as 2-cells with tar-get equal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 to the 1-cell iden-tity of the 0-cell $\LS1/stix2/m/it/10 ?$\
+T1/zplTLF/m/n/10 , which amounts
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 to graph-i-cally ter-mi-nat-ing a wire. The gen-er-a-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 tors sub-scripted $\LS1/stix2/m/it/10 L$ \T1/zplTLF/m/n/10 (f
+or \T1/zplTLF/m/it/10 la-bel \T1/zplTLF/m/n/10 or \T1/zplTLF/m/it/10 leaf\T1/zp
+lTLF/m/n/10 ) cor-re-spond to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 ter-mi-nals of the CFG, and rep-re-sent a fam-ily of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 gen-er-a-tors in-dexed by a lex-i-con for the lan-guage.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+\T1/zplTLF/m/n/10 The gen-er-a-tors sub-scripted $\LS1/stix2/m/it/10 i$ \T1/zpl
+TLF/m/n/10 (for in-tro-duc-ing a
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2148,25 +2811,600 @@ Overfull \vbox (4.82321pt too high) has occurred while \output is active []
 [12] (./figures/tree2gate/tag/tagsignature.tikz)
 
 Package natbib Warning: Citation `joshi_introduction_1987' on page 13 undefined
- on input line 152.
+ on input line 156.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \end{figure}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package natbib Warning: Citation `joshi_introduction_1987' on page 13 undefined
+ on input line 156.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+[]\T1/zplTLF/m/n/10 Figure 1.11: |TAG sig-na-ture of \T1/npxtt/m/n/10 Alice see
+s Bob
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/npxtt/m/n/10 quickly run to school\T1/zplTLF/m/n/10 . The []high[]-[]lighte
+d[] [][][]2[]-[]cells
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 are aux-il-iary trees that re-place CFG 2-cells for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 verbs with sen-ten-tial com-ple-ment, ad-verbs, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 ad-po-si-tions. The []high[]-[]lighted[] [][][]3[]-[]cells ar
+e the tree
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 ad-join-ing op-er-a-tions of the aux-il-iary trees. The
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 con-struc-tion yields as a corol-lary an al-ter-nate proof
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+[][]\T1/zplTLF/b/n/10 Corollary 1.1.7. []\T1/zplTLF/m/n/10 For ev-ery context-f
+ree gram-mar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\LS1/stix2frak/m/n/10 G$ \T1/zplTLF/m/n/10 there ex-ists a tree-adjoining gram-
+mar $\LS1/stix2frak/m/n/10 G[]$ \T1/zplTLF/m/n/10 such
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 that $\LS1/stix2frak/m/n/10 G$ \T1/zplTLF/m/n/10 and $\LS1/st
+ix2frak/m/n/10 G[]$ \T1/zplTLF/m/n/10 are strongly equiv-a-lent -- both for-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 malisms gen-er-ate the same set of strings (weak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 equiv-a-lence) and the same ab-stract syn-tac-tic struc-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 tures (in this case, trees) be-hind the strings (strong
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+[]\T1/zplTLF/m/n/10 Proposition []1.7[] pro-vides one di-rec-tion of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 both equiv-a-lences. For the other di-rec-tion, we have
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 to show that each aux-il-iary tree (a 2-cell) and its
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 ad-join-ing op-er-a-tion (a 3-cell) in $\LS1/stix2frak/m/n/10
+ G[]$ \T1/zplTLF/m/n/10 cor-re-sponds to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 a sin-gle 2-cell tree of some CFG sig-na-ture $\LS1/stix2frak
+/m/n/10 G$\T1/zplTLF/m/n/10 , which
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 we demon-strate by con-struc-tion. The high-lighted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 3-cells of $\LS1/stix2frak/m/n/10 G[]$ \T1/zplTLF/m/n/10 are 
+ob-tained sys-tem-at-i-cally from the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 aux-il-iary 2-cells as fol-lows: the root and foot nodes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+[]\LS1/stix2/m/it/10 ; [][]$ \T1/zplTLF/m/n/10 in-di-cate which wire-type to ta
+ke as the iden-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 tity in the left of the 3-cell, and the right of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 3-cell is ob-tained by re-plac-ing all non-$[]$ open wires
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+[]$ \T1/zplTLF/m/n/10 with their leaf-ansatzes $[][]$. This es-tab-lishes a cor
+-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+\T1/zplTLF/m/n/10 re-spon-dence be-tween any 2-cells of $\LS1/stix2frak/m/n/10 
+G$ \T1/zplTLF/m/n/10 con-sid-ered
+ []
 
 [13
 
-] (./figures/tree2gate/cfg/bigcfgbreakdown.tikz) [14
+] (./figures/tree2gate/cfg/bigcfgbreakdown.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+[]\T1/zplTLF/m/n/10 Figure 1.12: |Read-ing the cen-tral di-a-gram in the
+ []
 
-]
-(./figures/tree2gate/tag/ex25.tikz) (./figures/tree2gate/tag/ex211.tikz)
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\T1/zplTLF/m/n/10 main body from left-to-right, we ad-di-tion-ally de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\T1/zplTLF/m/n/10 pict the break-down of the com-plete deriva-tion in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\T1/zplTLF/m/n/10 terms of the con-sti-tituent 2-cells, and the source
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\T1/zplTLF/m/n/10 and tar-get 1-cells. Ev-i-dently, all context-sensitive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\T1/zplTLF/m/n/10 gram-mars may be viewed as finitely pre-sented
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\T1/zplTLF/m/n/10 1-object-2-categories by con-sid-er-ing multi-input-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\T1/zplTLF/m/n/10 multi-output rewrites. More broadly, any string
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\T1/zplTLF/m/n/10 rewrit-ing sys-tem is re-cov-er-able in the pres-ence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\T1/zplTLF/m/n/10 of higher di-men-sional cells. My source for that is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\T1/zplTLF/m/n/10 that I made a Tur-ing ma-chine in \T1/npxtt/m/n/10 homotopy.i
+o \T1/zplTLF/m/n/10 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\T1/zplTLF/m/n/10 ex-e-cuted busy-beaver on it as a home-work ex-er-cise
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\T1/zplTLF/m/n/10 when Jamie Vi-cary taught Cat-e-gor-i-cal Quan-tum
+ []
+
+[14
+
+] (./figures/tree2gate/tag/ex25.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+[]\T1/zplTLF/m/n/10 Figure 1.13: |Se-lec-tive and null ad-join-ing di-a-gram-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\T1/zplTLF/m/n/10 mat-i-cally: a re-pro-duc-tion of Ex-am-ple 2.5 of [Joshi]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\T1/zplTLF/m/n/10 which demon-strates the us-age of se-lec-tive and null
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\T1/zplTLF/m/n/10 ad-join-ing. The no-ta-tion from [Joshi] is pre-sented
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\T1/zplTLF/m/n/10 first, fol-lowed by their cor-re-spond-ing rep-re-sen-ta-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\T1/zplTLF/m/n/10 tions in an $\LS1/stix2/m/it/10 n$\T1/zplTLF/m/n/10 -categori
+cal sig-na-ture. The ini-tial tree
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\T1/zplTLF/m/n/10 is pre-sented as a 2-cell where the (SA) rules are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\T1/zplTLF/m/n/10 rewritable nodes, that serve as sources of rewrites
+ []
+
+(./figures/tree2gate/tag/ex211.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+[]\T1/zplTLF/m/n/10 Figure 1.14: |Oblig-a-tory ad-join-ing di-a-gram-mat-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\T1/zplTLF/m/n/10 i-cally: a re-pro-duc-tion of Ex-am-ple 2.11 of [Joshi]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\T1/zplTLF/m/n/10 which demon-strates the us-age of oblig-a-tory ad-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\T1/zplTLF/m/n/10 join-ing, marked or-ange. The no-ta-tion from [Joshi]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\T1/zplTLF/m/n/10 is pre-sented first, fol-lowed by their cor-re-spond-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\T1/zplTLF/m/n/10 rep-re-sen-ta-tions in an $\LS1/stix2/m/it/10 n$\T1/zplTLF/m/
+n/10 -categorical sig-na-ture. The
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\T1/zplTLF/m/n/10 ini-tial tree is pre-sented as a 2-cell where the (OA)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\T1/zplTLF/m/n/10 rule is given its own 2-cell, which is the source
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\T1/zplTLF/m/n/10 of rewrites in 3-cell pre-sen-ta-tions of aux-il-iary
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\T1/zplTLF/m/n/10 trees. We may cap-ture the oblig-a-tory na-ture of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\T1/zplTLF/m/n/10 rewrite by ask-ing that fin-ished deriva-tions con-tain
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\T1/zplTLF/m/n/10 no in-stance of the or-ange 2-cell. Such global ac-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\T1/zplTLF/m/n/10 cep-tance con-di-tions are hacky but com-mon, and in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\T1/zplTLF/m/n/10 this case it is ef-fi-ciently ver-i-fi-able that di-a-grams d
+o
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [15
 
-] (./figures/ncat/xab.tikz) (./figures/ncat/eckhilt2.tikz)
+] (./figures/ncat/xab.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+[]\T1/zplTLF/m/n/10 Figure 1.15: |In our anal-ogy with string rewrite
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\T1/zplTLF/m/n/10 sys-tems, we might like that the fol-low-ing rewrites
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\T1/zplTLF/m/n/10 are equiv-a-lent, while re-spect-ing that they are not
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\T1/zplTLF/m/n/10 equal, rep-re-sent-ing $\LS1/stix2/m/it/10 x; a; b$ \T1/zplTL
+F/m/n/10 as blue, red, and green
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\T1/zplTLF/m/n/10 wires re-spec-tively. Such rewrites from the empty
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\T1/zplTLF/m/n/10 string to it-self are more gen-er-ally called \T1/zplTLF/m/it
+/10 scalars \T1/zplTLF/m/n/10 in
+ []
+
+(./figures/ncat/eckhilt2.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+[]\T1/zplTLF/m/n/10 Figure 1.16: |We may gen-er-ally rep-re-sent such
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+\T1/zplTLF/m/n/10 scalars as la-belled dots. A fact about scalars in a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+\T1/zplTLF/m/n/10 1-object-2-category called the Eckmann-Hilton ar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+\T1/zplTLF/m/n/10 gu-ment is that dots may cir-cle around one an-other,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+\T1/zplTLF/m/n/10 and all of those ex-pres-sions are equiv-a-lent up to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+\T1/zplTLF/m/n/10 ho-mo-topy. The mech-a-nism that en-ables this in our
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+\T1/zplTLF/m/n/10 set-ting is that the empty string is equal to copies
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+\T1/zplTLF/m/n/10 of it-self, which cre-ates the nec-es-sary space for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+\T1/zplTLF/m/n/10 ma-noeu-ver-ing; trans-lat-ing into the $\LS1/stix2/m/it/10 n
+$\T1/zplTLF/m/n/10 -categorical
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+\T1/zplTLF/m/n/10 set-ting, ex-pres-sions are equiv-a-lent up to in-tro-duc-
+ []
+
 (./figures/ncat/braidstogether.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+[]\T1/zplTLF/m/n/10 Figure 1.17: |We may view the ho-mo-topies that get
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+\T1/zplTLF/m/n/10 us from one rewrite to an-other as 3-cells, which
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+\T1/zplTLF/m/n/10 pro-duces a braid in a pair of wires when viewed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+\T1/zplTLF/m/n/10 as a vi-gnette. Up to pro-ces-sive iso-topies, which are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+\T1/zplTLF/m/n/10 con-tin-u-ous bi-jec-tive trans-for-ma-tions that don't let
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+\T1/zplTLF/m/n/10 wires dou-ble back on them-selves, we can iden-tify
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+\T1/zplTLF/m/n/10 two dif-fer-ent braid-ings that are not con-tin-u-ously
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+\T1/zplTLF/m/n/10 de-formable to one an-other in the 3-dimensional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+\T1/zplTLF/m/n/10 space of the vi-gnette. We dis-tin-guish the braid-ings
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
+\T1/zplTLF/m/n/10 vi-su-ally by let-ting wires ei-ther go over or un-der
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16] (./figures/ncat/cubes.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+[]\T1/zplTLF/m/n/10 Figure 1.18: |We can de-pict these swaps by move-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+\T1/zplTLF/m/n/10 ments in a cu-bic vol-ume where each axis cor-re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+\T1/zplTLF/m/n/10 sponds to a di-rec-tion of com-po-si-tion. Whereas on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+\T1/zplTLF/m/n/10 the plane the dots have two ways to swap places --
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+\T1/zplTLF/m/n/10 clock-wise and coun-ter-clock-wise ro-ta-tion -- in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+\T1/zplTLF/m/n/10 vol-ume they have two new ways to swap places
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+\T1/zplTLF/m/n/10 -- clock-wise and coun-ter-clock-wise in the new di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+\T1/zplTLF/m/n/10 men-sion. Shown be-low are two ways to swap left-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+\T1/zplTLF/m/n/10 to-right se-quen-tially com-posed dots by clock-wise
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
+\T1/zplTLF/m/n/10 ro-ta-tions in the forward-backward and up-down
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2175,6 +3413,35 @@ Underfull \vbox (badness 1990) has occurred while \output is active []
 
  [17]
 (./figures/tree2gate/cfg/cfgsigtwists.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+[]\T1/zplTLF/m/n/10 Figure 1.19: |For ex-am-ple, tak-ing our CFG sig-na-ture
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+\T1/zplTLF/m/n/10 from ear-lier, sus-pen-sion pro-motes 1-cells to 3-cells
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+\T1/zplTLF/m/n/10 and 2-cells to 4-cells. The re-sult-ing sig-na-ture gives
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+\T1/zplTLF/m/n/10 us the same di-a-grams, now with the added abil-ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+\T1/zplTLF/m/n/10 to con-sider di-a-grams equiv-a-lent up to twist-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+\T1/zplTLF/m/n/10 wires, which mod-els a string-rewrite sys-tem with
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2184,13 +3451,259 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [18]
 (./figures/tree2gate/tag/joshiex24.tikz)
 (./figures/tree2gate/tag/joshiex241.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+[]\T1/zplTLF/m/n/10 Figure 1.20: |TAG sig-na-ture and ex-am-ple deriva-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 tion. Joshi stresses that ad-join-ing \T1/zplTLF/m/it/10 pre-
+serves \T1/zplTLF/m/n/10 links,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 and that el-e-men-tary trees may be-come \T1/zplTLF/m/it/10 s
+tretched \T1/zplTLF/m/n/10 in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 the pro-cess of deriva-tion, which are fun-da-men-tally
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 topo-log-i-cal con-straints, akin to the "only (pro-ces-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 sive) con-nec-tiv-ity mat-ters" cri-te-rion iden-ti-fy-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 string di-a-grams up to iso-mor-phism. More-over,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 TAGs ev-i-dently have links of two na-tures: tree
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 edges in-tended to be pla-nar, and dashed de-pen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 dency edges in-tended to freely cross over tree
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 edges. It is easy, but a hack, to ask for pla-nar pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 ces-sive iso-mor-phisms for tree edges and ex-tra-pla-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 nar be-haviour for de-pen-dency edges: these are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 ev-i-dently two dif-fer-ent kinds of struc-ture glued
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 to-gether, rather than facets of some whole. Weak $\LS1/stix2
+/m/it/10 n$\T1/zplTLF/m/n/10 -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 categories of-fer a uni-fied math-e-mat-i-cal frame-work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 that na-tively ac-com-mo-dates the de-sired topo-log-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 con-straints while also grant-ing ex-pres-sive con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 trol over wire-types of dif-fer-ing be-haviours. One
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 method to re-cover TAGs true to the orig-i-nal con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 cep-tion is to stay in a pla-nar 1-object-2-category
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 set-ting while ex-plic-itly in-clud-ing wire-crossing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 cells for de-pen-dency links. The al-ter-na-tive method
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 we opt for in Sec-tion []1.2[] is to work in a pure "only
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 con-nec-tiv-ity mat-ters" set-ting, re-cov-er-ing the lin-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 ear or-der-ing of words by gen-er-at-ing cells along a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 cho-sen wire. I do not know of any con-cep-tual jus-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 ti-fi-ca-tion for why pla-narity is so of-ten an im-plicit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 con-straint in ap-proaches to for-mal syn-tax. My
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 best guesses are ei-ther that the first port of call for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 rewrites be-tween 1-dimensional strings of words
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 is a 2-dimensional set-ting, or it is a lim-i-ta-tion of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--281
+\T1/zplTLF/m/n/10 2-dimensional pa-per as a medium of thought along
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/tree2gate/tag/ex24.tikz) (./figures/tree2gate/tag/ex242.tikz)
 (./figures/tree2gate/tag/ex243.tikz)
-Overfull \hbox (1.70345pt too wide) detected at line 281
+Overfull \hbox (1.70345pt too wide) detected at line 285
 [] []  [] []  []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+[]\T1/zplTLF/m/n/10 Figure 1.21: |With our in-ter-pre-ta-tion of TAGS as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\T1/zplTLF/m/n/10 weak $\LS1/stix2/m/it/10 n$\T1/zplTLF/m/n/10 -categorical sig
+-na-tures, We can re-cover each
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\T1/zplTLF/m/n/10 step of the same ex-am-ple deriva-tion au-tomag-i-cally
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\T1/zplTLF/m/n/10 in \T1/npxtt/m/n/10 homotopy.io\T1/zplTLF/m/n/10 ; just click
+-ing on where we want
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\T1/zplTLF/m/n/10 rewrites al-lows the proof as-sis-tant to ex-e-cute a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\T1/zplTLF/m/n/10 type-match-ing tree ad-junc-tion. In the pro-cess of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\T1/zplTLF/m/n/10 in-ter-pre-ta-tion, we in-tro-duce a link wire-type (in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\T1/zplTLF/m/n/10 pur-ple), and in-clude di-rected link gen-er-a-tion and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\T1/zplTLF/m/n/10 elim-i-na-tion mor-phisms for the $\LS1/stix2/m/it/10 T$ \T1/
+zplTLF/m/n/10 wire-type (in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\T1/zplTLF/m/n/10 blue). A nec-es-sary step in the pro-cess of in-ter-pre-ta-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\T1/zplTLF/m/n/10 tion (which for us in-volves tak-ing a Poincaré dual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\T1/zplTLF/m/n/10 to in-ter-pret nodes as wires) is a typ-ing as-sign-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\T1/zplTLF/m/n/10 of the tree-branches con-nected to ter-mi-nal nodes,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\T1/zplTLF/m/n/10 which we have opted to read as shar-ing a $\LS1/stix2/m/it/10
+ T$\T1/zplTLF/m/n/10 -type
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--287
+\T1/zplTLF/m/n/10 for min-i-mal-ity, though we could just as well have
  []
 
 
@@ -2199,35 +3712,137 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 (./figures/tree2gate/tag/ex244.tikz)
 
 Package natbib Warning: Citation `nlab_authors_stabilization_nodate' on page 19
- undefined on input line 289.
+ undefined on input line 293.
+
+
+Package natbib Warning: Citation `nlab_authors_stabilization_nodate' on page 19
+ undefined on input line 293.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+[]\T1/zplTLF/m/n/10 Figure 1.22: |The in-tended take-away is that even if
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 you don't buy the ne-ces-sity or for-mal-ity of weak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\LS1/stix2/m/it/10 n$\T1/zplTLF/m/n/10 -categories, there is al-ways the fall-b
+ack epis-temic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 un-der-pin-ning of a for-mal proof as-sis-tant for higher
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 di-men-sional rewrit-ing the-o-ries, which is rather
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 sim-ple to use if I have suc-ceeded in com-mu-ni-cat-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 ing higher-dimensional in-tu-itions in this sec-tion.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/b/n/10 N.B. \T1/zplTLF/m/n/10 In prac-tice when us-ing \T1/npxtt/m/n
+/10 homotopy.io \T1/zplTLF/m/n/10 for the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 sym-met-ric monoidal set-ting, it is sim-pler to sus-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 pend sym-met-ric monoidal sig-na-tures to be-gin at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 4-cells rather than 3-cells. The rea-son for this is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 that under- and over-braids still ex-ist in the sym-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 met-ric monoidal set-ting, and while se-quen-tially
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 com-posed braids are ho-mo-topi-cally equiv-a-lent to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 the pair of iden-ti-ties, they are not uniquely so, thus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 these ho-mo-topies must be in-put man-u-ally. By be-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 gin-ning at 4-cells (or higher, due to the sta-bil-i-sa-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 hy-poth-e-sis (\T1/zplTLF/b/n/10 ?\T1/zplTLF/m/n/10 )), braid
+-eliminations are unique up to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+\T1/zplTLF/m/n/10 ho-mo-topy and can be per-formed more eas-ily in the
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19] [20] [21]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 294.
+(Font)              scaled to size 11.40997pt on input line 298.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 294.
+(Font)              scaled to size 8.33606pt on input line 298.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 294.
+(Font)              scaled to size 11.40997pt on input line 298.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 294.
+(Font)              scaled to size 8.33606pt on input line 298.
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
-[][]\T1/zplTLF/b/n/10 Definition 1.1.9 \T1/zplTLF/m/n/10 (Lin-guis-tic Tree Ad-
-join-ing Gram-mars)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 A \T1/zplTLF/m/it/10
- Lin-guis-tic Tree Ad-
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+[][]\T1/zplTLF/b/n/10 Definition 1.1.12 \T1/zplTLF/m/n/10 (Lin-guis-tic Tree Ad
+-join-ing Gram-mars)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 A \T1/zplTLF/m/it/1
+0 Lin-guis-tic Tree Ad-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
 []\T1/zplTLF/m/n/10 The ini-tial el-e-ments are the same as an el-e-men-tary tr
 ee-adjoining gram-mar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
+Underfull \hbox (badness 10000) in paragraph at lines 314--315
 []$\LS1/stix2scr/m/n/10 ¸\LS1/stix2/m/it/10 ; \LS1/stix2scr/m/n/10 á$ \T1/zplTL
 F/m/n/10 are fresh sym-bols. $\LS1/stix2scr/m/n/10 ¸$ \T1/zplTLF/m/n/10 marks \
 T1/zplTLF/m/it/10 oblig-a-tory ad-joins\T1/zplTLF/m/n/10 , and $\LS1/stix2scr/m
@@ -2235,7 +3850,7 @@ T1/zplTLF/m/it/10 oblig-a-tory ad-joins\T1/zplTLF/m/n/10 , and $\LS1/stix2scr/m
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 []\T1/zplTLF/m/n/10 A tree where each in-ter-nal node is an el-e-ment of $\LS2/
 stix2cal/m/n/10 N \LS1/stix2/m/n/10  \LS1/stix2frak/m/n/10 S \LS1/stix2/m/n/10
   ^\LS1/stix2scr/m/n/10 ¸\LS1/stix2/m/it/10 ; \LS1/stix2scr/m/n/10 á\LS1/stix2
@@ -2243,37 +3858,37 @@ stix2cal/m/n/10 N \LS1/stix2/m/n/10  \LS1/stix2frak/m/n/10 S \LS1/stix2/m/n/10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 \T1/zplTLF/m/n/10 bel is ei-ther a ter-mi-nal sym-bol (as a leaf), or oth-er-wi
 se a non-ter-mi-nal, along
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 \T1/zplTLF/m/n/10 with a sub-set of aux-il-iary trees that in-di-cates se-lect 
 ad-joins (or null-adjoins
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 \T1/zplTLF/m/n/10 when the sub-set is $\LS1/stix2/m/n/10 É$\T1/zplTLF/m/n/10 ),
  a marker in-di-cat-ing whether those ad-joins are oblig-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 \T1/zplTLF/m/n/10 a-tory or op-tional, and a marker in-di-cat-ing whether the n
 ode is a foot node
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 \T1/zplTLF/m/n/10 or not. Ob-serve that there is no need to in-di-cate when a n
 ode is a valid tar-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--320
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
 []$\LS1/stix2/m/it/10 n[]$ \T1/zplTLF/m/it/10 c-commands $\LS1/stix2/m/it/10 n[
 ]$\T1/zplTLF/m/n/10 , (i.e., $\LS1/stix2/m/it/10 n[]$ \T1/zplTLF/m/n/10 is not 
 an an-ces-tor of $\LS1/stix2/m/it/10 n[]$\T1/zplTLF/m/n/10 , and there ex-ists 
@@ -2281,35 +3896,35 @@ a node
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
-[][]\T1/zplTLF/b/n/10 Construction 1.1.10 \T1/zplTLF/m/n/10 (TAGs in \T1/npxtt/
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+[][]\T1/zplTLF/b/n/10 Construction 1.1.13 \T1/zplTLF/m/n/10 (TAGs in \T1/npxtt/
 m/n/10 homotopy.io\T1/zplTLF/m/n/10 )\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 We
  spell out how the data of a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--349
+Underfull \hbox (badness 10000) in paragraph at lines 351--353
 []\T1/zplTLF/m/n/10 We dis-tin-guish be-tween \T1/zplTLF/m/it/10 atomic \T1/zpl
 TLF/m/n/10 and \T1/zplTLF/m/it/10 com-pos-ite \T1/zplTLF/m/n/10 gen-er-a-tors a
 t this level. The
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--349
+Underfull \hbox (badness 10000) in paragraph at lines 351--353
 \T1/zplTLF/m/n/10 trees them-selves are com-pos-ites of \T1/zplTLF/m/it/10 atom
 ic \T1/zplTLF/m/n/10 gen-er-a-tors. The \T1/zplTLF/m/it/10 atomic \T1/zplTLF/m/
 n/10 gen-er-a-tors
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--351
+Underfull \hbox (badness 10000) in paragraph at lines 353--355
 []\T1/zplTLF/m/n/10 For each node $\LS1/stix2/m/it/10 n$ \T1/zplTLF/m/n/10 that
  oc-curs in ei-ther $\LS2/stix2cal/m/n/10 I$ \T1/zplTLF/m/n/10 or $\LS2/stix2ca
 l/m/n/10 A$\T1/zplTLF/m/n/10 , we pop-u-late cells by a case
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 []\T1/zplTLF/m/n/10 For each node $\LS1/stix2/m/it/10 p$ \T1/zplTLF/m/n/10 of t
 ype $\LS1/stix2/b/n/10 T[]$ \T1/zplTLF/m/n/10 in ei-ther $\LS2/stix2cal/m/n/10 
 I$ \T1/zplTLF/m/n/10 or $\LS2/stix2cal/m/n/10 A$ \T1/zplTLF/m/n/10 with a nonem
@@ -2317,101 +3932,101 @@ pty left-to-right
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 \T1/zplTLF/m/n/10 We rep-re-sent trees by com-pos-ite gen-er-a-tors, de-fined r
 e-cur-sively. For a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 \T1/zplTLF/m/n/10 given tree $\LS2/stix2cal/m/n/10 T$ \T1/zplTLF/m/n/10 in ei-t
 her $\LS2/stix2cal/m/n/10 I$ \T1/zplTLF/m/n/10 or $\LS2/stix2cal/m/n/10 A$\T1/z
 plTLF/m/n/10 , we de-fine a com-pos-ite gen-er-a-tor be-gin-ning at
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 \T1/zplTLF/m/n/10 branches, we com-pose the branch cell $\LS1/stix2/m/it/10 C[]
 $ \T1/zplTLF/m/n/10 to this cell se-quen-tially. If $\LS1/stix2/m/it/10 p$ \T1/
 zplTLF/m/n/10 has a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 \T1/zplTLF/m/n/10 child $\LS1/stix2/m/it/10 c$ \T1/zplTLF/m/n/10 that has a lin
 k, we do a case anal-y-sis. If that child c-commands the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 \T1/zplTLF/m/n/10 other end of the link we gen-er-ate the first half of the lin
 k-ing wire by com-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 \T1/zplTLF/m/n/10 pos-ing $\LS1/stix2/b/n/10 T[]$ \T1/zplTLF/m/n/10 for the ap-
 pro-pri-ate type $\LS1/stix2/b/n/10 T$ \T1/zplTLF/m/n/10 of the child node. Oth
 -er-wise the child
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 \T1/zplTLF/m/n/10 is c-commanded by a pre-vi-ously gen-er-ated link, which we b
 raid over and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 \T1/zplTLF/m/n/10 con-nect us-ing $\LS1/stix2/b/n/10 T[]$\T1/zplTLF/m/n/10 , ag
 ain with the ap-pro-pri-ate typ-ing for the child. Now we
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 \T1/zplTLF/m/n/10 may re-curse the pro-ce-dure for sub-trees. If a node has no 
 chil-dren, it is a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 \T1/zplTLF/m/n/10 ter-mi-nal sym-bol (thus killing the wire), and oth-er-wise w
 e leave an open $\LS1/stix2/b/n/10 T$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 \T1/zplTLF/m/n/10 wire af-ter ap-pend-ing $\LS1/stix2/b/n/10 S[]$\T1/zplTLF/m/n
 /10 . Al-to-gether this ob-tains a 3-cell which we de-note
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 \LS2/stix2cal/m/n/10 T$\T1/zplTLF/m/n/10 , over-load-ing no-ta-tion; dif-fer-en
 t execution-orders of the above pro-ce-dure
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--364
+Underfull \hbox (badness 10000) in paragraph at lines 366--368
 []\T1/zplTLF/m/n/10 For each $\LS1/stix2/m/it/10 ^^^\LS1/stix2/b/n/10 S[]$\T1/z
 plTLF/m/n/10 , $\LS1/stix2/m/it/10 ^^^\LS1/stix2/b/n/10 S[]$\T1/zplTLF/m/n/10 ,
  and for each type-match-ing 4-cell tree in the sub-set of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--364
+Underfull \hbox (badness 10000) in paragraph at lines 366--368
 \T1/zplTLF/m/n/10 se-lect ad-joins of $\LS1/stix2/m/it/10 ^^^$\T1/zplTLF/m/n/10
  , we cre-ate a 5-cell rewrite that per-forms tree ad-join-ing,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--366
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
 \T1/zplTLF/m/n/10 A deriva-tion is fin-ished when there are no oblig-a-tory ad-
 join nodes, all leaves
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--366
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
 \T1/zplTLF/m/n/10 are ter-mi-nal sym-bols, and ho-mo-topies are ap-plied such t
 hat only de-pen-dency
  []
@@ -2421,10 +4036,138 @@ hat only de-pen-dency
 ] [23]) (./chapters/textcirc/circgen.tex
 LaTeX Font Info:    Font shape `TS1/zplTLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 24.
- (./figures/mushroom/howtoread.tikz) (./figures/mushroom/sintro.tikz) [24
+ (./figures/mushroom/howtoread.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 31.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]\T1/zplTLF/m/n/10 Figure 1.23: |[]\T1/zplTLF/b/n/10 How to read the di-a-gram
+s in this
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\T1/zplTLF/b/n/10 sec-tion: \T1/zplTLF/m/n/10 we will be mak-ing heavy use of p
+ink and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\T1/zplTLF/m/n/10 pur-ple bub-bles as frames to con-struct cir-cuits.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\T1/zplTLF/m/n/10 We will de-pict the bub-bles hor-i-zon-tally, as we are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\T1/zplTLF/m/n/10 per-mit-ted to by com-pact clo-sure, or by read-ing
+ []
+
+(./figures/mushroom/sintro.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 39.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]\T1/zplTLF/m/n/10 Figure 1.24: |[]Every deriva-tion starts with a sin-gle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\T1/zplTLF/m/n/10 blank sen-tence bub-ble, to which we may ap-pend
+ []
+
+[24
 
 ] (./figures/mushroom/locality.tikz)
-[25]
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+[]\T1/zplTLF/m/n/10 Figure 1.25: |In this toy ex-am-ple, ob-tain-ing the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 same rewrite that con-nects the two yel-low nodes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 with a pur-ple wire us-ing only graph-theoretically-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 local rewrites could po-ten-tially re-quire an in-fi-nite
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 fam-ily of rules for all pos-si-ble con-fig-u-ra-tions of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 pink and cyan nodes that sep-a-rate the yel-low, or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 would oth-er-wise re-quire dis-turb-ing other nodes in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 the rewrite pro-cess. In our set-ting, strong com-pact
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 clo-sure ho-mo-topies han-dle nav-i-ga-tion be-tween dif-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 fer-ent spa-tial pre-sen-ta-tions so that a sin-gle rewrite
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 rule suf-fices: the source and tar-get no-tated by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 dotted-black cir-cles. De-spite the ex-pres-sive econ-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 omy and power of finitely pre-sented sig-na-tures,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 we can-not "com-pu-ta-tion-ally cheat" graph iso-mor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 phism: for-mally we must sup-ply the compact-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/zplTLF/m/n/10 closure ho-mo-topies as part of the rewrite, ab-sorbed
+ []
+
+[25] [26]
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
 [][]\T1/zplTLF/b/n/10 Rules 1.2.2 \T1/zplTLF/m/n/10 (Sim-ple sen-tences)\T1/zpl
 TLF/b/n/10 . []\T1/zplTLF/m/n/10 Sim-ple sen-tences are sen-tences that only co
@@ -2481,11 +4224,11 @@ a verb, so un-sat-u-rated ad-po-si-tions will move right un-til en-coun-ter-ing
  an un-sat-u-rated noun. In case it
  []
 
-[26]
+[27]
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
 [][]\T1/zplTLF/b/n/10 Rules 1.2.3 \T1/zplTLF/m/n/10 (Com-plex sen-tences)\T1/zp
 lTLF/b/n/10 . []\T1/zplTLF/m/n/10 Now we con-sider two re-fine-ments; con-junc-
-tions, and verbs that take sen-ten-tial com-ple-ments. we may have two sen-tenc
+tions, and verbs that take sen-ten-tial com-ple-ments. We may have two sen-tenc
 es
  []
 
@@ -2499,19 +4242,18 @@ tial com-ple-ment rather than a noun phrase, e.g.
 (./figures/mushroom/Sbestiary.tikz)
 Underfull \hbox (badness 10000) in paragraph at lines 84--86
 \T1/zplTLF/m/n/10 The dotted-blue wires do not con-tent-fully in-ter-act with a
-ny-thing else, but this non-in-ter-ac-tion dis-al-lows over-gen-er-a-tion cases
- where ad-po-si-tional phrases might
+ny-thing else, but the points at which they con-nect on the sur-face ma-genta w
+ire serve as block-ers that
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 84--86
-\T1/zplTLF/m/n/10 in-ter-ject be-tween \T1/npxtt/m/n/10 SCV \T1/zplTLF/m/n/10 v
-erbs and their sen-ten-tial com-ple-ment, e.g. []\T1/npxtt/m/n/10 Alice sees $[
-]$ Bob drink[]\T1/zplTLF/m/n/10 . Later, they serve as vi-sual in-di-ca-tors fo
-r the con-tents of
+\T1/zplTLF/m/n/10 pre-vent over-gen-er-a-tion cases where ad-po-si-tional phras
+es might in-ter-ject be-tween \T1/npxtt/m/n/10 SCV \T1/zplTLF/m/n/10 verbs and 
+their sen-ten-tial com-ple-ment, e.g. []\T1/npxtt/m/n/10 Alice sees $[]$ Bob
  []
 
-[27]
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 92--93
 [][]\T1/zplTLF/b/n/10 Example 1.2.4 \T1/zplTLF/m/n/10 (\T1/npxtt/m/n/10 sober $
 \LS1/stix2/m/it/10 $ \T1/npxtt/m/n/10 sees drunk $\LS1/stix2/m/it/10 ^^L$ \T1/
@@ -2527,7 +4269,7 @@ e as-sume that la-belling oc-curs af-ter all of the words are sat-u-rated. We h
 ave still not in-tro-duced rules for
  []
 
-(./figures/mushroom/soberA.tikz) [28]
+(./figures/mushroom/soberA.tikz) [29]
 Underfull \hbox (badness 10000) in paragraph at lines 102--103
 \T1/zplTLF/m/n/10 tional, ex-tra-ne-ous ten-drils can al-ways be re-tracted, an
 d failed at-tempts for verbs to find an ad-po-si-tional un-sat-u-rated noun ar-
@@ -2562,7 +4304,14 @@ mar to be those that e.g. con-tain no un-sat-u-rated nodes on the sur-face, whi
 ch is a very plau-si-ble linear-
  []
 
-(./figures/mushroom/Alaughs.tikz) [29]
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+\T1/zplTLF/m/n/10 time check by travers-ing the sur-face. It is an in-vari-ant 
+of the rules by con-struc-tion that left-to-right traver-sal of the sur-face is
+ al-ways mean-ing-ful and yields the
+ []
+
+(./figures/mushroom/Alaughs.tikz) [30]
 (./figures/mushroom/nounbestiary_newnew.tikz)
 Underfull \hbox (badness 10000) in paragraph at lines 116--118
 \T1/zplTLF/m/n/10 The linked-\T1/npxtt/m/n/10 N\T1/zplTLF/m/n/10 -intro rules i
@@ -2584,7 +4333,7 @@ oot of their wires, which dis-tin-guishes them from nouns that only have a back
 -ward coref-er-ence or
  []
 
-[30] (./figures/mushroom/nounbestiary_newnew2.tikz)
+[31] (./figures/mushroom/nounbestiary_newnew2.tikz)
 Underfull \hbox (badness 10000) in paragraph at lines 131--133
 \T1/zplTLF/m/n/10 tion of coref-er-ent nouns, and link-propagation is a case an
 al-y-sis that copies a link la-bel and dis-tributes is across coref-er-ent noun
@@ -2599,7 +4348,7 @@ of its coref-er-ence class, which may ei-ther be a noun \T1/npxtt/m/n/10 n \T1/
 zplTLF/m/n/10 or a pro-noun
  []
 
-[31]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 139--140
 [][]\T1/zplTLF/b/n/10 Example 1.2.8 \T1/zplTLF/m/n/10 (\T1/npxtt/m/n/10 sober A
 lice sees Bob clumsily dance. She laughs at him.\T1/zplTLF/m/n/10 )\T1/zplTLF/b
@@ -2646,9 +4395,9 @@ ose deriva-tions touch the roots of
  []
 
 
-LaTeX Warning: Float too large for page by 2.71753pt on input line 153.
+LaTeX Warning: Float too large for page by 3.61745pt on input line 153.
 
-[32] (./figures/mushroom/corefex4.tikz) [33]
+[33] (./figures/mushroom/corefex4.tikz) [34]
 Underfull \hbox (badness 10000) in paragraph at lines 169--170
 [][]\T1/zplTLF/b/n/10 Rules 1.2.9 \T1/zplTLF/m/n/10 (Text to cir-cuit)\T1/zplTL
 F/b/n/10 . []\T1/zplTLF/m/n/10 We turn fin-ished text di-a-grams into text cir-
@@ -2656,11 +4405,11 @@ cuits by op-er-at-ing \T1/zplTLF/m/it/10 in situ\T1/zplTLF/m/n/10 , with ex-tra
  rules out-side the gram-mat-i-cal sys-tem that han-dle
  []
 
-(./figures/mushroom/sentjoin.tikz) [34]
+(./figures/mushroom/sentjoin.tikz) [35]
 Underfull \hbox (badness 10000) in paragraph at lines 185--186
 [][]\T1/zplTLF/b/n/10 Example 1.2.10 \T1/zplTLF/m/n/10 (Text to cir-cuit in ac-
 tion)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 In the first step be-low, by Lem-m
-as []1.2.17[] and []1.2.18[], we can al-ways re-ar-range a fin-ished text di-a-
+as []1.2.15[] and []1.2.16[], we can al-ways re-ar-range a fin-ished text di-a-
 gram such that the
  []
 
@@ -2685,8 +4434,7 @@ hem look proper. At this point, we're ac-tu-ally done, be-cause the re-sult-ing
  di-a-gram \T1/zplTLF/m/it/10 is al-ready a text
  []
 
-(./figures/mushroom/sentjoinex2.tikz) [35] (./figures/mushroom/simpleCFG.tikz)
-(./figures/mushroom/simpleADP.tikz) (./figures/mushroom/simpcorr.tikz) [36
+(./figures/mushroom/sentjoinex2.tikz) [36] [37
 
 
 
@@ -2700,184 +4448,413 @@ hem look proper. At this point, we're ac-tu-ally done, be-cause the re-sult-ing
 
 
 ]
+(./figures/mushroom/simpleCFG.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+[]\T1/zplTLF/m/n/10 Figure 1.26: |Read-ing each di-a-gram from top-to-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+\T1/zplTLF/m/n/10 bottom, from left-to-right we have gen-er-a-tors for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+\T1/zplTLF/m/n/10 in-tran-si-tive verbs, tran-si-tive verbs, ad-jec-tives, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+\T1/zplTLF/m/n/10 ad-verbs. Gen-er-a-tors for verbs re-quire a num-ber of
+ []
+
+(./figures/mushroom/simpleADP.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
+[]\T1/zplTLF/m/n/10 Figure 1.27: |Ad-po-si-tions re-quire sev-eral helper-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
+\T1/zplTLF/m/n/10 generators, which are the com-po-nents within
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
+\T1/zplTLF/m/n/10 dashed boxes in the de-picted ex-am-ple demon-strat-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
+\T1/zplTLF/m/n/10 ing the pro-cess of ap-pend-ing ad-po-si-tions to an
+ []
+
+(./figures/mushroom/simpcorr.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+[]\T1/zplTLF/m/n/10 Figure 1.28: |View-ing nodes on the pink sur-face of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+\T1/zplTLF/m/n/10 circuit-growing gram-mar as 1-cells, each rewrite
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+\T1/zplTLF/m/n/10 rule yields a 2-cell; e.g. the dashed-blue helper
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+\T1/zplTLF/m/n/10 lines for ad-po-si-tions cor-re-spond to the []\T1/npxtt/m/n/
+10 ADP[]\T1/zplTLF/m/n/10 -pass
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+\T1/zplTLF/m/n/10 rules in circuit-growing gram-mar. The cor-re-spon-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+\T1/zplTLF/m/n/10 dence be-tween the []\T1/npxtt/m/n/10 IV[]\T1/zplTLF/m/n/10 -
+intro rules of both gram-mars
+ []
+
 (./figures/mushroom/complexsentenceCSG.tikz)
-(./figures/mushroom/circuitplan.tikz) (./figures/mushroom/reflcomplication.tikz
-)
-
-Package natbib Warning: Citation `wang-mascianica_distilling_2023' on page 37 u
-ndefined on input line 274.
-
-[37
-
-] (./figures/mushroom/nounkinds.tikz) [38
-
-]
-
-LaTeX Warning: Reference `sec:topconcepts' on page 39 undefined on input line 3
-28.
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
+[]\T1/zplTLF/m/n/10 Figure 1.29: |The first rule in-stan-ti-ates the left and
+ []
 
 
-LaTeX Warning: Reference `subsec:toptext' on page 39 undefined on input line 32
-8.
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
+\T1/zplTLF/m/n/10 right bound-aries of a sen-tence, cor-re-spond-ing the
+ []
 
-(./figures/textcirc/gatecompextgt.tikz) (./figures/textcirc/gateeqslide.tikz)
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
+\T1/zplTLF/m/n/10 start-ing bub-ble in circuit-growing gram-mar. The
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
+\T1/zplTLF/m/n/10 sec-ond cor-re-sponds to $[][]$-intro, the third $[][]$-intro
+,
+ []
+
+[38
+
+] (./figures/mushroom/circuitplan.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+[]\T1/zplTLF/m/n/10 Figure 1.30: |We choose the con-ven-tion of con-nect-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+\T1/zplTLF/m/n/10 ing from left-to-right and from bottom-to-top, so
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+\T1/zplTLF/m/n/10 that we might read cir-cuits as we would En-glish
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+\T1/zplTLF/m/n/10 text: the com-po-nents cor-re-spond-ing to words will
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+\T1/zplTLF/m/n/10 be ar-ranged in the re-verse or-der, left-to-right and
+ []
+
+(./figures/mushroom/nounkinds.tikz) [39]
+(./figures/mushroom/reflcomplication.tikz)
+
+Package natbib Warning: Citation `wang-mascianica_distilling_2023' on page 40 u
+ndefined on input line 306.
+
+
+Package natbib Warning: Citation `wang-mascianica_distilling_2023' on page 40 u
+ndefined on input line 306.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+[]\T1/zplTLF/m/n/10 Figure 1.31: |From left to right in roughly de-creas-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+\T1/zplTLF/m/n/10 ing strin-gency, com-pact closed cat-e-gories are the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+\T1/zplTLF/m/n/10 most di-rect so-lu-tion for re-flex-ive pro-nouns. Traced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+\T1/zplTLF/m/n/10 sym-met-ric monoidal cat-e-gories also suf-fice. So
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+\T1/zplTLF/m/n/10 long as the noun wire pos-sesses a monoid and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+\T1/zplTLF/m/n/10 comonoid, a con-vo-lu-tion works. We also can just
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+\T1/zplTLF/m/n/10 spec-ify a new gate. We pro-vide a purely syn-tac-tic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+\T1/zplTLF/m/n/10 treat-ment in (\T1/zplTLF/b/n/10 ?\T1/zplTLF/m/n/10 ); for no
+w we treat them as if they
+ []
+
+[40]
+
+LaTeX Warning: Reference `sec:topconcepts' on page 41 undefined on input line 3
+31.
+
+
+LaTeX Warning: Reference `subsec:toptext' on page 41 undefined on input line 33
+1.
+
+(./figures/textcirc/gatecompextgt.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
+[]\T1/zplTLF/m/n/10 Figure 1.32: |Only con-nec-tiv-ity mat-ters in text cir-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
+\T1/zplTLF/m/n/10 cuits, which we may use to freely re-ar-range and
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./figures/mushroom/contentlesscnj.tikz)
+(./figures/textcirc/gateeqslide.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+[]\T1/zplTLF/m/n/10 Figure 1.33: |[]Postscript: While se-quen-tial com-po-si-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+\T1/zplTLF/m/n/10 tion in pro-cess the-o-ries of-ten has im-plicit tem-po-ral-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+\T1/zplTLF/m/n/10 ity, this is not nec-es-sar-ily the case for text cir-cuits,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+\T1/zplTLF/m/n/10 which may just (for in-stance) rep-re-sent re-la-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+\T1/zplTLF/m/n/10 con-straints. Tem-po-ral-ity may be achieved in text
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+\T1/zplTLF/m/n/10 cir-cuits by in-ter-pret-ing them in pre-monoidal set-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+\T1/zplTLF/m/n/10 tings [CITE], at the cost of the in-ter-change rule
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./figures/textcirc/lonelywires.tikz) (./figures/mushroom/exists.tikz)
+[41] (./figures/mushroom/contentlesscnj.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
+[]\T1/zplTLF/m/n/10 Figure 1.34: |Par-al-lel gates rep-re-sent com-pound
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[39] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
+\T1/zplTLF/m/n/10 sen-tences with con-tent-less con-junc-tions. In En-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
+\T1/zplTLF/m/n/10 glish, some ex-am-ples might be a punc-tu-a-tion mark
+ []
+
+[42] (./figures/textcirc/lonelywires.tikz) (./figures/mushroom/exists.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
+[]\T1/zplTLF/m/n/10 Figure 1.35: |Lonely wires in text cir-cuits are iden-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
+\T1/zplTLF/m/n/10 tity pro-cesses. We re-quire a text di-a-gram ana-logue,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
+\T1/zplTLF/m/n/10 and an in-tran-si-tive "null-verb" in En-glish that
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
 [][]\T1/zplTLF/b/n/10 Construction 1.2.27 \T1/zplTLF/m/n/10 (Cir-cuit to text)\
 T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 In the pres-ence of ad-di-tional rewrite
-s from Con-ven-tions []1.35[] and []1.36[], ev-ery text cir-cuit is ob-tain-abl
-e from some text di-
+s from Con-ven-tions []1.2.25[] and []1.2.26[], ev-ery text cir-cuit is ob-tain
+-able from some text
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
-\T1/zplTLF/m/n/10 a-gram, up to Con-ven-tions []1.33[] and []1.34[]. Start-ing 
-with a cir-cuit, we may use Con-ven-tion []1.33[] to ar-range the cir-cuit into
- al-ter-nat-ing slices of twist-ing wires and
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+\T1/zplTLF/m/n/10 di-a-gram, up to Con-ven-tions []1.2.21[] and []1.2.23[]. Sta
+rt-ing with a cir-cuit, we may use Con-ven-tion []1.2.21[] to ar-range the cir-
+cuit into al-ter-nat-ing slices of twist-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
-\T1/zplTLF/m/n/10 (pos-si-bly ten-sored) cir-cuits, and this ar-range-ment re-c
-urses within boxes. Slices with mul-ti-ple ten-sored gates will be treated us-i
-ng Con-ven-tion []1.35[]. By con-ven-
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+\T1/zplTLF/m/n/10 wires and (pos-si-bly ten-sored) cir-cuits, and this ar-range
+-ment re-curses within boxes. Slices with mul-ti-ple ten-sored gates will be tr
+eated us-ing Con-ven-tion []1.2.25[].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
-\T1/zplTLF/m/n/10 tion []1.36[], we dec-o-rate lonely wires with for-mal \T1/np
-xtt/m/n/10 exists \T1/zplTLF/m/n/10 gates, as in the \T1/npxtt/m/n/10 Frank see
-s \T1/zplTLF/m/n/10 box. Ob-serve how verbs with sen-ten-tial com-ple-ment are 
-de-picted with grey
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+\T1/zplTLF/m/n/10 By con-ven-tion []1.2.26[], we dec-o-rate lonely wires with f
+or-mal \T1/npxtt/m/n/10 exists \T1/zplTLF/m/n/10 gates, as in the \T1/npxtt/m/n
+/10 Frank sees \T1/zplTLF/m/n/10 box. Ob-serve how verbs with sen-ten-tial com-
+ple-ment are de-
  []
 
 (./figures/textcirc/sunny1.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 []\T1/zplTLF/m/n/10 We then lin-earise the slices, rep-re-sent-ing top-to-botto
 m com-po-si-tion as left-to-right. Twist lay-ers are elim-i-nated, re-placed in
 -stead by dot-ted con-nec-tions in-di-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 \T1/zplTLF/m/n/10 cat-ing pro-ces-sive con-nec-tiv-ity. The dashed ver-ti-cal l
 ine dis-tin-guishes slices. This step of the pro-ce-dure al-ways be-haves well,
- guar-an-teed by Propo-si-tion []1.2.17[].
+ guar-an-teed by Propo-si-tion []1.2.15[].
  []
 
 (./figures/textcirc/sunny2.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 407--409
+Underfull \hbox (badness 10000) in paragraph at lines 413--415
 \T1/zplTLF/m/n/10 We re-curse the lin-eari-sa-tion pro-ce-dure within boxes un-
 til there are no more se-quen-tially com-posed gates. The lin-eari-sa-tion pro-
 ce-dure ev-i-dently ter-mi-nates for
  []
 
-(./figures/textcirc/sunny3.tikz) [41] [42]
-Underfull \hbox (badness 10000) in paragraph at lines 418--419
-[]\T1/zplTLF/m/n/10 By Propo-si-tion []1.29[], gates are equiv-a-lent to sen-te
-nces up to no-ta-tion, so we swap no-ta-tions \T1/zplTLF/m/it/10 in situ\T1/zpl
-TLF/m/n/10 . Con-ven-tions []1.35[] and []1.36[] han-dle the edge cases of par-
-al-lel
+(./figures/textcirc/sunny3.tikz) [44] [45]
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
+[]\T1/zplTLF/m/n/10 By Propo-si-tion []1.2.13[], gates are equiv-a-lent to sen-
+tences up to no-ta-tion, so we swap no-ta-tions \T1/zplTLF/m/it/10 in situ\T1/z
+plTLF/m/n/10 . Con-ven-tions []1.2.25[] and []1.2.26[] han-dle the edge cases o
+f
  []
 
 (./figures/textcirc/sunny4.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 421--423
+Underfull \hbox (badness 10000) in paragraph at lines 427--429
 \T1/zplTLF/m/n/10 Recursing no-ta-tion swaps out-wards and con-nect-ing left-to
 -right slices as sentence-bubbles con-nect yields a text cir-cuit, up to the in
 -clu-sion of rewrites from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--423
-\T1/zplTLF/m/n/10 Con-ven-tions []1.35[] and []1.36[]: ap-ply-ing the re-verse 
-of those rewrites and the re-verse of text-diagram rewrites yields a valid text
--diagram deriva-tion, by Propo-si-
+Underfull \hbox (badness 10000) in paragraph at lines 427--429
+\T1/zplTLF/m/n/10 Con-ven-tions []1.2.25[] and []1.2.26[]: ap-ply-ing the re-ve
+rse of those rewrites and the re-verse of text-diagram rewrites yields a valid 
+text-diagram deriva-tion, by Propo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--423
-\T1/zplTLF/m/n/10 tions []1.29[] and []1.2.17[]. We haven't for-mally in-cluded
- tran-si-tive verbs with sen-ten-tial com-ple-ment in our vo-cab-u-lary, but it
- should be ob-vi-ous at this point how
+Underfull \hbox (badness 10000) in paragraph at lines 427--429
+\T1/zplTLF/m/n/10 si-tions []1.2.13[] and []1.2.15[]. We haven't for-mally in-c
+luded tran-si-tive verbs with sen-ten-tial com-ple-ment in our vo-cab-u-lary, b
+ut it should be ob-vi-ous at this point
  []
 
-(./figures/textcirc/sunny5.tikz) [43]
-Underfull \hbox (badness 10000) in paragraph at lines 436--437
+(./figures/textcirc/sunny5.tikz) [46]
+Underfull \hbox (badness 10000) in paragraph at lines 442--443
 []\T1/zplTLF/m/n/10 Sensibility at the sen-ten-tial level is es-tab-lished by P
-ropo-si-tions []1.28[] and []1.29[]. Propo-si-tion []1.2.19[] es-tab-lishes a m
-ap from text to cir-cuits, and Con-struc-tion
+ropo-si-tions []1.2.12[] and []1.2.13[]. Propo-si-tion []1.2.19[] es-tab-lishes
+ a map from text to cir-cuits, and Con-struc-
  []
 
-[44]) (./chapters/textcirc/textcirc.tex (./figures/textcirc/babiex.tikz)
+[47]) (./chapters/textcirc/textcirc.tex (./figures/textcirc/babiex.tikz)
 
-Package natbib Warning: Citation `noauthor_babi_nodate' on page 45 undefined on
+Package natbib Warning: Citation `noauthor_babi_nodate' on page 48 undefined on
  input line 15.
 
 
 Package natbib Warning: Citation `anonymous_quantinuum_researchers_discocirc_no
-date' on page 45 undefined on input line 15.
+date' on page 48 undefined on input line 15.
 
 
-Package natbib Warning: Citation `dudzik_graph_2022' on page 45 undefined on in
+Package natbib Warning: Citation `dudzik_graph_2022' on page 48 undefined on in
 put line 17.
 
 
-Package natbib Warning: Citation `wilson_string_2022' on page 45 undefined on i
+Package natbib Warning: Citation `wilson_string_2022' on page 48 undefined on i
 nput line 19.
 
 
-Package natbib Warning: Citation `merry_reasoning_2014' on page 45 undefined on
+Package natbib Warning: Citation `merry_reasoning_2014' on page 48 undefined on
  input line 19.
 
 
-Package natbib Warning: Citation `quick_-logic_2015' on page 45 undefined on in
+Package natbib Warning: Citation `quick_-logic_2015' on page 48 undefined on in
 put line 19.
 
 
-Package natbib Warning: Citation `zamdzhiev_rewriting_2017' on page 45 undefine
+Package natbib Warning: Citation `zamdzhiev_rewriting_2017' on page 48 undefine
 d on input line 19.
 
 
-Package natbib Warning: Citation `earnshaw_produoidal_2023' on page 45 undefine
+Package natbib Warning: Citation `earnshaw_produoidal_2023' on page 48 undefine
 d on input line 19.
 
 
 Underfull \vbox (badness 7907) has occurred while \output is active []
 
- [45
+ [48
 
 
 
 
 ]
 
-Package natbib Warning: Citation `coecke_grammar_2021' on page 46 undefined on 
+Package natbib Warning: Citation `coecke_grammar_2021' on page 49 undefined on 
 input line 27.
 
 
-Package natbib Warning: Citation `hefford_categories_2020' on page 46 undefined
+Package natbib Warning: Citation `hefford_categories_2020' on page 49 undefined
  on input line 33.
 
-[46]
+[49]
 LaTeX Font Info:    Font shape `T1/zplTLF/b/sc' will be
 (Font)              scaled to size 10.0pt on input line 37.
 
 
-LaTeX Warning: Reference `sec:proctheory' on page 47 undefined on input line 37
+LaTeX Warning: Reference `sec:proctheory' on page 50 undefined on input line 37
 .
 
-[47] [48]
+[50] [51]
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
 [][]\T1/zplTLF/b/n/10 Rules 1.4.1. []\T1/zplTLF/m/n/10 A rel-a-tive pro-noun gl
 ues two sen-tences across a sin-gle noun. For ex-am-ple, what would be a text w
@@ -2973,7 +4950,7 @@ a-belled to re-cover our ini-tial
 
 (./figures/mushroom/RPex2.tikz)
 
-Package natbib Warning: Citation `wang-mascianica_distilling_2023' on page 49 u
+Package natbib Warning: Citation `wang-mascianica_distilling_2023' on page 52 u
 ndefined on input line 61.
 
 
@@ -3019,7 +4996,7 @@ ams, and in
 
 (./figures/mushroom/redcar.tikz)
 
-Package natbib Warning: Citation `coecke_grammar_2021' on page 49 undefined on 
+Package natbib Warning: Citation `coecke_grammar_2021' on page 52 undefined on 
 input line 77.
 
 
@@ -3120,7 +5097,7 @@ is-tri-bu-tion, and the deep \T1/npxtt/m/n/10 and \T1/zplTLF/m/n/10 nodes come
 in a tensor-dentensor pair anal-o-gous to those for non-strict string
  []
 
-(./figures/mushroom/ABdrink.tikz) [49] [50] [51] [52] [53] [54] [55]
+(./figures/mushroom/ABdrink.tikz) [52] [53] [54] [55] [56] [57] [58]
 Underfull \hbox (badness 10000) in paragraph at lines 111--113
 \T1/zplTLF/m/n/10 In this ex-am-ple, the same word \T1/npxtt/m/n/10 and \T1/zpl
 TLF/m/n/10 is a con-junc-tion of verbs. In this case we choose to in-ter-pret t
@@ -3150,11 +5127,11 @@ for \T1/npxtt/m/n/10 drinks \T1/zplTLF/m/n/10 that reaches over to con-tex-tual
 
 (./figures/mushroom/thebeer1.tikz) (./figures/mushroom/thebeer2.tikz)
 
-Package natbib Warning: Citation `urquhart_fine_2020' on page 56 undefined on i
+Package natbib Warning: Citation `urquhart_fine_2020' on page 59 undefined on i
 nput line 144.
 
 
-Package natbib Warning: Citation `balkir_distributional_2015' on page 56 undefi
+Package natbib Warning: Citation `balkir_distributional_2015' on page 59 undefi
 ned on input line 144.
 
 
@@ -3187,7 +5164,7 @@ doesn't type-check, but note that it doesn't have to, be-cause our
 
 (./figures/mushroom/thebeer3.tikz)
 
-LaTeX Warning: Reference `ex:beer2' on page 56 undefined on input line 152.
+LaTeX Warning: Reference `ex:beer2' on page 59 undefined on input line 152.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 151--153
@@ -3235,7 +5212,7 @@ Package bibentry Warning: You have used \nobibliography*
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-[56] [57] [58] [59] [60] (./chap3.aux)
+[59] [60] [61] [62] [63] (./chap3.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3249,13 +5226,13 @@ Package rerunfilecheck Info: File `chap3.out' has not changed.
 (rerunfilecheck)             Checksum: D5F7D3C9F52FD2E18544AB98245155AD;1162.
  ) 
 Here is how much of TeX's memory you used:
- 63408 strings out of 478268
- 1369384 string characters out of 5846348
- 2272431 words of memory out of 5000000
- 80174 multiletter control sequences out of 15000+600000
- 648328 words of font info for 222 fonts, out of 8000000 for 9000
+ 64966 strings out of 478268
+ 1398838 string characters out of 5846348
+ 2325816 words of memory out of 5000000
+ 81652 multiletter control sequences out of 15000+600000
+ 648641 words of font info for 223 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,15n,104p,2993b,1156s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,16n,120p,2993b,1156s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{theorem.1.2.19} has been referenced but does not ex
 ist, replaced by a fixed one
@@ -3279,10 +5256,10 @@ sr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/loc
 al/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texliv
 e/2022/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/te
 xmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on chap3.pdf (60 pages, 869720 bytes).
+Output written on chap3.pdf (63 pages, 876815 bytes).
 PDF statistics:
- 587 PDF objects out of 1000 (max. 8388607)
- 472 compressed objects within 5 object streams
- 143 named destinations out of 1000 (max. 500000)
+ 693 PDF objects out of 1000 (max. 8388607)
+ 572 compressed objects within 6 object streams
+ 212 named destinations out of 1000 (max. 500000)
  3786 words of extra memory for PDF output out of 10000 (max. 10000000)
 
