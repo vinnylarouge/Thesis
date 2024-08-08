@@ -31,8 +31,8 @@
 		\node [style=none] (28) at (7.75, 0) {$=$};
 		\node [style=none] (29) at (8.75, 0) {};
 		\node [style=smalldotb] (30) at (11.25, 0) {};
-		\node [style=none] (31) at (-6.5, 2) {Lower endpoint};
-		\node [style=none] (32) at (7.75, 2) {Upper endpoint};
+		\node [style=none] (31) at (-6.5, 2) {Lower endpoint (0)};
+		\node [style=none] (32) at (7.75, 2) {Upper endpoint (1)};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=ggF] (1.center)

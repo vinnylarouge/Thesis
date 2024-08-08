@@ -21,8 +21,7 @@
 		\node [style=none] (18) at (5.75, -0.5) {};
 		\node [style=none] (19) at (5.75, 0) {};
 		\node [style=none] (20) at (7.5, 0) {};
-		\node [style=none] (21) at (0, 2.5) {Upper Bound};
-		\node [style=none] (22) at (4, 0.5) {$\textcolor{cyan}{\forall}$};
+		\node [style=none] (22) at (-9, 0) {$\textcolor{blue}{\forall x:}$};
 		\node [style=smalldotb] (23) at (0.25, -1) {};
 		\node [style=none] (24) at (-1.5, -1) {};
 		\node [style=none] (25) at (-0.5, -0.5) {};
@@ -44,6 +43,10 @@
 		\node [style=none] (41) at (-0.5, 0.75) {};
 		\node [style=none] (42) at (-2.5, 0) {$:=$};
 		\node [style=none] (43) at (0, -0.5) {};
+		\node [style=none] (44) at (5.5, 0) {$\textcolor{blue}{x}$};
+		\node [style=none] (45) at (-0.75, 0.75) {$\textcolor{blue}{x}$};
+		\node [style=none] (46) at (-0.75, -1) {$\textcolor{blue}{x}$};
+		\node [style=none] (47) at (-7.25, -0.25) {$\textcolor{blue}{x}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=ggF] (1.center)

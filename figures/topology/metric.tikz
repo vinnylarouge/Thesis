@@ -56,8 +56,6 @@
 		\node [style=smalldotb] (71) at (18.5, -1.5) {};
 		\node [style=smalldotb] (72) at (12.75, 0.75) {};
 		\node [style=none] (73) at (16.75, 0) {$\Updownarrow$};
-		\node [style=none] (74) at (16.25, 0) {$\textcolor{cyan}{\forall}$};
-		\node [style=none] (75) at (17.25, 0) {$\textcolor{magenta}{\forall}$};
 		\node [style=none] (76) at (15.75, -1.5) {};
 		\node [style=none] (77) at (16.75, -1.5) {$=$};
 		\node [style=none] (78) at (19.5, -1.5) {};
@@ -82,9 +80,9 @@
 		\node [style=none] (98) at (-0.5, 0.25) {};
 		\node [style=smalldotb] (99) at (0.25, 1.75) {};
 		\node [style=smalldotb] (100) at (0.25, 0.25) {};
-		\node [style=none] (106) at (-1.25, 1.75) {$\textcolor{cyan}{\forall}$};
-		\node [style=none] (107) at (-1.25, 0.25) {$\textcolor{magenta}{\forall}$};
-		\node [style=none] (108) at (-1.25, -1.25) {$\textcolor{orange}{\forall}$};
+		\node [style=none] (106) at (-1.25, 1.75) {$\textcolor{blue}{\forall x}$};
+		\node [style=none] (107) at (-1.25, 0.25) {$\textcolor{red}{\forall y}$};
+		\node [style=none] (108) at (-1.25, -1.25) {$\textcolor{orange}{\forall z}$};
 		\node [style=smalldotb] (109) at (1.25, 1.75) {};
 		\node [style=smalldotb] (110) at (1.25, 0.25) {};
 		\node [style=smalldotb] (111) at (1.25, -1.25) {};
@@ -117,6 +115,14 @@
 		\node [style=none] (139) at (10, -0.5) {};
 		\node [style=none] (140) at (10, 0.5) {};
 		\node [style=none] (141) at (4.5, 4.5) {$d(\textcolor{cyan}{x},\textcolor{orange}{z}) \leq d(\textcolor{cyan}{x},\textcolor{magenta}{y}) + d(\textcolor{magenta}{y},\textcolor{orange}{z})$};
+		\node [style=none] (142) at (0, 1.75) {$\textcolor{blue}{x}$};
+		\node [style=none] (143) at (0, 0.25) {$\textcolor{red}{y}$};
+		\node [style=none] (144) at (0, -1.25) {$\textcolor{orange}{z}$};
+		\node [style=none] (145) at (15.5, 0) {$\textcolor{blue}{\forall x}\textcolor{red}{\forall y}$};
+		\node [style=none] (146) at (12.5, 2.25) {$\textcolor{blue}{x}$};
+		\node [style=none] (147) at (14.5, -1.5) {$\textcolor{blue}{x}$};
+		\node [style=none] (148) at (12.5, 0.75) {$\textcolor{red}{y}$};
+		\node [style=none] (149) at (18.25, -1.5) {$\textcolor{red}{y}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=ggF] (0.center)

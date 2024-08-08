@@ -14,10 +14,7 @@
 		\node [style=smalldotb] (22) at (-3, 0) {};
 		\node [style=none] (23) at (-4, 0) {};
 		\node [style=none] (24) at (2, 0) {$=$};
-		\node [style=none] (25) at (-5.5, 0) {$\textcolor{cyan}{\exists}$};
-		\node [style=none] (26) at (-4.3, 1.25) {};
-		\node [style=none] (27) at (-4.3, -1.25) {};
-		\node [style=none] (28) at (-4.8, 0) {};
+		\node [style=none] (25) at (-5.5, 0) {$\forall \gamma \textcolor{blue}{\exists! x}$};
 		\node [style=none] (29) at (3, 0) {};
 		\node [style=smalldotb] (30) at (3.75, 0) {};
 		\node [style=none] (31) at (5, 0.5) {};
@@ -25,7 +22,7 @@
 		\node [style=none] (33) at (5, -0.5) {};
 		\node [style=smalldotb] (34) at (5, 0) {};
 		\node [style=none] (35) at (6, 0) {};
-		\node [style=none] (36) at (0, 2.5) {$\gamma$ is an \emph{isometry} when:};
+		\node [style=none] (37) at (4.75, 0) {$\textcolor{blue}{x}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K] (4.center)
@@ -42,9 +39,6 @@
 			 to (20);
 		\draw [style=K] (20) to (5.center);
 		\draw [style=K] (23.center) to (22);
-		\draw [style=K] (26.center)
-			 to [in=0, out=-180, looseness=0.25] (28.center)
-			 to [in=-180, out=0, looseness=0.25] (27.center);
 		\draw [style={K(CF)}] (33.center)
 			 to (31.center)
 			 to (32.center)

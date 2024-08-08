@@ -83,19 +83,24 @@ Just as a wire in \textbf{ContRel} has the discrete topology if it possesses spi
 
 \begin{myboxR}
 \begin{defn}[Upper and lower bounds via endocombinators]\label{defn:bounds}
-Upper bounds are endocombinators that send states to points.
+Upper bounds are endocombinators that send states to points. This is an equational condition quantified over all states.
 \[\tikzfig{topology/upperbound}\]
+\end{defn}
 We can add in further equations governing the upper bound endocombinator to turn it into a supremum, where the lower endpoint is obtained as the supremum of the empty set, and the upper endpoint is the supremum of the whole set.
+\begin{defn}[Suprema]\label{defn:sup}
 \[\tikzfig{topology/sup}\]
+\end{defn}
+\begin{defn}[Endpoints]\label{defn:endpoints}
 Now we can define endpoints purely graphically. The lower endpoint is the supremum of the empty state, and the upper the supremum of everything.
 \[\tikzfig{topology/endpoints}\]
-Going forward, we will denote the unit interval using a thick dotted wire.
 \end{defn}
+Going forward, we will denote the unit interval using a thick dotted wire.
+
 \end{myboxR}
 
 \begin{myboxB}
 \begin{defn}[Simple connectivity]\label{def:simpconn}
-In prose: for any pair of points that are within the open $V$, there exists some continuous function from the unit interval into the space that starts at one of the points and ends at the other.
+Recall that we notate points and functions with the same small black dot for copying and deleting, as points are precisely the states that are copy-delete cohomomorphisms. In prose, simple connectivity states that for any pair of points that are within the open $V$, there exists some continuous function from the unit interval into the space that starts at one of the points and ends at the other. The left pair of conditions state that the points $\textcolor{blue}{x}$ and $\textcolor{red}{y}$ are within $V$. The right triple of conditions require the the image of the homotopy $\textcolor{orange}{f}$ is contained in $V$, and that its endpoints are $\textcolor{blue}{x}$ and $\textcolor{red}{y}$.
 \[\tikzfig{topology/simplyconnected}\]
 Simple connectivity is a useful enough concept that we will notate simply connected open sets as follows, where the hole is a reminder that simply connected spaces might still have holes in them.
 \[\tikzfig{topology/simpconnotation}\]
@@ -104,42 +109,42 @@ Simple connectivity is a useful enough concept that we will notate simply connec
 
 \begin{myboxR}
 \begin{defn}[Addition]\label{def:addition}
-More precisely, we only need an additive monoid structure on the unit interval. We do not care about obtaining precise values from our metric, and we will not need to subtract distances from each other. All we need to know is that the lower endpoint of the unit interval stands in for "zero distance" -- as the unit of the monoid -- and that adding positive distances together will give you a larger positive distance deterministically.
+In order to define metrics, we must have additive structure, which we encode as an additive monoid that is a function. All we need to know is that the lower endpoint of the unit interval stands in for "zero distance" -- as the unit of the monoid -- and that adding positive distances together will deterministically give you a larger positive distance.
 \[\resizebox{\textwidth}{!}{\tikzfig{topology/addition}}\]
 \end{defn}
 \end{myboxR}
 
 \begin{myboxB}
 \begin{defn}[Metric]\label{def:metric}
-A metric on a space is a continuous map $X \rightarrow \mathbf{R}^+$ to the positive reals that satisfies these axioms.
+A metric on a space is a continuous map $X \rightarrow \mathbb{R}^+$ to the positive reals that satisfies these axioms. We depict metrics as trapezoids.
 \end{defn}
 \[\resizebox{\textwidth}{!}{\tikzfig{topology/metric}}\]
 \end{myboxB}
 
 \begin{myboxR}
 \begin{defn}[Open balls]\label{def:openball}
-Once we have metrics, we can define the usual topological notion of open balls. Open balls will come in handy later, and a side-effect which we note but do not explore is that open balls form a basis for any metric space, so in the future whenever we construct spaces that come with natural metrics, we can speak of their topology without any further work.
-\[\tikzfig{topology/openball}\]
+Once we have metrics, we can define the usual topological notion of open balls. With respect to a metric, an $\varepsilon$-open ball at $\textcolor{blue}{x}$ is the open set (effect) of all points that are $\varepsilon$-close to $\textcolor{blue}{x}$ by the chosen metric.
+\[\tikzfig{topology/openball2}\]
+Open balls will come in handy later, and a side-effect which we note but do not explore is that open balls form a basis for any metric space, so in the future whenever we construct spaces that come with natural metrics, we can speak of their topology without any further work.
 \end{defn}
 \end{myboxR}
 
 \begin{myboxB}
+With metrics in hand, we can proceed to define isometries as topological groups that keep distances invariant.
 \begin{defn}[Topological groups]\label{def:topgrp} 
-It is no trouble to depict collections of invertible transformations of spaces $X \rightarrow X$. A consequence of invertibility and the requirement that the identity transform is a group element forces all transformations in a topological group to be functions.
-\end{defn}
+It is no trouble to depict collections of invertible transformations of spaces $X \rightarrow X$.
 \[\tikzfig{topology/topologicalgroup}\]
-\end{myboxB}
-
-\begin{myboxR}
-\begin{defn}[Isometry]\label{def:isometry}
-But recall that the collections of invertible transformations we are really interested in are the \emph{rigid} ones, the ones that move objects in space without deforming them, i.e. the isometries. Iso-metry means same-distance. A distance preserving transformation is one such that applying the metric pointwise before and after the transformation of a shape gives a fixed value.
+A consequence of invertibility and the requirement that the identity transform is a group element forces all transformations in a topological group to be functions.
 \end{defn}
+\begin{defn}[Isometry]\label{def:isometry}
+An isometry is a distance preserving transformation: applying the metric pointwise before and after a topological group action gives the same value.
 \[\tikzfig{topology/isometry}\]
-\end{myboxR}
+\end{defn}
+\end{myboxB}
 
 \begin{myboxB}
 \begin{defn}[Planar isometries]\label{defn:planarisometry}
-We know the planar isometries of Euclidean space can be expressed as a translation, rotation, and a bit to indicate the chirality of the shape -- as mirror reflections are also an isometry. In flatland, we do not expect shapes to suddenly flip over. We would like to express just those rigid transformations that leave the chirality of the shape intact, because really we want to only be able to slide the shapes around the canvas, not leave the canvas to flip over.
+We know the planar isometries of Euclidean space can be expressed as a translation, rotation, and an addition bit of data to indicate the chirality of the shape -- as mirror reflections are also an isometry. In flatland, we do not expect shapes to suddenly flip over. We would like to express just those rigid transformations that leave the chirality of the shape intact, because really we want to only be able to slide the shapes around the canvas, not leave the canvas to flip over.
 \[\tikzfig{topology/planeisometries}\]
 With this in mind, we have the following condition relating different spiders on the unit square, telling us when one is the same as the other up to rigidly displacing shapes.
 \[\tikzfig{topology/displacerigid}\]

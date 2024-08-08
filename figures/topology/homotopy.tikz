@@ -146,6 +146,7 @@
 		\node [style=smalldotb] (164) at (7, -8.25) {};
 		\node [style=smalldotb] (165) at (6.5, -8.25) {};
 		\node [style=none] (166) at (5.75, -8.25) {};
+		\node [style=none] (167) at (11.75, -4.5) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style={K(CF)}] (0.center)
@@ -250,6 +251,6 @@
 		\draw [style=K] (160.center) to (158.center);
 		\draw [style=KD] (159.center) to (157.center);
 		\draw [style=K] (156.center) to (162);
-		\draw [style=K] (166.center) to (165);
+		\draw [style=KD] (166.center) to (165);
 	\end{pgfonlayer}
 \end{tikzpicture}
