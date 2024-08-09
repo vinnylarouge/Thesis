@@ -1,43 +1,116 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=none] (2) at (0.5, 2) {};
-		\node [style=none] (3) at (-0.5, 2) {};
-		\node [style=none] (4) at (-0.5, 2.5) {$t_{\texttt{TOP}}^0$};
-		\node [style=none] (5) at (0.5, 2.5) {$t_{\texttt{TOP}}^1$};
-		\node [style=none] (8) at (2, 0) {};
-		\node [style=none] (9) at (1, 0) {};
 		\node [style=none] (11) at (0, 4) {Imperfective: $t_\texttt{TOP} \subset t_\texttt{EV}$};
-		\node [style=none] (15) at (0.5, -1.25) {};
-		\node [style=none] (16) at (-0.5, -1.25) {};
-		\node [style=smalldotb] (17) at (-0.5, 1) {};
-		\node [style=smalldotb] (18) at (0.5, 1) {};
-		\node [style=none] (21) at (-1, 0) {};
-		\node [style=none] (22) at (-2, 0) {};
-		\node [style=none] (23) at (-1.5, -0.25) {$t_{EV}$};
-		\node [style=none] (25) at (1.5, 0) {};
-		\node [style=none] (26) at (-1.5, 0) {};
-		\node [style=none] (28) at (2.5, 1.5) {};
-		\node [style=none] (29) at (-2.5, 1.5) {};
-		\node [style=none] (30) at (2.5, -0.75) {};
-		\node [style=none] (31) at (-2.5, -0.75) {};
 		\node [style=none] (32) at (0, 3.5) {(Episodic time contained within habitual event time)};
-		\node [style=none] (33) at (1.5, -0.25) {$t_{EV}$};
+		\node [style=none] (40) at (-1.75, 0.75) {$\rightarrow$};
+		\node [style=smalldotb] (41) at (-5.75, 1.75) {};
+		\node [style=smalldotb] (42) at (-5.75, -0.25) {};
+		\node [style=none] (43) at (-3.25, 1.75) {};
+		\node [style=none] (44) at (-3.25, -0.25) {};
+		\node [style=none] (45) at (-4.5, 0.25) {};
+		\node [style=none] (46) at (-4.5, 1.25) {};
+		\node [style=none] (47) at (-4.25, 0.75) {$<$};
+		\node [style=none] (48) at (-4.5, 1) {};
+		\node [style=none] (49) at (-4.5, 0.5) {};
+		\node [style=smalldotb] (50) at (-5, -0.25) {};
+		\node [style=smalldotb] (51) at (-5, 1.75) {};
+		\node [style=none] (52) at (-3.75, 2.25) {};
+		\node [style=none] (53) at (-3.75, -0.75) {};
+		\node [style=none] (54) at (-5.75, 2.25) {};
+		\node [style=none] (55) at (-5.75, -0.75) {};
+		\node [style=none] (56) at (-6.75, 0.75) {};
+		\node [style=none] (59) at (-2.75, 1.75) {$t_{\texttt{TOP}}^0$};
+		\node [style=none] (60) at (-2.75, -0.25) {$t_{\texttt{TOP}}^1$};
+		\node [style=none] (61) at (3.5, 1) {};
+		\node [style=none] (62) at (3.5, 2) {};
+		\node [style=none] (63) at (3.5, 1.5) {};
+		\node [style=none] (64) at (3.8, 1.5) {$t_{EV}$};
+		\node [style=none] (65) at (3.5, -0.5) {};
+		\node [style=none] (66) at (3.5, 0.5) {};
+		\node [style=none] (67) at (3.5, 0) {};
+		\node [style=none] (68) at (3.8, 0) {$t_{EV}$};
+		\node [style=smalldotb] (69) at (0.25, 1.75) {};
+		\node [style=smalldotb] (70) at (0.25, -0.25) {};
+		\node [style=none] (71) at (2.5, 1.75) {};
+		\node [style=none] (72) at (2.5, -0.25) {};
+		\node [style=none] (73) at (1.5, 0.25) {};
+		\node [style=none] (74) at (1.5, 1.25) {};
+		\node [style=none] (75) at (1.75, 0.75) {$<$};
+		\node [style=none] (76) at (1.5, 1) {};
+		\node [style=none] (77) at (1.5, 0.5) {};
+		\node [style=smalldotb] (78) at (1, -0.25) {};
+		\node [style=smalldotb] (79) at (1, 1.75) {};
+		\node [style=none] (80) at (2.25, 2.25) {};
+		\node [style=none] (81) at (2.25, -0.75) {};
+		\node [style=none] (82) at (0.25, 2.25) {};
+		\node [style=none] (83) at (0.25, -0.75) {};
+		\node [style=none] (84) at (-0.75, 0.75) {};
+		\node [style=none] (85) at (5.5, 1.75) {$t_{\texttt{TOP}}^0$};
+		\node [style=none] (86) at (5.5, -0.25) {$t_{\texttt{TOP}}^1$};
+		\node [style=none] (87) at (2.5, 2.5) {};
+		\node [style=none] (88) at (2.5, -1) {};
+		\node [style=none] (89) at (4.5, 2.5) {};
+		\node [style=none] (90) at (4.5, -1) {};
+		\node [style=none] (91) at (4.5, 1.75) {};
+		\node [style=none] (92) at (4.5, -0.25) {};
+		\node [style=none] (93) at (5, 1.75) {};
+		\node [style=none] (94) at (5, -0.25) {};
+		\node [style=smalldotb] (95) at (3, 1.75) {};
+		\node [style=smalldotb] (96) at (3, -0.25) {};
+		\node [style=none] (97) at (3.5, -0.75) {};
+		\node [style=none] (98) at (3.5, 2.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=K] (8.center)
-			 to (9.center)
-			 to [bend left=270, looseness=1.75] cycle;
-		\draw [style=KD, in=90, out=-90] (2.center) to (15.center);
-		\draw [style=KD] (3.center) to (16.center);
-		\draw [style=K] (21.center)
-			 to (22.center)
-			 to [bend left=270, looseness=1.75] cycle;
-		\draw [style=KD, in=0, out=90, looseness=1.25] (25.center) to (18);
-		\draw [style=KD, in=90, out=180, looseness=1.25] (17) to (26.center);
-		\draw [style=H] (29.center)
-			 to (31.center)
-			 to (30.center)
-			 to (28.center)
+		\draw [style=K] (46.center)
+			 to [bend left=90, looseness=1.75] (45.center)
 			 to cycle;
+		\draw [style=KD] (41) to (43.center);
+		\draw [style=KD] (42) to (44.center);
+		\draw [style=KD, in=-180, out=-90, looseness=1.25] (51) to (48.center);
+		\draw [style=KD, in=90, out=-180, looseness=1.25] (49.center) to (50);
+		\draw [style=H] (55.center)
+			 to (56.center)
+			 to (54.center)
+			 to (52.center)
+			 to (53.center)
+			 to cycle;
+		\draw [style=K] (61.center)
+			 to (62.center)
+			 to [bend left=90, looseness=2.00] cycle;
+		\draw [style=K] (65.center)
+			 to (66.center)
+			 to [bend left=90, looseness=2.00] cycle;
+		\draw [style=K] (74.center)
+			 to [bend left=90, looseness=1.75] (73.center)
+			 to cycle;
+		\draw [style=KD] (69)
+			 to (71.center)
+			 to (95);
+		\draw [style=KD] (70)
+			 to (72.center)
+			 to (96);
+		\draw [style=KD, in=-180, out=-90, looseness=1.25] (79) to (76.center);
+		\draw [style=KD, in=90, out=-180, looseness=1.25] (77.center) to (78);
+		\draw [style=H] (81.center)
+			 to (83.center)
+			 to (84.center)
+			 to (82.center)
+			 to (80.center)
+			 to cycle;
+		\draw [style=H] (89.center)
+			 to (87.center)
+			 to (88.center)
+			 to (90.center)
+			 to cycle;
+		\draw [style=KD] (92.center) to (94.center);
+		\draw [style=KD] (91.center) to (93.center);
+		\draw [style=KD] (96)
+			 to [in=-180, out=-90, looseness=1.25] (97.center)
+			 to [in=-180, out=0, looseness=1.25] (92.center);
+		\draw [style=KD] (95)
+			 to [in=-180, out=90] (98.center)
+			 to [in=-180, out=0, looseness=1.25] (91.center);
+		\draw [style=KD, in=-180, out=30] (96) to (67.center);
+		\draw [style=KD, in=-180, out=-45] (95) to (63.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

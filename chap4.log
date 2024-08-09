@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  8 AUG 2024 13:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  9 AUG 2024 12:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2084,25 +2084,28 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 19.
 )
-Overfull \hbox (96.9947pt too wide) detected at line 7
+Overfull \hbox (88.14581pt too wide) detected at line 7
 []
  []
 
 (./figures/time/perf.tikz)
-Underfull \vbox (badness 3735) has occurred while \output is active []
+Underfull \vbox (badness 1097) has occurred while \output is active []
 
  [5]
-(./figures/time/imperf.tikz)) (./chap4.bbl
+(./figures/time/imperf.tikz) (./figures/time/progressive.tikz)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 1.
+(Font)              scaled to size 10.0pt on input line 10.
  [6]
+(./figures/time/terminative.tikz)) (./chap4.bbl [7] [8
+
+]
 Chapter 2.
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [7
-
-] (./chap4.aux)
+) [9] (./chap4.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2110,28 +2113,30 @@ Package rerunfilecheck Info: File `chap4.out' has not changed.
 (rerunfilecheck)             Checksum: C0A5EF9BA00A2CDF7BDD97A86A303E87;325.
  ) 
 Here is how much of TeX's memory you used:
- 56279 strings out of 478268
- 1253017 string characters out of 5846348
- 1764881 words of memory out of 5000000
- 73406 multiletter control sequences out of 15000+600000
+ 56517 strings out of 478268
+ 1256722 string characters out of 5846348
+ 1788686 words of memory out of 5000000
+ 73636 multiletter control sequences out of 15000+600000
  563469 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  95i,12n,120p,774b,773s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{
-/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.enc
-}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.e
-nc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/u
-sr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/
-texlive/2022/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr/loca
-l/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/20
-22/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/texmf-
-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/texmf-dist/font
-s/type1/public/newpx/zplri.pfb>
-Output written on chap4.pdf (7 pages, 354844 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathcal
+.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-math
+sf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.
+enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathr
+m.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mat
+hit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.en
+c}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/l
+ocal/texlive/2022/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr
+/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local
+/texlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/t
+exmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/texmf-dist
+/fonts/type1/public/newpx/zplri.pfb>
+Output written on chap4.pdf (9 pages, 364361 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
+ 158 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
+ 15 named destinations out of 1000 (max. 500000)
  3250 words of extra memory for PDF output out of 10000 (max. 10000000)
 
