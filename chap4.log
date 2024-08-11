@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  9 AUG 2024 12:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  10 AUG 2024 16:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1095,6 +1095,50 @@ Package caption Info: changepage package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 )
+(/usr/local/texlive/2022/texmf-dist/tex/latex/linguex/linguex.sty
+Package: linguex 2013/05/28 Example formatting for linguistics v. 4.3
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/gb4e/cgloss4e.sty
+\lineone=\box132
+\linetwo=\box133
+\linethree=\box134
+\wordone=\box135
+\wordtwo=\box136
+\wordthree=\box137
+\gline=\box138
+\glossglue=\skip95
+)
+\c@ExNo=\count348
+\c@SubExNo=\count349
+\c@SubSubExNo=\count350
+\c@FnExNo=\count351
+\c@ABC=\count352
+\currentlabel=\skip96
+\lessthanten=\skip97
+\lessthanhundred=\skip98
+\lessthanthousand=\skip99
+\@Exleftmargin=\skip100
+\Exlabelwidth=\skip101
+\Extopsep=\skip102
+\Exindent=\skip103
+\SubExleftmargin=\skip104
+\SubSubExleftmargin=\skip105
+\Exlabelsep=\skip106
+\alignSubExnegindent=\skip107
+\Exredux=\skip108
+\digitwidth=\skip109
+\mindigitwidth=\skip110
+\c@ExDepth=\count353
+\c@TempExDepth=\count354
+\CollectTokens=\toks46
+LaTeX Info: Redefining \b on input line 307.
+LaTeX Info: Redefining \c on input line 311.
+LaTeX Info: Redefining \d on input line 313.
+\c@tmpaEx=\count355
+)
 
 Package geometry Warning: Over-specification in `v'-direction.
     `height' (483.69684pt) is ignored.
@@ -1221,22 +1265,22 @@ LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 1977.
 LaTeX Info: Redefining \not on input line 2141.
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks46
-\thm@bodyfont=\toks47
-\thm@headfont=\toks48
-\thm@notefont=\toks49
-\thm@headpunct=\toks50
-\thm@preskip=\skip95
-\thm@postskip=\skip96
-\thm@headsep=\skip97
-\dth@everypar=\toks51
+\thm@style=\toks47
+\thm@bodyfont=\toks48
+\thm@headfont=\toks49
+\thm@notefont=\toks50
+\thm@headpunct=\toks51
+\thm@preskip=\skip111
+\thm@postskip=\skip112
+\thm@headsep=\skip113
+\dth@everypar=\toks52
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup13
 \symAMSb=\mathgroup14
 )
-\c@theorem=\count348
+\c@theorem=\count356
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/newpxtext.sty
 Package: newpxtext 2022/01/30 v1.504(Michael Sharpe) latex and unicode latex su
@@ -1257,8 +1301,8 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2022/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count349
-\decimalpart=\count350
+\integerpart=\count357
+\decimalpart=\count358
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 )
@@ -1267,7 +1311,7 @@ LaTeX Font Info:    Setting zplLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplTLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplOsF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplTOsF sub-encoding to TS1/0 on input line 24.
-\zpl@cnt=\count351
+\zpl@cnt=\count359
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
@@ -1311,12 +1355,12 @@ File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks52
-\t@pgfplots@tokb=\toks53
-\t@pgfplots@tokc=\toks54
+\t@pgfplots@toka=\toks53
+\t@pgfplots@tokb=\toks54
+\t@pgfplots@tokc=\toks55
 \pgfplots@tmpa=\dimen320
-\c@pgfplots@coordindex=\count352
-\c@pgfplots@scanlineindex=\count353
+\c@pgfplots@coordindex=\count360
+\c@pgfplots@scanlineindex=\count361
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -1334,14 +1378,14 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count354
+\c@pgfplotsarray@tmp=\count362
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count355
-\t@pgfplotstable@a=\toks55
+\c@pgfplotstable@counta=\count363
+\t@pgfplotstable@a=\toks56
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 deque.code.tex)
@@ -1353,7 +1397,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count356
+\c@pgfplotslibrarysurf@no=\count364
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -1390,11 +1434,11 @@ s.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen323
 \pgfdecoratedinputsegmentremainingdistance=\dimen324
 \pgf@decorate@distancetomove=\dimen325
-\pgf@decorate@repeatstate=\count357
+\pgf@decorate@repeatstate=\count365
 \pgfdecorationsegmentamplitude=\dimen326
 \pgfdecorationsegmentlength=\dimen327
 )
-\tikz@lib@dec@box=\box132
+\tikz@lib@dec@box=\box139
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.pathmorphing.code.tex
@@ -1406,7 +1450,7 @@ s/tikzlibrarydecorations.pathreplacing.code.tex
 brarydecorations.pathreplacing.code.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.contourlua.code.tex)
-\pgfplots@numplots=\count358
+\pgfplots@numplots=\count366
 \pgfplots@xmin@reg=\dimen328
 \pgfplots@xmax@reg=\dimen329
 \pgfplots@ymin@reg=\dimen330
@@ -1433,8 +1477,8 @@ brarydecorations.markings.code.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@layerbox@background=\box133
-\pgf@layerboxsaved@background=\box134
+\pgf@layerbox@background=\box140
+\pgf@layerboxsaved@background=\box141
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryfolding.code.tex
@@ -1521,26 +1565,26 @@ File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
 shapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodepartlowerbox=\box135
-\pgfnodeparttwobox=\box136
-\pgfnodepartthreebox=\box137
-\pgfnodepartfourbox=\box138
-\pgfnodeparttwentybox=\box139
-\pgfnodepartnineteenbox=\box140
-\pgfnodeparteighteenbox=\box141
-\pgfnodepartseventeenbox=\box142
-\pgfnodepartsixteenbox=\box143
-\pgfnodepartfifteenbox=\box144
-\pgfnodepartfourteenbox=\box145
-\pgfnodepartthirteenbox=\box146
-\pgfnodeparttwelvebox=\box147
-\pgfnodepartelevenbox=\box148
-\pgfnodeparttenbox=\box149
-\pgfnodepartninebox=\box150
-\pgfnodeparteightbox=\box151
-\pgfnodepartsevenbox=\box152
-\pgfnodepartsixbox=\box153
-\pgfnodepartfivebox=\box154
+\pgfnodepartlowerbox=\box142
+\pgfnodeparttwobox=\box143
+\pgfnodepartthreebox=\box144
+\pgfnodepartfourbox=\box145
+\pgfnodeparttwentybox=\box146
+\pgfnodepartnineteenbox=\box147
+\pgfnodeparteighteenbox=\box148
+\pgfnodepartseventeenbox=\box149
+\pgfnodepartsixteenbox=\box150
+\pgfnodepartfifteenbox=\box151
+\pgfnodepartfourteenbox=\box152
+\pgfnodepartthirteenbox=\box153
+\pgfnodeparttwelvebox=\box154
+\pgfnodepartelevenbox=\box155
+\pgfnodeparttenbox=\box156
+\pgfnodepartninebox=\box157
+\pgfnodeparteightbox=\box158
+\pgfnodepartsevenbox=\box159
+\pgfnodepartsixbox=\box160
+\pgfnodepartfivebox=\box161
 )))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/circuits/tikzlibrarycircuits.ee.IEC.code.tex
@@ -1548,17 +1592,17 @@ s/circuits/tikzlibrarycircuits.ee.IEC.code.tex
 s/circuits/tikzlibrarycircuits.ee.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/circuits/tikzlibrarycircuits.code.tex
-\tikz@lib@circ@count=\count359
+\tikz@lib@circ@count=\count367
 \tikzcircuitssizeunit=\dimen336
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/p
 gflibraryshapes.gates.ee.code.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/p
 gflibraryshapes.gates.ee.IEC.code.tex))
-\pgf@layerbox@edgelayer=\box155
-\pgf@layerboxsaved@edgelayer=\box156
-\pgf@layerbox@nodelayer=\box157
-\pgf@layerboxsaved@nodelayer=\box158
+\pgf@layerbox@edgelayer=\box162
+\pgf@layerboxsaved@edgelayer=\box163
+\pgf@layerbox@nodelayer=\box164
+\pgf@layerboxsaved@nodelayer=\box165
 ) (./macros/quiver.sty
 
 LaTeX Warning: You have requested package `macros/quiver',
@@ -1585,12 +1629,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen344
 \cmidrulekern=\dimen345
 \defaultaddspace=\dimen346
-\@cmidla=\count360
-\@cmidlb=\count361
+\@cmidla=\count368
+\@cmidlb=\count369
 \@aboverulesep=\dimen347
 \@belowrulesep=\dimen348
-\@thisruleclass=\count362
-\@lastruleclass=\count363
+\@thisruleclass=\count370
+\@lastruleclass=\count371
 \@thisrulewidth=\dimen349
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/units/units.sty
@@ -1598,17 +1642,17 @@ Package: units 1998/08/04 v0.9b Typesetting units
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip98
-\L@UnitsRaiseTextstyle=\skip99
-\L@UnitsRaiseScriptstyle=\skip100
+\L@UnitsRaiseDisplaystyle=\skip114
+\L@UnitsRaiseTextstyle=\skip115
+\L@UnitsRaiseScriptstyle=\skip116
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
-\FV@CodeLineNo=\count364
+\FV@CodeLineNo=\count372
 \FV@InFile=\read4
-\FV@TabBox=\box159
-\c@FancyVerbLine=\count365
-\FV@StepNumber=\count366
+\FV@TabBox=\box166
+\c@FancyVerbLine=\count373
+\FV@StepNumber=\count374
 \FV@OutFile=\write4
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.sty
@@ -1616,20 +1660,20 @@ Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
 Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count367
-\l__lipsum_a_int=\count368
-\l__lipsum_b_int=\count369
+\g__lipsum_par_int=\count375
+\l__lipsum_a_int=\count376
+\l__lipsum_b_int=\count377
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/bussproofs/bussproofs.sty
 Proof Tree (bussproofs) style macros. Version 1.1.
-\theLevel=\count370
-\myMaxLevel=\count371
-\myBoxA=\box160
-\myBoxB=\box161
-\myBoxC=\box162
-\myBoxD=\box163
-\myBoxLL=\box164
-\myBoxRL=\box165
+\theLevel=\count378
+\myMaxLevel=\count379
+\myBoxA=\box167
+\myBoxB=\box168
+\myBoxC=\box169
+\myBoxD=\box170
+\myBoxLL=\box171
+\myBoxRL=\box172
 \thisAboveSkip=\dimen350
 \thisBelowSkip=\dimen351
 \newScoreStart=\dimen352
@@ -1646,17 +1690,14 @@ Proof Tree (bussproofs) style macros. Version 1.1.
 \htRRRbox=\dimen363
 \htAbox=\dimen364
 \htCbox=\dimen365
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-(/usr/local/texlive/2022/texmf-dist/tex/generic/soul/soul.sty
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks56
-\SOUL@lasttoken=\toks57
-\SOUL@cmds=\toks58
-\SOUL@buffer=\toks59
-\SOUL@token=\toks60
-\SOUL@spaceskip=\skip101
+\SOUL@word=\toks57
+\SOUL@lasttoken=\toks58
+\SOUL@cmds=\toks59
+\SOUL@buffer=\toks60
+\SOUL@token=\toks61
+\SOUL@spaceskip=\skip117
 \SOUL@ttwidth=\dimen366
 \SOUL@uldp=\dimen367
 \SOUL@ulht=\dimen368
@@ -1682,29 +1723,29 @@ File: lsienc.def 2006/06/09 v1.2 Standard LaTeX file
 Now handling font encoding LSI ...
 ... no UTF-8 mapping file for font encoding LSI
 )
-\len@cfss@squarewidth=\skip102
-\len@cfss@squaretotalheight=\skip103
-\len@cfss@squaredepth=\skip104
+\len@cfss@squarewidth=\skip118
+\len@cfss@squaretotalheight=\skip119
+\len@cfss@squaredepth=\skip120
 
 
 Package chessfss Warning: \comment already defined 
 (chessfss)                I will not overwrite it on input line 590.
 
 ) (/usr/local/texlive/2022/texmf-dist/tex/plain/lambda-lists/lambda.sty)
-\c@fileFrom=\count372
-\c@rankFrom=\count373
-\c@fileTo=\count374
-\c@rankTo=\count375
-\c@ps@inverse=\count376
-\c@ps@knightangle=\count377
-\c@halfmove=\count378
-\c@move=\count379
-\c@helpgobble=\count380
-\c@helpnumber=\count381
-\c@helpnumberMove=\count382
-\squarelength=\skip105
-\square@multiplier=\count383
-\ranklift=\skip106
+\c@fileFrom=\count380
+\c@rankFrom=\count381
+\c@fileTo=\count382
+\c@rankTo=\count383
+\c@ps@inverse=\count384
+\c@ps@knightangle=\count385
+\c@halfmove=\count386
+\c@move=\count387
+\c@helpgobble=\count388
+\c@helpnumber=\count389
+\c@helpnumberMove=\count390
+\squarelength=\skip121
+\square@multiplier=\count391
+\ranklift=\skip122
 LaTeX Font Info:    Trying to load font information for LSB+skaknew on input li
 ne 1774.
 
@@ -1723,10 +1764,10 @@ LaTeX Font Warning: Font shape `T1/qhv/m/up' undefined
 
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 9.40002pt on input line 1774.
-\store@toks=\toks61
+\store@toks=\toks62
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/up' will be
-(Font)              scaled to size 9.40002pt on input line 126.
+(Font)              scaled to size 9.40002pt on input line 127.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
 ))
@@ -1874,7 +1915,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count384
+\c@section@level=\count392
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -1920,17 +1961,17 @@ LaTeX Info: Redefining \nameref on input line 3.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count385
+\scratchcounter=\count393
 \scratchdimen=\dimen369
-\scratchbox=\box166
-\nofMPsegments=\count386
-\nofMParguments=\count387
-\everyMPshowfont=\toks62
-\MPscratchCnt=\count388
+\scratchbox=\box173
+\nofMPsegments=\count394
+\nofMParguments=\count395
+\everyMPshowfont=\toks63
+\MPscratchCnt=\count396
 \MPscratchDim=\dimen370
-\MPnumerator=\count389
-\makeMPintoPDFobject=\count390
-\everyMPtoPDFconversion=\toks63
+\MPnumerator=\count397
+\makeMPintoPDFobject=\count398
+\everyMPtoPDFconversion=\toks64
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1948,11 +1989,11 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count391
+\c@lstlisting=\count399
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-\c@mv@tabular=\count392
-\c@mv@boldtabular=\count393
+\c@mv@tabular=\count400
+\c@mv@boldtabular=\count401
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
@@ -2098,14 +2139,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
 (Font)              scaled to size 10.0pt on input line 10.
  [6]
-(./figures/time/terminative.tikz)) (./chap4.bbl [7] [8
+(./figures/time/terminative.tikz)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [7])
+(./chap4.bbl [8]
 Chapter 2.
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [9] (./chap4.aux)
+) [9
+
+] (./chap4.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2113,30 +2158,29 @@ Package rerunfilecheck Info: File `chap4.out' has not changed.
 (rerunfilecheck)             Checksum: C0A5EF9BA00A2CDF7BDD97A86A303E87;325.
  ) 
 Here is how much of TeX's memory you used:
- 56517 strings out of 478268
- 1256722 string characters out of 5846348
- 1788686 words of memory out of 5000000
- 73636 multiletter control sequences out of 15000+600000
- 563469 words of font info for 101 fonts, out of 8000000 for 9000
+ 56814 strings out of 478268
+ 1260980 string characters out of 5846348
+ 1791968 words of memory out of 5000000
+ 73920 multiletter control sequences out of 15000+600000
+ 603099 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,12n,120p,774b,773s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathcal
-.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-math
-sf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.
-enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathr
-m.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mat
-hit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.en
-c}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local
-/texlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texli
-ve/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/t
-exmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/texmf-dist
-/fonts/type1/public/newpx/zplri.pfb>
-Output written on chap4.pdf (9 pages, 364361 bytes).
+ 95i,13n,120p,774b,773s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathsf.
+enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc
+}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm.e
+nc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit
+.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{
+/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/loca
+l/texlive/2022/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr/lo
+cal/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/te
+xlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/
+2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/texm
+f-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/texmf-dist/fo
+nts/type1/public/newpx/zplri.pfb>
+Output written on chap4.pdf (9 pages, 369342 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
- 15 named destinations out of 1000 (max. 500000)
- 3250 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 155 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
+ 16 named destinations out of 1000 (max. 500000)
+ 5298 words of extra memory for PDF output out of 10000 (max. 10000000)
 
