@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=smalldotb] (0) at (1, 1) {};
+		\node [style=smalldotb] (1) at (1, -1) {};
+		\node [style=none] (2) at (3.5, 1) {};
+		\node [style=none] (3) at (3.5, -1) {};
+		\node [style=none] (4) at (2.25, -0.5) {};
+		\node [style=none] (5) at (2.25, 0.5) {};
+		\node [style=none] (6) at (2.5, 0) {$<$};
+		\node [style=none] (7) at (2.25, 0.25) {};
+		\node [style=none] (8) at (2.25, -0.25) {};
+		\node [style=smalldotb] (9) at (1.75, -1) {};
+		\node [style=smalldotb] (10) at (1.75, 1) {};
+		\node [style=none] (16) at (4.75, 1) {$t_{\texttt{arrive}}^0$};
+		\node [style=none] (17) at (4.75, -1) {$t_{\texttt{arrive}}^1$};
+		\node [style=none] (18) at (0, 0) {$\rightarrow$};
+		\node [style=none] (19) at (-2.75, 0.75) {};
+		\node [style=none] (20) at (-1.25, 0.75) {};
+		\node [style=none] (21) at (-2.75, -0.75) {};
+		\node [style=none] (22) at (-1.25, -0.75) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (4.center)
+			 to (5.center)
+			 to [bend left=90, looseness=1.75] cycle;
+		\draw [style=KD] (0) to (2.center);
+		\draw [style=KD] (1) to (3.center);
+		\draw [style=KD, in=-180, out=-90, looseness=1.25] (10) to (7.center);
+		\draw [style=KD, in=90, out=-180, looseness=1.25] (8.center) to (9);
+		\draw [style=H] (22.center)
+			 to (21.center)
+			 to (19.center)
+			 to (20.center)
+			 to cycle;
+	\end{pgfonlayer}
+\end{tikzpicture}

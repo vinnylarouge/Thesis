@@ -2,63 +2,96 @@
 	\begin{pgfonlayer}{nodelayer}
 		\node [style=none] (11) at (0, 4) {Imperfective: $t_\texttt{TOP} \subset t_\texttt{EV}$};
 		\node [style=none] (32) at (0, 3.5) {(Episodic time contained within habitual event time)};
-		\node [style=none] (40) at (-1.75, 0.75) {$\rightarrow$};
-		\node [style=smalldotb] (41) at (-5.75, 1.75) {};
-		\node [style=smalldotb] (42) at (-5.75, -0.25) {};
-		\node [style=none] (43) at (-3.25, 1.75) {};
-		\node [style=none] (44) at (-3.25, -0.25) {};
-		\node [style=none] (45) at (-4.5, 0.25) {};
-		\node [style=none] (46) at (-4.5, 1.25) {};
-		\node [style=none] (47) at (-4.25, 0.75) {$<$};
-		\node [style=none] (48) at (-4.5, 1) {};
-		\node [style=none] (49) at (-4.5, 0.5) {};
-		\node [style=smalldotb] (50) at (-5, -0.25) {};
-		\node [style=smalldotb] (51) at (-5, 1.75) {};
-		\node [style=none] (52) at (-3.75, 2.25) {};
-		\node [style=none] (53) at (-3.75, -0.75) {};
-		\node [style=none] (54) at (-5.75, 2.25) {};
-		\node [style=none] (55) at (-5.75, -0.75) {};
-		\node [style=none] (56) at (-6.75, 0.75) {};
-		\node [style=none] (59) at (-2.75, 1.75) {$t_{\texttt{TOP}}^0$};
-		\node [style=none] (60) at (-2.75, -0.25) {$t_{\texttt{TOP}}^1$};
-		\node [style=none] (61) at (3.5, 1) {};
-		\node [style=none] (62) at (3.5, 2) {};
-		\node [style=none] (63) at (3.5, 1.5) {};
-		\node [style=none] (64) at (3.8, 1.5) {$t_{EV}$};
-		\node [style=none] (65) at (3.5, -0.5) {};
-		\node [style=none] (66) at (3.5, 0.5) {};
-		\node [style=none] (67) at (3.5, 0) {};
-		\node [style=none] (68) at (3.8, 0) {$t_{EV}$};
-		\node [style=smalldotb] (69) at (0.25, 1.75) {};
-		\node [style=smalldotb] (70) at (0.25, -0.25) {};
-		\node [style=none] (71) at (2.5, 1.75) {};
-		\node [style=none] (72) at (2.5, -0.25) {};
-		\node [style=none] (73) at (1.5, 0.25) {};
-		\node [style=none] (74) at (1.5, 1.25) {};
-		\node [style=none] (75) at (1.75, 0.75) {$<$};
-		\node [style=none] (76) at (1.5, 1) {};
-		\node [style=none] (77) at (1.5, 0.5) {};
-		\node [style=smalldotb] (78) at (1, -0.25) {};
-		\node [style=smalldotb] (79) at (1, 1.75) {};
-		\node [style=none] (80) at (2.25, 2.25) {};
-		\node [style=none] (81) at (2.25, -0.75) {};
-		\node [style=none] (82) at (0.25, 2.25) {};
-		\node [style=none] (83) at (0.25, -0.75) {};
-		\node [style=none] (84) at (-0.75, 0.75) {};
-		\node [style=none] (85) at (5.5, 1.75) {$t_{\texttt{TOP}}^0$};
-		\node [style=none] (86) at (5.5, -0.25) {$t_{\texttt{TOP}}^1$};
-		\node [style=none] (87) at (2.5, 2.5) {};
-		\node [style=none] (88) at (2.5, -1) {};
-		\node [style=none] (89) at (4.5, 2.5) {};
-		\node [style=none] (90) at (4.5, -1) {};
-		\node [style=none] (91) at (4.5, 1.75) {};
-		\node [style=none] (92) at (4.5, -0.25) {};
-		\node [style=none] (93) at (5, 1.75) {};
-		\node [style=none] (94) at (5, -0.25) {};
-		\node [style=smalldotb] (95) at (3, 1.75) {};
-		\node [style=smalldotb] (96) at (3, -0.25) {};
-		\node [style=none] (97) at (3.5, -0.75) {};
-		\node [style=none] (98) at (3.5, 2.25) {};
+		\node [style=none] (40) at (-4.75, 0.75) {$\rightarrow$};
+		\node [style=smalldotb] (41) at (-8.75, 1.75) {};
+		\node [style=smalldotb] (42) at (-8.75, -0.25) {};
+		\node [style=none] (43) at (-6.25, 1.75) {};
+		\node [style=none] (44) at (-6.25, -0.25) {};
+		\node [style=none] (45) at (-7.5, 0.25) {};
+		\node [style=none] (46) at (-7.5, 1.25) {};
+		\node [style=none] (47) at (-7.25, 0.75) {$<$};
+		\node [style=none] (48) at (-7.5, 1) {};
+		\node [style=none] (49) at (-7.5, 0.5) {};
+		\node [style=smalldotb] (50) at (-8, -0.25) {};
+		\node [style=smalldotb] (51) at (-8, 1.75) {};
+		\node [style=none] (52) at (-6.75, 2.25) {};
+		\node [style=none] (53) at (-6.75, -0.75) {};
+		\node [style=none] (54) at (-8.75, 2.25) {};
+		\node [style=none] (55) at (-8.75, -0.75) {};
+		\node [style=none] (56) at (-9.75, 0.75) {};
+		\node [style=none] (59) at (-5.75, 1.75) {$t_{\texttt{TOP}}^0$};
+		\node [style=none] (60) at (-5.75, -0.25) {$t_{\texttt{TOP}}^1$};
+		\node [style=none] (61) at (8.25, 1) {};
+		\node [style=none] (62) at (8.25, 2) {};
+		\node [style=none] (63) at (8.25, 1.5) {};
+		\node [style=none] (64) at (8.55, 1.5) {$t_{EV}$};
+		\node [style=none] (65) at (8.25, -0.5) {};
+		\node [style=none] (66) at (8.25, 0.5) {};
+		\node [style=none] (67) at (8.25, 0) {};
+		\node [style=none] (68) at (8.55, 0) {$t_{EV}$};
+		\node [style=smalldotb] (69) at (5, 1.75) {};
+		\node [style=smalldotb] (70) at (5, -0.25) {};
+		\node [style=none] (71) at (7.25, 1.75) {};
+		\node [style=none] (72) at (7.25, -0.25) {};
+		\node [style=none] (73) at (6.25, 0.25) {};
+		\node [style=none] (74) at (6.25, 1.25) {};
+		\node [style=none] (75) at (6.5, 0.75) {$<$};
+		\node [style=none] (76) at (6.25, 1) {};
+		\node [style=none] (77) at (6.25, 0.5) {};
+		\node [style=smalldotb] (78) at (5.75, -0.25) {};
+		\node [style=smalldotb] (79) at (5.75, 1.75) {};
+		\node [style=none] (80) at (7, 2.25) {};
+		\node [style=none] (81) at (7, -0.75) {};
+		\node [style=none] (82) at (5, 2.25) {};
+		\node [style=none] (83) at (5, -0.75) {};
+		\node [style=none] (84) at (4, 0.75) {};
+		\node [style=none] (85) at (10.25, 1.75) {$t_{\texttt{TOP}}^0$};
+		\node [style=none] (86) at (10.25, -0.25) {$t_{\texttt{TOP}}^1$};
+		\node [style=none] (87) at (7.25, 2.5) {};
+		\node [style=none] (88) at (7.25, -1) {};
+		\node [style=none] (89) at (9.25, 2.5) {};
+		\node [style=none] (90) at (9.25, -1) {};
+		\node [style=none] (91) at (9.25, 1.75) {};
+		\node [style=none] (92) at (9.25, -0.25) {};
+		\node [style=none] (93) at (9.75, 1.75) {};
+		\node [style=none] (94) at (9.75, -0.25) {};
+		\node [style=smalldotb] (95) at (7.75, 1.75) {};
+		\node [style=smalldotb] (96) at (7.75, -0.25) {};
+		\node [style=none] (97) at (8.25, -0.75) {};
+		\node [style=none] (98) at (8.25, 2.25) {};
+		\node [style=smalldotb] (99) at (-3, 1.75) {};
+		\node [style=smalldotb] (100) at (-3, -0.25) {};
+		\node [style=none] (101) at (-1.75, 0.25) {};
+		\node [style=none] (102) at (-1.75, 1.25) {};
+		\node [style=none] (103) at (-1.5, 0.75) {$<$};
+		\node [style=none] (104) at (-1.75, 1) {};
+		\node [style=none] (105) at (-1.75, 0.5) {};
+		\node [style=smalldotb] (106) at (-2.25, -0.25) {};
+		\node [style=smalldotb] (107) at (-2.25, 1.75) {};
+		\node [style=none] (108) at (-1, 2.25) {};
+		\node [style=none] (109) at (-1, -0.75) {};
+		\node [style=none] (110) at (-3, 2.25) {};
+		\node [style=none] (111) at (-3, -0.75) {};
+		\node [style=none] (112) at (-4, 0.75) {};
+		\node [style=none] (113) at (-0.5, 1.75) {};
+		\node [style=none] (114) at (-0.5, -0.25) {};
+		\node [style=none] (115) at (-0.5, 3) {};
+		\node [style=none] (116) at (-0.5, -0.75) {};
+		\node [style=none] (117) at (0.5, -0.75) {};
+		\node [style=none] (118) at (0.5, 3) {};
+		\node [style=none] (119) at (0.5, 1.75) {};
+		\node [style=none] (120) at (0.5, -0.25) {};
+		\node [style=none] (121) at (0.5, 2.5) {};
+		\node [style=none] (122) at (2.25, 2) {};
+		\node [style=none] (123) at (2.25, 3) {};
+		\node [style=none] (124) at (2.55, 2.5) {$t_{EV}$};
+		\node [style=none] (125) at (1.5, -0.25) {};
+		\node [style=none] (126) at (1.5, 1.75) {};
+		\node [style=none] (127) at (2.25, 2.5) {};
+		\node [style=none] (128) at (2, 1.75) {$t_{\texttt{TOP}}^0$};
+		\node [style=none] (129) at (2, -0.25) {$t_{\texttt{TOP}}^1$};
+		\node [style=none] (130) at (3, 0.75) {$:=$};
+		\node [style=none] (131) at (0, 1) {$\rotatebox{90}{\texttt{imperf.}}$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K] (46.center)
@@ -74,10 +107,10 @@
 			 to (52.center)
 			 to (53.center)
 			 to cycle;
-		\draw [style=K] (61.center)
+		\draw [style=gF] (61.center)
 			 to (62.center)
 			 to [bend left=90, looseness=2.00] cycle;
-		\draw [style=K] (65.center)
+		\draw [style=gF] (65.center)
 			 to (66.center)
 			 to [bend left=90, looseness=2.00] cycle;
 		\draw [style=K] (74.center)
@@ -112,5 +145,29 @@
 			 to [in=-180, out=0, looseness=1.25] (91.center);
 		\draw [style=KD, in=-180, out=30] (96) to (67.center);
 		\draw [style=KD, in=-180, out=-45] (95) to (63.center);
+		\draw [style=K] (101.center)
+			 to (102.center)
+			 to [bend left=90, looseness=1.75] cycle;
+		\draw [style=KD, in=-180, out=-90, looseness=1.25] (107) to (104.center);
+		\draw [style=KD, in=90, out=-180, looseness=1.25] (105.center) to (106);
+		\draw [style=H] (109.center)
+			 to (111.center)
+			 to (112.center)
+			 to (110.center)
+			 to (108.center)
+			 to cycle;
+		\draw [style=K] (115.center)
+			 to (118.center)
+			 to (117.center)
+			 to (116.center)
+			 to cycle;
+		\draw [style=gF] (123.center)
+			 to [bend left=90, looseness=2.00] (122.center)
+			 to cycle;
+		\draw [style=KD] (99) to (113.center);
+		\draw [style=KD] (100) to (114.center);
+		\draw [style=KD] (119.center) to (126.center);
+		\draw [style=KD] (120.center) to (125.center);
+		\draw [style=KD] (121.center) to (127.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

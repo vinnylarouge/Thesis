@@ -81,7 +81,7 @@
 			 to (11.center)
 			 to (12.center)
 			 to cycle;
-		\draw [style=K] (20.center)
+		\draw [style=gF] (20.center)
 			 to (21.center)
 			 to [bend left=90, looseness=1.75] cycle;
 		\draw [style=KD] (26.center) to (24.center);
@@ -97,12 +97,12 @@
 			 to (47.center)
 			 to (48.center)
 			 to cycle;
-		\draw [style=K] (54.center)
+		\draw [style=gF] (54.center)
 			 to (55.center)
 			 to [bend left=90, looseness=1.75] cycle;
-		\draw [style=K] (58.center)
+		\draw [style=gF] (58.center)
 			 to (59.center)
-			 to [bend left=90, looseness=1.75] cycle;
+			 to [in=0, out=0, looseness=1.75] cycle;
 		\draw [style=KD, in=90, out=-180, looseness=1.25] (56.center) to (46);
 		\draw [style=KD, in=-180, out=-90, looseness=1.25] (45) to (60.center);
 		\draw [style=K] (64.center)
