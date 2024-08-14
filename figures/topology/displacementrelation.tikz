@@ -1,0 +1,45 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (47) at (-8, 0) {};
+		\node [style=dotC] (48) at (-7, 0) {};
+		\node [style=none] (49) at (-6, 0) {};
+		\node [style=none] (50) at (-5, 0) {$\sim$};
+		\node [style=none] (51) at (-4, 0) {};
+		\node [style=none] (53) at (-2, 0) {};
+		\node [style=dotG] (54) at (-3, 0) {};
+		\node [style=dotw] (66) at (1.25, -0.75) {$\textcolor{magenta}{\exists \rho}^-_{\textcolor{cyan}{i}}$};
+		\node [style=dotw] (67) at (4.5, 0.25) {$\textcolor{magenta}{\exists\rho}_{\textcolor{cyan}{i}}$};
+		\node [style=none] (68) at (2, 0.5) {$\bigcup\limits_{\textcolor{cyan}{i}}$};
+		\node [style=dotC] (69) at (3.25, 0.25) {};
+		\node [style=none] (70) at (3.25, 0.75) {};
+		\node [style=none] (71) at (3.25, -0.25) {};
+		\node [style=dotC] (76) at (2.5, -0.75) {};
+		\node [style=none] (77) at (2.5, -0.25) {};
+		\node [style=none] (78) at (2.5, -1.25) {};
+		\node [style=none] (81) at (0, -0.75) {};
+		\node [style=none] (83) at (5.5, 0.25) {};
+		\node [style=none] (84) at (-1, 0) {$\Leftrightarrow$};
+		\node [style=none] (85) at (7.5, 0) {};
+		\node [style=none] (86) at (9.5, 0) {};
+		\node [style=dotG] (87) at (8.5, 0) {};
+		\node [style=none] (88) at (6.5, 0) {$=$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (47.center) to (48);
+		\draw [style=K] (48) to (49.center);
+		\draw [style=K] (51.center) to (54);
+		\draw [style=K] (54) to (53.center);
+		\draw [style=kF] (71.center)
+			 to [bend left=90, looseness=1.75] (70.center)
+			 to cycle;
+		\draw [style=kF] (78.center)
+			 to [bend right=90, looseness=1.75] (77.center)
+			 to cycle;
+		\draw [style=K] (81.center) to (66);
+		\draw [style=K] (66) to (76);
+		\draw [style=K] (69) to (67);
+		\draw [style=K] (67) to (83.center);
+		\draw [style=K] (85.center) to (87);
+		\draw [style=K] (87) to (86.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

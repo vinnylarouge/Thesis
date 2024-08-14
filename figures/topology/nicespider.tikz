@@ -1,0 +1,38 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (47) at (-3, 0) {};
+		\node [style=dotC] (48) at (-2, 0) {};
+		\node [style=none] (49) at (-1, 0) {};
+		\node [style=none] (68) at (2.625, 1) {$\bigcup\limits_{\textcolor{cyan}{i}}$};
+		\node [style=dotC] (76) at (1.5, 0.5) {};
+		\node [style=none] (77) at (1.5, 1) {};
+		\node [style=none] (78) at (1.5, 0) {};
+		\node [style=none] (81) at (0.5, 0.5) {};
+		\node [style=none] (88) at (0, 0) {$=$};
+		\node [style=none] (89) at (1.875, 0.5) {$\textcolor{cyan}{i}$};
+		\node [style=dotC] (90) at (3.375, 0.25) {};
+		\node [style=none] (91) at (3.375, 0.75) {};
+		\node [style=none] (92) at (3.375, -0.25) {};
+		\node [style=none] (94) at (3.75, 0.25) {$\textcolor{cyan}{i}$};
+		\node [style=smalldotb] (95) at (2.75, -0.25) {};
+		\node [style=none] (96) at (3.375, -0.75) {};
+		\node [style=none] (97) at (4.25, -0.75) {};
+		\node [style=smalldotb] (98) at (2.25, -0.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=K] (47.center) to (48);
+		\draw [style=K] (48) to (49.center);
+		\draw [style=kF] (78.center)
+			 to [bend right=90, looseness=2.25] (77.center)
+			 to cycle;
+		\draw [style=K] (81.center) to (76);
+		\draw [style=kF] (92.center)
+			 to [bend right=90, looseness=2.25] (91.center)
+			 to cycle;
+		\draw [style=K] (98) to (95);
+		\draw [style=K, in=-180, out=90, looseness=1.25] (95) to (90);
+		\draw [style=K] (95)
+			 to [in=180, out=-90, looseness=1.25] (96.center)
+			 to [in=180, out=0] (97.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

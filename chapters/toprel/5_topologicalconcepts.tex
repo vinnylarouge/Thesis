@@ -1,4 +1,4 @@
-\section{Topological concepts in flatland via \textbf{ContRel}}\label{sec:concepts}
+\section{Basic topological concepts in flatland via \textbf{ContRel}}\label{sec:concepts}
 
 The goal now is to demonstrate the use of the sticky spiders we have obtained in the previous section as formal semantics for the kinds of schematic doodles or cartoons we would like to draw. Throughout we consider sticky spiders on $\mathbb{R}^2$. In service of defining \emph{configuration spaces} of shapes up to rigid displacement, we diagrammatically characterise the topological subgroup of isometries of $\mathbb{R}^2$ by building up in the diagrammatic presentations of the unit interval, metrics, and topological groups. To further isolate rigid displacements that arise from continuous sliding motion of shapes in the plane (thus excluding displacements that result in mirror-images), we diagrammatically characterise an analogue of homotopy in the relational setting. Finally, in we build up a stock of topological concepts and study by examples how implementing these concepts within text circuits explains some idiosyncrasies of the theory: namely why noun wires are labelled by their noun, why adjective gates ought to commute, and why verb gates do not.
 
@@ -193,38 +193,6 @@ Contractible open sets are worth their own notation too; a solid black effect, t
 \end{myboxB}
 
 \begin{myboxR}
-\begin{defn}[Slideability in flatland]\label{defn:sliding}
-What we mean by two sticky spiders being relatable by sliding shapes is that we have a homotopy that begins at one and ends at the other, such that every point in between is itself a sticky spider related to the first by rigid displacement.
-\[\tikzfig{topology/rigidmotion}\]
-\end{defn}
-\end{myboxR}
-
-\begin{myboxB}
-\begin{defn}\label{defn:configurationspace}
-We can depict the \emph{configuration space} of shapes that are obtainable by displacing the shapes of a given spider by a split idempotent through the n-fold tensor of rigid transformations -- a restriction to the subspace of the largest open set contained in the subset of all valid (with correct chirality) combinations of displacements that yield another spider; points in configuration space are sticky spiders related to each other by rigid transforms. Note that as asubspace, the retract of the idempotent is a function. The section and retract pair is not unique; they may for instance encode a choice of basepoint for each shape relative to which the displacement of that shape occurs.
-\[\tikzfig{topology/configurations}\]
-The data of rigid motion on a sticky spider as we have defined above can be captured as a continuous map from the unit interval to the space of rigid transformations; continuous paths in configuration space model motions of shapes in space.
-\[\tikzfig{topology/rigidmotion2}\]
-\end{defn}
-\end{myboxB}
-
-\begin{myboxR}
-\begin{example}[The connected components of configuration space]
-What are the connected components of configuration space? Evidently, there are pairs of spiders that are both valid displacements, but not mutually reachable by rigid motion. For example, shapes might \emph{enclose} or \emph{trap} other shapes, or shapes might be \emph{interlocked}. Depicted are some pairs of configurations that are mutually unreachable by rigid transformations. Now we have the conceptual toolkit to begin modelling these concepts in the configuration space of a sticky spider.
-\[\tikzfig{topology/encloseexample}\]
-\end{example}
-\end{myboxR}
-
-
-\begin{myboxB}
-\begin{defn}[Parthood]\label{defn:parthood}
-Let's say that a "part" refers to an entire simply connected component. Simply connected is already a concept in our toolkit. A shape $U$ is disjoint from another shape $V$ intuitively when we can cover $U$ in a blob with no holes such that the blob has no overlap with $V$. So, $U$ is a part of $V$ when it is simply connect, wholly contained in $V$, and there exists a contractible open that is disjoint from $V$ that covers $U$. Diagrammatically, this is:
-\[\tikzfig{topology/parthood}\]
-\end{defn}
-
-\end{myboxB}
-
-\begin{myboxR}
 \begin{defn}[Touching]\label{defn:touching}
 Let's distinguish touching from overlap. Two shapes are "touching" intuitively when they are as close as they can be to each other, somewhere; any closer and they would overlap. Let's assume that we can restrict our attention to the parts of the shape that are touching, and that we can fill in the holes of these parts. At the point of touching, there is an infinitesimal gap -- just as when we touch things in meatspace, there is a very small gap between us and the object due to the repulsive electromagnetic force between atoms. To deal with infinitesimals we borrow the $\epsilon-\delta$ trick from mathematical analysis; for any arbitrarily small $\delta$, we can pick an even smaller ball of radius $\epsilon$ such that if we stick the ball in the gap, the ball forms a bridge that overlaps the two filled-in shapes, which allows us to draw a continuous line between them. Diagrammatically, this is: 
 \[\resizebox{\textwidth}{!}{\tikzfig{topology/touching}}\]
@@ -267,6 +235,7 @@ A weaker notion of interlocking is when shapes only imperfectly determine each o
 \end{defn}
 \end{myboxB}
 
+\begin{comment}
 \begin{myboxB}
 \begin{construction}[Morphing sticky spiders with homotopies]\label{cons:morph}
 We aim to construct homotopies relating (almost) arbitrary sticky spiders. For now we focus on just changing one shape into another arbitrary one. The idea is as follows. First, we need a cover of open balls $\cup\mathcal{J} = T^0$ and $\cup\mathcal{K} = T^1$ of the start and end cores $T^0$ and $T^1$ such that each $k \in T^1$ is expressible as a rigid isometry of some core $j \in \mathcal{J}$; this is so we can slide and rearrange open balls comprising $T^0$ and reconstruct them as $T^1$. As an intermediate step to eliminate holes and unify connected components, we gather all of the balls at a meeting point $m$ (to be determined shortly.) Intuitively we can illustrate this process as follows:
@@ -281,6 +250,7 @@ Third, before we begin sliding the open balls, we must ensure that the halo of t
 \[\tikzfig{topology/spiderbreakdown}\]
 By definition of sticky spiders, there must exist some point $m$ that is in both the core and the halo: we pick such a point as the rendezvous for the open balls. For each partial map in the family, we provide a homotopy that varies only the image point $x$ continuously in the space to finish at $m$. Now we can slide the open balls to the rendezvous $m$. Since homotopies are reversible by the continuous map $t \mapsto (1-t)$ on the interval, we can perform the above steps for shapes $T^0$ and $T^1$ to finish at the same open ball, reversing the process for $T^1$ and composing sequentially to obtain a finished transformation. The final wrinkle to address is when dealing with multiple shapes. Recalling our exclusion conditions (Propositions \ref{prop:core-core-exclusion, prop:core-halo-exclusion}) for shapes, it may be that parts of one shape are enclosed in another, so the processes must be coordinated so that there are no overlaps. For example, the enclosing shape must be first opened, so that the enclosed shape may leave. I will keep it an article of faith that such coordinations exist. I struggle to come up with a proof that all sticky spiders $\mathbf{R}^2$ are mutually transformable by homotopy in this (or any other) way, so that will remain a conjecture. But it is clear that a great deal of spiders are mutually transformable; almost certainly any we would care to draw. So this will just be a construction for now.
 \end{myboxB}
+\end{comment}
 
 \clearpage
 \newpage
