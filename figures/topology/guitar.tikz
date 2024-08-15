@@ -1,0 +1,72 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-9, 0) {};
+		\node [style=none] (1) at (-7, 0) {};
+		\node [style=dotC] (2) at (-8, 0) {\mathfrak{x}};
+		\node [style=none] (3) at (0, 0) {$\mapsto$};
+		\node [style=none] (4) at (1.5, 0) {};
+		\node [style=none] (5) at (3.5, 0) {};
+		\node [style=none] (6) at (2.5, 0.25) {$C(\mathfrak{s})$};
+		\node [style=none] (8) at (5.5, 0) {};
+		\node [style=none] (9) at (6.25, 0) {};
+		\node [style=none] (13) at (6.25, 0.75) {};
+		\node [style=none] (14) at (6.25, -0.75) {};
+		\node [style=none] (15) at (6.5, -0.75) {};
+		\node [style=none] (16) at (6.5, 0.75) {};
+		\node [style=none] (17) at (8.25, 0) {};
+		\node [style=none] (18) at (8.25, 0.75) {};
+		\node [style=none] (19) at (8.25, -0.75) {};
+		\node [style=none] (20) at (8, -0.75) {};
+		\node [style=none] (21) at (8, 0.75) {};
+		\node [style=none] (22) at (6.5, 0.5) {};
+		\node [style=none] (23) at (6.5, -0.5) {};
+		\node [style=none] (24) at (8, 0.5) {};
+		\node [style=none] (25) at (8, -0.5) {};
+		\node [style=none] (26) at (6.5, 0.25) {};
+		\node [style=none] (27) at (8, 0.25) {};
+		\node [style=none] (28) at (7.25, -0.05) {$\vdots$};
+		\node [style=none] (29) at (9, 0) {};
+		\node [style=none] (30) at (7.25, 0.75) {$G_a$};
+		\node [style=none] (31) at (7.25, -0.75) {$G_{z}$};
+		\node [style=none] (33) at (-3.25, -0.75) {$\bigcup\limits_{\textcolor{cyan}{i \in \{a,b,\cdots,z\}}}$};
+		\node [style=dotC] (34) at (-4.25, 0) {};
+		\node [style=none] (35) at (-4.25, 0.5) {};
+		\node [style=none] (36) at (-4.25, -0.5) {};
+		\node [style=none] (37) at (-5, 0) {};
+		\node [style=none] (38) at (-3.875, 0) {$\textcolor{cyan}{i}$};
+		\node [style=dotC] (39) at (-2.25, 0) {};
+		\node [style=none] (40) at (-2.25, 0.5) {};
+		\node [style=none] (41) at (-2.25, -0.5) {};
+		\node [style=none] (42) at (-1.5, 0) {};
+		\node [style=none] (43) at (-2.625, 0) {$\textcolor{cyan}{i}$};
+		\node [style=none] (45) at (-6, -0.05) {$=$};
+		\node [style=none] (46) at (4.5, -0.05) {$=$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KC] (17.center) to (29.center);
+		\draw [style=K] (0.center) to (1.center);
+		\draw [style=KC] (4.center) to (5.center);
+		\draw [style=KC] (8.center) to (9.center);
+		\draw [style={K(CF)}] (15.center)
+			 to (16.center)
+			 to (13.center)
+			 to (14.center)
+			 to cycle;
+		\draw [style={K(CF)}] (20.center)
+			 to (21.center)
+			 to (18.center)
+			 to (19.center)
+			 to cycle;
+		\draw [style=K] (22.center) to (24.center);
+		\draw [style=K] (26.center) to (27.center);
+		\draw [style=K] (23.center) to (25.center);
+		\draw [style=kF] (36.center)
+			 to [bend right=90, looseness=2.25] (35.center)
+			 to cycle;
+		\draw [style=K] (37.center) to (34);
+		\draw [style=kF] (41.center)
+			 to [bend left=90, looseness=2.25] (40.center)
+			 to cycle;
+		\draw [style=K] (42.center) to (39);
+	\end{pgfonlayer}
+\end{tikzpicture}

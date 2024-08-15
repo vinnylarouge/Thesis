@@ -117,9 +117,9 @@ So the problem here is how to encode this infinite regress with finite means in 
 The space in which such an arrangement can be realised is the same as that of the Penrose staircase: splitting the lithograph into four corners, each is a locally consistent snapshot, each gluing of quadrants is a consistent (as/de)scent, but the overall manifold obtained needs to be embedded in a higher dimension. While this in principle solves the problem of finitely representing infinite descent, these kinds of spaces are not grounded in physical, embodied intuitions. I think it is mathematically neat that there can exist topological models for such modal verbs, but whether such proposals are to be taken seriously as modelling cognition is a thorny matter I don't want to say more about.
 
 \newpage
-\section{Breaking shapes into parts and gluing them back together}
+\section{Configuration spaces}
 
-Containers ought to be able to open up so things can be put in them, but at the moment our shapes are static and solid, so we can't simply phase objects into containers by sliding them around in flatland. So in this sketch, I want to explore parthood; how to move around the individual shapes of a sticky-spider, how to shatter one of these component shapes into parts that can move independently of one another, and how to glue them back together again. Let's assume for simplicity that we only want to deal with \emph{nice} sticky-spiders where cores and halos agree and are both contractible opens; i.e. the spider can be expressed as a finite union of open solid blobs as effects followed by the same open solid blob as a state.
+Individual sticky-spiders correspond to static collections of set-labelled shapes in \textbf{ContRel}; in this sketch I want to talk about all the different ways the same collection of shapes can be arranged in space. Let's assume for simplicity that we only want to deal with \emph{nice} sticky-spiders where cores and halos agree and are both contractible opens; i.e. the spider can be expressed as a finite union of open solid blobs as effects followed by the same open solid blob as a state.
 
 \begin{defn}[Nice sticky-spiders]
 A sticky-spider is \emph{nice} if it is equal to a union of contractible open effects followed by the same contractible open expressed as a state.
@@ -140,40 +140,32 @@ Displacement is evidently an equivalence relation, and moreover requires that th
 The \emph{configuration space} $C(\mathfrak{s})$ of a nice spider $\mathfrak{s}$ with indexing set $I$ is the topological space with underlying set defined to be the equivalence class $[\mathfrak{s}]$ of $\mathfrak{s}$ under displacement. Assuming the topological group of rigid displacements is itself a topological space $G$, the topology of $C(\mathfrak{s})$ is a restriction of $\bigtimes^{|I|} G$ to those $|I|$-tuples of displacements witnessed by $[\mathfrak{s}]$.
 \end{defn}
 
-In configuration spaces we're making use of the fact that any displacement relationship comes with a witnessing tuple of $\rho_i$s. As a consequence, the configuration space of a sticky-spider is a retract of the product space $\bigtimes^{|I|} G$ where $G$ is the topological group of displacements.
+In configuration spaces we're making use of the fact that any displacement relationship comes with (up to a non-unique choice of basepoints for each component shape)  a witnessing tuple of $\rho_i$s. As a consequence, the configuration space of a sticky-spider is a retract of the product space $\bigtimes^{|I|} G$ where $G$ is the topological group of displacements, and we can use the identity relation between the section and retraction to strip the configuration space wire, revealing each of the $\bigtimes^{|I|} G$ like guitar strings: each element of the set that the initial nice spider $\mathfrak{s}$ splits through gets its own string.
 
-We can depict the \emph{configuration space} of shapes that are obtainable by displacing the shapes of a given spider by a split idempotent through the n-fold tensor of rigid transformations -- a restriction to the subspace of the largest open set contained in the subset of all valid (with correct chirality) combinations of displacements that yield another spider; points in configuration space are sticky spiders related to each other by rigid transforms. Note that as a subspace, the retract of the idempotent is a function. The section and retract pair is not unique; they may for instance encode a choice of basepoint for each shape relative to which the displacement of that shape occurs.
-\[\tikzfig{topology/configurations}\]
-The data of rigid motion on a sticky spider as we have defined above can be captured as a continuous map from the unit interval to the space of rigid transformations; continuous paths in configuration space model motions of shapes in space.
-\[\tikzfig{topology/rigidmotion2}\]
+\[\tikzfig{topology/guitar}\]
+
+Note that although every guitar string is $G$, there is extra typing data indicating which element of the indexing set of the spider each $G$ corresponds to. So here's a model in which the named wires of text circuits make sense. We can put gates on the guitar strings, which may for example correspond to constraints on the relative positions of shapes in configuration space.
+
+\[\tikzfig{topology/guitargate}\]
+
+The next thing we can try is to add and subtract shapes from configuration spaces, and while there are technical details like matching choices of basepoints I'll gloss over, the gist is this: when the shapes in a nice spider $\mathfrak{s}$ are a subset of the shapes in a nice spider $\mathfrak{t}$, we can add in states to the guitar-picture of $\mathfrak{s}$ and wrap them up again using the idempotent of $\mathfrak{t}$, and we can delete wires in the guitar-picture of $\mathfrak{t}$ and wrap that up using the idempotent of $\mathfrak{s}$.
+
+\[\tikzfig{topology/addminus}\]
+
+The last stop in this sketch is disintegrating and integrating shapes; if we could freely break apart a shape, we know that in principle we get another configuration space where we can manipulate those parts, and if we can glue those pieces back together again, then we could do simple things like open and close containers. Let's first define the disintegration relation between spiders. Observe that the data of a nice spider is equivalently viewed as a function $f: I \rightarrow \mathfrak{O}$, where $I$ is the indexing set, and $\mathfrak{O}$ is some set of opens with whatever well-behaviour condition, along with the constraint that $f(x) \cap f(y) \neq \varnothing \Rightarrow x = y$ that enforces non-overlapping shapes. This perspective gives us a foothold to define a disintegration relation: a "more refined" spider is one that has a superset of $I$ as domain, with a function that sends elements of the indexing set to either the same shape as $f$, or a subshape.
+
+\begin{defn}[Disintegration]
+Let $\mathfrak{s}$ and $\mathfrak{t}$ be nice spiders, described by functions $s: I \rightarrow \mathfrak{O}$ and $t: J \rightarrow \mathfrak{O}$ respectively. $\mathfrak{t}$ \emph{disintegrates} $\mathfrak{s}$ ($\mathfrak{t} \succ \mathfrak{s}$) if there exists a surjective $d: J \twoheadrightarrow I$ such that $g = f \circ d$, and such that for all $i \in I$ and all $j \in d^{-1}(i)$, $g(j) \subseteq f(i)$.
 \end{defn}
 
-\begin{defn}[Slideability in flatland]\label{defn:sliding}
-What we mean by two sticky spiders being relatable by sliding shapes is that we have a homotopy that begins at one and ends at the other, such that every point in between is itself a sticky spider related to the first by rigid displacement.
+Since the composition of surjectives is also surjective and the subsethood condition is transitive, disintegration is a transitive relation. It's also reflexive, and since surjections $A \twoheadrightarrow B$ and $B \twoheadrightarrow A$ implies a bijection $A \simeq B$ and $X \subseteq Y$ with $Y \subseteq X$ implies $X = Y$, we also have antisymmetry, and hence a partial order. Treating the identity disintegration as globally minimal, we can define shatterings as locally minimal elements.
+
+\begin{defn}[\emph{Solve}]
+$\mathfrak{t}$ \emph{shatters} $\mathfrak{s}$ if $\mathfrak{t} \succ \mathfrak{s}$, and for all spiders $\mathfrak{q}$, $\mathfrak{t} \succ \mathfrak{q} \succ \mathfrak{s} \Rightarrow \mathfrak{q} = \mathfrak{t}$ or $\mathfrak{q} = \mathfrak{s}$, up to bijective relabellings of indexing sets.
 \end{defn}
 
-\begin{figure}[h!]
-\centering
-\[\resizebox{\textwidth}{!}{\tikzfig{topology/rigidmotion}}\]
-\caption{Depicting homotopies as hexagons, two sticky-spiders (starting with cyan and ending with green) are slidably related if they are the endpoints of a homotopy (the top two conditions), and if at every point in time in the homotopy, there exists a rigid displacement $\rho_i$ for each component shape $i$ of the initial spider such that the result of the homotopy at that point in time is also a sticky-spider (expressed in union-form) that is obtainable by rigidly displacing the component shapes of the initial sticky-spider with respect to $\rho_i$. We'll further ask that the $\rho_i$ are obtained by a continuous function from $[0,1]$, to prevent discrete jumps.}
-\end{figure}
+The intuition behind shattering is that the $\subseteq$-condition in the disintegration relation lets the disintegrating spider "shave a little" off of the disintegrated spider, and locally minimal disintegrations "shave the least off", doing the best they can to partition shapes. So now we get gluing for free:
 
-Now suppose we start with a sticky-spider and we consider the space of all sticky-spiders that are slideably related; this gives us a configuration space of the original spider, where each point in the space corresponds to a spatial reconfiguration up to rigid displacement of the component shapes of the original spider.
-
-
-
-\begin{myboxR}
-\begin{example}[The connected components of configuration space]
-What are the connected components of configuration space? Evidently, there are pairs of spiders that are both valid displacements, but not mutually reachable by rigid motion. For example, shapes might \emph{enclose} or \emph{trap} other shapes, or shapes might be \emph{interlocked}. Depicted are some pairs of configurations that are mutually unreachable by rigid transformations. Now we have the conceptual toolkit to begin modelling these concepts in the configuration space of a sticky spider.
-\[\tikzfig{topology/encloseexample}\]
-\end{example}
-\end{myboxR}
-
-
-\begin{myboxB}
-\begin{defn}[Parthood]\label{defn:parthood}
-Let's say that a "part" refers to an entire simply connected component. Simply connected is already a concept in our toolkit. A shape $U$ is disjoint from another shape $V$ intuitively when we can cover $U$ in a blob with no holes such that the blob has no overlap with $V$. So, $U$ is a part of $V$ when it is simply connect, wholly contained in $V$, and there exists a contractible open that is disjoint from $V$ that covers $U$. Diagrammatically, this is:
-\[\tikzfig{topology/parthood}\]
+\begin{defn}[\emph{et Coagula}]
+$\mathfrak{t}$ is a \emph{gluing} of $\mathfrak{s}$ if $\mathfrak{s}$ shatters $\mathfrak{t}$.
 \end{defn}
-
-\end{myboxB}

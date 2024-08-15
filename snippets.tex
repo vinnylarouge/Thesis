@@ -1098,3 +1098,21 @@ The caveat here is that process theories work for all \emph{practical} purposes,
 \end{tikzcd}\]
 \end{marginfigure}
 
+We can depict the \emph{configuration space} of shapes that are obtainable by displacing the shapes of a given spider by a split idempotent through the n-fold tensor of rigid transformations -- a restriction to the subspace of the largest open set contained in the subset of all valid (with correct chirality) combinations of displacements that yield another spider; points in configuration space are sticky spiders related to each other by rigid transforms. Note that as a subspace, the retract of the idempotent is a function. The section and retract pair is not unique; they may for instance encode a choice of basepoint for each shape relative to which the displacement of that shape occurs.
+\[\tikzfig{topology/configurations}\]
+The data of rigid motion on a sticky spider as we have defined above can be captured as a continuous map from the unit interval to the space of rigid transformations; continuous paths in configuration space model motions of shapes in space.
+\[\tikzfig{topology/rigidmotion2}\]
+\end{defn}
+
+\begin{defn}[Slideability in flatland]\label{defn:sliding}
+What we mean by two sticky spiders being relatable by sliding shapes is that we have a homotopy that begins at one and ends at the other, such that every point in between is itself a sticky spider related to the first by rigid displacement.
+\end{defn}
+
+\begin{figure}[h!]
+\centering
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/rigidmotion}}\]
+\caption{Depicting homotopies as hexagons, two sticky-spiders (starting with cyan and ending with green) are slidably related if they are the endpoints of a homotopy (the top two conditions), and if at every point in time in the homotopy, there exists a rigid displacement $\rho_i$ for each component shape $i$ of the initial spider such that the result of the homotopy at that point in time is also a sticky-spider (expressed in union-form) that is obtainable by rigidly displacing the component shapes of the initial sticky-spider with respect to $\rho_i$. We'll further ask that the $\rho_i$ are obtained by a continuous function from $[0,1]$, to prevent discrete jumps.}
+\end{figure}
+
+Now suppose we start with a sticky-spider and we consider the space of all sticky-spiders that are slideably related; this gives us a configuration space of the original spider, where each point in the space corresponds to a spatial reconfiguration up to rigid displacement of the component shapes of the original spider.
+
