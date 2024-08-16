@@ -160,22 +160,26 @@
 		\draw [style=Fg] (44.center)
 			 to [bend left=270, looseness=1.75] (45.center)
 			 to [bend right=90, looseness=1.75] cycle;
-		\draw (0.center) to (3.center);
-		\draw (3.center) to (2.center);
-		\draw (2.center) to (1.center);
-		\draw (1.center) to (0.center);
-		\draw (46.center) to (49.center);
-		\draw (49.center) to (48.center);
-		\draw (48.center) to (47.center);
-		\draw (47.center) to (46.center);
-		\draw (51.center) to (54.center);
-		\draw (54.center) to (53.center);
-		\draw (53.center) to (52.center);
-		\draw (52.center) to (51.center);
-		\draw (55.center) to (58.center);
-		\draw (58.center) to (57.center);
-		\draw (57.center) to (56.center);
-		\draw (56.center) to (55.center);
+		\draw [style=H] (1.center)
+			 to (0.center)
+			 to (3.center)
+			 to (2.center)
+			 to cycle;
+		\draw [style=H] (48.center)
+			 to (47.center)
+			 to (46.center)
+			 to (49.center)
+			 to cycle;
+		\draw [style=H] (54.center)
+			 to (53.center)
+			 to (52.center)
+			 to (51.center)
+			 to cycle;
+		\draw [style=H] (55.center)
+			 to (58.center)
+			 to (57.center)
+			 to (56.center)
+			 to cycle;
 		\draw [style=KM] (93.center) to (66.center);
 		\draw [style=KM] (93.center) to (63.center);
 		\draw [style=KM] (93.center) to (61.center);

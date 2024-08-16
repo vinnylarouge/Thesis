@@ -77,14 +77,16 @@
 		\node [style=none] (110) at (7, 2.75) {\textcolor{cyan}{Merge}};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw (0.center) to (1.center);
-		\draw (1.center) to (2.center);
-		\draw (2.center) to (3.center);
-		\draw (3.center) to (0.center);
-		\draw (4.center) to (5.center);
-		\draw (5.center) to (6.center);
-		\draw (6.center) to (7.center);
-		\draw (7.center) to (4.center);
+		\draw [style=H] (1.center)
+			 to (2.center)
+			 to (3.center)
+			 to (0.center)
+			 to cycle;
+		\draw [style=H] (4.center)
+			 to (5.center)
+			 to (6.center)
+			 to (7.center)
+			 to cycle;
 		\draw [style=Fc] (15.center)
 			 to [in=90, out=-90] (13.center)
 			 to [bend left=90] (12.center)
@@ -121,10 +123,11 @@
 			 to [in=330, out=-150, looseness=1.25] (46.center)
 			 to [in=-105, out=75, looseness=1.50] (48.center)
 			 to cycle;
-		\draw (54.center) to (55.center);
-		\draw (55.center) to (56.center);
-		\draw (56.center) to (57.center);
-		\draw (57.center) to (54.center);
+		\draw [style=H] (57.center)
+			 to (54.center)
+			 to (55.center)
+			 to (56.center)
+			 to cycle;
 		\draw [style=Fm] (69.center)
 			 to [in=-90, out=90] (67.center)
 			 to [bend left=90] (66.center)
@@ -147,10 +150,11 @@
 			 to [in=-120, out=105] (89.center)
 			 to [bend left=150, looseness=0.75] (90.center)
 			 to [in=-15, out=135, looseness=1.50] cycle;
-		\draw (91.center) to (92.center);
-		\draw (92.center) to (93.center);
-		\draw (93.center) to (94.center);
-		\draw (94.center) to (91.center);
+		\draw [style=H] (94.center)
+			 to (91.center)
+			 to (92.center)
+			 to (93.center)
+			 to cycle;
 		\draw [style=Fm] (106.center)
 			 to [in=-90, out=90] (104.center)
 			 to [bend left=90] (103.center)

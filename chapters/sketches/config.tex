@@ -1,0 +1,69 @@
+\section{Configuration spaces}
+
+Individual sticky-spiders correspond to static collections of set-labelled shapes in \textbf{ContRel}; in this sketch I want to talk about all the different ways the same collection of shapes can be arranged in space. Let's assume for simplicity that we only want to deal with \emph{nice} sticky-spiders where cores and halos agree and are both contractible opens; i.e. the spider can be expressed as a finite union of open solid blobs as effects followed by the same open solid blob as a state.
+
+\begin{defn}[Nice sticky-spiders]
+A sticky-spider is \emph{nice} if it is equal to a union of contractible open effects followed by the same contractible open expressed as a state.
+\[\tikzfig{topology/nicespider}\]
+\end{defn}
+
+Let's also say we start with the ability to detect whether two sticky-spiders are related to one another by rigid displacements, expressed as a topological group with elements we denote $\rho$. Since sticky-spiders can be represented as unions of effects followed by states, we can define a binary relation on sticky-spiders that tells us whether they are the same up to rigidly displacing component shapes:
+
+\begin{defn}[Displacement relation]
+Two sticky-spiders (cyan and green, both assumed to be nice here), each with components indexed by $I$, are \emph{equivalent up to displacement} when there exist $\rho_i$ such that:
+\[\tikzfig{topology/displacementrelation}\]
+We've suppressed labelling of the states and we've contracted the cup to just depict the open state as a semicircle.
+\end{defn}
+
+Displacement is evidently an equivalence relation, and moreover requires that the two spiders related have the same number of components. Now given a particular nice spider, we treat its equivalence class of spiders as a configuration space in which we have access to all of its rigidly displaced variants at once.
+
+\begin{defn}\label{defn:configurationspace}
+The \emph{configuration space} $C(\mathfrak{s})$ of a nice spider $\mathfrak{s}$ with indexing set $I$ is the topological space with underlying set defined to be the equivalence class $[\mathfrak{s}]$ of $\mathfrak{s}$ under displacement. Assuming the topological group of rigid displacements is itself a topological space $G$, the topology of $C(\mathfrak{s})$ is a restriction of $\bigtimes^{|I|} G$ to those $|I|$-tuples of displacements witnessed by $[\mathfrak{s}]$.
+\end{defn}
+
+\begin{example}[The connected components of configuration space]
+Configuration space allows us to define a "slideability" relation between configurations of a spider $\mathfrak{k}$ as the endpoints of continuous functions from the unit interval into $C(\mathfrak{s})$. This in turn allows us to consider what the connected components of configuration space are. Evidently, there are pairs of spiders that are both valid displacements, but not mutually reachable by sliding. For example, shapes might \emph{enclose} or \emph{trap} other shapes, or shapes might be \emph{interlocked}. So at first blush, the connected components of configuration space tells us something about holes, or the cohomology of configurations. Depicted are some pairs of configurations corresponding to some linguistically topological terms that are mutually unreachable by rigid transformations, and so must live in disconnected components of configuration space.
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/encloseexample}}\]
+\end{example}
+
+In configuration spaces we're making use of the fact that any displacement relationship comes with (up to a non-unique choice of basepoints for each component shape)  a witnessing tuple of $\rho_i$s. As a consequence, the configuration space of a sticky-spider is a retract of the product space $\bigtimes^{|I|} G$ where $G$ is the topological group of displacements, and we can use the identity relation between the section and retraction to strip the configuration space wire, revealing each of the $\bigtimes^{|I|} G$ like guitar strings: each element of the set that the initial nice spider $\mathfrak{s}$ splits through gets its own string.
+\[\tikzfig{topology/guitar}\]
+Note that although every guitar string is $G$, there is extra typing data indicating which element of the indexing set of the spider each $G$ corresponds to. So here's a model in which the named wires of text circuits make sense. We can put gates on the guitar strings, which may for example correspond to constraints on the relative positions of shapes in configuration space.
+\[\tikzfig{topology/guitargate}\]
+
+The next thing we can try is to add and subtract shapes from configuration spaces, and while there are technical details like matching choices of basepoints I'll gloss over, the gist is this: when the shapes in a nice spider $\mathfrak{s}$ are a subset of the shapes in a nice spider $\mathfrak{t}$, we can add in states to the guitar-picture of $\mathfrak{s}$ and wrap them up again using the idempotent of $\mathfrak{t}$, and we can delete wires in the guitar-picture of $\mathfrak{t}$ and wrap that up using the idempotent of $\mathfrak{s}$.
+
+\[\tikzfig{topology/addminus}\]
+
+The last stop in this sketch is disintegrating and integrating shapes; if we could freely break apart a shape, we know that in principle we get another configuration space where we can manipulate those parts, and if we can glue those pieces back together again, then we could do simple things like open and close containers. Let's first define the disintegration relation between spiders. Observe that the data of a nice spider is equivalently viewed as a function $f: I \rightarrow \mathfrak{O}$, where $I$ is the indexing set, and $\mathfrak{O}$ is some set of opens with whatever well-behaviour condition, along with the constraint that $f(x) \cap f(y) \neq \varnothing \Rightarrow x = y$ that enforces non-overlapping shapes. This perspective gives us a foothold to define a disintegration relation: a "more refined" spider is one that has a superset of $I$ as domain, with a function that sends elements of the indexing set to either the same shape as $f$, or a subshape.
+
+\begin{defn}[Disintegration]
+Let $\mathfrak{s}$ and $\mathfrak{t}$ be nice spiders, described by functions $s: I \rightarrow \mathfrak{O}$ and $t: J \rightarrow \mathfrak{O}$ respectively. $\mathfrak{t}$ \emph{disintegrates} $\mathfrak{s}$ ($\mathfrak{t} \succ \mathfrak{s}$) if there exists a surjective $d: J \twoheadrightarrow I$ such that $g = f \circ d$, and such that for all $i \in I$ and all $j \in d^{-1}(i)$, $g(j) \subseteq f(i)$.
+\end{defn}
+
+Since the composition of surjectives is also surjective and the subsethood condition is transitive, disintegration is a transitive relation. It's also reflexive, and since surjections $A \twoheadrightarrow B$ and $B \twoheadrightarrow A$ implies a bijection $A \simeq B$ and $X \subseteq Y$ with $Y \subseteq X$ implies $X = Y$, we also have antisymmetry, and hence a partial order. Treating the identity disintegration as globally minimal, we can define shatterings as locally minimal elements.
+
+\begin{defn}[\emph{Solve}]
+$\mathfrak{t}$ \emph{shatters} $\mathfrak{s}$ if $\mathfrak{t} \succ \mathfrak{s}$, and for all spiders $\mathfrak{q}$, $\mathfrak{t} \succ \mathfrak{q} \succ \mathfrak{s} \Rightarrow \mathfrak{q} = \mathfrak{t}$ or $\mathfrak{q} = \mathfrak{s}$, up to bijective relabellings of indexing sets.
+\end{defn}
+
+The intuition behind shattering is that the $\subseteq$-condition in the disintegration relation lets the disintegrating spider "shave a little" off of the disintegrated spider, and locally minimal disintegrations "shave the least off", doing the best they can to partition shapes. So now we get gluing for free:
+
+\begin{defn}[\emph{et Coagula}]
+$\mathfrak{t}$ is a \emph{gluing} of $\mathfrak{s}$ if $\mathfrak{s}$ shatters $\mathfrak{t}$.
+\end{defn}
+
+\begin{example}[Putting something in a container]
+To put a blob inside a container, we first shatter the container of the initial spider $\mathfrak{s}$ to obtain a new spider $\mathfrak{t}$ that expresses the container as a combination of a container and a lid, then (implicitly using dynamic verb composition of terminatives) we can move the lid, put the blob in, close the lid, and glue. Below the circuit we represent one possible series of consistent snapshots as a vignette, out of the many possible series of configurations that satisfy our linguistic description above.
+\[\tikzfig{topology/containervignette}\]
+In principle, shapes can be shattered arbitrarily finely, which permits us some degree of freedom in specifying how a container opens. In conjunction with a topological group of transformations that includes scaling, we may express different ways in which things get in and out of containers, or otherwise leave the original connected component of configuration space they start in. Here again I'm colour coding different shapes of the same spider with different colours.
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/inopenout}}\]
+\end{example}
+
+I'll close this sketch with something cute: if manipulating shapes in configuration space is serious and sensible stuff, then just about anything is. We can (ab)use the fact that shapes of a nice sticky spider do not overlap to model mechanical components, where acceptable configurations of different shapes are mutually constrained in a productive way. In particular, this means we may consider any linguistic semantics grounded in mechanical or boardgame-tabletop models to be formal: in principle anything that can be represented by mechanisms and meeples is fair game\marginnote{\textsc{Objection: Isn't this way outside the scope of formal semantics?} Insofar as semantics is sensemaking, we certainly are capable of making sense of things in terms of mechanical models and games by means of metaphor, the mathematical treatment of which is concern of Section \ref{sec:metaphor}. It's probably the case that any definition that encompasses what's going on here as formal semantics would also have to consider the programming of a videogame to also be a form of formal semantics; personally I think that's ok, because I don't consider any particular form of mathematics-as-methodology to be privileged over others. Feel free to disagree.}. This gives us some cool possibilities for formal models of natural language, as there are a lot of mechanical models, including: clocks [duh.], analogues of electric circuits \citep{noauthor_spintronics_nodate}, computers \citep{richard_ridel_mechanical_2015}, and human-like automata \citep{wikipedia_authors_jaquet-droz_2022}.
+
+\begin{example}[Mechanical semantics]
+Here I'm going to allow shapes to be unions of disjoint contractibles, and I'll colour-code the different shapes in the spiders differently so the different components are clear:
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/constrained}}\]
+%Of course in reality mechanical motions are reversible among rigid objects, and directional behaviour is provided by a source of energy, such as gravitational potential, or wound springs. But we may in principle replace these sources of energy by a belt that we choose to spin in one direction -- our own arrow of time.
+\end{example}
