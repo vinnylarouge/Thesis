@@ -1,6 +1,6 @@
 \section{Interpreting text circuits in \textbf{ContRel}}\label{subsec:toptext}
 
-In this sketch I will tie up some loose ends, by outlining how the iconic semantics interpretation of text circuits in \textbf{ContRel} is "natural", in the sense that we may relate the interpretation to some linguistic phenomena without much effort.
+Recall that there were some mathematically odd choices in conventions for text circuits as syntactic objects, such as the labelling of noun wires and some subtleties with respect to interchange of parallel gates and text order. The explanation of those choices was deferred "to semantics", and since we're here now we have to make good. The aim of this section is to now explain those choices through an interpretation of text circuits in \textbf{ContRel}.
 
 \subsection{Sticky spiders: iconic semantics of nouns}
 Without loss of generality we may consider sticky spiders to be set-indexed collections of disjoint open subsets of an ambient space, i.e. a collection of shapes in space that a labelled from a set of names. So particular sticky spiders will be particular models of a collection of nouns; the indexing set names them, and the corresponding shapes in space are a particular iconic representation of those nouns in space.
@@ -42,6 +42,8 @@ Consider the configuration space of a sticky spider on the unit square with thre
 }
 \end{figure}
 
+\clearpage
+
 \subsection{Homotopies: dynamic verbs and weak interchange}
 
 \begin{figure}[h!]
@@ -73,6 +75,8 @@ We can compose multiple motions in parallel by copying the unit interval, allowi
 }
 \end{figure}
 
+\clearpage
+
 \subsection{Coclosure: adverbs and adpositions}
 
 \begin{figure}[h!]
@@ -95,3 +99,126 @@ Adverb-boxes may be modelled as static restrictions in movement-space. For insta
 Similarly, adposition-boxes may be modelled as static restrictions on the product of the spaces of nouns and verbs. For instance, \texttt{towards} may be modelled as an open set that pairs potential positions of the thing-being-moved-towards with movements in movement-space that indeed move towards the target.
 }
 \end{figure}
+
+\clearpage
+
+\subsection{Turing objects: sentential complementation}
+
+Recall that we also have to explain how untyped-boxes for conjunction and sentential complementation get their semantics. One option for finite models we present here relies on an interesting property of \textbf{ContRel}, which allows \textbf{ContRel} to model untyped-boxes, as well as the linguistic phenomena of \emph{entification} and \emph{general anaphora}. This is because \textbf{ContRel} contains \textbf{FinRel} equipped with a \emph{Turing object}.
+
+\newthought{Entification is the process of turning words and phrases that aren't nouns into nouns.} We are familiar with morphological operations in English, such as \emph{inflections} that turn the singular \texttt{cat} into the plural \texttt{cats}, by adding a suffix \texttt{-s}. Another morphological operation, generally classed \emph{derivation}, turns words from one category into another, for example the adjective \texttt{happy} into the noun \texttt{happiness}. With suffixes such as \texttt{-ness} and \texttt{-ing}, just about any lexical word in English can be turned into a noun, as if lexical words have some semantic content that is independent of the grammatical categories they might wear.
+
+\begin{figure}[h!]
+\[\tikzfig{spatialencoding/jono}\]
+\caption{
+\begin{example}
+\[\texttt{Jono was paid minimum wage but he didn't mind \underline{it}}\]
+It may be argued that \texttt{it} refers to \texttt{the fact that Jono was paid minimum wage}. Graphically, we might want to depict the gloss as a circuit with a lasso that gives another noun-wire. I'll also call this process \emph{entification}, which extends beyond morphology towards more complicated constructions such as a prefix \texttt{the fact that} that converts sentences into noun-like entities, insofar as these entities are valid anaphoric referents.
+\end{example}
+}
+\end{figure}
+
+\newthought{A mathematical modelling problem for semanticists arises when anything can be a noun wire.} The problem at hand is finding the right mathematical setting to interpret and calculate with such lassos. In principle, any meaningful (possibly composite) part of text can be referred to as if it were a noun. For syntax, this is a boon; having entification around means that there is no need to extend the system to accommodate wires for anything apart from nouns, so long as there is a gadget that can turn anything into a noun and back. For semantics this is a challenge, since this requires noun-wires to "have enough space in them" to accommodate full circuits operating on other noun-wires, which suggests a very structured sort of infinity.
+
+\newthought{Computer science has had a perfectly serviceable model of this kind of noun-wire for a long time.} What separates a computer from other kinds of machine is that a computer can do whatever any other kind of machine could do -- modulo church-turing on computability and the domain of data manipulation -- so long as the computer is running the right \emph{program}. Programs are (for our purposes) processes that manipulate variously formatted -- or typed -- data, such as integers, sounds, and images. They can operate in sequence and in parallel, and wires can be swapped over each other, so programs form a process theory, where we can reason about the extensional equivalence of different programs -- whether two programs behave the same with respect to mapping inputs to outputs. What makes computer programs special is that on real computers, they are specified by \emph{code}.  Programs that are equivalent in their extensional behavior may have many different implementations in code: for example, there are many sorting algorithms, though all of them map the same inputs to the same outputs. Conversely, every possible program in a process theory of programs must have some implementation as code. Importantly, code is just another format of data. So if the code-type is just another wire in the process-theory of computation, what is its process-theoretic characterisation?
+
+\begin{figure}[h!]
+\[
+\forall A,B \in Ob(\mathcal{C}) \ \exists \text{ev}^{ A}_{B}: A \otimes \Xi \rightarrow B \  \forall f : A \rightarrow B \ \exists \ulcorner f \urcorner : I \rightarrow \Xi\]
+\[
+\tikzfig{spatialencoding/eval}
+\]
+\caption{
+\begin{defn}[Turing object]\label{defn:turing}
+Diagrammatically, we would summarise the situation like this: for every pair of input formats and output formats ($A,B$), there is a computer for that format $ev^{A}_{B}: A \otimes \Xi \rightarrow B$, which takes code-format (which we will just denote $\Xi$ going forward) as an additional input, and for every possible program $f: A \rightarrow B$, there exists a code-state $\ulcorner f \urcorner : I \rightarrow \Xi$ that evaluates to the desired program.
+\end{defn}
+}
+\end{figure}
+
+It would be true but unhelpful to conclude that any programming language is a model for text circuits, using the code data format as the noun wire. In \textbf{ContRel}, the unit square suffices.
+
+\begin{scholium}
+Another observation we could have made is that since computers really just manipulate code, every data format is a kind of restricted form of the same code object $\Xi$, but this turns out to be a mathematical consequence of the above equation (and the presence of a few other operations such as copy and compare that form a variant of frobenius algebra), demonstrated in Pavlovic's forthcoming monoidal computer book \citep{pavlovic_programs_2023}, itself a crystallisation of three monoidal computer papers \citep{pavlovic_monoidal_2012,pavlovic_monoidal_2014,pavlovic_monoidal_2018}. I would be remiss to leave out Cockett's work on Turing categories \citep{cockett_introduction_2008}, from which I took the name Turing object. Both approaches to a categorical formulation of computability theory share the common starting ground of a special form of closure (monoidal closure in the case of monoidal computer and exponentiation in Turing categories) where rather than having dependent exponential types $\mathbb{A} \multimap \mathbb{B}$ or $\mathbb{B}^\mathbb{A}$, there is a single "code-object" $\Xi$. They differ in the ambient setting; Pavlovic works in the generic symmetric monoidal category, and Cockett with cartesian restriction categories, which generalise partial functions. I work with Pavlovics' formalism because I prefer string diagrams to commuting diagrams.
+\end{scholium}
+
+\marginnote{
+\begin{construction}[Sticky spiders on the open unit square model the category relations between countable sets equipped with a code object]
+Using the open unit square with its usual topology as the code object, there is a subcategory of \textbf{ContRel} which behaves as the category of countable sets and relations equipped with a Turing object (Construction \ref{cons:unitencoding}.)
+\end{construction}
+}
+
+\clearpage
+
+\begin{myboxB}
+\begin{proposition}[$(0,1) \times (0,1)$ splits through any countable set $X$]
+For any countable set $X$, the open unit square $\squarehvfill$ has a sticky spider that splits through $X^\star$.
+\begin{proof}
+The proof is by construction. We'll assume the sticky-spiders to be mereologies, so that cores and halos agree. Then we only have to highlight the copiable open sets. Take some circle and place axis-aligned open squares evenly along them, one for each element of $X$. The centres of the open squares lie on the circumference of the circle, and we may shrink each square as needed to fit all of them.
+\[\scalebox{1}{\tikzfig{spatialencoding/circencodingconstruct}}\]
+\end{proof}
+\end{proposition}
+\end{myboxB}
+
+\begin{myboxB}
+\begin{defn}[Morphism of sticky spiders]
+A morphism between sticky spiders is any morphism that satisfies the following equation.
+\[\scalebox{1}{\tikzfig{spatialencoding/stickymorphismdefn}}\]
+\end{defn}
+\end{myboxB}
+
+\begin{myboxB}
+\begin{proposition}[Morphisms of sticky spiders encode relations]
+For arbitrary split idempotents through $A^\star$ and $B^\star$, the morphisms between the two resulting sticky spiders are in bijection with relations $R: A \rightarrow B$.
+\[\scalebox{1}{\tikzfig{spatialencoding/arbsetclaim}}\]
+\begin{proof}
+\[\scalebox{1}{\tikzfig{spatialencoding/arbset}}\]
+\end{proof}
+\end{proposition}
+\end{myboxB}
+
+\begin{myboxB}
+\begin{construction}[Representing sets in their various guises within $\squarehvfill$]
+We can represent the direct sum of two $\squarehvfill$-representations of sets as follows.
+\[\scalebox{0.75}{\tikzfig{spatialencoding/directsumconstruct}}\]
+The important bit of technology is the homeomorphism that losslessly squishes the whole unit square into one half of the unit square. The decompressions are partial continuous functions, with domain restricted to the appropriate half of the unit square.
+\[\scalebox{1}{\tikzfig{spatialencoding/leftrightcompressions}}\]
+We express the ability of these relations to encode and decode the unit square in just either half by the following graphical equations.
+\[\scalebox{1}{\tikzfig{spatialencoding/leftrightcompressions2}}\]
+\end{construction}
+Now, to put the two halves together and to take them apart, we introduce the following two relations. In tandem with the squishing and stretching we have defined, these will behave just as the projections and injections for the direct-sum biproduct in \textbf{Rel}.
+\[\scalebox{1}{\tikzfig{spatialencoding/leftrightcompressions3}}\]
+The following equation tells us that we can take any two representations in $\squarehvfill$, put them into a single copy of $\squarehvfill$, and take them out again.
+\[\scalebox{1}{\tikzfig{spatialencoding/leftrightcompressions4}}\]
+\end{myboxB}
+
+\begin{myboxB}
+We encode the tensor product $A \otimes B$ of representations by placing copies of $B$ in each of the open boxes of $A$.
+%\[\scalebox{0.75}{\tikzfig{spatialencoding/directsummap}}\]
+%\[\scalebox{0.75}{\tikzfig{spatialencoding/directsummap2}}\]
+\[\scalebox{0.75}{\tikzfig{spatialencoding/tensorconstruct}}\]
+The important bit of technology here is a family of homeomorphisms of $\squarehvfill$ parameterised by axis-aligned open boxes, that allow us to squish and stretch spaces. Thus for every representation of a set in $\squarehvfill$ by a sticky-spider, where each element corresponds to an axis-aligned open box, we can associate each element with a squish-stretch homeomorphism via the parameters of the open box, which we notate with a dot above the name of the element.
+\[\scalebox{0.75}{\tikzfig{spatialencoding/compresstogether}}\]
+\begin{remark}
+The essential idea is that the whole of the unit square is homeomorphic to part of it. In particular this means (modulo a point), we may make copies of shapes outside a container that are in homeomorphic correspondence with shapes within a container, the classic example being thought bubbles in a comic-strip with pictorial contents of the outside world. In our framework, this constitutes a formal and well-typed semantics for certain alethic verbs of cognition such as \texttt{sees} and \texttt{thinks}. For other such verbs, one may by Construction \ref{cons:unitencoding} operate directly on set-theoretic representations of mental contents.
+\end{remark}
+\end{myboxB}
+
+\begin{myboxB}
+Now we can define the "tensor $X$ on the left" relation $\_ \rightarrow X \otimes \_$ and its corresponding cotensor.
+\[\resizebox{\textwidth}{!}{\tikzfig{spatialencoding/tensordetensor}}\]
+The tensor and cotensor behave as we expect from proof nets for monoidal categories.
+\[\scalebox{1}{\tikzfig{spatialencoding/tensordetensor2}}\]
+And by construction, the (co)tensors and (co)pluses interact as we expect, and they come with all the natural isomorphisms between representations we expect. For example, below we exhibit an explicit associator natural isomorphism between representations.
+\[\scalebox{1}{\tikzfig{spatialencoding/tensordetensor3}}\]
+\end{myboxB}
+
+\begin{myboxB}
+\begin{construction}[Representing relations between sets and their composition within $\squarehvfill$]\label{cons:unitencoding}
+With all the above, we can establish a special kind of process-state duality; relations as processes are isomorphic to states of $\squarehvfill$, up to the representation scheme we have chosen. This is part of the condition for Turing objects. What remains to be demonstrated is that the duality coheres with sequential and parallel relational composition.
+\end{construction}
+\[\scalebox{0.9}{\tikzfig{spatialencoding/relcomp1}}\]
+Under this duality, we have continuous relations that perform sequental composition of relations as follows.
+\[\resizebox{\textwidth}{!}{\tikzfig{spatialencoding/relcomp2}}\]
+And similarly, parallel composition. Therefore, we have demonstrated that the unit square behaves as a Turing object for the category of countable sets and relations.
+\[\resizebox{\textwidth}{!}{\tikzfig{spatialencoding/relcomp3}}\]
+\end{myboxB}
