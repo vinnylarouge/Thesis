@@ -1,0 +1,175 @@
+\section{Preliminary concepts for the sketches}
+
+This section should be read as a smooth transition from the contents of the previous chapter towards sketches that gradually trade off rigour for expressivity, while ideally being descriptive enough that the reader trusts that the necessary details can be worked out.
+
+\subsection{Open sets: concepts}
+
+Apart from enabling us to paint pictures with words, \textbf{ContRel} is worth the trouble because the opens of topological spaces crudely model how we talk about concepts, and the points of a topological space crudely model instances of concepts. We consider these open-set tests to correspond to "concepts", such as redness or quickness of motion. Figure \ref{fig:pointing} generalises to a sketch argument that insofar as we conceive of concepts in (possibly abstractly) spatial terms, the meanings of words are modellable as shared strategies for spatial deixis; absolute precision is communicatively impossible, and the next best thing mathematically requires topology.
+
+\begin{figure}[h!]\label{fig:pointing}
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/pointingfinger}}\]
+\caption{Points in space are a useful mathematical fiction. Suppose we have a point on a unit interval. Consider how we might tell someone else about where this point is. We could point at it with a pudgy appendage, or the tip of a pencil, or give some finite decimal approximation. But in each case we are only speaking of a vicinity, a neighbourhood, an \emph{open set in the borel basis of the reals} that contains the point. Identifying a true point on a real line requires an infinite intersection of open balls of decreasing radius; an infinite process of pointing again and again, which nobody has the time to do. In the same way, most language outside of mathematics is only capable of offering successively finer, finite approximations.}
+\end{figure}
+
+Maybe this explains the asymmetry of why tests are open sets, but why are states allowed to be arbitrary subsets? One could argue that states in this model represent what is conceived or perceived. Suppose we have an analog photograph whether in hand or in mind, and we want to remark on a particular shade of red in some uniform patch of the photograph. As in the case of pointing out a point on the real interval, we have successively finer approximations with a vocabulary of concepts: "red", "burgundy", "hex code \#800021"... but never the point in colourspace itself. If someone takes our linguistic description of the colour and tries to reproduce it, they will be off in a manner that we can in principle detect, cognize, and correct: "make it a little darker" or "add a little blue to it". That is to say, there are in principle differences in mind that we cannot distinguish linguistically in a finite manner; we would have to continue the process of "even darker" and "add a bit less blue than last time" forever. All this is just the mathematical accommodation of a common observation: sometimes you cannot do an experience justice with words, and you eventually give up with "I guess you just had to be there". Yet the experience is there and we can perform linguistic operations on it.
+
+\clearpage
+\subsection{Copy: stative verbs and adjectives}
+
+\emph{Stative} verbs are those that posit an unchanging state of affairs, such as \texttt{Bob \underline{likes} drinking}. Insofar as stative verbs are restrictions of all possible configurations to a permissible subset, they are conceptually similar to adjectives, such as \texttt{\underline{red} car}, which restricts permissible representations in colourspace. When we interpret concepts as open-set tests, \textbf{ContRel} conspires in our favour by giving us free copy maps on every wire. This allows us to define a family of processes that behave like stative restrictions of possibilities.
+
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/copygatecommute}}\]
+The desirable property we obtain is that in the absence of \emph{dynamic} verbs that posit a change in the state of affairs, stative constructions commute in text: if I'm just telling you static properties of the way things are, it doesn't matter in what order I tell you the facts because restrictions commute. Recall that gates of the following form are intersections with respect to open sets, and they commute. These intersections model conjunctive specifications of properties.
+
+\begin{example}[Containment and insideness]
+\[\resizebox{0.8\textwidth}{!}{\tikzfig{topology/oxfordex}}\]
+Consider the configuration space of a sticky spider on the unit square with three labelled shapes, which has 6 connected components, depicted. \texttt{Oxford contains Catz.} restricts away configurations where \texttt{Catz} is not enclosed in \texttt{Oxford}. Adding on \texttt{England contains Oxford.} further restricts away incongruent configurations, leaving us only with a single connected component, which contains all spatial configurations that satisfy the text. A similar story holds for abstract conceptual spaces, in which \texttt{fast red car}, \texttt{fast car that is red}, \texttt{car is (red and fast)} all mean the same thing.
+\end{example}
+
+
+\subsection{Coclosure: adverbs and adpositions}
+
+\begin{figure}[h!]
+\[\scalebox{0.9}{\tikzfig{topology/adverbex1}}\]
+\caption{
+Recall that \textbf{ContRel} is coclosed (Proposition \ref{prop:coclosure}), which means that every dynamic verb may be expressed as the composite of a coevaluator and an open set on the space of homotopies. For instance, \texttt{move} is an intransitive dynamic verb, which corresponds to a concept in the space of all movements.
+}
+\end{figure}
+
+\begin{figure}[h!]
+\[\scalebox{0.9}{\tikzfig{topology/adverbex2}}\]
+\caption{
+Adverb-boxes may be modelled as static restrictions in movement-space. For instance, \texttt{straight} may restrict movements to just those that satisfy some notion of path-length minimality: e.g., given a metric in movement-space on path-lengths, we may construct an open ball (Definition \ref{def:openball}) around the geodesic to model the adverb \texttt{straight}.
+}
+\end{figure}
+
+\begin{figure}[h!]
+\[\scalebox{0.9}{\tikzfig{topology/adverbex3}}\]
+\caption{
+Similarly, adposition-boxes may be modelled as static restrictions on the product of the spaces of nouns and verbs. For instance, \texttt{towards} may be modelled as an open set that pairs potential positions of the thing-being-moved-towards with movements in movement-space that indeed move towards the target.
+}
+\end{figure}
+
+\subsection{Using sticky spiders as location-tests}
+
+\begin{myboxB}
+\begin{example}[Where is a piece on a chessboard?]\label{ex:chessboard}
+How is it that we quotient away the continuous structure of positions on a chessboard to locate pieces among a discrete set of squares? Evidently shifting a piece a little off the centre of a square doesn't change the state of the game, and this resistance to small perturbations suggests that a topological model is appropriate. We construct two spiders, one for pieces, and one for places on the chessboard. For the spider that represents the position of pieces, we open balls of some radius $r$, and we consider the places spider to consist of square halos (which tile the chessboard), containing a core inset by the same radius $r$; in this way, any piece can only overlap at most one square. As a technical aside, to keep the core of the tiles open, we can choose an arbitrarily sharp curvature $\epsilon$ at the corners.
+\[\scalebox{0.70}{\tikzfig{topology/chessboard}}\]
+Now we observe that the calculation of positions corresponds to composing sticky spiders. We take the initial state to be the sticky spider that assigns a ball of radius $r$ on the board for each piece. We can then obtain the set of positions of each piece by composing with the places spider. The composite (pieces;places)
+will send the king to a2, the bishop to b4, and the knight to d1, i.e. $\bra{K} \mapsto \bra{a2}$, $\bra{B} \mapsto \bra{b4}$ and $\bra{N} \mapsto \bra{d1}$. In other words, we have obtained a process that models how we pass from continuous states-of-affairs on a physical chessboard to an abstract and discrete game-state.
+\[\resizebox{0.70\textwidth}{!}{\tikzfig{topology/chessboard2a}}\]
+\end{example}
+\end{myboxB}
+
+\clearpage
+
+\subsection{The unit interval}
+\marginnote{\textcolor{blue}{Postscript: If you're already happy that in principle we may either start with nicer spaces or otherwise restrict ourselves to contractible opens, then you may skip the next two subsections and just glance at how relational homotopies differ from regular homotopies, and look briefly at the definition of a nice spider at the end. The relevant conceptual takeaway for the couple of sketches is that one may recover the usual topological notions such as simple connectivity, metrics and their open balls, and contractibility, from which one can in principle construct models of linguistic topological relations such as \texttt{touching}, \texttt{enclosure}, and so on. The submitted version of this thesis had detailed constructions of these linguistic topological relations "from scratch" but I've cut them, so only the next two sketches remain as artifacts to suggest that "low-level" hacking in \textbf{ContRel} is doable. I've opted to remove sketches of linguistic topological relations because (1) they took up too much space for too little gain (2) they still admitted counterexamples, and (3) it seems plausible that any analysis of linguistic topological primitives in mathematical terms will admit counterexamples, because I suspect they have the status of semantic primes \citep{wierzbicka_semantics_1996}, which are characterised by their universality across languages and their unanalysability in simpler terms.}} To begin modelling more complex concepts, we first need to extend our topological tools. Throughout, we now consider string-diagrams to be expressions that may be quantified over, and we allow ourselves additional niceties like endocombinators. Ultimately we would like to get at the unit interval so we can do homotopies to move shapes around, which we plan to arrive at by first expressing the reals, and then adding in endpoints. However, there are many spaces homeomorphic to the real line. How do we know when we have one of them? The following theorem provides an answer:
+\begin{theorem}[\citep{friedman_fom_2005}]\label{thm:Friedman}
+Let $\big((X,\tau), < \big)$ be a topological space with a total order. If there exists a continuous map $f: X \times X \rightarrow X$ such that $\forall a,b_{\in X} : a < f(a,b) < b$, then $X$ is homeomorphic to $\mathbb{R}$.
+\end{theorem}
+\begin{defn}[Less than]\label{defn:lessthan}
+We define a total ordering relation $<$ as an open set on $X \times X$ that obeys the usual axiomatic rules:
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/lessthan}}\]
+\[\scalebox{0.65}{\tikzfig{topology/lessthantotal}}\]
+\end{defn}
+\begin{defn}[Friedman's function]\label{defn:friedfunct}
+Just as a wire in \textbf{ContRel} has the discrete topology if it possesses spider structure (Proposition \ref{prop:copydiscrete}), a wire is homeomorphic to the real line by Theorem \ref{thm:Friedman} if it possesses an open that behaves as Definition \ref{defn:lessthan}, and a map that satisfies:
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/betweenfunct}}\]
+\end{defn}
+
+Let's say that the unit interval is like the real line extended with endpoints. One way to define this that aligns with the usual presentation of the reals in analysis is to provide the ability to take suprema and infima of subsets, which are functions that map subsets to points. This kind of function is subsumed by a kind of structure on a category called an endocombinator.
+
+\begin{defn}[Endocombinator]
+An \emph{endocombinator} on a category $\mathcal{C}$ is a family of functions on homsets typed $\mathcal{C}(X,Y) \rightarrow \mathcal{C}(X,Y)$, for all objects $X,Y$.
+\end{defn}
+
+\begin{defn}[Upper and lower bounds via endocombinators]\label{defn:bounds}
+Upper bounds are endocombinators that send states to points, which we depict as a little gray lassoed region around the state of interest. Recall that points are states with a little decorating copy-dot as they are copiable. The following equational condition quantified over all states characterises an "upper bound" endocombinator that returns an upper bound for any subset of a totally ordered space: in prose, such subsets are all less than their upper bound.
+\[\tikzfig{topology/upperbound}\]
+\end{defn}
+We can add in further equations governing the upper bound endocombinator to turn it into a supremum, or least-upper-bound.
+\begin{defn}[Suprema]\label{defn:sup}
+An upper bound endocombinator is the supremum when the following additional condition (with caveats, see sidenote\marginnote{Unless $y$ already contains $\text{sup}(x)$, so the consequent of the implication needs a disjunctive case where $\text{sup}(x) \cup y|_{\text{sup}(x)<} = y$. The reason we cannot use $\leq$ as an open (even though it would make this definition easier) is that it would imply the equality relation $=$ is an open, which would imply that the underlying space has the discrete topology, trivialising everything.}) holds: for all subsets $y$ whose elements are all greater than those of a subset $x$, the supremum of $x$ is less than all elements of $y$.
+\[\tikzfig{topology/sup}\]
+\end{defn}
+Now the lower endpoint is expressible as the supremum of the empty set, and the upper endpoint is the supremum of the whole set.
+\begin{defn}[Endpoints]\label{defn:endpoints}
+The lower endpoint is the supremum of the empty state, and the upper the supremum of everything. 
+\[\tikzfig{topology/endpoints}\]
+\end{defn}
+
+\begin{defn}[The unit interval]
+In \textbf{ContRel}, an object equipped with a less-than relation (Definition \ref{defn:lessthan}), Friedman's function (Definition \ref{defn:friedfunct}), and suprema (Definitions \ref{defn:bounds} and \ref{defn:sup}) is homeomorphic to the unit interval\marginnote{Conceptually, we are embedding the real line into a new space with two extra points, and then defining an extension of the less-than relation in terms of suprema to accommodate those points to characterise them as endpoints.}. Going forward, we will denote the unit interval using a thick dotted wire.
+\end{defn}
+
+\clearpage
+
+\begin{example}[Simple connectivity]\label{def:simpconn}
+Recall that we notate points and functions with the same small black dot for copying and deleting, as points are precisely the states that are copy-delete cohomomorphisms. In prose, simple connectivity states that for any pair of points that are within the open $V$, there exists some continuous function from the unit interval into the space that starts at one of the points and ends at the other. The left pair of conditions state that the points $\textcolor{blue}{x}$ and $\textcolor{red}{y}$ are within $V$. The right triple of conditions require the the image of the homotopy $\textcolor{orange}{f}$ is contained in $V$, and that its endpoints are $\textcolor{blue}{x}$ and $\textcolor{red}{y}$.
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/simplyconnected}}\]
+Simple connectivity is a useful enough concept that we will notate simply connected open sets as follows, where the hole is a reminder that simply connected spaces might still have holes in them.
+\[\tikzfig{topology/simpconnotation}\]
+\end{example}
+
+\clearpage
+
+\subsection{Metric structure}
+
+\begin{defn}[Addition]\label{def:addition}
+In order to define metrics, we must have additive structure, which we encode as an additive monoid that is a function. All we need to know is that the lower endpoint of the unit interval stands in for "zero distance" -- as the unit of the monoid -- and that adding positive distances together will deterministically give you a larger positive distance.
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/addition}}\]
+\end{defn}
+
+\begin{defn}[Metric]\label{def:metric}
+A metric on a space is a continuous map $X \rightarrow \mathbb{R}^+$ to the positive reals that satisfies the following axioms. We depict metrics as trapezoids.
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/metric}}\]
+\end{defn}
+
+\clearpage
+
+\begin{example}[Open balls]\label{def:openball}
+Once we have metrics, we can define the usual topological notion of open balls. With respect to a metric, an $\varepsilon$-open ball at $\textcolor{blue}{x}$ is the open set (effect) of all points that are $\varepsilon$-close to $\textcolor{blue}{x}$ by the chosen metric.
+\[\tikzfig{topology/openball2}\]
+Open balls will come in handy later, and a side-effect which we note but do not explore is that open balls form a basis for any metric space, so in the future whenever we construct spaces that come with natural metrics, we can speak of their topology without any further work.
+\end{example}
+
+\clearpage
+
+\subsection{Relational homotopy}
+
+\begin{defn}[Homotopy in \textbf{Top}]
+where $f$ and $g$ are continuous maps $A \rightarrow B$, a \emph{homotopy} $\eta : f \Rightarrow g$ is a continuous function $\eta : [0,1] \times A \rightarrow B$ such that $\eta(0,-) = f(-)$ and $\eta(1,-) = g(1,-)$.
+\end{defn}
+
+In other words, a homotopy is like a short film where at the beginning there is an $f$, which continuously deforms to end the film being a $g$. Directly replacing "function" with "relation" in the above definition does not quite do what we want, because we would be able to define the following "homotopy" between open sets.
+
+\[\tikzfig{topology/homotopyctrex1}\]
+
+What is happening in the above film is that we have our starting open set in blue, which stays constant for a while. Then suddenly the ending open set in red appears, and then the blue open disappears, and we are left with our ending; while \emph{technically} there was no discontinuous jump, this isn't the notion of sliding we want. The exemplified issue is that we can patch together (by union of continuous relations) vignettes of continuous relations that are not individually total on $[0,1]$. We can patch this issue in by asking for homotopies in \textbf{ContRel} to satisfy the additional condition that they are expressible as a union of regular homotopies.
+
+\clearpage
+
+\marginnote{Observe that the second condition asking for decomposition in terms of partial functions (of which total functions are a special case) comes for free by Proposition \ref{prop:hombasis}, as the partial functions form a topological basis. the constraint of the definition is provided by the first condition, which is a stronger condition than just asking that the original continuous relation be total on $I$. Definition \ref{defn:homotopy} is "natural" in light of Proposition \ref{prop:hombasis}, that the partial continuous functions $A \rightarrow B$ form a basis for $\mathbf{ContRel}(A,B)$: we are just asking that homotopies between partial continuous functions -- which can be viewed as regular homotopies with domain restricted to the subspace topology induced by an open set -- form a basis for homotopies between continuous relations.}
+\begin{defn}[Relational Homotopy]\label{defn:homotopy}
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/homotopy}}\]
+\end{defn}
+
+\clearpage
+
+\begin{example}[Contractibility]\label{defn:contractible}
+With homotopies in hand, we can define a stronger notion of connected shapes with no holes, which are usually called \emph{contractible}. The reason for the terminology reflects the method by which we can guarantee a shape in flatland has no holes: when any loop in the shape is \emph{contractible} to a point.
+\[\resizebox{\textwidth}{!}{\tikzfig{topology/contractible}}\]
+Contractible open sets are worth their own notation; a solid black effect, this time with no hole.
+\[\tikzfig{topology/contractnotation}\]
+\end{example}
+
+\subsection{Nice spiders}
+
+Let's assume for simplicity that henceforth, unless otherwise specified, we only deal with \emph{nice} sticky-spiders where cores and halos agree and are both contractible opens; i.e. the spider can be expressed as a finite union of open solid blobs as effects followed by the same open solid blob as a state.
+
+\begin{defn}[Nice sticky-spiders]
+A sticky-spider is \emph{nice} if it is equal to a union of contractible open effects followed by the same contractible open expressed as a state.
+\[\tikzfig{topology/nicespider}\]
+\end{defn}

@@ -1,9 +1,6 @@
 \section{Interpreting text circuits in \textbf{ContRel}}\label{subsec:toptext}
 
-In this sketch I will tie up some loose ends, by outlining how the iconic semantics interpretation of text circuits in \textbf{ContRel} is "natural", in the sense that we may relate the interpretation to some linguistic phenomena without much effort.
-
-\subsection{Sticky spiders: iconic semantics of nouns}
-Without loss of generality we may consider sticky spiders to be set-indexed collections of disjoint open subsets of an ambient space, i.e. a collection of shapes in space that a labelled from a set of names. So particular sticky spiders will be particular models of a collection of nouns; the indexing set names them, and the corresponding shapes in space are a particular iconic representation of those nouns in space.
+In this sketch I will tie up some remaining loose ends, by outlining how the iconic semantics interpretation of text circuits in \textbf{ContRel} is "natural", in the sense that we may relate the interpretation to some linguistic phenomena without much effort. To recap, we have seen already in previous sketches how sticky spiders yield static arrangements of labelled shapes in space, how homotopies may be used in conjunction with temporal algebras to reason about evolving configurations, how to deal with modal verbs and sentential complementation and how configuration spaces of nice spiders let us reason about all possible arrangements of the same shapes.
 
 \subsection{Open sets: concepts}
 
@@ -15,12 +12,6 @@ Apart from enabling us to paint pictures with words, \textbf{ContRel} is worth t
 \end{figure}
 
 Maybe this explains the asymmetry of why tests are open sets, but why are states allowed to be arbitrary subsets? One could argue that states in this model represent what is conceived or perceived. Suppose we have an analog photograph whether in hand or in mind, and we want to remark on a particular shade of red in some uniform patch of the photograph. As in the case of pointing out a point on the real interval, we have successively finer approximations with a vocabulary of concepts: "red", "burgundy", "hex code \#800021"... but never the point in colourspace itself. If someone takes our linguistic description of the colour and tries to reproduce it, they will be off in a manner that we can in principle detect, cognize, and correct: "make it a little darker" or "add a little blue to it". That is to say, there are in principle differences in mind that we cannot distinguish linguistically in a finite manner; we would have to continue the process of "even darker" and "add a bit less blue than last time" forever. All this is just the mathematical formulation of a very common observation: sometimes you cannot do an experience justice with words, and you eventually give up with "I guess you just had to be there". Yet the experience is there and we can perform linguistic operations on it, and the states accommodate this.
-
-\subsection{Configuration spaces: labelled noun wires}
-
-Whereas sticky spiders correspond to particular iconic representations, we want to interpret text circuits in the configuration spaces of sticky spiders, so that text process-theoretically restricts, expands, and modifies a space of permissible iconic representations\footnote{\textbf{Top} is symmetric monoidal closed with respect to product, why we just work there from the start? Because \textbf{Top} is cartesian monoidal, which in particular means that there is only one test (the map into the terminal singleton topology), and worse, all states are tensor-separable. The latter fact means that we cannot reason natively in diagrams about correlated states, which are extremely useful representing entangled quantum states \citep{coecke_picturing_2017}, and for reasoning about spatial relations \citep{wang-mascianica_talking_2021}. I'll briefly explain the gist of the analogy in prose because it is already presented formally in the cited works and elaborated in \citep{coecke_compositionality_2021}. The Fregean notion of compositionality is roughly that to know a composite system is equivalent to knowing all of its parts, and diagrammatically this amounts to tensor-separability, which arises as a consequence of cartesian monoidality. Schr\"{o}dinger suggests an alternative of compositionality via a lesson from entangled states in quantum mechanics: \emph{perfect knowledge of the whole does not entail perfect knowledge of the parts.} Let's say we have information about a composite system if we can restrict the range of possible outcomes; this is the case for the bell-state, where we know that there is an even chance both qubits measure up or both measure down, and we can rule out mismatched measurements. However, discarding one entangled qubit from a bell-state means we only know that the remaining qubit has a 50/50 of measuring up or down, which is the minimal state of information we can have about a qubit. So we have a case where we can know things about the whole, but nothing about its parts. A more familiar example from everyday life is if I ask you to imagine \texttt{a cup on a table in a room}. There are many ways to envision or realise this scenario in your mind's eye, all drawn from a restricted set of permissable positions of the cup and the table in some room. The spatial locations of the cup and table are entangled, in that you can only consider the positions of both together. If you discard either the cup or the table from your memory, there are no restrictions about where the other object could be in the room; that is, the meaning of the utterance is not localised in any of the parts, it resides in the entangled whole.}. So it is via configuration spaces that we aim for an iconic semantics of general text. Recall from the definition of configuration spaces via split idempotents (Definition \ref{defn:configurationspace}) that the section and retract diagrammatically allow the configuration space wire to open up to guitar strings we can place our circuits in. However, this section and retract pair is not uniquely determined. For example, in the case of configuration spaces of rigid transformations of shapes, one obtains a family of encodings of the configuration space of an $n$-shape sticky spider in the $n$-fold tensor of isometry spaces by choosing a basepoint for each shape and rigidly transforming with respect to that basepoint, which on the plane may lead to different reifications of rotating shapes.
-\[\scalebox{0.75}{\tikzfig{topology/labelledwires1}}\]
-Interpreting text circuits with respect to a particular split idempotent of configuration space hence gives a good reason to label the noun wires: so that we can remember which space of isometries corresponds to which noun-shape in the absence of knowing how precisely the split idempotent encodes configuration space as the $n$-fold contribution of spatial possibilities for each noun.
 
 \subsection{Copy: stative verbs and adjectives}
 
@@ -39,6 +30,29 @@ The desirable property we obtain is that in the absence of \emph{dynamic} verbs 
 \[\resizebox{0.8\textwidth}{!}{\tikzfig{topology/oxfordex}}\]
 \caption{
 Consider the configuration space of a sticky spider on the unit square with three labelled shapes, which has 6 connected components, depicted. \texttt{Oxford contains Catz.} restricts away configurations where \texttt{Catz} is not enclosed in \texttt{Oxford}. Adding on \texttt{England contains Oxford.} further restricts away incongruent configurations, leaving us only with a single connected component, which contains all spatial configurations that satisfy the text. A similar story holds for abstract conceptual spaces, in which \texttt{fast red car}, \texttt{fast car that is red}, \texttt{car is (red and fast)} all mean the same thing.
+}
+\end{figure}
+
+\subsection{Coclosure: adverbs and adpositions}
+
+\begin{figure}[h!]
+\[\scalebox{0.9}{\tikzfig{topology/adverbex1}}\]
+\caption{
+Recall that \textbf{ContRel} is coclosed (Proposition \ref{prop:coclosure}), which means that every dynamic verb may be expressed as the composite of a coevaluator and an open set on the space of homotopies. For instance, \texttt{move} is an intransitive dynamic verb, which corresponds to a concept in the space of all movements.
+}
+\end{figure}
+
+\begin{figure}[h!]
+\[\scalebox{0.9}{\tikzfig{topology/adverbex2}}\]
+\caption{
+Adverb-boxes may be modelled as static restrictions in movement-space. For instance, \texttt{straight} may restrict movements to just those that satisfy some notion of path-length minimality: e.g., given a metric in movement-space on path-lengths, we may construct an open ball (Definition \ref{def:openball}) around the geodesic to model the adverb \texttt{straight}.
+}
+\end{figure}
+
+\begin{figure}[h!]
+\[\scalebox{0.9}{\tikzfig{topology/adverbex3}}\]
+\caption{
+Similarly, adposition-boxes may be modelled as static restrictions on the product of the spaces of nouns and verbs. For instance, \texttt{towards} may be modelled as an open set that pairs potential positions of the thing-being-moved-towards with movements in movement-space that indeed move towards the target.
 }
 \end{figure}
 
@@ -70,28 +84,5 @@ Recalling that homotopies between relations are the unions of homotopies between
 \[\resizebox{\textwidth}{!}{\tikzfig{topology/seqparhom}}\]
 \caption{
 We can compose multiple motions in parallel by copying the unit interval, allowing it to parameterise multiple gates simultaneously, or compose them sequentially. The sequential composition of dynamic verbs in time explains the weak-interchange subtlety of text diagrams; there is now a diagrammatic distinction between events happening sequentially and in parallel. So now we have noncommuting gates that model \emph{actions}, or verbs.
-}
-\end{figure}
-
-\subsection{Coclosure: adverbs and adpositions}
-
-\begin{figure}[h!]
-\[\scalebox{0.9}{\tikzfig{topology/adverbex1}}\]
-\caption{
-Recall that \textbf{ContRel} is coclosed (Proposition \ref{prop:coclosure}), which means that every dynamic verb may be expressed as the composite of a coevaluator and an open set on the space of homotopies. For instance, \texttt{move} is an intransitive dynamic verb, which corresponds to a concept in the space of all movements.
-}
-\end{figure}
-
-\begin{figure}[h!]
-\[\scalebox{0.9}{\tikzfig{topology/adverbex2}}\]
-\caption{
-Adverb-boxes may be modelled as static restrictions in movement-space. For instance, \texttt{straight} may restrict movements to just those that satisfy some notion of path-length minimality: e.g., given a metric in movement-space on path-lengths, we may construct an open ball (Definition \ref{def:openball}) around the geodesic to model the adverb \texttt{straight}.
-}
-\end{figure}
-
-\begin{figure}[h!]
-\[\scalebox{0.9}{\tikzfig{topology/adverbex3}}\]
-\caption{
-Similarly, adposition-boxes may be modelled as static restrictions on the product of the spaces of nouns and verbs. For instance, \texttt{towards} may be modelled as an open set that pairs potential positions of the thing-being-moved-towards with movements in movement-space that indeed move towards the target.
 }
 \end{figure}

@@ -3,13 +3,13 @@
 		\node [style=none] (0) at (-6, 1) {};
 		\node [style=none] (1) at (-6, -1) {};
 		\node [style=none] (2) at (-5, 0) {};
-		\node [style=none] (3) at (-5.625, 0) {$<$};
+		\node [style=none] (3) at (-5.5, 0) {$<$};
 		\node [style=none] (4) at (-6, -0.5) {};
 		\node [style=none] (5) at (-6, 0.5) {};
 		\node [style=none] (6) at (-1.5, 1) {};
 		\node [style=none] (7) at (-1.5, -1) {};
 		\node [style=none] (8) at (-0.5, 0) {};
-		\node [style=none] (9) at (-1.125, 0) {$<$};
+		\node [style=none] (9) at (-1, 0) {$<$};
 		\node [style=none] (10) at (-1.5, -0.5) {};
 		\node [style=none] (11) at (-1.5, 0.5) {};
 		\node [style=none] (12) at (-6, 1.5) {};
@@ -39,17 +39,17 @@
 		\node [style=smalldotb] (36) at (5, -0.5) {};
 		\node [style=none] (37) at (7, 0.5) {};
 		\node [style=none] (38) at (7, -0.5) {};
-		\node [style=none] (39) at (0, 3) {Trichotomy ($\forall xy : x < y \ \vee \ y < x \ \vee \ \ x = y$)};
+		\node [style=none] (39) at (0, 2.5) {Trichotomy ($\forall xy : x < y \ \vee \ y < x \ \vee \ \ x = y$)};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K] (1.center)
 			 to (0.center)
-			 to (2.center)
-			 to cycle;
+			 to [bend left=45] (2.center)
+			 to [bend left=45] cycle;
 		\draw [style=K] (7.center)
 			 to (6.center)
-			 to (8.center)
-			 to cycle;
+			 to [bend left=45] (8.center)
+			 to [bend left=45] cycle;
 		\draw [style=K] (22.center) to (12.center);
 		\draw [style=K, in=75, out=180] (12.center) to (17);
 		\draw [style=K, in=-180, out=-75, looseness=1.25] (17) to (5.center);

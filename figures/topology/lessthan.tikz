@@ -11,13 +11,13 @@
 		\node [style=none] (8) at (-2, 1) {};
 		\node [style=none] (9) at (-2, -1) {};
 		\node [style=none] (10) at (-1, 0) {};
-		\node [style=none] (11) at (-1.625, 0) {$<$};
+		\node [style=none] (11) at (-1.5, 0) {$<$};
 		\node [style=none] (12) at (-2, 3) {};
 		\node [style=none] (13) at (-2, 2) {};
 		\node [style=none] (14) at (-2, 3.5) {};
 		\node [style=none] (15) at (-2, 1.5) {};
 		\node [style=none] (16) at (-1, 2.5) {};
-		\node [style=none] (17) at (-1.625, 2.5) {$<$};
+		\node [style=none] (17) at (-1.5, 2.5) {$<$};
 		\node [style=smalldotb] (18) at (-13.5, 0) {};
 		\node [style=none] (19) at (-14.5, 0) {};
 		\node [style=none] (20) at (-10.5, 0) {$=$};
@@ -25,19 +25,19 @@
 		\node [style=smalldotb] (22) at (-8, 0) {};
 		\node [style=none] (23) at (-7.75, 0.25) {};
 		\node [style=none] (24) at (-8.25, -0.25) {};
-		\node [style=none] (25) at (-10.5, 5) {Antireflexive ($\forall x : x \nless x$)};
+		\node [style=none] (25) at (-10.5, 4) {Antireflexive ($\forall x : x \nless x$)};
 		\node [style=none] (26) at (-2, -2) {};
 		\node [style=none] (27) at (-2, -3) {};
 		\node [style=none] (28) at (-2, -1.5) {};
 		\node [style=none] (29) at (-2, -3.5) {};
 		\node [style=none] (30) at (-1, -2.5) {};
-		\node [style=none] (31) at (-1.625, -2.5) {$<$};
+		\node [style=none] (31) at (-1.5, -2.5) {$<$};
 		\node [style=none] (32) at (4, 0.5) {};
 		\node [style=none] (33) at (4, -0.5) {};
 		\node [style=none] (34) at (4, 1) {};
 		\node [style=none] (35) at (4, -1) {};
 		\node [style=none] (36) at (5, 0) {};
-		\node [style=none] (37) at (4.375, 0) {$<$};
+		\node [style=none] (37) at (4.5, 0) {$<$};
 		\node [style=smalldotb] (38) at (-3.25, 1.25) {};
 		\node [style=none] (39) at (-5, 0) {};
 		\node [style=smalldotb] (40) at (-5, 1.75) {};
@@ -54,19 +54,19 @@
 		\node [style=none] (51) at (1, -0.5) {};
 		\node [style=none] (52) at (1, 0) {};
 		\node [style=smalldotb] (53) at (2.5, 0) {};
-		\node [style=none] (54) at (0, 5) {Transitive ($\forall xyz : x < y\  \& \ y < z \Rightarrow x < z$)};
+		\node [style=none] (54) at (0, 4) {Transitive ($\forall xyz : x < y\  \& \ y < z \Rightarrow x < z$)};
 		\node [style=none] (55) at (9, 1.75) {};
 		\node [style=none] (56) at (9, 0.75) {};
 		\node [style=none] (57) at (10, 2.25) {};
 		\node [style=none] (58) at (10, 0.25) {};
 		\node [style=none] (59) at (11, 1.25) {};
-		\node [style=none] (60) at (10.375, 1.25) {$<$};
+		\node [style=none] (60) at (10.5, 1.25) {$<$};
 		\node [style=none] (61) at (9, -1.75) {};
 		\node [style=none] (62) at (9, -0.75) {};
 		\node [style=none] (63) at (10, -0.25) {};
 		\node [style=none] (64) at (10, -2.25) {};
 		\node [style=none] (65) at (11, -1.25) {};
-		\node [style=none] (66) at (10.375, -1.25) {$<$};
+		\node [style=none] (66) at (10.5, -1.25) {$<$};
 		\node [style=smalldotb] (67) at (8, 1) {};
 		\node [style=smalldotb] (68) at (8, -1) {};
 		\node [style=none] (69) at (7, 1) {};
@@ -84,34 +84,34 @@
 		\node [style=smalldotb] (81) at (15, -0.5) {};
 		\node [style=none] (82) at (15.25, -0.25) {};
 		\node [style=none] (83) at (14.75, -0.75) {};
-		\node [style=none] (84) at (11.5, 5) {Antireflexive $\forall xy \neg (x < y \ \& \ y < x)$};
+		\node [style=none] (84) at (11.5, 4) {Antireflexive $\forall xy \neg (x < y \ \& \ y < x)$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K] (4.center)
-			 to (3.center)
+			 to [bend left=45] (3.center)
 			 to (2.center)
-			 to cycle;
+			 to [bend left=45] cycle;
 		\draw [style=K] (10.center)
-			 to (9.center)
+			 to [bend left=45] (9.center)
 			 to (8.center)
-			 to cycle;
+			 to [bend left=45] cycle;
 		\draw [style=K] (16.center)
-			 to (15.center)
+			 to [bend left=45] (15.center)
 			 to (14.center)
-			 to cycle;
+			 to [bend left=45] cycle;
 		\draw [style=K] (19.center) to (18);
 		\draw [style=K, in=180, out=75] (18) to (0.center);
 		\draw [style=K, in=-180, out=-75] (18) to (1.center);
 		\draw (23.center) to (24.center);
 		\draw [style=K] (21.center) to (22);
 		\draw [style=K] (28.center)
-			 to (30.center)
-			 to (29.center)
+			 to [bend left=45] (30.center)
+			 to [bend left=45] (29.center)
 			 to cycle;
 		\draw [style=K] (35.center)
 			 to (34.center)
-			 to (36.center)
-			 to cycle;
+			 to [bend left=45] (36.center)
+			 to [bend left=45] cycle;
 		\draw [style=K, in=180, out=75] (38) to (13.center);
 		\draw [style=K, in=180, out=-75] (38) to (6.center);
 		\draw [style=K, in=180, out=0] (39.center) to (38);
@@ -134,13 +134,13 @@
 		\draw [style=K] (50.center) to (32.center);
 		\draw [style=K] (51.center) to (33.center);
 		\draw [style=K] (59.center)
-			 to (58.center)
+			 to [bend left=45] (58.center)
 			 to (57.center)
-			 to cycle;
+			 to [bend left=45] cycle;
 		\draw [style=K] (65.center)
-			 to (64.center)
+			 to [bend left=45] (64.center)
 			 to (63.center)
-			 to cycle;
+			 to [bend left=45] cycle;
 		\draw [style=K] (69.center) to (67);
 		\draw [style=K] (70.center) to (68);
 		\draw [style=K] (67)

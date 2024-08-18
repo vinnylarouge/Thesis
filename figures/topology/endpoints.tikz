@@ -1,38 +1,38 @@
 \begin{tikzpicture}
 	\begin{pgfonlayer}{nodelayer}
-		\node [style=smalldotb] (0) at (-10, 0.5) {};
-		\node [style=none] (1) at (-11.5, 0.5) {};
-		\node [style=smalldotb] (2) at (-11, 0.5) {};
-		\node [style=none] (3) at (-10.75, 0.75) {};
-		\node [style=none] (4) at (-11.25, 0.25) {};
-		\node [style=none] (5) at (-10.25, 0) {};
-		\node [style=none] (6) at (-9, 0.5) {};
-		\node [style=smalldotb] (7) at (4.25, -0.5) {};
-		\node [style=none] (8) at (2.75, -0.5) {};
-		\node [style=smalldotb] (9) at (3.25, -0.5) {};
-		\node [style=none] (10) at (4, -1) {};
-		\node [style=none] (11) at (5.25, -0.5) {};
-		\node [style=none] (12) at (-9, 1) {};
-		\node [style=none] (13) at (-9, -1) {};
-		\node [style=none] (14) at (-7.5, 0) {};
-		\node [style=none] (15) at (-8.5, 0) {$<$};
-		\node [style=none] (16) at (-9, -0.5) {};
-		\node [style=none] (17) at (-9, -0.5) {};
-		\node [style=none] (18) at (5.25, 1) {};
-		\node [style=none] (19) at (5.25, -1) {};
-		\node [style=none] (20) at (6.75, 0) {};
-		\node [style=none] (21) at (5.75, 0) {$<$};
-		\node [style=none] (22) at (5.25, 0.5) {};
-		\node [style=none] (23) at (-12, -0.5) {};
-		\node [style=none] (24) at (-6.5, 0) {$=$};
-		\node [style=none] (25) at (-5.5, 0) {};
-		\node [style=smalldotb] (26) at (-3, 0) {};
-		\node [style=none] (27) at (2.25, 0.5) {};
-		\node [style=none] (28) at (7.75, 0) {$=$};
-		\node [style=none] (29) at (8.75, 0) {};
-		\node [style=smalldotb] (30) at (11.25, 0) {};
-		\node [style=none] (31) at (-6.5, 2) {Lower endpoint (0)};
-		\node [style=none] (32) at (7.75, 2) {Upper endpoint (1)};
+		\node [style=smalldotb] (0) at (-5, 0.5) {};
+		\node [style=none] (1) at (-6.5, 0.5) {};
+		\node [style=smalldotb] (2) at (-6, 0.5) {};
+		\node [style=none] (3) at (-5.75, 0.75) {};
+		\node [style=none] (4) at (-6.25, 0.25) {};
+		\node [style=none] (5) at (-5.25, 0) {};
+		\node [style=none] (6) at (-4, 0.5) {};
+		\node [style=smalldotb] (7) at (3, -0.5) {};
+		\node [style=none] (8) at (1.5, -0.5) {};
+		\node [style=smalldotb] (9) at (2, -0.5) {};
+		\node [style=none] (10) at (2.75, -1) {};
+		\node [style=none] (11) at (4, -0.5) {};
+		\node [style=none] (12) at (-4, 1) {};
+		\node [style=none] (13) at (-4, -1) {};
+		\node [style=none] (14) at (-3, 0) {};
+		\node [style=none] (15) at (-3.5, 0) {$<$};
+		\node [style=none] (16) at (-4, -0.5) {};
+		\node [style=none] (17) at (-4, -0.5) {};
+		\node [style=none] (18) at (4, 1) {};
+		\node [style=none] (19) at (4, -1) {};
+		\node [style=none] (20) at (5, 0) {};
+		\node [style=none] (21) at (4.5, 0) {$<$};
+		\node [style=none] (22) at (4, 0.5) {};
+		\node [style=none] (23) at (-7, -0.5) {};
+		\node [style=none] (24) at (-2.5, 0) {$=$};
+		\node [style=none] (25) at (-2, 0) {};
+		\node [style=smalldotb] (26) at (-1, 0) {};
+		\node [style=none] (27) at (1, 0.5) {};
+		\node [style=none] (28) at (5.5, 0) {$=$};
+		\node [style=none] (29) at (6, 0) {};
+		\node [style=smalldotb] (30) at (7.25, 0) {};
+		\node [style=none] (31) at (-2.5, 1.5) {Lower endpoint (0)};
+		\node [style=none] (32) at (5.5, 1.5) {Upper endpoint (1)};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=ggF] (1.center)
@@ -48,11 +48,11 @@
 		\draw [style=K] (7) to (11.center);
 		\draw [style=K] (13.center)
 			 to (12.center)
-			 to (14.center)
-			 to cycle;
+			 to [bend left=45] (14.center)
+			 to [bend left=45] cycle;
 		\draw [style=K] (18.center)
-			 to (20.center)
-			 to (19.center)
+			 to [bend left=45] (20.center)
+			 to [bend left=45] (19.center)
 			 to cycle;
 		\draw [style=K] (23.center) to (17.center);
 		\draw [style=K] (25.center) to (26);
