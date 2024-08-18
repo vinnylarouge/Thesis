@@ -5,45 +5,46 @@ The style file: alpha.bst
 Database file #1: thesis_intro.bib
 Warning--to sort, need author or key in noauthor_spintronics_nodate
 Warning--to sort, need author or key in wikipedia_authors_jaquet-droz_2022
-You've used 13 entries,
+Warning--empty year in reddy_conduit_nodate
+You've used 15 entries,
             2543 wiz_defined-function locations,
-            621 strings with 6121 characters,
-and the built_in function-call counts, 3691 in all, are:
-= -- 345
-> -- 134
-< -- 7
-+ -- 38
-- -- 38
-* -- 212
-:= -- 573
-add.period$ -- 34
-call.type$ -- 13
-change.case$ -- 65
-chr.to.int$ -- 13
-cite$ -- 17
-duplicate$ -- 151
-empty$ -- 335
-format.name$ -- 56
-if$ -- 771
+            633 strings with 6388 characters,
+and the built_in function-call counts, 4382 in all, are:
+= -- 412
+> -- 161
+< -- 9
++ -- 47
+- -- 46
+* -- 254
+:= -- 683
+add.period$ -- 40
+call.type$ -- 15
+change.case$ -- 76
+chr.to.int$ -- 15
+cite$ -- 20
+duplicate$ -- 188
+empty$ -- 386
+format.name$ -- 67
+if$ -- 917
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 5
-newline$ -- 63
-num.names$ -- 33
-pop$ -- 118
+missing$ -- 8
+newline$ -- 73
+num.names$ -- 39
+pop$ -- 135
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 93
 quote$ -- 0
-skip$ -- 153
+skip$ -- 181
 stack$ -- 0
-substring$ -- 118
-swap$ -- 13
-text.length$ -- 7
-text.prefix$ -- 7
+substring$ -- 139
+swap$ -- 22
+text.length$ -- 9
+text.prefix$ -- 8
 top$ -- 0
-type$ -- 96
-warning$ -- 2
-while$ -- 28
-width$ -- 14
-write$ -- 150
-(There were 2 warnings)
+type$ -- 108
+warning$ -- 3
+while$ -- 34
+width$ -- 16
+write$ -- 176
+(There were 3 warnings)

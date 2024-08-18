@@ -14,9 +14,23 @@ Apart from enabling us to paint pictures with words, \textbf{ContRel} is worth t
 Maybe this explains the asymmetry of why tests are open sets, but why are states allowed to be arbitrary subsets? One could argue that states in this model represent what is conceived or perceived. Suppose we have an analog photograph whether in hand or in mind, and we want to remark on a particular shade of red in some uniform patch of the photograph. As in the case of pointing out a point on the real interval, we have successively finer approximations with a vocabulary of concepts: "red", "burgundy", "hex code \#800021"... but never the point in colourspace itself. If someone takes our linguistic description of the colour and tries to reproduce it, they will be off in a manner that we can in principle detect, cognize, and correct: "make it a little darker" or "add a little blue to it". That is to say, there are in principle differences in mind that we cannot distinguish linguistically in a finite manner; we would have to continue the process of "even darker" and "add a bit less blue than last time" forever. All this is just the mathematical accommodation of a common observation: sometimes you cannot do an experience justice with words, and you eventually give up with "I guess you just had to be there". Yet the experience is there and we can perform linguistic operations on it.
 
 \clearpage
+
+\subsection{Using sticky spiders as location-tests}
+
+\begin{myboxB}
+\begin{example}[Where is a piece on a chessboard?]\label{ex:chessboard}
+How is it that we quotient away the continuous structure of positions on a chessboard to locate pieces among a discrete set of squares? Evidently shifting a piece a little off the centre of a square doesn't change the state of the game, and this resistance to small perturbations suggests that a topological model is appropriate. We construct two spiders, one for pieces, and one for places on the chessboard. For the spider that represents the position of pieces, we open balls of some radius $r$, and we consider the places spider to consist of square halos (which tile the chessboard), containing a core inset by the same radius $r$; in this way, any piece can only overlap at most one square.
+\[\scalebox{0.70}{\tikzfig{topology/chessboard}}\]
+Now we observe that the calculation of positions corresponds to composing sticky spiders. We take the initial state to be the sticky spider that assigns a ball of radius $r$ on the board for each piece. We can then obtain the set of positions of each piece by composing with the places spider. The composite (pieces;places)
+will send the king to a2, the bishop to b4, and the knight to d1, i.e. $\bra{K} \mapsto \bra{a2}$, $\bra{B} \mapsto \bra{b4}$ and $\bra{N} \mapsto \bra{d1}$. In other words, we have obtained a process that models how we pass from continuous states-of-affairs on a physical chessboard to an abstract and discrete game-state.
+\[\resizebox{0.70\textwidth}{!}{\tikzfig{topology/chessboard2a}}\]
+\end{example}
+\end{myboxB}
+\clearpage
+
 \subsection{Copy: stative verbs and adjectives}
 
-\emph{Stative} verbs are those that posit an unchanging state of affairs, such as \texttt{Bob \underline{likes} drinking}. Insofar as stative verbs are restrictions of all possible configurations to a permissible subset, they are conceptually similar to adjectives, such as \texttt{\underline{red} car}, which restricts permissible representations in colourspace. When we interpret concepts as open-set tests, \textbf{ContRel} conspires in our favour by giving us free copy maps on every wire. This allows us to define a family of processes that behave like stative restrictions of possibilities.
+\emph{Stative} verbs are those that posit an unchanging state of affairs, such as \texttt{Bob \underline{likes} drinking}. Insofar as stative verbs are restrictions of all possible configurations to a permissible subset, they are conceptually similar to adjectives, such as \texttt{\underline{red} car}, which restricts permissible representations in colourspace. By interpreting conceptual spaces topologically, where concepts are particular open sets, we can test for whether states lie within concepts in the same way we can test whether a chesspiece is on a certain square. Moreover, \textbf{ContRel} conspires in our favour by giving us free copy maps on every wire, which allows us to define a family of processes that behave like stative restrictions of possibilities. These model stative verbs and adjectives.
 
 \[\resizebox{\textwidth}{!}{\tikzfig{topology/copygatecommute}}\]
 The desirable property we obtain is that in the absence of \emph{dynamic} verbs that posit a change in the state of affairs, stative constructions commute in text: if I'm just telling you static properties of the way things are, it doesn't matter in what order I tell you the facts because restrictions commute. Recall that gates of the following form are intersections with respect to open sets, and they commute. These intersections model conjunctive specifications of properties.
@@ -25,42 +39,6 @@ The desirable property we obtain is that in the absence of \emph{dynamic} verbs 
 \[\resizebox{0.8\textwidth}{!}{\tikzfig{topology/oxfordex}}\]
 Consider the configuration space of a sticky spider on the unit square with three labelled shapes, which has 6 connected components, depicted. \texttt{Oxford contains Catz.} restricts away configurations where \texttt{Catz} is not enclosed in \texttt{Oxford}. Adding on \texttt{England contains Oxford.} further restricts away incongruent configurations, leaving us only with a single connected component, which contains all spatial configurations that satisfy the text. A similar story holds for abstract conceptual spaces, in which \texttt{fast red car}, \texttt{fast car that is red}, \texttt{car is (red and fast)} all mean the same thing.
 \end{example}
-
-
-\subsection{Coclosure: adverbs and adpositions}
-
-\begin{figure}[h!]
-\[\scalebox{0.9}{\tikzfig{topology/adverbex1}}\]
-\caption{
-Recall that \textbf{ContRel} is coclosed (Proposition \ref{prop:coclosure}), which means that every dynamic verb may be expressed as the composite of a coevaluator and an open set on the space of homotopies. For instance, \texttt{move} is an intransitive dynamic verb, which corresponds to a concept in the space of all movements.
-}
-\end{figure}
-
-\begin{figure}[h!]
-\[\scalebox{0.9}{\tikzfig{topology/adverbex2}}\]
-\caption{
-Adverb-boxes may be modelled as static restrictions in movement-space. For instance, \texttt{straight} may restrict movements to just those that satisfy some notion of path-length minimality: e.g., given a metric in movement-space on path-lengths, we may construct an open ball (Definition \ref{def:openball}) around the geodesic to model the adverb \texttt{straight}.
-}
-\end{figure}
-
-\begin{figure}[h!]
-\[\scalebox{0.9}{\tikzfig{topology/adverbex3}}\]
-\caption{
-Similarly, adposition-boxes may be modelled as static restrictions on the product of the spaces of nouns and verbs. For instance, \texttt{towards} may be modelled as an open set that pairs potential positions of the thing-being-moved-towards with movements in movement-space that indeed move towards the target.
-}
-\end{figure}
-
-\subsection{Using sticky spiders as location-tests}
-
-\begin{myboxB}
-\begin{example}[Where is a piece on a chessboard?]\label{ex:chessboard}
-How is it that we quotient away the continuous structure of positions on a chessboard to locate pieces among a discrete set of squares? Evidently shifting a piece a little off the centre of a square doesn't change the state of the game, and this resistance to small perturbations suggests that a topological model is appropriate. We construct two spiders, one for pieces, and one for places on the chessboard. For the spider that represents the position of pieces, we open balls of some radius $r$, and we consider the places spider to consist of square halos (which tile the chessboard), containing a core inset by the same radius $r$; in this way, any piece can only overlap at most one square. As a technical aside, to keep the core of the tiles open, we can choose an arbitrarily sharp curvature $\epsilon$ at the corners.
-\[\scalebox{0.70}{\tikzfig{topology/chessboard}}\]
-Now we observe that the calculation of positions corresponds to composing sticky spiders. We take the initial state to be the sticky spider that assigns a ball of radius $r$ on the board for each piece. We can then obtain the set of positions of each piece by composing with the places spider. The composite (pieces;places)
-will send the king to a2, the bishop to b4, and the knight to d1, i.e. $\bra{K} \mapsto \bra{a2}$, $\bra{B} \mapsto \bra{b4}$ and $\bra{N} \mapsto \bra{d1}$. In other words, we have obtained a process that models how we pass from continuous states-of-affairs on a physical chessboard to an abstract and discrete game-state.
-\[\resizebox{0.70\textwidth}{!}{\tikzfig{topology/chessboard2a}}\]
-\end{example}
-\end{myboxB}
 
 \clearpage
 
@@ -147,7 +125,7 @@ In other words, a homotopy is like a short film where at the beginning there is 
 
 \[\tikzfig{topology/homotopyctrex1}\]
 
-What is happening in the above film is that we have our starting open set in blue, which stays constant for a while. Then suddenly the ending open set in red appears, and then the blue open disappears, and we are left with our ending; while \emph{technically} there was no discontinuous jump, this isn't the notion of sliding we want. The exemplified issue is that we can patch together (by union of continuous relations) vignettes of continuous relations that are not individually total on $[0,1]$. We can patch this issue in by asking for homotopies in \textbf{ContRel} to satisfy the additional condition that they are expressible as a union of regular homotopies.
+What is happening in the above film is that we have a sticky spider expressing an open set in blue, which stays constant for a while. Then suddenly the ending open set in red appears (expressed by another sticky spider), and then the blue open disappears, and we are left with our ending; \emph{technically} there was no discontinuity relative to the $[0,1]$-parameter in this relational homotopy between the two sticky spiders as endpoints, but there is something evidently discontinuous happening here that we would like to define away. The exemplified issue is that we can patch together (by union of continuous relations) vignettes of continuous relations that are not individually total on $[0,1]$. We can patch this issue by asking for relational homotopies in \textbf{ContRel} to satisfy the additional condition that they are expressible as a union of "partial homotopies" that are individually total on $[0,1]$.
 
 \clearpage
 
@@ -158,14 +136,39 @@ What is happening in the above film is that we have our starting open set in blu
 
 \clearpage
 
+\subsection{Coclosure: adverbs and adpositions}
+
+\begin{figure}[h!]
+\[\scalebox{0.9}{\tikzfig{topology/adverbex1}}\]
+\caption{
+Recall that \textbf{ContRel} is coclosed (Proposition \ref{prop:coclosure}), which means that every dynamic verb may be expressed as the composite of a coevaluator and an open set on the space of homotopies. For instance, \texttt{move} is an intransitive dynamic verb, which corresponds to a concept in the space of all movements.
+}
+\end{figure}
+
+\begin{figure}[h!]
+\[\scalebox{0.9}{\tikzfig{topology/adverbex2}}\]
+\caption{
+Adverb-boxes may be modelled as static restrictions in movement-space. For instance, \texttt{straight} may restrict movements to just those that satisfy some notion of path-length minimality: e.g., given a metric in movement-space on path-lengths, we may construct an open ball (Definition \ref{def:openball}) around the geodesic to model the adverb \texttt{straight}.
+}
+\end{figure}
+
+\begin{figure}[h!]
+\[\scalebox{0.9}{\tikzfig{topology/adverbex3}}\]
+\caption{
+Similarly, adposition-boxes may be modelled as static restrictions on the product of the spaces of nouns and verbs. For instance, \texttt{towards} may be modelled as an open set that pairs potential positions of the thing-being-moved-towards with movements in movement-space that indeed move towards the target.
+}
+\end{figure}
+
+\clearpage
+
+\subsection{Nice spiders}
+
 \begin{example}[Contractibility]\label{defn:contractible}
 With homotopies in hand, we can define a stronger notion of connected shapes with no holes, which are usually called \emph{contractible}. The reason for the terminology reflects the method by which we can guarantee a shape in flatland has no holes: when any loop in the shape is \emph{contractible} to a point.
 \[\resizebox{\textwidth}{!}{\tikzfig{topology/contractible}}\]
 Contractible open sets are worth their own notation; a solid black effect, this time with no hole.
 \[\tikzfig{topology/contractnotation}\]
 \end{example}
-
-\subsection{Nice spiders}
 
 Let's assume for simplicity that henceforth, unless otherwise specified, we only deal with \emph{nice} sticky-spiders where cores and halos agree and are both contractible opens; i.e. the spider can be expressed as a finite union of open solid blobs as effects followed by the same open solid blob as a state.
 

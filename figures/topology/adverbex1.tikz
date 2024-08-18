@@ -15,7 +15,7 @@
 		\node [style=none] (102) at (5, -0.5) {};
 		\node [style=none] (103) at (4, 1.25) {};
 		\node [style=none] (104) at (4, 0.25) {};
-		\node [style=none] (105) at (4.75, 0.75) {};
+		\node [style=none] (105) at (4.5, 0.75) {};
 		\node [style=none] (106) at (4.25, 0.75) {\texttt{m}};
 		\node [style=none] (107) at (-3, 1) {};
 		\node [style=none] (108) at (-3, -1) {};
@@ -44,8 +44,8 @@
 		\draw [style=KG] (85.center) to (93.center);
 		\draw [style={K(Fg)}] (103.center)
 			 to (104.center)
-			 to (105.center)
-			 to cycle;
+			 to [bend right=45] (105.center)
+			 to [bend right=45] cycle;
 		\draw [style=K] (82.center) to (83.center);
 		\draw [style={K(Fg)}] (107.center)
 			 to (110.center)
