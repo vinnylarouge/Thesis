@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  18 AUG 2024 16:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  22 AUG 2024 11:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2194,7 +2194,7 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
 [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 [][]\T1/zplTLF/b/n/10 Example 1.1.1 \T1/zplTLF/m/n/10 (Where is a piece on a ch
 ess-board?)\T1/zplTLF/b/n/10 . []\T1/zplTLF/m/n/10 How is it that we quo-tient 
 away the con-tin-u-ous struc-ture of po-si-tions on a chess-board to lo-cate pi
@@ -2202,35 +2202,35 @@ eces
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 \T1/zplTLF/m/n/10 among a dis-crete set of squares? Ev-i-dently shift-ing a pie
 ce a lit-tle off the cen-tre of a square doesn't change the state of the game, 
 and this re-sis-tance to small
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 \T1/zplTLF/m/n/10 per-tur-ba-tions sug-gests that a topo-log-i-cal model is ap-
 pro-pri-ate. We con-struct two spi-ders, one for pieces, and one for places on 
 the chess-board. For the spi-der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 \T1/zplTLF/m/n/10 that rep-re-sents the po-si-tion of pieces, we open balls of 
 some ra-dius $\LS1/stix2/m/it/10 r$\T1/zplTLF/m/n/10 , and we con-sider the pla
 ces spi-der to con-sist of square ha-los (which tile the chess-board),
  []
 
 (./figures/topology/chessboard.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 23--26
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 \T1/zplTLF/m/n/10 Now we ob-serve that the cal-cu-la-tion of po-si-tions cor-re
 -sponds to com-pos-ing sticky spi-ders. We take the ini-tial state to be the st
 icky spi-der that as-signs a ball of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--26
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 \T1/zplTLF/m/n/10 ra-dius $\LS1/stix2/m/it/10 r$ \T1/zplTLF/m/n/10 on the board
  for each piece. We can then ob-tain the set of po-si-tions of each piece by co
 m-pos-ing with the places spi-der. The com-pos-ite (pieces;places)
@@ -2243,41 +2243,49 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 
 LaTeX Font Warning: Command \Large invalid in math mode on input line 290.
 
-) [7
-
-] [8]
+) [7]
 LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
-33.
+31.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 33.
+(Font)              scaled to size 10.0pt on input line 31.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 33.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 33.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 33.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 33.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 33.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 33.
 
 (./figures/topology/copygatecommute.tikz) (./figures/topology/oxfordex.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[8
 
- [9
 
 ]
-[10]
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 9.0pt on input line 46.
+(Font)              scaled to size 9.0pt on input line 41.
 LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 46.
+(Font)              scaled to size 9.0pt on input line 41.
 LaTeX Font Info:    Freeze math alphabet allocation in version normal.
-(Font)              Allocated math groups: 15 (local: 2) on input line 48.
+(Font)              Allocated math groups: 15 (local: 2) on input line 43.
 LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
-48.
+43.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 48.
+ne 43.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
+ine 46.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 51.
+ine 46.
 
 (./figures/topology/lessthan.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2308,7 +2316,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 87.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 52.
+ine 47.
  (./figures/topology/lessthantotal.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 6.
@@ -2324,29 +2332,17 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 42.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 53.
+ine 48.
 
 
-LaTeX Warning: Reference `prop:copydiscrete' on page 11 undefined on input line
- 56.
+LaTeX Warning: Reference `prop:copydiscrete' on page 9 undefined on input line 
+51.
 
 (./figures/topology/betweenfunct.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 56.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 66.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 70.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 70.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 70.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 70.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 70.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 70.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 70.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2362,17 +2358,17 @@ ine 106.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11
+ [9
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 57.
+ine 52.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 63.
+ine 58.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 63.
+ine 58.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 63.
+ine 58.
 
 (./figures/topology/upperbound.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2395,36 +2391,36 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 49.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 68.
+ine 63.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 67.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 72.
+(Font)              scaled to size 7.0pt on input line 67.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 72.
+(Font)              scaled to size 5.0pt on input line 67.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 67.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 67.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 67.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 67.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 67.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 67.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 67.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 67.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 67.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
+ine 67.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 72.
- [12] (./figures/topology/sup.tikz
+ine 67.
+ [10] (./figures/topology/sup.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 16.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2451,7 +2447,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 61.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 73.
+ine 68.
 
 (./figures/topology/endpoints.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2464,24 +2460,24 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 31.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 78.
- [13]
+ine 73.
+ [11]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
+ine 83.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
+ine 83.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
+ine 83.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
+ine 83.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
+ine 83.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
+ine 83.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
+ine 83.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
+ine 83.
 
 (./figures/topology/simplyconnected.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2530,12 +2526,12 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 115.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 89.
+ine 84.
 
 (./figures/topology/simpconnotation.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 91.
- [14
+ine 86.
+ [12
 
 ]
 (./figures/topology/addition.tikz
@@ -2575,9 +2571,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 86.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 100.
+ine 95.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 104.
+ne 99.
  (./figures/topology/metric.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 18.
@@ -2623,18 +2619,18 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 125.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 105.
- [15
+ine 100.
+ [13
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 111.
+ine 106.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 111.
+ine 106.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 111.
+ine 106.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 111.
+ine 106.
 
 (./figures/topology/openball2.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2649,28 +2645,28 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 27.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 112.
- [16
+ine 107.
+ [14
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 121.
+ine 116.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 121.
+ine 116.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 121.
+ine 116.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 121.
+ine 116.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 121.
+ine 116.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 121.
+ine 116.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 121.
+ine 116.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 124.
+ine 119.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 124.
+ine 119.
 
 (./figures/topology/homotopyctrex1.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2678,35 +2674,35 @@ ine 11.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 12.
 )
-Overfull \hbox (16.57793pt too wide) detected at line 126
+Overfull \hbox (16.57793pt too wide) detected at line 121
 []
  []
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 126.
+ine 121.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 128.
+ine 123.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 128.
+ine 123.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 128.
-[17
+ine 123.
+[15
 
 ]
 
-LaTeX Warning: Reference `prop:hombasis' on page 18 undefined on input line 132
+LaTeX Warning: Reference `prop:hombasis' on page 16 undefined on input line 127
 .
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 132.
+ine 127.
 
-LaTeX Warning: Reference `prop:hombasis' on page 18 undefined on input line 132
+LaTeX Warning: Reference `prop:hombasis' on page 16 undefined on input line 127
 .
 
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 132.
+ine 127.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 132.
+ine 127.
 (./figures/topology/homotopy.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 59.
@@ -2748,8 +2744,8 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 145.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 134.
- [18
+ine 129.
+ [16
 
 ] (./figures/topology/adverbex1.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -2758,45 +2754,45 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 32.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 142.
+ine 137.
 
 
-LaTeX Warning: Reference `prop:coclosure' on page 19 undefined on input line 14
-6.
+LaTeX Warning: Reference `prop:coclosure' on page 17 undefined on input line 14
+1.
 
 
-LaTeX Warning: Reference `prop:coclosure' on page 19 undefined on input line 14
-6.
+LaTeX Warning: Reference `prop:coclosure' on page 17 undefined on input line 14
+1.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 []\T1/zplTLF/m/n/10 Figure 1.2: |Re-call that \T1/zplTLF/b/n/10 Con-tRel \T1/zp
 lTLF/m/n/10 is co-closed (Propo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 \T1/zplTLF/m/n/10 si-tion []), which means that ev-ery dy-namic verb
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 \T1/zplTLF/m/n/10 may be ex-pressed as the com-pos-ite of a co-eval-u-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 \T1/zplTLF/m/n/10 a-tor and an open set on the space of ho-mo-topies.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 \T1/zplTLF/m/n/10 For in-stance, \T1/npxtt/m/n/10 move \T1/zplTLF/m/n/10 is an 
 in-tran-si-tive dy-namic verb,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 \T1/zplTLF/m/n/10 which cor-re-sponds to a con-cept in the space of all
  []
 
@@ -2809,40 +2805,40 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 20.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 149.
+ine 144.
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--153
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
 []\T1/zplTLF/m/n/10 Figure 1.3: |Adverb-boxes may be mod-elled as
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--153
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
 \T1/zplTLF/m/n/10 static re-stric-tions in movement-space. For in-stance,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--153
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
 \T1/npxtt/m/n/10 straight \T1/zplTLF/m/n/10 may re-strict move-ments to just th
 ose
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--153
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
 \T1/zplTLF/m/n/10 that sat-isfy some no-tion of path-length min-i-mal-ity:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--153
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
 \T1/zplTLF/m/n/10 e.g., given a met-ric in movement-space on path-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--153
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
 \T1/zplTLF/m/n/10 lengths, we may con-struct an open ball (Def-i-ni-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--153
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
 []\T1/zplTLF/m/n/10 1.1.14[]) around the geodesic to model the ad-verb
  []
 
@@ -2857,42 +2853,65 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 29.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 156.
+ine 151.
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
 []\T1/zplTLF/m/n/10 Figure 1.4: |Sim-i-larly, adposition-boxes may be
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
 \T1/zplTLF/m/n/10 mod-elled as static re-stric-tions on the prod-uct of the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
 \T1/zplTLF/m/n/10 spaces of nouns and verbs. For in-stance, \T1/npxtt/m/n/10 to
 wards
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
 \T1/zplTLF/m/n/10 may be mod-elled as an open set that pairs po-ten-tial
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
 \T1/zplTLF/m/n/10 po-si-tions of the thing-being-moved-towards with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
 \T1/zplTLF/m/n/10 move-ments in movement-space that in-deed move
  []
 
-[19
+[17
 
 ]
-Overfull \hbox (1.32272pt too wide) in paragraph at lines 167--168
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 162.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 162.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 162.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 162.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 162.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 162.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 162.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 162.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 162.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 162.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 162.
+
+Overfull \hbox (1.32272pt too wide) in paragraph at lines 162--163
 \T1/zplTLF/m/n/10 shapes with no holes, which are usu-ally called \T1/zplTLF/m/
 it/10 con-tractible\T1/zplTLF/m/n/10 . The rea-son for the ter-mi-nol-ogy re-fl
 ects the method 
@@ -2914,6 +2933,14 @@ ine 72.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 82.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 83.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 84.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 92.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 93.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 94.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 95.
@@ -2922,18 +2949,38 @@ ine 96.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 97.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 114.
+ine 98.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 115.
+ine 99.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 120.
+ine 100.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 108.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 116.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 125.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 128.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 129.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 141.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 150.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 162.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 166.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 167.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 168.
+ine 163.
 
 (./figures/topology/contractnotation.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 170.
+ine 165.
  (./figures/topology/nicespider.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 6.
@@ -2945,8 +2992,8 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 16.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 177.
-) [20
+ine 172.
+) [18
 
 ] (./chapters/sketches/temporal.tex
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
@@ -3027,7 +3074,7 @@ ine 68.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21
+ [19
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3084,7 +3131,7 @@ ine 15.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
+ [20]
 (./figures/time/terminative.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 7.
@@ -3188,7 +3235,7 @@ ine 19.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
+ [21]
 LaTeX Font Info:    Font shape `T1/npxtt/m/it' in size <10> not available
 (Font)              Font shape `T1/npxtt/m/sl' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/npxtt/m/sl' will be
@@ -3453,7 +3500,7 @@ Overfull \hbox (213.66603pt too wide) detected at line 30
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24]
+ [22]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 30.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3588,19 +3635,19 @@ x2/m/it/10 t[]; t[]; t[]; t[]; t[]; t[]\LS1/stix2/m/n/10 /`$\T1/zplTLF/m/n/10 .
  
  []
 
-) [25] (./chapters/sketches/modals.tex
+) [23] (./chapters/sketches/modals.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
-<figures/bubbles/companion.png, id=278, 690.58pt x 449.68pt>
+<figures/bubbles/companion.png, id=269, 690.58pt x 449.68pt>
 File: figures/bubbles/companion.png Graphic file (type png)
 <use figures/bubbles/companion.png>
 Package pdftex.def Info: figures/bubbles/companion.png  used on input line 11.
 (pdftex.def)             Requested size: 174.78366pt x 113.8126pt.
-<figures/bubbles/chair.png, id=280, 602.25pt x 997.7275pt>
+<figures/bubbles/chair.png, id=271, 602.25pt x 997.7275pt>
 File: figures/bubbles/chair.png Graphic file (type png)
 <use figures/bubbles/chair.png>
 Package pdftex.def Info: figures/bubbles/chair.png  used on input line 17.
@@ -3630,12 +3677,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--22
 \T1/zplTLF/m/n/10 bub-ble rep-re-sent-ing a chair, where the con-text of a
  []
 
-<figures/bubbles/homer.jpg, id=281, 688.5725pt x 387.4475pt>
+<figures/bubbles/homer.jpg, id=272, 688.5725pt x 387.4475pt>
 File: figures/bubbles/homer.jpg Graphic file (type jpg)
 <use figures/bubbles/homer.jpg>
 Package pdftex.def Info: figures/bubbles/homer.jpg  used on input line 30.
 (pdftex.def)             Requested size: 193.4714pt x 108.86292pt.
-<figures/bubbles/nestedminds.jpg, id=282, 123.3408pt x 72.5109pt>
+<figures/bubbles/nestedminds.jpg, id=273, 123.3408pt x 72.5109pt>
 File: figures/bubbles/nestedminds.jpg Graphic file (type jpg)
 <use figures/bubbles/nestedminds.jpg>
 Package pdftex.def Info: figures/bubbles/nestedminds.jpg  used on input line 36
@@ -3674,7 +3721,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--41
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/bubbles/creepy.jpeg, id=283, 2258.4375pt x 3011.25pt>
+<figures/bubbles/creepy.jpeg, id=274, 2258.4375pt x 3011.25pt>
 File: figures/bubbles/creepy.jpeg Graphic file (type jpg)
 <use figures/bubbles/creepy.jpeg>
 Package pdftex.def Info: figures/bubbles/creepy.jpeg  used on input line 45.
@@ -3771,9 +3818,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--48
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[26
+[24
 
- <./figures/bubbles/companion.png> <./figures/bubbles/chair.png>] [27 <./figure
+ <./figures/bubbles/companion.png> <./figures/bubbles/chair.png>] [25 <./figure
 s/bubbles/homer.jpg> <./figures/bubbles/nestedminds.jpg> <./figures/bubbles/cre
 epy.jpeg>] (./figures/bubbles/container.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3816,7 +3863,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--59
 \T1/zplTLF/m/n/10 tions as a bridge to es-tab-lish con-nec-tions be-tween
  []
 
-<figures/bubbles/infinity.jpg, id=298, 45.0483pt x 48.18pt>
+<figures/bubbles/infinity.jpg, id=290, 45.0483pt x 48.18pt>
 File: figures/bubbles/infinity.jpg Graphic file (type jpg)
 <use figures/bubbles/infinity.jpg>
 Package pdftex.def Info: figures/bubbles/infinity.jpg  used on input line 65.
@@ -3859,10 +3906,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--68
 \T1/zplTLF/m/it/10 smaller man in-side that lit-tle man's head, and so on to
  []
 
-[28
+[26
 
  <./figures/bubbles/infinity.jpg>]
-<figures/bubbles/combined.png, id=305, 895.345pt x 448.67625pt>
+<figures/bubbles/combined.png, id=297, 895.345pt x 448.67625pt>
 File: figures/bubbles/combined.png Graphic file (type png)
 <use figures/bubbles/combined.png>
 Package pdftex.def Info: figures/bubbles/combined.png  used on input line 76.
@@ -3937,7 +3984,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--79
 \T1/zplTLF/m/n/10 clock-wise in-di-cates go-ing down a level, clock-wise
  []
 
-) [29
+) [27
 
  <./figures/bubbles/combined.png>] (./chapters/sketches/turing.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -3973,7 +4020,7 @@ LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
 ne 15.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 15.
- [30
+ [28
 
 ]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4028,7 +4075,9 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 35.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 35.
- [31]
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 35.
+ [29]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 37.
  (./figures/spatialencoding/circencodingconstruct.tikz)
@@ -4083,12 +4132,9 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 76.
 )
-Overfull \hbox (229.70056pt too wide) detected at line 49
-[]
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 49.
+
 (./figures/spatialencoding/arbset.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 40.
@@ -4130,8 +4176,6 @@ ine 83.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 84.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 84.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 96.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 97.
@@ -4151,15 +4195,12 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 111.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 144.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 149.
 )
-Overfull \hbox (110.69757pt too wide) detected at line 51
-[]
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 6978) has occurred while \output is active []
-
- [32]
+ [30]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 51.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4212,9 +4253,9 @@ ine 17.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 18.
 )
-Underfull \vbox (badness 1092) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
+ [31]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 59.
 
@@ -4245,16 +4286,13 @@ ine 19.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 28.
 )
-Overfull \hbox (146.26352pt too wide) detected at line 64
-[]
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 64.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 65.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 65.
+
 (./figures/spatialencoding/leftrightcompressions4.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
@@ -4298,7 +4336,7 @@ ine 102.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
+ [32]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 71.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4340,20 +4378,17 @@ ine 69.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 70.
 )
-Overfull \hbox (197.13663pt too wide) detected at line 73
-[]
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 73.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 78.
+ine 75.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 78.
+ine 75.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 78.
+ine 75.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 78.
+ine 75.
+
 (./figures/spatialencoding/tensordetensor.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 3.
@@ -4392,9 +4427,9 @@ ine 49.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]
+ [33]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 79.
+ine 76.
 
 (./figures/spatialencoding/tensordetensor2.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4447,13 +4482,9 @@ id you specify a point identical to the center of node ``51''? on input line 77
 .
 
 )
-Overfull \hbox (132.03714pt too wide) detected at line 81
-[]
- []
-
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 81.
-(./figures/spatialencoding/tensordetensor3.tikz
+ine 78.
+ (./figures/spatialencoding/tensordetensor3.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 4.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4490,11 +4521,11 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 31.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 80.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 82.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 83.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 85.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 86.
 
 (./figures/spatialencoding/relcomp1.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4543,9 +4574,9 @@ id you specify a point identical to the center of node ``81''? on input line 15
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]
+ [34]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 88.
+ine 85.
 
 (./figures/spatialencoding/relcomp2.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4596,7 +4627,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 137.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 90.
+ine 87.
 
 (./figures/spatialencoding/relcomp3.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4661,39 +4692,8 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 151.
 )
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 92.
-) [37] (./chapters/sketches/config.tex
-LaTeX Font Info:    Trying to load font information for T1+zplsups on input lin
-e 2.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/t1zplsups.fd
-File: t1zplsups.fd 2015/01/17 v1.0
-)
-LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 2.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 2.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   ]
-l.2 ... parts, it resides in the entangled whole.}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   ]
-l.2 ... parts, it resides in the entangled whole.}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
+ine 89.
+) [35] (./chapters/sketches/config.tex
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 5.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4714,16 +4714,6 @@ ine 21.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 25.
 )
-Overfull \hbox (15.72617pt too wide) detected at line 9
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38
-
-]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 9.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4752,9 +4742,11 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 20.
 
 (./figures/topology/encloseexample.tikz)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1490) has occurred while \output is active []
 
- [39]
+ [36
+
+]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 21.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -4805,7 +4797,7 @@ ine 26.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]
+ [37]
 (./figures/topology/guitargate.tikz
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 21.
@@ -4921,7 +4913,7 @@ ine 39.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 39.
 
-[41]
+[38]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 42.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -5004,7 +4996,7 @@ ine 53.
 (./figures/topology/inopenout.tikz)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42]
+ [39]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 55.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
@@ -5013,13 +5005,13 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/sc' will be
 (./figures/topology/constrained.tikz)
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 62.
-) [43] (./chapters/beyond/metaphor.tex
+) [40] (./chapters/beyond/metaphor.tex
 Underfull \vbox (badness 7907) has occurred while \output is active []
 
- [44
+ [41
 
 ]
-<figures/metaphor/PlanckianLocus.png, id=422, 1304.875pt x 1467.4825pt>
+<figures/metaphor/PlanckianLocus.png, id=402, 1304.875pt x 1467.4825pt>
 File: figures/metaphor/PlanckianLocus.png Graphic file (type png)
 <use figures/metaphor/PlanckianLocus.png>
 Package pdftex.def Info: figures/metaphor/PlanckianLocus.png  used on input lin
@@ -5040,8 +5032,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--21
 \T1/zplTLF/m/n/10 the hue of a colour, with-out other do-mains such as
  []
 
-[45 <./figures/metaphor/PlanckianLocus.png>]
-<figures/metaphor/colourlocus1.png, id=430, 1343.0175pt x 781.92125pt>
+[42 <./figures/metaphor/PlanckianLocus.png>]
+<figures/metaphor/colourlocus1.png, id=410, 1343.0175pt x 781.92125pt>
 File: figures/metaphor/colourlocus1.png Graphic file (type png)
 <use figures/metaphor/colourlocus1.png>
 Package pdftex.def Info: figures/metaphor/colourlocus1.png  used on input line 
@@ -5067,7 +5059,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--34
 \T1/zplTLF/m/n/10 con-tin-u-ous map from the strip into colourspace
  []
 
-<figures/metaphor/colourlocus2.png, id=431, 1343.0175pt x 781.92125pt>
+<figures/metaphor/colourlocus2.png, id=411, 1343.0175pt x 781.92125pt>
 File: figures/metaphor/colourlocus2.png Graphic file (type png)
 <use figures/metaphor/colourlocus2.png>
 Package pdftex.def Info: figures/metaphor/colourlocus2.png  used on input line 
@@ -5109,7 +5101,7 @@ LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 45.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 45.
-<figures/metaphor/offset1.jpeg, id=433, 1947.275pt x 572.1375pt>
+<figures/metaphor/offset1.jpeg, id=413, 1947.275pt x 572.1375pt>
 File: figures/metaphor/offset1.jpeg Graphic file (type jpg)
 <use figures/metaphor/offset1.jpeg>
 Package pdftex.def Info: figures/metaphor/offset1.jpeg  used on input line 48.
@@ -5144,7 +5136,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--50
 \T1/zplTLF/m/n/10 colour do-main, which al-lows "hot-ter and colder" to
  []
 
-<figures/metaphor/offset2.jpeg, id=434, 1884.03876pt x 603.25375pt>
+<figures/metaphor/offset2.jpeg, id=414, 1884.03876pt x 603.25375pt>
 File: figures/metaphor/offset2.jpeg Graphic file (type jpg)
 <use figures/metaphor/offset2.jpeg>
 Package pdftex.def Info: figures/metaphor/offset2.jpeg  used on input line 53.
@@ -5179,8 +5171,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--55
 \T1/zplTLF/m/n/10 talk of off-set to-wards and away from, for in-stance,
  []
 
-[46 <./figures/metaphor/colourlocus1.png> <./figures/metaphor/colourlocus2.png>
-] [47 <./figures/metaphor/offset1.jpeg> <./figures/metaphor/offset2.jpeg>]
+[43 <./figures/metaphor/colourlocus1.png> <./figures/metaphor/colourlocus2.png>
+] [44 <./figures/metaphor/offset1.jpeg> <./figures/metaphor/offset2.jpeg>]
+LaTeX Font Info:    Trying to load font information for T1+zplsups on input lin
+e 63.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/t1zplsups.fd
+File: t1zplsups.fd 2015/01/17 v1.0
+)
+LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
+(Font)              scaled to size 10.0pt on input line 63.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 63.
 
@@ -5229,9 +5229,9 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 
-LaTeX Warning: Reference `sec:miracle' on page 48 undefined on input line 69.
+LaTeX Warning: Reference `sec:miracle' on page 45 undefined on input line 69.
 
-<figures/metaphor/tradesignature.png, id=460, 1540.75626pt x 880.28876pt>
+<figures/metaphor/tradesignature.png, id=441, 1540.75626pt x 880.28876pt>
 File: figures/metaphor/tradesignature.png Graphic file (type png)
 <use figures/metaphor/tradesignature.png>
 Package pdftex.def Info: figures/metaphor/tradesignature.png  used on input lin
@@ -5308,7 +5308,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--77
 \T1/zplTLF/m/n/10 con-tains all nom-i-nal in-stan-ti-a-tions of nouns with
  []
 
-<figures/metaphor/toptrademodel.jpeg, id=461, 1530.71875pt x 907.39pt>
+<figures/metaphor/toptrademodel.jpeg, id=442, 1530.71875pt x 907.39pt>
 File: figures/metaphor/toptrademodel.jpeg Graphic file (type jpg)
 <use figures/metaphor/toptrademodel.jpeg>
 Package pdftex.def Info: figures/metaphor/toptrademodel.jpeg  used on input lin
@@ -5358,7 +5358,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--82
 i-der to reg-u-late their
  []
 
-<figures/metaphor/fibroles.jpeg, id=462, 1925.1925pt x 657.45625pt>
+<figures/metaphor/fibroles.jpeg, id=443, 1925.1925pt x 657.45625pt>
 File: figures/metaphor/fibroles.jpeg Graphic file (type jpg)
 <use figures/metaphor/fibroles.jpeg>
 Package pdftex.def Info: figures/metaphor/fibroles.jpeg  used on input line 85.
@@ -5452,7 +5452,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--87
 e is the
  []
 
-<figures/metaphor/interpret.jpeg, id=463, 1876.00874pt x 1047.915pt>
+<figures/metaphor/interpret.jpeg, id=444, 1876.00874pt x 1047.915pt>
 File: figures/metaphor/interpret.jpeg Graphic file (type jpg)
 <use figures/metaphor/interpret.jpeg>
 Package pdftex.def Info: figures/metaphor/interpret.jpeg  used on input line 90
@@ -5528,7 +5528,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--92
 \T1/zplTLF/m/n/10 of the po-si-tion of a counter with the pos-ses-sive
  []
 
-<figures/metaphor/time0.jpeg, id=468, 1876.00874pt x 501.875pt>
+<figures/metaphor/time0.jpeg, id=449, 1876.00874pt x 501.875pt>
 File: figures/metaphor/time0.jpeg Graphic file (type jpg)
 <use figures/metaphor/time0.jpeg>
 Package pdftex.def Info: figures/metaphor/time0.jpeg  used on input line 95.
@@ -5555,7 +5555,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--98
 /zplTLF/m/n/10 in pos-ses-sion
  []
 
-<figures/metaphor/time1.jpeg, id=469, 2075.755pt x 548.0475pt>
+<figures/metaphor/time1.jpeg, id=450, 2075.755pt x 548.0475pt>
 File: figures/metaphor/time1.jpeg Graphic file (type jpg)
 <use figures/metaphor/time1.jpeg>
 Package pdftex.def Info: figures/metaphor/time1.jpeg  used on input line 101.
@@ -5577,7 +5577,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--103
  \T1/npxtt/m/n/10 writing \T1/zplTLF/m/n/10 is in pos-ses-sion
  []
 
-<figures/metaphor/fullermodel.png, id=470, 1440.38126pt x 786.94pt>
+<figures/metaphor/fullermodel.png, id=451, 1440.38126pt x 786.94pt>
 File: figures/metaphor/fullermodel.png Graphic file (type png)
 <use figures/metaphor/fullermodel.png>
 Package pdftex.def Info: figures/metaphor/fullermodel.png  used on input line 1
@@ -5701,7 +5701,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--108
 \T1/zplTLF/m/n/10 ture at the apex model that mod-els the or-gan-is-ing
  []
 
-[48
+[45
 
 ]
 
@@ -5719,19 +5719,19 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[49 <./figures/metaphor/tradesignature.png>] [50 <./figures/metaphor/toptrademo
-del.jpeg> <./figures/metaphor/fibroles.jpeg>] [51 <./figures/metaphor/interpret
-.jpeg> <./figures/metaphor/time0.jpeg>] [52 <./figures/metaphor/time1.jpeg> <./
+[46 <./figures/metaphor/tradesignature.png>] [47 <./figures/metaphor/toptrademo
+del.jpeg> <./figures/metaphor/fibroles.jpeg>] [48 <./figures/metaphor/interpret
+.jpeg> <./figures/metaphor/time0.jpeg>] [49 <./figures/metaphor/time1.jpeg> <./
 figures/metaphor/fullermodel.png>]
 LaTeX Font Info:    Font shape `T1/zplTLF/b/sc' will be
 (Font)              scaled to size 10.0pt on input line 116.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 134.
- [53
+ [50
 
 
-] [54]
-<metaphorproblemsheet-filled.pdf, id=517, 614.295pt x 794.97pt>
+] [51]
+<metaphorproblemsheet-filled.pdf, id=499, 614.295pt x 794.97pt>
 File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
 <use metaphorproblemsheet-filled.pdf>
 Package pdftex.def Info: metaphorproblemsheet-filled.pdf  used on input line 15
@@ -5742,7 +5742,7 @@ File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
 Package pdftex.def Info: metaphorproblemsheet-filled.pdf  used on input line 15
 6.
 (pdftex.def)             Requested size: 406.75758pt x 526.3922pt.
-<metaphorproblemsheet-filled.pdf, id=520, page=1, 614.295pt x 794.97pt>
+<metaphorproblemsheet-filled.pdf, id=502, page=1, 614.295pt x 794.97pt>
 File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
 <use metaphorproblemsheet-filled.pdf, page 1>
 Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page1 used on input 
@@ -5766,61 +5766,61 @@ line 156.
 File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
 <use metaphorproblemsheet-filled.pdf, page 1>
 Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page1 used on input 
+line 156.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [52 <./metaphorproblemsheet-filled.pdf>]
+<metaphorproblemsheet-filled.pdf, id=544, page=2, 614.295pt x 794.97pt>
+File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
+<use metaphorproblemsheet-filled.pdf, page 2>
+Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page2 used on input 
+line 156.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
+<use metaphorproblemsheet-filled.pdf, page 2>
+Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page2 used on input 
+line 156.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
+<use metaphorproblemsheet-filled.pdf, page 2>
+Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page2 used on input 
+line 156.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [53 <./metaphorproblemsheet-filled.pdf>]
+<metaphorproblemsheet-filled.pdf, id=549, page=3, 614.295pt x 794.97pt>
+File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
+<use metaphorproblemsheet-filled.pdf, page 3>
+Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page3 used on input 
+line 156.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
+<use metaphorproblemsheet-filled.pdf, page 3>
+Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page3 used on input 
+line 156.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
+<use metaphorproblemsheet-filled.pdf, page 3>
+Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page3 used on input 
+line 156.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [54 <./metaphorproblemsheet-filled.pdf>]
+<metaphorproblemsheet-filled.pdf, id=559, page=4, 614.295pt x 794.97pt>
+File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
+<use metaphorproblemsheet-filled.pdf, page 4>
+Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page4 used on input 
+line 156.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
+<use metaphorproblemsheet-filled.pdf, page 4>
+Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page4 used on input 
+line 156.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
+<use metaphorproblemsheet-filled.pdf, page 4>
+Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page4 used on input 
 line 156.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
  [55 <./metaphorproblemsheet-filled.pdf>]
-<metaphorproblemsheet-filled.pdf, id=563, page=2, 614.295pt x 794.97pt>
-File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
-<use metaphorproblemsheet-filled.pdf, page 2>
-Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page2 used on input 
-line 156.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
-<use metaphorproblemsheet-filled.pdf, page 2>
-Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page2 used on input 
-line 156.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
-<use metaphorproblemsheet-filled.pdf, page 2>
-Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page2 used on input 
-line 156.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [56 <./metaphorproblemsheet-filled.pdf>]
-<metaphorproblemsheet-filled.pdf, id=568, page=3, 614.295pt x 794.97pt>
-File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
-<use metaphorproblemsheet-filled.pdf, page 3>
-Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page3 used on input 
-line 156.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
-<use metaphorproblemsheet-filled.pdf, page 3>
-Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page3 used on input 
-line 156.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
-<use metaphorproblemsheet-filled.pdf, page 3>
-Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page3 used on input 
-line 156.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [57 <./metaphorproblemsheet-filled.pdf>]
-<metaphorproblemsheet-filled.pdf, id=578, page=4, 614.295pt x 794.97pt>
-File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
-<use metaphorproblemsheet-filled.pdf, page 4>
-Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page4 used on input 
-line 156.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
-<use metaphorproblemsheet-filled.pdf, page 4>
-Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page4 used on input 
-line 156.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
-<use metaphorproblemsheet-filled.pdf, page 4>
-Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page4 used on input 
-line 156.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [58 <./metaphorproblemsheet-filled.pdf>]
-<metaphorproblemsheet-filled.pdf, id=585, page=5, 614.295pt x 794.97pt>
+<metaphorproblemsheet-filled.pdf, id=567, page=5, 614.295pt x 794.97pt>
 File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
 <use metaphorproblemsheet-filled.pdf, page 5>
 Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page5 used on input 
@@ -5836,11 +5836,25 @@ File: metaphorproblemsheet-filled.pdf Graphic file (type pdf)
 Package pdftex.def Info: metaphorproblemsheet-filled.pdf , page5 used on input 
 line 156.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [59 <./metaphorproblemsheet-filled.pdf>]) (./chap4.bbl [60
-
-]
+ [56 <./metaphorproblemsheet-filled.pdf>]) (./chap4.bbl
 Chapter 2.
-[61]) [62] (./chap4.aux)
+[57
+
+]) [58]
+
+! Package marginfix Error: lost some margin notes.
+
+See the marginfix package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(./chap4.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -5854,13 +5868,13 @@ Package rerunfilecheck Info: File `chap4.out' has not changed.
 (rerunfilecheck)             Checksum: 58D3C3C5C89F4052A67628FEDA870308;2037.
  ) 
 Here is how much of TeX's memory you used:
- 62144 strings out of 478268
- 1363810 string characters out of 5846348
- 1990742 words of memory out of 5000000
- 78867 multiletter control sequences out of 15000+600000
+ 62174 strings out of 478268
+ 1364812 string characters out of 5846348
+ 2020634 words of memory out of 5000000
+ 78902 multiletter control sequences out of 15000+600000
  684620 words of font info for 266 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,19n,120p,2603b,1162s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,19n,120p,2562b,1212s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{
 /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/npxsups_T1.enc}{/usr/l
 ocal/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathfrak.enc}{/u
@@ -5884,10 +5898,10 @@ usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/lo
 cal/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texli
 ve/2022/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/t
 exmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on chap4.pdf (62 pages, 6762469 bytes).
+Output written on chap4.pdf (58 pages, 6757811 bytes).
 PDF statistics:
- 728 PDF objects out of 1000 (max. 8388607)
- 548 compressed objects within 6 object streams
- 169 named destinations out of 1000 (max. 500000)
+ 708 PDF objects out of 1000 (max. 8388607)
+ 527 compressed objects within 6 object streams
+ 164 named destinations out of 1000 (max. 500000)
  7025 words of extra memory for PDF output out of 10000 (max. 10000000)
 

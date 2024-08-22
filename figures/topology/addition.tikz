@@ -38,7 +38,7 @@
 		\node [style=none] (38) at (-3.5, -3.35) {};
 		\node [style=none] (41) at (-0.5, -1.5) {};
 		\node [style=none] (42) at (-0.5, -3.5) {};
-		\node [style=none] (43) at (1, -2.5) {};
+		\node [style=none] (43) at (0.5, -2.5) {};
 		\node [style=none] (44) at (0, -2.5) {$<$};
 		\node [style=none] (45) at (2, -2.5) {$=$};
 		\node [style=none] (46) at (-3.5, -1.35) {};
@@ -116,9 +116,9 @@
 		\draw [style=KD] (37.center) to (34);
 		\draw [style=KD, in=180, out=0] (36.center) to (35.center);
 		\draw [style=K] (43.center)
-			 to [in=30, out=-150] (42.center)
+			 to [bend left=45] (42.center)
 			 to (41.center)
-			 to cycle;
+			 to [bend left=45] cycle;
 		\draw [style={K(CF)}] (47.center)
 			 to (48.center)
 			 to (46.center)

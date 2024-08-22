@@ -32,36 +32,36 @@ By Construction \ref{cons:unitencoding}, which we work towards.
 \end{proposition}
 
 \begin{lemma}[$(0,1) \times (0,1)$ splits through any countable set $X$]
-For any countable set $X$, the open unit square $\squarehvfill$ has a sticky spider that splits through $X^\star$.
+For any countable set $X$, the open unit square $\squarehvfill$ has a sticky spider that splits through $X^\star$ --- the discrete topology on $X$.
 \begin{proof}
-Proof by construction. Assume we work with nice spiders (..............), so we only have to highlight the copiable open sets. Take some circle and place axis-aligned open squares evenly along them, one for each element of $X$. The centres of the open squares lie on the circumference of the circle, and we may shrink each square as needed to fit all of them.
+Proof by construction. Assume we work with nice spiders, so we only have to highlight the copiable open sets. Take some circle and place axis-aligned open squares evenly along them, one for each element of $X$. The centres of the open squares lie on the circumference of the circle, and we may shrink each square as needed to fit all of them.
 \[\scalebox{1}{\tikzfig{spatialencoding/circencodingconstruct}}\]
 \end{proof}
 \end{lemma}
 
 \begin{defn}[Morphism of sticky spiders]
-A morphism between sticky spiders is any morphism that satisfies the following equation.
+A morphism between sticky spiders (here cyan and magenta) is any continuous relation that satisfies the following equation.
 \[\scalebox{1}{\tikzfig{spatialencoding/stickymorphismdefn}}\]
 \end{defn}
 
 \begin{lemma}[Morphisms of sticky spiders encode relations]
 For arbitrary split idempotents through $A^\star$ and $B^\star$, the morphisms between the two resulting sticky spiders are in bijection with relations $R: A \rightarrow B$.
-\[\scalebox{1}{\tikzfig{spatialencoding/arbsetclaim}}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{spatialencoding/arbsetclaim}}\]
 \begin{proof}
-\[\scalebox{1}{\tikzfig{spatialencoding/arbset}}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{spatialencoding/arbset}}\]
 \end{proof}
 \end{lemma}
 
 \begin{construction}[Representing sets in their various guises within $\squarehvfill$]
 We can represent the direct sum of two $\squarehvfill$-representations of sets as follows.
 \[\scalebox{0.75}{\tikzfig{spatialencoding/directsumconstruct}}\]
-The important bit of technology is the homeomorphism that losslessly squishes the whole unit square into one half of the unit square. The decompressions are partial continuous functions, with domain restricted to the appropriate half of the unit square.
+The important bit of technology is the homeomorphism that losslessly squishes the open unit square into one half of the unit square. The decompressions are partial continuous functions, with domain restricted to the appropriate half of the unit square.
 \[\scalebox{1}{\tikzfig{spatialencoding/leftrightcompressions}}\]
 We express the ability of these relations to encode and decode the unit square in just either half by the following graphical equations.
 \[\scalebox{1}{\tikzfig{spatialencoding/leftrightcompressions2}}\]
 \end{construction}
 Now, to put the two halves together and to take them apart, we introduce the following two relations. In tandem with the squishing and stretching we have defined, these will behave just as the projections and injections for the direct-sum biproduct in \textbf{Rel}.
-\[\scalebox{1}{\tikzfig{spatialencoding/leftrightcompressions3}}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{spatialencoding/leftrightcompressions3}}\]
 The following equation tells us that we can take any two representations in $\squarehvfill$, put them into a single copy of $\squarehvfill$, and take them out again.
 \[\scalebox{1}{\tikzfig{spatialencoding/leftrightcompressions4}}\]
 
@@ -70,15 +70,12 @@ We encode the tensor product $A \otimes B$ of representations by placing copies 
 %\[\scalebox{0.75}{\tikzfig{spatialencoding/directsummap2}}\]
 \[\scalebox{0.75}{\tikzfig{spatialencoding/tensorconstruct}}\]
 The important bit of technology here is a family of homeomorphisms of $\squarehvfill$ parameterised by axis-aligned open boxes, that allow us to squish and stretch spaces. Thus for every representation of a set in $\squarehvfill$ by a sticky-spider, where each element corresponds to an axis-aligned open box, we can associate each element with a squish-stretch homeomorphism via the parameters of the open box, which we notate with a dot above the name of the element.
-\[\scalebox{0.75}{\tikzfig{spatialencoding/compresstogether}}\]
-\begin{remark}
-The essential idea is that the whole of the unit square is homeomorphic to part of it. In particular this means (modulo a point), we may make copies of shapes outside a container that are in homeomorphic correspondence with shapes within a container, the classic example being thought bubbles in a comic-strip with pictorial contents of the outside world. In our framework, this constitutes a formal and well-typed semantics for certain alethic verbs of cognition such as \texttt{sees} and \texttt{thinks}. For other such verbs, one may by Construction \ref{cons:unitencoding} operate directly on set-theoretic representations of mental contents.
-\end{remark}
+\[\resizebox{\textwidth}{!}{\tikzfig{spatialencoding/compresstogether}}\]
 
 Now we can define the "tensor $X$ on the left" relation $\_ \rightarrow X \otimes \_$ and its corresponding cotensor.
 \[\resizebox{\textwidth}{!}{\tikzfig{spatialencoding/tensordetensor}}\]
 The tensor and cotensor behave as we expect from proof nets for monoidal categories.
-\[\scalebox{1}{\tikzfig{spatialencoding/tensordetensor2}}\]
+\[\resizebox{\textwidth}{!}{\tikzfig{spatialencoding/tensordetensor2}}\]
 And by construction, the (co)tensors and (co)pluses interact as we expect, and they come with all the natural isomorphisms between representations we expect. For example, below we exhibit an explicit associator natural isomorphism between representations.
 \[\scalebox{1}{\tikzfig{spatialencoding/tensordetensor3}}\]
 

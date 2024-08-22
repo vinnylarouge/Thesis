@@ -76,6 +76,8 @@
 		\node [style=none] (104) at (-8.75, 0) {\huge$\forall$};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
+		\draw [style=KO] (95.center) to (99.center);
+		\draw [style=KO] (66.center) to (70.center);
 		\draw [style=K] (4.center)
 			 to (3.center)
 			 to (5.center)
@@ -111,7 +113,6 @@
 			 to [in=-90, out=0] (67.center)
 			 to [in=0, out=90] cycle;
 		\draw [style=KB] (58.center) to (62.center);
-		\draw [style=KO] (66.center) to (70.center);
 		\draw [style=K] (74.center)
 			 to (73.center)
 			 to (75.center)
@@ -139,7 +140,6 @@
 			 to (98.center)
 			 to [in=-90, out=0] (96.center)
 			 to [in=0, out=90] cycle;
-		\draw [style=KO] (95.center) to (99.center);
 		\draw [style=K] (96.center) to (101.center);
 		\draw [style=K] (86.center) to (102.center);
 		\draw [style=K] (103.center) to (92.center);

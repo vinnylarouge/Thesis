@@ -106,7 +106,7 @@
 		\node [style=none] (130) at (0.25, -1.25) {};
 		\node [style=none] (131) at (6, 1) {};
 		\node [style=none] (132) at (6, -1) {};
-		\node [style=none] (133) at (7.5, 0) {};
+		\node [style=none] (133) at (7, 0) {};
 		\node [style=none] (134) at (6.5, 0) {$\leq$};
 		\node [style=smalldotb] (135) at (5.2, -1.25) {};
 		\node [style=none] (136) at (8.25, 0) {$=$};
@@ -204,9 +204,9 @@
 		\draw [style=KD, in=90, out=0] (114) to (84);
 		\draw [style=KD, in=-90, out=0] (122) to (84);
 		\draw [style=K] (133.center)
-			 to (132.center)
+			 to [bend left=45] (132.center)
 			 to (131.center)
-			 to cycle;
+			 to [bend left=45] cycle;
 		\draw [style=K] (128.center) to (109);
 		\draw [style=K] (129.center) to (110);
 		\draw [style=K] (130.center) to (111);
