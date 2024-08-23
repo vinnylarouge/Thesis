@@ -147,6 +147,7 @@
 		\node [style=dotC] (196) at (4.5, -0.5) {};
 		\node [style=dotM] (197) at (5.5, -0.5) {};
 		\node [style=none] (198) at (0, -5.25) {every relation $R \subseteq A \times B$ corresponds to a morphism of nice spiders.};
+		\node [style=none] (199) at (-4.25, 0.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K] (2) to (1.center);
