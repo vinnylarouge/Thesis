@@ -26,9 +26,9 @@ and \emph{everything}:
 
 \begin{myboxR}
 \begin{proposition}\label{prop:copydiscrete}
-The copy map is a spider iff the topology is discrete.
+The copy map is part of a special commutative frobenius algebra iff the topology is discrete.
 \begin{proof}
-Discrete topologies inherit the usual copy-compare spiders from \textbf{Rel}, so we have to show that when the copy map is a spider, the underlying wire must have a discrete topology. Suppose that some wire has a spider, and construct the following open set using an arbitrary point $p$:
+Discrete topologies inherit the usual copy-compare spiders from \textbf{Rel}, so we have to show that when the copy map is part of a spider, the underlying wire must have a discrete topology. Suppose that some wire has a spider, and construct the following open set using an arbitrary point $p$:
 \[\scalebox{0.5}{\tikzfig{structure/copyspiderproof/openpoint}}\]
 It will suffice to show that this open set tests whether the input is the singleton $\{p\}$ -- when all singletons are open, the topology is discrete. As a lemma, we show that comparing distinct points $p \neq q$ yields the empty state.
 \[\scalebox{0.5}{\tikzfig{structure/copyspiderproof/openpointproof}}\]
@@ -40,8 +40,7 @@ The (zero) implication follows since $p \neq q$ by assumption, so we know that d
 
 \begin{myboxB}
 \begin{defn}[Sticky spiders]\label{defn:stickyspider}
-A \textbf{sticky spider} (or just an $e$-spider, if we know that $e$ is a split idempotent), is a spider \emph{except} every identity wire on any side of an equation in Figure \ref{fig:spiderbicate} is replaced by the idempotent $e$.
-\[\scalebox{0.75}{\tikzfig{structure/idemspider/espiderproperties}} \qquad\qquad\qquad\qquad \scalebox{0.75}{\tikzfig{structure/idemspider/espiderproperties2}}\]
+A \textbf{sticky spider} (or just an $e$-spider, if we know that $e$ is a split idempotent), is a spider \emph{except} every identity wire on any side of an equation is replaced by the idempotent $e$.
 \end{defn}
 
 The desired graphical behaviour of a sticky spider is that one can still coalesce all connected spider-bodies together, but the 1-1 spider "sticks around" rather than disappearing as the identity. This is achieved by the following rules that cohere the idempotent $e$ with the (co)unit and (co)multiplications; they are the same as the usual rules for a special commutative frobenius algebra with two exceptions. First, where an identity wire appears in an equation, we replace it with an idempotent. Second, the monoid and comonoid components freely emit and absorb idempotents. By these rules, the usual proof [] for the normal form of spiders follows, except the idempotent becomes an explicit 1-1 spider, rather than the identity.
@@ -57,7 +56,7 @@ A \textbf{split idempotent} is an idempotent $e: A \rightarrow A$ along with a \
 \[B \overset{s}{\rightarrow} A \overset{r}{\rightarrow} B = B \overset{\mathop{id}}{\rightarrow} B\]
 \end{rem}
 
-We can graphically express the behaviour of a split idempotent $e$ as follows, where the semicircles for the section and retract $r,s$ form a visual pun.
+We can graphically express the behaviour of a split idempotent $e$ as follows, where the semicircles for the section and retract $r,s$ form a visual pun. Recall that $X^\star$ denotes the discrete topology on the set $X$.
 
 \[\scalebox{1}{\tikzfig{structure/idemspider/splitidem}}\]
 \end{myboxR}
@@ -70,7 +69,7 @@ Given an idempotent $e: Y^\sigma \rightarrow Y^\sigma$ that splits through a dis
 \end{myboxB}
 
 \begin{myboxR}
-\begin{proposition}[Every idempotent that splits through a discrete topology gives a sticky spider]\label{prop:splitmeanssticky}
+\begin{proposition}[Every idempotent that splits through a discrete topology gives a sticky spider]\label{prop:splitmeanssticky} The following is a sticky spider:
 \[\scalebox{1}{\tikzfig{structure/idemspider/espiderstatement}}\]
 \end{proposition}
 We can check that Construction \ref{cons:stickyfromsplit} satisfies the frobenius rules as follows. We only present one equality; the rest follow the same idea.
@@ -280,7 +279,7 @@ For the backward direction, we rely on the fact that cores are non-empty (or els
 \[\scalebox{1}{\tikzfig{idemproof/opensonly2}}\]
 By Proposition \ref{prop:core-core-exclusion}, we have disjointness.\\
 
-So, without loss of generality, we may treat any collection of disjoint shapes on a page as a sticky spider.
+So, without loss of generality, we may treat any collection of disjoint open shapes on a page as a sticky spider.
 \end{myboxR}
 
 \clearpage

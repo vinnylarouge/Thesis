@@ -23,7 +23,6 @@
 		\node [style=none] (50) at (6.25, 2) {$Y^\sigma$};
 		\node [style=none] (51) at (4, 3) {$Y^\sigma$};
 		\node [style=none] (52) at (4, -0.5) {$Y^\sigma$};
-		\node [style=none] (53) at (0, -1.75) {is a sticky spider};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
 		\draw [style=K] (30) to (31.center);

@@ -5,7 +5,7 @@ Geometrically, a set is a collection of labelled zero-dimensional points. A cate
 In regular or 1-category theory we are interested in objects up to isomorphism rather than equality - because isomorphic objects are as good as one another.
 Concretely, two objects $X$ and $Y$ are isomorphic when there exist morphisms $f : X \rightarrow Y$ and $g : Y \rightarrow X$ such that $g \circ f = 1_X$ and $f \circ g = 1_Y$. Lifting this philosophy to n-categories, we can replace equalities $f = g$ of $k$-morphisms (for $k < n$) with $(k + 1)$-isomorphisms $f \simeq g$. This extends also to the equalities in the definition of a $(k + 1)$-isomorphism, all the way up to dimension $n$ at which point we are content with ordinary equality again. The idea of replacing equality with isomorphism can even extend to the associativity, unitality and interchange laws governing the composition operations. If left to be ordinary equalities, we speak of a \emph{strict} $n$-category. If only witnessed by a coherent system of isomorphisms, we have a \emph{weak} $n$-category. Unsurprisingly the weak variant is much harder to formalise, but also much more expressive once n > 2.\\
 
-Mathematicians, computer scientists, and physicists may have good reasons to work with $n$-categories \citep{baez_introduction_1997}, but what is the value proposition for formal linguists? A practical draw for the formal syntactician is that weak $n$-categories provide a natural setting to model generic rewriting systems, and that is what we will focus on here. Here, we work with a semi-strict model in which associativity and unitality remain strict, while interchange is weak. This fact is hidden behind a convenient graphical notation, and we do not miss out on any of the expressivity of fully weak higher categories. Additionally, this system has an online proof assistant \texttt{homotopy.io}. For formal details the reader is referred to \citep{nlab_authors_homotopyio_nodate,dorn_associative_2023,reutter_high-level_2019,heidemann_zigzag_2022}. In this setting we will demonstrate how weak $n$-categories provide a common setting to formalise string-rewrite and tree-adjoining grammars, setting the stage for us to specify a circuit-adjoining grammar for text circuits later on.
+Mathematicians, computer scientists, and physicists may have good reasons to work with $n$-categories \citep{baezIntroductionNCategories1997}, but what is the value proposition for formal linguists? A practical draw for the formal syntactician is that weak $n$-categories provide a natural setting to model generic rewriting systems, and that is what we will focus on here. Here, we work with a semi-strict model in which associativity and unitality remain strict, while interchange is weak. This fact is hidden behind a convenient graphical notation, and we do not miss out on any of the expressivity of fully weak higher categories. Additionally, this system has an online proof assistant \texttt{homotopy.io}. For formal details the reader is referred to \citep{nlabauthorsHomotopyIoNLab,dornAssociativeCategories2023,reutterHighlevelMethodsHomotopy2019c,heidemannZigzagNormalisationAssociative2022}. In this setting we will demonstrate how weak $n$-categories provide a common setting to formalise string-rewrite and tree-adjoining grammars, setting the stage for us to specify a circuit-adjoining grammar for text circuits later on.
 
 \newpage
 
@@ -103,10 +103,15 @@ Further, there are two operations to build what are called \emph{derived trees} 
 \begin{figure}[h!]
 \centering
 \[\resizebox{0.75\textwidth}{!}{\tikzfig{tree2gate/tag/CFGtoTAGpattern}}\]
-\caption{\begin{construction}[Leaf-Ansatz of a CFG]
+\end{figure}
+
+\marginnote{
+\begin{construction}[Leaf-Ansatz of a CFG]
 Given a signature $\mathfrak{G}$ for a CFG, we construct a new signature $\mathfrak{G}'$ which has the same 0- and 1-cells as $\mathfrak{G}$. Now, referring to the dashed magenta arrows in the schematic below: for each 1-cell wire type $\texttt{X}$ of $\mathfrak{G}$, we introduce a \emph{leaf-ansatz} 2-cell $\texttt{X}^\downarrow$. For each leaf 2-cell $\texttt{X}_L$ in $\mathfrak{G}$, we introduce a renamed copy $\texttt{X}'_L$ in $\mathfrak{G}'$. Now refer to the solid magenta: we construct a 3-cell in $\mathfrak{G}'$ for each 2-cell in $\mathfrak{G}$, which has the effect of systematically replacing open output wires in $\mathfrak{G}$ with leaf-ansatzes in $\mathfrak{G}'$.
 \end{construction}
+}
 
+\marginnote{
 \begin{proposition}\label{prop:cfgastag1}
 Leaf-ansatzes of CFGs are precisely tree adjoining grammars (TAGs) with only initial trees and substitution.
 \begin{proof}
@@ -114,7 +119,6 @@ By construction. Consider a CFG given by 2-categorical signature $\mathfrak{G}$,
 \end{proof}
 \end{proposition}
 }
-\end{figure}
 
 \clearpage
 
@@ -146,14 +150,17 @@ In more detail, one aspect of rewrite systems we adapt for now is the distinctio
 
 \begin{figure}[h!]
 \[\scalebox{0.6}{\tikzfig{tree2gate/tag/tagsignature}}\]
-\caption{TAG signature of \texttt{Alice sees Bob quickly run to school}. The \hl{highlighted 2-cells} are auxiliary trees that replace CFG 2-cells for verbs with sentential complement, adverbs, and adpositions. The \hl{highlighted 3-cells} are the tree adjoining operations of the auxiliary trees. The construction yields as a corollary an alternate proof of Theorem 6.1.1 of \citep{joshi_introduction_1987} that recovers CFGs as TAGs.
+\caption{TAG signature of \texttt{Alice sees Bob quickly run to school}. The \hl{highlighted 2-cells} are auxiliary trees that replace CFG 2-cells for verbs with sentential complement, adverbs, and adpositions. The \hl{highlighted 3-cells} are the tree adjoining operations of the auxiliary trees. The construction yields as a corollary an alternate proof of Theorem 6.1.1 of \citep{joshiIntroductionTreeAdjoining1987} that recovers CFGs as TAGs.}
+\end{figure}
+
+\marginnote{
 \begin{corollary}
 For every context-free grammar $\mathfrak{G}$ there exists a tree-adjoining grammar $\mathfrak{G}'$ such that $\mathfrak{G}$ and $\mathfrak{G}'$ are strongly equivalent -- both formalisms generate the same set of strings (weak equivalence) and the same abstract syntactic structures (in this case, trees) behind the strings (strong equivalence).
 \begin{proof}
 Proposition \ref{prop:cfgastag1} provides one direction of both equivalences. For the other direction, we have to show that each auxiliary tree (a 2-cell) and its adjoining operation (a 3-cell) in $\mathfrak{G}'$ corresponds to a single 2-cell tree of some CFG signature $\mathfrak{G}$, which we demonstrate by construction. The highlighted 3-cells of $\mathfrak{G}'$ are obtained systematically from the auxiliary 2-cells as follows: the root and foot nodes $\texttt{X},\texttt{X}^\star$ indicate which wire-type to take as the identity in the left of the 3-cell, and the right of the 3-cell is obtained by replacing all non-$\texttt{X}$ open wires $\texttt{Y}$ with their leaf-ansatzes $\texttt{Y}^\downarrow$. This establishes a correspondence between any 2-cells of $\mathfrak{G}$ considered as auxiliary trees in $\mathfrak{G}'$.
 \end{proof}
-\end{corollary}}
-\end{figure}
+\end{corollary}
+}
 \clearpage
 
 \newpage
@@ -289,7 +296,7 @@ The following is a reproduction in \texttt{homotopy.io} of Example 2.4 of [Joshi
 \begin{figure}[h!]
 \centering
 \[\overset{\beta_2}{\rightarrow} \vcenter{\hbox{\resizebox{0.9\textwidth}{!}{\input{figures/tree2gate/tag/ex244.tikz}}}}\]
-\caption{The intended takeaway is that even if you don't buy the necessity or formality of weak $n$-categories, there is always the fallback epistemic underpinning of a formal proof assistant for higher dimensional rewriting theories, which is rather simple to use if I have succeeded in communicating higher-dimensional intuitions in this section. \textbf{N.B.} In practice when using \texttt{homotopy.io} for the symmetric monoidal setting, it is simpler to suspend symmetric monoidal signatures to begin at 4-cells rather than 3-cells. The reason for this is that under- and over-braids still exist in the symmetric monoidal setting, and while sequentially composed braids are homotopically equivalent to the pair of identities, they are not uniquely so, thus these homotopies must be input manually. By beginning at 4-cells (or higher, due to the stabilisation hypothesis \citep{nlab_authors_stabilization_nodate}), braid-eliminations are unique up to homotopy and can be performed more easily in the proof assistant.}
+\caption{The intended takeaway is that even if you don't buy the necessity or formality of weak $n$-categories, there is always the fallback epistemic underpinning of a formal proof assistant for higher dimensional rewriting theories, which is rather simple to use if I have succeeded in communicating higher-dimensional intuitions in this section. \textbf{N.B.} In practice when using \texttt{homotopy.io} for the symmetric monoidal setting, it is simpler to suspend symmetric monoidal signatures to begin at 4-cells rather than 3-cells. The reason for this is that under- and over-braids still exist in the symmetric monoidal setting, and while sequentially composed braids are homotopically equivalent to the pair of identities, they are not uniquely so, thus these homotopies must be input manually. By beginning at 4-cells (or higher, due to the stabilisation hypothesis \citep{nlabauthorsStabilizationHypothesisNLab}), braid-eliminations are unique up to homotopy and can be performed more easily in the proof assistant.}
 \end{figure}
 \end{example}
 
