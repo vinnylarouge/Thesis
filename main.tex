@@ -5,6 +5,9 @@
 \maketitle% this prints the handout title, author, and date
 
 \clearpage
+\newpage
+\clearpage
+\newpage
 
 \begin{figure}
     \centering
@@ -32,7 +35,7 @@ To my seniors --- Dan and Konstantinos here at Oxford; Jamie in Cambridge, Dusko
 
 A special thanks for you, Jules and Stefano. You actually read the whole damn thing and sat with me through six and a half hours of viva. It was an honour to get doctored by you.\\
 
-To my cohort, both in Oxford --- Nick, Nicola Lukas, Guillaume, Cole, Sivert, Nihil, James, Matt --- and elsewhere --- Mario, Elena, Chad, Nathan, Bruno, Matteo, Eigil --- COVID made for an unusual DPhil, but I wouldn't have had it any other way because of you. Thank you for teaching me so much.\\
+To my cohort, both in Oxford --- Nick, Nicola, Lukas, Guillaume, Cole, Sivert, Nihil, James, Matt --- and elsewhere --- Mario, Elena, Chad, Nathan, Bruno, Matteo, Eigil --- COVID made for an unusual DPhil, but I wouldn't have had it any other way because of you. Thank you for teaching me so much.\\
 
 To Jono, Ben, Razin, Lia, Hamza, and Tiffany. I'm sorry for whatever part I played in getting you into this language business, it seemed like a good idea at the time. I hope at least it's a springboard towards better things. For Jono in particular: thanks for qualming.\\
 
@@ -49,23 +52,18 @@ Paulina, my love. Thank you for sticking with me and helping me grow. Nothing is
 
 \item Section \ref{sec:weakn} is a pedestrian introduction to weak $n$-category theory (via \texttt{homotopy.io}, underpinned by the theory of associative $n$-categories) from the perspective of generalising familiar string-rewrite systems to higher dimensions. The chief development of this section is a demonstration that context-free grammars and tree-adjoining grammars may be formalised in the $n$-categorical setting.
 
-\item Section \ref{sec:gencirc} spells out a generative grammar for text using an $n$-categorical signature as a rewrite system, which additionally provides a unified framework from which the Text Circuit Theorem first proved in \citep{wang-mascianica_distilling_2023} is recovered.
+\item Section \ref{sec:gencirc} spells out a generative grammar for text using an $n$-categorical signature as a rewrite system, which additionally provides a unified framework from which the Text Circuit Theorem first proved in \citep{wang-mascianicaDistillingTextCircuits2023a} is recovered.
 
 \item Section \ref{sec:contrelintro} introduces the category \textbf{ContRel} of continuous relations. I detail the relationships (or lack thereof) of \textbf{ContRel} to its cousins \textbf{Top} and \textbf{Rel} in Section \ref{sec:contrelmath}. Though \textbf{ContRel} is constructed na\"{i}vely, its definition and an exposition of its expressivity from the monoidal perspective appears to be novel.
 
 \item Section \ref{sec:stickyspider} string-diagrammatically characterises set-indexed collections of disjoint open subsets of spaces in \textbf{ContRel} as \emph{sticky spiders} -- special frobenius algebras that satisfy certain interaction relations with an idempotent. The diagrammatic outcome is that reasoning with such set-indexed collections remains as graphically intuitive as with spiders.
 
-\item Section \ref{sec:concepts} string-diagrammatically characterises a vocabulary of linguistic topological relations in \textbf{ContRel} such as simple connectedness, touching, insideness, and rigid motion.
-
 \item Section \ref{sec:miracle} argues for the centrality of explaining communication as a criterion for formal approaches to syntax, and explores the relationship between productive and parsing grammars as organised by a monoidal cofunctor. A diagrammatic treatment of monoidal cofunctor boxes is introduced for this purpose.
 
-\item Section \ref{sec:monty} is a standalone introduction to the mathematical setup of Montague's \emph{Universal Grammar}, aimed at modern algebraists. An outcome of this section is the placement of text circuits as a natural mathematical development in the broadly conceived programme of Montague Semantics.
-
-\item Subsection \ref{subsec:toptext} constructs a subcategory of sticky spiders in \textbf{ContRel} on the unit square that behaves as a model of \textbf{FinRel} equipped with a Turing object, and argues for its relevance in formal semantics.
-
 \item In Section \ref{sec:metaphor}, by parsing text as circuits (Section \ref{sec:gencirc}) and using merge-boxes (Section \ref{sec:miracle}) to interpret those circuits in \textbf{ContRel} as iconic representations equipped with a vocabulary of lingustic-topological concepts (Section \ref{sec:concepts}), I show how one may compute metaphors by hand.
-
 \end{itemize}
+
+And there are a couple of odds and ends in the corrections and the sketches. The diagrams in this work were mostly created using TikZiT, and they are available at \href{https://github.com/vinnylarouge/Thesis}{\texttt{https://github.com/vinnylarouge/Thesis}}.
 \end{myboxB}
 \vfill
 \clearpage
@@ -75,13 +73,13 @@ Paulina, my love. Thank you for sticking with me and helping me grow. Nothing is
 There are potentially practical and theoretical benefits to a fresh mathematical take on basic linguistics. String diagrams are formal, intuitive, expressive, fun, and pretty. I review the relevant research context.
 \clearpage
 \newpage
-\input{chapters/intro/intro_draft3}
+\input{chapters/intro/intro_draft5}
 \clearpage
 \newpage
-\input{chapters/stringdiagrams/1b_proctheory}\label{sec:proctheory}
+\input{chapters/stringdiagrams/1b_proctheory}
 \clearpage
 \newpage
-\input{chapters/textcirc/previously}\label{sec:previously}
+\input{chapters/textcirc/previously}
 \additionalchapter{\chapfrac{1}{2}}{Corrections}\label{ch:oneandhalf}
 \input{corrections}
 \clearpage
@@ -97,7 +95,7 @@ Speakers produce, and listeners parse sentences. If we believe that semantics is
 We establish a systematic correspondence between text circuits and grammatically acceptable text, which allows us to use text circuits as a generative grammar without further justification. First we show that context-free grammars, string-rewrite systems, and tree-adjoining grammars are all special cases of higher-dimensional rewriting systems called weak $n$-categories. Then we provide a "circuit-growing" grammar in terms of a weak $n$-categorical signature that simultaneously generates strings of grammatically acceptable text and its "deep structure" in terms of text circuits, from which we obtain the desired correspondence between text circuits and text.
 \clearpage
 \newpage
-\input{chapters/textcirc/linguistncat}\label{sec:ncat}
+\input{chapters/textcirc/linguistncat}
 \clearpage
 \newpage
 \input{chapters/textcirc/circgen}
@@ -123,7 +121,7 @@ We want a setting within which to reason formally with and about pictorial iconi
 
 \clearpage
 \newpage
-\chapter{Sketches in iconic semantics}\label{chapter:contrel}
+\chapter{Sketches in iconic semantics}\label{chapter:sketches}
 How to reason formally with and about pictorial iconic representations as a semantics of natural language.
 \clearpage
 \newpage

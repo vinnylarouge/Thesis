@@ -18,7 +18,7 @@
 		\node [style=none] (15) at (-5.5, 2) {};
 		\node [style=none] (16) at (-6.5, 2) {};
 		\node [style=none] (17) at (-4.5, 2) {};
-		\node [style=none] (18) at (-6.5, 3.75) {}; 
+		\node [style=none] (18) at (-6.5, 3.75) {};
 		\node [style=none] (19) at (-4.5, 3.75) {};
 		\node [style=none] (20) at (-5.5, 2) {};
 		\node [style=none] (21) at (-0.5, 1.5) {};
@@ -58,15 +58,15 @@
 		\node [style=none] (55) at (-5.75, 2.5) {};
 		\node [style=none] (56) at (-2.25, 2) {};
 		\node [style=none] (57) at (-1.75, 2) {};
-		\node [style=langstate] (58) at (-14.5, 5) {\!\!\!\!{\tt Obj.}\!\!\!\!};
+		\node [style=none] (58) at (-14.5, 5) {\!\!\!\!{\tt Obj.}\!\!\!\!};
 		\node [style=none] (59) at (-14.5, 0.75) {};
 		\node [style=none] (60) at (-14.5, 4.75) {};
-		\node [style=langstate] (61) at (2.5, 5) {\!\!\!\!{\tt Subj.}\!\!\!\!};
+		\node [style=none] (61) at (2.5, 5) {\!\!\!\!{\tt Subj.}\!\!\!\!};
 		\node [style=none] (62) at (2.5, 1.25) {};
 		\node [style=none] (63) at (2.5, 4.75) {};
 		\node [style=none] (64) at (-10.75, 3.75) {};
 		\node [style=none] (65) at (-11.5, 3) {};
-		\node [style=langstate] (66) at (-10.5, 4) {\!\!\!\!{\tt *TV*}\!\!\!\!};
+		\node [style=none] (66) at (-10.5, 4) {\!\!\!\!{\tt *TV*}\!\!\!\!};
 		\node [style=smallblackdot] (67) at (-11.5, 3) {};
 		\node [style=none] (68) at (-12.25, 1.5) {};
 		\node [style=none] (69) at (-10.75, 2) {};
@@ -128,15 +128,15 @@
 		\node [style=none] (125) at (-5.75, -6.75) {};
 		\node [style=none] (126) at (-2.25, -7.25) {};
 		\node [style=none] (127) at (-1.75, -7.25) {};
-		\node [style=langstate] (128) at (-14.5, -3.5) {\!\!\!\!{\tt Obj.}\!\!\!\!};
+		\node [style=none] (128) at (-14.5, -3.5) {\!\!\!\!{\tt Obj.}\!\!\!\!};
 		\node [style=none] (129) at (-14.5, -6.75) {};
 		\node [style=none] (130) at (-14.5, -3.75) {};
-		\node [style=langstate] (131) at (2.5, -3.5) {\!\!\!\!{\tt Subj.}\!\!\!\!};
+		\node [style=none] (131) at (2.5, -3.5) {\!\!\!\!{\tt Subj.}\!\!\!\!};
 		\node [style=none] (132) at (2.5, -6.75) {};
 		\node [style=none] (133) at (2.5, -3.75) {};
 		\node [style=none] (134) at (-10.75, -4.25) {};
 		\node [style=none] (135) at (-11.5, -5) {};
-		\node [style=langstate] (136) at (-10.5, -4) {\!\!\!\!{\tt *TV*}\!\!\!\!};
+		\node [style=none] (136) at (-10.5, -4) {\!\!\!\!{\tt *TV*}\!\!\!\!};
 		\node [style=smallblackdot] (137) at (-11.5, -5) {};
 		\node [style=none] (138) at (-12.25, -6.5) {};
 		\node [style=none] (139) at (-10.75, -6) {};
@@ -154,7 +154,7 @@
 		\node [style=none] (151) at (-6.5, -7) {};
 		\node [style=none] (152) at (10.75, -4.5) {};
 		\node [style=none] (153) at (10, -5.25) {};
-		\node [style=langstate] (154) at (11, -4.25) {\!\!\!\!{\tt *TV*}\!\!\!\!};
+		\node [style=none] (154) at (11, -4.25) {\!\!\!\!{\tt *TV*}\!\!\!\!};
 		\node [style=smallblackdot] (155) at (10, -5.25) {};
 		\node [style=none] (156) at (9.25, -7.25) {};
 		\node [style=none] (157) at (10.75, -6.25) {};
@@ -177,10 +177,10 @@
 		\node [style=none] (174) at (11, -6.25) {};
 		\node [style=none] (175) at (11, -6.25) {};
 		\node [style=none] (176) at (11, -8.25) {};
-		\node [style=langstate] (177) at (7, -4) {\!\!\!\!{\tt Subj.}\!\!\!\!};
+		\node [style=none] (177) at (7, -4) {\!\!\!\!{\tt Subj.}\!\!\!\!};
 		\node [style=none] (178) at (7, -7.5) {};
 		\node [style=none] (179) at (7, -4.25) {};
-		\node [style=langstate] (180) at (15, -4) {\!\!\!\!{\tt Obj.}\!\!\!\!};
+		\node [style=none] (180) at (15, -4) {\!\!\!\!{\tt Obj.}\!\!\!\!};
 		\node [style=none] (181) at (15, -7.5) {};
 		\node [style=none] (182) at (15, -4.25) {};
 		\node [style=none] (183) at (12.75, -7.5) {};
@@ -191,13 +191,59 @@
 		\node [style=none] (188) at (11, -9.5) {\texttt{(the) class bores Alice}};
 		\node [style=none] (189) at (-16.5, -5.5) {$\mapsto$};
 		\node [style=none] (190) at (4.75, -5.5) {\bM$=$\e};
+		\node [style=none] (191) at (14.5, -4.25) {};
+		\node [style=none] (192) at (15.5, -4.25) {};
+		\node [style=none] (193) at (14.5, -3.75) {};
+		\node [style=none] (194) at (15, -3.5) {};
+		\node [style=none] (195) at (15.5, -3.75) {};
+		\node [style=none] (196) at (10.5, -4.5) {};
+		\node [style=none] (197) at (11.5, -4.5) {};
+		\node [style=none] (198) at (10.5, -4) {};
+		\node [style=none] (199) at (11.5, -4) {};
+		\node [style=none] (200) at (11, -3.75) {};
+		\node [style=none] (201) at (6.5, -4.25) {};
+		\node [style=none] (202) at (7.5, -4.25) {};
+		\node [style=none] (203) at (6.5, -3.75) {};
+		\node [style=none] (204) at (7, -3.5) {};
+		\node [style=none] (205) at (7.5, -3.75) {};
+		\node [style=none] (206) at (2, -3.75) {};
+		\node [style=none] (207) at (3, -3.75) {};
+		\node [style=none] (208) at (2, -3.25) {};
+		\node [style=none] (209) at (3, -3.25) {};
+		\node [style=none] (210) at (2.5, -3) {};
+		\node [style=none] (211) at (-11, -4.25) {};
+		\node [style=none] (212) at (-10, -4.25) {};
+		\node [style=none] (213) at (-11, -3.75) {};
+		\node [style=none] (214) at (-10, -3.75) {};
+		\node [style=none] (215) at (-10.5, -3.5) {};
+		\node [style=none] (216) at (-15, -3.75) {};
+		\node [style=none] (217) at (-14, -3.75) {};
+		\node [style=none] (218) at (-15, -3.25) {};
+		\node [style=none] (219) at (-14.5, -3) {};
+		\node [style=none] (220) at (-14, -3.25) {};
+		\node [style=none] (221) at (-15, 4.75) {};
+		\node [style=none] (222) at (-14, 4.75) {};
+		\node [style=none] (223) at (-15, 5.25) {};
+		\node [style=none] (224) at (-14.5, 5.5) {};
+		\node [style=none] (225) at (-14, 5.25) {};
+		\node [style=none] (226) at (-11, 3.75) {};
+		\node [style=none] (227) at (-10, 3.75) {};
+		\node [style=none] (228) at (-11, 4.25) {};
+		\node [style=none] (229) at (-10.5, 4.5) {};
+		\node [style=none] (230) at (-10, 4.25) {};
+		\node [style=none] (231) at (2, 4.75) {};
+		\node [style=none] (232) at (3, 4.75) {};
+		\node [style=none] (233) at (2, 5.25) {};
+		\node [style=none] (234) at (2.5, 5.5) {};
+		\node [style=none] (235) at (3, 5.25) {};
 	\end{pgfonlayer}
 	\begin{pgfonlayer}{edgelayer}
-		\draw [style=swap, dashed] (2.center) to (1.center);
-		\draw [style=swap, dashed] (1.center) to (0.center);
-		\draw [style=swap, dashed] (0.center) to (4.center);
-		\draw [style=swap, dashed] (3.center) to (2.center);
-		\draw [style=swap, dashed] (3.center) to (4.center);
+		\draw [style=H, dashed] (2.center)
+			 to (1.center)
+			 to (0.center)
+			 to (4.center)
+			 to (3.center)
+			 to cycle;
 		\draw [style=K] (6.center) to (7.center);
 		\draw [style=K] (8.center) to (9.center);
 		\draw [style=K] (10.center) to (11.center);
@@ -222,24 +268,25 @@
 		\draw [style=K] (45.center) to (46.center);
 		\draw [style=K] (47.center) to (48.center);
 		\draw [style=K] (50.center) to (51.center);
-		\draw [bend right=90, looseness=1.00] (52.center) to (54.center);
-		\draw [bend right=90, looseness=1.00] (53.center) to (55.center);
+		\draw [bend right=90] (52.center) to (54.center);
+		\draw [bend right=90] (53.center) to (55.center);
 		\draw (53.center) to (57.center);
 		\draw (52.center) to (56.center);
 		\draw (60.center) to (59.center);
 		\draw (63.center) to (62.center);
 		\draw [style=swap, in=-75, out=90, looseness=0.75] (65.center) to (64.center);
 		\draw [style=swap] (68.center) to (70.center);
-		\draw [style=swap, in=90, out=-15, looseness=1.00] (67) to (69.center);
-		\draw [style=swap, in=90, out=-165, looseness=1.00] (67) to (68.center);
+		\draw [style=swap, in=90, out=-15] (67) to (69.center);
+		\draw [style=swap, in=90, out=-165] (67) to (68.center);
 		\draw [style=swap, in=-90, out=90, looseness=0.75] (75.center) to (72.center);
 		\draw [style=swap, in=90, out=-150, looseness=1.25] (73) to (74.center);
 		\draw [style=swap, in=60, out=-45, looseness=1.75] (73) to (71.center);
-		\draw [style=swap, dashed] (79.center) to (78.center);
-		\draw [style=swap, dashed] (78.center) to (77.center);
-		\draw [style=swap, dashed] (77.center) to (81.center);
-		\draw [style=swap, dashed] (80.center) to (79.center);
-		\draw [style=swap, dashed] (80.center) to (81.center);
+		\draw [dashed] (78.center)
+			 to (79.center)
+			 to (80.center)
+			 to (81.center)
+			 to (77.center)
+			 to cycle;
 		\draw [style=K] (82.center) to (83.center);
 		\draw [style=K] (84.center) to (85.center);
 		\draw [style=K] (86.center) to (87.center);
@@ -267,16 +314,16 @@
 		\draw [style=K] (116.center) to (117.center);
 		\draw [style=K] (118.center) to (119.center);
 		\draw [style=K] (120.center) to (121.center);
-		\draw [bend right=90, looseness=1.00] (122.center) to (124.center);
-		\draw [bend right=90, looseness=1.00] (123.center) to (125.center);
+		\draw [bend right=90] (122.center) to (124.center);
+		\draw [bend right=90] (123.center) to (125.center);
 		\draw (123.center) to (127.center);
 		\draw (122.center) to (126.center);
 		\draw (130.center) to (129.center);
 		\draw (133.center) to (132.center);
 		\draw [style=swap, in=-75, out=90, looseness=0.75] (135.center) to (134.center);
 		\draw [style=swap] (138.center) to (140.center);
-		\draw [style=swap, in=90, out=-15, looseness=1.00] (137) to (139.center);
-		\draw [style=swap, in=90, out=-165, looseness=1.00] (137) to (138.center);
+		\draw [style=swap, in=90, out=-15] (137) to (139.center);
+		\draw [style=swap, in=90, out=-165] (137) to (138.center);
 		\draw [style=swap, in=-90, out=90, looseness=0.75] (145.center) to (142.center);
 		\draw [style=swap, in=90, out=-150, looseness=1.25] (143) to (144.center);
 		\draw [style=swap, in=60, out=-45, looseness=1.75] (143) to (141.center);
@@ -287,21 +334,22 @@
 		\draw (124.center) to (150.center);
 		\draw [bend left=90, looseness=0.75] (149.center) to (147.center);
 		\draw [bend left=90, looseness=0.75] (150.center) to (148.center);
-		\draw [bend left=90, looseness=1.00] (151.center) to (146.center);
+		\draw [bend left=90] (151.center) to (146.center);
 		\draw [bend right=90, looseness=0.75] (140.center) to (99.center);
 		\draw (139.center) to (148.center);
 		\draw (141.center) to (147.center);
 		\draw [style=swap, in=-75, out=90, looseness=0.75] (153.center) to (152.center);
-		\draw [style=swap, in=90, out=-15, looseness=1.00] (155) to (157.center);
-		\draw [style=swap, in=90, out=-165, looseness=1.00] (155) to (156.center);
+		\draw [style=swap, in=90, out=-15] (155) to (157.center);
+		\draw [style=swap, in=90, out=-165] (155) to (156.center);
 		\draw [style=swap, in=-90, out=90, looseness=0.75] (162.center) to (159.center);
 		\draw [style=swap, in=90, out=-150, looseness=1.25] (160) to (161.center);
 		\draw [style=swap, in=60, out=-45, looseness=1.75] (160) to (158.center);
-		\draw [style=swap, dashed] (165.center) to (164.center);
-		\draw [style=swap, dashed] (164.center) to (163.center);
-		\draw [style=swap, dashed] (163.center) to (167.center);
-		\draw [style=swap, dashed] (166.center) to (165.center);
-		\draw [style=swap, dashed] (166.center) to (167.center);
+		\draw [style=H, dashed] (163.center)
+			 to (164.center)
+			 to (165.center)
+			 to (166.center)
+			 to (167.center)
+			 to cycle;
 		\draw [style=K] (168.center) to (169.center);
 		\draw [style=K] (170.center) to (171.center);
 		\draw [style=K] (172.center) to (173.center);
@@ -312,5 +360,50 @@
 		\draw (184.center) to (156.center);
 		\draw [bend right=90, looseness=1.25] (178.center) to (184.center);
 		\draw [bend left=90, looseness=1.25] (181.center) to (183.center);
+		\draw (191.center) to (192.center);
+		\draw (192.center) to (195.center);
+		\draw (195.center) to (194.center);
+		\draw (194.center) to (193.center);
+		\draw (193.center) to (191.center);
+		\draw (196.center) to (197.center);
+		\draw (198.center) to (200.center);
+		\draw (200.center) to (199.center);
+		\draw (199.center) to (197.center);
+		\draw (198.center) to (196.center);
+		\draw (201.center) to (202.center);
+		\draw (202.center) to (205.center);
+		\draw (205.center) to (204.center);
+		\draw (204.center) to (203.center);
+		\draw (203.center) to (201.center);
+		\draw (206.center) to (207.center);
+		\draw (207.center) to (209.center);
+		\draw (209.center) to (210.center);
+		\draw (210.center) to (208.center);
+		\draw (208.center) to (206.center);
+		\draw (211.center) to (212.center);
+		\draw (212.center) to (214.center);
+		\draw (214.center) to (215.center);
+		\draw (215.center) to (213.center);
+		\draw (213.center) to (211.center);
+		\draw (217.center) to (216.center);
+		\draw (216.center) to (218.center);
+		\draw (218.center) to (219.center);
+		\draw (219.center) to (220.center);
+		\draw (220.center) to (217.center);
+		\draw (222.center) to (221.center);
+		\draw (221.center) to (223.center);
+		\draw (223.center) to (224.center);
+		\draw (224.center) to (225.center);
+		\draw (225.center) to (222.center);
+		\draw (227.center) to (226.center);
+		\draw (226.center) to (228.center);
+		\draw (228.center) to (229.center);
+		\draw (229.center) to (230.center);
+		\draw (230.center) to (227.center);
+		\draw (232.center) to (231.center);
+		\draw (231.center) to (233.center);
+		\draw (233.center) to (234.center);
+		\draw (234.center) to (235.center);
+		\draw (235.center) to (232.center);
 	\end{pgfonlayer}
 \end{tikzpicture}

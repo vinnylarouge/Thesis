@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  29 DEC 2023 18:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  24 AUG 2024 20:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1072,7 +1072,73 @@ File: pgflibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
 Library (tcolorbox): 'tcbposter.code.tex' version '5.0.2'
-))
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen306
+\captionmargin=\dimen307
+\caption@leftmargin=\dimen308
+\caption@rightmargin=\dimen309
+\caption@width=\dimen310
+\caption@indent=\dimen311
+\caption@parindent=\dimen312
+\caption@hangindent=\dimen313
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count346
+\c@continuedfloat=\count347
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen314
+\caption@adjustwidth@linewidth=\dimen315
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/linguex/linguex.sty
+Package: linguex 2013/05/28 Example formatting for linguistics v. 4.3
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/gb4e/cgloss4e.sty
+\lineone=\box132
+\linetwo=\box133
+\linethree=\box134
+\wordone=\box135
+\wordtwo=\box136
+\wordthree=\box137
+\gline=\box138
+\glossglue=\skip95
+)
+\c@ExNo=\count348
+\c@SubExNo=\count349
+\c@SubSubExNo=\count350
+\c@FnExNo=\count351
+\c@ABC=\count352
+\currentlabel=\skip96
+\lessthanten=\skip97
+\lessthanhundred=\skip98
+\lessthanthousand=\skip99
+\@Exleftmargin=\skip100
+\Exlabelwidth=\skip101
+\Extopsep=\skip102
+\Exindent=\skip103
+\SubExleftmargin=\skip104
+\SubSubExleftmargin=\skip105
+\Exlabelsep=\skip106
+\alignSubExnegindent=\skip107
+\Exredux=\skip108
+\digitwidth=\skip109
+\mindigitwidth=\skip110
+\c@ExDepth=\count353
+\c@TempExDepth=\count354
+\CollectTokens=\toks46
+LaTeX Info: Redefining \b on input line 307.
+LaTeX Info: Redefining \c on input line 311.
+LaTeX Info: Redefining \d on input line 313.
+\c@tmpaEx=\count355
+)
 
 Package geometry Warning: Over-specification in `v'-direction.
     `height' (483.69684pt) is ignored.
@@ -1199,22 +1265,22 @@ LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 1977.
 LaTeX Info: Redefining \not on input line 2141.
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks46
-\thm@bodyfont=\toks47
-\thm@headfont=\toks48
-\thm@notefont=\toks49
-\thm@headpunct=\toks50
-\thm@preskip=\skip95
-\thm@postskip=\skip96
-\thm@headsep=\skip97
-\dth@everypar=\toks51
+\thm@style=\toks47
+\thm@bodyfont=\toks48
+\thm@headfont=\toks49
+\thm@notefont=\toks50
+\thm@headpunct=\toks51
+\thm@preskip=\skip111
+\thm@postskip=\skip112
+\thm@headsep=\skip113
+\dth@everypar=\toks52
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup13
 \symAMSb=\mathgroup14
 )
-\c@theorem=\count346
+\c@theorem=\count356
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/newpxtext.sty
 Package: newpxtext 2022/01/30 v1.504(Michael Sharpe) latex and unicode latex su
@@ -1235,8 +1301,8 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2022/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count347
-\decimalpart=\count348
+\integerpart=\count357
+\decimalpart=\count358
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 )
@@ -1245,7 +1311,7 @@ LaTeX Font Info:    Setting zplLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplTLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplOsF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplTOsF sub-encoding to TS1/0 on input line 24.
-\zpl@cnt=\count349
+\zpl@cnt=\count359
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
@@ -1279,22 +1345,22 @@ File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowinset=\dimen306
-\pgfarrowlength=\dimen307
-\pgfarrowwidth=\dimen308
-\pgfarrowlinewidth=\dimen309
+\pgfarrowinset=\dimen316
+\pgfarrowlength=\dimen317
+\pgfarrowwidth=\dimen318
+\pgfarrowlinewidth=\dimen319
 ))) (./macros/tikzfig.sty
 (/usr/local/texlive/2022/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks52
-\t@pgfplots@tokb=\toks53
-\t@pgfplots@tokc=\toks54
-\pgfplots@tmpa=\dimen310
-\c@pgfplots@coordindex=\count350
-\c@pgfplots@scanlineindex=\count351
+\t@pgfplots@toka=\toks53
+\t@pgfplots@tokb=\toks54
+\t@pgfplots@tokc=\toks55
+\pgfplots@tmpa=\dimen320
+\c@pgfplots@coordindex=\count360
+\c@pgfplots@scanlineindex=\count361
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -1312,14 +1378,14 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count352
+\c@pgfplotsarray@tmp=\count362
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count353
-\t@pgfplotstable@a=\toks55
+\c@pgfplotstable@counta=\count363
+\t@pgfplotstable@a=\toks56
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 deque.code.tex)
@@ -1331,7 +1397,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count354
+\c@pgfplotslibrarysurf@no=\count364
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -1363,16 +1429,16 @@ x)
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen311
-\pgfdecoratedremainingdistance=\dimen312
-\pgfdecoratedinputsegmentcompleteddistance=\dimen313
-\pgfdecoratedinputsegmentremainingdistance=\dimen314
-\pgf@decorate@distancetomove=\dimen315
-\pgf@decorate@repeatstate=\count355
-\pgfdecorationsegmentamplitude=\dimen316
-\pgfdecorationsegmentlength=\dimen317
+\pgfdecoratedcompleteddistance=\dimen321
+\pgfdecoratedremainingdistance=\dimen322
+\pgfdecoratedinputsegmentcompleteddistance=\dimen323
+\pgfdecoratedinputsegmentremainingdistance=\dimen324
+\pgf@decorate@distancetomove=\dimen325
+\pgf@decorate@repeatstate=\count365
+\pgfdecorationsegmentamplitude=\dimen326
+\pgfdecorationsegmentlength=\dimen327
 )
-\tikz@lib@dec@box=\box132
+\tikz@lib@dec@box=\box139
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.pathmorphing.code.tex
@@ -1384,13 +1450,13 @@ s/tikzlibrarydecorations.pathreplacing.code.tex
 brarydecorations.pathreplacing.code.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.contourlua.code.tex)
-\pgfplots@numplots=\count356
-\pgfplots@xmin@reg=\dimen318
-\pgfplots@xmax@reg=\dimen319
-\pgfplots@ymin@reg=\dimen320
-\pgfplots@ymax@reg=\dimen321
-\pgfplots@zmin@reg=\dimen322
-\pgfplots@zmax@reg=\dimen323
+\pgfplots@numplots=\count366
+\pgfplots@xmin@reg=\dimen328
+\pgfplots@xmax@reg=\dimen329
+\pgfplots@ymin@reg=\dimen330
+\pgfplots@ymax@reg=\dimen331
+\pgfplots@zmin@reg=\dimen332
+\pgfplots@zmax@reg=\dimen333
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryplotmarks.code.tex
@@ -1411,13 +1477,13 @@ brarydecorations.markings.code.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@layerbox@background=\box133
-\pgf@layerboxsaved@background=\box134
+\pgf@layerbox@background=\box140
+\pgf@layerboxsaved@background=\box141
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryfolding.code.tex
 File: tikzlibraryfolding.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\tikz@lib@fold@length=\dimen324
+\tikz@lib@fold@length=\dimen334
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarychains.code.tex
@@ -1442,7 +1508,7 @@ File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen325
+\arrowsize=\dimen335
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshadows.code.tex
@@ -1499,26 +1565,26 @@ File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
 shapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodepartlowerbox=\box135
-\pgfnodeparttwobox=\box136
-\pgfnodepartthreebox=\box137
-\pgfnodepartfourbox=\box138
-\pgfnodeparttwentybox=\box139
-\pgfnodepartnineteenbox=\box140
-\pgfnodeparteighteenbox=\box141
-\pgfnodepartseventeenbox=\box142
-\pgfnodepartsixteenbox=\box143
-\pgfnodepartfifteenbox=\box144
-\pgfnodepartfourteenbox=\box145
-\pgfnodepartthirteenbox=\box146
-\pgfnodeparttwelvebox=\box147
-\pgfnodepartelevenbox=\box148
-\pgfnodeparttenbox=\box149
-\pgfnodepartninebox=\box150
-\pgfnodeparteightbox=\box151
-\pgfnodepartsevenbox=\box152
-\pgfnodepartsixbox=\box153
-\pgfnodepartfivebox=\box154
+\pgfnodepartlowerbox=\box142
+\pgfnodeparttwobox=\box143
+\pgfnodepartthreebox=\box144
+\pgfnodepartfourbox=\box145
+\pgfnodeparttwentybox=\box146
+\pgfnodepartnineteenbox=\box147
+\pgfnodeparteighteenbox=\box148
+\pgfnodepartseventeenbox=\box149
+\pgfnodepartsixteenbox=\box150
+\pgfnodepartfifteenbox=\box151
+\pgfnodepartfourteenbox=\box152
+\pgfnodepartthirteenbox=\box153
+\pgfnodeparttwelvebox=\box154
+\pgfnodepartelevenbox=\box155
+\pgfnodeparttenbox=\box156
+\pgfnodepartninebox=\box157
+\pgfnodeparteightbox=\box158
+\pgfnodepartsevenbox=\box159
+\pgfnodepartsixbox=\box160
+\pgfnodepartfivebox=\box161
 )))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/circuits/tikzlibrarycircuits.ee.IEC.code.tex
@@ -1526,17 +1592,17 @@ s/circuits/tikzlibrarycircuits.ee.IEC.code.tex
 s/circuits/tikzlibrarycircuits.ee.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/circuits/tikzlibrarycircuits.code.tex
-\tikz@lib@circ@count=\count357
-\tikzcircuitssizeunit=\dimen326
+\tikz@lib@circ@count=\count367
+\tikzcircuitssizeunit=\dimen336
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/p
 gflibraryshapes.gates.ee.code.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/p
 gflibraryshapes.gates.ee.IEC.code.tex))
-\pgf@layerbox@edgelayer=\box155
-\pgf@layerboxsaved@edgelayer=\box156
-\pgf@layerbox@nodelayer=\box157
-\pgf@layerboxsaved@nodelayer=\box158
+\pgf@layerbox@edgelayer=\box162
+\pgf@layerboxsaved@edgelayer=\box163
+\pgf@layerbox@nodelayer=\box164
+\pgf@layerboxsaved@nodelayer=\box165
 ) (./macros/quiver.sty
 
 LaTeX Warning: You have requested package `macros/quiver',
@@ -1553,40 +1619,40 @@ the 'stix' package, so I'm not going to load amssymb.
 )) (./macros/thesis.tikzstyles)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen327
-\lightrulewidth=\dimen328
-\cmidrulewidth=\dimen329
-\belowrulesep=\dimen330
-\belowbottomsep=\dimen331
-\aboverulesep=\dimen332
-\abovetopsep=\dimen333
-\cmidrulesep=\dimen334
-\cmidrulekern=\dimen335
-\defaultaddspace=\dimen336
-\@cmidla=\count358
-\@cmidlb=\count359
-\@aboverulesep=\dimen337
-\@belowrulesep=\dimen338
-\@thisruleclass=\count360
-\@lastruleclass=\count361
-\@thisrulewidth=\dimen339
+\heavyrulewidth=\dimen337
+\lightrulewidth=\dimen338
+\cmidrulewidth=\dimen339
+\belowrulesep=\dimen340
+\belowbottomsep=\dimen341
+\aboverulesep=\dimen342
+\abovetopsep=\dimen343
+\cmidrulesep=\dimen344
+\cmidrulekern=\dimen345
+\defaultaddspace=\dimen346
+\@cmidla=\count368
+\@cmidlb=\count369
+\@aboverulesep=\dimen347
+\@belowrulesep=\dimen348
+\@thisruleclass=\count370
+\@lastruleclass=\count371
+\@thisrulewidth=\dimen349
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/units/units.sty
 Package: units 1998/08/04 v0.9b Typesetting units
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip98
-\L@UnitsRaiseTextstyle=\skip99
-\L@UnitsRaiseScriptstyle=\skip100
+\L@UnitsRaiseDisplaystyle=\skip114
+\L@UnitsRaiseTextstyle=\skip115
+\L@UnitsRaiseScriptstyle=\skip116
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
-\FV@CodeLineNo=\count362
+\FV@CodeLineNo=\count372
 \FV@InFile=\read4
-\FV@TabBox=\box159
-\c@FancyVerbLine=\count363
-\FV@StepNumber=\count364
+\FV@TabBox=\box166
+\c@FancyVerbLine=\count373
+\FV@StepNumber=\count374
 \FV@OutFile=\write4
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.sty
@@ -1594,38 +1660,47 @@ Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
 Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count365
-\l__lipsum_a_int=\count366
-\l__lipsum_b_int=\count367
+\g__lipsum_par_int=\count375
+\l__lipsum_a_int=\count376
+\l__lipsum_b_int=\count377
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/bussproofs/bussproofs.sty
 Proof Tree (bussproofs) style macros. Version 1.1.
-\theLevel=\count368
-\myMaxLevel=\count369
-\myBoxA=\box160
-\myBoxB=\box161
-\myBoxC=\box162
-\myBoxD=\box163
-\myBoxLL=\box164
-\myBoxRL=\box165
-\thisAboveSkip=\dimen340
-\thisBelowSkip=\dimen341
-\newScoreStart=\dimen342
-\newScoreEnd=\dimen343
-\newCenter=\dimen344
-\displace=\dimen345
-\leftLowerAmt=\dimen346
-\rightLowerAmt=\dimen347
-\scoreHeight=\dimen348
-\scoreDepth=\dimen349
-\htLbox=\dimen350
-\htRbox=\dimen351
-\htRRbox=\dimen352
-\htRRRbox=\dimen353
-\htAbox=\dimen354
-\htCbox=\dimen355
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+\theLevel=\count378
+\myMaxLevel=\count379
+\myBoxA=\box167
+\myBoxB=\box168
+\myBoxC=\box169
+\myBoxD=\box170
+\myBoxLL=\box171
+\myBoxRL=\box172
+\thisAboveSkip=\dimen350
+\thisBelowSkip=\dimen351
+\newScoreStart=\dimen352
+\newScoreEnd=\dimen353
+\newCenter=\dimen354
+\displace=\dimen355
+\leftLowerAmt=\dimen356
+\rightLowerAmt=\dimen357
+\scoreHeight=\dimen358
+\scoreDepth=\dimen359
+\htLbox=\dimen360
+\htRbox=\dimen361
+\htRRbox=\dimen362
+\htRRRbox=\dimen363
+\htAbox=\dimen364
+\htCbox=\dimen365
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks57
+\SOUL@lasttoken=\toks58
+\SOUL@cmds=\toks59
+\SOUL@buffer=\toks60
+\SOUL@token=\toks61
+\SOUL@spaceskip=\skip117
+\SOUL@ttwidth=\dimen366
+\SOUL@uldp=\dimen367
+\SOUL@ulht=\dimen368
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/skak/skak.sty
 Package: skak 2018/01/08 v1.5.3 Chess typesetting
@@ -1648,29 +1723,29 @@ File: lsienc.def 2006/06/09 v1.2 Standard LaTeX file
 Now handling font encoding LSI ...
 ... no UTF-8 mapping file for font encoding LSI
 )
-\len@cfss@squarewidth=\skip101
-\len@cfss@squaretotalheight=\skip102
-\len@cfss@squaredepth=\skip103
+\len@cfss@squarewidth=\skip118
+\len@cfss@squaretotalheight=\skip119
+\len@cfss@squaredepth=\skip120
 
 
 Package chessfss Warning: \comment already defined 
 (chessfss)                I will not overwrite it on input line 590.
 
 ) (/usr/local/texlive/2022/texmf-dist/tex/plain/lambda-lists/lambda.sty)
-\c@fileFrom=\count370
-\c@rankFrom=\count371
-\c@fileTo=\count372
-\c@rankTo=\count373
-\c@ps@inverse=\count374
-\c@ps@knightangle=\count375
-\c@halfmove=\count376
-\c@move=\count377
-\c@helpgobble=\count378
-\c@helpnumber=\count379
-\c@helpnumberMove=\count380
-\squarelength=\skip104
-\square@multiplier=\count381
-\ranklift=\skip105
+\c@fileFrom=\count380
+\c@rankFrom=\count381
+\c@fileTo=\count382
+\c@rankTo=\count383
+\c@ps@inverse=\count384
+\c@ps@knightangle=\count385
+\c@halfmove=\count386
+\c@move=\count387
+\c@helpgobble=\count388
+\c@helpnumber=\count389
+\c@helpnumberMove=\count390
+\squarelength=\skip121
+\square@multiplier=\count391
+\ranklift=\skip122
 LaTeX Font Info:    Trying to load font information for LSB+skaknew on input li
 ne 1774.
 
@@ -1689,10 +1764,10 @@ LaTeX Font Warning: Font shape `T1/qhv/m/up' undefined
 
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 9.40002pt on input line 1774.
-\store@toks=\toks56
+\store@toks=\toks62
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/up' will be
-(Font)              scaled to size 9.40002pt on input line 122.
+(Font)              scaled to size 9.40002pt on input line 127.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
 ))
@@ -1840,7 +1915,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count382
+\c@section@level=\count392
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -1886,17 +1961,17 @@ LaTeX Info: Redefining \nameref on input line 3.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count383
-\scratchdimen=\dimen356
-\scratchbox=\box166
-\nofMPsegments=\count384
-\nofMParguments=\count385
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count386
-\MPscratchDim=\dimen357
-\MPnumerator=\count387
-\makeMPintoPDFobject=\count388
-\everyMPtoPDFconversion=\toks58
+\scratchcounter=\count393
+\scratchdimen=\dimen369
+\scratchbox=\box173
+\nofMPsegments=\count394
+\nofMParguments=\count395
+\everyMPshowfont=\toks63
+\MPscratchCnt=\count396
+\MPscratchDim=\dimen370
+\MPnumerator=\count397
+\makeMPintoPDFobject=\count398
+\everyMPtoPDFconversion=\toks64
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1914,9 +1989,11 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count389
-\c@mv@tabular=\count390
-\c@mv@boldtabular=\count391
+\c@lstlisting=\count399
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\c@mv@tabular=\count400
+\c@mv@boldtabular=\count401
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
@@ -2088,10 +2165,15 @@ h set-indexed col-lec-tions re-
  []
 
 
+Package natbib Warning: Citation `friedman_fom_2005' on page 4 undefined on inp
+ut line 28.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
 []\T1/zplTLF/m/n/10 Section []REF []-- with the aid of a the-o-rem by Fried-man
- [[]] -- string-diagrammatically char-ac-terises a vo-cab-u-lary of lin-guis-ti
-c topo-log-i-cal re-la-tions in \T1/zplTLF/b/n/10 Con-
+ [\T1/zplTLF/b/n/10 ? \T1/zplTLF/m/n/10 ] -- string-diagrammatically char-ac-te
+rises a vo-cab-u-lary of lin-guis-tic topo-log-i-cal re-la-tions in \T1/zplTLF/
+b/n/10 Con-tRel
  []
 
 
@@ -2149,7 +2231,7 @@ Chapter 0.
 [5
 
 
-] (./chapters/intro/intro_draft4.tex
+] (./chapters/intro/intro_draft5.tex
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
@@ -2167,37 +2249,400 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 5.
  (./figures/intro/model.tikz)
-LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 6.
-LaTeX Font Info:    Font shape `T1/zplTLF/b/it' will be
-(Font)              scaled to size 9.0pt on input line 6.
 
-(./figures/intro/model2.tikz) (./figures/intro/model3.tikz)
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 6.
+See the caption package documentation for explanation.
+
+LaTeX Font Info:    Font shape `T1/zplTLF/b/it' will be
+(Font)              scaled to size 10.0pt on input line 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
+[]\T1/zplTLF/m/n/10 Figure 1: |[]Let's say that the mean-ing of text is how
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
+\T1/zplTLF/m/n/10 it up-dates a model. So we start with some model of
+ []
+
+(./figures/intro/model2.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 12.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]\T1/zplTLF/m/n/10 Figure 2: |[]Text up-dates that model; like a gate up-
+ []
+
+(./figures/intro/model3.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 18.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]\T1/zplTLF/m/n/10 Figure 3: |[]Text is made of sen-tences; like a cir-cuit is
+
+ []
+
 (./figures/intro/model4.tikz)
-LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 24.
- (./figures/intro/model5.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 24.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]\T1/zplTLF/m/n/10 Figure 4: |[]Let's say that \T1/zplTLF/b/it/10 The mean-ing
+ of a sen-tence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\T1/zplTLF/b/it/10 is how it up-dates the mean-ings of its parts. \T1/zplTLF/m/
+n/10 As a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\T1/zplTLF/m/n/10 first ap-prox-i-ma-tion, let's say that the \T1/zplTLF/m/it/1
+0 parts \T1/zplTLF/m/n/10 of a sen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\T1/zplTLF/m/n/10 tence are the nouns it con-tains or refers to. Noun
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\T1/zplTLF/m/n/10 data is car-ried by wires. Col-lec-tions of nouns are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\T1/zplTLF/m/n/10 re-lated by gates, which play the roles of verbs and
+ []
+
+(./figures/intro/model5.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 30.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+[]\T1/zplTLF/m/n/10 Figure 5: |[]Gates can be re-lated by higher or-der
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+\T1/zplTLF/m/n/10 gates, which play the roles of ad-verbs, ad-po-si-tions,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+\T1/zplTLF/m/n/10 and con-junc-tions; any-thing that mod-i-fies the data
+ []
+
 (./figures/intro/model6.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 36.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]\T1/zplTLF/m/n/10 Figure 6: |[]In prac-tice, higher or-der gates may be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+\T1/zplTLF/m/n/10 im-ple-mented as gates that mod-ify pa-ram-e-ters of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+\T1/zplTLF/m/n/10 other gates. Gram-mar, and \T1/zplTLF/m/it/10 func-tion words
+ \T1/zplTLF/m/n/10 -- words
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+\T1/zplTLF/m/n/10 that op-er-ate on mean-ings -- are in prin-ci-ple ab-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+\T1/zplTLF/m/n/10 sorbed by the ge-om-e-try of the di-a-gram. These
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+\T1/zplTLF/m/n/10 di-a-grams are nat-u-ral ve-hi-cles for \T1/zplTLF/m/it/10 dy
+-namic se-man-tics
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+\T1/zplTLF/m/n/10 [[]], broadly con-strued, where states are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+\T1/zplTLF/m/n/10 prior con-texts and sentences-as-processes up-date
+ []
+
+LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 48.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 48.
 LaTeX Font Info:    Font shape `TS1/zplTLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 48.
- (./figures/textcirc/nounwiresABN.tikz
+(./figures/textcirc/nounwiresABN.tikz
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 (Font)              scaled to size 9.0pt on input line 5.
 )
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 55.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+[]\T1/zplTLF/m/n/10 Figure 7: |[]Nouns are rep-re-sented by wires, each
+ []
+
 (./figures/textcirc/ADJgate.tikz
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 7.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 5.0pt on input line 7.
 ) (./figures/textcirc/IVgate.tikz)
-(./figures/textcirc/TVgate.tikz) (./figures/textcirc/ADVbox.tikz)
-(./figures/textcirc/ADPIVbox.tikz) (./figures/textcirc/SCVbox.tikz)
-(./figures/textcirc/CNJbox2.tikz) (./figures/textcirc/ADPIVgate.tikz)
-(./figures/textcirc/gatecompex1.tikz) (./figures/textcirc/circgen1.tikz)
+(./figures/textcirc/TVgate.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 63.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
+[]\T1/zplTLF/m/n/10 Figure 8: |[]We rep-re-sent ad-jec-tives, in-tran-si-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
+\T1/zplTLF/m/n/10 verbs, and tran-si-tive verbs by gates act-ing on noun-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
+\T1/zplTLF/m/n/10 wires. Since a tran-si-tive verb has both a sub-ject and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
+\T1/zplTLF/m/n/10 an ob-ject noun, that will then be two noun-wires,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
+\T1/zplTLF/m/n/10 while ad-jec-tives and in-tran-si-tive verbs only have
+ []
+
+(./figures/textcirc/ADVbox.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 71.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+[]\T1/zplTLF/m/n/10 Figure 9: |[]Adverbs, which mod-ify verbs, we rep-re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\T1/zplTLF/m/n/10 sent as boxes with holes in them, with a num-ber of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\T1/zplTLF/m/n/10 dan-gling wires in the hole in-di-cat-ing the shape of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+\T1/zplTLF/m/n/10 gate ex-pected, and these should match the input-
+ []
+
+(./figures/textcirc/ADPIVbox.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 79.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+[]\T1/zplTLF/m/n/10 Figure 10: |[]Similarly, ad-po-si-tions also mod-ify verbs,
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+\T1/zplTLF/m/n/10 by more-over adding an-other noun-wire to the
+ []
+
+(./figures/textcirc/SCVbox.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 87.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]\T1/zplTLF/m/n/10 Figure 11: |[]For verbs that take sen-ten-tial com-ple-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+\T1/zplTLF/m/n/10 ments and con-junc-tions, we have fam-i-lies of boxes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+\T1/zplTLF/m/n/10 to ac-com-mo-date in-put cir-cuits of all sizes. They
+ []
+
+(./figures/textcirc/CNJbox2.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 95.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+[]\T1/zplTLF/m/n/10 Figure 12: |[]Conjunctions are boxes that take two
+ []
+
+(./figures/textcirc/ADPIVgate.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 103.
+See the caption package documentation for explanation.
+
+(./figures/textcirc/gatecompex1.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 111.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[]\T1/zplTLF/m/n/10 Figure 14: |[]Gates com-pose se-quen-tially by match-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\T1/zplTLF/m/n/10 ing la-bels on some of their noun-wires and in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\T1/zplTLF/m/n/10 par-al-lel when they share no noun-wires, to give
+ []
+
+(./figures/textcirc/circgen1.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 117.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+[]\T1/zplTLF/m/n/10 Figure 15: |[]To sum-marise: com-po-si-tion by nest-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 cor-re-sponds to gram-mat-i-cal struc-ture within sen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 tences. Sen-tences cor-re-spond to filled gates, boxes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 with fixed ar-ity cor-re-spond to first-order mod-i-fiers
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 such as ad-verbs and ad-po-si-tions, and boxes with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 vari-able ar-ity cor-re-spond to sentential-level mod-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
+\T1/zplTLF/m/n/10 fiers such as con-junc-tions and verbs with sen-ten-tial
+ []
+
 (./figures/textcirc/circgen2.tikz)
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 123.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/zplTLF/m/n/10 Figure 16: |[]Composition by con-nect-ing wires cor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/zplTLF/m/n/10 re-sponds to iden-ti-fy-ing coref-er-ences in dis-course.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/zplTLF/m/n/10 We ob-tain the same cir-cuit for mul-ti-ple text pre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/zplTLF/m/n/10 sen-ta-tions of the same con-tent, e.g. \T1/npxtt/m/n/10 Sobe
+r Alice
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/npxtt/m/n/10 who sees drunk Bob clumsily dance laughs at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/npxtt/m/n/10 him. \T1/zplTLF/m/n/10 yields the same cir-cuit as the text \T
+1/npxtt/m/n/10 Alice is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/npxtt/m/n/10 sober. She sees Bob clumsily dance. Bob
+ []
+
 LaTeX Font Info:    Font shape `T1/zplTLF/b/sc' will be
 (Font)              scaled to size 10.0pt on input line 130.
- [6
+[6
 
 ] [7]
 LaTeX Font Info:    Font shape `T1/zplTLF/b/it' will be
@@ -2207,6 +2652,10 @@ Overfull \hbox (11.15909pt too wide) in paragraph at lines 148--148
 |[]\T1/zplTLF/b/it/12 Question: \T1/zplTLF/m/it/12 What is the prac-ti-cal valu
 e of study-ing lan-guage when Large Lan-guage Mod-els ex-ist?| 
  []
+
+
+Package natbib Warning: Citation `oopenaiChatGPTOptimizingLanguage2022' on page
+ 8 undefined on input line 151.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2231,70 +2680,71 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
 [12]
-LaTeX Font Info:    Trying to load font information for T1+zplsups on input lin
-e 199.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/t1zplsups.fd
-File: t1zplsups.fd 2015/01/17 v1.0
-)
-LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 199.
 
-
-Package natbib Warning: Citation `wei_chain--thought_2023-1' on page 13 undefin
-ed on input line 201.
+Package natbib Warning: Citation `ggardenforsGeometryMeaningSemantics2014' on p
+age 13 undefined on input line 199.
 
 
 LaTeX Warning: Reference `sec:previously' on page 13 undefined on input line 20
 1.
 
 [13] [14]
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 217.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 217.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 217.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 217.
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7012) has occurred while \output is active []
 
  [16]
 [17]
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 280.
+LaTeX Warning: Reference `chapter:internalwirings' on page 18 undefined on inpu
+t line 266.
+
+
+LaTeX Warning: Reference `chapter:textcircuits' on page 18 undefined on input l
+ine 268.
 
 [18]
 
-LaTeX Warning: Reference `chapter:internalwirings' on page 19 undefined on inpu
-t line 309.
+LaTeX Warning: Reference `chapter:contrel' on page 19 undefined on input line 2
+70.
 
 
-LaTeX Warning: Reference `chapter:textcircuits' on page 19 undefined on input l
-ine 311.
+LaTeX Warning: Reference `chapter:sketches' on page 19 undefined on input line 
+272.
 
-
-LaTeX Warning: Reference `chapter:contrel' on page 19 undefined on input line 3
-13.
-
-[19]) (./chap1.bbl [20]
-Chapter 1.
-[21
+) (./chap1.bbl [19] [20
 
 ]
-Underfull \hbox (badness 1112) in paragraph at lines 120--123
-[]\T1/zplTLF/m/n/10 Bob Co-ecke.  Com-po-si-tion-al-ity as we see it, ev-ery-wh
-ere around us, Oc-to-ber 2021. 
+Chapter 1.
+[21] [22] [23] [24]
+Underfull \hbox (badness 4205) in paragraph at lines 316--322
+[]\T1/zplTLF/m/n/10 Sharan Narang and Aakanksha Chowd-h-ery.  Path-ways Lan-gua
+ge Model 
  []
 
-[22] [23] [24] [25]
-Underfull \hbox (badness 2635) in paragraph at lines 379--382
+
+Underfull \hbox (badness 5403) in paragraph at lines 316--322
+\T1/zplTLF/m/n/10 (PaLM): Scal-ing to 540 Bil-lion Pa-ram-e-ters for Break-thro
+ugh Per-for-mance. 
+ []
+
+[25]
+Underfull \hbox (badness 2680) in paragraph at lines 365--368
 []\T1/zplTLF/m/n/10 teddy [@ted-dynpc].  I made Chat-GPT take a full SAT test. 
 Here's how it did: 
+ []
+
+
+Underfull \hbox (badness 4595) in paragraph at lines 370--374
+[]\T1/zplTLF/m/n/10 Taori, Ro-han, Gul-ra-jani, Ishaan, Zhang, Tianyi, Dubois, 
+Yann, Li, Xuechen, 
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 370--374
+\T1/zplTLF/m/n/10 Guestrin, Car-los, Liang, Percy, and Hashimoto, Tat-sunori B.
+  Stan-ford CRFM. 
  []
 
 )
@@ -2312,37 +2762,35 @@ Package rerunfilecheck Info: File `chap1.out' has not changed.
 (rerunfilecheck)             Checksum: 510955B08BFE8C4B477944DEAB759BCD;1932.
  ) 
 Here is how much of TeX's memory you used:
- 57072 strings out of 478268
- 1264455 string characters out of 5846348
- 2170129 words of memory out of 5000000
- 74052 multiletter control sequences out of 15000+600000
- 631710 words of font info for 192 fonts, out of 8000000 for 9000
+ 58736 strings out of 478268
+ 1298455 string characters out of 5846348
+ 2191804 words of memory out of 5000000
+ 75686 multiletter control sequences out of 15000+600000
+ 617042 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,11n,104p,3309b,1221s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,12n,120p,3395b,1221s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm-
 bold.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-
 mathsf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix
-2-mathex.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/npxsups_
-T1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ma
-thscr.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-
-pc.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc
-}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathcal.
-enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathr
-m.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}{/
-usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathit.enc}
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/loc
-al/texlive/2022/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb></usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/newpx/npxsups-Regular.pfb></usr
-/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local
-/texlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texli
-ve/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/t
-exmf-dist/fonts/type1/public/newpx/zplbi.pfb></usr/local/texlive/2022/texmf-dis
-t/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
-ype1/public/newpx/zplri.pfb>
-Output written on chap1.pdf (26 pages, 517551 bytes).
+2-mathex.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/st
+ix2-mathscr.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-e
+c-tlf-pc.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-t
+lf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ma
+thcal.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2
+-mathrm.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/sti
+x2-mathit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/zpl_TOs
+F.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.pfb><
+/usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/l
+ocal/texlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/t
+exlive/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/20
+22/texmf-dist/fonts/type1/public/newpx/zplbi.pfb></usr/local/texlive/2022/texmf
+-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/texmf-dist/fon
+ts/type1/public/newpx/zplri.pfb>
+Output written on chap1.pdf (26 pages, 508044 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
- 394 compressed objects within 4 object streams
- 113 named destinations out of 1000 (max. 500000)
+ 467 PDF objects out of 1000 (max. 8388607)
+ 386 compressed objects within 4 object streams
+ 128 named destinations out of 1000 (max. 500000)
  3802 words of extra memory for PDF output out of 10000 (max. 10000000)
 

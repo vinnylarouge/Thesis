@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  30 JUL 2024 13:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  24 AUG 2024 14:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1072,7 +1072,73 @@ File: pgflibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
 Library (tcolorbox): 'tcbposter.code.tex' version '5.0.2'
-))
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen306
+\captionmargin=\dimen307
+\caption@leftmargin=\dimen308
+\caption@rightmargin=\dimen309
+\caption@width=\dimen310
+\caption@indent=\dimen311
+\caption@parindent=\dimen312
+\caption@hangindent=\dimen313
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count346
+\c@continuedfloat=\count347
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen314
+\caption@adjustwidth@linewidth=\dimen315
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/linguex/linguex.sty
+Package: linguex 2013/05/28 Example formatting for linguistics v. 4.3
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/gb4e/cgloss4e.sty
+\lineone=\box132
+\linetwo=\box133
+\linethree=\box134
+\wordone=\box135
+\wordtwo=\box136
+\wordthree=\box137
+\gline=\box138
+\glossglue=\skip95
+)
+\c@ExNo=\count348
+\c@SubExNo=\count349
+\c@SubSubExNo=\count350
+\c@FnExNo=\count351
+\c@ABC=\count352
+\currentlabel=\skip96
+\lessthanten=\skip97
+\lessthanhundred=\skip98
+\lessthanthousand=\skip99
+\@Exleftmargin=\skip100
+\Exlabelwidth=\skip101
+\Extopsep=\skip102
+\Exindent=\skip103
+\SubExleftmargin=\skip104
+\SubSubExleftmargin=\skip105
+\Exlabelsep=\skip106
+\alignSubExnegindent=\skip107
+\Exredux=\skip108
+\digitwidth=\skip109
+\mindigitwidth=\skip110
+\c@ExDepth=\count353
+\c@TempExDepth=\count354
+\CollectTokens=\toks46
+LaTeX Info: Redefining \b on input line 307.
+LaTeX Info: Redefining \c on input line 311.
+LaTeX Info: Redefining \d on input line 313.
+\c@tmpaEx=\count355
+)
 
 Package geometry Warning: Over-specification in `v'-direction.
     `height' (483.69684pt) is ignored.
@@ -1199,22 +1265,22 @@ LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 1977.
 LaTeX Info: Redefining \not on input line 2141.
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks46
-\thm@bodyfont=\toks47
-\thm@headfont=\toks48
-\thm@notefont=\toks49
-\thm@headpunct=\toks50
-\thm@preskip=\skip95
-\thm@postskip=\skip96
-\thm@headsep=\skip97
-\dth@everypar=\toks51
+\thm@style=\toks47
+\thm@bodyfont=\toks48
+\thm@headfont=\toks49
+\thm@notefont=\toks50
+\thm@headpunct=\toks51
+\thm@preskip=\skip111
+\thm@postskip=\skip112
+\thm@headsep=\skip113
+\dth@everypar=\toks52
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup13
 \symAMSb=\mathgroup14
 )
-\c@theorem=\count346
+\c@theorem=\count356
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/newpxtext.sty
 Package: newpxtext 2022/01/30 v1.504(Michael Sharpe) latex and unicode latex su
@@ -1235,8 +1301,8 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2022/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count347
-\decimalpart=\count348
+\integerpart=\count357
+\decimalpart=\count358
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 )
@@ -1245,7 +1311,7 @@ LaTeX Font Info:    Setting zplLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplTLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplOsF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting zplTOsF sub-encoding to TS1/0 on input line 24.
-\zpl@cnt=\count349
+\zpl@cnt=\count359
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
@@ -1279,22 +1345,22 @@ File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowinset=\dimen306
-\pgfarrowlength=\dimen307
-\pgfarrowwidth=\dimen308
-\pgfarrowlinewidth=\dimen309
+\pgfarrowinset=\dimen316
+\pgfarrowlength=\dimen317
+\pgfarrowwidth=\dimen318
+\pgfarrowlinewidth=\dimen319
 ))) (./macros/tikzfig.sty
 (/usr/local/texlive/2022/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks52
-\t@pgfplots@tokb=\toks53
-\t@pgfplots@tokc=\toks54
-\pgfplots@tmpa=\dimen310
-\c@pgfplots@coordindex=\count350
-\c@pgfplots@scanlineindex=\count351
+\t@pgfplots@toka=\toks53
+\t@pgfplots@tokb=\toks54
+\t@pgfplots@tokc=\toks55
+\pgfplots@tmpa=\dimen320
+\c@pgfplots@coordindex=\count360
+\c@pgfplots@scanlineindex=\count361
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -1312,14 +1378,14 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count352
+\c@pgfplotsarray@tmp=\count362
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count353
-\t@pgfplotstable@a=\toks55
+\c@pgfplotstable@counta=\count363
+\t@pgfplotstable@a=\toks56
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 deque.code.tex)
@@ -1331,7 +1397,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count354
+\c@pgfplotslibrarysurf@no=\count364
 
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -1363,16 +1429,16 @@ x)
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen311
-\pgfdecoratedremainingdistance=\dimen312
-\pgfdecoratedinputsegmentcompleteddistance=\dimen313
-\pgfdecoratedinputsegmentremainingdistance=\dimen314
-\pgf@decorate@distancetomove=\dimen315
-\pgf@decorate@repeatstate=\count355
-\pgfdecorationsegmentamplitude=\dimen316
-\pgfdecorationsegmentlength=\dimen317
+\pgfdecoratedcompleteddistance=\dimen321
+\pgfdecoratedremainingdistance=\dimen322
+\pgfdecoratedinputsegmentcompleteddistance=\dimen323
+\pgfdecoratedinputsegmentremainingdistance=\dimen324
+\pgf@decorate@distancetomove=\dimen325
+\pgf@decorate@repeatstate=\count365
+\pgfdecorationsegmentamplitude=\dimen326
+\pgfdecorationsegmentlength=\dimen327
 )
-\tikz@lib@dec@box=\box132
+\tikz@lib@dec@box=\box139
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.pathmorphing.code.tex
@@ -1384,13 +1450,13 @@ s/tikzlibrarydecorations.pathreplacing.code.tex
 brarydecorations.pathreplacing.code.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.contourlua.code.tex)
-\pgfplots@numplots=\count356
-\pgfplots@xmin@reg=\dimen318
-\pgfplots@xmax@reg=\dimen319
-\pgfplots@ymin@reg=\dimen320
-\pgfplots@ymax@reg=\dimen321
-\pgfplots@zmin@reg=\dimen322
-\pgfplots@zmax@reg=\dimen323
+\pgfplots@numplots=\count366
+\pgfplots@xmin@reg=\dimen328
+\pgfplots@xmax@reg=\dimen329
+\pgfplots@ymin@reg=\dimen330
+\pgfplots@ymax@reg=\dimen331
+\pgfplots@zmin@reg=\dimen332
+\pgfplots@zmax@reg=\dimen333
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryplotmarks.code.tex
@@ -1411,13 +1477,13 @@ brarydecorations.markings.code.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@layerbox@background=\box133
-\pgf@layerboxsaved@background=\box134
+\pgf@layerbox@background=\box140
+\pgf@layerboxsaved@background=\box141
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryfolding.code.tex
 File: tikzlibraryfolding.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\tikz@lib@fold@length=\dimen324
+\tikz@lib@fold@length=\dimen334
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarychains.code.tex
@@ -1442,7 +1508,7 @@ File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen325
+\arrowsize=\dimen335
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryshadows.code.tex
@@ -1499,26 +1565,26 @@ File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
 shapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodepartlowerbox=\box135
-\pgfnodeparttwobox=\box136
-\pgfnodepartthreebox=\box137
-\pgfnodepartfourbox=\box138
-\pgfnodeparttwentybox=\box139
-\pgfnodepartnineteenbox=\box140
-\pgfnodeparteighteenbox=\box141
-\pgfnodepartseventeenbox=\box142
-\pgfnodepartsixteenbox=\box143
-\pgfnodepartfifteenbox=\box144
-\pgfnodepartfourteenbox=\box145
-\pgfnodepartthirteenbox=\box146
-\pgfnodeparttwelvebox=\box147
-\pgfnodepartelevenbox=\box148
-\pgfnodeparttenbox=\box149
-\pgfnodepartninebox=\box150
-\pgfnodeparteightbox=\box151
-\pgfnodepartsevenbox=\box152
-\pgfnodepartsixbox=\box153
-\pgfnodepartfivebox=\box154
+\pgfnodepartlowerbox=\box142
+\pgfnodeparttwobox=\box143
+\pgfnodepartthreebox=\box144
+\pgfnodepartfourbox=\box145
+\pgfnodeparttwentybox=\box146
+\pgfnodepartnineteenbox=\box147
+\pgfnodeparteighteenbox=\box148
+\pgfnodepartseventeenbox=\box149
+\pgfnodepartsixteenbox=\box150
+\pgfnodepartfifteenbox=\box151
+\pgfnodepartfourteenbox=\box152
+\pgfnodepartthirteenbox=\box153
+\pgfnodeparttwelvebox=\box154
+\pgfnodepartelevenbox=\box155
+\pgfnodeparttenbox=\box156
+\pgfnodepartninebox=\box157
+\pgfnodeparteightbox=\box158
+\pgfnodepartsevenbox=\box159
+\pgfnodepartsixbox=\box160
+\pgfnodepartfivebox=\box161
 )))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/circuits/tikzlibrarycircuits.ee.IEC.code.tex
@@ -1526,17 +1592,17 @@ s/circuits/tikzlibrarycircuits.ee.IEC.code.tex
 s/circuits/tikzlibrarycircuits.ee.code.tex
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/circuits/tikzlibrarycircuits.code.tex
-\tikz@lib@circ@count=\count357
-\tikzcircuitssizeunit=\dimen326
+\tikz@lib@circ@count=\count367
+\tikzcircuitssizeunit=\dimen336
 )
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/p
 gflibraryshapes.gates.ee.code.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/p
 gflibraryshapes.gates.ee.IEC.code.tex))
-\pgf@layerbox@edgelayer=\box155
-\pgf@layerboxsaved@edgelayer=\box156
-\pgf@layerbox@nodelayer=\box157
-\pgf@layerboxsaved@nodelayer=\box158
+\pgf@layerbox@edgelayer=\box162
+\pgf@layerboxsaved@edgelayer=\box163
+\pgf@layerbox@nodelayer=\box164
+\pgf@layerboxsaved@nodelayer=\box165
 ) (./macros/quiver.sty
 
 LaTeX Warning: You have requested package `macros/quiver',
@@ -1553,40 +1619,40 @@ the 'stix' package, so I'm not going to load amssymb.
 )) (./macros/thesis.tikzstyles)
 (/usr/local/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen327
-\lightrulewidth=\dimen328
-\cmidrulewidth=\dimen329
-\belowrulesep=\dimen330
-\belowbottomsep=\dimen331
-\aboverulesep=\dimen332
-\abovetopsep=\dimen333
-\cmidrulesep=\dimen334
-\cmidrulekern=\dimen335
-\defaultaddspace=\dimen336
-\@cmidla=\count358
-\@cmidlb=\count359
-\@aboverulesep=\dimen337
-\@belowrulesep=\dimen338
-\@thisruleclass=\count360
-\@lastruleclass=\count361
-\@thisrulewidth=\dimen339
+\heavyrulewidth=\dimen337
+\lightrulewidth=\dimen338
+\cmidrulewidth=\dimen339
+\belowrulesep=\dimen340
+\belowbottomsep=\dimen341
+\aboverulesep=\dimen342
+\abovetopsep=\dimen343
+\cmidrulesep=\dimen344
+\cmidrulekern=\dimen345
+\defaultaddspace=\dimen346
+\@cmidla=\count368
+\@cmidlb=\count369
+\@aboverulesep=\dimen347
+\@belowrulesep=\dimen348
+\@thisruleclass=\count370
+\@lastruleclass=\count371
+\@thisrulewidth=\dimen349
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/units/units.sty
 Package: units 1998/08/04 v0.9b Typesetting units
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip98
-\L@UnitsRaiseTextstyle=\skip99
-\L@UnitsRaiseScriptstyle=\skip100
+\L@UnitsRaiseDisplaystyle=\skip114
+\L@UnitsRaiseTextstyle=\skip115
+\L@UnitsRaiseScriptstyle=\skip116
 ))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
-\FV@CodeLineNo=\count362
+\FV@CodeLineNo=\count372
 \FV@InFile=\read4
-\FV@TabBox=\box159
-\c@FancyVerbLine=\count363
-\FV@StepNumber=\count364
+\FV@TabBox=\box166
+\c@FancyVerbLine=\count373
+\FV@StepNumber=\count374
 \FV@OutFile=\write4
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.sty
@@ -1594,50 +1660,47 @@ Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
 Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count365
-\l__lipsum_a_int=\count366
-\l__lipsum_b_int=\count367
+\g__lipsum_par_int=\count375
+\l__lipsum_a_int=\count376
+\l__lipsum_b_int=\count377
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/bussproofs/bussproofs.sty
 Proof Tree (bussproofs) style macros. Version 1.1.
-\theLevel=\count368
-\myMaxLevel=\count369
-\myBoxA=\box160
-\myBoxB=\box161
-\myBoxC=\box162
-\myBoxD=\box163
-\myBoxLL=\box164
-\myBoxRL=\box165
-\thisAboveSkip=\dimen340
-\thisBelowSkip=\dimen341
-\newScoreStart=\dimen342
-\newScoreEnd=\dimen343
-\newCenter=\dimen344
-\displace=\dimen345
-\leftLowerAmt=\dimen346
-\rightLowerAmt=\dimen347
-\scoreHeight=\dimen348
-\scoreDepth=\dimen349
-\htLbox=\dimen350
-\htRbox=\dimen351
-\htRRbox=\dimen352
-\htRRRbox=\dimen353
-\htAbox=\dimen354
-\htCbox=\dimen355
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-(/usr/local/texlive/2022/texmf-dist/tex/generic/soul/soul.sty
+\theLevel=\count378
+\myMaxLevel=\count379
+\myBoxA=\box167
+\myBoxB=\box168
+\myBoxC=\box169
+\myBoxD=\box170
+\myBoxLL=\box171
+\myBoxRL=\box172
+\thisAboveSkip=\dimen350
+\thisBelowSkip=\dimen351
+\newScoreStart=\dimen352
+\newScoreEnd=\dimen353
+\newCenter=\dimen354
+\displace=\dimen355
+\leftLowerAmt=\dimen356
+\rightLowerAmt=\dimen357
+\scoreHeight=\dimen358
+\scoreDepth=\dimen359
+\htLbox=\dimen360
+\htRbox=\dimen361
+\htRRbox=\dimen362
+\htRRRbox=\dimen363
+\htAbox=\dimen364
+\htCbox=\dimen365
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks56
-\SOUL@lasttoken=\toks57
-\SOUL@cmds=\toks58
-\SOUL@buffer=\toks59
-\SOUL@token=\toks60
-\SOUL@spaceskip=\skip101
-\SOUL@ttwidth=\dimen356
-\SOUL@uldp=\dimen357
-\SOUL@ulht=\dimen358
+\SOUL@word=\toks57
+\SOUL@lasttoken=\toks58
+\SOUL@cmds=\toks59
+\SOUL@buffer=\toks60
+\SOUL@token=\toks61
+\SOUL@spaceskip=\skip117
+\SOUL@ttwidth=\dimen366
+\SOUL@uldp=\dimen367
+\SOUL@ulht=\dimen368
 )
 (/usr/local/texlive/2022/texmf-dist/tex/latex/skak/skak.sty
 Package: skak 2018/01/08 v1.5.3 Chess typesetting
@@ -1660,29 +1723,29 @@ File: lsienc.def 2006/06/09 v1.2 Standard LaTeX file
 Now handling font encoding LSI ...
 ... no UTF-8 mapping file for font encoding LSI
 )
-\len@cfss@squarewidth=\skip102
-\len@cfss@squaretotalheight=\skip103
-\len@cfss@squaredepth=\skip104
+\len@cfss@squarewidth=\skip118
+\len@cfss@squaretotalheight=\skip119
+\len@cfss@squaredepth=\skip120
 
 
 Package chessfss Warning: \comment already defined 
 (chessfss)                I will not overwrite it on input line 590.
 
 ) (/usr/local/texlive/2022/texmf-dist/tex/plain/lambda-lists/lambda.sty)
-\c@fileFrom=\count370
-\c@rankFrom=\count371
-\c@fileTo=\count372
-\c@rankTo=\count373
-\c@ps@inverse=\count374
-\c@ps@knightangle=\count375
-\c@halfmove=\count376
-\c@move=\count377
-\c@helpgobble=\count378
-\c@helpnumber=\count379
-\c@helpnumberMove=\count380
-\squarelength=\skip105
-\square@multiplier=\count381
-\ranklift=\skip106
+\c@fileFrom=\count380
+\c@rankFrom=\count381
+\c@fileTo=\count382
+\c@rankTo=\count383
+\c@ps@inverse=\count384
+\c@ps@knightangle=\count385
+\c@halfmove=\count386
+\c@move=\count387
+\c@helpgobble=\count388
+\c@helpnumber=\count389
+\c@helpnumberMove=\count390
+\squarelength=\skip121
+\square@multiplier=\count391
+\ranklift=\skip122
 LaTeX Font Info:    Trying to load font information for LSB+skaknew on input li
 ne 1774.
 
@@ -1701,10 +1764,10 @@ LaTeX Font Warning: Font shape `T1/qhv/m/up' undefined
 
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 9.40002pt on input line 1774.
-\store@toks=\toks61
+\store@toks=\toks62
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/up' will be
-(Font)              scaled to size 9.40002pt on input line 125.
+(Font)              scaled to size 9.40002pt on input line 127.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
 ))
@@ -1722,12 +1785,6 @@ LaTeX Warning: Unused global option(s):
     [nobib].
 
 (./chap2.aux
-
-LaTeX Warning: Label `fig:GFOLex3a' multiply defined.
-
-
-LaTeX Warning: Label `fig:GFOLex3a' multiply defined.
-
 
 LaTeX Warning: Label `defn:discopf' multiply defined.
 
@@ -1861,7 +1918,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count382
+\c@section@level=\count392
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -1907,17 +1964,17 @@ LaTeX Info: Redefining \nameref on input line 3.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count383
-\scratchdimen=\dimen359
-\scratchbox=\box166
-\nofMPsegments=\count384
-\nofMParguments=\count385
-\everyMPshowfont=\toks62
-\MPscratchCnt=\count386
-\MPscratchDim=\dimen360
-\MPnumerator=\count387
-\makeMPintoPDFobject=\count388
-\everyMPtoPDFconversion=\toks63
+\scratchcounter=\count393
+\scratchdimen=\dimen369
+\scratchbox=\box173
+\nofMPsegments=\count394
+\nofMParguments=\count395
+\everyMPshowfont=\toks63
+\MPscratchCnt=\count396
+\MPscratchDim=\dimen370
+\MPnumerator=\count397
+\makeMPintoPDFobject=\count398
+\everyMPtoPDFconversion=\toks64
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1935,9 +1992,11 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count389
-\c@mv@tabular=\count390
-\c@mv@boldtabular=\count391
+\c@lstlisting=\count399
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\c@mv@tabular=\count400
+\c@mv@boldtabular=\count401
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
@@ -1945,7 +2004,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 3.
 
-<beltcrest.pdf, id=71, 116.435pt x 139.52126pt>
+<beltcrest.pdf, id=75, 116.435pt x 139.52126pt>
 File: beltcrest.pdf Graphic file (type pdf)
 <use beltcrest.pdf>
 Package pdftex.def Info: beltcrest.pdf  used on input line 5.
@@ -2079,185 +2138,1021 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 13.
 
 (./figures/intro/GFOLex.tikz)
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 28.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 28.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 28.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 28.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 28.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 28.
-LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 28.
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]\T1/zplTLF/m/n/10 Figure 1: |Char-lie and Den-nis agree on the con-
+ []
 
 
-Package natbib Warning: Citation `haydon_compositional_2020' on page 7 undefine
-d on input line 28.
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/zplTLF/m/n/10 cep-tual or-gan-i-sa-tion en-ti-ties and re-la-tions up to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/zplTLF/m/n/10 the words for those en-ti-ties and re-la-tions. Just as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/zplTLF/m/n/10 a run-ning ex-am-ple that does not af-fect the point,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/zplTLF/m/n/10 let's say we can gloss a thought in first or-der logic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\LS1/stix2/m/it/10 G\LS1/stix2/m/n/10 .\LS1/stix2/m/it/10 b; c; f\LS1/stix2/m/n
+/10 /$\T1/zplTLF/m/n/10 . In di-a-gram-matic first or-der logic [[]],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/zplTLF/m/n/10 this is equiv-a-lently pre-sented as the fol-low-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/zplTLF/m/n/10 di-a-grams (and any other di-a-gram that agrees up
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/zplTLF/m/n/10 to con-nec-tiv-ity.) For ex-am-ple, Char-lie could ask
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/zplTLF/m/n/10 Den-nis com-pre-hen-sion ques-tions such as \T1/npxtt/m/n/10 
+WHO
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/npxtt/m/n/10 GAVE WHAT? TO WHOM?\T1/zplTLF/m/n/10 , and if Den-nis can al-w
+ays
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/zplTLF/m/n/10 cor-rectly an-swer -- e.g. \T1/npxtt/m/n/10 BOB GAVE FLOWERS.
+ TO
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/npxtt/m/n/10 CLAIRE. \T1/zplTLF/m/n/10 -- then both Char-lie and Den-nis ag
+ree
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\T1/zplTLF/m/n/10 on the re-la-tional struc-ture of the com-mu-ni-cated
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [7] (./figures/intro/GFOLex2a.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[]\T1/zplTLF/m/n/10 Figure 2: |The rule of the game is that Char-lie and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\T1/zplTLF/m/n/10 Den-nis can agree on a string-diagrammatic en-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\T1/zplTLF/m/n/10 cod-ing strat-egy be-fore hav-ing to com-mu-ni-cate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\T1/zplTLF/m/n/10 with each other. Here is one such strat-egy. Char-lie
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/intro/GFOLex2b.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[]\T1/zplTLF/m/n/10 Figure 3: |Math-e-mat-i-cally, it makes no dif-fer-ence if
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+\T1/zplTLF/m/n/10 we take the Poincaré dual of the tree, so that zero-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+\T1/zplTLF/m/n/10 dimensional nodes be-come one-dimensional wires,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+\T1/zplTLF/m/n/10 and branch-ings be-come zero-dimensional points
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+\T1/zplTLF/m/n/10 link-ing wires -- but we can just as well de-pict those
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/intro/GFOLex2cv2.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+[]\T1/zplTLF/m/n/10 Figure 4: |Now that Char-lie can ex-press their gram-
+ []
 
-Package natbib Warning: Citation `heim_semantics_1998' on page 8 undefined on i
-nput line 50.
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 mat-i-cal struc-ture string-diagrammatically, they
+ []
 
 
-Package natbib Warning: Citation `yeung_ccg-based_2021' on page 8 undefined on 
-input line 50.
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 can try to de-form their first-order-logic di-a-gram
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 -- rep-re-sent-ing what they mean to com-mu-ni-cate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 -- sub-ject to the con-straint that ev-ery one of their
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 branch-ings (the struc-ture of the CFG) is some-thing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 re-cov-er-able by Den-nis us-ing just pre-group re-duc-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 tions. To do so, Char-lie in-tro-duces a for-mal blue
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 wire to mimic Den-nis's sentence-type, and stuffs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 some com-plex-ity in-side the la-bels in the form of in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 ter-nal wirings: a mul-ti-wire con-fig-u-ra-tion for \T1/npxt
+t/m/n/10 that\T1/zplTLF/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 and a twist for \T1/npxtt/m/n/10 gives\T1/zplTLF/m/n/10 . Tho
+se in-ter-nal wirings are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 the con-tent of Char-lie and Den-nis's shared strat-egy.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 In pass-ing, I'll re-mark that by the outside-in con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 ven-tion for func-tor boxes []10[], this di-a-gram con-sti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 tutes a monoidal func-tor from this par-tic-u-lar CFG
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 to pre-group di-a-grams, where non-la-bel tree-nodes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 are par-tial monoidal clo-sure eval-u-a-tors. Re-plac-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 rigid au-tonomous clo-sure with carte-sian clo-sure
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 and $\LS1/stix2/m/it/10 n; s$ \T1/zplTLF/m/n/10 with $\LS1/st
+ix2/m/it/10 e; t$ \T1/zplTLF/m/n/10 re-cov-ers mon-tague se-man-tics for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 CFGs (c.f. Curry-Howard-Lambek cor-re-spon-dence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 for the case of typed lambda-calculus and carte-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 sian closed cat-e-gories, and all of Heim and Kratzer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 [[]]), and in-ter-pret-ing the clo-sure in a com-pact
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--50
+\T1/zplTLF/m/n/10 closed set-ting re-cov-ers mon-tague se-man-tics for
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./figures/intro/GFOLex2d.tikz)
+[8] [9] [10] (./figures/intro/GFOLex2d.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]\T1/zplTLF/m/n/10 Figure 5: |So, when Den-nis re-ceives the sen-tence,
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/zplTLF/m/n/10 Den-nis's pre-group deriva-tion yields a pre-group
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/zplTLF/m/n/10 di-a-gram that is con-nec-tively equiv-a-lent to what
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/zplTLF/m/n/10 Char-lie stuffed in-side the context-free gram-mar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/zplTLF/m/n/10 struc-ture. So now the two have strong equiv-a-lence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/zplTLF/m/n/10 be-tween their gram-mars in the sense that ev-ery
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/zplTLF/m/n/10 one of Char-lie's branches is re-solved by one of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/zplTLF/m/n/10 Den-nis's re-duc-tions. As is con-ven-tion for pre-group
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/zplTLF/m/n/10 di-a-grams, we only use types $\LS1/stix2/m/it/10 n$ \T1/zplT
+LF/m/n/10 and $\LS1/stix2/m/it/10 s$ \T1/zplTLF/m/n/10 -- the lat-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/zplTLF/m/n/10 de-noted by a blue wire here -- and we'll leave the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/zplTLF/m/n/10 di-rec-tion-al-ity (rigid au-tonomous turn-ing num-ber)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+\T1/zplTLF/m/n/10 of wires im-plicit, so you can ei-ther trust me that
+ []
 
 (./figures/intro/GFOLex2_new.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
+[]\T1/zplTLF/m/n/10 Figure 6: |Now to fully re-cover Char-lie's in-tended
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
+\T1/zplTLF/m/n/10 FOL-diagram, Den-nis refers to the in-ter-nal wirings
+ []
+
+[11
+
+] (./figures/intro/GFOLex3a.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]\T1/zplTLF/m/n/10 Figure 7: |Char-lie's di-a-gram mor-phed to fit a text
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\T1/zplTLF/m/n/10 cir-cuit. The dot-ted blue line is a for-mal mark to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\T1/zplTLF/m/n/10 in-di-cate a sen-ten-tial bound-ary. Ob-serve how new
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\T1/zplTLF/m/n/10 dis-course el-e-ments are in-tro-duced as states, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\T1/zplTLF/m/n/10 how open wires cor-re-spond to on-go-ing dis-course
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\T1/zplTLF/m/n/10 and dele-tions mark com-pleted dis-course. This di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\T1/zplTLF/m/n/10 a-gram also in-di-cates that text cir-cuits can be given
+ []
+
+(./figures/intro/GFOLex3b.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+[]\T1/zplTLF/m/n/10 Figure 8: |Den-nis al-ready knows how to parse in-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/zplTLF/m/n/10 vid-ual sen-tences to ex-tract the FOL us-ing in-ter-nal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/zplTLF/m/n/10 wirings. Ob-serve there is a math-e-mat-i-cal com-pli-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/zplTLF/m/n/10 ca-tion that arises in de-ter-min-ing how many noun-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/zplTLF/m/n/10 wires should go into the sen-tence wire-bundle; we
+ []
+
+(./figures/intro/GFOLex3.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+[]\T1/zplTLF/m/n/10 Figure 9: |To deal with text, Den-nis can pass a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+\T1/zplTLF/m/n/10 grow-ing bun-dle of sen-tence wires along hor-i-zon-
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8] [9] [10] [11] (./figures/intro/GFOLex3a.tikz)
-(./figures/intro/GFOLex3b.tikz) (./figures/intro/GFOLex3.tikz)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package natbib Warning: Citation `wang-mascianica_internal_nodate' on page 12 u
-ndefined on input line 86.
 
 [12
 
-]
+] [13]
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 90.
+(Font)              scaled to size 10.95pt on input line 93.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 90.
- (./figures/tree2gate/workedexample/easyCFG.tikz)
+(Font)              scaled to size 10.95pt on input line 93.
+
+Overfull \hbox (0.55283pt too wide) in paragraph at lines 98--99
+[][]\T1/zplTLF/b/n/10 Example 0.1.3 \T1/zplTLF/m/n/10 (Non-func-to-ri-al-ity of
+ in-ter-nal wirings for pro-duc-tive gram-mars)\T1/zplTLF/b/n/10 . []\T1/zplTLF
+/m/n/10 Let's con-sider an easy context- 
+ []
+
+(./figures/tree2gate/workedexample/easyCFG.tikz)
 (./figures/tree2gate/workedexample/easyCFG2.tikz)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+ [14
 
-(./figures/tree2gate/workedexample/nonfunctparse.tikz)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13]
-
-Package natbib Warning: Citation `mellies_functorial_2006' on page 14 undefined
- on input line 124.
-
-
-Underfull \vbox (badness 2799) has occurred while \output is active []
-
- [14]
+]
+(./figures/tree2gate/workedexample/nonfunctparse.tikz) [15]
 (./figures/tree2gate/conventions/outsidein.tikz)
-LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 131.
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/zplTLF/m/n/10 Figure 10: |There are two con-ven-tions for de-pict-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/zplTLF/m/n/10 ing the ac-tion of a monoidal func-tor on parts of a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/zplTLF/m/n/10 string di-a-gram. The first fol-lows source-to-target
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/zplTLF/m/it/10 outside-in\T1/zplTLF/m/n/10 . This con-ven-tion is used for 
+other work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/zplTLF/m/n/10 in in-ter-nal wirings, since it is well-suited for de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/zplTLF/m/n/10 scrib-ing func-tors that send atomic gen-er-a-tors in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/zplTLF/m/n/10 their do-main to more com-plex di-a-grams in their
+ []
 
 (./figures/tree2gate/conventions/insideout.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[]\T1/zplTLF/m/n/10 Figure 11: |The other con-ven-tion is \T1/zplTLF/m/it/10 in
+side-out\T1/zplTLF/m/n/10 . For
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+\T1/zplTLF/m/n/10 the fol-low-ing sec-tion, we will de-fine the co-her-ence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+\T1/zplTLF/m/n/10 con-di-tions of dis-crete monoidal op-fi-bra-tions us-ing
+ []
+
 (./figures/tree2gate/mfunctorbox/mfbox-notation.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+[]\T1/zplTLF/m/n/10 Figure 12: |Sup-pose we have a func-tor be-tween
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
+\T1/zplTLF/m/n/10 this di-a-gram-matic rep-re-sen-ta-tion of a mor-phism
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/tree2gate/mfunctorbox/mfbox-seq.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+[]\T1/zplTLF/m/n/10 Figure 13: |The use of a func-tor box is like a win-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\T1/zplTLF/m/n/10 dow from the tar-get cat-e-gory $\LS2/stix2cal/m/n/10 D$ \T1/
+zplTLF/m/n/10 into the source
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\T1/zplTLF/m/n/10 cat-e-gory $\LS2/stix2cal/m/n/10 C$\T1/zplTLF/m/n/10 ; when w
+e know that a mor-phism in $\LS2/stix2cal/m/n/10 D$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\T1/zplTLF/m/n/10 is the im-age un-der $\LS1/stix2/b/n/10 F$ \T1/zplTLF/m/n/10 
+of some mor-phism in $\LS2/stix2cal/m/n/10 C$\T1/zplTLF/m/n/10 , the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\T1/zplTLF/m/n/10 func-tor box no-ta-tion is just a way of pre-sent-ing all
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\T1/zplTLF/m/n/10 of that data at once. Since $\LS1/stix2/b/n/10 F$ \T1/zplTLF/
+m/n/10 is a func-tor, we must
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\T1/zplTLF/m/n/10 have that $\LS1/stix2/b/n/10 F\LS1/stix2/m/it/10 f\LS1/stix2/
+m/n/10 ; \LS1/stix2/b/n/10 F\LS1/stix2/m/it/10 g \LS1/stix2/m/n/10 = \LS1/stix2
+/b/n/10 F\LS1/stix2/m/n/10 .\LS1/stix2/m/it/10 f\LS1/stix2/m/n/10 ; \LS1/stix2/
+m/it/10 g\LS1/stix2/m/n/10 /$\T1/zplTLF/m/n/10 . Di-a-gram-mat-i-cally
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\T1/zplTLF/m/n/10 this equa-tion is rep-re-sented by freely split-ting and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\T1/zplTLF/m/n/10 merg-ing func-tor boxes ver-ti-cally. \T1/zplTLF/b/n/10 N.B. 
+\T1/zplTLF/m/n/10 se-quen-tial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\T1/zplTLF/m/n/10 merg-ing of two boxes re-quires that the two wires
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\T1/zplTLF/m/n/10 to-be-connected within the boxes -- in this case
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\T1/zplTLF/m/n/10 la-belled $\LS1/stix2/m/it/10 B$ \T1/zplTLF/m/n/10 -- need to
+ be the same; a case where
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\T1/zplTLF/m/n/10 merg-ing is dis-al-lowed is when $\LS1/stix2/m/it/10 Ff\LS1/s
+tix2/m/n/10 ; \LS1/stix2/m/it/10 Fg$ \T1/zplTLF/m/n/10 type-checks
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\T1/zplTLF/m/n/10 in the out-side/-tar-get cat-e-gory, but $\LS1/stix2/m/it/10 
+f\LS1/stix2/m/n/10 ; \LS1/stix2/m/it/10 g$ \T1/zplTLF/m/n/10 does not
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\T1/zplTLF/m/n/10 in the in-sid-e/-source cat-e-gory be-cause the func-tor
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/tree2gate/mfunctorbox/mfbox-fibration+structural.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+[]\T1/zplTLF/m/n/10 Figure 14: |As-sume that $\LS1/stix2/b/n/10 F$ \T1/zplTLF/m
+/n/10 is strict monoidal; with-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\T1/zplTLF/m/n/10 out loss of gen-er-al-ity by the stric-ti-fi-ca-tion the-o-re
+m,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\T1/zplTLF/m/n/10 this lets us gloss over the as-so-ci-a-tors and un-i-tors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\T1/zplTLF/m/n/10 and treat them as equal-i-ties. For $\LS1/stix2/b/n/10 F$ \T1
+/zplTLF/m/n/10 to be strict
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\T1/zplTLF/m/n/10 monoidal, it has to pre-serve monoidal units and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\T1/zplTLF/m/n/10 ten-sor prod-ucts on the nose: i.e. $\LS1/stix2/b/n/10 F\LS1/
+stix2/m/it/10 I[] \LS1/stix2/m/n/10 = \LS1/stix2/m/it/10 I[]$ \T1/zplTLF/m/n/10
+ and
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/tree2gate/mfunctorbox/mfbox-tensor.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+[]\T1/zplTLF/m/n/10 Figure 15: |What re-mains is the monoidal-ity of $\LS1/stix
+2/b/n/10 F$\T1/zplTLF/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 3471) in paragraph at lines 149--149
+\T1/zplTLF/m/n/10 which is the re-quire-ment $\LS1/stix2/b/n/10 F\LS1/stix2/m/i
+t/10 f ä \LS1/stix2/b/n/10 F\LS1/stix2/m/it/10 g \LS1/stix2/m/n/10 = \LS1/stix2
+/b/n/10 F\LS1/stix2/m/n/10 .\LS1/stix2/m/it/10 f ä g\LS1/stix2/m/n/10 /$\T1/zpl
+TLF/m/n/10 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+\T1/zplTLF/m/n/10 Di-a-gram-mat-i-cally, this equa-tion is rep-re-sented by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+\T1/zplTLF/m/n/10 freely split-ting and merg-ing func-tor boxes hor-i-zon-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+\T1/zplTLF/m/n/10 tally; anal-o-gously to how split-ting ver-ti-cally is the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+\T1/zplTLF/m/n/10 functor-boxes' way of re-spect-ing se-quen-tial com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
+\T1/zplTLF/m/n/10 po-si-tion, split-ting hor-i-zon-tally is how they re-spect
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/tree2gate/mfunctorbox/mfbox-twist.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[]\T1/zplTLF/m/n/10 Figure 16: |And for when we want $\LS1/stix2/b/n/10 F$ \T1/
+zplTLF/m/n/10 to be a (strict)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\T1/zplTLF/m/n/10 sym-met-ric monoidal func-tor, we are just ask-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\T1/zplTLF/m/n/10 that boxes and twists do not get stuck on one an-
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/tree2gate/mfunctorbox/mfbox-prefibex.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+[]\T1/zplTLF/m/n/10 Figure 17: |To mo-ti-vate op-fi-bra-tions, first ob-serve
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+\T1/zplTLF/m/n/10 that by the di-a-gram-matic equa-tions of monoidal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+\T1/zplTLF/m/n/10 cat-e-gories and func-tor boxes we have so far, we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+\T1/zplTLF/m/n/10 can al-ways "slide out" the con-tents of a func-tor box
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+\T1/zplTLF/m/n/10 out of the bot-tom. When can we do the re-verse?
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+\T1/zplTLF/m/n/10 That is, take a mor-phism in $\LS2/stix2cal/m/n/10 D$ \T1/zpl
+TLF/m/n/10 and \T1/zplTLF/m/it/10 slide it into \T1/zplTLF/m/n/10 a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+\T1/zplTLF/m/n/10 func-tor box? We know that in gen-eral this is not
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+\T1/zplTLF/m/n/10 pos-si-ble, be-cause not all mor-phisms in $\LS2/stix2cal/m/n
+/10 D$ \T1/zplTLF/m/n/10 may be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+\T1/zplTLF/m/n/10 in the im-age of $\LS1/stix2/b/n/10 F$\T1/zplTLF/m/n/10 . So 
+in-stead we ask "un-der what
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+\T1/zplTLF/m/n/10 cir-cum-stances" can we do this for a func-tor $\LS1/stix2/b/
+n/10 F$\T1/zplTLF/m/n/10 ? The
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./figures/tree2gate/mfunctorbox/mfbox-fibration.tikz)
+[16
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+] [17] [18] [19] (./figures/tree2gate/mfunctorbox/mfbox-fibration.tikz)
+[20
 
-(./figures/tree2gate/mfunctorbox/mfbox-fibration+interchange.tikz) [15]
-[16] [17] [18] [19] (./figures/tree2gate/workedexample/easydepCFG.tikz)
+] (./figures/tree2gate/mfunctorbox/mfbox-fibration+interchange.tikz)
+[21
+
+] (./figures/tree2gate/workedexample/easydepCFG.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+[]\T1/zplTLF/m/n/10 Figure 18: |Now we try to use monoidal dis-crete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+\T1/zplTLF/m/n/10 op-fi-bra-tions to help us solve the speaker's non-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+\T1/zplTLF/m/n/10 func-to-ri-al-ity prob-lem (Ex-am-ple []0.1.3[]). First we fl
+ip
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+\T1/zplTLF/m/n/10 over the la-bels and in-tro-duc-tion rules for ad-verbs.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+\T1/zplTLF/m/n/10 Call this a \T1/zplTLF/m/it/10 de-pen-dent CFG\T1/zplTLF/m/n/
+10 , or \T1/zplTLF/m/it/10 dCFG\T1/zplTLF/m/n/10 . There are sev-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+\T1/zplTLF/m/n/10 eral ways to do this for-mally, by e.g. spec-i-fy-ing a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+\T1/zplTLF/m/n/10 new string-diagram sig-na-ture from the old one
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+\T1/zplTLF/m/n/10 or as-sum-ing rigid au-tonomous com-ple-tion, and it
+ []
+
 (./figures/tree2gate/workedexample/easyfibres.tikz
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 141.
 
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 141.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 141.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 141.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 141.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 141.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 141.
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 155.
 
-) (./figures/tree2gate/workedexample/easybigex012.tikz)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[]\T1/zplTLF/m/n/10 Figure 19: |Treat-ing the la-bel as a test rather than
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+\T1/zplTLF/m/n/10 a state will al-low the opfibration-box to choose
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+\T1/zplTLF/m/n/10 the right ver-sion based on the do-main wires as it
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+\T1/zplTLF/m/n/10 ex-pands top-down. In this case, since CFGs are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+\T1/zplTLF/m/n/10 pla-nar, flip-ping causes no con-fu-sion, since we can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+\T1/zplTLF/m/n/10 al-ways flip the la-bels back over. Re-call that op-fi-bra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+\T1/zplTLF/m/n/10 tions can de-cide which lift to de-pict given a choice
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+\T1/zplTLF/m/n/10 of codomain wires. We would like to en-code the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+\T1/zplTLF/m/n/10 de-pen-dency of the upside-down ad-verb la-bels and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+\T1/zplTLF/m/n/10 in-tro-duc-tion rules as lifts that de-pend on the lift of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+\T1/zplTLF/m/n/10 the verb wire, which may be ei-ther an in-tran-si-tive
+ []
+
+(./figures/tree2gate/workedexample/easybigex012.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+[]\T1/zplTLF/m/n/10 Figure 20: |In-stead of \T1/zplTLF/m/it/10 us \T1/zplTLF/m/
+n/10 mak-ing the choice, we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\T1/zplTLF/m/n/10 can force the choice us-ing the in-for-ma-tion of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\T1/zplTLF/m/n/10 CFG struc-ture. Start-ing from a dCFG di-a-gram, the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\T1/zplTLF/m/n/10 state-labels have unique lifts: noun la-bels in CFGs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\T1/zplTLF/m/n/10 cor-re-spond uniquely to noun-states in pre-group
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\T1/zplTLF/m/n/10 di-a-grams, and verb la-bels to verb-states which may
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\T1/zplTLF/m/n/10 be ei-ther in-tran-si-tive or tran-si-tive. This ob-tains the
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\T1/zplTLF/m/n/10 first equa-tion. The sec-ond equa-tion is ob-tained by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\T1/zplTLF/m/n/10 monoidal-ity. The third "eat-ing down-wards" equa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\T1/zplTLF/m/n/10 tion is ob-tained by the op-fi-bra-tion prop-erty; note
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\T1/zplTLF/m/n/10 that be-cause the codomain wires be-fore the lift are
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\T1/zplTLF/m/n/10 al-ready de-cided to be those of an in-tran-si-tive verb's
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+\T1/zplTLF/m/n/10 pre-group type, the cor-rect ad-verb in-tro-duc-tion rule
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figures/tree2gate/workedexample/easyproblem.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+[]\T1/zplTLF/m/n/10 Figure 21: |But there's a tech-ni-cal prob-lem. We have
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+\T1/zplTLF/m/n/10 been as-sign-ing wires from the codomain of the lift
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+\T1/zplTLF/m/n/10 to the dCFG im-plic-itly, by group-ing wires to-gether
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+\T1/zplTLF/m/n/10 vi-su-ally to in-di-cate which wires in-side the func-tor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+\T1/zplTLF/m/n/10 box cor-re-spond to wires out-side. How-ever, when
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+\T1/zplTLF/m/n/10 we con-sider the al-ge-braic data avail-able, all we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+\T1/zplTLF/m/n/10 know is de-picted in the fig-ure: we need some way
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
+\T1/zplTLF/m/n/10 to as-sign the wires. Solv-ing the wire as-sign-ment
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20
+[22
 
-] [21]
-
-Package natbib Warning: Citation `wilson_string_2022' undefined on input line 2
-29.
-
-(./figures/strictify/strictgens.tikz)
-Overfull \hbox (12.00053pt too wide) detected at line 236
+] [23]
+LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 223.
+LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 223.
+ (./figures/strictify/strictgens.tikz)
+Overfull \hbox (12.00053pt too wide) detected at line 230
 []
  []
 
 (./figures/strictify/strictfunct.tikz)
-Overfull \hbox (12.00652pt too wide) detected at line 243
+Overfull \hbox (12.00652pt too wide) detected at line 237
 []
  []
 
 (./figures/strictify/strictadapt.tikz)
-Overfull \hbox (11.9968pt too wide) detected at line 250
+Overfull \hbox (11.9968pt too wide) detected at line 244
 []
  []
 
 (./figures/strictify/strictators.tikz)
-Overfull \hbox (12.00412pt too wide) detected at line 257
+Overfull \hbox (12.00412pt too wide) detected at line 251
 []
  []
 
-
-Package natbib Warning: Citation `wilson_string_2022' undefined on input line 2
-62.
-
-(./figures/strictify/strictstate.tikz) [22
+(./figures/strictify/strictstate.tikz) [24
 
 ]
 (./figures/strictify/stricteval.tikz) (./figures/strictify/strictproofex.tikz
-\myBox1=\box167
-\myScoreStart1=\dimen361
-\myCenter1=\dimen362
-\myScoreEnd1=\dimen363
-\myBox2=\box168
-\myScoreStart2=\dimen364
-\myCenter2=\dimen365
-\myScoreEnd2=\dimen366
+\myBox1=\box174
+\myScoreStart1=\dimen371
+\myCenter1=\dimen372
+\myScoreEnd1=\dimen373
+\myBox2=\box175
+\myScoreStart2=\dimen374
+\myCenter2=\dimen375
+\myScoreEnd2=\dimen376
 )
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 [][]\T1/zplTLF/b/n/10 Construction 0.3.5 \T1/zplTLF/m/n/10 (Dis-crete monoidal 
 op-fi-bra-tion from pre-groups with brack-et-ing into de-pen-dent CFGs)\T1/zplT
 LF/b/n/10 . []\T1/zplTLF/m/n/10 We aim to elu-ci-date the pre-group with brack-
@@ -2265,14 +3160,14 @@ et-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 \T1/zplTLF/m/n/10 in suf-fi-cient de-tail to de-scribe the func-tor into dCFGs;
  in par-tic-u-lar, we need to know what the gen-er-a-tors of the pre-group are.
  The fi-bre over a noun state in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 \T1/zplTLF/m/n/10 the dCFG is the cor-re-spond-ing noun-state in the brack-eted
  pre-group. The fi-bre over a verb state in the dCFG is ei-ther an in-tran-si-t
 ive or tran-si-tive word-state,
@@ -2286,7 +3181,7 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 41.
 LaTeX Font Warning: Command \small invalid in math mode on input line 96.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 287--289
+Underfull \hbox (badness 10000) in paragraph at lines 279--281
 \T1/zplTLF/m/n/10 We de-pict the case of ad-verbs ex-plic-itly. Here are two li
 fts of the ad-verb la-bel in the fi-bre of the op-fi-bra-tion cor-re-spond-ing 
 to the in-tran-si-tive and tran-si-tive
@@ -2312,17 +3207,17 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 224.
 LaTeX Font Warning: Command \small invalid in math mode on input line 293.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 []\T1/zplTLF/m/n/10 The cor-re-spon-dence of in-tro-duc-tion rules in the dCFG 
 to proof steps in the se-quent for-mu-la-tion of pre-group proofs (c.f. Ex-am-p
 le []0.3.4[]) is ob-tained obliquely,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
-\T1/zplTLF/m/n/10 be-cause la-bels for de-pen-dent types are fac-ing the wrong 
-way; hence the cups for the lifts of la-bels. We can ob-serve the cor-re-spon-d
-ence by the fol-low-ing di-a-
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+\T1/zplTLF/m/n/10 be-cause la-bels are fac-ing the wrong way; hence the cups fo
+r the lifts of la-bels. We can ob-serve the cor-re-spon-dence by the fol-low-in
+g di-a-grams. The sec-ond
  []
 
 (./figures/tree2gate/workedexample/functorsig3.tikz
@@ -2354,21 +3249,21 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 302.
 LaTeX Font Warning: Command \small invalid in math mode on input line 305.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 295--297
+Underfull \hbox (badness 10000) in paragraph at lines 287--289
 \T1/zplTLF/m/n/10 When (and only when) the types are matched, the boxes may be 
 se-quen-tially (ver-ti-cally) merged. Now within the box, we may ap-ply the equ
 a-tions avail-able
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--297
+Underfull \hbox (badness 10000) in paragraph at lines 287--289
 \T1/zplTLF/m/n/10 to us in the stric-ti-fied set-ting to elim-i-nate the (de)te
 nsors. Ob-serve that re-solv-ing snaking wires causes the sec-ond di-a-gram to 
 \T1/zplTLF/m/it/10 be-have as though \T1/zplTLF/m/n/10 we de-fined lifts
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--297
+Underfull \hbox (badness 10000) in paragraph at lines 287--289
 \T1/zplTLF/m/n/10 for "right-side-up" la-bels and in-tro-duc-tion rules; we cou
 ld not have done so di-rectly, or else the op-fi-bra-tion would have no di-a-gr
 am-matic way to de-ter-mine the
@@ -2388,28 +3283,28 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 101.
 LaTeX Font Warning: Command \small invalid in math mode on input line 182.
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 []\T1/zplTLF/m/n/10 The other lifts for other types are ob-tained sim-i-larly, 
 by the so-lu-tions of a sys-tem of pre-group equa-tions with bound-ary con-di-t
 ions that treat dCFG types as
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--310
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
 \T1/zplTLF/m/n/10 The bound-ary con-di-tions are given by the par-tic-u-lar ver
 bs in the sen-tence, which may come in three kinds: in-tran-si-tive, tran-si-ti
 ve, or verbs that take a sen-ten-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--328
+Underfull \hbox (badness 10000) in paragraph at lines 318--320
 \T1/zplTLF/m/n/10 in-duc-tively, where the brack-et-ing struc-ture is han-dled 
-by the ten-sor and de-ten-sors of the stric-ti-fied pre-group di-a-grams. The p
-re-group typ-ing so-lu-tions for \T1/npxtt/m/n/10 V\T1/zplTLF/m/n/10 ,
+by the ten-sors and de-ten-sors of the stric-ti-fied pre-group di-a-grams. The 
+pre-group typ-ing so-lu-tions for \T1/npxtt/m/n/10 V\T1/zplTLF/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--328
+Underfull \hbox (badness 10000) in paragraph at lines 318--320
 \T1/npxtt/m/n/10 ADV\T1/zplTLF/m/n/10 , \T1/npxtt/m/n/10 ADP \T1/zplTLF/m/n/10 
 across in-dices are unique, as the lat-ter two gen-er-a-tors of the string lan-
 guage cor-re-spond to verbs with sen-ten-tial com-ple-ment and ad-po-si-tions r
@@ -2417,79 +3312,69 @@ e-spec-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--328
+Underfull \hbox (badness 10000) in paragraph at lines 318--320
 \T1/zplTLF/m/n/10 tively, so by the brack-et-ing struc-ture, in-dices cor-re-sp
 ond uniquely to dCFG di-a-grams up to la-bels. The fam-ily of pre-group typ-ing
- so-lu-tion yield the re-quired
+ so-lu-tions yield the re-quired
  []
 
-[23
-pdfTeX warning (ext4): destination with the same identifier (name{cite.wilson_s
-tring_2022}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.330 \clearpage
-                ] [24] [25] [26]
-
-Package natbib Warning: Citation `clarke_double_2023' on page 27 undefined on i
-nput line 344.
-
+[25] [26] [27] [28]
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 357.
+(Font)              scaled to size 7.0pt on input line 349.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 357.
-[27
+(Font)              scaled to size 5.0pt on input line 349.
+ [29
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
 \T1/zplTLF/m/n/10 from the next chap-ter: \T1/npxtt/m/n/10 Alice sees Bob quick
 ly run to school. \T1/zplTLF/m/n/10 The apex is given by Con-struc-tion []0.3.3
 []. The right leg is the monoidal dis-crete op-fi-bra-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
 \T1/zplTLF/m/n/10 from Con-struc-tion []0.3.5[] into the dCFG. In the first di-
 a-gram be-low, we ap-ply the op-fi-bra-tion to the word states, which have uniq
 ue lifts. The sec-ond di-a-gram
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
 \T1/zplTLF/m/n/10 fol-lows by monoidal-ity. In the third, we ap-ply the left le
 g of the co-func-tor us-ing the outside-in con-ven-tion, which is the ev-i-dent
 ly bijective-on-objects monoidal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
 \T1/zplTLF/m/n/10 func-tor to the am-bi-ent rigid au-tonomous cat-e-gory of pre
 -group di-a-grams from the free stric-ti-fi-ca-tion. In the fourth, we ap-ply t
 he monoidal-ity of the in-ner
  []
 
 (./figures/tree2gate/workedexample/cofunctorex1.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 403--405
-\T1/zplTLF/m/n/10 For the first equa-tion, the ma-genta op-fi-bra-tion box now 
-has al-ready cho-sen a codomain for the lift, so it can eat the next mor-phism 
-high-lighted in a dashed box.
+Underfull \hbox (badness 10000) in paragraph at lines 395--397
+\T1/zplTLF/m/n/10 Continuing, for the first equa-tion be-low, the ma-genta op-f
+i-bra-tion box now has al-ready cho-sen a codomain for the lift, so it can eat 
+the next mor-phism high-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--405
-\T1/zplTLF/m/n/10 For the sec-ond equa-tion, note that eating-rules swap over f
-or the dif-fer-ent con-ven-tions of func-tor boxes: while inside-out func-tor b
-oxes need ex-tra data to eat,
+Underfull \hbox (badness 10000) in paragraph at lines 395--397
+\T1/zplTLF/m/n/10 lighted in a dashed box. For the sec-ond equa-tion, note that
+ eating-rules swap over for the dif-fer-ent con-ven-tions of func-tor boxes: wh
+ile inside-out func-tor boxes
  []
 
 (./figures/tree2gate/workedexample/cofunctorex2.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 405--407
+Underfull \hbox (badness 10000) in paragraph at lines 397--399
 \T1/zplTLF/m/n/10 So both func-tor boxes can eat their way through the out-side
  string di-a-gram, and wire-assignment is re-solved by the outer func-tor box k
 eep-ing track of the
  []
 
-(./figures/tree2gate/workedexample/bigexaltogether_new.tikz) [28] [29]
+(./figures/tree2gate/workedexample/bigexaltogether_new.tikz) [30] [31]
 (./figures/tree2gate/workedexample/notafibex.tikz
 
 LaTeX Font Warning: Command \large invalid in math mode on input line 86.
@@ -2505,29 +3390,24 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 86.
 )
-LaTeX Font Info:    Trying to load font information for T1+zplsups on input lin
-e 431.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/t1zplsups.fd
-File: t1zplsups.fd 2015/01/17 v1.0
-)
-LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 431.
- [30
+
+Package caption Warning: \label without proper reference on input line 417.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `??' on page 32 undefined on input line 423.
+
+[32
 
 ]
-
-Package natbib Warning: Citation `wang-mascianica_internal_nodate' on page 31 u
-ndefined on input line 447.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
 []\T1/zplTLF/m/n/10 Source cat-e-gory is the free stric-ti-fi-ca-tion of a sin-
 gle wire equipped with a spi-der, with generator-states im-plied by the fol-low
 -ing equa-tions. Tar-get is pre-group
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
 \T1/zplTLF/m/n/10 di-a-grams in $\LS1/stix2/m/it/10 n; s$\T1/zplTLF/m/n/10 . Se
 n-tence type is brack-et-ings of nouns: al-ter-nate brack-et-ing no-ta-tion is 
 in-tro-duced for brevity. Stric-ti-fied unit is used to dis-tin-guish the brack
@@ -2535,17 +3415,17 @@ in-tro-duced for brevity. Stric-ti-fied unit is used to dis-tin-guish the brack
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
 \T1/zplTLF/m/n/10 eted sin-gle noun wire from the plain noun wire, which is its
  own lift. Brack-et-ing monoidal units gives the Dyck lan-guage, which may be i
 n prin-ci-ple used to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
 \T1/zplTLF/m/n/10 dis-tin-guish turn-ing num-bers in the rigid au-tonomous set-
 ting, omit-ted for brevity. For more in-ter-nal wirings for other gram-mat-i-ca
-l cat-e-gories, see (\T1/zplTLF/b/n/10 ?\T1/zplTLF/m/n/10 ). This data
+l cat-e-gories, see [[]]. This
  []
 
 (./figures/tree2gate/workedexample/pg2cfgcof0.tikz
@@ -2719,72 +3599,55 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 85.
 LaTeX Font Warning: Command \small invalid in math mode on input line 90.
 
 )
-
-Package natbib Warning: Citation `hu_external_nodate' on page 31 undefined on i
-nput line 467.
-
-
-Package natbib Warning: Citation `roman_open_2021' on page 31 undefined on inpu
-t line 467.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 466--468
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
 \T1/zplTLF/m/n/10 And we'll spec-ify the fol-low-ing monoidal func-tor from the
  cat-e-gory we just lifted to in Ex-am-ple []0.5.4[] into a strongly com-pact c
 losed cat-e-gory; prefer-ably one
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--468
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
 \T1/zplTLF/m/n/10 that is a vari-ant of \T1/zplTLF/b/n/10 Prof\T1/zplTLF/m/n/10
- , in which one can rea-son with open string di-a-grams (\T1/zplTLF/b/n/10 ??\T
-1/zplTLF/m/n/10 ). The func-tor in-ter-prets spi-ders as pair of pants, and wor
-d-states as interesting-
+ , in which one can rea-son with open string di-a-grams [[], []]. The func-tor 
+in-ter-prets spi-ders as pairs of pants, and word-states as
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--468
-\T1/zplTLF/m/n/10 looking things. We'll show just the lifts of the monoid part 
-of the spi-der; the comonoid part is the same thing up-side down. A tech-ni-cal
--ity we gloss over is the
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+\T1/zplTLF/m/n/10 interesting-looking things. We'll show just the lifts of the 
+monoid part of the spi-der; the comonoid part is the same thing up-side down. A
+ tech-ni-cal-ity we gloss
  []
 
 (./figures/tree2gate/workedexample/iwfunctor.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 468--470
+Underfull \hbox (badness 10000) in paragraph at lines 462--464
 \T1/zplTLF/m/n/10 Applying this func-tor es-tab-lishes that the same kind of sp
 an of func-tors that gets us from pro-duc-tive to pars-ing gram-mars is also su
 f-fi-cient to get us from pars-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 468--470
+Underfull \hbox (badness 10000) in paragraph at lines 462--464
 \T1/zplTLF/m/n/10 ing gram-mars to text cir-cuits. By math-e-mat-i-cally analys
 ing and tak-ing away the bu-reau-cracy of syn-tax, it be-comes ev-i-dent that t
 he nat-u-ral habi-tat of lan-guage
  []
 
-(./figures/tree2gate/workedexample/pg2circmagic.tikz) [31] [32] [33] [34]
-[35] [36]
+(./figures/tree2gate/workedexample/pg2circmagic.tikz) [33] [34] [35] [36]
+[37] [38]
 LaTeX Font Info:    Font shape `T1/zplTLF/b/sc' will be
-(Font)              scaled to size 10.0pt on input line 482.
- [37
+(Font)              scaled to size 10.0pt on input line 475.
+\myBox3=\box176
+\myScoreStart3=\dimen377
+\myCenter3=\dimen378
+\myScoreEnd3=\dimen379
+
+Underfull \vbox (badness 3701) has occurred while \output is active []
+
+ [39
 
 
 ]
-\myBox3=\box169
-\myScoreStart3=\dimen367
-\myCenter3=\dimen368
-\myScoreEnd3=\dimen369
- [38]
-Overfull \hbox (28.18535pt too wide) detected at line 570
-[]
- []
-
-
-Overfull \hbox (28.18535pt too wide) detected at line 579
-[]
- []
-
 (/usr/local/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2021/10/16 4.8.5
 )
@@ -2795,7 +3658,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 File: UTF8.chr 2021/10/16 4.8.5
 )
 LaTeX Font Info:    Trying to load font information for C70+gbsn on input line 
-595.
+538.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fd
 File: c70gbsn.fd 2021/10/16 4.8.5
@@ -2803,67 +3666,58 @@ File: c70gbsn.fd 2021/10/16 4.8.5
 (/usr/local/texlive/2022/texmf-dist/tex/latex/cjk/texinput/UTF8/c70gbsn.fdx
 File: c70gbsn.fdx 2021/10/16 4.8.5
 )
+[40]
+Underfull \vbox (badness 7869) has occurred while \output is active []
 
-Package natbib Warning: Citation `linus_pauling_memorial_lecture_series_neurosc
-ience_2018' on page 39 undefined on input line 601.
+ [41]
+[42]) (./chap2.bbl [43] [44
 
-[39] [40] [41]
-
-Package natbib Warning: Citation `buszkowski_pregroup_nodate' on page 42 undefi
-ned on input line 634.
-
-)
-
-Package natbib Warning: There were undefined citations.
-
-
-Package bibentry Warning: You have used \nobibliography* 
-(bibentry)                without a following \bibliography.
-(bibentry)                You may not be able to run BibTeX.
-
-[42] (./chap2.aux)
+]
+Chapter 1.
+) [45] (./chap2.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `chap2.out' has not changed.
-(rerunfilecheck)             Checksum: 05CDD608158B96BB508C89AE0DE83617;1616.
+(rerunfilecheck)             Checksum: EC6E5948564BC8890BF9E8373C407115;1714.
  ) 
 Here is how much of TeX's memory you used:
- 65523 strings out of 478268
- 1405459 string characters out of 5846348
- 2495548 words of memory out of 5000000
- 82408 multiletter control sequences out of 15000+600000
- 624394 words of font info for 189 fonts, out of 8000000 for 9000
+ 67108 strings out of 478268
+ 1436370 string characters out of 5846348
+ 2541424 words of memory out of 5000000
+ 83937 multiletter control sequences out of 15000+600000
+ 623141 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,15n,104p,1998b,1464s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,15n,120p,1998b,1464s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{
-/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/npxsups_T1.enc}{/usr/l
-ocal/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathtt.enc}{/usr
-/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathex.enc}{/u
-sr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathscr.enc}
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathcal.e
-nc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathrm
--bold.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2
--mathsf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/sti
-x2-mathrm.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/s
-tix2-mathit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-e
-c-tlf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc
-}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix2-type1/STIX2Math.p
-fb></usr/local/texlive/2022/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4e.pfb></u
-sr/local/texlive/2022/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></usr/loc
-al/texlive/2022/texmf-dist/fonts/type1/public/newpx/npxsups-Regular.pfb></usr/l
-ocal/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/t
-exlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive
-/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/tex
-mf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/texmf-dist/f
-onts/type1/public/newpx/zplri.pfb>
-Output written on chap2.pdf (42 pages, 660255 bytes).
+/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathtt.enc
+}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathex.e
+nc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mathsc
+r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-mat
+hcal.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-
+mathrm-bold.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-type1
+/stix2-mathsf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-typ
+e1/stix2-mathrm.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/stix2-t
+ype1/stix2-mathit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx
+/ntx-ec-tlf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-
+ec.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/stix2-type1/STIX2
+Math.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu4e.p
+fb></usr/local/texlive/2022/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu9a.pfb></u
+sr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/loc
+al/texlive/2022/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/tex
+live/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022
+/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2022/texmf-di
+st/fonts/type1/public/newpx/zplri.pfb>
+Output written on chap2.pdf (45 pages, 661635 bytes).
 PDF statistics:
- 441 PDF objects out of 1000 (max. 8388607)
- 339 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 500000)
- 3810 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 522 PDF objects out of 1000 (max. 8388607)
+ 413 compressed objects within 5 object streams
+ 136 named destinations out of 1000 (max. 500000)
+ 3818 words of extra memory for PDF output out of 10000 (max. 10000000)
 

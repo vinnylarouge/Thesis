@@ -24,7 +24,7 @@ Whether those decisions are made by committee or coinflips, they represent infor
 \begin{figure}[h!]\label{fig:GFOLex}
 \centering
 \[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex}}\]
-\caption{Charlie and Dennis agree on the conceptual organisation entities and relations up to the words for those entities and relations. Just as a running example that does not affect the point, let's say we can gloss a thought in first order logic as $\exists a \exists b \exists c \exists f : A(a) \wedge B(b) \wedge C(c) \wedge F(f) \wedge L(a,f) \wedge G(b,c,f)$. In diagrammatic first order logic \citep{haydon_compositional_2020}, this is equivalently presented as the following diagrams (and any other diagram that agrees up to connectivity.) For example, Charlie could ask Dennis comprehension questions such as \texttt{WHO GAVE WHAT? TO WHOM?}, and if Dennis can always correctly answer -- e.g. \texttt{BOB GAVE FLOWERS. TO CLAIRE.} -- then both Charlie and Dennis agree on the relational structure of the communicated thought to the extent permitted by language.}
+\caption{Charlie and Dennis agree on the conceptual organisation entities and relations up to the words for those entities and relations. Just as a running example that does not affect the point, let's say we can gloss a thought in first order logic as $\exists a \exists b \exists c \exists f : A(a) \wedge B(b) \wedge C(c) \wedge F(f) \wedge L(a,f) \wedge G(b,c,f)$. In diagrammatic first order logic \citep{haydonCompositionalDiagrammaticFirstOrder2020d}, this is equivalently presented as the following diagrams (and any other diagram that agrees up to connectivity.) For example, Charlie could ask Dennis comprehension questions such as \texttt{WHO GAVE WHAT? TO WHOM?}, and if Dennis can always correctly answer -- e.g. \texttt{BOB GAVE FLOWERS. TO CLAIRE.} -- then both Charlie and Dennis agree on the relational structure of the communicated thought to the extent permitted by language.}
 \end{figure}
 
 We assume Charlie and Dennis speak the same language, so both know how words in their language correspond to putative building blocks of thoughts, and how the order of words in sentences and special grammatical words affect the (de-/re-)construction procedures. Now we have to explain how it is that the two can do this for infinitely many thoughts, and new thoughts never encountered before. Using string diagrams, this is surprisingly easy, because string diagrams are algebraic expressions that are invariant under certain topological manipulations that make it easy to convert between different shapes of language.
@@ -46,9 +46,10 @@ We assume Charlie and Dennis speak the same language, so both know how words in 
 \begin{figure}[h!]\label{fig:GFOLex2c}
 \centering
 \[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex2cv2}}\]
-\caption{Now that Charlie can express their grammatical structure string-diagrammatically, they can try to deform their first-order-logic diagram -- representing what they mean to communicate -- subject to the constraint that every one of their branchings (the structure of the CFG) is something recoverable by Dennis using just pregroup reductions. To do so, Charlie introduces a formal blue wire to mimic Dennis's sentence-type, and stuffs some complexity inside the labels in the form of internal wirings: a multiwire configuration for \texttt{that}, and a twist for \texttt{gives}. Those internal wirings are the content of Charlie and Dennis's shared strategy. In passing, I'll remark that by the outside-in convention for functor boxes \ref{fig:outsidein}, this diagram constitutes a monoidal functor from this particular CFG to pregroup diagrams, where nonlabel tree-nodes are partial monoidal closure evaluators. Replacing rigid autonomous closure with cartesian closure and $n,s$ with $e,t$ recovers montague semantics for CFGs (c.f. Curry-Howard-Lambek correspondence for the case of typed lambda-calculus and cartesian closed categories, and all of Heim and Kratzer \citep{heim_semantics_1998}), and interpreting the closure in a compact closed setting recovers montague semantics for CCGs \citep{yeung_ccg-based_2021}.}
+\caption{Now that Charlie can express their grammatical structure string-diagrammatically, they can try to deform their first-order-logic diagram -- representing what they mean to communicate -- subject to the constraint that every one of their branchings (the structure of the CFG) is something recoverable by Dennis using just pregroup reductions. To do so, Charlie introduces a formal blue wire to mimic Dennis's sentence-type, and stuffs some complexity inside the labels in the form of internal wirings: a multiwire configuration for \texttt{that}, and a twist for \texttt{gives}. Those internal wirings are the content of Charlie and Dennis's shared strategy. In passing, I'll remark that by the outside-in convention for functor boxes \ref{fig:outsidein}, this diagram constitutes a monoidal functor from this particular CFG to pregroup diagrams, where nonlabel tree-nodes are partial monoidal closure evaluators. Replacing rigid autonomous closure with cartesian closure and $n,s$ with $e,t$ recovers montague semantics for CFGs (c.f. Curry-Howard-Lambek correspondence for the case of typed lambda-calculus and cartesian closed categories, and all of Heim and Kratzer \citep{heimSemanticsGenerativeGrammar1998b}), and interpreting the closure in a compact closed setting recovers montague semantics for CCGs \citep{yeungCCGBasedVersionDisCoCat2021b}.}
 \end{figure}
 
+\clearpage
 \begin{figure}[h!]\label{fig:GFOLex2d}
 \centering
 \[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex2d}}\]
@@ -70,58 +71,49 @@ We assume Charlie and Dennis speak the same language, so both know how words in 
 \caption{Charlie's diagram morphed to fit a text circuit. The dotted blue line is a formal mark to indicate a sentential boundary. Observe how new discourse elements are introduced as states, and how open wires correspond to ongoing discourse and deletions mark completed discourse. This diagram also indicates that text circuits can be given semantics in FOL.}
 \end{figure}
 
-\begin{figure}[h!]\label{fig:GFOLex3a}
+\begin{figure}[h!]
 \centering
 \[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex3b}}\]
 \caption{Dennis already knows how to parse individual sentences to extract the FOL using internal wirings. Observe there is a mathematical complication that arises in determining how many noun-wires should go into the sentence wire-bundle; we need to account for this later.}
 \end{figure}
 
-\begin{figure}[h!]\label{fig:GFOLex3a}
+\begin{figure}[h!]
 \centering
 \[\resizebox{\textwidth}{!}{\tikzfig{intro/GFOLex3}}\]
 \caption{To deal with text, Dennis can pass a growing bundle of sentence wires along horizontally.}
 \end{figure}
 \end{example}
 
-\newthought{The essence of internal wirings:} The relational content that is communicated by language is not inherently one-dimensional, but must be encoded in and decoded from the one-dimensional strings of language. Internal wirings \citep{wang-mascianica_internal_nodate} provide a way to approach this coding problem topologically: while productive and parsing grammars have different topologies, by choosing internal wirings for individual words, the speaker and listener can obtain topologically equivalent representations.
+\newthought{The essence of internal wirings:} The relational content that is communicated by language is not inherently one-dimensional, but must be encoded in and decoded from the one-dimensional strings of language. Internal wirings \citep{wang-mascianicaInternalWirings} provide a way to approach this coding problem topologically: while productive and parsing grammars have different topologies, by choosing internal wirings for individual words, the speaker and listener can obtain topologically equivalent representations.
 
 %\newthought{But how do internal wirings come about?} If we take internal wirings to be somehow real, then we can wave away the problem by saying that they are obtained by trial and error in the course of the development of language. But purely mathematical mysteries remain. How do we characterise the dynamics of communication between producer and parser? What is the relationship of internal wirings to these dynamics? What is the general idea? Here is a first attempt at an answer: monoidal cofunctors relate parsing and productive grammars, and internal wirings make it so that going round-trip on either side through these cofunctors gets you back where you started up to diagrammatic equivalence. Now what the hell is a monoidal cofunctor? Bear with me.
 
+\clearpage
+
 \subsection{An issue with functorial semantics of internal wirings}
 
-\newthought{There is a mathematical issue:} the "filling in" of internal wirings is not \emph{in general} functorial, for either speaker or listener. The issue in both cases is that sometimes the particular internal wiring depends on what words are around it.
+\newthought{There is a mathematical issue:} the "filling in" of internal wirings is not \emph{in general} functorial, for either speaker or listener. The exemplified issue is that sometimes the particular internal wiring depends on what words are around it.
 
-\begin{figure}[h!]
-\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/easyCFG}}\]
-\caption{
 \begin{example}[Nonfunctoriality of internal wirings for productive grammars]\label{ex:nonfunctprod}
-\end{example}
-Let's consider an easy context-free grammar, with just four types and three rules apart from labels. The types are: \texttt{S} for sentences, \texttt{N} for nouns, \texttt{ADV} for adverbs, and \texttt{V} for verbs. There is a single adverb introduction rule, and two verb introduction rules for intransitive and transitive verbs.
-}
-\end{figure}
-
-\begin{figure}[h!]
-\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/easyCFG2}}\]
-\caption{
+Let's consider an easy context-free grammar as in Figure \ref{ex:nonfunctprod}, with just four types and three rules apart from labels. The types are: \texttt{S} for sentences, \texttt{N} for nouns, \texttt{ADV} for adverbs, and \texttt{V} for verbs. There is a single adverb introduction rule, and two verb introduction rules for intransitive and transitive verbs.
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/easyCFG}}\]
 Now suppose we want to describe a functor from this context free grammar to a pregroup grammar with just types $n$ and $s$. We know how verb states ought to look, and we know that adverbs ought to modify a verb. We can get pretty close with a first sketch, depicting the desired action of the functor using the outside-in convention for functor boxes, and we can slim them down to tubes. Now the simplicity of the CFG reveals a complication. Since there are two possible kinds of verbs, there are two possible kinds of adverbs, and accordingly two possible kinds of adverb introduction rules. A functor from the CFG to a pregroup diagram can't send the single adverb introduction rule to two different things at the same time.
-}
-\end{figure}
-
-\begin{figure}[h!]
-\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/nonfunctparse}}\]
-\caption{
-\begin{example}[Nonfunctoriality of internal wirings for parsing grammars]\label{ex:nonfunctparse}
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/easyCFG2}}\]
 \end{example}
+
+\begin{example}[Nonfunctoriality of internal wirings for parsing grammars]\label{ex:nonfunctparse}
 Compare \texttt{Alice likes flowers that Bob hates} to the sentence in Figure \ref{fig:GFOLex2}; here the object relative pronoun \texttt{that} is connected to a transitive verb \texttt{hates} rather than a ditransitive \texttt{gives}. The internal wirings work fine in this example, but now \texttt{that} deletes two wires instead of three; a functor can't map the same word-state to two possible instantiations.
-}
-\end{figure}
+\[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/nonfunctparse}}\]
+\end{example}
+
+\clearpage
 
 \section{Discrete Monoidal Opfibrations}
 
 To capture the kinds of diagrammatic correspondences we have just sketched, we will develop monoidal cofunctors diagrammatically. The first step is introducing the concept of a \emph{discrete monoidal opfibration}: a mathematical bookkeeping tool that relates kinds of choices speakers and listeners make when generating and parsing text respectively. This in turn will require introducing \emph{monoidal functor boxes}.
 
 \begin{scholium}
-Expressing the coherence conditions of monoidal functors using equations involving functor boxes as below is not new \citep{mellies_functorial_2006}. The idea of a functor being simultaneously monoidal and a opfibration is also not new. What is new is minor: the express requirement that the lifts of the opfibration satisfy interchange, which is (due to a communication with Fosco Loregian) in general not implied when a functor is both monoidal and a discrete opfibration.
+Expressing the coherence conditions of monoidal functors using equations involving functor boxes as below is not new \citep{melliesFunctorialBoxesString2006b}. The idea of a functor being simultaneously monoidal and a opfibration is also not new. What is new is minor: the express requirement that the lifts of the opfibration satisfy interchange, which is in general not implied when a functor is both monoidal and a discrete opfibration.
 \end{scholium}
 
 \begin{figure}[h!]\label{fig:outsidein}
@@ -166,22 +158,22 @@ Expressing the coherence conditions of monoidal functors using equations involvi
 \caption{To motivate opfibrations, first observe that by the diagrammatic equations of monoidal categories and functor boxes we have so far, we can always "slide out" the contents of a functor box out of the bottom. When can we do the reverse? That is, take a morphism in $\mathcal{D}$ and \emph{slide it into} a functor box? We know that in general this is not possible, because not all morphisms in $\mathcal{D}$ may be in the image of $\mathbf{F}$. So instead we ask "under what circumstances" can we do this for a functor $\mathbf{F}$? The answer is when $\mathbf{F}$ is a discrete opfibration.}
 \end{figure}
 
-\begin{figure}[h!]
-\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration}}\]
-\caption{
+\clearpage
+
 \begin{defn}[Discrete opfibration]\label{defn:discopf}
 $\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$ is a \emph{discrete opfibration} when:
 for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$, there exists a unique object $\Phi^A_f$ such that $\mathbf{F}\Phi^A_f = B$ and a unique morphism $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$, such that $f = \mathbf{F}\phi_f$. Diagrammatically, we can present all of the above as an equation reminiscent of sliding a morphism \emph{into} a functor box from below. The process inside the box is called \emph{the lift} of the process that was slid in. The collection of all lifts over a wire or box is called \emph{the fibre over} that wire or box.
+\[\resizebox{0.5\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration}}\]
 \end{defn}
-}
-\end{figure}
 
-\begin{figure}
+\clearpage
+
+\begin{defn}[Monoidal discrete opfibration]\label{defn:mondiscopf}
+We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opfibration} when it is a (strict, symmetric) monoidal functor, a discrete opfibration, and the depicted equations relating lifts to interchange hold. The diagrammatic motivation for the additional coherence equations is that -- if we view the lifts of opfibrations as sliding morphisms into functor boxes -- we do not want the order in which sliding occurs to affect the final result. In this way, lifts behave as graphical primitives in the same manner as interchange isotopies and symmetry twists.
 \[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/mfunctorbox/mfbox-fibration+interchange}}\]
-\caption{\begin{defn}[Monoidal discrete opfibration]\label{defn:mondiscopf}
-We consider $\mathbf{F}$ to be a \emph{(strict, symmetric) monoidal discrete opfibration} when it is a (strict, symmetric) monoidal functor, a discrete opfibration, and the depicted equations relating lifts to interchange hold. The diagrammatic motivation for the additional coherence equations is that -- if we view the lifts of opfibrations as sliding morphisms into functor boxes -- we do not want the order in which sliding occurs to affect the final result. In this way, lifts behave as graphical primitives in the same manner as interchange isotopies and symmetry twists. \textcolor{blue}{Postscript: Stefano Gogioso observes that this property may be simplified to asking that for all $f: \mathbf{F}A \rightarrow B$, there exists a unique $\varphi_f: A \rightarrow \Phi_f$ such that for all objects $C$, $\mathbf{F}(\varphi_f \otimes 1_C) = f \otimes 1_{\mathbf{F}C}$, which is potentially easier to verify, and moreover related to "complete" variants of properties (c.f. complete positivity in categorical quantum mechanics) where a property is stable under tensors with the identity. After helpful discussions with Joe Moeller, in joint and ongoing work with Caterina Puca analysing functor boxes we show that these equations are equivalent to asking that the cartesian lift of tensors is equal to the tensor of cartesian lifts. This condition in conjunction with asking for the underlying functor to be strict monoidal and a opfibration then agrees with the "canon" definition of monoidal opfibrations given by Mike Shulman, for the discrete case.}
-\end{defn}}
-\end{figure}
+\textcolor{blue}{Postscript: Stefano Gogioso observes that this property may be simplified to asking that for all $f: \mathbf{F}A \rightarrow B$, there exists a unique $\varphi_f: A \rightarrow \Phi_f$ such that for all objects $C$, $\mathbf{F}(\varphi_f \otimes 1_C) = f \otimes 1_{\mathbf{F}C}$, which is potentially easier to verify, and moreover related to "complete" variants of properties (c.f. complete positivity in categorical quantum mechanics) where a property is stable under tensors with the identity. After helpful discussions with Joe Moeller, in joint and ongoing work with Caterina Puca analysing functor boxes we show that these equations are equivalent to asking that the cartesian lift of tensors is equal to the tensor of cartesian lifts. This condition in conjunction with asking for the underlying functor to be strict monoidal and a opfibration then agrees with the "canon" definition of monoidal opfibrations given by Mike Shulman, for the discrete case.}
+\end{defn}
+
 
 \clearpage
 
@@ -223,7 +215,7 @@ The crux of the issue sketched in Figure \ref{fig:wireproblem} is that while pre
 
 \marginnote{
 \begin{defn}[Strictified string diagrams]\label{defn:strict}
-(Presentation from \citep{wilson_string_2022}) Fix an arbitrary (non-strict) monoidal category $\mathcal{C}$. The \emph{strictification} $(\overline{\mathcal{C}},\bullet)$ is defined as follows (where strictness of $\overline{\mathcal{C}}$ entitles use of string-diagrammatic notation):
+(Presentation from \citep{wilsonStringDiagramsNonstrict2022a}) Fix an arbitrary (non-strict) monoidal category $\mathcal{C}$. The \emph{strictification} $(\overline{\mathcal{C}},\bullet)$ is defined as follows (where strictness of $\overline{\mathcal{C}}$ entitles use of string-diagrammatic notation):
 \begin{itemize}
 \item[(1)]{Objects $\overline{A}$ for each $A \in \mathcal{C}$}
 \end{itemize}
@@ -259,7 +251,7 @@ The crux of the issue sketched in Figure \ref{fig:wireproblem} is that while pre
 }
 
 \marginnote{
-\begin{proposition}[$\bar{\mathcal{M}}$ and $\mathcal{M}$ are monoidally equivalent]\label{prop:strictequiv}\citep{wilson_string_2022}
+\begin{proposition}[$\bar{\mathcal{M}}$ and $\mathcal{M}$ are monoidally equivalent]\label{prop:strictequiv}\citep{wilsonStringDiagramsNonstrict2022a}
 \end{proposition}
 }
 
@@ -340,7 +332,7 @@ Monoidality is evident. For unique lifts, we observe that for each bracketing of
 Now that we know how to solve the wire-assignment problem with the help of monoidal discrete opfibrations from strictified diagrams that do bracketing, we can at last see what monoidal cofunctor boxes are.
 
 \marginnote{
-These definitions and conventions follow \citep{clarke_double_2023}. Given a (small) category $\mathcal{C}$ we notate the objects $\mathcal{C}_0$ and the morphisms $\mathcal{C}_1$, hence a functor $F: \mathcal{C} \rightarrow \mathcal{D}$ consists of an object assignment $F_0: \mathcal{C}_0 \rightarrow \mathcal{D}_0$ and a morphism assignment $F_1: \mathcal{C}_1 \rightarrow \mathcal{D}_1$.
+These definitions and conventions follow \citep{clarkeDoubleCategoryLenses2023a}. Given a (small) category $\mathcal{C}$ we notate the objects $\mathcal{C}_0$ and the morphisms $\mathcal{C}_1$, hence a functor $F: \mathcal{C} \rightarrow \mathcal{D}$ consists of an object assignment $F_0: \mathcal{C}_0 \rightarrow \mathcal{D}_0$ and a morphism assignment $F_1: \mathcal{C}_1 \rightarrow \mathcal{D}_1$.
 }
 
 \marginnote{
@@ -419,19 +411,18 @@ And so we can continue all the way, occasionally straightening out some wires on
 
 Now we'd like to use the cofunctor technology we have developed to tackle the other problem, the nonfunctoriality of internal wirings for the listener (Example \ref{ex:nonfunctparse}.) We run into a problem again: the right leg cannot be a discrete opfibration into pregroup diagrams.
 
-\begin{figure}[h!]
+\begin{figure}[h!]\label{fig:notafibex}
 \centering
 \[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/workedexample/notafibex}}\]
 \caption{
-\begin{example}[Lifts for cups are not always defined]
-\end{example} Starting from the leftmost diagram, in order to let the functor box eat the whole diagram, we need to first choose a lift for the left-sentence wire for the cup. Recalling Figures \ref{fig:GFOLex2} and \ref{ex:nonfunctparse}, there are at least two lifts for the sentence-wire in pregroup diagrams, for the case of two or three noun-wires. Everything works smoothly when the lifts on the two sentence wires of a cup match. When if we make the wrong choice and they don't, there is no lift, because there is no such thing as a cup that has two wires on one end and three on the other. Recall from Definition \ref{defn:discopf} that a unique lift is required for \emph{every possible} codomain inside the functor box; so we do not have a discrete opfibration, and so we cannot have a cofunctor.
+Starting from the leftmost diagram, in order to let the functor box eat the whole diagram, we need to first choose a lift for the left-sentence wire for the cup. Recalling Figures \ref{fig:GFOLex2} and \ref{ex:nonfunctparse}, there are at least two lifts for the sentence-wire in pregroup diagrams, for the case of two or three noun-wires. Everything works smoothly when the lifts on the two sentence wires of a cup match. When if we make the wrong choice and they don't, there is no lift, because there is no such thing as a cup that has two wires on one end and three on the other. Recall from Definition \ref{defn:discopf} that a unique lift is required for \emph{every possible} codomain inside the functor box; so we do not have a discrete opfibration, and so we cannot have a cofunctor.
 }
 \end{figure}
 
-But hold on, if we know that cups need pairs of matching identity-lifts, in the above example it would have been obvious \emph{from the connectivity of the diagram} what the correct choice of lift ought to have been. In order to reason diagrammatically with hungry functor boxes in the way we'd like, we can weaken the requirement that the right leg of the cofunctor be a discrete opfibration\footnote{The job we want the right leg to do is just to bookkeep choices of lift in its fibres. Discrete opfibrations do too much by enacting safety standards and curtailing our choice. Nevermind universal properties, we want to make our own decisions, good or bad.}. We don't need lifts to always \emph{exist uniquely} for \emph{all} codomains; that they always exist for some codomains is enough for our functor boxes to eat and merge the way they do. However, now instead of just looking up the lift, we'll get to make decisions in order to help the functor box grow, but as we've seen from our example, we'll be guided by the connectivity of the diagrams.
+But hold on, if we know that cups need pairs of matching identity-lifts, in the above example it would have been obvious \emph{from the connectivity of the diagram} what the correct choice of lift ought to have been. In order to reason diagrammatically with hungry functor boxes in the way we'd like, we can weaken the requirement that the right leg of the cofunctor be a discrete opfibration; the job we want the right leg to do is just to bookkeep choices of lift in its fibres. Discrete opfibrations do too much by enacting safety standards and curtailing our choice. We don't need lifts to always \emph{exist uniquely} for \emph{all} codomains; that they always exist for some codomains is enough for our functor boxes to eat and merge the way they do. However, now instead of just looking up the lift, we'll get to make decisions in order to help the functor box grow, but as we've seen from our example, we'll be guided by the connectivity of the diagrams.
 
 \begin{defn}[Kinda-opfibration]\label{defn:discopf}
-$\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$ is a \emph{kinda-opfibration}\footnote{This probably exists somewhere in the literature, though maybe not, since we're getting rid of the universal properties.} when for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$, there exists some object $\Phi^A_f$ and some $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$, such that $f = \mathbf{F}\phi_f$.
+$\mathbf{F}: \mathcal{C} \rightarrow \mathcal{D}$ is a \emph{kinda-opfibration} when for all morphisms $f: \mathbf{F}A \rightarrow B$ in $\mathcal{D}$ with domain in the image of $\mathbf{F}$, there exists some object $\Phi^A_f$ and some $\phi_f: A \rightarrow \Phi^A_f$ in $\mathcal{C}$, such that $f = \mathbf{F}\phi_f$.
 \end{defn}
 
 \begin{defn}[Monoidal kinda-opfibration and kinda-cofunctor]
@@ -444,7 +435,7 @@ Mentally search and replace discrete for kinda- in Definition \ref{defn:mondisco
 \begin{myboxR}
 \begin{example}[A monoidal kinda-opfibration into pregroup diagrams from a subcategory of bracketed pregroups with spiders]\label{ex:bigexlift}
 \end{example}
-Source category is the free strictification of a single wire equipped with a spider, with generator-states implied by the following equations. Target is pregroup diagrams in $n,s$. Sentence type is bracketings of nouns: alternate bracketing notation is introduced for brevity. Strictified unit is used to distinguish the bracketed single noun wire from the plain noun wire, which is its own lift. Bracketing monoidal units gives the Dyck language, which may be in principle used to distinguish turning numbers in the rigid autonomous setting, omitted for brevity. For more internal wirings for other grammatical categories, see \citep{wang-mascianica_internal_nodate}. This data suffices to model how the listener recovers the data conveyed by the speaker, c.f. Example \ref{ex:nonfunctparse}. Solution to Example \ref{ex:nonfunctparse} on next page.
+Source category is the free strictification of a single wire equipped with a spider, with generator-states implied by the following equations. Target is pregroup diagrams in $n,s$. Sentence type is bracketings of nouns: alternate bracketing notation is introduced for brevity. Strictified unit is used to distinguish the bracketed single noun wire from the plain noun wire, which is its own lift. Bracketing monoidal units gives the Dyck language, which may be in principle used to distinguish turning numbers in the rigid autonomous setting, omitted for brevity. For more internal wirings for other grammatical categories, see \citep{wang-mascianicaInternalWirings}. This data suffices to model how the listener recovers the data conveyed by the speaker, c.f. Example \ref{ex:nonfunctparse}. Solution to Example \ref{ex:nonfunctparse} on next page.
 \[\resizebox{0.8\textwidth}{!}{\tikzfig{tree2gate/workedexample/pg2cfgcof0}}\]
 \end{myboxR}
 
@@ -464,7 +455,7 @@ Source category is the free strictification of a single wire equipped with a spi
 \begin{example}[...and from there to text circuits]
 Recall from Example \ref{fig:GFOLex3a} that pregroup diagrams can be daisy-chained for text. We'll assume that a finished text is one where the sentence-wire is deleted (i.e. no more sentences to chain.)
 \[\resizebox{0.95\textwidth}{!}{\tikzfig{tree2gate/workedexample/pg2circ0}}\]
-And we'll specify the following monoidal functor from the category we just lifted to in Example \ref{ex:bigexlift} into a strongly compact closed category; preferably one that is a variant of \textbf{Prof}, in which one can reason with open string diagrams \citep{hu_external_nodate,roman_open_2021}. The functor interprets spiders as pairs of pants, and word-states as interesting-looking things. We'll show just the lifts of the monoid part of the spider; the comonoid part is the same thing upside down. A technicality we gloss over is the loss of commutativity of pants, which can be handled by dropping commutativity syntactically from the spiders in the source.
+And we'll specify the following monoidal functor from the category we just lifted to in Example \ref{ex:bigexlift} into a strongly compact closed category; preferably one that is a variant of \textbf{Prof}, in which one can reason with open string diagrams \citep{huExternalTracedMonoidala,romanOpenDiagramsCoend2021a}. The functor interprets spiders as pairs of pants, and word-states as interesting-looking things. We'll show just the lifts of the monoid part of the spider; the comonoid part is the same thing upside down. A technicality we gloss over is the loss of commutativity of pants, which can be handled by dropping commutativity syntactically from the spiders in the source.
 \[\resizebox{0.85\textwidth}{!}{\tikzfig{tree2gate/workedexample/iwfunctor}}\]
 Applying this functor establishes that the same kind of span of functors that gets us from productive to parsing grammars is also sufficient to get us from parsing grammars to text circuits. By mathematically analysing and taking away the bureaucracy of syntax, it becomes evident that the natural habitat of language is not a line, but something else.
 \end{example}
@@ -547,7 +538,7 @@ The first assumption establishes an idealised view of communication and composit
 There is another implicit assumption here that syntax determines semantics. It is worth noting that in practice, neither grammar nor meaning strictly determines the other. Clearly there are cases where grammar supercedes: when Dennis hears \texttt{man bites dog}, despite his prior prejudices and associations about which animal is more likely to be biting, he knows that the \texttt{man} is doing the biting and the \texttt{dog} is getting bitten. Going the other way, there are many cases in which the meaning of a subphrase affects grammatical acceptability and structure.
 
 \begin{example}[Exclamations: how meaning affects grammar]
-The following examples from \citep{linus_pauling_memorial_lecture_series_neuroscience_2018} illustrate how whether a phrase is an \emph{exclamation} affects what kinds of grammatical constructions are acceptable. By this argument, to know whether something is an exclamation in context is an aspect of meaning, so we have cases where meaning determines grammar. Observe first that the following three phrases are all grammatically acceptable and appear to mean similar things.
+The following examples from \citep{linuspaulingmemoriallectureseriesNeuroscienceLanguageThought2018} illustrate how whether a phrase is an \emph{exclamation} affects what kinds of grammatical constructions are acceptable. By this argument, to know whether something is an exclamation in context is an aspect of meaning, so we have cases where meaning determines grammar. Observe first that the following three phrases are all grammatically acceptable and appear to mean similar things.
 \[\texttt{\textcolor{blue}{nobody knows} how many beers Bob drinks}\]
 \[\texttt{\textcolor{blue}{who knows} how many beers Bob drinks?}\]
 \[\texttt{\textcolor{blue}{God knows} how many beers Bob drinks}\]
@@ -578,7 +569,7 @@ The third assumption asks that one entertain string diagrams as representative o
 
 Despite these limitations, I believe that this formal approach to grounding relationships between productive and parsing grammars in mathematical considerations surrounding communication has some merits, or at least raises a change in perspective. Theories of grammar by themselves are insufficient to account for communication: a theory of grammar that merely produces correct sentences or correct parses is a 'theory' of language waiting to be or already outperformed in every respect by an LLM. Understanding the nature of syntax as a formal object demands a distinction and reconciliation of speaking and listening grammars. Moreover, semantics must play a role from the start: in the ideal of communication, both speaker and listener have the same semantic information by the end of a single turn, whether that be a logical expression or something else. For these reasons, we may at least conclude that "weak" and "strong" equivalence is just not suited for an adequate account of communication.\\
 
-Firstly, "weak equivalence" between grammar formalisms in terms of possible sets of generated sentences is insufficient. Weak equivalence proofs are mathematical busywork that have nothing to do with a unified account of syntax and semantics. For example, merely demonstrating that, e.g. pregroup grammars and context-free grammars can generate the same sentences \citep{buszkowski_pregroup_nodate} only admits the possibility that a speaker using a context-free grammar and a listener using a pregroup grammar \emph{could} understand each other, without providing any explanation \emph{how}. But we already know that users of language \emph{do} understand one another (more-or-less), so weak equivalence is (more-or-less) pointless.\\
+Firstly, "weak equivalence" between grammar formalisms in terms of possible sets of generated sentences is insufficient. Weak equivalence proofs are mathematical busywork that have nothing to do with a unified account of syntax and semantics. For example, merely demonstrating that, e.g. pregroup grammars and context-free grammars can generate the same sentences \citep{buszkowskiPregroupGrammarsContextfreea} only admits the possibility that a speaker using a context-free grammar and a listener using a pregroup grammar \emph{could} understand each other, without providing any explanation \emph{how}. But we already know that users of language \emph{do} understand one another (more-or-less), so weak equivalence is (more-or-less) pointless.\\
 
 Secondly, "strong equivalence" that seeks equivalence at a structural level between theories of syntax often helps, but is not always necessary. Theories of syntax are like file formats, e.g. \texttt{.png} or \texttt{.jpeg} for images. A model for a particular language is a particular file or photograph. The task here is to show that two photographs in different file formats that both purport to model the same language are really photographs of the same thing from different perspectives. It is overkill -- and has nothing to do with the object being photographed -- to demonstrate that all \texttt{.pngs} and \texttt{.jpegs} are structurally bijectable, just as it is overkill to show that, say, context-free grammars are strongly equivalent to pregroup grammars, because there are context-free and pregroup grammars that generate sets of strings that have nothing to do with natural language. It could just as well be that there is a pair of productive and parsing grammar-formats that are not strongly equivalent, but happen to coincide for a particular natural language -- in this sense, asking for something like a monoidal cofunctor is a way to check a weaker condition than strong equivalence that achieves the more specific aim of determining whether a pair of productive and parsing grammars for a language are plausibly compatible.
 

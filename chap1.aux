@@ -22,168 +22,162 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {0}Context and synopsis}{5}{chapter.0}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\citation{nouwen_dynamic_2022}
-\citation{sobocinski_graphical_2015,bonchi_interacting_2017,bonchi_graphical_2019}
-\citation{haydon_compositional_2020}
-\citation{lorenz_causal_2023,jacobs_causal_2019}
-\citation{bonchi_categorical_2014}
-\citation{boisseau_string_2022}
-\citation{hedges_string_2015}
-\citation{baez_open_2020}
-\citation{fritz_finettis_2021}
-\citation{cruttwell_categorical_2022}
-\citation{coecke_interacting_2011,coecke_picturing_2017,poor_completeness_2023}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Let's say that \textbf  \emph  {{the meaning of text is how it updates a model.}} So we start with some model of the way things are, modelled as data on a wire.}}{6}{section.0.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Text updates that model; like a gate updates the data on a wire.}}{6}{section.0.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Text is made of sentences; like a circuit is made of gates and wires.}}{6}{section.0.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Let's say that \textbf  {\emph  {The meaning of a sentence is how it updates the meanings of its parts.}} As a first approximation, let's say that the \emph  {parts} of a sentence are the nouns it contains or refers to. Noun data is carried by wires. Collections of nouns are related by gates, which play the roles of verbs and adjectives.}}{6}{section.0.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Gates can be related by higher order gates, which play the roles of adverbs, adpositions, and conjunctions; anything that modifies the data of first order gates like verbs.}}{6}{section.0.1}\protected@file@percent }
+\citation{nouwenDynamicSemantics2022}
+\citation{nouwenDynamicSemantics2022}
+\citation{sobocinskiGraphicalLinearAlgebra2015,bonchiInteractingHopfAlgebras2017,bonchiGraphicalAffineAlgebra2019a}
+\citation{haydonCompositionalDiagrammaticFirstOrder2020d,bonchiDiagrammaticAlgebraFirst2024a}
+\citation{lorenzCausalModelsString2023,jacobsCausalInferenceString2019b}
+\citation{bonchiCategoricalSemanticsSignal2014}
+\citation{boisseauStringDiagrammaticElectrical2022}
+\citation{hedgesStringDiagramsGame2015}
+\citation{baezOpenPetriNets2020}
+\citation{fritzFinettiTheoremCategorical2021}
+\citation{cruttwellCategoricalFoundationsGradientbased2022,khatriAnatomyAttention2024,rodatzPatternLanguageMachine2024}
+\citation{coeckePicturingQuantumProcesses2017a,coeckeQuantumPicturesNew2023}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Let's say that \textbf  \emph  {{the meaning of text is how it updates a model.}} So we start with some model of the way things are, modelled as data on a wire.\relax }}{6}{figure.0.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Text updates that model; like a gate updates the data on a wire.\relax }}{6}{figure.0.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Text is made of sentences; like a circuit is made of gates and wires.\relax }}{6}{figure.0.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Let's say that \textbf  {\emph  {The meaning of a sentence is how it updates the meanings of its parts.}} As a first approximation, let's say that the \emph  {parts} of a sentence are the nouns it contains or refers to. Noun data is carried by wires. Collections of nouns are related by gates, which play the roles of verbs and adjectives.\relax }}{6}{figure.0.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {0.1}What this thesis is about}{6}{section.0.1}\protected@file@percent }
-\citation{joyal_geometry_1991,joyal_geometry_nodate,maclane_natural_1963,lane_categories_2010,selinger_survey_2010}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces In practice, higher order gates may be implemented as gates that modify parameters of other gates. Grammar, and \emph  {function words} -- words that operate on meanings -- are in principle absorbed by the geometry of the diagram. These diagrams are natural vehicles for \emph  {dynamic semantics} \citep  {nouwen_dynamic_2022}, broadly construed, where states are prior contexts and sentences-as-processes update prior contexts.}}{7}{section.0.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Nouns are represented by wires, each `distinct' noun having its own wire.}}{7}{theorem.0.1.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces We represent adjectives, intransitive verbs, and transitive verbs by gates acting on noun-wires. Since a transitive verb has both a subject and an object noun, that will then be two noun-wires, while adjectives and intransitive verbs only have one.}}{7}{theorem.0.1.1}\protected@file@percent }
-\citation{vaswani_attention_2017}
-\citation{openai_chatgpt_2022}
-\citation{bastian_google_2022}
-\citation{teddy_teddynpc_i_2022}
-\citation{thompson_gpt-35_2022}
-\citation{mcshane_linguistics_2021}
-\citation{church_pendulum_2011}
-\citation{hendrycks_measuring_2021}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Adverbs, which modify verbs, we represent as boxes with holes in them, with a number of dangling wires in the hole indicating the shape of gate expected, and these should match the input- and output-wires of the box with the whole.}}{8}{theorem.0.1.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Similarly, adpositions also modify verbs, by moreover adding another noun-wire to the right.}}{8}{theorem.0.1.1}\protected@file@percent }
+\citation{joyalGeometryTensorCalculus1991c,joyalGEOMETRYTENSORCALCULUSa,maclaneNaturalAssociativityCommutativity1963,laneCategoriesWorkingMathematician2010,selingerSurveyGraphicalLanguages2010d}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Gates can be related by higher order gates, which play the roles of adverbs, adpositions, and conjunctions; anything that modifies the data of first order gates like verbs.\relax }}{7}{figure.0.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces In practice, higher order gates may be implemented as gates that modify parameters of other gates. Grammar, and \emph  {function words} -- words that operate on meanings -- are in principle absorbed by the geometry of the diagram. These diagrams are natural vehicles for \emph  {dynamic semantics} \citep  {nouwenDynamicSemantics2022}, broadly construed, where states are prior contexts and sentences-as-processes update prior contexts.\relax }}{7}{figure.0.6}\protected@file@percent }
+\citation{vaswaniAttentionAllYou2017}
+\citation{oopenaiChatGPTOptimizingLanguage2022}
+\citation{bastianGooglePaLMGiant2022}
+\citation{teddy[@teddynpc]MadeChatGPTTake2022}
+\citation{thompsonGPT3IQTesting2022}
+\citation{mcshaneLinguisticsAgeAI2021}
+\citation{churchPendulumSwungToo2011}
+\citation{hendrycksMeasuringMathematicalProblem2021}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Nouns are represented by wires, each `distinct' noun having its own wire.\relax }}{8}{figure.0.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces We represent adjectives, intransitive verbs, and transitive verbs by gates acting on noun-wires. Since a transitive verb has both a subject and an object noun, that will then be two noun-wires, while adjectives and intransitive verbs only have one.\relax }}{8}{figure.0.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Adverbs, which modify verbs, we represent as boxes with holes in them, with a number of dangling wires in the hole indicating the shape of gate expected, and these should match the input- and output-wires of the box with the whole.\relax }}{8}{figure.0.9}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {0.2}\textbf  {Question:} What is the practical value of studying language when Large Language Models exist?}{8}{section.0.2}\protected@file@percent }
-\citation{floridi_fourth_2014}
-\citation{sutton_bitter_2019}
-\citation{chomsky_new_2000}
-\citation{mollica_humans_2019}
-\citation{herculano-houzel_remarkable_2012}
-\citation{chowdhery_palm_2022,narang_pathways_2022}
-\citation{khan_what_2023}
-\citation{tom_goldstein_tomgoldsteincs_training_2022}
-\citation{taori_rohan_stanford_2023}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces For verbs that take sentential complements and conjunctions, we have families of boxes to accommodate input circuits of all sizes. They add another noun-wire to the left of a circuit.}}{9}{theorem.0.1.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Conjunctions are boxes that take two circuits which might share labels on some wires.}}{9}{theorem.0.1.1}\protected@file@percent }
+\citation{floridiFourthRevolutionHow2014}
+\citation{suttonBitterLesson2019}
+\citation{chomskyNewHorizonsStudy2000a}
+\citation{mollicaHumansStoreMegabytes2019}
+\citation{herculano-houzelRemarkableNotExtraordinary2012}
+\citation{chowdheryPaLMScalingLanguage2022,narangPathwaysLanguageModel2022}
+\citation{khanWhatAreTokens2023}
+\citation{tomgoldstein[@tomgoldsteincs]TrainingPaLMTakes2022}
+\citation{taorirohanStanfordCRFM2023}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Similarly, adpositions also modify verbs, by moreover adding another noun-wire to the right.\relax }}{9}{figure.0.10}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces For verbs that take sentential complements and conjunctions, we have families of boxes to accommodate input circuits of all sizes. They add another noun-wire to the left of a circuit.\relax }}{9}{figure.0.11}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {0.3}\textbf  {First Reply:} Interpretability, maybe.}{9}{section.0.3}\protected@file@percent }
-\citation{fodor_connectionism_1988}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Of course filled up boxes are just gates.}}{10}{theorem.0.1.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Gates compose sequentially by matching labels on some of their noun-wires and in parallel when they share no noun-wires, to give \underline  {text circuits}.}}{10}{theorem.0.1.1}\protected@file@percent }
-\citation{frege_gottlob_selbst_1884}
-\citation{coecke_compositionality_2021}
-\citation{lecun_deep_2015}
-\citation{rumelhart_learning_1987}
-\citation{hochreiter_long_1997}
-\citation{vaswani_attention_2017}
-\citation{bronstein_geometric_2021}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces To summarise: composition by nesting corresponds to grammatical structure within sentences. Sentences correspond to filled gates, boxes with fixed arity correspond to first-order modifiers such as adverbs and adpositions, and boxes with variable arity correspond to sentential-level modifiers such as conjunctions and verbs with sentential complements.}}{11}{theorem.0.1.1}\protected@file@percent }
-\citation{chapman_david_nebulosity_2010}
-\citation{wolfram_new_2002}
-\citation{marr_artificial_1977}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Composition by connecting wires corresponds to identifying coreferences in discourse. We obtain the same circuit for multiple text presentations of the same content, e.g. \texttt  {Sober Alice who sees drunk Bob clumsily dance laughs at him.} yields the same circuit as the text \texttt  {Alice is sober. She sees Bob clumsily dance. Bob is drunk. She laughs at him.}}}{12}{theorem.0.1.1}\protected@file@percent }
+\citation{fodorConnectionismCognitiveArchitecture1988}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Conjunctions are boxes that take two circuits which might share labels on some wires.\relax }}{10}{figure.0.12}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Of course filled up boxes are just gates.\relax }}{10}{figure.0.13}\protected@file@percent }
+\citation{fregegottlobSelbstConcreteDinge1884}
+\citation{coeckeCompositionalityWeSee2021}
+\citation{lecunDeepLearning2015a}
+\citation{rumelhartLearningInternalRepresentations1987}
+\citation{hochreiterLongShortTermMemory1997}
+\citation{vaswaniAttentionAllYou2017}
+\citation{bronsteinGeometricDeepLearning2021}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Gates compose sequentially by matching labels on some of their noun-wires and in parallel when they share no noun-wires, to give \underline  {text circuits}.\relax }}{11}{figure.0.14}\protected@file@percent }
+\citation{chapmandavidNebulosityMeaningness2010}
+\citation{wolframNewKindScience2002}
+\citation{marrArtificialIntelligencePersonal1977a}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces To summarise: composition by nesting corresponds to grammatical structure within sentences. Sentences correspond to filled gates, boxes with fixed arity correspond to first-order modifiers such as adverbs and adpositions, and boxes with variable arity correspond to sentential-level modifiers such as conjunctions and verbs with sentential complements.\relax }}{12}{figure.0.15}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {0.3.1}\textbf  {Objection:} You're forgetting the bitter lesson.}{12}{subsection.0.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {0.3.2}\textbf  {Objection:} GOFAI? GO-F-yourself!}{12}{subsection.0.3.2}\protected@file@percent }
-\citation{sogaard_grounding_2023}
-\citation{bender_climbing_2020}
-\citation{searle_minds_1980}
-\citation{lietard_language_2021}
-\citation{kriegeskorte_grid_2016}
-\citation{gardenfors_geometry_2014}
-\citation{davidad_open_nodate}
-\citation{wei_chain--thought_2023-1}
-\citation{koralus_humans_2023}
-\citation{kanerva_computing_2019}
-\citation{liu_seeing_2023}
-\citation{goodfellow_generative_2014}
-\citation{chen_xgboost_2016}
-\citation{coecke_mathematical_2010}
+\citation{sogaardGroundingVectorSpace2023}
+\citation{benderClimbingNLUMeaning2020}
+\citation{searleMindsBrainsPrograms1980a}
+\citation{lietardLanguageModelsKnow2021}
+\citation{kriegeskorteGridCellsConceptual2016}
+\citation{ggardenforsGeometryMeaningSemantics2014}
+\citation{davidadOpenAgencyArchitecture}
+\citation{weiChainofThoughtPromptingElicits2023}
+\citation{koralusHumansHumansOut2023}
+\citation{kanervaComputingHighDimensionalVectors2019}
+\citation{liuSeeingBelievingBrainInspired2023}
+\citation{goodfellowGenerativeAdversarialNetworks2014}
+\citation{chenXGBoostScalableTree2016a}
+\citation{coeckeMathematicalFoundationsCompositional2010a}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Composition by connecting wires corresponds to identifying coreferences in discourse. We obtain the same circuit for multiple text presentations of the same content, e.g. \texttt  {Sober Alice who sees drunk Bob clumsily dance laughs at him.} yields the same circuit as the text \texttt  {Alice is sober. She sees Bob clumsily dance. Bob is drunk. She laughs at him.}\relax }}{13}{figure.0.16}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {0.3.3}\textbf  {Objection:} How does any of this improve capabilities?}{13}{subsection.0.3.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {0.4}\textbf  {Second Reply:} LLMs don't help us understand language; how might string diagrams help?}{14}{section.0.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {0.4.1}\textbf  {Objection:} Isn't the better theory the one with better predictions?}{14}{subsection.0.4.1}\protected@file@percent }
-\citation{dziri_faith_2023}
-\citation{noauthor_riley_2022}
-\citation{marr_vision_2010}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.4.2}\textbf  {Objection:} What's wrong with $\lambda $-calculus and sequent calculi and graphs and sets?}{16}{subsection.0.4.2}\protected@file@percent }
-\citation{joyal_geometry_1991,joyal_geometry_nodate,maclane_natural_1963,lane_categories_2010,selinger_survey_2010}
-\citation{sobocinski_graphical_2015,bonchi_interacting_2017,bonchi_graphical_2019,haydon_compositional_2020,lorenz_causal_2023,jacobs_causal_2019,bonchi_categorical_2014,boisseau_string_2022,hedges_string_2015,baez_open_2020,fritz_finettis_2021,cruttwell_categorical_2022,coecke_interacting_2011,coecke_picturing_2017,poor_completeness_2023}
-\citation{fong_invitation_2019}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.4.3}\textbf  {Objection:} What's the positive case for category-theoretic theoretical linguistics?}{17}{subsection.0.4.3}\protected@file@percent }
-\newpmemlabel{^_3}{18}
-\newpmemlabel{^_2}{18}
-\@writefile{toc}{\contentsline {subsection}{\numberline {0.4.4}\textbf  {Objection:} Aren't string diagrams just graphs?}{18}{subsection.0.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {0.5}Synopsis of the thesis}{19}{section.0.5}\protected@file@percent }
+\citation{dziriFaithFateLimits2023}
+\citation{RileyGoodsideGoodside2022}
+\citation{marrVisionComputationalInvestigation2010}
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.4.2}Why Category Theory?}{16}{subsection.0.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {0.4.3}\textbf  {Objection:} Aren't string diagrams just graphs?}{17}{subsection.0.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {0.5}Synopsis of the thesis}{18}{section.0.5}\protected@file@percent }
 \bibstyle{alpha}
 \bibdata{thesis_intro}
-\bibcite{bastian_google_2022}{{Bas22}{}{{}}{{}}}
-\bibcite{bronstein_geometric_2021}{{BBCV21}{}{{}}{{}}}
-\bibcite{bender_climbing_2020}{{BK20}{}{{}}{{}}}
-\bibcite{baez_open_2020}{{BM20}{}{{}}{{}}}
-\bibcite{bonchi_graphical_2019}{{BPSZ19}{}{{}}{{}}}
-\bibcite{boisseau_string_2022}{{BS22}{}{{}}{{}}}
-\bibcite{bonchi_categorical_2014}{{BSZ14}{}{{}}{{}}}
-\bibcite{bonchi_interacting_2017}{{BSZ17}{}{{}}{{}}}
-\bibcite{coecke_interacting_2011}{{CD11}{}{{}}{{}}}
+\bibcite{bastianGooglePaLMGiant2022}{{Bas22}{}{{}}{{}}}
+\bibcite{bronsteinGeometricDeepLearning2021}{{BBCV21}{}{{}}{{}}}
+\bibcite{bonchiDiagrammaticAlgebraFirst2024a}{{BDGHS24}{}{{}}{{}}}
+\bibcite{benderClimbingNLUMeaning2020}{{BK20}{}{{}}{{}}}
+\bibcite{baezOpenPetriNets2020}{{BM20}{}{{}}{{}}}
+\bibcite{bonchiGraphicalAffineAlgebra2019a}{{BPSZ19}{}{{}}{{}}}
+\bibcite{boisseauStringDiagrammaticElectrical2022}{{BS22}{}{{}}{{}}}
+\bibcite{bonchiCategoricalSemanticsSignal2014}{{BSZ14}{}{{}}{{}}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Bibliography}{21}{chapter.1}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\bibcite{chen_xgboost_2016}{{CG16}{}{{}}{{}}}
-\bibcite{cruttwell_categorical_2022}{{CGG{$^{+}$}22}{}{{}}{{}}}
-\bibcite{chapman_david_nebulosity_2010}{{{Cha}10}{}{{}}{{}}}
-\bibcite{chomsky_new_2000}{{Cho00}{}{{}}{{}}}
-\bibcite{church_pendulum_2011}{{Chu11}{}{{}}{{}}}
-\bibcite{coecke_picturing_2017}{{CK17}{}{{}}{{}}}
-\bibcite{chowdhery_palm_2022}{{CND{$^{+}$}22}{}{{}}{{}}}
-\bibcite{coecke_compositionality_2021}{{Coe21}{}{{}}{{}}}
-\bibcite{coecke_mathematical_2010}{{CSC10}{}{{}}{{}}}
-\bibcite{davidad_open_nodate}{{dav}{}{{}}{{}}}
-\bibcite{dziri_faith_2023}{{DLS{$^{+}$}23}{}{{}}{{}}}
-\bibcite{fritz_finettis_2021}{{FGP21}{}{{}}{{}}}
-\bibcite{floridi_fourth_2014}{{Flo14}{}{{}}{{}}}
-\bibcite{fodor_connectionism_1988}{{FP88}{}{{}}{{}}}
-\bibcite{frege_gottlob_selbst_1884}{{{Fre}84}{}{{}}{{}}}
-\bibcite{friedman_fom_2005}{{Fri05}{}{{}}{{}}}
-\bibcite{fong_invitation_2019}{{FS19}{}{{}}{{}}}
-\bibcite{goodfellow_generative_2014}{{GPAM{$^{+}$}14}{}{{}}{{}}}
-\bibcite{gardenfors_geometry_2014}{{Gä14}{}{{}}{{}}}
-\bibcite{hendrycks_measuring_2021}{{HBK{$^{+}$}21}{}{{}}{{}}}
-\bibcite{hedges_string_2015}{{Hed15}{}{{}}{{}}}
-\bibcite{herculano-houzel_remarkable_2012}{{HH12}{}{{}}{{}}}
-\bibcite{hochreiter_long_1997}{{HS97}{}{{}}{{}}}
-\bibcite{haydon_compositional_2020}{{HS20}{}{{}}{{}}}
-\bibcite{jacobs_causal_2019}{{JKZ19}{}{{}}{{}}}
-\bibcite{joyal_geometry_nodate}{{Joy}{}{{}}{{}}}
-\bibcite{joyal_geometry_1991}{{JS91}{}{{}}{{}}}
-\bibcite{kanerva_computing_2019}{{Kan19}{}{{}}{{}}}
-\bibcite{khan_what_2023}{{Kha23}{}{{}}{{}}}
-\bibcite{kriegeskorte_grid_2016}{{KS16}{}{{}}{{}}}
-\bibcite{koralus_humans_2023}{{KWM23}{}{{}}{{}}}
-\bibcite{lane_categories_2010}{{Lan10}{}{{}}{{}}}
-\bibcite{lietard_language_2021}{{LAS21}{}{{}}{{}}}
-\bibcite{lecun_deep_2015}{{LBH15}{}{{}}{{}}}
-\bibcite{liu_seeing_2023}{{LGT23}{}{{}}{{}}}
-\bibcite{lorenz_causal_2023}{{LT23}{}{{}}{{}}}
-\bibcite{maclane_natural_1963}{{Mac63}{}{{}}{{}}}
-\bibcite{marr_artificial_1977}{{Mar77}{}{{}}{{}}}
-\bibcite{marr_vision_2010}{{Mar10}{}{{}}{{}}}
-\bibcite{mcshane_linguistics_2021}{{MN21}{}{{}}{{}}}
-\bibcite{mollica_humans_2019}{{MP19}{}{{}}{{}}}
-\bibcite{nouwen_dynamic_2022}{{NBvEV22}{}{{}}{{}}}
-\bibcite{narang_pathways_2022}{{NC22}{}{{}}{{}}}
-\bibcite{noauthor_riley_2022}{{noa22}{}{{}}{{}}}
-\bibcite{openai_chatgpt_2022}{{{Ope}22}{}{{}}{{}}}
-\bibcite{poor_completeness_2023}{{PWS{$^{+}$}23}{}{{}}{{}}}
-\bibcite{rumelhart_learning_1987}{{RM87}{}{{}}{{}}}
-\bibcite{searle_minds_1980}{{Sea80}{}{{}}{{}}}
-\bibcite{selinger_survey_2010}{{Sel10}{}{{}}{{}}}
-\bibcite{sobocinski_graphical_2015}{{Sob15}{}{{}}{{}}}
-\bibcite{sutton_bitter_2019}{{Sut19}{}{{}}{{}}}
-\bibcite{sogaard_grounding_2023}{{Sø23}{}{{}}{{}}}
-\bibcite{teddy_teddynpc_i_2022}{{{ted}22}{}{{}}{{}}}
-\bibcite{taori_rohan_stanford_2023}{{TGZ{$^{+}$}23}{}{{}}{{}}}
-\bibcite{thompson_gpt-35_2022}{{Tho22}{}{{}}{{}}}
-\bibcite{tom_goldstein_tomgoldsteincs_training_2022}{{{Tom}22}{}{{}}{{}}}
-\bibcite{vaswani_attention_2017}{{VSP{$^{+}$}17}{}{{}}{{}}}
-\bibcite{wolfram_new_2002}{{Wol02}{}{{}}{{}}}
+\bibcite{bonchiInteractingHopfAlgebras2017}{{BSZ17}{}{{}}{{}}}
+\bibcite{chenXGBoostScalableTree2016a}{{CG16}{}{{}}{{}}}
+\bibcite{coeckeQuantumPicturesNew2023}{{CG23}{}{{}}{{}}}
+\bibcite{cruttwellCategoricalFoundationsGradientbased2022}{{CGG{$^{+}$}22}{}{{}}{{}}}
+\bibcite{chapmandavidNebulosityMeaningness2010}{{{Cha}pm}{}{{}}{{}}}
+\bibcite{chomskyNewHorizonsStudy2000a}{{Cho00}{}{{}}{{}}}
+\bibcite{churchPendulumSwungToo2011}{{Chu11}{}{{}}{{}}}
+\bibcite{coeckePicturingQuantumProcesses2017a}{{CK17}{}{{}}{{}}}
+\bibcite{chowdheryPaLMScalingLanguage2022}{{CND{$^{+}$}22}{}{{}}{{}}}
+\bibcite{coeckeCompositionalityWeSee2021}{{Coe21}{}{{}}{{}}}
+\bibcite{coeckeMathematicalFoundationsCompositional2010a}{{CSC10}{}{{}}{{}}}
+\bibcite{davidadOpenAgencyArchitecture}{{dav}{}{{}}{{}}}
+\bibcite{dziriFaithFateLimits2023}{{DLS{$^{+}$}23}{}{{}}{{}}}
+\bibcite{fritzFinettiTheoremCategorical2021}{{FGP21}{}{{}}{{}}}
+\bibcite{floridiFourthRevolutionHow2014}{{Flo14}{}{{}}{{}}}
+\bibcite{fodorConnectionismCognitiveArchitecture1988}{{FP88}{}{{}}{{}}}
+\bibcite{fregegottlobSelbstConcreteDinge1884}{{{Fre}84}{}{{}}{{}}}
+\bibcite{goodfellowGenerativeAdversarialNetworks2014}{{GPM{$^{+}$}14}{}{{}}{{}}}
+\bibcite{hendrycksMeasuringMathematicalProblem2021}{{HBK{$^{+}$}21}{}{{}}{{}}}
+\bibcite{hedgesStringDiagramsGame2015}{{Hed15}{}{{}}{{}}}
+\bibcite{herculano-houzelRemarkableNotExtraordinary2012}{{{Her}12}{}{{}}{{}}}
+\bibcite{hochreiterLongShortTermMemory1997}{{HS97}{}{{}}{{}}}
+\bibcite{haydonCompositionalDiagrammaticFirstOrder2020d}{{HS20}{}{{}}{{}}}
+\bibcite{jacobsCausalInferenceString2019b}{{JKZ19}{}{{}}{{}}}
+\bibcite{joyalGEOMETRYTENSORCALCULUSa}{{Joy}{}{{}}{{}}}
+\bibcite{joyalGeometryTensorCalculus1991c}{{JS91}{}{{}}{{}}}
+\bibcite{kanervaComputingHighDimensionalVectors2019}{{Kan19}{}{{}}{{}}}
+\bibcite{khanWhatAreTokens2023}{{Kha23}{}{{}}{{}}}
+\bibcite{khatriAnatomyAttention2024}{{KLLW24}{}{{}}{{}}}
+\bibcite{kriegeskorteGridCellsConceptual2016}{{KS16}{}{{}}{{}}}
+\bibcite{koralusHumansHumansOut2023}{{KW23}{}{{}}{{}}}
+\bibcite{laneCategoriesWorkingMathematician2010}{{Lan10}{}{{}}{{}}}
+\bibcite{lietardLanguageModelsKnow2021}{{LAS21}{}{{}}{{}}}
+\bibcite{lecunDeepLearning2015a}{{LBH15}{}{{}}{{}}}
+\bibcite{liuSeeingBelievingBrainInspired2023}{{LGT23}{}{{}}{{}}}
+\bibcite{lorenzCausalModelsString2023}{{LT23}{}{{}}{{}}}
+\bibcite{maclaneNaturalAssociativityCommutativity1963}{{Mac63}{}{{}}{{}}}
+\bibcite{marrArtificialIntelligencePersonal1977a}{{Mar77}{}{{}}{{}}}
+\bibcite{marrVisionComputationalInvestigation2010}{{Mar10}{}{{}}{{}}}
+\bibcite{mcshaneLinguisticsAgeAI2021}{{MN21}{}{{}}{{}}}
+\bibcite{mollicaHumansStoreMegabytes2019}{{MP19}{}{{}}{{}}}
+\bibcite{nouwenDynamicSemantics2022}{{NBvV22}{}{{}}{{}}}
+\bibcite{narangPathwaysLanguageModel2022}{{NC22}{}{{}}{{}}}
+\bibcite{rodatzPatternLanguageMachine2024}{{RFL{$^{+}$}24}{}{{}}{{}}}
+\bibcite{RileyGoodsideGoodside2022}{{Ril22}{}{{}}{{}}}
+\bibcite{rumelhartLearningInternalRepresentations1987}{{RM87}{}{{}}{{}}}
+\bibcite{searleMindsBrainsPrograms1980a}{{Sea80}{}{{}}{{}}}
+\bibcite{selingerSurveyGraphicalLanguages2010d}{{Sel10}{}{{}}{{}}}
+\bibcite{sobocinskiGraphicalLinearAlgebra2015}{{Sob15}{}{{}}{{}}}
+\bibcite{sogaardGroundingVectorSpace2023}{{S{\o }g23}{}{{}}{{}}}
+\bibcite{suttonBitterLesson2019}{{Sut19}{}{{}}{{}}}
+\bibcite{teddy[@teddynpc]MadeChatGPTTake2022}{{{ted}22}{}{{}}{{}}}
+\bibcite{taorirohanStanfordCRFM2023}{{TGZ{$^{+}$}23}{}{{}}{{}}}
+\bibcite{thompsonGPT3IQTesting2022}{{Tho22}{}{{}}{{}}}
+\bibcite{tomgoldstein[@tomgoldsteincs]TrainingPaLMTakes2022}{{{Tom}22}{}{{}}{{}}}
+\bibcite{vaswaniAttentionAllYou2017}{{VSP{$^{+}$}17}{}{{}}{{}}}
+\bibcite{wolframNewKindScience2002}{{Wol02}{}{{}}{{}}}
+\bibcite{weiChainofThoughtPromptingElicits2023}{{WWS{$^{+}$}23}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
 \ttl@finishall
 \gdef \@abspage@last{26}
