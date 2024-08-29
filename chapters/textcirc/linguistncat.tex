@@ -105,20 +105,17 @@ Further, there are two operations to build what are called \emph{derived trees} 
 \[\resizebox{0.75\textwidth}{!}{\tikzfig{tree2gate/tag/CFGtoTAGpattern}}\]
 \end{figure}
 
-\marginnote{
+
 \begin{construction}[Leaf-Ansatz of a CFG]
 Given a signature $\mathfrak{G}$ for a CFG, we construct a new signature $\mathfrak{G}'$ which has the same 0- and 1-cells as $\mathfrak{G}$. Now, referring to the dashed magenta arrows in the schematic below: for each 1-cell wire type $\texttt{X}$ of $\mathfrak{G}$, we introduce a \emph{leaf-ansatz} 2-cell $\texttt{X}^\downarrow$. For each leaf 2-cell $\texttt{X}_L$ in $\mathfrak{G}$, we introduce a renamed copy $\texttt{X}'_L$ in $\mathfrak{G}'$. Now refer to the solid magenta: we construct a 3-cell in $\mathfrak{G}'$ for each 2-cell in $\mathfrak{G}$, which has the effect of systematically replacing open output wires in $\mathfrak{G}$ with leaf-ansatzes in $\mathfrak{G}'$.
 \end{construction}
-}
 
-\marginnote{
 \begin{proposition}\label{prop:cfgastag1}
 Leaf-ansatzes of CFGs are precisely tree adjoining grammars (TAGs) with only initial trees and substitution.
 \begin{proof}
 By construction. Consider a CFG given by 2-categorical signature $\mathfrak{G}$, with leaf-ansatz signature $\mathfrak{G}'$. The types $\texttt{X}$ of $\mathfrak{G}$ become substitution marked symbols $\texttt{X}^{\downarrow}$ in $\mathfrak{G}'$. The trees $\texttt{X}_i$ in $\mathfrak{G}$ become initial trees $\texttt{X}^0$ in $\mathfrak{G}'$. The 3-cells $\texttt{X}_s$ of $\mathfrak{G}'$ are precisely substitution operations corresponding to appending the 2-cells $\texttt{X}_i$ of $\mathfrak{G}$.
 \end{proof}
 \end{proposition}
-}
 
 \clearpage
 
@@ -150,7 +147,7 @@ In more detail, one aspect of rewrite systems we adapt for now is the distinctio
 
 \begin{figure}[h!]
 \[\scalebox{0.6}{\tikzfig{tree2gate/tag/tagsignature}}\]
-\caption{TAG signature of \texttt{Alice sees Bob quickly run to school}. The \hl{highlighted 2-cells} are auxiliary trees that replace CFG 2-cells for verbs with sentential complement, adverbs, and adpositions. The \hl{highlighted 3-cells} are the tree adjoining operations of the auxiliary trees. The construction yields as a corollary an alternate proof of Theorem 6.1.1 of \citep{joshiIntroductionTreeAdjoining1987} that recovers CFGs as TAGs.}
+\caption{TAG signature of \texttt{Alice sees Bob quickly run to school}. The highlighted \hl{2-cells} are auxiliary trees that replace CFG 2-cells for verbs with sentential complement, adverbs, and adpositions. The highlighted \hl{3-cells} are the tree adjoining operations of the auxiliary trees. The construction yields as a corollary an alternate proof of Theorem 6.1.1 of \citep{joshiIntroductionTreeAdjoining1987} that recovers CFGs as TAGs.}
 \end{figure}
 
 \marginnote{
@@ -229,11 +226,15 @@ In our analogy with string rewrite systems, we might like that the following rew
 \caption{We may generally represent such scalars as labelled dots. A fact about scalars in a 1-object-2-category called the Eckmann-Hilton argument is that dots may circle around one another, and all of those expressions are equivalent up to homotopy. The mechanism that enables this in our setting is that the empty string is equal to copies of itself, which creates the necessary space for manoeuvering; translating into the $n$-categorical setting, expressions are equivalent up to introducing and contracting identities.}
 \end{figure}
 
+\vspace{3cm}
+
 \begin{figure}[h!]
 \centering
 \[\resizebox{\textwidth}{!}{\tikzfig{ncat/braidstogether}}\]
 \caption{We may view the homotopies that get us from one rewrite to another as 3-cells, which produces a braid in a pair of wires when viewed as a vignette. Up to processive isotopies, which are continuous bijective transformations that don't let wires double back on themselves, we can identify two different braidings that are not continuously deformable to one another in the 3-dimensional space of the vignette. We distinguish the braidings visually by letting wires either go over or under one another.}
 \end{figure}
+
+\vspace{3cm}
 
 \newpage
 
@@ -284,7 +285,7 @@ The following is a reproduction in \texttt{homotopy.io} of Example 2.4 of [Joshi
 \centering
 \[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/tag/joshiex24}}\]
 \[\resizebox{\textwidth}{!}{\tikzfig{tree2gate/tag/joshiex241}}\]
-\caption{TAG signature and example derivation. Joshi stresses that adjoining \emph{preserves} links, and that elementary trees may become \emph{stretched} in the process of derivation, which are fundamentally topological constraints, akin to the "only (processive) connectivity matters" criterion identifying string diagrams up to isomorphism. Moreover, TAGs evidently have links of two natures: tree edges intended to be planar, and dashed dependency edges intended to freely cross over tree edges. It is easy, but a hack, to ask for planar processive isomorphisms for tree edges and extraplanar behaviour for dependency edges: these are evidently two different kinds of structure glued together, rather than facets of some whole. Weak $n$-categories offer a unified mathematical framework that natively accommodates the desired topological constraints while also granting expressive control over wire-types of differing behaviours. One method to recover TAGs true to the original conception is to stay in a planar 1-object-2-category setting while explicitly including wire-crossing cells for dependency links. The alternative method we opt for in Section \ref{sec:gencirc} is to work in a pure "only connectivity matters" setting, recovering the linear ordering of words by generating cells along a chosen wire. I do not know of any conceptual justification for why planarity is so often an implicit constraint in approaches to formal syntax. My best guesses are either that the first port of call for rewrites between 1-dimensional strings of words is a 2-dimensional setting, or it is a limitation of 2-dimensional paper as a medium of thought along with some confusion of map for territory.}
+\caption{TAG signature and example derivation. Joshi stresses that adjoining \emph{preserves} links, and that elementary trees may become \emph{stretched} in the process of derivation, which are fundamentally topological constraints, akin to the "only (processive) connectivity matters" criterion identifying string diagrams up to isomorphism. Moreover, TAGs evidently have links of two natures: tree edges intended to be planar, and dashed dependency edges intended to freely cross over tree edges. It is easy, but a hack, to ask for planar processive isomorphisms for tree edges and extraplanar behaviour for dependency edges: these are evidently two different kinds of structure glued together, rather than facets of some whole. Weak $n$-categories offer a unified mathematical framework that natively accommodates the desired topological constraints while also granting expressive control over wire-types of differing behaviours. One method to recover TAGs true to the original conception is to stay in a planar 1-object-2-category setting while explicitly including wire-crossing cells for dependency links. The alternative method we opt for in Section \ref{sec:gencirc} is to work in a pure "only connectivity matters" setting, recovering the linear ordering of words by generating cells along a chosen wire.}
 \end{figure}
 
 \begin{figure}[h!]

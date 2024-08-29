@@ -23,13 +23,13 @@ Jim Lambek was a jovial man who always carried a wad of twenties. I can't do bet
 \resizebox{\textwidth}{!}{\includegraphics{figures/cartoons/lambek3}}
 \caption{To eliminate this asymmetry, Lambek devised pregroup grammars. Whereas a group is a monoid with inverses up to left- and right-multiplication, a pregroup weakens the requirement for inverses so that all elements have distinct left- and right- inverses, denoted $x^{-1}$ and $^{-1}x$ respectively. Eliminating or introducing inverses is a non-identity relation on elements of the pregroup, so we have axioms of the form e.g. $x \cdot ^{-1}x \ \rightarrow \ 1 \ \rightarrow \ ^{-1}x \cdot x$. In this formulation, denoting the multiplication with a dot, both $(n/s)\setminus n$ and $(n/s)\setminus n$ become $^{-1}n \cdot s \cdot n^{-1}$, which just wants a noun to the left and a noun to the right in whatever order to eliminate the flanking inverses to reveal the embedded sentence type. Now we can obtain the same proof of correctness as a series of algebraic reductions.}
 
-\[
+
 \begin{align}
 n \cdot (^{-1}n \cdot s \cdot n^{-1}) \cdot n &\rightarrow (n \cdot \ ^{-1}n) \cdot s \cdot (n^{-1} \cdot n) \\
 &\rightarrow 1 \cdot s \cdot 1 \\
 &\rightarrow s
 \end{align}
-\]
+
 \end{figure}
 \clearpage
 
